@@ -959,7 +959,7 @@ describe('Telegram node', () => {
 							rows: [
 								{
 									row: {
-										buttons: [{ text: 'Open', additionalFields: { url: 'https://n8n.io' } }],
+										buttons: [{ text: 'Open', additionalFields: { url: 'http://localhost' } }],
 									},
 								},
 							],
@@ -979,7 +979,7 @@ describe('Telegram node', () => {
 					chat_id: '123',
 					rich_message: { html: '<b>Hi</b>' },
 					reply_markup: {
-						inline_keyboard: [[{ text: 'Open', url: 'https://n8n.io' }]],
+						inline_keyboard: [[{ text: 'Open', url: 'http://localhost' }]],
 					},
 				},
 				{},

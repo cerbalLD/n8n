@@ -131,7 +131,7 @@
 			"parameters": {
 				"group": "image",
 				"tool": "getImageExif",
-				"url": "https://n8n.io/_nuxt/img/df5be1c.png",
+				"url": "http://localhost/_nuxt/img/df5be1c.png",
 				"additionalOptions": {}
 			},
 			"name": "uProc8",
@@ -151,7 +151,7 @@
 				"group": "image",
 				"tool": "getImageWithText",
 				"text": "n8n rocks!",
-				"url": "https://n8n.io/_nuxt/img/df5be1c.png",
+				"url": "http://localhost/_nuxt/img/df5be1c.png",
 				"size": "72",
 				"additionalOptions": {}
 			},

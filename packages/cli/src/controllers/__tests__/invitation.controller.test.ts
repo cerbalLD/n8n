@@ -181,7 +181,7 @@ describe('InvitationController', () => {
 							email: 'valid@email.com',
 							emailSent: false,
 							role: 'global:member',
-							inviteAcceptUrl: 'https://n8n.io/signup?inviterId=123&inviteeId=123',
+							inviteAcceptUrl: 'http://localhost/signup?inviterId=123&inviteeId=123',
 						},
 						error: '',
 					},

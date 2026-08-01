@@ -24,6 +24,11 @@ import { N8N_VERSION, SETTINGS_LICENSE_CERT_KEY } from './constants';
 const LICENSE_RENEWAL_DISABLED_WARNING =
 	'Automatic license renewal is disabled. The license will not renew automatically, and access to licensed features may be lost!';
 
+const LOCAL_LICENSE_BYPASS_ENV = 'N8N_LOCAL_LICENSE_BYPASS';
+const LOCAL_LICENSE_PLAN_NAME = 'Local Enterprise';
+const LOCAL_LICENSE_CONSUMER_ID = 'local-development';
+const LOCAL_LICENSE_NUMERIC_LIMIT = 1_000_000;
+
 /** The license server rejects device fingerprints shorter than this. */
 const MIN_DEVICE_FINGERPRINT_LENGTH = 32;
 
@@ -65,6 +70,13 @@ export class License implements LicenseProvider {
 		}
 		if (this.isShuttingDown) {
 			this.logger.warn('License manager already shutting down');
+			return;
+		}
+
+		if (this.isLocalLicenseBypassEnabled()) {
+			this.logger.warn(
+				`${LOCAL_LICENSE_BYPASS_ENV}=true is enabled. All license feature checks are bypassed for this local process.`,
+			);
 			return;
 		}
 
@@ -133,6 +145,33 @@ export class License implements LicenseProvider {
 		}
 	}
 
+	private isLocalLicenseBypassEnabled() {
+		return process.env[LOCAL_LICENSE_BYPASS_ENV] === 'true';
+	}
+
+	private getLocalFeatureValue<T extends keyof FeatureReturnType>(
+		feature: T,
+	): FeatureReturnType[T] | undefined {
+		switch (feature) {
+			case 'planName':
+				return LOCAL_LICENSE_PLAN_NAME as FeatureReturnType[T];
+			case LICENSE_QUOTAS.AI_CREDITS:
+			case LICENSE_QUOTAS.AI_GATEWAY_BUDGET:
+			case LICENSE_QUOTAS.INSIGHTS_MAX_HISTORY_DAYS:
+			case LICENSE_QUOTAS.INSIGHTS_RETENTION_MAX_AGE_DAYS:
+			case LICENSE_QUOTAS.INSIGHTS_RETENTION_PRUNE_INTERVAL_DAYS:
+				return LOCAL_LICENSE_NUMERIC_LIMIT as FeatureReturnType[T];
+			default:
+				if (typeof feature === 'string' && feature.startsWith('feat:')) {
+					return true as FeatureReturnType[T];
+				}
+				if (typeof feature === 'string' && feature.startsWith('quota:')) {
+					return UNLIMITED_LICENSE_QUOTA as FeatureReturnType[T];
+				}
+				return undefined;
+		}
+	}
+
 	/**
 	 * `instanceId` can be pinned to an arbitrary value via `N8N_INSTANCE_ID` or
 	 * the `instance.id` deployment-key row, but the license server rejects
@@ -155,6 +194,10 @@ export class License implements LicenseProvider {
 	}
 
 	async loadCertStr(): Promise<TLicenseBlock> {
+		if (this.isLocalLicenseBypassEnabled()) {
+			return 'local-license-bypass';
+		}
+
 		// if we have an ephemeral license, we don't want to load it from the database
 		const ephemeralLicense = this.globalConfig.license.cert;
 		if (ephemeralLicense) {
@@ -227,6 +270,11 @@ export class License implements LicenseProvider {
 	async activate(activationKey: string): Promise<void>;
 	async activate(activationKey: string, eulaUri: string, userEmail: string): Promise<void>;
 	async activate(activationKey: string, eulaUri?: string, userEmail?: string): Promise<void> {
+		if (this.isLocalLicenseBypassEnabled()) {
+			this.logger.debug('Skipping license activation because local license bypass is enabled');
+			return;
+		}
+
 		if (!this.manager) {
 			return;
 		}
@@ -237,6 +285,12 @@ export class License implements LicenseProvider {
 
 	@OnPubSubEvent('reload-license')
 	async reload(): Promise<void> {
+		if (this.isLocalLicenseBypassEnabled()) {
+			await this.notifyRefreshCallbacks();
+			this.logger.debug('Skipped license reload because local license bypass is enabled');
+			return;
+		}
+
 		if (!this.manager) {
 			return;
 		}
@@ -246,6 +300,11 @@ export class License implements LicenseProvider {
 	}
 
 	async renew() {
+		if (this.isLocalLicenseBypassEnabled()) {
+			this.logger.debug('Skipping license renewal because local license bypass is enabled');
+			return;
+		}
+
 		if (!this.manager) {
 			return;
 		}
@@ -255,6 +314,11 @@ export class License implements LicenseProvider {
 	}
 
 	async clear() {
+		if (this.isLocalLicenseBypassEnabled()) {
+			this.logger.debug('Skipping license clear because local license bypass is enabled');
+			return;
+		}
+
 		if (!this.manager) {
 			return;
 		}
@@ -265,6 +329,10 @@ export class License implements LicenseProvider {
 
 	@OnShutdown()
 	async shutdown() {
+		if (this.isLocalLicenseBypassEnabled()) {
+			return;
+		}
+
 		// Shut down License manager to unclaim any floating entitlements
 		// Note: While this saves a new license cert to DB, the previous entitlements are still kept in memory so that the shutdown process can complete
 		this.isShuttingDown = true;
@@ -278,14 +346,26 @@ export class License implements LicenseProvider {
 	}
 
 	isLicensed(feature: BooleanLicenseFeature) {
+		if (this.isLocalLicenseBypassEnabled()) {
+			return true;
+		}
+
 		return this.manager?.hasFeatureEnabled(feature) ?? false;
 	}
 
 	isCertValid(): boolean {
+		if (this.isLocalLicenseBypassEnabled()) {
+			return true;
+		}
+
 		return this.manager?.isValid(false /* useLogger */) ?? false;
 	}
 
 	hasFeatureInCert(feature: BooleanLicenseFeature): boolean {
+		if (this.isLocalLicenseBypassEnabled()) {
+			return true;
+		}
+
 		return this.manager?.hasFeatureEnabled(feature, false) ?? false;
 	}
 
@@ -409,10 +489,18 @@ export class License implements LicenseProvider {
 	}
 
 	getValue<T extends keyof FeatureReturnType>(feature: T): FeatureReturnType[T] {
+		if (this.isLocalLicenseBypassEnabled()) {
+			return this.getLocalFeatureValue(feature);
+		}
+
 		return this.manager?.getFeatureValue(feature) as FeatureReturnType[T];
 	}
 
 	getManagementJwt(): string {
+		if (this.isLocalLicenseBypassEnabled()) {
+			return 'local-license-bypass-management-token';
+		}
+
 		if (!this.manager) {
 			return '';
 		}
@@ -440,6 +528,10 @@ export class License implements LicenseProvider {
 	}
 
 	getConsumerId() {
+		if (this.isLocalLicenseBypassEnabled()) {
+			return LOCAL_LICENSE_CONSUMER_ID;
+		}
+
 		return this.manager?.getConsumerId() ?? 'unknown';
 	}
 
@@ -479,10 +571,18 @@ export class License implements LicenseProvider {
 	}
 
 	getPlanName(): string {
+		if (this.isLocalLicenseBypassEnabled()) {
+			return LOCAL_LICENSE_PLAN_NAME;
+		}
+
 		return this.getValue('planName') ?? 'Community';
 	}
 
 	getExpiryDate(): Date | null {
+		if (this.isLocalLicenseBypassEnabled()) {
+			return new Date(Date.now() + 365 * Time.days.toMilliseconds);
+		}
+
 		try {
 			return this.manager?.getExpiryDate() ?? null;
 		} catch {
@@ -491,6 +591,10 @@ export class License implements LicenseProvider {
 	}
 
 	getTerminationDate(): Date | null {
+		if (this.isLocalLicenseBypassEnabled()) {
+			return null;
+		}
+
 		try {
 			return this.manager?.getTerminationDate() ?? null;
 		} catch {
@@ -529,6 +633,10 @@ export class License implements LicenseProvider {
 	}
 
 	getInfo(): string {
+		if (this.isLocalLicenseBypassEnabled()) {
+			return `${LOCAL_LICENSE_PLAN_NAME} (${LOCAL_LICENSE_BYPASS_ENV}=true)`;
+		}
+
 		if (!this.manager) {
 			return 'n/a';
 		}

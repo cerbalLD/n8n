@@ -18,11 +18,11 @@
 			{
 				"label": "Hey founders! Your business doesn't need you to operate",
 				"icon": " 🖥️",
-				"url": "https://n8n.io/blog/your-business-doesnt-need-you-to-operate/"
+				"url": "http://localhost/blog/your-business-doesnt-need-you-to-operate/"
 			},
 			{
 				"label": "7 no-code workflow automations for Amazon Web Services",
-				"url": "https://n8n.io/blog/aws-workflow-automation/"
+				"url": "http://localhost/blog/aws-workflow-automation/"
 			}
 		]
 	}

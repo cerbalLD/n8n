@@ -72,7 +72,7 @@
 		},
 		{
 			"parameters": {
-				"url": "https://n8n.io",
+				"url": "http://localhost",
 				"sendHeaders": true,
 				"headerParameters": {
 					"parameters": [
@@ -99,7 +99,7 @@
 					"parameters": [
 						{
 							"name": "url",
-							"value": "https://n8n.io"
+							"value": "http://localhost"
 						}
 					]
 				},

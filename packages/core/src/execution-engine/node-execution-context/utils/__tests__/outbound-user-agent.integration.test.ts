@@ -90,7 +90,7 @@ describe('Outbound User-Agent (httpRequest integration)', () => {
 
 	it('uses the RFC-style UA via getDefaultN8nOutboundUserAgent helper', () => {
 		expect(buildRfcStyleUserAgent('9.9.9')).toBe(
-			'Mozilla/5.0 (compatible; n8n/9.9.9; +https://n8n.io/)',
+			'Mozilla/5.0 (compatible; n8n/9.9.9; +http://localhost/)',
 		);
 
 		Container.set(HttpRequestConfig, {

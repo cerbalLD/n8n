@@ -14,12 +14,12 @@
 			{
 				"label": "How uProc scraped a multi-page website with a low-code workflow",
 				"icon": " 🕸️",
-				"url": "https://n8n.io/blog/how-uproc-scraped-a-multi-page-website-with-a-low-code-workflow/"
+				"url": "http://localhost/blog/how-uproc-scraped-a-multi-page-website-with-a-low-code-workflow/"
 			},
 			{
 				"label": "Why this Product Manager loves workflow automation with n8n",
 				"icon": "🧠",
-				"url": "https://n8n.io/blog/why-this-product-manager-loves-workflow-automation-with-n8n/"
+				"url": "http://localhost/blog/why-this-product-manager-loves-workflow-automation-with-n8n/"
 			}
 		]
 	},

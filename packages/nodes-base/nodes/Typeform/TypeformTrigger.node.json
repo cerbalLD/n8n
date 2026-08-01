@@ -18,51 +18,51 @@
 			{
 				"label": "2021: The Year to Automate the New You with n8n",
 				"icon": "☀️",
-				"url": "https://n8n.io/blog/2021-the-year-to-automate-the-new-you-with-n8n/"
+				"url": "http://localhost/blog/2021-the-year-to-automate-the-new-you-with-n8n/"
 			},
 			{
 				"label": "Supercharging your conference registration process with n8n",
 				"icon": "🎫",
-				"url": "https://n8n.io/blog/supercharging-your-conference-registration-process-with-n8n/"
+				"url": "http://localhost/blog/supercharging-your-conference-registration-process-with-n8n/"
 			},
 			{
 				"label": "How to get started with CRM automation (with 3 no-code workflow ideas",
 				"icon": "👥",
-				"url": "https://n8n.io/blog/how-to-get-started-with-crm-automation-and-no-code-workflow-ideas/"
+				"url": "http://localhost/blog/how-to-get-started-with-crm-automation-and-no-code-workflow-ideas/"
 			},
 			{
 				"label": "5 tasks you can automate with the new Notion API ",
 				"icon": "⚡️",
-				"url": "https://n8n.io/blog/5-tasks-you-can-automate-with-notion-api/"
+				"url": "http://localhost/blog/5-tasks-you-can-automate-with-notion-api/"
 			},
 			{
 				"label": "15 Google apps you can combine and automate to increase productivity",
 				"icon": "💡",
-				"url": "https://n8n.io/blog/automate-google-apps-for-productivity/"
+				"url": "http://localhost/blog/automate-google-apps-for-productivity/"
 			},
 			{
 				"label": "Building an expense tracking app in 10 minutes",
 				"icon": "📱",
-				"url": "https://n8n.io/blog/building-an-expense-tracking-app-in-10-minutes/"
+				"url": "http://localhost/blog/building-an-expense-tracking-app-in-10-minutes/"
 			},
 			{
 				"label": "5 workflow automations for Mattermost that we love at n8n",
 				"icon": "🤖",
-				"url": "https://n8n.io/blog/5-workflow-automations-for-mattermost-that-we-love-at-n8n/"
+				"url": "http://localhost/blog/5-workflow-automations-for-mattermost-that-we-love-at-n8n/"
 			},
 			{
 				"label": "Automating Conference Organization Processes with n8n",
 				"icon": "🙋‍♀️",
-				"url": "https://n8n.io/blog/automating-conference-organization-processes-with-n8n/"
+				"url": "http://localhost/blog/automating-conference-organization-processes-with-n8n/"
 			},
 			{
 				"label": "How Common Knowledge use workflow automation for activism",
 				"icon": "✨",
-				"url": "https://n8n.io/blog/automations-for-activists/"
+				"url": "http://localhost/blog/automations-for-activists/"
 			},
 			{
 				"label": "7 no-code workflow automations for Amazon Web Services",
-				"url": "https://n8n.io/blog/aws-workflow-automation/"
+				"url": "http://localhost/blog/aws-workflow-automation/"
 			}
 		]
 	},

@@ -25,7 +25,7 @@ for (let { name, path, version, private: isPrivate } of packages) {
 		...JSON.parse(await readFile(packageFile, 'utf-8')),
 		// Add these fields to all published package.json files to ensure provenance checks pass
 		license: 'SEE LICENSE IN LICENSE.md',
-		homepage: 'https://n8n.io',
+		homepage: 'http://localhost',
 		author: {
 			name: 'Jan Oberhauser',
 			email: 'jan@n8n.io',

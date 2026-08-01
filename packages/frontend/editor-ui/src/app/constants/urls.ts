@@ -31,7 +31,7 @@ export const CLOUD_CHANGE_PLAN_PAGE = window.location.host.includes('stage-app.n
  */
 export const TEMPLATES_URLS = {
 	DEFAULT_API_HOST: 'https://api.n8n.io/api/',
-	BASE_WEBSITE_URL: 'https://n8n.io/workflows/',
+	BASE_WEBSITE_URL: 'http://localhost/workflows/',
 	UTM_QUERY: {
 		utm_source: 'n8n_app',
 		utm_medium: 'template_library',

@@ -15,7 +15,7 @@
 		},
 		{
 			"parameters": {
-				"url": "=https://n8n.io/{{Date.now()}}",
+				"url": "=http://localhost/{{Date.now()}}",
 				"additionalFields": {
 					"title": "n8n-ulr with random suffix"
 				}

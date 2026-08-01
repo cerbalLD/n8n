@@ -5,7 +5,7 @@ import { join } from 'node:path';
 
 import { searchForHeader } from './utils';
 
-const N8N_PRODUCT_URL = 'https://n8n.io/';
+const N8N_PRODUCT_URL = 'http://localhost/';
 const LEGACY_USER_AGENT = 'n8n';
 
 function readN8nVersion(): string {
@@ -35,7 +35,7 @@ export function buildRfcStyleUserAgent(version: string): string {
  * Precedence:
  * 1. Legacy default `n8n` when `N8N_ENFORCE_GLOBAL_USER_AGENT` is `false` (current default).
  * 2. `N8N_GLOBAL_USER_AGENT_VALUE` when set.
- * 3. RFC-style `Mozilla/5.0 (compatible; n8n/<version>; +https://n8n.io/)` otherwise.
+ * 3. RFC-style `Mozilla/5.0 (compatible; n8n/<version>; +http://localhost/)` otherwise.
  */
 export function getDefaultN8nOutboundUserAgent(): string {
 	const { enforceGlobalUserAgent, globalUserAgentValue } = Container.get(HttpRequestConfig);

@@ -111,7 +111,7 @@ describe('License', () => {
 	});
 
 	test('attempts to activate license with eulaUri and userEmail (EULA acceptance)', async () => {
-		const eulaUri = 'https://n8n.io/legal/eula/';
+		const eulaUri = 'http://localhost/legal/eula/';
 		const userEmail = 'user@example.com';
 		await license.activate(MOCK_ACTIVATION_KEY, eulaUri, userEmail);
 

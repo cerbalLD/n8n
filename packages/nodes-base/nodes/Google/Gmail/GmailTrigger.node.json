@@ -18,37 +18,37 @@
 			{
 				"label": "Why business process automation with n8n can change your daily life",
 				"icon": "🧬",
-				"url": "https://n8n.io/blog/why-business-process-automation-with-n8n-can-change-your-daily-life/"
+				"url": "http://localhost/blog/why-business-process-automation-with-n8n-can-change-your-daily-life/"
 			},
 			{
 				"label": "Supercharging your conference registration process with n8n",
 				"icon": "🎫",
-				"url": "https://n8n.io/blog/supercharging-your-conference-registration-process-with-n8n/"
+				"url": "http://localhost/blog/supercharging-your-conference-registration-process-with-n8n/"
 			},
 			{
 				"label": "6 e-commerce workflows to power up your Shopify s",
 				"icon": "store",
-				"url": "https://n8n.io/blog/no-code-ecommerce-workflow-automations/"
+				"url": "http://localhost/blog/no-code-ecommerce-workflow-automations/"
 			},
 			{
 				"label": "How to get started with CRM automation (with 3 no-code workflow ideas",
 				"icon": "👥",
-				"url": "https://n8n.io/blog/how-to-get-started-with-crm-automation-and-no-code-workflow-ideas/"
+				"url": "http://localhost/blog/how-to-get-started-with-crm-automation-and-no-code-workflow-ideas/"
 			},
 			{
 				"label": "15 Google apps you can combine and automate to increase productivity",
 				"icon": "💡",
-				"url": "https://n8n.io/blog/automate-google-apps-for-productivity/"
+				"url": "http://localhost/blog/automate-google-apps-for-productivity/"
 			},
 			{
 				"label": "Hey founders! Your business doesn't need you to operate",
 				"icon": " 🖥️",
-				"url": "https://n8n.io/blog/your-business-doesnt-need-you-to-operate/"
+				"url": "http://localhost/blog/your-business-doesnt-need-you-to-operate/"
 			},
 			{
 				"label": "Using Automation to Boost Productivity in the Workplace",
 				"icon": "💪",
-				"url": "https://n8n.io/blog/using-automation-to-boost-productivity-in-the-workplace/"
+				"url": "http://localhost/blog/using-automation-to-boost-productivity-in-the-workplace/"
 			}
 		]
 	}

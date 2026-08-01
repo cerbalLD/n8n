@@ -116,7 +116,7 @@ export const scanFields: INodeProperties[] = [
 		name: 'url',
 		type: 'string',
 		default: '',
-		placeholder: 'https://n8n.io',
+		placeholder: 'http://localhost',
 		description: 'URL to scan',
 		displayOptions: {
 			show: {
@@ -158,7 +158,7 @@ export const scanFields: INodeProperties[] = [
 				name: 'referer',
 				description: 'HTTP referer to set for this scan',
 				type: 'string',
-				placeholder: 'https://n8n.io',
+				placeholder: 'http://localhost',
 				default: '',
 			},
 			{

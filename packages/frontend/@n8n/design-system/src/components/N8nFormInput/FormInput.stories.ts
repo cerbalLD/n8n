@@ -190,5 +190,5 @@ FramedForm.args = {
 	],
 	buttonText: 'Action',
 	redirectText: 'Go somewhere',
-	redirectLink: 'https://n8n.io',
+	redirectLink: 'http://localhost',
 };

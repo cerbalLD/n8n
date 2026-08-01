@@ -22,7 +22,7 @@ export async function openThesaurusApiRequest(
 	try {
 		let options = {
 			headers: {
-				'User-Agent': 'https://n8n.io',
+				'User-Agent': 'http://localhost',
 			},
 			method,
 			qs,

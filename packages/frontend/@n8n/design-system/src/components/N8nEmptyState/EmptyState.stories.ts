@@ -126,7 +126,7 @@ const WithAdditionalContentTemplate: StoryFn = (args, { argTypes }) => ({
 					<N8nText color="text-base">
 						Read more on
 					</N8nText>
-					<N8nLink class="ml-4xs" href="https://n8n.io" target="_blank">our docs</N8nLink>
+					<N8nLink class="ml-4xs" href="http://localhost" target="_blank">our docs</N8nLink>
 			</template>
 		</n8n-empty-state>
 	`,

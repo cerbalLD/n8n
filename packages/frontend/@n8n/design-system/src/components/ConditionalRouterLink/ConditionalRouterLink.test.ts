@@ -43,7 +43,7 @@ describe('CondtionalRouterLink', () => {
 	it("renders <a> when 'href' attr is passed", () => {
 		const wrapper = render(CondtionalRouterLink, {
 			attrs: {
-				href: 'https://n8n.io',
+				href: 'http://localhost',
 				target: '_blank',
 			},
 			slots,

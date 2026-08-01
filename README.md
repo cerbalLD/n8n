@@ -13,7 +13,7 @@ Fair-code platform to build and deploy AI agents and workflows. Combine a visual
 - **From Prototype to Production**: Design multi-step AI workflows with logic, tool use, human approvals, and full observability
 - **Code When You Need It**: Combine visual building with JavaScript, Python, and npm packages for advanced AI workflows
 - **Enterprise-Ready AI**: Self-host or deploy securely with role-based access, audit trails, and support for sensitive data
-- **Leverage What Already Exists**: 1500+ integrations and 9,000+ workflow [templates](https://n8n.io/workflows) to connect AI with your existing systems
+- **Leverage What Already Exists**: 1500+ integrations and 9,000+ workflow [templates](http://localhost/workflows) to connect AI with your existing systems
 
 ## Quick Start
 
@@ -35,8 +35,8 @@ Access the editor at http://localhost:5678
 ## Resources
 
 - 📚 [Documentation](https://docs.n8n.io)
-- 🔧 [1500+ Integrations](https://n8n.io/integrations)
-- 💡 [Example Workflows](https://n8n.io/workflows)
+- 🔧 [1500+ Integrations](http://localhost/integrations)
+- 💡 [Example Workflows](http://localhost/workflows)
 - 🤖 [AI & LangChain Guide](https://docs.n8n.io/advanced-ai/)
 - 👥 [Community Forum](https://community.n8n.io)
 - 📖 [Community Tutorials](https://community.n8n.io/c/tutorials/28)
@@ -64,7 +64,7 @@ Found a bug 🐛 or have a feature idea ✨? Check our [Contributing Guide](http
 
 ## Join the Team
 
-Want to shape the future of automation? Check out our [job posts](https://n8n.io/careers) and join our team!
+Want to shape the future of automation? Check out our [job posts](http://localhost/careers) and join our team!
 
 ## What does n8n mean?
 

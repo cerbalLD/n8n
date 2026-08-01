@@ -10,7 +10,7 @@ vi.mock('@n8n/composables/useTelemetry', () => ({
 	useTelemetry: () => ({ track: telemetryTrack }),
 }));
 
-const websiteTemplateRepositoryURL = 'https://n8n.io/workflows?utm_instance=test';
+const websiteTemplateRepositoryURL = 'http://localhost/workflows?utm_instance=test';
 vi.mock('@/features/workflows/templates/templates.store', () => ({
 	useTemplatesStore: () => ({ websiteTemplateRepositoryURL }),
 }));

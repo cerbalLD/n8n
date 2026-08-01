@@ -19,8 +19,8 @@
 				"service": "n8n",
 				"externalid": "={{Date.now()}}",
 				"name": "=Name{{Date.now()}}",
-				"logoUrl": "https://n8n.io/_nuxt/img/df5be1c.png",
-				"linkUrl": "https://n8n.io/"
+				"logoUrl": "http://localhost/_nuxt/img/df5be1c.png",
+				"linkUrl": "http://localhost/"
 			},
 			"name": "ActiveCampaign",
 			"type": "n8n-nodes-base.activeCampaign",

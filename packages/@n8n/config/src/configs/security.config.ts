@@ -141,7 +141,7 @@ export class SecurityConfig {
 	 * existing embedding behavior. Set this to restrict which parent pages may drive the
 	 * embedded editor.
 	 *
-	 * @example N8N_POSTMESSAGE_ALLOWED_ORIGINS=https://n8n.io,https://app.example.com
+	 * @example N8N_POSTMESSAGE_ALLOWED_ORIGINS=http://localhost,https://app.example.com
 	 */
 	@Env('N8N_POSTMESSAGE_ALLOWED_ORIGINS')
 	postMessageAllowedOrigins: string = '';

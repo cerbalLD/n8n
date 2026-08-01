@@ -189,7 +189,7 @@ describe('Form Node', () => {
 				],
 				formSubmittedText: 'Your response has been recorded',
 				formTitle: 'Form Title',
-				n8nWebsiteLink: 'https://n8n.io/?utm_source=n8n-internal&utm_medium=form-trigger',
+				n8nWebsiteLink: 'http://localhost/?utm_source=n8n-internal&utm_medium=form-trigger',
 				testRun: true,
 				useResponseData: true,
 				formSubmittedHeader: undefined,
@@ -911,7 +911,7 @@ describe('Form Node', () => {
 				if (paramName === 'respondWith') return 'text';
 				if (paramName === 'completionTitle') return 'Test Title';
 				if (paramName === 'completionMessage') return 'Test Message';
-				if (paramName === 'redirectUrl') return 'https://n8n.io';
+				if (paramName === 'redirectUrl') return 'http://localhost';
 				if (paramName === 'formFields.values') return [];
 				if (paramName === 'responseText') return '';
 
@@ -945,7 +945,7 @@ describe('Form Node', () => {
 				appendAttribution: 'test',
 				formTitle: 'test',
 				message: 'Test Message',
-				redirectUrl: 'https://n8n.io',
+				redirectUrl: 'http://localhost',
 				responseText: '',
 				title: 'Test Title',
 				responseBinary: encodeURIComponent(JSON.stringify([])),

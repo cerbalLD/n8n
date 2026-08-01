@@ -24,7 +24,7 @@ export const addCommentLink = {
 	query: query.addIssueLink(),
 	variables: {
 		issueId: 'test-17',
-		url: 'https://n8n.io',
+		url: 'http://localhost',
 	},
 };
 

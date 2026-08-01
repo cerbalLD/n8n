@@ -157,12 +157,12 @@ export const Link: Story = {
 		template: `
 		<div style="display: grid; place-items: center;">
 			<div style="display: flex; gap: 12px; align-items: center;">
-				<N8nButton variant="solid" size="medium" href="https://n8n.io">Link</N8nButton>
-				<N8nButton variant="subtle" size="medium" href="https://n8n.io">Link</N8nButton>
-				<N8nButton variant="outline" size="medium" href="https://n8n.io">Link</N8nButton>
-				<N8nButton variant="ghost" size="medium" href="https://n8n.io">Link</N8nButton>
-				<N8nButton variant="destructive" size="medium" href="https://n8n.io">Link</N8nButton>
-				<N8nButton variant="success" size="medium" href="https://n8n.io">Link</N8nButton>
+				<N8nButton variant="solid" size="medium" href="http://localhost">Link</N8nButton>
+				<N8nButton variant="subtle" size="medium" href="http://localhost">Link</N8nButton>
+				<N8nButton variant="outline" size="medium" href="http://localhost">Link</N8nButton>
+				<N8nButton variant="ghost" size="medium" href="http://localhost">Link</N8nButton>
+				<N8nButton variant="destructive" size="medium" href="http://localhost">Link</N8nButton>
+				<N8nButton variant="success" size="medium" href="http://localhost">Link</N8nButton>
 			</div>
 		</div>
 		`,

@@ -18,17 +18,17 @@
 			{
 				"label": "6 e-commerce workflows to power up your Shopify s",
 				"icon": "store",
-				"url": "https://n8n.io/blog/no-code-ecommerce-workflow-automations/"
+				"url": "http://localhost/blog/no-code-ecommerce-workflow-automations/"
 			},
 			{
 				"label": "Automate your data processing pipeline in 9 steps",
 				"icon": "⚙️",
-				"url": "https://n8n.io/blog/automate-your-data-processing-pipeline-in-9-steps-with-n8n/"
+				"url": "http://localhost/blog/automate-your-data-processing-pipeline-in-9-steps-with-n8n/"
 			},
 			{
 				"label": "5 workflow automations for Mattermost that we love at n8n",
 				"icon": "🤖",
-				"url": "https://n8n.io/blog/5-workflow-automations-for-mattermost-that-we-love-at-n8n/"
+				"url": "http://localhost/blog/5-workflow-automations-for-mattermost-that-we-love-at-n8n/"
 			}
 		]
 	},

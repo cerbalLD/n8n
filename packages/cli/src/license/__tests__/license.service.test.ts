@@ -79,19 +79,19 @@ describe('LicenseService', () => {
 			license.activate.mockResolvedValueOnce();
 			await licenseService.activateLicense(
 				'activation-key',
-				'https://n8n.io/legal/eula/',
+				'http://localhost/legal/eula/',
 				'user@example.com',
 			);
 			expect(license.activate).toHaveBeenCalledWith(
 				'activation-key',
-				'https://n8n.io/legal/eula/',
+				'http://localhost/legal/eula/',
 				'user@example.com',
 			);
 		});
 
 		it('should throw LicenseEulaRequiredError when EULA_REQUIRED error occurs', async () => {
 			const eulaError = new LicenseError('EULA_REQUIRED');
-			(eulaError as any).info = { eula: { uri: 'https://n8n.io/legal/eula/' } };
+			(eulaError as any).info = { eula: { uri: 'http://localhost/legal/eula/' } };
 			license.activate.mockRejectedValueOnce(eulaError);
 
 			await expect(licenseService.activateLicense('activation-key')).rejects.toThrow(

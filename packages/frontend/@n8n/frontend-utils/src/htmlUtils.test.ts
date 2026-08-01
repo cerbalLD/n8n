@@ -15,7 +15,7 @@ describe('sanitizeHtml', () => {
 	});
 
 	test('should remove disallowed img tag', () => {
-		const dirtyHtml = '<img src="https://n8n.io/logo.png">';
+		const dirtyHtml = '<img src="http://localhost/logo.png">';
 		const result = sanitizeHtml(dirtyHtml);
 		expect(result).toBe('');
 	});

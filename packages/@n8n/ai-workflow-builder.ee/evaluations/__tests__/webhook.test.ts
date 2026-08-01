@@ -318,7 +318,7 @@ describe('webhook utilities', () => {
 				expect(() => validateWebhookUrl('https://hooks.slack.com/services/xxx')).not.toThrow();
 				expect(() => validateWebhookUrl('https://api.github.com/webhooks')).not.toThrow();
 				expect(() => validateWebhookUrl('https://webhook.site/unique-id')).not.toThrow();
-				expect(() => validateWebhookUrl('https://n8n.io/webhook/abc123')).not.toThrow();
+				expect(() => validateWebhookUrl('http://localhost/webhook/abc123')).not.toThrow();
 			});
 
 			it('accepts URLs with paths, query params, and ports', () => {

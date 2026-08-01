@@ -148,7 +148,7 @@ describe('convertChunk — tool-call invalid/error handling', () => {
 describe('convertChunk — tool-result output passthrough', () => {
 	it('passes a raw array output through verbatim (e.g. native web search results)', () => {
 		const output = [
-			{ title: 'n8n', url: 'https://n8n.io' },
+			{ title: 'n8n', url: 'http://localhost' },
 			{ title: 'Docs', url: 'https://docs.n8n.io' },
 		];
 		const chunk = {

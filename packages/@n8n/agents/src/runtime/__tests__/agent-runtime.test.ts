@@ -3111,7 +3111,7 @@ describe('AgentRuntime.stream() — provider-executed tool timing', () => {
 				toolCallId: 'tc-ws',
 				toolName: 'web_search',
 				input: { query: 'n8n' },
-				output: [{ url: 'https://n8n.io' }],
+				output: [{ url: 'http://localhost' }],
 			}),
 		);
 		const { runtime } = createRuntime();

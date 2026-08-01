@@ -74,7 +74,7 @@
 			"parameters": {
 				"group": "internet",
 				"tool": "getDomainByUrl",
-				"url": "https://n8n.io",
+				"url": "http://localhost",
 				"additionalOptions": {}
 			},
 			"name": "uProc4",
@@ -206,7 +206,7 @@
 			"parameters": {
 				"group": "internet",
 				"tool": "getUrlPdf",
-				"url": "https://n8n.io",
+				"url": "http://localhost",
 				"additionalOptions": {}
 			},
 			"name": "uProc11",
@@ -324,7 +324,7 @@
 				"group": "internet",
 				"tool": "getUrlShareableLinks",
 				"text": "n8n rocks!",
-				"url": "https://n8n.io/",
+				"url": "http://localhost/",
 				"additionalOptions": {}
 			},
 			"name": "uProc17",
@@ -362,7 +362,7 @@
 			"parameters": {
 				"group": "internet",
 				"tool": "getUrlTechnologies",
-				"url": "https://n8n.io",
+				"url": "http://localhost",
 				"additionalOptions": {}
 			},
 			"name": "uProc19",
@@ -438,7 +438,7 @@
 			"parameters": {
 				"group": "internet",
 				"tool": "getFileCopiedBetweenUrls",
-				"source": "https://n8n.io/_nuxt/img/df5be1c.png",
+				"source": "http://localhost/_nuxt/img/df5be1c.png",
 				"destination": "test",
 				"additionalOptions": {}
 			},
@@ -458,7 +458,7 @@
 			"parameters": {
 				"group": "internet",
 				"tool": "getUrlAnalysis",
-				"url": "https://n8n.io",
+				"url": "http://localhost",
 				"additionalOptions": {}
 			},
 			"name": "uProc24",
@@ -516,7 +516,7 @@
 			"parameters": {
 				"group": "internet",
 				"tool": "getUrlContents",
-				"url": "https://n8n.io",
+				"url": "http://localhost",
 				"selector": "h1",
 				"additionalOptions": {}
 			},
@@ -536,7 +536,7 @@
 			"parameters": {
 				"group": "internet",
 				"tool": "getUrlContentsParsed",
-				"url": "https://n8n.io",
+				"url": "http://localhost",
 				"additionalOptions": {}
 			},
 			"name": "uProc28",
@@ -555,7 +555,7 @@
 			"parameters": {
 				"group": "internet",
 				"tool": "getUrlDecode",
-				"url": "https://n8n.io",
+				"url": "http://localhost",
 				"additionalOptions": {}
 			},
 			"name": "uProc29",
@@ -574,7 +574,7 @@
 			"parameters": {
 				"group": "internet",
 				"tool": "getUrlEncode",
-				"url": "https://n8n.io",
+				"url": "http://localhost",
 				"additionalOptions": {}
 			},
 			"name": "uProc30",
@@ -593,7 +593,7 @@
 			"parameters": {
 				"group": "internet",
 				"tool": "checkUrlExist",
-				"url": "https://n8n.io",
+				"url": "http://localhost",
 				"additionalOptions": {}
 			},
 			"name": "uProc31",
@@ -631,7 +631,7 @@
 			"parameters": {
 				"group": "internet",
 				"tool": "checkNetHostAlive",
-				"host": "https://n8n.io",
+				"host": "http://localhost",
 				"additionalOptions": {}
 			},
 			"name": "uProc33",
@@ -650,7 +650,7 @@
 			"parameters": {
 				"group": "internet",
 				"tool": "getUrlListContentsParsed",
-				"url": "https://n8n.io",
+				"url": "http://localhost",
 				"additionalOptions": {}
 			},
 			"name": "uProc34",
@@ -688,7 +688,7 @@
 			"parameters": {
 				"group": "internet",
 				"tool": "getUrlParsed",
-				"url": "https://n8n.io",
+				"url": "http://localhost",
 				"additionalOptions": {}
 			},
 			"name": "uProc36",
@@ -707,7 +707,7 @@
 			"parameters": {
 				"group": "internet",
 				"tool": "getNetScan",
-				"host": "https://n8n.io",
+				"host": "http://localhost",
 				"additionalOptions": {}
 			},
 			"name": "uProc37",
@@ -726,7 +726,7 @@
 			"parameters": {
 				"group": "internet",
 				"tool": "checkNetServiceUp",
-				"host": "https://n8n.io",
+				"host": "http://localhost",
 				"port": "80",
 				"additionalOptions": {}
 			},
@@ -746,7 +746,7 @@
 			"parameters": {
 				"group": "internet",
 				"tool": "getUrlTables",
-				"url": "https://n8n.io",
+				"url": "http://localhost",
 				"table": "3",
 				"additionalOptions": {}
 			},
@@ -766,7 +766,7 @@
 			"parameters": {
 				"group": "internet",
 				"tool": "checkUrlValid",
-				"url": "https://n8n.io",
+				"url": "http://localhost",
 				"additionalOptions": {}
 			},
 			"name": "uProc40",

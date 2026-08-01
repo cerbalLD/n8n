@@ -1103,7 +1103,7 @@ export class OauthService {
 			grant_types,
 			response_types: ['code'],
 			client_name: 'n8n',
-			client_uri: 'https://n8n.io/',
+			client_uri: 'http://localhost/',
 			scope,
 			...(oauthCredentials.jweEnabled === true
 				? await this.oauthJweServiceProxy.getDcrJweFields(oauthCredentials.inlineJwks === true)

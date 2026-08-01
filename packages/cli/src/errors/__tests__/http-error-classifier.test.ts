@@ -61,7 +61,7 @@ describe('classifyHttpError', () => {
 	});
 
 	it('includes meta for LicenseEulaRequiredError', () => {
-		const eulaUrl = 'https://n8n.io/legal/eula/';
+		const eulaUrl = 'http://localhost/legal/eula/';
 		const d = classifyHttpError(
 			new LicenseEulaRequiredError('License activation requires EULA acceptance', {
 				eulaUrl,

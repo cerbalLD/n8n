@@ -69,7 +69,7 @@
 			"parameters": {
 				"operation": "addLink",
 				"issueId": "test-17",
-				"link": "https://n8n.io"
+				"link": "http://localhost"
 			},
 			"type": "n8n-nodes-base.linear",
 			"typeVersion": 1,

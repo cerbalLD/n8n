@@ -4,7 +4,7 @@ x-enable-proxy: false
 info:
   title: n8n Public API
   description: n8n Public API
-  termsOfService: https://n8n.io/legal/#terms
+  termsOfService: http://localhost/legal/#terms
   contact:
     email: hello@n8n.io
   license:

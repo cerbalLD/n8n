@@ -1,7 +1,7 @@
 import { test, expect } from '../../../../fixtures/base';
 
 const INVALID_NAMES = [
-	'https://n8n.io',
+	'http://localhost',
 	'http://n8n.io',
 	'www.n8n.io',
 	'n8n.io',

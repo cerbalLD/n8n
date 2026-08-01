@@ -754,9 +754,11 @@ describe('Resolution-based completions', () => {
 			);
 		});
 
-		test('should recommend extractDomain(), extractUrlPath() for: {{ "https://n8n.io/pricing".| }}', async () => {
-			vi.spyOn(workflowHelpers, 'resolveParameter').mockResolvedValueOnce('https://n8n.io/pricing');
-			const options = await completions('{{ "https://n8n.io/pricing".| }}');
+		test('should recommend extractDomain(), extractUrlPath() for: {{ "http://localhost/pricing".| }}', async () => {
+			vi.spyOn(workflowHelpers, 'resolveParameter').mockResolvedValueOnce(
+				'http://localhost/pricing',
+			);
+			const options = await completions('{{ "http://localhost/pricing".| }}');
 			expect(options?.[0]).toEqual(
 				expect.objectContaining({ label: 'extractDomain()', section: RECOMMENDED_SECTION }),
 			);

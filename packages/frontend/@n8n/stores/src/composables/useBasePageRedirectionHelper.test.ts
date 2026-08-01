@@ -75,7 +75,7 @@ describe('useBasePageRedirectionHelper', () => {
 		[
 			'default',
 			ROLE.Owner,
-			'https://n8n.io/pricing?utm_campaign=upgrade-api&source=advanced-permissions',
+			'http://localhost/pricing?utm_campaign=upgrade-api&source=advanced-permissions',
 		],
 		[
 			'cloud',
@@ -87,7 +87,7 @@ describe('useBasePageRedirectionHelper', () => {
 		[
 			'cloud',
 			ROLE.Member,
-			'https://n8n.io/pricing?utm_campaign=upgrade-api&source=advanced-permissions',
+			'http://localhost/pricing?utm_campaign=upgrade-api&source=advanced-permissions',
 		],
 	])(
 		'"goToUpgrade" should generate the correct URL for "%s" deployment and user role "%s"',

@@ -124,7 +124,7 @@
 				"resource": "bookmark",
 				"operation": "create",
 				"collectionId": "={{$node[\"Raindrop1\"].json[\"_id\"]}}",
-				"link": "https://n8n.io/",
+				"link": "http://localhost/",
 				"additionalFields": {
 					"tags": "n8n,automation,worfklow,test",
 					"title": "=Bookmark{{Date.now()}}"

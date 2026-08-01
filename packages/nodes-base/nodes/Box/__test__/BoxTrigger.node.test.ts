@@ -22,7 +22,7 @@ describe('Box Trigger Webhook Lifecycle', () => {
 		vi.resetAllMocks();
 		Object.keys(mockStaticData).forEach((key) => delete mockStaticData[key]);
 		mockHookFunctions.getWorkflowStaticData.mockReturnValue(mockStaticData);
-		mockHookFunctions.getNodeWebhookUrl.mockReturnValue('https://n8n.io/webhook/box-test');
+		mockHookFunctions.getNodeWebhookUrl.mockReturnValue('http://localhost/webhook/box-test');
 		mockHookFunctions.getNodeParameter.mockImplementation((parameterName: string) => {
 			switch (parameterName) {
 				case 'events':
@@ -77,7 +77,7 @@ describe('Box Trigger Webhook Lifecycle', () => {
 				// Full details only for webhook_456 — webhook_123 is pre-filtered out
 				.mockResolvedValueOnce({
 					id: 'webhook_456',
-					address: 'https://n8n.io/webhook/box-test',
+					address: 'http://localhost/webhook/box-test',
 					target: { id: '12345', type: 'file' },
 					triggers: ['FILE.UPLOADED'],
 				});
@@ -96,7 +96,7 @@ describe('Box Trigger Webhook Lifecycle', () => {
 				})
 				.mockResolvedValueOnce({
 					id: 'webhook_456',
-					address: 'https://n8n.io/webhook/box-test',
+					address: 'http://localhost/webhook/box-test',
 					target: { id: '12345', type: 'file' },
 					triggers: ['FILE.DOWNLOADED'], // missing FILE.UPLOADED
 				});
@@ -117,7 +117,7 @@ describe('Box Trigger Webhook Lifecycle', () => {
 				})
 				.mockResolvedValueOnce({
 					id: 'webhook_456',
-					address: 'https://n8n.io/webhook/box-test',
+					address: 'http://localhost/webhook/box-test',
 					target: { id: '12345', type: 'folder' }, // wrong type
 					triggers: ['FILE.UPLOADED'],
 				});
@@ -146,7 +146,7 @@ describe('Box Trigger Webhook Lifecycle', () => {
 				// Full details only for webhook_456 — webhook_123 is pre-filtered out
 				.mockResolvedValueOnce({
 					id: 'webhook_456',
-					address: 'https://n8n.io/webhook/box-test',
+					address: 'http://localhost/webhook/box-test',
 					target: { id: '12345', type: 'file' },
 					triggers: ['FILE.UPLOADED'],
 				});
@@ -178,7 +178,7 @@ describe('Box Trigger Webhook Lifecycle', () => {
 				// Only one full GET expected — for webhook_456 (wrong_target is skipped)
 				.mockResolvedValueOnce({
 					id: 'webhook_456',
-					address: 'https://n8n.io/webhook/box-test',
+					address: 'http://localhost/webhook/box-test',
 					target: { id: '12345', type: 'file' },
 					triggers: ['FILE.UPLOADED'],
 				});
@@ -209,7 +209,7 @@ describe('Box Trigger Webhook Lifecycle', () => {
 				})
 				.mockResolvedValueOnce({
 					id: 'webhook_456',
-					address: 'https://n8n.io/webhook/box-test',
+					address: 'http://localhost/webhook/box-test',
 					target: { id: '12345', type: 'file' },
 					triggers: ['FILE.UPLOADED', 'FILE.DOWNLOADED'], // superset — should still match
 				});
@@ -237,7 +237,7 @@ describe('Box Trigger Webhook Lifecycle', () => {
 					method: 'POST',
 					uri: 'https://api.box.com/2.0/webhooks',
 					body: {
-						address: 'https://n8n.io/webhook/box-test',
+						address: 'http://localhost/webhook/box-test',
 						triggers: ['FILE.UPLOADED'],
 						target: { id: '12345', type: 'file' },
 					},

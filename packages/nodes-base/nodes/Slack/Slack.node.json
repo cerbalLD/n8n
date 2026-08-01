@@ -22,37 +22,37 @@
 			{
 				"label": "6 e-commerce workflows to power up your Shopify s",
 				"icon": "store",
-				"url": "https://n8n.io/blog/no-code-ecommerce-workflow-automations/"
+				"url": "http://localhost/blog/no-code-ecommerce-workflow-automations/"
 			},
 			{
 				"label": "Automate your data processing pipeline in 9 steps",
 				"icon": "⚙️",
-				"url": "https://n8n.io/blog/automate-your-data-processing-pipeline-in-9-steps-with-n8n/"
+				"url": "http://localhost/blog/automate-your-data-processing-pipeline-in-9-steps-with-n8n/"
 			},
 			{
 				"label": "How to get started with CRM automation (with 3 no-code workflow ideas",
 				"icon": "👥",
-				"url": "https://n8n.io/blog/how-to-get-started-with-crm-automation-and-no-code-workflow-ideas/"
+				"url": "http://localhost/blog/how-to-get-started-with-crm-automation-and-no-code-workflow-ideas/"
 			},
 			{
 				"label": "5 tasks you can automate with the new Notion API ",
 				"icon": "⚡️",
-				"url": "https://n8n.io/blog/5-tasks-you-can-automate-with-notion-api/"
+				"url": "http://localhost/blog/5-tasks-you-can-automate-with-notion-api/"
 			},
 			{
 				"label": "Build your own virtual assistant with n8n: A step by step guide",
 				"icon": "👦",
-				"url": "https://n8n.io/blog/build-your-own-virtual-assistant-with-n8n-a-step-by-step-guide/"
+				"url": "http://localhost/blog/build-your-own-virtual-assistant-with-n8n-a-step-by-step-guide/"
 			},
 			{
 				"label": "How to automatically give kudos to contributors with GitHub, Slack, and n8n",
 				"icon": "👏",
-				"url": "https://n8n.io/blog/how-to-automatically-give-kudos-to-contributors-with-github-slack-and-n8n/"
+				"url": "http://localhost/blog/how-to-automatically-give-kudos-to-contributors-with-github-slack-and-n8n/"
 			},
 			{
 				"label": "How Common Knowledge use workflow automation for activism",
 				"icon": "✨",
-				"url": "https://n8n.io/blog/automations-for-activists/"
+				"url": "http://localhost/blog/automations-for-activists/"
 			}
 		]
 	}

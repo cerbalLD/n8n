@@ -34,7 +34,7 @@ const gfmMarkdown = `# GFM coverage
 
 ## Formatting
 
-This includes ~~strikethrough~~, [links](https://n8n.io), inline \`code\`, and fenced code blocks.
+This includes ~~strikethrough~~, [links](http://localhost), inline \`code\`, and fenced code blocks.
 
 \`\`\`ts
 const value = editor.getMarkdown();

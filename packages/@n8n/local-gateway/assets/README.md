@@ -3,8 +3,8 @@
 ## Tray Icons
 
 Tray icons are derived from the official n8n brand guidelines:
-- Dark logo: https://n8n.io/brandguidelines/logo-dark.svg
-- White logo: https://n8n.io/brandguidelines/logo-white.svg
+- Dark logo: http://localhost/brandguidelines/logo-dark.svg
+- White logo: http://localhost/brandguidelines/logo-white.svg
 
 ### Status-to-icon mapping
 

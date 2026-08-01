@@ -377,7 +377,7 @@ describe('Send and Wait utils tests', () => {
 				formDescriptionMetadata: 'Test message',
 				formSubmittedHeader: 'Got it, thanks',
 				formSubmittedText: 'This page can be closed now',
-				n8nWebsiteLink: 'https://n8n.io/?utm_source=n8n-internal&utm_medium=form-trigger',
+				n8nWebsiteLink: 'http://localhost/?utm_source=n8n-internal&utm_medium=form-trigger',
 				formFields: [
 					{
 						id: 'field-0',
@@ -465,7 +465,7 @@ describe('Send and Wait utils tests', () => {
 				formDescriptionMetadata: 'Test description',
 				formSubmittedHeader: 'Got it, thanks',
 				formSubmittedText: 'This page can be closed now',
-				n8nWebsiteLink: 'https://n8n.io/?utm_source=n8n-internal&utm_medium=form-trigger',
+				n8nWebsiteLink: 'http://localhost/?utm_source=n8n-internal&utm_medium=form-trigger',
 				formFields: [
 					{
 						id: 'field-0',

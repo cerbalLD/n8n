@@ -43,7 +43,7 @@ export const sendMessageResponse = {
 				offset: 44,
 				length: 3,
 				type: 'text_link',
-				url: 'https://n8n.io/?utm_source=n8n-internal&utm_medium=powered_by&utm_campaign=n8n-nodes-base.telegram_8c8c5237b8e37b006a7adce87f4369350c58e41f3ca9de16196d3197f69eabcd',
+				url: 'http://localhost/?utm_source=n8n-internal&utm_medium=powered_by&utm_campaign=n8n-nodes-base.telegram_8c8c5237b8e37b006a7adce87f4369350c58e41f3ca9de16196d3197f69eabcd',
 			},
 		],
 		link_preview_options: {
@@ -146,7 +146,7 @@ export const sendLocationMessageResponse = {
 					offset: 44,
 					length: 3,
 					type: 'text_link',
-					url: 'https://n8n.io/?utm_source=n8n-internal&utm_medium=powered_by&utm_campaign=n8n-nodes-base.telegram_8c8c5237b8e37b006a7adce87f4369350c58e41f3ca9de16196d3197f69eabcd',
+					url: 'http://localhost/?utm_source=n8n-internal&utm_medium=powered_by&utm_campaign=n8n-nodes-base.telegram_8c8c5237b8e37b006a7adce87f4369350c58e41f3ca9de16196d3197f69eabcd',
 				},
 			],
 			link_preview_options: {
@@ -236,7 +236,7 @@ export const editMessageTextResponse = {
 					},
 					{
 						text: 'n8n',
-						url: 'https://n8n.io/',
+						url: 'http://localhost/',
 					},
 				],
 			],

@@ -257,7 +257,7 @@
 				"resource": "post",
 				"workspaceId": "543",
 				"memberId": "={{$node[\"Orbit4\"].json[\"id\"]}}",
-				"url": "=https://n8n.io/blog/why-i-chose-n8n-over-zapier-in-2020?test_timestamp={{Date.now()}}",
+				"url": "=http://localhost/blog/why-i-chose-n8n-over-zapier-in-2020?test_timestamp={{Date.now()}}",
 				"additionalFields": {}
 			},
 			"name": "Orbit11",

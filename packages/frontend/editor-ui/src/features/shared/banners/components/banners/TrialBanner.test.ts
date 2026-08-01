@@ -164,7 +164,7 @@ describe('TrialBanner', () => {
 			bannerConfig: {
 				cta: {
 					text: 'Learn More',
-					href: 'https://n8n.io/pricing',
+					href: 'http://localhost/pricing',
 				},
 			},
 		} as never;
@@ -173,7 +173,7 @@ describe('TrialBanner', () => {
 		const button = getByText('Learn More');
 		button.click();
 
-		expect(windowOpenSpy).toHaveBeenCalledWith('https://n8n.io/pricing', '_blank');
+		expect(windowOpenSpy).toHaveBeenCalledWith('http://localhost/pricing', '_blank');
 		windowOpenSpy.mockRestore();
 	});
 

@@ -1,6 +1,6 @@
 import type { WorkflowMetadata } from '@/types';
 
-// template for test: https://n8n.io/workflows/8237-personal-life-manager-with-telegram-google-services-and-voice-enabled-ai/
+// template for test: http://localhost/workflows/8237-personal-life-manager-with-telegram-google-services-and-voice-enabled-ai/
 
 export const aiAssistantWorkflow: WorkflowMetadata = {
 	templateId: 8237,

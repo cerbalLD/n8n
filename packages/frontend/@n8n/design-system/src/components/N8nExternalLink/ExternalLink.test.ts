@@ -9,7 +9,7 @@ describe('components', () => {
 		it('should render correctly with href', () => {
 			const wrapper = render(N8nExternalLink, {
 				props: {
-					href: 'https://n8n.io',
+					href: 'http://localhost',
 				},
 				global: {
 					stubs,
@@ -30,7 +30,7 @@ describe('components', () => {
 
 		it('should render correctly with slot content', () => {
 			const wrapper = render(N8nExternalLink, {
-				props: { href: 'https://n8n.io' },
+				props: { href: 'http://localhost' },
 				slots: { default: 'Visit n8n' },
 				global: {
 					stubs,
@@ -55,7 +55,7 @@ describe('components', () => {
 			describe('newWindow', () => {
 				it('should open in new window by default', () => {
 					const wrapper = render(N8nExternalLink, {
-						props: { href: 'https://n8n.io' },
+						props: { href: 'http://localhost' },
 						global: { stubs },
 					});
 					const link = wrapper.getByRole('link');
@@ -66,7 +66,7 @@ describe('components', () => {
 				it('should not open in new window when newWindow is false', () => {
 					const wrapper = render(N8nExternalLink, {
 						props: {
-							href: 'https://n8n.io',
+							href: 'http://localhost',
 							newWindow: false,
 						},
 						global: { stubs },
@@ -81,7 +81,7 @@ describe('components', () => {
 				it('should pass size prop to icon', () => {
 					const wrapper = render(N8nExternalLink, {
 						props: {
-							href: 'https://n8n.io',
+							href: 'http://localhost',
 							size: 'large',
 						},
 						global: { stubs },
@@ -95,7 +95,7 @@ describe('components', () => {
 		describe('element type', () => {
 			it('should render as anchor when href is provided', () => {
 				const wrapper = render(N8nExternalLink, {
-					props: { href: 'https://n8n.io' },
+					props: { href: 'http://localhost' },
 					global: { stubs },
 				});
 				const element = wrapper.getByRole('link');
@@ -115,7 +115,7 @@ describe('components', () => {
 		describe('slot content', () => {
 			it('should display slot content before icon', () => {
 				const wrapper = render(N8nExternalLink, {
-					props: { href: 'https://n8n.io' },
+					props: { href: 'http://localhost' },
 					slots: { default: 'Visit n8n' },
 					global: { stubs },
 				});
@@ -127,7 +127,7 @@ describe('components', () => {
 		describe('styling', () => {
 			it('should have base text color initially', () => {
 				const wrapper = render(N8nExternalLink, {
-					props: { href: 'https://n8n.io' },
+					props: { href: 'http://localhost' },
 					global: { stubs },
 				});
 				const link = wrapper.getByRole('link');

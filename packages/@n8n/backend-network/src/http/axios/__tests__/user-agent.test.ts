@@ -15,7 +15,7 @@ describe('outbound-user-agent', () => {
 	describe('buildRfcStyleUserAgent', () => {
 		it('formats a conventional product token', () => {
 			expect(buildRfcStyleUserAgent('1.2.3')).toBe(
-				'Mozilla/5.0 (compatible; n8n/1.2.3; +https://n8n.io/)',
+				'Mozilla/5.0 (compatible; n8n/1.2.3; +http://localhost/)',
 			);
 		});
 	});
@@ -82,7 +82,7 @@ describe('outbound-user-agent', () => {
 			});
 
 			expect(mod.getDefaultN8nOutboundUserAgent()).toBe(
-				'Mozilla/5.0 (compatible; n8n/0.0.0; +https://n8n.io/)',
+				'Mozilla/5.0 (compatible; n8n/0.0.0; +http://localhost/)',
 			);
 
 			vi.doUnmock('node:path');

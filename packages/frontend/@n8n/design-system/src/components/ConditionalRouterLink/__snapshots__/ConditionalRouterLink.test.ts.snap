@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`CondtionalRouterLink > renders <a> when 'href' attr is passed 1`] = `"<div><a href="https://n8n.io" target="_blank">Button</a></div>"`;
+exports[`CondtionalRouterLink > renders <a> when 'href' attr is passed 1`] = `"<div><a href="http://localhost" target="_blank">Button</a></div>"`;
 
 exports[`CondtionalRouterLink > renders only the slot when neither to nor href is given 1`] = `"<div>Button</div>"`;
 

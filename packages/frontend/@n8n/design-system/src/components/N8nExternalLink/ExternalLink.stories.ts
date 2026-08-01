@@ -35,14 +35,14 @@ const Template: StoryFn = (args, { argTypes }) => ({
 
 export const IconOnly = Template.bind({});
 IconOnly.args = {
-	href: 'https://n8n.io',
+	href: 'http://localhost',
 	size: 'medium',
 	newWindow: true,
 };
 
 export const WithText = Template.bind({});
 WithText.args = {
-	href: 'https://n8n.io',
+	href: 'http://localhost',
 	size: 'medium',
 	newWindow: true,
 	default: 'Visit n8n',
@@ -50,7 +50,7 @@ WithText.args = {
 
 export const Small = Template.bind({});
 Small.args = {
-	href: 'https://n8n.io',
+	href: 'http://localhost',
 	size: 'small',
 	newWindow: true,
 	default: 'Visit n8n',
@@ -58,7 +58,7 @@ Small.args = {
 
 export const Large = Template.bind({});
 Large.args = {
-	href: 'https://n8n.io',
+	href: 'http://localhost',
 	size: 'large',
 	newWindow: true,
 	default: 'Visit n8n',
@@ -66,7 +66,7 @@ Large.args = {
 
 export const SameWindow = Template.bind({});
 SameWindow.args = {
-	href: 'https://n8n.io',
+	href: 'http://localhost',
 	size: 'medium',
 	newWindow: false,
 	default: 'Visit n8n',

@@ -2,7 +2,7 @@
 
 # @n8n/design-system
 
-A component system for [n8n](https://n8n.io) using Storybook to preview.
+A component system for [n8n](http://localhost) using Storybook to preview.
 
 ## Project setup
 

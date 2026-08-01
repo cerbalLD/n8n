@@ -65,7 +65,7 @@ describe('MainSidebar', () => {
 		uiStore.sidebarMenuCollapsed = false;
 		settingsStore.isTemplatesEnabled = true;
 		templatesStore.hasCustomTemplatesHost = false;
-		templatesStore.websiteTemplateRepositoryURL = 'https://n8n.io/workflows';
+		templatesStore.websiteTemplateRepositoryURL = 'http://localhost/workflows';
 
 		// Default experiment store values
 		personalizedTemplatesV2Store.isFeatureEnabled = vi.fn(() => false);

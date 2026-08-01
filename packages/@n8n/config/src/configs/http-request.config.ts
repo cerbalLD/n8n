@@ -4,7 +4,7 @@ import { Config, Env } from '../decorators';
 export class HttpRequestConfig {
 	/**
 	 * Whether n8n-initiated outbound HTTP requests send an RFC-style
-	 * User-Agent (e.g. `Mozilla/5.0 (compatible; n8n/<version>; +https://n8n.io/)`)
+	 * User-Agent (e.g. `Mozilla/5.0 (compatible; n8n/<version>; +http://localhost/)`)
 	 * that passes strict WAF validation.
 	 *
 	 * When `false` (current default), the legacy bare `n8n` User-Agent is sent,

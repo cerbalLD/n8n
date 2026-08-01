@@ -33,7 +33,7 @@ describe('http-error-serializers', () => {
 	it('serializePublicApiError: does not expose internal-only response error meta', () => {
 		const descriptor = classifyHttpError(
 			new LicenseEulaRequiredError('License activation requires EULA acceptance', {
-				eulaUrl: 'https://n8n.io/legal/eula/',
+				eulaUrl: 'http://localhost/legal/eula/',
 			}),
 		);
 		expect(serializePublicApiError(descriptor)).toEqual({
@@ -45,7 +45,7 @@ describe('http-error-serializers', () => {
 			body: {
 				code: 400,
 				message: 'License activation requires EULA acceptance',
-				meta: { eulaUrl: 'https://n8n.io/legal/eula/' },
+				meta: { eulaUrl: 'http://localhost/legal/eula/' },
 			},
 		});
 	});

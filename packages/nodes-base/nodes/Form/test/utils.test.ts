@@ -586,7 +586,7 @@ describe('FormTrigger, formWebhook', () => {
 			formSubmittedText: 'Your response has been recorded',
 			formTitle: 'Test Form',
 			n8nWebsiteLink:
-				'https://n8n.io/?utm_source=n8n-internal&utm_medium=form-trigger&utm_campaign=instanceId',
+				'http://localhost/?utm_source=n8n-internal&utm_medium=form-trigger&utm_campaign=instanceId',
 			testRun: true,
 			useResponseData: false,
 		});
@@ -662,7 +662,7 @@ describe('FormTrigger, formWebhook', () => {
 				formSubmittedText: 'Your response has been recorded',
 				formTitle: 'Test Form',
 				n8nWebsiteLink:
-					'https://n8n.io/?utm_source=n8n-internal&utm_medium=form-trigger&utm_campaign=instanceId',
+					'http://localhost/?utm_source=n8n-internal&utm_medium=form-trigger&utm_campaign=instanceId',
 				testRun: true,
 				useResponseData: false,
 			});
@@ -708,7 +708,7 @@ describe('FormTrigger, formWebhook', () => {
 			formSubmittedText: 'Your response has been recorded',
 			formTitle: 'Test Form',
 			n8nWebsiteLink:
-				'https://n8n.io/?utm_source=n8n-internal&utm_medium=form-trigger&utm_campaign=instanceId',
+				'http://localhost/?utm_source=n8n-internal&utm_medium=form-trigger&utm_campaign=instanceId',
 			testRun: true,
 			useResponseData: false,
 		});
@@ -1382,7 +1382,7 @@ describe('FormTrigger, prepareFormData', () => {
 			formDescriptionMetadata: 'This is a test form',
 			formSubmittedText: 'Thank you for your submission',
 			n8nWebsiteLink:
-				'https://n8n.io/?utm_source=n8n-internal&utm_medium=form-trigger&utm_campaign=test-instance',
+				'http://localhost/?utm_source=n8n-internal&utm_medium=form-trigger&utm_campaign=test-instance',
 			formFields: [
 				{
 					id: 'field-0',
@@ -1482,7 +1482,7 @@ describe('FormTrigger, prepareFormData', () => {
 			formDescription: 'This is a test form',
 			formDescriptionMetadata: 'This is a test form',
 			formSubmittedText: 'Your response has been recorded',
-			n8nWebsiteLink: 'https://n8n.io/?utm_source=n8n-internal&utm_medium=form-trigger',
+			n8nWebsiteLink: 'http://localhost/?utm_source=n8n-internal&utm_medium=form-trigger',
 			formFields: [
 				{
 					id: 'field-0',

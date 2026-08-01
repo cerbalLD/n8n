@@ -165,7 +165,7 @@ export const PLAYGROUND_1: WorkflowDataCreate = {
 		{
 			parameters: {
 				content:
-					'**Tip: Ressources**\n- Use the `n8n Assistant` or any LLM like `ChatGPT` to explain a screenshot, fix issues, or create workflows for you\n- Learn and get inspired with [templates](https://n8n.io/workflows/)\n- Follow the [n8n Courses](https://docs.n8n.io/courses/) or find tutorials on Youtube\n- Ask [the community](https://community.n8n.io/) for help \n',
+					'**Tip: Ressources**\n- Use the `n8n Assistant` or any LLM like `ChatGPT` to explain a screenshot, fix issues, or create workflows for you\n- Learn and get inspired with [templates](http://localhost/workflows/)\n- Follow the [n8n Courses](https://docs.n8n.io/courses/) or find tutorials on Youtube\n- Ask [the community](https://community.n8n.io/) for help \n',
 				height: 176,
 				width: 400,
 				color: 5,

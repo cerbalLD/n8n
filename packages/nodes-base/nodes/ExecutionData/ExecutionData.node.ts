@@ -27,7 +27,7 @@ export class ExecutionData implements INodeType {
 		properties: [
 			{
 				displayName:
-					"Save important data using this node. It will be displayed on each execution for easy reference and you can filter by it.<br />Filtering is available on Pro and Enterprise plans. <a href='https://n8n.io/pricing/' target='_blank'>More Info</a>",
+					"Save important data using this node. It will be displayed on each execution for easy reference and you can filter by it.<br />Filtering is available on Pro and Enterprise plans. <a href='http://localhost/pricing/' target='_blank'>More Info</a>",
 				name: 'notice',
 				type: 'notice',
 				default: '',

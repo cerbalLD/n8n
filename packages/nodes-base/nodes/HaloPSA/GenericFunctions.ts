@@ -73,7 +73,7 @@ export async function haloPSAApiRequest(
 		let options: IRequestOptions = {
 			headers: {
 				Authorization: `Bearer ${accessToken}`,
-				'User-Agent': 'https://n8n.io',
+				'User-Agent': 'http://localhost',
 				Connection: 'keep-alive',
 				Accept: '*/*',
 				'Accept-Encoding': 'gzip, deflate, br',

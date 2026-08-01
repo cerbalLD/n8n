@@ -154,7 +154,7 @@
 		{
 			"parameters": {
 				"data": {
-					"data": "<html>\n<head>\n\t<title>My Page</title>\t\n</head>\n<body>\n\t<h1>My Page</h1>\n\t<p>Hello World</p>\n\t<div class=\"content\">\n\t\t<p>Another paragraph\n</p>\n\t\t<p>Yet \r\n\r\n\t\t\t\t\t\tanother paragraph\n</p>\n\t\t<p>Andone more\n</p>\n\t</div>\n\t<img src=\"https://n8n.io/n8n-logo.png\" alt=\"n8n.io logo\" />\n\t<a href=\"https://n8n.io\">n8n.io</a>\n    <input id=\"text-id\" type=\"text\" value=\"n8n\" />\n</body>\n</html>"
+					"data": "<html>\n<head>\n\t<title>My Page</title>\t\n</head>\n<body>\n\t<h1>My Page</h1>\n\t<p>Hello World</p>\n\t<div class=\"content\">\n\t\t<p>Another paragraph\n</p>\n\t\t<p>Yet \r\n\r\n\t\t\t\t\t\tanother paragraph\n</p>\n\t\t<p>Andone more\n</p>\n\t</div>\n\t<img src=\"http://localhost/n8n-logo.png\" alt=\"n8n.io logo\" />\n\t<a href=\"http://localhost\">n8n.io</a>\n    <input id=\"text-id\" type=\"text\" value=\"n8n\" />\n</body>\n</html>"
 				}
 			},
 			"id": "ed46f03d-6cde-4225-beab-fdbe82bf095f",
@@ -233,14 +233,14 @@
 		"No Operation, do nothing": [
 			{
 				"json": {
-					"data": "MY PAGEHello WorldAnother paragraphYet another paragraphAndone moren8n.io logo [https://n8n.io/n8n-logo.png] n8n.io [https://n8n.io]"
+					"data": "MY PAGEHello WorldAnother paragraphYet another paragraphAndone moren8n.io logo [http://localhost/n8n-logo.png] n8n.io [http://localhost]"
 				}
 			}
 		],
 		"No Operation, do nothing5": [
 			{
 				"json": {
-					"data": "MY PAGE\n\nHello World\n\nAnother paragraph\n\nYet another paragraph\n\nAndone more\n\nn8n.io logo [https://n8n.io/n8n-logo.png] n8n.io [https://n8n.io]"
+					"data": "MY PAGE\n\nHello World\n\nAnother paragraph\n\nYet another paragraph\n\nAndone more\n\nn8n.io logo [http://localhost/n8n-logo.png] n8n.io [http://localhost]"
 				}
 			}
 		],
@@ -261,7 +261,7 @@
 		"No Operation, do nothing3": [
 			{
 				"json": {
-					"data": "\n\t<h1>My Page</h1>\n\t<p>Hello World</p>\n\t<div class=\"content\">\n\t\t<p>Another paragraph\n</p>\n\t\t<p>Yet \n\n\t\t\t\t\t\tanother paragraph\n</p>\n\t\t<p>Andone more\n</p>\n\t</div>\n\t<img src=\"https://n8n.io/n8n-logo.png\" alt=\"n8n.io logo\">\n\t<a href=\"https://n8n.io\">n8n.io</a>\n    <input id=\"text-id\" type=\"text\" value=\"n8n\">\n\n"
+					"data": "\n\t<h1>My Page</h1>\n\t<p>Hello World</p>\n\t<div class=\"content\">\n\t\t<p>Another paragraph\n</p>\n\t\t<p>Yet \n\n\t\t\t\t\t\tanother paragraph\n</p>\n\t\t<p>Andone more\n</p>\n\t</div>\n\t<img src=\"http://localhost/n8n-logo.png\" alt=\"n8n.io logo\">\n\t<a href=\"http://localhost\">n8n.io</a>\n    <input id=\"text-id\" type=\"text\" value=\"n8n\">\n\n"
 				}
 			}
 		],

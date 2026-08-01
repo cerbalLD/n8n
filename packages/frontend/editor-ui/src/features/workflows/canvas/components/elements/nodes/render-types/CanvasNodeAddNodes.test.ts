@@ -159,7 +159,7 @@ describe('CanvasNodeAddNodes', () => {
 				get: vi.fn(() => false),
 			});
 			Object.defineProperty(templatesStore, 'websiteTemplateRepositoryURL', {
-				get: vi.fn(() => 'https://n8n.io/workflows'),
+				get: vi.fn(() => 'http://localhost/workflows'),
 			});
 
 			const { getByTestId } = renderComponent({
@@ -173,7 +173,7 @@ describe('CanvasNodeAddNodes', () => {
 			const link = getByTestId('canvas-template-link');
 			await userEvent.click(link);
 
-			expect(window.open).toHaveBeenCalledWith('https://n8n.io/workflows', '_blank');
+			expect(window.open).toHaveBeenCalledWith('http://localhost/workflows', '_blank');
 		});
 	});
 });

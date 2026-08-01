@@ -252,13 +252,13 @@ describe('RespondToWebhook Node', () => {
 			mockExecuteFunctions.getNodeParameter.mockImplementation((paramName) => {
 				if (paramName === 'respondWith') return 'redirect';
 				if (paramName === 'options') return {};
-				if (paramName === 'redirectURL') return 'https://n8n.io';
+				if (paramName === 'redirectURL') return 'http://localhost';
 			});
 			mockExecuteFunctions.sendResponse.mockResolvedValue(undefined);
 
 			await expect(respondToWebhook.execute.call(mockExecuteFunctions)).resolves.not.toThrow();
 			expect(mockExecuteFunctions.sendResponse).toHaveBeenCalledWith({
-				headers: { location: 'https://n8n.io' },
+				headers: { location: 'http://localhost' },
 				statusCode: 307,
 			});
 		});

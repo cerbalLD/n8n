@@ -75,7 +75,7 @@ export const versionDescription: INodeTypeDescription = {
 		...targetDescription,
 		{
 			displayName:
-				'This node works with workbooks stored in OneDrive on the Microsoft 365 cloud platform. Use the \'Extract from File\' and \'Convert to File\' nodes to directly manipulate spreadsheet files (.xls, .csv, etc). <a href="https://n8n.io/workflows/890-read-in-an-excel-spreadsheet-file/" target="_blank">More info</a>.',
+				'This node works with workbooks stored in OneDrive on the Microsoft 365 cloud platform. Use the \'Extract from File\' and \'Convert to File\' nodes to directly manipulate spreadsheet files (.xls, .csv, etc). <a href="http://localhost/workflows/890-read-in-an-excel-spreadsheet-file/" target="_blank">More info</a>.',
 			name: 'notice',
 			type: 'notice',
 			default: '',

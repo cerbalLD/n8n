@@ -9,7 +9,7 @@ export const ACTION_RECORDED_PAGE = `
 	<head>
 		<meta charset='UTF-8' />
 		<meta name='viewport' content='width=device-width, initial-scale=1.0' />
-		<link rel='icon' type='image/png' href='https://n8n.io/favicon.ico' />
+		<link rel='icon' type='image/png' href='http://localhost/favicon.ico' />
 		<link
 			href='https://fonts.googleapis.com/css?family=Open+Sans'
 			rel='stylesheet'
@@ -40,7 +40,7 @@ export const ACTION_RECORDED_PAGE = `
 				</div>
 				<div class='n8n-link'>
 					<a
-						href='https://n8n.io/?utm_source=n8n-internal&amp;utm_medium=send-and-wait'
+						href='http://localhost/?utm_source=n8n-internal&amp;utm_medium=send-and-wait'
 						target='_blank'
 					>
 						Automated with
@@ -85,7 +85,7 @@ export function createEmailBodyWithN8nAttribution(
 	instanceId?: string,
 ) {
 	const utm_campaign = instanceId ? `&utm_campaign=${instanceId}` : '';
-	const n8nWebsiteLink = `https://n8n.io/?utm_source=n8n-internal&utm_medium=send-and-wait${utm_campaign}`;
+	const n8nWebsiteLink = `http://localhost/?utm_source=n8n-internal&utm_medium=send-and-wait${utm_campaign}`;
 	return `
 <!DOCTYPE html>
 <html lang='en'>

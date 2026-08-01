@@ -8,7 +8,7 @@ exports[`components > N8nCallout > should render additional slots correctly 1`] 
     </div>
     <n8n-text-stub bold="false" size="small" compact="false" tag="span"></n8n-text-stub> &nbsp; <n8n-link-stub size="small"></n8n-link-stub>
   </div>
-  <n8n-link-stub theme="secondary" size="small" bold="true" underline="true" to="https://n8n.io"></n8n-link-stub>
+  <n8n-link-stub theme="secondary" size="small" bold="true" underline="true" to="http://localhost"></n8n-link-stub>
 </div>"
 `;
 

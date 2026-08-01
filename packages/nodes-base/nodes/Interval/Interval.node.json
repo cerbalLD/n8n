@@ -13,12 +13,12 @@
 			{
 				"label": "Learn to Automate Your Factory's Incident Reporting: A Step by Step Guide",
 				"icon": "🏭",
-				"url": "https://n8n.io/blog/learn-to-automate-your-factorys-incident-reporting-a-step-by-step-guide/"
+				"url": "http://localhost/blog/learn-to-automate-your-factorys-incident-reporting-a-step-by-step-guide/"
 			},
 			{
 				"label": "Creating triggers for n8n workflows using polling",
 				"icon": "⏲",
-				"url": "https://n8n.io/blog/creating-triggers-for-n8n-workflows-using-polling/"
+				"url": "http://localhost/blog/creating-triggers-for-n8n-workflows-using-polling/"
 			}
 		]
 	},

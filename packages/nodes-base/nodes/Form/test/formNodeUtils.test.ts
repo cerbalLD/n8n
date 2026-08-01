@@ -116,7 +116,7 @@ describe('formNodeUtils', () => {
 			formSubmittedHeader: undefined,
 			formSubmittedText: 'Your response has been recorded',
 			formTitle: 'Test Title',
-			n8nWebsiteLink: 'https://n8n.io/?utm_source=n8n-internal&utm_medium=form-trigger',
+			n8nWebsiteLink: 'http://localhost/?utm_source=n8n-internal&utm_medium=form-trigger',
 			testRun: true,
 			useResponseData: true,
 		});

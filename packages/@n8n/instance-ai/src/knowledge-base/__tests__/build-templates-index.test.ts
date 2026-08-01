@@ -3,7 +3,7 @@ import { buildTemplatesIndexFromArchive, slimTemplateDescription } from '../buil
 describe('slimTemplateDescription', () => {
 	it('keeps only the template title from CDN catalog descriptions', () => {
 		const description =
-			'Build Your First AI Agent | n8n-nodes-base.stickyNote,n8n-nodes-base.rssFeedReadTool,@n8n/n8n-nodes-langchain.agent | trigger:chatTrigger,ai,integration:langchain | https://n8n.io/workflows/6270';
+			'Build Your First AI Agent | n8n-nodes-base.stickyNote,n8n-nodes-base.rssFeedReadTool,@n8n/n8n-nodes-langchain.agent | trigger:chatTrigger,ai,integration:langchain | http://localhost/workflows/6270';
 
 		expect(slimTemplateDescription(description)).toBe('Build Your First AI Agent');
 	});
@@ -53,7 +53,7 @@ describe('buildTemplatesIndexFromArchive', () => {
 						{
 							id: 'build-your-first-ai-agent-6270',
 							description:
-								'Build Your First AI Agent | n8n-nodes-base.stickyNote,@n8n/n8n-nodes-langchain.agent | trigger:chatTrigger,ai | https://n8n.io/workflows/6270',
+								'Build Your First AI Agent | n8n-nodes-base.stickyNote,@n8n/n8n-nodes-langchain.agent | trigger:chatTrigger,ai | http://localhost/workflows/6270',
 							file: 'templates/build-your-first-ai-agent-6270.ts',
 						},
 					],

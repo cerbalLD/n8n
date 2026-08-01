@@ -22,7 +22,7 @@ vi.mock('@n8n/composables/useTelemetry', () => ({
 }));
 
 vi.mock('@/features/workflows/templates/templates.store', () => ({
-	useTemplatesStore: () => ({ websiteTemplateRepositoryURL: 'https://n8n.io/workflows' }),
+	useTemplatesStore: () => ({ websiteTemplateRepositoryURL: 'http://localhost/workflows' }),
 }));
 
 const push = vi.fn();

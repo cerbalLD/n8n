@@ -496,7 +496,7 @@
 				"color": 6,
 				"width": 336,
 				"height": 312,
-				"content": "## [>> Go to Eval Workflow <<](https://n8n.io/workflows/6232)\n\nVerify your skills with a complete eval workflow to put your JSON Skills to the test.\n[![Test Skills](https://supastudio.ia2s.app/storage/v1/object/public/assets/n8n/test_your_skillls_button.gif)](https://n8n.io/workflows/6232)"
+				"content": "## [>> Go to Eval Workflow <<](http://localhost/workflows/6232)\n\nVerify your skills with a complete eval workflow to put your JSON Skills to the test.\n[![Test Skills](https://supastudio.ia2s.app/storage/v1/object/public/assets/n8n/test_your_skillls_button.gif)](http://localhost/workflows/6232)"
 			},
 			"typeVersion": 1
 		}

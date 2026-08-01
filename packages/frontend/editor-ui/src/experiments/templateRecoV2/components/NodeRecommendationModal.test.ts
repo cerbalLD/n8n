@@ -28,7 +28,7 @@ vi.mock('@/features/workflows/templates/templates.store', () => ({
 			utm_instance: 'https://test.instance/',
 		}),
 		constructTemplateRepositoryURL: (params: URLSearchParams) =>
-			`https://n8n.io/workflows/?${params.toString()}`,
+			`http://localhost/workflows/?${params.toString()}`,
 	}),
 }));
 
@@ -71,13 +71,13 @@ describe('NodeRecommendationModal', () => {
 		const starterLink = (await findByText('See more starter templates')).closest('a');
 		expect(starterLink).toHaveAttribute(
 			'href',
-			'https://n8n.io/workflows/?utm_source=n8n_app&utm_instance=https%3A%2F%2Ftest.instance%2F&integrations=Slack&q=Simple',
+			'http://localhost/workflows/?utm_source=n8n_app&utm_instance=https%3A%2F%2Ftest.instance%2F&integrations=Slack&q=Simple',
 		);
 
 		const popularLink = (await findByText('See more popular templates')).closest('a');
 		expect(popularLink).toHaveAttribute(
 			'href',
-			'https://n8n.io/workflows/?utm_source=n8n_app&utm_instance=https%3A%2F%2Ftest.instance%2F&integrations=Slack',
+			'http://localhost/workflows/?utm_source=n8n_app&utm_instance=https%3A%2F%2Ftest.instance%2F&integrations=Slack',
 		);
 	});
 });

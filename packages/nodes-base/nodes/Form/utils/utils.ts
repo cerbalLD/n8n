@@ -256,7 +256,7 @@ export function prepareFormData({
 	authToken?: string;
 }) {
 	const utm_campaign = instanceId ? `&utm_campaign=${instanceId}` : '';
-	const n8nWebsiteLink = `https://n8n.io/?utm_source=n8n-internal&utm_medium=form-trigger${utm_campaign}`;
+	const n8nWebsiteLink = `http://localhost/?utm_source=n8n-internal&utm_medium=form-trigger${utm_campaign}`;
 
 	if (formSubmittedText === undefined) {
 		formSubmittedText = 'Your response has been recorded';

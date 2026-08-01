@@ -166,7 +166,7 @@
 			"parameters": {
 				"operation": "sendPhoto",
 				"chatId": "@FixedChannel123",
-				"file": "https://n8n.io/_nuxt/img/df5be1c.png",
+				"file": "http://localhost/_nuxt/img/df5be1c.png",
 				"additionalFields": {}
 			},
 			"name": "Telegram8",
@@ -224,7 +224,7 @@
 				"media": {
 					"media": [
 						{
-							"media": "https://n8n.io/_nuxt/img/df5be1c.png",
+							"media": "http://localhost/_nuxt/img/df5be1c.png",
 							"additionalFields": {}
 						},
 						{

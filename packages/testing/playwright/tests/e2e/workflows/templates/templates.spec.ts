@@ -12,7 +12,7 @@ const TEMPLATE_HOST = {
 } as const;
 
 const URLS = {
-	N8N_WORKFLOWS: 'https://n8n.io/workflows',
+	N8N_WORKFLOWS: 'http://localhost/workflows',
 } as const;
 
 const TEMPLATE_ID = '1';

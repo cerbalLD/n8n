@@ -53,7 +53,7 @@
 				"resolveData": false,
 				"jsonParameters": true,
 				"additionalFields": {
-					"argumentsJson": "{\n\t\"urls\": [\n\t\t\"https://n8n.io/\"\n\t],\n\t\"timeToWait\": 5000,\n\t\"pagesPerLaunch\": 1,\n\t\"onlyGetOneEmail\": false\n}"
+					"argumentsJson": "{\n\t\"urls\": [\n\t\t\"http://localhost/\"\n\t],\n\t\"timeToWait\": 5000,\n\t\"pagesPerLaunch\": 1,\n\t\"onlyGetOneEmail\": false\n}"
 				}
 			},
 			"name": "Phantombuster2",

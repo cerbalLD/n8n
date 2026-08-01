@@ -217,7 +217,7 @@ describe('FormTrigger', () => {
 			formSubmittedText: 'Your response has been recorded',
 			formTitle: 'Test Form',
 			n8nWebsiteLink:
-				'https://n8n.io/?utm_source=n8n-internal&utm_medium=form-trigger&utm_campaign=instanceId',
+				'http://localhost/?utm_source=n8n-internal&utm_medium=form-trigger&utm_campaign=instanceId',
 			testRun: true,
 			useResponseData: false,
 		});

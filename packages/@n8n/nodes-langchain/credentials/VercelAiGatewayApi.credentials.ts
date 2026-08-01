@@ -38,7 +38,7 @@ export class VercelAiGatewayApi implements ICredentialType {
 		properties: {
 			headers: {
 				Authorization: '=Bearer {{$credentials.apiKey}}',
-				'http-referer': 'https://n8n.io/',
+				'http-referer': 'http://localhost/',
 				'x-title': 'n8n',
 			},
 		},
@@ -50,7 +50,7 @@ export class VercelAiGatewayApi implements ICredentialType {
 			url: '/chat/completions',
 			method: 'POST',
 			headers: {
-				'http-referer': 'https://n8n.io/',
+				'http-referer': 'http://localhost/',
 				'x-title': 'n8n',
 			},
 			body: {

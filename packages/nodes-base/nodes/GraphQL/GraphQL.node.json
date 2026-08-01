@@ -13,17 +13,17 @@
 			{
 				"label": "What are APIs and how to use them with no code",
 				"icon": " 🪢",
-				"url": "https://n8n.io/blog/what-are-apis-how-to-use-them-with-no-code/"
+				"url": "http://localhost/blog/what-are-apis-how-to-use-them-with-no-code/"
 			},
 			{
 				"label": "How to automatically give kudos to contributors with GitHub, Slack, and n8n",
 				"icon": "👏",
-				"url": "https://n8n.io/blog/how-to-automatically-give-kudos-to-contributors-with-github-slack-and-n8n/"
+				"url": "http://localhost/blog/how-to-automatically-give-kudos-to-contributors-with-github-slack-and-n8n/"
 			},
 			{
 				"label": "How Goomer automated their operations with over 200 n8n workflows",
 				"icon": "🛵",
-				"url": "https://n8n.io/blog/how-goomer-automated-their-operations-with-over-200-n8n-workflows/"
+				"url": "http://localhost/blog/how-goomer-automated-their-operations-with-over-200-n8n-workflows/"
 			}
 		]
 	}

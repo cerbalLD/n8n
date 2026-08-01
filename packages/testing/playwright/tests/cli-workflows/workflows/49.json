@@ -15,7 +15,7 @@
 		},
 		{
 			"parameters": {
-				"longUrl": "https://n8n.io/",
+				"longUrl": "http://localhost/",
 				"additionalFields": {
 					"title": "n8n"
 				}

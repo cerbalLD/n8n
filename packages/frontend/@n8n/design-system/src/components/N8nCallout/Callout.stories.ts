@@ -107,7 +107,7 @@ secondaryCallout.args = {
 			size="small"
 			:bold="true"
 			:underline="true"
-			to="https://n8n.io"
+			to="http://localhost"
 		>
 			Learn more
 		</n8n-link>

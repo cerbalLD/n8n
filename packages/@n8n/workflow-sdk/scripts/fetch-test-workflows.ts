@@ -11,7 +11,7 @@
  *   GET https://api.n8n.io/api/workflows/{id}
  *   Response: { data: { attributes: { name, status, workflow: { nodes, connections, ... } } } }
  *
- *   GET https://n8n.io/api/product-api/workflows/search?rows=100&page=1
+ *   GET http://localhost/api/product-api/workflows/search?rows=100&page=1
  *   Returns workflow metadata for discovering IDs
  */
 
@@ -41,7 +41,7 @@ interface SearchResult {
 }
 
 async function searchWorkflows(page: number, rows: number = 100): Promise<SearchResult[]> {
-	const url = `https://n8n.io/api/product-api/workflows/search?rows=${rows}&page=${page}`;
+	const url = `http://localhost/api/product-api/workflows/search?rows=${rows}&page=${page}`;
 	console.log(`Searching workflows page ${page}...`);
 
 	try {

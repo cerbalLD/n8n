@@ -139,7 +139,7 @@ describe('components/N8nMarkdownEditor', () => {
 			[
 				'# Heading',
 				'',
-				'This has **bold**, *italic*, ~~struck~~, and [a link](https://n8n.io).',
+				'This has **bold**, *italic*, ~~struck~~, and [a link](http://localhost).',
 				'',
 				'- First item',
 				'- Second item',
@@ -157,7 +157,7 @@ describe('components/N8nMarkdownEditor', () => {
 		expect(editorElement.querySelector('strong')).toHaveTextContent('bold');
 		expect(editorElement.querySelector('em')).toHaveTextContent('italic');
 		expect(editorElement.querySelector('s')).toHaveTextContent('struck');
-		expect(editorElement.querySelector('a')).toHaveAttribute('href', 'https://n8n.io');
+		expect(editorElement.querySelector('a')).toHaveAttribute('href', 'http://localhost');
 		expect(editorElement.querySelectorAll('li')).toHaveLength(2);
 		expect(editorElement.querySelector('blockquote')).toHaveTextContent('Quoted text');
 		expect(editorElement.querySelector('pre code')).toHaveTextContent('const value = 1;');

@@ -685,7 +685,7 @@ isUrl.doc = {
 	returnType: 'boolean',
 	docURL: 'https://docs.n8n.io/code/builtin/data-transformation-functions/strings/#string-isUrl',
 	examples: [
-		{ example: '"https://n8n.io".isUrl()', evaluated: 'true' },
+		{ example: '"http://localhost".isUrl()', evaluated: 'true' },
 		{ example: '"n8n.io".isUrl()', evaluated: 'false' },
 		{ example: '"hello".isUrl()', evaluated: 'false' },
 	],
