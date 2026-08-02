@@ -33,6 +33,44 @@
 			"killBehavior": "forceful"
 		},
 		{
+			"name": "Local content backend (Python)",
+			"type": "debugpy",
+			"request": "launch",
+			"module": "uvicorn",
+			"args": [
+				"app.main:app",
+				"--host",
+				"127.0.0.1",
+				"--port",
+				"8000"
+			],
+			"cwd": "${workspaceFolder}/backend",
+			"console": "integratedTerminal",
+			"justMyCode": false
+		},
+		{
+			"name": "Local n8n app (Node)",
+			"type": "node",
+			"request": "launch",
+			"runtimeExecutable": "corepack",
+			"runtimeArgs": ["pnpm", "start"],
+			"cwd": "${workspaceFolder}",
+			"console": "integratedTerminal",
+			"skipFiles": ["<node_internals>/**"],
+			"env": {
+				"N8N_LOCAL_LICENSE_BYPASS": "true",
+				"N8N_SECURE_COOKIE": "false",
+				"N8N_TEMPLATES_ENABLED": "true",
+				"N8N_TEMPLATES_HOST": "http://127.0.0.1:8000/api/",
+				"N8N_LICENSE_SERVER_URL": "http://127.0.0.1:8000/v1",
+				"N8N_VERSION_NOTIFICATIONS_ENDPOINT": "http://127.0.0.1:8000/api/versions/",
+				"N8N_VERSION_NOTIFICATIONS_WHATS_NEW_ENDPOINT": "http://127.0.0.1:8000/api/whats-new",
+				"N8N_DYNAMIC_BANNERS_ENDPOINT": "http://127.0.0.1:8000/api/banners"
+			},
+			"outputCapture": "std",
+			"killBehavior": "polite"
+		},
+		{
 			"name": "Launch n8n CLI worker dev with debug",
 			"runtimeExecutable": "pnpm",
 			"cwd": "${workspaceFolder}/packages/cli",
@@ -98,6 +136,13 @@
 				"/usr/local/lib/node_modules/n8n/packages/*": "${workspaceFolder}/packages/*",
 				"/usr/local/lib/node_modules/n8n/*": "${workspaceFolder}/packages/cli/*"
 			}
+		}
+	],
+	"compounds": [
+		{
+			"name": "Local test env: backend + n8n",
+			"configurations": ["Local content backend (Python)", "Local n8n app (Node)"],
+			"stopAll": true
 		}
 	]
 
