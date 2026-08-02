@@ -92,3 +92,7 @@ stryker.log
 
 # My
 /venv
+/vova
+/.pnpm-store/v11/index.db
+/.pnpm-store/v11/index.db-shm
+/.pnpm-store/v11/index.db-wal
