@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Орбита",
-		"description": "Использовать API Орбиты"
+		"displayName": "Orbit",
+		"description": "Использование API Orbit"
 	},
 	"nodeView": {
 		"deprecated": {
@@ -14,13 +14,13 @@
 					"displayName": "Активность"
 				},
 				"member": {
-					"displayName": "Член"
+					"displayName": "Участник"
 				},
 				"note": {
 					"displayName": "Примечание"
 				},
 				"post": {
-					"displayName": "Почта"
+					"displayName": "Тема"
 				}
 			}
 		},
@@ -28,75 +28,75 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать публикацию"
 				},
 				"getAll": {
 					"displayName": "Получить много",
-					"description": "Получить много сообщений"
+					"description": "Получить несколько публикаций"
 				},
 				"upsert": {
 					"displayName": "Создать или обновить",
-					"description": "Создайте нового участника или обновите текущего, если он уже существует (upsert)."
+					"description": "Создание нового участника или обновление существующего (upsert)"
 				},
 				"delete": {
 					"displayName": "Удалить",
-					"description": "Удалить сообщение"
+					"description": "Удалить публикацию"
 				},
 				"get": {
 					"displayName": "Получать",
-					"description": "Получить члена"
+					"description": "Получить участника"
 				},
 				"lookup": {
 					"displayName": "Искать",
-					"description": "Поиск участника по личности"
+					"description": "Поиск участника по идентификатору"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить заметку"
 				}
 			}
 		},
 		"workspaceId": {
 			"displayName": "Имя или идентификатор рабочей области",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"memberId": {
-			"displayName": "Идентификатор участника"
+			"displayName": "ID участника"
 		},
 		"title": {
-			"displayName": "Заголовок"
+			"displayName": "Название"
 		},
 		"additionalFields": {
 			"displayName": "Дополнительные поля",
 			"placeholder": "Добавить поле",
 			"options": {
 				"activityType": {
-					"displayName": "Имя или идентификатор типа действия",
-					"description": "Определяемый пользователем способ группировки действий одного и того же характера. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Имя или ID типа деятельности",
+					"description": "Определённый пользователем способ группировки действий одного и того же характера. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"description": {
 					"displayName": "Описание",
-					"description": "Описание деятельности; отображается на временной шкале"
+					"description": "Описание действия; отображается на временной шкале"
 				},
 				"key": {
 					"displayName": "Ключ",
-					"description": "Укажите ключ, который должен быть уникальным, или оставьте пустым, чтобы он был сгенерирован."
+					"description": "Укажите уникальный ключ или оставьте пустым для автоматической генерации"
 				},
 				"link": {
-					"displayName": "Связь",
-					"description": "URL-адрес действия; отображается на временной шкале"
+					"displayName": "Ссылка",
+					"description": "URL действия; отображается на временной шкале"
 				},
 				"linkText": {
 					"displayName": "Текст ссылки",
-					"description": "Текст ссылки на временную шкалу"
+					"description": "Текст ссылки на временной шкале"
 				},
 				"occurredAt": {
-					"displayName": "Произошло в",
-					"description": "Дата и время совершения действия; по умолчанию сейчас"
+					"displayName": "Произошло",
+					"description": "Дата и время совершения действия; по умолчанию — сейчас"
 				},
 				"bio": {
-					"displayName": "Био"
+					"displayName": "О себе"
 				},
 				"birthday": {
 					"displayName": "День рождения"
@@ -117,15 +117,15 @@
 					"displayName": "Адрес доставки"
 				},
 				"slug": {
-					"displayName": "Слизень"
+					"displayName": "URL-слаг"
 				},
 				"tagsToAdd": {
 					"displayName": "Теги для добавления",
-					"description": "Добавляет теги участнику; строка или массив, разделенные запятыми"
+					"description": "Добавление тегов участнику; строка или массив, разделённые запятыми"
 				},
 				"tagList": {
 					"displayName": "Список тегов",
-					"description": "Заменяет все теги участника; строка или массив, разделенные запятыми"
+					"description": "Замена всех тегов участника; строка или массив, разделённые запятыми"
 				},
 				"tShirt": {
 					"displayName": "Футболка"
@@ -137,7 +137,7 @@
 					"displayName": "URL"
 				},
 				"publishedAt": {
-					"displayName": "Произошло в"
+					"displayName": "Произошло"
 				}
 			}
 		},
@@ -147,21 +147,21 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"filters": {
 			"displayName": "Фильтры",
 			"placeholder": "Добавить фильтр",
 			"options": {
 				"memberId": {
-					"displayName": "Идентификатор участника",
-					"description": "Если установлено, сообщение будет фильтроваться по идентификатору участника."
+					"displayName": "ID участника",
+					"description": "При установке сообщение будет отфильтровано по идентификатору участника"
 				}
 			}
 		},
 		"resolveIdentities": {
-			"displayName": "Разрешение личности",
-			"description": "По умолчанию ответ включает только ссылку на удостоверение. Если установлено значение true, идентификаторы будут определены автоматически."
+			"displayName": "Разрешение идентификаторов",
+			"description": "По умолчанию ответ включает только ссылку на идентификатор. При установке значения true идентификаторы будут разрешены автоматически."
 		},
 		"options": {
 			"displayName": "Параметры",
@@ -169,7 +169,7 @@
 			"options": {
 				"sort": {
 					"displayName": "Сортировать по",
-					"description": "Имя поля, по которому будет отсортирован ответ"
+					"description": "Имя поля для сортировки ответа"
 				},
 				"direction": {
 					"displayName": "Направление сортировки",
@@ -186,10 +186,10 @@
 		},
 		"source": {
 			"displayName": "Источник",
-			"description": "Установите github, twitter, электронную почту, обсуждение или источник любых личностей, созданных вами вручную.",
+			"description": "Установите github, twitter, email, discourse или источник любых созданных вами вручную идентификаторов",
 			"options": {
 				"discourse": {
-					"displayName": "Дискурс"
+					"displayName": "Discourse"
 				},
 				"email": {
 					"displayName": "Электронная почта"
@@ -198,7 +198,7 @@
 					"displayName": "GitHub"
 				},
 				"twitter": {
-					"displayName": "Твиттер"
+					"displayName": "Twitter"
 				}
 			}
 		},
@@ -227,14 +227,14 @@
 			"placeholder": "имя@email.com"
 		},
 		"host": {
-			"displayName": "Хозяин"
+			"displayName": "Хост"
 		},
 		"updateFields": {
 			"displayName": "Обновить поля",
 			"placeholder": "Добавить поле",
 			"options": {
 				"bio": {
-					"displayName": "Био"
+					"displayName": "О себе"
 				},
 				"birthday": {
 					"displayName": "День рождения"
@@ -255,15 +255,15 @@
 					"displayName": "Адрес доставки"
 				},
 				"slug": {
-					"displayName": "Слизень"
+					"displayName": "URL-слаг"
 				},
 				"tagsToAdd": {
 					"displayName": "Теги для добавления",
-					"description": "Добавляет теги участнику; строка или массив, разделенные запятыми"
+					"description": "Добавление тегов участнику; строка или массив, разделённые запятыми"
 				},
 				"tagList": {
 					"displayName": "Список тегов",
-					"description": "Заменяет все теги участника; строка или массив, разделенные запятыми"
+					"description": "Замена всех тегов участника; строка или массив, разделённые запятыми"
 				},
 				"tShirt": {
 					"displayName": "Футболка"
@@ -279,18 +279,18 @@
 		"identityUi": {
 			"options": {
 				"identityUi": {
-					"displayName": "Личность",
-					"description": "Идентичность используется для поиска участника. Если ни один участник не существует, будет создан новый участник, связанный с предоставленным идентификатором."
+					"displayName": "Идентификатор",
+					"description": "Идентификатор используется для поиска участника. Если участник не существует, будет создан новый участник, связанный с предоставленным идентификатором."
 				},
 				"identityValue": {
-					"displayName": "Личность",
+					"displayName": "Идентификатор",
 					"values": {
 						"source": {
 							"displayName": "Источник",
-							"description": "Установите github, twitter, электронную почту, обсуждение или источник любых личностей, созданных вами вручную.",
+							"description": "Установите github, twitter, email, discourse или источник любых созданных вами вручную идентификаторов",
 							"options": {
 								"discourse": {
-									"displayName": "Дискурс"
+									"displayName": "Discourse"
 								},
 								"email": {
 									"displayName": "Электронная почта"
@@ -299,7 +299,7 @@
 									"displayName": "GitHub"
 								},
 								"twitter": {
-									"displayName": "Твиттер"
+									"displayName": "Twitter"
 								}
 							}
 						},
@@ -327,30 +327,30 @@
 							"placeholder": "имя@email.com"
 						},
 						"host": {
-							"displayName": "Хозяин"
+							"displayName": "Хост"
 						}
 					}
 				}
 			},
-			"placeholder": "Добавить личность",
-			"displayName": "Личность",
-			"description": "Идентичность используется для поиска участника. Если ни один участник не существует, будет создан новый участник, связанный с предоставленным идентификатором."
+			"placeholder": "Добавить идентификатор",
+			"displayName": "Идентификатор",
+			"description": "Идентификатор используется для поиска участника. Если участник не существует, будет создан новый участник, связанный с предоставленным идентификатором."
 		},
 		"note": {
 			"displayName": "Примечание"
 		},
 		"resolveMember": {
-			"displayName": "Решить участника"
+			"displayName": "Разрешить участника"
 		},
 		"noteId": {
-			"displayName": "Идентификатор заметки"
+			"displayName": "ID заметки"
 		},
 		"url": {
 			"displayName": "URL",
-			"description": "Укажите любой URL-адрес, и Orbit сделает все возможное, чтобы проанализировать заголовок, описание и изображение."
+			"description": "Укажите любой URL, и Orbit постарается извлечь название, описание и изображение"
 		},
 		"postId": {
-			"displayName": "Идентификатор сообщения"
+			"displayName": "ID темы"
 		}
 	}
 }

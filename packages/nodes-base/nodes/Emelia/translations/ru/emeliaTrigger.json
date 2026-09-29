@@ -1,24 +1,24 @@
 {
 	"header": {
-		"displayName": "Емелия Триггер",
-		"description": "Обработка событий активности кампании Emelia с помощью веб-перехватчиков"
+		"displayName": "Триггер Emelia",
+		"description": "Обработка событий активности кампании Emelia через вебхуки"
 	},
 	"nodeView": {
 		"campaignId": {
-			"displayName": "Название или идентификатор кампании",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"displayName": "Название или ID кампании",
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"events": {
 			"displayName": "События",
 			"options": {
 				"bounced": {
-					"displayName": "Электронная почта возвращена"
+					"displayName": "Письмо отскочило"
 				},
 				"opened": {
-					"displayName": "Электронная почта открыта"
+					"displayName": "Письмо открыто"
 				},
 				"replied": {
-					"displayName": "Ответ по электронной почте"
+					"displayName": "Письмо — ответ"
 				},
 				"sent": {
 					"displayName": "Письмо отправлено"
@@ -27,7 +27,7 @@
 					"displayName": "Ссылка нажата"
 				},
 				"unsubscribed": {
-					"displayName": "Отписавшийся контакт"
+					"displayName": "Контакт отписан"
 				}
 			}
 		}

@@ -17,7 +17,7 @@
 		},
 		"team": {
 			"displayName": "Название или идентификатор команды",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"events": {
 			"displayName": "События",
@@ -53,13 +53,13 @@
 					"displayName": "keyResult.updated"
 				},
 				"listCreated": {
-					"displayName": "список.создан"
+					"displayName": "list.created"
 				},
 				"listDeleted": {
-					"displayName": "список.удален"
+					"displayName": "list.deleted"
 				},
 				"listUpdated": {
-					"displayName": "список.обновлено"
+					"displayName": "list.updated"
 				},
 				"spaceCreated": {
 					"displayName": "пространство.создано"
@@ -113,10 +113,10 @@
 			"placeholder": "Добавить поле",
 			"options": {
 				"folderId": {
-					"displayName": "Идентификатор папки"
+					"displayName": "ID папки"
 				},
 				"listId": {
-					"displayName": "Идентификатор списка"
+					"displayName": "ID списка"
 				},
 				"spaceId": {
 					"displayName": "Идентификатор пространства"

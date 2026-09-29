@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "Подвести итог",
+		"displayName": "Суммировать",
 		"description": "Сумма, количество, максимум и т. д. по элементам."
 	},
 	"nodeView": {
@@ -12,14 +12,14 @@
 				"values": {
 					"values": {
 						"aggregation": {
-							"displayName": "Агрегация",
-							"description": "Как объединить значения поля, которое вы хотите суммировать",
+							"displayName": "Агрегирование",
+							"description": "Как объединить значения поля, которое нужно суммировать",
 							"options": {
 								"append": {
 									"displayName": "Добавить"
 								},
 								"average": {
-									"displayName": "Средний"
+									"displayName": "Среднее значение"
 								},
 								"concatenate": {
 									"displayName": "Объединить"
@@ -28,13 +28,13 @@
 									"displayName": "Считать"
 								},
 								"countUnique": {
-									"displayName": "Считать уникальными"
+									"displayName": "Количество уникальных"
 								},
 								"max": {
-									"displayName": "Макс"
+									"displayName": "Макс."
 								},
 								"min": {
-									"displayName": "Мин"
+									"displayName": "Минимум"
 								},
 								"sum": {
 									"displayName": "Сумма"
@@ -43,9 +43,9 @@
 						},
 						"field": {
 							"displayName": "Поле",
-							"description": "Имя поля ввода, по которому вы хотите суммировать; нулевые, неопределенные, пустые строки будут игнорироваться",
-							"hint": "Введите имя поля в виде текста",
-							"placeholder": "например расходы"
+							"description": "Имя входного поля для суммирования; нулевые, неопределённые и пустые строки будут игнорироваться",
+							"hint": "Введите название поля как текст",
+							"placeholder": "например cost"
 						},
 						"includeEmpty": {
 							"displayName": "Включить пустые значения"
@@ -61,16 +61,16 @@
 									"displayName": "Запятая и пробел"
 								},
 								"\n": {
-									"displayName": "Новая линия"
+									"displayName": "Новая строка"
 								},
 								"": {
 									"displayName": "Никто"
 								},
 								" ": {
-									"displayName": "Космос"
+									"displayName": "Пространство"
 								},
 								"other": {
-									"displayName": "Другой"
+									"displayName": "Другое"
 								}
 							}
 						},
@@ -85,9 +85,9 @@
 		},
 		"fieldsToSplitBy": {
 			"displayName": "Поля для группировки",
-			"description": "Имя полей ввода, по которым вы хотите разделить сводку.",
-			"hint": "Введите названия полей в виде текста (через запятую).",
-			"placeholder": "например страна, город"
+			"description": "Имя входных полей для разделения сводки",
+			"hint": "Введите названия полей как текст (через запятую)",
+			"placeholder": "например country, city"
 		},
 		"options": {
 			"displayName": "Параметры",
@@ -99,7 +99,7 @@
 				},
 				"disableDotNotation": {
 					"displayName": "Отключить точечную нотацию",
-					"description": "Запретить ли ссылаться на дочерние поля, используя `parent.child` в имени поля."
+					"description": "Запретить ли ссылаться на дочерние поля используя `parent.child` в имени поля"
 				},
 				"outputFormat": {
 					"displayName": "Формат вывода",

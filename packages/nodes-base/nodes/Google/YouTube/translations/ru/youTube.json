@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "Ютуб",
+		"displayName": "YouTube",
 		"description": "Использование API YouTube"
 	},
 	"nodeView": {
@@ -33,18 +33,18 @@
 				},
 				"getAll": {
 					"displayName": "Получить много",
-					"description": "Получить множество категорий видео"
+					"description": "Получить несколько категорий видео"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить видео"
 				},
 				"uploadBanner": {
 					"displayName": "Загрузить баннер",
-					"description": "Загрузите баннер канала"
+					"description": "Загрузить баннер канала"
 				},
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать плейлист"
 				},
 				"delete": {
@@ -52,8 +52,8 @@
 					"description": "Удалить видео"
 				},
 				"add": {
-					"displayName": "Добавлять",
-					"description": "Добавить объект в плейлист"
+					"displayName": "Добавить",
+					"description": "Добавить элемент в плейлист"
 				},
 				"rate": {
 					"displayName": "Ставка",
@@ -67,19 +67,19 @@
 		},
 		"part": {
 			"displayName": "Поля",
-			"description": "Параметр полей указывает разделенный запятыми список одного или нескольких свойств видеоресурса, которые будут включены в ответ API.",
+			"description": "Параметр fields указывает свойства видеоресурса, которые будут включены в ответ",
 			"options": {
 				"*": {
 					"displayName": "*"
 				},
 				"brandingSettings": {
-					"displayName": "Настройки брендинга"
+					"displayName": "Параметры брендинга"
 				},
 				"contentDetails": {
-					"displayName": "Подробности содержания"
+					"displayName": "Подробности контента"
 				},
 				"contentOwnerDetails": {
-					"displayName": "Сведения о владельце контента"
+					"displayName": "Информация о владельце контента"
 				},
 				"id": {
 					"displayName": "ID"
@@ -100,13 +100,13 @@
 					"displayName": "Подробности темы"
 				},
 				"player": {
-					"displayName": "Игрок"
+					"displayName": "Плеер"
 				},
 				"liveStreamingDetails": {
-					"displayName": "Подробности прямой трансляции"
+					"displayName": "Подробности трансляции"
 				},
 				"recordingDetails": {
-					"displayName": "Детали записи"
+					"displayName": "Подробности записи"
 				}
 			}
 		},
@@ -116,63 +116,63 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"filters": {
 			"displayName": "Фильтры",
 			"placeholder": "Добавить вариант",
 			"options": {
 				"categoryId": {
-					"displayName": "Идентификатор категории",
-					"description": "Параметр CategoryId указывает категорию руководства YouTube, тем самым запрашивая каналы YouTube, связанные с этой категорией."
+					"displayName": "ID категории",
+					"description": "Параметр categoryId указывает категорию гайда YouTube, запрашивая связанные каналы"
 				},
 				"forUsername": {
-					"displayName": "Для имени пользователя",
-					"description": "Параметр forUsername указывает имя пользователя YouTube, тем самым запрашивая канал, связанный с этим именем пользователя."
+					"displayName": "Для пользователя",
+					"description": "Параметр forUsername указывает имя пользователя YouTube, запрашивая связанный канал"
 				},
 				"id": {
 					"displayName": "ID",
 					"description": "Параметр ID указывает разделенный запятыми список идентификаторов плейлистов YouTube для извлекаемых ресурсов. В ресурсе списка воспроизведения свойство ID указывает идентификатор списка воспроизведения YouTube."
 				},
 				"managedByMe": {
-					"displayName": "Управляемый мной",
-					"description": "Следует ли указать API, чтобы он возвращал только каналы, управляемые владельцем контента, которые указаны в параметре onBehalfOfContentOwner."
+					"displayName": "Управляемые мной",
+					"description": "Возвращать только каналы, управляемые владельцем контента из параметра onBehalfOfContentOwner"
 				},
 				"channelId": {
 					"displayName": "Идентификатор канала",
-					"description": "Параметр ChannelId указывает, что ответ API должен содержать только ресурсы, созданные каналом."
+					"description": "Параметр channelId указывает, что ответ содержит только ресурсы, созданные каналом"
 				},
 				"forDeveloper": {
 					"displayName": "Для разработчика",
-					"description": "Ограничить ли поиск только поиском видео, загруженных через приложение или веб-сайт разработчика."
+					"description": "Ограничить поиск видео, загруженными через приложение или сайт разработчика"
 				},
 				"publishedAfter": {
 					"displayName": "Опубликовано после",
-					"description": "ПараметрPublishAfter указывает, что ответ API должен содержать только ресурсы, созданные в указанное время или после него."
+					"description": "Параметр publishedAfter указывает, что ответ содержит ресурсы, созданные после указанного времени"
 				},
 				"publishedBefore": {
-					"displayName": "Опубликовано ранее",
-					"description": "ПараметрPublishBefore указывает, что ответ API должен содержать только ресурсы, созданные до или в указанное время."
+					"displayName": "Опубликовано раньше",
+					"description": "Параметр publishedBefore указывает, что ответ содержит ресурсы, созданные до указанного времени"
 				},
 				"q": {
 					"displayName": "Запрос",
-					"description": "Параметр q указывает термин запроса для поиска."
+					"description": "Параметр q указывает термин поиска"
 				},
 				"regionCode": {
 					"displayName": "Код региона",
-					"description": "Параметр RegionCode указывает API выбрать видеодиаграмму, доступную в указанном регионе. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"description": "Параметр regionCode указывает API выбрать видеодиаграмму региона. Выберите из списка или укажите идентификатор через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 				},
 				"relatedToVideoId": {
-					"displayName": "Связано с идентификатором видео",
-					"description": "Параметр linkedToVideoId извлекает список видео, связанных с видео, которое идентифицирует значение параметра."
+					"displayName": "Связано с видео",
+					"description": "Параметр relatedToVideoId получает список видео, связанных с указанным видео"
 				},
 				"videoCategoryId": {
 					"displayName": "Идентификатор категории видео",
-					"description": "Параметр videoCategoryId определяет категорию видео, для которой необходимо получить диаграмму."
+					"description": "Параметр videoCategoryId определяет категорию видео для получения диаграммы"
 				},
 				"videoSyndicated": {
-					"displayName": "Видео синдицированное",
-					"description": "Ограничить ли поиск только видео, которые можно воспроизводить за пределами youtube.com"
+					"displayName": "Синдицированное видео",
+					"description": "Ограничить поиск видео, которые можно воспроизводить вне youtube.com"
 				},
 				"videoType": {
 					"displayName": "Тип видео",
@@ -287,13 +287,13 @@
 					"description": "Является ли видео предназначенным для детей и содержит ли оно текущий статус видео «сделано для детей»."
 				},
 				"order": {
-					"displayName": "Заказ",
+					"displayName": "Порядок",
 					"options": {
 						"date": {
 							"displayName": "Дата"
 						},
 						"relevance": {
-							"displayName": "Актуальность"
+							"displayName": "Релевантность"
 						}
 					}
 				},
@@ -327,7 +327,7 @@
 				"brandingSettingsUi": {
 					"values": {
 						"brandingSettingsUi": {
-							"displayName": "Настройки брендинга",
+							"displayName": "Параметры брендинга",
 							"description": "Инкапсулирует информацию о брендинге канала."
 						},
 						"channelSettingsValues": {
@@ -437,7 +437,7 @@
 						}
 					},
 					"placeholder": "Добавить настройки брендинга",
-					"displayName": "Настройки брендинга",
+					"displayName": "Параметры брендинга",
 					"description": "Инкапсулирует информацию о брендинге канала.",
 					"options": {
 						"channelSettingsValues": {
@@ -522,15 +522,15 @@
 		},
 		"binaryProperty": {
 			"displayName": "Входное двоичное поле",
-			"hint": "Имя входного двоичного поля, содержащего файл для загрузки."
+			"hint": "Имя двоичного поля с файлом для загрузки"
 		},
 		"title": {
-			"displayName": "Заголовок",
+			"displayName": "Название",
 			"description": "Название плейлиста"
 		},
 		"playlistId": {
 			"displayName": "Название или идентификатор плейлиста",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"videoId": {
 			"displayName": "Идентификатор видео",
@@ -541,11 +541,11 @@
 		},
 		"regionCode": {
 			"displayName": "Код региона",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"categoryId": {
-			"displayName": "Название или идентификатор категории",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"displayName": "имя или идентификатор категории",
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"rating": {
 			"displayName": "Рейтинг",

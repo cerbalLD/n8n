@@ -30,11 +30,11 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать список"
 				},
 				"add": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать элемент"
 				},
 				"enrich": {
@@ -71,16 +71,16 @@
 			}
 		},
 		"list": {
-			"displayName": "Имя списка или идентификатор",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"displayName": "Название или ID списка",
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"first_name": {
 			"displayName": "Имя",
-			"description": "Контактное имя"
+			"description": "Имя контакта"
 		},
 		"last_name": {
 			"displayName": "Фамилия",
-			"description": "Контактная фамилия"
+			"description": "Фамилия контакта"
 		},
 		"company_name": {
 			"displayName": "Название компании",
@@ -95,7 +95,7 @@
 					"description": "Контактное полное имя"
 				},
 				"email": {
-					"displayName": "Контактный адрес электронной почты",
+					"displayName": "Email контакта",
 					"placeholder": "имя@email.com"
 				},
 				"company_name": {
@@ -118,7 +118,7 @@
 					"displayName": "Контактное местоположение"
 				},
 				"contact_id": {
-					"displayName": "Идентификатор контакта",
+					"displayName": "ID контакта",
 					"description": "Идентификатор контакта из вашего источника"
 				}
 			}
@@ -139,7 +139,7 @@
 					"displayName": "Контактное местоположение"
 				},
 				"contact_id": {
-					"displayName": "Идентификатор контакта",
+					"displayName": "ID контакта",
 					"description": "Идентификатор контакта из вашего источника"
 				}
 			}
@@ -161,11 +161,11 @@
 		},
 		"firstName": {
 			"displayName": "Имя",
-			"description": "Контактное имя"
+			"description": "Имя контакта"
 		},
 		"lastName": {
 			"displayName": "Фамилия",
-			"description": "Контактная фамилия"
+			"description": "Фамилия контакта"
 		},
 		"enrichCompanyName": {
 			"displayName": "Название компании",
@@ -185,12 +185,12 @@
 			"placeholder": "Добавить поле",
 			"options": {
 				"email": {
-					"displayName": "Контактный адрес электронной почты",
+					"displayName": "Email контакта",
 					"description": "Известный контактный адрес электронной почты для улучшения соответствия",
 					"placeholder": "имя@email.com"
 				},
 				"contactId": {
-					"displayName": "Идентификатор контакта",
+					"displayName": "ID контакта",
 					"description": "Идентификатор вашей записи CRM, отраженный в ответе"
 				},
 				"jobTitle": {
@@ -222,7 +222,7 @@
 					"displayName": "Персоны"
 				},
 				"persona": {
-					"displayName": "Персона",
+					"displayName": "персона",
 					"values": {
 						"name": {
 							"displayName": "Имя",
@@ -258,7 +258,7 @@
 					"placeholder": "США, Франция, Великобритания"
 				},
 				"maxResults": {
-					"displayName": "Максимальные результаты",
+					"displayName": "Максимум результатов",
 					"description": "Максимальное количество контактов для получения (не более 10)."
 				},
 				"seniorityLevels": {
@@ -272,7 +272,7 @@
 							"displayName": "Директор"
 						},
 						"entry": {
-							"displayName": "Вход"
+							"displayName": "Запись"
 						},
 						"founder": {
 							"displayName": "Основатель"
@@ -312,7 +312,7 @@
 			"description": "Числовой идентификатор компании Linkedin (цифры в URL-адресе linkedin.com/company/)"
 		},
 		"searchSlug": {
-			"displayName": "Слизень",
+			"displayName": "URL-слаг",
 			"description": "Универсальное имя/ссылка Linkedin (конечный сегмент URL-адреса компании)"
 		},
 		"searchName": {

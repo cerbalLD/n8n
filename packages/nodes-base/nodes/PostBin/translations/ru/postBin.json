@@ -1,14 +1,14 @@
 {
 	"header": {
 		"displayName": "PostBin",
-		"description": "Использование PostBin API"
+		"description": "Использовать API PostBin"
 	},
 	"nodeView": {
 		"resource": {
 			"displayName": "Ресурс",
 			"options": {
 				"bin": {
-					"displayName": "Бин"
+					"displayName": "Корзина"
 				},
 				"request": {
 					"displayName": "Запрос"
@@ -19,7 +19,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать корзину"
 				},
 				"get": {
@@ -31,25 +31,25 @@
 					"description": "Удалить корзину"
 				},
 				"removeFirst": {
-					"displayName": "Сначала удалить",
+					"displayName": "Удалить первый",
 					"description": "Удалить первый запрос из корзины"
 				},
 				"send": {
-					"displayName": "Отправлять",
+					"displayName": "Отправить",
 					"description": "Отправить тестовый запрос в корзину"
 				}
 			}
 		},
 		"binId": {
-			"displayName": "Идентификатор бункера",
-			"description": "Уникальный идентификатор для каждого контейнера"
+			"displayName": "Идентификатор корзины",
+			"description": "Уникальный идентификатор каждой корзины"
 		},
 		"binContent": {
 			"displayName": "Содержимое корзины"
 		},
 		"requestId": {
-			"displayName": "Идентификатор запроса",
-			"description": "Уникальный идентификатор для каждого запроса"
+			"displayName": "ID запроса",
+			"description": "Уникальный идентификатор каждого запроса"
 		}
 	}
 }

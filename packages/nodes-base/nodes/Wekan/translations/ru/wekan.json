@@ -31,7 +31,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать новый список"
 				},
 				"delete": {
@@ -47,13 +47,13 @@
 					"description": "Получите много списков досок"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить элемент контрольного списка"
 				}
 			}
 		},
 		"title": {
-			"displayName": "Заголовок",
+			"displayName": "Название",
 			"description": "Название списка",
 			"placeholder": "Мой список"
 		},
@@ -70,7 +70,7 @@
 					"description": "Делать ли доску активной"
 				},
 				"isAdmin": {
-					"displayName": "Админ",
+					"displayName": "Администратор",
 					"description": "Назначать ли владельца администратором доски"
 				},
 				"color": {
@@ -118,7 +118,7 @@
 					}
 				},
 				"isWorker": {
-					"displayName": "Рабочий",
+					"displayName": "Исполнитель",
 					"description": "Стоит ли только перемещать карточки, назначать себя карточкам и комментировать"
 				},
 				"assignees": {
@@ -136,11 +136,11 @@
 			}
 		},
 		"boardId": {
-			"displayName": "Название или идентификатор доски",
+			"displayName": "Имя или ID доски",
 			"description": "Идентификатор доски, на которой находятся списки. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 		},
 		"IdUser": {
-			"displayName": "Имя пользователя или идентификатор",
+			"displayName": "Имя пользователя или ID",
 			"description": "Идентификатор пользователя, к которому прикреплены доски. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 		},
 		"returnAll": {
@@ -149,10 +149,10 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"listId": {
-			"displayName": "Идентификатор списка",
+			"displayName": "ID списка",
 			"description": "Идентификатор списка, который нужно получить"
 		},
 		"swimlaneId": {
@@ -213,7 +213,7 @@
 							"displayName": "Серый"
 						},
 						"green": {
-							"displayName": "Зеленый"
+							"displayName": "Зелёный"
 						},
 						"indigo": {
 							"displayName": "Индиго"
@@ -231,7 +231,7 @@
 							"displayName": "Военно-морской"
 						},
 						"orange": {
-							"displayName": "Апельсин"
+							"displayName": "Оранжевый"
 						},
 						"paleturquoise": {
 							"displayName": "Палибирюзовый"
@@ -267,7 +267,7 @@
 							"displayName": "Белый"
 						},
 						"yellow": {
-							"displayName": "Желтый"
+							"displayName": "Жёлтый"
 						}
 					}
 				},
@@ -288,7 +288,7 @@
 					"description": "Идентификаторы этикеток, прикрепленные к карте"
 				},
 				"listId": {
-					"displayName": "Имя списка или идентификатор",
+					"displayName": "Название или ID списка",
 					"description": "Новый идентификатор карты в списке (операция перемещения). Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"members": {
@@ -308,7 +308,7 @@
 					"description": "Новое поступление в поле карты"
 				},
 				"sort": {
-					"displayName": "Сортировать",
+					"displayName": "Сортировка",
 					"description": "Внутренне используемое значение сортировки карты"
 				},
 				"spentTime": {
@@ -324,11 +324,11 @@
 					"description": "Новый идентификатор дорожки карты. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"title": {
-					"displayName": "Заголовок",
+					"displayName": "Название",
 					"description": "Новое название элемента checklistItem."
 				},
 				"isFinished": {
-					"displayName": "Законченный",
+					"displayName": "Завершено",
 					"description": "Проверен ли элемент"
 				}
 			}
@@ -342,7 +342,7 @@
 			"description": "Идентификатор комментария, который нужно получить"
 		},
 		"items": {
-			"displayName": "Предметы",
+			"displayName": "Элементы",
 			"description": "Пункты, которые необходимо добавить в контрольный список"
 		},
 		"checklistId": {

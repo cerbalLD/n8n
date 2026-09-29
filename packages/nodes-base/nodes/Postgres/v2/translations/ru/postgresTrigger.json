@@ -1,19 +1,19 @@
 {
 	"header": {
-		"displayName": "Постгрес триггер",
-		"description": "Прослушивает сообщения Postgres"
+		"displayName": "Триггер Postgres",
+		"description": "Слушает сообщения Postgres"
 	},
 	"nodeView": {
 		"triggerMode": {
-			"displayName": "Слушайте",
+			"displayName": "Слушать",
 			"options": {
 				"createTrigger": {
-					"displayName": "События изменения строки таблицы",
+					"displayName": "События изменения строк таблицы",
 					"description": "Вставка, обновление или удаление"
 				},
 				"listenTrigger": {
-					"displayName": "Передовой",
-					"description": "Прослушивание существующего канала Postgres"
+					"displayName": "Дополнительно",
+					"description": "Слушать существующий канал Postgres"
 				}
 			}
 		},
@@ -21,21 +21,21 @@
 			"displayName": "Имя схемы"
 		},
 		"tableName": {
-			"displayName": "Имя таблицы"
+			"displayName": "Название таблицы"
 		},
 		"channelName": {
-			"displayName": "Название канала",
-			"description": "Название канала, который нужно слушать",
+			"displayName": "Имя канала",
+			"description": "Имя канала для слушания",
 			"placeholder": "например n8n_channel"
 		},
 		"firesOn": {
-			"displayName": "Событие, которое стоит прослушать",
+			"displayName": "Событие для слушания",
 			"options": {
 				"INSERT": {
-					"displayName": "Вставлять"
+					"displayName": "Вставить"
 				},
 				"UPDATE": {
-					"displayName": "Обновлять"
+					"displayName": "Обновить"
 				},
 				"DELETE": {
 					"displayName": "Удалить"
@@ -47,22 +47,22 @@
 			"placeholder": "Добавить поле",
 			"options": {
 				"channelName": {
-					"displayName": "Название канала",
-					"description": "Название канала, который нужно слушать",
+					"displayName": "Имя канала",
+					"description": "Имя канала для слушания",
 					"placeholder": "например n8n_channel"
 				},
 				"functionName": {
-					"displayName": "Имя функции",
-					"description": "Имя создаваемой функции",
+					"displayName": "Название функции",
+					"description": "Название функции для создания",
 					"placeholder": "например n8n_trigger_function()"
 				},
 				"replaceIfExists": {
-					"displayName": "Заменить, если существует",
-					"description": "Заменять ли существующую функцию и триггер с тем же именем"
+					"displayName": "Заменить если существует",
+					"description": "Заменить существующую функцию и триггер с тем же именем"
 				},
 				"triggerName": {
 					"displayName": "Имя триггера",
-					"description": "Имя создаваемого триггера",
+					"description": "Имя триггера для создания",
 					"placeholder": "например n8n_trigger"
 				}
 			}
@@ -73,11 +73,11 @@
 			"options": {
 				"connectionTimeout": {
 					"displayName": "Тайм-аут соединения",
-					"description": "Количество секунд, зарезервированных для подключения к базе данных"
+					"description": "Количество секунд для подключения к БД"
 				},
 				"delayClosingIdleConnection": {
-					"displayName": "Задержка закрытия соединения в режиме ожидания",
-					"description": "Количество секунд ожидания, прежде чем неактивное соединение можно будет закрыть."
+					"displayName": "Задержка закрытия неактивного соединения",
+					"description": "Секунды до закрытия неактивного соединения"
 				}
 			}
 		}

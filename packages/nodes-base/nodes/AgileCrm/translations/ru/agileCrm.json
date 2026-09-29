@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Гибкая CRM",
-		"description": "Используйте Agile CRM API"
+		"displayName": "Agile CRM",
+		"description": "Использование API Agile CRM"
 	},
 	"nodeView": {
 		"resource": {
@@ -14,7 +14,7 @@
 					"displayName": "Контакт"
 				},
 				"deal": {
-					"displayName": "Иметь дело"
+					"displayName": "Сделка"
 				}
 			}
 		},
@@ -22,7 +22,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать новую сделку"
 				},
 				"delete": {
@@ -31,21 +31,21 @@
 				},
 				"get": {
 					"displayName": "Получать",
-					"description": "Заключить сделку"
+					"description": "Получить сделку"
 				},
 				"getAll": {
 					"displayName": "Получить много",
-					"description": "Получите много предложений"
+					"description": "Получить несколько сделок"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить свойства сделки"
 				}
 			}
 		},
 		"contactId": {
-			"displayName": "Идентификатор контакта",
-			"description": "Уникальный идентификатор для конкретного контакта"
+			"displayName": "ID контакта",
+			"description": "Уникальный идентификатор контакта"
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",
@@ -53,7 +53,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"filterType": {
 			"displayName": "Фильтр",
@@ -62,7 +62,7 @@
 					"displayName": "Никто"
 				},
 				"manual": {
-					"displayName": "Сборка вручную"
+					"displayName": "Построить вручную"
 				},
 				"json": {
 					"displayName": "JSON"
@@ -70,7 +70,7 @@
 			}
 		},
 		"matchType": {
-			"displayName": "Должен совпадать",
+			"displayName": "Должно совпадать",
 			"options": {
 				"anyFilter": {
 					"displayName": "Любой фильтр"
@@ -81,8 +81,8 @@
 			}
 		},
 		"simple": {
-			"displayName": "Упрощать",
-			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+			"displayName": "Упростить",
+			"description": "Возвращать ли упрощённую версию ответа вместо необработанных данных"
 		},
 		"filters": {
 			"options": {
@@ -118,12 +118,12 @@
 									"displayName": "Не равно"
 								},
 								"ON": {
-									"displayName": "На"
+									"displayName": "Включено"
 								}
 							}
 						},
 						"value": {
-							"displayName": "Ценить"
+							"displayName": "Значение"
 						},
 						"value2": {
 							"displayName": "Значение 2"
@@ -135,7 +135,7 @@
 			"displayName": "Фильтры"
 		},
 		"jsonNotice": {
-			"displayName": "См. <a href=\"https://github.com/agilecrm/rest-api#121-get-contacts-by-dynamic-filter\" target=\"_blank\">Руководство по Agile CRM</a> для создания фильтров."
+			"displayName": "Справку по созданию фильтров см. в <a href=\"https://github.com/agilecrm/rest-api#121-get-contacts-by-dynamic-filter\" target=\"_blank\">руководстве Agile CRM</a>"
 		},
 		"filterJson": {
 			"displayName": "Фильтры (JSON)"
@@ -147,14 +147,14 @@
 				"sort": {
 					"values": {
 						"sort": {
-							"displayName": "Сортировать",
+							"displayName": "Сортировка",
 							"options": {
 								"direction": {
 									"displayName": "Направление",
 									"description": "Направление сортировки",
 									"options": {
 										"ASC": {
-											"displayName": "восходящий"
+											"displayName": "По возрастанию"
 										},
 										"DESC": {
 											"displayName": "По убыванию"
@@ -163,16 +163,16 @@
 								},
 								"field": {
 									"displayName": "Поле",
-									"description": "Поле сортировки"
+									"description": "Поле для сортировки"
 								}
 							}
 						}
 					},
 					"placeholder": "Добавить сортировку",
-					"displayName": "Сортировать",
+					"displayName": "Сортировка",
 					"options": {
 						"sort": {
-							"displayName": "Сортировать"
+							"displayName": "Сортировка"
 						}
 					}
 				}
@@ -235,16 +235,16 @@
 					"values": {
 						"emailOptions": {
 							"displayName": "Электронная почта",
-							"description": "Контактный адрес электронной почты"
+							"description": "Email контакта"
 						},
 						"emailProperties": {
 							"options": {
 								"subtype": {
 									"displayName": "Тип",
-									"description": "Тип электронной почты",
+									"description": "Тип email",
 									"options": {
 										"work": {
-											"displayName": "Работа"
+											"displayName": "Рабочий"
 										},
 										"personal": {
 											"displayName": "Персональный"
@@ -259,28 +259,28 @@
 						}
 					},
 					"displayName": "Электронная почта",
-					"description": "Контактный адрес электронной почты",
+					"description": "Email контакта",
 					"options": {
 						"emailProperties": {
-							"displayName": "Свойства электронной почты"
+							"displayName": "Свойства email"
 						}
 					}
 				},
 				"firstName": {
 					"displayName": "Имя",
-					"description": "Контактное имя"
+					"description": "Имя контакта"
 				},
 				"lastName": {
 					"displayName": "Фамилия",
-					"description": "Контактная фамилия"
+					"description": "Фамилия контакта"
 				},
 				"leadScore": {
-					"displayName": "Ведущий балл",
-					"description": "Ведущий показатель контакта"
+					"displayName": "Рейтинг лида",
+					"description": "Рейтинг лида контакта"
 				},
 				"starValue": {
-					"displayName": "Звездное значение",
-					"description": "Рейтинг компании (Макс. значение 5). Это не применимо к компаниям.",
+					"displayName": "Звездный рейтинг",
+					"description": "Рейтинг компании (макс. значение 5). Не применяется к компаниям.",
 					"options": {
 						"0": {
 							"displayName": "0"
@@ -306,7 +306,7 @@
 					"values": {
 						"phoneOptions": {
 							"displayName": "Телефон",
-							"description": "Контакты телефон"
+							"description": "Телефон контакта"
 						},
 						"phoneProperties": {
 							"options": {
@@ -324,13 +324,13 @@
 											"displayName": "Основной"
 										},
 										"mobile": {
-											"displayName": "мобильный"
+											"displayName": "Мобильный"
 										},
 										"other": {
-											"displayName": "Другой"
+											"displayName": "Другое"
 										},
 										"work": {
-											"displayName": "Работа"
+											"displayName": "Рабочий"
 										},
 										"workFax": {
 											"displayName": "Рабочий факс"
@@ -345,7 +345,7 @@
 						}
 					},
 					"displayName": "Телефон",
-					"description": "Контакты телефон",
+					"description": "Телефон контакта",
 					"options": {
 						"phoneProperties": {
 							"displayName": "Свойства телефона"
@@ -354,17 +354,17 @@
 				},
 				"tags": {
 					"displayName": "Теги",
-					"description": "В компанию добавлены уникальные идентификаторы для удобства управления компаниями. Это не применимо к компаниям."
+					"description": "Уникальные идентификаторы для компании, облегчающие управление. Не применяется к компаниям."
 				},
 				"title": {
-					"displayName": "Заголовок",
-					"description": "Профессиональное звание"
+					"displayName": "Название",
+					"description": "Должность"
 				},
 				"websiteOptions": {
 					"values": {
 						"websiteOptions": {
 							"displayName": "Веб-сайт",
-							"description": "Веб-сайты компаний"
+							"description": "Веб-сайты компании"
 						},
 						"websiteProperties": {
 							"options": {
@@ -373,52 +373,52 @@
 									"description": "Тип веб-сайта",
 									"options": {
 										"facebook": {
-											"displayName": "Фейсбук"
+											"displayName": "Facebook"
 										},
 										"feed": {
-											"displayName": "Кормить"
+											"displayName": "Лента"
 										},
 										"flickr": {
-											"displayName": "Фликр"
+											"displayName": "Flickr"
 										},
 										"github": {
-											"displayName": "Гитхаб"
+											"displayName": "GitHub"
 										},
 										"googlePlus": {
-											"displayName": "Гугл Плюс"
+											"displayName": "Google Plus"
 										},
 										"linkedin": {
 											"displayName": "LinkedIn"
 										},
 										"skype": {
-											"displayName": "Скайп"
+											"displayName": "Skype"
 										},
 										"twitter": {
-											"displayName": "Твиттер"
+											"displayName": "Twitter"
 										},
 										"url": {
 											"displayName": "URL"
 										},
 										"xing": {
-											"displayName": "Син"
+											"displayName": "Xing"
 										},
 										"youtube": {
-											"displayName": "Ютуб"
+											"displayName": "YouTube"
 										}
 									}
 								},
 								"url": {
 									"displayName": "URL",
-									"description": "URL-адрес веб-сайта"
+									"description": "URL веб-сайта"
 								}
 							}
 						}
 					},
 					"displayName": "Веб-сайт",
-					"description": "Веб-сайты компаний",
+					"description": "Веб-сайты компании",
 					"options": {
 						"websiteProperties": {
-							"displayName": "Свойства сайта."
+							"displayName": "Свойства веб-сайта."
 						}
 					}
 				},
@@ -431,15 +431,15 @@
 							"options": {
 								"name": {
 									"displayName": "Имя",
-									"description": "Имя свойства"
+									"description": "Название свойства"
 								},
 								"subtype": {
 									"displayName": "Подтип",
-									"description": "Подтип недвижимости"
+									"description": "Подтип свойства"
 								},
 								"value": {
-									"displayName": "Ценить",
-									"description": "Стоимость недвижимости"
+									"displayName": "Значение",
+									"description": "Значение свойства"
 								}
 							}
 						}
@@ -453,7 +453,7 @@
 				},
 				"email": {
 					"displayName": "Электронная почта",
-					"description": "Электронная почта компании",
+					"description": "Email компании",
 					"placeholder": "имя@email.com"
 				},
 				"name": {
@@ -465,7 +465,7 @@
 					"description": "Телефон компании"
 				},
 				"contactIds": {
-					"displayName": "Идентификаторы контактов",
+					"displayName": "ID контактов",
 					"description": "Уникальные идентификаторы контактов"
 				},
 				"customData": {
@@ -477,11 +477,11 @@
 							"options": {
 								"name": {
 									"displayName": "Имя",
-									"description": "Имя свойства"
+									"description": "Название свойства"
 								},
 								"value": {
-									"displayName": "Ценить",
-									"description": "Стоимость недвижимости"
+									"displayName": "Значение",
+									"description": "Значение свойства"
 								}
 							}
 						}
@@ -504,12 +504,12 @@
 			}
 		},
 		"companyId": {
-			"displayName": "Идентификатор компании",
-			"description": "Уникальный идентификатор конкретной компании"
+			"displayName": "ID компании",
+			"description": "Уникальный идентификатор компании"
 		},
 		"dealId": {
-			"displayName": "Идентификатор сделки",
-			"description": "Идентификатор сделки, которую необходимо обновить"
+			"displayName": "ID сделки",
+			"description": "ID сделки для обновления"
 		},
 		"closeDate": {
 			"displayName": "Дата закрытия",
@@ -520,8 +520,8 @@
 			"description": "Ожидаемая стоимость сделки"
 		},
 		"milestone": {
-			"displayName": "Веха",
-			"description": "Веха сделки"
+			"displayName": "Важный этап",
+			"description": "Важный этап сделки"
 		},
 		"name": {
 			"displayName": "Имя",

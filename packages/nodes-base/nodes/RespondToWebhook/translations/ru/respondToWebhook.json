@@ -50,13 +50,13 @@
 			}
 		},
 		"credentials": {
-			"displayName": "Реквизиты для входа"
+			"displayName": "Учётные данные"
 		},
 		"webhookNotice": {
 			"displayName": "При использовании выражений обратите внимание, что этот узел будет работать только для первого элемента входных данных."
 		},
 		"redirectURL": {
-			"displayName": "URL-адрес перенаправления",
+			"displayName": "URL перенаправления",
 			"description": "URL-адрес для перенаправления",
 			"placeholder": "например http://www.n8n.io"
 		},
@@ -83,7 +83,7 @@
 			}
 		},
 		"inputFieldName": {
-			"displayName": "Имя поля ввода",
+			"displayName": "Имя входного поля",
 			"description": "Имя поля ввода узла с двоичными данными"
 		},
 		"contentTypeNotice": {
@@ -110,7 +110,7 @@
 									"description": "Название заголовка"
 								},
 								"value": {
-									"displayName": "Ценить",
+									"displayName": "Значение",
 									"description": "Значение заголовка"
 								}
 							}
@@ -128,7 +128,7 @@
 				"responseKey": {
 					"displayName": "Поместите ответ в поле",
 					"description": "Имя поля ответа, в которое нужно поместить все элементы.",
-					"placeholder": "например данные"
+					"placeholder": "например data"
 				},
 				"enableStreaming": {
 					"displayName": "Включить потоковую передачу",

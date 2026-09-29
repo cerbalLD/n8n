@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Следующее облако",
-		"description": "Доступ к данным в Nextcloud"
+		"displayName": "Nextcloud",
+		"description": "Доступ к данным на Nextcloud"
 	},
 	"nodeView": {
 		"authentication": {
@@ -34,7 +34,7 @@
 			"options": {
 				"copy": {
 					"displayName": "Копировать",
-					"description": "Копирование папки"
+					"description": "Скопировать папку"
 				},
 				"delete": {
 					"displayName": "Удалить",
@@ -45,11 +45,11 @@
 					"description": "Скачать файл"
 				},
 				"move": {
-					"displayName": "Двигаться",
+					"displayName": "Переместить",
 					"description": "Переместить папку"
 				},
 				"share": {
-					"displayName": "Делиться",
+					"displayName": "Общий доступ",
 					"description": "Поделиться папкой"
 				},
 				"upload": {
@@ -57,12 +57,12 @@
 					"description": "Загрузить файл"
 				},
 				"create": {
-					"displayName": "Создавать",
-					"description": "Пригласить пользователя в организацию NextCloud"
+					"displayName": "Создать",
+					"description": "Пригласить пользователя в организацию Nextcloud"
 				},
 				"list": {
 					"displayName": "Список",
-					"description": "Вернуть содержимое заданной папки"
+					"description": "Вернуть содержимое папки"
 				},
 				"get": {
 					"displayName": "Получать",
@@ -73,24 +73,24 @@
 					"description": "Получить список пользователей"
 				},
 				"update": {
-					"displayName": "Обновлять",
-					"description": "Редактировать атрибуты, связанные с пользователем"
+					"displayName": "Обновить",
+					"description": "Редактировать атрибуты пользователя"
 				}
 			}
 		},
 		"path": {
-			"displayName": "Путь к папке",
-			"description": "Путь для перечисления содержимого. Путь должен начинаться с «/».",
-			"placeholder": "/счета/2019/"
+			"displayName": "Путь папки",
+			"description": "Путь для перечисления содержимого. Путь должен начинаться с \"/\".",
+			"placeholder": "/invoices/2019/"
 		},
 		"toPath": {
 			"displayName": "К пути",
-			"description": "Новый путь к файлу или папке. Путь должен начинаться с «/».",
-			"placeholder": "/invoices/новое_имя.txt"
+			"description": "Новый путь файла или папки. Путь должен начинаться с \"/\".",
+			"placeholder": "/invoices/new_name.txt"
 		},
 		"binaryPropertyName": {
 			"displayName": "Входное двоичное поле",
-			"hint": "Имя входного двоичного поля, содержащего файл для загрузки."
+			"hint": "Имя двоичного поля с файлом для загрузки"
 		},
 		"binaryDataUpload": {
 			"displayName": "Двоичный файл"
@@ -100,8 +100,8 @@
 			"description": "Текстовое содержимое файла для загрузки"
 		},
 		"shareType": {
-			"displayName": "Тип акции",
-			"description": "Разрешения на общий доступ, которые можно установить",
+			"displayName": "Тип общего доступа",
+			"description": "Разрешения общего доступа",
 			"options": {
 				"0": {
 					"displayName": "Пользователь"
@@ -116,30 +116,30 @@
 					"displayName": "Электронная почта"
 				},
 				"7": {
-					"displayName": "Круг"
+					"displayName": "Окружность"
 				},
 				"200": {
 					"displayName": "Внутренняя ссылка",
-					"description": "Создает внутренний URL-адрес Nextcloud (не общедоступный ресурс). Использует идентификатор файла/папки из вызова PROPFIND. Вывод: { link: \"...\" }. Не используйте с полями ShareWith."
+					"description": "Создает внутренний URL Nextcloud (без общего доступа). Использует идентификатор файла/папки из вызова PROPFIND. Вывод: { link: \"...\" }. Не используйте с полями shareWith."
 				}
 			}
 		},
 		"circleId": {
 			"displayName": "Идентификатор круга",
-			"description": "Идентификатор круга, с которым можно поделиться"
+			"description": "Идентификатор круга для совместного доступа"
 		},
 		"email": {
 			"displayName": "Электронная почта",
-			"description": "Электронная почта пользователя, которого следует пригласить",
+			"description": "Адрес электронной почты приглашаемого пользователя",
 			"placeholder": "john@email.com"
 		},
 		"groupId": {
-			"displayName": "Идентификатор группы",
-			"description": "Идентификатор группы, с которой можно поделиться"
+			"displayName": "ID группы",
+			"description": "Идентификатор группы для совместного доступа"
 		},
 		"user": {
 			"displayName": "Пользователь",
-			"description": "Пользователь, с которым можно поделиться"
+			"description": "Пользователь для совместного доступа"
 		},
 		"options": {
 			"displayName": "Параметры",
@@ -151,16 +151,16 @@
 				},
 				"permissions": {
 					"displayName": "Разрешения",
-					"description": "Разрешения на общий доступ, которые можно установить",
+					"description": "Разрешения общего доступа",
 					"options": {
 						"1": {
-							"displayName": "Читать"
+							"displayName": "Чтение"
 						},
 						"2": {
-							"displayName": "Обновлять"
+							"displayName": "Обновить"
 						},
 						"4": {
-							"displayName": "Создавать"
+							"displayName": "Создать"
 						},
 						"8": {
 							"displayName": "Удалить"
@@ -175,15 +175,15 @@
 					"description": "Необязательная строка поиска"
 				},
 				"offset": {
-					"displayName": "Компенсировать",
-					"description": "Дополнительное значение смещения"
+					"displayName": "Смещение",
+					"description": "Необязательное значение смещения"
 				}
 			}
 		},
 		"userId": {
 			"displayName": "Имя пользователя",
-			"description": "Имя пользователя, которое будет иметь пользователь",
-			"placeholder": "Джон"
+			"description": "Имя пользователя",
+			"placeholder": "john"
 		},
 		"additionalFields": {
 			"displayName": "Дополнительные поля",
@@ -191,7 +191,7 @@
 			"options": {
 				"displayName": {
 					"displayName": "Отображаемое имя",
-					"description": "Отображаемое имя пользователя, которого нужно пригласить."
+					"description": "Отображаемое имя приглашаемого пользователя"
 				}
 			}
 		},
@@ -201,7 +201,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"updateFields": {
 			"options": {
@@ -221,7 +221,7 @@
 								},
 								"displayname": {
 									"displayName": "Отображаемое имя",
-									"description": "Новое отображаемое имя пользователя."
+									"description": "Новое отображаемое имя пользователя"
 								},
 								"email": {
 									"displayName": "Электронная почта",
@@ -229,20 +229,20 @@
 								},
 								"password": {
 									"displayName": "Пароль",
-									"description": "Новый пароль для пользователя"
+									"description": "Новый пароль пользователя"
 								},
 								"twitter": {
-									"displayName": "Твиттер",
-									"description": "Новый дескриптор Twitter для пользователя"
+									"displayName": "Twitter",
+									"description": "Новое имя в Twitter для пользователя"
 								},
 								"website": {
 									"displayName": "Веб-сайт",
-									"description": "Новый сайт для пользователя"
+									"description": "Новый сайт пользователя"
 								}
 							}
 						},
 						"value": {
-							"displayName": "Ценить",
+							"displayName": "Значение",
 							"description": "Значение обновленного атрибута"
 						}
 					}

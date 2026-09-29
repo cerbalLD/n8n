@@ -1,12 +1,12 @@
 {
 	"header": {
-		"displayName": "СервисNow",
+		"displayName": "ServiceNow",
 		"description": "Использование API ServiceNow"
 	},
 	"nodeView": {
 		"authentication": {
 			"displayName": "Аутентификация",
-			"description": "Используемый метод аутентификации",
+			"description": "Метод аутентификации",
 			"options": {
 				"basicAuth": {
 					"displayName": "Базовая аутентификация"
@@ -23,7 +23,7 @@
 					"displayName": "Вложение"
 				},
 				"businessService": {
-					"displayName": "Бизнес-услуги"
+					"displayName": "Бизнес-услуга"
 				},
 				"configurationItems": {
 					"displayName": "Элемент конфигурации"
@@ -56,11 +56,11 @@
 			"options": {
 				"upload": {
 					"displayName": "Загрузить",
-					"description": "Загрузить вложение к определенной записи таблицы"
+					"description": "Загрузить вложение к определённой записи таблицы"
 				},
 				"delete": {
 					"displayName": "Удалить",
-					"description": "Удаление вложения"
+					"description": "Удалить вложение"
 				},
 				"get": {
 					"displayName": "Получать",
@@ -68,19 +68,19 @@
 				},
 				"getAll": {
 					"displayName": "Получить много",
-					"description": "Получите много вложений на столе"
+					"description": "Получить множество вложений из таблицы"
 				},
 				"create": {
-					"displayName": "Создавать"
+					"displayName": "Создать"
 				},
 				"update": {
-					"displayName": "Обновлять"
+					"displayName": "Обновить"
 				}
 			}
 		},
 		"tableName": {
 			"displayName": "Имя или идентификатор таблицы",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"id": {
 			"displayName": "ID пользователя",
@@ -88,7 +88,7 @@
 		},
 		"inputDataFieldName": {
 			"displayName": "Имя поля входных данных",
-			"description": "Имя двоичного свойства, содержащего данные для загрузки."
+			"description": "Название двоичного свойства, содержащего данные для загрузки"
 		},
 		"options": {
 			"displayName": "Параметры",
@@ -96,26 +96,26 @@
 			"options": {
 				"file_name": {
 					"displayName": "Имя файла для вложения",
-					"description": "Имя для прикрепления"
+					"description": "Название для вложения"
 				},
 				"queryFilter": {
 					"displayName": "Фильтр",
-					"description": "Закодированная строка запроса, используемая для фильтрации результатов.",
-					"hint": "Все параметры чувствительны к регистру. Запросы могут содержать более одной записи. <a href=\"https://developer.servicenow.com/dev.do#!/learn/learning-plans/quebec/servicenow_application_developer/app_store_learnv2_rest_quebec_more_about_query_parameters\">Дополнительная информация</a>.",
+					"description": "Закодированная строка запроса для фильтрации результатов",
+					"hint": "Все параметры чувствительны к регистру. Запросы могут содержать более одной записи. <a href=\"https://developer.servicenow.com/dev.do#!/learn/learning-plans/quebec/servicenow_application_developer/app_store_learnv2_rest_quebec_more_about_query_parameters\">Подробнее</a>.",
 					"placeholder": "<col_name><operator><value>"
 				},
 				"sysparm_exclude_reference_link": {
-					"displayName": "Исключить ссылочную ссылку",
-					"description": "Исключить ли ссылки Table API для ссылочных полей"
+					"displayName": "Исключить ссылку-ссылку",
+					"description": "Исключать ли ссылки Table API для ссылочных полей"
 				},
 				"sysparm_fields": {
 					"displayName": "Имена полей или идентификаторы",
-					"description": "Список полей для возврата. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>.",
-					"hint": "В выражении можно задать строку значений, разделенных запятыми, или массив строк."
+					"description": "Список полей для возврата. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>.",
+					"hint": "Строка значений, разделённых запятыми, или массив строк могут быть установлены в выражении"
 				},
 				"sysparm_query": {
 					"displayName": "Фильтр",
-					"description": "Закодированная строка запроса, используемая для фильтрации результатов. <a href=\"https://developer.servicenow.com/dev.do#!/learn/learning-plans/quebec/servicenow_application_developer/app_store_learnv2_rest_quebec_more_about_query_parameters\">Подробнее</a>."
+					"description": "Закодированная строка запроса для фильтрации результатов. <a href=\"https://developer.servicenow.com/dev.do#!/learn/learning-plans/quebec/servicenow_application_developer/app_store_learnv2_rest_quebec_more_about_query_parameters\">Подробнее</a>."
 				},
 				"sysparm_display_value": {
 					"displayName": "Возвращаемые значения",
@@ -125,7 +125,7 @@
 							"displayName": "Фактические значения"
 						},
 						"all": {
-							"displayName": "Оба"
+							"displayName": "Оба формата"
 						},
 						"true": {
 							"displayName": "Отображаемые значения"
@@ -136,7 +136,7 @@
 		},
 		"attachmentId": {
 			"displayName": "Идентификатор вложения",
-			"description": "Значение Sys_id вложения, которое нужно удалить."
+			"description": "Значение sys_id вложения для удаления"
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",
@@ -144,14 +144,14 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"download": {
 			"displayName": "Загрузить вложения"
 		},
 		"outputField": {
 			"displayName": "Поле вывода",
-			"description": "Имя поля, в которое будут помещены загруженные данные"
+			"description": "Название поля, в которое будут помещены загруженные данные"
 		},
 		"short_description": {
 			"displayName": "Краткое описание",
@@ -163,31 +163,31 @@
 			"options": {
 				"assigned_to": {
 					"displayName": "Имя или идентификатор правопреемника",
-					"description": "Какому пользователю назначен инцидент. Требуется выбор группы назначения. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"description": "Какому пользователю назначен инцидент. Требуется выбор группы назначения. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"assignment_group": {
-					"displayName": "Имя или идентификатор группы назначений",
-					"description": "Группа назначения инцидента. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Название или идентификатор группы назначения",
+					"description": "Группа назначения инцидента. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"business_service": {
 					"displayName": "Название или идентификатор бизнес-услуги",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"caller_id": {
 					"displayName": "Идентификатор вызывающего абонента",
-					"description": "Уникальный идентификатор вызвавшего инцидент"
+					"description": "Уникальный идентификатор того, кто сообщил об инциденте"
 				},
 				"category": {
-					"displayName": "Название или идентификатор категории",
-					"description": "Категория происшествия. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "имя или идентификатор категории",
+					"description": "Категория инцидента. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"close_notes": {
-					"displayName": "Закрыть примечания",
-					"description": "Заметки об инциденте"
+					"displayName": "Примечания при закрытии",
+					"description": "Примечания при закрытии инцидента"
 				},
 				"cmdb_ci": {
-					"displayName": "Имена или идентификаторы элементов конфигурации",
-					"description": "Элементы конфигурации, «cmdb_ci» в метаданных. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Названия или идентификаторы элементов конфигурации",
+					"description": "Элементы конфигурации, 'cmdb_ci' в метаданных. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"contact_type": {
 					"displayName": "Тип контакта",
@@ -202,23 +202,23 @@
 							"displayName": "Самообслуживание"
 						},
 						"walk-in": {
-							"displayName": "Зайти"
+							"displayName": "Посетитель"
 						}
 					}
 				},
 				"description": {
 					"displayName": "Описание",
-					"description": "Описание происшествия"
+					"description": "Описание инцидента"
 				},
 				"impact": {
 					"displayName": "Влияние",
-					"description": "Последствия инцидента",
+					"description": "Влияние инцидента",
 					"options": {
 						"1": {
 							"displayName": "Высокий"
 						},
 						"2": {
-							"displayName": "Середина"
+							"displayName": "Средний"
 						},
 						"3": {
 							"displayName": "Низкий"
@@ -226,26 +226,26 @@
 					}
 				},
 				"close_code": {
-					"displayName": "Код разрешения, имя или идентификатор",
-					"description": "Код разрешения инцидента, close_code в метаданных. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Название или идентификатор кода разрешения",
+					"description": "Код разрешения инцидента, 'close_code' в метаданных. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"state": {
-					"displayName": "Состояние",
+					"displayName": "область",
 					"description": "Состояние для пользователя"
 				},
 				"subcategory": {
 					"displayName": "Название или идентификатор подкатегории",
-					"description": "Подкатегория инцидента. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"description": "Подкатегория инцидента. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"urgency": {
-					"displayName": "срочность",
-					"description": "Актуальность происшествия",
+					"displayName": "Срочность",
+					"description": "Срочность инцидента",
 					"options": {
 						"1": {
 							"displayName": "Высокий"
 						},
 						"2": {
-							"displayName": "Середина"
+							"displayName": "Средний"
 						},
 						"3": {
 							"displayName": "Низкий"
@@ -261,12 +261,12 @@
 					"description": "Адрес здания"
 				},
 				"city": {
-					"displayName": "Город",
+					"displayName": "город",
 					"description": "Город пользователя"
 				},
 				"company": {
 					"displayName": "Компания",
-					"description": "Название компании для пользователя"
+					"description": "Название компании пользователя"
 				},
 				"country": {
 					"displayName": "Страна",
@@ -278,7 +278,7 @@
 				},
 				"email": {
 					"displayName": "Электронная почта",
-					"description": "Адрес электронной почты, связанный с пользователем",
+					"description": "Адрес электронной почты пользователя",
 					"placeholder": "имя@email.com"
 				},
 				"first_name": {
@@ -303,11 +303,11 @@
 				},
 				"manager": {
 					"displayName": "Менеджер",
-					"description": "Менеджер пользователя"
+					"description": "Руководитель пользователя"
 				},
 				"middle_name": {
 					"displayName": "Второе имя",
-					"description": "Второе имя пользователя"
+					"description": "Отчество пользователя"
 				},
 				"mobile_phone": {
 					"displayName": "Мобильный телефон",
@@ -319,26 +319,26 @@
 				},
 				"password_needs_reset": {
 					"displayName": "Требуется сброс пароля",
-					"description": "Требуется ли сброс пароля при входе пользователя в систему"
+					"description": "Требовать ли сброс пароля при входе пользователя"
 				},
 				"phone": {
 					"displayName": "Телефон",
 					"description": "Основной номер телефона пользователя"
 				},
 				"roles": {
-					"displayName": "Имена или идентификаторы ролей",
-					"description": "Роли пользователя. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Названия или идентификаторы ролей",
+					"description": "Роли пользователя. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"source": {
 					"displayName": "Источник"
 				},
 				"street": {
 					"displayName": "Улица",
-					"description": "Информация об улице для пользователя, разделенная запятой"
+					"description": "Информация об улице пользователя, разделённая запятой"
 				},
 				"user_name": {
 					"displayName": "Имя пользователя",
-					"description": "Имя пользователя, связанное с пользователем (например, user_name.123)."
+					"description": "Имя пользователя, связанное с пользователем (например, user_name.123)"
 				},
 				"zip": {
 					"displayName": "Почтовый индекс",
@@ -351,32 +351,32 @@
 			"placeholder": "Добавить поле",
 			"options": {
 				"assigned_to": {
-					"displayName": "Назначено имени или идентификатору",
-					"description": "Какому пользователю назначен инцидент. Требуется выбор группы назначения. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Название или идентификатор назначенного пользователя",
+					"description": "Какому пользователю назначен инцидент. Требуется выбор группы назначения. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"assignment_group": {
-					"displayName": "Имя или идентификатор группы назначений",
-					"description": "Группа назначения инцидента. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Название или идентификатор группы назначения",
+					"description": "Группа назначения инцидента. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"business_service": {
 					"displayName": "Название или идентификатор бизнес-услуги",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"caller_id": {
 					"displayName": "Идентификатор вызывающего абонента",
-					"description": "Уникальный идентификатор вызвавшего инцидент"
+					"description": "Уникальный идентификатор того, кто сообщил об инциденте"
 				},
 				"category": {
-					"displayName": "Название или идентификатор категории",
-					"description": "Категория происшествия. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "имя или идентификатор категории",
+					"description": "Категория инцидента. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"close_notes": {
-					"displayName": "Закрыть примечания",
-					"description": "Заметки об инциденте"
+					"displayName": "Примечания при закрытии",
+					"description": "Примечания при закрытии инцидента"
 				},
 				"cmdb_ci": {
-					"displayName": "Имена или идентификаторы элементов конфигурации",
-					"description": "Элементы конфигурации, «cmdb_ci» в метаданных. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Названия или идентификаторы элементов конфигурации",
+					"description": "Элементы конфигурации, 'cmdb_ci' в метаданных. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"contact_type": {
 					"displayName": "Тип контакта",
@@ -391,23 +391,23 @@
 							"displayName": "Самообслуживание"
 						},
 						"walk-in": {
-							"displayName": "Зайти"
+							"displayName": "Посетитель"
 						}
 					}
 				},
 				"description": {
 					"displayName": "Описание",
-					"description": "Описание происшествия"
+					"description": "Описание инцидента"
 				},
 				"impact": {
 					"displayName": "Влияние",
-					"description": "Последствия инцидента",
+					"description": "Влияние инцидента",
 					"options": {
 						"1": {
 							"displayName": "Высокий"
 						},
 						"2": {
-							"displayName": "Середина"
+							"displayName": "Средний"
 						},
 						"3": {
 							"displayName": "Низкий"
@@ -415,30 +415,30 @@
 					}
 				},
 				"close_code": {
-					"displayName": "Код разрешения, имя или идентификатор",
-					"description": "Код разрешения инцидента. «close_code» в метаданных. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Название или идентификатор кода разрешения",
+					"description": "Код разрешения инцидента. 'close_code' в метаданных. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"hold_reason": {
-					"displayName": "Имя или идентификатор причины удержания",
-					"description": "Отложенная причина инцидента. Это применимо, если состояние <code>On Hold</code>. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Название или идентификатор причины удержания",
+					"description": "Причина удержания инцидента. Применяется, если состояние <code>On Hold</code>. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"state": {
-					"displayName": "Состояние",
+					"displayName": "область",
 					"description": "Состояние для пользователя"
 				},
 				"subcategory": {
 					"displayName": "Название или идентификатор подкатегории",
-					"description": "Подкатегория инцидента. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"description": "Подкатегория инцидента. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"urgency": {
-					"displayName": "срочность",
-					"description": "Актуальность происшествия",
+					"displayName": "Срочность",
+					"description": "Срочность инцидента",
 					"options": {
 						"1": {
 							"displayName": "Высокий"
 						},
 						"2": {
-							"displayName": "Середина"
+							"displayName": "Средний"
 						},
 						"3": {
 							"displayName": "Низкий"
@@ -446,8 +446,8 @@
 					}
 				},
 				"work_notes": {
-					"displayName": "Рабочие заметки",
-					"description": "Рабочие заметки по инциденту"
+					"displayName": "Рабочие примечания",
+					"description": "Рабочие примечания по инциденту"
 				},
 				"active": {
 					"displayName": "Активный",
@@ -458,12 +458,12 @@
 					"description": "Адрес здания"
 				},
 				"city": {
-					"displayName": "Город",
+					"displayName": "город",
 					"description": "Город пользователя"
 				},
 				"company": {
 					"displayName": "Компания",
-					"description": "Название компании для пользователя"
+					"description": "Название компании пользователя"
 				},
 				"country": {
 					"displayName": "Страна",
@@ -475,7 +475,7 @@
 				},
 				"email": {
 					"displayName": "Электронная почта",
-					"description": "Адрес электронной почты, связанный с пользователем",
+					"description": "Адрес электронной почты пользователя",
 					"placeholder": "имя@email.com"
 				},
 				"first_name": {
@@ -500,11 +500,11 @@
 				},
 				"manager": {
 					"displayName": "Менеджер",
-					"description": "Менеджер пользователя"
+					"description": "Руководитель пользователя"
 				},
 				"middle_name": {
 					"displayName": "Второе имя",
-					"description": "Второе имя пользователя"
+					"description": "Отчество пользователя"
 				},
 				"mobile_phone": {
 					"displayName": "Мобильный телефон",
@@ -516,26 +516,26 @@
 				},
 				"password_needs_reset": {
 					"displayName": "Требуется сброс пароля",
-					"description": "Требуется ли сброс пароля при входе пользователя в систему"
+					"description": "Требовать ли сброс пароля при входе пользователя"
 				},
 				"phone": {
 					"displayName": "Телефон",
 					"description": "Основной номер телефона пользователя"
 				},
 				"roles": {
-					"displayName": "Имена или идентификаторы ролей",
-					"description": "Роли пользователя. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Названия или идентификаторы ролей",
+					"description": "Роли пользователя. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"source": {
 					"displayName": "Источник"
 				},
 				"street": {
 					"displayName": "Улица",
-					"description": "Информация об улице для пользователя, разделенная запятой"
+					"description": "Информация об улице пользователя, разделённая запятой"
 				},
 				"user_name": {
 					"displayName": "Имя пользователя",
-					"description": "Имя пользователя, связанное с пользователем (например, user_name.123)."
+					"description": "Имя пользователя, связанное с пользователем (например, user_name.123)"
 				},
 				"zip": {
 					"displayName": "Почтовый индекс",
@@ -547,22 +547,22 @@
 			"displayName": "Данные для отправки",
 			"options": {
 				"mapInput": {
-					"displayName": "Автоматическое сопоставление входных данных с столбцами",
-					"description": "Используйте, когда имена входных узлов узла соответствуют именам полей назначения."
+					"displayName": "Автоматически сопоставить входные данные столбцам",
+					"description": "Используется, когда названия входных параметров узла совпадают с названиями полей назначения"
 				},
 				"columns": {
-					"displayName": "Определите ниже для каждого столбца",
+					"displayName": "Определите для каждого столбца",
 					"description": "Установите значение для каждого столбца назначения"
 				},
 				"nothing": {
 					"displayName": "Ничего",
-					"description": "Не отправлять данные столбца"
+					"description": "Не отправлять данные столбцов"
 				}
 			}
 		},
 		"inputsToIgnore": {
-			"displayName": "Входные данные, которые следует игнорировать",
-			"description": "Список входных свойств, которые следует избегать при отправке, разделенных запятыми. Оставьте пустым, чтобы отправить все входные данные."
+			"displayName": "Входные данные для игнорирования",
+			"description": "Список входных свойств, которые следует избегать при отправке, разделённые запятыми. Оставьте пустым для отправки всех входных данных."
 		},
 		"fieldsToSend": {
 			"options": {
@@ -573,8 +573,8 @@
 					"displayName": "Поле",
 					"values": {
 						"column": {
-							"displayName": "Имя поля или идентификатор",
-							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+							"displayName": "Имя поля или ID",
+							"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 						},
 						"value": {
 							"displayName": "Значение поля"

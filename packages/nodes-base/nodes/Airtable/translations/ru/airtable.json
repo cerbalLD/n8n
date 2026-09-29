@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "Воздушный стол",
-		"description": "Чтение, обновление, запись и удаление данных из Airtable"
+		"displayName": "Airtable",
+		"description": "Чтение, обновление, запись и удаление данных в Airtable"
 	}
 }

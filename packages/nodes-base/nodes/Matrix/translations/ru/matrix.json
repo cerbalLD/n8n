@@ -1,20 +1,20 @@
 {
 	"header": {
-		"displayName": "Матрица",
-		"description": "API потребления матрицы"
+		"displayName": "Matrix",
+		"description": "Использование API Matrix"
 	},
 	"nodeView": {
 		"resource": {
 			"displayName": "Ресурс",
 			"options": {
 				"account": {
-					"displayName": "Счет"
+					"displayName": "Учётная запись"
 				},
 				"event": {
 					"displayName": "Событие"
 				},
 				"media": {
-					"displayName": "СМИ"
+					"displayName": "Средства массовой информации"
 				},
 				"message": {
 					"displayName": "Сообщение"
@@ -23,7 +23,7 @@
 					"displayName": "Комната"
 				},
 				"roomMember": {
-					"displayName": "Член комнаты"
+					"displayName": "Участник комнаты"
 				}
 			}
 		},
@@ -32,35 +32,35 @@
 			"options": {
 				"me": {
 					"displayName": "Мне",
-					"description": "Получить информацию об учетной записи текущего пользователя"
+					"description": "Получить информацию об учётной записи текущего пользователя"
 				},
 				"get": {
 					"displayName": "Получать",
-					"description": "Получить одно событие по идентификатору"
+					"description": "Получить событие по идентификатору"
 				},
 				"upload": {
 					"displayName": "Загрузить",
-					"description": "Отправьте медиа в чат"
+					"description": "Отправить медиа в чат"
 				},
 				"create": {
-					"displayName": "Создавать",
-					"description": "Новый чат с определенными настройками"
+					"displayName": "Создать",
+					"description": "Создать чат с настройками"
 				},
 				"getAll": {
 					"displayName": "Получить много",
-					"description": "Получить много участников"
+					"description": "Получить множество участников"
 				},
 				"invite": {
-					"displayName": "Приглашать",
+					"displayName": "Приглашение",
 					"description": "Пригласить пользователя в комнату"
 				},
 				"join": {
 					"displayName": "Присоединиться",
-					"description": "Присоединяйтесь к новой комнате"
+					"description": "Присоединиться к комнате"
 				},
 				"kick": {
 					"displayName": "Пинать",
-					"description": "Выгнать пользователя из комнаты"
+					"description": "Удалить пользователя из комнаты"
 				},
 				"leave": {
 					"displayName": "Оставлять",
@@ -70,20 +70,20 @@
 		},
 		"roomId": {
 			"displayName": "Название или идентификатор комнаты",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>",
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>",
 			"placeholder": "!123abc:matrix.org"
 		},
 		"eventId": {
-			"displayName": "Идентификатор события",
-			"description": "Комната, связанная с мероприятием",
+			"displayName": "ID события",
+			"description": "Комната, связанная с событием",
 			"placeholder": "$1234abcd:matrix.org"
 		},
 		"binaryPropertyName": {
 			"displayName": "Входное двоичное поле",
-			"hint": "Имя входного двоичного поля, содержащего файл для загрузки."
+			"hint": "Имя двоичного поля с файлом для загрузки"
 		},
 		"mediaType": {
-			"displayName": "Тип носителя",
+			"displayName": "Тип медиа",
 			"description": "Тип загружаемого файла",
 			"placeholder": "mxc://matrix.org/uploaded-media-uri",
 			"options": {
@@ -93,15 +93,15 @@
 				},
 				"image": {
 					"displayName": "Изображение",
-					"description": "Тип носителя изображения"
+					"description": "Изображение"
 				},
 				"audio": {
 					"displayName": "Аудио",
-					"description": "Тип аудионосителя"
+					"description": "Аудио"
 				},
 				"video": {
 					"displayName": "Видео",
-					"description": "Тип видеоматериала"
+					"description": "Видео"
 				}
 			}
 		},
@@ -122,12 +122,12 @@
 		},
 		"messageType": {
 			"displayName": "Тип сообщения",
-			"description": "Тип сообщения для отправки",
+			"description": "Тип отправляемого сообщения",
 			"options": {
 				"m": {
 					"emote": {
 						"displayName": "Эмоция",
-						"description": "Выполнить действие (аналогично /me в IRC)."
+						"description": "Выполнить действие (как /me в IRC)"
 					},
 					"notice": {
 						"displayName": "Уведомление",
@@ -142,7 +142,7 @@
 		},
 		"messageFormat": {
 			"displayName": "Формат сообщения",
-			"description": "Формат тела сообщения",
+			"description": "Формат содержимого сообщения",
 			"options": {
 				"plain": {
 					"displayName": "Обычный текст",
@@ -162,7 +162,7 @@
 		},
 		"fallbackText": {
 			"displayName": "Резервный текст",
-			"description": "Простое текстовое сообщение, отображаемое в случае, если HTML-код не может быть отображен клиентом Matrix."
+			"description": "Текстовое сообщение для отображения если HTML не поддерживается клиентом"
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",
@@ -170,15 +170,15 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"otherOptions": {
-			"displayName": "Другие варианты",
+			"displayName": "Другие параметры",
 			"placeholder": "Добавить вариант",
 			"options": {
 				"filter": {
 					"displayName": "Фильтр",
-					"description": "JSON RoomEventFilter для фильтрации возвращаемых событий. Более подробную информацию можно найти на этой <a href=\"https://matrix.org/docs/spec/client_server/r0.6.0\">странице</a>.",
+					"description": "Фильтр JSON для событий комнаты. Подробнее на <a href=\"https://matrix.org/docs/spec/client_server/r0.6.0\">этой странице</a>.",
 					"placeholder": "{\"contains_url\":true,\"types\":[\"m.room.message\", \"m.sticker\"]}"
 				}
 			}
@@ -202,10 +202,10 @@
 		},
 		"roomAlias": {
 			"displayName": "Псевдоним комнаты",
-			"placeholder": "самая крутая комната"
+			"placeholder": "самая-крутая-комната"
 		},
 		"roomIdOrAlias": {
-			"displayName": "Идентификатор комнаты или псевдоним"
+			"displayName": "Идентификатор или псевдоним комнаты"
 		},
 		"userId": {
 			"displayName": "ID пользователя",
@@ -214,8 +214,8 @@
 		},
 		"reason": {
 			"displayName": "Причина",
-			"description": "Причина для удара",
-			"placeholder": "Рассказываю несмешные анекдоты"
+			"description": "Причина удаления",
+			"placeholder": "Рассказывает скучные анекдоты"
 		},
 		"filters": {
 			"displayName": "Фильтры",
@@ -224,53 +224,53 @@
 			"options": {
 				"notMembership": {
 					"displayName": "Исключить членство",
-					"description": "Исключает участников, чье членство отличается от выбранного (используется фильтр ИЛИ с членством)",
+					"description": "Исключает участников с другим статусом членства (фильтр ИЛИ)",
 					"options": {
 						"": {
 							"displayName": "Любой",
 							"description": "Любое членство пользователя"
 						},
 						"ban": {
-							"displayName": "Запретить",
-							"description": "Пользователи удалены из комнаты"
+							"displayName": "Запрет",
+							"description": "Удалённые пользователи"
 						},
 						"invite": {
-							"displayName": "Приглашать",
-							"description": "Пользователи приглашены присоединиться"
+							"displayName": "Приглашение",
+							"description": "Приглашённые пользователи"
 						},
 						"join": {
 							"displayName": "Присоединиться",
-							"description": "Пользователи, находящиеся сейчас в комнате"
+							"description": "Пользователи в комнате"
 						},
 						"leave": {
 							"displayName": "Оставлять",
-							"description": "Пользователи, которые ушли"
+							"description": "Вышедшие пользователи"
 						}
 					}
 				},
 				"membership": {
 					"displayName": "Членство",
-					"description": "Получать только пользователей с выбранным статусом членства (используется фильтр ИЛИ с исключением членства)",
+					"description": "Получать только пользователей с выбранным статусом (фильтр ИЛИ)",
 					"options": {
 						"": {
 							"displayName": "Любой",
 							"description": "Любое членство пользователя"
 						},
 						"ban": {
-							"displayName": "Запретить",
-							"description": "Пользователи удалены из комнаты"
+							"displayName": "Запрет",
+							"description": "Удалённые пользователи"
 						},
 						"invite": {
-							"displayName": "Приглашать",
-							"description": "Пользователи приглашены присоединиться"
+							"displayName": "Приглашение",
+							"description": "Приглашённые пользователи"
 						},
 						"join": {
 							"displayName": "Присоединиться",
-							"description": "Пользователи, находящиеся сейчас в комнате"
+							"description": "Пользователи в комнате"
 						},
 						"leave": {
 							"displayName": "Оставлять",
-							"description": "Пользователи, которые ушли"
+							"description": "Вышедшие пользователи"
 						}
 					}
 				}

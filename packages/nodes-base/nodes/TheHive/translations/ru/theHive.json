@@ -8,13 +8,13 @@
 			"displayName": "Ресурс",
 			"options": {
 				"alert": {
-					"displayName": "Тревога"
+					"displayName": "Оповещение"
 				},
 				"case": {
 					"displayName": "Случай"
 				},
 				"log": {
-					"displayName": "Бревно"
+					"displayName": "Журнал"
 				},
 				"observable": {
 					"displayName": "наблюдаемый"
@@ -26,10 +26,10 @@
 		},
 		"operation": {
 			"displayName": "Операция",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>",
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать журнал задач"
 				},
 				"executeResponder": {
@@ -52,18 +52,18 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"id": {
 			"displayName": "Идентификатор журнала",
 			"description": "Идентификатор такса"
 		},
 		"caseId": {
-			"displayName": "Идентификатор дела",
+			"displayName": "ID обращения",
 			"description": "Идентификатор дела"
 		},
 		"title": {
-			"displayName": "Заголовок",
+			"displayName": "Название",
 			"description": "Подробности задачи"
 		},
 		"description": {
@@ -71,14 +71,14 @@
 			"description": "Описание случая"
 		},
 		"severity": {
-			"displayName": "Серьезность",
+			"displayName": "Серьёзность",
 			"description": "Серьезность предупреждения. По умолчанию = Средний.",
 			"options": {
 				"1": {
 					"displayName": "Низкий"
 				},
 				"2": {
-					"displayName": "Середина"
+					"displayName": "Средний"
 				},
 				"3": {
 					"displayName": "Высокий"
@@ -87,7 +87,7 @@
 		},
 		"date": {
 			"displayName": "Дата",
-			"description": "Дата и время появления оповещения по умолчанию=сейчас"
+			"description": "Дата и время, когда оповещение было выдано, по умолчанию текущее время"
 		},
 		"tags": {
 			"displayName": "Теги",
@@ -102,10 +102,10 @@
 					"displayName": "Белый"
 				},
 				"1": {
-					"displayName": "Зеленый"
+					"displayName": "Зелёный"
 				},
 				"2": {
-					"displayName": "Янтарь"
+					"displayName": "Оранжевый"
 				},
 				"3": {
 					"displayName": "Красный"
@@ -117,19 +117,19 @@
 			"description": "Статус журнала (ОК или Удалено) по умолчанию = ОК",
 			"options": {
 				"New": {
-					"displayName": "Новый"
+					"displayName": "Создать"
 				},
 				"Updated": {
 					"displayName": "Обновлено"
 				},
 				"Ignored": {
-					"displayName": "игнорируется"
+					"displayName": "Игнорировано"
 				},
 				"Imported": {
 					"displayName": "Импортировано"
 				},
 				"Ok": {
-					"displayName": "Хорошо"
+					"displayName": "OK"
 				},
 				"Deleted": {
 					"displayName": "Удалено"
@@ -138,13 +138,13 @@
 					"displayName": "Отмена"
 				},
 				"Completed": {
-					"displayName": "Завершенный"
+					"displayName": "Завершено"
 				},
 				"InProgress": {
-					"displayName": "В ходе выполнения"
+					"displayName": "В процессе"
 				},
 				"Waiting": {
-					"displayName": "Ожидающий"
+					"displayName": "Ожидание"
 				}
 			}
 		},
@@ -158,10 +158,10 @@
 		},
 		"sourceRef": {
 			"displayName": "ИсточникСсылка",
-			"description": "Ссылка на источник оповещения"
+			"description": "Ссылка источника оповещения"
 		},
 		"follow": {
-			"displayName": "Следовать",
+			"displayName": "Следить",
 			"description": "Станет ли предупреждение активным при обновлении default=true"
 		},
 		"artifactUi": {
@@ -182,7 +182,7 @@
 						},
 						"binaryProperty": {
 							"displayName": "Входное двоичное поле",
-							"hint": "Имя входного двоичного поля, содержащего файл для записи."
+							"hint": "Имя входного двоичного поля, содержащего файл для записи"
 						},
 						"message": {
 							"displayName": "Сообщение"
@@ -199,7 +199,7 @@
 		},
 		"responder": {
 			"displayName": "Имя или идентификатор ответчика",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"jsonParameters": {
 			"displayName": "Параметры JSON"
@@ -220,11 +220,11 @@
 						"customFields": {
 							"options": {
 								"field": {
-									"displayName": "Имя поля или идентификатор",
-									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+									"displayName": "Имя поля или ID",
+									"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 								},
 								"value": {
-									"displayName": "Ценить",
+									"displayName": "Значение",
 									"description": "Значение пользовательского поля. Используйте выражение, если тип не является строкой."
 								}
 							}
@@ -264,7 +264,7 @@
 								},
 								"binaryProperty": {
 									"displayName": "Входное двоичное поле",
-									"hint": "Имя входного двоичного поля, содержащего файл для записи."
+									"hint": "Имя входного двоичного поля, содержащего файл для записи"
 								},
 								"message": {
 									"displayName": "Сообщение"
@@ -291,11 +291,11 @@
 						"customFields": {
 							"options": {
 								"field": {
-									"displayName": "Имя поля или идентификатор",
-									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+									"displayName": "Имя поля или ID",
+									"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 								},
 								"value": {
-									"displayName": "Ценить",
+									"displayName": "Значение",
 									"description": "Значение пользовательского поля. Используйте выражение, если тип не является строкой."
 								}
 							}
@@ -322,18 +322,18 @@
 					"description": "Подробности задачи"
 				},
 				"follow": {
-					"displayName": "Следовать",
+					"displayName": "Следить",
 					"description": "Станет ли предупреждение активным при обновлении default=true"
 				},
 				"severity": {
-					"displayName": "Серьезность",
+					"displayName": "Серьёзность",
 					"description": "Серьезность предупреждения. По умолчанию = Средний.",
 					"options": {
 						"1": {
 							"displayName": "Низкий"
 						},
 						"2": {
-							"displayName": "Середина"
+							"displayName": "Средний"
 						},
 						"3": {
 							"displayName": "Высокий"
@@ -344,19 +344,19 @@
 					"displayName": "Статус",
 					"options": {
 						"New": {
-							"displayName": "Новый"
+							"displayName": "Создать"
 						},
 						"Updated": {
 							"displayName": "Обновлено"
 						},
 						"Ignored": {
-							"displayName": "игнорируется"
+							"displayName": "Игнорировано"
 						},
 						"Imported": {
 							"displayName": "Импортировано"
 						},
 						"Ok": {
-							"displayName": "Хорошо"
+							"displayName": "OK"
 						},
 						"Deleted": {
 							"displayName": "Удалено"
@@ -371,13 +371,13 @@
 							"displayName": "Отмена"
 						},
 						"Completed": {
-							"displayName": "Завершенный"
+							"displayName": "Завершено"
 						},
 						"InProgress": {
-							"displayName": "В ходе выполнения"
+							"displayName": "в процессе"
 						},
 						"Waiting": {
-							"displayName": "Ожидающий"
+							"displayName": "Ожидание"
 						}
 					},
 					"description": "Статус задачи. По умолчанию = Ожидание."
@@ -387,7 +387,7 @@
 					"placeholder": "тег1, тег2"
 				},
 				"title": {
-					"displayName": "Заголовок",
+					"displayName": "Название",
 					"description": "Подробности задачи"
 				},
 				"tlp": {
@@ -398,10 +398,10 @@
 							"displayName": "Белый"
 						},
 						"1": {
-							"displayName": "Зеленый"
+							"displayName": "Зелёный"
 						},
 						"2": {
-							"displayName": "Янтарь"
+							"displayName": "Оранжевый"
 						},
 						"3": {
 							"displayName": "Красный"
@@ -414,7 +414,7 @@
 				},
 				"ioc": {
 					"displayName": "IOC",
-					"description": "Является ли наблюдаемая IOC (индикатор компрометации)"
+					"description": "Является ли наблюдаемая величина IOC (индикатором компрометации)"
 				},
 				"sighted": {
 					"displayName": "зрячий",
@@ -465,7 +465,7 @@
 							"displayName": "Неопределенный"
 						},
 						"Other": {
-							"displayName": "Другой"
+							"displayName": "Другое"
 						},
 						"TruePositive": {
 							"displayName": "Истинный Позитив"
@@ -477,7 +477,7 @@
 					"description": "Дата начала выполнения задачи. Это значение устанавливается автоматически, когда для статуса установлено значение «Открыто»."
 				},
 				"summary": {
-					"displayName": "Краткое содержание",
+					"displayName": "Краткое описание",
 					"description": "Краткое изложение дела, которое необходимо предоставить при закрытии дела"
 				}
 			}
@@ -487,7 +487,7 @@
 			"placeholder": "Добавить вариант",
 			"options": {
 				"sort": {
-					"displayName": "Сортировать",
+					"displayName": "Сортировка",
 					"placeholder": "±Атрибут, опыт +статус",
 					"description": "Укажите атрибут сортировки: + по возрастанию, - по убыванию."
 				},
@@ -507,11 +507,11 @@
 						"customFields": {
 							"options": {
 								"field": {
-									"displayName": "Имя поля или идентификатор",
-									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+									"displayName": "Имя поля или ID",
+									"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 								},
 								"value": {
-									"displayName": "Ценить",
+									"displayName": "Значение",
 									"description": "Значение пользовательского поля. Используйте выражение, если тип не является строкой."
 								}
 							}
@@ -534,7 +534,7 @@
 					"description": "Дата окончания задачи. Это устанавливается автоматически, когда для статуса установлено значение «Завершено»."
 				},
 				"summary": {
-					"displayName": "Краткое содержание",
+					"displayName": "Краткое описание",
 					"description": "Краткое изложение дела, которое необходимо предоставить при закрытии дела"
 				},
 				"metrics": {
@@ -589,11 +589,11 @@
 						"customFields": {
 							"options": {
 								"field": {
-									"displayName": "Имя поля или идентификатор",
-									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+									"displayName": "Имя поля или ID",
+									"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 								},
 								"value": {
-									"displayName": "Ценить",
+									"displayName": "Значение",
 									"description": "Значение пользовательского поля. Используйте выражение, если тип не является строкой."
 								}
 							}
@@ -613,18 +613,18 @@
 					"placeholder": "опыт, свободный текст"
 				},
 				"follow": {
-					"displayName": "Следовать",
+					"displayName": "Следить",
 					"description": "Станет ли предупреждение активным при обновлении default=true"
 				},
 				"severity": {
-					"displayName": "Серьезность",
+					"displayName": "Серьёзность",
 					"description": "Серьезность предупреждения. По умолчанию = Средний.",
 					"options": {
 						"1": {
 							"displayName": "Низкий"
 						},
 						"2": {
-							"displayName": "Середина"
+							"displayName": "Средний"
 						},
 						"3": {
 							"displayName": "Высокий"
@@ -636,7 +636,7 @@
 					"placeholder": "тег1, тег2"
 				},
 				"title": {
-					"displayName": "Заголовок",
+					"displayName": "Название",
 					"description": "Подробности задачи"
 				},
 				"tlp": {
@@ -647,10 +647,10 @@
 							"displayName": "Белый"
 						},
 						"1": {
-							"displayName": "Зеленый"
+							"displayName": "Зелёный"
 						},
 						"2": {
-							"displayName": "Янтарь"
+							"displayName": "Оранжевый"
 						},
 						"3": {
 							"displayName": "Красный"
@@ -669,10 +669,10 @@
 						"dateRange": {
 							"options": {
 								"fromDate": {
-									"displayName": "С даты"
+									"displayName": "От даты"
 								},
 								"toDate": {
-									"displayName": "На сегодняшний день"
+									"displayName": "До даты"
 								}
 							}
 						}
@@ -686,7 +686,7 @@
 				},
 				"ioc": {
 					"displayName": "IOC",
-					"description": "Является ли наблюдаемая IOC (индикатор компрометации)"
+					"description": "Является ли наблюдаемая величина IOC (индикатором компрометации)"
 				},
 				"keyword": {
 					"displayName": "Ключевое слово",
@@ -704,7 +704,7 @@
 					"description": "Статус наблюдаемого. По умолчанию=ОК.",
 					"options": {
 						"Ok": {
-							"displayName": "Хорошо"
+							"displayName": "OK"
 						},
 						"Deleted": {
 							"displayName": "Удалено"
@@ -712,7 +712,7 @@
 					}
 				},
 				"data": {
-					"displayName": "Ценить",
+					"displayName": "Значение",
 					"placeholder": "пример.com; 8.8.8.8"
 				},
 				"endDate": {
@@ -754,7 +754,7 @@
 							"displayName": "Неопределенный"
 						},
 						"Other": {
-							"displayName": "Другой"
+							"displayName": "Другое"
 						},
 						"True Positive": {
 							"displayName": "TruePositive"
@@ -781,26 +781,26 @@
 							"displayName": "Отмена"
 						},
 						"Completed": {
-							"displayName": "Завершенный"
+							"displayName": "Завершено"
 						},
 						"InProgress": {
-							"displayName": "В ходе выполнения"
+							"displayName": "в процессе"
 						},
 						"Waiting": {
-							"displayName": "Ожидающий"
+							"displayName": "Ожидание"
 						}
 					},
 					"description": "Статус задачи. По умолчанию = Ожидание."
 				},
 				"summary": {
-					"displayName": "Краткое содержание",
+					"displayName": "Краткое описание",
 					"description": "Краткое изложение дела, которое необходимо предоставить при закрытии дела"
 				}
 			}
 		},
 		"dataType": {
 			"displayName": "Имя или идентификатор типа данных",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"data": {
 			"displayName": "Данные"
@@ -819,7 +819,7 @@
 		},
 		"ioc": {
 			"displayName": "IOC",
-			"description": "Является ли наблюдаемая IOC (индикатор компрометации)"
+			"description": "Является ли наблюдаемая величина IOC (индикатором компрометации)"
 		},
 		"sighted": {
 			"displayName": "зрячий",

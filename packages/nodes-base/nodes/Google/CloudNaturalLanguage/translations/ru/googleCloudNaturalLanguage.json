@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Google Cloud Естественный язык",
-		"description": "Использование API естественного языка Google Cloud"
+		"displayName": "Google Cloud Natural Language",
+		"description": "Использование API Google Cloud Natural Language"
 	},
 	"nodeView": {
 		"resource": {
@@ -16,29 +16,29 @@
 			"displayName": "Операция",
 			"options": {
 				"analyzeSentiment": {
-					"displayName": "Анализ настроений"
+					"displayName": "Анализ тональности"
 				}
 			}
 		},
 		"source": {
 			"displayName": "Источник",
-			"description": "Источник документа: строка, содержащая контент, или URI Google Cloud Storage.",
+			"description": "Источник документа: строка с содержимым или URI Google Cloud Storage",
 			"options": {
 				"content": {
 					"displayName": "Содержание"
 				},
 				"gcsContentUri": {
-					"displayName": "URI облачного хранилища Google"
+					"displayName": "URI Google Cloud Storage"
 				}
 			}
 		},
 		"content": {
 			"displayName": "Содержание",
-			"description": "Содержимое ввода в строковом формате. Ведение журнала облачного аудита не облагается, поскольку оно основано на пользовательских данных."
+			"description": "Содержимое ввода в строковом формате. Не логируется в облачный аудит."
 		},
 		"gcsContentUri": {
-			"displayName": "URI облачного хранилища Google",
-			"description": "URI Google Cloud Storage, в котором находится содержимое файла. Этот URI должен иметь вид: <code>gs://bucket_name/object_name</code>. Дополнительные сведения см. в разделе <a href=\"https://cloud.google.com/storage/docs/reference-uris.\">reference</a>."
+			"displayName": "URI Google Cloud Storage",
+			"description": "URI Google Cloud Storage файла. Формат: <code>gs://bucket_name/object_name</code>. Подробнее в <a href=\"https://cloud.google.com/storage/docs/reference-uris.\">справке</a>."
 		},
 		"options": {
 			"displayName": "Параметры",
@@ -58,7 +58,7 @@
 				},
 				"encodingType": {
 					"displayName": "Тип кодировки",
-					"description": "Тип кодировки, используемый API для расчета смещений предложений.",
+					"description": "Тип кодировки для расчёта смещений предложений",
 					"options": {
 						"NONE": {
 							"displayName": "Никто"
@@ -76,7 +76,7 @@
 				},
 				"language": {
 					"displayName": "Язык",
-					"description": "Язык документа (если не указан, язык определяется автоматически). Принимаются языковые коды ISO и BCP-47.",
+					"description": "Язык документа (автоматическое определение, если не указано). Поддерживаются коды ISO и BCP-47.",
 					"options": {
 						"ar": {
 							"displayName": "арабский"
@@ -88,13 +88,13 @@
 							"displayName": "Китайский (традиционный)"
 						},
 						"nl": {
-							"displayName": "Голландский"
+							"displayName": "голландский"
 						},
 						"en": {
-							"displayName": "Английский"
+							"displayName": "английский"
 						},
 						"fr": {
-							"displayName": "Французский"
+							"displayName": "французский"
 						},
 						"de": {
 							"displayName": "немецкий"
@@ -112,7 +112,7 @@
 							"displayName": "корейский"
 						},
 						"pt": {
-							"displayName": "Португальский (бразильский и континентальный)"
+							"displayName": "Португальский (Бразилия и Европа)"
 						},
 						"es": {
 							"displayName": "испанский"

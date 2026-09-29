@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "Сортировать",
+		"displayName": "Сортировка",
 		"description": "Изменить порядок элементов"
 	},
 	"nodeView": {
@@ -30,15 +30,15 @@
 						"fieldName": {
 							"displayName": "Имя поля",
 							"description": "Поле для сортировки",
-							"hint": "Введите имя поля в виде текста",
-							"placeholder": "например идентификатор"
+							"hint": "Введите название поля как текст",
+							"placeholder": "например id"
 						},
 						"order": {
-							"displayName": "Заказ",
-							"description": "Порядок сортировки по",
+							"displayName": "Порядок",
+							"description": "Порядок сортировки",
 							"options": {
 								"ascending": {
-									"displayName": "восходящий"
+									"displayName": "По возрастанию"
 								},
 								"descending": {
 									"displayName": "По убыванию"
@@ -54,7 +54,7 @@
 		},
 		"code": {
 			"displayName": "Код",
-			"description": "Код Javascript для определения порядка любых двух элементов"
+			"description": "Код JavaScript для определения порядка любых двух элементов"
 		},
 		"options": {
 			"displayName": "Параметры",
@@ -62,7 +62,7 @@
 			"options": {
 				"disableDotNotation": {
 					"displayName": "Отключить точечную нотацию",
-					"description": "Запретить ли ссылаться на дочерние поля, используя `parent.child` в имени поля."
+					"description": "Запретить ли ссылаться на дочерние поля используя `parent.child` в имени поля"
 				}
 			}
 		}

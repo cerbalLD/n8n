@@ -5,12 +5,12 @@
 	},
 	"nodeView": {
 		"eventId": {
-			"displayName": "Название или идентификатор события",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"displayName": "Название или ID мероприятия",
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"rawData": {
 			"displayName": "Необработанные данные",
-			"description": "Возвращать ли данные именно в том виде, в каком они были получены от API"
+			"description": "Возвращать ли данные в точности так, как они получены от API"
 		}
 	}
 }

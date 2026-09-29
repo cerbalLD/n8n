@@ -1,17 +1,17 @@
 {
 	"header": {
-		"displayName": "E2E-тест",
-		"description": "Фиктивный узел, используемый для тестирования e2e"
+		"displayName": "E2E тест",
+		"description": "Фиктивный узел для тестирования e2e"
 	},
 	"nodeView": {
 		"operation": {
 			"displayName": "Операция",
 			"options": {
 				"remoteOptions": {
-					"displayName": "Удаленные параметры"
+					"displayName": "Удалённые параметры"
 				},
 				"resourceLocator": {
-					"displayName": "Поиск ресурсов"
+					"displayName": "Поиск ресурса"
 				},
 				"resourceMapper": {
 					"displayName": "Компонент сопоставления ресурсов"
@@ -19,20 +19,20 @@
 			}
 		},
 		"fieldId": {
-			"displayName": "Идентификатор поля"
+			"displayName": "ID поля"
 		},
 		"remoteOptions": {
-			"displayName": "Имя или идентификатор удаленных опций",
-			"description": "Удаленные варианты загрузки. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"displayName": "Название или идентификатор удалённых параметров",
+			"description": "Удалённые параметры для загрузки. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"rlc": {
-			"displayName": "Поиск ресурсов"
+			"displayName": "Поиск ресурса"
 		},
 		"resourceMapper": {
 			"displayName": "Компонент сопоставления ресурсов"
 		},
 		"otherField": {
-			"displayName": "Другое неважное поле"
+			"displayName": "Прочие неважные поля"
 		}
 	}
 }

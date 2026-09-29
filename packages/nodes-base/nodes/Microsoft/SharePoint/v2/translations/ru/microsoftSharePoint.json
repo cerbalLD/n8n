@@ -1,7 +1,7 @@
 {
 	"header": {
 		"displayName": "Microsoft SharePoint",
-		"description": "Взаимодействие с Microsoft SharePoint API"
+		"description": "Взаимодействие с API Microsoft SharePoint"
 	},
 	"nodeView": {
 		"resource": {
@@ -26,20 +26,20 @@
 					"description": "Скачать файл"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить элемент в существующем списке"
 				},
 				"upload": {
 					"displayName": "Загрузить",
-					"description": "Загрузите существующий файл"
+					"description": "Загрузить существующий файл"
 				},
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать элемент в существующем списке"
 				},
 				"upsert": {
 					"displayName": "Создать или обновить",
-					"description": "Создайте новый элемент или обновите текущий, если он уже существует (upsert)"
+					"description": "Создать новый элемент или обновить существующий (upsert)"
 				},
 				"delete": {
 					"displayName": "Удалить",
@@ -57,56 +57,56 @@
 		},
 		"site": {
 			"displayName": "Сайт",
-			"description": "Выберите сайт, с которого нужно получить списки"
+			"description": "Выберите сайт для получения списков"
 		},
 		"folder": {
 			"displayName": "Родительская папка",
-			"description": "Выберите папку, в которую нужно загрузить файл",
+			"description": "Выберите папку для загрузки файла",
 			"placeholder": "/ (корень библиотеки)"
 		},
 		"file": {
 			"displayName": "Файл",
 			"description": "Выберите файл для обновления",
-			"placeholder": "например. мой-файл.pdf"
+			"placeholder": "например my-file.pdf"
 		},
 		"fileName": {
 			"displayName": "Имя файла",
-			"description": "Имя загружаемого файла",
+			"description": "Название загружаемого файла",
 			"placeholder": "например Мой новый файл"
 		},
 		"changeFileContent": {
 			"displayName": "Изменить содержимое файла",
-			"description": "Следует ли обновлять содержимое файла",
+			"description": "Обновлять ли содержимое файла",
 			"placeholder": "например Мой новый файл"
 		},
 		"fileContents": {
 			"displayName": "Содержимое файла",
-			"description": "Найдите имя поля ввода, содержащего двоичные данные для загрузки, на панели ввода слева на вкладке «Двоичные данные».",
-			"hint": "Имя поля ввода, содержащего данные двоичного файла для загрузки.",
-			"placeholder": "данные"
+			"description": "Найдите имя поля ввода с двоичными данными для загрузки в левой панели на вкладке «Двоичные данные»",
+			"hint": "Имя поля ввода, содержащего данные двоичного файла для загрузки",
+			"placeholder": "data"
 		},
 		"list": {
 			"displayName": "Список",
-			"description": "Выберите список, который вы хотите получить"
+			"description": "Выберите список для получения"
 		},
 		"noticeUnsupportedFields": {
-			"displayName": "Из-за ограничений API невозможно обновить следующие типы столбцов: гиперссылка, местоположение, метаданные."
+			"displayName": "Из-за ограничений API не могут быть обновлены следующие типы столбцов: гиперссылка, место расположения, метаданные"
 		},
 		"columns": {
 			"displayName": "Столбцы"
 		},
 		"item": {
 			"displayName": "Элемент",
-			"description": "Выберите предмет, который хотите получить"
+			"description": "Выберите элемент для получения"
 		},
 		"simplify": {
-			"displayName": "Упрощать"
+			"displayName": "Упростить"
 		},
 		"filter": {
-			"displayName": "Фильтровать по формуле",
-			"description": "Формула будет оцениваться для каждой записи. <a href=\"https://learn.microsoft.com/en-us/graph/filter-query-parameter\">Подробнее</a>.",
-			"hint": "Если пусто, все элементы будут возвращены",
-			"placeholder": "например поля/заголовок eq 'item1'"
+			"displayName": "Фильтр по формуле",
+			"description": "Формула будет вычисляться для каждой записи. <a href=\"https://learn.microsoft.com/en-us/graph/filter-query-parameter\">Подробнее</a>.",
+			"hint": "Если пусто, будут возвращены все элементы",
+			"placeholder": "например fields/Title eq 'item1'"
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",
@@ -114,7 +114,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"options": {
 			"displayName": "Параметры",
@@ -128,7 +128,7 @@
 							"displayName": "Тип контента"
 						},
 						"createdDateTime": {
-							"displayName": "Создано в"
+							"displayName": "Создано"
 						},
 						"createdBy": {
 							"displayName": "Создано"
@@ -140,13 +140,13 @@
 							"displayName": "ID"
 						},
 						"lastModifiedDateTime": {
-							"displayName": "Последнее изменение:"
+							"displayName": "Последнее изменение"
 						},
 						"lastModifiedBy": {
 							"displayName": "Последнее изменение кем"
 						},
 						"parentReference": {
-							"displayName": "Родительская ссылка"
+							"displayName": "Ссылка на родительский элемент"
 						},
 						"webUrl": {
 							"displayName": "URL-адрес веб-страницы"

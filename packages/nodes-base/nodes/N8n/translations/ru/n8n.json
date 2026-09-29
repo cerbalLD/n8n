@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "н8н",
-		"description": "Обрабатывайте события и выполняйте действия на вашем экземпляре n8n."
+		"displayName": "n8n",
+		"description": "Обработка событий и выполнение действий на экземпляре n8n"
 	},
 	"nodeView": {
 		"resource": {
@@ -14,7 +14,7 @@
 					"displayName": "Полномочия"
 				},
 				"execution": {
-					"displayName": "Исполнение"
+					"displayName": "Выполнение"
 				},
 				"workflow": {
 					"displayName": "Рабочий процесс"
@@ -25,11 +25,11 @@
 			"displayName": "Операция",
 			"options": {
 				"generate": {
-					"displayName": "Генерировать",
-					"description": "Создайте аудит безопасности для этого экземпляра n8n."
+					"displayName": "Сгенерировать",
+					"description": "Создание аудита безопасности для экземпляра n8n"
 				},
 				"create": {
-					"displayName": "Создавать"
+					"displayName": "Создать"
 				},
 				"delete": {
 					"displayName": "Удалить"
@@ -44,29 +44,29 @@
 					"displayName": "Получить много"
 				},
 				"activate": {
-					"displayName": "Публиковать"
+					"displayName": "Публикация"
 				},
 				"deactivate": {
-					"displayName": "Отменить публикацию"
+					"displayName": "Снять с публикации"
 				},
 				"getVersion": {
 					"displayName": "Получить версию"
 				},
 				"update": {
-					"displayName": "Обновлять"
+					"displayName": "Обновить"
 				}
 			}
 		},
 		"additionalOptions": {
-			"displayName": "Дополнительные опции",
+			"displayName": "Дополнительные параметры",
 			"placeholder": "Добавить фильтр",
 			"options": {
 				"categories": {
 					"displayName": "Категории",
-					"description": "Категории рисков, подлежащие включению в аудит",
+					"description": "Категории рисков для включения в аудит",
 					"options": {
 						"credentials": {
-							"displayName": "Реквизиты для входа"
+							"displayName": "Учётные данные"
 						},
 						"database": {
 							"displayName": "База данных"
@@ -75,7 +75,7 @@
 							"displayName": "Файловая система"
 						},
 						"instance": {
-							"displayName": "Пример"
+							"displayName": "Экземпляр"
 						},
 						"nodes": {
 							"displayName": "Узлы"
@@ -83,31 +83,31 @@
 					}
 				},
 				"daysAbandonedWorkflow": {
-					"displayName": "Рабочий процесс «Дни заброшены»",
-					"description": "Дни, в течение которых рабочий процесс считается прерванным, если он не выполнен."
+					"displayName": "Дни для заброшенного рабочего процесса",
+					"description": "Дни, в течение которых рабочий процесс считается заброшенным, если не выполнен"
 				}
 			}
 		},
 		"name": {
 			"displayName": "Имя",
-			"description": "Имя новых учетных данных",
-			"placeholder": "например учетная запись n8n"
+			"description": "Имя новых учётных данных",
+			"placeholder": "например учётная запись n8n"
 		},
 		"credentialTypeName": {
 			"displayName": "Тип учетных данных",
-			"description": "Доступные типы зависят от узлов, установленных на экземпляре n8n. Некоторые встроенные типы включают, например. «githubApi», «notionApi» и «slackApi».",
-			"placeholder": "например н8нАпи"
+			"description": "Доступные типы зависят от установленных узлов. Встроенные типы: githubApi, notionApi, slackApi.",
+			"placeholder": "например n8nApi"
 		},
 		"data": {
 			"displayName": "Данные",
-			"description": "Действительный объект JSON со свойствами, необходимыми для этого типа учетных данных. Чтобы увидеть ожидаемый формат, вы можете использовать операцию «Получить схему».",
+			"description": "Действительный JSON объект со свойствами, необходимыми для этого типа учётных данных. Используйте операцию \"Получить схему\" для просмотра формата.",
 			"placeholder": "// например для n8nApi \n{\n  \"apiKey\": \"my-n8n-api-key\",\n  \"baseUrl\": \"https://<name>.app.n8n.cloud/api/v1\",\n}"
 		},
 		"credentialId": {
-			"displayName": "Идентификатор учетных данных"
+			"displayName": "ID учётных данных"
 		},
 		"executionId": {
-			"displayName": "Идентификатор выполнения"
+			"displayName": "ID выполнения"
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",
@@ -115,7 +115,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"filters": {
 			"displayName": "Фильтры",
@@ -123,11 +123,11 @@
 			"options": {
 				"workflowId": {
 					"displayName": "Рабочий процесс",
-					"description": "Рабочий процесс для фильтрации выполнения по"
+					"description": "Рабочий процесс для фильтрации выполнений"
 				},
 				"status": {
 					"displayName": "Статус",
-					"description": "Статус для фильтрации выполнения по",
+					"description": "Статус для фильтрации выполнений",
 					"options": {
 						"error": {
 							"displayName": "Ошибка"
@@ -136,7 +136,7 @@
 							"displayName": "Успех"
 						},
 						"waiting": {
-							"displayName": "Ожидающий"
+							"displayName": "Ожидание"
 						}
 					}
 				},
@@ -145,8 +145,8 @@
 				},
 				"tags": {
 					"displayName": "Теги",
-					"description": "Включайте только рабочие процессы с этими тегами",
-					"hint": "Список тегов, разделенных запятыми (пустое значение игнорируется)"
+					"description": "Включать только рабочие процессы с этими тегами",
+					"hint": "Список тегов, разделённый запятыми (пустые значения игнорируются)"
 				},
 				"name": {
 					"displayName": "Имя"
@@ -155,8 +155,8 @@
 					"displayName": "Идентификатор проекта"
 				},
 				"excludePinnedData": {
-					"displayName": "Исключить закрепленные данные",
-					"description": "Исключить ли закрепленные данные из ответа"
+					"displayName": "Исключить закреплённые данные",
+					"description": "Исключать ли закреплённые данные из ответа"
 				}
 			}
 		},
@@ -172,7 +172,7 @@
 		},
 		"workflowId": {
 			"displayName": "Рабочий процесс",
-			"description": "Рабочий процесс для фильтрации выполнения по"
+			"description": "Рабочий процесс для фильтрации выполнений"
 		},
 		"additionalFields": {
 			"displayName": "Дополнительные поля",
@@ -180,11 +180,11 @@
 			"options": {
 				"versionId": {
 					"displayName": "Идентификатор версии",
-					"description": "Идентификатор версии рабочего процесса для публикации."
+					"description": "ID версии рабочего процесса для публикации"
 				},
 				"name": {
 					"displayName": "Имя",
-					"description": "Название опубликованной версии (будет перезаписано)"
+					"description": "Имя опубликованной версии (будет перезаписано)"
 				},
 				"description": {
 					"displayName": "Описание",
@@ -194,12 +194,12 @@
 		},
 		"workflowObject": {
 			"displayName": "Объект рабочего процесса",
-			"description": "Действительный объект JSON с обязательными полями: «имя», «узлы», «соединения» и «настройки». Дополнительную информацию можно найти в <a href=\"https://docs.n8n.io/api/api-reference/#tag/workflow/paths/~1workflows~1%7bid%7d/put\">документации</a>.",
-			"placeholder": "{\n  \"name\": \"Мой рабочий процесс\",\n  \"узлы\": [],\n  \"соединения\": {},\n  \"настройки\": {}\n}"
+			"description": "Действительный JSON объект с обязательными полями: name, nodes, connections, settings. Подробнее в <a href=\"https://docs.n8n.io/api/api-reference/#tag/workflow/paths/~1workflows~1%7bid%7d/put\">документации</a>.",
+			"placeholder": "{\n  \"name\": \"Мой рабочий процесс\",\n  \"nodes\": [],\n  \"connections\": {},\n  \"settings\": {}\n}"
 		},
 		"versionId": {
 			"displayName": "Идентификатор версии",
-			"description": "Идентификатор версии для получения"
+			"description": "ID версии для получения"
 		}
 	}
 }

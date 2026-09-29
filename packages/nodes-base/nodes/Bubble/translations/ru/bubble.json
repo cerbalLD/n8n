@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Пузырь",
-		"description": "Используйте API пузырьковых данных"
+		"displayName": "Bubble",
+		"description": "Использовать API Bubble Data"
 	},
 	"nodeView": {
 		"resource": {
@@ -16,7 +16,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать"
+					"displayName": "Создать"
 				},
 				"delete": {
 					"displayName": "Удалить"
@@ -28,13 +28,13 @@
 					"displayName": "Получить много"
 				},
 				"update": {
-					"displayName": "Обновлять"
+					"displayName": "Обновить"
 				}
 			}
 		},
 		"typeName": {
-			"displayName": "Тип Имя",
-			"description": "Имя типа данных создаваемого объекта"
+			"displayName": "Имя типа",
+			"description": "Имя типа данных объекта"
 		},
 		"properties": {
 			"options": {
@@ -46,11 +46,11 @@
 					"values": {
 						"key": {
 							"displayName": "Ключ",
-							"description": "Поле для установки создаваемого объекта"
+							"description": "Поле для установки объекта"
 						},
 						"value": {
-							"displayName": "Ценить",
-							"description": "Значение, которое нужно установить для создаваемого объекта"
+							"displayName": "Значение",
+							"description": "Значение для установки объекта"
 						}
 					}
 				}
@@ -59,8 +59,8 @@
 			"displayName": "Характеристики"
 		},
 		"objectId": {
-			"displayName": "Идентификатор объекта",
-			"description": "Идентификатор объекта для обновления"
+			"displayName": "ID объекта",
+			"description": "ID объекта для обновления"
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",
@@ -68,7 +68,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"jsonParameters": {
 			"displayName": "Параметры JSON"
@@ -86,76 +86,76 @@
 							"options": {
 								"key": {
 									"displayName": "Ключ",
-									"description": "Поле для установки создаваемого объекта"
+									"description": "Поле для установки объекта"
 								},
 								"constraint_type": {
-									"displayName": "Ограничить",
+									"displayName": "Ограничение",
 									"options": {
 										"equals": {
 											"displayName": "Равно",
-											"description": "Используйте для проверки строгого равенства для всех типов полей."
+											"description": "Проверить строгое равенство для всех типов полей"
 										},
 										"not equal": {
 											"displayName": "Не равно",
-											"description": "Используйте для проверки строгого равенства для всех типов полей."
+											"description": "Проверить строгое равенство для всех типов полей"
 										},
 										"is_empty": {
-											"displayName": "Пусто",
-											"description": "Используйте, чтобы проверить, пусто ли данное поле объекта, для всех типов полей."
+											"displayName": "пусто",
+											"description": "Проверить, пусто ли поле для всех типов полей"
 										},
 										"is_not_empty": {
 											"displayName": "не пусто",
-											"description": "Используйте, чтобы проверить, не является ли данное поле объекта пустым, для всех типов полей."
+											"description": "Проверить, не пусто ли поле для всех типов полей"
 										},
 										"text contains": {
 											"displayName": "Текст содержит",
-											"description": "Используйте, чтобы проверить, содержит ли текстовое поле строку, только для текстовых полей."
+											"description": "Проверить, содержит ли текст строку (только текстовые поля)"
 										},
 										"not text contains": {
-											"displayName": "Не содержит текст",
-											"description": "Используйте, чтобы проверить, не содержит ли текстовое поле строку, только для текстовых полей."
+											"displayName": "Текст не содержит",
+											"description": "Проверить, не содержит ли текст строку (только текстовые поля)"
 										},
 										"greater than": {
-											"displayName": "Больше, чем",
-											"description": "Используйте для сравнения значения поля объекта относительно строки или числа для текстовых, числовых полей и полей даты."
+											"displayName": "Больше чем",
+											"description": "Сравнить значение поля с числом или датой"
 										},
 										"less than": {
-											"displayName": "Меньше, чем",
-											"description": "Используйте для сравнения значения поля объекта относительно строки или числа для текстовых, числовых полей и полей даты."
+											"displayName": "Меньше чем",
+											"description": "Сравнить значение поля с числом или датой"
 										},
 										"in": {
 											"displayName": "В",
-											"description": "Используйте, чтобы проверить, находится ли поле объекта в списке для всех типов полей."
+											"description": "Проверить, находится ли поле в списке (все типы полей)"
 										},
 										"not in": {
 											"displayName": "Не в",
-											"description": "Используйте, чтобы проверить, нет ли поля объекта в списке, для всех типов полей."
+											"description": "Проверить, не находится ли поле в списке (все типы полей)"
 										},
 										"contains": {
-											"displayName": "Содержит",
-											"description": "Используйте, чтобы проверить, содержит ли поле списка запись, только для полей списка."
+											"displayName": "содержит",
+											"description": "Проверить, содержит ли список запись (только список-поля)"
 										},
 										"not contains": {
 											"displayName": "Не содержит",
-											"description": "Используйте, чтобы проверить, не содержит ли поле списка запись, только для полей списка."
+											"description": "Проверить, не содержит ли список запись (только список-поля)"
 										},
 										"empty": {
-											"displayName": "Пустой",
-											"description": "Используйте, чтобы проверить, пусто ли поле списка, только для полей списка."
+											"displayName": "Пусто",
+											"description": "Проверить, пусто ли список (только список-поля)"
 										},
 										"not empty": {
 											"displayName": "Не пусто",
-											"description": "Используйте, чтобы проверить, не пусто ли поле списка, только для полей списка."
+											"description": "Проверить, не пусто ли список (только список-поля)"
 										},
 										"geographic_search": {
 											"displayName": "Географический поиск",
-											"description": "Используйте, чтобы проверить, находится ли текущий объект в радиусе от центрального адреса. Чтобы использовать это, значение, отправленное с ограничением, должно иметь адрес и диапазон. См. <a href=\"https://manual.bubble.io/core-resources/api/data-api\">ссылку</a>."
+											"description": "Проверить, находится ли объект в радиусе от адреса. Требует адрес и диапазон. <a href=\"https://manual.bubble.io/core-resources/api/data-api\">Подробнее</a>."
 										}
 									}
 								},
 								"value": {
-									"displayName": "Ценить",
-									"description": "Значение, которое нужно установить для создаваемого объекта"
+									"displayName": "Значение",
+									"description": "Значение для установки объекта"
 								}
 							}
 						}
@@ -170,35 +170,35 @@
 				},
 				"filtersJson": {
 					"displayName": "Фильтры (JSON)",
-					"description": "Уточните список, возвращаемый API данных, с помощью ограничений поиска точно так же, как вы определяете поиск в Bubble. См. <a href=\"https://manual.bubble.io/core-resources/api/data-api#search-constraints\">ссылку</a>.",
-					"placeholder": "[ { \"key\": \"name\", \"constraint_type\": \"текст содержит\", \"value\": \"cafe\" } , { \"key\": \"address\", \"constraint_type\": \"geographic_search\", \"value\": { \"range\":10, \"origin_address\":\"Нью-Йорк\" } } ]"
+					"description": "Уточнить результаты Data API фильтрами поиска так же, как в Bubble. <a href=\"https://manual.bubble.io/core-resources/api/data-api#search-constraints\">Подробнее</a>.",
+					"placeholder": "[ { \"key\": \"name\", \"constraint_type\": \"text contains\", \"value\": \"cafe\" } , { \"key\": \"address\", \"constraint_type\": \"geographic_search\", \"value\": { \"range\":10, \"origin_address\":\"New York\" } } ]"
 				},
 				"sort": {
 					"values": {
 						"sort": {
-							"displayName": "Сортировать"
+							"displayName": "Сортировка"
 						},
 						"sortValue": {
 							"options": {
 								"sort_field": {
-									"displayName": "Сортировать поле",
-									"description": "Укажите поле, которое будет использоваться для сортировки. Либо используйте поле, определенное для текущего типа, либо используйте <code>_random_sorting</code>, чтобы получить записи в случайном порядке."
+									"displayName": "Поле сортировки",
+									"description": "Поле для сортировки. Используйте поле типа или <code>_random_sorting</code> для случайного порядка."
 								},
 								"descending": {
 									"displayName": "По убыванию"
 								},
 								"geo_reference": {
-									"displayName": "Географическая справка",
-									"description": "Если типом поля является географический адрес, вам необходимо добавить еще один параметр geo_reference и указать адрес в виде строки."
+									"displayName": "Географическая ссылка",
+									"description": "Для географического адреса добавьте параметр geo_reference с адресом"
 								}
 							}
 						}
 					},
 					"placeholder": "Добавить сортировку",
-					"displayName": "Сортировать",
+					"displayName": "Сортировка",
 					"options": {
 						"sortValue": {
-							"displayName": "Сортировать"
+							"displayName": "Сортировка"
 						}
 					}
 				}

@@ -1,18 +1,18 @@
 {
 	"header": {
 		"displayName": "Триггер Clockify",
-		"description": "Прослушивает события Clockify"
+		"description": "Слушает события Clockify"
 	},
 	"nodeView": {
 		"workspaceId": {
 			"displayName": "Имя или идентификатор рабочей области",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"watchField": {
-			"displayName": "Курок",
+			"displayName": "Триггер",
 			"options": {
 				"0": {
-					"displayName": "Новое время"
+					"displayName": "Новая запись времени"
 				}
 			}
 		}

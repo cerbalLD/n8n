@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "Выключатель",
+		"displayName": "Switch",
 		"description": "Маршрутизация элементов в зависимости от определенного выражения или правил"
 	},
 	"nodeView": {

@@ -1,33 +1,33 @@
 {
 	"header": {
-		"displayName": "Джира Триггер",
-		"description": "Запускает рабочий процесс при возникновении событий Jira."
+		"displayName": "Триггер Jira",
+		"description": "Запускает рабочий процесс при возникновении событий Jira"
 	},
 	"nodeView": {
 		"jiraVersion": {
-			"displayName": "Версия Джиры",
+			"displayName": "Версия Jira",
 			"options": {
 				"cloud": {
-					"displayName": "Облако"
+					"displayName": "Cloud"
 				},
 				"cloudOAuth2": {
-					"displayName": "Облако (OAuth2)"
+					"displayName": "Cloud (OAuth2)"
 				},
 				"server": {
-					"displayName": "Сервер (самостоятельный хостинг)"
+					"displayName": "Server (самостоятельный хостинг)"
 				},
 				"serverPat": {
-					"displayName": "Сервер (Pat) (самостоятельный хостинг)"
+					"displayName": "Server (Pat) (самостоятельный хостинг)"
 				}
 			}
 		},
 		"authenticateWebhook": {
 			"displayName": "Аутентификация входящего вебхука",
-			"description": "Следует ли активировать аутентификацию для входящих веб-перехватчиков (делает ее более безопасной)"
+			"description": "Активировать ли аутентификацию для входящих вебхуков (повышает безопасность)"
 		},
 		"incomingAuthentication": {
 			"displayName": "Аутентификация вебхука с помощью",
-			"description": "Должна ли быть активирована аутентификация для веб-перехватчика (делает его более безопасным)",
+			"description": "Активировать ли аутентификацию для вебхука (повышает безопасность)",
 			"options": {
 				"queryAuth": {
 					"displayName": "Запрос аутентификации"
@@ -39,13 +39,13 @@
 		},
 		"events": {
 			"displayName": "События",
-			"description": "События, которые стоит послушать",
+			"description": "События для отслеживания",
 			"options": {
 				"*": {
 					"displayName": "*"
 				},
 				"board_configuration_changed": {
-					"displayName": "Конфигурация платы изменена"
+					"displayName": "Конфигурация доски изменена"
 				},
 				"board_created": {
 					"displayName": "Доска создана"
@@ -60,55 +60,55 @@
 					"displayName": "Комментарий создан"
 				},
 				"comment_deleted": {
-					"displayName": "Комментарий удален"
+					"displayName": "Комментарий удалён"
 				},
 				"comment_updated": {
-					"displayName": "Комментарий обновлен"
+					"displayName": "Комментарий обновлён"
 				},
 				"jira:issue_created": {
-					"displayName": "Проблема создана"
+					"displayName": "Задача создана"
 				},
 				"jira:issue_deleted": {
-					"displayName": "Проблема удалена"
+					"displayName": "Задача удалена"
 				},
 				"issuelink_created": {
-					"displayName": "Ссылка на задачу создана"
+					"displayName": "Ссылка задачи создана"
 				},
 				"issuelink_deleted": {
-					"displayName": "Ссылка на задачу удалена"
+					"displayName": "Ссылка задачи удалена"
 				},
 				"jira:issue_updated": {
-					"displayName": "Выпуск обновлен"
+					"displayName": "Задача обновлена"
 				},
 				"option_attachments_changed": {
-					"displayName": "Дополнительные вложения изменены"
+					"displayName": "Вложения изменены"
 				},
 				"option_issuelinks_changed": {
-					"displayName": "Ссылки на проблемы с опциями изменены"
+					"displayName": "Ссылки задачи изменены"
 				},
 				"option_subtasks_changed": {
-					"displayName": "Опции подзадач изменены"
+					"displayName": "Подзадачи изменены"
 				},
 				"option_timetracking_changed": {
-					"displayName": "Опция учета рабочего времени изменена"
+					"displayName": "Учёт времени изменён"
 				},
 				"option_unassigned_issues_changed": {
-					"displayName": "Изменены неназначенные проблемы с опцией"
+					"displayName": "Неназначенные задачи изменены"
 				},
 				"option_voting_changed": {
-					"displayName": "Голосование по вариантам изменено"
+					"displayName": "Голосование изменено"
 				},
 				"option_watching_changed": {
-					"displayName": "Наблюдение за опционами изменено"
+					"displayName": "Наблюдение изменено"
 				},
 				"project_created": {
 					"displayName": "Проект создан"
 				},
 				"project_deleted": {
-					"displayName": "Проект удален"
+					"displayName": "Проект удалён"
 				},
 				"project_updated": {
-					"displayName": "Проект обновлен"
+					"displayName": "Проект обновлён"
 				},
 				"sprint_closed": {
 					"displayName": "Спринт закрыт"
@@ -117,22 +117,22 @@
 					"displayName": "Спринт создан"
 				},
 				"sprint_deleted": {
-					"displayName": "Спринт удален"
+					"displayName": "Спринт удалён"
 				},
 				"sprint_started": {
 					"displayName": "Спринт начался"
 				},
 				"sprint_updated": {
-					"displayName": "Спринт обновлен"
+					"displayName": "Спринт обновлён"
 				},
 				"user_created": {
-					"displayName": "Создано пользователем"
+					"displayName": "Пользователь создан"
 				},
 				"user_deleted": {
-					"displayName": "Пользователь удален"
+					"displayName": "Пользователь удалён"
 				},
 				"user_updated": {
-					"displayName": "Пользователь обновлен"
+					"displayName": "Пользователь обновлён"
 				},
 				"jira:version_created": {
 					"displayName": "Версия создана"
@@ -153,19 +153,19 @@
 					"displayName": "Версия обновлена"
 				},
 				"worklog_created": {
-					"displayName": "Рабочий журнал создан"
+					"displayName": "Запись времени создана"
 				},
 				"worklog_deleted": {
-					"displayName": "Рабочий журнал удален"
+					"displayName": "Запись времени удалена"
 				},
 				"worklog_updated": {
-					"displayName": "Рабочий журнал обновлен"
+					"displayName": "Запись времени обновлена"
 				},
 				"issue_property_deleted": {
-					"displayName": "Свойство проблемы удалено"
+					"displayName": "Свойство задачи удалено"
 				},
 				"issue_property_set": {
-					"displayName": "Набор свойств проблемы"
+					"displayName": "Свойство задачи установлено"
 				},
 				"jira:version_merged": {
 					"displayName": "Версия объединена"
@@ -177,13 +177,13 @@
 			"placeholder": "Добавить поле",
 			"options": {
 				"excludeBody": {
-					"displayName": "Исключить тело",
-					"description": "Будет ли запрос с пустым телом отправлен на URL. Оставьте флажок неактивным, если хотите получать JSON."
+					"displayName": "Исключить содержимое",
+					"description": "Отправлять ли запрос с пустым содержимым на URL. Оставьте неотмеченным, если хотите получить JSON."
 				},
 				"filter": {
 					"displayName": "Фильтр",
-					"description": "JQL-запрос для ограничения количества событий, вызывающих срабатывание. Для Cloud OAuth2 оставьте поле пустым, чтобы автоматически отслеживать все доступные проекты.",
-					"placeholder": "Проект = JRA И разрешение = Исправлено"
+					"description": "JQL-запрос для ограничения задач, вызывающих события. Для Cloud OAuth2 оставьте пустым для автоматического мониторинга всех доступных проектов.",
+					"placeholder": "Project = JRA AND resolution = Fixed"
 				},
 				"includeFields": {
 					"displayName": "Включить поля",
@@ -205,23 +205,23 @@
 						},
 						"issue": {
 							"id": {
-								"displayName": "Идентификатор проблемы"
+								"displayName": "Идентификатор задачи"
 							}
 						},
 						"mergeVersion": {
 							"id": {
-								"displayName": "Объединить идентификатор версии"
+								"displayName": "Идентификатор версии для объединения"
 							}
 						},
 						"modifiedUser": {
 							"accountId": {
-								"displayName": "Измененный идентификатор учетной записи пользователя"
+								"displayName": "Идентификатор учётной записи изменившего пользователя"
 							},
 							"key": {
-								"displayName": "Измененный ключ пользователя"
+								"displayName": "Ключ изменившего пользователя"
 							},
 							"name": {
-								"displayName": "Измененное имя пользователя"
+								"displayName": "Имя изменившего пользователя"
 							}
 						},
 						"project": {
@@ -234,7 +234,7 @@
 						},
 						"property": {
 							"key": {
-								"displayName": "Ключ собственности"
+								"displayName": "Ключ свойства"
 							}
 						},
 						"sprint": {
@@ -249,7 +249,7 @@
 						},
 						"worklog": {
 							"id": {
-								"displayName": "Идентификатор рабочего журнала"
+								"displayName": "Идентификатор записи времени"
 							}
 						}
 					}

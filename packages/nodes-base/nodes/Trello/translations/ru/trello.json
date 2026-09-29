@@ -37,7 +37,7 @@
 					"displayName": "Контрольный список"
 				},
 				"label": {
-					"displayName": "Этикетка"
+					"displayName": "Подпись"
 				},
 				"list": {
 					"displayName": "Список"
@@ -48,7 +48,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать новый список"
 				},
 				"delete": {
@@ -64,15 +64,15 @@
 					"description": "Получить много списков"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить список"
 				},
 				"add": {
-					"displayName": "Добавлять",
+					"displayName": "Добавить",
 					"description": "Добавьте участника в доску, используя идентификатор участника"
 				},
 				"invite": {
-					"displayName": "Приглашать",
+					"displayName": "Приглашение",
 					"description": "Пригласить нового участника на доску по электронной почте"
 				},
 				"remove": {
@@ -108,7 +108,7 @@
 					"description": "Удаление метки с карты"
 				},
 				"archive": {
-					"displayName": "Архив",
+					"displayName": "Архивировать",
 					"description": "Архивировать/разархивировать список"
 				},
 				"getCards": {
@@ -118,7 +118,7 @@
 			}
 		},
 		"cardId": {
-			"displayName": "Идентификатор карты",
+			"displayName": "ID карты",
 			"description": "Идентификатор карты"
 		},
 		"url": {
@@ -130,7 +130,7 @@
 			"placeholder": "Добавить поле",
 			"options": {
 				"mimeType": {
-					"displayName": "MIME-тип",
+					"displayName": "Тип MIME",
 					"description": "MIME-тип добавляемого вложения.",
 					"placeholder": "изображение/png"
 				},
@@ -155,7 +155,7 @@
 					}
 				},
 				"prefs_background": {
-					"displayName": "Фон",
+					"displayName": "фон",
 					"description": "Идентификатор пользовательского фона или одного из следующих цветов: синего, оранжевого, зеленого, красного, фиолетового, розового, салатового, неба, серого."
 				},
 				"prefs_comments": {
@@ -163,7 +163,7 @@
 					"description": "Кто может комментировать карточки на этой доске?",
 					"options": {
 						"disabled": {
-							"displayName": "Неполноценный"
+							"displayName": "Отключено"
 						},
 						"members": {
 							"displayName": "Члены"
@@ -200,7 +200,7 @@
 					"description": "При использовании idCardSource вы можете указать, какие свойства копировать. все или список, разделенный запятыми: вложения, контрольные списки, комментарии, сроки, ярлыки, участники, наклейки."
 				},
 				"defaultLabels": {
-					"displayName": "Этикетки",
+					"displayName": "Метки",
 					"description": "Использовать ли набор меток по умолчанию"
 				},
 				"defaultLists": {
@@ -208,7 +208,7 @@
 					"description": "Добавлять ли на доску набор списков по умолчанию («Сделать», «Делать», «Готово»). Игнорируется, если указан idBoardSource."
 				},
 				"idOrganization": {
-					"displayName": "Идентификатор организации",
+					"displayName": "ID организации",
 					"description": "Идентификатор или название команды, к которой должна принадлежать доска."
 				},
 				"prefs_permissionLevel": {
@@ -260,7 +260,7 @@
 					"description": "Кто может голосовать на этой доске",
 					"options": {
 						"disabled": {
-							"displayName": "Неполноценный"
+							"displayName": "Отключено"
 						},
 						"members": {
 							"displayName": "Члены"
@@ -293,7 +293,7 @@
 							"description": "Пригласить как обычного участника"
 						},
 						"admin": {
-							"displayName": "Админ",
+							"displayName": "Администратор",
 							"description": "Пригласить от имени администратора"
 						},
 						"observer": {
@@ -319,7 +319,7 @@
 					"description": "Позиция нового списка. верхнее, нижнее или положительное плавающее значение."
 				},
 				"idMembers": {
-					"displayName": "Идентификаторы участников",
+					"displayName": "ID участников",
 					"description": "Список идентификаторов участников, разделенных запятыми, которые можно добавить на карту."
 				},
 				"idLabels": {
@@ -331,7 +331,7 @@
 					"description": "URL-адрес источника для прикрепления к карте"
 				},
 				"idCardSource": {
-					"displayName": "Идентификатор источника",
+					"displayName": "ID источника",
 					"description": "Идентификатор карты, которую необходимо скопировать в новую карту."
 				},
 				"board": {
@@ -367,14 +367,14 @@
 					"description": "Идентификатор исходного контрольного списка для копирования в новый"
 				},
 				"checked": {
-					"displayName": "Проверено",
+					"displayName": "Отмечено",
 					"description": "Проверен ли уже элемент проверки при создании"
 				},
 				"state": {
-					"displayName": "Состояние",
+					"displayName": "область",
 					"options": {
 						"complete": {
-							"displayName": "Полный"
+							"displayName": "Готово"
 						},
 						"incomplete": {
 							"displayName": "Неполный"
@@ -392,7 +392,7 @@
 			}
 		},
 		"id": {
-			"displayName": "Идентификатор списка",
+			"displayName": "ID списка",
 			"description": "Идентификатор списка для обновления"
 		},
 		"name": {
@@ -421,7 +421,7 @@
 					"description": "Новое название списка"
 				},
 				"idOrganization": {
-					"displayName": "Идентификатор организации",
+					"displayName": "ID организации",
 					"description": "Идентификатор команды, в которую следует переместить доску."
 				},
 				"subscribed": {
@@ -449,11 +449,11 @@
 					"description": "Разделенный запятыми список идентификаторов этикеток для установки на карту"
 				},
 				"idList": {
-					"displayName": "Идентификатор списка",
+					"displayName": "ID списка",
 					"description": "Идентификатор списка, в котором должна находиться карта."
 				},
 				"idMembers": {
-					"displayName": "Идентификаторы участников",
+					"displayName": "ID участников",
 					"description": "Список идентификаторов участников, разделенных запятыми, для установки на карте"
 				},
 				"pos": {
@@ -471,7 +471,7 @@
 							"displayName": "Синий"
 						},
 						"green": {
-							"displayName": "Зеленый"
+							"displayName": "Зелёный"
 						},
 						"lime": {
 							"displayName": "Лайм"
@@ -480,7 +480,7 @@
 							"displayName": "Нулевой"
 						},
 						"orange": {
-							"displayName": "Апельсин"
+							"displayName": "Оранжевый"
 						},
 						"pink": {
 							"displayName": "Розовый"
@@ -495,7 +495,7 @@
 							"displayName": "Небо"
 						},
 						"yellow": {
-							"displayName": "Желтый"
+							"displayName": "Жёлтый"
 						}
 					}
 				}
@@ -507,10 +507,10 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"idMember": {
-			"displayName": "Идентификатор участника",
+			"displayName": "ID участника",
 			"description": "Идентификатор участника, которого нужно удалить с доски"
 		},
 		"type": {
@@ -522,7 +522,7 @@
 					"description": "Пригласить как обычного участника"
 				},
 				"admin": {
-					"displayName": "Админ",
+					"displayName": "Администратор",
 					"description": "Пригласить от имени администратора"
 				},
 				"observer": {
@@ -537,7 +537,7 @@
 			"placeholder": "имя@email.com"
 		},
 		"listId": {
-			"displayName": "Идентификатор списка",
+			"displayName": "ID списка",
 			"description": "Идентификатор списка, в котором нужно создать карту"
 		},
 		"text": {
@@ -571,7 +571,7 @@
 					"displayName": "Синий"
 				},
 				"green": {
-					"displayName": "Зеленый"
+					"displayName": "Зелёный"
 				},
 				"lime": {
 					"displayName": "Лайм"
@@ -580,7 +580,7 @@
 					"displayName": "Нулевой"
 				},
 				"orange": {
-					"displayName": "Апельсин"
+					"displayName": "Оранжевый"
 				},
 				"pink": {
 					"displayName": "Розовый"
@@ -595,12 +595,12 @@
 					"displayName": "Небо"
 				},
 				"yellow": {
-					"displayName": "Желтый"
+					"displayName": "Жёлтый"
 				}
 			}
 		},
 		"archive": {
-			"displayName": "Архив",
+			"displayName": "Архивировать",
 			"description": "Должен ли список быть заархивирован или разархивирован"
 		},
 		"idBoard": {

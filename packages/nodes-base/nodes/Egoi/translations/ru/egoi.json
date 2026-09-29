@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Э-гой",
-		"description": "Использование API E-goi"
+		"displayName": "E-goi",
+		"description": "Используйте API E-goi"
 	},
 	"nodeView": {
 		"resource": {
@@ -16,39 +16,39 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать участника"
 				},
 				"get": {
 					"displayName": "Получать",
-					"description": "Получить члена"
+					"description": "Получить участника"
 				},
 				"getAll": {
 					"displayName": "Получить много",
-					"description": "Получить много участников"
+					"description": "Получить множество участников"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить участника"
 				}
 			}
 		},
 		"list": {
-			"displayName": "Имя списка или идентификатор",
-			"description": "Идентификатор списка для работы. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"displayName": "Название или ID списка",
+			"description": "Идентификатор списка для работы. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"email": {
 			"displayName": "Электронная почта",
-			"description": "Адрес электронной почты для подписчика",
+			"description": "Адрес электронной почты подписчика",
 			"placeholder": "имя@email.com"
 		},
 		"contactId": {
-			"displayName": "Идентификатор контакта",
-			"description": "Контактный идентификатор абонента"
+			"displayName": "ID контакта",
+			"description": "Контактный ID подписчика"
 		},
 		"resolveData": {
-			"displayName": "Разрешение данных",
-			"description": "По умолчанию ответ включает только идентификатор контакта. Если эта опция активирована, она автоматически разрешит данные."
+			"displayName": "Разрешить данные",
+			"description": "По умолчанию ответ содержит только контактный ID. Если включить этот параметр, данные будут разрешены автоматически."
 		},
 		"additionalFields": {
 			"displayName": "Дополнительные поля",
@@ -59,8 +59,8 @@
 					"description": "Дата рождения подписчика"
 				},
 				"cellphone": {
-					"displayName": "Сотовый телефон",
-					"description": "Мобильный телефон абонента"
+					"displayName": "Мобильный телефон",
+					"description": "Мобильный телефон подписчика"
 				},
 				"extraFieldsUi": {
 					"values": {
@@ -70,11 +70,11 @@
 						"extraFieldValues": {
 							"options": {
 								"field_id": {
-									"displayName": "Имя поля или идентификатор",
-									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+									"displayName": "Имя поля или ID",
+									"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 								},
 								"value": {
-									"displayName": "Ценить"
+									"displayName": "Значение"
 								}
 							}
 						}
@@ -97,7 +97,7 @@
 				},
 				"status": {
 					"displayName": "Статус",
-					"description": "Текущий статус абонента",
+					"description": "Текущий статус подписчика",
 					"options": {
 						"unconfirmed": {
 							"displayName": "Неподтвержденный"
@@ -106,16 +106,16 @@
 							"displayName": "Активный"
 						},
 						"inactive": {
-							"displayName": "Неактивный"
+							"displayName": "Неактивно"
 						},
 						"removed": {
-							"displayName": "Удаленный"
+							"displayName": "Удалён"
 						}
 					}
 				},
 				"tagIds": {
-					"displayName": "Имена или идентификаторы тегов",
-					"description": "Список идентификаторов тегов, которые необходимо добавить. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Имена или ID тегов",
+					"description": "Список ID тегов для добавления. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				}
 			}
 		},
@@ -128,12 +128,12 @@
 					"description": "Дата рождения подписчика"
 				},
 				"cellphone": {
-					"displayName": "Сотовый телефон",
-					"description": "Мобильный телефон абонента"
+					"displayName": "Мобильный телефон",
+					"description": "Мобильный телефон подписчика"
 				},
 				"email": {
 					"displayName": "Электронная почта",
-					"description": "Адрес электронной почты для подписчика",
+					"description": "Адрес электронной почты подписчика",
 					"placeholder": "имя@email.com"
 				},
 				"extraFieldsUi": {
@@ -144,11 +144,11 @@
 						"extraFieldValues": {
 							"options": {
 								"field_id": {
-									"displayName": "Имя поля или идентификатор",
-									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+									"displayName": "Имя поля или ID",
+									"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 								},
 								"value": {
-									"displayName": "Ценить"
+									"displayName": "Значение"
 								}
 							}
 						}
@@ -171,7 +171,7 @@
 				},
 				"status": {
 					"displayName": "Статус",
-					"description": "Текущий статус абонента",
+					"description": "Текущий статус подписчика",
 					"options": {
 						"unconfirmed": {
 							"displayName": "Неподтвержденный"
@@ -180,25 +180,25 @@
 							"displayName": "Активный"
 						},
 						"inactive": {
-							"displayName": "Неактивный"
+							"displayName": "Неактивно"
 						},
 						"removed": {
-							"displayName": "Удаленный"
+							"displayName": "Удалён"
 						}
 					}
 				},
 				"tagIds": {
-					"displayName": "Имена или идентификаторы тегов",
-					"description": "Список идентификаторов тегов, которые необходимо добавить. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Имена или ID тегов",
+					"description": "Список ID тегов для добавления. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				}
 			}
 		},
 		"by": {
-			"displayName": "К",
+			"displayName": "По",
 			"description": "Поиск по",
 			"options": {
 				"id": {
-					"displayName": "Идентификатор контакта"
+					"displayName": "ID контакта"
 				},
 				"email": {
 					"displayName": "Электронная почта"
@@ -211,11 +211,11 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"simple": {
-			"displayName": "Упрощать",
-			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+			"displayName": "Упростить",
+			"description": "Возвращать ли упрощённую версию ответа вместо необработанных данных"
 		}
 	}
 }

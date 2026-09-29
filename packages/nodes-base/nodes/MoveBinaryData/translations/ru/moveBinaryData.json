@@ -1,40 +1,40 @@
 {
 	"header": {
 		"displayName": "Преобразование в/из двоичных данных",
-		"description": "Перемещение данных между двоичными свойствами и свойствами JSON."
+		"description": "Перемещение данных между двоичными и JSON свойствами"
 	},
 	"nodeView": {
 		"mode": {
 			"displayName": "Режим",
-			"description": "Откуда и куда следует переместить данные",
+			"description": "Откуда и куда перемещать данные",
 			"options": {
 				"binaryToJson": {
-					"displayName": "Двоичный файл в JSON",
-					"description": "Переместить данные из двоичного формата в JSON"
+					"displayName": "Двоичные данные в JSON",
+					"description": "Переместить данные из двоичного в JSON"
 				},
 				"jsonToBinary": {
-					"displayName": "JSON в двоичный файл",
+					"displayName": "JSON в двоичные данные",
 					"description": "Переместить данные из JSON в двоичный формат"
 				}
 			}
 		},
 		"setAllData": {
 			"displayName": "Установить все данные",
-			"description": "Следует ли заменять все данные JSON данными, полученными из двоичного ключа. В противном случае данные будут записаны в один ключ."
+			"description": "Заменить ли все JSON данные данными из двоичного ключа. Иначе данные будут записаны в один ключ."
 		},
 		"sourceKey": {
 			"displayName": "Исходный ключ",
-			"description": "Имя ключа JSON, из которого нужно получить данные. Также возможно определить глубокие ключи, используя точечную запись, например: «level1.level2.currentKey».",
-			"placeholder": "данные"
+			"description": "Имя JSON ключа для получения данных. Возможно использовать точечную нотацию для вложенных ключей, например: \"level1.level2.currentKey\".",
+			"placeholder": "data"
 		},
 		"destinationKey": {
 			"displayName": "Ключ назначения",
-			"description": "Имя двоичного ключа, в который нужно скопировать данные. Также возможно определить глубокие ключи, используя точечную запись, например: «level1.level2.newKey».",
-			"placeholder": "данные"
+			"description": "Имя двоичного ключа для копирования данных. Возможно использовать точечную нотацию для вложенных ключей, например: \"level1.level2.newKey\".",
+			"placeholder": "data"
 		},
 		"convertAllData": {
-			"displayName": "Конвертировать все данные",
-			"description": "Должны ли все данные JSON быть преобразованы в двоичные файлы. В противном случае будут преобразованы только данные одного ключа."
+			"displayName": "Преобразовать все данные",
+			"description": "Преобразовать ли все JSON в двоичный. Иначе будут преобразованы данные только одного ключа."
 		},
 		"options": {
 			"displayName": "Параметры",
@@ -42,33 +42,33 @@
 			"options": {
 				"addBOM": {
 					"displayName": "Добавить метку порядка байтов (BOM)",
-					"description": "Добавлять ли специальный маркер в начало текстового файла. Этот маркер помогает некоторым программам понять, как правильно читать файл."
+					"description": "Добавлять ли специальный маркер в начало текстового файла. Этот маркер помогает некоторым программам правильно читать файл."
 				},
 				"dataIsBase64": {
-					"displayName": "Данные в формате Base64",
-					"description": "Сохранять ли двоичные данные в виде строки base64"
+					"displayName": "Данные в Base64",
+					"description": "Сохранять ли двоичные данные как строку base64"
 				},
 				"encoding": {
-					"displayName": "Кодирование",
-					"description": "Выберите набор символов, который будет использоваться для кодирования данных.",
+					"displayName": "Кодировка",
+					"description": "Выберите набор символов для кодирования данных",
 					"options": {
 						"armscii8": {
-							"displayName": "Armscii8"
+							"displayName": "armscii8"
 						},
 						"ascii": {
 							"displayName": "ascii"
 						},
 						"base64": {
-							"displayName": "база64"
+							"displayName": "base64"
 						},
 						"big5hkscs": {
 							"displayName": "big5hkscs"
 						},
 						"binary": {
-							"displayName": "двоичный"
+							"displayName": "binary"
 						},
 						"cesu8": {
-							"displayName": "цесу8"
+							"displayName": "cesu8"
 						},
 						"cp1046": {
 							"displayName": "cp1046"
@@ -167,19 +167,19 @@
 							"displayName": "eucjp"
 						},
 						"gb18030": {
-							"displayName": "GB18030"
+							"displayName": "gb18030"
 						},
 						"gbk": {
-							"displayName": "ГБК"
+							"displayName": "gbk"
 						},
 						"georgianacademy": {
-							"displayName": "Грузинская академия"
+							"displayName": "georgianacademy"
 						},
 						"georgianps": {
-							"displayName": "грузины"
+							"displayName": "georgianps"
 						},
 						"hex": {
-							"displayName": "шестигранник"
+							"displayName": "hex"
 						},
 						"hproman8": {
 							"displayName": "hproman8"
@@ -236,67 +236,67 @@
 							"displayName": "iso88599"
 						},
 						"koi8r": {
-							"displayName": "кои8р"
+							"displayName": "koi8r"
 						},
 						"koi8ru": {
-							"displayName": "кои8ру"
+							"displayName": "koi8ru"
 						},
 						"koi8t": {
-							"displayName": "кои8т"
+							"displayName": "koi8t"
 						},
 						"koi8u": {
-							"displayName": "кои8у"
+							"displayName": "koi8u"
 						},
 						"maccenteuro": {
 							"displayName": "maccenteuro"
 						},
 						"maccroatian": {
-							"displayName": "макроатийский"
+							"displayName": "maccroatian"
 						},
 						"maccyrillic": {
-							"displayName": "маккирилический"
+							"displayName": "maccyrillic"
 						},
 						"macgreek": {
-							"displayName": "Макгрек"
+							"displayName": "macgreek"
 						},
 						"maciceland": {
-							"displayName": "Мейсиленд"
+							"displayName": "maciceland"
 						},
 						"macintosh": {
-							"displayName": "Макинтош"
+							"displayName": "macintosh"
 						},
 						"macroman": {
-							"displayName": "макромен"
+							"displayName": "macroman"
 						},
 						"macromania": {
-							"displayName": "макромания"
+							"displayName": "macromania"
 						},
 						"macthai": {
-							"displayName": "Мактай"
+							"displayName": "macthai"
 						},
 						"macturkish": {
-							"displayName": "Мактурецкий"
+							"displayName": "macturkish"
 						},
 						"macukraine": {
-							"displayName": "Макукраина"
+							"displayName": "macukraine"
 						},
 						"mik": {
-							"displayName": "Мик"
+							"displayName": "mik"
 						},
 						"pt154": {
-							"displayName": "пт154"
+							"displayName": "pt154"
 						},
 						"rk1048": {
 							"displayName": "rk1048"
 						},
 						"shiftjis": {
-							"displayName": "Шифтджис"
+							"displayName": "shiftjis"
 						},
 						"tcvn": {
-							"displayName": "ТКВН"
+							"displayName": "tcvn"
 						},
 						"tis620": {
-							"displayName": "тис620"
+							"displayName": "tis620"
 						},
 						"ucs2": {
 							"displayName": "ucs2"
@@ -326,7 +326,7 @@
 							"displayName": "utf8"
 						},
 						"viscii": {
-							"displayName": "внутренние органы"
+							"displayName": "viscii"
 						},
 						"windows1250": {
 							"displayName": "windows1250"
@@ -361,33 +361,33 @@
 					}
 				},
 				"stripBOM": {
-					"displayName": "Полоса спецификации"
+					"displayName": "Удалить BOM"
 				},
 				"fileName": {
 					"displayName": "Имя файла",
-					"description": "Имя файла, которое нужно установить",
-					"placeholder": "пример.json"
+					"description": "Имя файла для установки",
+					"placeholder": "example.json"
 				},
 				"jsonParse": {
-					"displayName": "Анализ JSON",
-					"description": "Следует ли запускать анализ JSON данных для получения правильных данных объекта."
+					"displayName": "Разбор JSON",
+					"description": "Выполнять ли разбор JSON для получения корректных данных объекта"
 				},
 				"keepSource": {
-					"displayName": "Сохранить исходный код",
-					"description": "Следует ли сохранять исходный ключ. По умолчанию оно будет удалено."
+					"displayName": "Сохранить исходные данные",
+					"description": "Сохранять ли исходный ключ. По умолчанию он будет удалён."
 				},
 				"keepAsBase64": {
 					"displayName": "Сохранить как Base64",
-					"description": "Сохранять ли двоичные данные в виде строки base64"
+					"description": "Сохранять ли двоичные данные как строку base64"
 				},
 				"mimeType": {
-					"displayName": "MIME-тип",
-					"description": "Устанавливаемый MIME-тип. По умолчанию будет установлен mime-тип для JSON.",
-					"placeholder": "приложение/json"
+					"displayName": "Тип MIME",
+					"description": "MIME-тип для установки. По умолчанию устанавливается MIME-тип для JSON.",
+					"placeholder": "application/json"
 				},
 				"useRawData": {
-					"displayName": "Используйте необработанные данные",
-					"description": "Следует ли использовать данные как есть, а не JSON.stringify."
+					"displayName": "Использовать сырые данные",
+					"description": "Использовать ли данные как есть, без JSON.stringify"
 				}
 			}
 		}

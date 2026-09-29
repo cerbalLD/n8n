@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Высокий уровень",
-		"description": "Использование API высокого уровня v2"
+		"displayName": "HighLevel",
+		"description": "Использование API HighLevel v2"
 	},
 	"nodeView": {
 		"resource": {
@@ -25,7 +25,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать"
+					"displayName": "Создать"
 				},
 				"delete": {
 					"displayName": "Удалить"
@@ -37,27 +37,27 @@
 					"displayName": "Получить много"
 				},
 				"update": {
-					"displayName": "Обновлять"
+					"displayName": "Обновить"
 				},
 				"bookAppointment": {
-					"displayName": "Записаться на прием"
+					"displayName": "Записаться на встречу"
 				},
 				"getFreeSlots": {
-					"displayName": "Получите бесплатные слоты"
+					"displayName": "Получить свободные слоты"
 				}
 			}
 		},
 		"contactCreateNotice": {
-			"displayName": "Создайте новый контакт или обновите существующий, если адрес электронной почты или телефон совпадают (upsert)"
+			"displayName": "Создайте новый контакт или обновите существующий, если совпадают адрес эл. почты или номер телефона"
 		},
 		"email": {
 			"displayName": "Электронная почта",
-			"description": "Поиск контакта по электронной почте. Если адрес электронной почты не найден, он попытается найти контакт по телефону.",
+			"description": "Поиск контакта по адресу эл. почты. Если не найден, попытается найти по номеру телефона",
 			"placeholder": "имя@email.com"
 		},
 		"phone": {
 			"displayName": "Телефон",
-			"description": "Поиск контакта по телефону. Сначала он попытается найти контакт по электронной почте, а затем по телефону.",
+			"description": "Поиск контакта по номеру. Сначала попытается найти по адресу эл. почты, затем по номеру",
 			"placeholder": "+491234567890"
 		},
 		"additionalFields": {
@@ -68,7 +68,7 @@
 					"displayName": "Адрес"
 				},
 				"city": {
-					"displayName": "Город"
+					"displayName": "город"
 				},
 				"customFields": {
 					"values": {
@@ -78,7 +78,7 @@
 						"values": {
 							"options": {
 								"fieldId": {
-									"displayName": "Имя поля или идентификатор",
+									"displayName": "Имя поля или ID",
 									"description": "Выберите из списка или укажите идентификатор с помощью выражения"
 								},
 								"fieldValue": {
@@ -91,13 +91,13 @@
 					"displayName": "Пользовательские поля",
 					"options": {
 						"values": {
-							"displayName": "Ценить"
+							"displayName": "Значение"
 						}
 					}
 				},
 				"dnd": {
-					"displayName": "Просьба не беспокоить",
-					"description": "Разрешено ли отправлять автоматические/ручные исходящие сообщения или нет. True означает, что исходящие сообщения НЕ разрешены."
+					"displayName": "Не беспокоить",
+					"description": "Разрешается ли отправка автоматических/ручных исходящих сообщений. True означает запрет на отправку"
 				},
 				"firstName": {
 					"displayName": "Имя"
@@ -107,28 +107,28 @@
 				},
 				"name": {
 					"displayName": "Имя",
-					"description": "Полное имя контакта будет перезаписано «Именем» и «Фамилией», если установлено."
+					"description": "Полное имя контакта будет перезаписано на основе имени и фамилии, если они указаны"
 				},
 				"postalCode": {
 					"displayName": "Почтовый индекс"
 				},
 				"source": {
 					"displayName": "Источник",
-					"placeholder": "например Публичный API"
+					"placeholder": "например Public API"
 				},
 				"state": {
-					"displayName": "Состояние"
+					"displayName": "область"
 				},
 				"notes": {
 					"displayName": "Примечание"
 				},
 				"tags": {
 					"displayName": "Теги",
-					"hint": "Список тегов, разделенных запятыми, массив строк можно задать в выражении"
+					"hint": "Список тегов через запятую, массив строк можно установить в выражении"
 				},
 				"timezone": {
 					"displayName": "Часовой пояс",
-					"description": "Часовой пояс, который будет использоваться для возвращаемых слотов. Пример: Америка/Чиуауа.",
+					"description": "Часовой пояс для возвращаемых слотов. Пример: America/Chihuahua.",
 					"placeholder": "Выберите часовой пояс"
 				},
 				"website": {
@@ -136,18 +136,18 @@
 				},
 				"assignedTo": {
 					"displayName": "Назначено",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"companyName": {
 					"displayName": "Название компании"
 				},
 				"monetaryValue": {
 					"displayName": "Денежная стоимость",
-					"description": "Денежная стоимость потенциальной возможности"
+					"description": "Денежная стоимость потенциального заказа"
 				},
 				"stageId": {
-					"displayName": "Сценическое имя или идентификатор",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"displayName": "Название этапа или идентификатор",
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"body": {
 					"displayName": "Тело"
@@ -157,34 +157,34 @@
 					"description": "Пример: 2021-06-23T04:30:00+05:30"
 				},
 				"title": {
-					"displayName": "Заголовок"
+					"displayName": "Название"
 				},
 				"appointmentStatus": {
 					"displayName": "Статус встречи",
-					"description": "Статус встречи. Допустимые значения: новый, подтвержденный, отмененный, показанный, неявочный, недействительный.",
+					"description": "Статус встречи. Допустимые значения: новая, подтверждена, отменена, явился, не явился, недействительна",
 					"options": {
 						"cancelled": {
 							"displayName": "Отменено"
 						},
 						"confirmed": {
-							"displayName": "Подтвержденный"
+							"displayName": "Подтверждено"
 						},
 						"invalid": {
-							"displayName": "Неверный"
+							"displayName": "Недействительна"
 						},
 						"new": {
-							"displayName": "Новый"
+							"displayName": "Создать"
 						},
 						"noshow": {
-							"displayName": "Не показывать"
+							"displayName": "Не явился"
 						},
 						"showed": {
-							"displayName": "Показан"
+							"displayName": "Явился"
 						}
 					}
 				},
 				"assignedUserId": {
-					"displayName": "Назначенный идентификатор пользователя"
+					"displayName": "Идентификатор назначенного пользователя"
 				},
 				"address": {
 					"displayName": "Адрес"
@@ -202,21 +202,21 @@
 				"userIds": {
 					"values": {
 						"userIds": {
-							"displayName": "Идентификаторы пользователей",
-							"description": "Список идентификаторов пользователей, разделенных запятыми, для фильтрации слотов"
+							"displayName": "ID пользователей",
+							"description": "Список идентификаторов пользователей через запятую для фильтрации слотов"
 						}
 					},
-					"displayName": "Идентификаторы пользователей"
+					"displayName": "ID пользователей"
 				},
 				"enableLookBusy": {
-					"displayName": "Применить «Показать занято»",
-					"description": "Примените функцию «Показать занято» к слотам"
+					"displayName": "Применить статус занятости",
+					"description": "Примените статус занятости к слотам"
 				}
 			}
 		},
 		"contactId": {
-			"displayName": "Идентификатор контакта",
-			"description": "Контакт, которому принадлежит задача. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>.",
+			"displayName": "ID контакта",
+			"description": "Контакт, которому принадлежит задача. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>.",
 			"hint": "Для каждого контакта может быть только одна возможность"
 		},
 		"updateFields": {
@@ -227,7 +227,7 @@
 					"displayName": "Адрес"
 				},
 				"city": {
-					"displayName": "Город"
+					"displayName": "город"
 				},
 				"customFields": {
 					"values": {
@@ -237,7 +237,7 @@
 						"values": {
 							"options": {
 								"fieldId": {
-									"displayName": "Имя поля или идентификатор",
+									"displayName": "Имя поля или ID",
 									"description": "Выберите из списка или укажите идентификатор с помощью выражения"
 								},
 								"fieldValue": {
@@ -250,13 +250,13 @@
 					"displayName": "Пользовательские поля",
 					"options": {
 						"values": {
-							"displayName": "Ценить"
+							"displayName": "Значение"
 						}
 					}
 				},
 				"dnd": {
-					"displayName": "Просьба не беспокоить",
-					"description": "Разрешено ли отправлять автоматические/ручные исходящие сообщения или нет. True означает, что исходящие сообщения НЕ разрешены."
+					"displayName": "Не беспокоить",
+					"description": "Разрешается ли отправка автоматических/ручных исходящих сообщений. True означает запрет на отправку"
 				},
 				"email": {
 					"displayName": "Электронная почта",
@@ -270,23 +270,23 @@
 				},
 				"name": {
 					"displayName": "Имя",
-					"description": "Полное имя контакта будет перезаписано «Именем» и «Фамилией», если установлено.",
-					"placeholder": "например Джон Део"
+					"description": "Полное имя контакта будет перезаписано на основе имени и фамилии, если они указаны",
+					"placeholder": "например John Deo"
 				},
 				"phone": {
 					"displayName": "Телефон",
-					"description": "Номер телефона должен начинаться с действительного <a href=\"https://en.wikipedia.org/wiki/List_of_country_calling_codes\">кода страны</a>, предшествующего знаку +.",
+					"description": "Номер телефона должен начинаться с действительного <a href=\"https://en.wikipedia.org/wiki/List_of_country_calling_codes\">кода страны</a> с префиксом +",
 					"placeholder": "+491234567890"
 				},
 				"postalCode": {
 					"displayName": "Почтовый индекс"
 				},
 				"state": {
-					"displayName": "Состояние"
+					"displayName": "область"
 				},
 				"tags": {
 					"displayName": "Теги",
-					"hint": "Список тегов, разделенных запятыми, массив строк можно задать в выражении"
+					"hint": "Список тегов через запятую, массив строк можно установить в выражении"
 				},
 				"timezone": {
 					"displayName": "Часовой пояс",
@@ -298,20 +298,20 @@
 				},
 				"assignedTo": {
 					"displayName": "Назначено",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"monetaryValue": {
 					"displayName": "Денежная стоимость",
-					"description": "Денежная стоимость потенциальной возможности"
+					"description": "Денежная стоимость потенциального заказа"
 				},
 				"pipelineId": {
-					"displayName": "Имя или идентификатор конвейера",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"displayName": "Название конвейера или идентификатор",
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"stageId": {
-					"displayName": "Сценическое имя или идентификатор",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>",
-					"hint": "Сначала выберите «Имя или идентификатор конвейера», чтобы просмотреть этапы."
+					"displayName": "Название этапа или идентификатор",
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>",
+					"hint": "Сначала выберите название конвейера или идентификатор, чтобы просмотреть этапы"
 				},
 				"status": {
 					"displayName": "Статус",
@@ -320,18 +320,18 @@
 							"displayName": "Открыть"
 						},
 						"won": {
-							"displayName": "Выиграл"
+							"displayName": "Выиграна"
 						},
 						"lost": {
-							"displayName": "Потерянный"
+							"displayName": "Потеряна"
 						},
 						"abandoned": {
-							"displayName": "Заброшенный"
+							"displayName": "Заброшена"
 						}
 					}
 				},
 				"completed": {
-					"displayName": "Завершенный"
+					"displayName": "Завершено"
 				},
 				"body": {
 					"displayName": "Тело"
@@ -340,7 +340,7 @@
 					"displayName": "Срок оплаты"
 				},
 				"title": {
-					"displayName": "Заголовок"
+					"displayName": "Название"
 				}
 			}
 		},
@@ -350,7 +350,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"filters": {
 			"displayName": "Фильтры",
@@ -358,11 +358,11 @@
 			"options": {
 				"query": {
 					"displayName": "Запрос",
-					"description": "Запрос будет выполнять поиск по следующим полям: имя, телефон, адрес электронной почты, теги и название компании."
+					"description": "Запрос будет искать в полях: имя, телефон, адрес эл. почты, теги и название компании"
 				},
 				"assignedTo": {
 					"displayName": "Назначено",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"campaignId": {
 					"displayName": "Идентификатор кампании"
@@ -371,13 +371,13 @@
 					"displayName": "Дата окончания"
 				},
 				"pipelineId": {
-					"displayName": "Имя или идентификатор конвейера",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"displayName": "Название конвейера или идентификатор",
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"stageId": {
-					"displayName": "Сценическое имя или идентификатор",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>",
-					"hint": "Сначала выберите «Имя или идентификатор конвейера», чтобы просмотреть этапы."
+					"displayName": "Название этапа или идентификатор",
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>",
+					"hint": "Сначала выберите название конвейера или идентификатор, чтобы просмотреть этапы"
 				},
 				"startDate": {
 					"displayName": "Дата начала"
@@ -389,13 +389,13 @@
 							"displayName": "Открыть"
 						},
 						"won": {
-							"displayName": "Выиграл"
+							"displayName": "Выиграна"
 						},
 						"lost": {
-							"displayName": "Потерянный"
+							"displayName": "Потеряна"
 						},
 						"abandoned": {
-							"displayName": "Заброшенный"
+							"displayName": "Заброшена"
 						}
 					}
 				}
@@ -406,13 +406,13 @@
 			"placeholder": "Добавить вариант",
 			"options": {
 				"order": {
-					"displayName": "Заказ",
+					"displayName": "Порядок",
 					"options": {
 						"desc": {
 							"displayName": "По убыванию"
 						},
 						"asc": {
-							"displayName": "восходящий"
+							"displayName": "По возрастанию"
 						}
 					}
 				},
@@ -430,8 +430,8 @@
 			}
 		},
 		"pipelineId": {
-			"displayName": "Имя или идентификатор конвейера",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"displayName": "Название конвейера или идентификатор",
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"name": {
 			"displayName": "Имя"
@@ -443,28 +443,28 @@
 					"displayName": "Открыть"
 				},
 				"won": {
-					"displayName": "Выиграл"
+					"displayName": "Выиграна"
 				},
 				"lost": {
-					"displayName": "Потерянный"
+					"displayName": "Потеряна"
 				},
 				"abandoned": {
-					"displayName": "Заброшенный"
+					"displayName": "Заброшена"
 				}
 			}
 		},
 		"opportunityId": {
 			"displayName": "Идентификатор возможности",
-			"hint": "Вы не можете обновить идентификатор конвейера возможности."
+			"hint": "Невозможно обновить идентификатор конвейера возможности"
 		},
 		"title": {
-			"displayName": "Заголовок"
+			"displayName": "Название"
 		},
 		"dueDate": {
 			"displayName": "Срок оплаты"
 		},
 		"completed": {
-			"displayName": "Завершенный"
+			"displayName": "Завершено"
 		},
 		"taskId": {
 			"displayName": "Идентификатор задачи"
@@ -481,11 +481,11 @@
 		},
 		"startDate": {
 			"displayName": "Дата начала",
-			"description": "Дата начала получения бесплатных мест в календаре. Пример: 1548898600000."
+			"description": "Дата начала для получения свободных слотов календаря. Пример: 1548898600000."
 		},
 		"endDate": {
 			"displayName": "Дата окончания",
-			"description": "Конечная дата получения бесплатных мест в календаре. Пример: 1601490599999."
+			"description": "Дата окончания для получения свободных слотов календаря. Пример: 1601490599999."
 		}
 	}
 }

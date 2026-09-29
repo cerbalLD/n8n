@@ -11,10 +11,10 @@
 					"displayName": "Клиент"
 				},
 				"invoice": {
-					"displayName": "Счет"
+					"displayName": "Счёт"
 				},
 				"order": {
-					"displayName": "Заказ"
+					"displayName": "Порядок"
 				},
 				"product": {
 					"displayName": "Продукт"
@@ -25,7 +25,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать продукт"
 				},
 				"delete": {
@@ -41,7 +41,7 @@
 					"description": "Получите много продуктов"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить продукт"
 				},
 				"cancel": {
@@ -82,17 +82,17 @@
 									"displayName": "Улица"
 								},
 								"city": {
-									"displayName": "Город"
+									"displayName": "город"
 								},
 								"region": {
-									"displayName": "Область"
+									"displayName": "Регион"
 								},
 								"postcode": {
 									"displayName": "Почтовый индекс"
 								},
 								"country_id": {
-									"displayName": "Название или идентификатор страны",
-									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+									"displayName": "Название страны или идентификатор",
+									"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 								},
 								"company": {
 									"displayName": "Компания"
@@ -152,10 +152,10 @@
 							"options": {
 								"attribute_code": {
 									"displayName": "Кодовое имя или идентификатор атрибута",
-									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+									"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 								},
 								"value": {
-									"displayName": "Ценить"
+									"displayName": "Значение"
 								}
 							}
 						}
@@ -169,7 +169,7 @@
 					}
 				},
 				"dob": {
-					"displayName": "Дата рождения"
+					"displayName": "дата рождения"
 				},
 				"default_billing": {
 					"displayName": "Идентификатор платежного адреса по умолчанию"
@@ -181,10 +181,10 @@
 					"displayName": "Пол",
 					"options": {
 						"1": {
-							"displayName": "Мужской"
+							"displayName": "мужской"
 						},
 						"2": {
-							"displayName": "Женский"
+							"displayName": "женский"
 						},
 						"3": {
 							"displayName": "Не указан"
@@ -192,8 +192,8 @@
 					}
 				},
 				"group_id": {
-					"displayName": "Имя или идентификатор группы",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"displayName": "Имя или ID группы",
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"is_subscribed": {
 					"displayName": "Подписан"
@@ -209,7 +209,7 @@
 				},
 				"store_id": {
 					"displayName": "Название или идентификатор магазина",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"suffix": {
 					"displayName": "Суффикс"
@@ -222,11 +222,11 @@
 				},
 				"website_id": {
 					"displayName": "Название или идентификатор веб-сайта",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"attribute_set_id": {
 					"displayName": "Имя или идентификатор набора атрибутов",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"name": {
 					"displayName": "Имя"
@@ -241,13 +241,13 @@
 							"displayName": "Включено"
 						},
 						"2": {
-							"displayName": "Неполноценный"
+							"displayName": "Отключено"
 						}
 					}
 				},
 				"type_id": {
-					"displayName": "Введите имя или идентификатор",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"displayName": "Название или идентификатор типа",
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"visibility": {
 					"displayName": "Видимость",
@@ -272,7 +272,7 @@
 			}
 		},
 		"customerId": {
-			"displayName": "Идентификатор клиента",
+			"displayName": "ID клиента",
 			"description": "Идентификатор клиента для обновления"
 		},
 		"firstName": {
@@ -283,7 +283,7 @@
 		},
 		"website_id": {
 			"displayName": "Название или идентификатор веб-сайта",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"updateFields": {
 			"displayName": "Обновить поля",
@@ -300,17 +300,17 @@
 									"displayName": "Улица"
 								},
 								"city": {
-									"displayName": "Город"
+									"displayName": "город"
 								},
 								"region": {
-									"displayName": "Область"
+									"displayName": "Регион"
 								},
 								"postcode": {
 									"displayName": "Почтовый индекс"
 								},
 								"country_id": {
-									"displayName": "Название или идентификатор страны",
-									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+									"displayName": "Название страны или идентификатор",
+									"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 								},
 								"company": {
 									"displayName": "Компания"
@@ -370,10 +370,10 @@
 							"options": {
 								"attribute_code": {
 									"displayName": "Кодовое имя или идентификатор атрибута",
-									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+									"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 								},
 								"value": {
-									"displayName": "Ценить"
+									"displayName": "Значение"
 								}
 							}
 						}
@@ -387,7 +387,7 @@
 					}
 				},
 				"dob": {
-					"displayName": "Дата рождения"
+					"displayName": "дата рождения"
 				},
 				"default_billing": {
 					"displayName": "Идентификатор платежного адреса по умолчанию"
@@ -399,10 +399,10 @@
 					"displayName": "Пол",
 					"options": {
 						"1": {
-							"displayName": "Мужской"
+							"displayName": "мужской"
 						},
 						"2": {
-							"displayName": "Женский"
+							"displayName": "женский"
 						},
 						"3": {
 							"displayName": "Не указан"
@@ -410,8 +410,8 @@
 					}
 				},
 				"group_id": {
-					"displayName": "Имя или идентификатор группы",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"displayName": "Имя или ID группы",
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"is_subscribed": {
 					"displayName": "Подписан"
@@ -427,7 +427,7 @@
 				},
 				"store_id": {
 					"displayName": "Название или идентификатор магазина",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"suffix": {
 					"displayName": "Суффикс"
@@ -440,11 +440,11 @@
 				},
 				"website_id": {
 					"displayName": "Название или идентификатор веб-сайта",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"attribute_set_id": {
 					"displayName": "Имя или идентификатор набора атрибутов",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"name": {
 					"displayName": "Имя"
@@ -459,13 +459,13 @@
 							"displayName": "Включено"
 						},
 						"2": {
-							"displayName": "Неполноценный"
+							"displayName": "Отключено"
 						}
 					}
 				},
 				"type_id": {
-					"displayName": "Введите имя или идентификатор",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"displayName": "Название или идентификатор типа",
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"visibility": {
 					"displayName": "Видимость",
@@ -495,7 +495,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"filterType": {
 			"displayName": "Фильтр",
@@ -504,7 +504,7 @@
 					"displayName": "Никто"
 				},
 				"manual": {
-					"displayName": "Сборка вручную"
+					"displayName": "Построить вручную"
 				},
 				"json": {
 					"displayName": "JSON"
@@ -512,7 +512,7 @@
 			}
 		},
 		"matchType": {
-			"displayName": "Должен совпадать",
+			"displayName": "Должно совпадать",
 			"options": {
 				"anyFilter": {
 					"displayName": "Любой фильтр"
@@ -540,7 +540,7 @@
 									"displayName": "Равно"
 								},
 								"gt": {
-									"displayName": "Больше, чем"
+									"displayName": "Больше чем"
 								},
 								"gteq": {
 									"displayName": "Больше или равно"
@@ -550,7 +550,7 @@
 									"description": "Значение может содержать список значений, разделенных запятыми."
 								},
 								"lt": {
-									"displayName": "Меньше, чем"
+									"displayName": "Меньше чем"
 								},
 								"lte": {
 									"displayName": "Меньше или равно"
@@ -578,7 +578,7 @@
 							}
 						},
 						"value": {
-							"displayName": "Ценить"
+							"displayName": "Значение"
 						}
 					}
 				}
@@ -599,14 +599,14 @@
 				"sort": {
 					"values": {
 						"sort": {
-							"displayName": "Сортировать",
+							"displayName": "Сортировка",
 							"options": {
 								"direction": {
 									"displayName": "Направление",
 									"description": "Направление сортировки",
 									"options": {
 										"ASC": {
-											"displayName": "восходящий"
+											"displayName": "По возрастанию"
 										},
 										"DESC": {
 											"displayName": "По убыванию"
@@ -615,23 +615,23 @@
 								},
 								"field": {
 									"displayName": "Поле",
-									"description": "Поле сортировки"
+									"description": "Поле для сортировки"
 								}
 							}
 						}
 					},
 					"placeholder": "Добавить сортировку",
-					"displayName": "Сортировать",
+					"displayName": "Сортировка",
 					"options": {
 						"sort": {
-							"displayName": "Сортировать"
+							"displayName": "Сортировка"
 						}
 					}
 				}
 			}
 		},
 		"orderId": {
-			"displayName": "Идентификатор заказа"
+			"displayName": "ID заказа"
 		},
 		"sku": {
 			"displayName": "SKU",
@@ -642,7 +642,7 @@
 		},
 		"attributeSetId": {
 			"displayName": "Имя или идентификатор набора атрибутов",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"price": {
 			"displayName": "Цена"

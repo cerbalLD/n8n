@@ -8,7 +8,7 @@
 			"displayName": "Ресурс",
 			"options": {
 				"account": {
-					"displayName": "Счет"
+					"displayName": "Учётная запись"
 				},
 				"appointment": {
 					"displayName": "Встреча"
@@ -17,7 +17,7 @@
 					"displayName": "Контакт"
 				},
 				"deal": {
-					"displayName": "Иметь дело"
+					"displayName": "Сделка"
 				},
 				"note": {
 					"displayName": "Примечание"
@@ -37,7 +37,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать задачу"
 				},
 				"delete": {
@@ -53,7 +53,7 @@
 					"description": "Получить множество задач"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить задачу"
 				},
 				"query": {
@@ -87,7 +87,7 @@
 					"description": "Идентификатор компании, которой принадлежит аккаунт. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"city": {
-					"displayName": "Город",
+					"displayName": "город",
 					"description": "Город, к которому принадлежит контакт"
 				},
 				"country": {
@@ -95,7 +95,7 @@
 					"description": "Страна, к которой принадлежит контакт"
 				},
 				"facebook": {
-					"displayName": "Фейсбук",
+					"displayName": "Facebook",
 					"description": "Имя пользователя Facebook контакта"
 				},
 				"industry_type_id": {
@@ -123,7 +123,7 @@
 					"description": "Номер телефона аккаунта"
 				},
 				"state": {
-					"displayName": "Состояние",
+					"displayName": "область",
 					"description": "Укажите, что контакт принадлежит"
 				},
 				"territory_id": {
@@ -131,7 +131,7 @@
 					"description": "Идентификатор территории, к которой относится сделка. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"twitter": {
-					"displayName": "Твиттер",
+					"displayName": "Twitter",
 					"description": "Имя пользователя Twitter контакта"
 				},
 				"website": {
@@ -167,7 +167,7 @@
 					"description": "Идентификатор результата задачи. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"targetable_id": {
-					"displayName": "Идентификатор цели",
+					"displayName": "ID цели",
 					"description": "Идентификатор контакта/учетной записи, для которого создана встреча"
 				},
 				"targetable_type": {
@@ -177,7 +177,7 @@
 							"displayName": "Контакт"
 						},
 						"Deal": {
-							"displayName": "Иметь дело"
+							"displayName": "Сделка"
 						},
 						"SalesAccount": {
 							"displayName": "ПродажиАккаунт"
@@ -435,7 +435,7 @@
 							"displayName": "Америка/Блан-Саблон"
 						},
 						"America/Boa_Vista": {
-							"displayName": "Америка/Boa_Vista"
+							"displayName": "Америка/Боа-Виста"
 						},
 						"America/Bogota": {
 							"displayName": "Америка/Богота"
@@ -447,10 +447,10 @@
 							"displayName": "Америка/Буэнос-Айрес"
 						},
 						"America/Cambridge_Bay": {
-							"displayName": "Америка/Кембридж_Бэй"
+							"displayName": "Америка/Кембридж-Бей"
 						},
 						"America/Campo_Grande": {
-							"displayName": "Америка/Кампо_Гранде"
+							"displayName": "Америка/Кампу-Гранде"
 						},
 						"America/Cancun": {
 							"displayName": "Америка/Канкун"
@@ -465,7 +465,7 @@
 							"displayName": "Америка/Кайенна"
 						},
 						"America/Cayman": {
-							"displayName": "Америка/Кайманы"
+							"displayName": "Америка/Кайманские острова"
 						},
 						"America/Chicago": {
 							"displayName": "Америка/Чикаго"
@@ -474,16 +474,16 @@
 							"displayName": "Америка/Чиуауа"
 						},
 						"America/Ciudad_Juarez": {
-							"displayName": "Америка/Сьюдад_Хуарес"
+							"displayName": "Америка/Сьюдад-Хуарес"
 						},
 						"America/Coral_Harbour": {
-							"displayName": "Америка/Coral_Harbour"
+							"displayName": "Америка/Корал-Харбор"
 						},
 						"America/Cordoba": {
 							"displayName": "Америка/Кордова"
 						},
 						"America/Costa_Rica": {
-							"displayName": "Америка/Коста_Рика"
+							"displayName": "Америка/Коста-Рика"
 						},
 						"America/Coyhaique": {
 							"displayName": "Америка/Койайке"
@@ -498,13 +498,13 @@
 							"displayName": "Америка/Кюрасао"
 						},
 						"America/Danmarkshavn": {
-							"displayName": "Америка/Данмарксхавн"
+							"displayName": "Америка/Данмаркшавн"
 						},
 						"America/Dawson": {
 							"displayName": "Америка/Доусон"
 						},
 						"America/Dawson_Creek": {
-							"displayName": "Америка/Доусон_Крик"
+							"displayName": "Америка/Доусон-Крик"
 						},
 						"America/Denver": {
 							"displayName": "Америка/Денвер"
@@ -522,31 +522,31 @@
 							"displayName": "Америка/Эйрунепе"
 						},
 						"America/El_Salvador": {
-							"displayName": "Америка/Эль_Сальвадор"
+							"displayName": "Америка/Эль-Сальвадор"
 						},
 						"America/Ensenada": {
 							"displayName": "Америка/Энсенада"
 						},
 						"America/Fort_Nelson": {
-							"displayName": "Америка/Форт_Нельсон"
+							"displayName": "Америка/Форт-Нельсон"
 						},
 						"America/Fort_Wayne": {
-							"displayName": "Америка/Форт_Уэйн"
+							"displayName": "Америка/Форт-Уэйн"
 						},
 						"America/Fortaleza": {
 							"displayName": "Америка/Форталеза"
 						},
 						"America/Glace_Bay": {
-							"displayName": "Америка/Glase_Bay"
+							"displayName": "Америка/Глейс-Бей"
 						},
 						"America/Godthab": {
-							"displayName": "Америка/Годтаб"
+							"displayName": "Америка/Готхоб"
 						},
 						"America/Goose_Bay": {
-							"displayName": "Америка/Гусиная бухта"
+							"displayName": "Америка/Гус-Бей"
 						},
 						"America/Grand_Turk": {
-							"displayName": "Америка/Grand_Turk"
+							"displayName": "Америка/Гранд-Терк"
 						},
 						"America/Grenada": {
 							"displayName": "Америка/Гренада"
@@ -585,7 +585,7 @@
 							"displayName": "Америка/Индиана/Петербург"
 						},
 						"America/Indiana/Tell_City": {
-							"displayName": "Америка/Индиана/Tell_City"
+							"displayName": "Америка/Индиана/Телл-Сити"
 						},
 						"America/Indiana/Vevay": {
 							"displayName": "Америка/Индиана/Вевей"
@@ -621,13 +621,13 @@
 							"displayName": "Америка/Кентукки/Монтичелло"
 						},
 						"America/Knox_IN": {
-							"displayName": "Америка/Knox_IN"
+							"displayName": "Америка/Нокс, IN"
 						},
 						"America/Kralendijk": {
 							"displayName": "Америка/Кралендейк"
 						},
 						"America/La_Paz": {
-							"displayName": "Америка/Ла_Пас"
+							"displayName": "Америка/Ла-Пас"
 						},
 						"America/Lima": {
 							"displayName": "Америка/Лима"
@@ -639,7 +639,7 @@
 							"displayName": "Америка/Луисвилл"
 						},
 						"America/Lower_Princes": {
-							"displayName": "Америка/Нижние_Принцы"
+							"displayName": "Америка/Нижние-Принцы"
 						},
 						"America/Maceio": {
 							"displayName": "Америка/Масейо"
@@ -651,7 +651,7 @@
 							"displayName": "Америка/Манаус"
 						},
 						"America/Marigot": {
-							"displayName": "Америка/Мариго"
+							"displayName": "Америка/Маригот"
 						},
 						"America/Martinique": {
 							"displayName": "Америка/Мартиника"
@@ -675,7 +675,7 @@
 							"displayName": "Америка/Метлакатла"
 						},
 						"America/Mexico_City": {
-							"displayName": "Америка/Мехико_Сити"
+							"displayName": "Америка/Мехико"
 						},
 						"America/Miquelon": {
 							"displayName": "Америка/Микелон"
@@ -699,7 +699,7 @@
 							"displayName": "Америка/Нассау"
 						},
 						"America/New_York": {
-							"displayName": "Америка/Нью_Йорк"
+							"displayName": "America/New_York"
 						},
 						"America/Nipigon": {
 							"displayName": "Америка/Нипигон"
@@ -741,25 +741,25 @@
 							"displayName": "Америка/Порт-о-Пренс"
 						},
 						"America/Port_of_Spain": {
-							"displayName": "Америка/Порт_Испании"
+							"displayName": "Америка/Порт-оф-Спейн"
 						},
 						"America/Porto_Acre": {
-							"displayName": "Америка/Порто_Акр"
+							"displayName": "Америка/Порто-Акр"
 						},
 						"America/Porto_Velho": {
-							"displayName": "Америка/Порту_Велью"
+							"displayName": "Америка/Порту-Велью"
 						},
 						"America/Puerto_Rico": {
-							"displayName": "Америка/Пуэрто_Рико"
+							"displayName": "Америка/Пуэрто-Рико"
 						},
 						"America/Punta_Arenas": {
-							"displayName": "Америка/Пунта_Аренас"
+							"displayName": "Америка/Пунта-Аренас"
 						},
 						"America/Rainy_River": {
-							"displayName": "Америка/Rainy_River"
+							"displayName": "Америка/Рейни-Ривер"
 						},
 						"America/Rankin_Inlet": {
-							"displayName": "Америка/Рэнкин_Инлет"
+							"displayName": "Америка/Ранкин-Инлет"
 						},
 						"America/Recife": {
 							"displayName": "Америка/Ресифи"
@@ -768,16 +768,16 @@
 							"displayName": "Америка/Регина"
 						},
 						"America/Resolute": {
-							"displayName": "Америка/Решительный"
+							"displayName": "Америка/Резолют"
 						},
 						"America/Rio_Branco": {
-							"displayName": "Америка/Рио_Бранко"
+							"displayName": "Америка/Рио-Бранко"
 						},
 						"America/Rosario": {
 							"displayName": "Америка/Росарио"
 						},
 						"America/Santa_Isabel": {
-							"displayName": "Америка/Санта_Изабель"
+							"displayName": "Америка/Санта-Изабель"
 						},
 						"America/Santarem": {
 							"displayName": "Америка/Сантарем"
@@ -786,7 +786,7 @@
 							"displayName": "Америка/Сантьяго"
 						},
 						"America/Santo_Domingo": {
-							"displayName": "Америка/Санто_Доминго"
+							"displayName": "Америка/Санто-Доминго"
 						},
 						"America/Sao_Paulo": {
 							"displayName": "Америка/Сан-Паулу"
@@ -801,10 +801,10 @@
 							"displayName": "Америка/Ситка"
 						},
 						"America/St_Barthelemy": {
-							"displayName": "Америка/Сент_Бартелеми"
+							"displayName": "Америка/Сан-Бартелеми"
 						},
 						"America/St_Johns": {
-							"displayName": "Америка/Сент_Джонс"
+							"displayName": "Америка/Сент-Джонс"
 						},
 						"America/St_Kitts": {
 							"displayName": "Америка/Сент-Китс"
@@ -813,13 +813,13 @@
 							"displayName": "Америка/Сент-Люсия"
 						},
 						"America/St_Thomas": {
-							"displayName": "Америка/Сент_Томас"
+							"displayName": "Америка/Сент-Томас"
 						},
 						"America/St_Vincent": {
-							"displayName": "Америка/Сент_Винсент"
+							"displayName": "Америка/Сент-Винсент"
 						},
 						"America/Swift_Current": {
-							"displayName": "Америка/Swift_Current"
+							"displayName": "Америка/Свифт-Каррент"
 						},
 						"America/Tegucigalpa": {
 							"displayName": "Америка/Тегусигальпа"
@@ -828,7 +828,7 @@
 							"displayName": "Америка/Туле"
 						},
 						"America/Thunder_Bay": {
-							"displayName": "Америка/Thunder_Bay"
+							"displayName": "Америка/Тандер-Бей"
 						},
 						"America/Tijuana": {
 							"displayName": "Америка/Тихуана"
@@ -843,7 +843,7 @@
 							"displayName": "Америка/Ванкувер"
 						},
 						"America/Virgin": {
-							"displayName": "Америка/Девственница"
+							"displayName": "Америка/Виргинские острова"
 						},
 						"America/Whitehorse": {
 							"displayName": "Америка/Уайтхорс"
@@ -864,7 +864,7 @@
 							"displayName": "Антарктида/Дэвис"
 						},
 						"Antarctica/DumontDUrville": {
-							"displayName": "Антарктида/Дюмон-Дюрвиль"
+							"displayName": "Антарктида/Дюмон-д'Юрвиль"
 						},
 						"Antarctica/Macquarie": {
 							"displayName": "Антарктида/Маккуори"
@@ -882,7 +882,7 @@
 							"displayName": "Антарктида/Ротера"
 						},
 						"Antarctica/South_Pole": {
-							"displayName": "Антарктида/Южный_Полюс"
+							"displayName": "Антарктида/Южный полюс"
 						},
 						"Antarctica/Syowa": {
 							"displayName": "Антарктида/Сёва"
@@ -915,7 +915,7 @@
 							"displayName": "Азия/Актобе"
 						},
 						"Asia/Ashgabat": {
-							"displayName": "Азия/Ашхабад"
+							"displayName": "Азия/Ашгабат"
 						},
 						"Asia/Ashkhabad": {
 							"displayName": "Азия/Ашхабад"
@@ -996,7 +996,7 @@
 							"displayName": "Азия/Хеврон"
 						},
 						"Asia/Ho_Chi_Minh": {
-							"displayName": "Азия/Хо_Чи_Мин"
+							"displayName": "Азия/Хошимин"
 						},
 						"Asia/Hong_Kong": {
 							"displayName": "Азия/Гонконг"
@@ -1086,7 +1086,7 @@
 							"displayName": "Азия/Омск"
 						},
 						"Asia/Oral": {
-							"displayName": "Азия/Устный"
+							"displayName": "Азия/Орал"
 						},
 						"Asia/Phnom_Penh": {
 							"displayName": "Азия/Пномпень"
@@ -1107,7 +1107,7 @@
 							"displayName": "Азия/Кызылорда"
 						},
 						"Asia/Rangoon": {
-							"displayName": "Азия/Рангун"
+							"displayName": "Азия/Янгон"
 						},
 						"Asia/Riyadh": {
 							"displayName": "Азия/Эр-Рияд"
@@ -1149,7 +1149,7 @@
 							"displayName": "Азия/Тель-Авив"
 						},
 						"Asia/Thimbu": {
-							"displayName": "Азия/Тимбу"
+							"displayName": "Азия/Тхимпху"
 						},
 						"Asia/Thimphu": {
 							"displayName": "Азия/Тхимпху"
@@ -1161,13 +1161,13 @@
 							"displayName": "Азия/Томск"
 						},
 						"Asia/Ujung_Pandang": {
-							"displayName": "Азия/Уджунг_Панданг"
+							"displayName": "Азия/Уджунг-Панданг"
 						},
 						"Asia/Ulaanbaatar": {
 							"displayName": "Азия/Улан-Батор"
 						},
 						"Asia/Ulan_Bator": {
-							"displayName": "Азия/Улан_Батор"
+							"displayName": "Азия/Улан-Батор"
 						},
 						"Asia/Urumqi": {
 							"displayName": "Азия/Урумчи"
@@ -1200,10 +1200,10 @@
 							"displayName": "Атлантика/Бермудские острова"
 						},
 						"Atlantic/Canary": {
-							"displayName": "Атлантический/Канарский"
+							"displayName": "Атлантика/Канарские острова"
 						},
 						"Atlantic/Cape_Verde": {
-							"displayName": "Атлантический океан/Кабо-Верде"
+							"displayName": "Атлантика/Кабо-Верде"
 						},
 						"Atlantic/Faeroe": {
 							"displayName": "Атлантика/Фарерские острова"
@@ -1212,22 +1212,22 @@
 							"displayName": "Атлантика/Фарерские острова"
 						},
 						"Atlantic/Jan_Mayen": {
-							"displayName": "Атлантика/январь-майен"
+							"displayName": "Атлантика/Ян-Майен"
 						},
 						"Atlantic/Madeira": {
 							"displayName": "Атлантика/Мадейра"
 						},
 						"Atlantic/Reykjavik": {
-							"displayName": "Атлантик/Рейкьявик"
+							"displayName": "Атлантика/Рейкьявик"
 						},
 						"Atlantic/South_Georgia": {
-							"displayName": "Атлантика/Южная Грузия"
+							"displayName": "Атлантика/Южная Георгия"
 						},
 						"Atlantic/St_Helena": {
-							"displayName": "Атлантика/Св. Елены"
+							"displayName": "Атлантика/Остров Святой Елены"
 						},
 						"Atlantic/Stanley": {
-							"displayName": "Атлантик/Стэнли"
+							"displayName": "Атлантика/Стэнли"
 						},
 						"Australia/ACT": {
 							"displayName": "Австралия/ACT"
@@ -1239,7 +1239,7 @@
 							"displayName": "Австралия/Брисбен"
 						},
 						"Australia/Broken_Hill": {
-							"displayName": "Австралия/Broken_Hill"
+							"displayName": "Австралия/Брокен-Хилл"
 						},
 						"Australia/Canberra": {
 							"displayName": "Австралия/Канберра"
@@ -1263,7 +1263,7 @@
 							"displayName": "Австралия/Линдеман"
 						},
 						"Australia/Lord_Howe": {
-							"displayName": "Австралия/Lord_Howe"
+							"displayName": "Австралия/Лорд-Хау"
 						},
 						"Australia/Melbourne": {
 							"displayName": "Австралия/Мельбурн"
@@ -1299,10 +1299,10 @@
 							"displayName": "Австралия/Янковинна"
 						},
 						"Brazil/Acre": {
-							"displayName": "Бразилия/Акко"
+							"displayName": "Бразилия/Акре"
 						},
 						"Brazil/DeNoronha": {
-							"displayName": "Бразилия/Деноронья"
+							"displayName": "Бразилия/де-Норонья"
 						},
 						"Brazil/East": {
 							"displayName": "Бразилия/Восток"
@@ -1317,22 +1317,22 @@
 							"displayName": "CST6CDT"
 						},
 						"Canada/Atlantic": {
-							"displayName": "Канада/Атлантика"
+							"displayName": "Канада/Атлантический"
 						},
 						"Canada/Central": {
 							"displayName": "Канада/Центральный"
 						},
 						"Canada/Eastern": {
-							"displayName": "Канада/Восточная"
+							"displayName": "Канада/Восточный"
 						},
 						"Canada/Mountain": {
-							"displayName": "Канада/Горы"
+							"displayName": "Канада/Горный"
 						},
 						"Canada/Newfoundland": {
 							"displayName": "Канада/Ньюфаундленд"
 						},
 						"Canada/Pacific": {
-							"displayName": "Канада/Тихоокеанский регион"
+							"displayName": "Канада/Тихоокеанский"
 						},
 						"Canada/Saskatchewan": {
 							"displayName": "Канада/Саскачеван"
@@ -1365,109 +1365,109 @@
 							"displayName": "Эйре"
 						},
 						"Etc/GMT": {
-							"displayName": "И т.д./GMT"
+							"displayName": "Прочие/GMT"
 						},
 						"Etc/GMT+0": {
-							"displayName": "И т.д./GMT+0"
+							"displayName": "Прочие/GMT+0"
 						},
 						"Etc/GMT+1": {
-							"displayName": "И т.д./GMT+1"
+							"displayName": "Прочие/GMT+1"
 						},
 						"Etc/GMT+10": {
-							"displayName": "И т.д./GMT+10"
+							"displayName": "Прочие/GMT+10"
 						},
 						"Etc/GMT+11": {
-							"displayName": "И т.д./GMT+11"
+							"displayName": "Прочие/GMT+11"
 						},
 						"Etc/GMT+12": {
-							"displayName": "И т.д./GMT+12"
+							"displayName": "Прочие/GMT+12"
 						},
 						"Etc/GMT+2": {
-							"displayName": "И т.д./GMT+2"
+							"displayName": "Прочие/GMT+2"
 						},
 						"Etc/GMT+3": {
-							"displayName": "И т.д./GMT+3"
+							"displayName": "Прочие/GMT+3"
 						},
 						"Etc/GMT+4": {
-							"displayName": "И т.д./GMT+4"
+							"displayName": "Прочие/GMT+4"
 						},
 						"Etc/GMT+5": {
-							"displayName": "И т.д./GMT+5"
+							"displayName": "Прочие/GMT+5"
 						},
 						"Etc/GMT+6": {
-							"displayName": "И т.д./GMT+6"
+							"displayName": "Прочие/GMT+6"
 						},
 						"Etc/GMT+7": {
-							"displayName": "И т.д./GMT+7"
+							"displayName": "Прочие/GMT+7"
 						},
 						"Etc/GMT+8": {
-							"displayName": "И т.д./GMT+8"
+							"displayName": "Прочие/GMT+8"
 						},
 						"Etc/GMT+9": {
-							"displayName": "И т.д./GMT+9"
+							"displayName": "Прочие/GMT+9"
 						},
 						"Etc/GMT-0": {
-							"displayName": "И т.д./GMT-0"
+							"displayName": "Прочие/GMT-0"
 						},
 						"Etc/GMT-1": {
-							"displayName": "И т.д./GMT-1"
+							"displayName": "Прочие/GMT-1"
 						},
 						"Etc/GMT-10": {
-							"displayName": "И т.д./GMT-10"
+							"displayName": "Прочие/GMT-10"
 						},
 						"Etc/GMT-11": {
-							"displayName": "И т.д./GMT-11"
+							"displayName": "Прочие/GMT-11"
 						},
 						"Etc/GMT-12": {
-							"displayName": "И т.д./GMT-12"
+							"displayName": "Прочие/GMT-12"
 						},
 						"Etc/GMT-13": {
-							"displayName": "И т.д./GMT-13"
+							"displayName": "Прочие/GMT-13"
 						},
 						"Etc/GMT-14": {
-							"displayName": "И т.д./GMT-14"
+							"displayName": "Прочие/GMT-14"
 						},
 						"Etc/GMT-2": {
-							"displayName": "И т.д./GMT-2"
+							"displayName": "Прочие/GMT-2"
 						},
 						"Etc/GMT-3": {
-							"displayName": "И т.д./GMT-3"
+							"displayName": "Прочие/GMT-3"
 						},
 						"Etc/GMT-4": {
-							"displayName": "И т.д./GMT-4"
+							"displayName": "Прочие/GMT-4"
 						},
 						"Etc/GMT-5": {
-							"displayName": "И т.д./GMT-5"
+							"displayName": "Прочие/GMT-5"
 						},
 						"Etc/GMT-6": {
-							"displayName": "И т.д./GMT-6"
+							"displayName": "Прочие/GMT-6"
 						},
 						"Etc/GMT-7": {
-							"displayName": "И т.д./GMT-7"
+							"displayName": "Прочие/GMT-7"
 						},
 						"Etc/GMT-8": {
-							"displayName": "И т.д./GMT-8"
+							"displayName": "Прочие/GMT-8"
 						},
 						"Etc/GMT-9": {
-							"displayName": "И т.д./GMT-9"
+							"displayName": "Прочие/GMT-9"
 						},
 						"Etc/GMT0": {
-							"displayName": "И т.д./GMT0"
+							"displayName": "Прочие/GMT0"
 						},
 						"Etc/Greenwich": {
-							"displayName": "И т.д./Гринвич"
+							"displayName": "Прочие/Гринвич"
 						},
 						"Etc/UCT": {
-							"displayName": "И т.д./UCT"
+							"displayName": "Прочие/UCT"
 						},
 						"Etc/UTC": {
-							"displayName": "И т.д./UTC"
+							"displayName": "Прочие/UTC"
 						},
 						"Etc/Universal": {
-							"displayName": "И т.д./Универсальный"
+							"displayName": "Прочие/Универсальное"
 						},
 						"Etc/Zulu": {
-							"displayName": "И т.д./Зулу"
+							"displayName": "Прочие/Зулу"
 						},
 						"Europe/Amsterdam": {
 							"displayName": "Европа/Амстердам"
@@ -1524,7 +1524,7 @@
 							"displayName": "Европа/Хельсинки"
 						},
 						"Europe/Isle_of_Man": {
-							"displayName": "Европа/Остров_Мэн"
+							"displayName": "Европа/Остров Мэн"
 						},
 						"Europe/Istanbul": {
 							"displayName": "Европа/Стамбул"
@@ -1599,7 +1599,7 @@
 							"displayName": "Европа/Самара"
 						},
 						"Europe/San_Marino": {
-							"displayName": "Европа/Сан_Марино"
+							"displayName": "Европа/Сан-Марино"
 						},
 						"Europe/Sarajevo": {
 							"displayName": "Европа/Сараево"
@@ -1671,7 +1671,7 @@
 							"displayName": "GMT"
 						},
 						"GMT+0": {
-							"displayName": "Время по Гринвичу+0"
+							"displayName": "GMT+0"
 						},
 						"GMT-0": {
 							"displayName": "GMT-0"
@@ -1692,37 +1692,37 @@
 							"displayName": "Исландия"
 						},
 						"Indian/Antananarivo": {
-							"displayName": "Индия/Антананариву"
+							"displayName": "Индийский океан/Антананариву"
 						},
 						"Indian/Chagos": {
-							"displayName": "Индийский/Чагос"
+							"displayName": "Индийский океан/Чагос"
 						},
 						"Indian/Christmas": {
-							"displayName": "Индийский/Рождество"
+							"displayName": "Индийский океан/Рождества"
 						},
 						"Indian/Cocos": {
-							"displayName": "Индия/Кокосовые острова"
+							"displayName": "Индийский океан/Кокосовые острова"
 						},
 						"Indian/Comoro": {
-							"displayName": "Индийский/Коморский"
+							"displayName": "Индийский океан/Коморские острова"
 						},
 						"Indian/Kerguelen": {
-							"displayName": "Индийский/Кергелен"
+							"displayName": "Индийский океан/Кергелен"
 						},
 						"Indian/Mahe": {
-							"displayName": "Индийский/Маэ"
+							"displayName": "Индийский океан/Маэ"
 						},
 						"Indian/Maldives": {
-							"displayName": "Индия/Мальдивы"
+							"displayName": "Индийский океан/Мальдивы"
 						},
 						"Indian/Mauritius": {
-							"displayName": "Индия/Маврикий"
+							"displayName": "Индийский океан/Маврикий"
 						},
 						"Indian/Mayotte": {
-							"displayName": "Индийский/Майотта"
+							"displayName": "Индийский океан/Майотта"
 						},
 						"Indian/Reunion": {
-							"displayName": "Индийский/Реюньон"
+							"displayName": "Индийский океан/Реюньон"
 						},
 						"Iran": {
 							"displayName": "Иран"
@@ -1758,7 +1758,7 @@
 							"displayName": "Мексика/Баха-Сур"
 						},
 						"Mexico/General": {
-							"displayName": "Мексика/Общий"
+							"displayName": "Мексика/Центральная"
 						},
 						"NZ": {
 							"displayName": "NZ"
@@ -1791,7 +1791,7 @@
 							"displayName": "Тихий океан/Чуук"
 						},
 						"Pacific/Easter": {
-							"displayName": "Тихий океан/Пасха"
+							"displayName": "Тихий океан/Остров Пасхи"
 						},
 						"Pacific/Efate": {
 							"displayName": "Тихий океан/Эфате"
@@ -1860,7 +1860,7 @@
 							"displayName": "Тихий океан/Нумеа"
 						},
 						"Pacific/Pago_Pago": {
-							"displayName": "Тихий океан/Паго_Паго"
+							"displayName": "Тихий океан/Паго-Паго"
 						},
 						"Pacific/Palau": {
 							"displayName": "Тихий океан/Палау"
@@ -1875,7 +1875,7 @@
 							"displayName": "Тихий океан/Понапе"
 						},
 						"Pacific/Port_Moresby": {
-							"displayName": "Тихий океан/Порт_Морсби"
+							"displayName": "Тихий океан/Порт-Морсби"
 						},
 						"Pacific/Rarotonga": {
 							"displayName": "Тихий океан/Раротонга"
@@ -1902,7 +1902,7 @@
 							"displayName": "Тихий океан/Уэйк"
 						},
 						"Pacific/Wallis": {
-							"displayName": "Пасифик/Уоллис"
+							"displayName": "Тихий океан/Уоллис"
 						},
 						"Pacific/Yap": {
 							"displayName": "Тихий океан/Яп"
@@ -1932,19 +1932,19 @@
 							"displayName": "США/Аляска"
 						},
 						"US/Aleutian": {
-							"displayName": "США/Алеутский"
+							"displayName": "США/Алеутские острова"
 						},
 						"US/Arizona": {
 							"displayName": "США/Аризона"
 						},
 						"US/Central": {
-							"displayName": "США/Центральный"
+							"displayName": "США/Центральная"
 						},
 						"US/East-Indiana": {
 							"displayName": "США/Восточная Индиана"
 						},
 						"US/Eastern": {
-							"displayName": "США/Восточная Европа"
+							"displayName": "США/Восточная"
 						},
 						"US/Hawaii": {
 							"displayName": "США/Гавайи"
@@ -1956,10 +1956,10 @@
 							"displayName": "США/Мичиган"
 						},
 						"US/Mountain": {
-							"displayName": "США/Горы"
+							"displayName": "США/Горная"
 						},
 						"US/Pacific": {
-							"displayName": "США/Тихоокеанский регион"
+							"displayName": "США/Тихоокеанская"
 						},
 						"US/Samoa": {
 							"displayName": "США/Самоа"
@@ -1968,7 +1968,7 @@
 							"displayName": "UTC"
 						},
 						"Universal": {
-							"displayName": "Универсальный"
+							"displayName": "Универсальное"
 						},
 						"W-SU": {
 							"displayName": "W-SU"
@@ -1982,44 +1982,44 @@
 					}
 				},
 				"campaign_id": {
-					"displayName": "Название или идентификатор кампании",
-					"description": "Идентификатор кампании, в рамках которой была заключена эта сделка. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Название или ID кампании",
+					"description": "Идентификатор кампании, благодаря которой была заключена эта сделка. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"contact_status_id": {
-					"displayName": "Имя или идентификатор статуса контакта",
-					"description": "Идентификатор статуса контакта, которому принадлежит контакт. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Статус контакта (имя или идентификатор)",
+					"description": "Идентификатор статуса контакта, которому принадлежит контакт. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"external_id": {
-					"displayName": "Внешний идентификатор",
+					"displayName": "Внешний ID",
 					"description": "Внешний идентификатор контакта"
 				},
 				"job_title": {
 					"displayName": "Должность",
-					"description": "Обозначение контакта в аккаунте, к которому он принадлежит"
+					"description": "Должность контакта в учётной записи"
 				},
 				"keyword": {
 					"displayName": "Ключевые слова",
-					"description": "Ключевые слова, которые контакт использовал для перехода на ваш сайт/веб-приложение."
+					"description": "Ключевые слова, которые контакт использовал для перехода на ваш сайт или веб-приложение"
 				},
 				"lead_source_id": {
-					"displayName": "Идентификатор источника потенциальных клиентов",
+					"displayName": "Идентификатор источника потенциального клиента",
 					"description": "Идентификатор источника, откуда пришла сделка"
 				},
 				"lifecycle_stage_id": {
-					"displayName": "Название или идентификатор этапа жизненного цикла",
-					"description": "Идентификатор этапа жизненного цикла, к которому принадлежит контакт. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Этап жизненного цикла (имя или идентификатор)",
+					"description": "Идентификатор этапа жизненного цикла, к которому принадлежит контакт. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"medium": {
-					"displayName": "Середина",
-					"description": "Канал, который привел ваш контакт на ваш сайт/веб-приложение"
+					"displayName": "Средний",
+					"description": "Канал, который привел контакт на ваш сайт или веб-приложение"
 				},
 				"mobile_number": {
 					"displayName": "Номер мобильного телефона",
-					"description": "Номер мобильного телефона контактного лица"
+					"description": "Номер мобильного телефона контакта"
 				},
 				"sales_accounts": {
-					"displayName": "Имена или идентификаторы учетных записей продаж",
-					"description": "Аккаунты, которым принадлежит контакт. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Имена или идентификаторы учётной записи продаж",
+					"description": "Учётные записи, которым принадлежит контакт. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"subscription_status": {
 					"displayName": "Статус подписки",
@@ -2027,73 +2027,73 @@
 				},
 				"subscription_types": {
 					"displayName": "Типы подписки",
-					"description": "Тип подписки, в которой находится контакт"
+					"description": "Тип подписки контакта"
 				},
 				"work_number": {
 					"displayName": "Рабочий номер",
-					"description": "Рабочий телефон контактного лица"
+					"description": "Рабочий телефон контакта"
 				},
 				"base_currency_amount": {
 					"displayName": "Сумма в базовой валюте",
 					"description": "Стоимость сделки в базовой валюте"
 				},
 				"currency_id": {
-					"displayName": "Название или идентификатор валюты",
-					"description": "Идентификатор валюты, к которой принадлежит сделка. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Название валюты или её ID",
+					"description": "ID валюты сделки. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"deal_payment_status_id": {
-					"displayName": "Имя или идентификатор статуса платежа по сделке",
-					"description": "Идентификатор способа оплаты сделки. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Статус платежа сделки (название или ID)",
+					"description": "ID способа оплаты сделки. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"deal_pipeline_id": {
-					"displayName": "Название или идентификатор канала сделки",
-					"description": "Идентификатор конвейера сделок, к которому он принадлежит. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Воронка продаж (название или ID)",
+					"description": "ID воронки продаж. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"deal_product_id": {
-					"displayName": "Название или идентификатор продукта сделки",
-					"description": "Идентификатор продукта, которому принадлежит сделка (в многопродуктовой компании). Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Продукт сделки (название или ID)",
+					"description": "ID продукта для многопродуктовой компании. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"deal_reason_id": {
-					"displayName": "Название или идентификатор причины сделки",
-					"description": "ID причины проигрыша сделки. Может быть установлено только в том случае, если сделка находится в стадии «Проиграна». Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Причина сделки (название или ID)",
+					"description": "ID причины проигрыша сделки (только для стадии «Проиграна»). Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"deal_stage_id": {
-					"displayName": "Название или идентификатор этапа сделки",
-					"description": "Идентификатор этапа сделки, к которому относится сделка. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Этап сделки (название или ID)",
+					"description": "ID этапа сделки. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"deal_type_id": {
-					"displayName": "Название или идентификатор типа сделки",
-					"description": "Идентификатор типа сделки, к которой она относится. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Тип сделки (название или ID)",
+					"description": "ID типа сделки. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"probability": {
 					"displayName": "Вероятность",
-					"description": "Вероятность выигрыша сделки как число от 0 до 100."
+					"description": "Вероятность успеха сделки (число от 0 до 100)"
 				},
 				"sales_account_id": {
-					"displayName": "Имя или идентификатор учетной записи продаж",
-					"description": "Идентификатор аккаунта, которому принадлежит сделка. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Учётная запись продаж (название или ID)",
+					"description": "ID учётной записи для сделки. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"notes": {
 					"displayName": "Примечания",
-					"description": "Описание о торговой деятельности"
+					"description": "Описание деятельности по продажам"
 				},
 				"sales_activity_outcome_id": {
-					"displayName": "Название или идентификатор результата деятельности по продажам",
-					"description": "Идентификатор результата продаж. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Результат активности (название или ID)",
+					"description": "ID результата деятельности по продажам. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"task_type_id": {
-					"displayName": "Идентификатор типа задачи",
+					"displayName": "ID типа задачи",
 					"description": "ID типа задачи"
 				}
 			}
 		},
 		"accountId": {
-			"displayName": "Идентификатор аккаунта",
-			"description": "Идентификатор учетной записи для обновления"
+			"displayName": "ID аккаунта",
+			"description": "ID учётной записи для обновления"
 		},
 		"view": {
-			"displayName": "Просмотр имени или идентификатора",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"displayName": "Название или идентификатор представления",
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",
@@ -2101,7 +2101,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"updateFields": {
 			"displayName": "Обновить поля",
@@ -2120,7 +2120,7 @@
 					"description": "Идентификатор компании, которой принадлежит аккаунт. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"city": {
-					"displayName": "Город",
+					"displayName": "город",
 					"description": "Город, к которому принадлежит контакт"
 				},
 				"country": {
@@ -2128,7 +2128,7 @@
 					"description": "Страна, к которой принадлежит контакт"
 				},
 				"facebook": {
-					"displayName": "Фейсбук",
+					"displayName": "Facebook",
 					"description": "Имя пользователя Facebook контакта"
 				},
 				"industry_type_id": {
@@ -2149,7 +2149,7 @@
 				},
 				"owner_id": {
 					"displayName": "Имя или идентификатор владельца",
-					"description": "Идентификатор пользователя, которому назначена задача. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"description": "ID пользователя, которому назначена задача. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"parent_sales_account_id": {
 					"displayName": "Идентификатор родительского аккаунта продаж",
@@ -2160,7 +2160,7 @@
 					"description": "Номер телефона аккаунта"
 				},
 				"state": {
-					"displayName": "Состояние",
+					"displayName": "область",
 					"description": "Укажите, что контакт принадлежит"
 				},
 				"territory_id": {
@@ -2168,7 +2168,7 @@
 					"description": "Идентификатор территории, к которой относится сделка. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"twitter": {
-					"displayName": "Твиттер",
+					"displayName": "Twitter",
 					"description": "Имя пользователя Twitter контакта"
 				},
 				"website": {
@@ -2198,11 +2198,11 @@
 									}
 								},
 								"userId": {
-									"displayName": "Имя пользователя или идентификатор",
-									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+									"displayName": "Имя пользователя или ID",
+									"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 								},
 								"contactId": {
-									"displayName": "Идентификатор контакта"
+									"displayName": "ID контакта"
 								}
 							}
 						}
@@ -2211,17 +2211,17 @@
 					"displayName": "Участники",
 					"options": {
 						"attendee": {
-							"displayName": "Посетитель"
+							"displayName": "Участник"
 						}
 					}
 				},
 				"creater_id": {
 					"displayName": "Имя или идентификатор создателя",
-					"description": "Идентификатор пользователя, создавшего торговую деятельность. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"description": "ID пользователя, создавшего деятельность по продажам. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"endDate": {
 					"displayName": "Дата окончания",
-					"description": "Временная метка, обозначающая окончание встречи. Дата окончания, если это встреча на целый день."
+					"description": "Время окончания встречи или дата для целодневной встречи"
 				},
 				"is_allday": {
 					"displayName": "Весь день",
@@ -2245,11 +2245,11 @@
 				},
 				"fromDate": {
 					"displayName": "Дата начала",
-					"description": "Временная метка, обозначающая начало встречи. Дата начала, если это встреча на целый день."
+					"description": "Время начала встречи или дата для целодневной встречи"
 				},
 				"targetable_id": {
-					"displayName": "Идентификатор цели",
-					"description": "Идентификатор сущности, для которой обновляется задача. Тип сущности выбирается в «Типе цели»."
+					"displayName": "ID цели",
+					"description": "ID сущности для обновления задачи. Тип выбирается в параметре «Тип цели»."
 				},
 				"targetable_type": {
 					"displayName": "Тип цели",
@@ -2258,13 +2258,13 @@
 							"displayName": "Контакт"
 						},
 						"Deal": {
-							"displayName": "Иметь дело"
+							"displayName": "Сделка"
 						},
 						"SalesAccount": {
 							"displayName": "ПродажиАккаунт"
 						}
 					},
-					"description": "Тип сущности, для которой обновляется задача"
+					"description": "Тип сущности для обновления задачи"
 				},
 				"time_zone": {
 					"displayName": "Часовой пояс",
@@ -2517,7 +2517,7 @@
 							"displayName": "Америка/Блан-Саблон"
 						},
 						"America/Boa_Vista": {
-							"displayName": "Америка/Boa_Vista"
+							"displayName": "Америка/Боа-Виста"
 						},
 						"America/Bogota": {
 							"displayName": "Америка/Богота"
@@ -2529,10 +2529,10 @@
 							"displayName": "Америка/Буэнос-Айрес"
 						},
 						"America/Cambridge_Bay": {
-							"displayName": "Америка/Кембридж_Бэй"
+							"displayName": "Америка/Кембридж-Бей"
 						},
 						"America/Campo_Grande": {
-							"displayName": "Америка/Кампо_Гранде"
+							"displayName": "Америка/Кампу-Гранде"
 						},
 						"America/Cancun": {
 							"displayName": "Америка/Канкун"
@@ -2547,7 +2547,7 @@
 							"displayName": "Америка/Кайенна"
 						},
 						"America/Cayman": {
-							"displayName": "Америка/Кайманы"
+							"displayName": "Америка/Кайманские острова"
 						},
 						"America/Chicago": {
 							"displayName": "Америка/Чикаго"
@@ -2556,16 +2556,16 @@
 							"displayName": "Америка/Чиуауа"
 						},
 						"America/Ciudad_Juarez": {
-							"displayName": "Америка/Сьюдад_Хуарес"
+							"displayName": "Америка/Сьюдад-Хуарес"
 						},
 						"America/Coral_Harbour": {
-							"displayName": "Америка/Coral_Harbour"
+							"displayName": "Америка/Корал-Харбор"
 						},
 						"America/Cordoba": {
 							"displayName": "Америка/Кордова"
 						},
 						"America/Costa_Rica": {
-							"displayName": "Америка/Коста_Рика"
+							"displayName": "Америка/Коста-Рика"
 						},
 						"America/Coyhaique": {
 							"displayName": "Америка/Койайке"
@@ -2580,13 +2580,13 @@
 							"displayName": "Америка/Кюрасао"
 						},
 						"America/Danmarkshavn": {
-							"displayName": "Америка/Данмарксхавн"
+							"displayName": "Америка/Данмаркшавн"
 						},
 						"America/Dawson": {
 							"displayName": "Америка/Доусон"
 						},
 						"America/Dawson_Creek": {
-							"displayName": "Америка/Доусон_Крик"
+							"displayName": "Америка/Доусон-Крик"
 						},
 						"America/Denver": {
 							"displayName": "Америка/Денвер"
@@ -2604,31 +2604,31 @@
 							"displayName": "Америка/Эйрунепе"
 						},
 						"America/El_Salvador": {
-							"displayName": "Америка/Эль_Сальвадор"
+							"displayName": "Америка/Эль-Сальвадор"
 						},
 						"America/Ensenada": {
 							"displayName": "Америка/Энсенада"
 						},
 						"America/Fort_Nelson": {
-							"displayName": "Америка/Форт_Нельсон"
+							"displayName": "Америка/Форт-Нельсон"
 						},
 						"America/Fort_Wayne": {
-							"displayName": "Америка/Форт_Уэйн"
+							"displayName": "Америка/Форт-Уэйн"
 						},
 						"America/Fortaleza": {
 							"displayName": "Америка/Форталеза"
 						},
 						"America/Glace_Bay": {
-							"displayName": "Америка/Glase_Bay"
+							"displayName": "Америка/Глейс-Бей"
 						},
 						"America/Godthab": {
-							"displayName": "Америка/Годтаб"
+							"displayName": "Америка/Готхоб"
 						},
 						"America/Goose_Bay": {
-							"displayName": "Америка/Гусиная бухта"
+							"displayName": "Америка/Гус-Бей"
 						},
 						"America/Grand_Turk": {
-							"displayName": "Америка/Grand_Turk"
+							"displayName": "Америка/Гранд-Терк"
 						},
 						"America/Grenada": {
 							"displayName": "Америка/Гренада"
@@ -2667,7 +2667,7 @@
 							"displayName": "Америка/Индиана/Петербург"
 						},
 						"America/Indiana/Tell_City": {
-							"displayName": "Америка/Индиана/Tell_City"
+							"displayName": "Америка/Индиана/Телл-Сити"
 						},
 						"America/Indiana/Vevay": {
 							"displayName": "Америка/Индиана/Вевей"
@@ -2703,13 +2703,13 @@
 							"displayName": "Америка/Кентукки/Монтичелло"
 						},
 						"America/Knox_IN": {
-							"displayName": "Америка/Knox_IN"
+							"displayName": "Америка/Нокс, IN"
 						},
 						"America/Kralendijk": {
 							"displayName": "Америка/Кралендейк"
 						},
 						"America/La_Paz": {
-							"displayName": "Америка/Ла_Пас"
+							"displayName": "Америка/Ла-Пас"
 						},
 						"America/Lima": {
 							"displayName": "Америка/Лима"
@@ -2721,7 +2721,7 @@
 							"displayName": "Америка/Луисвилл"
 						},
 						"America/Lower_Princes": {
-							"displayName": "Америка/Нижние_Принцы"
+							"displayName": "Америка/Нижние-Принцы"
 						},
 						"America/Maceio": {
 							"displayName": "Америка/Масейо"
@@ -2733,7 +2733,7 @@
 							"displayName": "Америка/Манаус"
 						},
 						"America/Marigot": {
-							"displayName": "Америка/Мариго"
+							"displayName": "Америка/Маригот"
 						},
 						"America/Martinique": {
 							"displayName": "Америка/Мартиника"
@@ -2757,7 +2757,7 @@
 							"displayName": "Америка/Метлакатла"
 						},
 						"America/Mexico_City": {
-							"displayName": "Америка/Мехико_Сити"
+							"displayName": "Америка/Мехико"
 						},
 						"America/Miquelon": {
 							"displayName": "Америка/Микелон"
@@ -2781,7 +2781,7 @@
 							"displayName": "Америка/Нассау"
 						},
 						"America/New_York": {
-							"displayName": "Америка/Нью_Йорк"
+							"displayName": "America/New_York"
 						},
 						"America/Nipigon": {
 							"displayName": "Америка/Нипигон"
@@ -2823,25 +2823,25 @@
 							"displayName": "Америка/Порт-о-Пренс"
 						},
 						"America/Port_of_Spain": {
-							"displayName": "Америка/Порт_Испании"
+							"displayName": "Америка/Порт-оф-Спейн"
 						},
 						"America/Porto_Acre": {
-							"displayName": "Америка/Порто_Акр"
+							"displayName": "Америка/Порто-Акр"
 						},
 						"America/Porto_Velho": {
-							"displayName": "Америка/Порту_Велью"
+							"displayName": "Америка/Порту-Велью"
 						},
 						"America/Puerto_Rico": {
-							"displayName": "Америка/Пуэрто_Рико"
+							"displayName": "Америка/Пуэрто-Рико"
 						},
 						"America/Punta_Arenas": {
-							"displayName": "Америка/Пунта_Аренас"
+							"displayName": "Америка/Пунта-Аренас"
 						},
 						"America/Rainy_River": {
-							"displayName": "Америка/Rainy_River"
+							"displayName": "Америка/Рейни-Ривер"
 						},
 						"America/Rankin_Inlet": {
-							"displayName": "Америка/Рэнкин_Инлет"
+							"displayName": "Америка/Ранкин-Инлет"
 						},
 						"America/Recife": {
 							"displayName": "Америка/Ресифи"
@@ -2850,16 +2850,16 @@
 							"displayName": "Америка/Регина"
 						},
 						"America/Resolute": {
-							"displayName": "Америка/Решительный"
+							"displayName": "Америка/Резолют"
 						},
 						"America/Rio_Branco": {
-							"displayName": "Америка/Рио_Бранко"
+							"displayName": "Америка/Рио-Бранко"
 						},
 						"America/Rosario": {
 							"displayName": "Америка/Росарио"
 						},
 						"America/Santa_Isabel": {
-							"displayName": "Америка/Санта_Изабель"
+							"displayName": "Америка/Санта-Изабель"
 						},
 						"America/Santarem": {
 							"displayName": "Америка/Сантарем"
@@ -2868,7 +2868,7 @@
 							"displayName": "Америка/Сантьяго"
 						},
 						"America/Santo_Domingo": {
-							"displayName": "Америка/Санто_Доминго"
+							"displayName": "Америка/Санто-Доминго"
 						},
 						"America/Sao_Paulo": {
 							"displayName": "Америка/Сан-Паулу"
@@ -2883,10 +2883,10 @@
 							"displayName": "Америка/Ситка"
 						},
 						"America/St_Barthelemy": {
-							"displayName": "Америка/Сент_Бартелеми"
+							"displayName": "Америка/Сан-Бартелеми"
 						},
 						"America/St_Johns": {
-							"displayName": "Америка/Сент_Джонс"
+							"displayName": "Америка/Сент-Джонс"
 						},
 						"America/St_Kitts": {
 							"displayName": "Америка/Сент-Китс"
@@ -2895,13 +2895,13 @@
 							"displayName": "Америка/Сент-Люсия"
 						},
 						"America/St_Thomas": {
-							"displayName": "Америка/Сент_Томас"
+							"displayName": "Америка/Сент-Томас"
 						},
 						"America/St_Vincent": {
-							"displayName": "Америка/Сент_Винсент"
+							"displayName": "Америка/Сент-Винсент"
 						},
 						"America/Swift_Current": {
-							"displayName": "Америка/Swift_Current"
+							"displayName": "Америка/Свифт-Каррент"
 						},
 						"America/Tegucigalpa": {
 							"displayName": "Америка/Тегусигальпа"
@@ -2910,7 +2910,7 @@
 							"displayName": "Америка/Туле"
 						},
 						"America/Thunder_Bay": {
-							"displayName": "Америка/Thunder_Bay"
+							"displayName": "Америка/Тандер-Бей"
 						},
 						"America/Tijuana": {
 							"displayName": "Америка/Тихуана"
@@ -2925,7 +2925,7 @@
 							"displayName": "Америка/Ванкувер"
 						},
 						"America/Virgin": {
-							"displayName": "Америка/Девственница"
+							"displayName": "Америка/Виргинские острова"
 						},
 						"America/Whitehorse": {
 							"displayName": "Америка/Уайтхорс"
@@ -2946,7 +2946,7 @@
 							"displayName": "Антарктида/Дэвис"
 						},
 						"Antarctica/DumontDUrville": {
-							"displayName": "Антарктида/Дюмон-Дюрвиль"
+							"displayName": "Антарктида/Дюмон-д'Юрвиль"
 						},
 						"Antarctica/Macquarie": {
 							"displayName": "Антарктида/Маккуори"
@@ -2964,7 +2964,7 @@
 							"displayName": "Антарктида/Ротера"
 						},
 						"Antarctica/South_Pole": {
-							"displayName": "Антарктида/Южный_Полюс"
+							"displayName": "Антарктида/Южный полюс"
 						},
 						"Antarctica/Syowa": {
 							"displayName": "Антарктида/Сёва"
@@ -2997,7 +2997,7 @@
 							"displayName": "Азия/Актобе"
 						},
 						"Asia/Ashgabat": {
-							"displayName": "Азия/Ашхабад"
+							"displayName": "Азия/Ашгабат"
 						},
 						"Asia/Ashkhabad": {
 							"displayName": "Азия/Ашхабад"
@@ -3078,7 +3078,7 @@
 							"displayName": "Азия/Хеврон"
 						},
 						"Asia/Ho_Chi_Minh": {
-							"displayName": "Азия/Хо_Чи_Мин"
+							"displayName": "Азия/Хошимин"
 						},
 						"Asia/Hong_Kong": {
 							"displayName": "Азия/Гонконг"
@@ -3168,7 +3168,7 @@
 							"displayName": "Азия/Омск"
 						},
 						"Asia/Oral": {
-							"displayName": "Азия/Устный"
+							"displayName": "Азия/Орал"
 						},
 						"Asia/Phnom_Penh": {
 							"displayName": "Азия/Пномпень"
@@ -3189,7 +3189,7 @@
 							"displayName": "Азия/Кызылорда"
 						},
 						"Asia/Rangoon": {
-							"displayName": "Азия/Рангун"
+							"displayName": "Азия/Янгон"
 						},
 						"Asia/Riyadh": {
 							"displayName": "Азия/Эр-Рияд"
@@ -3231,7 +3231,7 @@
 							"displayName": "Азия/Тель-Авив"
 						},
 						"Asia/Thimbu": {
-							"displayName": "Азия/Тимбу"
+							"displayName": "Азия/Тхимпху"
 						},
 						"Asia/Thimphu": {
 							"displayName": "Азия/Тхимпху"
@@ -3243,13 +3243,13 @@
 							"displayName": "Азия/Томск"
 						},
 						"Asia/Ujung_Pandang": {
-							"displayName": "Азия/Уджунг_Панданг"
+							"displayName": "Азия/Уджунг-Панданг"
 						},
 						"Asia/Ulaanbaatar": {
 							"displayName": "Азия/Улан-Батор"
 						},
 						"Asia/Ulan_Bator": {
-							"displayName": "Азия/Улан_Батор"
+							"displayName": "Азия/Улан-Батор"
 						},
 						"Asia/Urumqi": {
 							"displayName": "Азия/Урумчи"
@@ -3282,10 +3282,10 @@
 							"displayName": "Атлантика/Бермудские острова"
 						},
 						"Atlantic/Canary": {
-							"displayName": "Атлантический/Канарский"
+							"displayName": "Атлантика/Канарские острова"
 						},
 						"Atlantic/Cape_Verde": {
-							"displayName": "Атлантический океан/Кабо-Верде"
+							"displayName": "Атлантика/Кабо-Верде"
 						},
 						"Atlantic/Faeroe": {
 							"displayName": "Атлантика/Фарерские острова"
@@ -3294,22 +3294,22 @@
 							"displayName": "Атлантика/Фарерские острова"
 						},
 						"Atlantic/Jan_Mayen": {
-							"displayName": "Атлантика/январь-майен"
+							"displayName": "Атлантика/Ян-Майен"
 						},
 						"Atlantic/Madeira": {
 							"displayName": "Атлантика/Мадейра"
 						},
 						"Atlantic/Reykjavik": {
-							"displayName": "Атлантик/Рейкьявик"
+							"displayName": "Атлантика/Рейкьявик"
 						},
 						"Atlantic/South_Georgia": {
-							"displayName": "Атлантика/Южная Грузия"
+							"displayName": "Атлантика/Южная Георгия"
 						},
 						"Atlantic/St_Helena": {
-							"displayName": "Атлантика/Св. Елены"
+							"displayName": "Атлантика/Остров Святой Елены"
 						},
 						"Atlantic/Stanley": {
-							"displayName": "Атлантик/Стэнли"
+							"displayName": "Атлантика/Стэнли"
 						},
 						"Australia/ACT": {
 							"displayName": "Австралия/ACT"
@@ -3321,7 +3321,7 @@
 							"displayName": "Австралия/Брисбен"
 						},
 						"Australia/Broken_Hill": {
-							"displayName": "Австралия/Broken_Hill"
+							"displayName": "Австралия/Брокен-Хилл"
 						},
 						"Australia/Canberra": {
 							"displayName": "Австралия/Канберра"
@@ -3345,7 +3345,7 @@
 							"displayName": "Австралия/Линдеман"
 						},
 						"Australia/Lord_Howe": {
-							"displayName": "Австралия/Lord_Howe"
+							"displayName": "Австралия/Лорд-Хау"
 						},
 						"Australia/Melbourne": {
 							"displayName": "Австралия/Мельбурн"
@@ -3381,10 +3381,10 @@
 							"displayName": "Австралия/Янковинна"
 						},
 						"Brazil/Acre": {
-							"displayName": "Бразилия/Акко"
+							"displayName": "Бразилия/Акре"
 						},
 						"Brazil/DeNoronha": {
-							"displayName": "Бразилия/Деноронья"
+							"displayName": "Бразилия/де-Норонья"
 						},
 						"Brazil/East": {
 							"displayName": "Бразилия/Восток"
@@ -3399,22 +3399,22 @@
 							"displayName": "CST6CDT"
 						},
 						"Canada/Atlantic": {
-							"displayName": "Канада/Атлантика"
+							"displayName": "Канада/Атлантический"
 						},
 						"Canada/Central": {
 							"displayName": "Канада/Центральный"
 						},
 						"Canada/Eastern": {
-							"displayName": "Канада/Восточная"
+							"displayName": "Канада/Восточный"
 						},
 						"Canada/Mountain": {
-							"displayName": "Канада/Горы"
+							"displayName": "Канада/Горный"
 						},
 						"Canada/Newfoundland": {
 							"displayName": "Канада/Ньюфаундленд"
 						},
 						"Canada/Pacific": {
-							"displayName": "Канада/Тихоокеанский регион"
+							"displayName": "Канада/Тихоокеанский"
 						},
 						"Canada/Saskatchewan": {
 							"displayName": "Канада/Саскачеван"
@@ -3447,109 +3447,109 @@
 							"displayName": "Эйре"
 						},
 						"Etc/GMT": {
-							"displayName": "И т.д./GMT"
+							"displayName": "Прочие/GMT"
 						},
 						"Etc/GMT+0": {
-							"displayName": "И т.д./GMT+0"
+							"displayName": "Прочие/GMT+0"
 						},
 						"Etc/GMT+1": {
-							"displayName": "И т.д./GMT+1"
+							"displayName": "Прочие/GMT+1"
 						},
 						"Etc/GMT+10": {
-							"displayName": "И т.д./GMT+10"
+							"displayName": "Прочие/GMT+10"
 						},
 						"Etc/GMT+11": {
-							"displayName": "И т.д./GMT+11"
+							"displayName": "Прочие/GMT+11"
 						},
 						"Etc/GMT+12": {
-							"displayName": "И т.д./GMT+12"
+							"displayName": "Прочие/GMT+12"
 						},
 						"Etc/GMT+2": {
-							"displayName": "И т.д./GMT+2"
+							"displayName": "Прочие/GMT+2"
 						},
 						"Etc/GMT+3": {
-							"displayName": "И т.д./GMT+3"
+							"displayName": "Прочие/GMT+3"
 						},
 						"Etc/GMT+4": {
-							"displayName": "И т.д./GMT+4"
+							"displayName": "Прочие/GMT+4"
 						},
 						"Etc/GMT+5": {
-							"displayName": "И т.д./GMT+5"
+							"displayName": "Прочие/GMT+5"
 						},
 						"Etc/GMT+6": {
-							"displayName": "И т.д./GMT+6"
+							"displayName": "Прочие/GMT+6"
 						},
 						"Etc/GMT+7": {
-							"displayName": "И т.д./GMT+7"
+							"displayName": "Прочие/GMT+7"
 						},
 						"Etc/GMT+8": {
-							"displayName": "И т.д./GMT+8"
+							"displayName": "Прочие/GMT+8"
 						},
 						"Etc/GMT+9": {
-							"displayName": "И т.д./GMT+9"
+							"displayName": "Прочие/GMT+9"
 						},
 						"Etc/GMT-0": {
-							"displayName": "И т.д./GMT-0"
+							"displayName": "Прочие/GMT-0"
 						},
 						"Etc/GMT-1": {
-							"displayName": "И т.д./GMT-1"
+							"displayName": "Прочие/GMT-1"
 						},
 						"Etc/GMT-10": {
-							"displayName": "И т.д./GMT-10"
+							"displayName": "Прочие/GMT-10"
 						},
 						"Etc/GMT-11": {
-							"displayName": "И т.д./GMT-11"
+							"displayName": "Прочие/GMT-11"
 						},
 						"Etc/GMT-12": {
-							"displayName": "И т.д./GMT-12"
+							"displayName": "Прочие/GMT-12"
 						},
 						"Etc/GMT-13": {
-							"displayName": "И т.д./GMT-13"
+							"displayName": "Прочие/GMT-13"
 						},
 						"Etc/GMT-14": {
-							"displayName": "И т.д./GMT-14"
+							"displayName": "Прочие/GMT-14"
 						},
 						"Etc/GMT-2": {
-							"displayName": "И т.д./GMT-2"
+							"displayName": "Прочие/GMT-2"
 						},
 						"Etc/GMT-3": {
-							"displayName": "И т.д./GMT-3"
+							"displayName": "Прочие/GMT-3"
 						},
 						"Etc/GMT-4": {
-							"displayName": "И т.д./GMT-4"
+							"displayName": "Прочие/GMT-4"
 						},
 						"Etc/GMT-5": {
-							"displayName": "И т.д./GMT-5"
+							"displayName": "Прочие/GMT-5"
 						},
 						"Etc/GMT-6": {
-							"displayName": "И т.д./GMT-6"
+							"displayName": "Прочие/GMT-6"
 						},
 						"Etc/GMT-7": {
-							"displayName": "И т.д./GMT-7"
+							"displayName": "Прочие/GMT-7"
 						},
 						"Etc/GMT-8": {
-							"displayName": "И т.д./GMT-8"
+							"displayName": "Прочие/GMT-8"
 						},
 						"Etc/GMT-9": {
-							"displayName": "И т.д./GMT-9"
+							"displayName": "Прочие/GMT-9"
 						},
 						"Etc/GMT0": {
-							"displayName": "И т.д./GMT0"
+							"displayName": "Прочие/GMT0"
 						},
 						"Etc/Greenwich": {
-							"displayName": "И т.д./Гринвич"
+							"displayName": "Прочие/Гринвич"
 						},
 						"Etc/UCT": {
-							"displayName": "И т.д./UCT"
+							"displayName": "Прочие/UCT"
 						},
 						"Etc/UTC": {
-							"displayName": "И т.д./UTC"
+							"displayName": "Прочие/UTC"
 						},
 						"Etc/Universal": {
-							"displayName": "И т.д./Универсальный"
+							"displayName": "Прочие/Универсальное"
 						},
 						"Etc/Zulu": {
-							"displayName": "И т.д./Зулу"
+							"displayName": "Прочие/Зулу"
 						},
 						"Europe/Amsterdam": {
 							"displayName": "Европа/Амстердам"
@@ -3606,7 +3606,7 @@
 							"displayName": "Европа/Хельсинки"
 						},
 						"Europe/Isle_of_Man": {
-							"displayName": "Европа/Остров_Мэн"
+							"displayName": "Европа/Остров Мэн"
 						},
 						"Europe/Istanbul": {
 							"displayName": "Европа/Стамбул"
@@ -3681,7 +3681,7 @@
 							"displayName": "Европа/Самара"
 						},
 						"Europe/San_Marino": {
-							"displayName": "Европа/Сан_Марино"
+							"displayName": "Европа/Сан-Марино"
 						},
 						"Europe/Sarajevo": {
 							"displayName": "Европа/Сараево"
@@ -3753,7 +3753,7 @@
 							"displayName": "GMT"
 						},
 						"GMT+0": {
-							"displayName": "Время по Гринвичу+0"
+							"displayName": "GMT+0"
 						},
 						"GMT-0": {
 							"displayName": "GMT-0"
@@ -3774,37 +3774,37 @@
 							"displayName": "Исландия"
 						},
 						"Indian/Antananarivo": {
-							"displayName": "Индия/Антананариву"
+							"displayName": "Индийский океан/Антананариву"
 						},
 						"Indian/Chagos": {
-							"displayName": "Индийский/Чагос"
+							"displayName": "Индийский океан/Чагос"
 						},
 						"Indian/Christmas": {
-							"displayName": "Индийский/Рождество"
+							"displayName": "Индийский океан/Рождества"
 						},
 						"Indian/Cocos": {
-							"displayName": "Индия/Кокосовые острова"
+							"displayName": "Индийский океан/Кокосовые острова"
 						},
 						"Indian/Comoro": {
-							"displayName": "Индийский/Коморский"
+							"displayName": "Индийский океан/Коморские острова"
 						},
 						"Indian/Kerguelen": {
-							"displayName": "Индийский/Кергелен"
+							"displayName": "Индийский океан/Кергелен"
 						},
 						"Indian/Mahe": {
-							"displayName": "Индийский/Маэ"
+							"displayName": "Индийский океан/Маэ"
 						},
 						"Indian/Maldives": {
-							"displayName": "Индия/Мальдивы"
+							"displayName": "Индийский океан/Мальдивы"
 						},
 						"Indian/Mauritius": {
-							"displayName": "Индия/Маврикий"
+							"displayName": "Индийский океан/Маврикий"
 						},
 						"Indian/Mayotte": {
-							"displayName": "Индийский/Майотта"
+							"displayName": "Индийский океан/Майотта"
 						},
 						"Indian/Reunion": {
-							"displayName": "Индийский/Реюньон"
+							"displayName": "Индийский океан/Реюньон"
 						},
 						"Iran": {
 							"displayName": "Иран"
@@ -3840,7 +3840,7 @@
 							"displayName": "Мексика/Баха-Сур"
 						},
 						"Mexico/General": {
-							"displayName": "Мексика/Общий"
+							"displayName": "Мексика/Центральная"
 						},
 						"NZ": {
 							"displayName": "NZ"
@@ -3873,7 +3873,7 @@
 							"displayName": "Тихий океан/Чуук"
 						},
 						"Pacific/Easter": {
-							"displayName": "Тихий океан/Пасха"
+							"displayName": "Тихий океан/Остров Пасхи"
 						},
 						"Pacific/Efate": {
 							"displayName": "Тихий океан/Эфате"
@@ -3942,7 +3942,7 @@
 							"displayName": "Тихий океан/Нумеа"
 						},
 						"Pacific/Pago_Pago": {
-							"displayName": "Тихий океан/Паго_Паго"
+							"displayName": "Тихий океан/Паго-Паго"
 						},
 						"Pacific/Palau": {
 							"displayName": "Тихий океан/Палау"
@@ -3957,7 +3957,7 @@
 							"displayName": "Тихий океан/Понапе"
 						},
 						"Pacific/Port_Moresby": {
-							"displayName": "Тихий океан/Порт_Морсби"
+							"displayName": "Тихий океан/Порт-Морсби"
 						},
 						"Pacific/Rarotonga": {
 							"displayName": "Тихий океан/Раротонга"
@@ -3984,7 +3984,7 @@
 							"displayName": "Тихий океан/Уэйк"
 						},
 						"Pacific/Wallis": {
-							"displayName": "Пасифик/Уоллис"
+							"displayName": "Тихий океан/Уоллис"
 						},
 						"Pacific/Yap": {
 							"displayName": "Тихий океан/Яп"
@@ -4014,19 +4014,19 @@
 							"displayName": "США/Аляска"
 						},
 						"US/Aleutian": {
-							"displayName": "США/Алеутский"
+							"displayName": "США/Алеутские острова"
 						},
 						"US/Arizona": {
 							"displayName": "США/Аризона"
 						},
 						"US/Central": {
-							"displayName": "США/Центральный"
+							"displayName": "США/Центральная"
 						},
 						"US/East-Indiana": {
 							"displayName": "США/Восточная Индиана"
 						},
 						"US/Eastern": {
-							"displayName": "США/Восточная Европа"
+							"displayName": "США/Восточная"
 						},
 						"US/Hawaii": {
 							"displayName": "США/Гавайи"
@@ -4038,10 +4038,10 @@
 							"displayName": "США/Мичиган"
 						},
 						"US/Mountain": {
-							"displayName": "США/Горы"
+							"displayName": "США/Горная"
 						},
 						"US/Pacific": {
-							"displayName": "США/Тихоокеанский регион"
+							"displayName": "США/Тихоокеанская"
 						},
 						"US/Samoa": {
 							"displayName": "США/Самоа"
@@ -4050,7 +4050,7 @@
 							"displayName": "UTC"
 						},
 						"Universal": {
-							"displayName": "Универсальный"
+							"displayName": "Универсальное"
 						},
 						"W-SU": {
 							"displayName": "W-SU"
@@ -4064,68 +4064,68 @@
 					}
 				},
 				"title": {
-					"displayName": "Заголовок",
+					"displayName": "Название",
 					"description": "Название задачи"
 				},
 				"campaign_id": {
-					"displayName": "Название или идентификатор кампании",
-					"description": "Идентификатор кампании, в рамках которой была заключена эта сделка. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Название или ID кампании",
+					"description": "Идентификатор кампании, благодаря которой была заключена эта сделка. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"contact_status_id": {
-					"displayName": "Имя или идентификатор статуса контакта",
-					"description": "Идентификатор статуса контакта, которому принадлежит контакт. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Статус контакта (имя или идентификатор)",
+					"description": "Идентификатор статуса контакта, которому принадлежит контакт. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"external_id": {
-					"displayName": "Внешний идентификатор",
+					"displayName": "Внешний ID",
 					"description": "Внешний идентификатор контакта"
 				},
 				"first_name": {
 					"displayName": "Имя",
-					"description": "Имя контактного лица"
+					"description": "Имя контакта"
 				},
 				"job_title": {
 					"displayName": "Должность",
-					"description": "Обозначение контакта в аккаунте, к которому он принадлежит"
+					"description": "Должность контакта в учётной записи"
 				},
 				"keyword": {
 					"displayName": "Ключевые слова",
-					"description": "Ключевые слова, которые контакт использовал для перехода на ваш сайт/веб-приложение."
+					"description": "Ключевые слова, которые контакт использовал для перехода на ваш сайт или веб-приложение"
 				},
 				"last_name": {
 					"displayName": "Фамилия",
 					"description": "Фамилия контакта"
 				},
 				"lead_source_id": {
-					"displayName": "Идентификатор источника потенциальных клиентов",
+					"displayName": "Идентификатор источника потенциального клиента",
 					"description": "Идентификатор источника, откуда пришла сделка"
 				},
 				"lifecycle_stage_id": {
-					"displayName": "Название или идентификатор этапа жизненного цикла",
-					"description": "Идентификатор этапа жизненного цикла, к которому принадлежит контакт. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Этап жизненного цикла (имя или идентификатор)",
+					"description": "Идентификатор этапа жизненного цикла, к которому принадлежит контакт. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"medium": {
-					"displayName": "Середина",
-					"description": "Канал, который привел ваш контакт на ваш сайт/веб-приложение"
+					"displayName": "Средний",
+					"description": "Канал, который привел контакт на ваш сайт или веб-приложение"
 				},
 				"mobile_number": {
 					"displayName": "Номер мобильного телефона",
-					"description": "Номер мобильного телефона контактного лица"
+					"description": "Номер мобильного телефона контакта"
 				},
 				"sales_accounts": {
-					"displayName": "Имена или идентификаторы учетных записей продаж",
-					"description": "Аккаунты, которым принадлежит контакт. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Имена или идентификаторы учётной записи продаж",
+					"description": "Учётные записи, которым принадлежит контакт. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"subscription_status": {
-					"displayName": "Имя или идентификатор статуса подписки",
-					"description": "Статус подписки, в которой находится контакт. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Статус подписки (название или ID)",
+					"description": "Статус подписки контакта. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"subscription_types": {
-					"displayName": "Типы подписки Имя или идентификатор",
-					"description": "Тип подписки, в которой находится контакт. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Тип подписки (название или ID)",
+					"description": "Тип подписки контакта. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"work_number": {
 					"displayName": "Рабочий номер",
-					"description": "Рабочий телефон контактного лица"
+					"description": "Рабочий телефон контакта"
 				},
 				"amount": {
 					"displayName": "Количество",
@@ -4136,40 +4136,40 @@
 					"description": "Стоимость сделки в базовой валюте"
 				},
 				"currency_id": {
-					"displayName": "Название или идентификатор валюты",
-					"description": "Идентификатор валюты, к которой принадлежит сделка. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Название валюты или её ID",
+					"description": "ID валюты сделки. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"deal_payment_status_id": {
-					"displayName": "Имя или идентификатор статуса платежа по сделке",
-					"description": "Идентификатор способа оплаты сделки. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Статус платежа сделки (название или ID)",
+					"description": "ID способа оплаты сделки. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"deal_pipeline_id": {
-					"displayName": "Название или идентификатор канала сделки",
-					"description": "Идентификатор конвейера сделок, к которому он принадлежит. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Воронка продаж (название или ID)",
+					"description": "ID воронки продаж. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"deal_product_id": {
-					"displayName": "Название или идентификатор продукта сделки",
-					"description": "Идентификатор продукта, которому принадлежит сделка (в многопродуктовой компании). Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Продукт сделки (название или ID)",
+					"description": "ID продукта для многопродуктовой компании. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"deal_reason_id": {
-					"displayName": "Название или идентификатор причины сделки",
-					"description": "ID причины проигрыша сделки. Может быть установлено только в том случае, если сделка находится в стадии «Проиграна». Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Причина сделки (название или ID)",
+					"description": "ID причины проигрыша сделки (только для стадии «Проиграна»). Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"deal_stage_id": {
-					"displayName": "Название или идентификатор этапа сделки",
-					"description": "Идентификатор этапа сделки, к которому относится сделка. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Этап сделки (название или ID)",
+					"description": "ID этапа сделки. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"deal_type_id": {
-					"displayName": "Название или идентификатор типа сделки",
-					"description": "Идентификатор типа сделки, к которой она относится. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Тип сделки (название или ID)",
+					"description": "ID типа сделки. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"probability": {
 					"displayName": "Вероятность",
-					"description": "Вероятность выигрыша сделки как число от 0 до 100."
+					"description": "Вероятность успеха сделки (число от 0 до 100)"
 				},
 				"sales_account_id": {
-					"displayName": "Имя или идентификатор учетной записи продаж",
-					"description": "Идентификатор аккаунта, которому принадлежит сделка. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Учётная запись продаж (название или ID)",
+					"description": "ID учётной записи для сделки. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"description": {
 					"displayName": "Содержание",
@@ -4177,45 +4177,45 @@
 				},
 				"end_date": {
 					"displayName": "Дата начала",
-					"description": "Временная метка, обозначающая начало продаж."
+					"description": "Время начала деятельности по продажам"
 				},
 				"notes": {
 					"displayName": "Примечания",
-					"description": "Описание о торговой деятельности"
+					"description": "Описание деятельности по продажам"
 				},
 				"sales_activity_outcome_id": {
-					"displayName": "Название или идентификатор результата деятельности по продажам",
-					"description": "Идентификатор результата продаж. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Результат активности (название или ID)",
+					"description": "ID результата деятельности по продажам. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"sales_activity_type_id": {
-					"displayName": "Имя или идентификатор типа торговой деятельности",
-					"description": "Идентификатор типа активности продаж, для которого обновляется активность продаж. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Тип деятельности по продажам (название или ID)",
+					"description": "ID типа деятельности для обновления. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"from_date": {
 					"displayName": "Дата начала",
-					"description": "Временная метка, обозначающая начало продаж."
+					"description": "Время начала деятельности по продажам"
 				},
 				"dueDate": {
 					"displayName": "Срок оплаты",
-					"description": "Временная метка, указывающая, когда задача должна быть завершена."
+					"description": "Срок выполнения задачи"
 				},
 				"task_type_id": {
-					"displayName": "Идентификатор типа задачи",
+					"displayName": "ID типа задачи",
 					"description": "ID типа задачи"
 				}
 			}
 		},
 		"title": {
-			"displayName": "Заголовок",
+			"displayName": "Название",
 			"description": "Название задачи"
 		},
 		"fromDate": {
 			"displayName": "Дата начала",
-			"description": "Временная метка, обозначающая начало встречи. Дата начала, если это встреча на целый день."
+			"description": "Время начала встречи или дата для целодневной встречи"
 		},
 		"endDate": {
 			"displayName": "Дата окончания",
-			"description": "Временная метка, обозначающая окончание встречи. Дата окончания, если это встреча на целый день."
+			"description": "Время окончания встречи или дата для целодневной встречи"
 		},
 		"attendees": {
 			"options": {
@@ -4223,7 +4223,7 @@
 					"displayName": "Участники"
 				},
 				"attendee": {
-					"displayName": "Посетитель",
+					"displayName": "Участник",
 					"values": {
 						"type": {
 							"displayName": "Тип",
@@ -4237,11 +4237,11 @@
 							}
 						},
 						"userId": {
-							"displayName": "Имя пользователя или идентификатор",
-							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+							"displayName": "Имя пользователя или ID",
+							"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 						},
 						"contactId": {
-							"displayName": "Идентификатор контакта"
+							"displayName": "ID контакта"
 						}
 					}
 				}
@@ -4250,15 +4250,15 @@
 			"displayName": "Участники"
 		},
 		"appointmentId": {
-			"displayName": "Идентификатор встречи",
-			"description": "Идентификатор встречи для обновления"
+			"displayName": "ID встречи",
+			"description": "ID встречи для обновления"
 		},
 		"filters": {
 			"displayName": "Фильтры",
 			"placeholder": "Добавить фильтр",
 			"options": {
 				"include": {
-					"displayName": "Включать",
+					"displayName": "Включить",
 					"options": {
 						"appointment_attendees": {
 							"displayName": "Участники встречи"
@@ -4281,16 +4281,16 @@
 					"displayName": "Статус",
 					"options": {
 						"past": {
-							"displayName": "Прошлое"
+							"displayName": "Прошедшее"
 						},
 						"upcoming": {
 							"displayName": "Предстоящие"
 						},
 						"completed": {
-							"displayName": "Завершенный"
+							"displayName": "Завершено"
 						},
 						"due_today": {
-							"displayName": "Срок оплаты сегодня"
+							"displayName": "Срок сегодня"
 						},
 						"due_tomorrow": {
 							"displayName": "Срок завтра"
@@ -4307,7 +4307,7 @@
 		},
 		"firstName": {
 			"displayName": "Имя",
-			"description": "Имя контактного лица"
+			"description": "Имя контакта"
 		},
 		"lastName": {
 			"displayName": "Фамилия",
@@ -4315,19 +4315,19 @@
 		},
 		"emails": {
 			"displayName": "Адрес электронной почты",
-			"description": "Адреса электронной почты контактного лица"
+			"description": "Адреса электронной почты контакта"
 		},
 		"contactId": {
-			"displayName": "Идентификатор контакта",
-			"description": "Идентификатор контакта для обновления"
+			"displayName": "ID контакта",
+			"description": "ID контакта для обновления"
 		},
 		"amount": {
 			"displayName": "Количество",
 			"description": "Стоимость сделки"
 		},
 		"dealId": {
-			"displayName": "Идентификатор сделки",
-			"description": "Идентификатор сделки, которую необходимо обновить"
+			"displayName": "ID сделки",
+			"description": "ID сделки для обновления"
 		},
 		"description": {
 			"displayName": "Содержание",
@@ -4335,13 +4335,13 @@
 		},
 		"targetableType": {
 			"displayName": "Тип цели",
-			"description": "Тип сущности, для которой обновляется задача",
+			"description": "Тип сущности для обновления задачи",
 			"options": {
 				"Contact": {
 					"displayName": "Контакт"
 				},
 				"Deal": {
-					"displayName": "Иметь дело"
+					"displayName": "Сделка"
 				},
 				"SalesAccount": {
 					"displayName": "ПродажиАккаунт"
@@ -4349,49 +4349,49 @@
 			}
 		},
 		"targetable_id": {
-			"displayName": "Идентификатор цели",
-			"description": "Идентификатор сущности, для которой создается задача. Тип сущности выбирается в «Типе цели»."
+			"displayName": "ID цели",
+			"description": "ID сущности для создания задачи. Тип выбирается в параметре «Тип цели»."
 		},
 		"noteId": {
-			"displayName": "Идентификатор заметки",
-			"description": "Идентификатор заметки для обновления"
+			"displayName": "ID заметки",
+			"description": "ID заметки для обновления"
 		},
 		"sales_activity_type_id": {
-			"displayName": "Имя или идентификатор типа торговой деятельности",
-			"description": "Идентификатор вида торговой активности, для которого создается торговая деятельность. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"displayName": "Тип деятельности по продажам (название или ID)",
+			"description": "ID типа деятельности для создания. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"ownerId": {
 			"displayName": "Имя или идентификатор владельца",
-			"description": "Идентификатор пользователя, которому назначена задача. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"description": "ID пользователя, которому назначена задача. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"from_date": {
 			"displayName": "Дата начала",
-			"description": "Временная метка, обозначающая окончание продаж."
+			"description": "Время окончания деятельности по продажам"
 		},
 		"end_date": {
 			"displayName": "Дата окончания",
-			"description": "Временная метка, обозначающая окончание продаж."
+			"description": "Время окончания деятельности по продажам"
 		},
 		"salesActivityId": {
-			"displayName": "Идентификатор активности продаж",
-			"description": "Идентификатор активности продаж для обновления"
+			"displayName": "ID деятельности по продажам",
+			"description": "ID деятельности по продажам для обновления"
 		},
 		"query": {
 			"displayName": "Поисковый запрос",
-			"description": "Введите термин, который будет использоваться для поиска объектов"
+			"description": "Введите термин для поиска сущностей"
 		},
 		"entities": {
-			"displayName": "Поиск по объектам",
-			"description": "Введите термин, который будет использоваться для поиска объектов",
+			"displayName": "Поиск по сущностям",
+			"description": "Введите термин для поиска сущностей",
 			"options": {
 				"contact": {
 					"displayName": "Контакт"
 				},
 				"deal": {
-					"displayName": "Иметь дело"
+					"displayName": "Сделка"
 				},
 				"sales_account": {
-					"displayName": "Счет продаж"
+					"displayName": "Учётная запись продаж"
 				},
 				"user": {
 					"displayName": "Пользователь"
@@ -4400,7 +4400,7 @@
 		},
 		"searchField": {
 			"displayName": "Поле поиска",
-			"description": "Поле, по которому следует искать сущности",
+			"description": "Поле для поиска сущностей",
 			"options": {
 				"email": {
 					"displayName": "Электронная почта"
@@ -4410,12 +4410,12 @@
 				},
 				"customField": {
 					"displayName": "Пользовательское поле",
-					"description": "Разрешены только настраиваемые поля типа «Текстовое поле», «Число», «Раскрывающийся список» или «Переключатель»."
+					"description": "Допускаются только поля типа «Текстовое поле», «Число», «Раскрывающееся меню» или «Переключатель»"
 				}
 			}
 		},
 		"customFieldName": {
-			"displayName": "Имя настраиваемого поля"
+			"displayName": "Имя пользовательского поля"
 		},
 		"customFieldValue": {
 			"displayName": "Значение пользовательского поля"
@@ -4429,16 +4429,16 @@
 			"options": {
 				"entities": {
 					"displayName": "Сущности",
-					"description": "Используйте «сущности» для запроса связанных объектов. Вы можете включить несколько сущностей одновременно при условии, что поле доступно в обеих сущностях, иначе вы получите ответ об ошибке.",
+					"description": "Используйте «entities» для запроса связанных сущностей. Можно указать несколько сущностей, если поле доступно в обеих, иначе будет ошибка.",
 					"options": {
 						"contact": {
 							"displayName": "Контакт"
 						},
 						"deal": {
-							"displayName": "Иметь дело"
+							"displayName": "Сделка"
 						},
 						"sales_account": {
-							"displayName": "Счет продаж"
+							"displayName": "Учётная запись продаж"
 						}
 					}
 				}
@@ -4446,7 +4446,7 @@
 		},
 		"dueDate": {
 			"displayName": "Срок оплаты",
-			"description": "Временная метка, указывающая, когда задача должна быть завершена."
+			"description": "Срок выполнения задачи"
 		},
 		"taskId": {
 			"displayName": "Идентификатор задачи",

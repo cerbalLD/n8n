@@ -1,28 +1,28 @@
 {
 	"header": {
-		"displayName": "Microsoft Делать",
-		"description": "Используйте Microsoft To Do API."
+		"displayName": "Microsoft To Do",
+		"description": "Использование API Microsoft To Do"
 	},
 	"nodeView": {
 		"authentication": {
 			"displayName": "Аутентификация",
 			"options": {
 				"microsoftToDoOAuth2Api": {
-					"displayName": "Чтобы сделать OAuth2"
+					"displayName": "To Do OAuth2"
 				},
 				"microsoftOAuth2Api": {
-					"displayName": "Microsoft OAuth2 (график)",
-					"description": "Общие учетные данные Microsoft Graph. Включите области, необходимые этому узлу (например, Tasks.ReadWrite) для учетных данных."
+					"displayName": "Microsoft OAuth2 (Graph)",
+					"description": "Общие учётные данные Microsoft Graph. Включите необходимые области разрешений для этого узла (например, Tasks.ReadWrite)."
 				},
 				"microsoftEntraServicePrincipalApi": {
-					"displayName": "Руководитель службы Microsoft Entra (только для приложения)",
-					"description": "Доступ только через приложение через регистрацию приложения Microsoft Entra. Выберите, с каким пользователем действовать."
+					"displayName": "Субъект службы Microsoft Entra (только приложение)",
+					"description": "Доступ только через приложение через регистрацию в Microsoft Entra. Выберите пользователя для выполнения действий."
 				}
 			}
 		},
 		"userTarget": {
 			"displayName": "Пользователь",
-			"description": "Пользователь, чьи списки дел и задачи должен выполнять субъект службы. Оценивается для каждого элемента ввода — выражение может быть нацелено на разных пользователей для каждого элемента."
+			"description": "Пользователь, чьи списки и задачи должны выполняться. Оценивается для каждого элемента входа — выражение может указывать разного пользователя для каждого элемента."
 		},
 		"resource": {
 			"displayName": "Ресурс",
@@ -42,7 +42,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать"
+					"displayName": "Создать"
 				},
 				"delete": {
 					"displayName": "Удалить"
@@ -54,32 +54,32 @@
 					"displayName": "Получить много"
 				},
 				"update": {
-					"displayName": "Обновлять"
+					"displayName": "Обновить"
 				}
 			}
 		},
 		"taskListId": {
-			"displayName": "Имя списка или идентификатор",
-			"description": "Идентификатор списка, уникальный в почтовом ящике пользователя. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"displayName": "Название или ID списка",
+			"description": "Идентификатор списка, уникальный в почтовом ящике пользователя. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"taskId": {
 			"displayName": "Идентификатор задачи"
 		},
 		"displayName": {
-			"displayName": "Новое имя списка",
+			"displayName": "Имя нового списка",
 			"description": "Отображаемое имя списка"
 		},
 		"applicationName": {
 			"displayName": "Имя приложения",
-			"description": "Имя приложения источника, отправляющего связанный объект"
+			"description": "Имя приложения-источника, отправляющего связанный объект"
 		},
 		"additionalFields": {
 			"displayName": "Дополнительные поля",
 			"placeholder": "Добавить поле",
 			"options": {
 				"externalId": {
-					"displayName": "Внешний идентификатор",
-					"description": "Идентификатор объекта, связанного с этой задачей в сторонней/партнерской системе"
+					"displayName": "Внешний ID",
+					"description": "ID объекта, связанного с этой задачей на сторонней/партнёрской системе"
 				},
 				"webUrl": {
 					"displayName": "URL-адрес веб-страницы",
@@ -87,15 +87,15 @@
 				},
 				"content": {
 					"displayName": "Содержание",
-					"description": "Содержание задачи"
+					"description": "Содержимое задачи"
 				},
 				"dueDateTime": {
-					"displayName": "Должный",
+					"displayName": "Срок выполнения",
 					"description": "Дата в указанном часовом поясе, когда задача должна быть завершена."
 				},
 				"reminderDateTime": {
 					"displayName": "Напоминание",
-					"description": "Дата в указанном часовом поясе, о которой следует напомнить о задаче."
+					"description": "Дата в указанном часовом поясе для напоминания о задаче."
 				},
 				"importance": {
 					"displayName": "Важность",
@@ -114,29 +114,29 @@
 				},
 				"status": {
 					"displayName": "Статус",
-					"description": "Указывает состояние или ход выполнения задачи",
+					"description": "Указывает состояние или прогресс задачи",
 					"options": {
 						"notStarted": {
-							"displayName": "Не запущено"
+							"displayName": "Не начато"
 						},
 						"inProgress": {
-							"displayName": "В ходе выполнения"
+							"displayName": "в процессе"
 						},
 						"completed": {
-							"displayName": "Завершенный"
+							"displayName": "Завершено"
 						},
 						"waitingOnOthers": {
 							"displayName": "Ожидание других"
 						},
 						"deferred": {
-							"displayName": "Отложенный"
+							"displayName": "Отложено"
 						}
 					}
 				}
 			}
 		},
 		"linkedResourceId": {
-			"displayName": "Идентификатор связанного ресурса"
+			"displayName": "ID связанного ресурса"
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",
@@ -144,7 +144,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"updateFields": {
 			"displayName": "Обновить поля",
@@ -152,15 +152,15 @@
 			"options": {
 				"applicationName": {
 					"displayName": "Имя приложения",
-					"description": "Имя приложения источника, отправляющего связанный объект"
+					"description": "Имя приложения-источника, отправляющего связанный объект"
 				},
 				"displayName": {
 					"displayName": "Имя",
-					"description": "Поле, указывающее заголовок связанной сущности"
+					"description": "Поле, указывающее заголовок связанного объекта"
 				},
 				"externalId": {
-					"displayName": "Внешний идентификатор",
-					"description": "Идентификатор объекта, связанного с этой задачей в сторонней/партнерской системе"
+					"displayName": "Внешний ID",
+					"description": "ID объекта, связанного с этой задачей на сторонней/партнёрской системе"
 				},
 				"webUrl": {
 					"displayName": "URL-адрес веб-страницы",
@@ -168,7 +168,7 @@
 				},
 				"content": {
 					"displayName": "Содержание",
-					"description": "Содержание задачи"
+					"description": "Содержимое задачи"
 				},
 				"dueDateTime": {
 					"displayName": "Срок выполнения Время",
@@ -176,7 +176,7 @@
 				},
 				"reminderDateTime": {
 					"displayName": "Напоминание",
-					"description": "Дата в указанном часовом поясе, о которой следует напомнить о задаче."
+					"description": "Дата в указанном часовом поясе для напоминания о задаче."
 				},
 				"importance": {
 					"displayName": "Важность",
@@ -195,22 +195,22 @@
 				},
 				"status": {
 					"displayName": "Статус",
-					"description": "Указывает состояние или ход выполнения задачи",
+					"description": "Указывает состояние или прогресс задачи",
 					"options": {
 						"notStarted": {
-							"displayName": "Не запущено"
+							"displayName": "Не начато"
 						},
 						"inProgress": {
-							"displayName": "В ходе выполнения"
+							"displayName": "в процессе"
 						},
 						"completed": {
-							"displayName": "Завершенный"
+							"displayName": "Завершено"
 						},
 						"waitingOnOthers": {
 							"displayName": "Ожидание других"
 						},
 						"deferred": {
-							"displayName": "Отложенный"
+							"displayName": "Отложено"
 						}
 					}
 				},
@@ -225,7 +225,7 @@
 			"description": "Краткое описание задачи"
 		},
 		"listId": {
-			"displayName": "Идентификатор списка",
+			"displayName": "ID списка",
 			"description": "Идентификатор списка, уникальный в почтовом ящике пользователя."
 		}
 	}

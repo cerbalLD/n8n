@@ -1,14 +1,14 @@
 {
 	"header": {
-		"displayName": "Гугл переводчик",
-		"description": "Переведите данные с помощью Google Translate"
+		"displayName": "Google Translate",
+		"description": "Перевод данных через Google Translate"
 	},
 	"nodeView": {
 		"authentication": {
 			"displayName": "Аутентификация",
 			"options": {
 				"serviceAccount": {
-					"displayName": "Сервисный аккаунт"
+					"displayName": "Служебный аккаунт"
 				},
 				"oAuth2": {
 					"displayName": "OAuth2 (рекомендуется)"
@@ -27,18 +27,18 @@
 			"displayName": "Операция",
 			"options": {
 				"translate": {
-					"displayName": "Переводить",
+					"displayName": "Перевести",
 					"description": "Перевести данные"
 				}
 			}
 		},
 		"text": {
 			"displayName": "Текст",
-			"description": "Входной текст для перевода"
+			"description": "Текст для перевода"
 		},
 		"translateTo": {
 			"displayName": "Перевести на",
-			"description": "Язык, используемый для перевода входного текста, установлен на один из кодов языка, перечисленных в <a href=\"https://cloud.google.com/translate/docs/languages\">Language Support</a>. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"description": "Язык для перевода текста. Выберите код из <a href=\"https://cloud.google.com/translate/docs/languages\">поддерживаемых языков</a>. Выберите из списка или укажите через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 		}
 	}
 }

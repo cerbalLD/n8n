@@ -11,7 +11,7 @@
 					"displayName": "OAuth2 (рекомендуется)"
 				},
 				"serviceAccount": {
-					"displayName": "Сервисный аккаунт"
+					"displayName": "Служебный аккаунт"
 				}
 			}
 		},
@@ -30,7 +30,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать документ"
 				},
 				"upsert": {
@@ -65,10 +65,10 @@
 		},
 		"collection": {
 			"displayName": "Коллекция",
-			"description": "Название коллекции"
+			"description": "Имя коллекции"
 		},
 		"documentId": {
-			"displayName": "Идентификатор документа"
+			"displayName": "ID документа"
 		},
 		"columns": {
 			"displayName": "Столбцы/Атрибуты",
@@ -76,8 +76,8 @@
 			"placeholder": "возраст, город, местонахождение"
 		},
 		"simple": {
-			"displayName": "Упрощать",
-			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+			"displayName": "Упростить",
+			"description": "Возвращать ли упрощённую версию ответа вместо необработанных данных"
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",
@@ -85,10 +85,10 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"updateKey": {
-			"displayName": "Обновить ключ",
+			"displayName": "Ключ обновления",
 			"description": "Имя поля во входном элементе, которое содержит идентификатор документа",
 			"placeholder": "идентификатор документа"
 		},

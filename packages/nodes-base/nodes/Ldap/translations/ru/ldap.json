@@ -12,7 +12,7 @@
 					"description": "Сравнить атрибут"
 				},
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать новую запись"
 				},
 				"delete": {
@@ -28,13 +28,13 @@
 					"description": "Поиск по LDAP"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить атрибуты"
 				}
 			}
 		},
 		"nodeDebug": {
-			"displayName": "Отлаживать"
+			"displayName": "Отладка"
 		},
 		"dn": {
 			"displayName": "DN",
@@ -46,7 +46,7 @@
 			"description": "Идентификатор атрибута для сравнения"
 		},
 		"value": {
-			"displayName": "Ценить",
+			"displayName": "Значение",
 			"description": "Значение для сравнения"
 		},
 		"targetDn": {
@@ -68,33 +68,33 @@
 							"description": "Идентификатор добавляемого атрибута"
 						},
 						"value": {
-							"displayName": "Ценить",
+							"displayName": "Значение",
 							"description": "Значение атрибута для установки"
 						}
 					}
 				},
 				"add": {
-					"displayName": "Добавлять",
+					"displayName": "Добавить",
 					"values": {
 						"id": {
 							"displayName": "Идентификатор атрибута",
 							"description": "Идентификатор добавляемого атрибута"
 						},
 						"value": {
-							"displayName": "Ценить",
+							"displayName": "Значение",
 							"description": "Значение атрибута для установки"
 						}
 					}
 				},
 				"replace": {
-					"displayName": "Заменять",
+					"displayName": "Заменить",
 					"values": {
 						"id": {
 							"displayName": "Идентификатор атрибута",
 							"description": "Идентификатор атрибута, который необходимо заменить."
 						},
 						"value": {
-							"displayName": "Ценить",
+							"displayName": "Значение",
 							"description": "Значение атрибута для замены"
 						}
 					}
@@ -107,7 +107,7 @@
 							"description": "Идентификатор атрибута, который нужно удалить."
 						},
 						"value": {
-							"displayName": "Ценить",
+							"displayName": "Значение",
 							"description": "Значение атрибута, который нужно удалить"
 						}
 					}
@@ -144,7 +144,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"options": {
 			"displayName": "Параметры",
@@ -159,7 +159,7 @@
 					"description": "Максимальное количество результатов, которые можно запросить одновременно. Установите значение 0, чтобы отключить пейджинг."
 				},
 				"scope": {
-					"displayName": "Объем",
+					"displayName": "Область доступа",
 					"description": "Набор записей с BaseDN или ниже, которые можно считать потенциальными совпадениями.",
 					"options": {
 						"base": {

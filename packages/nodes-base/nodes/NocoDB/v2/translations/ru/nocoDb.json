@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "НокоДБ",
-		"description": "Чтение, обновление, запись и удаление данных из NocoDB."
+		"displayName": "NocoDB",
+		"description": "Чтение, обновление, запись и удаление данных в NocoDB"
 	},
 	"nodeView": {
 		"authentication": {
@@ -19,13 +19,13 @@
 			"displayName": "Ресурс",
 			"options": {
 				"row": {
-					"displayName": "Ряд"
+					"displayName": "строка"
 				},
 				"linkrow": {
 					"displayName": "Связанная строка"
 				},
 				"base": {
-					"displayName": "База"
+					"displayName": "Базовая версия"
 				}
 			}
 		},
@@ -33,15 +33,15 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать новую строку в таблице"
 				},
 				"upsert": {
 					"displayName": "Создать или обновить",
-					"description": "Создайте новую запись или обновите текущую, если она уже существует (upsert)"
+					"description": "Создать новую запись или обновить существующую (upsert)"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить строку в таблице"
 				},
 				"delete": {
@@ -50,76 +50,76 @@
 				},
 				"get": {
 					"displayName": "Получать",
-					"description": "Получить одну базу"
+					"description": "Получить одну базу данных"
 				},
 				"search": {
 					"displayName": "Поиск",
-					"description": "Найдите определенные записи или перечислите все"
+					"description": "Найти определённые записи или список все"
 				},
 				"count": {
 					"displayName": "Считать",
-					"description": "Подсчет записей в таблице"
+					"description": "Подсчитать записи в таблице"
 				},
 				"upload": {
 					"displayName": "Загрузить вложение в ячейку",
-					"description": "Загрузить вложения в существующую ячейку подряд"
+					"description": "Загрузить вложение(я) в существующую ячейку"
 				},
 				"getAll": {
 					"displayName": "Получить много",
-					"description": "Перечислить все базы"
+					"description": "Список всех баз"
 				},
 				"list": {
 					"displayName": "Список",
-					"description": "Вывести список всех связанных строк из реляционного поля"
+					"description": "Получить список всех связанных строк из реляционного поля"
 				},
 				"link": {
-					"displayName": "Связь",
-					"description": "Свяжите одну или несколько строк с реляционным полем"
+					"displayName": "Ссылка",
+					"description": "Связать одну или несколько строк с реляционным полем"
 				},
 				"unlink": {
-					"displayName": "Отсоединить",
-					"description": "Отсоединить одну или несколько строк от реляционного поля"
+					"displayName": "Разорвать связь",
+					"description": "Разорвать связь одной или нескольких строк от реляционного поля"
 				}
 			}
 		},
 		"workspaceId": {
 			"displayName": "Имя или идентификатор рабочей области",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"projectId": {
-			"displayName": "Базовое имя или идентификатор",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"displayName": "Имя базы или идентификатор",
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"table": {
 			"displayName": "Имя или идентификатор таблицы",
-			"description": "Стол для операции. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"description": "Таблица для работы. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"options": {
 			"displayName": "Параметры",
 			"placeholder": "Добавить вариант",
 			"options": {
 				"where": {
-					"displayName": "Фильтровать по формуле",
-					"description": "Формула, используемая для фильтрации строк",
-					"placeholder": "(имя, лайк, пример%)~или (имя, уравнение, тест)"
+					"displayName": "Фильтр по формуле",
+					"description": "Формула для фильтрации строк",
+					"placeholder": "(name,like,example%)~or(name,eq,test)"
 				},
 				"viewId": {
-					"displayName": "Просмотр имени или идентификатора",
-					"description": "Представление, над которым можно работать. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Название или идентификатор представления",
+					"description": "Представление для работы. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"fields": {
 					"displayName": "Поля",
-					"description": "Поля выбора возвращаемых строк",
+					"description": "Выбираемые поля возвращаемых строк",
 					"placeholder": "Добавить поле",
 					"values": {
 						"fields": {
 							"displayName": "Поля",
-							"description": "Поля выбора возвращаемых строк"
+							"description": "Выбираемые поля возвращаемых строк"
 						},
 						"items": {
 							"options": {
 								"field": {
-									"displayName": "Имя поля или идентификатор",
+									"displayName": "Имя поля или ID",
 									"description": "Имя поля для выбора"
 								}
 							}
@@ -127,20 +127,20 @@
 					},
 					"options": {
 						"items": {
-							"displayName": "Предметы"
+							"displayName": "Элементы"
 						}
 					}
 				},
 				"sort": {
 					"values": {
 						"sort": {
-							"displayName": "Сортировать",
+							"displayName": "Сортировка",
 							"description": "Правила сортировки возвращаемых строк"
 						},
 						"property": {
 							"options": {
 								"field": {
-									"displayName": "Имя поля или идентификатор",
+									"displayName": "Имя поля или ID",
 									"description": "Имя поля для выбора"
 								},
 								"direction": {
@@ -149,11 +149,11 @@
 									"options": {
 										"asc": {
 											"displayName": "ASC",
-											"description": "Сортировать по возрастанию (маленький -> большой)"
+											"description": "Сортировать по возрастанию (от меньшего к большему)"
 										},
 										"desc": {
 											"displayName": "DESC",
-											"description": "Сортировать по убыванию (большой -> маленький)"
+											"description": "Сортировать по убыванию (от большего к меньшему)"
 										}
 									}
 								}
@@ -161,7 +161,7 @@
 						}
 					},
 					"placeholder": "Добавить правило сортировки",
-					"displayName": "Сортировать",
+					"displayName": "Сортировка",
 					"description": "Правила сортировки возвращаемых строк",
 					"options": {
 						"property": {
@@ -174,8 +174,8 @@
 					"description": "Количество страниц, которые нужно пропустить с начала"
 				},
 				"shuffle": {
-					"displayName": "Перетасовать",
-					"description": "Перетасовать ли результаты"
+					"displayName": "Перемешать",
+					"description": "Перемешивать ли результаты"
 				}
 			}
 		},
@@ -185,11 +185,11 @@
 		},
 		"downloadAttachments": {
 			"displayName": "Загрузить вложения",
-			"description": "Будут ли загружены поля вложений, определенные в «Поля загрузки»"
+			"description": "Загружать ли поля вложений, определенные в параметре 'Загружаемые поля'"
 		},
 		"downloadFieldNames": {
-			"displayName": "Загрузить имена полей или идентификаторы",
-			"description": "Имена полей типа «вложение», которые необходимо загрузить. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"displayName": "Загружаемые поля: имена или идентификаторы",
+			"description": "Имена полей типа 'вложение', которые должны быть загружены. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",
@@ -197,39 +197,39 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"dataToSend": {
 			"displayName": "Данные для отправки",
-			"description": "Вставлять ли входные данные, которые получает этот узел, в новую строку",
+			"description": "Вставлять ли входные данные узла в новую строку",
 			"options": {
 				"autoMapInputData": {
-					"displayName": "Автоматическое сопоставление входных данных с столбцами",
-					"description": "Используйте, когда входные свойства узла соответствуют именам столбцов назначения."
+					"displayName": "Автоматически сопоставить входные данные столбцам",
+					"description": "Используйте, когда входные свойства узла совпадают с именами целевых столбцов"
 				},
 				"mapWithFields": {
-					"displayName": "Определите ниже для каждого столбца",
+					"displayName": "Определите для каждого столбца",
 					"description": "Установите значение для каждого столбца назначения"
 				}
 			}
 		},
 		"info": {
-			"displayName": "В этом режиме убедитесь, что поля входящих данных имеют те же имена, что и столбцы в NocoDB. (Используйте узел «Редактировать поля» перед этим узлом, чтобы изменить их, если необходимо.)"
+			"displayName": "В этом режиме убедитесь, что имена входящих полей данных совпадают с названиями столбцов в NocoDB. (Используйте узел 'Редактировать поля' перед этим узлом, если требуется их изменить.)"
 		},
 		"inputsToIgnore": {
-			"displayName": "Входные данные, которые следует игнорировать",
-			"description": "Список входных свойств, которые следует избегать при отправке, разделенных запятыми. Оставьте пустым, чтобы отправить все свойства.",
-			"placeholder": "Введите свойства..."
+			"displayName": "Входные данные для игнорирования",
+			"description": "Список входных свойств для пропуска, разделённых запятыми. Оставьте пусто, чтобы отправить все свойства.",
+			"placeholder": "Введите свойства…"
 		},
 		"fieldsMapper": {
 			"displayName": "Поля для отправки"
 		},
 		"uploadMode": {
 			"displayName": "Режим загрузки",
-			"description": "Выберите способ выполнения загрузки",
+			"description": "Выберите способ загрузки",
 			"options": {
 				"base64": {
-					"displayName": "База64"
+					"displayName": "Base64"
 				},
 				"url": {
 					"displayName": "URL"
@@ -237,30 +237,30 @@
 			}
 		},
 		"uploadFieldName": {
-			"displayName": "Загрузить имя или идентификатор поля",
-			"description": "Имя полей типа «вложение», которые будут загружены. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"displayName": "Загружаемое поле: имя или идентификатор",
+			"description": "Имя полей типа 'вложение', которые будут загружены. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"filename": {
 			"displayName": "Имя файла",
-			"description": "Имя загруженного файла",
-			"placeholder": "файл.jpg"
+			"description": "Имя загружаемого файла",
+			"placeholder": "file.jpg"
 		},
 		"contentType": {
 			"displayName": "Тип контента",
 			"description": "Тип содержимого файла",
-			"placeholder": "изображение/JPEG"
+			"placeholder": "image/jpeg"
 		},
 		"base64value": {
 			"displayName": "Значение Base64",
-			"description": "Значение Base64 файла, который будет загружен"
+			"description": "Значение Base64 файла для загрузки"
 		},
 		"url": {
-			"displayName": "URL-адрес файла",
-			"description": "URL файла, который будет загружен"
+			"displayName": "URL файла",
+			"description": "URL файла для загрузки"
 		},
 		"linkFieldName": {
-			"displayName": "Имя или идентификатор поля ссылки",
-			"description": "Имя полей типа «ссылка», которые будут загружены. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"displayName": "Поле ссылки: имя или идентификатор",
+			"description": "Имя полей типа 'ссылка', которые будут загружены. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"linkId": {
 			"displayName": "Значение идентификатора связанной строки",

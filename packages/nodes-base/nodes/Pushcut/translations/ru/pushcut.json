@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Пушкут",
-		"description": "Использование Pushcut API"
+		"displayName": "Pushcut",
+		"description": "Использование API Pushcut"
 	},
 	"nodeView": {
 		"resource": {
@@ -16,14 +16,14 @@
 			"displayName": "Операция",
 			"options": {
 				"send": {
-					"displayName": "Отправлять",
+					"displayName": "Отправить",
 					"description": "Отправить уведомление"
 				}
 			}
 		},
 		"notificationName": {
 			"displayName": "Имя или идентификатор уведомления",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"additionalFields": {
 			"displayName": "Дополнительные поля",
@@ -31,19 +31,19 @@
 			"options": {
 				"devices": {
 					"displayName": "Имена или идентификаторы устройств",
-					"description": "Список устройств, на которые отправляется это уведомление. (по умолчанию — все устройства). Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"description": "Список устройств для отправки уведомления (по умолчанию — все устройства). Выберите из списка или укажите идентификаторы, используя <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 				},
 				"input": {
 					"displayName": "Вход",
-					"description": "Значение, передаваемое в качестве входных данных для действия уведомления."
+					"description": "Значение, передаваемое в качестве входных данных действия уведомления"
 				},
 				"text": {
 					"displayName": "Текст",
-					"description": "Текст, который используется вместо определенного в приложении."
+					"description": "Текст, используемый вместо определённого в приложении"
 				},
 				"title": {
-					"displayName": "Заголовок",
-					"description": "Название, которое используется вместо определенного в приложении."
+					"displayName": "Название",
+					"description": "Заголовок, используемый вместо определённого в приложении"
 				}
 			}
 		}

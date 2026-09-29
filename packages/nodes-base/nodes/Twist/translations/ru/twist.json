@@ -17,7 +17,7 @@
 					"displayName": "Сообщение Разговор"
 				},
 				"thread": {
-					"displayName": "Нить"
+					"displayName": "Тема"
 				}
 			}
 		},
@@ -25,11 +25,11 @@
 			"displayName": "Операция",
 			"options": {
 				"archive": {
-					"displayName": "Архив",
+					"displayName": "Архивировать",
 					"description": "Архивировать канал"
 				},
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать новую тему на канале"
 				},
 				"delete": {
@@ -45,11 +45,11 @@
 					"description": "Получить много тем"
 				},
 				"unarchive": {
-					"displayName": "Разархивировать",
+					"displayName": "Восстановить из архива",
 					"description": "Разархивировать канал"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить тему"
 				}
 			}
@@ -60,7 +60,7 @@
 		},
 		"name": {
 			"displayName": "Имя",
-			"description": "Название канала"
+			"description": "Имя канала"
 		},
 		"additionalFields": {
 			"displayName": "Дополнительные поля",
@@ -83,7 +83,7 @@
 							"displayName": "Бирюзовый Синий"
 						},
 						"4": {
-							"displayName": "Зеленый"
+							"displayName": "Зелёный"
 						},
 						"5": {
 							"displayName": "Красный"
@@ -101,7 +101,7 @@
 							"displayName": "Мятно-зеленый"
 						},
 						"10": {
-							"displayName": "Желтый"
+							"displayName": "Жёлтый"
 						},
 						"11": {
 							"displayName": "Лосось"
@@ -136,7 +136,7 @@
 									"description": "Действие кнопки",
 									"options": {
 										"open_url": {
-											"displayName": "Открыть URL-адрес"
+											"displayName": "Открыть URL"
 										},
 										"prefill_message": {
 											"displayName": "Предварительное сообщение"
@@ -204,10 +204,10 @@
 				},
 				"limit": {
 					"displayName": "Лимит",
-					"description": "Максимальное количество возвращаемых результатов"
+					"description": "Максимальное количество результатов для возврата"
 				},
 				"order_by": {
-					"displayName": "Заказать по",
+					"displayName": "Сортировать по",
 					"description": "Возвращен порядок разговоров - один из DESC или ASC.",
 					"options": {
 						"ASC": {
@@ -223,7 +223,7 @@
 					"description": "Ограничить сообщения, начиная с указанного индекса объекта"
 				}
 			},
-			"description": "Другие варианты установки"
+			"description": "Другие параметры"
 		},
 		"channelId": {
 			"displayName": "Идентификатор канала",
@@ -235,7 +235,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"filters": {
 			"displayName": "Фильтры",
@@ -262,7 +262,7 @@
 					"description": "Ограничивает потоки старше указанного времени Unix."
 				},
 				"order_by": {
-					"displayName": "Заказать по",
+					"displayName": "Сортировать по",
 					"description": "Порядок возвращаемых комментариев – DESC или ASC.",
 					"options": {
 						"ASC": {
@@ -278,7 +278,7 @@
 					"description": "Ограничить комментарии, начиная с указанного индекса объекта."
 				},
 				"filter_by": {
-					"displayName": "Фильтровать по",
+					"displayName": "Фильтр",
 					"description": "Фильтром может быть один из <code>attached_to_me</code>, <code>everyone</code> и <code>is_starred</code>.",
 					"options": {
 						"attached_to_me": {
@@ -315,7 +315,7 @@
 							"displayName": "Бирюзовый Синий"
 						},
 						"4": {
-							"displayName": "Зеленый"
+							"displayName": "Зелёный"
 						},
 						"5": {
 							"displayName": "Красный"
@@ -333,7 +333,7 @@
 							"displayName": "Мятно-зеленый"
 						},
 						"10": {
-							"displayName": "Желтый"
+							"displayName": "Жёлтый"
 						},
 						"11": {
 							"displayName": "Лосось"
@@ -346,7 +346,7 @@
 				},
 				"name": {
 					"displayName": "Имя",
-					"description": "Название канала"
+					"description": "Имя канала"
 				},
 				"public": {
 					"displayName": "Общественный",
@@ -364,7 +364,7 @@
 									"description": "Действие кнопки",
 									"options": {
 										"open_url": {
-											"displayName": "Открыть URL-адрес"
+											"displayName": "Открыть URL"
 										},
 										"prefill_message": {
 											"displayName": "Предварительное сообщение"
@@ -419,11 +419,11 @@
 					"description": "Пользователи, которые упоминаются напрямую. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"title": {
-					"displayName": "Заголовок",
+					"displayName": "Название",
 					"description": "Название темы (1 < длина < 300)"
 				}
 			},
-			"description": "Другие варианты установки"
+			"description": "Другие параметры"
 		},
 		"threadId": {
 			"displayName": "Идентификатор потока",
@@ -446,7 +446,7 @@
 			"description": "Идентификатор сообщения беседы"
 		},
 		"title": {
-			"displayName": "Заголовок",
+			"displayName": "Название",
 			"description": "Название новой темы (1 < длина < 300)"
 		}
 	}

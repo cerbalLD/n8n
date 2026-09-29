@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Страва",
-		"description": "Использование Strava API"
+		"displayName": "Strava",
+		"description": "Использование API Strava"
 	},
 	"nodeView": {
 		"resource": {
@@ -16,50 +16,50 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать новое занятие"
 				},
 				"get": {
 					"displayName": "Получать",
-					"description": "Получить активность"
+					"description": "Получить занятие"
 				},
 				"getComments": {
 					"displayName": "Получить комментарии",
-					"description": "Получить все комментарии к активности"
+					"description": "Получить все комментарии к занятию"
 				},
 				"getKudos": {
-					"displayName": "Получите признание",
-					"description": "Получайте награды за все действия"
+					"displayName": "Получить поддержку",
+					"description": "Получить всю поддержку к занятию"
 				},
 				"getLaps": {
 					"displayName": "Получить круги",
-					"description": "Получить все этапы активности"
+					"description": "Получить все круги занятия"
 				},
 				"getAll": {
 					"displayName": "Получить много",
-					"description": "Получите много развлечений"
+					"description": "Получить несколько занятий"
 				},
 				"getStreams": {
 					"displayName": "Получить потоки",
-					"description": "Получайте потоки активности"
+					"description": "Получить потоки занятия"
 				},
 				"getZones": {
 					"displayName": "Получить зоны",
-					"description": "Получить все зоны активности"
+					"description": "Получить все зоны занятия"
 				},
 				"update": {
-					"displayName": "Обновлять",
-					"description": "Обновить действие"
+					"displayName": "Обновить",
+					"description": "Обновить занятие"
 				}
 			}
 		},
 		"name": {
 			"displayName": "Имя",
-			"description": "Название мероприятия"
+			"description": "Название занятия"
 		},
 		"type": {
 			"displayName": "Тип",
-			"description": "Вид деятельности. Например – Беги, Езди и т. д."
+			"description": "Тип занятия. Например: бег, велосипед и т. д."
 		},
 		"sport_type": {
 			"displayName": "Тип спорта",
@@ -69,7 +69,7 @@
 					"displayName": "Горные лыжи"
 				},
 				"BackcountrySki": {
-					"displayName": "Бэккантри лыжи"
+					"displayName": "Лыжи по целине"
 				},
 				"Badminton": {
 					"displayName": "Бадминтон"
@@ -84,10 +84,10 @@
 					"displayName": "Поездка на электровелосипеде"
 				},
 				"Elliptical": {
-					"displayName": "Эллиптический"
+					"displayName": "Эллиптический тренажёр"
 				},
 				"EMountainBikeRide": {
-					"displayName": "EПрогулка на горном велосипеде"
+					"displayName": "Поездка на электромаунтинбайке"
 				},
 				"Golf": {
 					"displayName": "Гольф"
@@ -102,34 +102,34 @@
 					"displayName": "HIIT"
 				},
 				"Hike": {
-					"displayName": "Поход"
+					"displayName": "Пеший поход"
 				},
 				"IceSkate": {
-					"displayName": "Коньки"
+					"displayName": "Катание на коньках"
 				},
 				"InlineSkate": {
-					"displayName": "Роликовые коньки"
+					"displayName": "Катание на роликах"
 				},
 				"Kayaking": {
 					"displayName": "Каякинг"
 				},
 				"Kitesurf": {
-					"displayName": "Кайтсерфинг"
+					"displayName": "Кайтсёрфинг"
 				},
 				"MountainBikeRide": {
 					"displayName": "Поездка на горном велосипеде"
 				},
 				"NordicSki": {
-					"displayName": "Северные лыжи"
+					"displayName": "Лыжи на равнине"
 				},
 				"Pickleball": {
 					"displayName": "Пиклбол"
 				},
 				"Pilates": {
-					"displayName": "пилатес"
+					"displayName": "Пилатес"
 				},
 				"Racquetball": {
-					"displayName": "Ракетбол"
+					"displayName": "Рэкетбол"
 				},
 				"Ride": {
 					"displayName": "Поездка"
@@ -144,37 +144,37 @@
 					"displayName": "Гребля"
 				},
 				"Run": {
-					"displayName": "Бегать"
+					"displayName": "Запуск"
 				},
 				"Sail": {
-					"displayName": "Плыть"
+					"displayName": "Парусный спорт"
 				},
 				"Skateboard": {
 					"displayName": "Скейтборд"
 				},
 				"Snowboard": {
-					"displayName": "Сноуборд"
+					"displayName": "Сноубординг"
 				},
 				"Snowshoe": {
 					"displayName": "Снегоступы"
 				},
 				"Soccer": {
-					"displayName": "Футбольный"
+					"displayName": "Футбол"
 				},
 				"Squash": {
-					"displayName": "Давить"
+					"displayName": "Сквош"
 				},
 				"StairStepper": {
-					"displayName": "Лестница Степпер"
+					"displayName": "Степпер"
 				},
 				"StandUpPaddling": {
-					"displayName": "Встаньте и грести"
+					"displayName": "Сап-доска"
 				},
 				"Surfing": {
-					"displayName": "Серфинг"
+					"displayName": "Сёрфинг"
 				},
 				"Swim": {
-					"displayName": "Плавать"
+					"displayName": "Плавание"
 				},
 				"TableTennis": {
 					"displayName": "Настольный теннис"
@@ -192,22 +192,22 @@
 					"displayName": "Виртуальная поездка"
 				},
 				"VirtualRow": {
-					"displayName": "Виртуальный ряд"
+					"displayName": "Виртуальная гребля"
 				},
 				"VirtualRun": {
-					"displayName": "Виртуальный забег"
+					"displayName": "Виртуальный бег"
 				},
 				"Walk": {
-					"displayName": "Ходить"
+					"displayName": "Пешая прогулка"
 				},
 				"WeightTraining": {
-					"displayName": "Силовые тренировки"
+					"displayName": "Силовая тренировка"
 				},
 				"Wheelchair": {
 					"displayName": "Инвалидная коляска"
 				},
 				"Windsurf": {
-					"displayName": "Виндсерфинг"
+					"displayName": "Виндсёрфинг"
 				},
 				"Workout": {
 					"displayName": "Тренировка"
@@ -230,54 +230,54 @@
 			"placeholder": "Добавить поле",
 			"options": {
 				"commute": {
-					"displayName": "Добираться",
-					"description": "Отмечать ли как поездку на работу"
+					"displayName": "Дорога на работу",
+					"description": "Отмечать ли как дорогу на работу"
 				},
 				"description": {
 					"displayName": "Описание",
-					"description": "Описание деятельности"
+					"description": "Описание занятия"
 				},
 				"distance": {
 					"displayName": "Расстояние",
 					"description": "В метрах"
 				},
 				"trainer": {
-					"displayName": "Тренер",
-					"description": "Отмечать ли как тренерскую деятельность"
+					"displayName": "Тренировочный режим",
+					"description": "Отмечать ли как тренировку на тренажёре"
 				}
 			}
 		},
 		"activityId": {
-			"displayName": "Идентификатор действия",
-			"description": "Идентификатор или адрес электронной почты активности"
+			"displayName": "ID деятельности",
+			"description": "ID или адрес электронной почты занятия"
 		},
 		"updateFields": {
 			"displayName": "Обновить поля",
 			"placeholder": "Добавить поле",
 			"options": {
 				"commute": {
-					"displayName": "Добираться",
-					"description": "Отмечать ли как поездку на работу"
+					"displayName": "Дорога на работу",
+					"description": "Отмечать ли как дорогу на работу"
 				},
 				"description": {
 					"displayName": "Описание",
-					"description": "Описание деятельности"
+					"description": "Описание занятия"
 				},
 				"gear_id": {
-					"displayName": "Идентификатор шестерни",
+					"displayName": "ID снаряжения",
 					"description": "Идентификатор снаряжения, связанного с действием. «none» очищает оборудование от активности."
 				},
 				"hide_from_home": {
-					"displayName": "Отключить звук",
-					"description": "Не публиковать в лентах «Домой» или «Клуб»"
+					"displayName": "Не публиковать занятие",
+					"description": "Не публиковать в лентах профиля или клуба"
 				},
 				"name": {
 					"displayName": "Имя",
-					"description": "Название мероприятия"
+					"description": "Название занятия"
 				},
 				"type": {
 					"displayName": "Тип",
-					"description": "Вид деятельности. Например – Беги, Езди и т. д."
+					"description": "Тип занятия. Например: бег, велосипед и т. д."
 				},
 				"sport_type": {
 					"displayName": "Тип спорта",
@@ -287,7 +287,7 @@
 							"displayName": "Горные лыжи"
 						},
 						"BackcountrySki": {
-							"displayName": "Бэккантри лыжи"
+							"displayName": "Лыжи по целине"
 						},
 						"Badminton": {
 							"displayName": "Бадминтон"
@@ -302,10 +302,10 @@
 							"displayName": "Поездка на электровелосипеде"
 						},
 						"Elliptical": {
-							"displayName": "Эллиптический"
+							"displayName": "Эллиптический тренажёр"
 						},
 						"EMountainBikeRide": {
-							"displayName": "EПрогулка на горном велосипеде"
+							"displayName": "Поездка на электромаунтинбайке"
 						},
 						"Golf": {
 							"displayName": "Гольф"
@@ -320,34 +320,34 @@
 							"displayName": "HIIT"
 						},
 						"Hike": {
-							"displayName": "Поход"
+							"displayName": "Пеший поход"
 						},
 						"IceSkate": {
-							"displayName": "Коньки"
+							"displayName": "Катание на коньках"
 						},
 						"InlineSkate": {
-							"displayName": "Роликовые коньки"
+							"displayName": "Катание на роликах"
 						},
 						"Kayaking": {
 							"displayName": "Каякинг"
 						},
 						"Kitesurf": {
-							"displayName": "Кайтсерфинг"
+							"displayName": "Кайтсёрфинг"
 						},
 						"MountainBikeRide": {
 							"displayName": "Поездка на горном велосипеде"
 						},
 						"NordicSki": {
-							"displayName": "Северные лыжи"
+							"displayName": "Лыжи на равнине"
 						},
 						"Pickleball": {
 							"displayName": "Пиклбол"
 						},
 						"Pilates": {
-							"displayName": "пилатес"
+							"displayName": "Пилатес"
 						},
 						"Racquetball": {
-							"displayName": "Ракетбол"
+							"displayName": "Рэкетбол"
 						},
 						"Ride": {
 							"displayName": "Поездка"
@@ -362,37 +362,37 @@
 							"displayName": "Гребля"
 						},
 						"Run": {
-							"displayName": "Бегать"
+							"displayName": "Запуск"
 						},
 						"Sail": {
-							"displayName": "Плыть"
+							"displayName": "Парусный спорт"
 						},
 						"Skateboard": {
 							"displayName": "Скейтборд"
 						},
 						"Snowboard": {
-							"displayName": "Сноуборд"
+							"displayName": "Сноубординг"
 						},
 						"Snowshoe": {
 							"displayName": "Снегоступы"
 						},
 						"Soccer": {
-							"displayName": "Футбольный"
+							"displayName": "Футбол"
 						},
 						"Squash": {
-							"displayName": "Давить"
+							"displayName": "Сквош"
 						},
 						"StairStepper": {
-							"displayName": "Лестница Степпер"
+							"displayName": "Степпер"
 						},
 						"StandUpPaddling": {
-							"displayName": "Встаньте и грести"
+							"displayName": "Сап-доска"
 						},
 						"Surfing": {
-							"displayName": "Серфинг"
+							"displayName": "Сёрфинг"
 						},
 						"Swim": {
-							"displayName": "Плавать"
+							"displayName": "Плавание"
 						},
 						"TableTennis": {
 							"displayName": "Настольный теннис"
@@ -410,22 +410,22 @@
 							"displayName": "Виртуальная поездка"
 						},
 						"VirtualRow": {
-							"displayName": "Виртуальный ряд"
+							"displayName": "Виртуальная гребля"
 						},
 						"VirtualRun": {
-							"displayName": "Виртуальный забег"
+							"displayName": "Виртуальный бег"
 						},
 						"Walk": {
-							"displayName": "Ходить"
+							"displayName": "Пешая прогулка"
 						},
 						"WeightTraining": {
-							"displayName": "Силовые тренировки"
+							"displayName": "Силовая тренировка"
 						},
 						"Wheelchair": {
 							"displayName": "Инвалидная коляска"
 						},
 						"Windsurf": {
-							"displayName": "Виндсерфинг"
+							"displayName": "Виндсёрфинг"
 						},
 						"Workout": {
 							"displayName": "Тренировка"
@@ -436,8 +436,8 @@
 					}
 				},
 				"trainer": {
-					"displayName": "Тренер",
-					"description": "Отмечать ли как тренерскую деятельность"
+					"displayName": "Тренировочный режим",
+					"description": "Отмечать ли как тренировку на тренажёре"
 				}
 			}
 		},
@@ -447,11 +447,11 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"keys": {
 			"displayName": "Ключи",
-			"description": "Желаемые типы потоков для возврата",
+			"description": "Желаемые типы потоков",
 			"options": {
 				"altitude": {
 					"displayName": "Высота"
@@ -463,16 +463,16 @@
 					"displayName": "Расстояние"
 				},
 				"grade_smooth": {
-					"displayName": "Градиент"
+					"displayName": "Уклон"
 				},
 				"heartrate": {
-					"displayName": "Сердцебиение"
+					"displayName": "Пульс"
 				},
 				"latlng": {
-					"displayName": "Широта/долгота"
+					"displayName": "Широта / Долгота"
 				},
 				"moving": {
-					"displayName": "Движущийся"
+					"displayName": "Движение"
 				},
 				"temp": {
 					"displayName": "Температура"
@@ -484,7 +484,7 @@
 					"displayName": "Скорость"
 				},
 				"watts": {
-					"displayName": "Уоттс"
+					"displayName": "Ватты"
 				}
 			}
 		}

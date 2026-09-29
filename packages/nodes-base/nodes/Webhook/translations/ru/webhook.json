@@ -257,7 +257,7 @@
 									"description": "Название заголовка"
 								},
 								"value": {
-									"displayName": "Ценить",
+									"displayName": "Значение",
 									"description": "Значение заголовка"
 								}
 							}

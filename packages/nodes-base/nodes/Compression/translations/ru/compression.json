@@ -8,8 +8,8 @@
 			"displayName": "Операция",
 			"options": {
 				"compress": {
-					"displayName": "Компресс",
-					"description": "Сжимайте файлы в архив zip или gzip."
+					"displayName": "Сжать",
+					"description": "Сжать файлы в архив zip или gzip"
 				},
 				"decompress": {
 					"displayName": "Распаковать",
@@ -18,10 +18,10 @@
 			}
 		},
 		"binaryPropertyName": {
-			"displayName": "Входные двоичные поля",
-			"description": "Чтобы обработать более одного файла, используйте список имен двоичных полей, разделенных запятыми.",
-			"hint": "Имя входного двоичного поля(ов), содержащего файл(ы) для распаковки.",
-			"placeholder": "например данные"
+			"displayName": "Входные двоичные поле(я)",
+			"description": "Для обработки нескольких файлов используйте список названий двоичных полей, разделённый запятыми",
+			"hint": "Название входного двоичного поля(ей), содержащего файл(ы) для распаковки",
+			"placeholder": "например data"
 		},
 		"outputFormat": {
 			"displayName": "Формат вывода",
@@ -31,27 +31,27 @@
 					"displayName": "Gzip"
 				},
 				"tar": {
-					"displayName": "Деготь"
+					"displayName": "Tar"
 				},
 				"targz": {
-					"displayName": "Тар (Gzip)"
+					"displayName": "Tar (Gzip)"
 				},
 				"zip": {
-					"displayName": "Почтовый индекс"
+					"displayName": "Zip"
 				}
 			}
 		},
 		"fileName": {
 			"displayName": "Имя файла",
-			"description": "Имя выходного файла",
-			"placeholder": "например данные.txt"
+			"description": "Название выходного файла",
+			"placeholder": "например data.txt"
 		},
 		"binaryPropertyOutput": {
 			"displayName": "Поместите выходной файл в поле",
 			"hint": "Имя выходного двоичного поля, в которое помещается файл."
 		},
 		"outputPrefix": {
-			"displayName": "Выходной префикс",
+			"displayName": "Префикс вывода",
 			"description": "Префикс для добавления к распакованным файлам"
 		}
 	}

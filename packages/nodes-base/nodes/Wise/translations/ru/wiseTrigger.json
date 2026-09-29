@@ -6,7 +6,7 @@
 	"nodeView": {
 		"profileId": {
 			"displayName": "Имя или идентификатор профиля",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"event": {
 			"displayName": "Событие",

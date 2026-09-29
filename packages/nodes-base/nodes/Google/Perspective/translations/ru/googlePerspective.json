@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "Google Перспектива",
+		"displayName": "Google Perspective",
 		"description": "Использование Google Perspective API"
 	},
 	"nodeView": {
@@ -24,26 +24,26 @@
 					"displayName": "Характеристики",
 					"values": {
 						"attributeName": {
-							"displayName": "Имя атрибута",
-							"description": "Атрибут для анализа в тексте. Подробности <a href=\"https://developers.perspectiveapi.com/s/about-the-api-attributes-and-languages\">здесь</a>.",
+							"displayName": "Название атрибута",
+							"description": "Атрибут для анализа текста. Подробнее <a href=\"https://developers.perspectiveapi.com/s/about-the-api-attributes-and-languages\">здесь</a>.",
 							"options": {
 								"flirtation": {
 									"displayName": "Флирт"
 								},
 								"identity_attack": {
-									"displayName": "Идентификационная атака"
+									"displayName": "Атака на идентичность"
 								},
 								"insult": {
-									"displayName": "Оскорблять"
+									"displayName": "Оскорбление"
 								},
 								"profanity": {
-									"displayName": "Ненормативная лексика"
+									"displayName": "Нецензурная лексика"
 								},
 								"severe_toxicity": {
-									"displayName": "Тяжелая токсичность"
+									"displayName": "Сильная токсичность"
 								},
 								"sexually_explicit": {
-									"displayName": "Сексуально откровенно"
+									"displayName": "Сексуальный контент"
 								},
 								"threat": {
 									"displayName": "Угроза"
@@ -55,7 +55,7 @@
 						},
 						"scoreThreshold": {
 							"displayName": "Порог оценки",
-							"description": "Оценка, выше которой возвращаются результаты. При нулевом значении возвращаются все оценки."
+							"description": "Порог оценки для результатов. При нуле возвращаются все оценки."
 						}
 					}
 				}
@@ -68,8 +68,8 @@
 			"placeholder": "Добавить вариант",
 			"options": {
 				"languages": {
-					"displayName": "Название или идентификатор языка",
-					"description": "Языки ввода текста. Если не указано, API автоматически определит язык комментариев. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Имя или идентификатор языка",
+					"description": "Языки входного текста. Если не указано, API определит язык автоматически. Выберите из списка или укажите идентификатор через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 				}
 			}
 		}

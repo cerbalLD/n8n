@@ -11,20 +11,20 @@
 					"displayName": "Outlook OAuth2"
 				},
 				"microsoftOAuth2Api": {
-					"displayName": "Microsoft OAuth2 (график)"
+					"displayName": "Microsoft OAuth2 (Graph)"
 				},
 				"microsoftEntraServicePrincipalApi": {
-					"displayName": "Руководитель службы Microsoft Entra (только для приложения)",
-					"description": "Доступ только через приложение через регистрацию приложения Microsoft Entra. Выберите, с каким почтовым ящиком действовать, в разделе «Почтовый ящик»."
+					"displayName": "Субъект службы Microsoft Entra (только приложение)",
+					"description": "Доступ только приложения через регистрацию приложения Microsoft Entra. Выберите почтовый ящик в разделе «Почтовый ящик»."
 				}
 			}
 		},
 		"mailbox": {
 			"displayName": "Почтовый ящик",
-			"description": "Почтовый ящик, с которым должен действовать субъект службы. В узле действия это оценивается для каждого элемента ввода (выражение может быть нацелено на другой почтовый ящик для каждого элемента); триггер разрешает его один раз."
+			"description": "Почтовый ящик, с которым должен работать субъект-служба. В узле действия оценивается для каждого элемента ввода (выражение может быть направлено на другой почтовый ящик для каждого элемента); триггер определяет его один раз."
 		},
 		"servicePrincipalNotice": {
-			"displayName": "Если это не ограничено политикой доступа к приложению (Exchange Online New-ApplicationAccessPolicy), разрешение приложения Mail.Send позволяет этому приложению отправлять сообщения как любой почтовый ящик в клиенте."
+			"displayName": "Если это не ограничено политикой доступа к приложению (Exchange Online New-ApplicationAccessPolicy), разрешение приложения Mail.Send позволяет приложению отправлять сообщения от имени любого почтового ящика в клиенте"
 		},
 		"resource": {
 			"displayName": "Ресурс",
@@ -45,7 +45,7 @@
 					"displayName": "Папка"
 				},
 				"folderMessage": {
-					"displayName": "Папка Сообщение"
+					"displayName": "Сообщение папки"
 				},
 				"message": {
 					"displayName": "Сообщение"
@@ -59,8 +59,8 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
-					"description": "Создайте почтовую папку в корневой папке почтового ящика пользователя."
+					"displayName": "Создать",
+					"description": "Создать папку почты в корневой папке почтового ящика пользователя"
 				},
 				"delete": {
 					"displayName": "Удалить",
@@ -75,15 +75,15 @@
 					"description": "Получить информацию о вложениях сообщения"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить сообщение"
 				},
 				"send": {
-					"displayName": "Отправлять",
+					"displayName": "Отправить",
 					"description": "Отправить сообщение"
 				},
 				"move": {
-					"displayName": "Двигаться",
+					"displayName": "Переместить",
 					"description": "Переместить сообщение в папку"
 				},
 				"reply": {
@@ -92,10 +92,10 @@
 				},
 				"sendAndWait": {
 					"displayName": "Отправить и дождаться ответа",
-					"description": "Отправьте сообщение и дождитесь ответа"
+					"description": "Отправить сообщение и дождаться ответа"
 				},
 				"add": {
-					"displayName": "Добавлять",
+					"displayName": "Добавить",
 					"description": "Добавить вложение к сообщению"
 				},
 				"download": {
@@ -106,7 +106,7 @@
 		},
 		"name": {
 			"displayName": "Имя",
-			"description": "Название календаря, который нужно создать",
+			"description": "Название создаваемого календаря",
 			"placeholder": "например Мой календарь"
 		},
 		"additionalFields": {
@@ -115,11 +115,11 @@
 			"options": {
 				"calendarGroup": {
 					"displayName": "Группа календарей",
-					"description": "Если установлено, календарь будет создан в указанной группе календарей. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"description": "Если установлено, календарь будет создан в указанной группе календарей. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"color": {
 					"displayName": "Цвет",
-					"description": "Укажите цвет, чтобы отличать календарь от других",
+					"description": "Укажите цвет для отличия календаря от других",
 					"options": {
 						"lightBlue": {
 							"displayName": "Светло-голубой"
@@ -131,7 +131,7 @@
 							"displayName": "Светло-серый"
 						},
 						"lightGreen": {
-							"displayName": "Светло-зеленый"
+							"displayName": "Светло-зелёный"
 						},
 						"lightOrange": {
 							"displayName": "Светло-оранжевый"
@@ -146,7 +146,7 @@
 							"displayName": "Светло-бирюзовый"
 						},
 						"lightYellow": {
-							"displayName": "Светло-желтый"
+							"displayName": "Светло-жёлтый"
 						}
 					}
 				},
@@ -160,12 +160,12 @@
 				"businessAddress": {
 					"values": {
 						"businessAddress": {
-							"displayName": "Бизнес-адрес"
+							"displayName": "Служебный адрес"
 						},
 						"values": {
 							"options": {
 								"city": {
-									"displayName": "Город"
+									"displayName": "город"
 								},
 								"countryOrRegion": {
 									"displayName": "Страна/регион"
@@ -174,7 +174,7 @@
 									"displayName": "Почтовый индекс"
 								},
 								"state": {
-									"displayName": "Состояние"
+									"displayName": "область"
 								},
 								"street": {
 									"displayName": "Улица"
@@ -183,7 +183,7 @@
 						}
 					},
 					"placeholder": "Добавить адрес",
-					"displayName": "Бизнес-адрес",
+					"displayName": "Служебный адрес",
 					"options": {
 						"values": {
 							"displayName": "Адрес"
@@ -191,11 +191,11 @@
 					}
 				},
 				"businessHomePage": {
-					"displayName": "Домашняя страница бизнеса"
+					"displayName": "Служебная веб-страница"
 				},
 				"businessPhones": {
-					"displayName": "Бизнес-телефоны",
-					"description": "Список служебных номеров телефонов, разделенных запятыми"
+					"displayName": "Служебные телефоны",
+					"description": "Список служебных номеров телефонов, разделённых запятыми"
 				},
 				"categories": {
 					"displayName": "Названия или идентификаторы категорий",
@@ -203,7 +203,7 @@
 				},
 				"children": {
 					"displayName": "Дети",
-					"description": "Список имен детей контакта, разделенный запятыми."
+					"description": "Список имён детей контакта, разделённый запятыми"
 				},
 				"companyName": {
 					"displayName": "Название компании"
@@ -230,7 +230,7 @@
 							}
 						}
 					},
-					"placeholder": "Добавить адрес электронной почты",
+					"placeholder": "Добавить email",
 					"displayName": "Адрес электронной почты",
 					"options": {
 						"values": {
@@ -240,7 +240,7 @@
 				},
 				"fileAs": {
 					"displayName": "Файл как",
-					"description": "Имя, под которым зарегистрирован контакт"
+					"description": "Имя, под которым файлируется контакт"
 				},
 				"homeAddress": {
 					"values": {
@@ -250,7 +250,7 @@
 						"values": {
 							"options": {
 								"city": {
-									"displayName": "Город"
+									"displayName": "город"
 								},
 								"countryOrRegion": {
 									"displayName": "Страна/регион"
@@ -259,7 +259,7 @@
 									"displayName": "Почтовый индекс"
 								},
 								"state": {
-									"displayName": "Состояние"
+									"displayName": "область"
 								},
 								"street": {
 									"displayName": "Улица"
@@ -277,12 +277,12 @@
 				},
 				"homePhones": {
 					"displayName": "Домашние телефоны",
-					"hint": "Можно добавить несколько телефонов, разделенных ,"
+					"hint": "Можно добавить несколько номеров телефонов через запятую"
 				},
 				"imAddresses": {
-					"displayName": "Адреса мгновенных сообщений",
+					"displayName": "Адреса обмена мгновенными сообщениями",
 					"description": "Адреса обмена мгновенными сообщениями (IM) контакта",
-					"hint": "Можно добавить несколько адресов, разделенных ,"
+					"hint": "Можно добавить несколько адресов через запятую"
 				},
 				"initials": {
 					"displayName": "Инициалы"
@@ -312,12 +312,12 @@
 				"otherAddress": {
 					"values": {
 						"otherAddress": {
-							"displayName": "Другой адрес"
+							"displayName": "Прочий адрес"
 						},
 						"values": {
 							"options": {
 								"city": {
-									"displayName": "Город"
+									"displayName": "город"
 								},
 								"countryOrRegion": {
 									"displayName": "Страна/регион"
@@ -326,7 +326,7 @@
 									"displayName": "Почтовый индекс"
 								},
 								"state": {
-									"displayName": "Состояние"
+									"displayName": "область"
 								},
 								"street": {
 									"displayName": "Улица"
@@ -335,7 +335,7 @@
 						}
 					},
 					"placeholder": "Добавить адрес",
-					"displayName": "Другой адрес",
+					"displayName": "Прочий адрес",
 					"options": {
 						"values": {
 							"displayName": "Адрес"
@@ -355,7 +355,7 @@
 					"displayName": "Фамилия"
 				},
 				"title": {
-					"displayName": "Заголовок"
+					"displayName": "Название"
 				},
 				"attachments": {
 					"values": {
@@ -364,8 +364,8 @@
 							"options": {
 								"binaryPropertyName": {
 									"displayName": "Имя поля входных данных",
-									"hint": "Имя поля ввода, содержащего данные двоичного файла, которые необходимо прикрепить.",
-									"placeholder": "например данные"
+									"hint": "Имя поля ввода, содержащего данные двоичного файла для прикрепления",
+									"placeholder": "например data"
 								}
 							}
 						}
@@ -380,12 +380,12 @@
 				},
 				"bccRecipients": {
 					"displayName": "Получатели BCC",
-					"description": "Список адресов электронной почты получателей BCC, разделенный запятыми.",
+					"description": "Список адресов электронной почты получателей BCC, разделённый запятыми",
 					"placeholder": "например john@example.com"
 				},
 				"ccRecipients": {
 					"displayName": "Получатели CC",
-					"description": "Список адресов электронной почты получателей CC, разделенный запятыми.",
+					"description": "Список адресов электронной почты получателей CC, разделённый запятыми",
 					"placeholder": "например john@example.com"
 				},
 				"internetMessageHeaders": {
@@ -400,7 +400,7 @@
 									"description": "Название заголовка"
 								},
 								"value": {
-									"displayName": "Ценить",
+									"displayName": "Значение",
 									"description": "Значение, которое нужно установить для заголовка"
 								}
 							}
@@ -416,7 +416,7 @@
 				},
 				"from": {
 					"displayName": "От",
-					"description": "Владелец почтового ящика, из которого отправлено сообщение. Должен соответствовать фактическому используемому почтовому ящику.",
+					"description": "Владелец почтового ящика, из которого отправляется сообщение. Должен соответствовать используемому почтовому ящику.",
 					"placeholder": "например john@example.com"
 				},
 				"importance": {
@@ -457,23 +457,23 @@
 				},
 				"isReadReceiptRequested": {
 					"displayName": "Запрошена квитанция о прочтении",
-					"description": "Запрашивается ли уведомление о прочтении сообщения"
+					"description": "Запрашивается ли квитанция о прочтении сообщения"
 				},
 				"replyTo": {
-					"displayName": "Отвечать на",
-					"description": "Адрес электронной почты, который будет использоваться при ответе",
-					"placeholder": "например ответ на@example.com"
+					"displayName": "Ответить на",
+					"description": "Адрес электронной почты для использования при ответе",
+					"placeholder": "например replyto@example.com"
 				},
 				"toRecipients": {
-					"displayName": "К",
-					"description": "Список адресов электронной почты получателей, разделенный запятыми.",
+					"displayName": "До",
+					"description": "Список адресов электронной почты получателей, разделённый запятыми",
 					"placeholder": "например john@example.com"
 				},
 				"attendees": {
 					"values": {
 						"attendees": {
 							"displayName": "Участники",
-							"description": "Настройка участников при обновлении заменяет весь список участников."
+							"description": "Установка участников при обновлении заменяет весь список участников"
 						},
 						"values": {
 							"options": {
@@ -488,7 +488,7 @@
 									"displayName": "Тип",
 									"options": {
 										"optional": {
-											"displayName": "Необязательный"
+											"displayName": "Необязательно"
 										},
 										"required": {
 											"displayName": "Необходимый"
@@ -505,20 +505,20 @@
 					"displayName": "Участники",
 					"options": {
 						"values": {
-							"displayName": "Посетитель"
+							"displayName": "Участник"
 						}
 					},
-					"description": "Настройка участников при обновлении заменяет весь список участников."
+					"description": "Установка участников при обновлении заменяет весь список участников"
 				},
 				"body": {
 					"displayName": "Описание"
 				},
 				"bodyPreview": {
-					"displayName": "Описание Предварительный просмотр"
+					"displayName": "Предпросмотр описания"
 				},
 				"hideAttendees": {
 					"displayName": "Скрыть участников",
-					"description": "Разрешить ли каждому участнику видеть только себя в приглашении на собрание и списке отслеживания собрания"
+					"description": "Разрешить ли каждому участнику видеть только себя в приглашении на собрание и списке отслеживания"
 				},
 				"isAllDay": {
 					"displayName": "Весь день"
@@ -534,10 +534,10 @@
 				},
 				"location": {
 					"displayName": "Расположение",
-					"description": "Место проведения мероприятия (например, название конференц-зала, адрес или ссылка на собрание)."
+					"description": "Место проведения события (например название переговорной, адрес или ссылка на встречу)"
 				},
 				"sensitivity": {
-					"displayName": "Чувствительность",
+					"displayName": "Конфиденциальность",
 					"options": {
 						"normal": {
 							"displayName": "Нормальный"
@@ -549,7 +549,7 @@
 							"displayName": "Частный"
 						},
 						"confidential": {
-							"displayName": "Конфиденциально"
+							"displayName": "Приватное"
 						}
 					}
 				},
@@ -557,16 +557,16 @@
 					"displayName": "Показать как",
 					"options": {
 						"busy": {
-							"displayName": "Занятый"
+							"displayName": "Занят"
 						},
 						"free": {
-							"displayName": "Бесплатно"
+							"displayName": "Свободно"
 						},
 						"oof": {
-							"displayName": "уф"
+							"displayName": "Вне офиса"
 						},
 						"tentative": {
-							"displayName": "Пробный"
+							"displayName": "Предварительно"
 						},
 						"workingElsewhere": {
 							"displayName": "Работа в другом месте"
@@ -823,7 +823,7 @@
 							"displayName": "Америка/Блан-Саблон"
 						},
 						"America/Boa_Vista": {
-							"displayName": "Америка/Boa_Vista"
+							"displayName": "Америка/Боа-Виста"
 						},
 						"America/Bogota": {
 							"displayName": "Америка/Богота"
@@ -835,10 +835,10 @@
 							"displayName": "Америка/Буэнос-Айрес"
 						},
 						"America/Cambridge_Bay": {
-							"displayName": "Америка/Кембридж_Бэй"
+							"displayName": "Америка/Кембридж-Бей"
 						},
 						"America/Campo_Grande": {
-							"displayName": "Америка/Кампо_Гранде"
+							"displayName": "Америка/Кампу-Гранде"
 						},
 						"America/Cancun": {
 							"displayName": "Америка/Канкун"
@@ -853,7 +853,7 @@
 							"displayName": "Америка/Кайенна"
 						},
 						"America/Cayman": {
-							"displayName": "Америка/Кайманы"
+							"displayName": "Америка/Кайманские острова"
 						},
 						"America/Chicago": {
 							"displayName": "Америка/Чикаго"
@@ -862,16 +862,16 @@
 							"displayName": "Америка/Чиуауа"
 						},
 						"America/Ciudad_Juarez": {
-							"displayName": "Америка/Сьюдад_Хуарес"
+							"displayName": "Америка/Сьюдад-Хуарес"
 						},
 						"America/Coral_Harbour": {
-							"displayName": "Америка/Coral_Harbour"
+							"displayName": "Америка/Корал-Харбор"
 						},
 						"America/Cordoba": {
 							"displayName": "Америка/Кордова"
 						},
 						"America/Costa_Rica": {
-							"displayName": "Америка/Коста_Рика"
+							"displayName": "Америка/Коста-Рика"
 						},
 						"America/Coyhaique": {
 							"displayName": "Америка/Койайке"
@@ -886,13 +886,13 @@
 							"displayName": "Америка/Кюрасао"
 						},
 						"America/Danmarkshavn": {
-							"displayName": "Америка/Данмарксхавн"
+							"displayName": "Америка/Данмаркшавн"
 						},
 						"America/Dawson": {
 							"displayName": "Америка/Доусон"
 						},
 						"America/Dawson_Creek": {
-							"displayName": "Америка/Доусон_Крик"
+							"displayName": "Америка/Доусон-Крик"
 						},
 						"America/Denver": {
 							"displayName": "Америка/Денвер"
@@ -910,31 +910,31 @@
 							"displayName": "Америка/Эйрунепе"
 						},
 						"America/El_Salvador": {
-							"displayName": "Америка/Эль_Сальвадор"
+							"displayName": "Америка/Эль-Сальвадор"
 						},
 						"America/Ensenada": {
 							"displayName": "Америка/Энсенада"
 						},
 						"America/Fort_Nelson": {
-							"displayName": "Америка/Форт_Нельсон"
+							"displayName": "Америка/Форт-Нельсон"
 						},
 						"America/Fort_Wayne": {
-							"displayName": "Америка/Форт_Уэйн"
+							"displayName": "Америка/Форт-Уэйн"
 						},
 						"America/Fortaleza": {
 							"displayName": "Америка/Форталеза"
 						},
 						"America/Glace_Bay": {
-							"displayName": "Америка/Glase_Bay"
+							"displayName": "Америка/Глейс-Бей"
 						},
 						"America/Godthab": {
-							"displayName": "Америка/Годтаб"
+							"displayName": "Америка/Готхоб"
 						},
 						"America/Goose_Bay": {
-							"displayName": "Америка/Гусиная бухта"
+							"displayName": "Америка/Гус-Бей"
 						},
 						"America/Grand_Turk": {
-							"displayName": "Америка/Grand_Turk"
+							"displayName": "Америка/Гранд-Терк"
 						},
 						"America/Grenada": {
 							"displayName": "Америка/Гренада"
@@ -973,7 +973,7 @@
 							"displayName": "Америка/Индиана/Петербург"
 						},
 						"America/Indiana/Tell_City": {
-							"displayName": "Америка/Индиана/Tell_City"
+							"displayName": "Америка/Индиана/Телл-Сити"
 						},
 						"America/Indiana/Vevay": {
 							"displayName": "Америка/Индиана/Вевей"
@@ -1009,13 +1009,13 @@
 							"displayName": "Америка/Кентукки/Монтичелло"
 						},
 						"America/Knox_IN": {
-							"displayName": "Америка/Knox_IN"
+							"displayName": "Америка/Нокс, IN"
 						},
 						"America/Kralendijk": {
 							"displayName": "Америка/Кралендейк"
 						},
 						"America/La_Paz": {
-							"displayName": "Америка/Ла_Пас"
+							"displayName": "Америка/Ла-Пас"
 						},
 						"America/Lima": {
 							"displayName": "Америка/Лима"
@@ -1027,7 +1027,7 @@
 							"displayName": "Америка/Луисвилл"
 						},
 						"America/Lower_Princes": {
-							"displayName": "Америка/Нижние_Принцы"
+							"displayName": "Америка/Нижние-Принцы"
 						},
 						"America/Maceio": {
 							"displayName": "Америка/Масейо"
@@ -1039,7 +1039,7 @@
 							"displayName": "Америка/Манаус"
 						},
 						"America/Marigot": {
-							"displayName": "Америка/Мариго"
+							"displayName": "Америка/Маригот"
 						},
 						"America/Martinique": {
 							"displayName": "Америка/Мартиника"
@@ -1063,7 +1063,7 @@
 							"displayName": "Америка/Метлакатла"
 						},
 						"America/Mexico_City": {
-							"displayName": "Америка/Мехико_Сити"
+							"displayName": "Америка/Мехико"
 						},
 						"America/Miquelon": {
 							"displayName": "Америка/Микелон"
@@ -1087,7 +1087,7 @@
 							"displayName": "Америка/Нассау"
 						},
 						"America/New_York": {
-							"displayName": "Америка/Нью_Йорк"
+							"displayName": "America/New_York"
 						},
 						"America/Nipigon": {
 							"displayName": "Америка/Нипигон"
@@ -1129,25 +1129,25 @@
 							"displayName": "Америка/Порт-о-Пренс"
 						},
 						"America/Port_of_Spain": {
-							"displayName": "Америка/Порт_Испании"
+							"displayName": "Америка/Порт-оф-Спейн"
 						},
 						"America/Porto_Acre": {
-							"displayName": "Америка/Порто_Акр"
+							"displayName": "Америка/Порто-Акр"
 						},
 						"America/Porto_Velho": {
-							"displayName": "Америка/Порту_Велью"
+							"displayName": "Америка/Порту-Велью"
 						},
 						"America/Puerto_Rico": {
-							"displayName": "Америка/Пуэрто_Рико"
+							"displayName": "Америка/Пуэрто-Рико"
 						},
 						"America/Punta_Arenas": {
-							"displayName": "Америка/Пунта_Аренас"
+							"displayName": "Америка/Пунта-Аренас"
 						},
 						"America/Rainy_River": {
-							"displayName": "Америка/Rainy_River"
+							"displayName": "Америка/Рейни-Ривер"
 						},
 						"America/Rankin_Inlet": {
-							"displayName": "Америка/Рэнкин_Инлет"
+							"displayName": "Америка/Ранкин-Инлет"
 						},
 						"America/Recife": {
 							"displayName": "Америка/Ресифи"
@@ -1156,16 +1156,16 @@
 							"displayName": "Америка/Регина"
 						},
 						"America/Resolute": {
-							"displayName": "Америка/Решительный"
+							"displayName": "Америка/Резолют"
 						},
 						"America/Rio_Branco": {
-							"displayName": "Америка/Рио_Бранко"
+							"displayName": "Америка/Рио-Бранко"
 						},
 						"America/Rosario": {
 							"displayName": "Америка/Росарио"
 						},
 						"America/Santa_Isabel": {
-							"displayName": "Америка/Санта_Изабель"
+							"displayName": "Америка/Санта-Изабель"
 						},
 						"America/Santarem": {
 							"displayName": "Америка/Сантарем"
@@ -1174,7 +1174,7 @@
 							"displayName": "Америка/Сантьяго"
 						},
 						"America/Santo_Domingo": {
-							"displayName": "Америка/Санто_Доминго"
+							"displayName": "Америка/Санто-Доминго"
 						},
 						"America/Sao_Paulo": {
 							"displayName": "Америка/Сан-Паулу"
@@ -1189,10 +1189,10 @@
 							"displayName": "Америка/Ситка"
 						},
 						"America/St_Barthelemy": {
-							"displayName": "Америка/Сент_Бартелеми"
+							"displayName": "Америка/Сан-Бартелеми"
 						},
 						"America/St_Johns": {
-							"displayName": "Америка/Сент_Джонс"
+							"displayName": "Америка/Сент-Джонс"
 						},
 						"America/St_Kitts": {
 							"displayName": "Америка/Сент-Китс"
@@ -1201,13 +1201,13 @@
 							"displayName": "Америка/Сент-Люсия"
 						},
 						"America/St_Thomas": {
-							"displayName": "Америка/Сент_Томас"
+							"displayName": "Америка/Сент-Томас"
 						},
 						"America/St_Vincent": {
-							"displayName": "Америка/Сент_Винсент"
+							"displayName": "Америка/Сент-Винсент"
 						},
 						"America/Swift_Current": {
-							"displayName": "Америка/Swift_Current"
+							"displayName": "Америка/Свифт-Каррент"
 						},
 						"America/Tegucigalpa": {
 							"displayName": "Америка/Тегусигальпа"
@@ -1216,7 +1216,7 @@
 							"displayName": "Америка/Туле"
 						},
 						"America/Thunder_Bay": {
-							"displayName": "Америка/Thunder_Bay"
+							"displayName": "Америка/Тандер-Бей"
 						},
 						"America/Tijuana": {
 							"displayName": "Америка/Тихуана"
@@ -1231,7 +1231,7 @@
 							"displayName": "Америка/Ванкувер"
 						},
 						"America/Virgin": {
-							"displayName": "Америка/Девственница"
+							"displayName": "Америка/Виргинские острова"
 						},
 						"America/Whitehorse": {
 							"displayName": "Америка/Уайтхорс"
@@ -1252,7 +1252,7 @@
 							"displayName": "Антарктида/Дэвис"
 						},
 						"Antarctica/DumontDUrville": {
-							"displayName": "Антарктида/Дюмон-Дюрвиль"
+							"displayName": "Антарктида/Дюмон-д'Юрвиль"
 						},
 						"Antarctica/Macquarie": {
 							"displayName": "Антарктида/Маккуори"
@@ -1270,7 +1270,7 @@
 							"displayName": "Антарктида/Ротера"
 						},
 						"Antarctica/South_Pole": {
-							"displayName": "Антарктида/Южный_Полюс"
+							"displayName": "Антарктида/Южный полюс"
 						},
 						"Antarctica/Syowa": {
 							"displayName": "Антарктида/Сёва"
@@ -1303,7 +1303,7 @@
 							"displayName": "Азия/Актобе"
 						},
 						"Asia/Ashgabat": {
-							"displayName": "Азия/Ашхабад"
+							"displayName": "Азия/Ашгабат"
 						},
 						"Asia/Ashkhabad": {
 							"displayName": "Азия/Ашхабад"
@@ -1384,7 +1384,7 @@
 							"displayName": "Азия/Хеврон"
 						},
 						"Asia/Ho_Chi_Minh": {
-							"displayName": "Азия/Хо_Чи_Мин"
+							"displayName": "Азия/Хошимин"
 						},
 						"Asia/Hong_Kong": {
 							"displayName": "Азия/Гонконг"
@@ -1474,7 +1474,7 @@
 							"displayName": "Азия/Омск"
 						},
 						"Asia/Oral": {
-							"displayName": "Азия/Устный"
+							"displayName": "Азия/Орал"
 						},
 						"Asia/Phnom_Penh": {
 							"displayName": "Азия/Пномпень"
@@ -1495,7 +1495,7 @@
 							"displayName": "Азия/Кызылорда"
 						},
 						"Asia/Rangoon": {
-							"displayName": "Азия/Рангун"
+							"displayName": "Азия/Янгон"
 						},
 						"Asia/Riyadh": {
 							"displayName": "Азия/Эр-Рияд"
@@ -1537,7 +1537,7 @@
 							"displayName": "Азия/Тель-Авив"
 						},
 						"Asia/Thimbu": {
-							"displayName": "Азия/Тимбу"
+							"displayName": "Азия/Тхимпху"
 						},
 						"Asia/Thimphu": {
 							"displayName": "Азия/Тхимпху"
@@ -1549,13 +1549,13 @@
 							"displayName": "Азия/Томск"
 						},
 						"Asia/Ujung_Pandang": {
-							"displayName": "Азия/Уджунг_Панданг"
+							"displayName": "Азия/Уджунг-Панданг"
 						},
 						"Asia/Ulaanbaatar": {
 							"displayName": "Азия/Улан-Батор"
 						},
 						"Asia/Ulan_Bator": {
-							"displayName": "Азия/Улан_Батор"
+							"displayName": "Азия/Улан-Батор"
 						},
 						"Asia/Urumqi": {
 							"displayName": "Азия/Урумчи"
@@ -1588,10 +1588,10 @@
 							"displayName": "Атлантика/Бермудские острова"
 						},
 						"Atlantic/Canary": {
-							"displayName": "Атлантический/Канарский"
+							"displayName": "Атлантика/Канарские острова"
 						},
 						"Atlantic/Cape_Verde": {
-							"displayName": "Атлантический океан/Кабо-Верде"
+							"displayName": "Атлантика/Кабо-Верде"
 						},
 						"Atlantic/Faeroe": {
 							"displayName": "Атлантика/Фарерские острова"
@@ -1600,22 +1600,22 @@
 							"displayName": "Атлантика/Фарерские острова"
 						},
 						"Atlantic/Jan_Mayen": {
-							"displayName": "Атлантика/январь-майен"
+							"displayName": "Атлантика/Ян-Майен"
 						},
 						"Atlantic/Madeira": {
 							"displayName": "Атлантика/Мадейра"
 						},
 						"Atlantic/Reykjavik": {
-							"displayName": "Атлантик/Рейкьявик"
+							"displayName": "Атлантика/Рейкьявик"
 						},
 						"Atlantic/South_Georgia": {
-							"displayName": "Атлантика/Южная Грузия"
+							"displayName": "Атлантика/Южная Георгия"
 						},
 						"Atlantic/St_Helena": {
-							"displayName": "Атлантика/Св. Елены"
+							"displayName": "Атлантика/Остров Святой Елены"
 						},
 						"Atlantic/Stanley": {
-							"displayName": "Атлантик/Стэнли"
+							"displayName": "Атлантика/Стэнли"
 						},
 						"Australia/ACT": {
 							"displayName": "Австралия/ACT"
@@ -1627,7 +1627,7 @@
 							"displayName": "Австралия/Брисбен"
 						},
 						"Australia/Broken_Hill": {
-							"displayName": "Австралия/Broken_Hill"
+							"displayName": "Австралия/Брокен-Хилл"
 						},
 						"Australia/Canberra": {
 							"displayName": "Австралия/Канберра"
@@ -1651,7 +1651,7 @@
 							"displayName": "Австралия/Линдеман"
 						},
 						"Australia/Lord_Howe": {
-							"displayName": "Австралия/Lord_Howe"
+							"displayName": "Австралия/Лорд-Хау"
 						},
 						"Australia/Melbourne": {
 							"displayName": "Австралия/Мельбурн"
@@ -1687,10 +1687,10 @@
 							"displayName": "Австралия/Янковинна"
 						},
 						"Brazil/Acre": {
-							"displayName": "Бразилия/Акко"
+							"displayName": "Бразилия/Акре"
 						},
 						"Brazil/DeNoronha": {
-							"displayName": "Бразилия/Деноронья"
+							"displayName": "Бразилия/де-Норонья"
 						},
 						"Brazil/East": {
 							"displayName": "Бразилия/Восток"
@@ -1705,22 +1705,22 @@
 							"displayName": "CST6CDT"
 						},
 						"Canada/Atlantic": {
-							"displayName": "Канада/Атлантика"
+							"displayName": "Канада/Атлантический"
 						},
 						"Canada/Central": {
 							"displayName": "Канада/Центральный"
 						},
 						"Canada/Eastern": {
-							"displayName": "Канада/Восточная"
+							"displayName": "Канада/Восточный"
 						},
 						"Canada/Mountain": {
-							"displayName": "Канада/Горы"
+							"displayName": "Канада/Горный"
 						},
 						"Canada/Newfoundland": {
 							"displayName": "Канада/Ньюфаундленд"
 						},
 						"Canada/Pacific": {
-							"displayName": "Канада/Тихоокеанский регион"
+							"displayName": "Канада/Тихоокеанский"
 						},
 						"Canada/Saskatchewan": {
 							"displayName": "Канада/Саскачеван"
@@ -1753,109 +1753,109 @@
 							"displayName": "Эйре"
 						},
 						"Etc/GMT": {
-							"displayName": "И т.д./GMT"
+							"displayName": "Прочие/GMT"
 						},
 						"Etc/GMT+0": {
-							"displayName": "И т.д./GMT+0"
+							"displayName": "Прочие/GMT+0"
 						},
 						"Etc/GMT+1": {
-							"displayName": "И т.д./GMT+1"
+							"displayName": "Прочие/GMT+1"
 						},
 						"Etc/GMT+10": {
-							"displayName": "И т.д./GMT+10"
+							"displayName": "Прочие/GMT+10"
 						},
 						"Etc/GMT+11": {
-							"displayName": "И т.д./GMT+11"
+							"displayName": "Прочие/GMT+11"
 						},
 						"Etc/GMT+12": {
-							"displayName": "И т.д./GMT+12"
+							"displayName": "Прочие/GMT+12"
 						},
 						"Etc/GMT+2": {
-							"displayName": "И т.д./GMT+2"
+							"displayName": "Прочие/GMT+2"
 						},
 						"Etc/GMT+3": {
-							"displayName": "И т.д./GMT+3"
+							"displayName": "Прочие/GMT+3"
 						},
 						"Etc/GMT+4": {
-							"displayName": "И т.д./GMT+4"
+							"displayName": "Прочие/GMT+4"
 						},
 						"Etc/GMT+5": {
-							"displayName": "И т.д./GMT+5"
+							"displayName": "Прочие/GMT+5"
 						},
 						"Etc/GMT+6": {
-							"displayName": "И т.д./GMT+6"
+							"displayName": "Прочие/GMT+6"
 						},
 						"Etc/GMT+7": {
-							"displayName": "И т.д./GMT+7"
+							"displayName": "Прочие/GMT+7"
 						},
 						"Etc/GMT+8": {
-							"displayName": "И т.д./GMT+8"
+							"displayName": "Прочие/GMT+8"
 						},
 						"Etc/GMT+9": {
-							"displayName": "И т.д./GMT+9"
+							"displayName": "Прочие/GMT+9"
 						},
 						"Etc/GMT-0": {
-							"displayName": "И т.д./GMT-0"
+							"displayName": "Прочие/GMT-0"
 						},
 						"Etc/GMT-1": {
-							"displayName": "И т.д./GMT-1"
+							"displayName": "Прочие/GMT-1"
 						},
 						"Etc/GMT-10": {
-							"displayName": "И т.д./GMT-10"
+							"displayName": "Прочие/GMT-10"
 						},
 						"Etc/GMT-11": {
-							"displayName": "И т.д./GMT-11"
+							"displayName": "Прочие/GMT-11"
 						},
 						"Etc/GMT-12": {
-							"displayName": "И т.д./GMT-12"
+							"displayName": "Прочие/GMT-12"
 						},
 						"Etc/GMT-13": {
-							"displayName": "И т.д./GMT-13"
+							"displayName": "Прочие/GMT-13"
 						},
 						"Etc/GMT-14": {
-							"displayName": "И т.д./GMT-14"
+							"displayName": "Прочие/GMT-14"
 						},
 						"Etc/GMT-2": {
-							"displayName": "И т.д./GMT-2"
+							"displayName": "Прочие/GMT-2"
 						},
 						"Etc/GMT-3": {
-							"displayName": "И т.д./GMT-3"
+							"displayName": "Прочие/GMT-3"
 						},
 						"Etc/GMT-4": {
-							"displayName": "И т.д./GMT-4"
+							"displayName": "Прочие/GMT-4"
 						},
 						"Etc/GMT-5": {
-							"displayName": "И т.д./GMT-5"
+							"displayName": "Прочие/GMT-5"
 						},
 						"Etc/GMT-6": {
-							"displayName": "И т.д./GMT-6"
+							"displayName": "Прочие/GMT-6"
 						},
 						"Etc/GMT-7": {
-							"displayName": "И т.д./GMT-7"
+							"displayName": "Прочие/GMT-7"
 						},
 						"Etc/GMT-8": {
-							"displayName": "И т.д./GMT-8"
+							"displayName": "Прочие/GMT-8"
 						},
 						"Etc/GMT-9": {
-							"displayName": "И т.д./GMT-9"
+							"displayName": "Прочие/GMT-9"
 						},
 						"Etc/GMT0": {
-							"displayName": "И т.д./GMT0"
+							"displayName": "Прочие/GMT0"
 						},
 						"Etc/Greenwich": {
-							"displayName": "И т.д./Гринвич"
+							"displayName": "Прочие/Гринвич"
 						},
 						"Etc/UCT": {
-							"displayName": "И т.д./UCT"
+							"displayName": "Прочие/UCT"
 						},
 						"Etc/UTC": {
-							"displayName": "И т.д./UTC"
+							"displayName": "Прочие/UTC"
 						},
 						"Etc/Universal": {
-							"displayName": "И т.д./Универсальный"
+							"displayName": "Прочие/Универсальное"
 						},
 						"Etc/Zulu": {
-							"displayName": "И т.д./Зулу"
+							"displayName": "Прочие/Зулу"
 						},
 						"Europe/Amsterdam": {
 							"displayName": "Европа/Амстердам"
@@ -1912,7 +1912,7 @@
 							"displayName": "Европа/Хельсинки"
 						},
 						"Europe/Isle_of_Man": {
-							"displayName": "Европа/Остров_Мэн"
+							"displayName": "Европа/Остров Мэн"
 						},
 						"Europe/Istanbul": {
 							"displayName": "Европа/Стамбул"
@@ -1987,7 +1987,7 @@
 							"displayName": "Европа/Самара"
 						},
 						"Europe/San_Marino": {
-							"displayName": "Европа/Сан_Марино"
+							"displayName": "Европа/Сан-Марино"
 						},
 						"Europe/Sarajevo": {
 							"displayName": "Европа/Сараево"
@@ -2059,7 +2059,7 @@
 							"displayName": "GMT"
 						},
 						"GMT+0": {
-							"displayName": "Время по Гринвичу+0"
+							"displayName": "GMT+0"
 						},
 						"GMT-0": {
 							"displayName": "GMT-0"
@@ -2080,37 +2080,37 @@
 							"displayName": "Исландия"
 						},
 						"Indian/Antananarivo": {
-							"displayName": "Индия/Антананариву"
+							"displayName": "Индийский океан/Антананариву"
 						},
 						"Indian/Chagos": {
-							"displayName": "Индийский/Чагос"
+							"displayName": "Индийский океан/Чагос"
 						},
 						"Indian/Christmas": {
-							"displayName": "Индийский/Рождество"
+							"displayName": "Индийский океан/Рождества"
 						},
 						"Indian/Cocos": {
-							"displayName": "Индия/Кокосовые острова"
+							"displayName": "Индийский океан/Кокосовые острова"
 						},
 						"Indian/Comoro": {
-							"displayName": "Индийский/Коморский"
+							"displayName": "Индийский океан/Коморские острова"
 						},
 						"Indian/Kerguelen": {
-							"displayName": "Индийский/Кергелен"
+							"displayName": "Индийский океан/Кергелен"
 						},
 						"Indian/Mahe": {
-							"displayName": "Индийский/Маэ"
+							"displayName": "Индийский океан/Маэ"
 						},
 						"Indian/Maldives": {
-							"displayName": "Индия/Мальдивы"
+							"displayName": "Индийский океан/Мальдивы"
 						},
 						"Indian/Mauritius": {
-							"displayName": "Индия/Маврикий"
+							"displayName": "Индийский океан/Маврикий"
 						},
 						"Indian/Mayotte": {
-							"displayName": "Индийский/Майотта"
+							"displayName": "Индийский океан/Майотта"
 						},
 						"Indian/Reunion": {
-							"displayName": "Индийский/Реюньон"
+							"displayName": "Индийский океан/Реюньон"
 						},
 						"Iran": {
 							"displayName": "Иран"
@@ -2146,7 +2146,7 @@
 							"displayName": "Мексика/Баха-Сур"
 						},
 						"Mexico/General": {
-							"displayName": "Мексика/Общий"
+							"displayName": "Мексика/Центральная"
 						},
 						"NZ": {
 							"displayName": "NZ"
@@ -2179,7 +2179,7 @@
 							"displayName": "Тихий океан/Чуук"
 						},
 						"Pacific/Easter": {
-							"displayName": "Тихий океан/Пасха"
+							"displayName": "Тихий океан/Остров Пасхи"
 						},
 						"Pacific/Efate": {
 							"displayName": "Тихий океан/Эфате"
@@ -2248,7 +2248,7 @@
 							"displayName": "Тихий океан/Нумеа"
 						},
 						"Pacific/Pago_Pago": {
-							"displayName": "Тихий океан/Паго_Паго"
+							"displayName": "Тихий океан/Паго-Паго"
 						},
 						"Pacific/Palau": {
 							"displayName": "Тихий океан/Палау"
@@ -2263,7 +2263,7 @@
 							"displayName": "Тихий океан/Понапе"
 						},
 						"Pacific/Port_Moresby": {
-							"displayName": "Тихий океан/Порт_Морсби"
+							"displayName": "Тихий океан/Порт-Морсби"
 						},
 						"Pacific/Rarotonga": {
 							"displayName": "Тихий океан/Раротонга"
@@ -2290,7 +2290,7 @@
 							"displayName": "Тихий океан/Уэйк"
 						},
 						"Pacific/Wallis": {
-							"displayName": "Пасифик/Уоллис"
+							"displayName": "Тихий океан/Уоллис"
 						},
 						"Pacific/Yap": {
 							"displayName": "Тихий океан/Яп"
@@ -2320,19 +2320,19 @@
 							"displayName": "США/Аляска"
 						},
 						"US/Aleutian": {
-							"displayName": "США/Алеутский"
+							"displayName": "США/Алеутские острова"
 						},
 						"US/Arizona": {
 							"displayName": "США/Аризона"
 						},
 						"US/Central": {
-							"displayName": "США/Центральный"
+							"displayName": "США/Центральная"
 						},
 						"US/East-Indiana": {
 							"displayName": "США/Восточная Индиана"
 						},
 						"US/Eastern": {
-							"displayName": "США/Восточная Европа"
+							"displayName": "США/Восточная"
 						},
 						"US/Hawaii": {
 							"displayName": "США/Гавайи"
@@ -2344,10 +2344,10 @@
 							"displayName": "США/Мичиган"
 						},
 						"US/Mountain": {
-							"displayName": "США/Горы"
+							"displayName": "США/Горная"
 						},
 						"US/Pacific": {
-							"displayName": "США/Тихоокеанский регион"
+							"displayName": "США/Тихоокеанская"
 						},
 						"US/Samoa": {
 							"displayName": "США/Самоа"
@@ -2356,7 +2356,7 @@
 							"displayName": "UTC"
 						},
 						"Universal": {
-							"displayName": "Универсальный"
+							"displayName": "Универсальное"
 						},
 						"W-SU": {
 							"displayName": "W-SU"
@@ -2376,13 +2376,13 @@
 							"displayName": "Один экземпляр"
 						},
 						"occurrence": {
-							"displayName": "возникновение"
+							"displayName": "Вхождение"
 						},
 						"exception": {
 							"displayName": "Исключение"
 						},
 						"seriesMaster": {
-							"displayName": "Серия Мастер"
+							"displayName": "Главный элемент серии"
 						}
 					}
 				},
@@ -2390,7 +2390,7 @@
 					"displayName": "Конец"
 				},
 				"start": {
-					"displayName": "Начинать"
+					"displayName": "Начать"
 				},
 				"subject": {
 					"displayName": "Предмет",
@@ -2398,7 +2398,7 @@
 				},
 				"saveToSentItems": {
 					"displayName": "Сохранить в отправленные",
-					"description": "Сохранять ли сообщение в Отправленных"
+					"description": "Сохранять ли сообщение в папке отправленных"
 				}
 			}
 		},
@@ -2411,25 +2411,25 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"filters": {
 			"displayName": "Фильтры",
 			"placeholder": "Добавить фильтр",
 			"options": {
 				"custom": {
-					"displayName": "Фильтровать запрос",
+					"displayName": "Запрос фильтра",
 					"hint": "Поисковый запрос для фильтрации событий. <a href=\"https://learn.microsoft.com/en-us/graph/filter-query-parameter\">Подробнее</a>.",
-					"placeholder": "например содержит (тема, «Привет»)"
+					"placeholder": "например contains(subject,'Привет')"
 				},
 				"emailAddress": {
 					"displayName": "Адрес электронной почты",
-					"description": "Если контакты, которые вы хотите получить, имеют несколько адресов электронной почты, вы можете ввести их через запятую."
+					"description": "Если контакты, которые вы хотите получить, имеют несколько адресов электронной почты, укажите их через запятую"
 				},
 				"filter": {
-					"displayName": "Фильтровать запрос",
+					"displayName": "Запрос фильтра",
 					"hint": "Поисковый запрос для фильтрации папок. <a href=\"https://docs.microsoft.com/en-us/graph/query-parameters#filter-parameter\">Подробнее</a>.",
-					"placeholder": "например displayName eq «Моя папка»"
+					"placeholder": "например displayName eq 'Моя папка'"
 				}
 			}
 		},
@@ -2439,7 +2439,7 @@
 			"options": {
 				"color": {
 					"displayName": "Цвет",
-					"description": "Укажите цвет, чтобы отличать календарь от других",
+					"description": "Укажите цвет для отличия календаря от других",
 					"options": {
 						"lightBlue": {
 							"displayName": "Светло-голубой"
@@ -2451,7 +2451,7 @@
 							"displayName": "Светло-серый"
 						},
 						"lightGreen": {
-							"displayName": "Светло-зеленый"
+							"displayName": "Светло-зелёный"
 						},
 						"lightOrange": {
 							"displayName": "Светло-оранжевый"
@@ -2466,7 +2466,7 @@
 							"displayName": "Светло-бирюзовый"
 						},
 						"lightYellow": {
-							"displayName": "Светло-желтый"
+							"displayName": "Светло-жёлтый"
 						}
 					}
 				},
@@ -2480,7 +2480,7 @@
 				},
 				"bccRecipients": {
 					"displayName": "Получатели BCC",
-					"description": "Список адресов электронной почты получателей BCC, разделенный запятыми.",
+					"description": "Список адресов электронной почты получателей BCC, разделённый запятыми",
 					"placeholder": "например john@example.com"
 				},
 				"categories": {
@@ -2489,7 +2489,7 @@
 				},
 				"ccRecipients": {
 					"displayName": "Получатели CC",
-					"description": "Список адресов электронной почты получателей CC, разделенный запятыми.",
+					"description": "Список адресов электронной почты получателей CC, разделённый запятыми",
 					"placeholder": "например john@example.com"
 				},
 				"internetMessageHeaders": {
@@ -2504,7 +2504,7 @@
 									"description": "Название заголовка"
 								},
 								"value": {
-									"displayName": "Ценить",
+									"displayName": "Значение",
 									"description": "Значение, которое нужно установить для заголовка"
 								}
 							}
@@ -2520,7 +2520,7 @@
 				},
 				"from": {
 					"displayName": "От",
-					"description": "Владелец почтового ящика, из которого отправлено сообщение. Должен соответствовать фактическому используемому почтовому ящику.",
+					"description": "Владелец почтового ящика, из которого отправляется сообщение. Должен соответствовать используемому почтовому ящику.",
 					"placeholder": "например john@example.com"
 				},
 				"importance": {
@@ -2539,7 +2539,7 @@
 					}
 				},
 				"isRead": {
-					"displayName": "Читается",
+					"displayName": "Прочитано",
 					"description": "Должно ли сообщение быть помечено как прочитанное"
 				},
 				"bodyContent": {
@@ -2560,20 +2560,20 @@
 				},
 				"isReadReceiptRequested": {
 					"displayName": "Запрошена квитанция о прочтении",
-					"description": "Запрашивается ли уведомление о прочтении сообщения"
+					"description": "Запрашивается ли квитанция о прочтении сообщения"
 				},
 				"replyTo": {
-					"displayName": "Отвечать на",
-					"description": "Адрес электронной почты, который будет использоваться при ответе",
-					"placeholder": "например ответ на@example.com"
+					"displayName": "Ответить на",
+					"description": "Адрес электронной почты для использования при ответе",
+					"placeholder": "например replyto@example.com"
 				},
 				"subject": {
 					"displayName": "Предмет",
 					"description": "Тема сообщения"
 				},
 				"toRecipients": {
-					"displayName": "К",
-					"description": "Список адресов электронной почты получателей, разделенный запятыми.",
+					"displayName": "До",
+					"description": "Список адресов электронной почты получателей, разделённый запятыми",
 					"placeholder": "например john@example.com"
 				},
 				"folderId": {
@@ -2591,166 +2591,166 @@
 			"displayName": "Контакт"
 		},
 		"output": {
-			"displayName": "Выход",
+			"displayName": "Результат",
 			"options": {
 				"simple": {
-					"displayName": "Упрощенный"
+					"displayName": "Упрощённый"
 				},
 				"raw": {
-					"displayName": "Сырой"
+					"displayName": "Исходные"
 				},
 				"fields": {
-					"displayName": "Выберите включенные поля"
+					"displayName": "Выбрать поля для включения"
 				}
 			}
 		},
 		"fields": {
 			"displayName": "Поля",
-			"description": "Поля, которые нужно добавить в выходные данные",
+			"description": "Поля для добавления в выход",
 			"options": {
 				"createdDateTime": {
-					"displayName": "созданоДатаВремя"
+					"displayName": "createdDateTime"
 				},
 				"lastModifiedDateTime": {
-					"displayName": "последниймодифицированныйдатевремя"
+					"displayName": "lastModifiedDateTime"
 				},
 				"changeKey": {
-					"displayName": "изменитьКлюч"
+					"displayName": "changeKey"
 				},
 				"categories": {
-					"displayName": "категории"
+					"displayName": "categories"
 				},
 				"parentFolderId": {
-					"displayName": "родительская папкаид"
+					"displayName": "parentFolderId"
 				},
 				"birthday": {
-					"displayName": "день рождения"
+					"displayName": "birthday"
 				},
 				"fileAs": {
-					"displayName": "файлКак"
+					"displayName": "fileAs"
 				},
 				"displayName": {
-					"displayName": "отображаемое имя"
+					"displayName": "displayName"
 				},
 				"givenName": {
-					"displayName": "собственное имя"
+					"displayName": "givenName"
 				},
 				"initials": {
-					"displayName": "инициалы"
+					"displayName": "initials"
 				},
 				"middleName": {
-					"displayName": "второе имя"
+					"displayName": "middleName"
 				},
 				"nickName": {
-					"displayName": "никнейм"
+					"displayName": "nickName"
 				},
 				"surname": {
-					"displayName": "фамилия"
+					"displayName": "surname"
 				},
 				"title": {
-					"displayName": "заголовок"
+					"displayName": "title"
 				},
 				"yomiGivenName": {
-					"displayName": "йомигивеннам"
+					"displayName": "yomiGivenName"
 				},
 				"yomiSurname": {
-					"displayName": "yomiФамилия"
+					"displayName": "yomiSurname"
 				},
 				"yomiCompanyName": {
-					"displayName": "yomiНазвание компании"
+					"displayName": "yomiCompanyName"
 				},
 				"generation": {
-					"displayName": "поколение"
+					"displayName": "generation"
 				},
 				"imAddresses": {
-					"displayName": "imАдреса"
+					"displayName": "imAddresses"
 				},
 				"jobTitle": {
-					"displayName": "должность"
+					"displayName": "jobTitle"
 				},
 				"companyName": {
-					"displayName": "Название компании"
+					"displayName": "companyName"
 				},
 				"department": {
-					"displayName": "отделение"
+					"displayName": "department"
 				},
 				"officeLocation": {
-					"displayName": "офисМестоположение"
+					"displayName": "officeLocation"
 				},
 				"profession": {
-					"displayName": "профессия"
+					"displayName": "profession"
 				},
 				"businessHomePage": {
-					"displayName": "бизнесГлавнаяСтраница"
+					"displayName": "businessHomePage"
 				},
 				"assistantName": {
-					"displayName": "имя помощника"
+					"displayName": "assistantName"
 				},
 				"manager": {
-					"displayName": "менеджер"
+					"displayName": "manager"
 				},
 				"homePhones": {
-					"displayName": "ГлавнаяТелефоны"
+					"displayName": "homePhones"
 				},
 				"mobilePhone": {
-					"displayName": "мобильный телефон"
+					"displayName": "mobilePhone"
 				},
 				"businessPhones": {
-					"displayName": "БизнесТелефоны"
+					"displayName": "businessPhones"
 				},
 				"spouseName": {
-					"displayName": "имя супруга"
+					"displayName": "spouseName"
 				},
 				"personalNotes": {
-					"displayName": "личные заметки"
+					"displayName": "personalNotes"
 				},
 				"children": {
-					"displayName": "дети"
+					"displayName": "children"
 				},
 				"emailAddresses": {
-					"displayName": "электронная почтаАдреса"
+					"displayName": "emailAddresses"
 				},
 				"homeAddress": {
-					"displayName": "ГлавнаяАдрес"
+					"displayName": "homeAddress"
 				},
 				"businessAddress": {
-					"displayName": "БизнесАдрес"
+					"displayName": "businessAddress"
 				},
 				"otherAddress": {
-					"displayName": "другойАдрес"
+					"displayName": "otherAddress"
 				},
 				"bccRecipients": {
 					"displayName": "bccRecipients"
 				},
 				"body": {
-					"displayName": "тело"
+					"displayName": "body"
 				},
 				"bodyPreview": {
-					"displayName": "телоПредварительный просмотр"
+					"displayName": "bodyPreview"
 				},
 				"ccRecipients": {
 					"displayName": "ccRecipients"
 				},
 				"conversationId": {
-					"displayName": "идентификатор разговора"
+					"displayName": "conversationId"
 				},
 				"flag": {
-					"displayName": "флаг"
+					"displayName": "flag"
 				},
 				"from": {
-					"displayName": "от"
+					"displayName": "from"
 				},
 				"hasAttachments": {
-					"displayName": "имеет вложения"
+					"displayName": "hasAttachments"
 				},
 				"importance": {
-					"displayName": "важность"
+					"displayName": "importance"
 				},
 				"inferenceClassification": {
-					"displayName": "выводКлассификация"
+					"displayName": "inferenceClassification"
 				},
 				"internetMessageId": {
-					"displayName": "InternetMessageId"
+					"displayName": "internetMessageId"
 				},
 				"isDeliveryReceiptRequested": {
 					"displayName": "isDeliveryReceiptRequested"
@@ -2765,37 +2765,37 @@
 					"displayName": "isReadReceiptRequested"
 				},
 				"receivedDateTime": {
-					"displayName": "полученоДатаВремя"
+					"displayName": "receivedDateTime"
 				},
 				"replyTo": {
-					"displayName": "ОтветитьКому"
+					"displayName": "replyTo"
 				},
 				"sender": {
-					"displayName": "отправитель"
+					"displayName": "sender"
 				},
 				"sentDateTime": {
-					"displayName": "отправленоДатаВремя"
+					"displayName": "sentDateTime"
 				},
 				"subject": {
-					"displayName": "предмет"
+					"displayName": "subject"
 				},
 				"toRecipients": {
-					"displayName": "получателям"
+					"displayName": "toRecipients"
 				},
 				"webLink": {
-					"displayName": "вебссылка"
+					"displayName": "webLink"
 				},
 				"allowNewTimeProposals": {
-					"displayName": "РазрешитьNewTimeProposals"
+					"displayName": "allowNewTimeProposals"
 				},
 				"attendees": {
-					"displayName": "участники"
+					"displayName": "attendees"
 				},
 				"end": {
-					"displayName": "конец"
+					"displayName": "end"
 				},
 				"hideAttendees": {
-					"displayName": "скрытьПосетители"
+					"displayName": "hideAttendees"
 				},
 				"iCalUId": {
 					"displayName": "iCalUId"
@@ -2816,58 +2816,58 @@
 					"displayName": "isReminderOn"
 				},
 				"location": {
-					"displayName": "расположение"
+					"displayName": "location"
 				},
 				"locations": {
-					"displayName": "локации"
+					"displayName": "locations"
 				},
 				"onlineMeeting": {
-					"displayName": "онлайнВстреча"
+					"displayName": "onlineMeeting"
 				},
 				"onlineMeetingProvider": {
 					"displayName": "onlineMeetingProvider"
 				},
 				"onlineMeetingUrl": {
-					"displayName": "OnlineMeetingUrl"
+					"displayName": "onlineMeetingUrl"
 				},
 				"organizer": {
-					"displayName": "организатор"
+					"displayName": "organizer"
 				},
 				"originalEndTimeZone": {
-					"displayName": "исходныйEndTimeZone"
+					"displayName": "originalEndTimeZone"
 				},
 				"originalStartTimeZone": {
-					"displayName": "исходныйStartTimeZone"
+					"displayName": "originalStartTimeZone"
 				},
 				"recurrence": {
-					"displayName": "рецидив"
+					"displayName": "recurrence"
 				},
 				"reminderMinutesBeforeStart": {
-					"displayName": "напоминаниеМинуты перед началом"
+					"displayName": "reminderMinutesBeforeStart"
 				},
 				"responseRequested": {
-					"displayName": "ответзапрошен"
+					"displayName": "responseRequested"
 				},
 				"responseStatus": {
-					"displayName": "Статус ответа"
+					"displayName": "responseStatus"
 				},
 				"sensitivity": {
-					"displayName": "чувствительность"
+					"displayName": "sensitivity"
 				},
 				"seriesMasterId": {
 					"displayName": "seriesMasterId"
 				},
 				"showAs": {
-					"displayName": "показатьКак"
+					"displayName": "showAs"
 				},
 				"start": {
-					"displayName": "начинать"
+					"displayName": "start"
 				},
 				"transactionId": {
-					"displayName": "идентификатор транзакции"
+					"displayName": "transactionId"
 				},
 				"type": {
-					"displayName": "тип"
+					"displayName": "type"
 				}
 			}
 		},
@@ -2889,19 +2889,19 @@
 			"options": {
 				"attachmentsPrefix": {
 					"displayName": "Префикс вложений",
-					"description": "Префикс имени выходных полей для помещения данных в двоичные файлы. Будет добавлен индекс, начинающийся с 0. Таким образом, если имя «attachment_», первое вложение сохраняется в «attachment_0»."
+					"description": "Префикс имени выходных полей для размещения данных двоичных файлов. Будет добавлен индекс, начиная с 0. Так что если имя «attachment_», первое вложение сохраняется в «attachment_0»."
 				},
 				"downloadAttachments": {
 					"displayName": "Загрузить вложения",
-					"description": "Будут ли вложения к сообщению загружены и включены в выходные данные."
+					"description": "Будут ли загружены и включены в выходные данные вложения сообщения"
 				},
 				"folderId": {
 					"displayName": "Родительская папка",
-					"description": "Папка, в которой вы хотите выполнить поиск"
+					"description": "Папка, в которой выполнить поиск"
 				},
 				"fields": {
 					"displayName": "Поля",
-					"description": "Поля, которые нужно добавить в выходные данные",
+					"description": "Поля для добавления в выход",
 					"options": {
 						"childFolderCount": {
 							"displayName": "Количество дочерних папок"
@@ -2910,31 +2910,31 @@
 							"displayName": "Отображаемое имя"
 						},
 						"isHidden": {
-							"displayName": "Скрыт"
+							"displayName": "Скрыто"
 						},
 						"parentFolderId": {
 							"displayName": "Идентификатор родительской папки"
 						},
 						"totalItemCount": {
-							"displayName": "Общее количество предметов"
+							"displayName": "Общее количество элементов"
 						},
 						"unreadItemCount": {
 							"displayName": "Количество непрочитанных элементов"
 						},
 						"contentType": {
-							"displayName": "тип контента"
+							"displayName": "contentType"
 						},
 						"isInline": {
 							"displayName": "isInline"
 						},
 						"lastModifiedDateTime": {
-							"displayName": "последниймодифицированныйдатевремя"
+							"displayName": "lastModifiedDateTime"
 						},
 						"name": {
-							"displayName": "имя"
+							"displayName": "name"
 						},
 						"size": {
-							"displayName": "размер"
+							"displayName": "size"
 						}
 					}
 				},
@@ -2945,23 +2945,23 @@
 				"getMimeContent": {
 					"values": {
 						"getMimeContent": {
-							"displayName": "Получить MIME-контент"
+							"displayName": "Получить MIME-содержимое"
 						},
 						"values": {
 							"options": {
 								"binaryPropertyName": {
 									"displayName": "Поместите вывод в поле",
-									"hint": "Имя выходного поля для помещения данных двоичного файла."
+									"hint": "имя выходного поля для помещения данных двоичного файла"
 								},
 								"outputFileName": {
 									"displayName": "Имя файла",
-									"description": "Необязательное имя выходного файла, если не установлен, используется идентификатор сообщения.",
-									"placeholder": "сообщение"
+									"description": "Необязательное имя выходного файла. Если не установлено, используется идентификатор сообщения.",
+									"placeholder": "message"
 								}
 							}
 						}
 					},
-					"displayName": "Получить MIME-контент",
+					"displayName": "Получить MIME-содержимое",
 					"options": {
 						"values": {
 							"displayName": "Ценности"
@@ -2970,7 +2970,7 @@
 				},
 				"saveAsDraft": {
 					"displayName": "Сохранить как черновик",
-					"description": "Сохранять ли сообщение как черновик. Если false, сообщение отправляется немедленно."
+					"description": "Сохранять ли сообщение как черновик. Если false, сообщение отправляется сразу."
 				},
 				"limitWaitTime": {
 					"values": {
@@ -2982,21 +2982,21 @@
 							"options": {
 								"limitType": {
 									"displayName": "Тип лимита",
-									"description": "Устанавливает условие возобновления выполнения. Может быть указанная дата или через некоторое время.",
+									"description": "Устанавливает условие для возобновления выполнения. Может быть указанной датой или через определённый промежуток времени.",
 									"options": {
 										"afterTimeInterval": {
-											"displayName": "После временного интервала",
-											"description": "Ждет определенное время"
+											"displayName": "После интервала времени",
+											"description": "Ожидает указанное время"
 										},
 										"atSpecifiedTime": {
 											"displayName": "В указанное время",
-											"description": "Ожидает установленной даты и времени, чтобы продолжить"
+											"description": "Ожидает установленную дату и время для продолжения"
 										}
 									}
 								},
 								"resumeAmount": {
 									"displayName": "Количество",
-									"description": "Время ждать"
+									"description": "Время ожидания"
 								},
 								"resumeUnit": {
 									"displayName": "Единица",
@@ -3014,8 +3014,8 @@
 									}
 								},
 								"maxDateAndTime": {
-									"displayName": "Максимальная дата и время",
-									"description": "Продолжить выполнение после указанной даты и времени"
+									"displayName": "Макс. дата и время",
+									"description": "Возобновить выполнение после указанной даты и времени"
 								}
 							}
 						}
@@ -3029,19 +3029,19 @@
 					}
 				},
 				"appendAttribution": {
-					"displayName": "Добавить авторство n8n",
-					"description": "Включить ли в конец сообщения фразу «Это сообщение было отправлено автоматически с помощью n8n»"
+					"displayName": "Добавить атрибуцию n8n",
+					"description": "Добавлять ли в конец сообщения фразу «Это сообщение было отправлено автоматически с помощью n8n»"
 				},
 				"messageButtonLabel": {
 					"displayName": "Метка кнопки сообщения"
 				},
 				"responseFormTitle": {
 					"displayName": "Название формы ответа",
-					"description": "Название формы, к которой пользователь может получить доступ для ответа"
+					"description": "Название формы, через которую пользователь может предоставить свой ответ"
 				},
 				"responseFormDescription": {
-					"displayName": "Форма ответа Описание",
-					"description": "Описание формы, к которой пользователь может получить доступ для ответа."
+					"displayName": "Описание формы ответа",
+					"description": "Описание формы, через которую пользователь может предоставить свой ответ"
 				},
 				"responseFormButtonLabel": {
 					"displayName": "Метка кнопки формы ответа"
@@ -3057,16 +3057,16 @@
 			}
 		},
 		"to": {
-			"displayName": "К",
-			"description": "Список адресов электронной почты получателей, разделенный запятыми."
+			"displayName": "До",
+			"description": "Список адресов электронной почты получателей, разделённый запятыми"
 		},
 		"startDateTime": {
 			"displayName": "Дата начала",
-			"description": "Начало диапазона дат, для которого нужно получить экземпляры событий."
+			"description": "Начало диапазона дат для получения экземпляров событий"
 		},
 		"endDateTime": {
 			"displayName": "Дата окончания",
-			"description": "Конец диапазона дат, для которого нужно получить экземпляры событий."
+			"description": "Конец диапазона дат для получения экземпляров событий"
 		},
 		"eventId": {
 			"displayName": "Событие"
@@ -3076,18 +3076,18 @@
 		},
 		"includeRecurringInstances": {
 			"displayName": "Включить повторяющиеся экземпляры событий",
-			"description": "Следует ли развертывать повторяющиеся события в отдельные экземпляры в пределах указанного диапазона дат. Если этот параметр отключен, повторяющиеся события возвращаются как одно главное событие серии."
+			"description": "Следует ли разложить повторяющиеся события на отдельные экземпляры в пределах указанного диапазона дат. Если отключено, повторяющиеся события возвращаются как одно главное событие серии."
 		},
 		"displayName": {
 			"displayName": "Имя",
-			"description": "Имя папки",
+			"description": "Название папки",
 			"placeholder": "например Моя папка"
 		},
 		"folderId": {
 			"displayName": "Родительская папка"
 		},
 		"filtersNotice": {
-			"displayName": "Получение большого количества сообщений может занять много времени. Рассмотрите возможность использования фильтров для ускорения процесса."
+			"displayName": "Получение большого количества писем может занять много времени. Используйте фильтры для ускорения."
 		},
 		"filtersUI": {
 			"options": {
@@ -3098,7 +3098,7 @@
 					"displayName": "Ценности",
 					"values": {
 						"filterBy": {
-							"displayName": "Фильтровать по",
+							"displayName": "Фильтр",
 							"options": {
 								"filters": {
 									"displayName": "Фильтры"
@@ -3110,7 +3110,7 @@
 						},
 						"search": {
 							"displayName": "Поиск",
-							"description": "Возвращайте только сообщения, содержащие поисковый запрос. Без определенных свойств сообщения поиск осуществляется по свойствам поиска по умолчанию: «От», «Тема» и «Тело». <a href=\"https://docs.microsoft.com/en-us/graph/query-parameters#search-parameter target=\"_blank\">Подробнее</a>.",
+							"description": "Возвращать только сообщения, содержащие поисковый запрос. Без указания конкретных свойств сообщения поиск проводится по свойствам по умолчанию: отправитель, тема и содержимое. <a href=\"https://docs.microsoft.com/en-us/graph/query-parameters#search-parameter target=\"_blank\">Подробнее</a>.",
 							"placeholder": "например автоматизация"
 						},
 						"filters": {
@@ -3119,16 +3119,16 @@
 									"displayName": "Фильтры"
 								},
 								"custom": {
-									"displayName": "Фильтровать запрос",
+									"displayName": "Запрос фильтра",
 									"hint": "Поисковый запрос для фильтрации сообщений. <a href=\"https://learn.microsoft.com/en-us/graph/filter-query-parameter\">Подробнее</a>.",
 									"placeholder": "например isRead eq false"
 								},
 								"hasAttachments": {
-									"displayName": "Имеет вложения"
+									"displayName": "Есть вложения"
 								},
 								"readStatus": {
-									"displayName": "Чтение статуса",
-									"hint": "Фильтровать сообщения по тому, были ли они прочитаны или нет.",
+									"displayName": "Статус прочтения",
+									"hint": "Фильтровать сообщения по статусу прочтения",
 									"options": {
 										"both": {
 											"displayName": "Непрочитанные и прочитанные сообщения"
@@ -3137,24 +3137,24 @@
 											"displayName": "Только непрочитанные сообщения"
 										},
 										"read": {
-											"displayName": "Только читать сообщения"
+											"displayName": "Только прочитанные сообщения"
 										}
 									}
 								},
 								"receivedAfter": {
 									"displayName": "Получено после",
-									"description": "Получить все сообщения, полученные после указанной даты. В выражении вы можете установить дату, используя строку в формате ISO или метку времени в миллисекундах."
+									"description": "Получить все сообщения, полученные после указанной даты. В выражении можно установить дату строкой в формате ISO или отметкой времени в миллисекундах."
 								},
 								"receivedBefore": {
 									"displayName": "Получено раньше",
-									"description": "Получить все сообщения, полученные до указанной даты. В выражении вы можете установить дату, используя строку в формате ISO или метку времени в миллисекундах."
+									"description": "Получить все сообщения, полученные до указанной даты. В выражении можно установить дату строкой в формате ISO или отметкой времени в миллисекундах."
 								},
 								"sender": {
 									"displayName": "Отправитель",
-									"description": "Имя отправителя или адрес электронной почты для фильтрации"
+									"description": "Имя или адрес отправителя для фильтрации"
 								},
 								"foldersToExclude": {
-									"displayName": "Папки, которые нужно исключить",
+									"displayName": "Папки для исключения",
 									"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
 								},
 								"foldersToInclude": {
@@ -3176,22 +3176,22 @@
 		},
 		"replyToSenderOnly": {
 			"displayName": "Ответить только отправителю",
-			"description": "Отвечать только отправителю или всему списку получателей?"
+			"description": "Отвечать только отправителю или всем получателям"
 		},
 		"message": {
 			"displayName": "Сообщение",
 			"description": "Содержимое тела сообщения"
 		},
 		"toRecipients": {
-			"displayName": "К",
-			"description": "Список адресов электронной почты получателей, разделенный запятыми."
+			"displayName": "До",
+			"description": "Список адресов электронной почты получателей, разделённый запятыми"
 		},
 		"responseType": {
 			"displayName": "Тип ответа",
 			"options": {
 				"approval": {
 					"displayName": "Одобрение",
-					"description": "Пользователь может одобрить/отклонить сообщение прямо в сообщении."
+					"description": "Пользователь может одобрить/отклонить прямо в сообщении"
 				},
 				"freeText": {
 					"displayName": "Свободный текст",
@@ -3199,7 +3199,7 @@
 				},
 				"customForm": {
 					"displayName": "Пользовательская форма",
-					"description": "Пользователь может отправить ответ через специальную форму"
+					"description": "Пользователь может отправить ответ через пользовательскую форму"
 				}
 			}
 		},
@@ -3216,7 +3216,7 @@
 		},
 		"jsonOutput": {
 			"displayName": "Поля формы",
-			"hint": "<a href=\"https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.form/\" target=\"_blank\">См. в документации </a> синтаксис полей."
+			"hint": "<a href=\"https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.form/\" target=\"_blank\">Посмотрите документацию</a> для синтаксиса полей"
 		},
 		"formFields": {
 			"options": {
@@ -3227,17 +3227,17 @@
 					"displayName": "Ценности",
 					"values": {
 						"fieldName": {
-							"displayName": "Имя настраиваемого поля",
-							"description": "Имя поля, используемое во входных атрибутах и ​​на которое ссылается рабочий процесс."
+							"displayName": "Имя пользовательского поля",
+							"description": "Имя поля, используемое во входных атрибутах и ссылаемое рабочим процессом"
 						},
 						"fieldLabel": {
 							"displayName": "Имя поля",
-							"description": "Метка, которая появляется над полем ввода",
+							"description": "Метка, отображаемая над полем ввода",
 							"placeholder": "например Как вас зовут?"
 						},
 						"fieldType": {
 							"displayName": "Тип элемента",
-							"description": "Тип поля, добавляемого в форму",
+							"description": "Тип поля для добавления в форму",
 							"options": {
 								"checkbox": {
 									"displayName": "Флажки"
@@ -3249,7 +3249,7 @@
 									"displayName": "Дата"
 								},
 								"dropdown": {
-									"displayName": "Падать"
+									"displayName": "Раскрывающийся список"
 								},
 								"email": {
 									"displayName": "Электронная почта"
@@ -3267,10 +3267,10 @@
 									"displayName": "Пароль"
 								},
 								"radio": {
-									"displayName": "Радиокнопки"
+									"displayName": "Переключатели"
 								},
 								"text": {
-									"displayName": "Ввод текста"
+									"displayName": "Текстовый ввод"
 								},
 								"textarea": {
 									"displayName": "Текстовая область"
@@ -3279,8 +3279,8 @@
 						},
 						"elementName": {
 							"displayName": "Имя элемента",
-							"description": "Необязательное поле. Его можно использовать для включения HTML в выходные данные.",
-							"placeholder": "например раздел контента"
+							"description": "Необязательное поле. Можно использовать для включения HTML в выходные данные.",
+							"placeholder": "например section-content"
 						},
 						"placeholder": {
 							"displayName": "Заполнитель",
@@ -3288,82 +3288,82 @@
 						},
 						"defaultValue": {
 							"displayName": "Значение по умолчанию",
-							"description": "Значения по умолчанию, которые будут выбраны заранее. Должно соответствовать одному или нескольким меткам опций. Разделите несколько предварительно выбранных опций запятой."
+							"description": "Значение(я) по умолчанию, которое(ые) будут выбраны заранее. Должно соответствовать одной или нескольким меткам опций. Разделите несколько предварительно выбранных опций запятой."
 						},
 						"fieldValue": {
 							"displayName": "Значение поля",
-							"description": "Входное значение можно установить здесь или оно будет передано в качестве параметра запроса через имя поля, если значение не установлено."
+							"description": "Входное значение можно установить здесь или оно будет передано как параметр запроса через имя поля, если значение не установлено"
 						},
 						"fieldOptions": {
 							"options": {
 								"fieldOptions": {
-									"displayName": "Радиокнопки",
+									"displayName": "Переключатели",
 									"description": "Список опций, которые можно выбрать из раскрывающегося списка"
 								},
 								"values": {
 									"displayName": "Ценности",
 									"values": {
 										"option": {
-											"displayName": "Метка радиокнопки"
+											"displayName": "Метка переключателя"
 										}
 									}
 								}
 							},
 							"placeholder": "Добавить переключатель",
-							"displayName": "Радиокнопки",
+							"displayName": "Переключатели",
 							"description": "Список опций, которые можно выбрать из раскрывающегося списка"
 						},
 						"multiselectLegacyNotice": {
-							"displayName": "Множественный выбор является устаревшим вариантом, вместо этого используйте тип поля «Флажки» или «Переключатели»."
+							"displayName": "Множественный выбор является устаревшей опцией, используйте вместо этого типы полей «Флажки» или «Переключатели»"
 						},
 						"multiselect": {
 							"displayName": "Множественный выбор",
-							"description": "Разрешить ли пользователю выбирать несколько вариантов из раскрывающегося списка"
+							"description": "Разрешать ли пользователю выбирать несколько опций из раскрывающегося списка"
 						},
 						"limitSelection": {
 							"displayName": "Ограничить выбор",
 							"options": {
 								"exact": {
-									"displayName": "Точный номер"
+									"displayName": "Точное число"
 								},
 								"range": {
 									"displayName": "Диапазон"
 								},
 								"unlimited": {
-									"displayName": "Безлимитный"
+									"displayName": "Неограниченно"
 								}
 							}
 						},
 						"numberOfSelections": {
-							"displayName": "Количество вариантов выбора"
+							"displayName": "Количество выборов"
 						},
 						"minSelections": {
-							"displayName": "Минимальный выбор"
+							"displayName": "Минимальное количество выборов"
 						},
 						"maxSelections": {
-							"displayName": "Максимальный выбор"
+							"displayName": "Максимальное количество выборов"
 						},
 						"html": {
 							"displayName": "HTML",
 							"description": "HTML-элементы для отображения на странице формы",
-							"hint": "Не принимает теги <code><script></code>, <code><style></code> или <code><input></code>."
+							"hint": "Не принимает теги <code>&lt;script&gt;</code>, <code>&lt;style&gt;</code> или <code>&lt;input&gt;</code>"
 						},
 						"multipleFiles": {
 							"displayName": "Несколько файлов",
-							"description": "Разрешить ли пользователю выбирать несколько файлов из входного файла или только один"
+							"description": "Разрешать ли пользователю выбирать несколько файлов или только один"
 						},
 						"acceptFileTypes": {
 							"displayName": "Допустимые типы файлов",
-							"description": "Список разрешенных расширений файлов, разделенный запятыми",
-							"hint": "Оставьте пустым, чтобы разрешить все типы файлов.",
+							"description": "Список разрешённых расширений файлов, разделённый запятыми",
+							"hint": "Оставьте пустым, чтобы разрешить все типы файлов",
 							"placeholder": "например .jpg, .png"
 						},
 						"formatDate": {
-							"displayName": "Отображаемая дата форматируется на основе языкового стандарта браузера пользователя."
+							"displayName": "Отображаемая дата форматируется в соответствии с языком браузера пользователя"
 						},
 						"requiredField": {
 							"displayName": "Обязательное поле",
-							"description": "Требовать ли от пользователя ввода значения в это поле перед отправкой формы"
+							"description": "Требовать ли от пользователя введения значения в это поле перед отправкой формы"
 						}
 					}
 				}
@@ -3375,7 +3375,7 @@
 		"approvalOptions": {
 			"options": {
 				"approvalOptions": {
-					"displayName": "Варианты утверждения"
+					"displayName": "Параметры одобрения"
 				},
 				"values": {
 					"displayName": "Ценности",
@@ -3385,38 +3385,38 @@
 							"placeholder": "Добавить вариант",
 							"options": {
 								"single": {
-									"displayName": "Только утвердить"
+									"displayName": "Только одобрить"
 								},
 								"double": {
-									"displayName": "Одобрить и не одобрить"
+									"displayName": "Одобрить и отклонить"
 								}
 							}
 						},
 						"approveLabel": {
-							"displayName": "Метка кнопки «Утвердить»"
+							"displayName": "Метка кнопки «Одобрить»"
 						},
 						"buttonApprovalStyle": {
-							"displayName": "Утвердить стиль кнопки",
+							"displayName": "Стиль кнопки «Одобрить»",
 							"options": {
 								"primary": {
-									"displayName": "Начальный"
+									"displayName": "Основной"
 								},
 								"secondary": {
-									"displayName": "вторичный"
+									"displayName": "Вторичный"
 								}
 							}
 						},
 						"disapproveLabel": {
-							"displayName": "Ярлык кнопки «Отклонить»"
+							"displayName": "Метка кнопки «Отклонить»"
 						},
 						"buttonDisapprovalStyle": {
 							"displayName": "Стиль кнопки «Отклонить»",
 							"options": {
 								"primary": {
-									"displayName": "Начальный"
+									"displayName": "Основной"
 								},
 								"secondary": {
-									"displayName": "вторичный"
+									"displayName": "Вторичный"
 								}
 							}
 						}
@@ -3424,12 +3424,12 @@
 				}
 			},
 			"placeholder": "Добавить вариант",
-			"displayName": "Варианты утверждения"
+			"displayName": "Параметры одобрения"
 		},
 		"binaryPropertyName": {
 			"displayName": "Поместите вывод в поле",
-			"hint": "Имя выходного поля для помещения данных двоичного файла.",
-			"placeholder": "например данные"
+			"hint": "имя выходного поля для помещения данных двоичного файла",
+			"placeholder": "например data"
 		},
 		"attachmentId": {
 			"displayName": "Вложение"

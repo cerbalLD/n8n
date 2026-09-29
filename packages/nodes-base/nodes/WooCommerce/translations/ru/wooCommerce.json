@@ -11,7 +11,7 @@
 					"displayName": "Клиент"
 				},
 				"order": {
-					"displayName": "Заказ"
+					"displayName": "Порядок"
 				},
 				"product": {
 					"displayName": "Продукт"
@@ -22,7 +22,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать заказ"
 				},
 				"delete": {
@@ -38,7 +38,7 @@
 					"description": "Получайте много заказов"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить заказ"
 				}
 			}
@@ -54,7 +54,7 @@
 				"billing": {
 					"values": {
 						"billing": {
-							"displayName": "Адрес для выставления счета"
+							"displayName": "Адрес для выставления счёта"
 						},
 						"first_name": {
 							"displayName": "Имя"
@@ -72,10 +72,10 @@
 							"displayName": "Адрес 2"
 						},
 						"city": {
-							"displayName": "Город"
+							"displayName": "город"
 						},
 						"state": {
-							"displayName": "Состояние"
+							"displayName": "область"
 						},
 						"postcode": {
 							"displayName": "Почтовый индекс"
@@ -92,7 +92,7 @@
 						}
 					},
 					"placeholder": "Добавить поле",
-					"displayName": "Адрес для выставления счета"
+					"displayName": "Адрес для выставления счёта"
 				},
 				"first_name": {
 					"displayName": "Имя"
@@ -111,7 +111,7 @@
 									"displayName": "Ключ"
 								},
 								"value": {
-									"displayName": "Ценить"
+									"displayName": "Значение"
 								}
 							}
 						}
@@ -148,10 +148,10 @@
 							"displayName": "Адрес 2"
 						},
 						"city": {
-							"displayName": "Город"
+							"displayName": "город"
 						},
 						"state": {
-							"displayName": "Состояние"
+							"displayName": "область"
 						},
 						"postcode": {
 							"displayName": "Почтовый индекс"
@@ -238,7 +238,7 @@
 					"description": "Внешний URL-адрес продукта. Только для внешних продуктов."
 				},
 				"featured": {
-					"displayName": "Рекомендуемые",
+					"displayName": "Рекомендуемо",
 					"description": "Представлен ли продукт"
 				},
 				"manageStock": {
@@ -250,7 +250,7 @@
 					"description": "Порядок меню, используемый для индивидуальной сортировки продуктов."
 				},
 				"parentId": {
-					"displayName": "Идентификатор родителя",
+					"displayName": "ID родительской папки",
 					"description": "Идентификатор родительского заказа"
 				},
 				"purchaseNote": {
@@ -282,7 +282,7 @@
 					"description": "Уникальный идентификатор"
 				},
 				"slug": {
-					"displayName": "Слизень",
+					"displayName": "URL-слаг",
 					"description": "Ссылка на продукт"
 				},
 				"soldIndividually": {
@@ -303,16 +303,16 @@
 							"displayName": "Частный"
 						},
 						"publish": {
-							"displayName": "Публиковать"
+							"displayName": "Публикация"
 						},
 						"cancelled": {
 							"displayName": "Отменено"
 						},
 						"completed": {
-							"displayName": "Завершенный"
+							"displayName": "Завершено"
 						},
 						"failed": {
-							"displayName": "Неуспешный"
+							"displayName": "Не выполнено"
 						},
 						"on-hold": {
 							"displayName": "на удерживании"
@@ -321,7 +321,7 @@
 							"displayName": "Обработка"
 						},
 						"refunded": {
-							"displayName": "Возвращено"
+							"displayName": "Возмещено"
 						},
 						"trash": {
 							"displayName": "Мусор"
@@ -347,7 +347,7 @@
 					}
 				},
 				"tags": {
-					"displayName": "Имена или идентификаторы тегов",
+					"displayName": "Имена или ID тегов",
 					"description": "Список тегов. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"taxClass": {
@@ -357,10 +357,10 @@
 					"displayName": "Налоговый статус",
 					"options": {
 						"taxable": {
-							"displayName": "облагаемый налогом"
+							"displayName": "Облагаемый налогом"
 						},
 						"shipping": {
-							"displayName": "Перевозки"
+							"displayName": "Доставка"
 						},
 						"none": {
 							"displayName": "Никто"
@@ -398,11 +398,11 @@
 					"description": "Вес продукта"
 				},
 				"currency": {
-					"displayName": "Валюта",
+					"displayName": "валюта",
 					"description": "Валюта, в которой был создан заказ"
 				},
 				"customerId": {
-					"displayName": "Идентификатор клиента",
+					"displayName": "ID клиента",
 					"description": "Идентификатор пользователя, которому принадлежит заказ. 0 для гостей."
 				},
 				"customerNote": {
@@ -426,7 +426,7 @@
 			}
 		},
 		"customerId": {
-			"displayName": "Идентификатор клиента",
+			"displayName": "ID клиента",
 			"description": "Идентификатор клиента для обновления"
 		},
 		"returnAll": {
@@ -435,7 +435,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"filters": {
 			"displayName": "Фильтры",
@@ -451,7 +451,7 @@
 					"description": "Заказ на сортировку клиентов",
 					"options": {
 						"asc": {
-							"displayName": "восходящий"
+							"displayName": "По возрастанию"
 						},
 						"desc": {
 							"displayName": "По убыванию"
@@ -459,14 +459,14 @@
 					}
 				},
 				"orderby": {
-					"displayName": "Заказать по",
+					"displayName": "Сортировать по",
 					"description": "Поле для сортировки клиентов по",
 					"options": {
 						"id": {
 							"displayName": "ID"
 						},
 						"include": {
-							"displayName": "Включать"
+							"displayName": "Включить"
 						},
 						"name": {
 							"displayName": "Имя"
@@ -485,7 +485,7 @@
 				"billing": {
 					"values": {
 						"billing": {
-							"displayName": "Адрес для выставления счета"
+							"displayName": "Адрес для выставления счёта"
 						},
 						"first_name": {
 							"displayName": "Имя"
@@ -503,10 +503,10 @@
 							"displayName": "Адрес 2"
 						},
 						"city": {
-							"displayName": "Город"
+							"displayName": "город"
 						},
 						"state": {
-							"displayName": "Состояние"
+							"displayName": "область"
 						},
 						"postcode": {
 							"displayName": "Почтовый индекс"
@@ -523,7 +523,7 @@
 						}
 					},
 					"placeholder": "Добавить поле",
-					"displayName": "Адрес для выставления счета"
+					"displayName": "Адрес для выставления счёта"
 				},
 				"first_name": {
 					"displayName": "Имя"
@@ -542,7 +542,7 @@
 									"displayName": "Ключ"
 								},
 								"value": {
-									"displayName": "Ценить"
+									"displayName": "Значение"
 								}
 							}
 						}
@@ -579,10 +579,10 @@
 							"displayName": "Адрес 2"
 						},
 						"city": {
-							"displayName": "Город"
+							"displayName": "город"
 						},
 						"state": {
-							"displayName": "Состояние"
+							"displayName": "область"
 						},
 						"postcode": {
 							"displayName": "Почтовый индекс"
@@ -666,7 +666,7 @@
 					"description": "Внешний URL-адрес продукта. Только для внешних продуктов."
 				},
 				"featured": {
-					"displayName": "Рекомендуемые",
+					"displayName": "Рекомендуемо",
 					"description": "Представлен ли продукт"
 				},
 				"manageStock": {
@@ -682,7 +682,7 @@
 					"description": "Название продукта"
 				},
 				"parentId": {
-					"displayName": "Идентификатор родителя",
+					"displayName": "ID родительской папки",
 					"description": "Идентификатор родительского заказа"
 				},
 				"purchaseNote": {
@@ -714,7 +714,7 @@
 					"description": "Уникальный идентификатор"
 				},
 				"slug": {
-					"displayName": "Слизень",
+					"displayName": "URL-слаг",
 					"description": "Ссылка на продукт"
 				},
 				"soldIndividually": {
@@ -735,16 +735,16 @@
 							"displayName": "Частный"
 						},
 						"publish": {
-							"displayName": "Публиковать"
+							"displayName": "Публикация"
 						},
 						"cancelled": {
 							"displayName": "Отменено"
 						},
 						"completed": {
-							"displayName": "Завершенный"
+							"displayName": "Завершено"
 						},
 						"failed": {
-							"displayName": "Неуспешный"
+							"displayName": "Не выполнено"
 						},
 						"on-hold": {
 							"displayName": "на удерживании"
@@ -753,7 +753,7 @@
 							"displayName": "Обработка"
 						},
 						"refunded": {
-							"displayName": "Возвращено"
+							"displayName": "Возмещено"
 						},
 						"trash": {
 							"displayName": "Мусор"
@@ -779,7 +779,7 @@
 					}
 				},
 				"tags": {
-					"displayName": "Имена или идентификаторы тегов",
+					"displayName": "Имена или ID тегов",
 					"description": "Список тегов. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"taxClass": {
@@ -789,10 +789,10 @@
 					"displayName": "Налоговый статус",
 					"options": {
 						"taxable": {
-							"displayName": "облагаемый налогом"
+							"displayName": "Облагаемый налогом"
 						},
 						"shipping": {
-							"displayName": "Перевозки"
+							"displayName": "Доставка"
 						},
 						"none": {
 							"displayName": "Никто"
@@ -830,11 +830,11 @@
 					"description": "Вес продукта"
 				},
 				"currency": {
-					"displayName": "Валюта",
+					"displayName": "валюта",
 					"description": "Валюта, в которой был создан заказ"
 				},
 				"customerId": {
-					"displayName": "Идентификатор клиента",
+					"displayName": "ID клиента",
 					"description": "Идентификатор пользователя, которому принадлежит заказ. 0 для гостей."
 				},
 				"customerNote": {
@@ -860,7 +860,7 @@
 		"dimensionsUi": {
 			"options": {
 				"dimensionsUi": {
-					"displayName": "Размеры",
+					"displayName": "Измерения",
 					"description": "Размеры продукта"
 				},
 				"dimensionsValues": {
@@ -882,7 +882,7 @@
 				}
 			},
 			"placeholder": "Добавить измерение",
-			"displayName": "Размеры",
+			"displayName": "Измерения",
 			"description": "Размеры продукта"
 		},
 		"imagesUi": {
@@ -895,7 +895,7 @@
 					"displayName": "Изображение",
 					"values": {
 						"alt": {
-							"displayName": "Альтернативный вариант",
+							"displayName": "Альт",
 							"description": "Альтернативный текст изображения"
 						},
 						"src": {
@@ -927,8 +927,8 @@
 							"description": "Имя добавляемого ключа метаданных"
 						},
 						"value": {
-							"displayName": "Ценить",
-							"description": "Значение, которое нужно установить для ключа метаданных"
+							"displayName": "Значение",
+							"description": "Значение для ключа метаданных"
 						}
 					}
 				}
@@ -938,7 +938,7 @@
 			"description": "Метаданные"
 		},
 		"productId": {
-			"displayName": "Идентификатор продукта"
+			"displayName": "ID товара"
 		},
 		"options": {
 			"displayName": "Параметры",
@@ -953,7 +953,7 @@
 					"description": "Ограничить ответ на ресурсы, опубликованные до указанной даты, соответствующей стандарту ISO8601."
 				},
 				"category": {
-					"displayName": "Название или идентификатор категории",
+					"displayName": "имя или идентификатор категории",
 					"description": "Ограничьте набор результатов продуктами, которым присвоен определенный идентификатор категории. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"context": {
@@ -961,7 +961,7 @@
 					"description": "Область действия запроса; определяет поля, присутствующие в ответе",
 					"options": {
 						"view": {
-							"displayName": "Вид"
+							"displayName": "Просмотр"
 						},
 						"embed": {
 							"displayName": "Встроить"
@@ -972,7 +972,7 @@
 					}
 				},
 				"featured": {
-					"displayName": "Рекомендуемые",
+					"displayName": "Рекомендуемо",
 					"description": "Ограничить ли набор результатов рекомендуемыми продуктами"
 				},
 				"maxPrice": {
@@ -984,7 +984,7 @@
 					"description": "Ограничить набор результатов продуктами на основе минимальной цены."
 				},
 				"order": {
-					"displayName": "Заказ",
+					"displayName": "Порядок",
 					"description": "Атрибут сортировки порядка по возрастанию или убыванию",
 					"options": {
 						"asc": {
@@ -996,7 +996,7 @@
 					}
 				},
 				"orderBy": {
-					"displayName": "Заказать по",
+					"displayName": "Сортировать по",
 					"description": "Сортировка коллекции по атрибуту объекта",
 					"options": {
 						"date": {
@@ -1006,13 +1006,13 @@
 							"displayName": "ID"
 						},
 						"include": {
-							"displayName": "Включать"
+							"displayName": "Включить"
 						},
 						"slug": {
-							"displayName": "Слизень"
+							"displayName": "URL-слаг"
 						},
 						"title": {
-							"displayName": "Заголовок"
+							"displayName": "Название"
 						}
 					}
 				},
@@ -1025,7 +1025,7 @@
 					"description": "Ограничить набор результатов продуктами с определенным SKU"
 				},
 				"slug": {
-					"displayName": "Слизень",
+					"displayName": "URL-слаг",
 					"description": "Ограничить набор результатов продуктами с определенным ярлыком"
 				},
 				"status": {
@@ -1045,16 +1045,16 @@
 							"displayName": "Частный"
 						},
 						"publish": {
-							"displayName": "Публиковать"
+							"displayName": "Публикация"
 						},
 						"cancelled": {
 							"displayName": "Отменено"
 						},
 						"completed": {
-							"displayName": "Завершенный"
+							"displayName": "Завершено"
 						},
 						"failed": {
-							"displayName": "Неуспешный"
+							"displayName": "Не выполнено"
 						},
 						"on-hold": {
 							"displayName": "На удерживании"
@@ -1063,7 +1063,7 @@
 							"displayName": "Обработка"
 						},
 						"refunded": {
-							"displayName": "Возвращено"
+							"displayName": "Возмещено"
 						},
 						"trash": {
 							"displayName": "Мусор"
@@ -1086,7 +1086,7 @@
 					}
 				},
 				"tag": {
-					"displayName": "Имя или идентификатор тега",
+					"displayName": "Название или ID тега",
 					"description": "Ограничьте набор результатов продуктами, которым присвоен определенный идентификатор тега. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"taxClass": {
@@ -1157,13 +1157,13 @@
 							"displayName": "Компания"
 						},
 						"address_1": {
-							"displayName": "Адресная строка 1"
+							"displayName": "Адрес, строка 1"
 						},
 						"address_2": {
-							"displayName": "Адресная строка 2"
+							"displayName": "Адрес, строка 2"
 						},
 						"city": {
-							"displayName": "Город",
+							"displayName": "город",
 							"description": "Код ISO или название штата, провинции или района"
 						},
 						"postcode": {
@@ -1216,8 +1216,8 @@
 											"description": "Имя добавляемого ключа метаданных"
 										},
 										"value": {
-											"displayName": "Ценить",
-											"description": "Значение, которое нужно установить для ключа метаданных"
+											"displayName": "Значение",
+											"description": "Значение для ключа метаданных"
 										}
 									}
 								}
@@ -1255,7 +1255,7 @@
 							"description": "Налоговый класс сбора",
 							"options": {
 								"taxable": {
-									"displayName": "облагаемый налогом"
+									"displayName": "Облагаемый налогом"
 								},
 								"none": {
 									"displayName": "Никто"
@@ -1280,8 +1280,8 @@
 											"description": "Имя добавляемого ключа метаданных"
 										},
 										"value": {
-											"displayName": "Ценить",
-											"description": "Значение, которое нужно установить для ключа метаданных"
+											"displayName": "Значение",
+											"description": "Значение для ключа метаданных"
 										}
 									}
 								}
@@ -1311,7 +1311,7 @@
 							"description": "Название продукта"
 						},
 						"productId": {
-							"displayName": "Идентификатор продукта"
+							"displayName": "ID товара"
 						},
 						"variationId": {
 							"displayName": "Идентификатор варианта",
@@ -1347,8 +1347,8 @@
 											"description": "Имя добавляемого ключа метаданных"
 										},
 										"value": {
-											"displayName": "Ценить",
-											"description": "Значение, которое нужно установить для ключа метаданных"
+											"displayName": "Значение",
+											"description": "Значение для ключа метаданных"
 										}
 									}
 								}
@@ -1367,7 +1367,7 @@
 		"shippingUi": {
 			"options": {
 				"shippingUi": {
-					"displayName": "Перевозки",
+					"displayName": "Доставка",
 					"description": "Адрес доставки"
 				},
 				"shippingValues": {
@@ -1383,13 +1383,13 @@
 							"displayName": "Компания"
 						},
 						"address_1": {
-							"displayName": "Адресная строка 1"
+							"displayName": "Адрес, строка 1"
 						},
 						"address_2": {
-							"displayName": "Адресная строка 2"
+							"displayName": "Адрес, строка 2"
 						},
 						"city": {
-							"displayName": "Город",
+							"displayName": "город",
 							"description": "Код ISO или название штата, провинции или района"
 						},
 						"postcode": {
@@ -1405,7 +1405,7 @@
 				}
 			},
 			"placeholder": "Добавить доставку",
-			"displayName": "Перевозки",
+			"displayName": "Доставка",
 			"description": "Адрес доставки"
 		},
 		"shippingLinesUi": {
@@ -1443,8 +1443,8 @@
 											"description": "Имя добавляемого ключа метаданных"
 										},
 										"value": {
-											"displayName": "Ценить",
-											"description": "Значение, которое нужно установить для ключа метаданных"
+											"displayName": "Значение",
+											"description": "Значение для ключа метаданных"
 										}
 									}
 								}
@@ -1461,7 +1461,7 @@
 			"description": "Данные линии доставки"
 		},
 		"orderId": {
-			"displayName": "Идентификатор заказа"
+			"displayName": "ID заказа"
 		}
 	}
 }

@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "AWS Тексттракт",
-		"description": "Отправляет данные в Amazon Textract."
+		"displayName": "AWS Textract",
+		"description": "Отправляет данные в Amazon Textract"
 	},
 	"nodeView": {
 		"authentication": {
@@ -19,17 +19,17 @@
 			"displayName": "Операция",
 			"options": {
 				"analyzeExpense": {
-					"displayName": "Анализ квитанции или счета-фактуры"
+					"displayName": "Анализ квитанции или счёта"
 				}
 			}
 		},
 		"binaryPropertyName": {
 			"displayName": "Имя поля входных данных",
-			"description": "Имя поля ввода, содержащего данные двоичного файла, которые необходимо загрузить. Поддерживаемые типы файлов: PNG, JPEG."
+			"description": "Имя входного поля с двоичными данными файла для загрузки. Поддерживаемые типы файлов: PNG, JPEG"
 		},
 		"simple": {
-			"displayName": "Упрощать",
-			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+			"displayName": "Упростить",
+			"description": "Возвращать ли упрощённую версию ответа вместо необработанных данных"
 		}
 	}
 }

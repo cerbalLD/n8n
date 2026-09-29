@@ -5,7 +5,7 @@
 	},
 	"nodeView": {
 		"triggerOn": {
-			"displayName": "Триггер включен",
+			"displayName": "Триггер для",
 			"options": {
 				"candidateCreated": {
 					"displayName": "Кандидат создан"
@@ -20,11 +20,11 @@
 			"placeholder": "Добавить фильтр",
 			"options": {
 				"job": {
-					"displayName": "Имя или идентификатор вакансии",
+					"displayName": "Имя или идентификатор задания",
 					"description": "Получайте уведомления только по одному заданию. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"stage": {
-					"displayName": "Сценическое имя или идентификатор",
+					"displayName": "Название этапа или идентификатор",
 					"description": "Получайте уведомления об определенных этапах. например 'наемный'. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				}
 			}

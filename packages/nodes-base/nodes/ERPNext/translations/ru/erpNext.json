@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "ERPСледующий",
-		"description": "Использование API ERPNext"
+		"displayName": "ERPNext",
+		"description": "Используйте API ERPNext"
 	},
 	"nodeView": {
 		"resource": {
@@ -16,7 +16,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать документ"
 				},
 				"delete": {
@@ -29,17 +29,17 @@
 				},
 				"getAll": {
 					"displayName": "Получить много",
-					"description": "Получить много документов"
+					"description": "Получить множество документов"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить документ"
 				}
 			}
 		},
 		"docType": {
-			"displayName": "Имя или идентификатор типа документа",
-			"description": "Тип документа, который вы хотите обновить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>.",
+			"displayName": "Название или ID типа документа",
+			"description": "Тип документа для обновления. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>.",
 			"placeholder": "Клиент"
 		},
 		"returnAll": {
@@ -48,7 +48,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"options": {
 			"displayName": "Параметры",
@@ -56,8 +56,8 @@
 			"options": {
 				"fields": {
 					"displayName": "Имена полей или идентификаторы",
-					"description": "Список полей для возврата, разделенный запятыми. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>.",
-					"placeholder": "имя, страна"
+					"description": "Список полей для возврата (через запятую). Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>.",
+					"placeholder": "name,country"
 				},
 				"filters": {
 					"values": {
@@ -68,8 +68,8 @@
 						"customProperty": {
 							"options": {
 								"field": {
-									"displayName": "Имя поля или идентификатор",
-									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+									"displayName": "Имя поля или ID",
+									"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 								},
 								"operator": {
 									"displayName": "Оператор",
@@ -90,12 +90,12 @@
 											"displayName": "МЕНЬШЕ"
 										},
 										"isNot": {
-											"displayName": "НЕТ"
+											"displayName": "НЕ РАВНО"
 										}
 									}
 								},
 								"value": {
-									"displayName": "Ценить",
+									"displayName": "Значение",
 									"description": "Значение условия оператора"
 								}
 							}
@@ -122,11 +122,11 @@
 					"displayName": "Свойство",
 					"values": {
 						"field": {
-							"displayName": "Имя поля или идентификатор",
-							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+							"displayName": "Имя поля или ID",
+							"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 						},
 						"value": {
-							"displayName": "Ценить"
+							"displayName": "Значение"
 						}
 					}
 				}
@@ -137,7 +137,7 @@
 		},
 		"documentName": {
 			"displayName": "Название документа",
-			"description": "Название (ID) документа, который вы хотите получить"
+			"description": "Название (ID) документа для получения"
 		}
 	}
 }

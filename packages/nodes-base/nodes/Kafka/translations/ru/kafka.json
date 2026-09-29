@@ -1,17 +1,17 @@
 {
 	"header": {
-		"displayName": "Кафка",
-		"description": "Отправляет сообщения в тему Kafka."
+		"displayName": "Kafka",
+		"description": "Отправляет сообщения в тему Kafka"
 	},
 	"nodeView": {
 		"topic": {
 			"displayName": "Тема",
-			"description": "Имя очереди темы для публикации",
-			"placeholder": "название темы"
+			"description": "Имя темы для публикации сообщений",
+			"placeholder": "topic-name"
 		},
 		"sendInputData": {
 			"displayName": "Отправить входные данные",
-			"description": "Отправлять ли данные, полученные узлом, в формате JSON в Kafka"
+			"description": "Отправлять ли полученные узлом данные в формате JSON в Kafka"
 		},
 		"message": {
 			"displayName": "Сообщение",
@@ -22,11 +22,11 @@
 		},
 		"useSchemaRegistry": {
 			"displayName": "Использовать реестр схемы",
-			"description": "Использовать ли реестр Confluent Schema"
+			"description": "Использовать ли Confluent Schema Registry"
 		},
 		"schemaRegistryUrl": {
-			"displayName": "URL-адрес реестра схемы",
-			"description": "URL-адрес реестра схемы. Используется только в том случае, если учетные данные реестра схемы не выбраны.",
+			"displayName": "URL реестра схемы",
+			"description": "URL реестра схемы. Используется только если учётные данные реестра схемы не выбраны.",
 			"placeholder": "https://schema-registry-domain:8081"
 		},
 		"useKey": {
@@ -39,7 +39,7 @@
 		},
 		"eventName": {
 			"displayName": "Название события",
-			"description": "Пространство имен и имя схемы в реестре схем (namespace.name)"
+			"description": "Пространство имён и имя схемы в реестре (namespace.name)"
 		},
 		"headersUi": {
 			"options": {
@@ -53,7 +53,7 @@
 							"displayName": "Ключ"
 						},
 						"value": {
-							"displayName": "Ценить"
+							"displayName": "Значение"
 						}
 					}
 				}
@@ -63,19 +63,19 @@
 		},
 		"headerParametersJson": {
 			"displayName": "Заголовки (JSON)",
-			"description": "Параметры заголовка в формате JSON (плоский объект)"
+			"description": "Параметры заголовка в JSON (плоский объект)"
 		},
 		"options": {
 			"displayName": "Параметры",
 			"placeholder": "Добавить вариант",
 			"options": {
 				"acks": {
-					"displayName": "Аккс",
-					"description": "Должен ли производитель ждать подтверждения от всех реплик?"
+					"displayName": "Acks",
+					"description": "Должен ли издатель ожидать подтверждения от всех реплик"
 				},
 				"compression": {
 					"displayName": "Сжатие",
-					"description": "Следует ли отправлять данные в сжатом формате с использованием кодека GZIP."
+					"description": "Отправлять ли данные в сжатом формате с использованием кодека GZIP"
 				},
 				"timeout": {
 					"displayName": "Тайм-аут",

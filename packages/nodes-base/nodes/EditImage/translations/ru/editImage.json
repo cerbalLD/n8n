@@ -1,7 +1,7 @@
 {
 	"header": {
 		"displayName": "Редактировать изображение",
-		"description": "Редактирует изображение, например размытие, изменение размера или добавление рамки и текста."
+		"description": "Редактирует изображение: размытие, изменение размера, добавление рамки и текста"
 	},
 	"nodeView": {
 		"operation": {
@@ -9,18 +9,18 @@
 			"options": {
 				"blur": {
 					"displayName": "Размытие",
-					"description": "Добавляет размытие изображению и делает его менее резким."
+					"description": "Размывает изображение, делая его менее резким"
 				},
 				"border": {
-					"displayName": "Граница",
+					"displayName": "Рамка",
 					"description": "Добавляет рамку к изображению"
 				},
 				"composite": {
-					"displayName": "Композитный",
-					"description": "Составное изображение поверх другого"
+					"displayName": "Наложение",
+					"description": "Наложить одно изображение на другое"
 				},
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать новое изображение"
 				},
 				"crop": {
@@ -33,61 +33,61 @@
 				},
 				"information": {
 					"displayName": "Получить информацию",
-					"description": "Возвращает информацию об изображении, например разрешение."
+					"description": "Возвращает информацию об изображении (разрешение и другие параметры)"
 				},
 				"multiStep": {
-					"displayName": "Многошаговый",
-					"description": "Выполнение нескольких операций"
+					"displayName": "Несколько шагов",
+					"description": "Выполнить несколько операций"
 				},
 				"resize": {
 					"displayName": "Изменить размер",
 					"description": "Изменить размер изображения"
 				},
 				"rotate": {
-					"displayName": "Поворот",
-					"description": "Поворот изображения"
+					"displayName": "Повернуть",
+					"description": "Повернуть изображение"
 				},
 				"shear": {
-					"displayName": "сдвиг",
-					"description": "Сдвиг изображения по оси X или Y"
+					"displayName": "Сдвиг",
+					"description": "Сдвинуть изображение по оси X или Y"
 				},
 				"text": {
 					"displayName": "Текст",
 					"description": "Добавляет текст к изображению"
 				},
 				"transparent": {
-					"displayName": "Прозрачный",
-					"description": "Сделать цвет изображения прозрачным"
+					"displayName": "Прозрачность",
+					"description": "Сделать цвет в изображении прозрачным"
 				}
 			}
 		},
 		"dataPropertyName": {
 			"displayName": "Имя свойства",
-			"description": "Имя двоичного свойства, в котором можно найти данные изображения."
+			"description": "Имя двоичного свойства, содержащего данные изображения"
 		},
 		"operations": {
 			"options": {
 				"operations": {
 					"displayName": "Операции",
-					"description": "Операции, которые необходимо выполнить",
+					"description": "Операции, которые нужно выполнить",
 					"values": {
 						"operation": {
 							"displayName": "Операция",
 							"options": {
 								"blur": {
 									"displayName": "Размытие",
-									"description": "Добавляет размытие изображению и делает его менее резким."
+									"description": "Размывает изображение, делая его менее резким"
 								},
 								"border": {
-									"displayName": "Граница",
+									"displayName": "Рамка",
 									"description": "Добавляет рамку к изображению"
 								},
 								"composite": {
-									"displayName": "Композитный",
-									"description": "Составное изображение поверх другого"
+									"displayName": "Наложение",
+									"description": "Наложить одно изображение на другое"
 								},
 								"create": {
-									"displayName": "Создавать",
+									"displayName": "Создать",
 									"description": "Создать новое изображение"
 								},
 								"crop": {
@@ -99,30 +99,30 @@
 									"description": "Рисовать на изображении"
 								},
 								"rotate": {
-									"displayName": "Поворот",
-									"description": "Поворот изображения"
+									"displayName": "Повернуть",
+									"description": "Повернуть изображение"
 								},
 								"resize": {
 									"displayName": "Изменить размер",
 									"description": "Изменить размер изображения"
 								},
 								"shear": {
-									"displayName": "сдвиг",
-									"description": "Сдвиг изображения по оси X или Y"
+									"displayName": "Сдвиг",
+									"description": "Сдвинуть изображение по оси X или Y"
 								},
 								"text": {
 									"displayName": "Текст",
 									"description": "Добавляет текст к изображению"
 								},
 								"transparent": {
-									"displayName": "Прозрачный",
-									"description": "Сделать цвет изображения прозрачным"
+									"displayName": "Прозрачность",
+									"description": "Сделать цвет в изображении прозрачным"
 								}
 							}
 						},
 						"backgroundColor": {
 							"displayName": "Цвет фона",
-							"description": "Цвет фона, когда изображение поворачивается на величину, не кратную 90."
+							"description": "Цвет фона при повороте изображения на угол, не кратный 90 градусам"
 						},
 						"width": {
 							"displayName": "Ширина",
@@ -133,11 +133,11 @@
 							"description": "Новая высота изображения"
 						},
 						"primitive": {
-							"displayName": "Примитивный",
+							"displayName": "Примитив",
 							"description": "Примитив для рисования",
 							"options": {
 								"circle": {
-									"displayName": "Круг"
+									"displayName": "Окружность"
 								},
 								"line": {
 									"displayName": "Линия"
@@ -153,28 +153,28 @@
 						},
 						"startPositionX": {
 							"displayName": "Начальная позиция X",
-							"description": "X (горизонтальное) начальное положение примитива"
+							"description": "Начальная позиция примитива по оси X (горизонтальная)"
 						},
 						"startPositionY": {
 							"displayName": "Начальная позиция Y",
-							"description": "Y (горизонтальное) начальное положение примитива"
+							"description": "Начальная позиция примитива по оси Y (вертикальная)"
 						},
 						"endPositionX": {
 							"displayName": "Конечная позиция X",
-							"description": "X (горизонтальное) конечное положение примитива"
+							"description": "Конечная позиция примитива по оси X (горизонтальная)"
 						},
 						"endPositionY": {
 							"displayName": "Конечная позиция Y",
-							"description": "Y (горизонтальное) конечное положение примитива"
+							"description": "Конечная позиция примитива по оси Y (вертикальная)"
 						},
 						"cornerRadius": {
-							"displayName": "Угловой радиус",
-							"description": "Радиус угла для создания круглых углов"
+							"displayName": "Радиус скругления",
+							"description": "Радиус угла для создания скруглённых углов"
 						},
 						"text": {
 							"displayName": "Текст",
-							"description": "Текст, который нужно написать на изображении",
-							"placeholder": "Текст для рендеринга"
+							"description": "Текст для написания на изображении",
+							"placeholder": "Текст для отрисовки"
 						},
 						"fontSize": {
 							"displayName": "Размер шрифта",
@@ -186,14 +186,14 @@
 						},
 						"positionX": {
 							"displayName": "Позиция X",
-							"description": "Позиция X (горизонтальная) для обрезки"
+							"description": "Позиция по оси X (горизонтальная) для обрезки"
 						},
 						"positionY": {
 							"displayName": "Позиция Y",
-							"description": "Положение Y (вертикальное) для обрезки"
+							"description": "Позиция по оси Y (вертикальная) для обрезки"
 						},
 						"lineLength": {
-							"displayName": "Максимальная длина линии",
+							"displayName": "Максимальная длина строки",
 							"description": "Максимальное количество символов в строке перед добавлением разрыва строки"
 						},
 						"blur": {
@@ -205,40 +205,40 @@
 							"description": "Сигма размытия"
 						},
 						"borderWidth": {
-							"displayName": "Ширина границы",
-							"description": "Ширина границы"
+							"displayName": "Ширина рамки",
+							"description": "Ширина рамки"
 						},
 						"borderHeight": {
-							"displayName": "Высота границы",
-							"description": "Высота границы"
+							"displayName": "Высота рамки",
+							"description": "Высота рамки"
 						},
 						"borderColor": {
-							"displayName": "Цвет границы",
-							"description": "Цвет границы"
+							"displayName": "Цвет рамки",
+							"description": "Цвет рамки"
 						},
 						"dataPropertyNameComposite": {
-							"displayName": "Свойство составного изображения",
-							"description": "Имя двоичного свойства, которое содержит данные изображения для компоновки поверх изображения, которое находится в имени свойства.",
+							"displayName": "Свойство наложения изображения",
+							"description": "Имя двоичного свойства, содержащего данные изображения для наложения поверх изображения, указанного в параметре «Название свойства»",
 							"placeholder": "данные2"
 						},
 						"operator": {
 							"displayName": "Оператор",
-							"description": "Оператор, используемый для объединения изображений",
+							"description": "Оператор для объединения изображений",
 							"options": {
 								"Add": {
-									"displayName": "Добавлять"
+									"displayName": "Добавить"
 								},
 								"Atop": {
-									"displayName": "на вершине"
+									"displayName": "Сверху"
 								},
 								"Bumpmap": {
-									"displayName": "Карта сайта"
+									"displayName": "Bumpmap"
 								},
 								"Copy": {
 									"displayName": "Копировать"
 								},
 								"CopyBlack": {
-									"displayName": "Копировать черный"
+									"displayName": "Копировать чёрный"
 								},
 								"CopyBlue": {
 									"displayName": "Копировать синий"
@@ -247,31 +247,31 @@
 									"displayName": "Копировать голубой"
 								},
 								"CopyGreen": {
-									"displayName": "Копировать зеленый"
+									"displayName": "Копировать зелёный"
 								},
 								"CopyMagenta": {
 									"displayName": "Копировать пурпурный"
 								},
 								"CopyOpacity": {
-									"displayName": "Копировать непрозрачность"
+									"displayName": "Копировать прозрачность"
 								},
 								"CopyRed": {
 									"displayName": "Копировать красный"
 								},
 								"CopyYellow": {
-									"displayName": "Копировать желтый"
+									"displayName": "Копировать жёлтый"
 								},
 								"Difference": {
 									"displayName": "Разница"
 								},
 								"Divide": {
-									"displayName": "Разделять"
+									"displayName": "Разделить"
 								},
 								"In": {
 									"displayName": "В"
 								},
 								"Minus": {
-									"displayName": "Минус"
+									"displayName": "Вычесть"
 								},
 								"Multiply": {
 									"displayName": "Умножить"
@@ -280,75 +280,75 @@
 									"displayName": "Вне"
 								},
 								"Over": {
-									"displayName": "Над"
+									"displayName": "Поверх"
 								},
 								"Plus": {
-									"displayName": "Плюс"
+									"displayName": "Добавить"
 								},
 								"Subtract": {
 									"displayName": "Вычесть"
 								},
 								"Xor": {
-									"displayName": "Ксор"
+									"displayName": "XOR"
 								}
 							}
 						},
 						"resizeOption": {
-							"displayName": "Вариант",
-							"description": "Как изменить размер изображения",
+							"displayName": "Параметр",
+							"description": "Способ изменения размера изображения",
 							"options": {
 								"ignoreAspectRatio": {
 									"displayName": "Игнорировать соотношение сторон",
-									"description": "Игнорировать соотношение сторон и изменять размер точно до указанных значений."
+									"description": "Игнорировать соотношение сторон и изменить размер точно на указанные значения"
 								},
 								"maximumArea": {
 									"displayName": "Максимальная площадь",
-									"description": "Указанные значения представляют собой максимальную площадь."
+									"description": "Указанные значения — максимальная площадь"
 								},
 								"minimumArea": {
 									"displayName": "Минимальная площадь",
-									"description": "Указанные значения представляют собой минимальную площадь."
+									"description": "Указанные значения — минимальная площадь"
 								},
 								"onlyIfLarger": {
 									"displayName": "Только если больше",
-									"description": "Изменение размера только в том случае, если изображение больше ширины или высоты."
+									"description": "Изменить размер только если изображение больше указанной ширины или высоты"
 								},
 								"onlyIfSmaller": {
 									"displayName": "Только если меньше",
-									"description": "Изменение размера только в том случае, если изображение меньше ширины или высоты."
+									"description": "Изменить размер только если изображение меньше указанной ширины или высоты"
 								},
 								"percent": {
 									"displayName": "Процент",
-									"description": "Ширина и высота указаны в процентах."
+									"description": "Ширина и высота указаны в процентах"
 								}
 							}
 						},
 						"rotate": {
-							"displayName": "Поворот",
-							"description": "Насколько изображение должно быть повернуто"
+							"displayName": "Повернуть",
+							"description": "На сколько градусов повернуть изображение"
 						},
 						"degreesX": {
-							"displayName": "Градусов Х",
-							"description": "X (горизонтальный) сдвиг, градусы"
+							"displayName": "Градусы X",
+							"description": "Градусы сдвига по оси X (горизонтальная)"
 						},
 						"degreesY": {
 							"displayName": "Градусы Y",
-							"description": "Y (вертикальный) сдвиг, градусы"
+							"description": "Градусы сдвига по оси Y (вертикальная)"
 						},
 						"font": {
-							"displayName": "Имя или идентификатор шрифта",
-							"description": "Используемый шрифт. По умолчанию используется Arial. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+							"displayName": "Название или идентификатор шрифта",
+							"description": "Используемый шрифт. По умолчанию Arial. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 						}
 					}
 				}
 			},
 			"placeholder": "Добавить операцию",
 			"displayName": "Операции",
-			"description": "Операции, которые необходимо выполнить"
+			"description": "Операции, которые нужно выполнить"
 		},
 		"backgroundColor": {
 			"displayName": "Цвет фона",
-			"description": "Цвет фона, когда изображение поворачивается на величину, не кратную 90."
+			"description": "Цвет фона при повороте изображения на угол, не кратный 90 градусам"
 		},
 		"width": {
 			"displayName": "Ширина",
@@ -359,11 +359,11 @@
 			"description": "Новая высота изображения"
 		},
 		"primitive": {
-			"displayName": "Примитивный",
+			"displayName": "Примитив",
 			"description": "Примитив для рисования",
 			"options": {
 				"circle": {
-					"displayName": "Круг"
+					"displayName": "Окружность"
 				},
 				"line": {
 					"displayName": "Линия"
@@ -379,28 +379,28 @@
 		},
 		"startPositionX": {
 			"displayName": "Начальная позиция X",
-			"description": "X (горизонтальное) начальное положение примитива"
+			"description": "Начальная позиция примитива по оси X (горизонтальная)"
 		},
 		"startPositionY": {
 			"displayName": "Начальная позиция Y",
-			"description": "Y (горизонтальное) начальное положение примитива"
+			"description": "Начальная позиция примитива по оси Y (вертикальная)"
 		},
 		"endPositionX": {
 			"displayName": "Конечная позиция X",
-			"description": "X (горизонтальное) конечное положение примитива"
+			"description": "Конечная позиция примитива по оси X (горизонтальная)"
 		},
 		"endPositionY": {
 			"displayName": "Конечная позиция Y",
-			"description": "Y (горизонтальное) конечное положение примитива"
+			"description": "Конечная позиция примитива по оси Y (вертикальная)"
 		},
 		"cornerRadius": {
-			"displayName": "Угловой радиус",
-			"description": "Радиус угла для создания круглых углов"
+			"displayName": "Радиус скругления",
+			"description": "Радиус угла для создания скруглённых углов"
 		},
 		"text": {
 			"displayName": "Текст",
-			"description": "Текст, который нужно написать на изображении",
-			"placeholder": "Текст для рендеринга"
+			"description": "Текст для написания на изображении",
+			"placeholder": "Текст для отрисовки"
 		},
 		"fontSize": {
 			"displayName": "Размер шрифта",
@@ -412,14 +412,14 @@
 		},
 		"positionX": {
 			"displayName": "Позиция X",
-			"description": "Позиция X (горизонтальная) для обрезки"
+			"description": "Позиция по оси X (горизонтальная) для обрезки"
 		},
 		"positionY": {
 			"displayName": "Позиция Y",
-			"description": "Положение Y (вертикальное) для обрезки"
+			"description": "Позиция по оси Y (вертикальная) для обрезки"
 		},
 		"lineLength": {
-			"displayName": "Максимальная длина линии",
+			"displayName": "Максимальная длина строки",
 			"description": "Максимальное количество символов в строке перед добавлением разрыва строки"
 		},
 		"blur": {
@@ -431,40 +431,40 @@
 			"description": "Сигма размытия"
 		},
 		"borderWidth": {
-			"displayName": "Ширина границы",
-			"description": "Ширина границы"
+			"displayName": "Ширина рамки",
+			"description": "Ширина рамки"
 		},
 		"borderHeight": {
-			"displayName": "Высота границы",
-			"description": "Высота границы"
+			"displayName": "Высота рамки",
+			"description": "Высота рамки"
 		},
 		"borderColor": {
-			"displayName": "Цвет границы",
-			"description": "Цвет границы"
+			"displayName": "Цвет рамки",
+			"description": "Цвет рамки"
 		},
 		"dataPropertyNameComposite": {
-			"displayName": "Свойство составного изображения",
-			"description": "Имя двоичного свойства, которое содержит данные изображения для компоновки поверх изображения, которое находится в имени свойства.",
+			"displayName": "Свойство наложения изображения",
+			"description": "Имя двоичного свойства, содержащего данные изображения для наложения поверх изображения, указанного в параметре «Название свойства»",
 			"placeholder": "данные2"
 		},
 		"operator": {
 			"displayName": "Оператор",
-			"description": "Оператор, используемый для объединения изображений",
+			"description": "Оператор для объединения изображений",
 			"options": {
 				"Add": {
-					"displayName": "Добавлять"
+					"displayName": "Добавить"
 				},
 				"Atop": {
-					"displayName": "на вершине"
+					"displayName": "Сверху"
 				},
 				"Bumpmap": {
-					"displayName": "Карта сайта"
+					"displayName": "Bumpmap"
 				},
 				"Copy": {
 					"displayName": "Копировать"
 				},
 				"CopyBlack": {
-					"displayName": "Копировать черный"
+					"displayName": "Копировать чёрный"
 				},
 				"CopyBlue": {
 					"displayName": "Копировать синий"
@@ -473,31 +473,31 @@
 					"displayName": "Копировать голубой"
 				},
 				"CopyGreen": {
-					"displayName": "Копировать зеленый"
+					"displayName": "Копировать зелёный"
 				},
 				"CopyMagenta": {
 					"displayName": "Копировать пурпурный"
 				},
 				"CopyOpacity": {
-					"displayName": "Копировать непрозрачность"
+					"displayName": "Копировать прозрачность"
 				},
 				"CopyRed": {
 					"displayName": "Копировать красный"
 				},
 				"CopyYellow": {
-					"displayName": "Копировать желтый"
+					"displayName": "Копировать жёлтый"
 				},
 				"Difference": {
 					"displayName": "Разница"
 				},
 				"Divide": {
-					"displayName": "Разделять"
+					"displayName": "Разделить"
 				},
 				"In": {
 					"displayName": "В"
 				},
 				"Minus": {
-					"displayName": "Минус"
+					"displayName": "Вычесть"
 				},
 				"Multiply": {
 					"displayName": "Умножить"
@@ -506,60 +506,60 @@
 					"displayName": "Вне"
 				},
 				"Over": {
-					"displayName": "Над"
+					"displayName": "Поверх"
 				},
 				"Plus": {
-					"displayName": "Плюс"
+					"displayName": "Добавить"
 				},
 				"Subtract": {
 					"displayName": "Вычесть"
 				},
 				"Xor": {
-					"displayName": "Ксор"
+					"displayName": "XOR"
 				}
 			}
 		},
 		"resizeOption": {
-			"displayName": "Вариант",
-			"description": "Как изменить размер изображения",
+			"displayName": "Параметр",
+			"description": "Способ изменения размера изображения",
 			"options": {
 				"ignoreAspectRatio": {
 					"displayName": "Игнорировать соотношение сторон",
-					"description": "Игнорировать соотношение сторон и изменять размер точно до указанных значений."
+					"description": "Игнорировать соотношение сторон и изменить размер точно на указанные значения"
 				},
 				"maximumArea": {
 					"displayName": "Максимальная площадь",
-					"description": "Указанные значения представляют собой максимальную площадь."
+					"description": "Указанные значения — максимальная площадь"
 				},
 				"minimumArea": {
 					"displayName": "Минимальная площадь",
-					"description": "Указанные значения представляют собой минимальную площадь."
+					"description": "Указанные значения — минимальная площадь"
 				},
 				"onlyIfLarger": {
 					"displayName": "Только если больше",
-					"description": "Изменение размера только в том случае, если изображение больше ширины или высоты."
+					"description": "Изменить размер только если изображение больше указанной ширины или высоты"
 				},
 				"onlyIfSmaller": {
 					"displayName": "Только если меньше",
-					"description": "Изменение размера только в том случае, если изображение меньше ширины или высоты."
+					"description": "Изменить размер только если изображение меньше указанной ширины или высоты"
 				},
 				"percent": {
 					"displayName": "Процент",
-					"description": "Ширина и высота указаны в процентах."
+					"description": "Ширина и высота указаны в процентах"
 				}
 			}
 		},
 		"rotate": {
-			"displayName": "Поворот",
-			"description": "Насколько изображение должно быть повернуто"
+			"displayName": "Повернуть",
+			"description": "На сколько градусов повернуть изображение"
 		},
 		"degreesX": {
-			"displayName": "Градусов Х",
-			"description": "X (горизонтальный) сдвиг, градусы"
+			"displayName": "Градусы X",
+			"description": "Градусы сдвига по оси X (горизонтальная)"
 		},
 		"degreesY": {
 			"displayName": "Градусы Y",
-			"description": "Y (вертикальный) сдвиг, градусы"
+			"description": "Градусы сдвига по оси Y (вертикальная)"
 		},
 		"options": {
 			"displayName": "Параметры",
@@ -567,44 +567,44 @@
 			"options": {
 				"destinationKey": {
 					"displayName": "Поле вывода назначения",
-					"description": "Имя выходного поля, которое будет содержать данные файла.",
+					"description": "Название поля вывода, которое будет содержать данные файла",
 					"placeholder": "например изображение"
 				},
 				"fileName": {
 					"displayName": "Имя файла",
-					"description": "Имя файла для установки в двоичных данных"
+					"description": "Название файла для установки в двоичных данных"
 				},
 				"font": {
-					"displayName": "Имя или идентификатор шрифта",
-					"description": "Используемый шрифт. По умолчанию используется Arial. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Название или идентификатор шрифта",
+					"description": "Используемый шрифт. По умолчанию Arial. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"format": {
 					"displayName": "Формат",
 					"description": "Установите формат выходного изображения",
 					"options": {
 						"bmp": {
-							"displayName": "БМП"
+							"displayName": "BMP"
 						},
 						"gif": {
-							"displayName": "гифка"
+							"displayName": "GIF"
 						},
 						"jpeg": {
 							"displayName": "JPEG"
 						},
 						"png": {
-							"displayName": "png"
+							"displayName": "PNG"
 						},
 						"tiff": {
-							"displayName": "размолвка"
+							"displayName": "TIFF"
 						},
 						"webp": {
-							"displayName": "ВебП"
+							"displayName": "WebP"
 						}
 					}
 				},
 				"quality": {
 					"displayName": "Качество",
-					"description": "Устанавливает уровень сжатия jpeg|png|tiff от 0 до 100 (оптимальный)."
+					"description": "Устанавливает уровень сжатия jpeg|png|tiff от 0 до 100 (лучшее)"
 				}
 			}
 		}

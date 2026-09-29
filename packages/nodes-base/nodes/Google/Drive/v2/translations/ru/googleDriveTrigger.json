@@ -11,12 +11,12 @@
 					"displayName": "OAuth2 (рекомендуется)"
 				},
 				"serviceAccount": {
-					"displayName": "Сервисный аккаунт"
+					"displayName": "Служебный аккаунт"
 				}
 			}
 		},
 		"triggerOn": {
-			"displayName": "Триггер включен",
+			"displayName": "Триггер для",
 			"options": {
 				"specificFile": {
 					"displayName": "Изменения в конкретном файле"
@@ -34,7 +34,7 @@
 			"description": "Когда активировать этот узел",
 			"options": {
 				"fileUpdated": {
-					"displayName": "Файл обновлен",
+					"displayName": "Файл обновлён",
 					"description": "При обновлении файла на наблюдаемом диске"
 				},
 				"fileCreated": {
@@ -82,7 +82,7 @@
 									"displayName": "Аудио"
 								},
 								"document": {
-									"displayName": "Google Документы"
+									"displayName": "Google Docs"
 								},
 								"drawing": {
 									"displayName": "Гугл рисунки"

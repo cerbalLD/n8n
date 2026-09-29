@@ -50,16 +50,16 @@
 							"description": "Тип значения поля",
 							"options": {
 								"stringValue": {
-									"displayName": "Нить"
+									"displayName": "Текст"
 								},
 								"numberValue": {
 									"displayName": "Число"
 								},
 								"booleanValue": {
-									"displayName": "логическое значение"
+									"displayName": "Логическое значение"
 								},
 								"arrayValue": {
-									"displayName": "Множество"
+									"displayName": "Массив"
 								},
 								"objectValue": {
 									"displayName": "Объект"
@@ -67,28 +67,28 @@
 							}
 						},
 						"stringValue": {
-							"displayName": "Ценить"
+							"displayName": "Значение"
 						},
 						"numberValue": {
-							"displayName": "Ценить"
+							"displayName": "Значение"
 						},
 						"booleanValue": {
-							"displayName": "Ценить",
+							"displayName": "Значение",
 							"options": {
 								"true": {
-									"displayName": "Истинный"
+									"displayName": "Истина"
 								},
 								"false": {
-									"displayName": "ЛОЖЬ"
+									"displayName": "Ложь"
 								}
 							}
 						},
 						"arrayValue": {
-							"displayName": "Ценить",
+							"displayName": "Значение",
 							"placeholder": "например [Элемент массива1,Элемент массива2,Элемент массива3]"
 						},
 						"objectValue": {
-							"displayName": "Ценить"
+							"displayName": "Значение"
 						}
 					}
 				}

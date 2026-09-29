@@ -83,11 +83,11 @@
 					"values": {
 						"key": {
 							"displayName": "Ключ",
-							"description": "Имя свойства, которое нужно установить"
+							"description": "Имя свойства"
 						},
 						"value": {
-							"displayName": "Ценить",
-							"description": "Значение свойства для установки"
+							"displayName": "Значение",
+							"description": "Значение для установки"
 						}
 					}
 				}
@@ -127,11 +127,11 @@
 					"values": {
 						"key": {
 							"displayName": "Ключ",
-							"description": "Имя свойства, которое нужно установить"
+							"description": "Имя свойства"
 						},
 						"value": {
-							"displayName": "Ценить",
-							"description": "Значение свойства для установки"
+							"displayName": "Значение",
+							"description": "Значение для установки"
 						}
 					}
 				}

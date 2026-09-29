@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Джина А.И.",
-		"description": "Взаимодействие с Jina AI API"
+		"displayName": "Jina AI",
+		"description": "Взаимодействовать с Jina AI API"
 	},
 	"nodeView": {
 		"resource": {
@@ -11,7 +11,7 @@
 					"displayName": "Читатель"
 				},
 				"research": {
-					"displayName": "Исследовать"
+					"displayName": "Исследование"
 				}
 			}
 		},
@@ -19,27 +19,27 @@
 			"displayName": "Операция",
 			"options": {
 				"read": {
-					"displayName": "Читать",
-					"description": "Извлекает контент из URL-адреса и преобразует его в чистые, удобные для LLM форматы."
+					"displayName": "Чтение",
+					"description": "Получает контент из URL и преобразует его в чистые, удобные для LLM форматы"
 				},
 				"search": {
 					"displayName": "Поиск",
-					"description": "Выполняет поиск в Интернете с помощью Jina AI и возвращает лучшие результаты в чистых, удобных для LLM форматах."
+					"description": "Выполняет поиск в сети через Jina AI и возвращает лучшие результаты в чистых, удобных для LLM форматах"
 				},
 				"deepResearch": {
-					"displayName": "Глубокие исследования",
-					"description": "Изучите тему и подготовьте структурированный отчет об исследовании."
+					"displayName": "Углублённое исследование",
+					"description": "Исследуйте тему и сгенерируйте структурированный отчёт"
 				}
 			}
 		},
 		"url": {
 			"displayName": "URL",
-			"description": "URL-адрес для получения контента с",
+			"description": "URL для получения контента",
 			"placeholder": "https://jina.ai/"
 		},
 		"simplify": {
-			"displayName": "Упрощать",
-			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+			"displayName": "Упростить",
+			"description": "Возвращать ли упрощённую версию ответа вместо необработанных данных"
 		},
 		"options": {
 			"displayName": "Параметры",
@@ -59,7 +59,7 @@
 							"displayName": "Уценка"
 						},
 						"screenshot": {
-							"displayName": "Скриншот"
+							"displayName": "Снимок экрана"
 						},
 						"text": {
 							"displayName": "Текст"
@@ -68,57 +68,57 @@
 				},
 				"targetSelector": {
 					"displayName": "Целевой CSS-селектор",
-					"description": "Селектор CSS для фокусировки на определенных элементах страницы",
+					"description": "CSS-селектор для фокусировки на конкретных элементах страницы",
 					"placeholder": "например #main-content .article"
 				},
 				"excludeSelector": {
-					"displayName": "Исключить селектор CSS",
-					"description": "CSS-селектор для элементов, которые нужно исключить",
-					"placeholder": "например заголовок, нижний колонтитул, .ads"
+					"displayName": "Исключить CSS-селектор",
+					"description": "CSS-селектор для исключения элементов",
+					"placeholder": "например header, footer, .ads"
 				},
 				"enableImageCaptioning": {
-					"displayName": "Включить субтитры к изображениям",
-					"description": "Создавать ли подписи для изображений в контенте"
+					"displayName": "Включить описание изображений",
+					"description": "Генерировать ли описания для изображений в контенте"
 				},
 				"waitForSelector": {
-					"displayName": "Дождитесь селектора CSS",
-					"description": "Прежде чем извлекать контент, дождитесь появления определенного элемента (для динамических страниц).",
+					"displayName": "Ожидать CSS-селектор",
+					"description": "Ждать появления конкретного элемента перед извлечением контента (для динамических страниц)",
 					"placeholder": "например #results-loaded"
 				},
 				"siteFilter": {
 					"displayName": "Фильтр сайта",
-					"description": "Ограничить поиск определенными веб-сайтами",
+					"description": "Ограничить поиск конкретными веб-сайтами",
 					"placeholder": "например jina.ai, github.com"
 				},
 				"pageNumber": {
 					"displayName": "Номер страницы",
-					"description": "Номер страницы результатов поиска, которую необходимо получить.",
+					"description": "Номер страницы результатов поиска",
 					"placeholder": "1"
 				},
 				"maxReturnedSources": {
-					"displayName": "Максимальное количество возвращаемых источников",
-					"description": "Максимальное количество URL-адресов, которые можно включить в окончательный ответ.",
+					"displayName": "Максимальное количество источников",
+					"description": "Максимальное количество URL для включения в окончательный ответ",
 					"placeholder": "например 5"
 				},
 				"prioritizeSources": {
-					"displayName": "Расставьте приоритеты источников",
-					"description": "Список доменов, которым присвоен более высокий приоритет при поиске контента.",
+					"displayName": "Приоритизировать источники",
+					"description": "Список доменов с более высоким приоритетом для получения контента",
 					"placeholder": "например jina.ai, github.com"
 				},
 				"excludeSources": {
 					"displayName": "Исключить источники",
-					"description": "Список доменов, которые должны быть строго исключены из поиска контента",
+					"description": "Список доменов, которые должны быть строго исключены из получения контента",
 					"placeholder": "например jina.ai, github.com"
 				}
 			}
 		},
 		"searchQuery": {
 			"displayName": "Поисковый запрос",
-			"placeholder": "например Джина А.И."
+			"placeholder": "например Jina AI"
 		},
 		"researchQuery": {
 			"displayName": "Исследовательский запрос",
-			"description": "Тема или вопрос для исследования ИИ.",
+			"description": "Тема или вопрос для исследования ИИ",
 			"placeholder": "например Анализ влияния возобновляемых источников энергии на смягчение последствий изменения климата"
 		}
 	}

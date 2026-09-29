@@ -1,18 +1,18 @@
 {
 	"header": {
 		"displayName": "Триггер ConvertKit",
-		"description": "Обработка событий ConvertKit через веб-перехватчики"
+		"description": "Обработка событий ConvertKit через вебхуки"
 	},
 	"nodeView": {
 		"event": {
 			"displayName": "Событие",
-			"description": "События, которые могут активировать вебхук, и включены ли они.",
+			"description": "События, которые могут активировать вебхук, и статус их включения",
 			"options": {
 				"formSubscribe": {
-					"displayName": "Форма подписки"
+					"displayName": "Подписка на форму"
 				},
 				"linkClick": {
-					"displayName": "Ссылка Нажмите"
+					"displayName": "Нажатие ссылки"
 				},
 				"productPurchase": {
 					"displayName": "Покупка продукта"
@@ -24,40 +24,40 @@
 					"displayName": "Последовательность завершена"
 				},
 				"courseSubscribe": {
-					"displayName": "Последовательность Подписаться"
+					"displayName": "Подписка на последовательность"
 				},
 				"subscriberActivate": {
 					"displayName": "Подписчик активирован"
 				},
 				"subscriberUnsubscribe": {
-					"displayName": "Подписчик Отписаться"
+					"displayName": "Подписчик отписан"
 				},
 				"tagAdd": {
-					"displayName": "Добавить тег"
+					"displayName": "Тег добавлен"
 				},
 				"tagRemove": {
-					"displayName": "Удалить тег"
+					"displayName": "Тег удалён"
 				}
 			}
 		},
 		"formId": {
-			"displayName": "Имя или идентификатор формы",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"displayName": "Название или идентификатор формы",
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"courseId": {
-			"displayName": "Имя или идентификатор последовательности",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"displayName": "Название или идентификатор последовательности",
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"link": {
 			"displayName": "Инициирующая ссылка",
-			"description": "URL-адрес исходной ссылки"
+			"description": "URL инициирующей ссылки"
 		},
 		"productId": {
-			"displayName": "Идентификатор продукта"
+			"displayName": "ID товара"
 		},
 		"tagId": {
-			"displayName": "Имя или идентификатор тега",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"displayName": "Название или ID тега",
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		}
 	}
 }

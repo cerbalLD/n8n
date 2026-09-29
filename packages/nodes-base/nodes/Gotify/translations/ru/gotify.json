@@ -16,7 +16,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать"
+					"displayName": "Создать"
 				},
 				"delete": {
 					"displayName": "Удалить"
@@ -39,7 +39,7 @@
 					"description": "Приоритет сообщения"
 				},
 				"title": {
-					"displayName": "Заголовок",
+					"displayName": "Название",
 					"description": "Название сообщения"
 				}
 			}
@@ -71,7 +71,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		}
 	}
 }

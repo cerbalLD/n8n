@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "Эластичная безопасность",
+		"displayName": "Elastic Security",
 		"description": "Используйте API Elastic Security"
 	},
 	"nodeView": {
@@ -11,13 +11,13 @@
 					"displayName": "Случай"
 				},
 				"caseComment": {
-					"displayName": "Комментарий к делу"
+					"displayName": "Комментарий обращения"
 				},
 				"caseTag": {
-					"displayName": "Тег дела"
+					"displayName": "Тег обращения"
 				},
 				"connector": {
-					"displayName": "Разъем"
+					"displayName": "Соединитель"
 				}
 			}
 		},
@@ -25,7 +25,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать соединитель"
 				},
 				"delete": {
@@ -34,72 +34,72 @@
 				},
 				"get": {
 					"displayName": "Получать",
-					"description": "Получить комментарий к делу"
+					"description": "Получить комментарий обращения"
 				},
 				"getAll": {
 					"displayName": "Получить много",
-					"description": "Получить множество комментариев к делу"
+					"description": "Получить множество комментариев обращения"
 				},
 				"getStatus": {
 					"displayName": "Получить статус",
-					"description": "Получить сводную информацию обо всех действиях по делу"
+					"description": "Получить сводку всей активности обращения"
 				},
 				"update": {
-					"displayName": "Обновлять",
-					"description": "Обновить комментарий в деле"
+					"displayName": "Обновить",
+					"description": "Обновить комментарий в обращении"
 				},
 				"add": {
-					"displayName": "Добавлять",
-					"description": "Добавить тег к делу"
+					"displayName": "Добавить",
+					"description": "Добавить тег к обращению"
 				},
 				"remove": {
 					"displayName": "Удалять",
-					"description": "Удалить бирку с дела"
+					"description": "Удалить тег с обращения"
 				}
 			}
 		},
 		"title": {
-			"displayName": "Заголовок"
+			"displayName": "Название"
 		},
 		"connectorId": {
-			"displayName": "Имя или идентификатор соединителя",
-			"description": "Соединители позволяют отправлять дела Elastic Security в другие системы (только ServiceNow, Jira или IBM Resilient). Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"displayName": "Название или ID соединителя",
+			"description": "Соединители позволяют отправлять обращения Elastic Security в другие системы (только ServiceNow, Jira или IBM Resilient). Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"connectorType": {
-			"displayName": "Тип разъема",
+			"displayName": "Тип соединителя",
 			"options": {
 				"": {
 					"resilient": {
-						"displayName": "IBM отказоустойчивый"
+						"displayName": "IBM Resilient"
 					},
 					"jira": {
-						"displayName": "Джира"
+						"displayName": "Jira"
 					},
 					"servicenow": {
-						"displayName": "СервисNow ITSM"
+						"displayName": "ServiceNow ITSM"
 					}
 				}
 			}
 		},
 		"issueType": {
-			"displayName": "Тип проблемы",
-			"description": "Тип задачи Jira, которую необходимо создать для этого случая",
+			"displayName": "Тип задачи",
+			"description": "Тип задачи Jira для создания этого обращения",
 			"placeholder": "Задача"
 		},
 		"priority": {
 			"displayName": "Приоритет",
-			"description": "Приоритет задачи Jira, которую необходимо создать для этого дела",
+			"description": "Приоритет задачи Jira для этого обращения",
 			"placeholder": "Высокий"
 		},
 		"urgency": {
-			"displayName": "срочность",
-			"description": "Срочность создания проблемы ServiceNow ITSM для этого случая",
+			"displayName": "Срочность",
+			"description": "Срочность проблемы ServiceNow ITSM для этого обращения",
 			"options": {
 				"1": {
 					"displayName": "Низкий"
 				},
 				"2": {
-					"displayName": "Середина"
+					"displayName": "Средний"
 				},
 				"3": {
 					"displayName": "Высокий"
@@ -107,14 +107,14 @@
 			}
 		},
 		"severity": {
-			"displayName": "Серьезность",
-			"description": "Серьезность проблемы ServiceNow ITSM, которую необходимо создать для этого случая.",
+			"displayName": "Серьёзность",
+			"description": "Серьёзность проблемы ServiceNow ITSM для этого обращения",
 			"options": {
 				"1": {
 					"displayName": "Низкий"
 				},
 				"2": {
-					"displayName": "Середина"
+					"displayName": "Средний"
 				},
 				"3": {
 					"displayName": "Высокий"
@@ -123,13 +123,13 @@
 		},
 		"impact": {
 			"displayName": "Влияние",
-			"description": "Влияние проблемы ServiceNow ITSM, которую необходимо создать для этого случая",
+			"description": "Влияние проблемы ServiceNow ITSM для этого обращения",
 			"options": {
 				"1": {
 					"displayName": "Низкий"
 				},
 				"2": {
-					"displayName": "Середина"
+					"displayName": "Средний"
 				},
 				"3": {
 					"displayName": "Высокий"
@@ -138,17 +138,17 @@
 		},
 		"category": {
 			"displayName": "Категория",
-			"description": "Категория проблемы ServiceNow ITSM, которую необходимо создать для этого случая.",
+			"description": "Категория проблемы ServiceNow ITSM для этого обращения",
 			"placeholder": "Служба поддержки"
 		},
 		"issueTypes": {
-			"displayName": "Типы проблем",
-			"description": "Список числовых типов проблемы IBM Resilient, разделенный запятыми, который необходимо создать для этого случая.",
+			"displayName": "Типы задач",
+			"description": "Список числовых типов задач IBM Resilient (через запятую) для создания этого обращения",
 			"placeholder": "123,456"
 		},
 		"severityCode": {
-			"displayName": "Код серьезности",
-			"description": "Код серьезности проблемы IBM Resilient, который необходимо создать для этого случая."
+			"displayName": "Код серьёзности",
+			"description": "Код серьёзности задачи IBM Resilient для этого обращения"
 		},
 		"additionalFields": {
 			"displayName": "Дополнительные поля",
@@ -159,7 +159,7 @@
 				},
 				"owner": {
 					"displayName": "Владелец",
-					"description": "Действительный владелец приложения, зарегистрированный в системе ролевого контроля доступа Cases"
+					"description": "Действительный владелец приложения, зарегистрированный в системе RBAC Cases"
 				},
 				"syncAlerts": {
 					"displayName": "Синхронизировать оповещения",
@@ -168,8 +168,8 @@
 			}
 		},
 		"caseId": {
-			"displayName": "Идентификатор дела",
-			"description": "Идентификатор обращения, содержащего комментарий для получения"
+			"displayName": "ID обращения",
+			"description": "ID обращения, содержащего комментарий для получения"
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",
@@ -177,7 +177,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"filters": {
 			"displayName": "Фильтры",
@@ -190,7 +190,7 @@
 							"displayName": "Открыть"
 						},
 						"in-progress": {
-							"displayName": "В ходе выполнения"
+							"displayName": "в процессе"
 						},
 						"closed": {
 							"displayName": "Закрыто"
@@ -198,7 +198,7 @@
 					}
 				},
 				"tags": {
-					"displayName": "Имена или идентификаторы тегов",
+					"displayName": "Имена или ID тегов",
 					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
 				}
 			}
@@ -206,16 +206,16 @@
 		"sortOptions": {
 			"options": {
 				"sortOptions": {
-					"displayName": "Сортировать"
+					"displayName": "Сортировка"
 				},
 				"sortOptionsProperties": {
 					"displayName": "Параметры сортировки",
 					"values": {
 						"sortField": {
-							"displayName": "Сортировать ключ",
+							"displayName": "Ключ сортировки",
 							"options": {
 								"createdAt": {
-									"displayName": "Создано в"
+									"displayName": "Создано"
 								},
 								"updatedAt": {
 									"displayName": "Обновлено в"
@@ -226,7 +226,7 @@
 							"displayName": "Порядок сортировки",
 							"options": {
 								"asc": {
-									"displayName": "восходящий"
+									"displayName": "По возрастанию"
 								},
 								"desc": {
 									"displayName": "По убыванию"
@@ -237,7 +237,7 @@
 				}
 			},
 			"placeholder": "Добавить параметры сортировки",
-			"displayName": "Сортировать"
+			"displayName": "Сортировка"
 		},
 		"updateFields": {
 			"displayName": "Обновить поля",
@@ -256,7 +256,7 @@
 							"displayName": "Открыть"
 						},
 						"in-progress": {
-							"displayName": "В ходе выполнения"
+							"displayName": "в процессе"
 						}
 					}
 				},
@@ -265,7 +265,7 @@
 					"description": "Синхронизировать ли с оповещениями"
 				},
 				"title": {
-					"displayName": "Заголовок"
+					"displayName": "Название"
 				},
 				"version": {
 					"displayName": "Версия"
@@ -277,28 +277,28 @@
 			"description": "Текст для замены текущего сообщения комментария"
 		},
 		"simple": {
-			"displayName": "Упрощать",
-			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+			"displayName": "Упростить",
+			"description": "Возвращать ли упрощённую версию ответа вместо необработанных данных"
 		},
 		"commentId": {
 			"displayName": "Идентификатор комментария",
-			"description": "Идентификатор комментария к делу, который нужно получить"
+			"description": "ID комментария обращения для получения"
 		},
 		"tag": {
-			"displayName": "Имя или идентификатор тега",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"displayName": "Название или ID тега",
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"name": {
-			"displayName": "Имя разъема",
-			"description": "Соединители позволяют отправлять дела Elastic Security в другие системы (только ServiceNow, Jira или IBM Resilient)."
+			"displayName": "Название соединителя",
+			"description": "Соединители позволяют отправлять обращения Elastic Security в другие системы (только ServiceNow, Jira или IBM Resilient)"
 		},
 		"apiUrl": {
-			"displayName": "URL-адрес API",
-			"description": "URL-адрес стороннего экземпляра"
+			"displayName": "URL API",
+			"description": "URL стороннего экземпляра"
 		},
 		"email": {
 			"displayName": "Электронная почта",
-			"description": "Электронная почта, зарегистрированная в Jira",
+			"description": "Email, зарегистрированный в Jira",
 			"placeholder": "имя@email.com"
 		},
 		"apiToken": {
@@ -318,16 +318,16 @@
 			"description": "Пароль ServiceNow ITSM"
 		},
 		"apiKeyId": {
-			"displayName": "Идентификатор ключа API",
-			"description": "Идентификатор ключа IBM Resilient API"
+			"displayName": "ID ключа API",
+			"description": "ID ключа API IBM Resilient"
 		},
 		"apiKeySecret": {
-			"displayName": "Секретный ключ API",
-			"description": "Секрет ключа IBM Resilient API"
+			"displayName": "Секрет ключа API",
+			"description": "Секрет ключа API IBM Resilient"
 		},
 		"orgId": {
-			"displayName": "Идентификатор организации",
-			"description": "Идентификатор устойчивой организации IBM"
+			"displayName": "ID организации",
+			"description": "ID организации IBM Resilient"
 		}
 	}
 }

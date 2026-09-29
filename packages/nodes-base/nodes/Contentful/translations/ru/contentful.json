@@ -1,18 +1,18 @@
 {
 	"header": {
-		"displayName": "Содержательный",
-		"description": "Используйте контентный API"
+		"displayName": "Contentful",
+		"description": "Использование API Contentful"
 	},
 	"nodeView": {
 		"source": {
 			"displayName": "Источник",
-			"description": "Выберите, откуда поступают ваши данные, API доставки или предварительного просмотра.",
+			"description": "Выберите источник данных: API доставки или предварительного просмотра",
 			"options": {
 				"deliveryApi": {
 					"displayName": "API доставки"
 				},
 				"previewApi": {
-					"displayName": "Предварительный просмотр API"
+					"displayName": "API предварительного просмотра"
 				}
 			}
 		},
@@ -20,19 +20,19 @@
 			"displayName": "Ресурс",
 			"options": {
 				"asset": {
-					"displayName": "Объект"
+					"displayName": "Актив"
 				},
 				"contentType": {
 					"displayName": "Тип контента"
 				},
 				"entry": {
-					"displayName": "Вход"
+					"displayName": "Запись"
 				},
 				"locale": {
 					"displayName": "Языковой стандарт"
 				},
 				"space": {
-					"displayName": "Космос"
+					"displayName": "Пространство"
 				}
 			}
 		},
@@ -49,7 +49,7 @@
 		},
 		"environmentId": {
 			"displayName": "Идентификатор среды",
-			"description": "Идентификатор среды с контентом (например, мастер, промежуточный и т. д.). В зависимости от вашего плана у вас может не быть сред. В этом случае используйте «мастер»."
+			"description": "Идентификатор среды Contentful (например master, staging и т.д.). В зависимости от плана у вас может не быть сред. В таком случае используйте \"master\"."
 		},
 		"contentTypeId": {
 			"displayName": "Идентификатор типа контента"
@@ -60,50 +60,50 @@
 			"options": {
 				"rawData": {
 					"displayName": "Необработанные данные",
-					"description": "Должны ли данные быть возвращены в формате RAW вместо анализа"
+					"description": "Возвращать ли данные в формате RAW вместо обработанного"
 				},
 				"content_type": {
 					"displayName": "Идентификатор типа контента",
-					"description": "Для поиска записей с определенным типом контента"
+					"description": "Для поиска записей определённого типа контента"
 				},
 				"equal": {
-					"displayName": "Равный",
-					"description": "Найдите все данные, соответствующие условию: {attribute}={value}. Атрибут может использовать точечную запись.",
-					"placeholder": "поля.title=n8n"
+					"displayName": "равно",
+					"description": "Найти все данные, соответствующие условию: {attribute}={value}. Атрибут может использовать точечную нотацию.",
+					"placeholder": "fields.title=n8n"
 				},
 				"exclude": {
-					"displayName": "Исключать",
-					"description": "Найдите все данные, соответствующие условию: {attribute}[nin]={value}. Атрибут может использовать точечную запись.",
-					"placeholder": "field.tags[nin]=аксессуары,цветы"
+					"displayName": "Исключить",
+					"description": "Найти все данные, соответствующие условию: {attribute}[nin]={value}. Атрибут может использовать точечную нотацию.",
+					"placeholder": "fields.tags[nin]=accessories,flowers"
 				},
 				"exist": {
 					"displayName": "Существовать",
-					"description": "Найдите все данные, соответствующие условию: {attribute}[exists]={value}. Атрибут может использовать точечную запись.",
-					"placeholder": "поля.теги[существует]=истина"
+					"description": "Найти все данные, соответствующие условию: {attribute}[exists]={value}. Атрибут может использовать точечную нотацию.",
+					"placeholder": "fields.tags[exists]=true"
 				},
 				"select": {
 					"displayName": "Поля",
-					"description": "Оператор выбора позволяет вам выбрать, какие поля возвращать из сущности. Вы можете выбрать несколько значений, комбинируя операторы, разделенные запятыми.",
-					"placeholder": "поля.название"
+					"description": "Оператор select позволяет выбрать, какие поля возвращать из сущности. Можно выбрать несколько значений, комбинируя операторы, разделённые запятыми.",
+					"placeholder": "fields.title"
 				},
 				"include": {
-					"displayName": "Включать",
-					"description": "Найдите все данные, соответствующие условию: {attribute}[in]={value}. Атрибут может использовать точечную запись.",
-					"placeholder": "field.tags[in]=аксессуары,цветы"
+					"displayName": "Включить",
+					"description": "Найти все данные, соответствующие условию: {attribute}[in]={value}. Атрибут может использовать точечную нотацию.",
+					"placeholder": "fields.tags[in]=accessories,flowers"
 				},
 				"notEqual": {
 					"displayName": "Не равно",
-					"description": "Найдите все данные, соответствующие условию: {attribute}[ne]={value}. Атрибут может использовать точечную запись.",
-					"placeholder": "поля.title[ne]=n8n"
+					"description": "Найти все данные, соответствующие условию: {attribute}[ne]={value}. Атрибут может использовать точечную нотацию.",
+					"placeholder": "fields.title[ne]=n8n"
 				},
 				"order": {
-					"displayName": "Заказ",
-					"description": "Упорядочить товары в ответе можно, указав параметр поиска заказа. Для упорядочивания можно использовать свойства sys (например, sys.createdAt) или значения полей (например,fields.myCustomDateField).",
+					"displayName": "Порядок",
+					"description": "Упорядочить элементы в ответе можно, указав параметр order. Используйте свойства sys (например sys.createdAt) или значения полей (например fields.myCustomDateField).",
 					"placeholder": "sys.createdAt"
 				},
 				"query": {
 					"displayName": "Запрос",
-					"description": "Полнотекстовый поиск нечувствителен к регистру и может вернуть больше результатов, чем ожидалось. Запрос будет принимать только значения, содержащие более 1 символа."
+					"description": "Полнотекстовый поиск не учитывает регистр и может вернуть больше результатов. Запрос принимает только значения более 1 символа."
 				}
 			}
 		},
@@ -113,7 +113,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"entryId": {
 			"displayName": "Идентификатор записи"

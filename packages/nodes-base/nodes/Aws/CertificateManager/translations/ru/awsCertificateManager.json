@@ -64,7 +64,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"options": {
 			"displayName": "Параметры",
@@ -78,10 +78,10 @@
 							"displayName": "Истекший"
 						},
 						"FAILED": {
-							"displayName": "Неуспешный"
+							"displayName": "Не выполнено"
 						},
 						"INACTIVE": {
-							"displayName": "Неактивный"
+							"displayName": "Неактивно"
 						},
 						"ISSUED": {
 							"displayName": "Изданный"
@@ -108,7 +108,7 @@
 							"displayName": "Подписание кода"
 						},
 						"CUSTOM": {
-							"displayName": "Обычай"
+							"displayName": "Пользовательское"
 						},
 						"EMAIL_PROTECTION": {
 							"displayName": "Защита электронной почты"
@@ -177,7 +177,7 @@
 							"displayName": "Подписание списка отзыва сертификатов"
 						},
 						"CUSTOM": {
-							"displayName": "Обычай"
+							"displayName": "Пользовательское"
 						},
 						"DATA_ENCIPHERMENT": {
 							"displayName": "Шифрование данных"

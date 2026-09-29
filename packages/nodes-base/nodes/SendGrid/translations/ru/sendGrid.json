@@ -14,7 +14,7 @@
 					"displayName": "Список"
 				},
 				"mail": {
-					"displayName": "Почта"
+					"displayName": "Email"
 				}
 			}
 		},
@@ -22,7 +22,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать список"
 				},
 				"delete": {
@@ -38,7 +38,7 @@
 					"description": "Получить много контактов"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить список"
 				},
 				"upsert": {
@@ -46,8 +46,8 @@
 					"description": "Создайте новый контакт или обновите текущий, если он уже существует (upsert)"
 				},
 				"send": {
-					"displayName": "Отправлять",
-					"description": "Отправить электронное письмо"
+					"displayName": "Отправить",
+					"description": "Отправить письмо"
 				}
 			}
 		},
@@ -57,14 +57,14 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"name": {
 			"displayName": "Имя",
 			"description": "Название списка"
 		},
 		"listId": {
-			"displayName": "Идентификатор списка",
+			"displayName": "ID списка",
 			"description": "Идентификатор списка"
 		},
 		"deleteContacts": {
@@ -87,7 +87,7 @@
 		},
 		"email": {
 			"displayName": "Электронная почта",
-			"description": "Электронная почта контактного лица",
+			"description": "Адрес электронной почты контакта",
 			"placeholder": "имя@email.com"
 		},
 		"additionalFields": {
@@ -102,10 +102,10 @@
 						"addressValues": {
 							"options": {
 								"address1": {
-									"displayName": "Адресная строка 1"
+									"displayName": "Адрес, строка 1"
 								},
 								"address2": {
-									"displayName": "Адресная строка 2"
+									"displayName": "Адрес, строка 2"
 								}
 							}
 						}
@@ -122,7 +122,7 @@
 					"displayName": "Альтернативные адреса электронной почты"
 				},
 				"city": {
-					"displayName": "Город"
+					"displayName": "город"
 				},
 				"country": {
 					"displayName": "Страна"
@@ -148,7 +148,7 @@
 						"listIdValues": {
 							"options": {
 								"listIds": {
-									"displayName": "Список имен или идентификаторов",
+									"displayName": "Названия или ID списков",
 									"description": "Идентификатор поля, которое необходимо установить. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 								}
 							}
@@ -172,7 +172,7 @@
 						"customFieldValues": {
 							"options": {
 								"fieldId": {
-									"displayName": "Имя поля или идентификатор",
+									"displayName": "Имя поля или ID",
 									"description": "Идентификатор поля. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 								},
 								"fieldValue": {
@@ -196,7 +196,7 @@
 					"description": "Список двоичных свойств, разделенных запятыми."
 				},
 				"bccEmail": {
-					"displayName": "Электронная почта скрытой копии",
+					"displayName": "BCC (электронная почта)",
 					"description": "Список адресов электронной почты получателей слепой копии электронного письма, разделенный запятыми."
 				},
 				"categories": {
@@ -204,7 +204,7 @@
 					"description": "Список категорий, разделенный запятыми. Название каждой категории не может превышать 255 символов."
 				},
 				"ccEmail": {
-					"displayName": "Электронная почта CC",
+					"displayName": "CC (электронная почта)",
 					"description": "Разделенный запятыми список адресов электронной почты получателей точной копии электронного письма."
 				},
 				"enableSandbox": {
@@ -232,7 +232,7 @@
 									"description": "Ключ для установки в объекте заголовка"
 								},
 								"value": {
-									"displayName": "Ценить",
+									"displayName": "Значение",
 									"description": "Значение для установки в объекте заголовка"
 								}
 							}
@@ -253,7 +253,7 @@
 			}
 		},
 		"ids": {
-			"displayName": "Идентификаторы контактов",
+			"displayName": "ID контактов",
 			"description": "Идентификатор контакта. Можно добавить несколько значений через запятую."
 		},
 		"deleteAll": {
@@ -261,7 +261,7 @@
 			"description": "Будут ли удалены все контакты"
 		},
 		"by": {
-			"displayName": "К",
+			"displayName": "По",
 			"description": "Поиск пользователя по идентификатору или адресу электронной почты",
 			"options": {
 				"id": {
@@ -273,7 +273,7 @@
 			}
 		},
 		"contactId": {
-			"displayName": "Идентификатор контакта",
+			"displayName": "ID контакта",
 			"description": "Идентификатор контакта"
 		},
 		"fromEmail": {
@@ -300,7 +300,7 @@
 			"description": "Будет ли это письмо содержать динамический шаблон"
 		},
 		"contentType": {
-			"displayName": "MIME-тип",
+			"displayName": "Тип MIME",
 			"description": "MIME-тип отправляемого письма",
 			"options": {
 				"text/plain": {
@@ -317,7 +317,7 @@
 		},
 		"templateId": {
 			"displayName": "Имя или идентификатор шаблона",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"dynamicTemplateFields": {
 			"options": {
@@ -332,7 +332,7 @@
 							"description": "Ключ поля динамического шаблона"
 						},
 						"value": {
-							"displayName": "Ценить",
+							"displayName": "Значение",
 							"description": "Значение поля"
 						}
 					}

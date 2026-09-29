@@ -1,7 +1,7 @@
 {
 	"header": {
 		"displayName": "Google Презентации",
-		"description": "Используйте API Google Slides"
+		"description": "Использование API Google Slides"
 	},
 	"nodeView": {
 		"authentication": {
@@ -11,7 +11,7 @@
 					"displayName": "OAuth2 (рекомендуется)"
 				},
 				"serviceAccount": {
-					"displayName": "Сервисный аккаунт"
+					"displayName": "Служебный аккаунт"
 				}
 			}
 		},
@@ -30,7 +30,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать презентацию"
 				},
 				"get": {
@@ -52,12 +52,12 @@
 			}
 		},
 		"title": {
-			"displayName": "Заголовок",
-			"description": "Название презентации, которую нужно создать"
+			"displayName": "Название",
+			"description": "Название презентации"
 		},
 		"presentationId": {
 			"displayName": "Идентификатор презентации",
-			"description": "Идентификатор презентации, которую нужно получить. Найдено в URL-адресе презентации: <code>https://docs.google.com/presentation/d/PRESENTATION_ID/edit</code>.",
+			"description": "Идентификатор презентации. Найдите в URL: <code>https://docs.google.com/presentation/d/PRESENTATION_ID/edit</code>.",
 			"placeholder": "1wZtNFZ8MO-WKrxhYrOLMvyiqSgFwdSz5vn8_l_7eNqw"
 		},
 		"returnAll": {
@@ -66,27 +66,27 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"pageObjectId": {
 			"displayName": "Идентификатор объекта страницы",
-			"description": "Идентификатор объекта страницы для получения"
+			"description": "Идентификатор объекта страницы"
 		},
 		"textUi": {
 			"options": {
 				"textUi": {
-					"displayName": "Тексты для замены"
+					"displayName": "Текст для замены"
 				},
 				"textValues": {
 					"displayName": "Текст",
 					"values": {
 						"matchCase": {
 							"displayName": "Спичечный футляр",
-							"description": "Должен ли поиск учитывать регистр. True: поиск чувствителен к регистру. False: поиск нечувствителен к регистру."
+							"description": "Учитывать ли регистр. True: чувствительно к регистру. False: нечувствительно."
 						},
 						"pageObjectIds": {
-							"displayName": "Названия или идентификаторы слайдов",
-							"description": "Если не пусто, ограничивает совпадения элементами слайда только на заданных слайдах. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+							"displayName": "Имена или идентификаторы слайдов",
+							"description": "Ограничивает совпадения элементами слайда. Выберите из списка или укажите идентификаторы через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 						},
 						"text": {
 							"displayName": "Искать",
@@ -100,7 +100,7 @@
 				}
 			},
 			"placeholder": "Добавить текст",
-			"displayName": "Тексты для замены"
+			"displayName": "Текст для замены"
 		},
 		"options": {
 			"displayName": "Параметры",
@@ -108,13 +108,13 @@
 			"options": {
 				"revisionId": {
 					"displayName": "Идентификатор редакции",
-					"description": "Идентификатор версии презентации, необходимый для запроса на запись. Если указано и требуемыйRevisionId не совсем соответствует текущему идентификатору ревизии презентации, запрос не будет обработан и вернет ошибку 400 неверный запрос."
+					"description": "Идентификатор версии презентации для запроса записи. Если не совпадает с текущей версией, будет ошибка 400."
 				}
 			}
 		},
 		"download": {
 			"displayName": "Скачать",
-			"description": "Имя бинарного свойства, в которое записываются данные прочитанной страницы."
+			"description": "Имя бинарного свойства для записи данных страницы"
 		},
 		"binaryProperty": {
 			"displayName": "Поместите выходной файл в поле",

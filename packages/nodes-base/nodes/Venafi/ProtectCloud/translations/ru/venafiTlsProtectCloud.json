@@ -39,7 +39,7 @@
 					"description": "Продлить сертификат"
 				},
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать новый запрос сертификата"
 				}
 			}
@@ -142,7 +142,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"filters": {
 			"displayName": "Фильтры",
@@ -155,14 +155,14 @@
 		},
 		"applicationId": {
 			"displayName": "Имя или идентификатор приложения",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"existingCertificateId": {
 			"displayName": "Существующий идентификатор сертификата"
 		},
 		"certificateIssuingTemplateId": {
 			"displayName": "Имя или идентификатор шаблона выдачи сертификата",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"certificateSigningRequest": {
 			"displayName": "Запрос на подпись сертификата"

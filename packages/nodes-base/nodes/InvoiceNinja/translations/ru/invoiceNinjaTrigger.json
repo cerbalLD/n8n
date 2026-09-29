@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "Счет-фактура ниндзя триггер",
+		"displayName": "Триггер Invoice Ninja",
 		"description": "Запускает рабочий процесс при возникновении событий Invoice Ninja."
 	},
 	"nodeView": {
@@ -22,13 +22,13 @@
 					"displayName": "Клиент создан"
 				},
 				"create_invoice": {
-					"displayName": "Счет создан"
+					"displayName": "Счёт создан"
 				},
 				"create_payment": {
 					"displayName": "Платеж создан"
 				},
 				"create_quote": {
-					"displayName": "Цитата создана"
+					"displayName": "Предложение создано"
 				},
 				"create_vendor": {
 					"displayName": "Поставщик создан"

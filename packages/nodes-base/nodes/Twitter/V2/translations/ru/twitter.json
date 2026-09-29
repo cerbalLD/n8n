@@ -29,7 +29,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать, процитировать или ответить на твит"
 				},
 				"add": {
@@ -93,7 +93,7 @@
 					"description": "Порядок возврата результатов",
 					"options": {
 						"recency": {
-							"displayName": "Недавний"
+							"displayName": "Недавние"
 						},
 						"relevancy": {
 							"displayName": "Соответствующий"
@@ -122,10 +122,10 @@
 							"displayName": "Контекстные аннотации"
 						},
 						"conversation_id": {
-							"displayName": "Идентификатор беседы"
+							"displayName": "Идентификатор разговора"
 						},
 						"created_at": {
-							"displayName": "Создано в"
+							"displayName": "Создано"
 						},
 						"edit_controls": {
 							"displayName": "Редактировать элементы управления"
@@ -208,7 +208,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"me": {
 			"displayName": "Мне",

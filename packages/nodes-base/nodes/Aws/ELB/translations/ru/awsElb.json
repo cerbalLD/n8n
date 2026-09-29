@@ -30,7 +30,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создайте балансировщик нагрузки"
 				},
 				"delete": {
@@ -46,7 +46,7 @@
 					"description": "Получите множество сертификатов слушателей"
 				},
 				"add": {
-					"displayName": "Добавлять",
+					"displayName": "Добавить",
 					"description": "Добавьте указанный сертификат сервера SSL в список сертификатов для указанного прослушивателя HTTPS или TLS."
 				},
 				"remove": {
@@ -117,7 +117,7 @@
 									"description": "Ключ тега"
 								},
 								"value": {
-									"displayName": "Ценить",
+									"displayName": "Значение",
 									"description": "Значение тега"
 								}
 							}
@@ -127,7 +127,7 @@
 					"displayName": "Теги",
 					"options": {
 						"tagValues": {
-							"displayName": "Ярлык"
+							"displayName": "Тег"
 						}
 					}
 				}
@@ -143,7 +143,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"filters": {
 			"displayName": "Фильтры",

@@ -19,7 +19,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать тему"
 				},
 				"delete": {
@@ -27,7 +27,7 @@
 					"description": "Удалить тему"
 				},
 				"publish": {
-					"displayName": "Публиковать",
+					"displayName": "Публикация",
 					"description": "Опубликовать сообщение в теме"
 				}
 			}

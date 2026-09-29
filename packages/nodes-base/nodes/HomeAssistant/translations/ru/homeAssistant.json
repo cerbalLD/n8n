@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Домашний помощник",
-		"description": "Использование API домашнего помощника"
+		"displayName": "Home Assistant",
+		"description": "Использование API Home Assistant"
 	},
 	"nodeView": {
 		"resource": {
@@ -17,13 +17,13 @@
 					"displayName": "Событие"
 				},
 				"log": {
-					"displayName": "Бревно"
+					"displayName": "Журнал"
 				},
 				"service": {
-					"displayName": "Услуга"
+					"displayName": "Сервис"
 				},
 				"state": {
-					"displayName": "Состояние"
+					"displayName": "область"
 				},
 				"template": {
 					"displayName": "Шаблон"
@@ -35,18 +35,18 @@
 			"options": {
 				"getScreenshot": {
 					"displayName": "Получить скриншот",
-					"description": "Получить скриншот камеры"
+					"description": "Получить скриншот с камеры"
 				},
 				"get": {
 					"displayName": "Получать",
-					"description": "Получить состояние для конкретной сущности"
+					"description": "Получить состояние конкретной сущности"
 				},
 				"check": {
-					"displayName": "Проверьте конфигурацию",
-					"description": "Проверьте конфигурацию"
+					"displayName": "Проверить конфигурацию",
+					"description": "Проверить конфигурацию"
 				},
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать шаблон"
 				},
 				"getAll": {
@@ -58,22 +58,22 @@
 					"description": "Получить журнал для конкретной сущности"
 				},
 				"getLogbookEntries": {
-					"displayName": "Получить записи в журнале",
+					"displayName": "Получить записи из журнала",
 					"description": "Получить все журналы"
 				},
 				"call": {
-					"displayName": "Вызов",
-					"description": "Вызов службы в определенном домене"
+					"displayName": "Звонок",
+					"description": "Вызвать службу в определённом домене"
 				},
 				"upsert": {
 					"displayName": "Создать или обновить",
-					"description": "Создайте новую запись или обновите текущую, если она уже существует (upsert)"
+					"description": "Создать новую запись или обновить существующую (upsert)"
 				}
 			}
 		},
 		"cameraEntityId": {
-			"displayName": "Имя или идентификатор объекта камеры",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"displayName": "Имя объекта камеры или идентификатор",
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"binaryPropertyName": {
 			"displayName": "Поместите выходной файл в поле",
@@ -85,16 +85,16 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"eventType": {
 			"displayName": "Тип события",
-			"description": "Идентификатор объекта, для которого будет создано событие."
+			"description": "Идентификатор сущности, для которой будет создано событие"
 		},
 		"eventAttributes": {
 			"options": {
 				"eventAttributes": {
-					"displayName": "Атрибуты событий"
+					"displayName": "Атрибуты события"
 				},
 				"attributes": {
 					"displayName": "Атрибуты",
@@ -104,14 +104,14 @@
 							"description": "Имя атрибута"
 						},
 						"value": {
-							"displayName": "Ценить",
+							"displayName": "Значение",
 							"description": "Значение атрибута"
 						}
 					}
 				}
 			},
 			"placeholder": "Добавить атрибут",
-			"displayName": "Атрибуты событий"
+			"displayName": "Атрибуты события"
 		},
 		"additionalFields": {
 			"displayName": "Дополнительные поля",
@@ -122,33 +122,33 @@
 					"description": "Конец периода"
 				},
 				"entityIds": {
-					"displayName": "Идентификаторы объектов",
-					"description": "Идентификаторы объектов, разделенные запятой"
+					"displayName": "Идентификаторы сущностей",
+					"description": "Идентификаторы сущностей через запятую"
 				},
 				"minimalResponse": {
 					"displayName": "Минимальный ответ",
-					"description": "Возвращать ли только <code>last_changed</code> и состояние для состояний"
+					"description": "Возвращать ли только <code>last_changed</code> и состояние"
 				},
 				"significantChangesOnly": {
-					"displayName": "Только существенные изменения",
-					"description": "Возвращать ли только существенные изменения состояния"
+					"displayName": "Только значительные изменения",
+					"description": "Возвращать ли только значительные изменения состояния"
 				},
 				"startTime": {
 					"displayName": "Время начала",
 					"description": "Начало периода"
 				},
 				"entityId": {
-					"displayName": "Идентификатор объекта"
+					"displayName": "ID объекта"
 				}
 			}
 		},
 		"domain": {
-			"displayName": "Доменное имя или идентификатор",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"displayName": "Имя или идентификатор домена",
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"service": {
-			"displayName": "Имя или идентификатор службы",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"displayName": "Имя службы или идентификатор",
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"serviceAttributes": {
 			"options": {
@@ -163,7 +163,7 @@
 							"description": "Название поля"
 						},
 						"value": {
-							"displayName": "Ценить",
+							"displayName": "Значение",
 							"description": "Значение поля"
 						}
 					}
@@ -173,16 +173,16 @@
 			"displayName": "Атрибуты службы"
 		},
 		"entityId": {
-			"displayName": "Имя или идентификатор объекта",
-			"description": "Идентификатор сущности, для которой будет создано состояние. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"displayName": "Имя сущности или идентификатор",
+			"description": "Идентификатор сущности, для которой будет создано состояние. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"state": {
-			"displayName": "Состояние"
+			"displayName": "область"
 		},
 		"stateAttributes": {
 			"options": {
 				"stateAttributes": {
-					"displayName": "Государственные атрибуты"
+					"displayName": "Атрибуты состояния"
 				},
 				"attributes": {
 					"displayName": "Атрибуты",
@@ -192,18 +192,18 @@
 							"description": "Имя атрибута"
 						},
 						"value": {
-							"displayName": "Ценить",
+							"displayName": "Значение",
 							"description": "Значение атрибута"
 						}
 					}
 				}
 			},
 			"placeholder": "Добавить атрибут",
-			"displayName": "Государственные атрибуты"
+			"displayName": "Атрибуты состояния"
 		},
 		"template": {
 			"displayName": "Шаблон",
-			"description": "Отобразите шаблон домашнего помощника. <a href=\"https://www.home-assistant.io/docs/configuration/templating/\">Дополнительную информацию см. в документации по шаблонам.</a>."
+			"description": "Отобразите шаблон Home Assistant. <a href=\"https://www.home-assistant.io/docs/configuration/templating/\">Дополнительную информацию см. в документации</a>."
 		}
 	}
 }

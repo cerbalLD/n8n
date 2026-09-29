@@ -89,7 +89,7 @@
 					"displayName": "JSON"
 				},
 				"string": {
-					"displayName": "Нить"
+					"displayName": "Текст"
 				}
 			}
 		},
@@ -111,7 +111,7 @@
 							"description": "Название заголовка"
 						},
 						"value": {
-							"displayName": "Ценить",
+							"displayName": "Значение",
 							"description": "Значение, которое нужно установить для заголовка"
 						}
 					}

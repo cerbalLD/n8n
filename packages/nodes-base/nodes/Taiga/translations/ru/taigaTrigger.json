@@ -6,7 +6,7 @@
 	"nodeView": {
 		"projectId": {
 			"displayName": "Название или идентификатор проекта",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"resources": {
 			"displayName": "Ресурсы",
@@ -16,7 +16,7 @@
 					"displayName": "Все"
 				},
 				"issue": {
-					"displayName": "Проблема"
+					"displayName": "Задача"
 				},
 				"milestone": {
 					"displayName": "Веха (Спринт)"
@@ -40,13 +40,13 @@
 					"displayName": "Все"
 				},
 				"create": {
-					"displayName": "Создавать"
+					"displayName": "Создать"
 				},
 				"delete": {
 					"displayName": "Удалить"
 				},
 				"change": {
-					"displayName": "Обновлять"
+					"displayName": "Обновить"
 				}
 			}
 		}

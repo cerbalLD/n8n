@@ -34,14 +34,14 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"filters": {
 			"displayName": "Фильтры",
 			"placeholder": "Добавить фильтр",
 			"options": {
 				"customerId": {
-					"displayName": "Идентификатор клиента",
+					"displayName": "ID клиента",
 					"description": "Возвращает заказы только для указанного GUID клиента. CustomerId можно указать в виде списка идентификаторов GUID, разделенных запятыми.",
 					"placeholder": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
 				},
@@ -69,7 +69,7 @@
 							"displayName": "Отложенный заказ"
 						},
 						"Completed": {
-							"displayName": "Завершенный"
+							"displayName": "Завершено"
 						},
 						"Deleted": {
 							"displayName": "Удалено"
@@ -95,11 +95,11 @@
 					"description": "Будет ли AvailableQty также включать количество, которое можно собрать?"
 				},
 				"orderBy": {
-					"displayName": "Заказать по",
+					"displayName": "Сортировать по",
 					"description": "Упорядочивает список по определенному столбцу, по умолчанию список упорядочивается по коду продукта."
 				},
 				"productId": {
-					"displayName": "Идентификатор продукта",
+					"displayName": "ID товара",
 					"description": "Возвращает продукты с конкретным Руководством по продукту. Вы можете ввести несколько идентификаторов продуктов, разделенных запятыми."
 				},
 				"warehouseCode": {
@@ -113,7 +113,7 @@
 			}
 		},
 		"productId": {
-			"displayName": "Идентификатор продукта"
+			"displayName": "ID товара"
 		}
 	}
 }

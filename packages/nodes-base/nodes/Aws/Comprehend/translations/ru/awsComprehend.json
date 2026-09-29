@@ -55,10 +55,10 @@
 					"displayName": "Китайский (Т)"
 				},
 				"en": {
-					"displayName": "Английский"
+					"displayName": "английский"
 				},
 				"fr": {
-					"displayName": "Французский"
+					"displayName": "французский"
 				},
 				"de": {
 					"displayName": "немецкий"
@@ -88,8 +88,8 @@
 			"description": "Текст для отправки"
 		},
 		"simple": {
-			"displayName": "Упрощать",
-			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+			"displayName": "Упростить",
+			"description": "Возвращать ли упрощённую версию ответа вместо необработанных данных"
 		},
 		"additionalFields": {
 			"displayName": "Дополнительные поля",

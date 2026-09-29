@@ -1,7 +1,7 @@
 {
 	"header": {
 		"displayName": "Триггер Cal.com",
-		"description": "Обработка событий Cal.com с помощью веб-перехватчиков"
+		"description": "Обработка событий Cal.com через вебхуки"
 	},
 	"nodeView": {
 		"events": {
@@ -9,19 +9,19 @@
 			"options": {
 				"BOOKING_CANCELLED": {
 					"displayName": "Бронирование отменено",
-					"description": "Получать уведомления при отмене события Cal"
+					"description": "Получать уведомления об отмене события Cal"
 				},
 				"BOOKING_CREATED": {
 					"displayName": "Бронирование создано",
-					"description": "Получайте уведомления при создании нового события калибровки."
+					"description": "Получать уведомления о новых событиях Cal"
 				},
 				"BOOKING_RESCHEDULED": {
 					"displayName": "Бронирование перенесено",
-					"description": "Получайте уведомления, когда событие Cal переносится"
+					"description": "Получать уведомления при переносе события Cal"
 				},
 				"MEETING_ENDED": {
 					"displayName": "Встреча завершена",
-					"description": "Получайте уведомления об окончании мероприятия или собрания Cal."
+					"description": "Получать уведомления об окончании события Cal"
 				}
 			}
 		},
@@ -30,12 +30,12 @@
 			"placeholder": "Добавить поле",
 			"options": {
 				"eventTypeId": {
-					"displayName": "Имя или идентификатор типа события",
-					"description": "EventType для мониторинга. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Имя или ID типа события",
+					"description": "Тип события для отслеживания. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"payloadTemplate": {
 					"displayName": "Шаблон полезной нагрузки",
-					"description": "Шаблон для настройки полезной нагрузки веб-перехватчика"
+					"description": "Шаблон для настройки полезной нагрузки вебхука"
 				}
 			}
 		}

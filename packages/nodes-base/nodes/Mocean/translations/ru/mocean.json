@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Мокеан",
-		"description": "Отправляйте SMS и голосовые сообщения через Mocean"
+		"displayName": "Mocean",
+		"description": "Отправка SMS и голосовых сообщений через Mocean"
 	},
 	"nodeView": {
 		"resource": {
@@ -19,18 +19,18 @@
 			"displayName": "Операция",
 			"options": {
 				"send": {
-					"displayName": "Отправлять",
+					"displayName": "Отправить",
 					"description": "Отправить SMS/голосовое сообщение"
 				}
 			}
 		},
 		"from": {
 			"displayName": "От",
-			"description": "Номер, на который отправить сообщение",
+			"description": "Номер для отправки сообщения",
 			"placeholder": "Номер отправителя"
 		},
 		"to": {
-			"displayName": "К",
+			"displayName": "До",
 			"description": "Номер, с которого отправить сообщение",
 			"placeholder": "Номер получателя"
 		},
@@ -63,7 +63,7 @@
 			"placeholder": "Добавить поле",
 			"options": {
 				"dlrUrl": {
-					"displayName": "URL-адрес отчета о доставке"
+					"displayName": "URL отчёта о доставке"
 				}
 			}
 		}

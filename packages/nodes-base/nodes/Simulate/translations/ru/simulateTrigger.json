@@ -6,17 +6,17 @@
 	"nodeView": {
 		"icon": {
 			"displayName": "Значок для отображения на холсте",
-			"description": "Выберите тип узла, чтобы отобразить соответствующий значок."
+			"description": "Выберите тип узла для отображения соответствующего значка"
 		},
 		"subtitle": {
-			"displayName": "Субтитры",
-			"placeholder": "например 'запись: прочитать'"
+			"displayName": "Подзаголовок",
+			"placeholder": "например 'запись: читать'"
 		},
 		"jsonOutput": {
-			"displayName": "Выходные данные (JSON)"
+			"displayName": "Вывод (JSON)"
 		},
 		"executionDuration": {
-			"displayName": "Продолжительность выполнения (мс)",
+			"displayName": "Длительность выполнения (мс)",
 			"description": "Длительность выполнения в миллисекундах"
 		}
 	}

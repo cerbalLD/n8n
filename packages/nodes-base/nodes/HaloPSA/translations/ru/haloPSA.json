@@ -25,7 +25,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать пользователя"
 				},
 				"delete": {
@@ -38,10 +38,10 @@
 				},
 				"getAll": {
 					"displayName": "Получить много",
-					"description": "Получить много пользователей"
+					"description": "Получить нескольких пользователей"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить пользователя"
 				}
 			}
@@ -61,7 +61,7 @@
 							"displayName": "Активный"
 						},
 						"true": {
-							"displayName": "Неактивный"
+							"displayName": "Неактивно"
 						}
 					}
 				},
@@ -77,7 +77,7 @@
 				},
 				"agent_id": {
 					"displayName": "Назначенное имя или идентификатор агента",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"startdate": {
 					"displayName": "Дата начала"
@@ -105,11 +105,11 @@
 		},
 		"clientId": {
 			"displayName": "Имя или идентификатор клиента",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"simplify": {
-			"displayName": "Упрощать",
-			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+			"displayName": "Упростить",
+			"description": "Возвращать ли упрощённую версию ответа вместо необработанных данных"
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",
@@ -117,7 +117,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"filters": {
 			"displayName": "Фильтры",
@@ -157,7 +157,7 @@
 							"displayName": "Активный"
 						},
 						"true": {
-							"displayName": "Неактивный"
+							"displayName": "Неактивно"
 						}
 					}
 				},
@@ -177,7 +177,7 @@
 				},
 				"agent_id": {
 					"displayName": "Назначенное имя или идентификатор агента",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"details": {
 					"displayName": "Подробности"
@@ -186,13 +186,13 @@
 					"displayName": "Дата начала"
 				},
 				"summary": {
-					"displayName": "Краткое содержание"
+					"displayName": "Краткое описание"
 				},
 				"targetdate": {
 					"displayName": "Целевая дата"
 				},
 				"client_id": {
-					"displayName": "Идентификатор клиента"
+					"displayName": "ID клиента"
 				},
 				"maincontact_name": {
 					"displayName": "Главный контакт"
@@ -209,7 +209,7 @@
 				},
 				"site_id": {
 					"displayName": "Имя или идентификатор сайта",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"surname": {
 					"displayName": "Фамилия"
@@ -218,10 +218,10 @@
 		},
 		"ticketType": {
 			"displayName": "Название или идентификатор типа билета",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"summary": {
-			"displayName": "Краткое содержание"
+			"displayName": "Краткое описание"
 		},
 		"details": {
 			"displayName": "Подробности"
@@ -239,7 +239,7 @@
 		},
 		"siteId": {
 			"displayName": "Имя или идентификатор сайта",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"userName": {
 			"displayName": "Имя",

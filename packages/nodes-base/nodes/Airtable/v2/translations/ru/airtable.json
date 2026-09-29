@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Воздушный стол",
-		"description": "Чтение, обновление, запись и удаление данных из Airtable"
+		"displayName": "Airtable",
+		"description": "Чтение, обновление, запись и удаление данных в Airtable"
 	},
 	"nodeView": {
 		"authentication": {
@@ -19,10 +19,10 @@
 			"displayName": "Ресурс",
 			"options": {
 				"base": {
-					"displayName": "База"
+					"displayName": "Базовая версия"
 				},
 				"record": {
-					"displayName": "Записывать"
+					"displayName": "Запись"
 				}
 			}
 		},
@@ -30,12 +30,12 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать новую запись в таблице"
 				},
 				"upsert": {
 					"displayName": "Создать или обновить",
-					"description": "Создайте новую запись или обновите текущую, если она уже существует (upsert)"
+					"description": "Создать новую запись или обновить существующую (upsert)"
 				},
 				"deleteRecord": {
 					"displayName": "Удалить",
@@ -47,15 +47,15 @@
 				},
 				"search": {
 					"displayName": "Поиск",
-					"description": "Найдите определенные записи или перечислите все"
+					"description": "Найти определённые записи или список все"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить запись в таблице"
 				},
 				"getMany": {
 					"displayName": "Получить много",
-					"description": "Перечислить все базы"
+					"description": "Список всех баз"
 				},
 				"getSchema": {
 					"displayName": "Получить схему",
@@ -64,11 +64,11 @@
 			}
 		},
 		"base": {
-			"displayName": "База",
-			"description": "База Airtable для получения схемы"
+			"displayName": "Базовая версия",
+			"description": "База Airtable, из которой нужно получить схему"
 		},
 		"table": {
-			"displayName": "Стол"
+			"displayName": "Таблица"
 		},
 		"columns": {
 			"displayName": "Столбцы"
@@ -78,37 +78,37 @@
 			"placeholder": "Добавить вариант",
 			"options": {
 				"typecast": {
-					"displayName": "Типизация",
-					"description": "Должен ли Airtable API пытаться сопоставить строковые значения для связанных записей и выбрать параметры"
+					"displayName": "Приведение типов",
+					"description": "Должен ли API Airtable пытаться сопоставить строковые значения для связанных записей и опций выбора"
 				},
 				"ignoreFields": {
-					"displayName": "Игнорировать поля ввода",
-					"description": "Список полей ввода, разделенных запятыми, которые следует игнорировать при обновлении."
+					"displayName": "Игнорировать поля входных данных",
+					"description": "Разделённый запятыми список полей входных данных, которые следует игнорировать при обновлении"
 				},
 				"updateAllMatches": {
-					"displayName": "Обновить все матчи",
-					"description": "Следует ли обновлять все записи, соответствующие значению в «Столбце для сопоставления». Если не установлено, будет обновлена ​​только первая совпадающая запись."
+					"displayName": "Обновить все совпадения",
+					"description": "Обновлять ли все записи, соответствующие значению в поле «Столбец для совпадения». Если не установлено, будет обновлена только первая совпадающая запись."
 				},
 				"downloadFields": {
 					"displayName": "Загрузить вложения",
-					"description": "Поля типа «вложение», которые необходимо загрузить"
+					"description": "Поля типа «вложение», которые должны быть загружены"
 				},
 				"fields": {
 					"displayName": "Поля вывода",
 					"description": "Поля, которые вы хотите включить в выходные данные"
 				},
 				"view": {
-					"displayName": "Вид"
+					"displayName": "Просмотр"
 				},
 				"permissionLevel": {
 					"displayName": "Уровень разрешений",
-					"description": "Фильтруйте возвращаемые базы по одному или нескольким уровням разрешений.",
+					"description": "Фильтруйте возвращаемые базы по одному или нескольким уровням разрешений",
 					"options": {
 						"comment": {
 							"displayName": "Комментарий"
 						},
 						"create": {
-							"displayName": "Создавать"
+							"displayName": "Создать"
 						},
 						"edit": {
 							"displayName": "Редактировать"
@@ -117,23 +117,23 @@
 							"displayName": "Никто"
 						},
 						"read": {
-							"displayName": "Читать"
+							"displayName": "Чтение"
 						}
 					}
 				}
 			},
-			"description": "Дополнительные параметры, определяющие, какие записи следует вернуть."
+			"description": "Дополнительные параметры, определяющие, какие записи должны быть возвращены"
 		},
 		"id": {
 			"displayName": "Идентификатор записи",
-			"description": "Идентификатор записи, которую нужно получить. <a href=\"https://support.airtable.com/docs/record-id\" target=\"_blank\">Подробнее</a>.",
-			"placeholder": "например Recf7EaZp707CEc8g"
+			"description": "Идентификатор записи для получения. <a href=\"https://support.airtable.com/docs/record-id\" target=\"_blank\">Подробнее</a>.",
+			"placeholder": "например recf7EaZp707CEc8g"
 		},
 		"filterByFormula": {
-			"displayName": "Фильтровать по формуле",
-			"description": "Формула будет вычисляться для каждой записи, и если результат не равен 0, значит false, \"\", NaN, [] или #Error! запись будет включена в ответ. <a href=\"https://support.airtable.com/docs/formula-field-reference\" target=\"_blank\">Подробнее</a>.",
-			"hint": "Если пусто, будут возвращены все записи.",
-			"placeholder": "например НЕ({Name} = 'Администратор')"
+			"displayName": "Фильтр по формуле",
+			"description": "Формула будет вычисляться для каждой записи, и если результат не равен 0, false, \"\", NaN, [] или #Error!, запись будет включена в ответ. <a href=\"https://support.airtable.com/docs/formula-field-reference\" target=\"_blank\">Подробнее</a>.",
+			"hint": "Если оставить пусто, будут возвращены все записи",
+			"placeholder": "например NOT({Name} = 'Admin')"
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",
@@ -141,20 +141,20 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"sort": {
 			"options": {
 				"sort": {
-					"displayName": "Сортировать",
-					"description": "Определяет порядок возвращаемых записей."
+					"displayName": "Сортировка",
+					"description": "Определяет порядок сортировки возвращаемых записей"
 				},
 				"property": {
 					"displayName": "Свойство",
 					"values": {
 						"field": {
 							"displayName": "Поле",
-							"description": "Имя поля для сортировки. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+							"description": "Имя поля для сортировки. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 						},
 						"direction": {
 							"displayName": "Направление",
@@ -162,11 +162,11 @@
 							"options": {
 								"asc": {
 									"displayName": "ASC",
-									"description": "Сортировать по возрастанию (маленький -> большой)"
+									"description": "Сортировать по возрастанию (от меньшего к большему)"
 								},
 								"desc": {
 									"displayName": "DESC",
-									"description": "Сортировать по убыванию (большой -> маленький)"
+									"description": "Сортировать по убыванию (от большего к меньшему)"
 								}
 							}
 						}
@@ -174,8 +174,8 @@
 				}
 			},
 			"placeholder": "Добавить правило сортировки",
-			"displayName": "Сортировать",
-			"description": "Определяет порядок возвращаемых записей."
+			"displayName": "Сортировка",
+			"description": "Определяет порядок сортировки возвращаемых записей"
 		}
 	}
 }

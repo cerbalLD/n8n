@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "КвестБД",
-		"description": "Получайте, добавляйте и обновляйте данные в QuestDB"
+		"displayName": "QuestDB",
+		"description": "Получать, добавлять и обновлять данные в QuestDB"
 	},
 	"nodeView": {
 		"operation": {
@@ -12,28 +12,28 @@
 					"description": "Выполняет SQL-запрос"
 				},
 				"insert": {
-					"displayName": "Вставлять",
+					"displayName": "Вставить",
 					"description": "Вставить строки в базу данных"
 				}
 			}
 		},
 		"query": {
 			"displayName": "Запрос",
-			"description": "SQL-запрос, который необходимо выполнить. Вы можете использовать выражения n8n или $1 и $2 вместе с параметрами запроса.",
-			"placeholder": "ВЫБЕРИТЕ идентификатор, имя ИЗ продукта, ГДЕ количество > 1 доллар США И цена <= 2 доллара США."
+			"description": "SQL-запрос для выполнения. Вы можете использовать выражения n8n или параметры $1 и $2.",
+			"placeholder": "SELECT id, name FROM product WHERE quantity > $1 AND price <= $2"
 		},
 		"table": {
-			"displayName": "Стол",
-			"description": "Имя таблицы, в которую нужно вставить данные"
+			"displayName": "Таблица",
+			"description": "Имя таблицы для вставки данных"
 		},
 		"columns": {
 			"displayName": "Столбцы",
-			"description": "Список свойств, разделенных запятыми, которые следует использовать в качестве столбцов для новых строк.",
+			"description": "Список свойств, разделённых запятыми, для использования в качестве столбцов",
 			"placeholder": "идентификатор, имя, описание"
 		},
 		"returnFields": {
-			"displayName": "Возвратные поля",
-			"description": "Список полей, разделенных запятыми, которые вернет операция."
+			"displayName": "Возвращаемые поля",
+			"description": "Список полей через запятую, возвращаемых операцией"
 		},
 		"additionalFields": {
 			"displayName": "Дополнительные поля",
@@ -41,22 +41,22 @@
 			"options": {
 				"mode": {
 					"displayName": "Режим",
-					"description": "Способ отправки запросов в базу данных. Может использоваться вместе с <b>Продолжить при сбое </b>. Дополнительные примеры см. в <a href=\"https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.questdb/\">документации</a>.",
+					"description": "Способ отправки запросов в базу данных. Может использоваться вместе с <b>Продолжить при ошибке</b>. Дополнительные примеры см. в <a href=\"https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.questdb/\">документации</a>.",
 					"options": {
 						"independently": {
 							"displayName": "Независимо",
 							"description": "Выполнять каждый запрос независимо"
 						},
 						"transaction": {
-							"displayName": "Сделка",
+							"displayName": "Транзакция",
 							"description": "Выполняет все запросы в одной транзакции"
 						}
 					}
 				},
 				"queryParams": {
 					"displayName": "Параметры запроса",
-					"description": "Список свойств, разделенных запятыми, которые следует использовать в качестве параметров запроса.",
-					"placeholder": "количество, цена"
+					"description": "Список свойств через запятую, используемых как параметры запроса",
+					"placeholder": "quantity,price"
 				}
 			}
 		}

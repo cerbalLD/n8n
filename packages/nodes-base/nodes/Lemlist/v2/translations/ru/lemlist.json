@@ -17,7 +17,7 @@
 					"displayName": "Обогащение"
 				},
 				"lead": {
-					"displayName": "Вести"
+					"displayName": "Лид"
 				},
 				"team": {
 					"displayName": "Команда"
@@ -46,7 +46,7 @@
 					"displayName": "Обогатить человека"
 				},
 				"create": {
-					"displayName": "Создавать"
+					"displayName": "Создать"
 				},
 				"delete": {
 					"displayName": "Удалить"
@@ -58,7 +58,7 @@
 					"displayName": "Получить кредиты"
 				},
 				"add": {
-					"displayName": "Добавлять"
+					"displayName": "Добавить"
 				}
 			}
 		},
@@ -68,14 +68,14 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"filters": {
 			"displayName": "Фильтры",
 			"placeholder": "Добавить фильтр",
 			"options": {
 				"campaignId": {
-					"displayName": "Название или идентификатор кампании",
+					"displayName": "Название или ID кампании",
 					"description": "Идентификатор кампании, для которой требуется получить данные об активности. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"isFirst": {
@@ -215,7 +215,7 @@
 							"displayName": "Возможности реализованы"
 						},
 						"paused": {
-							"displayName": "Приостановлено"
+							"displayName": "На паузе"
 						},
 						"resumed": {
 							"displayName": "Возобновлено"
@@ -237,7 +237,7 @@
 			}
 		},
 		"campaignId": {
-			"displayName": "Название или идентификатор кампании",
+			"displayName": "Название или ID кампании",
 			"description": "Идентификатор кампании, от которой нужно отказаться от подписки. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 		},
 		"startDate": {

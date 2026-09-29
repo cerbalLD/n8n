@@ -36,7 +36,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать пользователя"
 				},
 				"delete": {
@@ -52,7 +52,7 @@
 					"description": "Получить много пользователей"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить пользователя"
 				},
 				"getSelf": {
@@ -84,7 +84,7 @@
 						"customFieldPairs": {
 							"options": {
 								"name": {
-									"displayName": "Имя поля или идентификатор",
+									"displayName": "Имя поля или ID",
 									"description": "Имя настраиваемого поля, которое нужно установить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 								},
 								"value": {
@@ -130,7 +130,7 @@
 						"addressDetails": {
 							"options": {
 								"city": {
-									"displayName": "Город",
+									"displayName": "город",
 									"placeholder": "Берлин"
 								},
 								"country": {
@@ -169,7 +169,7 @@
 					"placeholder": "+49 30 901820"
 				},
 				"organization": {
-					"displayName": "Название или идентификатор организации",
+					"displayName": "Название или ID организации",
 					"description": "Название организации, которую нужно назначить пользователю. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"phone": {
@@ -206,7 +206,7 @@
 						"customFieldPairs": {
 							"options": {
 								"name": {
-									"displayName": "Имя поля или идентификатор",
+									"displayName": "Имя поля или ID",
 									"description": "Имя настраиваемого поля, которое нужно установить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 								},
 								"value": {
@@ -248,7 +248,7 @@
 					"description": "Является ли пользователь очень важным человеком"
 				},
 				"title": {
-					"displayName": "Заголовок",
+					"displayName": "Название",
 					"description": "Название билета"
 				},
 				"group": {
@@ -256,7 +256,7 @@
 					"description": "Группа, которой будет принадлежать билет. Выберите из списка или укажите имя с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"state_id": {
-					"displayName": "Состояние",
+					"displayName": "область",
 					"description": "Состояние билета. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"pending_time": {
@@ -283,7 +283,7 @@
 						"addressDetails": {
 							"options": {
 								"city": {
-									"displayName": "Город",
+									"displayName": "город",
 									"placeholder": "Берлин"
 								},
 								"country": {
@@ -330,7 +330,7 @@
 					"placeholder": "Смит"
 				},
 				"organization": {
-					"displayName": "Название или идентификатор организации",
+					"displayName": "Название или ID организации",
 					"description": "Название организации, которую нужно назначить пользователю. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"phone": {
@@ -357,14 +357,14 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"title": {
-			"displayName": "Заголовок",
+			"displayName": "Название",
 			"description": "Название заявки для создания"
 		},
 		"group": {
-			"displayName": "Имя или идентификатор группы",
+			"displayName": "Имя или ID группы",
 			"description": "Группа, которой будет принадлежать создаваемый билет. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>.",
 			"placeholder": "Служба поддержки первого уровня"
 		},
@@ -439,7 +439,7 @@
 							}
 						},
 						"to": {
-							"displayName": "К",
+							"displayName": "До",
 							"description": "Адрес электронной почты получателя",
 							"placeholder": "имя@email.com"
 						},
@@ -449,7 +449,7 @@
 							"placeholder": "имя@email.com"
 						},
 						"reply_to": {
-							"displayName": "Отвечать на"
+							"displayName": "Ответить на"
 						}
 					}
 				}
@@ -480,19 +480,19 @@
 				"sortUi": {
 					"values": {
 						"sortUi": {
-							"displayName": "Сортировать"
+							"displayName": "Сортировка"
 						},
 						"sortDetails": {
 							"options": {
 								"sort_by": {
 									"displayName": "Имя или идентификатор ключа сортировки",
-									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+									"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 								},
 								"order_by": {
 									"displayName": "Порядок сортировки",
 									"options": {
 										"asc": {
-											"displayName": "восходящий"
+											"displayName": "По возрастанию"
 										},
 										"desc": {
 											"displayName": "По убыванию"
@@ -503,7 +503,7 @@
 						}
 					},
 					"placeholder": "Добавить параметры сортировки",
-					"displayName": "Сортировать",
+					"displayName": "Сортировка",
 					"options": {
 						"sortDetails": {
 							"displayName": "Параметры сортировки"

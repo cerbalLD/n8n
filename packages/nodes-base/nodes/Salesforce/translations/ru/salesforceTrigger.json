@@ -5,7 +5,7 @@
 	},
 	"nodeView": {
 		"triggerOn": {
-			"displayName": "Триггер включен",
+			"displayName": "Триггер для",
 			"description": "Какое событие Salesforce должно активировать узел",
 			"options": {
 				"accountCreated": {
@@ -22,7 +22,7 @@
 				},
 				"attachmentUpdated": {
 					"displayName": "Вложение обновлено",
-					"description": "При изменении существующего файла"
+					"description": "Когда изменяется существующий файл"
 				},
 				"caseCreated": {
 					"displayName": "Дело создано",
@@ -73,11 +73,11 @@
 					"description": "При изменении существующей задачи"
 				},
 				"userCreated": {
-					"displayName": "Создано пользователем",
+					"displayName": "Пользователь создан",
 					"description": "Когда создается новый пользователь"
 				},
 				"userUpdated": {
-					"displayName": "Пользователь обновлен",
+					"displayName": "Пользователь обновлён",
 					"description": "Когда существующий пользователь изменен"
 				}
 			}

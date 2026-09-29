@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "Постгрес триггер",
-		"description": "Прослушивает сообщения Postgres"
+		"displayName": "Триггер Postgres",
+		"description": "Слушает сообщения Postgres"
 	}
 }

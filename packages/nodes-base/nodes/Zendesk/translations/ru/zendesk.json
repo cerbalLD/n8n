@@ -40,7 +40,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать организацию"
 				},
 				"delete": {
@@ -60,7 +60,7 @@
 					"description": "Восстановить приостановленный билет"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить организацию"
 				},
 				"getOrganizations": {
@@ -100,11 +100,11 @@
 						"customFieldsValues": {
 							"options": {
 								"id": {
-									"displayName": "Имя или идентификатор",
+									"displayName": "имя или идентификатор",
 									"description": "Идентификатор настраиваемого поля. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 								},
 								"value": {
-									"displayName": "Ценить",
+									"displayName": "Значение",
 									"description": "Значение настраиваемого поля"
 								}
 							}
@@ -119,11 +119,11 @@
 					}
 				},
 				"externalId": {
-					"displayName": "Внешний идентификатор",
+					"displayName": "Внешний ID",
 					"description": "Идентификатор, который можно использовать для привязки заявок Zendesk Support к локальным записям."
 				},
 				"group": {
-					"displayName": "Имя или идентификатор группы",
+					"displayName": "Имя или ID группы",
 					"description": "Группа, которой назначен этот билет. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"recipient": {
@@ -138,7 +138,7 @@
 							"displayName": "Закрыто"
 						},
 						"new": {
-							"displayName": "Новый"
+							"displayName": "Создать"
 						},
 						"hold": {
 							"displayName": "На удерживании"
@@ -159,7 +159,7 @@
 					"description": "Значение поля темы для этой заявки"
 				},
 				"tags": {
-					"displayName": "Имена или идентификаторы тегов",
+					"displayName": "Имена или ID тегов",
 					"description": "Идентификаторы тегов, примененных к этой организации. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"type": {
@@ -198,7 +198,7 @@
 					"placeholder": "имя@email.com"
 				},
 				"external_id": {
-					"displayName": "Внешний идентификатор",
+					"displayName": "Внешний ID",
 					"description": "Уникальный идентификатор из другой системы"
 				},
 				"locale": {
@@ -218,7 +218,7 @@
 					"description": "Может ли пользователь создавать только частные комментарии"
 				},
 				"organization_id": {
-					"displayName": "Название или идентификатор организации",
+					"displayName": "Название или ID организации",
 					"description": "Идентификатор организации пользователя. Если у пользователя есть членство в нескольких организациях, идентификатор организации пользователя по умолчанию. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"phone": {
@@ -244,7 +244,7 @@
 							"displayName": "Агент"
 						},
 						"admin": {
-							"displayName": "Админ"
+							"displayName": "Администратор"
 						}
 					}
 				},
@@ -253,7 +253,7 @@
 					"description": "Подпись пользователя. Подписи могут иметь только агенты и администраторы."
 				},
 				"suspended": {
-					"displayName": "Приостановленный",
+					"displayName": "Приостановлено",
 					"description": "Приостановлен ли агент. Заявки от заблокированных пользователей также приостанавливаются, и эти пользователи не могут войти на портал конечных пользователей."
 				},
 				"ticket_restriction": {
@@ -267,7 +267,7 @@
 							"displayName": "Группы"
 						},
 						"assigned": {
-							"displayName": "Назначенный"
+							"displayName": "Назначенное"
 						},
 						"requested": {
 							"displayName": "Запрошено"
@@ -287,11 +287,11 @@
 						"userFieldValues": {
 							"options": {
 								"field": {
-									"displayName": "Имя поля или идентификатор",
-									"description": "Имя поля для сортировки. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+									"displayName": "Имя поля или ID",
+									"description": "Имя поля для сортировки. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 								},
 								"value": {
-									"displayName": "Ценить",
+									"displayName": "Значение",
 									"description": "Значение поля"
 								}
 							}
@@ -323,11 +323,11 @@
 						"organizationFieldValues": {
 							"options": {
 								"field": {
-									"displayName": "Имя поля или идентификатор",
-									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+									"displayName": "Имя поля или ID",
+									"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 								},
 								"value": {
-									"displayName": "Ценить"
+									"displayName": "Значение"
 								}
 							}
 						}
@@ -348,7 +348,7 @@
 			"description": "Объект значений для установки, как описано <a href=\"https://developer.zendesk.com/rest_api/docs/support/tickets\">здесь</a>"
 		},
 		"id": {
-			"displayName": "Идентификатор организации",
+			"displayName": "ID организации",
 			"description": "Идентификатор билета"
 		},
 		"updateFields": {
@@ -367,11 +367,11 @@
 						"customFieldsValues": {
 							"options": {
 								"id": {
-									"displayName": "Имя или идентификатор",
+									"displayName": "имя или идентификатор",
 									"description": "Идентификатор настраиваемого поля. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 								},
 								"value": {
-									"displayName": "Ценить",
+									"displayName": "Значение",
 									"description": "Значение настраиваемого поля"
 								}
 							}
@@ -386,11 +386,11 @@
 					}
 				},
 				"externalId": {
-					"displayName": "Внешний идентификатор",
+					"displayName": "Внешний ID",
 					"description": "Идентификатор, который можно использовать для привязки заявок Zendesk Support к локальным записям."
 				},
 				"group": {
-					"displayName": "Имя или идентификатор группы",
+					"displayName": "Имя или ID группы",
 					"description": "Группа, которой назначен этот билет. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"internalNote": {
@@ -413,7 +413,7 @@
 							"displayName": "Закрыто"
 						},
 						"new": {
-							"displayName": "Новый"
+							"displayName": "Создать"
 						},
 						"hold": {
 							"displayName": "На удерживании"
@@ -434,7 +434,7 @@
 					"description": "Значение поля темы для этой заявки"
 				},
 				"tags": {
-					"displayName": "Имена или идентификаторы тегов",
+					"displayName": "Имена или ID тегов",
 					"description": "Идентификаторы тегов, примененных к этой организации. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"type": {
@@ -473,7 +473,7 @@
 					"placeholder": "имя@email.com"
 				},
 				"external_id": {
-					"displayName": "Внешний идентификатор",
+					"displayName": "Внешний ID",
 					"description": "Уникальный идентификатор из другой системы"
 				},
 				"locale": {
@@ -497,7 +497,7 @@
 					"description": "Может ли пользователь создавать только частные комментарии"
 				},
 				"organization_id": {
-					"displayName": "Название или идентификатор организации",
+					"displayName": "Название или ID организации",
 					"description": "Идентификатор организации пользователя. Если у пользователя есть членство в нескольких организациях, идентификатор организации пользователя по умолчанию. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"phone": {
@@ -523,7 +523,7 @@
 							"displayName": "Агент"
 						},
 						"admin": {
-							"displayName": "Админ"
+							"displayName": "Администратор"
 						}
 					}
 				},
@@ -532,7 +532,7 @@
 					"description": "Подпись пользователя. Подписи могут иметь только агенты и администраторы."
 				},
 				"suspended": {
-					"displayName": "Приостановленный",
+					"displayName": "Приостановлено",
 					"description": "Приостановлен ли агент. Заявки от заблокированных пользователей также приостанавливаются, и эти пользователи не могут войти на портал конечных пользователей."
 				},
 				"ticket_restriction": {
@@ -546,7 +546,7 @@
 							"displayName": "Группы"
 						},
 						"assigned": {
-							"displayName": "Назначенный"
+							"displayName": "Назначенное"
 						},
 						"requested": {
 							"displayName": "Запрошено"
@@ -566,11 +566,11 @@
 						"userFieldValues": {
 							"options": {
 								"field": {
-									"displayName": "Имя поля или идентификатор",
-									"description": "Имя поля для сортировки. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+									"displayName": "Имя поля или ID",
+									"description": "Имя поля для сортировки. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 								},
 								"value": {
-									"displayName": "Ценить",
+									"displayName": "Значение",
 									"description": "Значение поля"
 								}
 							}
@@ -602,11 +602,11 @@
 						"organizationFieldValues": {
 							"options": {
 								"field": {
-									"displayName": "Имя поля или идентификатор",
-									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+									"displayName": "Имя поля или ID",
+									"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 								},
 								"value": {
-									"displayName": "Ценить"
+									"displayName": "Значение"
 								}
 							}
 						}
@@ -633,7 +633,7 @@
 					"displayName": "Обычный"
 				},
 				"suspended": {
-					"displayName": "Приостановленный"
+					"displayName": "Приостановлено"
 				}
 			}
 		},
@@ -643,14 +643,14 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"options": {
 			"displayName": "Параметры",
 			"placeholder": "Добавить вариант",
 			"options": {
 				"group": {
-					"displayName": "Имя или идентификатор группы",
+					"displayName": "Имя или ID группы",
 					"description": "Группа для поиска. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"query": {
@@ -662,7 +662,7 @@
 					"description": "По умолчанию используется сортировка по релевантности.",
 					"options": {
 						"created_at": {
-							"displayName": "Создано в"
+							"displayName": "Создано"
 						},
 						"priority": {
 							"displayName": "Приоритет"
@@ -682,7 +682,7 @@
 					"displayName": "Порядок сортировки",
 					"options": {
 						"asc": {
-							"displayName": "восходящий"
+							"displayName": "По возрастанию"
 						},
 						"desc": {
 							"displayName": "По убыванию"
@@ -697,7 +697,7 @@
 							"displayName": "Закрыто"
 						},
 						"new": {
-							"displayName": "Новый"
+							"displayName": "Создать"
 						},
 						"hold": {
 							"displayName": "На удерживании"
@@ -736,7 +736,7 @@
 							"displayName": "Агент"
 						},
 						"admin": {
-							"displayName": "Админ"
+							"displayName": "Администратор"
 						}
 					}
 				},
@@ -744,7 +744,7 @@
 					"displayName": "Запрос"
 				},
 				"external_id": {
-					"displayName": "Внешний идентификатор"
+					"displayName": "Внешний ID"
 				}
 			}
 		}

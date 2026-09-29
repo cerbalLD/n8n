@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "Google Документы",
+		"displayName": "Google Docs",
 		"description": "Используйте API Документов Google."
 	},
 	"nodeView": {
@@ -8,7 +8,7 @@
 			"displayName": "Аутентификация",
 			"options": {
 				"serviceAccount": {
-					"displayName": "Сервисный аккаунт"
+					"displayName": "Служебный аккаунт"
 				},
 				"oAuth2": {
 					"displayName": "OAuth2 (рекомендуется)"
@@ -27,34 +27,34 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать"
+					"displayName": "Создать"
 				},
 				"get": {
 					"displayName": "Получать"
 				},
 				"update": {
-					"displayName": "Обновлять"
+					"displayName": "Обновить"
 				}
 			}
 		},
 		"driveId": {
 			"displayName": "Имя или идентификатор диска",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"folderId": {
 			"displayName": "Имя или идентификатор папки",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"title": {
-			"displayName": "Заголовок"
+			"displayName": "Название"
 		},
 		"documentURL": {
 			"displayName": "Идентификатор документа или URL-адрес",
 			"description": "Идентификатор в URL-адресе документа (или просто вставьте URL-адрес целиком)"
 		},
 		"simple": {
-			"displayName": "Упрощать",
-			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+			"displayName": "Упростить",
+			"description": "Возвращать ли упрощённую версию ответа вместо необработанных данных"
 		},
 		"actionsUi": {
 			"options": {
@@ -88,7 +88,7 @@
 									"displayName": "Размещенный объект"
 								},
 								"table": {
-									"displayName": "Стол"
+									"displayName": "Таблица"
 								},
 								"tableColumn": {
 									"displayName": "Столбец таблицы"
@@ -109,10 +109,10 @@
 									"displayName": "Найти и заменить текст"
 								},
 								"insert": {
-									"displayName": "Вставлять"
+									"displayName": "Вставить"
 								},
 								"create": {
-									"displayName": "Создавать"
+									"displayName": "Создать"
 								},
 								"delete": {
 									"displayName": "Удалить"
@@ -135,7 +135,7 @@
 							}
 						},
 						"segmentId": {
-							"displayName": "Идентификатор сегмента",
+							"displayName": "ID сегмента",
 							"description": "Идентификатор верхнего, нижнего колонтитула или сноски. Операция <code>Document → Get</code> перечисляет все идентификаторы сегментов (убедитесь, что переключатель <code>simple</code> отключен)."
 						},
 						"index": {
@@ -197,7 +197,7 @@
 							"description": "Название диапазона"
 						},
 						"objectId": {
-							"displayName": "Идентификатор объекта",
+							"displayName": "ID объекта",
 							"description": "Идентификатор позиционируемого объекта, который нужно удалить (объект, привязанный к абзацу и расположенный относительно его начала). См. Google <a href=\"https://developers.google.com/docs/api/reference/rest/v1/documents#positionedobject\" target=\"_blank\">документацию</a>."
 						},
 						"locationChoice": {
@@ -214,7 +214,7 @@
 							}
 						},
 						"rows": {
-							"displayName": "Строки",
+							"displayName": "строки",
 							"description": "Количество строк в таблице"
 						},
 						"columns": {

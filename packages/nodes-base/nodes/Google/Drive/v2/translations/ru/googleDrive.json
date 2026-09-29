@@ -11,7 +11,7 @@
 					"displayName": "OAuth2 (рекомендуется)"
 				},
 				"serviceAccount": {
-					"displayName": "Сервисный аккаунт"
+					"displayName": "Служебный аккаунт"
 				}
 			}
 		},
@@ -36,7 +36,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать папку"
 				},
 				"deleteDrive": {
@@ -52,7 +52,7 @@
 					"description": "Получить список общих дисков"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить файл"
 				},
 				"copy": {
@@ -72,11 +72,11 @@
 					"description": "Скачать файл"
 				},
 				"move": {
-					"displayName": "Двигаться",
+					"displayName": "Переместить",
 					"description": "Переместить файл в другую папку"
 				},
 				"share": {
-					"displayName": "Делиться",
+					"displayName": "Общий доступ",
 					"description": "Добавить разрешения на общий доступ к папке"
 				},
 				"upload": {
@@ -144,7 +144,7 @@
 							"description": "Может ли текущий пользователь удалить этот общий диск. Попытка удалить общий диск может потерпеть неудачу, если на общем диске есть неудаленные элементы."
 						},
 						"canDownload": {
-							"displayName": "Можно скачать",
+							"displayName": "Можно скачивать",
 							"description": "Может ли текущий пользователь загружать файлы на этом общем диске"
 						},
 						"canEdit": {
@@ -253,7 +253,7 @@
 									"description": "Имя ключа, который нужно добавить"
 								},
 								"value": {
-									"displayName": "Ценить",
+									"displayName": "Значение",
 									"description": "Значение, которое нужно установить для ключа"
 								}
 							}
@@ -281,7 +281,7 @@
 									"description": "Имя ключа, который нужно добавить"
 								},
 								"value": {
-									"displayName": "Ценить",
+									"displayName": "Значение",
 									"description": "Значение, которое нужно установить для ключа"
 								}
 							}
@@ -318,7 +318,7 @@
 					"displayName": "Поместите выходной файл в поле",
 					"description": "Используйте это имя поля в следующих узлах, чтобы использовать данные двоичного файла.",
 					"hint": "Имя выходного двоичного поля, в которое помещается файл.",
-					"placeholder": "например данные"
+					"placeholder": "например data"
 				},
 				"googleFileConversion": {
 					"values": {
@@ -328,7 +328,7 @@
 						"conversion": {
 							"options": {
 								"docsToFormat": {
-									"displayName": "Google Документы",
+									"displayName": "Google Docs",
 									"description": "Формат, используемый для экспорта при загрузке файлов Google Docs.",
 									"options": {
 										"text/html": {
@@ -408,7 +408,7 @@
 									}
 								},
 								"sheetsToFormat": {
-									"displayName": "Google Таблицы",
+									"displayName": "Google Sheets",
 									"description": "Формат, используемый для экспорта при загрузке файлов Google Sheets",
 									"options": {
 										"text/csv": {
@@ -529,7 +529,7 @@
 					}
 				},
 				"simplifyOutput": {
-					"displayName": "Упростите вывод",
+					"displayName": "Упростить вывод",
 					"description": "Возвращать ли упрощенную версию ответа вместо всех полей"
 				},
 				"folderColorRgb": {
@@ -548,7 +548,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"fileId": {
 			"displayName": "Файл для обновления",
@@ -717,7 +717,7 @@
 									"displayName": "Скрипты Google Apps"
 								},
 								"document": {
-									"displayName": "Google Документы"
+									"displayName": "Google Docs"
 								},
 								"drawing": {
 									"displayName": "Google Рисунок"
@@ -732,7 +732,7 @@
 									"displayName": "Google Мои карты"
 								},
 								"spreadsheet": {
-									"displayName": "Google Таблицы"
+									"displayName": "Google Sheets"
 								},
 								"sites": {
 									"displayName": "Google Сайты"

@@ -8,7 +8,7 @@
 			"displayName": "Операция",
 			"options": {
 				"createEventFile": {
-					"displayName": "Создать файл событий"
+					"displayName": "Создать файл события"
 				}
 			}
 		},
@@ -17,21 +17,21 @@
 			"placeholder": "например Новое событие"
 		},
 		"start": {
-			"displayName": "Начинать",
-			"description": "Дата и время начала мероприятия. (Для мероприятий, продолжающихся целый день, время будет игнорироваться.)."
+			"displayName": "Начать",
+			"description": "Дата и время начала события. (Для мероприятий на весь день время будет игнорироваться.)"
 		},
 		"end": {
 			"displayName": "Конец",
-			"description": "Дата и время окончания мероприятия. (Для мероприятий, продолжающихся целый день, время будет игнорироваться.).",
-			"hint": "Если не установлено, будет равно дате начала."
+			"description": "Дата и время окончания события. (Для мероприятий на весь день время будет игнорироваться.)",
+			"hint": "Если не установлено, будет равно дате начала"
 		},
 		"allDay": {
-			"displayName": "Весь день",
-			"description": "Независимо от того, продлится ли мероприятие весь день или нет"
+			"displayName": "На весь день",
+			"description": "Длится ли событие весь день или нет"
 		},
 		"binaryPropertyName": {
 			"displayName": "Поместите выходной файл в поле",
-			"description": "Поле, в котором ваш файл iCalendar будет доступен в выходных данных.",
+			"description": "Поле, в котором файл iCalendar будет доступен в выходных данных",
 			"hint": "Имя выходного двоичного поля, в которое помещается файл."
 		},
 		"additionalFields": {
@@ -50,11 +50,11 @@
 								},
 								"email": {
 									"displayName": "Электронная почта",
-									"placeholder": "например имя@email.com"
+									"placeholder": "например name@email.com"
 								},
 								"rsvp": {
 									"displayName": "RSVP",
-									"description": "Должен ли участник подтверждать свое присутствие или нет"
+									"description": "Должен ли участник подтвердить своё присутствие или нет"
 								}
 							}
 						}
@@ -69,18 +69,18 @@
 				},
 				"busyStatus": {
 					"displayName": "Статус занятости",
-					"description": "Используется для указания статуса занятости для приложений Microsoft, таких как Outlook.",
+					"description": "Используется для указания статуса занятости в приложениях Microsoft, таких как Outlook",
 					"options": {
 						"BUSY": {
-							"displayName": "Занятый"
+							"displayName": "Занят"
 						},
 						"TENTATIVE": {
-							"displayName": "Пробный"
+							"displayName": "Предварительно"
 						}
 					}
 				},
 				"calName": {
-					"displayName": "Название календаря",
+					"displayName": "Имя календаря",
 					"description": "Указывает имя календаря (не события). Используется Apple iCal и Microsoft Outlook. <a href=\"https://docs.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-oxcical/1da58449-b97e-46bd-b018-a1ce576f3e6d\">Подробнее</a>."
 				},
 				"description": {
@@ -88,7 +88,7 @@
 				},
 				"fileName": {
 					"displayName": "Имя файла",
-					"description": "Имя создаваемого файла. Имя по умолчанию — event.ics.",
+					"description": "Имя создаваемого файла. По умолчанию — event.ics",
 					"placeholder": "например event.ics"
 				},
 				"geolocationUi": {
@@ -121,7 +121,7 @@
 				},
 				"recurrenceRule": {
 					"displayName": "Правило повторения",
-					"description": "Правило, определяющее шаблон повторения события (RRULE). (<a href=\"https://icalendar.org/rrule-tool.html\">Генератор правил</a>)."
+					"description": "Правило для определения шаблона повторения события (RRULE). (<a href=\"https://icalendar.org/rrule-tool.html\">Генератор правил</a>)."
 				},
 				"organizerUi": {
 					"values": {
@@ -135,7 +135,7 @@
 								},
 								"email": {
 									"displayName": "Электронная почта",
-									"placeholder": "например имя@email.com"
+									"placeholder": "например name@email.com"
 								}
 							}
 						}
@@ -150,33 +150,33 @@
 				},
 				"sequence": {
 					"displayName": "Последовательность",
-					"description": "При отправке обновления для события (с тем же uid) определяет порядковый номер версии."
+					"description": "При отправке обновления события (с тем же uid) определяет номер версии"
 				},
 				"status": {
 					"displayName": "Статус",
 					"options": {
 						"CONFIRMED": {
-							"displayName": "Подтвержденный"
+							"displayName": "Подтверждено"
 						},
 						"CANCELLED": {
 							"displayName": "Отменено"
 						},
 						"TENTATIVE": {
-							"displayName": "Пробный"
+							"displayName": "Предварительно"
 						}
 					}
 				},
 				"uid": {
 					"displayName": "UID",
-					"description": "Универсальный уникальный идентификатор события (будет сгенерирован автоматически, если здесь не указано). Должен быть глобально уникальным."
+					"description": "Уникальный ID события (будет сгенерирован автоматически, если не указано). Должен быть глобально уникальным."
 				},
 				"url": {
 					"displayName": "URL",
-					"description": "URL-адрес, связанный с событием"
+					"description": "URL, связанный с событием"
 				},
 				"useWorkflowTimezone": {
 					"displayName": "Использовать часовой пояс рабочего процесса",
-					"description": "Использовать ли часовой пояс рабочего процесса, установленный в настройках узла, а не UTC."
+					"description": "Использовать ли часовой пояс рабочего процесса из настроек узла вместо UTC"
 				}
 			}
 		}

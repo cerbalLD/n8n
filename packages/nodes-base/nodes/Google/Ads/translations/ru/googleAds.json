@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Google Реклама",
-		"description": "Используйте API Google Рекламы"
+		"displayName": "Google Ads",
+		"description": "Использование API Google Ads"
 	},
 	"nodeView": {
 		"resource": {
@@ -26,70 +26,70 @@
 			}
 		},
 		"campaigsNotice": {
-			"displayName": "Разделите имена полей, выраженные с помощью <i>micros</i>, на 1 000 000, чтобы получить фактическое значение."
+			"displayName": "Разделите значения полей, выраженные в <i>micros</i>, на 1 000 000 для получения фактического значения"
 		},
 		"managerCustomerId": {
-			"displayName": "Идентификатор клиента менеджера",
+			"displayName": "ID менеджер-клиента",
 			"placeholder": "9998887777"
 		},
 		"clientCustomerId": {
-			"displayName": "Идентификатор клиента клиента",
+			"displayName": "ID клиента",
 			"placeholder": "6665554444"
 		},
 		"campaignId": {
 			"displayName": "Идентификатор кампании",
-			"description": "Идентификатор кампании"
+			"description": "ID кампании"
 		},
 		"additionalOptions": {
-			"displayName": "Дополнительные опции",
+			"displayName": "Дополнительные параметры",
 			"description": "Дополнительные параметры для получения кампаний",
 			"placeholder": "Добавить вариант",
 			"options": {
 				"dateRange": {
 					"displayName": "Диапазон дат",
-					"description": "Фильтрует статистику по периоду",
+					"description": "Фильтровать статистику по периоду",
 					"options": {
 						"allTime": {
-							"displayName": "Все время",
+							"displayName": "Всё время",
 							"description": "Получить статистику за весь период"
 						},
 						"TODAY": {
 							"displayName": "Сегодня",
-							"description": "только сегодня"
+							"description": "Только сегодня"
 						},
 						"YESTERDAY": {
 							"displayName": "Вчера",
-							"description": "только вчера"
+							"description": "Только вчера"
 						},
 						"LAST_7_DAYS": {
 							"displayName": "Последние 7 дней",
-							"description": "Последние 7 дней, не считая сегодняшнего дня"
+							"description": "Последние 7 дней (исключая сегодня)"
 						},
 						"LAST_BUSINESS_WEEK": {
 							"displayName": "Последняя рабочая неделя",
-							"description": "Пятидневная рабочая неделя с понедельника по пятницу предыдущей рабочей недели."
+							"description": "Пятидневная рабочая неделя с понедельника по пятницу предыдущей рабочей недели"
 						},
 						"THIS_MONTH": {
-							"displayName": "В этом месяце",
+							"displayName": "Этот месяц",
 							"description": "Все дни текущего месяца"
 						},
 						"LAST_MONTH": {
-							"displayName": "В прошлом месяце",
+							"displayName": "Прошлый месяц",
 							"description": "Все дни предыдущего месяца"
 						},
 						"LAST_14_DAYS": {
 							"displayName": "Последние 14 дней",
-							"description": "Последние 14 дней, не считая сегодняшнего дня"
+							"description": "Последние 14 дней (исключая сегодня)"
 						},
 						"LAST_30_DAYS": {
 							"displayName": "Последние 30 дней",
-							"description": "Последние 30 дней, не считая сегодняшнего дня"
+							"description": "Последние 30 дней (исключая сегодня)"
 						}
 					}
 				},
 				"campaignStatus": {
 					"displayName": "Показать кампании по статусу",
-					"description": "Фильтрует кампании по статусу",
+					"description": "Фильтровать кампании по статусу",
 					"options": {
 						"all": {
 							"displayName": "Все",
@@ -97,15 +97,15 @@
 						},
 						"ENABLED": {
 							"displayName": "Включено",
-							"description": "Фильтровать только активные кампании"
+							"description": "Показать только активные кампании"
 						},
 						"PAUSED": {
-							"displayName": "Приостановлено",
-							"description": "Фильтровать только приостановленные кампании"
+							"displayName": "На паузе",
+							"description": "Показать только приостановленные кампании"
 						},
 						"REMOVED": {
-							"displayName": "Удаленный",
-							"description": "Фильтровать только удаленные кампании"
+							"displayName": "Удалён",
+							"description": "Показать только удалённые кампании"
 						}
 					}
 				}

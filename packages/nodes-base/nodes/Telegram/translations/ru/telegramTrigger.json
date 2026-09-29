@@ -8,7 +8,7 @@
 			"displayName": "Из-за ограничений API Telegram вы можете использовать только один триггер Telegram для каждого бота одновременно."
 		},
 		"updates": {
-			"displayName": "Триггер включен",
+			"displayName": "Триггер для",
 			"options": {
 				"*": {
 					"displayName": "*",
@@ -71,7 +71,7 @@
 							"displayName": "Маленький"
 						},
 						"medium": {
-							"displayName": "Середина"
+							"displayName": "Средний"
 						},
 						"large": {
 							"displayName": "Большой"

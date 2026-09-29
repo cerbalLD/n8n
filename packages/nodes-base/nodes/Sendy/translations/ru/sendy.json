@@ -19,11 +19,11 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать кампанию"
 				},
 				"add": {
-					"displayName": "Добавлять",
+					"displayName": "Добавить",
 					"description": "Добавить подписчика в список"
 				},
 				"count": {
@@ -49,15 +49,15 @@
 			"description": "Имя «От» вашей кампании"
 		},
 		"fromEmail": {
-			"displayName": "Из электронной почты",
+			"displayName": "От кого",
 			"description": "«От электронной почты» вашей кампании."
 		},
 		"replyTo": {
-			"displayName": "Отвечать на",
+			"displayName": "Ответить на",
 			"description": "«Ответ на» вашей кампании"
 		},
 		"title": {
-			"displayName": "Заголовок",
+			"displayName": "Название",
 			"description": "«Название» вашей кампании"
 		},
 		"subject": {
@@ -108,7 +108,7 @@
 					"description": "Отключить отслеживание кликов. По умолчанию верно."
 				},
 				"trackOpens": {
-					"displayName": "Трек открывается",
+					"displayName": "Отслеживать открытия",
 					"description": "Отключить отслеживание открытий. По умолчанию верно."
 				},
 				"country": {
@@ -147,7 +147,7 @@
 			"placeholder": "имя@email.com"
 		},
 		"listId": {
-			"displayName": "Идентификатор списка",
+			"displayName": "ID списка",
 			"description": "Идентификатор списка, на который вы хотите подписаться. Этот зашифрованный и хешированный идентификатор можно найти в разделе «Просмотр всех списков» с именем ID."
 		}
 	}

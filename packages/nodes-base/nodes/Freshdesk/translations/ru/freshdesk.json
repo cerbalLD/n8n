@@ -19,7 +19,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать новый контакт"
 				},
 				"delete": {
@@ -35,7 +35,7 @@
 					"description": "Получить много контактов"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить контакт"
 				}
 			}
@@ -70,7 +70,7 @@
 			}
 		},
 		"requesterIdentificationValue": {
-			"displayName": "Ценить",
+			"displayName": "Значение",
 			"description": "Значение выбранного идентификатора"
 		},
 		"status": {
@@ -97,7 +97,7 @@
 					"displayName": "Низкий"
 				},
 				"medium": {
-					"displayName": "Середина"
+					"displayName": "Средний"
 				},
 				"high": {
 					"displayName": "Высокий"
@@ -167,7 +167,7 @@
 					"description": "Временная метка, указывающая, когда должен быть получен первый ответ."
 				},
 				"group": {
-					"displayName": "Имя или идентификатор группы",
+					"displayName": "Имя или ID группы",
 					"description": "Идентификатор группы, которой присвоен билет. Значением по умолчанию является идентификатор группы, связанной с данным email_config_id. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"name": {
@@ -208,10 +208,10 @@
 					}
 				},
 				"companyId": {
-					"displayName": "Идентификатор компании"
+					"displayName": "ID компании"
 				},
 				"include": {
-					"displayName": "Включать",
+					"displayName": "Включить",
 					"options": {
 						"company": {
 							"displayName": "Компания"
@@ -220,7 +220,7 @@
 							"displayName": "Описание"
 						},
 						"requester": {
-							"displayName": "Запрашивающая сторона"
+							"displayName": "Запрашивающий"
 						},
 						"stats": {
 							"displayName": "Статистика"
@@ -228,7 +228,7 @@
 					}
 				},
 				"order": {
-					"displayName": "Заказ",
+					"displayName": "Порядок",
 					"description": "Атрибут сортировки порядка по возрастанию или убыванию",
 					"options": {
 						"asc": {
@@ -240,11 +240,11 @@
 					}
 				},
 				"orderBy": {
-					"displayName": "Заказать по",
+					"displayName": "Сортировать по",
 					"description": "Сортировка коллекции по атрибуту объекта",
 					"options": {
 						"createdAt": {
-							"displayName": "Создано в"
+							"displayName": "Создано"
 						},
 						"dueBy": {
 							"displayName": "К оплате"
@@ -297,7 +297,7 @@
 					"description": "Временная метка, указывающая, когда должен быть получен первый ответ."
 				},
 				"group": {
-					"displayName": "Имя или идентификатор группы",
+					"displayName": "Имя или ID группы",
 					"description": "Идентификатор группы, которой присвоен билет. Значением по умолчанию является идентификатор группы, связанной с данным email_config_id. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"name": {
@@ -315,7 +315,7 @@
 							"displayName": "Низкий"
 						},
 						"medium": {
-							"displayName": "Середина"
+							"displayName": "Средний"
 						},
 						"high": {
 							"displayName": "Высокий"
@@ -435,7 +435,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"name": {
 			"displayName": "Имя",
@@ -447,7 +447,7 @@
 			"placeholder": "имя@email.com"
 		},
 		"contactId": {
-			"displayName": "Идентификатор контакта"
+			"displayName": "ID контакта"
 		},
 		"additionalFields": {
 			"displayName": "Дополнительные поля",
@@ -458,7 +458,7 @@
 					"description": "Адрес контакта"
 				},
 				"company_id": {
-					"displayName": "Идентификатор компании",
+					"displayName": "ID компании",
 					"description": "Идентификатор основной компании, которой принадлежит этот контакт"
 				},
 				"customFields": {
@@ -474,7 +474,7 @@
 									"description": "Имя настраиваемого поля"
 								},
 								"value": {
-									"displayName": "Ценить",
+									"displayName": "Значение",
 									"description": "Значения настраиваемого поля"
 								}
 							}
@@ -507,7 +507,7 @@
 					"description": "Язык общения. Язык по умолчанию — «en». Этот атрибут можно установить только в том случае, если включена функция нескольких языков (план Garden и выше)."
 				},
 				"mobile": {
-					"displayName": "мобильный",
+					"displayName": "Мобильный",
 					"description": "Мобильный номер контакта"
 				},
 				"name": {
@@ -522,7 +522,7 @@
 				"other_emails": {
 					"displayName": "Другие электронные письма",
 					"description": "Дополнительные адреса электронной почты, связанные с контактом",
-					"placeholder": "Добавить адрес электронной почты"
+					"placeholder": "Добавить email"
 				},
 				"phone": {
 					"displayName": "Телефон",
@@ -555,20 +555,20 @@
 			"placeholder": "Добавить фильтр",
 			"options": {
 				"company_id": {
-					"displayName": "Идентификатор компании"
+					"displayName": "ID компании"
 				},
 				"email": {
 					"displayName": "Электронная почта",
 					"placeholder": "имя@email.com"
 				},
 				"mobile": {
-					"displayName": "мобильный"
+					"displayName": "Мобильный"
 				},
 				"phone": {
 					"displayName": "Телефон"
 				},
 				"state": {
-					"displayName": "Состояние",
+					"displayName": "область",
 					"options": {
 						"blocked": {
 							"displayName": "Заблокировано"

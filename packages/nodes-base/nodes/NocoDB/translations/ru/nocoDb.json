@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "НокоДБ",
-		"description": "Чтение, обновление, запись и удаление данных из NocoDB."
+		"displayName": "NocoDB",
+		"description": "Чтение, обновление, запись и удаление данных в NocoDB"
 	}
 }

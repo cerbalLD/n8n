@@ -6,12 +6,12 @@
 	"nodeView": {
 		"executeOnce": {
 			"displayName": "Выполнить один раз",
-			"description": "Следует ли выполнять только один раз вместо одного для каждой записи"
+			"description": "Выполнять только один раз вместо одного раза для каждой записи"
 		},
 		"command": {
 			"displayName": "Команда",
 			"description": "Команда для выполнения",
-			"placeholder": "эхо \"тест\""
+			"placeholder": "echo \"test\""
 		}
 	}
 }

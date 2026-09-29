@@ -11,7 +11,7 @@
 					"displayName": "Контакт"
 				},
 				"invoice": {
-					"displayName": "Счет"
+					"displayName": "Счёт"
 				}
 			}
 		},
@@ -19,7 +19,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать счет"
 				},
 				"get": {
@@ -31,14 +31,14 @@
 					"description": "Получите много счетов-фактур"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить счет"
 				}
 			}
 		},
 		"organizationId": {
-			"displayName": "Название или идентификатор организации",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"displayName": "Название или ID организации",
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"name": {
 			"displayName": "Имя",
@@ -49,7 +49,7 @@
 			"placeholder": "Добавить поле",
 			"options": {
 				"accountNumber": {
-					"displayName": "Номер счета",
+					"displayName": "Номер счёта",
 					"description": "Определяемый пользователем номер счета"
 				},
 				"addressesUi": {
@@ -71,16 +71,16 @@
 									}
 								},
 								"line1": {
-									"displayName": "Линия 1"
+									"displayName": "строка 1"
 								},
 								"line2": {
-									"displayName": "Линия 2"
+									"displayName": "строка 2"
 								},
 								"city": {
-									"displayName": "Город"
+									"displayName": "город"
 								},
 								"region": {
-									"displayName": "Область"
+									"displayName": "Регион"
 								},
 								"postalCode": {
 									"displayName": "Почтовый индекс"
@@ -161,7 +161,7 @@
 											"displayName": "DDI"
 										},
 										"MOBILE": {
-											"displayName": "мобильный"
+											"displayName": "Мобильный"
 										},
 										"FAX": {
 											"displayName": "Факс"
@@ -197,7 +197,7 @@
 					"description": "Код счета продаж по умолчанию для контактов. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"skypeUserName": {
-					"displayName": "Скайп",
+					"displayName": "Skype",
 					"description": "Имя пользователя Skype для контакта"
 				},
 				"taxNumber": {
@@ -210,11 +210,11 @@
 				},
 				"brandingThemeId": {
 					"displayName": "Название или идентификатор темы брендинга",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"currency": {
-					"displayName": "Название или идентификатор валюты",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"displayName": "Название валюты или её ID",
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"currencyRate": {
 					"displayName": "Курс валюты",
@@ -233,7 +233,7 @@
 					"description": "Отображается в счетах-фактурах продаж (дебиторская задолженность), если это установлено."
 				},
 				"invoiceNumber": {
-					"displayName": "Номер счета"
+					"displayName": "Номер счёта"
 				},
 				"lineAmountType": {
 					"displayName": "Тип суммы строки",
@@ -243,7 +243,7 @@
 							"description": "Позиции не включают налог"
 						},
 						"Inclusive": {
-							"displayName": "Инклюзивно",
+							"displayName": "Включительно",
 							"description": "Позиции включают налог"
 						},
 						"NoTax": {
@@ -285,7 +285,7 @@
 			}
 		},
 		"contactId": {
-			"displayName": "Идентификатор контакта"
+			"displayName": "ID контакта"
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",
@@ -293,7 +293,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"options": {
 			"displayName": "Параметры",
@@ -304,7 +304,7 @@
 					"description": "Будут ли в ответ включены контакты со статусом АРХИВИРОВАНО"
 				},
 				"orderBy": {
-					"displayName": "Заказать по",
+					"displayName": "Сортировать по",
 					"description": "Упорядочить по любому возвращаемому элементу",
 					"placeholder": "Идентификатор счета"
 				},
@@ -320,7 +320,7 @@
 					}
 				},
 				"where": {
-					"displayName": "Где",
+					"displayName": "Фильтр",
 					"description": "Параметрwhere позволяет фильтровать конечные точки и элементы, которые не имеют явных параметров. <a href=\"https://developer.xero.com/documentation/api/requests-and-responses#get-modified\">Примеры здесь</a>.",
 					"placeholder": "EmailAddress!=null&&EmailAddress.StartsWith(\"boom\")"
 				},
@@ -349,7 +349,7 @@
 			"placeholder": "Добавить поле",
 			"options": {
 				"accountNumber": {
-					"displayName": "Номер счета",
+					"displayName": "Номер счёта",
 					"description": "Определяемый пользователем номер счета"
 				},
 				"addressesUi": {
@@ -371,16 +371,16 @@
 									}
 								},
 								"line1": {
-									"displayName": "Линия 1"
+									"displayName": "строка 1"
 								},
 								"line2": {
-									"displayName": "Линия 2"
+									"displayName": "строка 2"
 								},
 								"city": {
-									"displayName": "Город"
+									"displayName": "город"
 								},
 								"region": {
-									"displayName": "Область"
+									"displayName": "Регион"
 								},
 								"postalCode": {
 									"displayName": "Почтовый индекс"
@@ -465,7 +465,7 @@
 											"displayName": "DDI"
 										},
 										"MOBILE": {
-											"displayName": "мобильный"
+											"displayName": "Мобильный"
 										},
 										"FAX": {
 											"displayName": "Факс"
@@ -501,7 +501,7 @@
 					"description": "Код счета продаж по умолчанию для контактов. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"skypeUserName": {
-					"displayName": "Скайп",
+					"displayName": "Skype",
 					"description": "Имя пользователя Skype для контакта"
 				},
 				"taxNumber": {
@@ -514,14 +514,14 @@
 				},
 				"brandingThemeId": {
 					"displayName": "Название или идентификатор темы брендинга",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"contactId": {
-					"displayName": "Идентификатор контакта"
+					"displayName": "ID контакта"
 				},
 				"currency": {
-					"displayName": "Название или идентификатор валюты",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"displayName": "Название валюты или её ID",
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"currencyRate": {
 					"displayName": "Курс валюты",
@@ -540,7 +540,7 @@
 					"description": "Отображается в счетах-фактурах продаж (дебиторская задолженность), если это установлено."
 				},
 				"invoiceNumber": {
-					"displayName": "Номер счета"
+					"displayName": "Номер счёта"
 				},
 				"lineAmountType": {
 					"displayName": "Тип суммы строки",
@@ -550,7 +550,7 @@
 							"description": "Позиции не включают налог"
 						},
 						"Inclusive": {
-							"displayName": "Инклюзивно",
+							"displayName": "Включительно",
 							"description": "Позиции включают налог"
 						},
 						"NoTax": {
@@ -585,11 +585,11 @@
 								},
 								"itemCode": {
 									"displayName": "Код товара Имя или идентификатор",
-									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+									"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 								},
 								"accountCode": {
 									"displayName": "Код счета, имя или идентификатор",
-									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+									"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 								},
 								"taxType": {
 									"displayName": "Тип налога",
@@ -669,7 +669,7 @@
 			"description": "Тип счета",
 			"options": {
 				"ACCPAY": {
-					"displayName": "Счет",
+					"displayName": "Счёт",
 					"description": "Счета к оплате или счет-фактура поставщика"
 				},
 				"ACCREC": {
@@ -701,11 +701,11 @@
 						},
 						"itemCode": {
 							"displayName": "Код товара Имя или идентификатор",
-							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+							"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 						},
 						"accountCode": {
 							"displayName": "Код счета, имя или идентификатор",
-							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+							"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 						},
 						"taxType": {
 							"displayName": "Тип налога",
@@ -744,7 +744,7 @@
 			"description": "Данные позиции"
 		},
 		"invoiceId": {
-			"displayName": "Идентификатор счета"
+			"displayName": "ID счёта"
 		}
 	}
 }

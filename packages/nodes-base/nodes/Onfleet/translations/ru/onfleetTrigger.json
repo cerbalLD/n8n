@@ -1,20 +1,20 @@
 {
 	"header": {
-		"displayName": "Триггер на флоте",
-		"description": "Запускает рабочий процесс при возникновении событий Onfleet."
+		"displayName": "Триггер Onfleet",
+		"description": "Запускает рабочий процесс при возникновении событий Onfleet"
 	},
 	"nodeView": {
 		"triggerOn": {
-			"displayName": "Триггер включен",
+			"displayName": "Триггер для",
 			"options": {
 				"SMSRecipientOptOut": {
-					"displayName": "Отказ получателя SMS"
+					"displayName": "SMS-получатель: отказ"
 				},
 				"smsRecipientResponseMissed": {
-					"displayName": "Ответ получателя SMS пропущен"
+					"displayName": "SMS-получатель: ответ пропущен"
 				},
 				"taskArrival": {
-					"displayName": "Прибытие задачи"
+					"displayName": "Прибытие в задачу"
 				},
 				"taskAssigned": {
 					"displayName": "Задача назначена"
@@ -35,7 +35,7 @@
 					"displayName": "Задача удалена"
 				},
 				"taskEta": {
-					"displayName": "Расчетное время выполнения задачи"
+					"displayName": "Расчетное время прибытия задачи"
 				},
 				"taskFailed": {
 					"displayName": "Задача не выполнена"
@@ -56,7 +56,7 @@
 					"displayName": "Работник удален"
 				},
 				"workerDuty": {
-					"displayName": "Рабочий долг"
+					"displayName": "Дежурство работника"
 				}
 			}
 		},
@@ -66,7 +66,7 @@
 			"options": {
 				"name": {
 					"displayName": "Имя",
-					"description": "Имя вебхука для идентификации."
+					"description": "Имя вебхука для идентификации"
 				}
 			}
 		}

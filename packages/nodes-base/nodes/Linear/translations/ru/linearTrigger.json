@@ -20,7 +20,7 @@
 		},
 		"teamId": {
 			"displayName": "Название или идентификатор команды",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"resources": {
 			"displayName": "Слушайте ресурсы",
@@ -32,10 +32,10 @@
 					"displayName": "Цикл"
 				},
 				"issue": {
-					"displayName": "Проблема"
+					"displayName": "Задача"
 				},
 				"comment": {
-					"displayName": "Комментарий к проблеме"
+					"displayName": "Комментарий к задаче"
 				},
 				"issueLabel": {
 					"displayName": "Этикетка проблемы"

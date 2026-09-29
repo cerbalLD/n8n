@@ -25,7 +25,7 @@
 									"displayName": "Ключ"
 								},
 								"value": {
-									"displayName": "Ценить"
+									"displayName": "Значение"
 								}
 							}
 						}
@@ -60,12 +60,12 @@
 						"bindings": {
 							"options": {
 								"exchange": {
-									"displayName": "Обмен",
+									"displayName": "Биржа",
 									"placeholder": "обмен"
 								},
 								"routingKey": {
 									"displayName": "Ключ маршрутизации",
-									"placeholder": "ключ маршрутизации"
+									"placeholder": "ключ-маршрутизации"
 								}
 							}
 						}
@@ -125,7 +125,7 @@
 									"displayName": "Ключ"
 								},
 								"value": {
-									"displayName": "Ценить"
+									"displayName": "Значение"
 								}
 							}
 						}

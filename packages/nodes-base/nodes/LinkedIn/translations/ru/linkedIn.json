@@ -8,7 +8,7 @@
 			"displayName": "Аутентификация",
 			"options": {
 				"standard": {
-					"displayName": "Стандартный"
+					"displayName": "Standard"
 				},
 				"communityManagement": {
 					"displayName": "Управление сообществом"
@@ -19,7 +19,7 @@
 			"displayName": "Ресурс",
 			"options": {
 				"post": {
-					"displayName": "Почта"
+					"displayName": "Тема"
 				}
 			}
 		},
@@ -27,7 +27,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать новый пост"
 				}
 			}
@@ -76,7 +76,7 @@
 		},
 		"binaryPropertyName": {
 			"displayName": "Входное двоичное поле",
-			"hint": "Имя входного двоичного поля, содержащего файл для записи."
+			"hint": "Имя входного двоичного поля, содержащего файл для записи"
 		},
 		"additionalFields": {
 			"displayName": "Дополнительные поля",
@@ -95,7 +95,7 @@
 					"hint": "Имя входного двоичного поля, содержащего файл миниатюры статьи."
 				},
 				"title": {
-					"displayName": "Заголовок",
+					"displayName": "Название",
 					"description": "Настройте заголовок вашего изображения или статьи"
 				},
 				"visibility": {
@@ -103,7 +103,7 @@
 					"description": "Укажите, будет ли публикация видна широкой публике или только знакомым.",
 					"options": {
 						"CONNECTIONS": {
-							"displayName": "Соединения"
+							"displayName": "Подключения"
 						},
 						"PUBLIC": {
 							"displayName": "Общественный"

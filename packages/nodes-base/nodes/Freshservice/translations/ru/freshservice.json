@@ -41,7 +41,7 @@
 					"displayName": "Выпускать"
 				},
 				"requester": {
-					"displayName": "Запрашивающая сторона"
+					"displayName": "Запрашивающий"
 				},
 				"requesterGroup": {
 					"displayName": "Группа запрашивающих"
@@ -58,7 +58,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать билет"
 				},
 				"delete": {
@@ -74,7 +74,7 @@
 					"description": "Получить много билетов"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить билет"
 				}
 			}
@@ -101,7 +101,7 @@
 							"description": "Имя роли, которую нужно назначить агенту. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 						},
 						"assignment_scope": {
-							"displayName": "Объем",
+							"displayName": "Область доступа",
 							"description": "Область, в которой агент может использовать разрешения, предоставленные ролью.",
 							"options": {
 								"entire_helpdesk": {
@@ -119,7 +119,7 @@
 							}
 						},
 						"groups": {
-							"displayName": "Имена или идентификаторы групп",
+							"displayName": "Имена или ID групп",
 							"description": "Группы, к которым применяются разрешения, предоставленные ролью. Требуется только в том случае, если область действия указана для групп, в противном случае игнорируется. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 						}
 					}
@@ -142,19 +142,19 @@
 						"addressFields": {
 							"options": {
 								"line1": {
-									"displayName": "Линия 1"
+									"displayName": "строка 1"
 								},
 								"line2": {
-									"displayName": "Линия 2"
+									"displayName": "строка 2"
 								},
 								"city": {
-									"displayName": "Город"
+									"displayName": "город"
 								},
 								"country": {
 									"displayName": "Страна"
 								},
 								"state": {
-									"displayName": "Состояние"
+									"displayName": "область"
 								},
 								"zipcode": {
 									"displayName": "Почтовый индекс"
@@ -183,7 +183,7 @@
 					"displayName": "Язык",
 					"options": {
 						"en": {
-							"displayName": "Английский"
+							"displayName": "английский"
 						},
 						"ar": {
 							"displayName": "арабский"
@@ -216,7 +216,7 @@
 							"displayName": "финский"
 						},
 						"fr": {
-							"displayName": "Французский"
+							"displayName": "французский"
 						},
 						"he": {
 							"displayName": "иврит"
@@ -243,7 +243,7 @@
 							"displayName": "норвежский"
 						},
 						"nl": {
-							"displayName": "Голландский"
+							"displayName": "голландский"
 						},
 						"pl": {
 							"displayName": "Польский"
@@ -258,7 +258,7 @@
 							"displayName": "Португальский (Португалия)"
 						},
 						"ru-RU": {
-							"displayName": "Русский"
+							"displayName": "русский"
 						},
 						"sk": {
 							"displayName": "словацкий"
@@ -270,7 +270,7 @@
 							"displayName": "словенский"
 						},
 						"sv-SE": {
-							"displayName": "Шведский"
+							"displayName": "шведский"
 						},
 						"th": {
 							"displayName": "тайский"
@@ -296,11 +296,11 @@
 					"displayName": "Фамилия"
 				},
 				"location_id": {
-					"displayName": "Название или идентификатор местоположения",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"displayName": "имя или идентификатор местоположения",
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"member_of": {
-					"displayName": "Имена или идентификаторы групп",
+					"displayName": "Имена или ID групп",
 					"description": "Разделенные запятыми идентификаторы групп, членом которых является агент. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"mobile_phone_number": {
@@ -346,7 +346,7 @@
 					}
 				},
 				"work_phone_number": {
-					"displayName": "Рабочий телефон"
+					"displayName": "рабочий телефон"
 				},
 				"description": {
 					"displayName": "Описание",
@@ -412,7 +412,7 @@
 				},
 				"parent_asset_type_id": {
 					"displayName": "Имя или идентификатор типа родительского актива",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"agent_id": {
 					"displayName": "Имя или идентификатор агента",
@@ -425,7 +425,7 @@
 							"displayName": "Незначительный"
 						},
 						"2": {
-							"displayName": "Стандартный"
+							"displayName": "Standard"
 						},
 						"3": {
 							"displayName": "Главный"
@@ -436,11 +436,11 @@
 					}
 				},
 				"department_id": {
-					"displayName": "Название или идентификатор отдела",
+					"displayName": "имя или идентификатор отдела",
 					"description": "Идентификатор отдела, которому принадлежит этот билет. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"group_id": {
-					"displayName": "Имя или идентификатор группы",
+					"displayName": "Имя или ID группы",
 					"description": "Идентификатор группы, которой назначен билет. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"impact": {
@@ -450,7 +450,7 @@
 							"displayName": "Низкий"
 						},
 						"2": {
-							"displayName": "Середина"
+							"displayName": "Средний"
 						},
 						"3": {
 							"displayName": "Высокий"
@@ -464,7 +464,7 @@
 							"displayName": "Низкий"
 						},
 						"2": {
-							"displayName": "Середина"
+							"displayName": "Средний"
 						},
 						"3": {
 							"displayName": "Высокий"
@@ -481,7 +481,7 @@
 							"displayName": "Низкий"
 						},
 						"2": {
-							"displayName": "Середина"
+							"displayName": "Средний"
 						},
 						"3": {
 							"displayName": "Высокий"
@@ -522,10 +522,10 @@
 							"displayName": "Ушедший на пенсию"
 						},
 						"disabled": {
-							"displayName": "Неполноценный"
+							"displayName": "Отключено"
 						},
 						"ignored": {
-							"displayName": "игнорируется"
+							"displayName": "Игнорировано"
 						},
 						"needs review": {
 							"displayName": "Требуется проверка"
@@ -555,7 +555,7 @@
 							"displayName": "Арендовать"
 						},
 						"Both": {
-							"displayName": "Оба"
+							"displayName": "Оба формата"
 						}
 					}
 				},
@@ -576,7 +576,7 @@
 				},
 				"requester_id": {
 					"displayName": "Имя или идентификатор запрашивающего",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				}
 			}
 		},
@@ -590,15 +590,15 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"filters": {
 			"displayName": "Фильтры",
 			"placeholder": "Добавить фильтр",
 			"options": {
 				"department_id": {
-					"displayName": "Название или идентификатор отдела",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"displayName": "имя или идентификатор отдела",
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"email": {
 					"displayName": "Электронная почта",
@@ -614,7 +614,7 @@
 					"displayName": "Язык",
 					"options": {
 						"en": {
-							"displayName": "Английский"
+							"displayName": "английский"
 						},
 						"ar": {
 							"displayName": "арабский"
@@ -647,7 +647,7 @@
 							"displayName": "финский"
 						},
 						"fr": {
-							"displayName": "Французский"
+							"displayName": "французский"
 						},
 						"he": {
 							"displayName": "иврит"
@@ -674,7 +674,7 @@
 							"displayName": "норвежский"
 						},
 						"nl": {
-							"displayName": "Голландский"
+							"displayName": "голландский"
 						},
 						"pl": {
 							"displayName": "Польский"
@@ -689,7 +689,7 @@
 							"displayName": "Португальский (Португалия)"
 						},
 						"ru-RU": {
-							"displayName": "Русский"
+							"displayName": "русский"
 						},
 						"sk": {
 							"displayName": "словацкий"
@@ -701,7 +701,7 @@
 							"displayName": "словенский"
 						},
 						"sv-SE": {
-							"displayName": "Шведский"
+							"displayName": "шведский"
 						},
 						"th": {
 							"displayName": "тайский"
@@ -727,8 +727,8 @@
 					"displayName": "Фамилия"
 				},
 				"location_id": {
-					"displayName": "Название или идентификатор местоположения",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"displayName": "имя или идентификатор местоположения",
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"mobile_phone_number": {
 					"displayName": "Номер мобильного телефона"
@@ -760,7 +760,7 @@
 					"displayName": "Порядок сортировки",
 					"options": {
 						"asc": {
-							"displayName": "восходящий"
+							"displayName": "По возрастанию"
 						},
 						"desc": {
 							"displayName": "По убыванию"
@@ -782,7 +782,7 @@
 					"description": "Идентификатор агента, которому были назначены билеты. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"group_id": {
-					"displayName": "Имя или идентификатор группы",
+					"displayName": "Имя или ID группы",
 					"description": "Идентификатор группы, которой были назначены заявки. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"impact": {
@@ -792,7 +792,7 @@
 							"displayName": "Низкий"
 						},
 						"2": {
-							"displayName": "Середина"
+							"displayName": "Средний"
 						},
 						"3": {
 							"displayName": "Высокий"
@@ -806,7 +806,7 @@
 							"displayName": "Низкий"
 						},
 						"2": {
-							"displayName": "Середина"
+							"displayName": "Средний"
 						},
 						"3": {
 							"displayName": "Высокий"
@@ -856,19 +856,19 @@
 						"addressFields": {
 							"options": {
 								"line1": {
-									"displayName": "Линия 1"
+									"displayName": "строка 1"
 								},
 								"line2": {
-									"displayName": "Линия 2"
+									"displayName": "строка 2"
 								},
 								"city": {
-									"displayName": "Город"
+									"displayName": "город"
 								},
 								"country": {
 									"displayName": "Страна"
 								},
 								"state": {
-									"displayName": "Состояние"
+									"displayName": "область"
 								},
 								"zipcode": {
 									"displayName": "Почтовый индекс"
@@ -905,7 +905,7 @@
 					"displayName": "Язык",
 					"options": {
 						"en": {
-							"displayName": "Английский"
+							"displayName": "английский"
 						},
 						"ar": {
 							"displayName": "арабский"
@@ -938,7 +938,7 @@
 							"displayName": "финский"
 						},
 						"fr": {
-							"displayName": "Французский"
+							"displayName": "французский"
 						},
 						"he": {
 							"displayName": "иврит"
@@ -965,7 +965,7 @@
 							"displayName": "норвежский"
 						},
 						"nl": {
-							"displayName": "Голландский"
+							"displayName": "голландский"
 						},
 						"pl": {
 							"displayName": "Польский"
@@ -980,7 +980,7 @@
 							"displayName": "Португальский (Португалия)"
 						},
 						"ru-RU": {
-							"displayName": "Русский"
+							"displayName": "русский"
 						},
 						"sk": {
 							"displayName": "словацкий"
@@ -992,7 +992,7 @@
 							"displayName": "словенский"
 						},
 						"sv-SE": {
-							"displayName": "Шведский"
+							"displayName": "шведский"
 						},
 						"th": {
 							"displayName": "тайский"
@@ -1018,11 +1018,11 @@
 					"displayName": "Фамилия"
 				},
 				"location_id": {
-					"displayName": "Название или идентификатор местоположения",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"displayName": "имя или идентификатор местоположения",
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"member_of": {
-					"displayName": "Имена или идентификаторы групп",
+					"displayName": "Имена или ID групп",
 					"description": "Разделенные запятыми идентификаторы групп, членом которых является агент. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"mobile_phone_number": {
@@ -1068,7 +1068,7 @@
 					}
 				},
 				"work_phone_number": {
-					"displayName": "Рабочий телефон"
+					"displayName": "рабочий телефон"
 				},
 				"description": {
 					"displayName": "Описание",
@@ -1133,7 +1133,7 @@
 					"description": "Разделенные запятыми идентификаторы отделов, которые могут просматривать это объявление. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"title": {
-					"displayName": "Заголовок"
+					"displayName": "Название"
 				},
 				"visibility": {
 					"displayName": "Видимость",
@@ -1160,7 +1160,7 @@
 							"displayName": "Незначительный"
 						},
 						"2": {
-							"displayName": "Стандартный"
+							"displayName": "Standard"
 						},
 						"3": {
 							"displayName": "Главный"
@@ -1171,11 +1171,11 @@
 					}
 				},
 				"department_id": {
-					"displayName": "Название или идентификатор отдела",
+					"displayName": "имя или идентификатор отдела",
 					"description": "Идентификатор отдела, которому присвоен этот билет. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"group_id": {
-					"displayName": "Имя или идентификатор группы",
+					"displayName": "Имя или ID группы",
 					"description": "Идентификатор группы, которой назначен билет. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"impact": {
@@ -1186,7 +1186,7 @@
 							"displayName": "Низкий"
 						},
 						"2": {
-							"displayName": "Середина"
+							"displayName": "Средний"
 						},
 						"3": {
 							"displayName": "Высокий"
@@ -1200,7 +1200,7 @@
 							"displayName": "Низкий"
 						},
 						"2": {
-							"displayName": "Середина"
+							"displayName": "Средний"
 						},
 						"3": {
 							"displayName": "Высокий"
@@ -1222,7 +1222,7 @@
 							"displayName": "Низкий"
 						},
 						"2": {
-							"displayName": "Середина"
+							"displayName": "Средний"
 						},
 						"3": {
 							"displayName": "Высокий"
@@ -1263,10 +1263,10 @@
 							"displayName": "Ушедший на пенсию"
 						},
 						"disabled": {
-							"displayName": "Неполноценный"
+							"displayName": "Отключено"
 						},
 						"ignored": {
-							"displayName": "игнорируется"
+							"displayName": "Игнорировано"
 						},
 						"needs review": {
 							"displayName": "Требуется проверка"
@@ -1289,7 +1289,7 @@
 				},
 				"asset_type_id": {
 					"displayName": "Имя или идентификатор типа актива",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"manufacturer": {
 					"displayName": "Производитель"
@@ -1304,7 +1304,7 @@
 							"displayName": "Арендовать"
 						},
 						"Both": {
-							"displayName": "Оба"
+							"displayName": "Оба формата"
 						}
 					}
 				},
@@ -1315,7 +1315,7 @@
 							"displayName": "Незначительный"
 						},
 						"2": {
-							"displayName": "Стандартный"
+							"displayName": "Standard"
 						},
 						"3": {
 							"displayName": "Главный"
@@ -1340,7 +1340,7 @@
 							"displayName": "Рабочий стол"
 						},
 						"mobile": {
-							"displayName": "мобильный"
+							"displayName": "Мобильный"
 						},
 						"saas": {
 							"displayName": "SaaS"
@@ -1368,7 +1368,7 @@
 			"description": "Идентификатор роли агента для получения"
 		},
 		"title": {
-			"displayName": "Заголовок"
+			"displayName": "Название"
 		},
 		"bodyHtml": {
 			"displayName": "Тело",
@@ -1398,7 +1398,7 @@
 		},
 		"assetTypeId": {
 			"displayName": "Имя или идентификатор типа актива",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"requesterId": {
 			"displayName": "Идентификатор запрашивающего",
@@ -1434,7 +1434,7 @@
 			"description": "Идентификатор проблемы, которую необходимо обновить"
 		},
 		"productId": {
-			"displayName": "Идентификатор продукта",
+			"displayName": "ID товара",
 			"description": "Идентификатор продукта для обновления"
 		},
 		"releaseType": {
@@ -1444,7 +1444,7 @@
 					"displayName": "Незначительный"
 				},
 				"2": {
-					"displayName": "Стандартный"
+					"displayName": "Standard"
 				},
 				"3": {
 					"displayName": "Главный"
@@ -1461,7 +1461,7 @@
 					"displayName": "Низкий"
 				},
 				"2": {
-					"displayName": "Середина"
+					"displayName": "Средний"
 				},
 				"3": {
 					"displayName": "Высокий"
@@ -1509,7 +1509,7 @@
 					"displayName": "Рабочий стол"
 				},
 				"mobile": {
-					"displayName": "мобильный"
+					"displayName": "Мобильный"
 				},
 				"saas": {
 					"displayName": "SaaS"

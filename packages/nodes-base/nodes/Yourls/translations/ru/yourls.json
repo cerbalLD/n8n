@@ -41,7 +41,7 @@
 					"displayName": "Ключевое слово"
 				},
 				"title": {
-					"displayName": "Заголовок",
+					"displayName": "Название",
 					"description": "Заголовок для пользовательских коротких URL-адресов"
 				}
 			}

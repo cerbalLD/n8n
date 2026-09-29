@@ -1,7 +1,7 @@
 {
 	"header": {
 		"displayName": "MSG91",
-		"description": "Отправляет транзакционные SMS через MSG91."
+		"description": "Отправка транзакционных SMS через MSG91"
 	},
 	"nodeView": {
 		"resource": {
@@ -16,18 +16,18 @@
 			"displayName": "Операция",
 			"options": {
 				"send": {
-					"displayName": "Отправлять",
-					"description": "Отправить СМС"
+					"displayName": "Отправить",
+					"description": "Отправить SMS"
 				}
 			}
 		},
 		"from": {
-			"displayName": "Идентификатор отправителя",
+			"displayName": "ID отправителя",
 			"description": "Номер, с которого отправить сообщение",
 			"placeholder": "4155238886"
 		},
 		"to": {
-			"displayName": "К",
+			"displayName": "До",
 			"description": "Номер с кодом страны, на который отправить сообщение.",
 			"placeholder": "+14155238886"
 		},

@@ -38,19 +38,19 @@
 					"description": "Отправить сообщение в трансляцию"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить пользователя"
 				},
 				"updateFile": {
 					"displayName": "Загрузить файл"
 				},
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать пользователя"
 				},
 				"getAll": {
 					"displayName": "Получить много",
-					"description": "Получить много пользователей"
+					"description": "Получить нескольких пользователей"
 				},
 				"getSubscribed": {
 					"displayName": "Получить подписку",
@@ -63,7 +63,7 @@
 			}
 		},
 		"to": {
-			"displayName": "К",
+			"displayName": "До",
 			"description": "Поток назначения или список, разделенный запятыми, содержащий имена пользователей (адреса электронной почты) получателей. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 		},
 		"content": {
@@ -282,7 +282,7 @@
 									"description": "Идентификатор значения данных пользовательского профиля"
 								},
 								"value": {
-									"displayName": "Ценить",
+									"displayName": "Значение",
 									"description": "Ценность данных пользовательского профиля"
 								}
 							}
@@ -310,7 +310,7 @@
 							"displayName": "Модератор организации"
 						},
 						"400": {
-							"displayName": "Член"
+							"displayName": "Участник"
 						},
 						"600": {
 							"displayName": "Гость"

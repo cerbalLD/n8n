@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "Клиент.io",
+		"displayName": "Customer.io",
 		"description": "Использование API Customer.io"
 	},
 	"nodeView": {
@@ -35,18 +35,18 @@
 				},
 				"upsert": {
 					"displayName": "Создать или обновить",
-					"description": "Создайте нового клиента или обновите текущего, если он уже существует (upsert)"
+					"description": "Создать нового клиента или обновить существующего, если он уже есть (upsert)"
 				},
 				"delete": {
 					"displayName": "Удалить",
-					"description": "Удаление клиента"
+					"description": "Удалить клиента"
 				},
 				"track": {
 					"displayName": "Отслеживать",
-					"description": "Отслеживание событий клиента"
+					"description": "Отслеживать событие клиента"
 				},
 				"trackAnonymous": {
-					"displayName": "Отследить анонимно",
+					"displayName": "Отслеживать анонимно",
 					"description": "Отслеживать анонимное событие"
 				},
 				"add": {
@@ -59,11 +59,11 @@
 		},
 		"campaignId": {
 			"displayName": "Идентификатор кампании",
-			"description": "Уникальный идентификатор кампании."
+			"description": "Уникальный идентификатор кампании"
 		},
 		"period": {
 			"displayName": "Период",
-			"description": "Укажите метрический период",
+			"description": "Указать период метрики",
 			"options": {
 				"hours": {
 					"displayName": "Часы"
@@ -88,29 +88,29 @@
 			"options": {
 				"steps": {
 					"displayName": "Шаги",
-					"description": "Целое число, указывающее количество шагов для возврата. По умолчанию установлено максимальное количество доступных периодов времени или 12 при использовании периода месяцев. Максимальные доступные периоды времени: 24 часа, 45 дней, 12 недель и 120 месяцев."
+					"description": "Целое число, указывающее, сколько шагов возвращать. По умолчанию максимальное количество доступных периодов времени, или 12 при использовании периода месяцев. Максимальные доступные периоды: 24 часа, 45 дней, 12 недель и 120 месяцев."
 				},
 				"type": {
 					"displayName": "Тип",
-					"description": "Используется для изменения типа события. Для событий просмотра страницы установите значение «страница».",
+					"description": "Используется для изменения типа события. Для событий просмотра страницы установите «page».",
 					"options": {
 						"email": {
 							"displayName": "Электронная почта"
 						},
 						"empty": {
-							"displayName": "Пустой"
+							"displayName": "Пусто"
 						},
 						"push": {
-							"displayName": "Толкать"
+							"displayName": "Отправка"
 						},
 						"slack": {
 							"displayName": "Слабый"
 						},
 						"twilio": {
-							"displayName": "Твилио"
+							"displayName": "Twilio"
 						},
 						"urbanAirship": {
-							"displayName": "Городской дирижабль"
+							"displayName": "Urban Airship"
 						},
 						"webhook": {
 							"displayName": "Вебхук"
@@ -126,13 +126,13 @@
 							"options": {
 								"key": {
 									"displayName": "Ключ",
-									"description": "Имя свойства",
+									"description": "Название свойства",
 									"placeholder": "План"
 								},
 								"value": {
-									"displayName": "Ценить",
-									"description": "Стоимость недвижимости",
-									"placeholder": "Базовый"
+									"displayName": "Значение",
+									"description": "Значение свойства",
+									"placeholder": "Основной"
 								}
 							}
 						}
@@ -150,8 +150,8 @@
 					"placeholder": "имя@email.com"
 				},
 				"createdAt": {
-					"displayName": "Создано в",
-					"description": "Временная метка UNIX с момента создания пользователя."
+					"displayName": "Создано",
+					"description": "Временная метка UNIX создания пользователя"
 				},
 				"customAttributes": {
 					"values": {
@@ -163,11 +163,11 @@
 							"options": {
 								"key": {
 									"displayName": "Ключ",
-									"description": "Имя атрибута",
+									"description": "Название атрибута",
 									"placeholder": "Цена"
 								},
 								"value": {
-									"displayName": "Ценить",
+									"displayName": "Значение",
 									"description": "Значение атрибута",
 									"placeholder": "25.50"
 								}
@@ -193,7 +193,7 @@
 			"description": "Объект значений для установки, как описано <a href=\"https://customer.io/docs/api-triggered-data-format#basic-data-formatting\">здесь</a>"
 		},
 		"customerId": {
-			"displayName": "Идентификатор клиента",
+			"displayName": "ID клиента",
 			"description": "Уникальный идентификатор клиента"
 		},
 		"eventName": {
@@ -201,12 +201,12 @@
 			"description": "Уникальный идентификатор клиента"
 		},
 		"segmentId": {
-			"displayName": "Идентификатор сегмента",
+			"displayName": "ID сегмента",
 			"description": "Уникальный идентификатор сегмента"
 		},
 		"customerIds": {
 			"displayName": "Идентификаторы клиентов",
-			"description": "Список идентификаторов клиентов для добавления в сегмент."
+			"description": "Список идентификаторов клиентов для добавления в сегмент"
 		}
 	}
 }

@@ -8,7 +8,7 @@
 			"displayName": "Ресурс",
 			"options": {
 				"account": {
-					"displayName": "Счет"
+					"displayName": "Учётная запись"
 				},
 				"alertContact": {
 					"displayName": "Контакт для оповещения"
@@ -32,7 +32,7 @@
 					"description": "Получить общедоступную страницу статуса"
 				},
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создайте общедоступную страницу статуса"
 				},
 				"delete": {
@@ -44,11 +44,11 @@
 					"description": "Получите множество общедоступных страниц статуса"
 				},
 				"reset": {
-					"displayName": "Перезагрузить",
+					"displayName": "Сбросить",
 					"description": "Сброс монитора"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить период обслуживания"
 				}
 			}
@@ -77,10 +77,10 @@
 					"displayName": "Вебхук"
 				},
 				"6": {
-					"displayName": "Пушбуллет"
+					"displayName": "Pushbullet"
 				},
 				"9": {
-					"displayName": "Пушовер"
+					"displayName": "Pushover"
 				}
 			}
 		},
@@ -98,7 +98,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"filters": {
 			"displayName": "Фильтры",
@@ -109,7 +109,7 @@
 					"description": "Идентификаторы контактов для оповещений, разделенные тире, например. 236-1782-4790"
 				},
 				"logs": {
-					"displayName": "Журналы",
+					"displayName": "Логи",
 					"description": "Будут ли возвращены журналы каждого монитора"
 				},
 				"mwindow": {
@@ -132,7 +132,7 @@
 					"displayName": "Статусы",
 					"options": {
 						"0": {
-							"displayName": "Приостановлено"
+							"displayName": "На паузе"
 						},
 						"1": {
 							"displayName": "Еще не проверено"
@@ -246,7 +246,7 @@
 							"displayName": "Пауза"
 						},
 						"1": {
-							"displayName": "Резюме"
+							"displayName": "Возобновить"
 						}
 					}
 				},
@@ -282,7 +282,7 @@
 					"description": "URL/IP монитора"
 				},
 				"value": {
-					"displayName": "Ценить",
+					"displayName": "Значение",
 					"description": "Соответствующее значение для типа контакта для оповещения (можно использовать только в том случае, если это контакт для оповещения Webhook)."
 				},
 				"start_time": {
@@ -349,7 +349,7 @@
 					"description": "Пароль для страницы статуса"
 				},
 				"sort": {
-					"displayName": "Сортировать",
+					"displayName": "Сортировка",
 					"description": "Сортировка страницы статуса",
 					"options": {
 						"1": {
@@ -369,7 +369,7 @@
 			}
 		},
 		"value": {
-			"displayName": "Ценить",
+			"displayName": "Значение",
 			"description": "Соответствующее значение для типа контакта для оповещения."
 		},
 		"duration": {
@@ -426,7 +426,7 @@
 					"description": "Пароль для страницы статуса"
 				},
 				"sort": {
-					"displayName": "Сортировать",
+					"displayName": "Сортировка",
 					"description": "Сортировка страницы статуса",
 					"options": {
 						"1": {

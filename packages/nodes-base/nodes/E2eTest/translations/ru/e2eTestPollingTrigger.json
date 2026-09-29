@@ -1,12 +1,12 @@
 {
 	"header": {
-		"displayName": "Триггер тестового опроса E2E",
+		"displayName": "Триггер опроса E2E тестирования",
 		"description": "Фиктивный триггер опроса для тестирования e2e"
 	},
 	"nodeView": {
 		"url": {
 			"displayName": "URL",
-			"description": "GET конечная точка для опроса. Ожидается возврат JSON формы { \"items\": [...] }."
+			"description": "GET конечная точка для опроса. Должна возвращать JSON вида { \"items\": [...] }."
 		}
 	}
 }

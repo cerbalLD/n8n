@@ -17,7 +17,7 @@
 					"displayName": "Почтовый ящик"
 				},
 				"thread": {
-					"displayName": "Нить"
+					"displayName": "Тема"
 				}
 			}
 		},
@@ -25,7 +25,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать новую ветку чата"
 				},
 				"delete": {
@@ -45,7 +45,7 @@
 					"description": "Получить определения свойств клиентов"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить клиента"
 				}
 			}
@@ -98,7 +98,7 @@
 			}
 		},
 		"resolveData": {
-			"displayName": "Разрешение данных",
+			"displayName": "Разрешить данные",
 			"description": "По умолчанию ответ содержит только идентификатор ресурса. Если эта опция активирована, она автоматически разрешит данные."
 		},
 		"additionalFields": {
@@ -118,21 +118,21 @@
 					"description": "Когда беседа была закрыта, применимо только для импортированных бесед."
 				},
 				"createdAt": {
-					"displayName": "Создано в",
+					"displayName": "Создано",
 					"description": "Когда был создан этот разговор — дата и время ISO 8601."
 				},
 				"customerEmail": {
-					"displayName": "Электронная почта клиента"
+					"displayName": "Email клиента"
 				},
 				"customerId": {
-					"displayName": "Идентификатор клиента"
+					"displayName": "ID клиента"
 				},
 				"imported": {
 					"displayName": "Импортировано",
 					"description": "Будут ли генерироваться исходящие электронные письма или уведомления"
 				},
 				"tags": {
-					"displayName": "Имена или идентификаторы тегов",
+					"displayName": "Имена или ID тегов",
 					"description": "Список тегов, которые будут добавлены в беседу. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"user": {
@@ -152,10 +152,10 @@
 					"description": "Пол этого клиента",
 					"options": {
 						"female": {
-							"displayName": "Женский"
+							"displayName": "женский"
 						},
 						"male": {
-							"displayName": "Мужской"
+							"displayName": "мужской"
 						},
 						"unknown": {
 							"displayName": "Неизвестный"
@@ -193,10 +193,10 @@
 		"threadsUi": {
 			"options": {
 				"threadsUi": {
-					"displayName": "Темы"
+					"displayName": "Потоки"
 				},
 				"threadsValues": {
-					"displayName": "Нить",
+					"displayName": "Тема",
 					"values": {
 						"type": {
 							"displayName": "Тип",
@@ -238,10 +238,10 @@
 				}
 			},
 			"placeholder": "Добавить тему",
-			"displayName": "Темы"
+			"displayName": "Потоки"
 		},
 		"conversationId": {
-			"displayName": "Идентификатор беседы"
+			"displayName": "Идентификатор разговора"
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",
@@ -249,7 +249,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"options": {
 			"displayName": "Параметры",
@@ -261,42 +261,42 @@
 				},
 				"embed": {
 					"displayName": "Встроить",
-					"description": "Позволяет встраивать/загружать подобъекты",
+					"description": "Позволяет встраивать/загружать подсущности",
 					"options": {
 						"threads": {
-							"displayName": "Темы"
+							"displayName": "Потоки"
 						}
 					}
 				},
 				"folder": {
-					"displayName": "Идентификатор папки",
-					"description": "Фильтрует разговоры из определенного идентификатора папки."
+					"displayName": "ID папки",
+					"description": "Фильтрует беседы по идентификатору папки"
 				},
 				"mailbox": {
 					"displayName": "Идентификатор почтового ящика",
-					"description": "Фильтрует клиентов из определенного почтового ящика"
+					"description": "Фильтрует клиентов из определённого почтового ящика"
 				},
 				"modifiedSince": {
 					"displayName": "Изменено с момента",
-					"description": "Возвращает только клиентов, которые были изменены после этой даты."
+					"description": "Возвращает только клиентов, изменённых после этой даты"
 				},
 				"number": {
 					"displayName": "Число",
-					"description": "Ищет разговор по номеру разговора"
+					"description": "Поиск беседы по номеру"
 				},
 				"query": {
 					"displayName": "Запрос",
 					"description": "Расширенный поиск <a href=\"https://developer.helpscout.com/mailbox-api/endpoints/customers/list/#query\">Примеры</a>"
 				},
 				"sortField": {
-					"displayName": "Сортировать поле",
-					"description": "Сортирует результат по указанному полю",
+					"displayName": "Поле сортировки",
+					"description": "Сортирует результаты по указанному полю",
 					"options": {
 						"createdAt": {
-							"displayName": "Создано в"
+							"displayName": "Создано"
 						},
 						"customerEmail": {
-							"displayName": "Электронная почта клиента"
+							"displayName": "Email клиента"
 						},
 						"customerName": {
 							"displayName": "Имя клиента"
@@ -311,7 +311,7 @@
 							"displayName": "Число"
 						},
 						"score": {
-							"displayName": "Счет"
+							"displayName": "Оценка"
 						},
 						"status": {
 							"displayName": "Статус"
@@ -340,7 +340,7 @@
 				},
 				"status": {
 					"displayName": "Статус",
-					"description": "Фильтровать разговор по статусу",
+					"description": "Фильтровать беседу по статусу",
 					"options": {
 						"active": {
 							"displayName": "Активный"
@@ -363,8 +363,8 @@
 					}
 				},
 				"tags": {
-					"displayName": "Имена или идентификаторы тегов",
-					"description": "Фильтрация разговоров по тегам. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Имена или ID тегов",
+					"description": "Фильтруйте беседы по тегам. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"firstName": {
 					"displayName": "Имя",
@@ -385,20 +385,20 @@
 					"displayName": "Адрес",
 					"values": {
 						"line1": {
-							"displayName": "Линия 1"
+							"displayName": "строка 1"
 						},
 						"line2": {
-							"displayName": "Линия 2"
+							"displayName": "строка 2"
 						},
 						"city": {
-							"displayName": "Город"
+							"displayName": "город"
 						},
 						"state": {
-							"displayName": "Состояние"
+							"displayName": "область"
 						},
 						"country": {
-							"displayName": "Название или идентификатор страны",
-							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+							"displayName": "Название страны или идентификатор",
+							"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 						},
 						"postalCode": {
 							"displayName": "Почтовый индекс"
@@ -412,10 +412,10 @@
 		"chatsUi": {
 			"options": {
 				"chatsUi": {
-					"displayName": "Ручки чата"
+					"displayName": "Дескрипторы чата"
 				},
 				"chatsValues": {
-					"displayName": "Ручка чата",
+					"displayName": "Дескриптор чата",
 					"values": {
 						"type": {
 							"displayName": "Тип",
@@ -434,13 +434,13 @@
 									"displayName": "MSN"
 								},
 								"other": {
-									"displayName": "Другой"
+									"displayName": "Другое"
 								},
 								"qq": {
 									"displayName": "QQ"
 								},
 								"skype": {
-									"displayName": "Скайп"
+									"displayName": "Skype"
 								},
 								"xmpp": {
 									"displayName": "XMPP"
@@ -451,47 +451,47 @@
 							}
 						},
 						"value": {
-							"displayName": "Ценить",
-							"description": "Ручка чата"
+							"displayName": "Значение",
+							"description": "Дескриптор чата"
 						}
 					}
 				}
 			},
 			"placeholder": "Добавить дескриптор чата",
-			"displayName": "Ручки чата"
+			"displayName": "Дескрипторы чата"
 		},
 		"emailsUi": {
 			"options": {
 				"emailsUi": {
-					"displayName": "Электронная почта"
+					"displayName": "Email-адреса"
 				},
 				"emailsValues": {
 					"displayName": "Электронная почта",
 					"values": {
 						"type": {
 							"displayName": "Тип",
-							"description": "Местоположение этого адреса электронной почты",
+							"description": "Местоположение для этого адреса эл. почты",
 							"options": {
 								"home": {
 									"displayName": "Дом"
 								},
 								"other": {
-									"displayName": "Другой"
+									"displayName": "Другое"
 								},
 								"work": {
-									"displayName": "Работа"
+									"displayName": "Рабочий"
 								}
 							}
 						},
 						"value": {
-							"displayName": "Ценить",
+							"displayName": "Значение",
 							"description": "Электронная почта"
 						}
 					}
 				}
 			},
-			"placeholder": "Добавить адрес электронной почты",
-			"displayName": "Электронная почта"
+			"placeholder": "Добавить email",
+			"displayName": "Email-адреса"
 		},
 		"phonesUi": {
 			"options": {
@@ -503,7 +503,7 @@
 					"values": {
 						"type": {
 							"displayName": "Тип",
-							"description": "Местоположение этого телефона",
+							"description": "Местоположение для этого номера",
 							"options": {
 								"fax": {
 									"displayName": "Факс"
@@ -512,18 +512,18 @@
 									"displayName": "Дом"
 								},
 								"other": {
-									"displayName": "Другой"
+									"displayName": "Другое"
 								},
 								"pager": {
 									"displayName": "Пейджер"
 								},
 								"work": {
-									"displayName": "Работа"
+									"displayName": "Рабочий"
 								}
 							}
 						},
 						"value": {
-							"displayName": "Ценить",
+							"displayName": "Значение",
 							"description": "Телефон"
 						}
 					}
@@ -548,34 +548,34 @@
 									"displayName": "Обо мне"
 								},
 								"facebook": {
-									"displayName": "Фейсбук"
+									"displayName": "Facebook"
 								},
 								"flickr": {
-									"displayName": "Фликр"
+									"displayName": "Flickr"
 								},
 								"forsquare": {
-									"displayName": "Форсквер"
+									"displayName": "Foursquare"
 								},
 								"google": {
 									"displayName": "Google"
 								},
 								"googleplus": {
-									"displayName": "Гугл Плюс"
+									"displayName": "Google Plus"
 								},
 								"linkedin": {
 									"displayName": "Линкедин"
 								},
 								"other": {
-									"displayName": "Другой"
+									"displayName": "Другое"
 								},
 								"quora": {
-									"displayName": "Кора"
+									"displayName": "Quora"
 								},
 								"tungleme": {
-									"displayName": "Тунглеме"
+									"displayName": "Tungle.me"
 								},
 								"twitter": {
-									"displayName": "Твиттер"
+									"displayName": "Twitter"
 								},
 								"youtube": {
 									"displayName": "Ютуб"
@@ -583,8 +583,8 @@
 							}
 						},
 						"value": {
-							"displayName": "Ценить",
-							"description": "Дескриптор социального профиля (например, URL-адрес)"
+							"displayName": "Значение",
+							"description": "Дескриптор профиля (например, URL)"
 						}
 					}
 				}
@@ -601,8 +601,8 @@
 					"displayName": "Веб-сайт",
 					"values": {
 						"value": {
-							"displayName": "Ценить",
-							"description": "URL-адрес веб-сайта"
+							"displayName": "Значение",
+							"description": "URL веб-сайта"
 						}
 					}
 				}
@@ -611,7 +611,7 @@
 			"displayName": "Веб-сайты"
 		},
 		"customerId": {
-			"displayName": "Идентификатор клиента"
+			"displayName": "ID клиента"
 		},
 		"updateFields": {
 			"displayName": "Обновить поля",
@@ -630,10 +630,10 @@
 					"description": "Пол этого клиента",
 					"options": {
 						"female": {
-							"displayName": "Женский"
+							"displayName": "женский"
 						},
 						"male": {
-							"displayName": "Мужской"
+							"displayName": "мужской"
 						},
 						"unknown": {
 							"displayName": "Неизвестный"
@@ -682,7 +682,7 @@
 							"description": "Имя файла вложения"
 						},
 						"mimeType": {
-							"displayName": "Тип пантомимы",
+							"displayName": "Тип MIME",
 							"description": "MIME-тип вложения"
 						},
 						"data": {
@@ -693,11 +693,11 @@
 					}
 				},
 				"attachmentsBinary": {
-					"displayName": "Вложения Бинарный",
+					"displayName": "Двоичные вложения",
 					"values": {
 						"property": {
 							"displayName": "Свойство",
-							"description": "Имя двоичных свойств, содержащих данные, которые следует добавить в электронное письмо во вложении."
+							"description": "Имя двоичных свойств, содержащих данные для добавления как вложение"
 						}
 					}
 				}

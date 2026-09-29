@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "понедельник.com",
+		"displayName": "Monday.com",
 		"description": "Использование API Monday.com"
 	},
 	"nodeView": {
@@ -22,10 +22,10 @@
 					"displayName": "Доска"
 				},
 				"boardColumn": {
-					"displayName": "Колонка Совета"
+					"displayName": "Столбец доски"
 				},
 				"boardGroup": {
-					"displayName": "Группа правления"
+					"displayName": "Группа доски"
 				},
 				"boardItem": {
 					"displayName": "Элемент доски"
@@ -36,12 +36,12 @@
 			"displayName": "Операция",
 			"options": {
 				"archive": {
-					"displayName": "Архив",
+					"displayName": "Архивировать",
 					"description": "Архивировать доску"
 				},
 				"create": {
-					"displayName": "Создавать",
-					"description": "Создание элемента в группе доски"
+					"displayName": "Создать",
+					"description": "Создать элемент в группе доски"
 				},
 				"get": {
 					"displayName": "Получать",
@@ -61,36 +61,36 @@
 				},
 				"changeColumnValue": {
 					"displayName": "Изменить значение столбца",
-					"description": "Изменение значения столбца для элемента доски"
+					"description": "Изменить значение столбца элемента доски"
 				},
 				"changeMultipleColumnValues": {
-					"displayName": "Изменить значения нескольких столбцов",
-					"description": "Изменение нескольких значений столбца для элемента доски"
+					"displayName": "Изменить несколько значений столбцов",
+					"description": "Изменить несколько значений столбцов элемента доски"
 				},
 				"getByColumnValue": {
 					"displayName": "Получить по значению столбца",
 					"description": "Получить элементы по значению столбца"
 				},
 				"move": {
-					"displayName": "Двигаться",
+					"displayName": "Переместить",
 					"description": "Переместить элемент в группу"
 				}
 			}
 		},
 		"boardId": {
-			"displayName": "Название или идентификатор доски",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"displayName": "Имя или ID доски",
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"name": {
 			"displayName": "Имя",
-			"description": "Название нового предмета"
+			"description": "Имя нового элемента"
 		},
 		"kind": {
 			"displayName": "Добрый",
-			"description": "Тип правления (публичный/частный/совместный)",
+			"description": "Тип доски (публичная / приватная / общая)",
 			"options": {
 				"share": {
-					"displayName": "Делиться"
+					"displayName": "Общий доступ"
 				},
 				"public": {
 					"displayName": "Общественный"
@@ -105,8 +105,8 @@
 			"placeholder": "Добавить поле",
 			"options": {
 				"templateId": {
-					"displayName": "Идентификатор шаблона",
-					"description": "Дополнительный идентификатор шаблона доски"
+					"displayName": "идентификатор шаблона",
+					"description": "Необязательный ID шаблона доски"
 				},
 				"defaults": {
 					"displayName": "По умолчанию",
@@ -114,7 +114,7 @@
 				},
 				"columnValues": {
 					"displayName": "Значения столбца",
-					"description": "Значения столбца нового элемента"
+					"description": "Значения столбцов нового элемента"
 				}
 			}
 		},
@@ -124,10 +124,10 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"title": {
-			"displayName": "Заголовок"
+			"displayName": "Название"
 		},
 		"columnType": {
 			"displayName": "Тип столбца",
@@ -142,16 +142,16 @@
 					"displayName": "Дата"
 				},
 				"dropdown": {
-					"displayName": "Падать"
+					"displayName": "Раскрывающийся список"
 				},
 				"email": {
 					"displayName": "Электронная почта"
 				},
 				"hour": {
-					"displayName": "Час"
+					"displayName": "час"
 				},
 				"Link": {
-					"displayName": "Связь"
+					"displayName": "Ссылка"
 				},
 				"longText": {
 					"displayName": "Длинный текст"
@@ -184,13 +184,13 @@
 					"displayName": "Текст"
 				},
 				"timeline": {
-					"displayName": "Хронология"
+					"displayName": "Временная шкала"
 				},
 				"timezone": {
 					"displayName": "Часовой пояс"
 				},
 				"week": {
-					"displayName": "Неделя"
+					"displayName": "неделя"
 				},
 				"worldClock": {
 					"displayName": "Мировое время"
@@ -198,20 +198,20 @@
 			}
 		},
 		"groupId": {
-			"displayName": "Имя или идентификатор группы",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"displayName": "Имя или ID группы",
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"itemId": {
-			"displayName": "Идентификатор предмета",
-			"description": "Идентификатор предмета"
+			"displayName": "ID элемента",
+			"description": "ID элемента"
 		},
 		"value": {
-			"displayName": "Ценить",
+			"displayName": "Значение",
 			"description": "Значение столбца в формате JSON. Документацию можно найти <a href=\"https://monday.com/developers/v2#mutations-section-columns-change-column-value\">здесь</a>."
 		},
 		"columnId": {
-			"displayName": "Имя или идентификатор столбца",
-			"description": "Уникальный идентификатор столбца. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"displayName": "Название или идентификатор столбца",
+			"description": "Уникальный идентификатор столбца. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"columnValues": {
 			"displayName": "Значения столбца",
@@ -219,7 +219,7 @@
 		},
 		"columnValue": {
 			"displayName": "Значение столбца",
-			"description": "Значение столбца для поиска элементов по"
+			"description": "Значение столбца для поиска элементов"
 		}
 	}
 }

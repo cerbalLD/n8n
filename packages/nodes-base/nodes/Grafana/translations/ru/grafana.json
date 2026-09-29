@@ -25,7 +25,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать команду"
 				},
 				"delete": {
@@ -41,11 +41,11 @@
 					"description": "Получить множество пользователей в текущей организации"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить пользователя в текущей организации"
 				},
 				"add": {
-					"displayName": "Добавлять",
+					"displayName": "Добавить",
 					"description": "Добавить участника в команду"
 				},
 				"remove": {
@@ -55,7 +55,7 @@
 			}
 		},
 		"title": {
-			"displayName": "Заголовок",
+			"displayName": "Название",
 			"description": "Название создаваемой информационной панели"
 		},
 		"additionalFields": {
@@ -84,7 +84,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"filters": {
 			"displayName": "Фильтры",
@@ -108,7 +108,7 @@
 					"description": "Папка для перемещения панели мониторинга — если папка не указана, панель мониторинга будет сохранена в папке «Общие». Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"title": {
-					"displayName": "Заголовок",
+					"displayName": "Название",
 					"description": "Новое название информационной панели"
 				},
 				"email": {
@@ -126,13 +126,13 @@
 					"description": "Новая роль для пользователя",
 					"options": {
 						"Admin": {
-							"displayName": "Админ"
+							"displayName": "Администратор"
 						},
 						"Editor": {
 							"displayName": "Редактор"
 						},
 						"Viewer": {
-							"displayName": "Зритель"
+							"displayName": "Просмотр"
 						}
 					}
 				}
@@ -141,7 +141,7 @@
 		"name": {
 			"displayName": "Имя",
 			"description": "Название команды, которую нужно создать",
-			"placeholder": "Инженерное дело"
+			"placeholder": "Инженерия"
 		},
 		"teamId": {
 			"displayName": "Название или идентификатор команды",
@@ -152,7 +152,7 @@
 			"description": "Идентификатор пользователя, которого нужно удалить"
 		},
 		"memberId": {
-			"displayName": "Имя пользователя или идентификатор",
+			"displayName": "Имя пользователя или ID",
 			"description": "Пользователь, которого нужно удалить из команды. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 		}
 	}

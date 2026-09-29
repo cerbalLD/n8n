@@ -8,11 +8,11 @@
 			"displayName": "Аутентификация",
 			"options": {
 				"microsoftGraphSecurityOAuth2Api": {
-					"displayName": "Безопасность графа OAuth2"
+					"displayName": "OAuth2 безопасности Graph"
 				},
 				"microsoftOAuth2Api": {
-					"displayName": "Microsoft OAuth2 (график)",
-					"description": "Общие учетные данные Microsoft Graph. Он должен иметь область SecurityEvents.ReadWrite.All offline_access с согласия администратора Entra."
+					"displayName": "Microsoft OAuth2 (Graph)",
+					"description": "Универсальные учётные данные Microsoft Graph. Они должны иметь область SecurityEvents.ReadWrite.All offline_access с согласием администратора Entra."
 				}
 			}
 		},
@@ -20,10 +20,10 @@
 			"displayName": "Ресурс",
 			"options": {
 				"secureScore": {
-					"displayName": "Безопасная оценка"
+					"displayName": "Оценка безопасности"
 				},
 				"secureScoreControlProfile": {
-					"displayName": "Профиль безопасного контроля результатов"
+					"displayName": "Профиль управления оценкой безопасности"
 				}
 			}
 		},
@@ -37,13 +37,13 @@
 					"displayName": "Получить много"
 				},
 				"update": {
-					"displayName": "Обновлять"
+					"displayName": "Обновить"
 				}
 			}
 		},
 		"secureScoreId": {
 			"displayName": "Идентификатор оценки безопасности",
-			"description": "Идентификатор защищенной оценки, которую необходимо получить"
+			"description": "Идентификатор оценки безопасности для получения"
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",
@@ -51,49 +51,49 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"filters": {
 			"displayName": "Фильтры",
 			"placeholder": "Добавить фильтр",
 			"options": {
 				"filter": {
-					"displayName": "Параметр запроса фильтра",
-					"description": "<a href=\"https://docs.microsoft.com/en-us/graph/query-parameters#filter-parameter\">Параметр запроса</a> для фильтрации результатов по",
-					"placeholder": "начинается с (идентификатор, 'AATP')"
+					"displayName": "Параметр фильтра запроса",
+					"description": "<a href=\"https://docs.microsoft.com/en-us/graph/query-parameters#filter-parameter\">Параметр запроса</a> для фильтрации результатов",
+					"placeholder": "startsWith(id, 'AATP')"
 				},
 				"includeControlScores": {
-					"displayName": "Включить контрольные оценки"
+					"displayName": "Включить оценки управления"
 				}
 			}
 		},
 		"secureScoreControlProfileId": {
-			"displayName": "Идентификатор профиля Secure Score Control",
-			"description": "Идентификатор безопасного профиля управления оценкой, который нужно обновить"
+			"displayName": "Идентификатор профиля управления оценкой безопасности",
+			"description": "Идентификатор профиля управления оценкой безопасности для обновления"
 		},
 		"provider": {
 			"displayName": "Поставщик",
-			"description": "Название поставщика продукта или услуги безопасности",
+			"description": "Имя поставщика продукта или услуги безопасности",
 			"placeholder": "SecureScore"
 		},
 		"vendor": {
-			"displayName": "Продавец",
+			"displayName": "Поставщик",
 			"description": "Имя поставщика продукта или услуги безопасности",
-			"placeholder": "Майкрософт"
+			"placeholder": "Microsoft"
 		},
 		"updateFields": {
 			"displayName": "Обновить поля",
 			"placeholder": "Добавить поле",
 			"options": {
 				"state": {
-					"displayName": "Состояние",
-					"description": "Настройка системы управления, управляемая аналитиком",
+					"displayName": "область",
+					"description": "Параметр управления, установленный аналитиком",
 					"options": {
 						"Default": {
 							"displayName": "По умолчанию"
 						},
 						"Ignored": {
-							"displayName": "игнорируется"
+							"displayName": "Игнорировано"
 						},
 						"ThirdParty": {
 							"displayName": "Третья сторона"

@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Плательщик",
-		"description": "Получить данные из Chargebee API"
+		"displayName": "Chargebee",
+		"description": "Получить данные из API Chargebee"
 	},
 	"nodeView": {
 		"resource": {
@@ -11,7 +11,7 @@
 					"displayName": "Клиент"
 				},
 				"invoice": {
-					"displayName": "Счет"
+					"displayName": "Счёт"
 				},
 				"subscription": {
 					"displayName": "Подписка"
@@ -22,16 +22,16 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать клиента"
 				},
 				"list": {
 					"displayName": "Список",
-					"description": "Верните счета-фактуры"
+					"description": "Получить счета"
 				},
 				"pdfUrl": {
-					"displayName": "URL-адрес счета-фактуры в формате PDF",
-					"description": "Получить URL-адрес счета-фактуры в формате PDF"
+					"displayName": "URL счёта в формате PDF",
+					"description": "Получить URL счёта в PDF"
 				},
 				"cancel": {
 					"displayName": "Отмена",
@@ -45,12 +45,12 @@
 		},
 		"properties": {
 			"displayName": "Характеристики",
-			"description": "Свойства, которые нужно установить для нового пользователя",
+			"description": "Свойства нового пользователя",
 			"placeholder": "Добавить недвижимость",
 			"options": {
 				"id": {
 					"displayName": "ID пользователя",
-					"description": "Идентификатор нового клиента. Если не задано, оно будет сгенерировано автоматически."
+					"description": "ID клиента. Если не задано, сгенерируется автоматически."
 				},
 				"first_name": {
 					"displayName": "Имя",
@@ -71,30 +71,30 @@
 				},
 				"company": {
 					"displayName": "Компания",
-					"description": "Компания заказчика"
+					"description": "Компания клиента"
 				},
 				"customProperties": {
 					"values": {
 						"customProperties": {
 							"displayName": "Пользовательские свойства",
-							"description": "Добавляет пользовательское свойство для установки значений, которые не были предварительно определены."
+							"description": "Добавить пользовательское свойство"
 						},
 						"property": {
 							"options": {
 								"name": {
 									"displayName": "Имя свойства",
-									"description": "Имя свойства, которое нужно установить"
+									"description": "Имя свойства"
 								},
 								"value": {
-									"displayName": "Стоимость недвижимости",
-									"description": "Значение свойства для установки"
+									"displayName": "Значение свойства",
+									"description": "Значение для установки"
 								}
 							}
 						}
 					},
 					"placeholder": "Добавить пользовательское свойство",
 					"displayName": "Пользовательские свойства",
-					"description": "Добавляет пользовательское свойство для установки значений, которые не были предварительно определены.",
+					"description": "Добавить пользовательское свойство",
 					"options": {
 						"property": {
 							"displayName": "Свойство"
@@ -104,27 +104,27 @@
 			}
 		},
 		"maxResults": {
-			"displayName": "Максимальные результаты",
-			"description": "Макс. количество возвращаемых результатов (< 100)."
+			"displayName": "Максимум результатов",
+			"description": "Максимум результатов для возврата (< 100)"
 		},
 		"filters": {
 			"options": {
 				"filters": {
 					"displayName": "Фильтры",
-					"description": "Фильтровать счета"
+					"description": "Фильтр счетов"
 				},
 				"date": {
-					"displayName": "Дата счета",
+					"displayName": "Дата счёта",
 					"values": {
 						"operation": {
 							"displayName": "Операция",
-							"description": "Операция по решению, куда следует сопоставить данные",
+							"description": "Операция для преобразования данных",
 							"options": {
 								"is": {
-									"displayName": "Является"
+									"displayName": "Равно"
 								},
 								"is_not": {
-									"displayName": "Нет"
+									"displayName": "Не равно"
 								},
 								"after": {
 									"displayName": "После"
@@ -141,29 +141,29 @@
 					}
 				},
 				"total": {
-					"displayName": "Сумма счета",
+					"displayName": "Сумма счёта",
 					"values": {
 						"operation": {
 							"displayName": "Операция",
-							"description": "Операция по решению, куда следует сопоставить данные",
+							"description": "Операция для преобразования данных",
 							"options": {
 								"gte": {
-									"displayName": "Больше Равно Чем"
+									"displayName": "Больше или равно"
 								},
 								"gt": {
-									"displayName": "Больше, чем"
+									"displayName": "Больше чем"
 								},
 								"is": {
-									"displayName": "Является"
+									"displayName": "Равно"
 								},
 								"is_not": {
-									"displayName": "Нет"
+									"displayName": "Не равно"
 								},
 								"lte": {
-									"displayName": "Меньше равно, чем"
+									"displayName": "Меньше или равно"
 								},
 								"lt": {
-									"displayName": "Меньше, чем"
+									"displayName": "Меньше чем"
 								}
 							}
 						},
@@ -176,19 +176,19 @@
 			},
 			"placeholder": "Добавить фильтр",
 			"displayName": "Фильтры",
-			"description": "Фильтровать счета"
+			"description": "Фильтр счетов"
 		},
 		"invoiceId": {
-			"displayName": "Идентификатор счета",
-			"description": "Идентификатор счета, который нужно получить"
+			"displayName": "ID счёта",
+			"description": "ID счёта для получения"
 		},
 		"subscriptionId": {
-			"displayName": "Идентификатор подписки",
-			"description": "Идентификатор подписки, которую необходимо удалить."
+			"displayName": "ID подписки",
+			"description": "ID подписки для удаления"
 		},
 		"endOfTerm": {
-			"displayName": "Расписание окончания срока",
-			"description": "Если он не отменит его напрямую, вместо этого запланирует отмену на конец срока."
+			"displayName": "Запланировать конец срока",
+			"description": "Не отменяет сразу, а запланирует отмену на конец срока"
 		}
 	}
 }

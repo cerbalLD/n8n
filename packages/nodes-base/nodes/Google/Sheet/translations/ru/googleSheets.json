@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "Google Таблицы",
+		"displayName": "Google Sheets",
 		"description": "Чтение, обновление и запись данных в Google Таблицы"
 	}
 }

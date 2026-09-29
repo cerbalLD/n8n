@@ -43,7 +43,7 @@
 					"description": "Название компании"
 				},
 				"facebook": {
-					"displayName": "Фейсбук",
+					"displayName": "Facebook",
 					"description": "URL-адрес Facebook для этого человека"
 				},
 				"linkedin": {
@@ -51,7 +51,7 @@
 					"description": "URL-адрес LinkedIn для компании"
 				},
 				"twitter": {
-					"displayName": "Твиттер",
+					"displayName": "Twitter",
 					"description": "Дескриптор Twitter для человека"
 				},
 				"company": {
@@ -67,7 +67,7 @@
 					"description": "Фамилия человека. Если оно у вас есть, настоятельно рекомендуется пройти его, чтобы улучшить коэффициент совпадения."
 				},
 				"givenName": {
-					"displayName": "Собственное имя",
+					"displayName": "Имя",
 					"description": "Имя человека"
 				},
 				"ipAddress": {

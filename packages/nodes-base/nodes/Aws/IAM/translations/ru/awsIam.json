@@ -34,7 +34,7 @@
 					"description": "Добавить существующего пользователя в группу"
 				},
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать новую группу"
 				},
 				"delete": {
@@ -54,7 +54,7 @@
 					"description": "Удаление пользователя из группы"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить существующую группу"
 				}
 			}
@@ -97,8 +97,8 @@
 									"placeholder": "например, Отдел"
 								},
 								"value": {
-									"displayName": "Ценить",
-									"placeholder": "например, Инженерное дело"
+									"displayName": "Значение",
+									"placeholder": "например, Инженерия"
 								}
 							}
 						}
@@ -108,7 +108,7 @@
 					"description": "Список тегов, которые вы хотите прикрепить к новому пользователю",
 					"options": {
 						"tags": {
-							"displayName": "Ярлык"
+							"displayName": "Тег"
 						}
 					}
 				},
@@ -125,12 +125,12 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"groupName": {
 			"displayName": "Имя группы",
-			"description": "Новое название группы",
-			"placeholder": "например Имя группы"
+			"description": "Новое имя группы",
+			"placeholder": "например GroupName"
 		},
 		"includeUsers": {
 			"displayName": "Включить пользователей",

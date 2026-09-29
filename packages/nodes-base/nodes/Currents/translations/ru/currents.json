@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Течения",
-		"description": "Взаимодействие с Currents API для оркестрации тестирования и анализа."
+		"displayName": "Currents",
+		"description": "Взаимодействие с API Currents для оркестрации тестирования и аналитики"
 	},
 	"nodeView": {
 		"resource": {
@@ -9,10 +9,10 @@
 			"options": {
 				"action": {
 					"displayName": "Действие",
-					"description": "Правила тестовых действий (пропустить, поместить в карантин, отметить)"
+					"description": "Правила действий для тестов (пропустить, поместить в карантин, отметить тегом)"
 				},
 				"instance": {
-					"displayName": "Пример",
+					"displayName": "Экземпляр",
 					"description": "Экземпляр выполнения файла спецификации"
 				},
 				"project": {
@@ -20,12 +20,12 @@
 					"description": "Тестовый проект"
 				},
 				"run": {
-					"displayName": "Бегать",
-					"description": "Тестовый запуск"
+					"displayName": "Запуск",
+					"description": "Запуск теста"
 				},
 				"signature": {
 					"displayName": "Подпись",
-					"description": "Генерируйте уникальные тестовые сигнатуры"
+					"description": "Сгенерировать уникальные тестовые сигнатуры"
 				},
 				"specFile": {
 					"displayName": "Файл спецификации",
@@ -33,11 +33,11 @@
 				},
 				"test": {
 					"displayName": "Тест",
-					"description": "Индивидуальные показатели производительности тестов"
+					"description": "Показатели производительности отдельного теста"
 				},
 				"testResult": {
 					"displayName": "Результат теста",
-					"description": "Результаты выполнения исторических тестов"
+					"description": "Исторические результаты выполнения тестов"
 				}
 			}
 		},
@@ -45,56 +45,56 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать новое действие для проекта"
 				},
 				"delete": {
 					"displayName": "Удалить",
-					"description": "Удаление запуска и всех связанных с ним данных"
+					"description": "Удалить запуск и все связанные данные"
 				},
 				"disable": {
-					"displayName": "Запрещать",
+					"displayName": "Отключить",
 					"description": "Деактивировать активное действие"
 				},
 				"enable": {
-					"displayName": "Давать возможность",
+					"displayName": "Включить",
 					"description": "Повторно активировать отключенное действие"
 				},
 				"get": {
 					"displayName": "Получать",
-					"description": "Получить пробег по удостоверению личности"
+					"description": "Получить запуск по идентификатору"
 				},
 				"getAll": {
 					"displayName": "Получить много",
-					"description": "Получите исторические результаты выполнения тестов для конкретной тестовой сигнатуры."
+					"description": "Получить исторические результаты выполнения тестов для конкретной сигнатуры теста"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить существующее действие"
 				},
 				"getInsights": {
-					"displayName": "Получить информацию",
-					"description": "Получите информацию и показатели проекта"
+					"displayName": "Получить аналитику",
+					"description": "Получить аналитику и показатели проекта"
 				},
 				"cancel": {
 					"displayName": "Отмена",
 					"description": "Отменить текущий запуск"
 				},
 				"cancelGithub": {
-					"displayName": "Отмена с помощью GitHub CI",
-					"description": "Отменить запуск с помощью идентификатора запуска рабочего процесса GitHub Actions"
+					"displayName": "Отмена по GitHub CI",
+					"description": "Отменить запуск по идентификатору запуска рабочего процесса GitHub Actions"
 				},
 				"find": {
-					"displayName": "Находить",
-					"description": "Найдите запуск по проекту и фильтрам"
+					"displayName": "Найти",
+					"description": "Найти запуск по проекту и фильтрам"
 				},
 				"reset": {
-					"displayName": "Перезагрузить",
+					"displayName": "Сбросить",
 					"description": "Сбросить неудачные спецификации для повторного выполнения на указанных машинах"
 				},
 				"generate": {
-					"displayName": "Генерировать",
-					"description": "Создайте уникальную тестовую подпись"
+					"displayName": "Сгенерировать",
+					"description": "Сгенерировать уникальную сигнатуру теста"
 				}
 			}
 		},
@@ -112,7 +112,7 @@
 			"options": {
 				"search": {
 					"displayName": "Поиск",
-					"description": "Поиск по ciBuildId или сообщению фиксации (максимум 200 символов)"
+					"description": "Поиск по ciBuildId или сообщению коммита (максимум 200 символов)"
 				},
 				"status": {
 					"displayName": "Статус",
@@ -125,28 +125,28 @@
 							"displayName": "В архиве"
 						},
 						"disabled": {
-							"displayName": "Неполноценный"
+							"displayName": "Отключено"
 						},
 						"expired": {
 							"displayName": "Истекший"
 						},
 						"FAILED": {
-							"displayName": "Неуспешный"
+							"displayName": "Не выполнено"
 						},
 						"FAILING": {
-							"displayName": "неудачно"
+							"displayName": "Не пройденный"
 						},
 						"PASSED": {
-							"displayName": "Прошедший"
+							"displayName": "Пройдена"
 						},
 						"RUNNING": {
-							"displayName": "Бег"
+							"displayName": "Выполняется"
 						},
 						"failed": {
-							"displayName": "Неуспешный"
+							"displayName": "Не выполнено"
 						},
 						"passed": {
-							"displayName": "Прошедший"
+							"displayName": "Пройдена"
 						},
 						"pending": {
 							"displayName": "В ожидании"
@@ -157,8 +157,8 @@
 					}
 				},
 				"branch": {
-					"displayName": "Ветвь",
-					"description": "Фильтровать по названию ветки git"
+					"displayName": "Ветка",
+					"description": "Фильтровать по названию ветки Git"
 				},
 				"ciBuildId": {
 					"displayName": "Идентификатор сборки CI",
@@ -166,15 +166,15 @@
 				},
 				"tags": {
 					"displayName": "Теги",
-					"description": "Фильтрация по тегам запуска (поддерживается несколько значений)"
+					"description": "Фильтровать по тегам запуска (поддерживается несколько значений)"
 				},
 				"authors": {
 					"displayName": "Авторы Git",
-					"description": "Фильтровать по авторам git (для нескольких авторов через запятую)"
+					"description": "Фильтровать по авторам Git (несколько значений через запятую)"
 				},
 				"branches": {
-					"displayName": "Филиалы",
-					"description": "Фильтровать по ветвям (через запятую, если несколько)"
+					"displayName": "Ветки",
+					"description": "Фильтровать по веткам (несколько значений через запятую)"
 				},
 				"completionState": {
 					"displayName": "Состояние завершения",
@@ -184,10 +184,10 @@
 							"displayName": "Отменено"
 						},
 						"COMPLETE": {
-							"displayName": "Полный"
+							"displayName": "Готово"
 						},
 						"IN_PROGRESS": {
-							"displayName": "В ходе выполнения"
+							"displayName": "в процессе"
 						},
 						"TIMEOUT": {
 							"displayName": "Тайм-аут"
@@ -196,51 +196,51 @@
 				},
 				"dateEnd": {
 					"displayName": "Дата окончания",
-					"description": "Прогоны фильтров, созданные до этой даты"
+					"description": "Фильтровать запуски, созданные до этой даты"
 				},
 				"dateStart": {
 					"displayName": "Дата начала",
-					"description": "Прогоны фильтров, созданные не позднее этой даты."
+					"description": "Фильтровать запуски, созданные не позднее этой даты"
 				},
 				"tagOperator": {
 					"displayName": "Оператор тега",
-					"description": "Логический оператор для фильтрации тегов",
+					"description": "Логический оператор для фильтрации по тегам",
 					"options": {
 						"AND": {
 							"displayName": "AND",
-							"description": "Все теги должны присутствовать"
+							"description": "Все теги должны быть присутствовать"
 						},
 						"OR": {
 							"displayName": "OR",
-							"description": "Любой тег должен присутствовать"
+							"description": "Любой тег должен быть присутствовать"
 						}
 					}
 				},
 				"groups": {
 					"displayName": "Группы",
-					"description": "Фильтровать по группам (через запятую для нескольких)"
+					"description": "Фильтровать по группам (несколько значений через запятую)"
 				},
 				"specNameFilter": {
 					"displayName": "Название спецификации",
-					"description": "Фильтрация файлов спецификаций по имени (частичное совпадение)"
+					"description": "Фильтровать файлы спецификаций по названию (частичное совпадение)"
 				},
 				"minExecutions": {
-					"displayName": "Минимальное количество казней",
+					"displayName": "Минимальное количество выполнений",
 					"description": "Минимальное количество выполнений для включения теста"
 				},
 				"spec": {
 					"displayName": "Файл спецификации",
-					"description": "Фильтрация тестов по имени файла спецификации (частичное совпадение)"
+					"description": "Фильтровать тесты по названию файла спецификации (частичное совпадение)"
 				},
 				"testState": {
-					"displayName": "Тестовое состояние",
-					"description": "Фильтровать по состоянию тестирования",
+					"displayName": "Состояние теста",
+					"description": "Фильтровать по состоянию теста",
 					"options": {
 						"failed": {
-							"displayName": "Неуспешный"
+							"displayName": "Не выполнено"
 						},
 						"passed": {
-							"displayName": "Прошедший"
+							"displayName": "Пройдена"
 						},
 						"pending": {
 							"displayName": "В ожидании"
@@ -251,39 +251,39 @@
 					}
 				},
 				"title": {
-					"displayName": "Заголовок",
+					"displayName": "Название",
 					"description": "Фильтровать тесты по названию (частичное совпадение)"
 				}
 			}
 		},
 		"name": {
 			"displayName": "Имя",
-			"description": "Название действия (1-255 символов)"
+			"description": "Название действия (1–255 символов)"
 		},
 		"actionType": {
 			"displayName": "Тип действия",
 			"options": {
 				"quarantine": {
 					"displayName": "Карантин",
-					"description": "Карантинные тесты на соответствие"
+					"description": "Поместить в карантин тесты, соответствующие критериям"
 				},
 				"skip": {
-					"displayName": "Пропускать",
-					"description": "Пропустить тесты на соответствие"
+					"displayName": "Пропустить",
+					"description": "Пропустить тесты, соответствующие критериям"
 				},
 				"tag": {
-					"displayName": "Ярлык",
-					"description": "Добавьте теги к соответствующим тестам"
+					"displayName": "Тег",
+					"description": "Добавить теги к тестам, соответствующим критериям"
 				}
 			}
 		},
 		"actionTags": {
 			"displayName": "Теги",
-			"description": "Список тегов, разделенных запятыми, которые нужно применить."
+			"description": "Список тегов через запятую для применения"
 		},
 		"matcherType": {
 			"displayName": "Тип совпадения",
-			"description": "Как сопоставить тесты для этого действия",
+			"description": "Как сопоставлять тесты для этого действия",
 			"options": {
 				"specContains": {
 					"displayName": "Файл спецификации содержит"
@@ -292,7 +292,7 @@
 					"displayName": "Файл спецификации равен"
 				},
 				"signature": {
-					"displayName": "Тестовая подпись"
+					"displayName": "Сигнатура теста"
 				},
 				"titleContains": {
 					"displayName": "Название теста содержит"
@@ -303,8 +303,8 @@
 			}
 		},
 		"matcherValue": {
-			"displayName": "Значение совпадения",
-			"description": "Значение для сопоставления (заголовок теста, путь к файлу спецификации или подпись)."
+			"displayName": "Значение для совпадения",
+			"description": "Значение для сопоставления (название теста, путь к файлу спецификации или сигнатура)"
 		},
 		"createOptions": {
 			"displayName": "Параметры",
@@ -312,10 +312,10 @@
 			"options": {
 				"description": {
 					"displayName": "Описание",
-					"description": "Описание к действию"
+					"description": "Описание действия"
 				},
 				"expiresAfter": {
-					"displayName": "Срок действия истекает после",
+					"displayName": "Истекает через",
 					"description": "Когда действие должно истечь (формат ISO 8601)"
 				}
 			}
@@ -326,25 +326,25 @@
 			"options": {
 				"name": {
 					"displayName": "Имя",
-					"description": "Название действия (1-255 символов)"
+					"description": "Название действия (1–255 символов)"
 				},
 				"description": {
 					"displayName": "Описание",
-					"description": "Описание к действию"
+					"description": "Описание действия"
 				},
 				"expiresAfter": {
-					"displayName": "Срок действия истекает после",
+					"displayName": "Истекает через",
 					"description": "Когда действие должно истечь (формат ISO 8601)"
 				}
 			}
 		},
 		"instanceId": {
-			"displayName": "Идентификатор экземпляра",
+			"displayName": "ID экземпляра",
 			"description": "Идентификатор экземпляра выполнения файла спецификации"
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"dateStart": {
 			"displayName": "Дата начала",
@@ -360,15 +360,15 @@
 			"options": {
 				"authors": {
 					"displayName": "Авторы Git",
-					"description": "Фильтровать по авторам git (для нескольких авторов через запятую)"
+					"description": "Фильтровать по авторам Git (несколько значений через запятую)"
 				},
 				"branches": {
-					"displayName": "Филиалы",
-					"description": "Фильтровать по ветвям (через запятую, если несколько)"
+					"displayName": "Ветки",
+					"description": "Фильтровать по веткам (несколько значений через запятую)"
 				},
 				"groups": {
 					"displayName": "Группы",
-					"description": "Фильтровать по группам (через запятую для нескольких)"
+					"description": "Фильтровать по группам (несколько значений через запятую)"
 				},
 				"resolution": {
 					"displayName": "Разрешение",
@@ -387,53 +387,53 @@
 				},
 				"tags": {
 					"displayName": "Теги",
-					"description": "Фильтровать по тегам (если их несколько, через запятую)"
+					"description": "Фильтровать по тегам (несколько значений через запятую)"
 				},
 				"startingAfter": {
 					"displayName": "Начиная после",
-					"description": "Курсор для нумерации страниц вперед"
+					"description": "Курсор для прямой нумерации страниц"
 				},
 				"endingBefore": {
-					"displayName": "Окончание раньше",
+					"displayName": "Заканчивая до",
 					"description": "Курсор для обратной нумерации страниц"
 				},
 				"includeFailedInDuration": {
-					"displayName": "Включить ошибку в длительность",
-					"description": "Включать ли неудачные выполнения в расчет длительности"
+					"displayName": "Включить ошибки в длительность",
+					"description": "Включать ли неудачные выполнения в расчёт длительности"
 				},
 				"order": {
-					"displayName": "Заказать по",
-					"description": "Поле для упорядочивания результатов",
+					"displayName": "Сортировать по",
+					"description": "Поле для сортировки результатов",
 					"options": {
 						"avgDuration": {
 							"displayName": "Средняя продолжительность"
 						},
 						"failedExecutions": {
-							"displayName": "Неудачные исполнения"
+							"displayName": "Неудачные выполнения"
 						},
 						"failureRate": {
 							"displayName": "Частота отказов"
 						},
 						"flakeRate": {
-							"displayName": "Скорость хлопьев"
+							"displayName": "Частота нестабильности"
 						},
 						"flakyExecutions": {
-							"displayName": "Неустойчивые казни"
+							"displayName": "Нестабильные выполнения"
 						},
 						"fullyReported": {
 							"displayName": "Полностью сообщено"
 						},
 						"overallExecutions": {
-							"displayName": "Общее количество казней"
+							"displayName": "Всего выполнений"
 						},
 						"suiteSize": {
-							"displayName": "Размер люкса"
+							"displayName": "Размер набора"
 						},
 						"timeoutExecutions": {
-							"displayName": "Выполнение по тайм-ауту"
+							"displayName": "Выполнения с истечением времени"
 						},
 						"timeoutRate": {
-							"displayName": "Скорость тайм-аута"
+							"displayName": "Частота истечения времени"
 						},
 						"duration": {
 							"displayName": "Продолжительность"
@@ -442,34 +442,34 @@
 							"displayName": "Дельта продолжительности"
 						},
 						"durationXSamples": {
-							"displayName": "Влияние продолжительности"
+							"displayName": "Влияние на продолжительность"
 						},
 						"executions": {
-							"displayName": "Казни"
+							"displayName": "Выполнения"
 						},
 						"failRateXSamples": {
-							"displayName": "Влияние отказа"
+							"displayName": "Влияние на отказ"
 						},
 						"failureRateDelta": {
 							"displayName": "Дельта частоты отказов"
 						},
 						"failures": {
-							"displayName": "Неудачи"
+							"displayName": "Отказы"
 						},
 						"flakiness": {
-							"displayName": "Лязгкость"
+							"displayName": "Нестабильность"
 						},
 						"flakinessXSamples": {
-							"displayName": "Влияние шелушения"
+							"displayName": "Влияние на нестабильность"
 						},
 						"flakinessRateDelta": {
-							"displayName": "Дельта показателя шелушения"
+							"displayName": "Дельта частоты нестабильности"
 						},
 						"passes": {
-							"displayName": "Проходит"
+							"displayName": "Пройденные"
 						},
 						"title": {
-							"displayName": "Заголовок"
+							"displayName": "Название"
 						}
 					}
 				},
@@ -478,7 +478,7 @@
 					"description": "Направление сортировки результатов",
 					"options": {
 						"asc": {
-							"displayName": "восходящий"
+							"displayName": "По возрастанию"
 						},
 						"desc": {
 							"displayName": "По убыванию"
@@ -487,12 +487,12 @@
 				},
 				"page": {
 					"displayName": "Страница",
-					"description": "Номер страницы (индексируется 0)"
+					"description": "Номер страницы (отсчёт от 0)"
 				},
 				"metric_settings": {
-					"displayName": "Настройки показателей",
-					"description": "Переопределить, какие статусы тестов включаются в расчеты показателей. Объект JSON с дополнительными ключами: выполнения, avgDuration, flakinessRate, errorRate. Каждое значение представляет собой массив строк состояния: пройдено, не выполнено, ожидается, пропущено. Пример: {\"executions\":[\"failed\",\"passed\"],\"failureRate\":[\"failed\"]}",
-					"placeholder": "{\"выполнения\":[\"не удалось\",\"прошло\"],\"failureRate\":[\"не удалось\"]}"
+					"displayName": "Параметры метрик",
+					"description": "Переопределить, какие статусы тестов включаются в расчёты метрик. Объект JSON с дополнительными ключами: executions, avgDuration, flakinessRate, failureRate. Каждое значение — массив строк статуса: passed, failed, pending, skipped. Пример: {\"executions\":[\"failed\",\"passed\"],\"failureRate\":[\"failed\"]}",
+					"placeholder": "{\"executions\":[\"failed\",\"passed\"],\"failureRate\":[\"failed\"]}"
 				}
 			}
 		},
@@ -502,7 +502,7 @@
 		},
 		"machineIds": {
 			"displayName": "Идентификаторы машин",
-			"description": "Список идентификаторов компьютеров, разделенных запятыми, которые необходимо сбросить (1–63 элемента)."
+			"description": "Список идентификаторов машин через запятую для сброса (1–63 элемента)"
 		},
 		"resetOptions": {
 			"displayName": "Параметры",
@@ -539,16 +539,16 @@
 		"specFilePath": {
 			"displayName": "Путь к файлу спецификации",
 			"description": "Полный путь к файлу спецификации",
-			"placeholder": "например,tests/e2e/login.spec.ts"
+			"placeholder": "например, tests/e2e/login.spec.ts"
 		},
 		"testTitle": {
 			"displayName": "Название теста",
-			"description": "Название теста. Для вложенных блоков описания используйте «>» в ​​качестве разделителя (например, «Вход > должен осуществляться с действительными учетными данными»).",
-			"placeholder": "например, следует войти в систему с действительными учетными данными"
+			"description": "Название теста. Для вложенных блоков описания используйте « > » как разделитель (например, «Вход > должен осуществляться с действительными учётными данными»).",
+			"placeholder": "например, должен осуществляться вход с действительными учётными данными"
 		},
 		"signature": {
-			"displayName": "Тестовая подпись",
-			"description": "Уникальная тестовая подпись. Используйте ресурс Signature, чтобы сгенерировать его на основе идентификатора проекта, пути к файлу спецификации и названия теста."
+			"displayName": "Сигнатура теста",
+			"description": "Уникальная сигнатура теста. Используйте ресурс Signature, чтобы сгенерировать его на основе идентификатора проекта, пути к файлу спецификации и названия теста."
 		}
 	}
 }

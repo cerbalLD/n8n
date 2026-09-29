@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "Гугл Книги",
+		"displayName": "Google Книги",
 		"description": "Чтение данных из Google Книг"
 	},
 	"nodeView": {
@@ -8,7 +8,7 @@
 			"displayName": "Аутентификация",
 			"options": {
 				"serviceAccount": {
-					"displayName": "Сервисный аккаунт"
+					"displayName": "Служебный аккаунт"
 				},
 				"oAuth2": {
 					"displayName": "OAuth2 (рекомендуется)"
@@ -22,10 +22,10 @@
 					"displayName": "Книжная полка"
 				},
 				"bookshelfVolume": {
-					"displayName": "Объем книжной полки"
+					"displayName": "Том на книжной полке"
 				},
 				"volume": {
-					"displayName": "Объем"
+					"displayName": "Том"
 				}
 			}
 		},
@@ -34,27 +34,27 @@
 			"options": {
 				"get": {
 					"displayName": "Получать",
-					"description": "Получить ресурс тома на основе идентификатора"
+					"description": "Получить ресурс тома по ID"
 				},
 				"getAll": {
 					"displayName": "Получить много",
-					"description": "Получите множество томов, отфильтрованных по запросу"
+					"description": "Получить томы, отфильтрованные по запросу"
 				},
 				"add": {
-					"displayName": "Добавлять",
-					"description": "Добавьте том на книжную полку"
+					"displayName": "Добавить",
+					"description": "Добавить том на книжную полку"
 				},
 				"clear": {
-					"displayName": "Прозрачный",
-					"description": "Убирает все тома с книжной полки."
+					"displayName": "Очистить",
+					"description": "Удалить все томы с книжной полки"
 				},
 				"move": {
-					"displayName": "Двигаться",
-					"description": "Перемещает том на книжной полке"
+					"displayName": "Переместить",
+					"description": "Переместить том на книжной полке"
 				},
 				"remove": {
 					"displayName": "Удалять",
-					"description": "Убирает том с книжной полки"
+					"description": "Удалить том с книжной полки"
 				}
 			}
 		},
@@ -63,23 +63,23 @@
 		},
 		"searchQuery": {
 			"displayName": "Поисковый запрос",
-			"description": "Строка запроса полнотекстового поиска"
+			"description": "Строка полнотекстового поиска"
 		},
 		"userId": {
 			"displayName": "ID пользователя",
-			"description": "идентификатор пользователя"
+			"description": "ID пользователя"
 		},
 		"shelfId": {
-			"displayName": "Идентификатор книжной полки",
-			"description": "Идентификатор книжной полки"
+			"displayName": "ID книжной полки",
+			"description": "ID книжной полки"
 		},
 		"volumeId": {
-			"displayName": "Идентификатор тома",
-			"description": "Идентификатор тома"
+			"displayName": "ID тома",
+			"description": "ID тома"
 		},
 		"volumePosition": {
-			"displayName": "Позиция громкости",
-			"description": "Позиция на полке для перемещения предмета (0 помещает предмет перед текущим первым предметом, 1 помещает его между первым и вторым и т. д.)"
+			"displayName": "Позиция тома",
+			"description": "Позиция на полке для размещения (0 — перед первым, 1 — между первым и вторым и т.д.)"
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",
@@ -87,7 +87,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		}
 	}
 }

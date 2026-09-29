@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "самое важное",
+		"displayName": "Mattermost",
 		"description": "Отправляет данные в Mattermost"
 	},
 	"nodeView": {
@@ -29,35 +29,35 @@
 					"description": "Добавить пользователя на канал"
 				},
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать нового пользователя"
 				},
 				"delete": {
 					"displayName": "Удалить",
-					"description": "Удаление реакции из публикации"
+					"description": "Удалить реакцию с поста"
 				},
 				"members": {
-					"displayName": "Член",
-					"description": "Получить страницу участников канала"
+					"displayName": "Участник",
+					"description": "Получить участников канала"
 				},
 				"restore": {
 					"displayName": "Восстановить",
-					"description": "Восстанавливает мягко удаленный канал"
+					"description": "Восстановить удалённый канал"
 				},
 				"search": {
 					"displayName": "Поиск",
-					"description": "Поиск канала"
+					"description": "Найти канал"
 				},
 				"statistics": {
 					"displayName": "Статистика",
-					"description": "Получить статистику по каналу"
+					"description": "Получить статистику канала"
 				},
 				"post": {
-					"displayName": "Почта",
+					"displayName": "Тема",
 					"description": "Опубликовать сообщение в канале"
 				},
 				"postEphemeral": {
-					"displayName": "Сообщение эфемерное",
+					"displayName": "Эфемерное сообщение",
 					"description": "Опубликовать эфемерное сообщение в канале"
 				},
 				"getAll": {
@@ -65,40 +65,40 @@
 					"description": "Получить много пользователей"
 				},
 				"deactive": {
-					"displayName": "Деактивирован",
-					"description": "Деактивирует пользователя и отзывает все его сеансы, архивируя его пользовательский объект."
+					"displayName": "Деактивировать",
+					"description": "Деактивирует пользователя и отзывает все сеансы, архивируя его объект"
 				},
 				"getByEmail": {
 					"displayName": "Получить по электронной почте",
-					"description": "Получить пользователя по электронной почте"
+					"description": "Получить пользователя по адресу электронной почты"
 				},
 				"getById": {
-					"displayName": "Получить по идентификатору",
+					"displayName": "Получить по ID",
 					"description": "Получить пользователя по ID"
 				},
 				"invite": {
-					"displayName": "Приглашать",
+					"displayName": "Приглашение",
 					"description": "Пригласить пользователя в команду"
 				}
 			}
 		},
 		"teamId": {
 			"displayName": "Название или идентификатор команды",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"displayName": {
 			"displayName": "Отображаемое имя",
-			"description": "Неуникальное имя пользовательского интерфейса канала.",
+			"description": "Отображаемое имя канала",
 			"placeholder": "Объявления"
 		},
 		"channel": {
 			"displayName": "Имя",
-			"description": "Уникальный дескриптор канала будет присутствовать в URL-адресе канала.",
+			"description": "Уникальное имя канала (используется в URL)",
 			"placeholder": "объявления"
 		},
 		"type": {
 			"displayName": "Тип",
-			"description": "Тип канала, который нужно создать",
+			"description": "Тип канала для создания",
 			"options": {
 				"private": {
 					"displayName": "Частный"
@@ -110,11 +110,11 @@
 		},
 		"channelId": {
 			"displayName": "Название или идентификатор канала",
-			"description": "Идентификатор канала, по которому будет отправлено эфемерное сообщение. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"description": "ID канала для эфемерного сообщения. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"resolveData": {
-			"displayName": "Разрешение данных",
-			"description": "По умолчанию ответ содержит только идентификатор пользователя. Если эта опция активирована, она автоматически разрешит пользователя."
+			"displayName": "Разрешить данные",
+			"description": "По умолчанию ответ содержит только ID пользователя. Если включить, пользователь будет разрешён автоматически."
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",
@@ -122,7 +122,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"userId": {
 			"displayName": "ID пользователя",
@@ -130,21 +130,21 @@
 		},
 		"term": {
 			"displayName": "Поисковый запрос",
-			"description": "Поисковый запрос для каналов в команде",
-			"placeholder": "Общий"
+			"description": "Поисковый запрос для каналов команды",
+			"placeholder": "Основное"
 		},
 		"postId": {
-			"displayName": "Идентификатор сообщения",
-			"description": "Одна или несколько публикаций (разделенных запятыми) для получения реакций от них.",
+			"displayName": "ID темы",
+			"description": "Один или несколько постов (через запятую) для получения реакций",
 			"placeholder": "3moacfqxmbdw38r38fjprh6zsr"
 		},
 		"message": {
 			"displayName": "Сообщение",
-			"description": "Текст для отправки в эфемерном сообщении"
+			"description": "Текст эфемерного сообщения"
 		},
 		"attachments": {
 			"displayName": "Вложения",
-			"description": "Вложение, которое нужно добавить",
+			"description": "Вложение для добавления",
 			"placeholder": "Добавить элемент вложения",
 			"multipleValueButtonText": "Добавить вложение",
 			"options": {
@@ -152,7 +152,7 @@
 					"values": {
 						"actions": {
 							"displayName": "Действия",
-							"description": "Действия для добавления в сообщение. Более подробную информацию можно найти <a href=\"https://docs.mattermost.com/developer/interactive-messages.html\" target=\"_blank\">здесь</a>."
+							"description": "Действия для сообщения. Подробнее <a href=\"https://docs.mattermost.com/developer/interactive-messages.html\" target=\"_blank\">здесь</a>."
 						},
 						"item": {
 							"options": {
@@ -176,7 +176,7 @@
 											"displayName": "Каналы"
 										},
 										"custom": {
-											"displayName": "Обычай"
+											"displayName": "Пользовательское"
 										},
 										"users": {
 											"displayName": "Пользователи"
@@ -187,27 +187,27 @@
 									"values": {
 										"options": {
 											"displayName": "Параметры",
-											"description": "Добавляет новую опцию для выбора поля"
+											"description": "Добавляет новый вариант в поле выбора"
 										},
 										"option": {
 											"options": {
 												"text": {
-													"displayName": "Текст опции",
-													"description": "Текст опции"
+													"displayName": "Текст варианта",
+													"description": "Текст варианта"
 												},
 												"value": {
-													"displayName": "Значение параметра",
-													"description": "Стоимость опциона"
+													"displayName": "Значение варианта",
+													"description": "Значение варианта"
 												}
 											}
 										}
 									},
 									"placeholder": "Добавить вариант",
 									"displayName": "Параметры",
-									"description": "Добавляет новую опцию для выбора поля",
+									"description": "Добавляет новый вариант в поле выбора",
 									"options": {
 										"option": {
-											"displayName": "Вариант"
+											"displayName": "Параметр"
 										}
 									}
 								},
@@ -225,30 +225,30 @@
 											"options": {
 												"url": {
 													"displayName": "URL",
-													"description": "URL-адрес интеграции"
+													"description": "URL интеграции"
 												},
 												"context": {
 													"values": {
 														"context": {
 															"displayName": "Контекст",
-															"description": "Добавляет набор значений контекста."
+															"description": "Добавляет набор значений контекста"
 														},
 														"property": {
 															"options": {
 																"name": {
 																	"displayName": "Имя свойства",
-																	"description": "Имя свойства, которое нужно установить"
+																	"description": "Имя свойства"
 																},
 																"value": {
-																	"displayName": "Стоимость недвижимости",
-																	"description": "Значение свойства для установки"
+																	"displayName": "Значение свойства",
+																	"description": "Значение для установки"
 																}
 															}
 														}
 													},
-													"placeholder": "Добавьте контекст к интеграции",
+													"placeholder": "Добавить контекст к интеграции",
 													"displayName": "Контекст",
-													"description": "Добавляет набор значений контекста.",
+													"description": "Добавляет набор значений контекста",
 													"options": {
 														"property": {
 															"displayName": "Свойство"
@@ -272,7 +272,7 @@
 					},
 					"placeholder": "Добавить действия",
 					"displayName": "Действия",
-					"description": "Действия для добавления в сообщение. Более подробную информацию можно найти <a href=\"https://docs.mattermost.com/developer/interactive-messages.html\" target=\"_blank\">здесь</a>.",
+					"description": "Действия для сообщения. Подробнее <a href=\"https://docs.mattermost.com/developer/interactive-messages.html\" target=\"_blank\">здесь</a>.",
 					"options": {
 						"item": {
 							"displayName": "Элемент"
@@ -281,15 +281,15 @@
 				},
 				"author_icon": {
 					"displayName": "Значок автора",
-					"description": "Значок, который должен появиться у пользователя"
+					"description": "Значок, отображаемый для пользователя"
 				},
 				"author_link": {
 					"displayName": "Ссылка автора",
-					"description": "Ссылка для автора"
+					"description": "Ссылка автора"
 				},
 				"author_name": {
 					"displayName": "Имя автора",
-					"description": "Имя, которое должно появиться"
+					"description": "Имя, которое должно отображаться"
 				},
 				"color": {
 					"displayName": "Цвет",
@@ -297,7 +297,7 @@
 				},
 				"fallback": {
 					"displayName": "Резервный текст",
-					"description": "Обязательное текстовое резюме вложения."
+					"description": "Обязательное текстовое резюме вложения"
 				},
 				"fields": {
 					"values": {
@@ -308,12 +308,12 @@
 						"item": {
 							"options": {
 								"title": {
-									"displayName": "Заголовок",
-									"description": "Название предмета"
+									"displayName": "Название",
+									"description": "Название элемента"
 								},
 								"value": {
-									"displayName": "Ценить",
-									"description": "Стоимость товара"
+									"displayName": "Значение",
+									"description": "Значение элемента"
 								},
 								"short": {
 									"displayName": "Короткий",
@@ -333,19 +333,19 @@
 				},
 				"footer": {
 					"displayName": "Нижний колонтитул",
-					"description": "Текст нижнего колонтитула, который нужно добавить"
+					"description": "Текст нижнего колонтитула для добавления"
 				},
 				"footer_icon": {
 					"displayName": "Значок нижнего колонтитула",
-					"description": "Значок, который должен появиться рядом с нижним колонтитулом"
+					"description": "Значок, отображаемый рядом с нижним колонтитулом"
 				},
 				"image_url": {
 					"displayName": "URL-адрес изображения",
 					"description": "URL изображения"
 				},
 				"pretext": {
-					"displayName": "Предлог",
-					"description": "Текст, который появляется перед блоком сообщений"
+					"displayName": "Предварительный текст",
+					"description": "Текст, появляющийся перед блоком сообщения"
 				},
 				"text": {
 					"displayName": "Текст",
@@ -356,29 +356,29 @@
 					"description": "URL миниатюры"
 				},
 				"title": {
-					"displayName": "Заголовок",
+					"displayName": "Название",
 					"description": "Название сообщения"
 				},
 				"title_link": {
-					"displayName": "Название Ссылка",
-					"description": "Ссылка на заголовок"
+					"displayName": "Ссылка названия",
+					"description": "Ссылка заголовка"
 				}
 			}
 		},
 		"otherOptions": {
-			"displayName": "Другие варианты",
-			"description": "Другие варианты установки",
+			"displayName": "Другие параметры",
+			"description": "Другие параметры",
 			"placeholder": "Добавить вариант",
 			"options": {
 				"root_id": {
-					"displayName": "Идентификатор родительского сообщения",
-					"description": "Если установлено, созданное сообщение будет веточным ответом на указанный идентификатор родительского сообщения."
+					"displayName": "ID родительского поста",
+					"description": "Если указано, сообщение будет ответом в цепочке на родительский пост"
 				}
 			}
 		},
 		"emojiName": {
-			"displayName": "Имя смайлика",
-			"description": "Название смайла, который нужно удалить"
+			"displayName": "Название эмодзи",
+			"description": "Название эмодзи для удаления"
 		},
 		"username": {
 			"displayName": "Имя пользователя"
@@ -390,7 +390,7 @@
 					"displayName": "Электронная почта"
 				},
 				"gitlab": {
-					"displayName": "Гитлаб"
+					"displayName": "GitLab"
 				},
 				"google": {
 					"displayName": "Google"
@@ -399,7 +399,7 @@
 					"displayName": "LDAP"
 				},
 				"office365": {
-					"displayName": "Офис365"
+					"displayName": "Office 365"
 				},
 				"saml": {
 					"displayName": "SAML"
@@ -412,11 +412,11 @@
 		"email": {
 			"displayName": "Электронная почта",
 			"placeholder": "имя@email.com",
-			"description": "Электронная почта пользователя"
+			"description": "Адрес электронной почты пользователя"
 		},
 		"password": {
 			"displayName": "Пароль",
-			"description": "Пароль, используемый для аутентификации электронной почты"
+			"description": "Пароль для аутентификации электронной почты"
 		},
 		"additionalFields": {
 			"displayName": "Дополнительные поля",
@@ -437,13 +437,13 @@
 				"notificationUi": {
 					"values": {
 						"notificationUi": {
-							"displayName": "Настройки уведомлений"
+							"displayName": "Параметры уведомлений"
 						},
 						"notificationValues": {
 							"options": {
 								"channel": {
 									"displayName": "Канал",
-									"description": "Включить ли уведомления по всему каналу (@channel, @all и т. д.), «false» для отключения. По умолчанию установлено значение «истина»."
+									"description": "Включить ли уведомления всему каналу (@channel, @all и т. д.), «false» для отключения. По умолчанию «true»."
 								},
 								"desktop": {
 									"displayName": "Рабочий стол",
@@ -453,7 +453,7 @@
 											"description": "Уведомления обо всех действиях"
 										},
 										"mention": {
-											"displayName": "Упомянуть",
+											"displayName": "Упоминания",
 											"description": "Только упоминания и прямые сообщения"
 										},
 										"none": {
@@ -463,30 +463,30 @@
 									}
 								},
 								"desktop_sound": {
-									"displayName": "Звук рабочего стола",
-									"description": "Включить ли звук в уведомлениях на рабочем столе, «false», чтобы отключить. По умолчанию установлено значение «истина»."
+									"displayName": "Звук уведомлений",
+									"description": "Включить ли звук в уведомлениях, «false» для отключения. По умолчанию «true»."
 								},
 								"email": {
 									"displayName": "Электронная почта",
-									"description": "Включить ли уведомления по электронной почте, «false», чтобы отключить. По умолчанию «ложь»."
+									"description": "Включить ли уведомления по электронной почте, «false» для отключения. По умолчанию «false»."
 								},
 								"first_name": {
 									"displayName": "Имя",
-									"description": "Включить ли упоминание имени. По умолчанию установлено значение «истина», если задано имя, в противном случае — «ложь»."
+									"description": "Включить ли упоминания по имени. По умолчанию «true» если имя указано, иначе «false»."
 								},
 								"mention_keys": {
-									"displayName": "Упоминание ключей",
-									"description": "Список слов, разделенных запятыми, которые считаются упоминаниями. По умолчанию используется имя пользователя и @username."
+									"displayName": "Ключи упоминаний",
+									"description": "Слова для счёта как упоминания, через запятую. По умолчанию имя пользователя и @имя пользователя."
 								},
 								"push": {
-									"displayName": "Толкать",
+									"displayName": "Отправка",
 									"options": {
 										"all": {
 											"displayName": "Все",
 											"description": "Уведомления обо всех действиях"
 										},
 										"mention": {
-											"displayName": "Упомянуть",
+											"displayName": "Упоминания",
 											"description": "Только упоминания и прямые сообщения"
 										},
 										"none": {
@@ -498,8 +498,8 @@
 							}
 						}
 					},
-					"placeholder": "Добавить настройку уведомлений",
-					"displayName": "Настройки уведомлений",
+					"placeholder": "Добавить параметр уведомлений",
+					"displayName": "Параметры уведомлений",
 					"options": {
 						"notificationValues": {
 							"displayName": "Уведомить"
@@ -508,29 +508,29 @@
 				},
 				"inChannel": {
 					"displayName": "В канале",
-					"description": "Идентификатор канала, по которому нужно получить пользователей"
+					"description": "ID канала для получения пользователей"
 				},
 				"inTeam": {
 					"displayName": "В команде",
-					"description": "Идентификатор команды, для которой нужно получить пользователей"
+					"description": "ID команды для получения пользователей"
 				},
 				"notInTeam": {
 					"displayName": "Не в команде",
-					"description": "Идентификатор команды, для которой нужно исключить пользователей."
+					"description": "ID команды для исключения пользователей"
 				},
 				"notInChannel": {
 					"displayName": "Не в канале",
-					"description": "Идентификатор канала, для которого нужно исключить пользователей."
+					"description": "ID канала для исключения пользователей"
 				},
 				"sort": {
-					"displayName": "Сортировать",
-					"description": "Идентификатор канала, для которого нужно исключить пользователей.",
+					"displayName": "Сортировка",
+					"description": "ID канала для исключения пользователей",
 					"options": {
 						"createdAt": {
-							"displayName": "Создано в"
+							"displayName": "Создано"
 						},
 						"lastActivityAt": {
-							"displayName": "Последняя активность в"
+							"displayName": "Последняя активность"
 						},
 						"status": {
 							"displayName": "Статус"
@@ -542,17 +542,17 @@
 				},
 				"since": {
 					"displayName": "С",
-					"description": "Возвращать только тех пользователей, которые были изменены с момента указанной временной метки Unix (в миллисекундах)."
+					"description": "Возвращать только пользователей, изменённых после указанной временной метки Unix (в миллисекундах)"
 				}
 			}
 		},
 		"userIds": {
-			"displayName": "Идентификаторы пользователей",
-			"description": "Идентификатор пользователя"
+			"displayName": "ID пользователей",
+			"description": "ID пользователя"
 		},
 		"emails": {
-			"displayName": "Электронная почта",
-			"description": "Электронная почта пользователя. Можно указать несколько адресов электронной почты, разделив их запятой."
+			"displayName": "Email-адреса",
+			"description": "Адрес электронной почты пользователя. Несколько адресов можно указать через запятую."
 		}
 	}
 }

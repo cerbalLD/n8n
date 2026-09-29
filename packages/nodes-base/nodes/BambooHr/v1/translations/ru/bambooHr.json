@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "БамбукHR",
+		"displayName": "BambooHR",
 		"description": "Использование API BambooHR"
 	},
 	"nodeView": {
@@ -8,7 +8,7 @@
 			"displayName": "Ресурс",
 			"options": {
 				"companyReport": {
-					"displayName": "Отчет компании"
+					"displayName": "Отчёт компании"
 				},
 				"employee": {
 					"displayName": "Сотрудник"
@@ -25,19 +25,19 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать сотрудника"
 				},
 				"get": {
 					"displayName": "Получать",
-					"description": "Получить отчет компании"
+					"description": "Получить отчёт компании"
 				},
 				"getAll": {
 					"displayName": "Получить много",
-					"description": "Получите много файлов компании"
+					"description": "Получить файлы компании"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить файл компании"
 				},
 				"delete": {
@@ -50,13 +50,13 @@
 				},
 				"upload": {
 					"displayName": "Загрузить",
-					"description": "Загрузите файл компании"
+					"description": "Загрузить файл компании"
 				}
 			}
 		},
 		"synced": {
-			"displayName": "Синхронизировано с Trax Payroll.",
-			"description": "Был ли создаваемый сотрудник добавлен в график оплаты, синхронизированный с Trax Payroll?"
+			"displayName": "синхронизировано с Trax Payroll",
+			"description": "был ли создаваемый сотрудник добавлен в график оплаты, синхронизированный с Trax Payroll"
 		},
 		"firstName": {
 			"displayName": "Имя"
@@ -73,23 +73,23 @@
 					"displayName": "Адрес",
 					"values": {
 						"address1": {
-							"displayName": "Линия 1"
+							"displayName": "строка 1"
 						},
 						"address2": {
-							"displayName": "Линия 2"
+							"displayName": "строка 2"
 						},
 						"city": {
-							"displayName": "Город"
+							"displayName": "город"
 						},
 						"state": {
-							"displayName": "Состояние",
-							"description": "Полное название штата/провинции",
-							"placeholder": "Флорида"
+							"displayName": "область",
+							"description": "полное название штата или провинции",
+							"placeholder": "Florida"
 						},
 						"country": {
 							"displayName": "Страна",
-							"description": "Название страны. Должен существовать в списке стран BambooHr.",
-							"placeholder": "Соединенные Штаты"
+							"description": "название страны (должна существовать в списке стран BambooHR)",
+							"placeholder": "United States"
 						}
 					}
 				}
@@ -98,27 +98,27 @@
 			"displayName": "Адрес"
 		},
 		"dateOfBirth": {
-			"displayName": "Дата рождения"
+			"displayName": "дата рождения"
 		},
 		"department": {
-			"displayName": "Название или идентификатор отдела",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"displayName": "имя или идентификатор отдела",
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"division": {
-			"displayName": "Название или идентификатор подразделения",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"displayName": "имя или идентификатор подразделения",
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"employeeNumber": {
-			"displayName": "Номер сотрудника"
+			"displayName": "номер сотрудника"
 		},
 		"exempt": {
-			"displayName": "Статус сверхурочной работы FLSA",
+			"displayName": "статус переработок FLSA",
 			"options": {
 				"exempt": {
-					"displayName": "Освобождать"
+					"displayName": "освобождённый"
 				},
 				"non-exempt": {
-					"displayName": "Не освобожденный"
+					"displayName": "не освобождённый"
 				}
 			}
 		},
@@ -126,31 +126,31 @@
 			"displayName": "Пол",
 			"options": {
 				"female": {
-					"displayName": "Женский"
+					"displayName": "женский"
 				},
 				"male": {
-					"displayName": "Мужской"
+					"displayName": "мужской"
 				}
 			}
 		},
 		"hireDate": {
-			"displayName": "Дата найма"
+			"displayName": "дата найма"
 		},
 		"location": {
-			"displayName": "Название или идентификатор местоположения",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"displayName": "имя или идентификатор местоположения",
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"maritalStatus": {
-			"displayName": "Семейное положение",
+			"displayName": "семейное положение",
 			"options": {
 				"single": {
-					"displayName": "Одинокий"
+					"displayName": "не замужем/не женат"
 				},
 				"married": {
-					"displayName": "Женатый"
+					"displayName": "замужем/женат"
 				},
 				"domesticPartnership": {
-					"displayName": "Внутреннее партнерство"
+					"displayName": "гражданский брак"
 				}
 			}
 		},
@@ -158,64 +158,64 @@
 			"displayName": "Мобильный телефон"
 		},
 		"paidPer": {
-			"displayName": "Оплата за",
+			"displayName": "оплата за",
 			"options": {
 				"hour": {
-					"displayName": "Час"
+					"displayName": "час"
 				},
 				"day": {
-					"displayName": "День"
+					"displayName": "день"
 				},
 				"week": {
-					"displayName": "Неделя"
+					"displayName": "неделя"
 				},
 				"month": {
-					"displayName": "Месяц"
+					"displayName": "месяц"
 				},
 				"quater": {
-					"displayName": "четверть"
+					"displayName": "квартал"
 				},
 				"year": {
-					"displayName": "Год"
+					"displayName": "год"
 				}
 			}
 		},
 		"payRate": {
 			"options": {
 				"payRate": {
-					"displayName": "Ставка оплаты"
+					"displayName": "ставка оплаты"
 				},
 				"value": {
-					"displayName": "Ставка оплаты",
+					"displayName": "ставка оплаты",
 					"values": {
 						"value": {
-							"displayName": "Ценить",
+							"displayName": "Значение",
 							"placeholder": "20.00"
 						},
 						"currency": {
-							"displayName": "Валюта",
+							"displayName": "валюта",
 							"placeholder": "USD"
 						}
 					}
 				}
 			},
-			"placeholder": "Добавить ставку оплаты",
-			"displayName": "Ставка оплаты"
+			"placeholder": "добавить ставку оплаты",
+			"displayName": "ставка оплаты"
 		},
 		"payType": {
-			"displayName": "Тип оплаты",
+			"displayName": "тип оплаты",
 			"options": {
 				"commission": {
-					"displayName": "Комиссия"
+					"displayName": "комиссия"
 				},
 				"contract": {
-					"displayName": "Договор"
+					"displayName": "договор"
 				},
 				"daily": {
 					"displayName": "Ежедневно"
 				},
 				"exceptionHourly": {
-					"displayName": "Исключение каждый час"
+					"displayName": "исключение каждый час"
 				},
 				"hourly": {
 					"displayName": "Ежечасно"
@@ -224,13 +224,13 @@
 					"displayName": "Ежемесячно"
 				},
 				"pieceRate": {
-					"displayName": "Сдельная оплата"
+					"displayName": "сдельная оплата"
 				},
 				"proRata": {
-					"displayName": "Про Рата"
+					"displayName": "Pro Rata"
 				},
 				"salary": {
-					"displayName": "Зарплата"
+					"displayName": "зарплата"
 				},
 				"weekly": {
 					"displayName": "Еженедельно"
@@ -238,11 +238,11 @@
 			}
 		},
 		"preferredName": {
-			"displayName": "Предпочтительное имя"
+			"displayName": "предпочитаемое имя"
 		},
 		"ssn": {
-			"displayName": "Номер социального страхования",
-			"description": "Стандартный номер социального страхования США с тире.",
+			"displayName": "номер социального страхования",
+			"description": "стандартный номер социального страхования США с тире",
 			"placeholder": "123-45-6789"
 		},
 		"additionalFields": {
@@ -257,23 +257,23 @@
 						"value": {
 							"options": {
 								"address1": {
-									"displayName": "Линия 1"
+									"displayName": "строка 1"
 								},
 								"address2": {
-									"displayName": "Линия 2"
+									"displayName": "строка 2"
 								},
 								"city": {
-									"displayName": "Город"
+									"displayName": "город"
 								},
 								"state": {
-									"displayName": "Состояние",
-									"description": "Полное название штата/провинции",
-									"placeholder": "Флорида"
+									"displayName": "область",
+									"description": "полное название штата или провинции",
+									"placeholder": "Florida"
 								},
 								"country": {
 									"displayName": "Страна",
-									"description": "Название страны. Должен существовать в списке стран BambooHr.",
-									"placeholder": "Соединенные Штаты"
+									"description": "название страны (должна существовать в списке стран BambooHR)",
+									"placeholder": "United States"
 								}
 							}
 						}
@@ -287,27 +287,27 @@
 					}
 				},
 				"dateOfBirth": {
-					"displayName": "Дата рождения"
+					"displayName": "дата рождения"
 				},
 				"department": {
-					"displayName": "Название или идентификатор отдела",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"displayName": "имя или идентификатор отдела",
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"division": {
-					"displayName": "Название или идентификатор подразделения",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"displayName": "имя или идентификатор подразделения",
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"employeeNumber": {
-					"displayName": "Номер сотрудника"
+					"displayName": "номер сотрудника"
 				},
 				"exempt": {
-					"displayName": "Статус сверхурочной работы FLSA",
+					"displayName": "статус переработок FLSA",
 					"options": {
 						"exempt": {
-							"displayName": "Освобождать"
+							"displayName": "освобождённый"
 						},
 						"non-exempt": {
-							"displayName": "Не освобожденный"
+							"displayName": "не освобождённый"
 						}
 					}
 				},
@@ -315,31 +315,31 @@
 					"displayName": "Пол",
 					"options": {
 						"female": {
-							"displayName": "Женский"
+							"displayName": "женский"
 						},
 						"male": {
-							"displayName": "Мужской"
+							"displayName": "мужской"
 						}
 					}
 				},
 				"hireDate": {
-					"displayName": "Дата найма"
+					"displayName": "дата найма"
 				},
 				"location": {
-					"displayName": "Название или идентификатор местоположения",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"displayName": "имя или идентификатор местоположения",
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"maritalStatus": {
-					"displayName": "Семейное положение",
+					"displayName": "семейное положение",
 					"options": {
 						"single": {
-							"displayName": "Одинокий"
+							"displayName": "не замужем/не женат"
 						},
 						"married": {
-							"displayName": "Женатый"
+							"displayName": "замужем/женат"
 						},
 						"domesticPartnership": {
-							"displayName": "Внутреннее партнерство"
+							"displayName": "гражданский брак"
 						}
 					}
 				},
@@ -347,68 +347,68 @@
 					"displayName": "Мобильный телефон"
 				},
 				"paidPer": {
-					"displayName": "Оплата за",
+					"displayName": "оплата за",
 					"options": {
 						"hour": {
-							"displayName": "Час"
+							"displayName": "час"
 						},
 						"day": {
-							"displayName": "День"
+							"displayName": "день"
 						},
 						"week": {
-							"displayName": "Неделя"
+							"displayName": "неделя"
 						},
 						"month": {
-							"displayName": "Месяц"
+							"displayName": "месяц"
 						},
 						"quater": {
-							"displayName": "четверть"
+							"displayName": "квартал"
 						},
 						"year": {
-							"displayName": "Год"
+							"displayName": "год"
 						}
 					}
 				},
 				"payRate": {
 					"values": {
 						"payRate": {
-							"displayName": "Ставка оплаты"
+							"displayName": "ставка оплаты"
 						},
 						"value": {
 							"options": {
 								"value": {
-									"displayName": "Ценить",
+									"displayName": "Значение",
 									"placeholder": "20.00"
 								},
 								"currency": {
-									"displayName": "Валюта",
+									"displayName": "валюта",
 									"placeholder": "USD"
 								}
 							}
 						}
 					},
-					"placeholder": "Добавить ставку оплаты",
-					"displayName": "Ставка оплаты",
+					"placeholder": "добавить ставку оплаты",
+					"displayName": "ставка оплаты",
 					"options": {
 						"value": {
-							"displayName": "Ставка оплаты"
+							"displayName": "ставка оплаты"
 						}
 					}
 				},
 				"payType": {
-					"displayName": "Тип оплаты",
+					"displayName": "тип оплаты",
 					"options": {
 						"commission": {
-							"displayName": "Комиссия"
+							"displayName": "комиссия"
 						},
 						"contract": {
-							"displayName": "Договор"
+							"displayName": "договор"
 						},
 						"daily": {
 							"displayName": "Ежедневно"
 						},
 						"exceptionHourly": {
-							"displayName": "Исключение каждый час"
+							"displayName": "исключение каждый час"
 						},
 						"hourly": {
 							"displayName": "Ежечасно"
@@ -417,13 +417,13 @@
 							"displayName": "Ежемесячно"
 						},
 						"pieceRate": {
-							"displayName": "Сдельная оплата"
+							"displayName": "сдельная оплата"
 						},
 						"proRata": {
-							"displayName": "Про Рата"
+							"displayName": "Pro Rata"
 						},
 						"salary": {
-							"displayName": "Зарплата"
+							"displayName": "зарплата"
 						},
 						"weekly": {
 							"displayName": "Еженедельно"
@@ -431,24 +431,24 @@
 					}
 				},
 				"preferredName": {
-					"displayName": "Предпочтительное имя"
+					"displayName": "предпочитаемое имя"
 				},
 				"ssn": {
-					"displayName": "Номер социального страхования",
-					"description": "Стандартный номер социального страхования США с тире.",
+					"displayName": "номер социального страхования",
+					"description": "стандартный номер социального страхования США с тире",
 					"placeholder": "123-45-6789"
 				},
 				"workEmail": {
-					"displayName": "Рабочая электронная почта"
+					"displayName": "рабочая электронная почта"
 				},
 				"workPhone": {
-					"displayName": "Рабочий телефон"
+					"displayName": "рабочий телефон"
 				}
 			}
 		},
 		"employeeId": {
-			"displayName": "Идентификатор сотрудника",
-			"description": "удостоверение личности сотрудника"
+			"displayName": "идентификатор сотрудника",
+			"description": "идентификатор сотрудника"
 		},
 		"options": {
 			"displayName": "Параметры",
@@ -456,19 +456,19 @@
 			"options": {
 				"fields": {
 					"displayName": "Имена полей или идентификаторы",
-					"description": "Набор полей для получения данных о сотрудниках. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"description": "набор полей для получения из данных сотрудника. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"share": {
-					"displayName": "Поделиться с сотрудником",
-					"description": "Является ли этот файл общим или нет"
+					"displayName": "поделиться с сотрудником",
+					"description": "является ли этот файл общим"
 				},
 				"fd": {
-					"displayName": "Фильтрация повторяющихся полей",
-					"description": "Применять ли стандартную фильтрацию повторяющихся полей или нет"
+					"displayName": "фильтрация повторяющихся полей",
+					"description": "применять ли стандартную фильтрацию повторяющихся полей"
 				},
 				"onlyCurrent": {
-					"displayName": "Только текущий",
-					"description": "Скрывать ли будущие датированные значения из полей таблицы истории или нет"
+					"displayName": "только текущий",
+					"description": "скрывать ли будущие датированные значения из полей таблицы истории"
 				}
 			}
 		},
@@ -478,7 +478,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"addasasress": {
 			"options": {
@@ -489,23 +489,23 @@
 					"displayName": "Адрес",
 					"values": {
 						"address1": {
-							"displayName": "Линия 1"
+							"displayName": "строка 1"
 						},
 						"address2": {
-							"displayName": "Линия 2"
+							"displayName": "строка 2"
 						},
 						"city": {
-							"displayName": "Город"
+							"displayName": "город"
 						},
 						"state": {
-							"displayName": "Состояние",
-							"description": "Полное название штата/провинции",
-							"placeholder": "Флорида"
+							"displayName": "область",
+							"description": "полное название штата или провинции",
+							"placeholder": "Florida"
 						},
 						"country": {
 							"displayName": "Страна",
-							"description": "Название страны. Должен существовать в списке стран BambooHr.",
-							"placeholder": "Соединенные Штаты"
+							"description": "название страны (должна существовать в списке стран BambooHR)",
+							"placeholder": "United States"
 						}
 					}
 				}
@@ -525,23 +525,23 @@
 						"value": {
 							"options": {
 								"address1": {
-									"displayName": "Линия 1"
+									"displayName": "строка 1"
 								},
 								"address2": {
-									"displayName": "Линия 2"
+									"displayName": "строка 2"
 								},
 								"city": {
-									"displayName": "Город"
+									"displayName": "город"
 								},
 								"state": {
-									"displayName": "Состояние",
-									"description": "Полное название штата/провинции",
-									"placeholder": "Флорида"
+									"displayName": "область",
+									"description": "полное название штата или провинции",
+									"placeholder": "Florida"
 								},
 								"country": {
 									"displayName": "Страна",
-									"description": "Название страны. Должен существовать в списке стран BambooHr.",
-									"placeholder": "Соединенные Штаты"
+									"description": "название страны (должна существовать в списке стран BambooHR)",
+									"placeholder": "United States"
 								}
 							}
 						}
@@ -555,18 +555,18 @@
 					}
 				},
 				"dateOfBirth": {
-					"displayName": "Дата рождения"
+					"displayName": "дата рождения"
 				},
 				"department": {
-					"displayName": "Название или идентификатор отдела",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"displayName": "имя или идентификатор отдела",
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"division": {
-					"displayName": "Название или идентификатор подразделения",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"displayName": "имя или идентификатор подразделения",
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"employeeNumber": {
-					"displayName": "Номер сотрудника"
+					"displayName": "номер сотрудника"
 				},
 				"firstName": {
 					"displayName": "Имя"
@@ -575,13 +575,13 @@
 					"displayName": "Фамилия"
 				},
 				"exempt": {
-					"displayName": "Статус сверхурочной работы FLSA",
+					"displayName": "статус переработок FLSA",
 					"options": {
 						"exempt": {
-							"displayName": "Освобождать"
+							"displayName": "освобождённый"
 						},
 						"non-exempt": {
-							"displayName": "Не освобожденный"
+							"displayName": "не освобождённый"
 						}
 					}
 				},
@@ -589,31 +589,31 @@
 					"displayName": "Пол",
 					"options": {
 						"female": {
-							"displayName": "Женский"
+							"displayName": "женский"
 						},
 						"male": {
-							"displayName": "Мужской"
+							"displayName": "мужской"
 						}
 					}
 				},
 				"hireDate": {
-					"displayName": "Дата найма"
+					"displayName": "дата найма"
 				},
 				"location": {
-					"displayName": "Название или идентификатор местоположения",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"displayName": "имя или идентификатор местоположения",
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"maritalStatus": {
-					"displayName": "Семейное положение",
+					"displayName": "семейное положение",
 					"options": {
 						"single": {
-							"displayName": "Одинокий"
+							"displayName": "не замужем/не женат"
 						},
 						"married": {
-							"displayName": "Женатый"
+							"displayName": "замужем/женат"
 						},
 						"domesticPartnership": {
-							"displayName": "Внутреннее партнерство"
+							"displayName": "гражданский брак"
 						}
 					}
 				},
@@ -621,68 +621,68 @@
 					"displayName": "Мобильный телефон"
 				},
 				"paidPer": {
-					"displayName": "Оплата за",
+					"displayName": "оплата за",
 					"options": {
 						"hour": {
-							"displayName": "Час"
+							"displayName": "час"
 						},
 						"day": {
-							"displayName": "День"
+							"displayName": "день"
 						},
 						"week": {
-							"displayName": "Неделя"
+							"displayName": "неделя"
 						},
 						"month": {
-							"displayName": "Месяц"
+							"displayName": "месяц"
 						},
 						"quater": {
-							"displayName": "четверть"
+							"displayName": "квартал"
 						},
 						"year": {
-							"displayName": "Год"
+							"displayName": "год"
 						}
 					}
 				},
 				"payRate": {
 					"values": {
 						"payRate": {
-							"displayName": "Ставка оплаты"
+							"displayName": "ставка оплаты"
 						},
 						"value": {
 							"options": {
 								"value": {
-									"displayName": "Ценить",
+									"displayName": "Значение",
 									"placeholder": "20.00"
 								},
 								"currency": {
-									"displayName": "Валюта",
+									"displayName": "валюта",
 									"placeholder": "USD"
 								}
 							}
 						}
 					},
-					"placeholder": "Добавить ставку оплаты",
-					"displayName": "Ставка оплаты",
+					"placeholder": "добавить ставку оплаты",
+					"displayName": "ставка оплаты",
 					"options": {
 						"value": {
-							"displayName": "Ставка оплаты"
+							"displayName": "ставка оплаты"
 						}
 					}
 				},
 				"payType": {
-					"displayName": "Тип оплаты",
+					"displayName": "тип оплаты",
 					"options": {
 						"commission": {
-							"displayName": "Комиссия"
+							"displayName": "комиссия"
 						},
 						"contract": {
-							"displayName": "Договор"
+							"displayName": "договор"
 						},
 						"daily": {
 							"displayName": "Ежедневно"
 						},
 						"exceptionHourly": {
-							"displayName": "Исключение каждый час"
+							"displayName": "исключение каждый час"
 						},
 						"hourly": {
 							"displayName": "Ежечасно"
@@ -691,13 +691,13 @@
 							"displayName": "Ежемесячно"
 						},
 						"pieceRate": {
-							"displayName": "Сдельная оплата"
+							"displayName": "сдельная оплата"
 						},
 						"proRata": {
-							"displayName": "Про Рата"
+							"displayName": "Pro Rata"
 						},
 						"salary": {
-							"displayName": "Зарплата"
+							"displayName": "зарплата"
 						},
 						"weekly": {
 							"displayName": "Еженедельно"
@@ -705,60 +705,60 @@
 					}
 				},
 				"preferredName": {
-					"displayName": "Предпочтительное имя"
+					"displayName": "предпочитаемое имя"
 				},
 				"ssn": {
-					"displayName": "Номер социального страхования",
-					"description": "Стандартный номер социального страхования США с тире.",
+					"displayName": "номер социального страхования",
+					"description": "стандартный номер социального страхования США с тире",
 					"placeholder": "123-45-6789"
 				},
 				"workEmail": {
-					"displayName": "Рабочая электронная почта"
+					"displayName": "рабочая электронная почта"
 				},
 				"workPhone": {
-					"displayName": "Рабочий телефон"
+					"displayName": "рабочий телефон"
 				},
 				"categoryId": {
-					"displayName": "Название или идентификатор категории",
-					"description": "Переместите файл в другую категорию. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "имя или идентификатор категории",
+					"description": "переместите файл в другую категорию. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"name": {
 					"displayName": "Имя",
-					"description": "Новое имя файла"
+					"description": "новое имя файла"
 				},
 				"shareWithEmployee": {
-					"displayName": "Поделиться с сотрудником",
-					"description": "Является ли этот файл общим или нет"
+					"displayName": "поделиться с сотрудником",
+					"description": "является ли этот файл общим"
 				}
 			}
 		},
 		"fileId": {
-			"displayName": "Идентификатор файла",
+			"displayName": "ID файла",
 			"description": "идентификатор файла"
 		},
 		"output": {
-			"displayName": "Поместите вывод в поле",
-			"description": "Имя выходного поля для помещения данных двоичного файла."
+			"displayName": "вывести результат в поле",
+			"description": "имя выходного поля для помещения данных двоичного файла"
 		},
 		"simplifyOutput": {
-			"displayName": "Упрощать",
-			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+			"displayName": "Упростить",
+			"description": "Возвращать ли упрощённую версию ответа вместо необработанных данных"
 		},
 		"categoryId": {
-			"displayName": "Название или идентификатор категории",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"displayName": "имя или идентификатор категории",
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"binaryPropertyName": {
 			"displayName": "Имя поля входных данных",
-			"description": "Имя поля ввода, содержащего данные двоичного файла, которые необходимо загрузить. Поддерживаемые типы файлов: PNG, JPEG."
+			"description": "Имя входного поля с двоичными данными файла для загрузки. Поддерживаемые типы файлов: PNG, JPEG"
 		},
 		"reportId": {
-			"displayName": "Идентификатор отчета",
-			"description": "Идентификатор отчета. Вы можете получить номер отчета, наведя указатель мыши на имя отчета на странице отчетов и получив идентификатор."
+			"displayName": "идентификатор отчёта",
+			"description": "идентификатор отчёта. Вы можете получить номер отчёта, наведя указатель на имя отчёта на странице отчётов"
 		},
 		"format": {
 			"displayName": "Формат",
-			"description": "Выходной формат отчета",
+			"description": "выходной формат отчёта",
 			"options": {
 				"CSV": {
 					"displayName": "CSV"

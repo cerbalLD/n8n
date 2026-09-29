@@ -1,7 +1,7 @@
 {
 	"header": {
 		"displayName": "Код",
-		"description": "Запуск собственного кода JavaScript или Python"
+		"description": "Запустить пользовательский код JavaScript или Python"
 	},
 	"nodeView": {
 		"mode": {
@@ -9,11 +9,11 @@
 			"options": {
 				"runOnceForAllItems": {
 					"displayName": "Запустить один раз для всех элементов",
-					"description": "Запускайте этот код только один раз, независимо от количества входных элементов."
+					"description": "Запустить код один раз, независимо от количества входных элементов"
 				},
 				"runOnceForEachItem": {
 					"displayName": "Запустить один раз для каждого элемента",
-					"description": "Запустите этот код столько раз, сколько имеется входных элементов."
+					"description": "Запустить код столько раз, сколько входных элементов"
 				}
 			}
 		},
@@ -24,20 +24,20 @@
 					"displayName": "JavaScript"
 				},
 				"pythonNative": {
-					"displayName": "Питон"
+					"displayName": "Python"
 				}
 			}
 		},
 		"jsCode": {
 			"displayName": "JavaScript",
-			"description": "Код JavaScript для выполнения.<br><br>Совет. Вы можете использовать переменные luxon, например <code>$today__N8N_TOKEN_3__ для дат и <code>$jmespath__N8N_TOKEN_5__ для запроса структур JSON. <a href=\"https://docs.n8n.io/nodes/n8n-nodes-base.function\">Подробнее</a>."
+			"description": "Код JavaScript для выполнения.<br><br>Совет: Используйте переменные luxon, такие как <code>$today</code> для дат и <code>$jmespath</code> для запросов JSON. <a href=\"https://docs.n8n.io/nodes/n8n-nodes-base.function\">Подробнее</a>."
 		},
 		"notice": {
-			"displayName": "Отладка с помощью операторов <code>print()</code> и просмотра их вывода в консоли браузера.<br><br>Опция Python не поддерживает синтаксис <code>_</code> и вспомогательные функции, за исключением <code>_items</code> в режиме всех элементов и <code>_item</code> в режиме каждого элемента."
+			"displayName": "Отладьте с помощью операторов <code>print()</code> и просмотра результатов в консоли браузера.<br><br>Python не поддерживает синтаксис <code>_</code> и вспомогательные функции, кроме <code>_items</code> в режиме всех элементов и <code>_item</code> в режиме отдельного элемента."
 		},
 		"pythonCode": {
-			"displayName": "Питон",
-			"description": "Код Python для выполнения.<br><br>Совет. Вы можете использовать встроенные методы и переменные, такие как <code>_today</code> для дат и <code>_jmespath</code> для запроса структур JSON. <a href=\"https://docs.n8n.io/code/builtin/\">Подробнее</a>."
+			"displayName": "Python",
+			"description": "Код Python для выполнения.<br><br>Совет: Используйте встроенные методы и переменные, такие как <code>_today</code> для дат и <code>_jmespath</code> для запросов JSON. <a href=\"https://docs.n8n.io/code/builtin/\">Подробнее</a>."
 		}
 	}
 }

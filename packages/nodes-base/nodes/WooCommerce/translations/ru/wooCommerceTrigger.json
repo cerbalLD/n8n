@@ -6,7 +6,7 @@
 	"nodeView": {
 		"event": {
 			"displayName": "Событие",
-			"description": "Определяет, для каких событий ресурса срабатывает вебхук.",
+			"description": "Определяет события ресурсов, для которых запускается вебхук",
 			"options": {
 				"coupon": {
 					"created": {
@@ -38,7 +38,7 @@
 						"displayName": "заказ.удален"
 					},
 					"updated": {
-						"displayName": "заказ.обновлено"
+						"displayName": "order.updated"
 					}
 				},
 				"product": {

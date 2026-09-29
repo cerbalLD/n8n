@@ -6,7 +6,7 @@
 	"nodeView": {
 		"authType": {
 			"displayName": "Аутентификация",
-			"description": "Используемый метод аутентификации",
+			"description": "Метод аутентификации",
 			"options": {
 				"accessToken": {
 					"displayName": "Токен доступа"
@@ -17,39 +17,39 @@
 			}
 		},
 		"appId": {
-			"displayName": "Идентификатор приложения",
-			"description": "Идентификатор приложения Facebook"
+			"displayName": "ID приложения",
+			"description": "ID приложения Facebook"
 		},
 		"whatsappBusinessAccountNotice": {
-			"displayName": "Для просмотра событий бизнес-аккаунта WhatsApp используйте узел триггера WhatsApp."
+			"displayName": "Для отслеживания событий бизнес-аккаунта WhatsApp используйте узел триггера WhatsApp"
 		},
 		"object": {
 			"displayName": "Объект",
-			"description": "Объект, на который нужно подписаться",
+			"description": "Объект для подписки",
 			"options": {
 				"adAccount": {
 					"displayName": "Рекламный аккаунт",
-					"description": "Получайте обновления о рекламном аккаунте"
+					"description": "Получать обновления о рекламном аккаунте"
 				},
 				"application": {
 					"displayName": "Приложение",
-					"description": "Получайте обновления о приложении"
+					"description": "Получать обновления о приложении"
 				},
 				"certificateTransparency": {
-					"displayName": "Прозрачность сертификата",
-					"description": "Получайте обновления о прозрачности сертификатов"
+					"displayName": "Прозрачность сертификатов",
+					"description": "Получать обновления о прозрачности сертификатов"
 				},
 				"group": {
 					"displayName": "Группа",
-					"description": "Получайте обновления об активности в группах и событиях в группах для Workplace."
+					"description": "Получать обновления об активности в группах и событиях для Workplace"
 				},
 				"instagram": {
-					"displayName": "Инстаграм",
-					"description": "Получайте обновления о комментариях к вашим СМИ"
+					"displayName": "Instagram",
+					"description": "Получать обновления о комментариях к вашему контенту"
 				},
 				"link": {
-					"displayName": "Связь",
-					"description": "Получайте обновления о ссылках для расширенного предварительного просмотра от внешнего поставщика."
+					"displayName": "Ссылка",
+					"description": "Получать обновления о ссылках для расширенного предпросмотра от внешнего поставщика"
 				},
 				"page": {
 					"displayName": "Страница",
@@ -57,7 +57,7 @@
 				},
 				"permissions": {
 					"displayName": "Разрешения",
-					"description": "Обновления, касающиеся предоставления или отзыва разрешений"
+					"description": "Обновления о предоставлении или отзыве разрешений"
 				},
 				"user": {
 					"displayName": "Пользователь",
@@ -65,17 +65,17 @@
 				},
 				"whatsappBusinessAccount": {
 					"displayName": "Бизнес-аккаунт WhatsApp",
-					"description": "Получайте обновления о бизнес-аккаунте WhatsApp"
+					"description": "Получать обновления о бизнес-аккаунте WhatsApp"
 				},
 				"workplaceSecurity": {
-					"displayName": "Безопасность на рабочем месте",
-					"description": "Получайте обновления о безопасности на рабочем месте"
+					"displayName": "Безопасность Workplace",
+					"description": "Получать обновления о безопасности Workplace"
 				}
 			}
 		},
 		"fields": {
 			"displayName": "Имена полей или идентификаторы",
-			"description": "Набор полей в этом объекте, на которые подписаны. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"description": "Набор полей этого объекта, на которые вы подписаны. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"options": {
 			"displayName": "Параметры",

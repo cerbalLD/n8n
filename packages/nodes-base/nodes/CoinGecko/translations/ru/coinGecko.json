@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "МонетаGecko",
+		"displayName": "CoinGecko",
 		"description": "Использование API CoinGecko"
 	},
 	"nodeView": {
@@ -19,8 +19,8 @@
 			"displayName": "Операция",
 			"options": {
 				"candlestick": {
-					"displayName": "Подсвечник",
-					"description": "Получите свечной график открытия-максимума-минимума-закрытия для выбранной валюты."
+					"displayName": "Свечи",
+					"description": "Получить свечной график открытия-максимума-минимума-закрытия для выбранной валюты"
 				},
 				"get": {
 					"displayName": "Получать",
@@ -32,19 +32,19 @@
 				},
 				"history": {
 					"displayName": "История",
-					"description": "Получите исторические данные (название, цена, рынок, статистика) на определенную дату для монеты."
+					"description": "Получить исторические данные (название, цена, рынок, статистика) за определённую дату для монеты"
 				},
 				"market": {
 					"displayName": "Рынок",
-					"description": "Получите цены и рыночные данные для всех торговых пар, соответствующих выбранной валюте."
+					"description": "Получить цены и рыночные данные для всех торговых пар с выбранной валютой"
 				},
 				"marketChart": {
 					"displayName": "График рынка",
-					"description": "Получите исторические рыночные данные, включая цену, рыночную капитализацию и 24-часовой объем (автоматическая степень детализации)."
+					"description": "Получить исторические рыночные данные: цена, капитализация, 24-часовой объём (автоматическая степень детализации)"
 				},
 				"price": {
 					"displayName": "Цена",
-					"description": "Получите текущую цену любых криптовалют в любых других поддерживаемых валютах, которые вам нужны."
+					"description": "Получить текущую цену криптовалют в любых поддерживаемых валютах"
 				},
 				"ticker": {
 					"displayName": "Тикер",
@@ -66,24 +66,24 @@
 		},
 		"coinId": {
 			"displayName": "Название или идентификатор монеты",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>",
-			"placeholder": "биткойн"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>",
+			"placeholder": "bitcoin"
 		},
 		"baseCurrency": {
 			"displayName": "Название или идентификатор базовой валюты",
-			"description": "Первая валюта в паре. Для BTC:ETH это BTC. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"description": "Первая валюта в паре. Для BTC:ETH это BTC. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"baseCurrencies": {
 			"displayName": "Названия или идентификаторы базовой валюты",
-			"description": "Первая валюта в паре. Для BTC:ETH это BTC. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>.",
-			"placeholder": "биткойн"
+			"description": "Первая валюта в паре. Для BTC:ETH это BTC. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>.",
+			"placeholder": "bitcoin"
 		},
 		"platformId": {
 			"displayName": "Идентификатор платформы",
 			"description": "Идентификатор платформы, выпускающей токены",
 			"options": {
 				"ethereum": {
-					"displayName": "Эфириум"
+					"displayName": "Ethereum"
 				}
 			}
 		},
@@ -93,19 +93,19 @@
 		},
 		"contractAddresses": {
 			"displayName": "Адреса контрактов",
-			"description": "Контрактный адрес токенов, разделенный запятой."
+			"description": "Адреса контрактов токенов, разделённые запятыми"
 		},
 		"quoteCurrency": {
 			"displayName": "Название или идентификатор валюты котировки",
-			"description": "Вторая валюта в паре. Для BTC:ETH это ETH. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"description": "Вторая валюта в паре. Для BTC:ETH это ETH. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"quoteCurrencies": {
-			"displayName": "Названия или идентификаторы валют котировок",
-			"description": "Вторая валюта в паре. Для BTC:ETH это ETH. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"displayName": "Названия или идентификаторы валюты котировки",
+			"description": "Вторая валюта в паре. Для BTC:ETH это ETH. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"days": {
 			"displayName": "Диапазон (дней)",
-			"description": "Вернуть данные за это количество дней в прошлом с настоящего момента",
+			"description": "Вернуть данные за это количество дней в прошлом",
 			"options": {
 				"1": {
 					"displayName": "1"
@@ -129,7 +129,7 @@
 					"displayName": "365"
 				},
 				"max": {
-					"displayName": "Макс"
+					"displayName": "Макс."
 				}
 			}
 		},
@@ -143,7 +143,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"options": {
 			"displayName": "Параметры",
@@ -151,61 +151,61 @@
 			"options": {
 				"ids": {
 					"displayName": "Идентификаторы монет",
-					"description": "Фильтрация результатов по списку идентификаторов монет, разделенных запятыми",
-					"placeholder": "биткойн"
+					"description": "Отфильтровать результаты по спискам идентификаторов монет, разделённым запятыми",
+					"placeholder": "bitcoin"
 				},
 				"category": {
 					"displayName": "Категория",
-					"description": "Фильтровать по категории монет",
+					"description": "Фильтр по категории монеты",
 					"options": {
 						"decentralized_finance_defi": {
-							"displayName": "Децентрализованные финансы Defi"
+							"displayName": "Децентрализованные финансы (DeFi)"
 						}
 					}
 				},
 				"order": {
-					"displayName": "Заказ",
+					"displayName": "Порядок",
 					"description": "Сортирует результаты по выбранному правилу",
 					"options": {
 						"gecko_asc": {
-							"displayName": "Геккон Асц"
+							"displayName": "Gecko возрастание"
 						},
 						"gecko_desc": {
-							"displayName": "Геккон Описание"
+							"displayName": "Gecko убывание"
 						},
 						"id_asc": {
-							"displayName": "Идентификатор по возрастанию"
+							"displayName": "ID возрастание"
 						},
 						"id_desc": {
-							"displayName": "Описание идентификатора"
+							"displayName": "ID убывание"
 						},
 						"market_cap_asc": {
-							"displayName": "Рыночная капитализация по возрастанию"
+							"displayName": "Капитализация возрастание"
 						},
 						"market_cap_desc": {
-							"displayName": "Описание рыночной капитализации"
+							"displayName": "Капитализация убывание"
 						},
 						"volume_asc": {
-							"displayName": "Объем по возрастанию"
+							"displayName": "Объём возрастание"
 						},
 						"volume_desc": {
-							"displayName": "Описание тома"
+							"displayName": "Объём убывание"
 						},
 						"trust_score_desc": {
-							"displayName": "Описание оценки доверия"
+							"displayName": "Рейтинг доверия убывание"
 						},
 						"trust_score_asc": {
-							"displayName": "Оценка доверия по возрастанию"
+							"displayName": "Рейтинг доверия возрастание"
 						}
 					}
 				},
 				"sparkline": {
 					"displayName": "Спарклайн",
-					"description": "Включать ли спарклайн-данные за 7 дней (например, правда, ложь)."
+					"description": "Включать ли данные спарклайна за 7 дней (например, true, false)"
 				},
 				"price_change_percentage": {
 					"displayName": "Процент изменения цены",
-					"description": "Включить процент изменения цены в указанное время.",
+					"description": "Включить процент изменения цены за указанные периоды",
 					"options": {
 						"1h": {
 							"displayName": "1 час"
@@ -214,16 +214,16 @@
 							"displayName": "24 часа"
 						},
 						"7d": {
-							"displayName": "7д"
+							"displayName": "7 дней"
 						},
 						"14d": {
-							"displayName": "14д"
+							"displayName": "14 дней"
 						},
 						"30d": {
 							"displayName": "30 дней"
 						},
 						"200d": {
-							"displayName": "200d"
+							"displayName": "200д"
 						},
 						"1y": {
 							"displayName": "1 год"
@@ -231,63 +231,63 @@
 					}
 				},
 				"include_24hr_change": {
-					"displayName": "Включить 24-часовую смену"
+					"displayName": "Включить изменение за 24 часа"
 				},
 				"include_24hr_vol": {
-					"displayName": "Включить 24-часовой объем"
+					"displayName": "Включить объём за 24 часа"
 				},
 				"include_last_updated_at": {
-					"displayName": "Включить последнее обновление"
+					"displayName": "Включить время последнего обновления"
 				},
 				"include_market_cap": {
-					"displayName": "Включить рыночную капитализацию"
+					"displayName": "Включить капитализацию"
 				},
 				"exchange_ids": {
-					"displayName": "Имена или идентификаторы обмена",
-					"description": "Фильтруйте результаты по идентификаторам бирж. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Названия или идентификаторы бирж",
+					"description": "Отфильтровать результаты по идентификаторам бирж. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"include_exchange_logo": {
-					"displayName": "Включить логотип Exchange"
+					"displayName": "Включить логотип биржи"
 				},
 				"localization": {
 					"displayName": "Локализация",
-					"description": "Включать ли в ответ все локализованные языки"
+					"description": "Включить ли все локализованные языки в ответ"
 				},
 				"community_data": {
 					"displayName": "Данные сообщества",
-					"description": "Включать ли данные сообщества"
+					"description": "Включить ли данные сообщества"
 				},
 				"developer_data": {
 					"displayName": "Данные разработчика",
-					"description": "Включать ли данные разработчика"
+					"description": "Включить ли данные разработчика"
 				},
 				"market_data": {
 					"displayName": "Рыночные данные",
-					"description": "Включать ли рыночные данные"
+					"description": "Включить ли рыночные данные"
 				},
 				"tickers": {
 					"displayName": "Тикеры",
-					"description": "Включать ли данные тикеров"
+					"description": "Включить ли данные тикеров"
 				},
 				"country_code": {
 					"displayName": "Код страны",
-					"description": "Код страны события. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"description": "Код страны события. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"from_date": {
-					"displayName": "С даты",
-					"description": "Перечисляет события после этой даты"
+					"displayName": "От даты",
+					"description": "Список событий после этой даты"
 				},
 				"to_date": {
-					"displayName": "На сегодняшний день",
-					"description": "Перечисляет события до этой даты"
+					"displayName": "До даты",
+					"description": "Список событий до этой даты"
 				},
 				"type": {
-					"displayName": "Введите имя или идентификатор",
-					"description": "Тип мероприятия. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Название или идентификатор типа",
+					"description": "Тип события. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"upcoming_events_only": {
-					"displayName": "Только предстоящие мероприятия",
-					"description": "Следует ли перечислять только предстоящие события"
+					"displayName": "Только предстоящие события",
+					"description": "Показывать ли только предстоящие события"
 				}
 			}
 		}

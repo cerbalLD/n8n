@@ -14,7 +14,7 @@
 					"displayName": "Коллекция"
 				},
 				"tag": {
-					"displayName": "Ярлык"
+					"displayName": "Тег"
 				},
 				"user": {
 					"displayName": "Пользователь"
@@ -25,7 +25,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать"
+					"displayName": "Создать"
 				},
 				"delete": {
 					"displayName": "Удалить"
@@ -37,16 +37,16 @@
 					"displayName": "Получить много"
 				},
 				"update": {
-					"displayName": "Обновлять"
+					"displayName": "Обновить"
 				}
 			}
 		},
 		"collectionId": {
-			"displayName": "Идентификатор коллекции",
+			"displayName": "ID коллекции",
 			"description": "Идентификатор коллекции, которую необходимо обновить."
 		},
 		"link": {
-			"displayName": "Связь",
+			"displayName": "Ссылка",
 			"description": "Ссылка на создаваемую закладку"
 		},
 		"additionalFields": {
@@ -54,11 +54,11 @@
 			"placeholder": "Добавить фильтр",
 			"options": {
 				"important": {
-					"displayName": "Важный",
+					"displayName": "Важно",
 					"description": "Помечена ли эта закладка как избранная"
 				},
 				"order": {
-					"displayName": "Заказ",
+					"displayName": "Порядок",
 					"description": "Порядок сортировки закладки. Например, чтобы переместить его на первое место, введите 0."
 				},
 				"pleaseParse": {
@@ -70,7 +70,7 @@
 					"description": "Теги закладок. Можно указать несколько тегов, разделив их запятой."
 				},
 				"title": {
-					"displayName": "Заголовок",
+					"displayName": "Название",
 					"description": "Название закладки, которую нужно создать"
 				},
 				"cover": {
@@ -82,7 +82,7 @@
 					"description": "Будет ли коллекция доступна без аутентификации"
 				},
 				"parentId": {
-					"displayName": "Идентификатор родителя",
+					"displayName": "ID родительской папки",
 					"description": "Идентификатор родительской коллекции этой коллекции, если это дочерняя коллекция."
 				},
 				"sort": {
@@ -90,7 +90,7 @@
 					"description": "Порядок сортировки по убыванию этой коллекции. Число — это позиция коллекции среди всех коллекций с одинаковым родительским идентификатором."
 				},
 				"view": {
-					"displayName": "Вид",
+					"displayName": "Просмотр",
 					"description": "Посмотреть стиль этой коллекции",
 					"options": {
 						"list": {
@@ -123,7 +123,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"updateFields": {
 			"displayName": "Обновить поля",
@@ -131,14 +131,14 @@
 			"options": {
 				"collectionId": {
 					"displayName": "Название или идентификатор коллекции",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"important": {
-					"displayName": "Важный",
+					"displayName": "Важно",
 					"description": "Помечена ли эта закладка как избранная"
 				},
 				"order": {
-					"displayName": "Заказ",
+					"displayName": "Порядок",
 					"description": "Например, если вы хотите переместить закладку на первое место, установите в этом поле значение 0."
 				},
 				"pleaseParse": {
@@ -150,7 +150,7 @@
 					"description": "Теги закладок. Можно указать несколько тегов, разделив их запятой."
 				},
 				"title": {
-					"displayName": "Заголовок",
+					"displayName": "Название",
 					"description": "Название коллекции, которую нужно обновить"
 				},
 				"cover": {
@@ -162,7 +162,7 @@
 					"description": "Будет ли коллекция доступна без аутентификации"
 				},
 				"parentId": {
-					"displayName": "Идентификатор родителя",
+					"displayName": "ID родительской папки",
 					"description": "Идентификатор родительской коллекции этой коллекции, если это дочерняя коллекция."
 				},
 				"sort": {
@@ -170,7 +170,7 @@
 					"description": "Порядок сортировки по убыванию этой коллекции. Число — это позиция коллекции среди всех коллекций с одинаковым родительским идентификатором."
 				},
 				"view": {
-					"displayName": "Вид",
+					"displayName": "Просмотр",
 					"description": "Посмотреть стиль этой коллекции",
 					"options": {
 						"list": {
@@ -190,7 +190,7 @@
 			}
 		},
 		"title": {
-			"displayName": "Заголовок",
+			"displayName": "Название",
 			"description": "Название коллекции, которую нужно создать"
 		},
 		"type": {
@@ -216,7 +216,7 @@
 			"options": {
 				"collectionId": {
 					"displayName": "Название или идентификатор коллекции",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				}
 			}
 		},

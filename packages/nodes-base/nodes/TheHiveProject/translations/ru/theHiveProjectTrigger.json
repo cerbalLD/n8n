@@ -13,7 +13,7 @@
 			"options": {
 				"*": {
 					"displayName": "*",
-					"description": "Каждый раз, когда запускается какое-либо событие (событие с подстановочным знаком)"
+					"description": "Любое событие (подстановочное событие)"
 				},
 				"alert_create": {
 					"displayName": "Оповещение создано",
@@ -44,11 +44,11 @@
 					"description": "Срабатывает при создании комментария"
 				},
 				"comment_delete": {
-					"displayName": "Комментарий удален",
+					"displayName": "Комментарий удалён",
 					"description": "Срабатывает при удалении комментария"
 				},
 				"comment_update": {
-					"displayName": "Комментарий обновлен",
+					"displayName": "Комментарий обновлён",
 					"description": "Срабатывает при обновлении комментария"
 				},
 				"observable_create": {
@@ -115,7 +115,7 @@
 							"displayName": "Оператор",
 							"options": {
 								"equal": {
-									"displayName": "Равный",
+									"displayName": "равно",
 									"description": "Поле равно значению"
 								},
 								"notEqual": {
@@ -129,7 +129,7 @@
 							}
 						},
 						"value": {
-							"displayName": "Ценить"
+							"displayName": "Значение"
 						}
 					}
 				}

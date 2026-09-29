@@ -8,7 +8,7 @@
 			"displayName": "Ресурс",
 			"options": {
 				"alert": {
-					"displayName": "Тревога"
+					"displayName": "Оповещение"
 				},
 				"case": {
 					"displayName": "Случай"
@@ -37,7 +37,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать"
+					"displayName": "Создать"
 				},
 				"deleteAlert": {
 					"displayName": "Удалить"
@@ -58,7 +58,7 @@
 					"displayName": "Поиск"
 				},
 				"update": {
-					"displayName": "Обновлять"
+					"displayName": "Обновить"
 				},
 				"status": {
 					"displayName": "Обновить статус"
@@ -79,7 +79,7 @@
 					"displayName": "Получить график"
 				},
 				"add": {
-					"displayName": "Создавать"
+					"displayName": "Создать"
 				},
 				"deleteComment": {
 					"displayName": "Удалить"
@@ -124,7 +124,7 @@
 						},
 						"binaryProperty": {
 							"displayName": "Входное двоичное поле",
-							"hint": "Имя входного двоичного поля, содержащего файл для записи."
+							"hint": "Имя входного двоичного поля, содержащего файл для записи"
 						},
 						"message": {
 							"displayName": "Сообщение"
@@ -139,14 +139,14 @@
 			"displayName": "Наблюдаемые"
 		},
 		"alertId": {
-			"displayName": "Тревога"
+			"displayName": "Оповещение"
 		},
 		"id": {
 			"displayName": "Задача"
 		},
 		"responder": {
 			"displayName": "Имя или идентификатор ответчика",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"options": {
 			"displayName": "Параметры",
@@ -267,7 +267,7 @@
 				},
 				"caseTemplate": {
 					"displayName": "Имя или идентификатор шаблона обращения",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"canRename": {
 					"displayName": "Переименовать файлы",
@@ -285,10 +285,10 @@
 					"displayName": "Категория"
 				},
 				"title": {
-					"displayName": "Заголовок"
+					"displayName": "Название"
 				},
 				"order": {
-					"displayName": "Заказ"
+					"displayName": "Порядок"
 				}
 			}
 		},
@@ -298,7 +298,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"filters": {
 			"options": {
@@ -310,7 +310,7 @@
 					"values": {
 						"field": {
 							"displayName": "Поле",
-							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>",
+							"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>",
 							"options": {
 								"message": {
 									"displayName": "Сообщение"
@@ -325,7 +325,7 @@
 									"displayName": "Содержание"
 								},
 								"title": {
-									"displayName": "Заголовок"
+									"displayName": "Название"
 								}
 							}
 						},
@@ -337,7 +337,7 @@
 									"description": "Поле находится между двумя значениями («От» является включенным, «Кому» является исключительным)"
 								},
 								"_like": {
-									"displayName": "Содержит",
+									"displayName": "содержит",
 									"description": "Поле содержит подстроку из значения"
 								},
 								"_endsWith": {
@@ -345,11 +345,11 @@
 									"description": "Поле заканчивается значением"
 								},
 								"_eq": {
-									"displayName": "Равный",
+									"displayName": "равно",
 									"description": "Поле равно значению"
 								},
 								"_gt": {
-									"displayName": "Больше, чем",
+									"displayName": "Больше чем",
 									"description": "Поле больше значения"
 								},
 								"_gte": {
@@ -361,7 +361,7 @@
 									"description": "Поле — одно из значений"
 								},
 								"_lt": {
-									"displayName": "Меньше, чем",
+									"displayName": "Меньше чем",
 									"description": "Поле меньше значения"
 								},
 								"_lte": {
@@ -383,7 +383,7 @@
 							}
 						},
 						"value": {
-							"displayName": "Ценить"
+							"displayName": "Значение"
 						},
 						"values": {
 							"displayName": "Ценности",
@@ -394,7 +394,7 @@
 							"displayName": "От"
 						},
 						"to": {
-							"displayName": "К"
+							"displayName": "До"
 						}
 					}
 				}
@@ -405,14 +405,14 @@
 		"sort": {
 			"options": {
 				"sort": {
-					"displayName": "Сортировать"
+					"displayName": "Сортировка"
 				},
 				"fields": {
 					"displayName": "Поля",
 					"values": {
 						"field": {
 							"displayName": "Поле",
-							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>",
+							"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>",
 							"options": {
 								"message": {
 									"displayName": "Сообщение"
@@ -427,7 +427,7 @@
 									"displayName": "Содержание"
 								},
 								"title": {
-									"displayName": "Заголовок"
+									"displayName": "Название"
 								}
 							}
 						},
@@ -435,7 +435,7 @@
 							"displayName": "Направление",
 							"options": {
 								"asc": {
-									"displayName": "восходящий"
+									"displayName": "По возрастанию"
 								},
 								"desc": {
 									"displayName": "По убыванию"
@@ -446,11 +446,11 @@
 				}
 			},
 			"placeholder": "Добавить правило сортировки",
-			"displayName": "Сортировать"
+			"displayName": "Сортировка"
 		},
 		"status": {
 			"displayName": "Имя или идентификатор статуса",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"caseId": {
 			"displayName": "Случай"
@@ -493,7 +493,7 @@
 			"displayName": "добавить в",
 			"options": {
 				"alert": {
-					"displayName": "Тревога"
+					"displayName": "Оповещение"
 				},
 				"case": {
 					"displayName": "Случай"
@@ -514,7 +514,7 @@
 					"displayName": "Оповещения и случаи"
 				},
 				"alert": {
-					"displayName": "Тревога"
+					"displayName": "Оповещение"
 				},
 				"case": {
 					"displayName": "Случай"
@@ -541,7 +541,7 @@
 					"displayName": "Случай"
 				},
 				"alert": {
-					"displayName": "Тревога"
+					"displayName": "Оповещение"
 				}
 			}
 		},
@@ -577,7 +577,7 @@
 			}
 		},
 		"title": {
-			"displayName": "Заголовок"
+			"displayName": "Название"
 		},
 		"category": {
 			"displayName": "Категория"

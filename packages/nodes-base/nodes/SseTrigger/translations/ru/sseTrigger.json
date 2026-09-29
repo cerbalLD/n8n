@@ -1,14 +1,14 @@
 {
 	"header": {
 		"displayName": "Триггер SSE",
-		"description": "Запускает рабочий процесс при возникновении событий, отправленных сервером."
+		"description": "Запускает рабочий процесс при возникновении Server-Sent Events"
 	},
 	"nodeView": {
 		"url": {
 			"displayName": "URL",
-			"description": "URL-адрес для получения SSE от",
+			"description": "URL для получения SSE",
 			"placeholder": "http://example.com"
 		},
-		"activationMessage": "Теперь вы можете вызывать URL-адрес SSE для запуска выполнения."
+		"activationMessage": "Теперь вы можете отправлять запросы на ваш SSE URL для запуска выполнения."
 	}
 }

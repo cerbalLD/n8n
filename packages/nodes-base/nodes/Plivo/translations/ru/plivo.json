@@ -1,14 +1,14 @@
 {
 	"header": {
-		"displayName": "Пливо",
-		"description": "Отправляйте SMS/MMS-сообщения или совершайте телефонные звонки."
+		"displayName": "Plivo",
+		"description": "Отправлять SMS/MMS или звонить"
 	},
 	"nodeView": {
 		"resource": {
 			"displayName": "Ресурс",
 			"options": {
 				"call": {
-					"displayName": "Вызов"
+					"displayName": "Звонок"
 				},
 				"mms": {
 					"displayName": "MMS"
@@ -22,23 +22,23 @@
 			"displayName": "Операция",
 			"options": {
 				"send": {
-					"displayName": "Отправлять",
-					"description": "Отправка MMS-сообщения (только для США и Канады)"
+					"displayName": "Отправить",
+					"description": "Отправить MMS (только США/Канада)"
 				},
 				"make": {
-					"displayName": "Делать",
-					"description": "Сделать голосовой вызов"
+					"displayName": "Совершить",
+					"description": "Совершить голосовой вызов"
 				}
 			}
 		},
 		"from": {
 			"displayName": "От",
-			"description": "Идентификатор вызывающего абонента для совершения звонка",
+			"description": "Идентификатор вызывающего абонента",
 			"placeholder": "+14156667777"
 		},
 		"to": {
-			"displayName": "К",
-			"description": "Номер телефона, на который можно позвонить",
+			"displayName": "До",
+			"description": "Номер телефона для вызова",
 			"placeholder": "+14156667778"
 		},
 		"message": {
@@ -46,12 +46,12 @@
 			"description": "Сообщение для отправки"
 		},
 		"media_urls": {
-			"displayName": "URL-адреса мультимедиа",
-			"description": "Список URL-адресов файлов с вашего файлового сервера, разделенных запятыми."
+			"displayName": "URL медиафайлов",
+			"description": "Список URL медиафайлов через запятую"
 		},
 		"answer_method": {
 			"displayName": "Метод ответа",
-			"description": "HTTP-глагол, который будет использоваться при вызове URL-адреса ответа.",
+			"description": "HTTP метод для вызова URL ответа",
 			"options": {
 				"GET": {
 					"displayName": "GET"
@@ -63,7 +63,7 @@
 		},
 		"answer_url": {
 			"displayName": "URL ответа",
-			"description": "URL-адрес, который будет вызван Plivo после ответа на вызов. Он должен вернуть XML для обработки вызова после ответа."
+			"description": "URL, вызываемый Plivo после ответа на звонок. Должен вернуть XML для обработки."
 		}
 	}
 }

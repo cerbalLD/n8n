@@ -8,7 +8,7 @@
 			"displayName": "Ресурс",
 			"options": {
 				"job": {
-					"displayName": "Работа"
+					"displayName": "Задание"
 				}
 			}
 		},
@@ -16,7 +16,7 @@
 			"displayName": "Операция",
 			"options": {
 				"execute": {
-					"displayName": "Выполнять",
+					"displayName": "Выполнение",
 					"description": "Выполнить задание"
 				},
 				"getMetadata": {
@@ -26,7 +26,7 @@
 			}
 		},
 		"jobid": {
-			"displayName": "Идентификатор вакансии",
+			"displayName": "Идентификатор задания",
 			"description": "Идентификатор задания, для которого необходимо отключить метаданные",
 			"placeholder": "Идентификатор задания Rundeck"
 		},
@@ -39,7 +39,7 @@
 							"displayName": "Имя"
 						},
 						"value": {
-							"displayName": "Ценить"
+							"displayName": "Значение"
 						}
 					}
 				}

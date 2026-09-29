@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Счет-фактура ниндзя",
-		"description": "Использование API-интерфейса Invoice Ninja"
+		"displayName": "Invoice Ninja",
+		"description": "Использовать API Invoice Ninja"
 	},
 	"nodeView": {
 		"apiVersion": {
@@ -28,13 +28,13 @@
 					"displayName": "Расход"
 				},
 				"invoice": {
-					"displayName": "Счет"
+					"displayName": "Счёт"
 				},
 				"payment": {
 					"displayName": "Оплата"
 				},
 				"quote": {
-					"displayName": "Цитировать"
+					"displayName": "Предложение"
 				},
 				"task": {
 					"displayName": "Задача"
@@ -45,7 +45,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать новую банковскую транзакцию"
 				},
 				"delete": {
@@ -58,15 +58,15 @@
 				},
 				"getAll": {
 					"displayName": "Получить много",
-					"description": "Получите данные о многих банковских транзакциях"
+					"description": "Получить данные нескольких банковских транзакций"
 				},
 				"email": {
 					"displayName": "Электронная почта",
-					"description": "Отправить предложение по электронной почте"
+					"description": "Отправить предложение по почте"
 				},
 				"matchPayment": {
-					"displayName": "Оплата матча",
-					"description": "Сопоставьте платеж с банковской транзакцией"
+					"displayName": "Сопоставить платёж",
+					"description": "Сопоставить платёж с банковской транзакцией."
 				}
 			}
 		},
@@ -78,7 +78,7 @@
 					"displayName": "Имя клиента"
 				},
 				"idNumber": {
-					"displayName": "Идентификационный номер"
+					"displayName": "Номер идентификатора"
 				},
 				"privateNotes": {
 					"displayName": "Личные заметки"
@@ -87,17 +87,17 @@
 					"displayName": "Номер НДС"
 				},
 				"workPhone": {
-					"displayName": "Рабочий телефон"
+					"displayName": "рабочий телефон"
 				},
 				"website": {
 					"displayName": "Веб-сайт"
 				},
 				"client": {
 					"displayName": "Имя или идентификатор клиента",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"autoBill": {
-					"displayName": "Авто Билл"
+					"displayName": "Автосчёт"
 				},
 				"customValue1": {
 					"displayName": "Пользовательское значение 1"
@@ -116,39 +116,39 @@
 					"placeholder": "имя@email.com"
 				},
 				"emailInvoice": {
-					"displayName": "Отправить счет по электронной почте"
+					"displayName": "Отправить счёт по почте"
 				},
 				"invoiceDate": {
-					"displayName": "Дата счета"
+					"displayName": "Дата счёта"
 				},
 				"invoiceNumber": {
-					"displayName": "Номер счета"
+					"displayName": "Номер счёта"
 				},
 				"invoiceStatus": {
-					"displayName": "Статус счета",
+					"displayName": "Статус счёта",
 					"options": {
 						"1": {
 							"displayName": "Черновик"
 						},
 						"2": {
-							"displayName": "Отправил"
+							"displayName": "Отправлено"
 						}
 					}
 				},
 				"isAmountDiscount": {
-					"displayName": "Сумма скидки"
+					"displayName": "Скидка на сумму"
 				},
 				"markSent": {
-					"displayName": "Марк Сент"
+					"displayName": "Отметить отправленным"
 				},
 				"paid": {
 					"displayName": "Оплаченный"
 				},
 				"partial": {
-					"displayName": "Частичный"
+					"displayName": "Частичная"
 				},
 				"partialDueDate": {
-					"displayName": "Частичная дата сдачи"
+					"displayName": "Дата частичной оплаты"
 				},
 				"poNumber": {
 					"displayName": "Номер заказа"
@@ -173,7 +173,7 @@
 				},
 				"project": {
 					"displayName": "Название или идентификатор проекта",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"paymentType": {
 					"displayName": "Тип оплаты",
@@ -191,76 +191,76 @@
 							"displayName": "ACH"
 						},
 						"5": {
-							"displayName": "Виза"
+							"displayName": "Visa"
 						},
 						"6": {
-							"displayName": "Мастеркард"
+							"displayName": "Mastercard"
 						},
 						"7": {
-							"displayName": "Американ Экспресс"
+							"displayName": "American Express"
 						},
 						"8": {
-							"displayName": "Обнаружить"
+							"displayName": "Discover"
 						},
 						"9": {
-							"displayName": "Посетители"
+							"displayName": "Diners"
 						},
 						"10": {
-							"displayName": "Еврокарта"
+							"displayName": "Eurocard"
 						},
 						"11": {
-							"displayName": "Новая звезда"
+							"displayName": "Nova"
 						},
 						"12": {
-							"displayName": "Кредитная карта Другое"
+							"displayName": "Другая кредитная карта"
 						},
 						"13": {
 							"displayName": "PayPal"
 						},
 						"14": {
-							"displayName": "ПайПал"
+							"displayName": "PayPal"
 						},
 						"15": {
 							"displayName": "Проверять"
 						},
 						"16": {
-							"displayName": "Карт Бланш"
+							"displayName": "Carte Blanche"
 						},
 						"17": {
-							"displayName": "ЮнионПей"
+							"displayName": "UnionPay"
 						},
 						"18": {
 							"displayName": "JCB"
 						},
 						"19": {
-							"displayName": "Лазер"
+							"displayName": "Laser"
 						},
 						"20": {
-							"displayName": "Маэстро"
+							"displayName": "Maestro"
 						},
 						"21": {
-							"displayName": "Соло"
+							"displayName": "Solo"
 						},
 						"22": {
-							"displayName": "Выключатель"
+							"displayName": "Switch"
 						},
 						"23": {
-							"displayName": "Свич"
+							"displayName": "Switch"
 						},
 						"24": {
-							"displayName": "Венмо"
+							"displayName": "Venmo"
 						},
 						"25": {
-							"displayName": "Свиш"
+							"displayName": "Swish"
 						},
 						"26": {
-							"displayName": "Венмо"
+							"displayName": "Venmo"
 						},
 						"27": {
-							"displayName": "Алипей"
+							"displayName": "Alipay"
 						},
 						"28": {
-							"displayName": "Софт"
+							"displayName": "Sofort"
 						},
 						"29": {
 							"displayName": "SEPA"
@@ -269,31 +269,31 @@
 							"displayName": "GoCardless"
 						},
 						"31": {
-							"displayName": "Крипто"
+							"displayName": "Криптография"
 						},
 						"32": {
 							"displayName": "Кредит"
 						},
 						"33": {
-							"displayName": "Зелле"
+							"displayName": "Zelle"
 						},
 						"34": {
-							"displayName": "Молли Банковский перевод"
+							"displayName": "Mollie Bank Transfer"
 						},
 						"35": {
 							"displayName": "KBC"
 						},
 						"36": {
-							"displayName": "Банкконтакт"
+							"displayName": "Bancontact"
 						},
 						"37": {
-							"displayName": "ИДЕАЛ"
+							"displayName": "iDEAL"
 						},
 						"38": {
-							"displayName": "Размещенная страница"
+							"displayName": "Размещённая страница"
 						},
 						"39": {
-							"displayName": "Гиропай"
+							"displayName": "Giropay"
 						},
 						"40": {
 							"displayName": "Przelewy24"
@@ -311,28 +311,28 @@
 							"displayName": "ACSS"
 						},
 						"45": {
-							"displayName": "Мгновенный банковский платеж"
+							"displayName": "Мгновенный банковский платёж"
 						},
 						"46": {
 							"displayName": "FPX"
 						},
 						"47": {
-							"displayName": "Кларна"
+							"displayName": "Klarna"
 						},
 						"48": {
-							"displayName": "Электронный перевод Interac"
+							"displayName": "Interac e-Transfer"
 						},
 						"49": {
 							"displayName": "BACS"
 						},
 						"50": {
-							"displayName": "Банковский перевод в полоску"
+							"displayName": "Stripe Bank Transfer"
 						},
 						"51": {
-							"displayName": "Кассовое приложение"
+							"displayName": "Cash App"
 						},
 						"52": {
-							"displayName": "Плати позже"
+							"displayName": "Отложить платёж"
 						}
 					}
 				},
@@ -346,45 +346,45 @@
 					"displayName": "подлежащий оплате"
 				},
 				"category": {
-					"displayName": "Название или идентификатор категории",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"displayName": "имя или идентификатор категории",
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"expenseDate": {
-					"displayName": "Дата расходов"
+					"displayName": "Дата расхода"
 				},
 				"paymentDate": {
-					"displayName": "Дата платежа"
+					"displayName": "Дата оплаты"
 				},
 				"transactionReference": {
 					"displayName": "Ссылка на транзакцию"
 				},
 				"vendor": {
 					"displayName": "Имя или идентификатор поставщика",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"emailQuote": {
-					"displayName": "Отправить предложение по электронной почте"
+					"displayName": "Отправить предложение по почте"
 				},
 				"quoteDate": {
-					"displayName": "Дата котировки"
+					"displayName": "Дата предложения"
 				},
 				"quoteNumber": {
 					"displayName": "Номер предложения"
 				},
 				"quoteStatus": {
-					"displayName": "Статус котировки",
+					"displayName": "Статус предложения",
 					"options": {
 						"1": {
 							"displayName": "Черновик"
 						},
 						"2": {
-							"displayName": "Отправил"
+							"displayName": "Отправлено"
 						}
 					}
 				},
 				"bankIntegrationId": {
 					"displayName": "Имя или идентификатор банковской интеграции",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"baseType": {
 					"displayName": "Базовый тип",
@@ -398,8 +398,8 @@
 					}
 				},
 				"currencyId": {
-					"displayName": "Название или идентификатор валюты",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"displayName": "Название валюты или её ID",
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"date": {
 					"displayName": "Дата"
@@ -409,35 +409,35 @@
 		"billingAddressUi": {
 			"options": {
 				"billingAddressUi": {
-					"displayName": "Адрес для выставления счета"
+					"displayName": "Адрес для выставления счёта"
 				},
 				"billingAddressValue": {
-					"displayName": "Адрес для выставления счета",
+					"displayName": "Адрес для выставления счёта",
 					"values": {
 						"streetAddress": {
 							"displayName": "Адрес улицы"
 						},
 						"aptSuite": {
-							"displayName": "Квартира/Люкс"
+							"displayName": "Кв./люкс"
 						},
 						"city": {
-							"displayName": "Город"
+							"displayName": "город"
 						},
 						"state": {
-							"displayName": "Состояние"
+							"displayName": "область"
 						},
 						"postalCode": {
 							"displayName": "Почтовый индекс"
 						},
 						"countryCode": {
 							"displayName": "Код страны, имя или идентификатор",
-							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+							"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 						}
 					}
 				}
 			},
-			"placeholder": "Добавить платежный адрес",
-			"displayName": "Адрес для выставления счета"
+			"placeholder": "Добавить адрес для счёта",
+			"displayName": "Адрес для выставления счёта"
 		},
 		"contactsUi": {
 			"options": {
@@ -478,20 +478,20 @@
 							"displayName": "Адрес улицы"
 						},
 						"aptSuite": {
-							"displayName": "Квартира/Люкс"
+							"displayName": "Кв./люкс"
 						},
 						"city": {
-							"displayName": "Город"
+							"displayName": "город"
 						},
 						"state": {
-							"displayName": "Состояние"
+							"displayName": "область"
 						},
 						"postalCode": {
 							"displayName": "Почтовый индекс"
 						},
 						"countryCode": {
 							"displayName": "Код страны, имя или идентификатор",
-							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+							"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 						}
 					}
 				}
@@ -500,17 +500,17 @@
 			"displayName": "Адрес доставки"
 		},
 		"clientId": {
-			"displayName": "Идентификатор клиента"
+			"displayName": "ID клиента"
 		},
 		"options": {
 			"displayName": "Параметры",
 			"placeholder": "Добавить поле",
 			"options": {
 				"include": {
-					"displayName": "Включать",
+					"displayName": "Включить",
 					"options": {
 						"invoices": {
-							"displayName": "Счета-фактуры"
+							"displayName": "Счета"
 						},
 						"client": {
 							"displayName": "Клиент"
@@ -532,16 +532,16 @@
 					}
 				},
 				"createdAt": {
-					"displayName": "Создано в"
+					"displayName": "Создано"
 				},
 				"updatedAt": {
 					"displayName": "Обновлено в"
 				},
 				"isDeleted": {
-					"displayName": "Удален"
+					"displayName": "Удалено"
 				},
 				"invoiceNumber": {
-					"displayName": "Номер счета"
+					"displayName": "Номер счёта"
 				},
 				"clientStatus": {
 					"displayName": "Статус клиента",
@@ -553,7 +553,7 @@
 							"displayName": "Оплаченный"
 						},
 						"unpaid": {
-							"displayName": "Неоплачиваемый"
+							"displayName": "Не оплачено"
 						},
 						"overdue": {
 							"displayName": "Просрочено"
@@ -571,24 +571,24 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"invoiceItemsUi": {
 			"options": {
 				"invoiceItemsUi": {
-					"displayName": "Позиции счета-фактуры"
+					"displayName": "Позиции счёта"
 				},
 				"invoiceItemsValues": {
-					"displayName": "Позиция счета-фактуры",
+					"displayName": "Позиция счёта",
 					"values": {
 						"cost": {
-							"displayName": "Расходы"
+							"displayName": "Стоимость"
 						},
 						"description": {
 							"displayName": "Описание"
 						},
 						"service": {
-							"displayName": "Услуга"
+							"displayName": "Сервис"
 						},
 						"hours": {
 							"displayName": "Часы"
@@ -608,11 +608,11 @@
 					}
 				}
 			},
-			"placeholder": "Добавить позицию счета",
-			"displayName": "Позиции счета-фактуры"
+			"placeholder": "Добавить позицию счёта",
+			"displayName": "Позиции счёта"
 		},
 		"invoiceId": {
-			"displayName": "Идентификатор счета"
+			"displayName": "ID счёта"
 		},
 		"timeLogsUi": {
 			"options": {
@@ -641,21 +641,21 @@
 			"displayName": "Идентификатор задачи"
 		},
 		"invoice": {
-			"displayName": "Имя или идентификатор счета-фактуры",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"displayName": "Имя или идентификатор счёта",
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"amount": {
 			"displayName": "Количество"
 		},
 		"paymentId": {
-			"displayName": "Имя или идентификатор платежа",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"displayName": "Имя или идентификатор оплаты",
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"expenseId": {
 			"displayName": "Идентификатор расхода"
 		},
 		"quoteId": {
-			"displayName": "Идентификатор цитаты"
+			"displayName": "Идентификатор предложения"
 		},
 		"bankTransactionId": {
 			"displayName": "Идентификатор банковской транзакции"

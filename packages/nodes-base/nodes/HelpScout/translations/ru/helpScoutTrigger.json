@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Помогите скауту триггеру",
-		"description": "Запускает рабочий процесс при возникновении событий Help Scout."
+		"displayName": "Триггер Help Scout",
+		"description": "Запускает рабочий процесс при возникновении событий Help Scout"
 	},
 	"nodeView": {
 		"events": {
@@ -9,54 +9,54 @@
 			"options": {
 				"convo": {
 					"assigned": {
-						"displayName": "Разговор – назначено"
+						"displayName": "Беседа — назначена"
 					},
 					"created": {
-						"displayName": "Разговор – создано"
+						"displayName": "Беседа — создана"
 					},
 					"deleted": {
-						"displayName": "Разговор – удален"
+						"displayName": "Беседа — удалена"
 					},
 					"merged": {
-						"displayName": "Разговор – объединен"
+						"displayName": "Беседа — объединена"
 					},
 					"moved": {
-						"displayName": "Разговор — перемещён"
+						"displayName": "Беседа — перемещена"
 					},
 					"status": {
-						"displayName": "Разговор – Статус"
+						"displayName": "Беседа — статус"
 					},
 					"tags": {
-						"displayName": "Разговор — Теги"
+						"displayName": "Беседа — теги"
 					},
 					"agent": {
 						"reply": {
 							"created": {
-								"displayName": "Ответ агента беседы — создано"
+								"displayName": "Ответ агента — создан"
 							}
 						}
 					},
 					"customer": {
 						"reply": {
 							"created": {
-								"displayName": "Ответ клиента в диалоге – создано"
+								"displayName": "Ответ клиента — создан"
 							}
 						}
 					},
 					"note": {
 						"created": {
-							"displayName": "Заметка для разговора – создано"
+							"displayName": "Заметка — создана"
 						}
 					}
 				},
 				"customer": {
 					"created": {
-						"displayName": "Клиент - Создано"
+						"displayName": "Клиент — создан"
 					}
 				},
 				"satisfaction": {
 					"ratings": {
-						"displayName": "Рейтинг – получено"
+						"displayName": "Оценка — получена"
 					}
 				}
 			}

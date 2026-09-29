@@ -25,7 +25,7 @@
 					"displayName": "Группа списка"
 				},
 				"member": {
-					"displayName": "Член"
+					"displayName": "Участник"
 				},
 				"memberTag": {
 					"displayName": "Тег участника"
@@ -36,7 +36,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Добавить теги из участника списка"
 				},
 				"delete": {
@@ -52,7 +52,7 @@
 					"description": "Получите много кампаний"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить нового участника в списке"
 				},
 				"replicate": {
@@ -64,13 +64,13 @@
 					"description": "Создает версию этой кампании для повторной отправки не открывающим сторонам."
 				},
 				"send": {
-					"displayName": "Отправлять",
+					"displayName": "Отправить",
 					"description": "Отправить кампанию"
 				}
 			}
 		},
 		"list": {
-			"displayName": "Имя списка или идентификатор",
+			"displayName": "Название или ID списка",
 			"description": "Список списков. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 		},
 		"email": {
@@ -80,7 +80,7 @@
 		},
 		"status": {
 			"displayName": "Статус",
-			"description": "Текущий статус абонента",
+			"description": "Текущий статус подписчика",
 			"options": {
 				"cleaned": {
 					"displayName": "Очищенный"
@@ -95,7 +95,7 @@
 					"displayName": "Транзакционный"
 				},
 				"unsubscribed": {
-					"displayName": "Отменил подписку"
+					"displayName": "Отписан"
 				}
 			}
 		},
@@ -140,27 +140,27 @@
 				},
 				"vip": {
 					"displayName": "VIP",
-					"description": "VIP статус для подписчиков"
+					"description": "VIP-статус для подписчиков"
 				},
 				"timestampOpt": {
-					"displayName": "Временная метка согласия",
-					"description": "Дата и время, когда подписка подтвердила свой статус подписки в формате ISO 8601."
+					"displayName": "Время согласия",
+					"description": "Дата и время подтверждения подписчиком согласия в формате ISO 8601"
 				},
 				"fields": {
 					"displayName": "Имена полей или идентификаторы",
-					"description": "Список полей для возврата, разделенный запятыми. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"description": "Список полей для возврата, разделённый запятыми. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"excludeFields": {
 					"displayName": "Исключить имена полей или идентификаторы",
-					"description": "Список полей, разделенных запятыми, которые необходимо исключить. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"description": "Список полей для исключения, разделённый запятыми. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"beforeLastChanged": {
 					"displayName": "До последнего изменения",
-					"description": "Ограничить результаты подписчиками, чья информация изменилась до установленного периода времени"
+					"description": "Ограничить результаты подписчиками, информация которых изменилась до установленного периода"
 				},
 				"beforeTimestampOpt": {
-					"displayName": "До выбора временной метки",
-					"description": "Ограничить результаты подписчиками, которые согласились на рассылку до установленного срока."
+					"displayName": "До временной метки согласия",
+					"description": "Ограничить результаты подписчиками, которые согласились до установленного периода"
 				},
 				"status": {
 					"displayName": "Статус",
@@ -179,16 +179,16 @@
 							"displayName": "Транзакционный"
 						},
 						"unsubscribed": {
-							"displayName": "Отменил подписку"
+							"displayName": "Отписан"
 						},
 						"save": {
-							"displayName": "Сохранять"
+							"displayName": "Сохранить"
 						},
 						"sending": {
 							"displayName": "Отправка"
 						},
 						"sent": {
-							"displayName": "Отправил"
+							"displayName": "Отправлено"
 						},
 						"schedule": {
 							"displayName": "Расписание"
@@ -196,36 +196,36 @@
 					}
 				},
 				"sinceLastChanged": {
-					"displayName": "С момента последнего изменения",
-					"description": "Ограничить результаты подписчиками, чья информация изменилась после установленного периода времени"
+					"displayName": "После последнего изменения",
+					"description": "Ограничить результаты подписчиками, информация которых изменилась после установленного периода"
 				},
 				"isSyncing": {
 					"displayName": "Синхронизируется",
-					"description": "Не сработает ли автоматизация на основе тегов в запросе"
+					"description": "Будут ли запускаться автоматизации на основе тегов в запросе"
 				},
 				"beforeCreateTime": {
-					"displayName": "Прежде чем создавать время",
-					"description": "Ограничить ответ кампаниями, созданными до установленного времени."
+					"displayName": "До времени создания",
+					"description": "Ограничить ответ кампаниями, созданными до установленного времени"
 				},
 				"beforeSendTime": {
-					"displayName": "Время до отправки",
-					"description": "Ограничить ответ на кампании, отправленные до установленного времени."
+					"displayName": "До времени отправки",
+					"description": "Ограничить ответ кампаниями, отправленными до установленного времени"
 				},
 				"listId": {
-					"displayName": "Имя списка или идентификатор",
+					"displayName": "Название или ID списка",
 					"description": "Список списков. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"sinceCreateTime": {
-					"displayName": "С момента создания времени",
-					"description": "Ограничить ответ кампаниями, созданными после установленного времени."
+					"displayName": "После времени создания",
+					"description": "Ограничить ответ кампаниями, созданными после установленного времени"
 				},
 				"sinceSendTime": {
-					"displayName": "С момента отправки",
-					"description": "Ограничить ответ на кампании, отправленные после установленного времени."
+					"displayName": "После времени отправки",
+					"description": "Ограничить ответ кампаниями, отправленными после установленного времени"
 				},
 				"sortDirection": {
 					"displayName": "Направление сортировки",
-					"description": "Определяет направление порядка отсортированных результатов.",
+					"description": "Определяет направление сортировки результатов",
 					"options": {
 						"ASC": {
 							"displayName": "ASC"
@@ -236,14 +236,14 @@
 					}
 				},
 				"sortField": {
-					"displayName": "Сортировать поле",
-					"description": "Возвращает файлы, отсортированные по указанному полю.",
+					"displayName": "Поле сортировки",
+					"description": "Возвращает файлы, отсортированные по указанному полю",
 					"options": {
 						"create_time": {
-							"displayName": "Создать время"
+							"displayName": "Время создания"
 						},
 						"send_time": {
-							"displayName": "Отправить время"
+							"displayName": "Время отправки"
 						}
 					}
 				}
@@ -253,7 +253,7 @@
 			"options": {
 				"locationFieldsUi": {
 					"displayName": "Расположение",
-					"description": "Информация о местонахождении абонента.n"
+					"description": "Информация о местоположении подписчика"
 				},
 				"locationFieldsValues": {
 					"displayName": "Расположение",
@@ -271,34 +271,34 @@
 			},
 			"placeholder": "Добавить местоположение",
 			"displayName": "Расположение",
-			"description": "Информация о местонахождении абонента.n"
+			"description": "Информация о местоположении подписчика"
 		},
 		"mergeFieldsUi": {
 			"options": {
 				"mergeFieldsUi": {
-					"displayName": "Объединить поля",
-					"description": "Индивидуальная переменная слияния и значение для члена"
+					"displayName": "Поля слияния",
+					"description": "Отдельная переменная слияния и значение для участника"
 				},
 				"mergeFieldsValues": {
 					"displayName": "Поле",
 					"values": {
 						"name": {
-							"displayName": "Имя поля или идентификатор",
-							"description": "Имя поля объединения. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+							"displayName": "Имя поля или ID",
+							"description": "Имя поля слияния. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 						},
 						"value": {
 							"displayName": "Значение поля",
-							"description": "Объединить значение поля"
+							"description": "Значение поля слияния"
 						}
 					}
 				}
 			},
 			"placeholder": "Добавить поля слияния",
-			"displayName": "Объединить поля",
-			"description": "Индивидуальная переменная слияния и значение для члена"
+			"displayName": "Поля слияния",
+			"description": "Отдельная переменная слияния и значение для участника"
 		},
 		"mergeFieldsJson": {
-			"displayName": "Объединить поля"
+			"displayName": "Поля слияния"
 		},
 		"locationJson": {
 			"displayName": "Расположение"
@@ -312,19 +312,19 @@
 					"displayName": "Группа",
 					"values": {
 						"categoryId": {
-							"displayName": "Название или идентификатор категории",
-							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+							"displayName": "имя или идентификатор категории",
+							"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 						},
 						"categoryFieldId": {
 							"displayName": "Идентификатор поля категории"
 						},
 						"value": {
-							"displayName": "Ценить"
+							"displayName": "Значение"
 						}
 					}
 				}
 			},
-			"placeholder": "Добавить группу по интересам",
+			"placeholder": "Добавить группу интересов",
 			"displayName": "Группы интересов"
 		},
 		"groupJson": {
@@ -336,7 +336,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"updateFields": {
 			"displayName": "Обновить поля",
@@ -362,19 +362,19 @@
 						"groupsValues": {
 							"options": {
 								"categoryId": {
-									"displayName": "Название или идентификатор категории",
-									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+									"displayName": "имя или идентификатор категории",
+									"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 								},
 								"categoryFieldId": {
 									"displayName": "Идентификатор поля категории"
 								},
 								"value": {
-									"displayName": "Ценить"
+									"displayName": "Значение"
 								}
 							}
 						}
 					},
-					"placeholder": "Добавить группу по интересам",
+					"placeholder": "Добавить группу интересов",
 					"displayName": "Группы интересов",
 					"options": {
 						"groupsValues": {
@@ -389,25 +389,25 @@
 				"mergeFieldsUi": {
 					"values": {
 						"mergeFieldsUi": {
-							"displayName": "Объединить поля",
-							"description": "Индивидуальная переменная слияния и значение для члена"
+							"displayName": "Поля слияния",
+							"description": "Отдельная переменная слияния и значение для участника"
 						},
 						"mergeFieldsValues": {
 							"options": {
 								"name": {
-									"displayName": "Имя поля или идентификатор",
-									"description": "Имя поля объединения. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+									"displayName": "Имя поля или ID",
+									"description": "Имя поля слияния. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 								},
 								"value": {
 									"displayName": "Значение поля",
-									"description": "Объединить значение поля"
+									"description": "Значение поля слияния"
 								}
 							}
 						}
 					},
 					"placeholder": "Добавить поля слияния",
-					"displayName": "Объединить поля",
-					"description": "Индивидуальная переменная слияния и значение для члена",
+					"displayName": "Поля слияния",
+					"description": "Отдельная переменная слияния и значение для участника",
 					"options": {
 						"mergeFieldsValues": {
 							"displayName": "Поле"
@@ -428,11 +428,11 @@
 				},
 				"skipMergeValidation": {
 					"displayName": "Пропустить проверку слияния",
-					"description": "Будут ли приниматься данные участника без значений поля слияния, даже если поле слияния обычно требуется."
+					"description": "Будут ли приниматься данные участника без значений поля слияния, даже если это поле обычно требуется"
 				},
 				"status": {
 					"displayName": "Статус",
-					"description": "Текущий статус абонента",
+					"description": "Текущий статус подписчика",
 					"options": {
 						"cleaned": {
 							"displayName": "Очищенный"
@@ -447,19 +447,19 @@
 							"displayName": "Транзакционный"
 						},
 						"unsubscribed": {
-							"displayName": "Отменил подписку"
+							"displayName": "Отписан"
 						}
 					}
 				},
 				"vip": {
 					"displayName": "VIP",
-					"description": "VIP статус для подписчиков"
+					"description": "VIP-статус для подписчиков"
 				},
 				"locationFieldsUi": {
 					"values": {
 						"locationFieldsUi": {
 							"displayName": "Расположение",
-							"description": "Информация о местонахождении абонента.n"
+							"description": "Информация о местоположении подписчика"
 						},
 						"locationFieldsValues": {
 							"options": {
@@ -476,7 +476,7 @@
 					},
 					"placeholder": "Добавить местоположение",
 					"displayName": "Расположение",
-					"description": "Информация о местонахождении абонента.n",
+					"description": "Информация о местоположении подписчика",
 					"options": {
 						"locationFieldsValues": {
 							"displayName": "Расположение"
@@ -484,8 +484,8 @@
 					}
 				},
 				"timestampOpt": {
-					"displayName": "Временная метка согласия",
-					"description": "Дата и время, когда подписка подтвердила свой статус подписки в формате ISO 8601."
+					"displayName": "Время согласия",
+					"description": "Дата и время подтверждения подписчиком согласия в формате ISO 8601"
 				}
 			}
 		},
@@ -494,7 +494,7 @@
 		},
 		"groupCategory": {
 			"displayName": "Название или идентификатор категории группы",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"campaignId": {
 			"displayName": "Идентификатор кампании",

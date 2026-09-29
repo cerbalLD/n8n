@@ -1,57 +1,57 @@
 {
 	"header": {
-		"displayName": "Триггер коробки",
-		"description": "Запускает рабочий процесс при возникновении событий Box"
+		"displayName": "Триггер Box",
+		"description": "Запускает рабочий процесс при событиях Box"
 	},
 	"nodeView": {
 		"events": {
 			"displayName": "События",
-			"description": "События, которые стоит послушать",
+			"description": "События для отслеживания",
 			"options": {
 				"COLLABORATION": {
 					"ACCEPTED": {
 						"displayName": "Сотрудничество принято",
-						"description": "Сотрудничество принято"
+						"description": "Сотрудничество было принято"
 					},
 					"CREATED": {
 						"displayName": "Сотрудничество создано",
-						"description": "Создается сотрудничество"
+						"description": "Создано сотрудничество"
 					},
 					"REJECTED": {
 						"displayName": "Сотрудничество отклонено",
-						"description": "Сотрудничество отклонено"
+						"description": "Сотрудничество было отклонено"
 					},
 					"REMOVED": {
 						"displayName": "Сотрудничество удалено",
-						"description": "Сотрудничество удалено."
+						"description": "Сотрудничество было удалено"
 					},
 					"UPDATED": {
 						"displayName": "Сотрудничество обновлено",
-						"description": "Сотрудничество обновлено"
+						"description": "Сотрудничество было обновлено"
 					}
 				},
 				"COMMENT": {
 					"CREATED": {
 						"displayName": "Комментарий создан",
-						"description": "Объект комментария создан."
+						"description": "Создан объект комментария"
 					},
 					"DELETED": {
-						"displayName": "Комментарий удален",
-						"description": "Объект комментария удален."
+						"displayName": "Комментарий удалён",
+						"description": "Объект комментария удалён"
 					},
 					"UPDATED": {
-						"displayName": "Комментарий обновлен",
-						"description": "Объект комментария редактируется"
+						"displayName": "Комментарий обновлён",
+						"description": "Объект комментария отредактирован"
 					}
 				},
 				"FILE": {
 					"COPIED": {
 						"displayName": "Файл скопирован",
-						"description": "Файл копируется"
+						"description": "Файл скопирован"
 					},
 					"DELETED": {
-						"displayName": "Файл удален",
-						"description": "Файл перемещается в корзину"
+						"displayName": "Файл удалён",
+						"description": "Файл перемещён в корзину"
 					},
 					"DOWNLOADED": {
 						"displayName": "Файл загружен",
@@ -62,12 +62,12 @@
 						"description": "Файл заблокирован"
 					},
 					"MOVED": {
-						"displayName": "Файл перемещен",
-						"description": "Файл перемещается из одной папки в другую"
+						"displayName": "Файл перемещён",
+						"description": "Файл перемещён в другую папку"
 					},
 					"PREVIEWED": {
-						"displayName": "Файл предварительно просмотрен",
-						"description": "Предварительный просмотр файла"
+						"displayName": "Файл просмотрен",
+						"description": "Файл просмотрен"
 					},
 					"RENAMED": {
 						"displayName": "Файл переименован",
@@ -75,11 +75,11 @@
 					},
 					"RESTORED": {
 						"displayName": "Файл восстановлен",
-						"description": "Файл восстанавливается из корзины"
+						"description": "Файл восстановлен из корзины"
 					},
 					"TRASHED": {
-						"displayName": "Файл удален",
-						"description": "Файл перемещается в корзину"
+						"displayName": "Файл удалён",
+						"description": "Файл перемещён в корзину"
 					},
 					"UNLOCKED": {
 						"displayName": "Файл разблокирован",
@@ -87,13 +87,13 @@
 					},
 					"UPLOADED": {
 						"displayName": "Файл загружен",
-						"description": "Файл загружается или перемещается в эту папку"
+						"description": "Файл загружен или перемещен в папку"
 					}
 				},
 				"FOLDER": {
 					"COPIED": {
 						"displayName": "Папка скопирована",
-						"description": "Создается копия папки"
+						"description": "Создана копия папки"
 					},
 					"CREATED": {
 						"displayName": "Папка создана",
@@ -101,15 +101,15 @@
 					},
 					"DELETED": {
 						"displayName": "Папка удалена",
-						"description": "Папка удалена навсегда"
+						"description": "Папка окончательно удалена"
 					},
 					"DOWNLOADED": {
 						"displayName": "Папка загружена",
-						"description": "Папка скачана."
+						"description": "Папка загружена"
 					},
 					"MOVED": {
 						"displayName": "Папка перемещена",
-						"description": "Папка перемещается в другую папку"
+						"description": "Папка перемещена в другую папку"
 					},
 					"RENAMED": {
 						"displayName": "Папка переименована",
@@ -117,39 +117,39 @@
 					},
 					"RESTORED": {
 						"displayName": "Папка восстановлена",
-						"description": "Папка восстанавливается из корзины"
+						"description": "Папка восстановлена из корзины"
 					},
 					"TRASHED": {
 						"displayName": "Папка удалена",
-						"description": "Папка перемещается в корзину"
+						"description": "Папка перемещена в корзину"
 					}
 				},
 				"METADATA_INSTANCE": {
 					"CREATED": {
-						"displayName": "Экземпляр метаданных создан.",
-						"description": "Новый экземпляр шаблона метаданных связан с файлом или папкой."
+						"displayName": "Экземпляр метаданных создан",
+						"description": "Новый экземпляр шаблона метаданных связан с файлом или папкой"
 					},
 					"DELETED": {
-						"displayName": "Экземпляр метаданных удален.",
-						"description": "Существующий экземпляр шаблона метаданных, связанный с файлом или папкой, удаляется."
+						"displayName": "Экземпляр метаданных удалён",
+						"description": "Экземпляр шаблона метаданных удалён из файла или папки"
 					},
 					"UPDATED": {
-						"displayName": "Экземпляр метаданных обновлен.",
-						"description": "Атрибут (значение) обновляется/удаляется для существующего экземпляра шаблона метаданных, связанного с файлом или папкой."
+						"displayName": "Экземпляр метаданных обновлён",
+						"description": "Атрибут метаданных обновлён или удалён"
 					}
 				},
 				"SHARED_LINK": {
 					"CREATED": {
 						"displayName": "Общая ссылка создана",
-						"description": "Общая ссылка создана."
+						"description": "Создана общая ссылка"
 					},
 					"DELETED": {
 						"displayName": "Общая ссылка удалена",
-						"description": "Общая ссылка удалена."
+						"description": "Общая ссылка удалена"
 					},
 					"UPDATED": {
 						"displayName": "Общая ссылка обновлена",
-						"description": "Общая ссылка обновлена."
+						"description": "Общая ссылка обновлена"
 					}
 				},
 				"TASK_ASSIGNMENT": {
@@ -158,13 +158,13 @@
 						"description": "Задача создана"
 					},
 					"UPDATED": {
-						"displayName": "Назначение задач обновлено",
+						"displayName": "Назначение задачи обновлено",
 						"description": "Задача обновлена"
 					}
 				},
 				"WEBHOOK": {
 					"DELETED": {
-						"displayName": "Вебхук удален",
+						"displayName": "Вебхук удалён",
 						"description": "Когда вебхук удаляется"
 					}
 				}
@@ -183,8 +183,8 @@
 			}
 		},
 		"targetId": {
-			"displayName": "Идентификатор цели",
-			"description": "Идентификатор элемента для запуска вебхука"
+			"displayName": "ID цели",
+			"description": "ID элемента для запуска вебхука"
 		}
 	}
 }

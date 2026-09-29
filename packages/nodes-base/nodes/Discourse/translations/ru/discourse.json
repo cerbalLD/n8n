@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Дискурс",
-		"description": "Использование API дискурса"
+		"displayName": "Discourse",
+		"description": "Использовать API Discourse"
 	},
 	"nodeView": {
 		"resource": {
@@ -14,7 +14,7 @@
 					"displayName": "Группа"
 				},
 				"post": {
-					"displayName": "Почта"
+					"displayName": "Тема"
 				},
 				"user": {
 					"displayName": "Пользователь"
@@ -29,24 +29,24 @@
 			"description": "Выберите операцию",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать пользователя"
 				},
 				"getAll": {
 					"displayName": "Получить много",
-					"description": "Получить много пользователей"
+					"description": "Получить нескольких пользователей"
 				},
 				"update": {
-					"displayName": "Обновлять",
-					"description": "Обновить публикацию"
+					"displayName": "Обновить",
+					"description": "Обновить тему"
 				},
 				"get": {
 					"displayName": "Получать",
 					"description": "Получить пользователя"
 				},
 				"add": {
-					"displayName": "Добавлять",
-					"description": "Создайте пользователя в группе"
+					"displayName": "Добавить",
+					"description": "Добавить пользователя в группу"
 				},
 				"remove": {
 					"displayName": "Удалять",
@@ -56,7 +56,7 @@
 		},
 		"name": {
 			"displayName": "Имя",
-			"description": "Имя пользователя, которого нужно создать"
+			"description": "Имя пользователя для создания"
 		},
 		"color": {
 			"displayName": "Цвет",
@@ -72,11 +72,11 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"categoryId": {
-			"displayName": "Идентификатор категории",
-			"description": "Идентификатор категории"
+			"displayName": "ID категории",
+			"description": "ID категории"
 		},
 		"updateFields": {
 			"displayName": "Обновить поля",
@@ -91,39 +91,39 @@
 					"description": "Цвет текста категории"
 				},
 				"edit_reason": {
-					"displayName": "Изменить причину"
+					"displayName": "Причина редактирования"
 				},
 				"cooked": {
-					"displayName": "Приготовленный"
+					"displayName": "Обработанный"
 				}
 			}
 		},
 		"groupId": {
-			"displayName": "Идентификатор группы",
-			"description": "Идентификатор группы, которую нужно удалить"
+			"displayName": "ID группы",
+			"description": "ID группы для удаления"
 		},
 		"title": {
-			"displayName": "Заголовок",
-			"description": "Название поста"
+			"displayName": "Название",
+			"description": "Название темы"
 		},
 		"content": {
 			"displayName": "Содержание",
-			"description": "Содержание поста. HTML поддерживается."
+			"description": "Содержимое темы. Поддерживается HTML."
 		},
 		"additionalFields": {
 			"displayName": "Дополнительные поля",
 			"placeholder": "Добавить поле",
 			"options": {
 				"category": {
-					"displayName": "Название или идентификатор категории",
-					"description": "Идентификатор категории. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "имя или идентификатор категории",
+					"description": "ID категории. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"reply_to_post_number": {
-					"displayName": "Ответить на номер сообщения",
-					"description": "Номер сообщения, на которое нужно ответить."
+					"displayName": "Ответить на номер темы",
+					"description": "Номер темы для ответа"
 				},
 				"topic_id": {
-					"displayName": "Идентификатор темы",
+					"displayName": "ID темы",
 					"description": "ID темы"
 				},
 				"active": {
@@ -135,41 +135,41 @@
 			}
 		},
 		"postId": {
-			"displayName": "Идентификатор сообщения",
-			"description": "Идентификатор сообщения"
+			"displayName": "ID темы",
+			"description": "ID темы"
 		},
 		"email": {
 			"displayName": "Электронная почта",
-			"description": "Электронная почта пользователя для создания",
+			"description": "Email пользователя для создания",
 			"placeholder": "имя@email.com"
 		},
 		"username": {
 			"displayName": "Имя пользователя",
-			"description": "Имя пользователя, которого нужно вернуть"
+			"description": "Имя пользователя для получения"
 		},
 		"password": {
 			"displayName": "Пароль",
 			"description": "Пароль пользователя для создания"
 		},
 		"by": {
-			"displayName": "К",
-			"description": "По чему искать",
+			"displayName": "По",
+			"description": "По какому полю искать",
 			"options": {
 				"username": {
 					"displayName": "Имя пользователя"
 				},
 				"externalId": {
-					"displayName": "Внешний идентификатор единого входа"
+					"displayName": "Внешний ID единого входа"
 				}
 			}
 		},
 		"externalId": {
-			"displayName": "Внешний идентификатор единого входа",
-			"description": "Внешний идентификатор единого входа в Discourse"
+			"displayName": "Внешний ID единого входа",
+			"description": "Внешний ID единого входа Discourse"
 		},
 		"flag": {
 			"displayName": "Флаг",
-			"description": "Флаги пользователей для поиска",
+			"description": "Флаги пользователя для поиска",
 			"options": {
 				"active": {
 					"displayName": "Активный"
@@ -178,16 +178,16 @@
 					"displayName": "Заблокировано"
 				},
 				"new": {
-					"displayName": "Новый"
+					"displayName": "Создать"
 				},
 				"staff": {
 					"displayName": "Персонал"
 				},
 				"suspect": {
-					"displayName": "Подозревать"
+					"displayName": "Подозрительный"
 				},
 				"suspended": {
-					"displayName": "Приостановленный"
+					"displayName": "Приостановлено"
 				}
 			}
 		},
@@ -196,12 +196,12 @@
 			"placeholder": "Добавить вариант",
 			"options": {
 				"asc": {
-					"displayName": "восходящий",
-					"description": "Следует ли сортировать по возрастанию"
+					"displayName": "По возрастанию",
+					"description": "Сортировать по возрастанию"
 				},
 				"order": {
-					"displayName": "Заказ",
-					"description": "Что заказать",
+					"displayName": "Порядок",
+					"description": "По какому полю сортировать",
 					"options": {
 						"created": {
 							"displayName": "Созданный"
@@ -213,22 +213,22 @@
 							"displayName": "Электронная почта"
 						},
 						"last_emailed": {
-							"displayName": "Последнее письмо"
+							"displayName": "Последний email"
 						},
 						"posts": {
-							"displayName": "Сообщения"
+							"displayName": "Темы"
 						},
 						"posts_read": {
-							"displayName": "Сообщения прочитаны"
+							"displayName": "Прочитано тем"
 						},
 						"read_time": {
 							"displayName": "Время чтения"
 						},
 						"seen": {
-							"displayName": "Видимый"
+							"displayName": "Просмотрено"
 						},
 						"topics_viewed": {
-							"displayName": "Просмотренные темы"
+							"displayName": "Просмотрено тем"
 						},
 						"trust_level": {
 							"displayName": "Уровень доверия"
@@ -239,8 +239,8 @@
 					}
 				},
 				"showEmails": {
-					"displayName": "Показать электронные письма",
-					"description": "Включать ли адреса электронной почты пользователей"
+					"displayName": "Показывать email",
+					"description": "Включать ли адреса email пользователей"
 				},
 				"stats": {
 					"displayName": "Статистика",
@@ -250,7 +250,7 @@
 		},
 		"usernames": {
 			"displayName": "Имена пользователей",
-			"description": "Имена пользователей, которые нужно удалить из группы. Множественные числа могут быть определены через запятую."
+			"description": "Имена пользователей для удаления из группы. Несколько имён можно указать через запятую."
 		}
 	}
 }

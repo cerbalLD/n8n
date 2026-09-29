@@ -1,7 +1,7 @@
 {
 	"header": {
 		"displayName": "GitLab",
-		"description": "Получить данные из GitLab API"
+		"description": "Получить данные из API GitLab"
 	},
 	"nodeView": {
 		"authentication": {
@@ -22,7 +22,7 @@
 					"displayName": "Файл"
 				},
 				"issue": {
-					"displayName": "Проблема"
+					"displayName": "Задача"
 				},
 				"release": {
 					"displayName": "Выпускать"
@@ -39,12 +39,12 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать новый файл в репозитории"
 				},
 				"createComment": {
 					"displayName": "Создать комментарий",
-					"description": "Создать новый комментарий к проблеме"
+					"description": "Создать комментарий к задаче"
 				},
 				"edit": {
 					"displayName": "Редактировать",
@@ -55,12 +55,12 @@
 					"description": "Получить данные одного файла"
 				},
 				"lock": {
-					"displayName": "Замок",
+					"displayName": "Заблокировать",
 					"description": "Заблокировать задачу"
 				},
 				"getIssues": {
-					"displayName": "Получить проблемы",
-					"description": "Возвращает проблемы репозитория"
+					"displayName": "Получить задачи",
+					"description": "Возвращает задачи репозитория"
 				},
 				"getRepositories": {
 					"displayName": "Получить репозитории",
@@ -72,144 +72,144 @@
 				},
 				"getAll": {
 					"displayName": "Получить много",
-					"description": "Получите много релизов"
+					"description": "Получить множество релизов"
 				},
 				"update": {
-					"displayName": "Обновлять",
-					"description": "Обновить выпуск"
+					"displayName": "Обновить",
+					"description": "Обновить релиз"
 				},
 				"list": {
 					"displayName": "Список",
-					"description": "Вывести содержимое папки"
+					"description": "Показать содержимое папки"
 				}
 			}
 		},
 		"owner": {
 			"displayName": "Владелец проекта",
-			"description": "Пользователь, группа или пространство имен проекта",
+			"description": "Пользователь, группа или пространство имён проекта",
 			"placeholder": "n8n-io"
 		},
 		"repository": {
-			"displayName": "Название проекта",
+			"displayName": "Имя проекта",
 			"description": "Название проекта",
-			"placeholder": "н8н"
+			"placeholder": "n8n"
 		},
 		"title": {
-			"displayName": "Заголовок",
-			"description": "Название вопроса"
+			"displayName": "Название",
+			"description": "Заголовок задачи"
 		},
 		"body": {
 			"displayName": "Тело",
-			"description": "Тело комментария"
+			"description": "Текст комментария"
 		},
 		"due_date": {
 			"displayName": "Срок оплаты",
-			"description": "Срок выдачи"
+			"description": "Срок выполнения задачи"
 		},
 		"labels": {
-			"displayName": "Этикетки",
-			"multipleValueButtonText": "Добавить ярлык",
+			"displayName": "Метки",
+			"multipleValueButtonText": "Добавить метку",
 			"options": {
 				"label": {
-					"displayName": "Этикетка",
-					"description": "Ярлык для добавления в задачу"
+					"displayName": "Подпись",
+					"description": "Метка для добавления к задаче"
 				}
 			}
 		},
 		"assignee_ids": {
-			"displayName": "Правопреемники",
-			"multipleValueButtonText": "Добавить правопреемника",
+			"displayName": "Исполнители",
+			"multipleValueButtonText": "Добавить исполнителя",
 			"options": {
 				"assignee": {
 					"displayName": "Правопреемник",
-					"description": "Идентификатор пользователя, которому нужно назначить задачу"
+					"description": "ID пользователя для назначения задачи"
 				}
 			}
 		},
 		"issueNumber": {
-			"displayName": "Номер выпуска",
-			"description": "Номер проблемы для блокировки"
+			"displayName": "Номер задачи",
+			"description": "Номер задачи для блокировки"
 		},
 		"editFields": {
 			"displayName": "Редактировать поля",
 			"multipleValueButtonText": "Добавить поле",
 			"options": {
 				"title": {
-					"displayName": "Заголовок",
-					"description": "Название вопроса"
+					"displayName": "Название",
+					"description": "Заголовок задачи"
 				},
 				"description": {
 					"displayName": "Тело",
-					"description": "Основная часть проблемы"
+					"description": "Текст задачи"
 				},
 				"state": {
-					"displayName": "Состояние",
-					"description": "Состояние, которое нужно установить",
+					"displayName": "область",
+					"description": "Состояние для установки",
 					"options": {
 						"closed": {
 							"displayName": "Закрыто",
-							"description": "Установите состояние «закрыто»."
+							"description": "Установить состояние «закрыто»"
 						},
 						"open": {
 							"displayName": "Открыть",
-							"description": "Установите состояние «открыто»."
+							"description": "Установить состояние «открыто»"
 						}
 					}
 				},
 				"labels": {
 					"values": {
 						"labels": {
-							"displayName": "Этикетки"
+							"displayName": "Метки"
 						},
 						"label": {
-							"displayName": "Этикетка",
-							"description": "Ярлык для добавления в задачу"
+							"displayName": "Подпись",
+							"description": "Метка для добавления к задаче"
 						}
 					},
-					"displayName": "Этикетки"
+					"displayName": "Метки"
 				},
 				"assignee_ids": {
 					"values": {
 						"assignee_ids": {
-							"displayName": "Правопреемники"
+							"displayName": "Исполнители"
 						},
 						"assignee": {
-							"displayName": "Правопреемники",
-							"description": "Пользователь тоже может назначить задачу"
+							"displayName": "Исполнители",
+							"description": "Пользователь для назначения на задачу"
 						}
 					},
-					"displayName": "Правопреемники"
+					"displayName": "Исполнители"
 				},
 				"due_date": {
 					"displayName": "Срок оплаты",
-					"description": "Срок выдачи"
+					"description": "Срок выполнения задачи"
 				}
 			}
 		},
 		"lockReason": {
 			"displayName": "Причина блокировки",
-			"description": "Причина блокировки проблемы",
+			"description": "Причина блокировки задачи",
 			"options": {
 				"off-topic": {
 					"displayName": "Не по теме",
-					"description": "Вопрос не по теме"
+					"description": "Задача не по теме"
 				},
 				"too heated": {
-					"displayName": "Слишком жарко",
-					"description": "Дискуссия слишком горячая"
+					"displayName": "Слишком горячо",
+					"description": "Обсуждение слишком горячее"
 				},
 				"resolved": {
 					"displayName": "Решено",
-					"description": "Проблема решена"
+					"description": "Задача решена"
 				},
 				"spam": {
 					"displayName": "Спам",
-					"description": "Проблема в спаме"
+					"description": "Задача — это спам"
 				}
 			}
 		},
 		"releaseTag": {
-			"displayName": "Ярлык",
+			"displayName": "Тег",
 			"description": "Тег релиза"
 		},
 		"additionalFields": {
@@ -218,31 +218,31 @@
 			"options": {
 				"name": {
 					"displayName": "Имя",
-					"description": "Название выпуска"
+					"description": "Имя релиза"
 				},
 				"description": {
 					"displayName": "Описание",
-					"description": "Описание выпуска. Вы можете использовать Маркдаун."
+					"description": "Описание релиза. Поддерживается синтаксис Markdown."
 				},
 				"ref": {
 					"displayName": "Ссылка",
 					"description": "Если тег не существует, релиз будет создан на основе ссылки. Это может быть SHA фиксации, другое имя тега или имя ветки."
 				},
 				"order_by": {
-					"displayName": "Заказать по",
-					"description": "Поле для использования в качестве заказа",
+					"displayName": "Сортировать по",
+					"description": "Поле для сортировки",
 					"options": {
 						"created_at": {
-							"displayName": "Создано в"
+							"displayName": "Создано"
 						},
 						"released_at": {
-							"displayName": "Выпущено в"
+							"displayName": "Дата выпуска"
 						}
 					}
 				},
 				"sort": {
-					"displayName": "Сортировать",
-					"description": "Направление заказа. .",
+					"displayName": "Сортировка",
+					"description": "Направление сортировки.",
 					"options": {
 						"asc": {
 							"displayName": "ASC"
@@ -254,21 +254,21 @@
 				},
 				"milestones": {
 					"displayName": "Вехи",
-					"description": "Название каждой вехи, связанной с выпуском (предоставьте список названий, разделенный запятой)."
+					"description": "Названия вех для привязки к релизу (укажите список названий, разделённый запятыми)"
 				},
 				"released_at": {
-					"displayName": "Выпущено в",
-					"description": "Дата, когда релиз готов/был готов"
+					"displayName": "Дата выпуска",
+					"description": "Дата, когда релиз готов или был готов"
 				}
 			}
 		},
 		"projectId": {
 			"displayName": "Идентификатор проекта",
-			"description": "Идентификатор или путь к проекту в кодировке URL."
+			"description": "ID проекта или URL-кодированный путь"
 		},
 		"tag_name": {
 			"displayName": "Имя тега",
-			"description": "Тег Git, с которым связан релиз."
+			"description": "Тег Git, связанный с релизом"
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",
@@ -276,7 +276,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"getRepositoryIssuesFilters": {
 			"displayName": "Фильтры",
@@ -292,40 +292,40 @@
 				},
 				"search": {
 					"displayName": "Поиск",
-					"description": "Искать проблемы по их названию и описанию"
+					"description": "Искать задачи по названию и описанию"
 				},
 				"labels": {
-					"displayName": "Этикетки",
-					"description": "Возвращать только проблемы с указанными метками. Несколько меток могут быть разделены запятой."
+					"displayName": "Метки",
+					"description": "Возвращать только задачи с указанными метками. Несколько метак можно разделить запятыми."
 				},
 				"updated_after": {
 					"displayName": "Обновлено после",
-					"description": "Возвращать только выпуски, обновленные в это время или позже."
+					"description": "Возвращать только задачи, обновлённые после этого времени"
 				},
 				"state": {
-					"displayName": "Состояние",
-					"description": "Состояние для фильтрации",
+					"displayName": "область",
+					"description": "Статус для фильтрации",
 					"options": {
 						"": {
 							"displayName": "Все",
-							"description": "Возвращает проблемы с любым состоянием"
+							"description": "Возвращает задачи любого состояния"
 						},
 						"closed": {
 							"displayName": "Закрыто",
-							"description": "Проблемы с возвратом с «закрытым» состоянием"
+							"description": "Возвращает закрытые задачи"
 						},
 						"opened": {
 							"displayName": "Открыть",
-							"description": "Проблемы с возвратом с «открытым» состоянием"
+							"description": "Возвращает открытые задачи"
 						}
 					}
 				},
 				"order_by": {
-					"displayName": "Сортировать",
-					"description": "Порядок, в котором вопросы должны быть возвращены",
+					"displayName": "Сортировка",
+					"description": "Порядок возврата задач",
 					"options": {
 						"created_at": {
-							"displayName": "Создано в",
+							"displayName": "Создано",
 							"description": "Сортировать по дате создания"
 						},
 						"updated_at": {
@@ -343,7 +343,7 @@
 					"description": "Порядок сортировки",
 					"options": {
 						"asc": {
-							"displayName": "восходящий",
+							"displayName": "По возрастанию",
 							"description": "Сортировать по возрастанию"
 						},
 						"desc": {
@@ -357,41 +357,41 @@
 		"filePath": {
 			"displayName": "Путь",
 			"description": "Путь к папке для отображения",
-			"placeholder": "документы/"
+			"placeholder": "docs/"
 		},
 		"page": {
 			"displayName": "Страница",
-			"description": "Страница результатов для отображения"
+			"description": "Страница результатов"
 		},
 		"additionalParameters": {
 			"displayName": "Дополнительные параметры",
-			"description": "Дополнительные поля для добавления",
+			"description": "Дополнительные поля",
 			"placeholder": "Добавить параметр",
 			"options": {
 				"ref": {
 					"displayName": "Ссылка",
 					"description": "Имя коммита/ветки/тега. По умолчанию: ветка репозитория по умолчанию (обычно основная).",
-					"placeholder": "основной"
+					"placeholder": "main"
 				},
 				"recursive": {
-					"displayName": "Рекурсивный",
-					"description": "Получать или нет рекурсивное дерево файлов. По умолчанию — ложь."
+					"displayName": "Рекурсивно",
+					"description": "Получать ли рекурсивное дерево файлов. По умолчанию — false."
 				},
 				"reference": {
 					"displayName": "Ссылка",
 					"description": "Имя коммита/ветки/тега. По умолчанию: ветка репозитория по умолчанию (обычно основная).",
-					"placeholder": "основной"
+					"placeholder": "main"
 				},
 				"additionalParameters": {
 					"displayName": "Дополнительные параметры",
-					"description": "Дополнительные поля для добавления"
+					"description": "Дополнительные поля"
 				},
 				"branchStart": {
-					"displayName": "Начать ветку",
+					"displayName": "Исходная ветка",
 					"values": {
 						"branchStart": {
-							"displayName": "Начать ветку",
-							"description": "Имя базовой ветки, на основе которой создается новая ветка."
+							"displayName": "Исходная ветка",
+							"description": "Имя базовой ветки, на основе которой создаётся новая ветка"
 						}
 					}
 				},
@@ -404,17 +404,17 @@
 						},
 						"email": {
 							"displayName": "Электронная почта",
-							"description": "Электронная почта автора коммита",
+							"description": "Email автора коммита",
 							"placeholder": "имя@email.com"
 						}
 					}
 				},
 				"encoding": {
-					"displayName": "Кодирование",
+					"displayName": "Кодировка",
 					"values": {
 						"encoding": {
-							"displayName": "Кодирование",
-							"description": "Измените кодировку на base64. По умолчанию — текст."
+							"displayName": "Кодировка",
+							"description": "Изменить кодировку на base64. По умолчанию — текстовый формат."
 						}
 					}
 				}
@@ -422,11 +422,11 @@
 		},
 		"asBinaryProperty": {
 			"displayName": "Как двоичное свойство",
-			"description": "Устанавливать ли данные файла как двоичное свойство вместо возврата необработанного ответа API."
+			"description": "Устанавливать данные файла как двоичное свойство вместо ответа API"
 		},
 		"binaryPropertyName": {
 			"displayName": "Входное двоичное поле",
-			"hint": "Имя входного двоичного поля, содержащего файл для записи."
+			"hint": "Имя входного двоичного поля, содержащего файл для записи"
 		},
 		"binaryData": {
 			"displayName": "Двоичный файл",
@@ -437,11 +437,11 @@
 			"description": "Текстовое содержимое файла"
 		},
 		"commitMessage": {
-			"displayName": "Зафиксировать сообщение"
+			"displayName": "Сообщение коммита"
 		},
 		"branch": {
-			"displayName": "Ветвь",
-			"description": "Имя новой создаваемой ветки. Коммит добавляется в эту ветку."
+			"displayName": "Ветка",
+			"description": "Имя новой ветки. Коммит будет добавлен в эту ветку."
 		}
 	}
 }

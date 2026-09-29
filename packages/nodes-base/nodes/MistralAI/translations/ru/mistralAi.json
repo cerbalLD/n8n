@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Мистраль ИИ",
-		"description": "Используйте API Mistral AI"
+		"displayName": "Mistral AI",
+		"description": "Использование API Mistral AI"
 	},
 	"nodeView": {
 		"resource": {
@@ -16,17 +16,17 @@
 			"displayName": "Операция",
 			"options": {
 				"extractText": {
-					"displayName": "Извлечь текст",
-					"description": "Извлечь текст из документа с помощью OCR"
+					"displayName": "Распознавание текста",
+					"description": "Распознавание текста в документе с использованием OCR"
 				}
 			}
 		},
 		"model": {
 			"displayName": "Модель",
-			"description": "Используемая модель OCR",
+			"description": "Модель OCR для использования",
 			"options": {
 				"mistral-ocr-latest": {
-					"displayName": "мистраль-ocr-последний"
+					"displayName": "mistral-ocr-latest"
 				}
 			}
 		},
@@ -44,7 +44,7 @@
 		},
 		"inputType": {
 			"displayName": "Тип входа",
-			"description": "Как будет предоставляться документ",
+			"description": "Способ предоставления документа",
 			"options": {
 				"binary": {
 					"displayName": "Двоичные данные"
@@ -56,13 +56,13 @@
 		},
 		"binaryProperty": {
 			"displayName": "Входное двоичное поле",
-			"description": "Имя входного двоичного поля, содержащего файл для обработки.",
-			"hint": "Размер загружаемых файлов документов не должен превышать 50 МБ и содержать не более 1000 страниц.",
-			"placeholder": "например данные"
+			"description": "Имя поля входного двоичного потока, содержащего файл для обработки.",
+			"hint": "Размер загружаемых файлов документов не должен превышать 50 МБ и иметь более 1000 страниц.",
+			"placeholder": "например data"
 		},
 		"url": {
 			"displayName": "URL",
-			"description": "URL-адрес документа или изображения для обработки",
+			"description": "URL документа или изображения для обработки",
 			"placeholder": "например https://example.com/document.pdf"
 		},
 		"options": {
@@ -71,10 +71,10 @@
 			"options": {
 				"batch": {
 					"displayName": "Включить пакетную обработку",
-					"description": "Следует ли обрабатывать несколько документов за один вызов API (более экономично)"
+					"description": "Обрабатывать ли несколько документов за один вызов API (более экономично)."
 				},
 				"batchSize": {
-					"displayName": "Размер партии",
+					"displayName": "Размер пакета",
 					"description": "Максимальное количество документов для обработки в одном пакете"
 				},
 				"deleteFiles": {

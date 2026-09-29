@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Медный триггер",
-		"description": "Обработка событий Copper через веб-перехватчики"
+		"displayName": "Триггер Copper",
+		"description": "Обработка событий Copper через вебхуки"
 	},
 	"nodeView": {
 		"resource": {
@@ -12,7 +12,7 @@
 					"displayName": "Компания"
 				},
 				"lead": {
-					"displayName": "Вести"
+					"displayName": "Лид"
 				},
 				"opportunity": {
 					"displayName": "Возможность"
@@ -30,19 +30,19 @@
 		},
 		"event": {
 			"displayName": "Событие",
-			"description": "Событие, которое стоит послушать",
+			"description": "Событие для прослушивания",
 			"options": {
 				"delete": {
 					"displayName": "Удалить",
 					"description": "Существующая запись удалена"
 				},
 				"new": {
-					"displayName": "Новый",
-					"description": "Создается новая запись"
+					"displayName": "Создать",
+					"description": "Создана новая запись"
 				},
 				"update": {
-					"displayName": "Обновлять",
-					"description": "Любое поле в существующей записи объекта изменяется."
+					"displayName": "Обновить",
+					"description": "Любое поле в записи сущности изменилось"
 				}
 			}
 		}

@@ -1,7 +1,7 @@
 {
 	"header": {
 		"displayName": "PostHog",
-		"description": "Использование PostHog API"
+		"description": "Использовать API PostHog"
 	},
 	"nodeView": {
 		"resource": {
@@ -14,7 +14,7 @@
 					"displayName": "Событие"
 				},
 				"identity": {
-					"displayName": "Личность"
+					"displayName": "Идентификатор"
 				},
 				"track": {
 					"displayName": "Отслеживать"
@@ -25,7 +25,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать событие"
 				},
 				"page": {
@@ -34,7 +34,7 @@
 				},
 				"screen": {
 					"displayName": "Экран",
-					"description": "Отслеживание экрана"
+					"description": "Отслеживать экран"
 				}
 			}
 		},
@@ -61,7 +61,7 @@
 									"displayName": "Ключ"
 								},
 								"value": {
-									"displayName": "Ценить"
+									"displayName": "Значение"
 								}
 							}
 						}
@@ -76,7 +76,7 @@
 				},
 				"timestamp": {
 					"displayName": "Временная метка",
-					"description": "Если не установлено, будет автоматически установлено текущее время."
+					"description": "При пропуске устанавливается текущее время"
 				},
 				"propertiesUi": {
 					"values": {
@@ -89,7 +89,7 @@
 									"displayName": "Ключ"
 								},
 								"value": {
-									"displayName": "Ценить"
+									"displayName": "Значение"
 								}
 							}
 						}
@@ -112,7 +112,7 @@
 		},
 		"eventName": {
 			"displayName": "Событие",
-			"description": "Название мероприятия"
+			"description": "Имя события"
 		},
 		"name": {
 			"displayName": "Имя"

@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Триггер трубопроводного привода",
-		"description": "Запускает рабочий процесс при возникновении событий Pipedrive."
+		"displayName": "Триггер Pipedrive",
+		"description": "Запускает рабочий процесс при событиях Pipedrive"
 	},
 	"nodeView": {
 		"authentication": {
@@ -17,7 +17,7 @@
 		},
 		"incomingAuthentication": {
 			"displayName": "Входящая аутентификация",
-			"description": "Должна ли быть активирована аутентификация для веб-перехватчика (делает его более безопасным)",
+			"description": "Активировать ли аутентификацию для вебхука (повышает безопасность)",
 			"options": {
 				"basicAuth": {
 					"displayName": "Базовая аутентификация"
@@ -29,10 +29,10 @@
 		},
 		"action": {
 			"displayName": "Действие",
-			"description": "Тип действия, о котором необходимо получать уведомления",
+			"description": "Тип действия для уведомлений",
 			"options": {
 				"added": {
-					"displayName": "Добавлен",
+					"displayName": "Добавлено",
 					"description": "Данные добавлены"
 				},
 				"*": {
@@ -45,14 +45,14 @@
 				},
 				"merged": {
 					"displayName": "Объединено",
-					"description": "Данные были объединены"
+					"description": "Данные объединены"
 				},
 				"updated": {
 					"displayName": "Обновлено",
 					"description": "Данные обновлены"
 				},
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Данные добавлены"
 				},
 				"delete": {
@@ -66,23 +66,23 @@
 			}
 		},
 		"entity": {
-			"displayName": "Сущность",
-			"description": "Тип объекта, о котором нужно получать уведомления",
+			"displayName": "Объект",
+			"description": "Тип объекта для уведомлений",
 			"options": {
 				"activity": {
 					"displayName": "Активность"
 				},
 				"activityType": {
-					"displayName": "Тип деятельности"
+					"displayName": "Тип действия"
 				},
 				"*": {
 					"displayName": "Все"
 				},
 				"deal": {
-					"displayName": "Иметь дело"
+					"displayName": "Сделка"
 				},
 				"lead": {
-					"displayName": "Вести"
+					"displayName": "Лид"
 				},
 				"note": {
 					"displayName": "Примечание"
@@ -109,22 +109,22 @@
 		},
 		"object": {
 			"displayName": "Объект",
-			"description": "Тип объекта, о котором нужно получать уведомления",
+			"description": "Тип объекта для уведомлений",
 			"options": {
 				"activity": {
 					"displayName": "Активность"
 				},
 				"activityType": {
-					"displayName": "Тип деятельности"
+					"displayName": "Тип действия"
 				},
 				"*": {
 					"displayName": "Все"
 				},
 				"deal": {
-					"displayName": "Иметь дело"
+					"displayName": "Сделка"
 				},
 				"lead": {
-					"displayName": "Вести"
+					"displayName": "Лид"
 				},
 				"note": {
 					"displayName": "Примечание"

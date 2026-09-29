@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Пайпдрайв",
-		"description": "Создание и редактирование данных в Pipedrive"
+		"displayName": "Pipedrive",
+		"description": "Создавать и редактировать данные в Pipedrive"
 	},
 	"nodeView": {
 		"authentication": {
@@ -22,16 +22,16 @@
 					"displayName": "Активность"
 				},
 				"deal": {
-					"displayName": "Иметь дело"
+					"displayName": "Сделка"
 				},
 				"dealProduct": {
-					"displayName": "Сделка по продукту"
+					"displayName": "Продукт сделки"
 				},
 				"file": {
 					"displayName": "Файл"
 				},
 				"lead": {
-					"displayName": "Вести"
+					"displayName": "Лид"
 				},
 				"note": {
 					"displayName": "Примечание"
@@ -51,7 +51,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать продукт"
 				},
 				"delete": {
@@ -67,7 +67,7 @@
 					"description": "Получите много продуктов"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить продукт"
 				},
 				"duplicate": {
@@ -76,15 +76,15 @@
 				},
 				"search": {
 					"displayName": "Поиск",
-					"description": "Поиск продуктов"
+					"description": "Искать продукты"
 				},
 				"add": {
-					"displayName": "Добавлять",
-					"description": "Добавьте товар в сделку"
+					"displayName": "Добавить",
+					"description": "Добавить продукт в сделку"
 				},
 				"remove": {
 					"displayName": "Удалять",
-					"description": "Удалить товар из сделки"
+					"description": "Удалить продукт из сделки"
 				},
 				"download": {
 					"displayName": "Скачать",
@@ -94,44 +94,44 @@
 		},
 		"subject": {
 			"displayName": "Предмет",
-			"description": "Предмет деятельности по созданию"
+			"description": "Тема действия для создания"
 		},
 		"done": {
-			"displayName": "Сделанный",
-			"description": "Независимо от того, выполнено ли действие или нет"
+			"displayName": "Готово",
+			"description": "Выполнено ли действие"
 		},
 		"type": {
 			"displayName": "Тип",
-			"description": "Тип действия, например «звонок», «встреча» и т. д.",
-			"placeholder": "вызов"
+			"description": "Тип действия (звонок, встреча и т. д.)",
+			"placeholder": "звонок"
 		},
 		"additionalFields": {
 			"displayName": "Дополнительные поля",
 			"placeholder": "Добавить поле",
 			"options": {
 				"deal_id": {
-					"displayName": "Идентификатор сделки",
-					"description": "Идентификатор сделки, с которой будет связана эта заметка"
+					"displayName": "ID сделки",
+					"description": "Идентификатор сделки для связи"
 				},
 				"due_date": {
 					"displayName": "Срок оплаты",
-					"description": "Срок выполнения действия ГГГГ-ММ-ДД"
+					"description": "Срок выполнения (ГГГГ-ММ-ДД)"
 				},
 				"note": {
 					"displayName": "Примечание",
-					"description": "Примечание о деятельности (формат HTML)"
+					"description": "Примечание действия (HTML)"
 				},
 				"org_id": {
-					"displayName": "Название или идентификатор организации",
-					"description": "Идентификатор организации, к которой будет принадлежать этот человек. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Название или ID организации",
+					"description": "Идентификатор организации. Выберите из списка или укажите через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 				},
 				"person_id": {
-					"displayName": "Идентификатор человека",
-					"description": "Идентификатор человека, с которым будет связана эта заметка"
+					"displayName": "ID человека",
+					"description": "Идентификатор человека для связи заметки"
 				},
 				"user_id": {
-					"displayName": "Имя пользователя или идентификатор",
-					"description": "Идентификатор активного пользователя, которому будет закреплена сделка. Если этот параметр не указан, сделка будет закреплена за авторизованным пользователем. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Имя пользователя или ID",
+					"description": "Идентификатор пользователя для назначения сделки. При пропуске назначится текущему пользователю. Выберите или укажите через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 				},
 				"customFields": {
 					"values": {
@@ -141,12 +141,12 @@
 						"property": {
 							"options": {
 								"name": {
-									"displayName": "Имя поля или идентификатор",
-									"description": "Имя или ключ настраиваемого поля, как оно отображается в Pipedrive."
+									"displayName": "Имя поля или ID",
+									"description": "Имя или ключ пользовательского поля в Pipedrive"
 								},
 								"value": {
 									"displayName": "Значение поля",
-									"description": "Значение, которое нужно установить для настраиваемого поля"
+									"description": "Значение для пользовательского поля"
 								}
 							}
 						}
@@ -160,41 +160,41 @@
 					}
 				},
 				"currency": {
-					"displayName": "Валюта",
-					"description": "Валюта сделки. Принимает трехзначный код валюты. Например, евро, доллары США, ..."
+					"displayName": "валюта",
+					"description": "Валюта сделки (трёхсимвольный код: EUR, USD и т. д.)"
 				},
 				"expected_close_date": {
 					"displayName": "Ожидаемая дата закрытия",
-					"description": "Ожидаемая дата закрытия сделки с этим лидом (ГГГГ-ММ-ДД)"
+					"description": "Ожидаемая дата закрытия сделки (ГГГГ-ММ-ДД)"
 				},
 				"label_ids": {
-					"displayName": "Имена или идентификаторы этикеток",
+					"displayName": "Имена или идентификаторы меток",
 					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
 				},
 				"lost_reason": {
-					"displayName": "Потерянная причина",
-					"description": "Причина, по которой сделка была проиграна"
+					"displayName": "Причина потери",
+					"description": "Причина, по которой сделка была потеряна"
 				},
 				"probability": {
 					"displayName": "Вероятность",
 					"description": "Процент вероятности успеха сделки"
 				},
 				"stage_id": {
-					"displayName": "Сценическое имя или идентификатор",
-					"description": "Идентификатор этапа, на котором сделка будет помещена в конвейер. Если этот параметр опущен, сделка будет помещена на первый этап конвейера по умолчанию. (ТРУБОПРОВОД > ЭТАП). Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Название этапа или идентификатор",
+					"description": "Идентификатор этапа конвейера. При пропуске — первый этап по умолчанию. Выберите или укажите через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 				},
 				"status": {
 					"displayName": "Статус",
-					"description": "Статус сделки. Если этот параметр не указан, ему автоматически будет присвоено значение «открыто».",
+					"description": "Статус сделки. По умолчанию «открыта».",
 					"options": {
 						"open": {
 							"displayName": "Открыть"
 						},
 						"won": {
-							"displayName": "Выиграл"
+							"displayName": "Выиграна"
 						},
 						"lost": {
-							"displayName": "Потерянный"
+							"displayName": "Потеряна"
 						},
 						"deleted": {
 							"displayName": "Удалено"
@@ -202,12 +202,12 @@
 					}
 				},
 				"value": {
-					"displayName": "Ценить",
-					"description": "Потенциальная денежная стоимость, связанная с лидом",
+					"displayName": "Значение",
+					"description": "Потенциальная стоимость лида",
 					"values": {
 						"value": {
-							"displayName": "Ценить",
-							"description": "Потенциальная денежная стоимость, связанная с лидом"
+							"displayName": "Значение",
+							"description": "Потенциальная стоимость лида"
 						},
 						"valueProperties": {
 							"options": {
@@ -215,7 +215,7 @@
 									"displayName": "Количество"
 								},
 								"currency": {
-									"displayName": "Валюта",
+									"displayName": "валюта",
 									"options": {
 										"AFN": {
 											"displayName": "афгани"
@@ -230,25 +230,25 @@
 											"displayName": "Австралийский доллар"
 										},
 										"AZN": {
-											"displayName": "Азербайджанский манат"
+											"displayName": "азербайджанский манат"
 										},
 										"BSD": {
 											"displayName": "Багамский доллар"
 										},
 										"THB": {
-											"displayName": "Бат"
+											"displayName": "батт"
 										},
 										"BBD": {
-											"displayName": "Барбадосский доллар"
+											"displayName": "барбадосский доллар"
 										},
 										"BZD": {
 											"displayName": "Белизский доллар"
 										},
 										"BMD": {
-											"displayName": "Бермудский доллар"
+											"displayName": "бермудский доллар"
 										},
 										"BOB": {
-											"displayName": "Боливиано"
+											"displayName": "боливиано"
 										},
 										"BRL": {
 											"displayName": "Бразильский реал"
@@ -269,10 +269,10 @@
 											"displayName": "Колумбийское песо"
 										},
 										"NIO": {
-											"displayName": "Кордова Оро"
+											"displayName": "кордоба"
 										},
 										"CRC": {
-											"displayName": "Костариканский колон"
+											"displayName": "костариканский колон"
 										},
 										"CZK": {
 											"displayName": "Чешская крона"
@@ -284,10 +284,10 @@
 											"displayName": "Доминиканское песо"
 										},
 										"VND": {
-											"displayName": "Донг"
+											"displayName": "донг"
 										},
 										"XCD": {
-											"displayName": "Восточно-карибский доллар"
+											"displayName": "Восточнокарибский доллар"
 										},
 										"EGP": {
 											"displayName": "Египетский фунт"
@@ -296,16 +296,16 @@
 											"displayName": "Евро"
 										},
 										"FJD": {
-											"displayName": "Фиджийский доллар"
+											"displayName": "фиджийский доллар"
 										},
 										"HUF": {
-											"displayName": "Форинт"
+											"displayName": "форинт"
 										},
 										"HKD": {
 											"displayName": "Гонконгский доллар"
 										},
 										"UAH": {
-											"displayName": "Гривна"
+											"displayName": "гривна"
 										},
 										"INR": {
 											"displayName": "Индийская рупия"
@@ -317,34 +317,34 @@
 											"displayName": "Кенийский шиллинг"
 										},
 										"PGK": {
-											"displayName": "Кина"
+											"displayName": "кина"
 										},
 										"HRK": {
-											"displayName": "Куна"
+											"displayName": "куна"
 										},
 										"MMK": {
-											"displayName": "Кьят"
+											"displayName": "кьят"
 										},
 										"LAK": {
-											"displayName": "Лао Кип"
+											"displayName": "лаосский кип"
 										},
 										"LBP": {
 											"displayName": "Ливанский фунт"
 										},
 										"ALL": {
-											"displayName": "Лек"
+											"displayName": "лек"
 										},
 										"HNL": {
-											"displayName": "Лемпира"
+											"displayName": "лемпира"
 										},
 										"LRD": {
 											"displayName": "Либерийский доллар"
 										},
 										"MYR": {
-											"displayName": "Малазийский ринггит"
+											"displayName": "Малайзийский ринггит"
 										},
 										"MUR": {
-											"displayName": "Маврикийская рупия"
+											"displayName": "маврикийская рупия"
 										},
 										"MXN": {
 											"displayName": "Мексиканское песо"
@@ -356,7 +356,7 @@
 											"displayName": "Непальская рупия"
 										},
 										"ILS": {
-											"displayName": "Новый израильский шекель"
+											"displayName": "новый израильский шекель"
 										},
 										"TWD": {
 											"displayName": "Новый тайваньский доллар"
@@ -368,64 +368,64 @@
 											"displayName": "Норвежская крона"
 										},
 										"MRO": {
-											"displayName": "Угия"
+											"displayName": "угия"
 										},
 										"TOP": {
 											"displayName": "Паанга"
 										},
 										"PKR": {
-											"displayName": "Пакистанская рупия"
+											"displayName": "пакистанская рупия"
 										},
 										"MOP": {
-											"displayName": "Патака"
+											"displayName": "патака"
 										},
 										"PHP": {
 											"displayName": "Филиппинское песо"
 										},
 										"GBP": {
-											"displayName": "Фунт стерлингов"
+											"displayName": "британский фунт"
 										},
 										"BWP": {
-											"displayName": "Пула"
+											"displayName": "пула"
 										},
 										"QAR": {
 											"displayName": "Катарский риал"
 										},
 										"GTQ": {
-											"displayName": "Кецаль"
+											"displayName": "кецаль"
 										},
 										"ZAR": {
-											"displayName": "Рэнд"
+											"displayName": "южноафриканский ранд"
 										},
 										"RON": {
 											"displayName": "Румынский лей"
 										},
 										"MVR": {
-											"displayName": "Руфияа"
+											"displayName": "мальдивская руфия"
 										},
 										"IDR": {
-											"displayName": "Рупия"
+											"displayName": "индонезийская рупия"
 										},
 										"RUB": {
 											"displayName": "Российский рубль"
 										},
 										"SAR": {
-											"displayName": "Саудовский риал"
+											"displayName": "Саудовский риял"
 										},
 										"SCR": {
-											"displayName": "Сейшельская рупия"
+											"displayName": "сейшельская рупия"
 										},
 										"SGD": {
 											"displayName": "Сингапурский доллар"
 										},
 										"PEN": {
-											"displayName": "Сол"
+											"displayName": "перуанский соль"
 										},
 										"SBD": {
 											"displayName": "Доллар Соломоновых Островов"
 										},
 										"LKR": {
-											"displayName": "Шри-Ланкийская рупия"
+											"displayName": "шри-ланкийская рупия"
 										},
 										"SEK": {
 											"displayName": "Шведская крона"
@@ -437,13 +437,13 @@
 											"displayName": "Сирийский фунт"
 										},
 										"BDT": {
-											"displayName": "Така"
+											"displayName": "бангладешская така"
 										},
 										"WST": {
-											"displayName": "Тала"
+											"displayName": "самоанская тала"
 										},
 										"KZT": {
-											"displayName": "Тенге"
+											"displayName": "казахский тенге"
 										},
 										"TTD": {
 											"displayName": "Доллар Тринидада и Тобаго"
@@ -452,31 +452,31 @@
 											"displayName": "Турецкая лира"
 										},
 										"AED": {
-											"displayName": "Дирхам ОАЭ"
+											"displayName": "дирхам ОАЭ"
 										},
 										"USD": {
-											"displayName": "Доллар США"
+											"displayName": "доллар США"
 										},
 										"VUV": {
-											"displayName": "Вату"
+											"displayName": "вануатский вату"
 										},
 										"XOF": {
-											"displayName": "Западноафриканский франк КФА"
+											"displayName": "франк КФА WAEMU"
 										},
 										"KRW": {
-											"displayName": "Выиграл"
+											"displayName": "Выиграна"
 										},
 										"YER": {
 											"displayName": "Йеменский риал"
 										},
 										"JPY": {
-											"displayName": "Йена"
+											"displayName": "японская йена"
 										},
 										"CNY": {
-											"displayName": "Юань женьминьби"
+											"displayName": "китайский юань"
 										},
 										"PLN": {
-											"displayName": "злотый"
+											"displayName": "польский злотый"
 										}
 									}
 								}
@@ -490,11 +490,11 @@
 					}
 				},
 				"visible_to": {
-					"displayName": "Виден для",
-					"description": "Видимость товара. Если этот параметр опущен, для авторизованного пользователя будет установлена ​​видимость по умолчанию для этого типа элемента.",
+					"displayName": "Видимо для",
+					"description": "Видимость элемента. При пропуске используется видимость по умолчанию.",
 					"options": {
 						"1": {
-							"displayName": "Владелец и подписчики (частное)"
+							"displayName": "Владелец и подписчики (приватно)"
 						},
 						"3": {
 							"displayName": "Вся компания (совместно)"
@@ -503,19 +503,19 @@
 				},
 				"includeFields": {
 					"displayName": "Включить поля",
-					"description": "Поддерживает включение в результаты необязательных полей, которые не предусмотрены по умолчанию."
+					"description": "Включать дополнительные поля в результаты"
 				},
 				"organizationId": {
-					"displayName": "Идентификатор организации",
-					"description": "Будет фильтровать людей по предоставленному идентификатору организации."
+					"displayName": "ID организации",
+					"description": "Фильтровать людей по организации"
 				},
 				"personId": {
-					"displayName": "Идентификатор человека",
-					"description": "Будет фильтровать предложения по предоставленному идентификатору человека."
+					"displayName": "ID человека",
+					"description": "Фильтровать сделки по человеку"
 				},
 				"fields": {
 					"displayName": "Поля поиска",
-					"description": "Поля, по которым осуществляется поиск. По умолчанию для всех из них.",
+					"description": "Поля для поиска. По умолчанию все.",
 					"options": {
 						"custom_fields": {
 							"displayName": "Пользовательские поля"
@@ -524,7 +524,7 @@
 							"displayName": "Примечания"
 						},
 						"title": {
-							"displayName": "Заголовок"
+							"displayName": "Название"
 						},
 						"address": {
 							"displayName": "Адрес"
@@ -545,11 +545,11 @@
 				},
 				"comments": {
 					"displayName": "Комментарии",
-					"description": "Текст, описывающий это приложение к сделке."
+					"description": "Описание приложения продукта к сделке"
 				},
 				"discount": {
 					"displayName": "Скидка",
-					"description": "Величина скидки. Тип скидки можно указать в Discount_type."
+					"description": "Размер скидки (тип указывается отдельно)"
 				},
 				"discount_type": {
 					"displayName": "Тип скидки",
@@ -565,49 +565,49 @@
 				},
 				"tax": {
 					"displayName": "Налог",
-					"description": "Налоговый процент"
+					"description": "Процент налога"
 				},
 				"activity_id": {
-					"displayName": "Идентификатор действия",
-					"description": "Идентификатор активности, с которой будет связан этот файл"
+					"displayName": "ID деятельности",
+					"description": "Идентификатор действия для связи файла"
 				},
 				"lead_id": {
 					"displayName": "Идентификатор лида",
-					"description": "Идентификатор лида, с которым будет связана эта заметка"
+					"description": "Идентификатор лида для связи заметки"
 				},
 				"product_id": {
-					"displayName": "Идентификатор продукта",
-					"description": "Идентификатор продукта, с которым будет связан этот файл"
+					"displayName": "ID товара",
+					"description": "Идентификатор продукта для связи файла"
 				},
 				"organization_id": {
-					"displayName": "Идентификатор организации",
-					"description": "Идентификатор организации для ссылки на этот лид"
+					"displayName": "ID организации",
+					"description": "Идентификатор организации для связи с лидом"
 				},
 				"owner_id": {
-					"displayName": "Идентификатор владельца",
-					"description": "Идентификатор пользователя, который будет отмечен как владелец этого продукта"
+					"displayName": "ID владельца",
+					"description": "Идентификатор владельца продукта"
 				},
 				"was_seen": {
-					"displayName": "Был замечен",
-					"description": "Был ли лид замечен кем-то в пользовательском интерфейсе Pipedrive"
+					"displayName": "Просмотрено",
+					"description": "Был ли лид просмотрен в интерфейсе Pipedrive"
 				},
 				"pinned_to_deal_flag": {
 					"displayName": "Прикреплено к сделке",
 					"description": "Прикреплена ли заметка к сделке"
 				},
 				"pinned_to_organization_flag": {
-					"displayName": "Закреплено в организации",
+					"displayName": "Прикреплено к организации",
 					"description": "Прикреплена ли заметка к организации"
 				},
 				"pinned_to_person_flag": {
-					"displayName": "Прикреплено к пользователю",
+					"displayName": "Прикреплено к человеку",
 					"description": "Прикреплена ли заметка к человеку"
 				},
 				"emails": {
 					"values": {
 						"emails": {
-							"displayName": "Электронная почта",
-							"description": "Адреса электронной почты человека"
+							"displayName": "Email-адреса",
+							"description": "Адреса электронной почты"
 						},
 						"emailProperties": {
 							"options": {
@@ -616,28 +616,28 @@
 									"placeholder": "имя@email.com"
 								},
 								"primary": {
-									"displayName": "Начальный",
-									"description": "Является ли это основным адресом электронной почты"
+									"displayName": "Основной",
+									"description": "Основной адрес электронной почты"
 								},
 								"label": {
-									"displayName": "Этикетка",
+									"displayName": "Подпись",
 									"options": {
 										"home": {
 											"displayName": "Дом"
 										},
 										"work": {
-											"displayName": "Работа"
+											"displayName": "Рабочий"
 										},
 										"other": {
-											"displayName": "Другой"
+											"displayName": "Другое"
 										}
 									}
 								}
 							}
 						}
 					},
-					"displayName": "Электронная почта",
-					"description": "Адреса электронной почты человека",
+					"displayName": "Email-адреса",
+					"description": "Адреса электронной почты",
 					"options": {
 						"emailProperties": {
 							"displayName": "Электронная почта"
@@ -648,7 +648,7 @@
 					"values": {
 						"phones": {
 							"displayName": "Телефоны",
-							"description": "Телефонные номера человека"
+							"description": "Номера телефонов"
 						},
 						"phoneProperties": {
 							"options": {
@@ -656,23 +656,23 @@
 									"displayName": "Номер телефона"
 								},
 								"primary": {
-									"displayName": "Начальный",
-									"description": "Является ли это основным номером телефона"
+									"displayName": "Основной",
+									"description": "Основной номер телефона"
 								},
 								"label": {
-									"displayName": "Этикетка",
+									"displayName": "Подпись",
 									"options": {
 										"home": {
 											"displayName": "Дом"
 										},
 										"mobile": {
-											"displayName": "мобильный"
+											"displayName": "Мобильный"
 										},
 										"work": {
-											"displayName": "Работа"
+											"displayName": "Рабочий"
 										},
 										"other": {
-											"displayName": "Другой"
+											"displayName": "Другое"
 										}
 									}
 								}
@@ -680,7 +680,7 @@
 						}
 					},
 					"displayName": "Телефоны",
-					"description": "Телефонные номера человека",
+					"description": "Номера телефонов",
 					"options": {
 						"phoneProperties": {
 							"displayName": "Телефон"
@@ -703,11 +703,11 @@
 									"description": "Цена продукта"
 								},
 								"currency": {
-									"displayName": "Валюта",
-									"description": "Валюта цены (3-буквенный код, например, доллар США, евро)"
+									"displayName": "валюта",
+									"description": "Валюта (трёхсимвольный код: USD, EUR и т. д.)"
 								},
 								"cost": {
-									"displayName": "Расходы",
+									"displayName": "Стоимость",
 									"description": "Стоимость продукта"
 								}
 							}
@@ -723,21 +723,21 @@
 				},
 				"unit": {
 					"displayName": "Единица",
-					"description": "Единица, в которой продается этот продукт"
+					"description": "Единица измерения продукта"
 				}
 			}
 		},
 		"rawCustomFieldKeys": {
-			"displayName": "Используйте необработанные ключи полей",
-			"description": "Следует ли предоставлять необработанные ключи полей Pipedrive и идентификаторы опций вместо удобочитаемых имен."
+			"displayName": "Использовать необработанные ключи полей",
+			"description": "Использовать необработанные ключи полей вместо понятных имён"
 		},
 		"activityId": {
-			"displayName": "Идентификатор действия",
-			"description": "Идентификатор действия для обновления"
+			"displayName": "ID деятельности",
+			"description": "ID деятельности для обновления"
 		},
 		"rawCustomFieldOutput": {
-			"displayName": "Показать необработанные ключи полей",
-			"description": "Показывать ли в выводе необработанные ключи полей Pipedrive и идентификаторы опций вместо удобочитаемых имен."
+			"displayName": "Показывать необработанные ключи полей",
+			"description": "Показывать в выводе необработанные ключи вместо понятных имён"
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",
@@ -745,71 +745,71 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"filters": {
 			"displayName": "Фильтры",
 			"placeholder": "Добавить фильтр",
 			"options": {
 				"dealId": {
-					"displayName": "Идентификатор сделки",
-					"description": "Если установлено, возвращаются только действия, связанные с этой сделкой."
+					"displayName": "ID сделки",
+					"description": "Возвращать только действия, связанные с этой сделкой"
 				},
 				"done": {
-					"displayName": "Сделанный",
-					"description": "Независимо от того, выполнено ли действие или нет. Если этот параметр опущен, возвращаются действия «Выполнено» и «Не выполнено»."
+					"displayName": "Готово",
+					"description": "Выполнено ли действие. При пропуске возвращаются оба типа."
 				},
 				"end_date": {
 					"displayName": "Дата окончания",
-					"description": "Дата окончания фильтрации заметок в формате ГГГГ-ММ-ДД."
+					"description": "Дата окончания (ГГГГ-ММ-ДД)"
 				},
 				"filterId": {
-					"displayName": "Предопределенное имя или идентификатор фильтра",
-					"description": "Идентификатор используемого фильтра (при использовании вместе с параметром user_id результаты сузятся). Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Имя или идентификатор фильтра",
+					"description": "Идентификатор фильтра (сужает результаты вместе с user_id). Выберите или укажите через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 				},
 				"start_date": {
 					"displayName": "Дата начала",
-					"description": "Дата начала фильтрации заметок в формате ГГГГ-ММ-ДД."
+					"description": "Дата начала (ГГГГ-ММ-ДД)"
 				},
 				"type": {
-					"displayName": "Введите имена или идентификаторы",
-					"description": "Вид деятельности. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Имена или идентификаторы типов",
+					"description": "Тип действия. Выберите из списка или укажите через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 				},
 				"user_id": {
-					"displayName": "Имя пользователя или идентификатор",
-					"description": "Идентификатор пользователя, по которому нужно фильтровать сделки. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Имя пользователя или ID",
+					"description": "Идентификатор пользователя для фильтрации. Выберите или укажите через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 				},
 				"filter_id": {
-					"displayName": "Предопределенное имя или идентификатор фильтра",
-					"description": "Предопределенный фильтр, применяемый к людям, которых требуется получить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Имя или идентификатор фильтра",
+					"description": "Фильтр для получения людей. Выберите или укажите через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 				},
 				"stage_id": {
-					"displayName": "Сценическое имя или идентификатор",
-					"description": "Идентификатор этапа, по которому нужно фильтровать сделки. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Название этапа или идентификатор",
+					"description": "Идентификатор этапа для фильтрации. Выберите или укажите через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 				},
 				"status": {
 					"displayName": "Статус",
-					"description": "Статус для фильтрации сделок. По умолчанию <code>all_not_deleted</code>",
+					"description": "Статус для фильтрации. По умолчанию <code>all_not_deleted</code>",
 					"options": {
 						"all_not_deleted": {
-							"displayName": "Все не удалено"
+							"displayName": "Все не удалённые"
 						},
 						"deleted": {
 							"displayName": "Удалено"
 						},
 						"lost": {
-							"displayName": "Потерянный"
+							"displayName": "Потеряна"
 						},
 						"open": {
 							"displayName": "Открыть"
 						},
 						"won": {
-							"displayName": "Выиграл"
+							"displayName": "Выиграна"
 						}
 					}
 				},
 				"archived_status": {
-					"displayName": "Статус в архиве",
+					"displayName": "Статус архива",
 					"options": {
 						"all": {
 							"displayName": "Все"
@@ -818,55 +818,55 @@
 							"displayName": "В архиве"
 						},
 						"not_archived": {
-							"displayName": "Не в архиве"
+							"displayName": "Не архивировано"
 						}
 					}
 				},
 				"organization_id": {
-					"displayName": "Идентификатор организации",
-					"description": "Фильтровать потенциальных клиентов по идентификатору организации"
+					"displayName": "ID организации",
+					"description": "Фильтровать лидов по организации"
 				},
 				"owner_id": {
 					"displayName": "Имя или идентификатор владельца",
-					"description": "Фильтровать потенциальных клиентов по владельцу. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"description": "Фильтровать лидов по владельцу. Выберите или укажите через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 				},
 				"person_id": {
-					"displayName": "Идентификатор человека",
-					"description": "Фильтрация заметок по идентификатору человека"
+					"displayName": "ID человека",
+					"description": "Фильтровать заметки по человеку"
 				},
 				"deal_id": {
-					"displayName": "Идентификатор сделки",
-					"description": "Фильтрация заметок по идентификатору сделки"
+					"displayName": "ID сделки",
+					"description": "Фильтровать заметки по сделке"
 				},
 				"lead_id": {
 					"displayName": "Идентификатор лида",
-					"description": "Фильтрация заметок по идентификатору лида"
+					"description": "Фильтровать заметки по лиду"
 				},
 				"org_id": {
-					"displayName": "Название или идентификатор организации",
-					"description": "Фильтрация заметок по организации. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Название или ID организации",
+					"description": "Фильтровать заметки по организации. Выберите или укажите через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 				},
 				"pinned_to_deal_flag": {
 					"displayName": "Прикреплено к сделке",
-					"description": "Фильтровать ли по заметкам, прикрепленным к сделке"
+					"description": "Фильтровать по заметкам, прикреплённым к сделке"
 				},
 				"pinned_to_organization_flag": {
-					"displayName": "Закреплено в организации",
-					"description": "Фильтровать ли по заметкам, закрепленным за организацией"
+					"displayName": "Прикреплено к организации",
+					"description": "Фильтровать по заметкам, прикреплённым к организации"
 				},
 				"pinned_to_person_flag": {
-					"displayName": "Прикреплено к пользователю",
-					"description": "Фильтровать ли по заметкам, прикрепленным к человеку"
+					"displayName": "Прикреплено к человеку",
+					"description": "Фильтровать по заметкам, прикреплённым к человеку"
 				},
 				"sort": {
-					"displayName": "Сортировать",
+					"displayName": "Сортировка",
 					"description": "Поле для сортировки",
 					"options": {
 						"id": {
 							"displayName": "ID"
 						},
 						"update_time": {
-							"displayName": "Обновить время"
+							"displayName": "Время обновления"
 						},
 						"content": {
 							"displayName": "Содержание"
@@ -874,8 +874,8 @@
 					}
 				},
 				"first_char": {
-					"displayName": "Первый персонаж",
-					"description": "Фильтровать людей, имя которых начинается с этого символа (один символ)"
+					"displayName": "Первый символ",
+					"description": "Фильтровать людей, имя которых начинается на этот символ"
 				}
 			}
 		},
@@ -884,49 +884,49 @@
 			"placeholder": "Добавить поле",
 			"options": {
 				"busy_flag": {
-					"displayName": "Флаг занятости",
-					"description": "Является ли пользователь занятым во время активности"
+					"displayName": "Признак занятости",
+					"description": "Считать ли пользователя занятым во время действия"
 				},
 				"deal_id": {
-					"displayName": "Идентификатор сделки",
-					"description": "Идентификатор сделки, с которой будет связана эта заметка"
+					"displayName": "ID сделки",
+					"description": "Идентификатор сделки для связи"
 				},
 				"done": {
-					"displayName": "Сделанный",
-					"description": "Независимо от того, выполнено ли действие или нет"
+					"displayName": "Готово",
+					"description": "Выполнено ли действие"
 				},
 				"due_date": {
 					"displayName": "Срок оплаты",
-					"description": "Срок выполнения действия ГГГГ-ММ-ДД"
+					"description": "Срок выполнения (ГГГГ-ММ-ДД)"
 				},
 				"note": {
 					"displayName": "Примечание",
-					"description": "Примечание о деятельности (формат HTML)"
+					"description": "Примечание действия (HTML)"
 				},
 				"org_id": {
-					"displayName": "Название или идентификатор организации",
-					"description": "Идентификатор организации, к которой будет принадлежать этот человек. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Название или ID организации",
+					"description": "Идентификатор организации. Выберите из списка или укажите через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 				},
 				"person_id": {
-					"displayName": "Идентификатор человека",
-					"description": "Идентификатор человека, с которым будет связана эта заметка"
+					"displayName": "ID человека",
+					"description": "Идентификатор человека для связи заметки"
 				},
 				"public_description": {
-					"displayName": "Публичное описание",
-					"description": "Дополнительные сведения о деятельности, которая синхронизируется с вашим внешним календарем."
+					"displayName": "Открытое описание",
+					"description": "Дополнительные сведения, которые синхронизируются с внешним календарём"
 				},
 				"subject": {
 					"displayName": "Предмет",
-					"description": "Предмет деятельности"
+					"description": "Тема действия"
 				},
 				"type": {
 					"displayName": "Тип",
-					"description": "Тип действия, например «звонок», «встреча» и т. д.",
-					"placeholder": "вызов"
+					"description": "Тип действия (звонок, встреча и т. д.)",
+					"placeholder": "звонок"
 				},
 				"user_id": {
-					"displayName": "Имя пользователя или идентификатор",
-					"description": "Идентификатор активного пользователя, которому будет закреплена сделка. Если этот параметр не указан, сделка будет закреплена за авторизованным пользователем. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Имя пользователя или ID",
+					"description": "Идентификатор пользователя для назначения сделки. При пропуске назначится текущему пользователю. Выберите или укажите через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 				},
 				"customFields": {
 					"values": {
@@ -936,12 +936,12 @@
 						"property": {
 							"options": {
 								"name": {
-									"displayName": "Имя поля или идентификатор",
-									"description": "Имя или ключ настраиваемого поля, как оно отображается в Pipedrive."
+									"displayName": "Имя поля или ID",
+									"description": "Имя или ключ пользовательского поля в Pipedrive"
 								},
 								"value": {
 									"displayName": "Значение поля",
-									"description": "Значение, которое нужно установить для настраиваемого поля"
+									"description": "Значение для пользовательского поля"
 								}
 							}
 						}
@@ -955,41 +955,41 @@
 					}
 				},
 				"currency": {
-					"displayName": "Валюта",
-					"description": "Валюта сделки. Принимает трехзначный код валюты. Например, евро, доллары США, ..."
+					"displayName": "валюта",
+					"description": "Валюта сделки (трёхсимвольный код: EUR, USD и т. д.)"
 				},
 				"expected_close_date": {
 					"displayName": "Ожидаемая дата закрытия",
-					"description": "Ожидаемая дата закрытия сделки с этим лидом (ГГГГ-ММ-ДД)"
+					"description": "Ожидаемая дата закрытия сделки (ГГГГ-ММ-ДД)"
 				},
 				"label_ids": {
-					"displayName": "Имена или идентификаторы этикеток",
+					"displayName": "Имена или идентификаторы меток",
 					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
 				},
 				"lost_reason": {
-					"displayName": "Потерянная причина",
-					"description": "Причина, по которой сделка была проиграна"
+					"displayName": "Причина потери",
+					"description": "Причина, по которой сделка была потеряна"
 				},
 				"probability": {
 					"displayName": "Вероятность",
 					"description": "Процент вероятности успеха сделки"
 				},
 				"stage_id": {
-					"displayName": "Сценическое имя или идентификатор",
-					"description": "Идентификатор этапа, на котором сделка будет помещена в конвейер. Если этот параметр опущен, сделка будет помещена на первый этап конвейера по умолчанию. (ТРУБОПРОВОД > ЭТАП). Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Название этапа или идентификатор",
+					"description": "Идентификатор этапа конвейера. При пропуске — первый этап по умолчанию. Выберите или укажите через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 				},
 				"status": {
 					"displayName": "Статус",
-					"description": "Статус сделки. Если этот параметр не указан, ему автоматически будет присвоено значение «открыто».",
+					"description": "Статус сделки. По умолчанию «открыта».",
 					"options": {
 						"open": {
 							"displayName": "Открыть"
 						},
 						"won": {
-							"displayName": "Выиграл"
+							"displayName": "Выиграна"
 						},
 						"lost": {
-							"displayName": "Потерянный"
+							"displayName": "Потеряна"
 						},
 						"deleted": {
 							"displayName": "Удалено"
@@ -997,16 +997,16 @@
 					}
 				},
 				"title": {
-					"displayName": "Заголовок",
-					"description": "Имя лида, которого необходимо обновить"
+					"displayName": "Название",
+					"description": "Имя лида для обновления"
 				},
 				"value": {
-					"displayName": "Ценить",
-					"description": "Потенциальная денежная стоимость, связанная с лидом",
+					"displayName": "Значение",
+					"description": "Потенциальная стоимость лида",
 					"values": {
 						"value": {
-							"displayName": "Ценить",
-							"description": "Потенциальная денежная стоимость, связанная с лидом"
+							"displayName": "Значение",
+							"description": "Потенциальная стоимость лида"
 						},
 						"valueProperties": {
 							"options": {
@@ -1014,7 +1014,7 @@
 									"displayName": "Количество"
 								},
 								"currency": {
-									"displayName": "Валюта",
+									"displayName": "валюта",
 									"options": {
 										"AFN": {
 											"displayName": "афгани"
@@ -1029,25 +1029,25 @@
 											"displayName": "Австралийский доллар"
 										},
 										"AZN": {
-											"displayName": "Азербайджанский манат"
+											"displayName": "азербайджанский манат"
 										},
 										"BSD": {
 											"displayName": "Багамский доллар"
 										},
 										"THB": {
-											"displayName": "Бат"
+											"displayName": "батт"
 										},
 										"BBD": {
-											"displayName": "Барбадосский доллар"
+											"displayName": "барбадосский доллар"
 										},
 										"BZD": {
 											"displayName": "Белизский доллар"
 										},
 										"BMD": {
-											"displayName": "Бермудский доллар"
+											"displayName": "бермудский доллар"
 										},
 										"BOB": {
-											"displayName": "Боливиано"
+											"displayName": "боливиано"
 										},
 										"BRL": {
 											"displayName": "Бразильский реал"
@@ -1068,10 +1068,10 @@
 											"displayName": "Колумбийское песо"
 										},
 										"NIO": {
-											"displayName": "Кордова Оро"
+											"displayName": "кордоба"
 										},
 										"CRC": {
-											"displayName": "Костариканский колон"
+											"displayName": "костариканский колон"
 										},
 										"CZK": {
 											"displayName": "Чешская крона"
@@ -1083,10 +1083,10 @@
 											"displayName": "Доминиканское песо"
 										},
 										"VND": {
-											"displayName": "Донг"
+											"displayName": "донг"
 										},
 										"XCD": {
-											"displayName": "Восточно-карибский доллар"
+											"displayName": "Восточнокарибский доллар"
 										},
 										"EGP": {
 											"displayName": "Египетский фунт"
@@ -1095,16 +1095,16 @@
 											"displayName": "Евро"
 										},
 										"FJD": {
-											"displayName": "Фиджийский доллар"
+											"displayName": "фиджийский доллар"
 										},
 										"HUF": {
-											"displayName": "Форинт"
+											"displayName": "форинт"
 										},
 										"HKD": {
 											"displayName": "Гонконгский доллар"
 										},
 										"UAH": {
-											"displayName": "Гривна"
+											"displayName": "гривна"
 										},
 										"INR": {
 											"displayName": "Индийская рупия"
@@ -1116,34 +1116,34 @@
 											"displayName": "Кенийский шиллинг"
 										},
 										"PGK": {
-											"displayName": "Кина"
+											"displayName": "кина"
 										},
 										"HRK": {
-											"displayName": "Куна"
+											"displayName": "куна"
 										},
 										"MMK": {
-											"displayName": "Кьят"
+											"displayName": "кьят"
 										},
 										"LAK": {
-											"displayName": "Лао Кип"
+											"displayName": "лаосский кип"
 										},
 										"LBP": {
 											"displayName": "Ливанский фунт"
 										},
 										"ALL": {
-											"displayName": "Лек"
+											"displayName": "лек"
 										},
 										"HNL": {
-											"displayName": "Лемпира"
+											"displayName": "лемпира"
 										},
 										"LRD": {
 											"displayName": "Либерийский доллар"
 										},
 										"MYR": {
-											"displayName": "Малазийский ринггит"
+											"displayName": "Малайзийский ринггит"
 										},
 										"MUR": {
-											"displayName": "Маврикийская рупия"
+											"displayName": "маврикийская рупия"
 										},
 										"MXN": {
 											"displayName": "Мексиканское песо"
@@ -1155,7 +1155,7 @@
 											"displayName": "Непальская рупия"
 										},
 										"ILS": {
-											"displayName": "Новый израильский шекель"
+											"displayName": "новый израильский шекель"
 										},
 										"TWD": {
 											"displayName": "Новый тайваньский доллар"
@@ -1167,64 +1167,64 @@
 											"displayName": "Норвежская крона"
 										},
 										"MRO": {
-											"displayName": "Угия"
+											"displayName": "угия"
 										},
 										"TOP": {
 											"displayName": "Паанга"
 										},
 										"PKR": {
-											"displayName": "Пакистанская рупия"
+											"displayName": "пакистанская рупия"
 										},
 										"MOP": {
-											"displayName": "Патака"
+											"displayName": "патака"
 										},
 										"PHP": {
 											"displayName": "Филиппинское песо"
 										},
 										"GBP": {
-											"displayName": "Фунт стерлингов"
+											"displayName": "британский фунт"
 										},
 										"BWP": {
-											"displayName": "Пула"
+											"displayName": "пула"
 										},
 										"QAR": {
 											"displayName": "Катарский риал"
 										},
 										"GTQ": {
-											"displayName": "Кецаль"
+											"displayName": "кецаль"
 										},
 										"ZAR": {
-											"displayName": "Рэнд"
+											"displayName": "южноафриканский ранд"
 										},
 										"RON": {
 											"displayName": "Румынский лей"
 										},
 										"MVR": {
-											"displayName": "Руфияа"
+											"displayName": "мальдивская руфия"
 										},
 										"IDR": {
-											"displayName": "Рупия"
+											"displayName": "индонезийская рупия"
 										},
 										"RUB": {
 											"displayName": "Российский рубль"
 										},
 										"SAR": {
-											"displayName": "Саудовский риал"
+											"displayName": "Саудовский риял"
 										},
 										"SCR": {
-											"displayName": "Сейшельская рупия"
+											"displayName": "сейшельская рупия"
 										},
 										"SGD": {
 											"displayName": "Сингапурский доллар"
 										},
 										"PEN": {
-											"displayName": "Сол"
+											"displayName": "перуанский соль"
 										},
 										"SBD": {
 											"displayName": "Доллар Соломоновых Островов"
 										},
 										"LKR": {
-											"displayName": "Шри-Ланкийская рупия"
+											"displayName": "шри-ланкийская рупия"
 										},
 										"SEK": {
 											"displayName": "Шведская крона"
@@ -1236,13 +1236,13 @@
 											"displayName": "Сирийский фунт"
 										},
 										"BDT": {
-											"displayName": "Така"
+											"displayName": "бангладешская така"
 										},
 										"WST": {
-											"displayName": "Тала"
+											"displayName": "самоанская тала"
 										},
 										"KZT": {
-											"displayName": "Тенге"
+											"displayName": "казахский тенге"
 										},
 										"TTD": {
 											"displayName": "Доллар Тринидада и Тобаго"
@@ -1251,31 +1251,31 @@
 											"displayName": "Турецкая лира"
 										},
 										"AED": {
-											"displayName": "Дирхам ОАЭ"
+											"displayName": "дирхам ОАЭ"
 										},
 										"USD": {
-											"displayName": "Доллар США"
+											"displayName": "доллар США"
 										},
 										"VUV": {
-											"displayName": "Вату"
+											"displayName": "вануатский вату"
 										},
 										"XOF": {
-											"displayName": "Западноафриканский франк КФА"
+											"displayName": "франк КФА WAEMU"
 										},
 										"KRW": {
-											"displayName": "Выиграл"
+											"displayName": "Выиграна"
 										},
 										"YER": {
 											"displayName": "Йеменский риал"
 										},
 										"JPY": {
-											"displayName": "Йена"
+											"displayName": "японская йена"
 										},
 										"CNY": {
-											"displayName": "Юань женьминьби"
+											"displayName": "китайский юань"
 										},
 										"PLN": {
-											"displayName": "злотый"
+											"displayName": "польский злотый"
 										}
 									}
 								}
@@ -1289,11 +1289,11 @@
 					}
 				},
 				"visible_to": {
-					"displayName": "Виден для",
-					"description": "Видимость товара. Если этот параметр опущен, для авторизованного пользователя будет установлена ​​видимость по умолчанию для этого типа элемента.",
+					"displayName": "Видимо для",
+					"description": "Видимость элемента. При пропуске используется видимость по умолчанию.",
 					"options": {
 						"1": {
-							"displayName": "Владелец и подписчики (частное)"
+							"displayName": "Владелец и подписчики (приватно)"
 						},
 						"3": {
 							"displayName": "Вся компания (совместно)"
@@ -1302,11 +1302,11 @@
 				},
 				"comments": {
 					"displayName": "Комментарии",
-					"description": "Текст, описывающий это приложение к сделке."
+					"description": "Описание приложения продукта к сделке"
 				},
 				"discount": {
 					"displayName": "Скидка",
-					"description": "Величина скидки. Тип скидки можно указать в Discount_type."
+					"description": "Размер скидки (тип указывается отдельно)"
 				},
 				"discount_type": {
 					"displayName": "Тип скидки",
@@ -1321,62 +1321,62 @@
 					}
 				},
 				"item_price": {
-					"displayName": "Цена товара",
-					"description": "Цена обновления этого продукта в сделке"
+					"displayName": "Цена позиции",
+					"description": "Цена для обновления продукта в сделке"
 				},
 				"quantity": {
 					"displayName": "Количество",
-					"description": "Сколько позиций этого товара в акции"
+					"description": "Количество позиций продукта в сделке"
 				},
 				"tax": {
 					"displayName": "Налог",
-					"description": "Налоговый процент"
+					"description": "Процент налога"
 				},
 				"name": {
 					"displayName": "Имя",
-					"description": "Название продукта"
+					"description": "Название товара"
 				},
 				"description": {
 					"displayName": "Описание",
-					"description": "Обновленное описание файла"
+					"description": "Новое описание файла"
 				},
 				"is_archived": {
 					"displayName": "В архиве",
-					"description": "Архивируется ли лид"
+					"description": "Архивирован ли лид"
 				},
 				"owner_id": {
-					"displayName": "Идентификатор владельца",
-					"description": "Идентификатор пользователя, который будет отмечен как владелец этого продукта"
+					"displayName": "ID владельца",
+					"description": "Идентификатор владельца продукта"
 				},
 				"was_seen": {
-					"displayName": "Был замечен",
-					"description": "Был ли лид замечен кем-то в пользовательском интерфейсе Pipedrive"
+					"displayName": "Просмотрено",
+					"description": "Был ли лид просмотрен в интерфейсе Pipedrive"
 				},
 				"content": {
 					"displayName": "Содержание",
-					"description": "Содержание заметки"
+					"description": "Содержимое заметки"
 				},
 				"lead_id": {
 					"displayName": "Идентификатор лида",
-					"description": "Идентификатор лида, с которым будет связана эта заметка"
+					"description": "Идентификатор лида для связи заметки"
 				},
 				"pinned_to_deal_flag": {
 					"displayName": "Прикреплено к сделке",
 					"description": "Прикреплена ли заметка к сделке"
 				},
 				"pinned_to_organization_flag": {
-					"displayName": "Закреплено в организации",
+					"displayName": "Прикреплено к организации",
 					"description": "Прикреплена ли заметка к организации"
 				},
 				"pinned_to_person_flag": {
-					"displayName": "Прикреплено к пользователю",
+					"displayName": "Прикреплено к человеку",
 					"description": "Прикреплена ли заметка к человеку"
 				},
 				"emails": {
 					"values": {
 						"emails": {
-							"displayName": "Электронная почта",
-							"description": "Адреса электронной почты человека"
+							"displayName": "Email-адреса",
+							"description": "Адреса электронной почты"
 						},
 						"emailProperties": {
 							"options": {
@@ -1385,28 +1385,28 @@
 									"placeholder": "имя@email.com"
 								},
 								"primary": {
-									"displayName": "Начальный",
-									"description": "Является ли это основным адресом электронной почты"
+									"displayName": "Основной",
+									"description": "Основной адрес электронной почты"
 								},
 								"label": {
-									"displayName": "Этикетка",
+									"displayName": "Подпись",
 									"options": {
 										"home": {
 											"displayName": "Дом"
 										},
 										"work": {
-											"displayName": "Работа"
+											"displayName": "Рабочий"
 										},
 										"other": {
-											"displayName": "Другой"
+											"displayName": "Другое"
 										}
 									}
 								}
 							}
 						}
 					},
-					"displayName": "Электронная почта",
-					"description": "Адреса электронной почты человека",
+					"displayName": "Email-адреса",
+					"description": "Адреса электронной почты",
 					"options": {
 						"emailProperties": {
 							"displayName": "Электронная почта"
@@ -1417,7 +1417,7 @@
 					"values": {
 						"phones": {
 							"displayName": "Телефоны",
-							"description": "Телефонные номера человека"
+							"description": "Номера телефонов"
 						},
 						"phoneProperties": {
 							"options": {
@@ -1425,23 +1425,23 @@
 									"displayName": "Номер телефона"
 								},
 								"primary": {
-									"displayName": "Начальный",
-									"description": "Является ли это основным номером телефона"
+									"displayName": "Основной",
+									"description": "Основной номер телефона"
 								},
 								"label": {
-									"displayName": "Этикетка",
+									"displayName": "Подпись",
 									"options": {
 										"home": {
 											"displayName": "Дом"
 										},
 										"mobile": {
-											"displayName": "мобильный"
+											"displayName": "Мобильный"
 										},
 										"work": {
-											"displayName": "Работа"
+											"displayName": "Рабочий"
 										},
 										"other": {
-											"displayName": "Другой"
+											"displayName": "Другое"
 										}
 									}
 								}
@@ -1449,7 +1449,7 @@
 						}
 					},
 					"displayName": "Телефоны",
-					"description": "Телефонные номера человека",
+					"description": "Номера телефонов",
 					"options": {
 						"phoneProperties": {
 							"displayName": "Телефон"
@@ -1472,11 +1472,11 @@
 									"description": "Цена продукта"
 								},
 								"currency": {
-									"displayName": "Валюта",
-									"description": "Валюта цены (3-буквенный код, например, доллар США, евро)"
+									"displayName": "валюта",
+									"description": "Валюта (трёхсимвольный код: USD, EUR и т. д.)"
 								},
 								"cost": {
-									"displayName": "Расходы",
+									"displayName": "Стоимость",
 									"description": "Стоимость продукта"
 								}
 							}
@@ -1492,17 +1492,17 @@
 				},
 				"unit": {
 					"displayName": "Единица",
-					"description": "Единица, в которой продается этот продукт"
+					"description": "Единица измерения продукта"
 				}
 			}
 		},
 		"title": {
-			"displayName": "Заголовок",
+			"displayName": "Название",
 			"description": "Имя лида для создания"
 		},
 		"associateWith": {
-			"displayName": "Связаться с",
-			"description": "Тип объекта, который необходимо связать с этим лидом",
+			"displayName": "Связать с",
+			"description": "Тип объекта для связи с лидом",
 			"options": {
 				"organization": {
 					"displayName": "Организация"
@@ -1513,52 +1513,52 @@
 			}
 		},
 		"org_id": {
-			"displayName": "Идентификатор организации",
-			"description": "Идентификатор организации, с которой будет связана эта сделка"
+			"displayName": "ID организации",
+			"description": "Идентификатор организации для сделки"
 		},
 		"person_id": {
-			"displayName": "Идентификатор человека",
-			"description": "Идентификатор человека, которого нужно связать с этим лидом"
+			"displayName": "ID человека",
+			"description": "Идентификатор человека для связи с лидом"
 		},
 		"dealId": {
-			"displayName": "Идентификатор сделки",
-			"description": "Идентификатор сделки, продукт которой нужно обновить"
+			"displayName": "ID сделки",
+			"description": "Идентификатор сделки, продукт которой обновить"
 		},
 		"term": {
-			"displayName": "Срок",
-			"description": "Поисковый запрос для поиска. Минимум 2 символа (или 1 при использовании точного_соответствия)."
+			"displayName": "Поисковый термин",
+			"description": "Поисковый запрос (минимум 2 символа, или 1 при точном совпадении)"
 		},
 		"exactMatch": {
 			"displayName": "Точное совпадение",
-			"description": "Возвращаются ли только полные точные совпадения с данным термином. Это не чувствительно к регистру."
+			"description": "Возвращать только полные точные совпадения (без учёта регистра)"
 		},
 		"productId": {
-			"displayName": "Идентификатор продукта",
+			"displayName": "ID товара",
 			"description": "Идентификатор продукта для обновления"
 		},
 		"item_price": {
-			"displayName": "Цена товара",
-			"description": "Цена, по которой можно добавить этот продукт в сделку"
+			"displayName": "Цена позиции",
+			"description": "Цена для добавления продукта в сделку"
 		},
 		"quantity": {
 			"displayName": "Количество",
-			"description": "Сколько позиций этого товара добавить в сделку?"
+			"description": "Количество позиций продукта для добавления в сделку"
 		},
 		"productAttachmentId": {
-			"displayName": "Идентификатор приложения к продукту",
-			"description": "Идентификатор продукта сделки (идентификатор продукта, прикрепленного к сделке, а не сам идентификатор продукта)"
+			"displayName": "Идентификатор приложения продукта",
+			"description": "Идентификатор связи продукта со сделкой (не самого продукта)"
 		},
 		"binaryPropertyName": {
 			"displayName": "Поместите выходной файл в поле",
 			"hint": "Имя выходного двоичного поля, в которое помещается файл."
 		},
 		"fileId": {
-			"displayName": "Идентификатор файла",
+			"displayName": "ID файла",
 			"description": "Идентификатор файла для обновления"
 		},
 		"organization_id": {
-			"displayName": "Идентификатор организации",
-			"description": "Идентификатор организации для ссылки на этот лид"
+			"displayName": "ID организации",
+			"description": "Идентификатор организации для связи с лидом"
 		},
 		"leadId": {
 			"displayName": "Идентификатор лида",
@@ -1566,23 +1566,23 @@
 		},
 		"content": {
 			"displayName": "Содержание",
-			"description": "Содержимое создаваемой заметки"
+			"description": "Содержимое заметки для создания"
 		},
 		"noteId": {
-			"displayName": "Идентификатор заметки",
-			"description": "Идентификатор заметки для обновления"
+			"displayName": "ID заметки",
+			"description": "ID заметки для обновления"
 		},
 		"name": {
 			"displayName": "Имя",
-			"description": "Название продукта"
+			"description": "Название товара"
 		},
 		"organizationId": {
-			"displayName": "Идентификатор организации",
+			"displayName": "ID организации",
 			"description": "Идентификатор организации для обновления"
 		},
 		"personId": {
-			"displayName": "Идентификатор человека",
-			"description": "Идентификатор человека, которого необходимо обновить"
+			"displayName": "ID человека",
+			"description": "Идентификатор человека для обновления"
 		}
 	}
 }

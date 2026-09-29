@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Битварден",
-		"description": "Используйте API Bitwarden"
+		"displayName": "Bitwarden",
+		"description": "Использовать API Bitwarden"
 	},
 	"nodeView": {
 		"resource": {
@@ -17,7 +17,7 @@
 					"displayName": "Группа"
 				},
 				"member": {
-					"displayName": "Член"
+					"displayName": "Участник"
 				}
 			}
 		},
@@ -34,10 +34,10 @@
 					"displayName": "Получить много"
 				},
 				"update": {
-					"displayName": "Обновлять"
+					"displayName": "Обновить"
 				},
 				"create": {
-					"displayName": "Создавать"
+					"displayName": "Создать"
 				},
 				"getMembers": {
 					"displayName": "Получить участников"
@@ -54,8 +54,8 @@
 			}
 		},
 		"collectionId": {
-			"displayName": "Идентификатор коллекции",
-			"description": "Идентификатор коллекции",
+			"displayName": "ID коллекции",
+			"description": "ID коллекции",
 			"placeholder": "5e59c8c7-e05a-4d17-8e85-acc301343926"
 		},
 		"returnAll": {
@@ -64,27 +64,27 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"updateFields": {
 			"displayName": "Обновить поля",
 			"placeholder": "Добавить поле",
 			"options": {
 				"groups": {
-					"displayName": "Имена или идентификаторы групп",
-					"description": "Группа, которой нужно назначить эту коллекцию. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Имена или ID групп",
+					"description": "Группа для назначения коллекции. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"externalId": {
-					"displayName": "Внешний идентификатор",
-					"description": "Внешний идентификатор, который нужно установить для этого члена."
+					"displayName": "Внешний ID",
+					"description": "Внешний идентификатор участника"
 				},
 				"accessAll": {
-					"displayName": "Доступ ко всем",
-					"description": "Разрешить ли этой группе доступ ко всем коллекциям в организации, а не только к связанным с ней коллекциям. Если установлено значение true, этот параметр переопределяет любые назначения коллекций."
+					"displayName": "Доступ ко всему",
+					"description": "Разрешить группе доступ ко всем коллекциям организации, а не только назначенным. Если включено, переопределяет назначения коллекций."
 				},
 				"collections": {
-					"displayName": "Имена или идентификаторы коллекций",
-					"description": "Коллекции, которые нужно назначить этому участнику. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Имена или ID коллекций",
+					"description": "Коллекции для назначения участнику. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"name": {
 					"displayName": "Имя",
@@ -97,7 +97,7 @@
 							"displayName": "Владелец"
 						},
 						"1": {
-							"displayName": "Админ"
+							"displayName": "Администратор"
 						},
 						"2": {
 							"displayName": "Пользователь"
@@ -114,8 +114,8 @@
 			"placeholder": "Добавить фильтр",
 			"options": {
 				"actingUserId": {
-					"displayName": "Действующий идентификатор пользователя",
-					"description": "Уникальный идентификатор действующего пользователя",
+					"displayName": "ID действующего пользователя",
+					"description": "Уникальный ID пользователя",
 					"placeholder": "4a59c8c7-e05a-4d17-8e85-acc301343926"
 				},
 				"end": {
@@ -123,8 +123,8 @@
 					"description": "Дата окончания поиска"
 				},
 				"itemID": {
-					"displayName": "Идентификатор предмета",
-					"description": "Уникальный идентификатор элемента, который описывает событие.",
+					"displayName": "ID элемента",
+					"description": "Уникальный ID элемента события",
 					"placeholder": "5e59c8c7-e05a-4d17-8e85-acc301343926"
 				},
 				"start": {
@@ -134,39 +134,39 @@
 			}
 		},
 		"groupId": {
-			"displayName": "Идентификатор группы",
-			"description": "Идентификатор группы",
+			"displayName": "ID группы",
+			"description": "ID группы",
 			"placeholder": "5e59c8c7-e05a-4d17-8e85-acc301343926"
 		},
 		"name": {
 			"displayName": "Имя",
-			"description": "Название группы, которую нужно создать"
+			"description": "Имя группы для создания"
 		},
 		"accessAll": {
-			"displayName": "Доступ ко всем",
-			"description": "Разрешить ли этой группе доступ ко всем коллекциям в организации, а не только к связанным с ней коллекциям. Если установлено значение true, этот параметр переопределяет любые назначения коллекций."
+			"displayName": "Доступ ко всему",
+			"description": "Разрешить группе доступ ко всем коллекциям организации, а не только назначенным. Если включено, переопределяет назначения коллекций."
 		},
 		"additionalFields": {
 			"displayName": "Дополнительные поля",
 			"placeholder": "Добавить поле",
 			"options": {
 				"collections": {
-					"displayName": "Имена или идентификаторы коллекций",
-					"description": "Коллекции, которые нужно назначить этому участнику. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Имена или ID коллекций",
+					"description": "Коллекции для назначения участнику. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"externalId": {
-					"displayName": "Внешний идентификатор",
-					"description": "Внешний идентификатор, который нужно установить для этого члена."
+					"displayName": "Внешний ID",
+					"description": "Внешний идентификатор участника"
 				}
 			}
 		},
 		"memberIds": {
-			"displayName": "Идентификаторы участников",
-			"description": "Список идентификаторов участников, разделенных запятыми, которые можно установить в группе."
+			"displayName": "ID участников",
+			"description": "ID участников, разделённые запятыми"
 		},
 		"memberId": {
-			"displayName": "Идентификатор участника",
-			"description": "Идентификатор участника",
+			"displayName": "ID участника",
+			"description": "ID участника",
 			"placeholder": "5e59c8c7-e05a-4d17-8e85-acc301343926"
 		},
 		"type": {
@@ -176,7 +176,7 @@
 					"displayName": "Владелец"
 				},
 				"1": {
-					"displayName": "Админ"
+					"displayName": "Администратор"
 				},
 				"2": {
 					"displayName": "Пользователь"
@@ -188,12 +188,12 @@
 		},
 		"email": {
 			"displayName": "Электронная почта",
-			"description": "Электронная почта участника, которого необходимо обновить",
+			"description": "Email участника для обновления",
 			"placeholder": "имя@email.com"
 		},
 		"groupIds": {
-			"displayName": "Идентификаторы групп",
-			"description": "Список идентификаторов групп, разделенных запятыми, которые нужно установить для участника."
+			"displayName": "ID групп",
+			"description": "ID групп, разделённые запятыми"
 		}
 	}
 }

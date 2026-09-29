@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "Блоки данных",
+		"displayName": "Databricks",
 		"description": "Взаимодействие с API Databricks"
 	},
 	"nodeView": {
@@ -19,27 +19,27 @@
 			"displayName": "Ресурс",
 			"options": {
 				"databricksSql": {
-					"displayName": "Блоки данных SQL",
-					"description": "Выполнение SQL-запросов к хранилищам данных. <a href=\"https://docs.databricks.com/sql/index.html\" target=\"_blank\">Подробнее</a>."
+					"displayName": "Databricks SQL",
+					"description": "Выполнение SQL-запросов в хранилищах данных. <a href=\"https://docs.databricks.com/sql/index.html\" target=\"_blank\">Подробнее</a>."
 				},
 				"files": {
 					"displayName": "Файл",
-					"description": "Управляйте файлами в томах каталога Unity. <a href=\"https://docs.databricks.com/api/workspace/files\" target=\"_blank\">Подробнее</a>."
+					"description": "Управление файлами в томах Unity Catalog. <a href=\"https://docs.databricks.com/api/workspace/files\" target=\"_blank\">Подробнее</a>."
 				},
 				"genie": {
-					"displayName": "Джинн",
-					"description": "Помощник по работе с данными на базе искусственного интеллекта. <a href=\"https://docs.databricks.com/genie/index.html\" target=\"_blank\">Подробнее</a>."
+					"displayName": "Genie",
+					"description": "Помощник по работе с данными на основе ИИ. <a href=\"https://docs.databricks.com/genie/index.html\" target=\"_blank\">Подробнее</a>."
 				},
 				"modelServing": {
-					"displayName": "Модельное обслуживание",
-					"description": "Развертывание и запрос моделей машинного обучения. <a href=\"https://docs.databricks.com/machine-learning/model-serving/index.html\" target=\"_blank\">Подробнее</a>."
+					"displayName": "Model Serving",
+					"description": "Развёртывание и запрос моделей машинного обучения. <a href=\"https://docs.databricks.com/machine-learning/model-serving/index.html\" target=\"_blank\">Подробнее</a>."
 				},
 				"unityCatalog": {
-					"displayName": "Каталог Unity",
-					"description": "Единое управление данными и искусственным интеллектом. <a href=\"https://docs.databricks.com/data-governance/unity-catalog/index.html\" target=\"_blank\">Подробнее</a>."
+					"displayName": "Unity Catalog",
+					"description": "Единое управление данными и ИИ. <a href=\"https://docs.databricks.com/data-governance/unity-catalog/index.html\" target=\"_blank\">Подробнее</a>."
 				},
 				"vectorSearch": {
-					"displayName": "Векторный поиск",
+					"displayName": "Vector Search",
 					"description": "Семантический поиск с векторными вложениями. <a href=\"https://docs.databricks.com/generative-ai/vector-search.html\" target=\"_blank\">Подробнее</a>."
 				}
 			}
@@ -53,43 +53,43 @@
 				},
 				"deleteDirectory": {
 					"displayName": "Удалить каталог",
-					"description": "Удалить каталог в томе"
+					"description": "Удалить каталог на томе"
 				},
 				"deleteFile": {
 					"displayName": "Удалить файл",
-					"description": "Удаление файла из тома"
+					"description": "Удалить файл из тома"
 				},
 				"downloadFile": {
-					"displayName": "Скачать файл",
-					"description": "Загрузка содержимого файла из тома"
+					"displayName": "Загрузить файл",
+					"description": "Загрузить содержимое файла из тома"
 				},
 				"getFileInfo": {
 					"displayName": "Получить метаданные файла",
 					"description": "Получить метаданные файла из тома"
 				},
 				"listDirectory": {
-					"displayName": "Список каталогов",
-					"description": "Вывести содержимое каталога в томе"
+					"displayName": "Вывести список каталога",
+					"description": "Вывести содержимое каталога на томе"
 				},
 				"uploadFile": {
 					"displayName": "Загрузить файл",
-					"description": "Загрузите файл (до 5 ГиБ) на тома Databricks."
+					"description": "Загрузить файл (до 5 ГиБ) на тома Databricks"
 				},
 				"createMessage": {
 					"displayName": "Создать сообщение разговора",
-					"description": "Создать новое сообщение беседы"
+					"description": "Создать новое сообщение разговора"
 				},
 				"executeMessageQuery": {
-					"displayName": "Выполнение SQL-запроса сообщения",
-					"description": "Выполнение SQL-запроса из вложения сообщения"
+					"displayName": "Выполнить SQL-запрос сообщения",
+					"description": "Выполнить SQL-запрос из вложения сообщения"
 				},
 				"getMessage": {
 					"displayName": "Получить сообщение разговора",
 					"description": "Получить сообщение разговора по идентификатору"
 				},
 				"getSpace": {
-					"displayName": "Получите пространство для джиннов",
-					"description": "Получите подробную информацию о пространстве Genie"
+					"displayName": "Получить пространство Genie",
+					"description": "Получить подробности пространства Genie"
 				},
 				"getQueryResults": {
 					"displayName": "Получить результаты запроса",
@@ -109,7 +109,7 @@
 				},
 				"createTable": {
 					"displayName": "Создать таблицу",
-					"description": "Зарегистрируйте новый стол"
+					"description": "Зарегистрировать новую таблицу"
 				},
 				"createVolume": {
 					"displayName": "Создать том",
@@ -121,7 +121,7 @@
 				},
 				"deleteFunction": {
 					"displayName": "Удалить функцию",
-					"description": "Удаление функции"
+					"description": "Удалить функцию"
 				},
 				"deleteTable": {
 					"displayName": "Удалить таблицу",
@@ -129,7 +129,7 @@
 				},
 				"deleteVolume": {
 					"displayName": "Удалить том",
-					"description": "Удаление тома"
+					"description": "Удалить том"
 				},
 				"getCatalog": {
 					"displayName": "Получить каталог",
@@ -144,72 +144,72 @@
 					"description": "Получить информацию о таблице"
 				},
 				"getVolume": {
-					"displayName": "Получить объем",
-					"description": "Получить информацию об объеме"
+					"displayName": "Получить том",
+					"description": "Получить информацию о томе"
 				},
 				"listCatalogs": {
-					"displayName": "Получение списка каталогов",
-					"description": "Перечислить все каталоги"
+					"displayName": "Получить список каталогов",
+					"description": "Получить список всех каталогов"
 				},
 				"listFunctions": {
-					"displayName": "Список функций",
-					"description": "Список функций в схеме"
+					"displayName": "Получить список функций",
+					"description": "Получить список функций в схеме"
 				},
 				"listTables": {
-					"displayName": "Список таблиц",
-					"description": "Список таблиц в схеме"
+					"displayName": "Получить список таблиц",
+					"description": "Получить список таблиц в схеме"
 				},
 				"listVolumes": {
-					"displayName": "Получение списка томов",
-					"description": "Список томов в схеме"
+					"displayName": "Получить список томов",
+					"description": "Получить список томов в схеме"
 				},
 				"updateCatalog": {
 					"displayName": "Обновить каталог",
-					"description": "Обновить информацию в каталоге"
+					"description": "Обновить информацию каталога"
 				},
 				"executeQuery": {
 					"displayName": "Выполнить запрос",
-					"description": "Выполните SQL-запрос и дождитесь результатов"
+					"description": "Выполнить SQL-запрос и дождаться результатов"
 				},
 				"queryEndpoint": {
 					"displayName": "Конечная точка запроса",
-					"description": "Запросите конечную точку обслуживания. Формат ввода автоматически определяется из схемы конечной точки."
+					"description": "Запросить конечную точку обслуживания. Формат ввода автоматически определяется из схемы конечной точки."
 				},
 				"createIndex": {
 					"displayName": "Создать индекс",
-					"description": "Создайте новый индекс векторного поиска."
+					"description": "Создать новый индекс векторного поиска"
 				},
 				"getIndex": {
 					"displayName": "Получить индекс",
-					"description": "Получить подробную информацию об индексе векторного поиска"
+					"description": "Получить подробности индекса векторного поиска"
 				},
 				"listIndexes": {
-					"displayName": "Получение списка индексов",
-					"description": "Список всех индексов векторного поиска"
+					"displayName": "Получить список индексов",
+					"description": "Получить список всех индексов векторного поиска"
 				},
 				"queryIndex": {
-					"displayName": "Индекс запроса",
-					"description": "Запрос индекса векторного поиска с текстом или векторами"
+					"displayName": "Запросить индекс",
+					"description": "Запросить индекс векторного поиска текстом или векторами"
 				}
 			}
 		},
 		"volumePath": {
-			"displayName": "Путь к тому",
-			"description": "Полный путь к тому в формате:catalog.schema.volume.",
-			"placeholder": "каталог.схема.объем"
+			"displayName": "Путь тома",
+			"description": "Полный путь к тому в формате: каталог.схема.том",
+			"placeholder": "каталог.схема.том"
 		},
 		"filePath": {
-			"displayName": "Путь к файлу",
-			"description": "Путь к файлу внутри тома (например, «папка/файл.txt» или «файл.txt»). Не включайте косую черту в начале.",
+			"displayName": "Путь файла",
+			"description": "Путь к файлу внутри тома (например, «папка/файл.txt» или «файл.txt»). Не включайте начальный слэш.",
 			"placeholder": "папка/файл.txt"
 		},
 		"dataFieldName": {
 			"displayName": "Имя поля входных данных",
-			"description": "Имя поля из ввода, которое содержит двоичные данные для загрузки."
+			"description": "Название поля входных данных, содержащего двоичные данные для загрузки"
 		},
 		"directoryPath": {
-			"displayName": "Путь к каталогу",
-			"description": "Путь к каталогу внутри тома (например, «папка1» или «папка1/подпапка»). Оставьте пустым, чтобы указать корень тома. Не включайте косую черту в начале.",
+			"displayName": "Путь каталога",
+			"description": "Путь к каталогу внутри тома (например, «папка1» или «папка1/подпапка»). Оставьте пустым, чтобы вывести корень тома. Не включайте начальный слэш.",
 			"placeholder": "папка1"
 		},
 		"additionalFields": {
@@ -218,7 +218,7 @@
 			"options": {
 				"pageSize": {
 					"displayName": "Размер страницы",
-					"description": "Количество файлов, возвращаемых на страницу"
+					"description": "Количество файлов для возврата на странице"
 				},
 				"pageToken": {
 					"displayName": "Токен страницы",
@@ -243,7 +243,7 @@
 			"description": "Идентификатор пространства Genie"
 		},
 		"conversationId": {
-			"displayName": "Идентификатор беседы",
+			"displayName": "Идентификатор разговора",
 			"description": "Идентификатор разговора"
 		},
 		"messageId": {
@@ -256,11 +256,11 @@
 		},
 		"message": {
 			"displayName": "Сообщение",
-			"description": "Сообщение, которое будет отправлено в Genie Space"
+			"description": "Сообщение для отправки в пространство Genie"
 		},
 		"initialMessage": {
-			"displayName": "Первоначальное сообщение",
-			"description": "Первоначальное сообщение для начала разговора"
+			"displayName": "Исходное сообщение",
+			"description": "Исходное сообщение для начала разговора"
 		},
 		"catalogName": {
 			"displayName": "Каталог",
@@ -272,20 +272,20 @@
 		},
 		"fullName": {
 			"displayName": "Функция",
-			"description": "Функция доступа"
+			"description": "Функция для доступа"
 		},
 		"volumeName": {
-			"displayName": "Имя тома",
+			"displayName": "Название тома",
 			"description": "Название тома",
-			"placeholder": "мой_объем"
+			"placeholder": "мой_том"
 		},
 		"volumeType": {
 			"displayName": "Тип тома",
 			"description": "Тип создаваемого тома",
 			"options": {
 				"MANAGED": {
-					"displayName": "Удалось",
-					"description": "Databricks управляет хранилищем томов."
+					"displayName": "Управляемый",
+					"description": "Databricks управляет хранилищем тома"
 				},
 				"EXTERNAL": {
 					"displayName": "Внешний",
@@ -294,28 +294,28 @@
 			}
 		},
 		"functionName": {
-			"displayName": "Имя функции",
-			"description": "Имя создаваемой функции",
+			"displayName": "Название функции",
+			"description": "Название функции для создания",
 			"placeholder": "моя_функция"
 		},
 		"inputParams": {
 			"displayName": "Входные параметры",
-			"description": "Массив входных параметров. Для каждого параметра требуется имя, имя_типа и текст_типа.",
+			"description": "Массив входных параметров. Каждый параметр требует name, type_name и type_text.",
 			"placeholder": "[{\"name\": \"param1\", \"type_name\": \"STRING\", \"type_text\": \"STRING\"}]"
 		},
 		"returnType": {
 			"displayName": "Тип возврата",
-			"description": "Тип возвращаемого значения функции (например, STRING, INT, DOUBLE)",
+			"description": "Тип возврата функции (например, STRING, INT, DOUBLE)",
 			"placeholder": "STRING"
 		},
 		"routineBody": {
-			"displayName": "Обычное тело",
+			"displayName": "Тело функции",
 			"description": "Язык тела функции"
 		},
 		"routineDefinition": {
-			"displayName": "Обычное определение",
+			"displayName": "Определение функции",
 			"description": "Тело функции (выражение SQL)",
-			"placeholder": "ВОЗВРАТ х + 1"
+			"placeholder": "RETURN x + 1"
 		},
 		"comment": {
 			"displayName": "Комментарий",
@@ -323,14 +323,14 @@
 			"placeholder": "Описание каталога"
 		},
 		"tableName": {
-			"displayName": "Имя таблицы",
-			"description": "Имя таблицы, которую нужно создать",
+			"displayName": "Название таблицы",
+			"description": "Название таблицы для создания",
 			"placeholder": "моя_таблица"
 		},
 		"storageLocation": {
 			"displayName": "Место хранения",
-			"description": "Корневой URL-адрес внешнего хранилища для таблицы. API Create Table поддерживает только внешние таблицы Delta.",
-			"placeholder": "s3://my-bucket/путь/к/таблице"
+			"description": "Корневой URL внешнего хранилища для таблицы. API Create Table поддерживает только внешние таблицы Delta.",
+			"placeholder": "s3://my-bucket/path/to/table"
 		},
 		"tableAdditionalFields": {
 			"displayName": "Дополнительные поля",
@@ -338,67 +338,67 @@
 			"options": {
 				"columns": {
 					"displayName": "Столбцы",
-					"description": "Массив определений столбцов. Для каждого столбца требуется имя и имя_типа (например, STRING, LONG, DOUBLE, BOOLEAN, DATE, TIMESTAMP)."
+					"description": "Массив определений столбцов. Каждый столбец требует name и type_name (например, STRING, LONG, DOUBLE, BOOLEAN, DATE, TIMESTAMP)."
 				},
 				"comment": {
 					"displayName": "Комментарий",
-					"description": "Необязательный комментарий или описание таблицы."
+					"description": "Дополнительный комментарий или описание таблицы"
 				}
 			}
 		},
 		"warehouseId": {
-			"displayName": "Склад",
-			"description": "Используемое хранилище SQL"
+			"displayName": "Хранилище",
+			"description": "SQL-хранилище для использования"
 		},
 		"query": {
 			"displayName": "Запрос",
 			"description": "SQL-запрос для выполнения",
-			"placeholder": "ВЫБРАТЬ * ИЗ my_table LIMIT 10"
+			"placeholder": "SELECT * FROM my_table LIMIT 10"
 		},
 		"queryParameters": {
 			"options": {
 				"queryParameters": {
 					"displayName": "Параметры запроса",
-					"description": "Именованные параметры запроса. Ссылайтесь на них в своем SQL как <code>:name</code>, например. <code>WHERE ID = :user_id</code>."
+					"description": "Именованные параметры запроса. Ссылайтесь на них в SQL с помощью <code>:name</code>, например <code>WHERE ID = :user_id</code>."
 				},
 				"parameters": {
 					"displayName": "Параметр",
 					"values": {
 						"name": {
 							"displayName": "Имя",
-							"description": "Имя параметра, указанное в запросе как :name",
-							"placeholder": "например ID пользователя"
+							"description": "Имя параметра, упоминаемое в запросе как :name",
+							"placeholder": "например, user_id"
 						},
 						"value": {
-							"displayName": "Ценить"
+							"displayName": "Значение"
 						},
 						"type": {
 							"displayName": "Тип",
-							"description": "Оставьте значение отключенным, чтобы рассматривать значение как строку.",
+							"description": "Оставьте пусто, чтобы значение обрабатывалось как строка",
 							"options": {
 								"": {
 									"displayName": "(По умолчанию)"
 								},
 								"BOOLEAN": {
-									"displayName": "логическое значение"
+									"displayName": "Логическое значение"
 								},
 								"DATE": {
 									"displayName": "Дата"
 								},
 								"DOUBLE": {
-									"displayName": "Двойной"
+									"displayName": "Double"
 								},
 								"FLOAT": {
-									"displayName": "Плавать"
+									"displayName": "Float"
 								},
 								"INT": {
 									"displayName": "Целое число"
 								},
 								"LONG": {
-									"displayName": "Длинный"
+									"displayName": "Long"
 								},
 								"STRING": {
-									"displayName": "Нить"
+									"displayName": "Текст"
 								},
 								"TIMESTAMP": {
 									"displayName": "Временная метка"
@@ -410,21 +410,21 @@
 			},
 			"placeholder": "Добавить параметр",
 			"displayName": "Параметры запроса",
-			"description": "Именованные параметры запроса. Ссылайтесь на них в своем SQL как <code>:name</code>, например. <code>WHERE ID = :user_id</code>."
+			"description": "Именованные параметры запроса. Ссылайтесь на них в SQL с помощью <code>:name</code>, например <code>WHERE ID = :user_id</code>."
 		},
 		"endpointName": {
 			"displayName": "Имя конечной точки",
-			"description": "Имя конечной точки векторного поиска"
+			"description": "Название конечной точки векторного поиска"
 		},
 		"requestBody": {
 			"displayName": "Тело запроса",
-			"description": "Тело запроса в формате JSON. Узел автоматически определяет ожидаемый формат из схемы OpenAPI конечной точки и проверяет введенные вами данные во время выполнения.",
-			"hint": "См., например, конечную точку обслуживания вашей модели, формат тела запроса.",
-			"placeholder": "Тело запроса будет проверено на соответствие схеме конечной точки."
+			"description": "Тело запроса в формате JSON. Узел автоматически определяет ожидаемый формат из схемы OpenAPI конечной точки и проверяет введённые данные во время выполнения.",
+			"hint": "Посмотрите конечную точку обслуживания модели для примера формата тела запроса.",
+			"placeholder": "Тело запроса будет проверено по схеме конечной точки"
 		},
 		"indexName": {
 			"displayName": "Имя индекса",
-			"description": "Имя индекса векторного поиска"
+			"description": "Название индекса векторного поиска"
 		},
 		"primaryKey": {
 			"displayName": "Первичный ключ",
@@ -436,17 +436,17 @@
 			"description": "Тип создаваемого индекса векторного поиска",
 			"options": {
 				"DELTA_SYNC": {
-					"displayName": "Дельта-синхронизация",
-					"description": "Автоматически синхронизируется с исходной дельта-таблицей."
+					"displayName": "Синхронизация Delta",
+					"description": "Автоматическая синхронизация с исходной Delta-таблицей"
 				},
 				"DIRECT_ACCESS": {
 					"displayName": "Прямой доступ",
-					"description": "Поддерживает прямое чтение и запись векторов и метаданных."
+					"description": "Поддерживает прямое чтение и запись векторов и метаданных"
 				}
 			}
 		},
 		"deltaSyncIndexSpec": {
-			"displayName": "Спецификация индекса дельта-синхронизации",
+			"displayName": "Спецификация индекса Delta Sync",
 			"description": "Спецификация индекса Delta Sync"
 		},
 		"directAccessIndexSpec": {
@@ -455,7 +455,7 @@
 		},
 		"queryType": {
 			"displayName": "Тип запроса",
-			"description": "Тип запроса для выполнения",
+			"description": "Тип выполняемого запроса",
 			"options": {
 				"text": {
 					"displayName": "Текстовый запрос",
@@ -469,7 +469,7 @@
 		},
 		"queryText": {
 			"displayName": "Текст запроса",
-			"description": "Текст для поиска (будет автоматически преобразован во встраивание)",
+			"description": "Текст для поиска (будет автоматически преобразован в вложения)",
 			"placeholder": "Что такое машинное обучение?"
 		},
 		"queryVector": {
@@ -483,35 +483,35 @@
 			"options": {
 				"HYBRID": {
 					"displayName": "Гибридный",
-					"description": "Сочетает в себе семантический (векторный) поиск и поиск по ключевым словам для достижения наилучших результатов."
+					"description": "Сочетает семантический (векторный) и ключевой поиск для достижения наилучших результатов"
 				},
 				"ANN": {
-					"displayName": "ANN (приблизительный ближайший сосед)",
-					"description": "Чистый векторный поиск по сходству"
+					"displayName": "ANN (Приблизительный ближайший сосед)",
+					"description": "Чистый поиск по векторному сходству"
 				}
 			}
 		},
 		"columns": {
 			"displayName": "Столбцы для возврата",
-			"description": "Список имен столбцов, разделенных запятыми, которые будут возвращены в результатах (например, «содержание, URL-адрес, заголовок»).",
-			"placeholder": "контент, URL"
+			"description": "Список имён столбцов через запятую для возврата в результатах (например, «content,URL,title»)",
+			"placeholder": "content, url"
 		},
 		"numResults": {
 			"displayName": "Количество результатов",
 			"description": "Максимальное количество возвращаемых результатов"
 		},
 		"enableReranking": {
-			"displayName": "Включить изменение рейтинга",
-			"description": "Следует ли переоценивать результаты с помощью модели реранжирования для повышения релевантности"
+			"displayName": "Включить переранжирование",
+			"description": "Использовать ли модель переранжирования для повышения релевантности результатов"
 		},
 		"rerankerModel": {
-			"displayName": "Модель реранкера",
-			"description": "Название используемой модели реранкера"
+			"displayName": "Модель переранжирования",
+			"description": "Название используемой модели переранжирования"
 		},
 		"columnsToRerank": {
-			"displayName": "Столбцы для изменения ранжирования",
-			"description": "Список столбцов, разделенных запятыми, которые будут использоваться для изменения рейтинга (например, «содержание, заголовок»).",
-			"placeholder": "содержание"
+			"displayName": "Столбцы для переранжирования",
+			"description": "Список столбцов через запятую для переранжирования (например, «content,title»)",
+			"placeholder": "content"
 		},
 		"options": {
 			"displayName": "Параметры",
@@ -519,8 +519,8 @@
 			"options": {
 				"filterExpression": {
 					"displayName": "Выражение фильтра",
-					"description": "SQL-подобное выражение фильтра для применения к результатам (например, «категория = 'документы' И опубликовано = true»)",
-					"placeholder": "категория = \"документация\""
+					"description": "Выражение фильтра, похожее на SQL, для применения к результатам (например, «category = 'docs' AND published = true»)",
+					"placeholder": "category = \"documentation\""
 				},
 				"scoreThreshold": {
 					"displayName": "Порог оценки",

@@ -13,54 +13,54 @@
 				},
 				"html": {
 					"displayName": "Извлечь из HTML",
-					"description": "Преобразование таблицы в файле HTML в выходные элементы"
+					"description": "Преобразование таблицы из HTML-файла в выходные элементы"
 				},
 				"fromIcs": {
-					"displayName": "Выдержка из ICS",
+					"displayName": "Извлечь из ICS",
 					"description": "Преобразование файла ICS в выходные элементы"
 				},
 				"fromJson": {
-					"displayName": "Извлечение из JSON",
-					"description": "Преобразование файла JSON в элементы вывода"
+					"displayName": "Извлечь из JSON",
+					"description": "Преобразование файла JSON в выходные элементы"
 				},
 				"ods": {
-					"displayName": "Извлечение из ODS",
+					"displayName": "Извлечь из ODS",
 					"description": "Преобразование файла ODS в выходные элементы"
 				},
 				"pdf": {
 					"displayName": "Извлечь из PDF",
-					"description": "Извлекает содержимое и метаданные из файла PDF."
+					"description": "Извлечение содержимого и метаданных из PDF-файла"
 				},
 				"rtf": {
-					"displayName": "Выдержка из RTF",
-					"description": "Преобразование таблицы в файле RTF в выходные элементы"
+					"displayName": "Извлечь из RTF",
+					"description": "Преобразование таблицы из RTF-файла в выходные элементы"
 				},
 				"text": {
 					"displayName": "Извлечь из текстового файла",
-					"description": "Извлекает содержимое текстового файла"
+					"description": "Извлечение содержимого текстового файла"
 				},
 				"xml": {
 					"displayName": "Извлечь из XML",
-					"description": "Извлекает содержимое XML-файла"
+					"description": "Извлечение содержимого XML-файла"
 				},
 				"xls": {
-					"displayName": "Выдержка из XLS",
+					"displayName": "Извлечь из XLS",
 					"description": "Преобразование файла Excel в выходные элементы"
 				},
 				"xlsx": {
-					"displayName": "Выдержка из XLSX",
+					"displayName": "Извлечь из XLSX",
 					"description": "Преобразование файла Excel в выходные элементы"
 				},
 				"binaryToPropery": {
-					"displayName": "Переместить файл в строку Base64",
-					"description": "Преобразование файла в строку в кодировке Base64."
+					"displayName": "Преобразовать файл в строку Base64",
+					"description": "Преобразование файла в строку в кодировке Base64"
 				}
 			}
 		},
 		"binaryPropertyName": {
 			"displayName": "Входное двоичное поле",
-			"hint": "Имя входного двоичного поля, содержащего извлекаемый файл.",
-			"placeholder": "например данные"
+			"hint": "Имя входного двоичного поля, содержащего файл для извлечения",
+			"placeholder": "например data"
 		},
 		"options": {
 			"displayName": "Параметры",
@@ -68,17 +68,17 @@
 			"options": {
 				"delimiter": {
 					"displayName": "Разделитель",
-					"description": "Установите разделитель полей, обычно запятую.",
+					"description": "Установите разделитель полей, обычно запятую",
 					"placeholder": "например ,"
 				},
 				"encoding": {
-					"displayName": "Кодирование файлов",
+					"displayName": "Кодирование файла",
 					"options": {
 						"ascii": {
 							"displayName": "ascii"
 						},
 						"latin1": {
-							"displayName": "латынь1"
+							"displayName": "Latin1"
 						},
 						"ucs-2": {
 							"displayName": "UCS-2"
@@ -96,19 +96,19 @@
 							"displayName": "utf8"
 						},
 						"armscii8": {
-							"displayName": "Armscii8"
+							"displayName": "armscii8"
 						},
 						"base64": {
-							"displayName": "база64"
+							"displayName": "base64"
 						},
 						"big5hkscs": {
 							"displayName": "big5hkscs"
 						},
 						"binary": {
-							"displayName": "двоичный"
+							"displayName": "binary"
 						},
 						"cesu8": {
-							"displayName": "цесу8"
+							"displayName": "cesu8"
 						},
 						"cp1046": {
 							"displayName": "cp1046"
@@ -207,19 +207,19 @@
 							"displayName": "eucjp"
 						},
 						"gb18030": {
-							"displayName": "GB18030"
+							"displayName": "gb18030"
 						},
 						"gbk": {
-							"displayName": "ГБК"
+							"displayName": "gbk"
 						},
 						"georgianacademy": {
-							"displayName": "Грузинская академия"
+							"displayName": "georgianacademy"
 						},
 						"georgianps": {
-							"displayName": "грузины"
+							"displayName": "georgianps"
 						},
 						"hex": {
-							"displayName": "шестигранник"
+							"displayName": "hex"
 						},
 						"hproman8": {
 							"displayName": "hproman8"
@@ -276,67 +276,67 @@
 							"displayName": "iso88599"
 						},
 						"koi8r": {
-							"displayName": "кои8р"
+							"displayName": "koi8r"
 						},
 						"koi8ru": {
-							"displayName": "кои8ру"
+							"displayName": "koi8ru"
 						},
 						"koi8t": {
-							"displayName": "кои8т"
+							"displayName": "koi8t"
 						},
 						"koi8u": {
-							"displayName": "кои8у"
+							"displayName": "koi8u"
 						},
 						"maccenteuro": {
 							"displayName": "maccenteuro"
 						},
 						"maccroatian": {
-							"displayName": "макроатийский"
+							"displayName": "maccroatian"
 						},
 						"maccyrillic": {
-							"displayName": "маккирилический"
+							"displayName": "maccyrillic"
 						},
 						"macgreek": {
-							"displayName": "Макгрек"
+							"displayName": "macgreek"
 						},
 						"maciceland": {
-							"displayName": "Мейсиленд"
+							"displayName": "maciceland"
 						},
 						"macintosh": {
-							"displayName": "Макинтош"
+							"displayName": "macintosh"
 						},
 						"macroman": {
-							"displayName": "макромен"
+							"displayName": "macroman"
 						},
 						"macromania": {
-							"displayName": "макромания"
+							"displayName": "macromania"
 						},
 						"macthai": {
-							"displayName": "Мактай"
+							"displayName": "macthai"
 						},
 						"macturkish": {
-							"displayName": "Мактурецкий"
+							"displayName": "macturkish"
 						},
 						"macukraine": {
-							"displayName": "Макукраина"
+							"displayName": "macukraine"
 						},
 						"mik": {
-							"displayName": "Мик"
+							"displayName": "mik"
 						},
 						"pt154": {
-							"displayName": "пт154"
+							"displayName": "pt154"
 						},
 						"rk1048": {
 							"displayName": "rk1048"
 						},
 						"shiftjis": {
-							"displayName": "Шифтджис"
+							"displayName": "shiftjis"
 						},
 						"tcvn": {
-							"displayName": "ТКВН"
+							"displayName": "tcvn"
 						},
 						"tis620": {
-							"displayName": "тис620"
+							"displayName": "tis620"
 						},
 						"utf16": {
 							"displayName": "utf16"
@@ -360,7 +360,7 @@
 							"displayName": "utf7imap"
 						},
 						"viscii": {
-							"displayName": "внутренние органы"
+							"displayName": "viscii"
 						},
 						"windows1250": {
 							"displayName": "windows1250"
@@ -393,18 +393,18 @@
 							"displayName": "windows874"
 						}
 					},
-					"description": "Укажите кодировку файла, по умолчанию UTF-8."
+					"description": "Укажите кодирование файла, по умолчанию UTF-8"
 				},
 				"enableBOM": {
 					"displayName": "Исключить метку порядка байтов (BOM)",
-					"description": "Следует ли обнаруживать и исключать метку порядка байтов из входных данных CSV, если она присутствует."
+					"description": "Следует ли обнаруживать и исключать метку порядка байтов из входных данных CSV, если она присутствует"
 				},
 				"relaxQuotes": {
-					"displayName": "Сохранить цитаты",
-					"description": "Следует ли обрабатывать незакрытые кавычки в полях CSV как часть содержимого поля вместо выдачи ошибки синтаксического анализа."
+					"displayName": "Сохранить кавычки",
+					"description": "Обрабатывать ли незакрытые кавычки в полях CSV как часть содержимого поля вместо ошибки анализа"
 				},
 				"headerRow": {
-					"displayName": "Заголовок строки",
+					"displayName": "Строка заголовка",
 					"description": "Содержит ли первая строка файла имена заголовков"
 				},
 				"includeEmptyCells": {
@@ -413,35 +413,35 @@
 				},
 				"maxRowCount": {
 					"displayName": "Максимальное количество строк для загрузки",
-					"description": "Прекратите обработку записей после того, как будет прочитано запрошенное количество строк. Используйте -1, если вы хотите загрузить все строки.",
+					"description": "Прекратите обработку записей после того как будет прочитано запрошенное количество строк. Используйте -1 для загрузки всех строк.",
 					"placeholder": "например 10"
 				},
 				"range": {
 					"displayName": "Диапазон",
-					"description": "Диапазон чтения из таблицы. Если установлено число, это будет начальная строка. Если установлено значение string, оно будет использоваться как диапазон обозначений в стиле A1."
+					"description": "Диапазон для чтения из таблицы. Если число, то это будет начальная строка. Если строка, то используется нотация в стиле A1."
 				},
 				"rawData": {
 					"displayName": "Необработанные данные",
-					"description": "Возвращать ли данные RAW вместо их анализа"
+					"description": "Возвращать ли исходные данные вместо их анализа"
 				},
 				"readAsString": {
 					"displayName": "Читать как строку",
-					"description": "В некоторых случаях и форматах файлов необходимо читать как строку, чтобы обеспечить правильную интерпретацию специальных символов."
+					"description": "В некоторых случаях и форматах файлов необходимо читать как строку, чтобы обеспечить правильную интерпретацию специальных символов"
 				},
 				"sheetName": {
 					"displayName": "Имя листа",
 					"description": "Имя листа для чтения в электронной таблице",
-					"placeholder": "например мой лист"
+					"placeholder": "например mySheet"
 				},
 				"fromLine": {
-					"displayName": "Стартовая линия",
-					"description": "Начать обработку записей с запрошенного номера строки. Начинается с 0.",
+					"displayName": "Начальная строка",
+					"description": "Начните обработку записей с запрошенного номера строки. Начинается с 0.",
 					"placeholder": "например 0"
 				},
 				"skipRecordsWithErrors": {
 					"values": {
 						"skipRecordsWithErrors": {
-							"displayName": "Пропускать записи с ошибками"
+							"displayName": "Пропустить записи с ошибками"
 						},
 						"value": {
 							"options": {
@@ -450,25 +450,25 @@
 									"description": "Пропускать ли записи с ошибками при чтении из файла"
 								},
 								"maxSkippedRecords": {
-									"displayName": "Макс пропущенные записи",
-									"description": "Максимальное количество записей, которое можно пропустить, при превышении выдаст ошибку. Установите значение -1, чтобы удалить ограничение."
+									"displayName": "Максимум пропущенных записей",
+									"description": "Максимальное количество записей, которое можно пропустить. Будет ошибка при превышении. Установите -1 для удаления ограничения."
 								}
 							}
 						}
 					},
-					"displayName": "Пропускать записи с ошибками",
+					"displayName": "Пропустить записи с ошибками",
 					"options": {
 						"value": {
-							"displayName": "Ценить"
+							"displayName": "Значение"
 						}
 					}
 				},
 				"stripBOM": {
-					"displayName": "Полоса спецификации",
-					"description": "Следует ли удалять спецификацию (метку порядка байтов) из файла. Это может помочь в среде, где наличие спецификации вызывает проблемы или несоответствия."
+					"displayName": "Удалить BOM",
+					"description": "Удалять ли метку порядка байтов (BOM) из файла. Это может помочь в среде, где присутствие BOM вызывает проблемы или несоответствия."
 				},
 				"keepSource": {
-					"displayName": "Сохранить исходный код",
+					"displayName": "Сохранить исходные данные",
 					"options": {
 						"json": {
 							"displayName": "JSON",
@@ -479,14 +479,14 @@
 							"description": "Включить двоичные данные входного элемента"
 						},
 						"both": {
-							"displayName": "Оба",
-							"description": "Включите как JSON, так и двоичные данные входного элемента."
+							"displayName": "Оба формата",
+							"description": "Включить как данные JSON, так и двоичные данные входного элемента"
 						}
 					}
 				},
 				"joinPages": {
-					"displayName": "Присоединяйтесь к страницам",
-					"description": "Следует ли объединять текст со всех страниц или возвращать массив текста с каждой страницы."
+					"displayName": "Объединить страницы",
+					"description": "Объединять ли текст со всех страниц или возвращать массив текста с каждой страницы"
 				},
 				"maxPages": {
 					"displayName": "Макс. страниц",
@@ -494,14 +494,14 @@
 				},
 				"password": {
 					"displayName": "Пароль",
-					"description": "Укажите пароль, если PDF-файл зашифрован."
+					"description": "Укажите пароль, если PDF зашифрован"
 				}
 			}
 		},
 		"destinationKey": {
 			"displayName": "Поле вывода назначения",
-			"description": "Имя выходного поля, которое будет содержать извлеченные данные.",
-			"placeholder": "например данные"
+			"description": "Имя выходного поля, которое будет содержать извлеченные данные",
+			"placeholder": "например data"
 		}
 	}
 }

@@ -1,34 +1,34 @@
 {
 	"header": {
 		"displayName": "Триггер оценки",
-		"description": "Запустите тестовый набор данных в рабочем процессе, чтобы проверить производительность."
+		"description": "Запустить тестовый набор данных в рабочем процессе для проверки производительности"
 	},
 	"nodeView": {
 		"source": {
 			"displayName": "Источник",
-			"description": "Откуда взять тестовый набор данных",
+			"description": "Источник тестового набора данных",
 			"options": {
 				"dataTable": {
 					"displayName": "Таблица данных",
-					"description": "Загрузите тестовый набор данных из локальной таблицы данных."
+					"description": "Загрузить тестовый набор данных из локальной таблицы данных"
 				},
 				"googleSheets": {
-					"displayName": "Google Таблицы",
-					"description": "Загрузите тестовый набор данных из документа Google Sheets."
+					"displayName": "Google Sheets",
+					"description": "Загрузить тестовый набор данных из Google Sheets"
 				}
 			}
 		},
 		"notice": {
-			"displayName": "Извлекает тестовый набор данных из Google Sheet. Рабочий процесс будет запускаться один раз для каждой строки последовательно. Советы по подключению этого узла <a href=\"https://docs.n8n.io/advanced-ai/evaluations/tips-and-common-issues/#combining-multiple-triggers\">здесь</a>."
+			"displayName": "Получает тестовый набор данных из Google Sheet. Рабочий процесс запустится один раз для каждой строки последовательно. Советы по подключению узла <a href=\"https://docs.n8n.io/advanced-ai/evaluations/tips-and-common-issues/#combining-multiple-triggers\">здесь</a>."
 		},
 		"credentials": {
-			"displayName": "Реквизиты для входа"
+			"displayName": "Учётные данные"
 		},
 		"authentication": {
 			"displayName": "Аутентификация",
 			"options": {
 				"serviceAccount": {
-					"displayName": "Сервисный аккаунт"
+					"displayName": "Служебный аккаунт"
 				},
 				"oAuth2": {
 					"displayName": "OAuth2 (рекомендуется)"
@@ -36,21 +36,21 @@
 			}
 		},
 		"documentId": {
-			"displayName": "Документ, содержащий набор данных",
+			"displayName": "Документ с набором данных",
 			"hint": "Пример формата набора данных <a href=\"https://docs.google.com/spreadsheets/d/1vD_IdeFUg7sHsK9okL6Doy1rGOkWTnPJV3Dro4FBUsY/edit?gid=0#gid=0\">здесь</a>"
 		},
 		"sheetName": {
-			"displayName": "Лист, содержащий набор данных"
+			"displayName": "Лист с набором данных"
 		},
 		"dataTableId": {
 			"displayName": "Таблица данных"
 		},
 		"limitRows": {
-			"displayName": "Ограничить количество строк",
+			"displayName": "Ограничить строки",
 			"description": "Ограничивать ли количество обрабатываемых строк"
 		},
 		"maxRows": {
-			"displayName": "Максимальное количество строк для обработки",
+			"displayName": "Максимум строк для обработки",
 			"description": "Максимальное количество строк для обработки"
 		},
 		"filtersUI": {
@@ -63,11 +63,11 @@
 					"values": {
 						"lookupColumn": {
 							"displayName": "Столбец",
-							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+							"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 						},
 						"lookupValue": {
-							"displayName": "Ценить",
-							"hint": "Столбец должен иметь это значение для сопоставления"
+							"displayName": "Значение",
+							"hint": "Столбец должен иметь это значение для совпадения"
 						}
 					}
 				}
@@ -81,10 +81,10 @@
 			"description": "Фильтровать ли строки для обработки"
 		},
 		"matchType": {
-			"displayName": "Должен совпадать",
+			"displayName": "Должно совпадать",
 			"options": {
 				"anyCondition": {
-					"displayName": "Любое состояние"
+					"displayName": "Любое условие"
 				},
 				"allConditions": {
 					"displayName": "Все условия"
@@ -95,7 +95,7 @@
 			"options": {
 				"filters": {
 					"displayName": "Условия",
-					"description": "Фильтруйте, чтобы решить, какие строки получат"
+					"description": "Фильтр для определения, какие строки получат"
 				},
 				"conditions": {
 					"displayName": "Условия",
@@ -105,17 +105,17 @@
 							"description": "Выберите из списка или укажите с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 						},
 						"condition": {
-							"displayName": "Состояние"
+							"displayName": "Условие"
 						},
 						"keyValue": {
-							"displayName": "Ценить"
+							"displayName": "Значение"
 						}
 					}
 				}
 			},
 			"placeholder": "Добавить условие",
 			"displayName": "Условия",
-			"description": "Фильтруйте, чтобы решить, какие строки получат"
+			"description": "Фильтр для определения, какие строки получат"
 		}
 	}
 }

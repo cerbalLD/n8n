@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Кокпит",
-		"description": "Использование API кабины"
+		"displayName": "Cockpit",
+		"description": "Использование API Cockpit"
 	},
 	"nodeView": {
 		"resource": {
@@ -14,7 +14,7 @@
 					"displayName": "Форма"
 				},
 				"singleton": {
-					"displayName": "Синглтон"
+					"displayName": "Сингелтон"
 				}
 			}
 		},
@@ -23,29 +23,29 @@
 			"options": {
 				"create": {
 					"displayName": "Создать запись",
-					"description": "Создать запись в коллекции"
+					"description": "Создать элемент коллекции"
 				},
 				"getAll": {
-					"displayName": "Получите много записей",
-					"description": "Получите много записей коллекции"
+					"displayName": "Получить много записей",
+					"description": "Получить много элементов коллекции"
 				},
 				"update": {
 					"displayName": "Обновить запись",
-					"description": "Обновить запись коллекции"
+					"description": "Обновить элемент коллекции"
 				},
 				"submit": {
 					"displayName": "Отправить форму",
-					"description": "Сохранение данных из отправки формы"
+					"description": "Сохранить данные из отправки формы"
 				},
 				"get": {
 					"displayName": "Получать",
-					"description": "Получить синглтон"
+					"description": "Получить сингелтон"
 				}
 			}
 		},
 		"collection": {
 			"displayName": "Название или идентификатор коллекции",
-			"description": "Имя коллекции, над которой нужно работать. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"description": "Название коллекции для работы. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",
@@ -53,7 +53,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"options": {
 			"displayName": "Параметры",
@@ -61,34 +61,34 @@
 			"options": {
 				"fields": {
 					"displayName": "Поля",
-					"description": "Список полей, разделенных запятыми, для получения",
-					"placeholder": "_id,имя"
+					"description": "Список полей, разделённый запятыми",
+					"placeholder": "_id,name"
 				},
 				"filter": {
-					"displayName": "Фильтровать запрос",
-					"description": "Фильтровать запрос в <a href=\"https://jeroen.github.io/mongolite/query-data.html\">монгольском формате</a>",
-					"placeholder": "{\"имя\": \"Джим\"}"
+					"displayName": "Запрос фильтра",
+					"description": "Запрос фильтра в <a href=\"https://jeroen.github.io/mongolite/query-data.html\">формате Mongolite</a>",
+					"placeholder": "{\"name\": \"Jim\"}"
 				},
 				"language": {
 					"displayName": "Язык",
 					"description": "Вернуть нормализованные языковые поля"
 				},
 				"populate": {
-					"displayName": "Заселить",
-					"description": "Следует ли разрешать связанные элементы коллекции"
+					"displayName": "Заполнить",
+					"description": "Разрешить ли связанные элементы коллекции"
 				},
 				"rawData": {
 					"displayName": "Необработанные данные",
-					"description": "Возвращать ли данные именно в том виде, в каком они были получены от API"
+					"description": "Возвращать ли данные в точности так, как они получены от API"
 				},
 				"skip": {
-					"displayName": "Пропускать",
+					"displayName": "Пропустить",
 					"description": "Пропустить количество записей"
 				},
 				"sort": {
-					"displayName": "Сортировать запрос",
-					"description": "Сортировать запрос в <a href=\"https://jeroen.github.io/mongolite/query-data.html\">монгольском формате</a>",
-					"placeholder": "{\"цена\": -1}"
+					"displayName": "Запрос сортировки",
+					"description": "Запрос сортировки в <a href=\"https://jeroen.github.io/mongolite/query-data.html\">формате Mongolite</a>",
+					"placeholder": "{\"price\": -1}"
 				}
 			}
 		},
@@ -97,11 +97,11 @@
 		},
 		"jsonDataFields": {
 			"displayName": "Поля данных JSON",
-			"description": "Должны ли поля формы задаваться через пользовательский интерфейс пары «значение-ключ» или JSON."
+			"description": "Устанавливать ли поля формы через интерфейс пары значение-ключ или JSON"
 		},
 		"dataFieldsJson": {
 			"displayName": "Данные формы",
-			"description": "Данные формы для отправки в формате JSON"
+			"description": "Данные формы для отправки в виде JSON"
 		},
 		"dataFieldsUi": {
 			"options": {
@@ -117,7 +117,7 @@
 							"description": "Название поля"
 						},
 						"value": {
-							"displayName": "Ценить",
+							"displayName": "Значение",
 							"description": "Значение поля"
 						}
 					}
@@ -128,11 +128,11 @@
 		},
 		"form": {
 			"displayName": "Форма",
-			"description": "Имя формы, над которой нужно работать"
+			"description": "Название формы для работы"
 		},
 		"singleton": {
-			"displayName": "Имя или идентификатор синглтона",
-			"description": "Имя синглтона, над которым нужно работать. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"displayName": "Название или идентификатор сингелтона",
+			"description": "Название сингелтона для работы. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		}
 	}
 }

@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "Страпи",
+		"displayName": "Strapi",
 		"description": "Использование API Strapi"
 	},
 	"nodeView": {
@@ -8,7 +8,7 @@
 			"displayName": "Аутентификация",
 			"options": {
 				"password": {
-					"displayName": "Имя пользователя и пароль"
+					"displayName": "имя пользователя и пароль"
 				},
 				"token": {
 					"displayName": "API-токен"
@@ -19,7 +19,7 @@
 			"displayName": "Ресурс",
 			"options": {
 				"entry": {
-					"displayName": "Вход"
+					"displayName": "Запись"
 				}
 			}
 		},
@@ -27,7 +27,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать запись"
 				},
 				"delete": {
@@ -40,10 +40,10 @@
 				},
 				"getAll": {
 					"displayName": "Получить много",
-					"description": "Получить много записей"
+					"description": "Получить несколько записей"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить запись"
 				}
 			}
@@ -54,12 +54,12 @@
 		},
 		"columns": {
 			"displayName": "Столбцы",
-			"description": "Список свойств, разделенных запятыми, которые следует использовать в качестве столбцов для новых строк.",
+			"description": "Список свойств, разделённых запятыми, для использования в качестве столбцов",
 			"placeholder": "идентификатор, имя, описание"
 		},
 		"entryId": {
 			"displayName": "Идентификатор записи",
-			"description": "Идентификатор записи, которую нужно получить"
+			"description": "ID записи для получения"
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",
@@ -67,18 +67,18 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"options": {
 			"displayName": "Параметры",
 			"placeholder": "Добавить поле",
 			"options": {
 				"publicationState": {
-					"displayName": "Состояние публикации",
-					"description": "Выбирайте только записи, соответствующие указанному состоянию публикации.",
+					"displayName": "Статус публикации",
+					"description": "Выбирать только записи с указанным статусом публикации",
 					"options": {
 						"live": {
-							"displayName": "Жить"
+							"displayName": "Опубликовано"
 						},
 						"preview": {
 							"displayName": "Предварительный просмотр"
@@ -86,19 +86,19 @@
 					}
 				},
 				"sort": {
-					"displayName": "Сортировка полей",
-					"description": "Имя полей, по которым нужно сортировать данные. По умолчанию будет отсортировано по возрастанию. Чтобы изменить это поведение, вам необходимо добавить направление сортировки после имени поля сортировки, которому предшествует двоеточие. Например: <code>name:asc</code>.",
-					"placeholder": "имя: по возрастанию"
+					"displayName": "Поля сортировки",
+					"description": "Поля для сортировки данных. По умолчанию сортировка по возрастанию. Чтобы изменить направление, добавьте его после имени поля через двоеточие. Например: <code>name:asc</code>.",
+					"placeholder": "name:asc"
 				},
 				"where": {
-					"displayName": "Где (JSON)",
+					"displayName": "Where (JSON)",
 					"description": "JSON-запрос для фильтрации данных. <a href=\"https://strapi.io/documentation/developer-docs/latest/developer-resources/content-api/content-api.html#filters\">Подробнее</a>."
 				}
 			}
 		},
 		"updateKey": {
-			"displayName": "Обновить ключ",
-			"description": "Имя свойства, которое определяет, какие строки в базе данных следует обновить. Обычно это будет «id»."
+			"displayName": "Ключ обновления",
+			"description": "Имя свойства, которое определяет, какие строки базы данных обновить. Обычно это «id»."
 		}
 	}
 }

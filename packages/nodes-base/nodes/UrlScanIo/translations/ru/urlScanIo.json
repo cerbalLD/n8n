@@ -8,7 +8,7 @@
 			"displayName": "Ресурс",
 			"options": {
 				"scan": {
-					"displayName": "Сканировать"
+					"displayName": "Сканирование"
 				}
 			}
 		},
@@ -36,7 +36,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"filters": {
 			"displayName": "Фильтры",

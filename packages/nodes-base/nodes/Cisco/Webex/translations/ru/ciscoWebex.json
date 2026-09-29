@@ -19,7 +19,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать"
+					"displayName": "Создать"
 				},
 				"delete": {
 					"displayName": "Удалить"
@@ -31,16 +31,16 @@
 					"displayName": "Получить много"
 				},
 				"update": {
-					"displayName": "Обновлять"
+					"displayName": "Обновить"
 				}
 			}
 		},
 		"title": {
-			"displayName": "Заголовок",
+			"displayName": "Название",
 			"description": "Название встречи. Длина заголовка может составлять не более 128 символов."
 		},
 		"start": {
-			"displayName": "Начинать",
+			"displayName": "Начать",
 			"description": "Дата и время начала встречи. Приемлемый формат <a href=\"https://datatracker.ietf.org/doc/html/rfc2445\"> </a>."
 		},
 		"end": {
@@ -255,7 +255,7 @@
 															"displayName": "По умолчанию"
 														},
 														"good": {
-															"displayName": "Хороший"
+															"displayName": "Хорошо"
 														},
 														"light": {
 															"displayName": "Свет"
@@ -282,13 +282,13 @@
 													"description": "Управляет горизонтальным выравниванием текста",
 													"options": {
 														"left": {
-															"displayName": "Левый"
+															"displayName": "Влево"
 														},
 														"center": {
 															"displayName": "Центр"
 														},
 														"right": {
-															"displayName": "Верно"
+															"displayName": "Вправо"
 														}
 													}
 												},
@@ -314,7 +314,7 @@
 															"displayName": "Большой"
 														},
 														"medium": {
-															"displayName": "Середина"
+															"displayName": "Средний"
 														},
 														"small": {
 															"displayName": "Маленький"
@@ -370,7 +370,7 @@
 															"displayName": "Большой"
 														},
 														"medium": {
-															"displayName": "Середина"
+															"displayName": "Средний"
 														},
 														"none": {
 															"displayName": "Никто"
@@ -426,7 +426,7 @@
 													}
 												},
 												"value": {
-													"displayName": "Ценить",
+													"displayName": "Значение",
 													"description": "Начальное значение для этого поля"
 												}
 											}
@@ -451,13 +451,13 @@
 													"displayName": "Тип",
 													"options": {
 														"execute": {
-															"displayName": "Выполнять"
+															"displayName": "Выполнение"
 														},
 														"openUrl": {
-															"displayName": "Открыть URL-адрес"
+															"displayName": "Открыть URL"
 														},
 														"submit": {
-															"displayName": "Представлять на рассмотрение"
+															"displayName": "Отправить"
 														}
 													}
 												},
@@ -474,7 +474,7 @@
 													"description": "Определенный автором карты глагол, связанный с этим действием."
 												},
 												"title": {
-													"displayName": "Заголовок",
+													"displayName": "Название",
 													"description": "Метка кнопки или ссылки, представляющей это действие"
 												},
 												"iconUrl": {
@@ -589,7 +589,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"filters": {
 			"displayName": "Фильтры",
@@ -641,7 +641,7 @@
 					"description": "URL-адрес сайта Webex, с которого API перечисляет совещания. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"state": {
-					"displayName": "Состояние",
+					"displayName": "область",
 					"description": "Состояние встречи для запрашиваемых объектов встречи",
 					"options": {
 						"active": {
@@ -654,7 +654,7 @@
 							"displayName": "Истекший"
 						},
 						"inProgress": {
-							"displayName": "В ходе выполнения"
+							"displayName": "в процессе"
 						},
 						"lobby": {
 							"displayName": "Лобби"
@@ -671,7 +671,7 @@
 					}
 				},
 				"to": {
-					"displayName": "К",
+					"displayName": "До",
 					"description": "Дата и время окончания (включительно) собрания. Приемлемый формат <a href=\"https://datatracker.ietf.org/doc/html/rfc2445\"> </a>."
 				},
 				"webLink": {
@@ -859,11 +859,11 @@
 					"description": "URL-адрес веб-сайта Webex, на котором создано совещание. Если не указано, собрание создается на предпочитаемом пользователем сайте. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"start": {
-					"displayName": "Начинать",
+					"displayName": "Начать",
 					"description": "Дата и время начала встречи. Приемлемый формат <a href=\"https://datatracker.ietf.org/doc/html/rfc2445\"> </a>."
 				},
 				"title": {
-					"displayName": "Заголовок",
+					"displayName": "Название",
 					"description": "Название встречи"
 				}
 			}
@@ -895,7 +895,7 @@
 			}
 		},
 		"toPersonId": {
-			"displayName": "Идентификатор человека"
+			"displayName": "ID человека"
 		},
 		"toPersonEmail": {
 			"displayName": "Электронная почта человека"

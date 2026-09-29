@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "Твилио",
+		"displayName": "Twilio",
 		"description": "Отправляйте SMS и сообщения WhatsApp или звоните по телефону."
 	},
 	"nodeView": {
@@ -8,7 +8,7 @@
 			"displayName": "Ресурс",
 			"options": {
 				"call": {
-					"displayName": "Вызов"
+					"displayName": "Звонок"
 				},
 				"sms": {
 					"displayName": "SMS"
@@ -19,11 +19,11 @@
 			"displayName": "Операция",
 			"options": {
 				"send": {
-					"displayName": "Отправлять",
+					"displayName": "Отправить",
 					"description": "Отправьте SMS/MMS/WhatsApp сообщение."
 				},
 				"make": {
-					"displayName": "Делать"
+					"displayName": "Совершить"
 				}
 			}
 		},
@@ -33,7 +33,7 @@
 			"placeholder": "+14155238886"
 		},
 		"to": {
-			"displayName": "К",
+			"displayName": "До",
 			"description": "Номер, на который отправить сообщение",
 			"placeholder": "+14155238886"
 		},

@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "Календарный триггер",
-		"description": "Запускает рабочий процесс при возникновении событий Calendly."
+		"displayName": "Триггер Calendly",
+		"description": "Запускает рабочий процесс при событиях Calendly"
 	}
 }

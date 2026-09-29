@@ -1,19 +1,19 @@
 {
 	"header": {
-		"displayName": "Пикалинк",
-		"description": "Используйте API Peekalink"
+		"displayName": "Peekalink",
+		"description": "Использовать API Peekalink"
 	},
 	"nodeView": {
 		"operation": {
 			"displayName": "Операция",
 			"options": {
 				"isAvailable": {
-					"displayName": "Доступен",
-					"description": "Проверьте, доступен ли предварительный просмотр для данной ссылки"
+					"displayName": "Доступно",
+					"description": "Проверить доступность предпросмотра для ссылки"
 				},
 				"preview": {
 					"displayName": "Предварительный просмотр",
-					"description": "Вернуть предварительный просмотр ссылки"
+					"description": "Получить предпросмотр ссылки"
 				}
 			}
 		},

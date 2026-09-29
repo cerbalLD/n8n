@@ -1,7 +1,7 @@
 {
 	"header": {
 		"displayName": "Триггер Microsoft Outlook",
-		"description": "Получает электронные письма из Microsoft Outlook и запускает рабочий процесс через указанные интервалы опроса."
+		"description": "Получает письма из Microsoft Outlook и запускает рабочий процесс по указанным интервалам опроса."
 	},
 	"nodeView": {
 		"authentication": {
@@ -11,88 +11,88 @@
 					"displayName": "Outlook OAuth2"
 				},
 				"microsoftOAuth2Api": {
-					"displayName": "Microsoft OAuth2 (график)"
+					"displayName": "Microsoft OAuth2 (Graph)"
 				},
 				"microsoftEntraServicePrincipalApi": {
-					"displayName": "Руководитель службы Microsoft Entra (только для приложения)",
-					"description": "Доступ только через приложение через регистрацию приложения Microsoft Entra. Выберите, с каким почтовым ящиком действовать, в разделе «Почтовый ящик»."
+					"displayName": "Субъект службы Microsoft Entra (только приложение)",
+					"description": "Доступ только приложения через регистрацию приложения Microsoft Entra. Выберите почтовый ящик в разделе «Почтовый ящик»."
 				}
 			}
 		},
 		"mailbox": {
 			"displayName": "Почтовый ящик",
-			"description": "Почтовый ящик, с которым должен действовать субъект службы. В узле действия это оценивается для каждого элемента ввода (выражение может быть нацелено на другой почтовый ящик для каждого элемента); триггер разрешает его один раз."
+			"description": "Почтовый ящик, с которым должен работать субъект-служба. В узле действия оценивается для каждого элемента ввода (выражение может быть направлено на другой почтовый ящик для каждого элемента); триггер определяет его один раз."
 		},
 		"servicePrincipalNotice": {
-			"displayName": "Если это не ограничено политикой доступа к приложению (Exchange Online New-ApplicationAccessPolicy), разрешение приложения Mail.Read позволяет этому приложению читать любой почтовый ящик в клиенте."
+			"displayName": "Если это не ограничено политикой доступа к приложению (Exchange Online New-ApplicationAccessPolicy), разрешение приложения Mail.Read позволяет приложению читать любой почтовый ящик в клиенте"
 		},
 		"event": {
-			"displayName": "Триггер включен",
+			"displayName": "Триггер для",
 			"options": {
 				"messageReceived": {
-					"displayName": "Сообщение получено"
+					"displayName": "Письмо получено"
 				}
 			}
 		},
 		"output": {
-			"displayName": "Выход",
+			"displayName": "Результат",
 			"options": {
 				"simple": {
-					"displayName": "Упрощенный"
+					"displayName": "Упрощённый"
 				},
 				"raw": {
-					"displayName": "Сырой"
+					"displayName": "Исходные"
 				},
 				"fields": {
-					"displayName": "Выберите включенные поля"
+					"displayName": "Выбрать поля для включения"
 				}
 			}
 		},
 		"fields": {
 			"displayName": "Поля",
-			"description": "Поля, которые нужно добавить в выходные данные",
+			"description": "Поля для добавления в выход",
 			"options": {
 				"bccRecipients": {
 					"displayName": "bccRecipients"
 				},
 				"body": {
-					"displayName": "тело"
+					"displayName": "body"
 				},
 				"bodyPreview": {
-					"displayName": "телоПредварительный просмотр"
+					"displayName": "bodyPreview"
 				},
 				"categories": {
-					"displayName": "категории"
+					"displayName": "categories"
 				},
 				"ccRecipients": {
 					"displayName": "ccRecipients"
 				},
 				"changeKey": {
-					"displayName": "изменитьКлюч"
+					"displayName": "changeKey"
 				},
 				"conversationId": {
-					"displayName": "идентификатор разговора"
+					"displayName": "conversationId"
 				},
 				"createdDateTime": {
-					"displayName": "созданоДатаВремя"
+					"displayName": "createdDateTime"
 				},
 				"flag": {
-					"displayName": "флаг"
+					"displayName": "flag"
 				},
 				"from": {
-					"displayName": "от"
+					"displayName": "from"
 				},
 				"hasAttachments": {
-					"displayName": "имеет вложения"
+					"displayName": "hasAttachments"
 				},
 				"importance": {
-					"displayName": "важность"
+					"displayName": "importance"
 				},
 				"inferenceClassification": {
-					"displayName": "выводКлассификация"
+					"displayName": "inferenceClassification"
 				},
 				"internetMessageId": {
-					"displayName": "InternetMessageId"
+					"displayName": "internetMessageId"
 				},
 				"isDeliveryReceiptRequested": {
 					"displayName": "isDeliveryReceiptRequested"
@@ -107,31 +107,31 @@
 					"displayName": "isReadReceiptRequested"
 				},
 				"lastModifiedDateTime": {
-					"displayName": "последниймодифицированныйдатевремя"
+					"displayName": "lastModifiedDateTime"
 				},
 				"parentFolderId": {
-					"displayName": "родительская папкаид"
+					"displayName": "parentFolderId"
 				},
 				"receivedDateTime": {
-					"displayName": "полученоДатаВремя"
+					"displayName": "receivedDateTime"
 				},
 				"replyTo": {
-					"displayName": "ОтветитьКому"
+					"displayName": "replyTo"
 				},
 				"sender": {
-					"displayName": "отправитель"
+					"displayName": "sender"
 				},
 				"sentDateTime": {
-					"displayName": "отправленоДатаВремя"
+					"displayName": "sentDateTime"
 				},
 				"subject": {
-					"displayName": "предмет"
+					"displayName": "subject"
 				},
 				"toRecipients": {
-					"displayName": "получателям"
+					"displayName": "toRecipients"
 				},
 				"webLink": {
-					"displayName": "вебссылка"
+					"displayName": "webLink"
 				}
 			}
 		},
@@ -140,15 +140,15 @@
 			"placeholder": "Добавить фильтр",
 			"options": {
 				"custom": {
-					"displayName": "Фильтровать запрос",
+					"displayName": "Запрос фильтра",
 					"hint": "Поисковый запрос для фильтрации сообщений. <a href=\"https://learn.microsoft.com/en-us/graph/filter-query-parameter\">Подробнее</a>.",
 					"placeholder": "например isRead eq false"
 				},
 				"hasAttachments": {
-					"displayName": "Имеет вложения"
+					"displayName": "Есть вложения"
 				},
 				"foldersToExclude": {
-					"displayName": "Папки, которые нужно исключить",
+					"displayName": "Папки для исключения",
 					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
 				},
 				"foldersToInclude": {
@@ -156,8 +156,8 @@
 					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
 				},
 				"readStatus": {
-					"displayName": "Чтение статуса",
-					"hint": "Фильтровать сообщения по тому, были ли они прочитаны или нет.",
+					"displayName": "Статус прочтения",
+					"hint": "Фильтровать сообщения по статусу прочтения",
 					"options": {
 						"both": {
 							"displayName": "Непрочитанные и прочитанные сообщения"
@@ -166,13 +166,13 @@
 							"displayName": "Только непрочитанные сообщения"
 						},
 						"read": {
-							"displayName": "Только читать сообщения"
+							"displayName": "Только прочитанные сообщения"
 						}
 					}
 				},
 				"sender": {
 					"displayName": "Отправитель",
-					"description": "Имя отправителя или адрес электронной почты для фильтрации"
+					"description": "Имя или адрес отправителя для фильтрации"
 				}
 			}
 		},
@@ -182,11 +182,11 @@
 			"options": {
 				"attachmentsPrefix": {
 					"displayName": "Префикс вложений",
-					"description": "Префикс имени выходных полей для помещения данных в двоичные файлы. Будет добавлен индекс, начинающийся с 0. Таким образом, если имя «attachment_», первое вложение сохраняется в «attachment_0»."
+					"description": "Префикс имени выходных полей для размещения данных двоичных файлов. Будет добавлен индекс, начиная с 0. Так что если имя «attachment_», первое вложение сохраняется в «attachment_0»."
 				},
 				"downloadAttachments": {
 					"displayName": "Загрузить вложения",
-					"description": "Будут ли вложения к сообщению загружены и включены в выходные данные."
+					"description": "Будут ли загружены и включены в выходные данные вложения сообщения"
 				}
 			}
 		}

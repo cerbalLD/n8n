@@ -1,12 +1,12 @@
 {
 	"header": {
-		"displayName": "Стоп и ошибка",
+		"displayName": "Остановка и ошибка",
 		"description": "Выдать ошибку в рабочем процессе"
 	},
 	"nodeView": {
 		"errorType": {
 			"displayName": "Тип ошибки",
-			"description": "Тип ошибки, которую нужно выдать",
+			"description": "Тип выдаваемой ошибки",
 			"options": {
 				"errorMessage": {
 					"displayName": "Сообщение об ошибке"
@@ -22,8 +22,8 @@
 		},
 		"errorObject": {
 			"displayName": "Объект ошибки",
-			"description": "Объект, содержащий свойства ошибки",
-			"placeholder": "{\n\t\"код\": \"404\",\n\t\"description\": \"Не удалось получить ресурс\"\n}"
+			"description": "Объект с параметрами ошибки",
+			"placeholder": "{\n\t\"code\": \"404\",\n\t\"description\": \"Не удалось получить ресурс\"\n}"
 		}
 	}
 }

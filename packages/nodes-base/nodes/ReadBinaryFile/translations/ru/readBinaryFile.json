@@ -5,7 +5,7 @@
 	},
 	"nodeView": {
 		"filePath": {
-			"displayName": "Путь к файлу",
+			"displayName": "Путь файла",
 			"description": "Путь к файлу для чтения",
 			"placeholder": "/данные/пример.jpg"
 		},

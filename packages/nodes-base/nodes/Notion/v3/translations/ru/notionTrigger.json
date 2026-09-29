@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Понятие триггера",
-		"description": "Запускает рабочий процесс при возникновении событий Notion."
+		"displayName": "Триггер Notion",
+		"description": "Запускает рабочий процесс при возникновении событий Notion"
 	},
 	"nodeView": {
 		"authentication": {
@@ -19,15 +19,15 @@
 			"displayName": "Событие",
 			"options": {
 				"pageAddedToDatabase": {
-					"displayName": "Страница добавлена ​​в базу данных"
+					"displayName": "Страница добавлена в базу данных"
 				},
 				"pagedUpdatedInDatabase": {
-					"displayName": "Страница обновлена ​​в базе данных"
+					"displayName": "Страница обновлена в базе данных"
 				}
 			}
 		},
 		"notionNotice": {
-			"displayName": "В Notion обязательно <a href=\"https://www.notion.com/help/add-and-manage-connections-with-the-api\" target=\"_blank\">добавьте свое соединение</a> на страницы, к которым вы хотите получить доступ."
+			"displayName": "В Notion обязательно <a href=\"https://www.notion.com/help/add-and-manage-connections-with-the-api\" target=\"_blank\">добавьте соединение</a> к нужным страницам."
 		},
 		"databaseId": {
 			"displayName": "База данных",
@@ -38,8 +38,8 @@
 			"description": "Источник данных Notion для работы"
 		},
 		"simple": {
-			"displayName": "Упрощать",
-			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+			"displayName": "Упростить",
+			"description": "Возвращать ли упрощённую версию ответа вместо необработанных данных"
 		}
 	}
 }

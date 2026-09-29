@@ -66,7 +66,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать список"
 				},
 				"delete": {
@@ -74,7 +74,7 @@
 					"description": "Удалить список"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить список"
 				},
 				"getAll": {
@@ -86,7 +86,7 @@
 					"description": "Получить список"
 				},
 				"add": {
-					"displayName": "Добавлять",
+					"displayName": "Добавить",
 					"description": "Добавить тег к записи времени"
 				},
 				"remove": {
@@ -94,7 +94,7 @@
 					"description": "Удалить тег из записи времени"
 				},
 				"member": {
-					"displayName": "Член",
+					"displayName": "Участник",
 					"description": "Получить участников списка"
 				},
 				"setCustomField": {
@@ -102,11 +102,11 @@
 					"description": "Установить произвольное поле"
 				},
 				"start": {
-					"displayName": "Начинать",
+					"displayName": "Начать",
 					"description": "Начать ввод времени"
 				},
 				"stop": {
-					"displayName": "Останавливаться",
+					"displayName": "Остановить",
 					"description": "Остановить текущий таймер"
 				},
 				"customFields": {
@@ -117,7 +117,7 @@
 		},
 		"task": {
 			"displayName": "Идентификатор задачи",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"name": {
 			"displayName": "Имя",
@@ -138,7 +138,7 @@
 				},
 				"assignee": {
 					"displayName": "Имя или идентификатор правопреемника",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"parent": {
 					"displayName": "Идентификатор элемента родительского контрольного списка",
@@ -199,7 +199,7 @@
 					"displayName": "Уведомить всех"
 				},
 				"parentId": {
-					"displayName": "Идентификатор родителя"
+					"displayName": "ID родительской папки"
 				},
 				"priority": {
 					"displayName": "Приоритет",
@@ -230,15 +230,15 @@
 					"description": "Продолжительность в минутах"
 				},
 				"start": {
-					"displayName": "Начинать"
+					"displayName": "Начать"
 				},
 				"tags": {
-					"displayName": "Имена или идентификаторы тегов",
+					"displayName": "Имена или ID тегов",
 					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
 				},
 				"task": {
 					"displayName": "Имя или идентификатор задачи",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"unsetStatus": {
 					"displayName": "Сбросить статус"
@@ -251,7 +251,7 @@
 			"options": {
 				"assignee": {
 					"displayName": "Правопреемник",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"notifyAll": {
 					"displayName": "Уведомить всех",
@@ -317,7 +317,7 @@
 					"displayName": "Содержимое Markdown"
 				},
 				"parentId": {
-					"displayName": "Идентификатор родителя"
+					"displayName": "ID родительской папки"
 				},
 				"priority": {
 					"displayName": "Приоритет",
@@ -331,10 +331,10 @@
 				},
 				"status": {
 					"displayName": "Имя или идентификатор статуса",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"tags": {
-					"displayName": "Имена или идентификаторы тегов",
+					"displayName": "Имена или ID тегов",
 					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
 				},
 				"timeEstimate": {
@@ -359,12 +359,12 @@
 					"displayName": "Задача"
 				},
 				"view": {
-					"displayName": "Вид"
+					"displayName": "Просмотр"
 				}
 			}
 		},
 		"id": {
-			"displayName": "Идентификатор списка",
+			"displayName": "ID списка",
 			"description": "Идентификатор задачи"
 		},
 		"commentText": {
@@ -383,25 +383,25 @@
 					"displayName": "Задача"
 				},
 				"view": {
-					"displayName": "Вид"
+					"displayName": "Просмотр"
 				}
 			}
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"team": {
 			"displayName": "Название или идентификатор команды",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"space": {
 			"displayName": "Имя или идентификатор пространства",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"folder": {
 			"displayName": "Имя или идентификатор папки",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"filters": {
 			"displayName": "Фильтры",
@@ -423,7 +423,7 @@
 						"customFieldsValues": {
 							"options": {
 								"fieldId": {
-									"displayName": "Имя поля или идентификатор",
+									"displayName": "Имя поля или ID",
 									"description": "Идентификатор поля, к которому нужно добавить настраиваемое поле. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 								},
 								"operator": {
@@ -446,7 +446,7 @@
 											"displayName": ">="
 										},
 										"equal": {
-											"displayName": "Равный"
+											"displayName": "равно"
 										},
 										"IS NOT NULL": {
 											"displayName": "Не является нулевым"
@@ -457,7 +457,7 @@
 									}
 								},
 								"value": {
-									"displayName": "Ценить",
+									"displayName": "Значение",
 									"description": "Значение, которое нужно установить в настраиваемом поле"
 								}
 							}
@@ -501,7 +501,7 @@
 					"description": "По умолчанию ответ не включает закрытые задачи. Установите для этого параметра значение true и не отправляйте фильтр состояния для включения закрытых задач."
 				},
 				"orderBy": {
-					"displayName": "Заказать по",
+					"displayName": "Сортировать по",
 					"options": {
 						"id": {
 							"displayName": "ID"
@@ -526,7 +526,7 @@
 					"description": "Включать ли подзадачи, по умолчанию false"
 				},
 				"tags": {
-					"displayName": "Имена или идентификаторы тегов",
+					"displayName": "Имена или ID тегов",
 					"description": "Массив тегов, примененных к этой задаче. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"end_date": {
@@ -547,10 +547,10 @@
 					"displayName": "Автоматический"
 				},
 				"boolean": {
-					"displayName": "логическое значение"
+					"displayName": "Логическое значение"
 				},
 				"currency": {
-					"displayName": "Валюта"
+					"displayName": "валюта"
 				},
 				"number": {
 					"displayName": "Число"
@@ -570,7 +570,7 @@
 			"displayName": "Имя тега"
 		},
 		"listId": {
-			"displayName": "Идентификатор списка"
+			"displayName": "ID списка"
 		},
 		"newName": {
 			"displayName": "Новое имя",
@@ -590,8 +590,8 @@
 			"displayName": "Список без папок"
 		},
 		"list": {
-			"displayName": "Идентификатор списка",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"displayName": "ID списка",
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"includeSubtasks": {
 			"displayName": "Включить подзадачи",
@@ -602,7 +602,7 @@
 			"description": "Включать ли поле markdown_description в ответ. Это важно для сохранения ссылок в описании."
 		},
 		"field": {
-			"displayName": "Идентификатор поля",
+			"displayName": "ID поля",
 			"description": "Идентификатор поля, в которое нужно добавить настраиваемое поле."
 		},
 		"jsonParse": {
@@ -610,21 +610,21 @@
 			"description": "Значением является JSON, и оно будет анализироваться как таковое. Требуется, например, для меток, которые ожидают, что значение будет массивом."
 		},
 		"value": {
-			"displayName": "Ценить",
+			"displayName": "Значение",
 			"description": "Значение, которое нужно установить в настраиваемом поле"
 		},
 		"dependsOnTask": {
 			"displayName": "Зависит от идентификатора задачи"
 		},
 		"running": {
-			"displayName": "Бег",
+			"displayName": "Выполняется",
 			"description": "Возвращать ли только текущую запись времени выполнения"
 		},
 		"timeEntry": {
 			"displayName": "Идентификатор записи времени"
 		},
 		"start": {
-			"displayName": "Начинать"
+			"displayName": "Начать"
 		},
 		"duration": {
 			"displayName": "Продолжительность (минуты)",
@@ -642,7 +642,7 @@
 					"displayName": "Теги"
 				},
 				"tagsValues": {
-					"displayName": "Ярлык",
+					"displayName": "Тег",
 					"values": {
 						"name": {
 							"displayName": "Имя"
@@ -660,7 +660,7 @@
 			"displayName": "Теги"
 		},
 		"tagNames": {
-			"displayName": "Имена или идентификаторы тегов",
+			"displayName": "Имена или ID тегов",
 			"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
 		}
 	}

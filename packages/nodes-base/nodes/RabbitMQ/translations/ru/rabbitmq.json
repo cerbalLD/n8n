@@ -1,14 +1,14 @@
 {
 	"header": {
-		"displayName": "КроликMQ",
-		"description": "Отправляет сообщения в тему RabbitMQ"
+		"displayName": "RabbitMQ",
+		"description": "Отправка сообщений в тему RabbitMQ"
 	},
 	"nodeView": {
 		"operation": {
 			"displayName": "Операция",
 			"options": {
 				"sendMessage": {
-					"displayName": "Отправить сообщение RabbitMQ"
+					"displayName": "Отправить сообщение в RabbitMQ"
 				},
 				"deleteMessage": {
 					"displayName": "Удалить из очереди"
@@ -16,19 +16,19 @@
 			}
 		},
 		"deleteMessage": {
-			"displayName": "Удалит элемент из очереди, запущенной ранее в рабочем процессе узлом RabbitMQ Trigger."
+			"displayName": "Удалит элемент из очереди, инициированной ранее в рабочем процессе узлом-триггером RabbitMQ"
 		},
 		"mode": {
 			"displayName": "Режим",
-			"description": "Куда следует переместить данные",
+			"description": "Куда должны быть перемещены данные",
 			"options": {
 				"queue": {
 					"displayName": "Очередь",
 					"description": "Публикация данных в очередь"
 				},
 				"exchange": {
-					"displayName": "Обмен",
-					"description": "Публикация данных для обмена"
+					"displayName": "Биржа",
+					"description": "Публикация данных в обмен"
 				}
 			}
 		},
@@ -38,9 +38,9 @@
 			"placeholder": "имя-очереди"
 		},
 		"exchange": {
-			"displayName": "Обмен",
-			"description": "Название биржи для публикации",
-			"placeholder": "имя обмена"
+			"displayName": "Биржа",
+			"description": "Имя обмена для публикации",
+			"placeholder": "имя-обмена"
 		},
 		"exchangeType": {
 			"displayName": "Тип",
@@ -48,30 +48,30 @@
 			"options": {
 				"direct": {
 					"displayName": "Прямой",
-					"description": "Тип прямого обмена"
+					"description": "Прямой тип обмена"
 				},
 				"topic": {
 					"displayName": "Тема",
-					"description": "Тип обмена темами"
+					"description": "Тематический тип обмена"
 				},
 				"headers": {
 					"displayName": "Заголовки",
-					"description": "Тип обмена заголовками"
+					"description": "Обмен по заголовкам"
 				},
 				"fanout": {
 					"displayName": "Разветвление",
-					"description": "Тип обмена разветвлениями"
+					"description": "Тип обмена с разветвлением"
 				}
 			}
 		},
 		"routingKey": {
 			"displayName": "Ключ маршрутизации",
 			"description": "Ключ маршрутизации сообщения",
-			"placeholder": "ключ маршрутизации"
+			"placeholder": "ключ-маршрутизации"
 		},
 		"sendInputData": {
 			"displayName": "Отправить входные данные",
-			"description": "Отправлять ли данные, которые получает узел, в формате JSON."
+			"description": "Отправлять ли полученные узлом данные в виде JSON"
 		},
 		"message": {
 			"displayName": "Сообщение",
@@ -97,7 +97,7 @@
 									"displayName": "Ключ"
 								},
 								"value": {
-									"displayName": "Ценить"
+									"displayName": "Значение"
 								}
 							}
 						}
@@ -135,7 +135,7 @@
 									"displayName": "Ключ"
 								},
 								"value": {
-									"displayName": "Ценить"
+									"displayName": "Значение"
 								}
 							}
 						}

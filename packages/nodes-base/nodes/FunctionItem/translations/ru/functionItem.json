@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Функция Элемент",
-		"description": "Запуск кода пользовательской функции, который выполняется один раз для каждого элемента."
+		"displayName": "Функция для элемента",
+		"description": "Запустить код, выполняющийся один раз для каждого элемента"
 	},
 	"nodeView": {
 		"notice": {
@@ -9,7 +9,7 @@
 		},
 		"functionCode": {
 			"displayName": "JavaScript-код",
-			"description": "Код JavaScript, выполняемый для каждого элемента"
+			"description": "JavaScript-код для выполнения на каждом элементе"
 		}
 	}
 }

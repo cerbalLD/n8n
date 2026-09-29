@@ -22,7 +22,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать партнерку"
 				},
 				"delete": {
@@ -38,7 +38,7 @@
 					"description": "Получите много партнеров в программе"
 				},
 				"add": {
-					"displayName": "Добавлять",
+					"displayName": "Добавить",
 					"description": "Добавить партнера в программу"
 				},
 				"remove": {
@@ -46,11 +46,11 @@
 					"description": "Удалить метаданные партнера"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить метаданные партнера"
 				},
 				"approve": {
-					"displayName": "Утвердить",
+					"displayName": "Одобрить",
 					"description": "Утвердить партнера для программы"
 				},
 				"disapprove": {
@@ -84,19 +84,19 @@
 						"addressValues": {
 							"options": {
 								"address": {
-									"displayName": "Линия 1"
+									"displayName": "строка 1"
 								},
 								"address_two": {
-									"displayName": "Линия 2"
+									"displayName": "строка 2"
 								},
 								"postal_code": {
 									"displayName": "Почтовый индекс"
 								},
 								"city": {
-									"displayName": "Город"
+									"displayName": "город"
 								},
 								"state": {
-									"displayName": "Состояние"
+									"displayName": "область"
 								},
 								"country": {
 									"displayName": "Код страны",
@@ -137,7 +137,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"filters": {
 			"displayName": "Фильтры",
@@ -156,7 +156,7 @@
 					"placeholder": "имя@email.com"
 				},
 				"parentId": {
-					"displayName": "Идентификатор родителя",
+					"displayName": "ID родительской папки",
 					"description": "Извлекает детей для определенного родительского филиала"
 				},
 				"referral_code": {
@@ -164,7 +164,7 @@
 					"description": "Реферальный код партнера. Это соответствует значению ref= в их реферальной ссылке."
 				},
 				"source_id": {
-					"displayName": "Идентификатор источника"
+					"displayName": "ID источника"
 				}
 			}
 		},
@@ -182,8 +182,8 @@
 							"description": "Имя добавляемого ключа метаданных"
 						},
 						"value": {
-							"displayName": "Ценить",
-							"description": "Значение, которое нужно установить для ключа метаданных"
+							"displayName": "Значение",
+							"description": "Значение для ключа метаданных"
 						}
 					}
 				}
@@ -197,8 +197,8 @@
 			"description": "Имя ключа метаданных для обновления"
 		},
 		"value": {
-			"displayName": "Ценить",
-			"description": "Значение, которое нужно установить для ключа метаданных"
+			"displayName": "Значение",
+			"description": "Значение для ключа метаданных"
 		},
 		"programId": {
 			"displayName": "Название или идентификатор программы",

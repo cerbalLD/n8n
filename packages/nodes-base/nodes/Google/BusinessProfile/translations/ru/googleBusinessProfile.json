@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "Профиль компании в Google",
+		"displayName": "Профиль компании Google",
 		"description": "Использование API профиля компании Google"
 	},
 	"nodeView": {
@@ -8,10 +8,10 @@
 			"displayName": "Ресурс",
 			"options": {
 				"post": {
-					"displayName": "Почта"
+					"displayName": "Тема"
 				},
 				"review": {
-					"displayName": "Обзор"
+					"displayName": "Рецензия"
 				}
 			}
 		},
@@ -19,8 +19,8 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
-					"description": "Создайте новую публикацию в профиле компании в Google."
+					"displayName": "Создать",
+					"description": "Создать публикацию в профиле компании"
 				},
 				"delete": {
 					"displayName": "Удалить ответ",
@@ -28,36 +28,36 @@
 				},
 				"get": {
 					"displayName": "Получать",
-					"description": "Получить подробную информацию о конкретном отзыве в профиле компании в Google."
+					"description": "Получить информацию об отзыве"
 				},
 				"getAll": {
 					"displayName": "Получить много",
 					"description": "Получить несколько отзывов"
 				},
 				"update": {
-					"displayName": "Обновлять",
-					"description": "Обновить существующую публикацию"
+					"displayName": "Обновить",
+					"description": "Обновить публикацию"
 				},
 				"reply": {
 					"displayName": "Отвечать",
-					"description": "Ответ на отзыв"
+					"description": "Ответить на отзыв"
 				}
 			}
 		},
 		"account": {
-			"displayName": "Счет",
-			"description": "Аккаунт профиля компании в Google"
+			"displayName": "Учётная запись",
+			"description": "Аккаунт профиля компании Google"
 		},
 		"location": {
 			"displayName": "Расположение",
-			"description": "Конкретное местоположение или компания, связанная с учетной записью."
+			"description": "Место расположения или компания, связанные с аккаунтом"
 		},
 		"postType": {
-			"displayName": "Тип сообщения",
-			"description": "Тип создаваемой публикации (стандартная, событие, предложение или оповещение).",
+			"displayName": "Тип публикации",
+			"description": "Тип публикации: стандартная, событие, предложение или оповещение",
 			"options": {
 				"STANDARD": {
-					"displayName": "Стандартный"
+					"displayName": "Standard"
 				},
 				"EVENT": {
 					"displayName": "Событие"
@@ -66,29 +66,29 @@
 					"displayName": "Предложение"
 				},
 				"ALERT": {
-					"displayName": "Тревога"
+					"displayName": "Оповещение"
 				}
 			}
 		},
 		"summary": {
-			"displayName": "Краткое содержание",
-			"description": "Основной текст поста"
+			"displayName": "Краткое описание",
+			"description": "Основной текст публикации"
 		},
 		"title": {
-			"displayName": "Заголовок",
-			"description": "Например. Скидка 20% в магазине или онлайн."
+			"displayName": "Название",
+			"description": "Например: скидка 20% в магазине или онлайн."
 		},
 		"startDateTime": {
 			"displayName": "Дата и время начала",
-			"description": "Дата и время начала мероприятия"
+			"description": "Дата и время начала события"
 		},
 		"endDateTime": {
 			"displayName": "Дата и время окончания",
-			"description": "Дата и время окончания мероприятия"
+			"description": "Дата и время окончания события"
 		},
 		"startDate": {
 			"displayName": "Дата начала",
-			"description": "Дата начала действия предложения",
+			"description": "Дата начала предложения",
 			"placeholder": "YYYY-MM-DD"
 		},
 		"endDate": {
@@ -102,7 +102,7 @@
 			"options": {
 				"COVID_19": {
 					"displayName": "COVID-19",
-					"description": "Это предупреждение связано с пандемией коронавирусного заболевания 2019 года."
+					"description": "Оповещение, связанное с пандемией COVID-19"
 				}
 			}
 		},
@@ -112,7 +112,7 @@
 			"options": {
 				"languageCode": {
 					"displayName": "Язык",
-					"description": "Код языка содержимого публикации. <a href=\"https://cloud.google.com/translate/docs/languages\" target=\"_blank\">Подробнее</a>.",
+					"description": "Код языка контента публикации. <a href=\"https://cloud.google.com/translate/docs/languages\" target=\"_blank\">Подробнее</a>.",
 					"placeholder": "например ru"
 				},
 				"callToActionType": {
@@ -124,45 +124,45 @@
 							"description": "Тип не указан"
 						},
 						"BOOK": {
-							"displayName": "Книга",
-							"description": "В этом сообщении пользователь хочет записаться на прием/стол/и т. д."
+							"displayName": "Записаться",
+							"description": "Пользователю предлагается записаться на приём, стол и т. д."
 						},
 						"CALL": {
-							"displayName": "Вызов",
-							"description": "В этом сообщении пользователь хочет позвонить в компанию"
+							"displayName": "Звонок",
+							"description": "Пользователю предлагается позвонить в компанию"
 						},
 						"LEARN_MORE": {
 							"displayName": "Узнать больше",
-							"description": "Этот пост хочет, чтобы пользователь узнал больше (на своем веб-сайте)."
+							"description": "Пользователю предлагается узнать больше на сайте"
 						},
 						"ORDER": {
-							"displayName": "Заказ",
-							"description": "Этот пост хочет, чтобы пользователь что-то заказал"
+							"displayName": "Порядок",
+							"description": "Пользователю предлагается что-то заказать"
 						},
 						"SHOP": {
 							"displayName": "Магазин",
-							"description": "В этом сообщении пользователю предлагается просмотреть каталог продуктов."
+							"description": "Пользователю предлагается просмотреть каталог товаров"
 						},
 						"SIGN_UP": {
 							"displayName": "Зарегистрироваться",
-							"description": "В этом сообщении пользователю предлагается зарегистрироваться/зарегистрироваться/присоединиться к чему-либо."
+							"description": "Пользователю предлагается зарегистрироваться или присоединиться"
 						},
 						"GET_OFFER": {
 							"displayName": "Получить предложение",
-							"description": "Устарело. Используйте OFFER в LocalPostTopicType, чтобы создать публикацию с содержанием предложения."
+							"description": "Устаревший вариант. Используйте OFFER в LocalPostTopicType для создания публикации с предложением."
 						}
 					}
 				},
 				"url": {
-					"displayName": "URL-адрес призыва к действию",
-					"description": "URL-адрес, на который перенаправляются пользователи при переходе по рекламному объявлению."
+					"displayName": "URL призыва к действию",
+					"description": "URL, на который переходит пользователь при клике на промо"
 				},
 				"couponCode": {
 					"displayName": "Код купона",
 					"description": "Код купона для предложения"
 				},
 				"redeemOnlineUrl": {
-					"displayName": "Активировать онлайн-URL",
+					"displayName": "URL для активации онлайн",
 					"description": "Ссылка для активации предложения"
 				},
 				"termsConditions": {
@@ -170,24 +170,24 @@
 					"description": "Условия предложения"
 				},
 				"summary": {
-					"displayName": "Краткое содержание",
-					"description": "Основной текст поста"
+					"displayName": "Краткое описание",
+					"description": "Основной текст публикации"
 				},
 				"startDateTime": {
 					"displayName": "Дата и время начала",
-					"description": "Дата и время начала мероприятия"
+					"description": "Дата и время начала события"
 				},
 				"endDateTime": {
 					"displayName": "Дата и время окончания",
-					"description": "Дата и время окончания мероприятия"
+					"description": "Дата и время окончания события"
 				},
 				"title": {
-					"displayName": "Заголовок",
-					"description": "Например. Скидка 20% в магазине или онлайн."
+					"displayName": "Название",
+					"description": "Например: скидка 20% в магазине или онлайн."
 				},
 				"startDate": {
 					"displayName": "Дата начала",
-					"description": "Дата начала действия предложения",
+					"description": "Дата начала предложения",
 					"placeholder": "YYYY-MM-DD"
 				},
 				"endDate": {
@@ -198,8 +198,8 @@
 			}
 		},
 		"post": {
-			"displayName": "Почта",
-			"description": "Выберите публикацию, чтобы получить ее подробную информацию."
+			"displayName": "Тема",
+			"description": "Выберите публикацию"
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",
@@ -207,18 +207,18 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"notice": {
-			"displayName": "Убедитесь, что обновленные параметры поддерживаются типом публикации. <a target='_blank' href='https://developers.google.com/my-business/reference/rest/v4/accounts.locations.localPosts#resource:-localpost'>Подробнее</a>."
+			"displayName": "Убедитесь, что параметры поддерживаются типом публикации. <a target='_blank' href='https://developers.google.com/my-business/reference/rest/v4/accounts.locations.localPosts#resource:-localpost'>Подробнее</a>."
 		},
 		"review": {
-			"displayName": "Обзор",
-			"description": "Выберите отзыв, чтобы получить его подробную информацию."
+			"displayName": "Рецензия",
+			"description": "Выберите отзыв"
 		},
 		"reply": {
 			"displayName": "Отвечать",
-			"description": "Тело ответа (до 4096 символов)"
+			"description": "Текст ответа (до 4096 символов)"
 		}
 	}
 }

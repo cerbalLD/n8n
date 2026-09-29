@@ -14,7 +14,7 @@
 					"displayName": "Промышленность"
 				},
 				"invite": {
-					"displayName": "Приглашать"
+					"displayName": "Приглашение"
 				},
 				"portfolio": {
 					"displayName": "Портфель"
@@ -23,7 +23,7 @@
 					"displayName": "Портфельная компания"
 				},
 				"report": {
-					"displayName": "Отчет"
+					"displayName": "Отчёт"
 				}
 			}
 		},
@@ -54,7 +54,7 @@
 					"displayName": "Получить оценку"
 				},
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать портфолио"
 				},
 				"delete": {
@@ -66,11 +66,11 @@
 					"description": "Получить список недавно созданных отчетов"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить портфолио"
 				},
 				"add": {
-					"displayName": "Добавлять",
+					"displayName": "Добавить",
 					"description": "Добавить компанию в портфолио"
 				},
 				"remove": {
@@ -82,7 +82,7 @@
 					"description": "Скачать созданный отчет"
 				},
 				"generate": {
-					"displayName": "Генерировать",
+					"displayName": "Сгенерировать",
 					"description": "Создать отчет"
 				}
 			}
@@ -92,7 +92,7 @@
 			"description": "Основной идентификатор компании или системы показателей, т. е. домена."
 		},
 		"score": {
-			"displayName": "Счет",
+			"displayName": "Оценка",
 			"description": "Цель"
 		},
 		"returnAll": {
@@ -101,18 +101,18 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"simple": {
-			"displayName": "Упрощать",
-			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+			"displayName": "Упростить",
+			"description": "Возвращать ли упрощённую версию ответа вместо необработанных данных"
 		},
 		"filters": {
 			"displayName": "Фильтры",
 			"placeholder": "Добавить фильтр",
 			"options": {
 				"severity": {
-					"displayName": "Серьезность"
+					"displayName": "Серьёзность"
 				},
 				"severity_in": {
 					"displayName": "Серьезность в",
@@ -127,7 +127,7 @@
 					"description": "Отраслевой фильтр"
 				},
 				"issueType": {
-					"displayName": "Тип проблемы",
+					"displayName": "Тип задачи",
 					"description": "Фильтр типа проблемы"
 				},
 				"status": {
@@ -137,7 +137,7 @@
 							"displayName": "Активный"
 						},
 						"inactive": {
-							"displayName": "Неактивный"
+							"displayName": "Неактивно"
 						}
 					}
 				},
@@ -152,7 +152,7 @@
 			"placeholder": "Добавить поле",
 			"options": {
 				"date_from": {
-					"displayName": "Дата От",
+					"displayName": "Дата от",
 					"description": "Дата начала истории"
 				},
 				"date_to": {
@@ -160,7 +160,7 @@
 					"description": "Дата окончания истории"
 				},
 				"timing": {
-					"displayName": "Тайминг",
+					"displayName": "Время выполнения",
 					"description": "Детализация даты",
 					"options": {
 						"daily": {
@@ -175,7 +175,7 @@
 					}
 				},
 				"from": {
-					"displayName": "Дата От",
+					"displayName": "Дата от",
 					"description": "Дата начала истории"
 				},
 				"to": {
@@ -217,7 +217,7 @@
 					"displayName": "Производство"
 				},
 				"retail": {
-					"displayName": "Розничная торговля"
+					"displayName": "Розница"
 				},
 				"technology": {
 					"displayName": "Технология"
@@ -265,7 +265,7 @@
 					"displayName": "Название проблемы"
 				},
 				"issue_type": {
-					"displayName": "Тип проблемы"
+					"displayName": "Тип задачи"
 				},
 				"sendme_copy": {
 					"displayName": "Отправьте мне копию",
@@ -309,7 +309,7 @@
 			"description": "Доменное имя компании"
 		},
 		"report": {
-			"displayName": "Отчет",
+			"displayName": "Отчёт",
 			"options": {
 				"detailed": {
 					"displayName": "Подробная информация о компании"

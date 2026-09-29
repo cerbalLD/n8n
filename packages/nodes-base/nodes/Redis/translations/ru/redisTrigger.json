@@ -14,7 +14,7 @@
 			"options": {
 				"jsonParseBody": {
 					"displayName": "Тело синтаксического анализа JSON",
-					"description": "Стоит ли пытаться разобрать сообщение на объект"
+					"description": "Попытаться ли разобрать сообщение как объект"
 				},
 				"onlyMessage": {
 					"displayName": "Только сообщение",

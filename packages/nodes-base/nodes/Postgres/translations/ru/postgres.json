@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "Постгрес",
-		"description": "Получайте, добавляйте и обновляйте данные в Postgres"
+		"displayName": "Postgres",
+		"description": "Получать, добавлять и обновлять данные в Postgres"
 	}
 }

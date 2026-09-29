@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "Оду",
+		"displayName": "Odoo",
 		"description": "Использование API Odoo"
 	},
 	"nodeView": {
@@ -9,11 +9,11 @@
 			"options": {
 				"odooApiKeyApi": {
 					"displayName": "Ключ API (рекомендуется)",
-					"description": "Используйте ключ API — сгенерируйте его в «Настройки» > «Технические» > «Ключи API». Требуется Odoo 19+."
+					"description": "Используйте ключ API — создайте его в Параметры &gt; Технический &gt; Ключи API. Требуется Odoo 19+."
 				},
 				"odooApi": {
-					"displayName": "Имя пользователя и пароль",
-					"description": "Устаревшая аутентификация с использованием имени пользователя и пароля"
+					"displayName": "имя пользователя и пароль",
+					"description": "Классическая аутентификация с использованием имени пользователя и пароля"
 				}
 			}
 		},
@@ -38,8 +38,8 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
-					"description": "Создайте новую возможность"
+					"displayName": "Создать",
+					"description": "Создать новую возможность"
 				},
 				"delete": {
 					"displayName": "Удалить",
@@ -47,36 +47,36 @@
 				},
 				"get": {
 					"displayName": "Получать",
-					"description": "Получите возможность"
+					"description": "Получить возможность"
 				},
 				"getAll": {
 					"displayName": "Получить много",
-					"description": "Получите много возможностей"
+					"description": "Получить несколько возможностей"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить возможность"
 				}
 			}
 		},
 		"res_model": {
 			"displayName": "Модель связанного документа",
-			"description": "Модель документа Odoo, к которому нужно прикрепить действие."
+			"description": "Модель Odoo документа, к которому нужно прикрепить действие"
 		},
 		"res_id": {
 			"displayName": "Связанный документ",
 			"description": "Запись, к которой нужно прикрепить действие"
 		},
 		"activity_type_id": {
-			"displayName": "Тип деятельности",
-			"description": "Вид деятельности по расписанию"
+			"displayName": "Тип действия",
+			"description": "Тип действия для планирования"
 		},
 		"additionalFields": {
 			"displayName": "Дополнительные поля"
 		},
 		"activityId": {
 			"displayName": "Активность",
-			"description": "Действия для обновления"
+			"description": "Действие для обновления"
 		},
 		"options": {
 			"displayName": "Параметры",
@@ -85,7 +85,7 @@
 				"fieldsList": {
 					"displayName": "Поля для включения",
 					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>",
-					"placeholder": "например имя, электронная почта, телефон"
+					"placeholder": "например name,email,phone"
 				}
 			}
 		},
@@ -95,7 +95,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"filters": {
 			"displayName": "Фильтры",
@@ -104,11 +104,11 @@
 				"res_model": {
 					"displayName": "Модель связанного документа",
 					"description": "Фильтровать действия, связанные с этой моделью",
-					"placeholder": "например Рез.партнер"
+					"placeholder": "например res.partner"
 				},
 				"res_id": {
 					"displayName": "Идентификатор связанного документа",
-					"description": "Фильтрация действий, связанных с определенным идентификатором записи"
+					"description": "Фильтровать действия, связанные с определённым идентификатором записи"
 				},
 				"filters": {
 					"displayName": "Фильтры"
@@ -117,26 +117,26 @@
 					"displayName": "Фильтр",
 					"values": {
 						"fieldName": {
-							"displayName": "Имя поля или идентификатор",
-							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+							"displayName": "Имя поля или ID",
+							"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 						},
 						"operator": {
 							"displayName": "Оператор",
 							"options": {
 								"equal": {
-									"displayName": "Равный"
+									"displayName": "равно"
 								},
 								"notEqual": {
 									"displayName": "Не равно"
 								},
 								"greaterThen": {
-									"displayName": "Больше, чем"
+									"displayName": "Больше чем"
 								},
 								"lesserThen": {
-									"displayName": "Меньше, чем"
+									"displayName": "Меньше чем"
 								},
 								"greaterOrEqual": {
-									"displayName": "Больше или Равно"
+									"displayName": "Больше или равно"
 								},
 								"lesserOrEqual": {
 									"displayName": "Меньше или равно"
@@ -151,12 +151,12 @@
 									"displayName": "Не в"
 								},
 								"childOf": {
-									"displayName": "Дитя"
+									"displayName": "Дочерний элемент"
 								}
 							}
 						},
 						"value": {
-							"displayName": "Ценить"
+							"displayName": "Значение"
 						}
 					}
 				}
@@ -167,19 +167,19 @@
 		},
 		"contactId": {
 			"displayName": "Контакт",
-			"description": "Свяжитесь для обновления"
+			"description": "Контакт для обновления"
 		},
 		"customResource": {
-			"displayName": "Имя или идентификатор ресурса",
+			"displayName": "Название или идентификатор ресурса",
 			"description": "Модель Odoo для работы"
 		},
 		"recordId": {
-			"displayName": "Записывать",
+			"displayName": "Запись",
 			"description": "Запись для обновления"
 		},
 		"opportunityId": {
 			"displayName": "Возможность",
-			"description": "Возможность обновления"
+			"description": "Возможность для обновления"
 		}
 	}
 }

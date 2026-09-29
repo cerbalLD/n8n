@@ -16,7 +16,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать"
+					"displayName": "Создать"
 				},
 				"deleteItem": {
 					"displayName": "Удалить"
@@ -28,7 +28,7 @@
 					"displayName": "Получить много"
 				},
 				"update": {
-					"displayName": "Обновлять"
+					"displayName": "Обновить"
 				}
 			}
 		},
@@ -41,7 +41,7 @@
 			"description": "Идентификатор коллекции, в которую нужно добавить элемент. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 		},
 		"live": {
-			"displayName": "Жить",
+			"displayName": "Опубликовано",
 			"description": "Должен ли элемент быть опубликован на действующем сайте"
 		},
 		"fieldsUi": {
@@ -53,7 +53,7 @@
 					"displayName": "Поле",
 					"values": {
 						"fieldId": {
-							"displayName": "Имя поля или идентификатор",
+							"displayName": "Имя поля или ID",
 							"description": "Поле для установки создаваемого элемента. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 						},
 						"fieldValue": {
@@ -67,7 +67,7 @@
 			"displayName": "Поля"
 		},
 		"itemId": {
-			"displayName": "Идентификатор предмета",
+			"displayName": "ID элемента",
 			"description": "Идентификатор элемента для обновления"
 		},
 		"returnAll": {
@@ -76,7 +76,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		}
 	}
 }

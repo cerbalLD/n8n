@@ -33,7 +33,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать нового пользователя"
 				},
 				"delete": {
@@ -49,7 +49,7 @@
 					"description": "Получить список пользователей"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить существующего пользователя"
 				},
 				"addToGroup": {
@@ -148,7 +148,7 @@
 											"displayName": "Пол"
 										},
 										"given_name": {
-											"displayName": "Собственное имя"
+											"displayName": "Имя"
 										},
 										"locale": {
 											"displayName": "Языковой стандарт"
@@ -194,7 +194,7 @@
 									"placeholder": "Custom:myAttribute"
 								},
 								"value": {
-									"displayName": "Ценить",
+									"displayName": "Значение",
 									"description": "Значение атрибута"
 								}
 							}
@@ -241,7 +241,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"newUserName": {
 			"displayName": "Имя пользователя",
@@ -253,8 +253,8 @@
 			"description": "Выберите пользователя, которого хотите удалить из группы"
 		},
 		"simple": {
-			"displayName": "Упрощать",
-			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+			"displayName": "Упростить",
+			"description": "Возвращать ли упрощённую версию ответа вместо необработанных данных"
 		},
 		"filters": {
 			"options": {
@@ -278,7 +278,7 @@
 									"displayName": "Фамилия"
 								},
 								"given_name": {
-									"displayName": "Собственное имя"
+									"displayName": "Имя"
 								},
 								"name": {
 									"displayName": "Имя"
@@ -301,7 +301,7 @@
 							}
 						},
 						"value": {
-							"displayName": "Ценить",
+							"displayName": "Значение",
 							"description": "Значение атрибута для поиска"
 						}
 					}
@@ -349,7 +349,7 @@
 									"displayName": "Пол"
 								},
 								"given_name": {
-									"displayName": "Собственное имя"
+									"displayName": "Имя"
 								},
 								"locale": {
 									"displayName": "Языковой стандарт"
@@ -392,7 +392,7 @@
 							"placeholder": "Custom:myAttribute"
 						},
 						"value": {
-							"displayName": "Ценить",
+							"displayName": "Значение",
 							"description": "Значение атрибута"
 						}
 					}

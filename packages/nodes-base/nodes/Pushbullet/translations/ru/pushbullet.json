@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "Пушбуллет",
+		"displayName": "Pushbullet",
 		"description": "Использование API Pushbullet"
 	},
 	"nodeView": {
@@ -8,7 +8,7 @@
 			"displayName": "Ресурс",
 			"options": {
 				"push": {
-					"displayName": "Толкать"
+					"displayName": "Отправка"
 				}
 			}
 		},
@@ -16,7 +16,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать push-уведомление"
 				},
 				"delete": {
@@ -25,10 +25,10 @@
 				},
 				"getAll": {
 					"displayName": "Получить много",
-					"description": "Получите много нажатий"
+					"description": "Получить несколько push-уведомлений"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить push-уведомление"
 				}
 			}
@@ -40,7 +40,7 @@
 					"displayName": "Файл"
 				},
 				"link": {
-					"displayName": "Связь"
+					"displayName": "Ссылка"
 				},
 				"note": {
 					"displayName": "Примечание"
@@ -48,49 +48,49 @@
 			}
 		},
 		"title": {
-			"displayName": "Заголовок",
-			"description": "Название push-уведомления"
+			"displayName": "Название",
+			"description": "Заголовок push-уведомления"
 		},
 		"body": {
 			"displayName": "Тело",
-			"description": "Тело толчка"
+			"description": "Текст push-уведомления"
 		},
 		"url": {
 			"displayName": "URL",
-			"description": "URL-адрес push-уведомления"
+			"description": "URL push-уведомления"
 		},
 		"binaryPropertyName": {
 			"displayName": "Входное двоичное поле",
-			"hint": "Имя входного двоичного поля, содержащего файл для записи."
+			"hint": "Имя входного двоичного поля, содержащего файл для записи"
 		},
 		"target": {
 			"displayName": "Цель",
-			"description": "Определите среду, которая будет использоваться для отправки push-уведомлений.",
+			"description": "Выберите канал отправки push-уведомления",
 			"options": {
 				"channel_tag": {
 					"displayName": "Тег канала",
-					"description": "Отправьте уведомление всем подписчикам вашего канала, на котором есть этот тег."
+					"description": "Отправить push-уведомление всем подписчикам канала с этим тегом"
 				},
 				"default": {
 					"displayName": "По умолчанию",
-					"description": "Транслируйте его на все устройства пользователя."
+					"description": "Транслировать на все устройства пользователя"
 				},
 				"device_iden": {
 					"displayName": "Идентификатор устройства",
-					"description": "Отправьте push-уведомление на определенное устройство"
+					"description": "Отправить push-уведомление на конкретное устройство"
 				},
 				"email": {
 					"displayName": "Электронная почта",
-					"description": "Отправьте сообщение на этот адрес электронной почты"
+					"description": "Отправить push-уведомление на этот адрес электронной почты"
 				}
 			}
 		},
 		"value": {
 			"displayName": "Имя или идентификатор значения",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"pushId": {
-			"displayName": "Нажмите идентификатор"
+			"displayName": "Идентификатор push-уведомления"
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",
@@ -98,7 +98,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"filters": {
 			"displayName": "Фильтры",
@@ -106,17 +106,17 @@
 			"options": {
 				"active": {
 					"displayName": "Активный",
-					"description": "Не возвращать удаленные push-уведомления"
+					"description": "Не возвращать удалённые push-уведомления"
 				},
 				"modified_after": {
 					"displayName": "Изменено после",
-					"description": "Запросы на отправку изменены после этой временной метки"
+					"description": "Запросить push-уведомления, изменённые после этой временной метки"
 				}
 			}
 		},
 		"dismissed": {
-			"displayName": "Уволен",
-			"description": "Если пометить push-уведомление как отклоненное пользователем, все уведомления о push-уведомлении будут скрыты, если это возможно."
+			"displayName": "Отклонено",
+			"description": "Отметить push-уведомление как отклоненное пользователем — скроет уведомления о нём, если возможно"
 		}
 	}
 }

@@ -5,7 +5,7 @@
 	},
 	"nodeView": {
 		"triggerOn": {
-			"displayName": "Триггер включен",
+			"displayName": "Триггер для",
 			"options": {
 				"file": {
 					"displayName": "Изменения в конкретном файле"
@@ -21,7 +21,7 @@
 		},
 		"events": {
 			"displayName": "Следите за",
-			"description": "События, которые стоит послушать",
+			"description": "События для отслеживания",
 			"options": {
 				"add": {
 					"displayName": "Файл добавлен",
@@ -32,7 +32,7 @@
 					"description": "Срабатывает всякий раз, когда файл был изменен"
 				},
 				"unlink": {
-					"displayName": "Файл удален",
+					"displayName": "Файл удалён",
 					"description": "Срабатывает всякий раз, когда файл был удален"
 				},
 				"addDir": {
@@ -89,7 +89,7 @@
 							"displayName": "5 уровней вниз"
 						},
 						"-1": {
-							"displayName": "Безлимитный"
+							"displayName": "Неограниченно"
 						}
 					}
 				},

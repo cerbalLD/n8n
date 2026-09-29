@@ -1,14 +1,14 @@
 {
 	"header": {
-		"displayName": "Маутический триггер",
-		"description": "Обработка событий Mautic через веб-перехватчики"
+		"displayName": "Триггер Mautic",
+		"description": "Обрабатывать события Mautic через вебхуки"
 	},
 	"nodeView": {
 		"authentication": {
 			"displayName": "Аутентификация",
 			"options": {
 				"credentials": {
-					"displayName": "Реквизиты для входа"
+					"displayName": "Учётные данные"
 				},
 				"oAuth2": {
 					"displayName": "ОАут2"
@@ -16,7 +16,7 @@
 			}
 		},
 		"events": {
-			"displayName": "Имена или идентификаторы событий",
+			"displayName": "Названия или ID событий",
 			"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
 		},
 		"eventsOrder": {

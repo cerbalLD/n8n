@@ -8,16 +8,16 @@
 			"displayName": "Ресурс",
 			"options": {
 				"row": {
-					"displayName": "Ряд"
+					"displayName": "строка"
 				},
 				"base": {
-					"displayName": "База"
+					"displayName": "Базовая версия"
 				},
 				"link": {
-					"displayName": "Связь"
+					"displayName": "Ссылка"
 				},
 				"asset": {
-					"displayName": "Объект"
+					"displayName": "Актив"
 				}
 			}
 		},
@@ -25,7 +25,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать новую строку"
 				},
 				"remove": {
@@ -41,7 +41,7 @@
 					"description": "Перечислить все ссылки определенной строки"
 				},
 				"lock": {
-					"displayName": "Замок",
+					"displayName": "Заблокировать",
 					"description": "Заблокируйте строку, чтобы предотвратить дальнейшие изменения"
 				},
 				"search": {
@@ -53,7 +53,7 @@
 					"description": "Снять блокировку со строки"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить содержимое строки"
 				},
 				"snapshot": {
@@ -69,7 +69,7 @@
 					"description": "Получите имя пользователя из адреса электронной почты или имени соавтора."
 				},
 				"add": {
-					"displayName": "Добавлять",
+					"displayName": "Добавить",
 					"description": "Создание связи между двумя строками в столбце ссылок"
 				},
 				"getPublicURL": {
@@ -83,24 +83,24 @@
 			}
 		},
 		"tableName": {
-			"displayName": "Имя таблицы",
+			"displayName": "Название таблицы",
 			"description": "Выберите из списка или укажите имя с помощью <a href=\"https://docs.n8n.io/code-examples/expressions/\">expression</a>.",
 			"placeholder": "Выберите стол"
 		},
 		"rowId": {
-			"displayName": "Идентификатор строки",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"displayName": "ID строки",
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"fieldsToSend": {
 			"displayName": "Данные для отправки",
-			"description": "Вставлять ли входные данные, которые получает этот узел, в новую строку",
+			"description": "Вставлять ли входные данные узла в новую строку",
 			"options": {
 				"autoMapInputData": {
-					"displayName": "Автоматическое сопоставление входных данных с столбцами",
-					"description": "Используйте, когда входные свойства узла соответствуют именам столбцов назначения."
+					"displayName": "Автоматически сопоставить входные данные столбцам",
+					"description": "Используйте, когда входные свойства узла совпадают с именами целевых столбцов"
 				},
 				"defineBelow": {
-					"displayName": "Определите ниже для каждого столбца",
+					"displayName": "Определите для каждого столбца",
 					"description": "Установите значение для каждого столбца назначения"
 				}
 			}
@@ -113,9 +113,9 @@
 			"displayName": "Подсказка: ссылку, файлы, изображения или цифровые подписи необходимо добавлять отдельно."
 		},
 		"inputsToIgnore": {
-			"displayName": "Входные данные, которые следует игнорировать",
-			"description": "Список входных свойств, которые следует избегать при отправке, разделенных запятыми. Оставьте пустым, чтобы отправить все свойства.",
-			"placeholder": "Введите свойства..."
+			"displayName": "Входные данные для игнорирования",
+			"description": "Список входных свойств для пропуска, разделённых запятыми. Оставьте пусто, чтобы отправить все свойства.",
+			"placeholder": "Введите свойства…"
 		},
 		"columnsUi": {
 			"options": {
@@ -127,8 +127,8 @@
 					"displayName": "Столбец",
 					"values": {
 						"columnName": {
-							"displayName": "Имя или идентификатор столбца",
-							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+							"displayName": "Название или идентификатор столбца",
+							"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 						},
 						"columnValue": {
 							"displayName": "Значение столбца"
@@ -150,8 +150,8 @@
 			"placeholder": "Добавить вариант",
 			"options": {
 				"simple": {
-					"displayName": "Упрощать",
-					"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+					"displayName": "Упростить",
+					"description": "Возвращать ли упрощённую версию ответа вместо необработанных данных"
 				},
 				"convert": {
 					"displayName": "Возврат имен столбцов",
@@ -180,7 +180,7 @@
 			"description": "Имя представления SeaTable для доступа или укажите его с помощью выражения. Укажите его в виде «col.name:::col.type»."
 		},
 		"searchColumn": {
-			"displayName": "Имя или идентификатор столбца",
+			"displayName": "Название или идентификатор столбца",
 			"description": "Выберите столбец для поиска. Не все типы столбцов поддерживаются для поиска. Выберите из списка или укажите имя с помощью <a href=\"https://docs.n8n.io/code-examples/expressions/\">expression</a>."
 		},
 		"searchTerm": {

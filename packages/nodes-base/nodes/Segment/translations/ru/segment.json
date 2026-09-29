@@ -25,11 +25,11 @@
 			"displayName": "Операция",
 			"options": {
 				"add": {
-					"displayName": "Добавлять",
+					"displayName": "Добавить",
 					"description": "Добавить пользователя в группу"
 				},
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создайте личность"
 				},
 				"event": {
@@ -46,7 +46,7 @@
 			"displayName": "ID пользователя"
 		},
 		"groupId": {
-			"displayName": "Идентификатор группы",
+			"displayName": "ID группы",
 			"description": "Идентификатор группы — это уникальный идентификатор, по которому вы узнаете группу в вашей собственной базе данных."
 		},
 		"traits": {
@@ -61,7 +61,7 @@
 							"displayName": "Ключ"
 						},
 						"value": {
-							"displayName": "Ценить"
+							"displayName": "Значение"
 						}
 					}
 				}
@@ -112,7 +112,7 @@
 											"displayName": "Версия"
 										},
 										"build": {
-											"displayName": "Строить"
+											"displayName": "Создавать"
 										}
 									}
 								}
@@ -135,10 +135,10 @@
 											"displayName": "Источник"
 										},
 										"medium": {
-											"displayName": "Середина"
+											"displayName": "Средний"
 										},
 										"term": {
-											"displayName": "Срок"
+											"displayName": "Поисковый термин"
 										},
 										"content": {
 											"displayName": "Содержание"
@@ -223,7 +223,7 @@
 							"displayName": "Ключ"
 						},
 						"value": {
-							"displayName": "Ценить"
+							"displayName": "Значение"
 						}
 					}
 				}

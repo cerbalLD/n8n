@@ -45,7 +45,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать новый проект"
 				},
 				"getAll": {
@@ -61,7 +61,7 @@
 					"description": "Получить проект"
 				},
 				"move": {
-					"displayName": "Двигаться",
+					"displayName": "Переместить",
 					"description": "Переместить задачу"
 				},
 				"search": {
@@ -69,11 +69,11 @@
 					"description": "Поиск задач"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить проект"
 				},
 				"add": {
-					"displayName": "Добавлять",
+					"displayName": "Добавить",
 					"description": "Добавить тег к задаче"
 				},
 				"remove": {
@@ -117,7 +117,7 @@
 					}
 				},
 				"completed": {
-					"displayName": "Завершенный",
+					"displayName": "Завершено",
 					"description": "Следует ли пометить задачу как выполненную"
 				},
 				"due_on": {
@@ -152,7 +152,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"options": {
 			"displayName": "Параметры",
@@ -229,7 +229,7 @@
 			"placeholder": "Добавить фильтр",
 			"options": {
 				"completed": {
-					"displayName": "Завершенный",
+					"displayName": "Завершено",
 					"description": "Помечена ли задача как выполненная"
 				},
 				"text": {

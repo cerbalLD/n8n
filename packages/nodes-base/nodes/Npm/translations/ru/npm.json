@@ -1,17 +1,17 @@
 {
 	"header": {
-		"displayName": "Нпм",
-		"description": "Использование API реестра NPM"
+		"displayName": "npm",
+		"description": "Использование API реестра npm"
 	},
 	"nodeView": {
 		"resource": {
 			"displayName": "Ресурс",
 			"options": {
 				"package": {
-					"displayName": "Упаковка"
+					"displayName": "Пакет"
 				},
 				"distTag": {
-					"displayName": "Тег распространения"
+					"displayName": "Тег распределения"
 				}
 			}
 		},
@@ -20,7 +20,7 @@
 			"options": {
 				"getMetadata": {
 					"displayName": "Получить метаданные",
-					"description": "Возвращает все метаданные пакета определенной версии."
+					"description": "Возвращает все метаданные пакета определённой версии"
 				},
 				"getVersions": {
 					"displayName": "Получить версии",
@@ -32,34 +32,34 @@
 				},
 				"getMany": {
 					"displayName": "Получить все",
-					"description": "Возвращает все дистрибутивные теги пакета."
+					"description": "Возвращает все теги распределения пакета"
 				},
 				"update": {
-					"displayName": "Обновлять",
-					"description": "Обновите dist-теги для пакета."
+					"displayName": "Обновить",
+					"description": "Обновить теги распределения пакета"
 				}
 			}
 		},
 		"packageName": {
-			"displayName": "Имя пакета"
+			"displayName": "Название пакета"
 		},
 		"packageVersion": {
 			"displayName": "Версия пакета"
 		},
 		"query": {
 			"displayName": "Запрос",
-			"description": "Текст запроса, используемый для поиска пакетов"
+			"description": "Текст запроса для поиска пакетов"
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"offset": {
-			"displayName": "Компенсировать",
-			"description": "Смещение для возврата результатов из"
+			"displayName": "Смещение",
+			"description": "Смещение для возврата результатов"
 		},
 		"distTagName": {
-			"displayName": "Имя тега распространения"
+			"displayName": "Название тега распределения"
 		}
 	}
 }

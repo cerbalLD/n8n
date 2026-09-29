@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "Дискус",
+		"displayName": "Disqus",
 		"description": "Доступ к данным на Disqus"
 	},
 	"nodeView": {
@@ -17,25 +17,25 @@
 			"options": {
 				"get": {
 					"displayName": "Получать",
-					"description": "Вернуть информацию о форуме"
+					"description": "Получить информацию о форуме"
 				},
 				"getCategories": {
 					"displayName": "Получить все категории",
-					"description": "Вернуть список категорий на форуме"
+					"description": "Получить список категорий на форуме"
 				},
 				"getThreads": {
 					"displayName": "Получить все темы",
-					"description": "Вернуть список тем на форуме"
+					"description": "Получить список тем на форуме"
 				},
 				"getPosts": {
-					"displayName": "Получить все сообщения",
-					"description": "Вернуть список сообщений на форуме"
+					"displayName": "Получить все темы",
+					"description": "Получить список тем на форуме"
 				}
 			}
 		},
 		"id": {
 			"displayName": "Название форума",
-			"description": "Короткое имя (также известное как идентификатор) форума для получения тем."
+			"description": "Краткое имя (также ID) форума для получения тем"
 		},
 		"additionalFields": {
 			"displayName": "Дополнительные поля",
@@ -45,43 +45,43 @@
 					"displayName": "Прикреплять",
 					"options": {
 						"counters": {
-							"displayName": "Счетчики"
+							"displayName": "Счётчики"
 						},
 						"followsForum": {
-							"displayName": "следует за форумом"
+							"displayName": "followsForum"
 						},
 						"forumCanDisableAds": {
-							"displayName": "форумCanDisableAds"
+							"displayName": "forumCanDisableAds"
 						},
 						"forumDaysAlive": {
-							"displayName": "форумDaysAlive"
+							"displayName": "forumDaysAlive"
 						},
 						"forumFeatures": {
-							"displayName": "Возможности форума"
+							"displayName": "forumFeatures"
 						},
 						"forumForumCategory": {
-							"displayName": "форумФорумКатегория"
+							"displayName": "forumForumCategory"
 						},
 						"forumIntegration": {
-							"displayName": "форумИнтеграция"
+							"displayName": "forumIntegration"
 						},
 						"forumNewPolicy": {
-							"displayName": "форумНоваяПолитика"
+							"displayName": "forumNewPolicy"
 						},
 						"forumPermissions": {
-							"displayName": "Разрешения форума"
+							"displayName": "forumPermissions"
 						}
 					}
 				},
 				"related": {
-					"displayName": "Связанный",
-					"description": "Вы можете указать отношения, которые будут включены в ваш ответ.",
+					"displayName": "Связанные",
+					"description": "Вы можете указать отношения для включения в ответ",
 					"options": {
 						"author": {
-							"displayName": "автор"
+							"displayName": "author"
 						},
 						"thread": {
-							"displayName": "Нить"
+							"displayName": "Тема"
 						},
 						"forum": {
 							"displayName": "Форум"
@@ -90,7 +90,7 @@
 				},
 				"filters": {
 					"displayName": "Фильтры",
-					"description": "Вы можете указать фильтры для вашего ответа",
+					"description": "Вы можете указать фильтры для ответа",
 					"options": {
 						"Has_Bad_Word": {
 							"displayName": "Has_Bad_Word"
@@ -117,7 +117,7 @@
 							"displayName": "Is_Toxic"
 						},
 						"Modified_By_Rule": {
-							"displayName": "Изменено_по_правилу"
+							"displayName": "Modified_By_Rule"
 						},
 						"No_Issue": {
 							"displayName": "No_Issue"
@@ -128,8 +128,8 @@
 					}
 				},
 				"include": {
-					"displayName": "Включать",
-					"description": "Вы можете указать отношения, которые будут включены в ваш ответ.",
+					"displayName": "Включить",
+					"description": "Вы можете указать отношения для включения в ответ",
 					"options": {
 						"approved": {
 							"displayName": "Одобренный"
@@ -141,13 +141,13 @@
 							"displayName": "Открыть"
 						},
 						"killed": {
-							"displayName": "Убит"
+							"displayName": "Killed"
 						}
 					}
 				},
 				"order": {
-					"displayName": "Заказ",
-					"description": "Вы можете указать порядок сортировки вашего ответа",
+					"displayName": "Порядок",
+					"description": "Вы можете указать порядок сортировки ответа",
 					"options": {
 						"asc": {
 							"displayName": "ASC"
@@ -159,15 +159,15 @@
 				},
 				"query": {
 					"displayName": "Запрос",
-					"description": "Вы можете указать запрос для выбора: по возрастанию, по убыванию вашего ответа."
+					"description": "Вы можете указать порядок сортировки: по возрастанию, по убыванию"
 				},
 				"since": {
 					"displayName": "С",
-					"description": "Временная метка Unix (или стандарт даты и времени ISO)"
+					"description": "Временная метка Unix (или стандарт ISO datetime)"
 				},
 				"thread": {
-					"displayName": "Нить",
-					"description": "Ищет тему по ID. Вы можете передать нам тип запроса «ident» вместо идентификатора, включив «forum». Вы можете передать нам тип запроса «ссылка» для фильтрации по URL-адресу. Вы должны пройти «форум», если у вас нет дополнения Pro API Access."
+					"displayName": "Тема",
+					"description": "Поиск темы по ID. Вы можете передать тип запроса «ident» вместо ID, указав «forum». Вы можете передать «link» для фильтрации по URL. Вы должны передать «forum», если у вас нет дополнения Pro API Access."
 				}
 			}
 		},
@@ -177,7 +177,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		}
 	}
 }

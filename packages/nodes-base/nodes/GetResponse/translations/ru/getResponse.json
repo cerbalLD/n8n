@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Получить ответ",
-		"description": "Использование API GetResponse"
+		"displayName": "GetResponse",
+		"description": "Использовать API GetResponse"
 	},
 	"nodeView": {
 		"authentication": {
@@ -27,7 +27,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать новый контакт"
 				},
 				"delete": {
@@ -43,7 +43,7 @@
 					"description": "Получить много контактов"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить свойства контакта"
 				}
 			}
@@ -53,8 +53,8 @@
 			"placeholder": "имя@email.com"
 		},
 		"campaignId": {
-			"displayName": "Название или идентификатор кампании",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"displayName": "Название или ID кампании",
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"additionalFields": {
 			"displayName": "Дополнительные поля",
@@ -68,12 +68,12 @@
 						"customFieldValues": {
 							"options": {
 								"customFieldId": {
-									"displayName": "Имя поля или идентификатор",
-									"description": "Ключ определенных пользователем данных указан конечным пользователем. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+									"displayName": "Имя поля или ID",
+									"description": "Ключ пользовательских данных. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 								},
 								"value": {
-									"displayName": "Ценить",
-									"description": "Указанное конечным пользователем значение определяемых пользователем данных"
+									"displayName": "Значение",
+									"description": "Значение пользовательских данных"
 								}
 							}
 						}
@@ -88,11 +88,11 @@
 				},
 				"dayOfCycle": {
 					"displayName": "День цикла",
-					"description": "День, когда контакт находится в цикле автоответчика. ноль указывает, что контакты не находятся в цикле."
+					"description": "День в цикле автоответчика. null означает, что контакт не в цикле."
 				},
 				"ipAddress": {
 					"displayName": "IP-адрес",
-					"description": "IP-адрес контакта. Принимаются форматы IPv4 и IPv6."
+					"description": "IP-адрес контакта (IPv4 или IPv6)"
 				},
 				"name": {
 					"displayName": "Имя"
@@ -101,18 +101,18 @@
 					"displayName": "Примечание"
 				},
 				"scoring": {
-					"displayName": "Подсчет очков",
-					"description": "Подсчет очков контакта. Введите значение null, чтобы удалить счет контакта."
+					"displayName": "Рейтинг",
+					"description": "Рейтинг контакта (null для удаления)"
 				},
 				"tags": {
-					"displayName": "Имена или идентификаторы тегов",
+					"displayName": "Имена или ID тегов",
 					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
 				}
 			}
 		},
 		"contactId": {
-			"displayName": "Идентификатор контакта",
-			"description": "Уникальный идентификатор для конкретного контакта"
+			"displayName": "ID контакта",
+			"description": "Уникальный идентификатор контакта"
 		},
 		"options": {
 			"displayName": "Параметры",
@@ -120,39 +120,39 @@
 			"options": {
 				"ipAddress": {
 					"displayName": "IP-адрес",
-					"description": "Это дает возможность передать IP, от которого отписался контакт. Используется только в том случае, если идентификатор сообщения был отправлен."
+					"description": "IP, с которого контакт отписался. Используется только если задан messageId."
 				},
 				"messageId": {
 					"displayName": "Идентификатор сообщения",
-					"description": "Идентификатор сообщения (например, информационного бюллетеня, автоответчика или RSS-рассылки). При передаче этот метод будет моделировать процесс отказа от подписки, как если бы контакт нажал ссылку отказа от подписки в данном сообщении."
+					"description": "ID сообщения (рассылка, автоответчик или RSS). При передаче симулирует отписку, как если бы контакт нажал ссылку отписки."
 				},
 				"fields": {
 					"displayName": "Поля",
-					"description": "Список полей, которые должны быть возвращены. ID всегда возвращается. Поля должны быть разделены запятой"
+					"description": "Список полей для возврата. ID возвращается всегда. Поля разделяются запятой."
 				},
 				"campaignId": {
 					"displayName": "Идентификатор кампании",
-					"description": "Поиск контактов по идентификатору кампании"
+					"description": "Поиск контактов по ID кампании"
 				},
 				"changeOnFrom": {
-					"displayName": "Изменить с",
+					"displayName": "Изменено с",
 					"description": "Поиск контактов, отредактированных с этой даты"
 				},
 				"changeOnTo": {
-					"displayName": "Изменить на",
-					"description": "Поиск контактов, отредактированных к этой дате"
+					"displayName": "Изменено до",
+					"description": "Поиск контактов, отредактированных до этой даты"
 				},
 				"createdOnFrom": {
-					"displayName": "Создано из",
-					"description": "Подсчитайте данные с этой даты"
+					"displayName": "Создано с",
+					"description": "Учитывать данные с этой даты"
 				},
 				"createdOnTo": {
-					"displayName": "Создано в",
-					"description": "Подсчитайте данные с этой даты"
+					"displayName": "Создано до",
+					"description": "Учитывать данные с этой даты"
 				},
 				"exactMatch": {
 					"displayName": "Точное совпадение",
-					"description": "Следует ли искать контакты с точным значением адреса электронной почты и именем, указанными в строке запроса. Без этого флага сопоставление осуществляется посредством стандартного сравнения «похоже», которое иногда может быть медленным."
+					"description": "Искать контакты с точным значением email и имени. Без флага используется обычное совпадение «like», которое может быть медленнее."
 				},
 				"name": {
 					"displayName": "Имя",
@@ -172,25 +172,25 @@
 							"displayName": "Электронная почта"
 						},
 						"forward": {
-							"displayName": "Вперед"
+							"displayName": "Вперёд"
 						},
 						"import": {
 							"displayName": "Импорт"
 						},
 						"iphone": {
-							"displayName": "айфон"
+							"displayName": "iPhone"
 						},
 						"landing_page": {
 							"displayName": "Целевая страница"
 						},
 						"leads": {
-							"displayName": "лиды"
+							"displayName": "Лиды"
 						},
 						"panel": {
 							"displayName": "Панель"
 						},
 						"sale": {
-							"displayName": "Распродажа"
+							"displayName": "Продажа"
 						},
 						"survey": {
 							"displayName": "Опрос"
@@ -239,15 +239,15 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"updateFields": {
 			"displayName": "Обновить поля",
 			"placeholder": "Добавить поле",
 			"options": {
 				"campaignId": {
-					"displayName": "Название или идентификатор кампании",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"displayName": "Название или ID кампании",
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"customFieldsUi": {
 					"values": {
@@ -257,12 +257,12 @@
 						"customFieldValues": {
 							"options": {
 								"customFieldId": {
-									"displayName": "Имя поля или идентификатор",
-									"description": "Ключ определенных пользователем данных указан конечным пользователем. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+									"displayName": "Имя поля или ID",
+									"description": "Ключ пользовательских данных. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 								},
 								"value": {
-									"displayName": "Ценить",
-									"description": "Указанное конечным пользователем значение определяемых пользователем данных"
+									"displayName": "Значение",
+									"description": "Значение пользовательских данных"
 								}
 							}
 						}
@@ -277,7 +277,7 @@
 				},
 				"dayOfCycle": {
 					"displayName": "День цикла",
-					"description": "День, когда контакт находится в цикле автоответчика. ноль указывает, что контакты не находятся в цикле."
+					"description": "День в цикле автоответчика. null означает, что контакт не в цикле."
 				},
 				"email": {
 					"displayName": "Электронная почта",
@@ -285,7 +285,7 @@
 				},
 				"ipAddress": {
 					"displayName": "IP-адрес",
-					"description": "IP-адрес контакта. Принимаются форматы IPv4 и IPv6."
+					"description": "IP-адрес контакта (IPv4 или IPv6)"
 				},
 				"name": {
 					"displayName": "Имя"
@@ -294,11 +294,11 @@
 					"displayName": "Примечание"
 				},
 				"scoring": {
-					"displayName": "Подсчет очков",
-					"description": "Подсчет очков контакта. Введите значение null, чтобы удалить счет контакта."
+					"displayName": "Рейтинг",
+					"description": "Рейтинг контакта (null для удаления)"
 				},
 				"tags": {
-					"displayName": "Имена или идентификаторы тегов",
+					"displayName": "Имена или ID тегов",
 					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
 				}
 			}

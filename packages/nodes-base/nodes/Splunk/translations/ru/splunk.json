@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "Спланк",
-		"description": "Используйте Splunk Enterprise API"
+		"displayName": "Splunk",
+		"description": "Использование API Splunk Enterprise"
 	}
 }

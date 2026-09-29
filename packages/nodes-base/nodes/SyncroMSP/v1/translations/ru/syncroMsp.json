@@ -25,7 +25,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать новое оповещение RMM"
 				},
 				"delete": {
@@ -41,7 +41,7 @@
 					"description": "Получайте множество оповещений RMM"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить контакт"
 				},
 				"mute": {
@@ -56,7 +56,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"filters": {
 			"displayName": "Фильтры",
@@ -73,7 +73,7 @@
 					"displayName": "Имя"
 				},
 				"includeDisabled": {
-					"displayName": "Включить отключенное"
+					"displayName": "Включить отключённые"
 				},
 				"lastname": {
 					"displayName": "Фамилия"
@@ -81,10 +81,10 @@
 				"query": {
 					"displayName": "Поисковый запрос",
 					"description": "Поисковый запрос, это может быть что угодно, связанное с данными билета, например, пользователь и т. д.",
-					"placeholder": "Джон Доу"
+					"placeholder": "Иван Иванов"
 				},
 				"sort": {
-					"displayName": "Сортировать",
+					"displayName": "Сортировка",
 					"description": "Поле клиента для заказа, например: «имя ASC», «город DESC» и т. д.",
 					"placeholder": "имя ASC"
 				},
@@ -95,10 +95,10 @@
 							"displayName": "Ответ клиента"
 						},
 						"In Progress": {
-							"displayName": "В ходе выполнения"
+							"displayName": "в процессе"
 						},
 						"New": {
-							"displayName": "Новый"
+							"displayName": "Создать"
 						},
 						"Resolved": {
 							"displayName": "Решено"
@@ -126,7 +126,7 @@
 			}
 		},
 		"customerId": {
-			"displayName": "Идентификатор клиента",
+			"displayName": "ID клиента",
 			"description": "Удаление конкретного клиента по идентификатору"
 		},
 		"email": {
@@ -145,16 +145,16 @@
 						"addressFields": {
 							"options": {
 								"address": {
-									"displayName": "Линия 1"
+									"displayName": "строка 1"
 								},
 								"address2": {
-									"displayName": "Линия 2"
+									"displayName": "строка 2"
 								},
 								"city": {
-									"displayName": "Город"
+									"displayName": "город"
 								},
 								"state": {
-									"displayName": "Состояние"
+									"displayName": "область"
 								},
 								"zip": {
 									"displayName": "ZIP"
@@ -209,7 +209,7 @@
 					"description": "Идентификатор контакта, которому вы хотите назначить заявку."
 				},
 				"issueType": {
-					"displayName": "Тип проблемы",
+					"displayName": "Тип задачи",
 					"options": {
 						"Contract Work": {
 							"displayName": "Контрактная работа"
@@ -218,7 +218,7 @@
 							"displayName": "Сетевой проект"
 						},
 						"Other": {
-							"displayName": "Другой"
+							"displayName": "Другое"
 						},
 						"Regular Maintenance": {
 							"displayName": "Регулярное техническое обслуживание"
@@ -236,10 +236,10 @@
 							"displayName": "Ответ клиента"
 						},
 						"In Progress": {
-							"displayName": "В ходе выполнения"
+							"displayName": "в процессе"
 						},
 						"New": {
-							"displayName": "Новый"
+							"displayName": "Создать"
 						},
 						"Resolved": {
 							"displayName": "Решено"
@@ -275,16 +275,16 @@
 						"addressFields": {
 							"options": {
 								"address": {
-									"displayName": "Линия 1"
+									"displayName": "строка 1"
 								},
 								"address2": {
-									"displayName": "Линия 2"
+									"displayName": "строка 2"
 								},
 								"city": {
-									"displayName": "Город"
+									"displayName": "город"
 								},
 								"state": {
-									"displayName": "Состояние"
+									"displayName": "область"
 								},
 								"zip": {
 									"displayName": "ZIP"
@@ -343,13 +343,13 @@
 					"description": "Идентификатор контакта, которому вы хотите назначить заявку."
 				},
 				"customerId": {
-					"displayName": "Идентификатор клиента"
+					"displayName": "ID клиента"
 				},
 				"dueDate": {
 					"displayName": "Срок оплаты"
 				},
 				"issueType": {
-					"displayName": "Тип проблемы",
+					"displayName": "Тип задачи",
 					"options": {
 						"Contract Work": {
 							"displayName": "Контрактная работа"
@@ -358,7 +358,7 @@
 							"displayName": "Сетевой проект"
 						},
 						"Other": {
-							"displayName": "Другой"
+							"displayName": "Другое"
 						},
 						"Regular Maintenance": {
 							"displayName": "Регулярное техническое обслуживание"
@@ -375,10 +375,10 @@
 							"displayName": "Ответ клиента"
 						},
 						"In Progress": {
-							"displayName": "В ходе выполнения"
+							"displayName": "в процессе"
 						},
 						"New": {
-							"displayName": "Новый"
+							"displayName": "Создать"
 						},
 						"Resolved": {
 							"displayName": "Решено"
@@ -410,7 +410,7 @@
 			"description": "Удаление конкретного клиента по идентификатору"
 		},
 		"contactId": {
-			"displayName": "Идентификатор контакта",
+			"displayName": "ID контакта",
 			"description": "Удаление определенного контакта по идентификатору"
 		},
 		"alertId": {
@@ -446,7 +446,7 @@
 					"displayName": "1 месяц"
 				},
 				"forever": {
-					"displayName": "Навсегда"
+					"displayName": "Бесконечно"
 				}
 			}
 		}

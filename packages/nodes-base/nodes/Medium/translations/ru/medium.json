@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Середина",
-		"description": "Использовать средний API"
+		"displayName": "Средний",
+		"description": "Использовать Medium API"
 	},
 	"nodeView": {
 		"authentication": {
@@ -19,7 +19,7 @@
 			"displayName": "Ресурс",
 			"options": {
 				"post": {
-					"displayName": "Почта"
+					"displayName": "Тема"
 				},
 				"publication": {
 					"displayName": "Публикация"
@@ -30,26 +30,26 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать публикацию"
 				},
 				"getAll": {
 					"displayName": "Получить много",
-					"description": "Получите много публикаций"
+					"description": "Получить несколько публикаций"
 				}
 			}
 		},
 		"publication": {
 			"displayName": "Публикация",
-			"description": "Публикуете ли вы публикацию"
+			"description": "Публикуется ли для публикации"
 		},
 		"publicationId": {
-			"displayName": "Название или идентификатор публикации",
-			"description": "Идентификаторы публикаций. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"displayName": "Имя или идентификатор публикации",
+			"description": "Идентификаторы публикаций. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"title": {
-			"displayName": "Заголовок",
-			"description": "Название поста. Максимальная длина: 100 символов.",
+			"displayName": "Название",
+			"description": "Название поста. Максимум 100 символов.",
 			"placeholder": "Мой вклад в открытый исходный код"
 		},
 		"contentFormat": {
@@ -66,7 +66,7 @@
 		},
 		"content": {
 			"displayName": "Содержание",
-			"description": "Тело сообщения в допустимом семантическом фрагменте HTML или Markdown.",
+			"description": "Текст поста в формате HTML или Markdown",
 			"placeholder": "Мой вклад в открытый исходный код"
 		},
 		"additionalFields": {
@@ -74,36 +74,36 @@
 			"placeholder": "Добавить поле",
 			"options": {
 				"canonicalUrl": {
-					"displayName": "Канонический URL-адрес",
-					"description": "Исходный дом этого контента, если он изначально был опубликован где-то еще."
+					"displayName": "Канонический URL",
+					"description": "Исходный источник контента, если он был опубликован ранее"
 				},
 				"license": {
 					"displayName": "Лицензия",
-					"description": "Лицензия почты",
+					"description": "Лицензия поста",
 					"options": {
 						"all-rights-reserved": {
 							"displayName": "все права защищены"
 						},
 						"cc-40-by": {
-							"displayName": "cc-40-от"
+							"displayName": "CC-BY 4.0"
 						},
 						"cc-40-by-nc": {
-							"displayName": "cc-40-by-nc"
+							"displayName": "CC-BY-NC 4.0"
 						},
 						"cc-40-by-nc-nd": {
-							"displayName": "cc-40-от nc-nd"
+							"displayName": "CC-BY-NC-ND 4.0"
 						},
 						"cc-40-by-nc-sa": {
-							"displayName": "cc-40-от nc-sa"
+							"displayName": "CC-BY-NC-SA 4.0"
 						},
 						"cc-40-by-nd": {
-							"displayName": "cc-40-по-nd"
+							"displayName": "CC-BY-ND 4.0"
 						},
 						"cc-40-by-sa": {
-							"displayName": "cc-40-by-sa"
+							"displayName": "CC-BY-SA 4.0"
 						},
 						"cc-40-zero": {
-							"displayName": "cc-40-ноль"
+							"displayName": "CC0 4.0"
 						},
 						"public-domain": {
 							"displayName": "общественное достояние"
@@ -112,11 +112,11 @@
 				},
 				"notifyFollowers": {
 					"displayName": "Уведомить подписчиков",
-					"description": "Уведомлять ли подписчиков о том, что пользователь опубликовал"
+					"description": "Уведомлять ли подписчиков о новой публикации"
 				},
 				"publishStatus": {
 					"displayName": "Статус публикации",
-					"description": "Статус сообщения",
+					"description": "Статус поста",
 					"options": {
 						"public": {
 							"displayName": "Общественный"
@@ -131,8 +131,8 @@
 				},
 				"tags": {
 					"displayName": "Теги",
-					"description": "Строки, разделенные запятыми, которые будут использоваться в качестве тегов для классификации сообщений. Максимальное количество тегов: 5. Максимальная длина тега: 25 символов.",
-					"placeholder": "открытый исходный код, млх, стипендия"
+					"description": "Теги для классификации поста, разделённые запятыми. Максимум 5 тегов, максимум 25 символов каждый.",
+					"placeholder": "открытый-исходный-код,млх,стипендия"
 				}
 			}
 		},
@@ -142,7 +142,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		}
 	}
 }

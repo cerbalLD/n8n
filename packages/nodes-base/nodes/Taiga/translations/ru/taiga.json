@@ -11,7 +11,7 @@
 					"displayName": "Эпический"
 				},
 				"issue": {
-					"displayName": "Проблема"
+					"displayName": "Задача"
 				},
 				"task": {
 					"displayName": "Задача"
@@ -25,7 +25,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создайте пользовательскую историю"
 				},
 				"delete": {
@@ -41,7 +41,7 @@
 					"description": "Получите множество пользовательских историй"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить историю пользователя"
 				}
 			}
@@ -77,7 +77,7 @@
 					"description": "Блокируется ли пользовательская история"
 				},
 				"tags": {
-					"displayName": "Имена или идентификаторы тегов",
+					"displayName": "Имена или ID тегов",
 					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
 				},
 				"milestone": {
@@ -86,19 +86,19 @@
 				},
 				"priority": {
 					"displayName": "Имя или идентификатор приоритета",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"severity": {
 					"displayName": "Имя или идентификатор серьезности",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"status": {
 					"displayName": "Имя или идентификатор статуса",
 					"description": "Идентификатор статуса пользовательской истории. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"type": {
-					"displayName": "Введите имя или идентификатор",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"displayName": "Название или идентификатор типа",
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"taskboard_order": {
 					"displayName": "Порядок на панели задач",
@@ -136,7 +136,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"filters": {
 			"displayName": "Фильтры",
@@ -151,7 +151,7 @@
 					"description": "Закрыта ли история пользователя"
 				},
 				"orderBy": {
-					"displayName": "Заказать по",
+					"displayName": "Сортировать по",
 					"description": "Поле для упорядочивания задач по",
 					"options": {
 						"assigned_to": {
@@ -170,7 +170,7 @@
 							"displayName": "Приоритет"
 						},
 						"severity": {
-							"displayName": "Серьезность"
+							"displayName": "Серьёзность"
 						},
 						"status": {
 							"displayName": "Статус"
@@ -189,27 +189,27 @@
 				},
 				"priority": {
 					"displayName": "Имя или идентификатор приоритета",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"role": {
 					"displayName": "Имя или идентификатор роли",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"severity": {
 					"displayName": "Имя или идентификатор серьезности",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"status": {
 					"displayName": "Имя или идентификатор статуса",
 					"description": "Идентификатор статуса пользовательской истории. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"tags": {
-					"displayName": "Имена или идентификаторы тегов",
+					"displayName": "Имена или ID тегов",
 					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
 				},
 				"type": {
-					"displayName": "Введите имя или идентификатор",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"displayName": "Название или идентификатор типа",
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"milestone": {
 					"displayName": "Название или идентификатор этапа (спринта)",
@@ -256,7 +256,7 @@
 					"displayName": "Предмет"
 				},
 				"tags": {
-					"displayName": "Имена или идентификаторы тегов",
+					"displayName": "Имена или ID тегов",
 					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
 				},
 				"milestone": {
@@ -265,19 +265,19 @@
 				},
 				"priority": {
 					"displayName": "Имя или идентификатор приоритета",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"severity": {
 					"displayName": "Имя или идентификатор серьезности",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"status": {
 					"displayName": "Имя или идентификатор статуса",
 					"description": "Идентификатор статуса пользовательской истории. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"type": {
-					"displayName": "Введите имя или идентификатор",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"displayName": "Название или идентификатор типа",
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"user_story": {
 					"displayName": "Имя или идентификатор пользовательской истории",
@@ -306,7 +306,7 @@
 			}
 		},
 		"issueId": {
-			"displayName": "Идентификатор проблемы",
+			"displayName": "Идентификатор задачи",
 			"description": "Идентификатор проблемы, которую необходимо обновить"
 		},
 		"taskId": {

@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Дрифт",
-		"description": "Использовать Drift API"
+		"displayName": "Drift",
+		"description": "Использовать API Drift"
 	},
 	"nodeView": {
 		"authentication": {
@@ -27,7 +27,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать контакт"
 				},
 				"getCustomAttributes": {
@@ -43,14 +43,14 @@
 					"description": "Получить контакт"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить контакт"
 				}
 			}
 		},
 		"email": {
 			"displayName": "Электронная почта",
-			"description": "Электронная почта контактного лица",
+			"description": "Email контакта",
 			"placeholder": "имя@email.com"
 		},
 		"additionalFields": {
@@ -63,12 +63,12 @@
 				},
 				"phone": {
 					"displayName": "Телефон",
-					"description": "Номер телефона, связанный с контактом"
+					"description": "Номер телефона контакта"
 				}
 			}
 		},
 		"contactId": {
-			"displayName": "Идентификатор контакта",
+			"displayName": "ID контакта",
 			"description": "Уникальный идентификатор контакта"
 		},
 		"updateFields": {
@@ -77,7 +77,7 @@
 			"options": {
 				"email": {
 					"displayName": "Электронная почта",
-					"description": "Электронная почта контактного лица",
+					"description": "Email контакта",
 					"placeholder": "имя@email.com"
 				},
 				"name": {
@@ -86,7 +86,7 @@
 				},
 				"phone": {
 					"displayName": "Телефон",
-					"description": "Номер телефона, связанный с контактом"
+					"description": "Номер телефона контакта"
 				}
 			}
 		}

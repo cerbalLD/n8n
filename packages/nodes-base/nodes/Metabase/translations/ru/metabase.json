@@ -1,14 +1,14 @@
 {
 	"header": {
-		"displayName": "Метабаза",
-		"description": "Используйте API метабазы"
+		"displayName": "Metabase",
+		"description": "Использовать API Metabase"
 	},
 	"nodeView": {
 		"resource": {
 			"displayName": "Ресурс",
 			"options": {
 				"alerts": {
-					"displayName": "Тревога"
+					"displayName": "Оповещение"
 				},
 				"databases": {
 					"displayName": "База данных"
@@ -30,15 +30,15 @@
 				},
 				"getAll": {
 					"displayName": "Получить много",
-					"description": "Получайте много оповещений"
+					"description": "Получить несколько оповещений"
 				},
 				"resultData": {
 					"displayName": "Данные результата",
-					"description": "Вернуть результат вопроса в определенный формат файла"
+					"description": "Вернуть результат вопроса в определённом формате файла"
 				},
 				"addNewDatasource": {
-					"displayName": "Добавлять",
-					"description": "Добавьте новый источник данных в экземпляр метабазы."
+					"displayName": "Добавить",
+					"description": "Добавить новый источник данных в Metabase"
 				},
 				"getFields": {
 					"displayName": "Получить поля",
@@ -65,7 +65,7 @@
 			}
 		},
 		"metricId": {
-			"displayName": "Идентификатор показателя",
+			"displayName": "Идентификатор метрики",
 			"placeholder": "0"
 		},
 		"databaseId": {
@@ -73,14 +73,14 @@
 			"placeholder": "0"
 		},
 		"engine": {
-			"displayName": "Двигатель",
+			"displayName": "Движок",
 			"placeholder": "PostgreSQL",
 			"options": {
 				"h2": {
 					"displayName": "H2"
 				},
 				"mongo": {
-					"displayName": "МонгоБД"
+					"displayName": "MongoDB"
 				},
 				"mysql": {
 					"displayName": "MySQL"
@@ -89,16 +89,16 @@
 					"displayName": "PostgreSQL"
 				},
 				"redshift": {
-					"displayName": "Красное смещение"
+					"displayName": "Amazon Redshift"
 				},
 				"sqlite": {
-					"displayName": "Склайт"
+					"displayName": "SQLite"
 				}
 			}
 		},
 		"host": {
-			"displayName": "Хозяин",
-			"placeholder": "локальный хост: 5432"
+			"displayName": "Хост",
+			"placeholder": "localhost:5432"
 		},
 		"name": {
 			"displayName": "Имя",
@@ -110,7 +110,7 @@
 		},
 		"user": {
 			"displayName": "Пользователь",
-			"placeholder": "Админ"
+			"placeholder": "Администратор"
 		},
 		"password": {
 			"displayName": "Пароль",
@@ -121,15 +121,15 @@
 			"placeholder": "Пользователи"
 		},
 		"filePath": {
-			"displayName": "Путь к файлу",
-			"placeholder": "файл:/Users/admin/Desktop/Users"
+			"displayName": "Путь файла",
+			"placeholder": "file:/Users/admin/Desktop/Users"
 		},
 		"fullSync": {
 			"displayName": "Полная синхронизация"
 		},
 		"simple": {
-			"displayName": "Упрощать",
-			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+			"displayName": "Упростить",
+			"description": "Возвращать ли упрощённую версию ответа вместо необработанных данных"
 		},
 		"alertId": {
 			"displayName": "Идентификатор оповещения",

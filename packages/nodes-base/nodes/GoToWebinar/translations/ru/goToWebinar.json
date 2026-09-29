@@ -8,7 +8,7 @@
 			"displayName": "Ресурс",
 			"options": {
 				"attendee": {
-					"displayName": "Посетитель"
+					"displayName": "Участник"
 				},
 				"coorganizer": {
 					"displayName": "Соорганизатор"
@@ -20,7 +20,7 @@
 					"displayName": "Регистрант"
 				},
 				"session": {
-					"displayName": "Сессия"
+					"displayName": "Сеанс"
 				},
 				"webinar": {
 					"displayName": "Вебинар"
@@ -40,7 +40,7 @@
 					"displayName": "Получить подробности"
 				},
 				"create": {
-					"displayName": "Создавать"
+					"displayName": "Создать"
 				},
 				"delete": {
 					"displayName": "Удалить"
@@ -49,7 +49,7 @@
 					"displayName": "Повторно пригласить"
 				},
 				"update": {
-					"displayName": "Обновлять"
+					"displayName": "Обновить"
 				}
 			}
 		},
@@ -97,7 +97,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"isExternal": {
 			"displayName": "Является внешним",
@@ -108,7 +108,7 @@
 			"description": "Ключ-органайзер соорганизатора вебинара"
 		},
 		"givenName": {
-			"displayName": "Собственное имя",
+			"displayName": "Имя",
 			"description": "Имя соорганизатора"
 		},
 		"email": {
@@ -152,10 +152,10 @@
 									"displayName": "Адрес"
 								},
 								"city": {
-									"displayName": "Город"
+									"displayName": "город"
 								},
 								"state": {
-									"displayName": "Состояние"
+									"displayName": "область"
 								},
 								"zipCode": {
 									"displayName": "Почтовый индекс"
@@ -192,7 +192,7 @@
 							"options": {
 								"questionKey": {
 									"displayName": "Имя или идентификатор ключа вопроса",
-									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+									"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 								},
 								"AnswerKey": {
 									"displayName": "Ключ ответа",
@@ -245,7 +245,7 @@
 							"options": {
 								"questionKey": {
 									"displayName": "Имя или идентификатор ключа вопроса",
-									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+									"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 								},
 								"responseText": {
 									"displayName": "Текст ответа",
@@ -322,7 +322,7 @@
 				},
 				"timezone": {
 					"displayName": "Имя или идентификатор часового пояса",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>",
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>",
 					"placeholder": "2020-12-11T09:00:00Z"
 				},
 				"type": {

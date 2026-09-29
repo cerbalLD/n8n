@@ -8,7 +8,7 @@
 			"displayName": "Ресурс",
 			"options": {
 				"post": {
-					"displayName": "Почта"
+					"displayName": "Тема"
 				},
 				"postComment": {
 					"displayName": "Опубликовать комментарий"
@@ -28,7 +28,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Отправьте публикацию в сабреддит"
 				},
 				"getAll": {
@@ -54,7 +54,7 @@
 			}
 		},
 		"postId": {
-			"displayName": "Идентификатор сообщения",
+			"displayName": "ID темы",
 			"description": "Идентификатор сообщения, которое нужно получить. Найдено в URL публикации: <code>/r/[subreddit_name]/comments/[post_id]/[post_title]</code>",
 			"placeholder": "l0me7x"
 		},
@@ -72,7 +72,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"commentId": {
 			"displayName": "Идентификатор комментария",
@@ -96,7 +96,7 @@
 					"description": "Вернуть друзей вошедшего пользователя"
 				},
 				"identity": {
-					"displayName": "Личность",
+					"displayName": "Идентификатор",
 					"description": "Возвращает личность вошедшего в систему пользователя"
 				},
 				"karma": {
@@ -192,7 +192,7 @@
 			}
 		},
 		"title": {
-			"displayName": "Заголовок",
+			"displayName": "Название",
 			"description": "Название поста длиной до 300 символов."
 		},
 		"url": {
@@ -230,7 +230,7 @@
 			"placeholder": "Добавить поле",
 			"options": {
 				"sort": {
-					"displayName": "Сортировать",
+					"displayName": "Сортировка",
 					"description": "Категория для сортировки результатов.",
 					"options": {
 						"comments": {
@@ -240,13 +240,13 @@
 							"displayName": "Горячий"
 						},
 						"new": {
-							"displayName": "Новый"
+							"displayName": "Создать"
 						},
 						"relevance": {
-							"displayName": "Актуальность"
+							"displayName": "Релевантность"
 						},
 						"top": {
-							"displayName": "Вершина"
+							"displayName": "Верх"
 						}
 					}
 				}

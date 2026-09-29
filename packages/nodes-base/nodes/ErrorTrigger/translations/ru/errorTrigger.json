@@ -1,11 +1,11 @@
 {
 	"header": {
 		"displayName": "Триггер ошибки",
-		"description": "Запускает рабочий процесс, когда в другом рабочем процессе возникает ошибка"
+		"description": "Запускает рабочий процесс при ошибке в другом рабочем процессе"
 	},
 	"nodeView": {
 		"notice": {
-			"displayName": "Этот узел сработает при возникновении ошибки в другом рабочем процессе, если этот рабочий процесс настроен на это. <a href=\"https://docs.n8n.io/integrations/core-nodes/n8n-nodes-base.errortrigger\" target=\"_blank\">Подробнее</a>"
+			"displayName": "Этот узел сработает при ошибке в другом рабочем процессе, если он настроен на это. <a href=\"https://docs.n8n.io/integrations/core-nodes/n8n-nodes-base.errortrigger\" target=\"_blank\">Подробнее</a>"
 		}
 	}
 }

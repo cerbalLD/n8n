@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "Слабый триггер",
-		"description": "Обработка событий Slack с помощью веб-перехватчиков"
+		"displayName": "Триггер Slack",
+		"description": "Обработка событий Slack через вебхуки"
 	}
 }

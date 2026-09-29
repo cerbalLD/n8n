@@ -1,7 +1,7 @@
 {
 	"header": {
 		"displayName": "MailerLite",
-		"description": "Использование API Mailer Lite"
+		"description": "Использование API MailerLite"
 	},
 	"nodeView": {
 		"resource": {
@@ -16,7 +16,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать нового подписчика"
 				},
 				"get": {
@@ -28,19 +28,19 @@
 					"description": "Получить много подписчиков"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить подписчика"
 				}
 			}
 		},
 		"email": {
 			"displayName": "Электронная почта",
-			"description": "Электронная почта нового подписчика",
+			"description": "Адрес электронной почты нового подписчика",
 			"placeholder": "имя@email.com"
 		},
 		"subscriberId": {
-			"displayName": "Электронная почта подписчика",
-			"description": "Электронная почта подписчика для получения"
+			"displayName": "Адрес электронной почты подписчика",
+			"description": "Адрес электронной почты подписчика для получения"
 		},
 		"additionalFields": {
 			"displayName": "Дополнительные поля",
@@ -55,11 +55,11 @@
 						"customFieldsValues": {
 							"options": {
 								"fieldId": {
-									"displayName": "Имя поля или идентификатор",
+									"displayName": "Имя поля или ID",
 									"description": "Идентификатор поля, к которому нужно добавить настраиваемое поле. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 								},
 								"value": {
-									"displayName": "Ценить",
+									"displayName": "Значение",
 									"description": "Значение, которое нужно установить в настраиваемом поле"
 								}
 							}
@@ -84,30 +84,30 @@
 							"displayName": "Отскочил"
 						},
 						"junk": {
-							"displayName": "Хлам"
+							"displayName": "Спам"
 						},
 						"unconfirmed": {
 							"displayName": "Неподтвержденный"
 						},
 						"unsubscribed": {
-							"displayName": "Отменил подписку"
+							"displayName": "Отписан"
 						}
 					}
 				},
 				"subscribed_at": {
-					"displayName": "Подписан на"
+					"displayName": "Дата подписки"
 				},
 				"ip_address": {
 					"displayName": "IP-адрес"
 				},
 				"opted_in_at": {
-					"displayName": "Выполнил вход в"
+					"displayName": "Дата согласия"
 				},
 				"optin_ip": {
-					"displayName": "Включить IP-адрес"
+					"displayName": "IP-адрес согласия"
 				},
 				"unsubscribed_at": {
-					"displayName": "Отписался в"
+					"displayName": "Дата отписки"
 				}
 			}
 		},
@@ -117,7 +117,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"filters": {
 			"displayName": "Фильтры",
@@ -133,13 +133,13 @@
 							"displayName": "Отскочил"
 						},
 						"junk": {
-							"displayName": "Хлам"
+							"displayName": "Спам"
 						},
 						"unconfirmed": {
 							"displayName": "Неподтвержденный"
 						},
 						"unsubscribed": {
-							"displayName": "Отменил подписку"
+							"displayName": "Отписан"
 						}
 					}
 				}

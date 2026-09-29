@@ -85,19 +85,19 @@
 		},
 		"surveyId": {
 			"displayName": "Название или идентификатор опроса",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"collectorIds": {
 			"displayName": "Имена или идентификаторы коллекционеров",
 			"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
 		},
 		"resolveData": {
-			"displayName": "Разрешение данных",
+			"displayName": "Разрешить данные",
 			"description": "По умолчанию данные веб-перехватчика содержат только идентификаторы. Если эта опция активирована, она автоматически разрешит данные."
 		},
 		"onlyAnswers": {
 			"displayName": "Только ответы",
-			"description": "Возвращать ли только ответы формы, а не какие-либо другие данные"
+			"description": "Возвращать ли только ответы формы без остального контента"
 		}
 	}
 }

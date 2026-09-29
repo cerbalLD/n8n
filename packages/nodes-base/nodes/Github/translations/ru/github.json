@@ -1,7 +1,7 @@
 {
 	"header": {
 		"displayName": "GitHub",
-		"description": "Использование API GitHub"
+		"description": "Использовать API GitHub"
 	},
 	"nodeView": {
 		"authentication": {
@@ -25,13 +25,13 @@
 					"displayName": "Файл"
 				},
 				"issue": {
-					"displayName": "Проблема"
+					"displayName": "Задача"
 				},
 				"organization": {
 					"displayName": "Организация"
 				},
 				"pullRequest": {
-					"displayName": "Запрос на извлечение"
+					"displayName": "Запрос на включение"
 				},
 				"release": {
 					"displayName": "Выпускать"
@@ -40,7 +40,7 @@
 					"displayName": "Репозиторий"
 				},
 				"review": {
-					"displayName": "Обзор"
+					"displayName": "Рецензия"
 				},
 				"user": {
 					"displayName": "Пользователь"
@@ -62,16 +62,16 @@
 					"description": "Возвращает всех членов организации"
 				},
 				"create": {
-					"displayName": "Создавать",
-					"description": "Создает новый обзор"
+					"displayName": "Создать",
+					"description": "Создаёт новую рецензию"
 				},
 				"update": {
-					"displayName": "Обновлять",
-					"description": "Обновить отзыв"
+					"displayName": "Обновить",
+					"description": "Обновить рецензию"
 				},
 				"close": {
-					"displayName": "Закрывать",
-					"description": "Закрыть запрос на извлечение"
+					"displayName": "Закрыть",
+					"description": "Закрыть запрос на включение"
 				},
 				"reopen": {
 					"displayName": "Открыть заново",
@@ -83,19 +83,19 @@
 				},
 				"createComment": {
 					"displayName": "Создать комментарий",
-					"description": "Создать новый комментарий к проблеме"
+					"description": "Создать комментарий к задаче"
 				},
 				"editComment": {
 					"displayName": "Редактировать комментарий",
-					"description": "Редактирование комментария к запросу на включение"
+					"description": "Редактировать комментарий запроса на включение"
 				},
 				"getDiff": {
-					"displayName": "Получить разницу",
-					"description": "Получить необработанную разницу запроса на извлечение"
+					"displayName": "Получить различия",
+					"description": "Получить различия запроса на включение"
 				},
 				"getPatch": {
 					"displayName": "Получить патч",
-					"description": "Получите необработанный патч запроса на включение"
+					"description": "Получить патч запроса на включение"
 				},
 				"merge": {
 					"displayName": "Объединить",
@@ -106,170 +106,170 @@
 					"description": "Редактировать файл в репозитории"
 				},
 				"lock": {
-					"displayName": "Замок",
+					"displayName": "Заблокировать",
 					"description": "Заблокировать задачу"
 				},
 				"delete": {
 					"displayName": "Удалить",
-					"description": "Удалить выпуск"
+					"description": "Удалить релиз"
 				},
 				"list": {
 					"displayName": "Список",
-					"description": "Получение списка рабочих процессов"
+					"description": "Список рабочих процессов"
 				},
 				"getIssues": {
-					"displayName": "Получить проблемы",
-					"description": "Возвращает проблемы репозитория"
+					"displayName": "Получить задачи",
+					"description": "Возвращает задачи репозитория"
 				},
 				"getLicense": {
 					"displayName": "Получить лицензию",
-					"description": "Возвращает содержимое файла лицензии репозитория, если он обнаружен."
+					"description": "Возвращает содержимое файла лицензии репозитория, если он обнаружен"
 				},
 				"getProfile": {
 					"displayName": "Получить профиль",
-					"description": "Получите профиль сообщества репозитория с метриками, показателем работоспособности, описанием, лицензией и т. д."
+					"description": "Получить профиль сообщества репозитория с метриками, оценкой здоровья, описанием и лицензией"
 				},
 				"getPullRequests": {
-					"displayName": "Получить запросы на извлечение",
-					"description": "Возвращает запросы на извлечение репозитория."
+					"displayName": "Получить запросы на включение",
+					"description": "Возвращает запросы на включение репозитория"
 				},
 				"listPopularPaths": {
 					"displayName": "Список популярных путей",
-					"description": "Получите 10 самых популярных путей к контенту за последние 14 дней."
+					"description": "Получить 10 самых популярных путей за последние 14 дней"
 				},
 				"listReferrers": {
-					"displayName": "Получение списка рефереров",
-					"description": "Получите 10 самых популярных ссылающихся доменов за последние 14 дней."
+					"displayName": "Список рефереров",
+					"description": "Получить 10 самых популярных ссылающихся доменов за 14 дней"
 				},
 				"getUserIssues": {
-					"displayName": "Получить проблемы",
+					"displayName": "Получить задачи",
 					"description": "Возвращает задачи, назначенные пользователю"
 				},
 				"invite": {
-					"displayName": "Приглашать",
+					"displayName": "Приглашение",
 					"description": "Приглашает пользователя в организацию"
 				},
 				"getAll": {
 					"displayName": "Получить много",
-					"description": "Получите много отзывов на запрос на включение"
+					"description": "Получить несколько рецензий запроса на включение"
 				},
 				"disable": {
-					"displayName": "Запрещать",
+					"displayName": "Отключить",
 					"description": "Отключить рабочий процесс"
 				},
 				"dispatch": {
-					"displayName": "Отправлять",
-					"description": "Отправка события рабочего процесса"
+					"displayName": "Запустить",
+					"description": "Запустить событие рабочего процесса"
 				},
 				"dispatchAndWait": {
-					"displayName": "Отправка и ожидание завершения",
-					"description": "Отправьте событие рабочего процесса и дождитесь вызова веб-перехватчика, прежде чем продолжить."
+					"displayName": "Запустить и ожидать завершения",
+					"description": "Запустить событие рабочего процесса и ожидать вызова вебхука"
 				},
 				"enable": {
-					"displayName": "Давать возможность",
+					"displayName": "Включить",
 					"description": "Включить рабочий процесс"
 				},
 				"getUsage": {
 					"displayName": "Получить использование",
-					"description": "Получите информацию об использовании рабочего процесса"
+					"description": "Получить информацию об использовании рабочего процесса"
 				}
 			}
 		},
 		"base": {
-			"displayName": "Базовый филиал",
-			"description": "Ветка, в которую вы хотите объединиться (например, master)",
-			"placeholder": "владелец"
+			"displayName": "Базовая ветка",
+			"description": "Ветка, в которую объединить (например, master)",
+			"placeholder": "master"
 		},
 		"head": {
-			"displayName": "Головной филиал",
-			"description": "Ветка, содержащая ваши изменения. Для перекрестного PR-форка используйте формат владелец:имя ветки (например, johndoe:featurebranch).",
-			"placeholder": "функция или johndoe:featurebranch"
+			"displayName": "Ветка для объединения",
+			"description": "Ветка с вашими изменениями. Для PR из другого форка используйте owner:branchname (например, johndoe:featurebranch).",
+			"placeholder": "feature или johndoe:featurebranch"
 		},
 		"title": {
-			"displayName": "Заголовок",
-			"description": "Название вопроса"
+			"displayName": "Название",
+			"description": "Заголовок задачи"
 		},
 		"body": {
 			"displayName": "Тело",
-			"description": "Тело обзора"
+			"description": "Текст рецензии"
 		},
 		"draft": {
 			"displayName": "Создать черновик запроса на включение",
-			"description": "Создавать ли запрос на включение в качестве черновика"
+			"description": "Создать запрос на включение как черновик"
 		},
 		"pullRequestNumber": {
-			"displayName": "PR-номер",
-			"description": "Номер запроса на рассмотрение"
+			"displayName": "Номер запроса",
+			"description": "Номер запроса на рецензию"
 		},
 		"editFields": {
 			"displayName": "Редактировать поля",
 			"placeholder": "Добавить поле",
 			"options": {
 				"title": {
-					"displayName": "Заголовок",
-					"description": "Название вопроса"
+					"displayName": "Название",
+					"description": "Заголовок задачи"
 				},
 				"body": {
 					"displayName": "Тело",
-					"description": "Основная часть проблемы"
+					"description": "Текст задачи"
 				},
 				"state": {
-					"displayName": "Состояние",
-					"description": "Состояние, которое нужно установить",
+					"displayName": "область",
+					"description": "Состояние для установки",
 					"options": {
 						"open": {
 							"displayName": "Открыть",
-							"description": "Установите состояние «открыто»."
+							"description": "Установить состояние «открыто»"
 						},
 						"closed": {
 							"displayName": "Закрыто",
-							"description": "Установите состояние «закрыто»."
+							"description": "Установить состояние «закрыто»"
 						}
 					}
 				},
 				"base": {
-					"displayName": "Базовый филиал",
-					"description": "Ветка, в которую вы хотите объединиться (например, master)"
+					"displayName": "Базовая ветка",
+					"description": "Ветка, в которую объединить (например, master)"
 				},
 				"assignees": {
 					"values": {
 						"assignees": {
-							"displayName": "Правопреемники"
+							"displayName": "Исполнители"
 						},
 						"assignee": {
-							"displayName": "Правопреемники",
-							"description": "Пользователь, которому можно назначить задачу"
+							"displayName": "Исполнители",
+							"description": "Пользователь для назначения на задачу"
 						}
 					},
-					"displayName": "Правопреемники"
+					"displayName": "Исполнители"
 				},
 				"labels": {
 					"values": {
 						"labels": {
-							"displayName": "Этикетки"
+							"displayName": "Метки"
 						},
 						"label": {
-							"displayName": "Этикетка",
-							"description": "Ярлык для добавления в задачу"
+							"displayName": "Подпись",
+							"description": "Метка для добавления к задаче"
 						}
 					},
-					"displayName": "Этикетки"
+					"displayName": "Метки"
 				},
 				"state_reason": {
-					"displayName": "Государство Причина",
-					"description": "Причина смены состояния",
+					"displayName": "Причина состояния",
+					"description": "Причина изменения состояния",
 					"options": {
 						"completed": {
-							"displayName": "Завершенный",
-							"description": "Выпуск завершен"
+							"displayName": "Завершено",
+							"description": "Задача завершена"
 						},
 						"not_planned": {
 							"displayName": "Не запланировано",
-							"description": "Выпуск не планируется"
+							"description": "Задача не запланирована"
 						},
 						"reopened": {
-							"displayName": "вновь открыт",
-							"description": "Проблема открыта повторно"
+							"displayName": "Повторно открыто",
+							"description": "Задача повторно открыта"
 						}
 					}
 				}
@@ -278,16 +278,16 @@
 		},
 		"commentId": {
 			"displayName": "Идентификатор комментария",
-			"description": "Идентификатор комментария, который нужно изменить."
+			"description": "ID комментария для редактирования"
 		},
 		"mergeMethod": {
-			"displayName": "Метод слияния",
+			"displayName": "Способ объединения",
 			"options": {
 				"merge": {
-					"displayName": "Объединить фиксацию"
+					"displayName": "Коммит объединения"
 				},
 				"squash": {
-					"displayName": "Сквош и слияние"
+					"displayName": "Сжать и объединить"
 				},
 				"rebase": {
 					"displayName": "Перебазировать и объединить"
@@ -295,18 +295,18 @@
 			}
 		},
 		"commitTitle": {
-			"displayName": "Название фиксации",
-			"description": "Название автоматической фиксации слияния"
+			"displayName": "Заголовок коммита",
+			"description": "Заголовок автоматического коммита объединения"
 		},
 		"commitMessage": {
-			"displayName": "Зафиксировать сообщение",
-			"description": "Дополнительная информация для добавления к автоматической фиксации слияния"
+			"displayName": "Сообщение коммита",
+			"description": "Дополнительная информация для коммита объединения"
 		},
 		"mergeQueueNotice": {
-			"displayName": "Если в целевой ветке требуется очередь слияния, этот запрос автоматически поставит запрос на включение в очередь и вернет 202 Accepted. Если очередь не требуется, запрос на включение будет немедленно объединен и вернет 200 OK."
+			"displayName": "Если требуется очередь объединения, запрос будет поставлен в очередь (202 Accepted). Иначе запрос будет немедленно объединён (200 OK)."
 		},
 		"webhookNotice": {
-			"displayName": "Ваше выполнение будет приостановлено до тех пор, пока не будет вызван вебхук. Этот URL-адрес будет сгенерирован во время выполнения и передан в ваш рабочий процесс Github в качестве ввода резюмеUrl."
+			"displayName": "Выполнение будет приостановлено до вызова вебхука. URL будет передан в рабочий процесс GitHub как входной параметр resumeUrl."
 		},
 		"owner": {
 			"displayName": "Владелец репозитория"
@@ -316,20 +316,20 @@
 		},
 		"workflowId": {
 			"displayName": "Рабочий процесс",
-			"description": "Рабочий процесс отправки"
+			"description": "Рабочий процесс для запуска"
 		},
 		"ref": {
 			"displayName": "Ссылка",
-			"description": "Ссылка git для отправки рабочего процесса (ветка, тег или SHA фиксации)."
+			"description": "Git-ссылка для запуска (ветка, тег или SHA коммита)"
 		},
 		"inputs": {
-			"displayName": "Входы",
-			"description": "Объект JSON с входными параметрами для рабочего процесса"
+			"displayName": "Входные данные",
+			"description": "JSON-объект с входными параметрами рабочего процесса"
 		},
 		"filePath": {
 			"displayName": "Путь",
 			"description": "Путь к папке для отображения",
-			"placeholder": "документы/"
+			"placeholder": "docs/"
 		},
 		"binaryData": {
 			"displayName": "Двоичный файл",
@@ -347,7 +347,7 @@
 			"options": {
 				"additionalParameters": {
 					"displayName": "Дополнительные параметры",
-					"description": "Дополнительные поля для добавления"
+					"description": "Дополнительные поля"
 				},
 				"author": {
 					"displayName": "Автор",
@@ -358,30 +358,30 @@
 						},
 						"email": {
 							"displayName": "Электронная почта",
-							"description": "Электронная почта автора коммита",
+							"description": "Email автора коммита",
 							"placeholder": "имя@email.com"
 						}
 					}
 				},
 				"branch": {
-					"displayName": "Ветвь",
+					"displayName": "Ветка",
 					"values": {
 						"branch": {
-							"displayName": "Ветвь",
+							"displayName": "Ветка",
 							"description": "Ветка, которую нужно принять. Если не установлено, используется ветка репозитория по умолчанию (обычно master)."
 						}
 					}
 				},
 				"committer": {
-					"displayName": "Коммиттер",
+					"displayName": "Автор коммита",
 					"values": {
 						"name": {
 							"displayName": "Имя",
-							"description": "Имя коммиттера коммита"
+							"description": "Имя автора коммита"
 						},
 						"email": {
 							"displayName": "Электронная почта",
-							"description": "Электронная почта коммиттера коммита",
+							"description": "Email автора коммита",
 							"placeholder": "имя@email.com"
 						}
 					}
@@ -389,65 +389,65 @@
 				"reference": {
 					"displayName": "Ссылка",
 					"description": "Имя коммита/ветки/тега. По умолчанию: ветка репозитория по умолчанию (обычно главная).",
-					"placeholder": "владелец"
+					"placeholder": "master"
 				}
 			},
 			"placeholder": "Добавить параметр",
 			"displayName": "Дополнительные параметры",
-			"description": "Дополнительные поля для добавления"
+			"description": "Дополнительные поля"
 		},
 		"asBinaryProperty": {
 			"displayName": "Как двоичное свойство",
-			"description": "Устанавливать ли данные файла как двоичное свойство вместо возврата необработанного ответа API."
+			"description": "Устанавливать данные файла как двоичное свойство вместо ответа API"
 		},
 		"labels": {
-			"displayName": "Этикетки",
-			"multipleValueButtonText": "Добавить ярлык",
+			"displayName": "Метки",
+			"multipleValueButtonText": "Добавить метку",
 			"options": {
 				"label": {
-					"displayName": "Этикетка",
-					"description": "Ярлык для добавления в задачу"
+					"displayName": "Подпись",
+					"description": "Метка для добавления к задаче"
 				}
 			}
 		},
 		"assignees": {
-			"displayName": "Правопреемники",
-			"multipleValueButtonText": "Добавить правопреемника",
+			"displayName": "Исполнители",
+			"multipleValueButtonText": "Добавить исполнителя",
 			"options": {
 				"assignee": {
 					"displayName": "Правопреемник",
-					"description": "Пользователь тоже может назначить задачу"
+					"description": "Пользователь для назначения на задачу"
 				}
 			}
 		},
 		"issueNumber": {
-			"displayName": "Номер выпуска",
-			"description": "Номер выпуска, который нужно заблокировать"
+			"displayName": "Номер задачи",
+			"description": "Номер задачи для блокировки"
 		},
 		"lockReason": {
 			"displayName": "Причина блокировки",
-			"description": "Причина блокировки проблемы",
+			"description": "Причина блокировки задачи",
 			"options": {
 				"off-topic": {
 					"displayName": "Не по теме",
-					"description": "Вопрос не по теме"
+					"description": "Задача не по теме"
 				},
 				"too heated": {
-					"displayName": "Слишком жарко",
-					"description": "Дискуссия слишком горячая"
+					"displayName": "Слишком горячо",
+					"description": "Обсуждение слишком горячее"
 				},
 				"resolved": {
 					"displayName": "Решено",
-					"description": "Проблема решена"
+					"description": "Задача решена"
 				},
 				"spam": {
 					"displayName": "Спам",
-					"description": "Проблема в спаме"
+					"description": "Задача — это спам"
 				}
 			}
 		},
 		"releaseTag": {
-			"displayName": "Ярлык",
+			"displayName": "Тег",
 			"description": "Тег релиза"
 		},
 		"additionalFields": {
@@ -456,31 +456,31 @@
 			"options": {
 				"name": {
 					"displayName": "Имя",
-					"description": "Название выпуска"
+					"description": "Имя релиза"
 				},
 				"body": {
 					"displayName": "Тело",
-					"description": "Тело релиза"
+					"description": "Описание релиза"
 				},
 				"draft": {
 					"displayName": "Черновик",
-					"description": "Создавать ли черновой (неопубликованный) выпуск, «false» для создания опубликованного."
+					"description": "Создать черновик релиза или опубликованный"
 				},
 				"prerelease": {
-					"displayName": "Пререлиз",
-					"description": "Следует ли указывать, что релиз не готов к производству."
+					"displayName": "Предварительный релиз",
+					"description": "Указать, что релиз не готов к продакшену"
 				},
 				"target_commitish": {
-					"displayName": "Целевое обязательство",
-					"description": "Указывает значение фиксации, которое определяет, где создается тег Git. Это может быть любая ветка или коммит SHA. Не используется, если тег Git уже существует. По умолчанию: ветка репозитория по умолчанию (обычно главная)."
+					"displayName": "Целевой коммит",
+					"description": "Определяет, откуда создается тег Git. Может быть ветка или SHA коммита. По умолчанию: главная ветка репозитория."
 				},
 				"tag_name": {
 					"displayName": "Имя тега",
 					"description": "Имя тега"
 				},
 				"commitId": {
-					"displayName": "Идентификатор фиксации",
-					"description": "SHA коммита, требующего проверки, если он отличается от последнего."
+					"displayName": "ID коммита",
+					"description": "SHA коммита для рецензии (если отличается от последнего)"
 				}
 			},
 			"placeholder": "Добавить поле"
@@ -494,7 +494,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"getRepositoryIssuesFilters": {
 			"displayName": "Фильтры",
@@ -509,38 +509,38 @@
 					"description": "Возвращать только задачи, созданные конкретным пользователем"
 				},
 				"mentioned": {
-					"displayName": "Упомянул",
-					"description": "Возвращать только задачи, в которых упоминался конкретный пользователь"
+					"displayName": "Упомянут",
+					"description": "Возвращать только задачи, где упомянут пользователь"
 				},
 				"labels": {
-					"displayName": "Этикетки",
-					"description": "Возвращать только проблемы с указанными метками. Несколько меток можно разделить запятой."
+					"displayName": "Метки",
+					"description": "Возвращать только задачи с указанными метками (через запятую)"
 				},
 				"since": {
 					"displayName": "Обновлено с",
-					"description": "Возвращать только выпуски, обновленные в это время или позже."
+					"description": "Возвращать только задачи, обновлённые после этого времени"
 				},
 				"state": {
-					"displayName": "Состояние",
-					"description": "Состояние, которое нужно установить",
+					"displayName": "область",
+					"description": "Состояние для установки",
 					"options": {
 						"all": {
 							"displayName": "Все",
-							"description": "Возвращает проблемы с любым состоянием"
+							"description": "Возвращает задачи любого состояния"
 						},
 						"closed": {
 							"displayName": "Закрыто",
-							"description": "Проблемы с возвратом с «закрытым» состоянием"
+							"description": "Возвращает закрытые задачи"
 						},
 						"open": {
 							"displayName": "Открыть",
-							"description": "Проблемы с возвратом с «открытым» состоянием"
+							"description": "Возвращает открытые задачи"
 						}
 					}
 				},
 				"sort": {
-					"displayName": "Сортировать",
-					"description": "Порядок, в котором вопросы должны быть возвращены",
+					"displayName": "Сортировка",
+					"description": "Порядок возврата задач",
 					"options": {
 						"created": {
 							"displayName": "Созданный",
@@ -561,7 +561,7 @@
 					"description": "Порядок сортировки",
 					"options": {
 						"asc": {
-							"displayName": "восходящий",
+							"displayName": "По возрастанию",
 							"description": "Сортировать по возрастанию"
 						},
 						"desc": {
@@ -577,26 +577,26 @@
 			"multipleValueButtonText": "Добавить фильтр",
 			"options": {
 				"state": {
-					"displayName": "Состояние",
-					"description": "Состояние, которое нужно установить",
+					"displayName": "область",
+					"description": "Состояние для установки",
 					"options": {
 						"all": {
 							"displayName": "Все",
-							"description": "Возвращает запросы на включение с любым состоянием"
+							"description": "Возвращает запросы на включение любого состояния"
 						},
 						"closed": {
 							"displayName": "Закрыто",
-							"description": "Возврат запросов на включение с «закрытым» состоянием"
+							"description": "Возвращает закрытые запросы на включение"
 						},
 						"open": {
 							"displayName": "Открыть",
-							"description": "Возврат запросов на извлечение с «открытым» состоянием"
+							"description": "Возвращает открытые запросы на включение"
 						}
 					}
 				},
 				"sort": {
-					"displayName": "Сортировать",
-					"description": "Порядок, в котором должны быть возвращены запросы на включение",
+					"displayName": "Сортировка",
+					"description": "Порядок возврата запросов на включение",
 					"options": {
 						"created": {
 							"displayName": "Созданный",
@@ -611,8 +611,8 @@
 							"description": "Сортировать по количеству комментариев"
 						},
 						"long-running": {
-							"displayName": "Долгосрочный",
-							"description": "Отсортируйте по дате создания и ограничите результаты запросами на включение, которые были открыты более месяца и проявляли активность в течение последнего месяца."
+							"displayName": "Долгосрочные",
+							"description": "Сортировать по дате и ограничить запросы, открытые более месяца с активностью за месяц"
 						}
 					}
 				},
@@ -621,7 +621,7 @@
 					"description": "Порядок сортировки",
 					"options": {
 						"asc": {
-							"displayName": "восходящий",
+							"displayName": "По возрастанию",
 							"description": "Сортировать по возрастанию"
 						},
 						"desc": {
@@ -633,16 +633,16 @@
 			}
 		},
 		"reviewId": {
-			"displayName": "Идентификатор отзыва",
-			"description": "ID отзыва"
+			"displayName": "ID рецензии",
+			"description": "ID рецензии"
 		},
 		"event": {
 			"displayName": "Событие",
-			"description": "Действие проверки, которое вы хотите выполнить",
+			"description": "Действие рецензии",
 			"options": {
 				"approve": {
-					"displayName": "Утвердить",
-					"description": "Утвердить запрос на включение"
+					"displayName": "Одобрить",
+					"description": "Одобрить запрос на включение"
 				},
 				"requestChanges": {
 					"displayName": "Запросить изменение",
@@ -650,21 +650,21 @@
 				},
 				"comment": {
 					"displayName": "Комментарий",
-					"description": "Добавить комментарий без одобрения или запросов на изменение"
+					"description": "Добавить комментарий без одобрения"
 				},
 				"pending": {
 					"displayName": "В ожидании",
-					"description": "Вам нужно будет отправить проверку запроса на включение, когда вы будете готовы."
+					"description": "Рецензию нужно отправить, когда вы готовы"
 				}
 			}
 		},
 		"organization": {
 			"displayName": "Организация",
-			"description": "Организация GitHub, в которую приглашается пользователь."
+			"description": "Организация GitHub для приглашения пользователя"
 		},
 		"email": {
 			"displayName": "Электронная почта",
-			"description": "Адрес электронной почты приглашенного пользователя",
+			"description": "Email приглашённого пользователя",
 			"placeholder": "имя@email.com"
 		},
 		"getUserIssuesFilters": {
@@ -672,38 +672,38 @@
 			"multipleValueButtonText": "Добавить фильтр",
 			"options": {
 				"mentioned": {
-					"displayName": "Упомянул",
-					"description": "Возвращать только задачи, в которых упоминался конкретный пользователь"
+					"displayName": "Упомянут",
+					"description": "Возвращать только задачи, где упомянут пользователь"
 				},
 				"labels": {
-					"displayName": "Этикетки",
-					"description": "Возвращать только проблемы с указанными метками. Несколько меток можно разделить запятой."
+					"displayName": "Метки",
+					"description": "Возвращать только задачи с указанными метками (через запятую)"
 				},
 				"since": {
 					"displayName": "Обновлено с",
-					"description": "Возвращать только выпуски, обновленные в это время или позже."
+					"description": "Возвращать только задачи, обновлённые после этого времени"
 				},
 				"state": {
-					"displayName": "Состояние",
-					"description": "Состояние, которое нужно установить",
+					"displayName": "область",
+					"description": "Состояние для установки",
 					"options": {
 						"all": {
 							"displayName": "Все",
-							"description": "Возвращает проблемы с любым состоянием"
+							"description": "Возвращает задачи любого состояния"
 						},
 						"closed": {
 							"displayName": "Закрыто",
-							"description": "Проблемы с возвратом с «закрытым» состоянием"
+							"description": "Возвращает закрытые задачи"
 						},
 						"open": {
 							"displayName": "Открыть",
-							"description": "Проблемы с возвратом с «открытым» состоянием"
+							"description": "Возвращает открытые задачи"
 						}
 					}
 				},
 				"sort": {
-					"displayName": "Сортировать",
-					"description": "Порядок, в котором вопросы должны быть возвращены",
+					"displayName": "Сортировка",
+					"description": "Порядок возврата задач",
 					"options": {
 						"created": {
 							"displayName": "Созданный",
@@ -724,7 +724,7 @@
 					"description": "Порядок сортировки",
 					"options": {
 						"asc": {
-							"displayName": "восходящий",
+							"displayName": "По возрастанию",
 							"description": "Сортировать по возрастанию"
 						},
 						"desc": {

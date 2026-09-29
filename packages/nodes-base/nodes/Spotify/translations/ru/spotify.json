@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Спотифай",
-		"description": "Доступ к общедоступным данным песен через Spotify API"
+		"displayName": "Spotify",
+		"description": "Доступ к общедоступным данным песен через API Spotify"
 	},
 	"nodeView": {
 		"resource": {
@@ -11,7 +11,7 @@
 					"displayName": "Альбом"
 				},
 				"artist": {
-					"displayName": "Художник"
+					"displayName": "Исполнитель"
 				},
 				"library": {
 					"displayName": "Библиотека"
@@ -20,7 +20,7 @@
 					"displayName": "Мои данные"
 				},
 				"player": {
-					"displayName": "Игрок"
+					"displayName": "Плеер"
 				},
 				"playlist": {
 					"displayName": "Плейлист"
@@ -38,8 +38,8 @@
 					"description": "Добавьте песню в свою очередь"
 				},
 				"currentlyPlaying": {
-					"displayName": "В настоящее время играет",
-					"description": "Получите текущий воспроизводимый трек"
+					"displayName": "Сейчас играет",
+					"description": "Получить текущий воспроизводимый трек"
 				},
 				"nextSong": {
 					"displayName": "Следующая песня",
@@ -47,26 +47,26 @@
 				},
 				"pause": {
 					"displayName": "Пауза",
-					"description": "Приостановите музыку"
+					"description": "Приостановить музыку"
 				},
 				"previousSong": {
 					"displayName": "Предыдущая песня",
 					"description": "Перейти к предыдущей песне"
 				},
 				"recentlyPlayed": {
-					"displayName": "Недавно играл",
-					"description": "Получите недавно прослушанные треки"
+					"displayName": "Недавно проигрывалось",
+					"description": "Получить недавно проигранные треки"
 				},
 				"resume": {
-					"displayName": "Резюме",
-					"description": "Возобновить воспроизведение на текущем активном устройстве."
+					"displayName": "Возобновить",
+					"description": "Возобновить воспроизведение на текущем активном устройстве"
 				},
 				"volume": {
 					"displayName": "Установить громкость",
 					"description": "Установить громкость на текущем активном устройстве"
 				},
 				"startMusic": {
-					"displayName": "Запустить музыку",
+					"displayName": "Начать воспроизведение музыки",
 					"description": "Начните воспроизведение плейлиста, исполнителя или альбома"
 				},
 				"get": {
@@ -74,12 +74,12 @@
 					"description": "Получить трек по его URI или идентификатору"
 				},
 				"getNewReleases": {
-					"displayName": "Получайте новые выпуски",
+					"displayName": "Получить новые релизы",
 					"description": "Получить список релизов новых альбомов"
 				},
 				"getTracks": {
 					"displayName": "Получить треки",
-					"description": "Получить треки плейлиста по URI или ID"
+					"description": "Получить треки плейлиста по URI или идентификатору"
 				},
 				"search": {
 					"displayName": "Поиск",
@@ -90,16 +90,16 @@
 					"description": "Получить альбомы исполнителя по URI или ID"
 				},
 				"getRelatedArtists": {
-					"displayName": "Получить связанных художников",
-					"description": "Получите связанных с исполнителем исполнителей по URI или ID."
+					"displayName": "Получить похожих исполнителей",
+					"description": "Получить похожих исполнителей по URI или ID"
 				},
 				"getTopTracks": {
-					"displayName": "Получить лучшие треки",
-					"description": "Получите лучшие треки исполнителя по URI или ID"
+					"displayName": "Получить популярные треки",
+					"description": "Получить популярные треки исполнителя по URI или ID"
 				},
 				"add": {
-					"displayName": "Добавить элемент",
-					"description": "Добавляйте треки в список воспроизведения по треку и URI или идентификатору плейлиста."
+					"displayName": "Добавить трек",
+					"description": "Добавить треки в плейлист по URI или ID трека и плейлиста"
 				},
 				"create": {
 					"displayName": "Создать плейлист",
@@ -110,40 +110,40 @@
 					"description": "Получить плейлисты пользователя"
 				},
 				"delete": {
-					"displayName": "Удалить элемент",
-					"description": "Удаление треков из списка воспроизведения по треку и URI или идентификатору плейлиста."
+					"displayName": "Удалить трек",
+					"description": "Удалить треки из плейлиста по URI или ID трека и плейлиста"
 				},
 				"getAudioFeatures": {
-					"displayName": "Получить аудио функции",
-					"description": "Получите аудиофункции для трека по URI или ID."
+					"displayName": "Получить характеристики аудио",
+					"description": "Получить характеристики аудио трека по URI или ID"
 				},
 				"getLikedTracks": {
 					"displayName": "Получить понравившиеся треки",
-					"description": "Получите понравившиеся треки пользователя"
+					"description": "Получить понравившиеся треки пользователя"
 				},
 				"getFollowingArtists": {
-					"displayName": "Получите следующих артистов",
-					"description": "Получите своих подписчиков"
+					"displayName": "Получить подписанных исполнителей",
+					"description": "Получить ваших подписанных исполнителей"
 				}
 			}
 		},
 		"id": {
-			"displayName": "Идентификатор трека",
-			"description": "URI или идентификатор Spotify трека",
-			"placeholder": "Spotify: Track: 0xE4LEFzSNGsz1F6kvXsHU"
+			"displayName": "ID трека",
+			"description": "URI или ID трека в Spotify",
+			"placeholder": "spotify:track:0xE4LEFzSNGsz1F6kvXsHU"
 		},
 		"query": {
-			"displayName": "Поиск по ключевому слову",
+			"displayName": "Поисковое слово",
 			"description": "Ключевое слово для поиска"
 		},
 		"country": {
 			"displayName": "Страна",
-			"description": "Лучшие треки в какой стране? Введите почтовое сокращение",
+			"description": "Популярные треки в какой стране? Введите код страны",
 			"placeholder": "US"
 		},
 		"name": {
 			"displayName": "Имя",
-			"description": "Название плейлиста, который нужно создать",
+			"description": "Название создаваемого плейлиста",
 			"placeholder": "Любимые песни"
 		},
 		"additionalFields": {
@@ -152,12 +152,12 @@
 			"options": {
 				"description": {
 					"displayName": "Описание",
-					"description": "Описание создаваемого плейлиста",
+					"description": "Описание для создаваемого плейлиста",
 					"placeholder": "Это все мои любимые песни."
 				},
 				"public": {
 					"displayName": "Общественный",
-					"description": "Является ли плейлист общедоступным"
+					"description": "Открыт ли плейлист для публичного доступа"
 				},
 				"position": {
 					"displayName": "Позиция",
@@ -167,9 +167,9 @@
 			}
 		},
 		"trackID": {
-			"displayName": "Идентификатор трека",
-			"description": "URI Spotify трека или его идентификатор. Трек, который нужно добавить/удалить из плейлиста.",
-			"placeholder": "Spotify: Track: 0xE4LEFzSNGsz1F6kvXsHU"
+			"displayName": "ID трека",
+			"description": "URI или ID трека в Spotify. Трек для добавления или удаления из плейлиста.",
+			"placeholder": "spotify:track:0xE4LEFzSNGsz1F6kvXsHU"
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",
@@ -177,11 +177,11 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"volumePercent": {
-			"displayName": "Объем",
-			"description": "Процент громкости, который нужно установить"
+			"displayName": "Том",
+			"description": "Процент громкости для установки"
 		},
 		"filters": {
 			"displayName": "Фильтры",
@@ -189,7 +189,7 @@
 			"options": {
 				"country": {
 					"displayName": "Страна",
-					"description": "Страна, по которой будут фильтроваться новые выпуски",
+					"description": "Страна для фильтрации новых релизов",
 					"options": {
 						"AF": {
 							"displayName": "Афганистан"
@@ -240,7 +240,7 @@
 							"displayName": "Азербайджан"
 						},
 						"BS": {
-							"displayName": "Багамские Острова (англ.)"
+							"displayName": "Багамские острова"
 						},
 						"BH": {
 							"displayName": "Бахрейн"
@@ -270,7 +270,7 @@
 							"displayName": "Бутан"
 						},
 						"BO": {
-							"displayName": "Боливия (Многонациональное Государство)"
+							"displayName": "Боливия"
 						},
 						"BQ": {
 							"displayName": "Бонэйр, Синт-Эстатиус и Саба"
@@ -288,10 +288,10 @@
 							"displayName": "Бразилия"
 						},
 						"IO": {
-							"displayName": "Британская территория в Индийском океане (англ.)"
+							"displayName": "Британская территория в Индийском океане"
 						},
 						"BN": {
-							"displayName": "Бруней-Даруссалам"
+							"displayName": "Бруней"
 						},
 						"BG": {
 							"displayName": "Болгария"
@@ -315,10 +315,10 @@
 							"displayName": "Канада"
 						},
 						"KY": {
-							"displayName": "Каймановы острова (англ.)"
+							"displayName": "Каймановы острова"
 						},
 						"CF": {
-							"displayName": "Центральноафриканская Республика (англ.)"
+							"displayName": "Центральноафриканская Республика"
 						},
 						"TD": {
 							"displayName": "Чад"
@@ -339,16 +339,16 @@
 							"displayName": "Колумбия"
 						},
 						"KM": {
-							"displayName": "Коморские Острова (англ.)"
+							"displayName": "Коморские острова"
 						},
 						"CD": {
 							"displayName": "Конго (Демократическая Республика)"
 						},
 						"CG": {
-							"displayName": "Конго (англ.)"
+							"displayName": "Конго"
 						},
 						"CK": {
-							"displayName": "Острова Кука (англ.)"
+							"displayName": "Острова Кука"
 						},
 						"CR": {
 							"displayName": "Коста-Рика"
@@ -381,7 +381,7 @@
 							"displayName": "Доминика"
 						},
 						"DO": {
-							"displayName": "Доминиканская Республика (англ.)"
+							"displayName": "Доминиканская Республика"
 						},
 						"EC": {
 							"displayName": "Эквадор"
@@ -408,7 +408,7 @@
 							"displayName": "Фолклендские острова (Мальвинские острова)"
 						},
 						"FO": {
-							"displayName": "Фарерские острова (англ.)"
+							"displayName": "Фарерские острова"
 						},
 						"FJ": {
 							"displayName": "Фиджи"
@@ -426,13 +426,13 @@
 							"displayName": "Французская Полинезия"
 						},
 						"TF": {
-							"displayName": "Южные территории Франции (англ.)"
+							"displayName": "Французские Южные территории"
 						},
 						"GA": {
 							"displayName": "Габон"
 						},
 						"GM": {
-							"displayName": "Гамбия (англ.)"
+							"displayName": "Гамбия"
 						},
 						"GE": {
 							"displayName": "Грузия"
@@ -483,7 +483,7 @@
 							"displayName": "Остров Херд и острова Макдональда"
 						},
 						"VA": {
-							"displayName": "Святой Престол (англ.)"
+							"displayName": "Святой Престол"
 						},
 						"HN": {
 							"displayName": "Гондурас"
@@ -504,7 +504,7 @@
 							"displayName": "Индонезия"
 						},
 						"IR": {
-							"displayName": "Иран (Исламская Республика)"
+							"displayName": "Иран"
 						},
 						"IQ": {
 							"displayName": "Ирак"
@@ -543,10 +543,10 @@
 							"displayName": "Кирибати"
 						},
 						"KP": {
-							"displayName": "Корея (Народно-Демократическая Республика)"
+							"displayName": "Корея (Северная)"
 						},
 						"KR": {
-							"displayName": "Корея (Республика)"
+							"displayName": "Корея (Южная)"
 						},
 						"KW": {
 							"displayName": "Кувейт"
@@ -555,7 +555,7 @@
 							"displayName": "Кыргызстан"
 						},
 						"LA": {
-							"displayName": "Лаосская Народно-Демократическая Республика (англ.)"
+							"displayName": "Лаосская Народно-Демократическая Республика"
 						},
 						"LV": {
 							"displayName": "Латвия"
@@ -585,7 +585,7 @@
 							"displayName": "Макао"
 						},
 						"MK": {
-							"displayName": "Македония (бывшая Югославская Республика)"
+							"displayName": "Македония"
 						},
 						"MG": {
 							"displayName": "Мадагаскар"
@@ -606,7 +606,7 @@
 							"displayName": "Мальта"
 						},
 						"MH": {
-							"displayName": "Маршалловы Острова (англ.)"
+							"displayName": "Маршалловы острова"
 						},
 						"MQ": {
 							"displayName": "Мартиника"
@@ -624,10 +624,10 @@
 							"displayName": "Мексика"
 						},
 						"FM": {
-							"displayName": "Микронезия (Федеративные Штаты)"
+							"displayName": "Микронезия"
 						},
 						"MD": {
-							"displayName": "Молдова (Республика)"
+							"displayName": "Молдова"
 						},
 						"MC": {
 							"displayName": "Монако"
@@ -660,7 +660,7 @@
 							"displayName": "Непал"
 						},
 						"NL": {
-							"displayName": "Нидерланды (англ.)"
+							"displayName": "Нидерланды"
 						},
 						"NC": {
 							"displayName": "Новая Каледония"
@@ -672,7 +672,7 @@
 							"displayName": "Никарагуа"
 						},
 						"NE": {
-							"displayName": "Нигер (англ.)"
+							"displayName": "Нигер"
 						},
 						"NG": {
 							"displayName": "Нигерия"
@@ -684,7 +684,7 @@
 							"displayName": "Остров Норфолк"
 						},
 						"MP": {
-							"displayName": "Северные Марианские острова (англ.)"
+							"displayName": "Северные Марианские острова"
 						},
 						"NO": {
 							"displayName": "Норвегия"
@@ -699,7 +699,7 @@
 							"displayName": "Палау"
 						},
 						"PS": {
-							"displayName": "Палестина, Государство"
+							"displayName": "Палестина"
 						},
 						"PA": {
 							"displayName": "Панама"
@@ -714,7 +714,7 @@
 							"displayName": "Перу"
 						},
 						"PH": {
-							"displayName": "Филиппины (англ.)"
+							"displayName": "Филиппины"
 						},
 						"PN": {
 							"displayName": "Питкэрн"
@@ -738,7 +738,7 @@
 							"displayName": "Румыния"
 						},
 						"RU": {
-							"displayName": "Российская Федерация (англ.)"
+							"displayName": "Российская Федерация"
 						},
 						"RW": {
 							"displayName": "Руанда"
@@ -747,7 +747,7 @@
 							"displayName": "Сен-Бартелеми"
 						},
 						"SH": {
-							"displayName": "Остров Святой Елены, Вознесения и Тристан-да-Кунья"
+							"displayName": "Святая Елена, Вознесение и Тристан-да-Кунья"
 						},
 						"KN": {
 							"displayName": "Сент-Китс и Невис"
@@ -792,7 +792,7 @@
 							"displayName": "Сингапур"
 						},
 						"SX": {
-							"displayName": "Синт-Мартен (голландская часть)"
+							"displayName": "Синт-Мартен (нидерландская часть)"
 						},
 						"SK": {
 							"displayName": "Словакия"
@@ -801,7 +801,7 @@
 							"displayName": "Словения"
 						},
 						"SB": {
-							"displayName": "Соломоновы Острова"
+							"displayName": "Соломоновы острова"
 						},
 						"SO": {
 							"displayName": "Сомали"
@@ -822,7 +822,7 @@
 							"displayName": "Шри-Ланка"
 						},
 						"SD": {
-							"displayName": "Судан (англ.)"
+							"displayName": "Судан"
 						},
 						"SR": {
 							"displayName": "Суринам"
@@ -831,7 +831,7 @@
 							"displayName": "Шпицберген и Ян-Майен"
 						},
 						"SZ": {
-							"displayName": "Свазиленд"
+							"displayName": "Эсватини"
 						},
 						"SE": {
 							"displayName": "Швеция"
@@ -843,13 +843,13 @@
 							"displayName": "Сирийская Арабская Республика"
 						},
 						"TW": {
-							"displayName": "Тайвань (Провинция Китая)"
+							"displayName": "Тайвань"
 						},
 						"TJ": {
 							"displayName": "Таджикистан"
 						},
 						"TZ": {
-							"displayName": "Танзания, Объединенная Республика"
+							"displayName": "Танзания"
 						},
 						"TH": {
 							"displayName": "Таиланд"
@@ -879,7 +879,7 @@
 							"displayName": "Туркменистан"
 						},
 						"TC": {
-							"displayName": "Острова Тёркс и Кайкос (англ.)"
+							"displayName": "Острова Тёркс и Кайкос"
 						},
 						"TV": {
 							"displayName": "Тувалу"
@@ -891,16 +891,16 @@
 							"displayName": "Украина"
 						},
 						"AE": {
-							"displayName": "Объединенные Арабские Эмираты (англ.)"
+							"displayName": "Объединённые Арабские Эмираты"
 						},
 						"GB": {
-							"displayName": "Соединенное Королевство Великобритании и Северной Ирландии (англ.)"
+							"displayName": "Соединённое Королевство Великобритании и Северной Ирландии"
 						},
 						"UM": {
-							"displayName": "Малые отдаленные острова США (the)"
+							"displayName": "Малые отдалённые острова США"
 						},
 						"US": {
-							"displayName": "Соединенные Штаты Америки (англ.)"
+							"displayName": "Соединённые Штаты Америки"
 						},
 						"UY": {
 							"displayName": "Уругвай"
@@ -912,7 +912,7 @@
 							"displayName": "Вануату"
 						},
 						"VE": {
-							"displayName": "Венесуэла (Боливарианская Республика)"
+							"displayName": "Венесуэла"
 						},
 						"VN": {
 							"displayName": "Вьетнам"
@@ -942,7 +942,7 @@
 				},
 				"market": {
 					"displayName": "Страна",
-					"description": "Если указан код страны, возвращается только контент, воспроизводимый на этом рынке.",
+					"description": "Если указан код страны, будет возвращен только контент, доступный в этом регионе",
 					"options": {
 						"AF": {
 							"displayName": "Афганистан"
@@ -993,7 +993,7 @@
 							"displayName": "Азербайджан"
 						},
 						"BS": {
-							"displayName": "Багамские Острова (англ.)"
+							"displayName": "Багамские острова"
 						},
 						"BH": {
 							"displayName": "Бахрейн"
@@ -1023,7 +1023,7 @@
 							"displayName": "Бутан"
 						},
 						"BO": {
-							"displayName": "Боливия (Многонациональное Государство)"
+							"displayName": "Боливия"
 						},
 						"BQ": {
 							"displayName": "Бонэйр, Синт-Эстатиус и Саба"
@@ -1041,10 +1041,10 @@
 							"displayName": "Бразилия"
 						},
 						"IO": {
-							"displayName": "Британская территория в Индийском океане (англ.)"
+							"displayName": "Британская территория в Индийском океане"
 						},
 						"BN": {
-							"displayName": "Бруней-Даруссалам"
+							"displayName": "Бруней"
 						},
 						"BG": {
 							"displayName": "Болгария"
@@ -1068,10 +1068,10 @@
 							"displayName": "Канада"
 						},
 						"KY": {
-							"displayName": "Каймановы острова (англ.)"
+							"displayName": "Каймановы острова"
 						},
 						"CF": {
-							"displayName": "Центральноафриканская Республика (англ.)"
+							"displayName": "Центральноафриканская Республика"
 						},
 						"TD": {
 							"displayName": "Чад"
@@ -1092,16 +1092,16 @@
 							"displayName": "Колумбия"
 						},
 						"KM": {
-							"displayName": "Коморские Острова (англ.)"
+							"displayName": "Коморские острова"
 						},
 						"CD": {
 							"displayName": "Конго (Демократическая Республика)"
 						},
 						"CG": {
-							"displayName": "Конго (англ.)"
+							"displayName": "Конго"
 						},
 						"CK": {
-							"displayName": "Острова Кука (англ.)"
+							"displayName": "Острова Кука"
 						},
 						"CR": {
 							"displayName": "Коста-Рика"
@@ -1134,7 +1134,7 @@
 							"displayName": "Доминика"
 						},
 						"DO": {
-							"displayName": "Доминиканская Республика (англ.)"
+							"displayName": "Доминиканская Республика"
 						},
 						"EC": {
 							"displayName": "Эквадор"
@@ -1161,7 +1161,7 @@
 							"displayName": "Фолклендские острова (Мальвинские острова)"
 						},
 						"FO": {
-							"displayName": "Фарерские острова (англ.)"
+							"displayName": "Фарерские острова"
 						},
 						"FJ": {
 							"displayName": "Фиджи"
@@ -1179,13 +1179,13 @@
 							"displayName": "Французская Полинезия"
 						},
 						"TF": {
-							"displayName": "Южные территории Франции (англ.)"
+							"displayName": "Французские Южные территории"
 						},
 						"GA": {
 							"displayName": "Габон"
 						},
 						"GM": {
-							"displayName": "Гамбия (англ.)"
+							"displayName": "Гамбия"
 						},
 						"GE": {
 							"displayName": "Грузия"
@@ -1236,7 +1236,7 @@
 							"displayName": "Остров Херд и острова Макдональда"
 						},
 						"VA": {
-							"displayName": "Святой Престол (англ.)"
+							"displayName": "Святой Престол"
 						},
 						"HN": {
 							"displayName": "Гондурас"
@@ -1257,7 +1257,7 @@
 							"displayName": "Индонезия"
 						},
 						"IR": {
-							"displayName": "Иран (Исламская Республика)"
+							"displayName": "Иран"
 						},
 						"IQ": {
 							"displayName": "Ирак"
@@ -1296,10 +1296,10 @@
 							"displayName": "Кирибати"
 						},
 						"KP": {
-							"displayName": "Корея (Народно-Демократическая Республика)"
+							"displayName": "Корея (Северная)"
 						},
 						"KR": {
-							"displayName": "Корея (Республика)"
+							"displayName": "Корея (Южная)"
 						},
 						"KW": {
 							"displayName": "Кувейт"
@@ -1308,7 +1308,7 @@
 							"displayName": "Кыргызстан"
 						},
 						"LA": {
-							"displayName": "Лаосская Народно-Демократическая Республика (англ.)"
+							"displayName": "Лаосская Народно-Демократическая Республика"
 						},
 						"LV": {
 							"displayName": "Латвия"
@@ -1338,7 +1338,7 @@
 							"displayName": "Макао"
 						},
 						"MK": {
-							"displayName": "Македония (бывшая Югославская Республика)"
+							"displayName": "Македония"
 						},
 						"MG": {
 							"displayName": "Мадагаскар"
@@ -1359,7 +1359,7 @@
 							"displayName": "Мальта"
 						},
 						"MH": {
-							"displayName": "Маршалловы Острова (англ.)"
+							"displayName": "Маршалловы острова"
 						},
 						"MQ": {
 							"displayName": "Мартиника"
@@ -1377,10 +1377,10 @@
 							"displayName": "Мексика"
 						},
 						"FM": {
-							"displayName": "Микронезия (Федеративные Штаты)"
+							"displayName": "Микронезия"
 						},
 						"MD": {
-							"displayName": "Молдова (Республика)"
+							"displayName": "Молдова"
 						},
 						"MC": {
 							"displayName": "Монако"
@@ -1413,7 +1413,7 @@
 							"displayName": "Непал"
 						},
 						"NL": {
-							"displayName": "Нидерланды (англ.)"
+							"displayName": "Нидерланды"
 						},
 						"NC": {
 							"displayName": "Новая Каледония"
@@ -1425,7 +1425,7 @@
 							"displayName": "Никарагуа"
 						},
 						"NE": {
-							"displayName": "Нигер (англ.)"
+							"displayName": "Нигер"
 						},
 						"NG": {
 							"displayName": "Нигерия"
@@ -1437,7 +1437,7 @@
 							"displayName": "Остров Норфолк"
 						},
 						"MP": {
-							"displayName": "Северные Марианские острова (англ.)"
+							"displayName": "Северные Марианские острова"
 						},
 						"NO": {
 							"displayName": "Норвегия"
@@ -1452,7 +1452,7 @@
 							"displayName": "Палау"
 						},
 						"PS": {
-							"displayName": "Палестина, Государство"
+							"displayName": "Палестина"
 						},
 						"PA": {
 							"displayName": "Панама"
@@ -1467,7 +1467,7 @@
 							"displayName": "Перу"
 						},
 						"PH": {
-							"displayName": "Филиппины (англ.)"
+							"displayName": "Филиппины"
 						},
 						"PN": {
 							"displayName": "Питкэрн"
@@ -1491,7 +1491,7 @@
 							"displayName": "Румыния"
 						},
 						"RU": {
-							"displayName": "Российская Федерация (англ.)"
+							"displayName": "Российская Федерация"
 						},
 						"RW": {
 							"displayName": "Руанда"
@@ -1500,7 +1500,7 @@
 							"displayName": "Сен-Бартелеми"
 						},
 						"SH": {
-							"displayName": "Остров Святой Елены, Вознесения и Тристан-да-Кунья"
+							"displayName": "Святая Елена, Вознесение и Тристан-да-Кунья"
 						},
 						"KN": {
 							"displayName": "Сент-Китс и Невис"
@@ -1545,7 +1545,7 @@
 							"displayName": "Сингапур"
 						},
 						"SX": {
-							"displayName": "Синт-Мартен (голландская часть)"
+							"displayName": "Синт-Мартен (нидерландская часть)"
 						},
 						"SK": {
 							"displayName": "Словакия"
@@ -1554,7 +1554,7 @@
 							"displayName": "Словения"
 						},
 						"SB": {
-							"displayName": "Соломоновы Острова"
+							"displayName": "Соломоновы острова"
 						},
 						"SO": {
 							"displayName": "Сомали"
@@ -1575,7 +1575,7 @@
 							"displayName": "Шри-Ланка"
 						},
 						"SD": {
-							"displayName": "Судан (англ.)"
+							"displayName": "Судан"
 						},
 						"SR": {
 							"displayName": "Суринам"
@@ -1584,7 +1584,7 @@
 							"displayName": "Шпицберген и Ян-Майен"
 						},
 						"SZ": {
-							"displayName": "Свазиленд"
+							"displayName": "Эсватини"
 						},
 						"SE": {
 							"displayName": "Швеция"
@@ -1596,13 +1596,13 @@
 							"displayName": "Сирийская Арабская Республика"
 						},
 						"TW": {
-							"displayName": "Тайвань (Провинция Китая)"
+							"displayName": "Тайвань"
 						},
 						"TJ": {
 							"displayName": "Таджикистан"
 						},
 						"TZ": {
-							"displayName": "Танзания, Объединенная Республика"
+							"displayName": "Танзания"
 						},
 						"TH": {
 							"displayName": "Таиланд"
@@ -1632,7 +1632,7 @@
 							"displayName": "Туркменистан"
 						},
 						"TC": {
-							"displayName": "Острова Тёркс и Кайкос (англ.)"
+							"displayName": "Острова Тёркс и Кайкос"
 						},
 						"TV": {
 							"displayName": "Тувалу"
@@ -1644,16 +1644,16 @@
 							"displayName": "Украина"
 						},
 						"AE": {
-							"displayName": "Объединенные Арабские Эмираты (англ.)"
+							"displayName": "Объединённые Арабские Эмираты"
 						},
 						"GB": {
-							"displayName": "Соединенное Королевство Великобритании и Северной Ирландии (англ.)"
+							"displayName": "Соединённое Королевство Великобритании и Северной Ирландии"
 						},
 						"UM": {
-							"displayName": "Малые отдаленные острова США (the)"
+							"displayName": "Малые отдалённые острова США"
 						},
 						"US": {
-							"displayName": "Соединенные Штаты Америки (англ.)"
+							"displayName": "Соединённые Штаты Америки"
 						},
 						"UY": {
 							"displayName": "Уругвай"
@@ -1665,7 +1665,7 @@
 							"displayName": "Вануату"
 						},
 						"VE": {
-							"displayName": "Венесуэла (Боливарианская Республика)"
+							"displayName": "Венесуэла"
 						},
 						"VN": {
 							"displayName": "Вьетнам"

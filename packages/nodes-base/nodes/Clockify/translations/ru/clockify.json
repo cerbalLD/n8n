@@ -14,7 +14,7 @@
 					"displayName": "Проект"
 				},
 				"tag": {
-					"displayName": "Ярлык"
+					"displayName": "Тег"
 				},
 				"task": {
 					"displayName": "Задача"
@@ -26,7 +26,7 @@
 					"displayName": "Пользователь"
 				},
 				"workspace": {
-					"displayName": "Рабочая область"
+					"displayName": "Рабочее пространство"
 				}
 			}
 		},
@@ -34,7 +34,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать запись времени"
 				},
 				"delete": {
@@ -50,7 +50,7 @@
 					"description": "Получите много рабочих мест"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить запись времени"
 				}
 			}
@@ -61,18 +61,18 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"workspaceId": {
 			"displayName": "Имя или идентификатор рабочей области",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"name": {
 			"displayName": "Имя задачи",
 			"description": "Название задачи, которую нужно создать"
 		},
 		"clientId": {
-			"displayName": "Идентификатор клиента"
+			"displayName": "ID клиента"
 		},
 		"additionalFields": {
 			"displayName": "Дополнительные поля",
@@ -89,7 +89,7 @@
 					"displayName": "Порядок сортировки",
 					"options": {
 						"ASCENDING": {
-							"displayName": "восходящий"
+							"displayName": "По возрастанию"
 						},
 						"DESCENDING": {
 							"displayName": "По убыванию"
@@ -104,17 +104,17 @@
 				},
 				"clientId": {
 					"displayName": "Имя или идентификатор клиента",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"estimateUi": {
 					"values": {
 						"estimateUi": {
-							"displayName": "Оценивать"
+							"displayName": "Оценка"
 						},
 						"estimateValues": {
 							"options": {
 								"estimate": {
-									"displayName": "Оценивать"
+									"displayName": "Оценка"
 								},
 								"type": {
 									"displayName": "Тип",
@@ -123,7 +123,7 @@
 											"displayName": "Авто"
 										},
 										"MANUAL": {
-											"displayName": "Руководство"
+											"displayName": "Ручной"
 										}
 									}
 								}
@@ -131,10 +131,10 @@
 						}
 					},
 					"placeholder": "Добавить оценку",
-					"displayName": "Оценивать",
+					"displayName": "Оценка",
 					"options": {
 						"estimateValues": {
-							"displayName": "Оценивать"
+							"displayName": "Оценка"
 						}
 					}
 				},
@@ -194,8 +194,8 @@
 					}
 				},
 				"users": {
-					"displayName": "Имя пользователя или идентификатор",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"displayName": "Имя пользователя или ID",
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"user-status": {
 					"displayName": "Статус пользователя",
@@ -214,7 +214,7 @@
 					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
 				},
 				"estimate": {
-					"displayName": "Оценивать",
+					"displayName": "Оценка",
 					"description": "Оцените время, которое займет выполнение задачи, например: 2:30 (2 часа 30 минут).",
 					"placeholder": "2:30"
 				},
@@ -231,7 +231,7 @@
 							"displayName": "Активный"
 						},
 						"INACTIVE": {
-							"displayName": "Неактивный"
+							"displayName": "Неактивно"
 						},
 						"PENDING": {
 							"displayName": "В ожидании"
@@ -250,11 +250,11 @@
 						"customFieldsValues": {
 							"options": {
 								"customFieldId": {
-									"displayName": "Имя поля или идентификатор",
+									"displayName": "Имя поля или ID",
 									"description": "Идентификатор поля, к которому нужно добавить настраиваемое поле. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 								},
 								"value": {
-									"displayName": "Ценить",
+									"displayName": "Значение",
 									"description": "Значение, которое нужно установить в настраиваемом поле"
 								}
 							}
@@ -277,10 +277,10 @@
 				},
 				"projectId": {
 					"displayName": "Название или идентификатор проекта",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"tagIds": {
-					"displayName": "Имена или идентификаторы тегов",
+					"displayName": "Имена или ID тегов",
 					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
 				},
 				"taskId": {
@@ -315,17 +315,17 @@
 				},
 				"clientId": {
 					"displayName": "Имя или идентификатор клиента",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"estimateUi": {
 					"values": {
 						"estimateUi": {
-							"displayName": "Оценивать"
+							"displayName": "Оценка"
 						},
 						"estimateValues": {
 							"options": {
 								"estimate": {
-									"displayName": "Оценивать"
+									"displayName": "Оценка"
 								},
 								"type": {
 									"displayName": "Тип",
@@ -334,7 +334,7 @@
 											"displayName": "Авто"
 										},
 										"MANUAL": {
-											"displayName": "Руководство"
+											"displayName": "Ручной"
 										}
 									}
 								}
@@ -342,10 +342,10 @@
 						}
 					},
 					"placeholder": "Добавить оценку",
-					"displayName": "Оценивать",
+					"displayName": "Оценка",
 					"options": {
 						"estimateValues": {
-							"displayName": "Оценивать"
+							"displayName": "Оценка"
 						}
 					}
 				},
@@ -364,7 +364,7 @@
 					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
 				},
 				"estimate": {
-					"displayName": "Оценивать",
+					"displayName": "Оценка",
 					"description": "Оцените время, которое займет выполнение задачи, например: 2:30 (2 часа 30 минут).",
 					"placeholder": "2:30"
 				},
@@ -375,7 +375,7 @@
 							"displayName": "Активный"
 						},
 						"DONE": {
-							"displayName": "Сделанный"
+							"displayName": "Готово"
 						}
 					}
 				},
@@ -388,11 +388,11 @@
 						"customFieldsValues": {
 							"options": {
 								"customFieldId": {
-									"displayName": "Имя поля или идентификатор",
+									"displayName": "Имя поля или ID",
 									"description": "Идентификатор поля, к которому нужно добавить настраиваемое поле. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 								},
 								"value": {
-									"displayName": "Ценить",
+									"displayName": "Значение",
 									"description": "Значение, которое нужно установить в настраиваемом поле"
 								}
 							}
@@ -415,13 +415,13 @@
 				},
 				"projectId": {
 					"displayName": "Название или идентификатор проекта",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"start": {
-					"displayName": "Начинать"
+					"displayName": "Начать"
 				},
 				"tagIds": {
-					"displayName": "Имена или идентификаторы тегов",
+					"displayName": "Имена или ID тегов",
 					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
 				},
 				"taskId": {
@@ -431,10 +431,10 @@
 		},
 		"projectId": {
 			"displayName": "Название или идентификатор проекта",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"tagId": {
-			"displayName": "Идентификатор тега"
+			"displayName": "ID тега"
 		},
 		"taskId": {
 			"displayName": "Идентификатор задачи",
@@ -445,11 +445,11 @@
 			"placeholder": "Добавить фильтр",
 			"options": {
 				"is-active": {
-					"displayName": "Активен"
+					"displayName": "Активно"
 				},
 				"name": {
 					"displayName": "Имя",
-					"description": "Текст, соответствующий названию задачи"
+					"description": "Текст для совпадения в названии задачи"
 				},
 				"sort-column": {
 					"displayName": "Сортировать столбец",
@@ -463,7 +463,7 @@
 					"displayName": "Порядок сортировки",
 					"options": {
 						"ASCENDING": {
-							"displayName": "восходящий"
+							"displayName": "По возрастанию"
 						},
 						"DESCENDING": {
 							"displayName": "По убыванию"
@@ -473,7 +473,7 @@
 			}
 		},
 		"start": {
-			"displayName": "Начинать"
+			"displayName": "Начать"
 		},
 		"timeEntryId": {
 			"displayName": "Идентификатор записи времени"

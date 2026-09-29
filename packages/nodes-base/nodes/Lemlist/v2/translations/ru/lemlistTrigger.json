@@ -134,7 +134,7 @@
 					"displayName": "Руководство не интересует"
 				},
 				"paused": {
-					"displayName": "Приостановлено"
+					"displayName": "На паузе"
 				},
 				"resumed": {
 					"displayName": "Возобновлено"
@@ -158,7 +158,7 @@
 			"placeholder": "Добавить поле",
 			"options": {
 				"campaignId": {
-					"displayName": "Название или идентификатор кампании",
+					"displayName": "Название или ID кампании",
 					"description": "Мы будем вызывать этот хук только для этого идентификатора кампании. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"isFirst": {

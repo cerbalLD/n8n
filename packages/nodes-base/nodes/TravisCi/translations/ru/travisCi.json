@@ -8,7 +8,7 @@
 			"displayName": "Ресурс",
 			"options": {
 				"build": {
-					"displayName": "Строить"
+					"displayName": "Создавать"
 				}
 			}
 		},
@@ -32,7 +32,7 @@
 					"description": "Перезапустить сборку"
 				},
 				"trigger": {
-					"displayName": "Курок",
+					"displayName": "Триггер",
 					"description": "Запустить сборку"
 				}
 			}
@@ -46,13 +46,13 @@
 			"placeholder": "Добавить поле",
 			"options": {
 				"include": {
-					"displayName": "Включать",
+					"displayName": "Включить",
 					"description": "Список атрибутов для активной загрузки",
 					"placeholder": "build.commit"
 				},
 				"order": {
-					"displayName": "Заказ",
-					"description": "Вы можете указать порядок сортировки вашего ответа",
+					"displayName": "Порядок",
+					"description": "Вы можете указать порядок сортировки ответа",
 					"options": {
 						"asc": {
 							"displayName": "ASC"
@@ -66,7 +66,7 @@
 					"displayName": "Сортировать по",
 					"options": {
 						"created_at": {
-							"displayName": "Создано в"
+							"displayName": "Создано"
 						},
 						"finished_at": {
 							"displayName": "Завершено в"
@@ -90,7 +90,7 @@
 					"displayName": "Режим слияния",
 					"options": {
 						"deep_merge": {
-							"displayName": "Глубокое слияние"
+							"displayName": "Глубокое объединение"
 						},
 						"deep_merge_append": {
 							"displayName": "Глубокое слияние, добавление"
@@ -102,7 +102,7 @@
 							"displayName": "Объединить"
 						},
 						"replace": {
-							"displayName": "Заменять"
+							"displayName": "Заменить"
 						}
 					}
 				}
@@ -114,17 +114,17 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"slug": {
-			"displayName": "Слизень",
+			"displayName": "URL-слаг",
 			"description": "То же, что {ownerName}/{repositoryName}",
 			"placeholder": "n8n-io/n8n"
 		},
 		"branch": {
-			"displayName": "Ветвь",
+			"displayName": "Ветка",
 			"description": "Филиал просили построить",
-			"placeholder": "владелец"
+			"placeholder": "master"
 		}
 	}
 }

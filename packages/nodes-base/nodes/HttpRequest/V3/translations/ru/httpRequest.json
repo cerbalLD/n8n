@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "HTTP-запрос",
+		"displayName": "HTTP запрос",
 		"description": "Делает HTTP-запрос и возвращает данные ответа."
 	},
 	"nodeView": {
@@ -97,7 +97,7 @@
 							"displayName": "Имя"
 						},
 						"value": {
-							"displayName": "Ценить"
+							"displayName": "Значение"
 						}
 					}
 				}
@@ -135,7 +135,7 @@
 							"displayName": "Имя"
 						},
 						"value": {
-							"displayName": "Ценить"
+							"displayName": "Значение"
 						}
 					}
 				}
@@ -167,7 +167,7 @@
 					"displayName": "Двоичный файл n8n"
 				},
 				"raw": {
-					"displayName": "Сырой"
+					"displayName": "Исходные"
 				}
 			}
 		},
@@ -199,7 +199,7 @@
 							"description": "Идентификатор поля, которое необходимо установить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 						},
 						"value": {
-							"displayName": "Ценить",
+							"displayName": "Значение",
 							"description": "Значение поля для установки"
 						},
 						"parameterType": {
@@ -373,7 +373,7 @@
 									"description": "Если следует использовать нумерацию страниц",
 									"options": {
 										"off": {
-											"displayName": "Выключенный"
+											"displayName": "Выключено"
 										},
 										"updateAParameterInEachRequest": {
 											"displayName": "Обновить параметр в каждом запросе"
@@ -415,7 +415,7 @@
 													"placeholder": "например страница"
 												},
 												"value": {
-													"displayName": "Ценить",
+													"displayName": "Значение",
 													"hint": "Используйте режим выражения и $response для доступа к данным ответа."
 												}
 											}
@@ -440,7 +440,7 @@
 											"displayName": "Получить конкретный код(ы) статуса"
 										},
 										"other": {
-											"displayName": "Другой"
+											"displayName": "Другое"
 										}
 									}
 								},

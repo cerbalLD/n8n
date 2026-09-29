@@ -16,10 +16,10 @@
 			}
 		},
 		"service": {
-			"displayName": "Услуга",
+			"displayName": "Сервис",
 			"options": {
 				"support": {
-					"displayName": "Поддерживать"
+					"displayName": "Поддержка"
 				}
 			}
 		},
@@ -83,16 +83,16 @@
 									"displayName": "Изменено на"
 								},
 								"greater_than": {
-									"displayName": "Больше, чем"
+									"displayName": "Больше чем"
 								},
 								"is": {
-									"displayName": "Является"
+									"displayName": "Равно"
 								},
 								"is_not": {
-									"displayName": "Нет"
+									"displayName": "Не равно"
 								},
 								"less_than": {
-									"displayName": "Меньше, чем"
+									"displayName": "Меньше чем"
 								},
 								"not_changed": {
 									"displayName": "Не Изменено"
@@ -106,13 +106,13 @@
 							}
 						},
 						"value": {
-							"displayName": "Ценить",
+							"displayName": "Значение",
 							"options": {
 								"closed": {
 									"displayName": "Закрыто"
 								},
 								"new": {
-									"displayName": "Новый"
+									"displayName": "Создать"
 								},
 								"open": {
 									"displayName": "Открыть"
@@ -148,7 +148,7 @@
 									"displayName": "Срочный"
 								}
 							},
-							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+							"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 						}
 					}
 				},
@@ -196,16 +196,16 @@
 									"displayName": "Изменено на"
 								},
 								"greater_than": {
-									"displayName": "Больше, чем"
+									"displayName": "Больше чем"
 								},
 								"is": {
-									"displayName": "Является"
+									"displayName": "Равно"
 								},
 								"is_not": {
-									"displayName": "Нет"
+									"displayName": "Не равно"
 								},
 								"less_than": {
-									"displayName": "Меньше, чем"
+									"displayName": "Меньше чем"
 								},
 								"not_changed": {
 									"displayName": "Не Изменено"
@@ -219,13 +219,13 @@
 							}
 						},
 						"value": {
-							"displayName": "Ценить",
+							"displayName": "Значение",
 							"options": {
 								"closed": {
 									"displayName": "Закрыто"
 								},
 								"new": {
-									"displayName": "Новый"
+									"displayName": "Создать"
 								},
 								"open": {
 									"displayName": "Открыть"
@@ -261,7 +261,7 @@
 									"displayName": "Срочный"
 								}
 							},
-							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+							"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 						}
 					}
 				}

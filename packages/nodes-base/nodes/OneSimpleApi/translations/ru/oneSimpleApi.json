@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "Один простой API",
+		"displayName": "One Simple API",
 		"description": "Набор утилит без кода"
 	},
 	"nodeView": {
@@ -26,57 +26,57 @@
 			"options": {
 				"pdf": {
 					"displayName": "Создать PDF",
-					"description": "Создать PDF-файл с веб-страницы"
+					"description": "Создание PDF-файла с веб-страницы"
 				},
 				"seo": {
 					"displayName": "Получить SEO-данные",
-					"description": "Получить SEO-информацию с сайта"
+					"description": "Получение SEO-информации с сайта"
 				},
 				"screenshot": {
-					"displayName": "Сделать снимок экрана",
-					"description": "Создать снимок экрана с веб-страницы"
+					"displayName": "Снять снимок экрана",
+					"description": "Создание скриншота веб-страницы"
 				},
 				"instagramProfile": {
-					"displayName": "Инстаграм",
-					"description": "Получить подробную информацию о профиле Instagram"
+					"displayName": "Instagram",
+					"description": "Получение информации о профиле Instagram"
 				},
 				"spotifyArtistProfile": {
-					"displayName": "Спотифай",
-					"description": "Получите подробную информацию об исполнителе Spotify"
+					"displayName": "Spotify",
+					"description": "Получение информации об исполнителе Spotify"
 				},
 				"exchangeRate": {
 					"displayName": "Обменный курс",
-					"description": "Конвертируйте значение между валютами"
+					"description": "Конвертирование значения между валютами"
 				},
 				"imageMetadata": {
 					"displayName": "Метаданные изображения",
-					"description": "Получить метаданные изображения по URL-адресу"
+					"description": "Получение метаданных изображения по URL"
 				},
 				"expandURL": {
-					"displayName": "Развернуть URL-адрес",
-					"description": "Развернуть сокращенный URL-адрес"
+					"displayName": "Развернуть URL",
+					"description": "Развёртывание сокращённого URL"
 				},
 				"qrCode": {
 					"displayName": "Создать QR-код",
-					"description": "Создать QR-код"
+					"description": "Создание QR-кода"
 				},
 				"validateEmail": {
-					"displayName": "Подтвердить адрес электронной почты",
-					"description": "Подтвердить адрес электронной почты"
+					"displayName": "Проверить адрес электронной почты",
+					"description": "Проверка адреса электронной почты"
 				}
 			}
 		},
 		"link": {
 			"displayName": "URL",
-			"description": "URL-адрес для восстановления"
+			"description": "URL для развёртывания"
 		},
 		"download": {
 			"displayName": "Загрузить скриншот?",
 			"description": "Загружать ли скриншот или вернуть ссылку на него"
 		},
 		"output": {
-			"displayName": "Поместите вывод в поле",
-			"description": "Имя выходного поля для помещения данных двоичного файла."
+			"displayName": "вывести результат в поле",
+			"description": "имя выходного поля для помещения данных двоичного файла"
 		},
 		"options": {
 			"displayName": "Параметры",
@@ -107,10 +107,10 @@
 							"displayName": "A6"
 						},
 						"Ledger": {
-							"displayName": "Леджер"
+							"displayName": "Реестр"
 						},
 						"Legal": {
-							"displayName": "Юридический"
+							"displayName": "Юридические услуги"
 						},
 						"Letter": {
 							"displayName": "Письмо"
@@ -122,7 +122,7 @@
 				},
 				"force": {
 					"displayName": "Принудительное обновление",
-					"description": "Обычно API повторно использует ранее сделанный снимок экрана URL-адреса, чтобы обеспечить более быстрый ответ. Эта опция позволяет вам сделать снимок экрана именно в тот момент, когда это необходимо."
+					"description": "Обычно API повторно использует ранее сделанный скриншот URL, чтобы обеспечить более быстрый ответ. Этот параметр позволяет сделать новый скриншот в нужный момент, когда это необходимо."
 				},
 				"size": {
 					"displayName": "Размер",
@@ -132,7 +132,7 @@
 							"displayName": "Маленький"
 						},
 						"Medium": {
-							"displayName": "Середина"
+							"displayName": "Средний"
 						},
 						"Large": {
 							"displayName": "Большой"
@@ -158,22 +158,22 @@
 							"displayName": "Телефон"
 						},
 						"phone-landscape": {
-							"displayName": "Телефонный пейзаж"
+							"displayName": "Телефон (альбомная ориентация)"
 						},
 						"retina": {
-							"displayName": "сетчатка"
+							"displayName": "Retina"
 						},
 						"tablet": {
-							"displayName": "Таблетка"
+							"displayName": "Планшет"
 						},
 						"tablet-landscape": {
-							"displayName": "Планшет Пейзаж"
+							"displayName": "Планшет (альбомная ориентация)"
 						}
 					}
 				},
 				"fullpage": {
 					"displayName": "Полная страница",
-					"description": "API делает снимок видимой области для нужного размера экрана. Если вам нужен скриншот всей страницы, используйте эту опцию."
+					"description": "API создаёт скриншот видимой области для нужного размера экрана. Если вам нужен скриншот всей длины страницы, используйте этот параметр."
 				},
 				"headers": {
 					"displayName": "Включить заголовки?"
@@ -181,20 +181,20 @@
 			}
 		},
 		"message": {
-			"displayName": "QR-контент",
-			"description": "Текст, который необходимо преобразовать в QR-код, например URL-адрес веб-сайта."
+			"displayName": "Содержимое QR-кода",
+			"description": "Текст, который нужно преобразовать в QR-код, например URL веб-сайта"
 		},
 		"profileName": {
 			"displayName": "Имя профиля",
-			"description": "Имя профиля, о котором нужно получить подробную информацию"
+			"description": "Имя профиля для получения информации"
 		},
 		"artistName": {
 			"displayName": "Имя исполнителя",
-			"description": "Имя исполнителя, о котором нужно получить подробную информацию"
+			"description": "Имя исполнителя для получения информации"
 		},
 		"value": {
-			"displayName": "Ценить",
-			"description": "Значение для конвертации"
+			"displayName": "Значение",
+			"description": "Значение для конвертирования"
 		},
 		"fromCurrency": {
 			"displayName": "Из валюты",

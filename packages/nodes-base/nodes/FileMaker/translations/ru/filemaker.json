@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Файлмейкер",
-		"description": "Получение данных из API данных FileMaker"
+		"displayName": "FileMaker",
+		"description": "Получение данных из FileMaker Data API"
 	},
 	"nodeView": {
 		"action": {
@@ -26,7 +26,7 @@
 					"displayName": "Получить записи"
 				},
 				"record": {
-					"displayName": "Получить записи по идентификатору"
+					"displayName": "Получить записи по ID"
 				},
 				"performscript": {
 					"displayName": "Выполнить сценарий"
@@ -34,23 +34,23 @@
 			}
 		},
 		"layout": {
-			"displayName": "Имя или идентификатор макета",
-			"description": "Имя макета FileMaker. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>.",
-			"placeholder": "Название макета"
+			"displayName": "Имя или ID макета",
+			"description": "Имя макета FileMaker. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>.",
+			"placeholder": "Имя макета"
 		},
 		"recid": {
 			"displayName": "Идентификатор записи",
-			"description": "Идентификатор внутренней записи, возвращаемый методом get (recordid)",
+			"description": "Внутренний ID записи, возвращаемый методом get (recordid)",
 			"placeholder": "Идентификатор записи"
 		},
 		"offset": {
-			"displayName": "Компенсировать",
-			"description": "Номер записи первой записи в диапазоне записей",
+			"displayName": "Смещение",
+			"description": "Номер первой записи в диапазоне записей",
 			"placeholder": "0"
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов",
+			"description": "Максимальное количество результатов для возврата",
 			"placeholder": "100"
 		},
 		"getPortals": {
@@ -58,13 +58,13 @@
 			"description": "Получать ли также данные портала"
 		},
 		"portals": {
-			"displayName": "Имя или идентификатор портала",
-			"description": "Возвращаемый набор результатов портала. Используйте имя объекта портала или имя таблицы портала. Если этот параметр опущен, API вернет все объекты и записи портала в макете. Для лучшей производительности передайте имя объекта портала или имя таблицы портала. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>.",
+			"displayName": "Имя или ID портала",
+			"description": "Набор результатов портала для возврата. Используйте имя объекта портала или имя таблицы портала. Если этот параметр опущен, API вернёт все объекты и записи портала в макете. Для лучшей производительности используйте имя объекта портала или имя таблицы портала. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>.",
 			"placeholder": "Порталы"
 		},
 		"responseLayout": {
-			"displayName": "Имя или идентификатор макета ответа",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"displayName": "Имя или ID макета ответа",
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"queries": {
 			"options": {
@@ -84,11 +84,11 @@
 									"displayName": "Поле",
 									"values": {
 										"name": {
-											"displayName": "Имя поля или идентификатор",
-											"description": "Поле поиска. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+											"displayName": "Имя поля или ID",
+											"description": "Поле поиска. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 										},
 										"value": {
-											"displayName": "Ценить",
+											"displayName": "Значение",
 											"description": "Значение для поиска"
 										}
 									}
@@ -99,7 +99,7 @@
 							"description": "Имя поля"
 						},
 						"omit": {
-							"displayName": "Пропускать"
+							"displayName": "Пропустить"
 						}
 					}
 				}
@@ -109,30 +109,30 @@
 		},
 		"setSort": {
 			"displayName": "Сортировать данные?",
-			"description": "Сортировать ли данные"
+			"description": "Следует ли сортировать данные"
 		},
 		"sortParametersUi": {
 			"options": {
 				"sortParametersUi": {
-					"displayName": "Сортировать",
+					"displayName": "Сортировка",
 					"description": "Правила сортировки"
 				},
 				"rules": {
 					"displayName": "Правила",
 					"values": {
 						"name": {
-							"displayName": "Имя поля или идентификатор",
-							"description": "Имя поля. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+							"displayName": "Имя поля или ID",
+							"description": "Имя поля. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 						},
 						"value": {
-							"displayName": "Заказ",
+							"displayName": "Порядок",
 							"description": "Порядок сортировки",
 							"options": {
 								"ascend": {
-									"displayName": "Восхождение"
+									"displayName": "По возрастанию"
 								},
 								"descend": {
-									"displayName": "Спуститься"
+									"displayName": "По убыванию"
 								}
 							}
 						}
@@ -140,54 +140,54 @@
 				}
 			},
 			"placeholder": "Добавить правила сортировки",
-			"displayName": "Сортировать",
+			"displayName": "Сортировка",
 			"description": "Правила сортировки"
 		},
 		"setScriptBefore": {
-			"displayName": "Прежде чем найти сценарий",
-			"description": "Определять ли сценарий, который будет запускаться перед действием, указанным вызовом API, и после последующей сортировки"
+			"displayName": "Сценарий до поиска",
+			"description": "Определять ли сценарий для запуска перед действием, указанным вызовом API, и после последующей сортировки"
 		},
 		"scriptBefore": {
-			"displayName": "Имя или идентификатор сценария",
-			"description": "Имя сценария FileMaker, который будет запущен после действия, указанного вызовом API, и после последующей сортировки. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>.",
+			"displayName": "Имя или ID сценария",
+			"description": "Имя сценария FileMaker для запуска после действия, указанного вызовом API, и после последующей сортировки. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>.",
 			"placeholder": "Имя сценария"
 		},
 		"scriptBeforeParam": {
 			"displayName": "Параметр сценария",
-			"description": "Параметр для сценария FileMaker.",
-			"placeholder": "Параметры скрипта"
+			"description": "Параметр для сценария FileMaker",
+			"placeholder": "Параметры сценария"
 		},
 		"setScriptSort": {
-			"displayName": "Перед сценарием сортировки",
-			"description": "Определять ли сценарий, который будет запускаться после действия, указанного вызовом API, но до последующей сортировки"
+			"displayName": "Сценарий до сортировки",
+			"description": "Определять ли сценарий для запуска после действия, указанного вызовом API, но до последующей сортировки"
 		},
 		"scriptSort": {
-			"displayName": "Имя или идентификатор сценария",
-			"description": "Имя сценария FileMaker, который будет запущен после действия, указанного вызовом API, но до последующей сортировки. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>.",
+			"displayName": "Имя или ID сценария",
+			"description": "Имя сценария FileMaker для запуска после действия, указанного вызовом API, но до последующей сортировки. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>.",
 			"placeholder": "Имя сценария"
 		},
 		"scriptSortParam": {
 			"displayName": "Параметр сценария",
-			"description": "Параметр для сценария FileMaker.",
-			"placeholder": "Параметры скрипта"
+			"description": "Параметр для сценария FileMaker",
+			"placeholder": "Параметры сценария"
 		},
 		"setScriptAfter": {
-			"displayName": "Скрипт после сортировки",
-			"description": "Определять ли сценарий, который будет запускаться после действия, указанного вызовом API, но до последующей сортировки"
+			"displayName": "Сценарий после сортировки",
+			"description": "Определять ли сценарий для запуска после действия, указанного вызовом API, но до последующей сортировки"
 		},
 		"scriptAfter": {
-			"displayName": "Имя или идентификатор сценария",
-			"description": "Имя сценария FileMaker, который будет запущен после действия, указанного вызовом API, и после последующей сортировки. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>.",
+			"displayName": "Имя или ID сценария",
+			"description": "Имя сценария FileMaker для запуска после действия, указанного вызовом API, и после последующей сортировки. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>.",
 			"placeholder": "Имя сценария"
 		},
 		"scriptAfterParam": {
 			"displayName": "Параметр сценария",
-			"description": "Параметр для сценария FileMaker.",
-			"placeholder": "Параметры скрипта"
+			"description": "Параметр для сценария FileMaker",
+			"placeholder": "Параметры сценария"
 		},
 		"modId": {
-			"displayName": "Идентификатор мода",
-			"description": "Идентификатор последней модификации. При использовании modId запись редактируется только в том случае, если modId совпадает."
+			"displayName": "ID модификации",
+			"description": "ID последней модификации. Запись редактируется только если ID модификации совпадает."
 		},
 		"fieldsParametersUi": {
 			"options": {
@@ -199,11 +199,11 @@
 					"displayName": "Поля",
 					"values": {
 						"name": {
-							"displayName": "Имя поля или идентификатор",
-							"description": "Имя поля. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+							"displayName": "Имя поля или ID",
+							"description": "Имя поля. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 						},
 						"value": {
-							"displayName": "Ценить"
+							"displayName": "Значение"
 						}
 					}
 				}
@@ -213,14 +213,14 @@
 			"description": "Поля для определения"
 		},
 		"script": {
-			"displayName": "Имя или идентификатор сценария",
-			"description": "Имя запускаемого сценария FileMaker. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>.",
+			"displayName": "Имя или ID сценария",
+			"description": "Имя запускаемого сценария FileMaker. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>.",
 			"placeholder": "Имя сценария"
 		},
 		"scriptParam": {
 			"displayName": "Параметр сценария",
-			"description": "Параметр для сценария FileMaker.",
-			"placeholder": "Параметры скрипта"
+			"description": "Параметр для сценария FileMaker",
+			"placeholder": "Параметры сценария"
 		}
 	}
 }

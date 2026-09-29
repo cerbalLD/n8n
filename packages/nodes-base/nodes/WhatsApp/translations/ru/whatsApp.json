@@ -11,7 +11,7 @@
 					"displayName": "Сообщение"
 				},
 				"media": {
-					"displayName": "СМИ"
+					"displayName": "Средства массовой информации"
 				}
 			}
 		},
@@ -19,7 +19,7 @@
 			"displayName": "Операция",
 			"options": {
 				"send": {
-					"displayName": "Отправлять"
+					"displayName": "Отправить"
 				},
 				"sendAndWait": {
 					"displayName": "Отправить и дождаться ответа"
@@ -125,7 +125,7 @@
 											"displayName": "Дом"
 										},
 										"WORK": {
-											"displayName": "Работа"
+											"displayName": "Рабочий"
 										}
 									}
 								},
@@ -133,13 +133,13 @@
 									"displayName": "Улица"
 								},
 								"city": {
-									"displayName": "Город"
+									"displayName": "город"
 								},
 								"state": {
-									"displayName": "Состояние"
+									"displayName": "область"
 								},
 								"zip": {
-									"displayName": "Почтовый индекс"
+									"displayName": "Zip"
 								},
 								"country": {
 									"displayName": "Страна"
@@ -165,7 +165,7 @@
 				"emails": {
 					"values": {
 						"emails": {
-							"displayName": "Электронная почта"
+							"displayName": "Email-адреса"
 						},
 						"data": {
 							"options": {
@@ -176,7 +176,7 @@
 											"displayName": "Дом"
 										},
 										"WORK": {
-											"displayName": "Работа"
+											"displayName": "Рабочий"
 										}
 									}
 								},
@@ -188,7 +188,7 @@
 						}
 					},
 					"placeholder": "Добавить параметр",
-					"displayName": "Электронная почта",
+					"displayName": "Email-адреса",
 					"options": {
 						"data": {
 							"displayName": "Электронная почта"
@@ -209,7 +209,7 @@
 									"displayName": "Отделение"
 								},
 								"title": {
-									"displayName": "Заголовок"
+									"displayName": "Название"
 								}
 							}
 						}
@@ -239,7 +239,7 @@
 											"displayName": "Дом"
 										},
 										"IPHONE": {
-											"displayName": "айфон"
+											"displayName": "iPhone"
 										},
 										"MAIN": {
 											"displayName": "Основной"
@@ -248,7 +248,7 @@
 											"displayName": "Идентификатор WhatsApp"
 										},
 										"WORK": {
-											"displayName": "Работа"
+											"displayName": "Рабочий"
 										}
 									}
 								},
@@ -284,7 +284,7 @@
 											"displayName": "Дом"
 										},
 										"WORK": {
-											"displayName": "Работа"
+											"displayName": "Рабочий"
 										}
 									}
 								},
@@ -341,7 +341,7 @@
 			"displayName": "Широта"
 		},
 		"textBody": {
-			"displayName": "Текстовое тело",
+			"displayName": "Текстовое содержимое",
 			"description": "Тело сообщения (максимум 4096 символов)"
 		},
 		"mediaPath": {
@@ -349,7 +349,7 @@
 			"description": "Используйте ссылку, идентификатор или n8n, чтобы загрузить видео.",
 			"options": {
 				"useMediaLink": {
-					"displayName": "Связь",
+					"displayName": "Ссылка",
 					"description": "При использовании ссылки WhatsApp загрузит видео, избавляя вас от необходимости загружать видео самостоятельно."
 				},
 				"useMediaId": {
@@ -357,13 +357,13 @@
 					"description": "Вы можете использовать идентификатор, если вы уже загрузили видео в WhatsApp."
 				},
 				"useMedian8n": {
-					"displayName": "н8н",
+					"displayName": "n8n",
 					"description": "Загрузите двоичный файл об элементе, обрабатываемом в n8n."
 				}
 			}
 		},
 		"mediaLink": {
-			"displayName": "Связь",
+			"displayName": "Ссылка",
 			"description": "Ссылка на медиа для отправки"
 		},
 		"mediaId": {
@@ -372,7 +372,7 @@
 		},
 		"mediaPropertyName": {
 			"displayName": "Имя свойства",
-			"description": "Имя двоичного свойства, содержащего данные для загружаемого файла."
+			"description": "Имя двоичного свойства, содержащего данные для загружаемого файла"
 		},
 		"mediaFilename": {
 			"displayName": "Имя файла",
@@ -419,7 +419,7 @@
 													"displayName": "Текст"
 												},
 												"currency": {
-													"displayName": "Валюта"
+													"displayName": "валюта"
 												},
 												"date_time": {
 													"displayName": "Дата Время"
@@ -1048,7 +1048,7 @@
 													"displayName": "Текст"
 												},
 												"currency": {
-													"displayName": "Валюта"
+													"displayName": "валюта"
 												},
 												"date_time": {
 													"displayName": "Дата Время"
@@ -1641,7 +1641,7 @@
 			"options": {
 				"approval": {
 					"displayName": "Одобрение",
-					"description": "Пользователь может одобрить/отклонить сообщение прямо в сообщении."
+					"description": "Пользователь может одобрить/отклонить прямо в сообщении"
 				},
 				"freeText": {
 					"displayName": "Свободный текст",
@@ -1649,7 +1649,7 @@
 				},
 				"customForm": {
 					"displayName": "Пользовательская форма",
-					"description": "Пользователь может отправить ответ через специальную форму"
+					"description": "Пользователь может отправить ответ через пользовательскую форму"
 				}
 			}
 		},
@@ -1666,7 +1666,7 @@
 		},
 		"jsonOutput": {
 			"displayName": "Поля формы",
-			"hint": "<a href=\"https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.form/\" target=\"_blank\">См. в документации </a> синтаксис полей."
+			"hint": "<a href=\"https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.form/\" target=\"_blank\">Посмотрите документацию</a> для синтаксиса полей"
 		},
 		"formFields": {
 			"options": {
@@ -1677,17 +1677,17 @@
 					"displayName": "Ценности",
 					"values": {
 						"fieldName": {
-							"displayName": "Имя настраиваемого поля",
-							"description": "Имя поля, используемое во входных атрибутах и ​​на которое ссылается рабочий процесс."
+							"displayName": "Имя пользовательского поля",
+							"description": "Имя поля, используемое во входных атрибутах и ссылаемое рабочим процессом"
 						},
 						"fieldLabel": {
 							"displayName": "Имя поля",
-							"description": "Метка, которая появляется над полем ввода",
+							"description": "Метка, отображаемая над полем ввода",
 							"placeholder": "например Как вас зовут?"
 						},
 						"fieldType": {
 							"displayName": "Тип элемента",
-							"description": "Тип поля, добавляемого в форму",
+							"description": "Тип поля для добавления в форму",
 							"options": {
 								"checkbox": {
 									"displayName": "Флажки"
@@ -1699,7 +1699,7 @@
 									"displayName": "Дата"
 								},
 								"dropdown": {
-									"displayName": "Падать"
+									"displayName": "Раскрывающийся список"
 								},
 								"email": {
 									"displayName": "Электронная почта"
@@ -1717,10 +1717,10 @@
 									"displayName": "Пароль"
 								},
 								"radio": {
-									"displayName": "Радиокнопки"
+									"displayName": "Переключатели"
 								},
 								"text": {
-									"displayName": "Ввод текста"
+									"displayName": "Текстовый ввод"
 								},
 								"textarea": {
 									"displayName": "Текстовая область"
@@ -1729,8 +1729,8 @@
 						},
 						"elementName": {
 							"displayName": "Имя элемента",
-							"description": "Необязательное поле. Его можно использовать для включения HTML в выходные данные.",
-							"placeholder": "например раздел контента"
+							"description": "Необязательное поле. Можно использовать для включения HTML в выходные данные.",
+							"placeholder": "например section-content"
 						},
 						"placeholder": {
 							"displayName": "Заполнитель",
@@ -1738,82 +1738,82 @@
 						},
 						"defaultValue": {
 							"displayName": "Значение по умолчанию",
-							"description": "Значения по умолчанию, которые будут выбраны заранее. Должно соответствовать одному или нескольким меткам опций. Разделите несколько предварительно выбранных опций запятой."
+							"description": "Значение(я) по умолчанию, которое(ые) будут выбраны заранее. Должно соответствовать одной или нескольким меткам опций. Разделите несколько предварительно выбранных опций запятой."
 						},
 						"fieldValue": {
 							"displayName": "Значение поля",
-							"description": "Входное значение можно установить здесь или оно будет передано в качестве параметра запроса через имя поля, если значение не установлено."
+							"description": "Входное значение можно установить здесь или оно будет передано как параметр запроса через имя поля, если значение не установлено"
 						},
 						"fieldOptions": {
 							"options": {
 								"fieldOptions": {
-									"displayName": "Радиокнопки",
+									"displayName": "Переключатели",
 									"description": "Список опций, которые можно выбрать из раскрывающегося списка"
 								},
 								"values": {
 									"displayName": "Ценности",
 									"values": {
 										"option": {
-											"displayName": "Метка радиокнопки"
+											"displayName": "Метка переключателя"
 										}
 									}
 								}
 							},
 							"placeholder": "Добавить переключатель",
-							"displayName": "Радиокнопки",
+							"displayName": "Переключатели",
 							"description": "Список опций, которые можно выбрать из раскрывающегося списка"
 						},
 						"multiselectLegacyNotice": {
-							"displayName": "Множественный выбор является устаревшим вариантом, вместо этого используйте тип поля «Флажки» или «Переключатели»."
+							"displayName": "Множественный выбор является устаревшей опцией, используйте вместо этого типы полей «Флажки» или «Переключатели»"
 						},
 						"multiselect": {
 							"displayName": "Множественный выбор",
-							"description": "Разрешить ли пользователю выбирать несколько вариантов из раскрывающегося списка"
+							"description": "Разрешать ли пользователю выбирать несколько опций из раскрывающегося списка"
 						},
 						"limitSelection": {
 							"displayName": "Ограничить выбор",
 							"options": {
 								"exact": {
-									"displayName": "Точный номер"
+									"displayName": "Точное число"
 								},
 								"range": {
 									"displayName": "Диапазон"
 								},
 								"unlimited": {
-									"displayName": "Безлимитный"
+									"displayName": "Неограниченно"
 								}
 							}
 						},
 						"numberOfSelections": {
-							"displayName": "Количество вариантов выбора"
+							"displayName": "Количество выборов"
 						},
 						"minSelections": {
-							"displayName": "Минимальный выбор"
+							"displayName": "Минимальное количество выборов"
 						},
 						"maxSelections": {
-							"displayName": "Максимальный выбор"
+							"displayName": "Максимальное количество выборов"
 						},
 						"html": {
 							"displayName": "HTML",
 							"description": "HTML-элементы для отображения на странице формы",
-							"hint": "Не принимает теги <code><script></code>, <code><style></code> или <code><input></code>."
+							"hint": "Не принимает теги <code>&lt;script&gt;</code>, <code>&lt;style&gt;</code> или <code>&lt;input&gt;</code>"
 						},
 						"multipleFiles": {
 							"displayName": "Несколько файлов",
-							"description": "Разрешить ли пользователю выбирать несколько файлов из входного файла или только один"
+							"description": "Разрешать ли пользователю выбирать несколько файлов или только один"
 						},
 						"acceptFileTypes": {
 							"displayName": "Допустимые типы файлов",
-							"description": "Список разрешенных расширений файлов, разделенный запятыми",
-							"hint": "Оставьте пустым, чтобы разрешить все типы файлов.",
+							"description": "Список разрешённых расширений файлов, разделённый запятыми",
+							"hint": "Оставьте пустым, чтобы разрешить все типы файлов",
 							"placeholder": "например .jpg, .png"
 						},
 						"formatDate": {
-							"displayName": "Отображаемая дата форматируется на основе языкового стандарта браузера пользователя."
+							"displayName": "Отображаемая дата форматируется в соответствии с языком браузера пользователя"
 						},
 						"requiredField": {
 							"displayName": "Обязательное поле",
-							"description": "Требовать ли от пользователя ввода значения в это поле перед отправкой формы"
+							"description": "Требовать ли от пользователя введения значения в это поле перед отправкой формы"
 						}
 					}
 				}
@@ -1825,7 +1825,7 @@
 		"approvalOptions": {
 			"options": {
 				"approvalOptions": {
-					"displayName": "Варианты утверждения"
+					"displayName": "Параметры одобрения"
 				},
 				"values": {
 					"displayName": "Ценности",
@@ -1835,24 +1835,24 @@
 							"placeholder": "Добавить вариант",
 							"options": {
 								"single": {
-									"displayName": "Только утвердить"
+									"displayName": "Только одобрить"
 								},
 								"double": {
-									"displayName": "Одобрить и не одобрить"
+									"displayName": "Одобрить и отклонить"
 								}
 							}
 						},
 						"approveLabel": {
-							"displayName": "Метка кнопки «Утвердить»"
+							"displayName": "Метка кнопки «Одобрить»"
 						},
 						"disapproveLabel": {
-							"displayName": "Ярлык кнопки «Отклонить»"
+							"displayName": "Метка кнопки «Отклонить»"
 						}
 					}
 				}
 			},
 			"placeholder": "Добавить вариант",
-			"displayName": "Варианты утверждения"
+			"displayName": "Параметры одобрения"
 		},
 		"options": {
 			"displayName": "Параметры",
@@ -1868,21 +1868,21 @@
 							"options": {
 								"limitType": {
 									"displayName": "Тип лимита",
-									"description": "Устанавливает условие возобновления выполнения. Может быть указанная дата или через некоторое время.",
+									"description": "Устанавливает условие для возобновления выполнения. Может быть указанной датой или через определённый промежуток времени.",
 									"options": {
 										"afterTimeInterval": {
-											"displayName": "После временного интервала",
-											"description": "Ждет определенное время"
+											"displayName": "После интервала времени",
+											"description": "Ожидает указанное время"
 										},
 										"atSpecifiedTime": {
 											"displayName": "В указанное время",
-											"description": "Ожидает установленной даты и времени, чтобы продолжить"
+											"description": "Ожидает установленную дату и время для продолжения"
 										}
 									}
 								},
 								"resumeAmount": {
 									"displayName": "Количество",
-									"description": "Время ждать"
+									"description": "Время ожидания"
 								},
 								"resumeUnit": {
 									"displayName": "Единица",
@@ -1900,8 +1900,8 @@
 									}
 								},
 								"maxDateAndTime": {
-									"displayName": "Максимальная дата и время",
-									"description": "Продолжить выполнение после указанной даты и времени"
+									"displayName": "Макс. дата и время",
+									"description": "Возобновить выполнение после указанной даты и времени"
 								}
 							}
 						}
@@ -1915,19 +1915,19 @@
 					}
 				},
 				"appendAttribution": {
-					"displayName": "Добавить авторство n8n",
-					"description": "Включить ли в конец сообщения фразу «Это сообщение было отправлено автоматически с помощью n8n»"
+					"displayName": "Добавить атрибуцию n8n",
+					"description": "Добавлять ли в конец сообщения фразу «Это сообщение было отправлено автоматически с помощью n8n»"
 				},
 				"messageButtonLabel": {
 					"displayName": "Метка кнопки сообщения"
 				},
 				"responseFormTitle": {
 					"displayName": "Название формы ответа",
-					"description": "Название формы, к которой пользователь может получить доступ для ответа"
+					"description": "Название формы, через которую пользователь может предоставить свой ответ"
 				},
 				"responseFormDescription": {
-					"displayName": "Форма ответа Описание",
-					"description": "Описание формы, к которой пользователь может получить доступ для ответа."
+					"displayName": "Описание формы ответа",
+					"description": "Описание формы, через которую пользователь может предоставить свой ответ"
 				},
 				"responseFormButtonLabel": {
 					"displayName": "Метка кнопки формы ответа"

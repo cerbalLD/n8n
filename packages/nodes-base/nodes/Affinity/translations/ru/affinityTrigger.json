@@ -1,41 +1,41 @@
 {
 	"header": {
-		"displayName": "Триггер сходства",
-		"description": "Обработка событий Affinity с помощью веб-перехватчиков"
+		"displayName": "Триггер Affinity",
+		"description": "Обработка событий Affinity через вебхуки"
 	},
 	"nodeView": {
 		"events": {
 			"displayName": "События",
-			"description": "События веб-перехватчика, которые будут включены для этой конечной точки",
+			"description": "События вебхука, которые будут включены для этой конечной точки",
 			"options": {
 				"field_value": {
 					"created": {
-						"displayName": "поле_значение.создано"
+						"displayName": "field_value.created"
 					},
 					"deleted": {
-						"displayName": "поле_значение.удалено"
+						"displayName": "field_value.deleted"
 					},
 					"updated": {
-						"displayName": "поле_значение.обновлено"
+						"displayName": "field_value.updated"
 					}
 				},
 				"field": {
 					"created": {
-						"displayName": "поле.создано"
+						"displayName": "field.created"
 					},
 					"deleted": {
-						"displayName": "поле.удалено"
+						"displayName": "field.deleted"
 					},
 					"updated": {
-						"displayName": "поле.обновлено"
+						"displayName": "field.updated"
 					}
 				},
 				"file": {
 					"created": {
-						"displayName": "файл.создан"
+						"displayName": "file.created"
 					},
 					"deleted": {
-						"displayName": "файл.удален"
+						"displayName": "file.deleted"
 					}
 				},
 				"list_entry": {
@@ -48,57 +48,57 @@
 				},
 				"list": {
 					"created": {
-						"displayName": "список.создан"
+						"displayName": "list.created"
 					},
 					"deleted": {
-						"displayName": "список.удален"
+						"displayName": "list.deleted"
 					},
 					"updated": {
-						"displayName": "список.обновлено"
+						"displayName": "list.updated"
 					}
 				},
 				"note": {
 					"created": {
-						"displayName": "Примечание.создано"
+						"displayName": "note.created"
 					},
 					"deleted": {
-						"displayName": "Примечание.удалено"
+						"displayName": "note.deleted"
 					},
 					"updated": {
-						"displayName": "Примечание.обновлено"
+						"displayName": "note.updated"
 					}
 				},
 				"opportunity": {
 					"created": {
-						"displayName": "возможность.создана"
+						"displayName": "opportunity.created"
 					},
 					"deleted": {
-						"displayName": "возможность.удалено"
+						"displayName": "opportunity.deleted"
 					},
 					"updated": {
-						"displayName": "возможность.обновлено"
+						"displayName": "opportunity.updated"
 					}
 				},
 				"organization": {
 					"created": {
-						"displayName": "организация.создано"
+						"displayName": "organization.created"
 					},
 					"deleted": {
-						"displayName": "организация.удалено"
+						"displayName": "organization.deleted"
 					},
 					"updated": {
-						"displayName": "организация.обновлено"
+						"displayName": "organization.updated"
 					}
 				},
 				"person": {
 					"created": {
-						"displayName": "человек.создан"
+						"displayName": "person.created"
 					},
 					"deleted": {
-						"displayName": "человек.удален"
+						"displayName": "person.deleted"
 					},
 					"updated": {
-						"displayName": "человек.обновлено"
+						"displayName": "person.updated"
 					}
 				}
 			}

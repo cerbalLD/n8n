@@ -1,18 +1,18 @@
 {
 	"header": {
-		"displayName": "Сториблок",
+		"displayName": "Storyblok",
 		"description": "Использование API Storyblok"
 	},
 	"nodeView": {
 		"source": {
 			"displayName": "Источник",
-			"description": "Выберите, откуда поступают ваши данные: контент или API управления.",
+			"description": "Выберите источник данных: Content API или Management API",
 			"options": {
 				"contentApi": {
-					"displayName": "API контента"
+					"displayName": "Content API"
 				},
 				"managementApi": {
-					"displayName": "API управления"
+					"displayName": "Management API"
 				}
 			}
 		},
@@ -33,25 +33,25 @@
 				},
 				"getAll": {
 					"displayName": "Получить много",
-					"description": "Получите много историй"
+					"description": "Получить несколько историй"
 				},
 				"delete": {
 					"displayName": "Удалить",
 					"description": "Удалить историю"
 				},
 				"publish": {
-					"displayName": "Публиковать",
+					"displayName": "Публикация",
 					"description": "Опубликовать историю"
 				},
 				"unpublish": {
-					"displayName": "Отменить публикацию",
+					"displayName": "Снять с публикации",
 					"description": "Отменить публикацию истории"
 				}
 			}
 		},
 		"identifier": {
 			"displayName": "Идентификатор",
-			"description": "Идентификатор или фрагмент истории, которую нужно получить."
+			"description": "ID или slug истории для получения"
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",
@@ -59,7 +59,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"filters": {
 			"displayName": "Фильтры",
@@ -67,17 +67,17 @@
 			"options": {
 				"starts_with": {
 					"displayName": "Начинается с",
-					"description": "Фильтровать по слизню"
+					"description": "Фильтровать по slug"
 				}
 			}
 		},
 		"space": {
 			"displayName": "Имя или идентификатор пространства",
-			"description": "Название пространства. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"description": "Имя пространства. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"storyId": {
-			"displayName": "Идентификатор истории",
-			"description": "Числовой идентификатор истории"
+			"displayName": "ID истории",
+			"description": "Числовой ID истории"
 		},
 		"options": {
 			"displayName": "Параметры",
@@ -85,7 +85,7 @@
 			"options": {
 				"releaseId": {
 					"displayName": "Идентификатор выпуска",
-					"description": "Числовой идентификатор выпуска"
+					"description": "Числовой ID релиза"
 				},
 				"language": {
 					"displayName": "Язык",

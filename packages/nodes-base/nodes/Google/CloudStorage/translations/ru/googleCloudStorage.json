@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Облачное хранилище Google",
-		"description": "Используйте API облачного хранилища Google."
+		"displayName": "Google Cloud Storage",
+		"description": "Использование API Google Cloud Storage"
 	},
 	"nodeView": {
 		"authentication": {
@@ -11,7 +11,7 @@
 					"displayName": "ОАут2"
 				},
 				"serviceAccount": {
-					"displayName": "Учетная запись службы (рекомендуется)"
+					"displayName": "Учётная запись службы (рекомендуется)"
 				}
 			}
 		},
@@ -19,7 +19,7 @@
 			"displayName": "Ресурс",
 			"options": {
 				"bucket": {
-					"displayName": "Ведро"
+					"displayName": "Хранилище"
 				},
 				"object": {
 					"displayName": "Объект"
@@ -30,7 +30,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать объект"
 				},
 				"delete": {
@@ -39,14 +39,14 @@
 				},
 				"get": {
 					"displayName": "Получать",
-					"description": "Получить данные объекта или метаданные"
+					"description": "Получить данные или метаданные объекта"
 				},
 				"getAll": {
 					"displayName": "Получить много",
 					"description": "Получить список объектов"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить метаданные объекта"
 				}
 			}
@@ -64,16 +64,16 @@
 		},
 		"prefix": {
 			"displayName": "Префикс",
-			"placeholder": "Фильтровать имена сегментов"
+			"placeholder": "Фильтровать имена бакетов"
 		},
 		"projection": {
 			"displayName": "Проекция",
 			"options": {
 				"full": {
-					"displayName": "Все объекты недвижимости"
+					"displayName": "Все свойства"
 				},
 				"noAcl": {
-					"displayName": "Нет ACL"
+					"displayName": "Без ACL"
 				}
 			}
 		},
@@ -86,22 +86,22 @@
 			"placeholder": "Добавить фильтр",
 			"options": {
 				"ifMetagenerationMatch": {
-					"displayName": "Матч метагенерации",
-					"description": "Возвращайте данные только в том случае, если значение метагенерации Bucket соответствует отправленному значению."
+					"displayName": "Совпадение метагенерации",
+					"description": "Возвращать данные только если метагенерация совпадает"
 				},
 				"ifMetagenerationNotMatch": {
 					"displayName": "Исключить метагенерацию",
-					"description": "Возвращайте данные только в том случае, если значение метагенерации Bucket не соответствует отправленному значению."
+					"description": "Возвращать данные только если метагенерация не совпадает"
 				}
 			}
 		},
 		"createAcl": {
-			"displayName": "Предопределенный контроль доступа",
+			"displayName": "Предопределённый контроль доступа",
 			"placeholder": "Добавить параметры контроля доступа",
 			"options": {
 				"predefinedAcl": {
-					"displayName": "Предопределенный список управления доступом",
-					"placeholder": "Примените предопределенный набор средств управления доступом к этому сегменту.",
+					"displayName": "Предопределённый ACL",
+					"placeholder": "Применить предопределённый набор элементов управления доступом",
 					"options": {
 						"authenticatedRead": {
 							"displayName": "Аутентифицированное чтение"
@@ -110,34 +110,34 @@
 							"displayName": "Частный"
 						},
 						"projectPrivate": {
-							"displayName": "Частный проект"
+							"displayName": "Приватный проект"
 						},
 						"publicRead": {
 							"displayName": "Публичное чтение"
 						},
 						"publicReadWrite": {
-							"displayName": "Публичное чтение/запись"
+							"displayName": "Открытые чтение/запись"
 						}
 					}
 				},
 				"predefinedDefaultObjectAcl": {
-					"displayName": "Предопределенный список ACL для объектов по умолчанию",
-					"placeholder": "Примените к этому сегменту предопределенный набор элементов управления доступом к объектам по умолчанию.",
+					"displayName": "Предопределённый ACL объектов по умолчанию",
+					"placeholder": "Применить предопределённый набор элементов управления доступом к объектам",
 					"options": {
 						"authenticatedRead": {
 							"displayName": "Аутентифицированное чтение"
 						},
 						"bucketOwnerFullControl": {
-							"displayName": "Полный контроль владельца сегмента"
+							"displayName": "Полный контроль владельца хранилища"
 						},
 						"bucketOwnerRead": {
-							"displayName": "Владелец сегмента прочитал"
+							"displayName": "Владелец хранилища может читать"
 						},
 						"private": {
 							"displayName": "Частный"
 						},
 						"projectPrivate": {
-							"displayName": "Частный проект"
+							"displayName": "Приватный проект"
 						},
 						"publicRead": {
 							"displayName": "Публичное чтение"
@@ -152,11 +152,11 @@
 			"options": {
 				"acl": {
 					"displayName": "Контроль доступа",
-					"placeholder": "Элементы управления доступом в Bucket"
+					"placeholder": "Элементы управления доступом бакета"
 				},
 				"billing": {
 					"displayName": "Биллинг",
-					"placeholder": "Платежная конфигурация сегмента"
+					"placeholder": "Конфигурация биллинга бакета"
 				},
 				"cors": {
 					"displayName": "CORS",
@@ -187,7 +187,7 @@
 					"placeholder": "Конфигурация IAM сегмента"
 				},
 				"labels": {
-					"displayName": "Этикетки",
+					"displayName": "Метки",
 					"placeholder": "Метки сегментов, предоставленные пользователем, в парах ключ/значение."
 				},
 				"lifecycle": {
@@ -211,7 +211,7 @@
 					"placeholder": "Целевая точка восстановления для сегмента"
 				},
 				"storageClass": {
-					"displayName": "Класс хранилища",
+					"displayName": "Класс хранения",
 					"placeholder": "Класс хранения сегмента по умолчанию для объектов, которые его не определяют."
 				},
 				"versioning": {
@@ -232,10 +232,10 @@
 			"displayName": "Проекция",
 			"options": {
 				"full": {
-					"displayName": "Все объекты недвижимости"
+					"displayName": "Все свойства"
 				},
 				"noAcl": {
-					"displayName": "Нет ACL"
+					"displayName": "Без ACL"
 				}
 			}
 		},
@@ -257,7 +257,7 @@
 		},
 		"createBinaryPropertyName": {
 			"displayName": "Входное двоичное поле",
-			"hint": "Имя входного двоичного поля, содержащего файл для записи."
+			"hint": "Имя входного двоичного поля, содержащего файл для записи"
 		},
 		"createContent": {
 			"displayName": "Содержимое файла",
@@ -269,7 +269,7 @@
 		},
 		"maxResults": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"createData": {
 			"displayName": "Создать поля",
@@ -309,7 +309,7 @@
 					"displayName": "Метаданные"
 				},
 				"storageClass": {
-					"displayName": "Класс хранилища"
+					"displayName": "Класс хранения"
 				},
 				"temporaryHold": {
 					"displayName": "Временное удержание"
@@ -372,7 +372,7 @@
 					"placeholder": "Сделать операцию условной, если генерация объекта не соответствует этому значению"
 				},
 				"ifMetagenerationMatch": {
-					"displayName": "Матч метагенерации",
+					"displayName": "Совпадение метагенерации",
 					"placeholder": "Сделайте операцию обусловленной текущим метагенерированием объекта, соответствующим этому значению."
 				},
 				"ifMetagenerationNotMatch": {
@@ -383,23 +383,23 @@
 					"displayName": "Имя ключа KMS"
 				},
 				"predefinedAcl": {
-					"displayName": "Предопределенный список управления доступом",
+					"displayName": "Предопределённый ACL",
 					"placeholder": "Примените к объекту предопределенный набор элементов управления доступом.",
 					"options": {
 						"authenticatedRead": {
 							"displayName": "Аутентифицированное чтение"
 						},
 						"bucketOwnerFullControl": {
-							"displayName": "Полный контроль владельца сегмента"
+							"displayName": "Полный контроль владельца хранилища"
 						},
 						"bucketOwnerRead": {
-							"displayName": "Владелец сегмента прочитал"
+							"displayName": "Владелец хранилища может читать"
 						},
 						"private": {
 							"displayName": "Частный"
 						},
 						"projectPrivate": {
-							"displayName": "Частный проект"
+							"displayName": "Приватный проект"
 						},
 						"publicRead": {
 							"displayName": "Публичное чтение"
@@ -425,7 +425,7 @@
 					"placeholder": "Сделать операцию условной, если генерация объекта не соответствует этому значению"
 				},
 				"ifMetagenerationMatch": {
-					"displayName": "Матч метагенерации",
+					"displayName": "Совпадение метагенерации",
 					"placeholder": "Сделайте операцию обусловленной текущим метагенерированием объекта, соответствующим этому значению."
 				},
 				"ifMetagenerationNotMatch": {
@@ -451,7 +451,7 @@
 					"placeholder": "Сделать операцию условной, если генерация объекта не соответствует этому значению"
 				},
 				"ifMetagenerationMatch": {
-					"displayName": "Матч метагенерации",
+					"displayName": "Совпадение метагенерации",
 					"placeholder": "Сделайте операцию обусловленной текущим метагенерированием объекта, соответствующим этому значению."
 				},
 				"ifMetagenerationNotMatch": {
@@ -459,23 +459,23 @@
 					"placeholder": "Сделайте операцию обусловленной текущим метагенерированием объекта, не соответствующим этому значению."
 				},
 				"predefinedAcl": {
-					"displayName": "Предопределенный список управления доступом",
+					"displayName": "Предопределённый ACL",
 					"placeholder": "Примените к объекту предопределенный набор элементов управления доступом.",
 					"options": {
 						"authenticatedRead": {
 							"displayName": "Аутентифицированное чтение"
 						},
 						"bucketOwnerFullControl": {
-							"displayName": "Полный контроль владельца сегмента"
+							"displayName": "Полный контроль владельца хранилища"
 						},
 						"bucketOwnerRead": {
-							"displayName": "Владелец сегмента прочитал"
+							"displayName": "Владелец хранилища может читать"
 						},
 						"private": {
 							"displayName": "Частный"
 						},
 						"projectPrivate": {
-							"displayName": "Частный проект"
+							"displayName": "Приватный проект"
 						},
 						"publicRead": {
 							"displayName": "Публичное чтение"

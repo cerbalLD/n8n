@@ -1,7 +1,7 @@
 {
 	"header": {
 		"displayName": "AWS SQS",
-		"description": "Отправляет сообщения в AWS SQS."
+		"description": "Отправляет сообщения в AWS SQS"
 	},
 	"nodeView": {
 		"authentication": {
@@ -26,7 +26,7 @@
 		},
 		"queue": {
 			"displayName": "Имя или идентификатор очереди",
-			"description": "Очередь для отправки сообщения. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"description": "Очередь для отправки сообщения. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"queueType": {
 			"displayName": "Тип очереди",
@@ -36,14 +36,14 @@
 					"description": "Очередь FIFO SQS"
 				},
 				"standard": {
-					"displayName": "Стандартный",
+					"displayName": "Standard",
 					"description": "Стандартная очередь SQS"
 				}
 			}
 		},
 		"sendInputData": {
 			"displayName": "Отправить входные данные",
-			"description": "Отправлять ли данные, полученные узлом, в формате JSON в SQS."
+			"description": "Отправлять ли данные, полученные узлом, в виде JSON в SQS"
 		},
 		"message": {
 			"displayName": "Сообщение",
@@ -51,7 +51,7 @@
 		},
 		"messageGroupId": {
 			"displayName": "Идентификатор группы сообщений",
-			"description": "Тег, указывающий, что сообщение принадлежит определенной группе сообщений. Применяется только к очередям FIFO (первым пришел — первым обслужен)."
+			"description": "Тег, указывающий, что сообщение принадлежит определённой группе. Применяется только для очередей FIFO"
 		},
 		"options": {
 			"displayName": "Параметры",
@@ -59,13 +59,13 @@
 			"options": {
 				"delaySeconds": {
 					"displayName": "Задержка в секундах",
-					"description": "Как долго, в секундах, задерживать сообщение на"
+					"description": "Как долго, в секундах, задерживать сообщение"
 				},
 				"messageAttributes": {
 					"values": {
 						"messageAttributes": {
 							"displayName": "Атрибуты сообщения",
-							"description": "Атрибуты для установки"
+							"description": "Устанавливаемые атрибуты"
 						},
 						"binary": {
 							"options": {
@@ -75,7 +75,7 @@
 								},
 								"dataPropertyName": {
 									"displayName": "Имя свойства",
-									"description": "Имя двоичного свойства, которое содержит данные для атрибута сообщения."
+									"description": "Имя двоичного свойства, содержащего данные для атрибута сообщения"
 								}
 							}
 						},
@@ -86,7 +86,7 @@
 									"description": "Имя атрибута"
 								},
 								"value": {
-									"displayName": "Ценить",
+									"displayName": "Значение",
 									"description": "Числовое значение атрибута"
 								}
 							}
@@ -98,7 +98,7 @@
 									"description": "Имя атрибута"
 								},
 								"value": {
-									"displayName": "Ценить",
+									"displayName": "Значение",
 									"description": "Строковое значение атрибута"
 								}
 							}
@@ -106,7 +106,7 @@
 					},
 					"placeholder": "Добавить атрибут",
 					"displayName": "Атрибуты сообщения",
-					"description": "Атрибуты для установки",
+					"description": "Устанавливаемые атрибуты",
 					"options": {
 						"binary": {
 							"displayName": "Двоичный"
@@ -115,13 +115,13 @@
 							"displayName": "Число"
 						},
 						"string": {
-							"displayName": "Нить"
+							"displayName": "Текст"
 						}
 					}
 				},
 				"messageDeduplicationId": {
 					"displayName": "Идентификатор дедупликации сообщений",
-					"description": "Токен, используемый для дедупликации отправленных сообщений. Применяется только к очередям FIFO (первым пришел — первым обслужен)."
+					"description": "Токен для дедупликации отправленных сообщений. Применяется только для очередей FIFO"
 				}
 			}
 		}

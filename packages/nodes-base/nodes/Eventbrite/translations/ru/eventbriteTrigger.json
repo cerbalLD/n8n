@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Eventbrite Триггер",
-		"description": "Обработка событий Eventbrite через веб-перехватчики"
+		"displayName": "Триггер Eventbrite",
+		"description": "Обработка событий Eventbrite через вебхуки"
 	},
 	"nodeView": {
 		"authentication": {
@@ -16,79 +16,79 @@
 			}
 		},
 		"organization": {
-			"displayName": "Название или идентификатор организации",
-			"description": "Организация Eventbrite, над которой нужно работать. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"displayName": "Название или ID организации",
+			"description": "Организация Eventbrite для работы. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"event": {
-			"displayName": "Название или идентификатор события",
-			"description": "Ограничьте триггеры этим событием. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"displayName": "Название или ID мероприятия",
+			"description": "Ограничить триггеры этим событием. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"actions": {
 			"displayName": "Действия",
-			"description": "Одно или несколько действий, на которые можно подписаться",
+			"description": "Одно или несколько действий для подписки",
 			"options": {
 				"attendee": {
 					"checked_in": {
-						"displayName": "посетитель.checked_in"
+						"displayName": "attendee.checked_in"
 					},
 					"checked_out": {
-						"displayName": "посетитель.checked_out"
+						"displayName": "attendee.checked_out"
 					},
 					"updated": {
-						"displayName": "посетитель.обновлено"
+						"displayName": "attendee.updated"
 					}
 				},
 				"event": {
 					"created": {
-						"displayName": "событие.создано"
+						"displayName": "event.created"
 					},
 					"published": {
-						"displayName": "событие.опубликовано"
+						"displayName": "event.published"
 					},
 					"unpublished": {
-						"displayName": "событие.неопубликовано"
+						"displayName": "event.unpublished"
 					},
 					"updated": {
-						"displayName": "событие.обновлено"
+						"displayName": "event.updated"
 					}
 				},
 				"order": {
 					"placed": {
-						"displayName": "заказ.размещен"
+						"displayName": "order.placed"
 					},
 					"refunded": {
-						"displayName": "заказ.возвращен"
+						"displayName": "order.refunded"
 					},
 					"updated": {
-						"displayName": "заказ.обновлено"
+						"displayName": "order.updated"
 					}
 				},
 				"organizer": {
 					"updated": {
-						"displayName": "Организатор.обновлено"
+						"displayName": "organizer.updated"
 					}
 				},
 				"ticket_class": {
 					"created": {
-						"displayName": "Ticket_class.created"
+						"displayName": "ticket_class.created"
 					},
 					"deleted": {
-						"displayName": "Ticket_class.deleted"
+						"displayName": "ticket_class.deleted"
 					},
 					"updated": {
-						"displayName": "Ticket_class.updated"
+						"displayName": "ticket_class.updated"
 					}
 				},
 				"venue": {
 					"updated": {
-						"displayName": "место проведения.обновлено"
+						"displayName": "venue.updated"
 					}
 				}
 			}
 		},
 		"resolveData": {
-			"displayName": "Разрешение данных",
-			"description": "По умолчанию данные веб-перехватчика содержат только URL-адрес для получения данных объекта вручную. Если эта опция активирована, она автоматически разрешит данные."
+			"displayName": "Разрешить данные",
+			"description": "По умолчанию вебхук содержит только URL для получения данных объекта вручную. Если включить эту опцию, данные будут разрешены автоматически."
 		}
 	}
 }

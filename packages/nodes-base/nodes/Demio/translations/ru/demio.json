@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Демио",
-		"description": "Используйте Demio API"
+		"displayName": "Demio",
+		"description": "Использовать API Demio"
 	},
 	"nodeView": {
 		"resource": {
@@ -11,7 +11,7 @@
 					"displayName": "Событие"
 				},
 				"report": {
-					"displayName": "Отчет"
+					"displayName": "Отчёт"
 				}
 			}
 		},
@@ -20,15 +20,15 @@
 			"options": {
 				"get": {
 					"displayName": "Получать",
-					"description": "Получить отчет о мероприятии"
+					"description": "Получить отчёт о мероприятии"
 				},
 				"getAll": {
 					"displayName": "Получить много",
 					"description": "Получить много событий"
 				},
 				"register": {
-					"displayName": "Зарегистрироваться",
-					"description": "Зарегистрируйте кого-нибудь на мероприятие"
+					"displayName": "Зарегистрировать",
+					"description": "Зарегистрировать кого-либо на мероприятие"
 				}
 			}
 		},
@@ -38,7 +38,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"filters": {
 			"displayName": "Фильтры",
@@ -48,10 +48,10 @@
 					"displayName": "Тип",
 					"options": {
 						"automated": {
-							"displayName": "Автоматизированный"
+							"displayName": "Автоматическое"
 						},
 						"past": {
-							"displayName": "Прошлое"
+							"displayName": "Прошедшее"
 						},
 						"upcoming": {
 							"displayName": "Предстоящие"
@@ -63,27 +63,27 @@
 					"description": "Фильтровать результаты по статусу участия",
 					"options": {
 						"attended": {
-							"displayName": "присутствовал"
+							"displayName": "Присутствовал"
 						},
 						"banned": {
-							"displayName": "Запрещено"
+							"displayName": "Заблокирован"
 						},
 						"completed": {
-							"displayName": "Завершенный"
+							"displayName": "Завершено"
 						},
 						"did-not-attend": {
 							"displayName": "Не присутствовал"
 						},
 						"left-early": {
-							"displayName": "Ушел рано"
+							"displayName": "Ушёл рано"
 						}
 					}
 				}
 			}
 		},
 		"eventId": {
-			"displayName": "Название или идентификатор события",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"displayName": "Название или ID мероприятия",
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"additionalFields": {
 			"displayName": "Дополнительные поля",
@@ -94,12 +94,12 @@
 					"description": "Возвращать ли только активные даты в серии"
 				},
 				"date_id": {
-					"displayName": "Имя или идентификатор сеанса",
-					"description": "Идентификатор сеанса события. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Название или ID сеанса",
+					"description": "ID сеанса мероприятия. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"company": {
 					"displayName": "Компания",
-					"description": "Значение предопределенного поля «Компания»"
+					"description": "Значение предопределённого поля «Компания»"
 				},
 				"customFieldsUi": {
 					"values": {
@@ -109,11 +109,11 @@
 						"customFieldsValues": {
 							"options": {
 								"fieldId": {
-									"displayName": "Идентификатор поля",
-									"description": "Уникальный идентификатор каждого настраиваемого поля можно найти в блоке «Регистрация мероприятия» на вкладке «Настройка»."
+									"displayName": "ID поля",
+									"description": "Уникальный идентификатор каждого пользовательского поля можно найти в блоке «Регистрация мероприятия» на вкладке «Настройка»"
 								},
 								"value": {
-									"displayName": "Ценить",
+									"displayName": "Значение",
 									"description": "Значение, которое нужно установить в настраиваемом поле"
 								}
 							}
@@ -128,24 +128,24 @@
 					}
 				},
 				"ref_url": {
-					"displayName": "URL-адрес регистрации мероприятия",
-					"description": "URL-адрес страницы регистрации мероприятия. Это может быть полезно, если вы не знаете идентификатор события, но имеете ссылку на событие."
+					"displayName": "URL регистрации мероприятия",
+					"description": "URL страницы регистрации мероприятия. Полезно, если вы не знаете ID мероприятия, но имеете ссылку на него."
 				},
 				"gdpr": {
 					"displayName": "GDPR",
-					"description": "Значение предопределенного поля GDPR"
+					"description": "Значение предопределённого поля GDPR"
 				},
 				"last_name": {
 					"displayName": "Фамилия",
-					"description": "Значение предопределенного поля «Фамилия»"
+					"description": "Значение предопределённого поля «Фамилия»"
 				},
 				"phone_number": {
 					"displayName": "Номер телефона",
-					"description": "Значение предопределенного поля номера телефона"
+					"description": "Значение предопределённого поля «Номер телефона»"
 				},
 				"website": {
 					"displayName": "Веб-сайт",
-					"description": "Значение предопределенного поля «Веб-сайт»"
+					"description": "Значение предопределённого поля «Веб-сайт»"
 				}
 			}
 		},
@@ -159,8 +159,8 @@
 			"placeholder": "имя@email.com"
 		},
 		"dateId": {
-			"displayName": "Имя или идентификатор сеанса",
-			"description": "Идентификатор сеанса. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"displayName": "Название или ID сеанса",
+			"description": "ID сеанса. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		}
 	}
 }

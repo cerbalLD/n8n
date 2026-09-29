@@ -5,7 +5,7 @@
 	},
 	"nodeView": {
 		"notice": {
-			"displayName": "Сохраните важные данные, используя этот узел. Он будет отображаться при каждом выполнении для удобства использования, и вы можете фильтровать по нему.<br />Фильтрация доступна в планах Pro и Enterprise. <a href='http://localhost/pricing/' target='_blank'>Подробнее</a>"
+			"displayName": "Сохраняйте важные данные с помощью этого узла. Они будут отображаться при каждом выполнении для удобства и вы сможете фильтровать по ним.<br />Фильтрация доступна в планах Pro и Enterprise. <a href='http://localhost/pricing/' target='_blank'>Подробнее</a>"
 		},
 		"operation": {
 			"displayName": "Операция",
@@ -25,18 +25,18 @@
 					"values": {
 						"key": {
 							"displayName": "Ключ",
-							"placeholder": "например мойКей"
+							"placeholder": "например myKey"
 						},
 						"value": {
-							"displayName": "Ценить",
-							"placeholder": "например мое значение"
+							"displayName": "Значение",
+							"placeholder": "например myValue"
 						}
 					}
 				}
 			},
-			"placeholder": "Добавить сохраненное поле",
+			"placeholder": "Добавить сохранённое поле",
 			"displayName": "Данные для сохранения",
-			"multipleValueButtonText": "Добавить сохраненное поле"
+			"multipleValueButtonText": "Добавить сохранённое поле"
 		}
 	}
 }

@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Моника CRM",
-		"description": "Используйте API Monica CRM"
+		"displayName": "Monica CRM",
+		"description": "Использование API Monica CRM"
 	},
 	"nodeView": {
 		"resource": {
@@ -11,25 +11,25 @@
 					"displayName": "Активность"
 				},
 				"call": {
-					"displayName": "Вызов"
+					"displayName": "Звонок"
 				},
 				"contact": {
 					"displayName": "Контакт"
 				},
 				"contactField": {
-					"displayName": "Контактное поле"
+					"displayName": "Поле контакта"
 				},
 				"contactTag": {
-					"displayName": "Контактный тег"
+					"displayName": "Тег контакта"
 				},
 				"conversation": {
 					"displayName": "Беседа"
 				},
 				"conversationMessage": {
-					"displayName": "Сообщение разговора"
+					"displayName": "Сообщение беседы"
 				},
 				"journalEntry": {
-					"displayName": "Запись в журнале"
+					"displayName": "Запись журнала"
 				},
 				"note": {
 					"displayName": "Примечание"
@@ -38,7 +38,7 @@
 					"displayName": "Напоминание"
 				},
 				"tag": {
-					"displayName": "Ярлык"
+					"displayName": "Тег"
 				},
 				"task": {
 					"displayName": "Задача"
@@ -49,7 +49,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать задачу"
 				},
 				"delete": {
@@ -65,11 +65,11 @@
 					"description": "Получить множество задач"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить задачу"
 				},
 				"add": {
-					"displayName": "Добавлять",
+					"displayName": "Добавить",
 					"description": "Добавить сообщение в беседу"
 				},
 				"remove": {
@@ -78,20 +78,20 @@
 			}
 		},
 		"activityTypeId": {
-			"displayName": "Имя или идентификатор типа действия",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"displayName": "Имя или ID типа деятельности",
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"contacts": {
 			"displayName": "Контакты",
-			"description": "Список идентификаторов контактов, разделенных запятыми, с которыми можно связать действие."
+			"description": "Список ID контактов, разделённый запятыми, для связи с деятельностью"
 		},
 		"happenedAt": {
 			"displayName": "Произошло в",
-			"description": "Дата, когда произошел разговор"
+			"description": "Дата, когда произошла беседа"
 		},
 		"summary": {
-			"displayName": "Краткое содержание",
-			"description": "Краткое описание деятельности – максимум 255 символов."
+			"displayName": "Краткое описание",
+			"description": "Краткое описание деятельности — максимум 255 символов."
 		},
 		"additionalFields": {
 			"displayName": "Дополнительные поля",
@@ -99,7 +99,7 @@
 			"options": {
 				"description": {
 					"displayName": "Описание",
-					"description": "Описание задачи – максимум 100 000 символов."
+					"description": "Описание задачи — максимум 100 000 символов."
 				},
 				"birthdate": {
 					"displayName": "Дата рождения"
@@ -108,8 +108,8 @@
 					"displayName": "Дата смерти"
 				},
 				"isDeceased": {
-					"displayName": "умер",
-					"description": "Пропал ли контакт"
+					"displayName": "Умер",
+					"description": "Контакт ли почил"
 				},
 				"last_name": {
 					"displayName": "Фамилия"
@@ -121,24 +121,24 @@
 					"displayName": "Тип",
 					"options": {
 						"false": {
-							"displayName": "Настоящий",
-							"description": "Контакт с собственным контактным листом"
+							"displayName": "Реальный",
+							"description": "Контакт со своим контактным листом"
 						},
 						"true": {
-							"displayName": "Частичный",
+							"displayName": "Частичная",
 							"description": "Контакт без собственного контактного листа"
 						}
 					}
 				},
 				"isFavorited": {
-					"displayName": "Избранное",
-					"description": "Была ли заметка добавлена ​​в избранное"
+					"displayName": "В избранном",
+					"description": "Добавлена ли заметка в избранное"
 				}
 			}
 		},
 		"activityId": {
-			"displayName": "Идентификатор действия",
-			"description": "Идентификатор действия для обновления"
+			"displayName": "ID деятельности",
+			"description": "ID деятельности для обновления"
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",
@@ -146,43 +146,43 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"updateFields": {
 			"displayName": "Обновить поля",
 			"placeholder": "Добавить поле",
 			"options": {
 				"activity_type_id": {
-					"displayName": "Имя или идентификатор типа действия",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"displayName": "Имя или ID типа деятельности",
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"contacts": {
 					"displayName": "Контакты",
-					"description": "Идентификаторы контактов, с которыми можно связать действие"
+					"description": "ID контактов для связи с деятельностью"
 				},
 				"description": {
 					"displayName": "Описание",
-					"description": "Описание задачи – максимум 100 000 символов."
+					"description": "Описание задачи — максимум 100 000 символов."
 				},
 				"happened_at": {
 					"displayName": "Произошло в",
-					"description": "Дата, когда произошло действие"
+					"description": "Дата, когда произошла деятельность"
 				},
 				"summary": {
-					"displayName": "Краткое содержание",
-					"description": "Краткое описание деятельности – максимум 255 символов."
+					"displayName": "Краткое описание",
+					"description": "Краткое описание деятельности — максимум 255 символов."
 				},
 				"calledAt": {
-					"displayName": "Позвонили в",
-					"description": "Дата, когда произошел звонок"
+					"displayName": "Звонок в",
+					"description": "Дата, когда произошёл звонок"
 				},
 				"contactId": {
-					"displayName": "Идентификатор контакта",
-					"description": "Идентификатор контакта, с которым можно связать задачу"
+					"displayName": "ID контакта",
+					"description": "ID контакта для связи с задачей"
 				},
 				"content": {
 					"displayName": "Содержание",
-					"description": "Содержание сообщения"
+					"description": "Содержимое сообщения"
 				},
 				"birthdate": {
 					"displayName": "Дата рождения"
@@ -194,12 +194,12 @@
 					"displayName": "Имя"
 				},
 				"gender_id": {
-					"displayName": "Пол Имя или идентификатор",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"displayName": "Имя или ID пола",
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"is_deceased": {
-					"displayName": "умер",
-					"description": "Пропал ли контакт"
+					"displayName": "Умер",
+					"description": "Контакт ли почил"
 				},
 				"last_name": {
 					"displayName": "Фамилия"
@@ -211,25 +211,25 @@
 					"displayName": "Тип",
 					"options": {
 						"false": {
-							"displayName": "Настоящий",
-							"description": "Контакт с собственным контактным листом"
+							"displayName": "Реальный",
+							"description": "Контакт со своим контактным листом"
 						},
 						"true": {
-							"displayName": "Частичный",
+							"displayName": "Частичная",
 							"description": "Контакт без собственного контактного листа"
 						}
 					}
 				},
 				"contact_id": {
-					"displayName": "Идентификатор контакта",
-					"description": "Идентификатор контакта, с которым нужно связать напоминание"
+					"displayName": "ID контакта",
+					"description": "ID контакта для связи с напоминанием"
 				},
 				"written_at": {
 					"displayName": "Написано в",
 					"description": "Дата, когда было написано сообщение"
 				},
 				"written_by_me": {
-					"displayName": "Автор:",
+					"displayName": "Написано",
 					"description": "Автор сообщения",
 					"options": {
 						"true": {
@@ -242,35 +242,35 @@
 				},
 				"post": {
 					"displayName": "Содержание",
-					"description": "Содержание журнальной записи – максимум 100 000 знаков."
+					"description": "Содержимое записи журнала — максимум 100 000 символов."
 				},
 				"title": {
-					"displayName": "Заголовок",
-					"description": "Название записи задачи – максимум 250 символов."
+					"displayName": "Название",
+					"description": "Название записи задачи — максимум 250 символов."
 				},
 				"body": {
 					"displayName": "Тело",
-					"description": "Текст заметки – максимум 100 000 символов."
+					"description": "Текст заметки — максимум 100 000 символов."
 				},
 				"is_favorited": {
-					"displayName": "Избранное",
-					"description": "Была ли заметка добавлена ​​в избранное"
+					"displayName": "В избранном",
+					"description": "Добавлена ли заметка в избранное"
 				},
 				"frequency_type": {
 					"displayName": "Тип частоты",
-					"description": "Частота напоминаний",
+					"description": "Частота напоминания",
 					"options": {
 						"one_time": {
 							"displayName": "Один раз"
 						},
 						"week": {
-							"displayName": "Неделя"
+							"displayName": "неделя"
 						},
 						"month": {
-							"displayName": "Месяц"
+							"displayName": "месяц"
 						},
 						"year": {
-							"displayName": "Год"
+							"displayName": "год"
 						}
 					}
 				},
@@ -279,37 +279,37 @@
 					"description": "Дата напоминания"
 				},
 				"frequency_number": {
-					"displayName": "Повторяющийся интервал",
+					"displayName": "Интервал повторения",
 					"description": "Интервал напоминания"
 				},
 				"completed": {
-					"displayName": "Завершенный",
-					"description": "Выполнена ли задача"
+					"displayName": "Завершено",
+					"description": "Завершена ли задача"
 				}
 			}
 		},
 		"contactId": {
-			"displayName": "Идентификатор контакта",
-			"description": "Идентификатор контакта, с которым можно связать задачу"
+			"displayName": "ID контакта",
+			"description": "ID контакта для связи с задачей"
 		},
 		"calledAt": {
-			"displayName": "Позвонили в",
-			"description": "Дата, когда произошел звонок"
+			"displayName": "Звонок в",
+			"description": "Дата, когда произошёл звонок"
 		},
 		"content": {
 			"displayName": "Содержание",
-			"description": "Содержание сообщения"
+			"description": "Содержимое сообщения"
 		},
 		"callId": {
-			"displayName": "Идентификатор вызова",
+			"displayName": "ID звонка",
 			"description": "ID звонка для обновления"
 		},
 		"firstName": {
 			"displayName": "Имя"
 		},
 		"genderId": {
-			"displayName": "Пол Имя или идентификатор",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"displayName": "Имя или ID пола",
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"filters": {
 			"displayName": "Фильтры",
@@ -317,57 +317,57 @@
 			"options": {
 				"query": {
 					"displayName": "Поисковый запрос",
-					"description": "Поисковый запрос для фильтрации результатов по"
+					"description": "Поисковый запрос для фильтрации результатов"
 				},
 				"sort": {
-					"displayName": "Сортировать",
+					"displayName": "Сортировка",
 					"options": {
 						"created_at": {
-							"displayName": "Вознесенный Создан в"
+							"displayName": "Возрастающая дата создания"
 						},
 						"-created_at": {
-							"displayName": "Спустился Создан в"
+							"displayName": "Убывающая дата создания"
 						},
 						"updated_at": {
-							"displayName": "Вознесенный Обновлено в"
+							"displayName": "Возрастающая дата обновления"
 						},
 						"-updated_at": {
-							"displayName": "Спустился Обновлено в"
+							"displayName": "Убывающая дата обновления"
 						}
 					}
 				}
 			}
 		},
 		"contactFieldTypeId": {
-			"displayName": "Тип поля контакта Имя или идентификатор",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"displayName": "Имя или ID типа поля контакта",
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"data": {
 			"displayName": "Содержание",
-			"description": "Содержимое поля контакта – максимум 255 символов."
+			"description": "Содержимое поля контакта — максимум 255 символов."
 		},
 		"contactFieldId": {
-			"displayName": "Идентификатор поля контакта",
-			"description": "Идентификатор поля контакта для обновления"
+			"displayName": "ID поля контакта",
+			"description": "ID поля контакта для обновления"
 		},
 		"tagsToAdd": {
-			"displayName": "Имена или идентификаторы тегов",
-			"description": "Теги для добавления к контакту. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"displayName": "Имена или ID тегов",
+			"description": "Теги для добавления к контакту. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"tagsToRemove": {
-			"displayName": "Имена или идентификаторы тегов",
-			"description": "Теги для удаления из контакта. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"displayName": "Имена или ID тегов",
+			"description": "Теги для удаления из контакта. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"conversationId": {
-			"displayName": "Идентификатор беседы",
-			"description": "Идентификатор беседы, сообщение которой обновить"
+			"displayName": "Идентификатор разговора",
+			"description": "ID беседы для обновления сообщения"
 		},
 		"writtenAt": {
 			"displayName": "Написано в",
 			"description": "Дата, когда было написано сообщение"
 		},
 		"writtenByMe": {
-			"displayName": "Автор:",
+			"displayName": "Написано",
 			"description": "Автор сообщения",
 			"options": {
 				"true": {
@@ -383,24 +383,24 @@
 			"description": "Идентификатор сообщения для обновления"
 		},
 		"title": {
-			"displayName": "Заголовок",
-			"description": "Название записи задачи – максимум 250 символов."
+			"displayName": "Название",
+			"description": "Название записи задачи — максимум 250 символов."
 		},
 		"post": {
 			"displayName": "Содержание",
-			"description": "Содержание журнальной записи – максимум 100 000 знаков."
+			"description": "Содержимое записи журнала — максимум 100 000 символов."
 		},
 		"journalId": {
-			"displayName": "Идентификатор записи журнала",
-			"description": "Идентификатор записи журнала для обновления"
+			"displayName": "ID записи журнала",
+			"description": "ID записи журнала для обновления"
 		},
 		"body": {
 			"displayName": "Тело",
-			"description": "Текст заметки – максимум 100 000 символов."
+			"description": "Текст заметки — максимум 100 000 символов."
 		},
 		"noteId": {
-			"displayName": "Идентификатор заметки",
-			"description": "Идентификатор заметки для обновления"
+			"displayName": "ID заметки",
+			"description": "ID заметки для обновления"
 		},
 		"frequencyType": {
 			"displayName": "Тип частоты",
@@ -421,7 +421,7 @@
 			}
 		},
 		"frequencyNumber": {
-			"displayName": "Повторяющийся интервал",
+			"displayName": "Интервал повторения",
 			"description": "Интервал напоминания"
 		},
 		"initialDate": {
@@ -429,16 +429,16 @@
 			"description": "Дата напоминания"
 		},
 		"reminderId": {
-			"displayName": "Идентификатор напоминания",
-			"description": "Идентификатор напоминания об обновлении"
+			"displayName": "ID напоминания",
+			"description": "ID напоминания для обновления"
 		},
 		"name": {
 			"displayName": "Имя",
-			"description": "Название тега – максимум 250 символов."
+			"description": "Имя тега — максимум 250 символов."
 		},
 		"tagId": {
-			"displayName": "Идентификатор тега",
-			"description": "Идентификатор тега для обновления"
+			"displayName": "ID тега",
+			"description": "ID тега для обновления"
 		},
 		"taskId": {
 			"displayName": "Идентификатор задачи",

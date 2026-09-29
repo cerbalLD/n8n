@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Медь",
-		"description": "Используйте Copper API"
+		"displayName": "Copper",
+		"description": "Использование API Copper"
 	},
 	"nodeView": {
 		"resource": {
@@ -14,7 +14,7 @@
 					"displayName": "Источник клиента"
 				},
 				"lead": {
-					"displayName": "Вести"
+					"displayName": "Лид"
 				},
 				"opportunity": {
 					"displayName": "Возможность"
@@ -37,7 +37,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать"
+					"displayName": "Создать"
 				},
 				"delete": {
 					"displayName": "Удалить"
@@ -49,13 +49,13 @@
 					"displayName": "Получить много"
 				},
 				"update": {
-					"displayName": "Обновлять"
+					"displayName": "Обновить"
 				}
 			}
 		},
 		"name": {
 			"displayName": "Имя",
-			"description": "Название проекта, который нужно создать"
+			"description": "Название проекта для создания"
 		},
 		"additionalFields": {
 			"displayName": "Дополнительные поля",
@@ -72,17 +72,17 @@
 									"displayName": "Улица"
 								},
 								"city": {
-									"displayName": "Город"
+									"displayName": "город"
 								},
 								"state": {
-									"displayName": "Состояние"
+									"displayName": "область"
 								},
 								"postal_code": {
 									"displayName": "Почтовый индекс"
 								},
 								"country": {
 									"displayName": "Страна",
-									"description": "Код страны ISO 3166 альфа-2"
+									"description": "Код страны ISO 3166 alpha-2"
 								}
 							}
 						}
@@ -97,10 +97,10 @@
 				},
 				"details": {
 					"displayName": "Подробности",
-					"description": "Описание задачи по созданию"
+					"description": "Описание задачи для создания"
 				},
 				"email_domain": {
-					"displayName": "Электронный домен"
+					"displayName": "Домен email"
 				},
 				"phone_numbers": {
 					"values": {
@@ -143,18 +143,18 @@
 							}
 						}
 					},
-					"placeholder": "Добавить адрес электронной почты",
+					"placeholder": "Добавить email",
 					"displayName": "Электронная почта",
 					"options": {
 						"emailFields": {
-							"displayName": "Поля электронной почты"
+							"displayName": "Поля email"
 						}
 					}
 				},
 				"emails": {
 					"values": {
 						"emails": {
-							"displayName": "Электронная почта"
+							"displayName": "Email-адреса"
 						},
 						"emailFields": {
 							"options": {
@@ -168,23 +168,23 @@
 							}
 						}
 					},
-					"placeholder": "Добавить адрес электронной почты",
-					"displayName": "Электронная почта",
+					"placeholder": "Добавить email",
+					"displayName": "Email-адреса",
 					"options": {
 						"emailFields": {
-							"displayName": "Поля электронной почты"
+							"displayName": "Поля email"
 						}
 					}
 				},
 				"assignee_id": {
-					"displayName": "Идентификатор правопреемника",
+					"displayName": "Идентификатор ответственного",
 					"description": "Идентификатор пользователя, которому будет принадлежать создаваемая задача"
 				},
 				"status": {
 					"displayName": "Статус",
 					"options": {
 						"Completed": {
-							"displayName": "Завершенный"
+							"displayName": "Завершено"
 						},
 						"Open": {
 							"displayName": "Открыть"
@@ -205,7 +205,7 @@
 			}
 		},
 		"companyId": {
-			"displayName": "Идентификатор компании",
+			"displayName": "ID компании",
 			"description": "Идентификатор компании для обновления"
 		},
 		"returnAll": {
@@ -214,7 +214,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"filterFields": {
 			"displayName": "Фильтры",
@@ -273,7 +273,7 @@
 							"displayName": "Азербайджан"
 						},
 						"BS": {
-							"displayName": "Багамские Острова (англ.)"
+							"displayName": "Багамские острова"
 						},
 						"BH": {
 							"displayName": "Бахрейн"
@@ -303,7 +303,7 @@
 							"displayName": "Бутан"
 						},
 						"BO": {
-							"displayName": "Боливия (Многонациональное Государство)"
+							"displayName": "Боливия"
 						},
 						"BQ": {
 							"displayName": "Бонэйр, Синт-Эстатиус и Саба"
@@ -321,10 +321,10 @@
 							"displayName": "Бразилия"
 						},
 						"IO": {
-							"displayName": "Британская территория в Индийском океане (англ.)"
+							"displayName": "Британская территория в Индийском океане"
 						},
 						"BN": {
-							"displayName": "Бруней-Даруссалам"
+							"displayName": "Бруней"
 						},
 						"BG": {
 							"displayName": "Болгария"
@@ -348,10 +348,10 @@
 							"displayName": "Канада"
 						},
 						"KY": {
-							"displayName": "Каймановы острова (англ.)"
+							"displayName": "Каймановы острова"
 						},
 						"CF": {
-							"displayName": "Центральноафриканская Республика (англ.)"
+							"displayName": "Центральноафриканская Республика"
 						},
 						"TD": {
 							"displayName": "Чад"
@@ -372,16 +372,16 @@
 							"displayName": "Колумбия"
 						},
 						"KM": {
-							"displayName": "Коморские Острова (англ.)"
+							"displayName": "Коморские острова"
 						},
 						"CD": {
 							"displayName": "Конго (Демократическая Республика)"
 						},
 						"CG": {
-							"displayName": "Конго (англ.)"
+							"displayName": "Конго"
 						},
 						"CK": {
-							"displayName": "Острова Кука (англ.)"
+							"displayName": "Острова Кука"
 						},
 						"CR": {
 							"displayName": "Коста-Рика"
@@ -414,7 +414,7 @@
 							"displayName": "Доминика"
 						},
 						"DO": {
-							"displayName": "Доминиканская Республика (англ.)"
+							"displayName": "Доминиканская Республика"
 						},
 						"EC": {
 							"displayName": "Эквадор"
@@ -441,7 +441,7 @@
 							"displayName": "Фолклендские острова (Мальвинские острова)"
 						},
 						"FO": {
-							"displayName": "Фарерские острова (англ.)"
+							"displayName": "Фарерские острова"
 						},
 						"FJ": {
 							"displayName": "Фиджи"
@@ -459,13 +459,13 @@
 							"displayName": "Французская Полинезия"
 						},
 						"TF": {
-							"displayName": "Южные территории Франции (англ.)"
+							"displayName": "Французские Южные территории"
 						},
 						"GA": {
 							"displayName": "Габон"
 						},
 						"GM": {
-							"displayName": "Гамбия (англ.)"
+							"displayName": "Гамбия"
 						},
 						"GE": {
 							"displayName": "Грузия"
@@ -516,7 +516,7 @@
 							"displayName": "Остров Херд и острова Макдональда"
 						},
 						"VA": {
-							"displayName": "Святой Престол (англ.)"
+							"displayName": "Святой Престол"
 						},
 						"HN": {
 							"displayName": "Гондурас"
@@ -537,7 +537,7 @@
 							"displayName": "Индонезия"
 						},
 						"IR": {
-							"displayName": "Иран (Исламская Республика)"
+							"displayName": "Иран"
 						},
 						"IQ": {
 							"displayName": "Ирак"
@@ -576,10 +576,10 @@
 							"displayName": "Кирибати"
 						},
 						"KP": {
-							"displayName": "Корея (Народно-Демократическая Республика)"
+							"displayName": "Корея (Северная)"
 						},
 						"KR": {
-							"displayName": "Корея (Республика)"
+							"displayName": "Корея (Южная)"
 						},
 						"KW": {
 							"displayName": "Кувейт"
@@ -588,7 +588,7 @@
 							"displayName": "Кыргызстан"
 						},
 						"LA": {
-							"displayName": "Лаосская Народно-Демократическая Республика (англ.)"
+							"displayName": "Лаосская Народно-Демократическая Республика"
 						},
 						"LV": {
 							"displayName": "Латвия"
@@ -618,7 +618,7 @@
 							"displayName": "Макао"
 						},
 						"MK": {
-							"displayName": "Македония (бывшая Югославская Республика)"
+							"displayName": "Македония"
 						},
 						"MG": {
 							"displayName": "Мадагаскар"
@@ -639,7 +639,7 @@
 							"displayName": "Мальта"
 						},
 						"MH": {
-							"displayName": "Маршалловы Острова (англ.)"
+							"displayName": "Маршалловы острова"
 						},
 						"MQ": {
 							"displayName": "Мартиника"
@@ -657,10 +657,10 @@
 							"displayName": "Мексика"
 						},
 						"FM": {
-							"displayName": "Микронезия (Федеративные Штаты)"
+							"displayName": "Микронезия"
 						},
 						"MD": {
-							"displayName": "Молдова (Республика)"
+							"displayName": "Молдова"
 						},
 						"MC": {
 							"displayName": "Монако"
@@ -693,7 +693,7 @@
 							"displayName": "Непал"
 						},
 						"NL": {
-							"displayName": "Нидерланды (англ.)"
+							"displayName": "Нидерланды"
 						},
 						"NC": {
 							"displayName": "Новая Каледония"
@@ -705,7 +705,7 @@
 							"displayName": "Никарагуа"
 						},
 						"NE": {
-							"displayName": "Нигер (англ.)"
+							"displayName": "Нигер"
 						},
 						"NG": {
 							"displayName": "Нигерия"
@@ -717,7 +717,7 @@
 							"displayName": "Остров Норфолк"
 						},
 						"MP": {
-							"displayName": "Северные Марианские острова (англ.)"
+							"displayName": "Северные Марианские острова"
 						},
 						"NO": {
 							"displayName": "Норвегия"
@@ -732,7 +732,7 @@
 							"displayName": "Палау"
 						},
 						"PS": {
-							"displayName": "Палестина, Государство"
+							"displayName": "Палестина"
 						},
 						"PA": {
 							"displayName": "Панама"
@@ -747,7 +747,7 @@
 							"displayName": "Перу"
 						},
 						"PH": {
-							"displayName": "Филиппины (англ.)"
+							"displayName": "Филиппины"
 						},
 						"PN": {
 							"displayName": "Питкэрн"
@@ -771,7 +771,7 @@
 							"displayName": "Румыния"
 						},
 						"RU": {
-							"displayName": "Российская Федерация (англ.)"
+							"displayName": "Российская Федерация"
 						},
 						"RW": {
 							"displayName": "Руанда"
@@ -780,7 +780,7 @@
 							"displayName": "Сен-Бартелеми"
 						},
 						"SH": {
-							"displayName": "Остров Святой Елены, Вознесения и Тристан-да-Кунья"
+							"displayName": "Святая Елена, Вознесение и Тристан-да-Кунья"
 						},
 						"KN": {
 							"displayName": "Сент-Китс и Невис"
@@ -825,7 +825,7 @@
 							"displayName": "Сингапур"
 						},
 						"SX": {
-							"displayName": "Синт-Мартен (голландская часть)"
+							"displayName": "Синт-Мартен (нидерландская часть)"
 						},
 						"SK": {
 							"displayName": "Словакия"
@@ -834,7 +834,7 @@
 							"displayName": "Словения"
 						},
 						"SB": {
-							"displayName": "Соломоновы Острова"
+							"displayName": "Соломоновы острова"
 						},
 						"SO": {
 							"displayName": "Сомали"
@@ -855,7 +855,7 @@
 							"displayName": "Шри-Ланка"
 						},
 						"SD": {
-							"displayName": "Судан (англ.)"
+							"displayName": "Судан"
 						},
 						"SR": {
 							"displayName": "Суринам"
@@ -864,7 +864,7 @@
 							"displayName": "Шпицберген и Ян-Майен"
 						},
 						"SZ": {
-							"displayName": "Свазиленд"
+							"displayName": "Эсватини"
 						},
 						"SE": {
 							"displayName": "Швеция"
@@ -876,13 +876,13 @@
 							"displayName": "Сирийская Арабская Республика"
 						},
 						"TW": {
-							"displayName": "Тайвань (Провинция Китая)"
+							"displayName": "Тайвань"
 						},
 						"TJ": {
 							"displayName": "Таджикистан"
 						},
 						"TZ": {
-							"displayName": "Танзания, Объединенная Республика"
+							"displayName": "Танзания"
 						},
 						"TH": {
 							"displayName": "Таиланд"
@@ -912,7 +912,7 @@
 							"displayName": "Туркменистан"
 						},
 						"TC": {
-							"displayName": "Острова Тёркс и Кайкос (англ.)"
+							"displayName": "Острова Тёркс и Кайкос"
 						},
 						"TV": {
 							"displayName": "Тувалу"
@@ -924,16 +924,16 @@
 							"displayName": "Украина"
 						},
 						"AE": {
-							"displayName": "Объединенные Арабские Эмираты (англ.)"
+							"displayName": "Объединённые Арабские Эмираты"
 						},
 						"GB": {
-							"displayName": "Соединенное Королевство Великобритании и Северной Ирландии (англ.)"
+							"displayName": "Соединённое Королевство Великобритании и Северной Ирландии"
 						},
 						"UM": {
-							"displayName": "Малые отдаленные острова США (the)"
+							"displayName": "Малые отдалённые острова США"
 						},
 						"US": {
-							"displayName": "Соединенные Штаты Америки (англ.)"
+							"displayName": "Соединённые Штаты Америки"
 						},
 						"UY": {
 							"displayName": "Уругвай"
@@ -945,7 +945,7 @@
 							"displayName": "Вануату"
 						},
 						"VE": {
-							"displayName": "Венесуэла (Боливарианская Республика)"
+							"displayName": "Венесуэла"
 						},
 						"VN": {
 							"displayName": "Вьетнам"
@@ -978,20 +978,20 @@
 					"description": "Название проекта для фильтрации"
 				},
 				"company_ids": {
-					"displayName": "Идентификаторы компании",
-					"description": "Разделенные запятыми идентификаторы основных компаний для фильтрации."
+					"displayName": "Идентификаторы компаний",
+					"description": "Идентификаторы основных компаний для фильтрации, разделённые запятыми"
 				},
 				"customer_source_ids": {
 					"displayName": "Идентификаторы источников клиентов",
-					"description": "Разделенные запятыми идентификаторы источников клиентов для фильтрации."
+					"description": "Идентификаторы источников клиентов для фильтрации, разделённые запятыми"
 				},
 				"assignee_ids": {
-					"displayName": "Идентификаторы правопреемников",
-					"description": "Идентификаторы идентификаторов правопреемников, разделенных запятыми, для фильтрации."
+					"displayName": "Идентификаторы ответственных",
+					"description": "Идентификаторы ответственных для фильтрации, разделённые запятыми"
 				},
 				"project_ids": {
 					"displayName": "Идентификаторы проектов",
-					"description": "Идентификаторы проектов, разделенные запятыми, для фильтрации."
+					"description": "Идентификаторы проектов для фильтрации, разделённые запятыми"
 				}
 			}
 		},
@@ -1010,17 +1010,17 @@
 									"displayName": "Улица"
 								},
 								"city": {
-									"displayName": "Город"
+									"displayName": "город"
 								},
 								"state": {
-									"displayName": "Состояние"
+									"displayName": "область"
 								},
 								"postal_code": {
 									"displayName": "Почтовый индекс"
 								},
 								"country": {
 									"displayName": "Страна",
-									"description": "Код страны ISO 3166 альфа-2"
+									"description": "Код страны ISO 3166 alpha-2"
 								}
 							}
 						}
@@ -1035,11 +1035,11 @@
 				},
 				"details": {
 					"displayName": "Подробности",
-					"description": "Описание, которое нужно задать для задачи"
+					"description": "Описание задачи"
 				},
 				"name": {
 					"displayName": "Имя",
-					"description": "Имя, которое нужно задать для задачи"
+					"description": "Название задачи"
 				},
 				"phone_numbers": {
 					"values": {
@@ -1082,11 +1082,11 @@
 							}
 						}
 					},
-					"placeholder": "Добавить адрес электронной почты",
+					"placeholder": "Добавить email",
 					"displayName": "Электронная почта",
 					"options": {
 						"emailFields": {
-							"displayName": "Поля электронной почты"
+							"displayName": "Поля email"
 						}
 					}
 				},
@@ -1095,16 +1095,16 @@
 					"description": "Идентификатор основной компании, связанной с этой возможностью"
 				},
 				"primary_contact_id": {
-					"displayName": "Основной идентификатор контакта",
-					"description": "Идентификатор источника клиента, создавшего эту возможность."
+					"displayName": "Идентификатор основного контакта",
+					"description": "Идентификатор источника клиента, создавшего эту возможность"
 				},
 				"email_domain": {
-					"displayName": "Электронный домен"
+					"displayName": "Домен email"
 				},
 				"emails": {
 					"values": {
 						"emails": {
-							"displayName": "Электронная почта"
+							"displayName": "Email-адреса"
 						},
 						"emailFields": {
 							"options": {
@@ -1118,23 +1118,23 @@
 							}
 						}
 					},
-					"placeholder": "Добавить адрес электронной почты",
-					"displayName": "Электронная почта",
+					"placeholder": "Добавить email",
+					"displayName": "Email-адреса",
 					"options": {
 						"emailFields": {
-							"displayName": "Поля электронной почты"
+							"displayName": "Поля email"
 						}
 					}
 				},
 				"assignee_id": {
-					"displayName": "Идентификатор правопреемника",
+					"displayName": "Идентификатор ответственного",
 					"description": "Идентификатор пользователя, которому будет принадлежать задача"
 				},
 				"status": {
 					"displayName": "Статус",
 					"options": {
 						"Completed": {
-							"displayName": "Завершенный"
+							"displayName": "Завершено"
 						},
 						"Open": {
 							"displayName": "Открыть"
@@ -1160,19 +1160,19 @@
 		},
 		"customerSourceId": {
 			"displayName": "Идентификатор источника клиента",
-			"description": "Идентификатор источника клиента, создавшего эту возможность."
+			"description": "Идентификатор источника клиента, создавшего эту возможность"
 		},
 		"primaryContactId": {
-			"displayName": "Основной идентификатор контакта",
+			"displayName": "Идентификатор основного контакта",
 			"description": "Идентификатор основной компании, связанной с этой возможностью"
 		},
 		"opportunityId": {
 			"displayName": "Идентификатор возможности",
-			"description": "ID возможности обновления"
+			"description": "Идентификатор возможности для обновления"
 		},
 		"personId": {
-			"displayName": "Идентификатор человека",
-			"description": "Идентификатор человека, которого необходимо обновить"
+			"displayName": "ID человека",
+			"description": "Идентификатор человека для обновления"
 		},
 		"projectId": {
 			"displayName": "Идентификатор проекта",

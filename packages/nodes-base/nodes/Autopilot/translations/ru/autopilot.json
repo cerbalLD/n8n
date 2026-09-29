@@ -41,7 +41,7 @@
 					"description": "Получить много списков"
 				},
 				"add": {
-					"displayName": "Добавлять",
+					"displayName": "Добавить",
 					"description": "Добавить контакт в список"
 				},
 				"exist": {
@@ -53,7 +53,7 @@
 					"description": "Удаление контакта из списка"
 				},
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать список"
 				}
 			}
@@ -82,7 +82,7 @@
 									"description": "User-specified key of user-defined data. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 								},
 								"value": {
-									"displayName": "Ценить",
+									"displayName": "Значение",
 									"description": "Пользовательское значение пользовательских данных"
 								}
 							}
@@ -115,7 +115,7 @@
 					"displayName": "URL-адрес LinkedIn"
 				},
 				"autopilotList": {
-					"displayName": "Имя списка или идентификатор",
+					"displayName": "Название или ID списка",
 					"description": "Список, в который этот контакт будет добавлен при создании. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"MailingCountry": {
@@ -157,26 +157,26 @@
 					"displayName": "Приветствие"
 				},
 				"autopilotSessionId": {
-					"displayName": "Идентификатор сеанса",
+					"displayName": "ID сеанса",
 					"description": "Используется для привязки контакта к сеансу"
 				},
 				"Status": {
 					"displayName": "Статус"
 				},
 				"Title": {
-					"displayName": "Заголовок"
+					"displayName": "Название"
 				},
 				"unsubscribed": {
 					"displayName": "Подписаться",
 					"description": "Подписаться или отказаться от подписки на контакт"
 				},
 				"Website": {
-					"displayName": "URL-адрес веб-сайта"
+					"displayName": "URL веб-сайта"
 				}
 			}
 		},
 		"contactId": {
-			"displayName": "Идентификатор контакта",
+			"displayName": "ID контакта",
 			"description": "Может быть идентификатор или адрес электронной почты"
 		},
 		"returnAll": {
@@ -185,14 +185,14 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"triggerId": {
 			"displayName": "Имя или идентификатор триггера",
 			"description": "Идентификатор списка. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 		},
 		"listId": {
-			"displayName": "Имя списка или идентификатор",
+			"displayName": "Название или ID списка",
 			"description": "Идентификатор списка, над которым нужно работать. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 		},
 		"name": {

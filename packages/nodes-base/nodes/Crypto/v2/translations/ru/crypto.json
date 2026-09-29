@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "Крипто",
+		"displayName": "Криптография",
 		"description": "Предоставление криптографических утилит"
 	},
 	"nodeView": {
@@ -9,26 +9,26 @@
 			"options": {
 				"decrypt": {
 					"displayName": "Расшифровать",
-					"description": "Расшифруйте строку с помощью парольной фразы или закрытого ключа."
+					"description": "Расшифровать строку с помощью парольной фразы или закрытого ключа"
 				},
 				"encrypt": {
-					"displayName": "Шифровать",
-					"description": "Зашифруйте строку с помощью парольной фразы или открытого ключа."
+					"displayName": "Зашифровать",
+					"description": "Зашифровать строку с помощью парольной фразы или открытого ключа"
 				},
 				"generate": {
-					"displayName": "Генерировать",
-					"description": "Создать случайную строку"
+					"displayName": "Сгенерировать",
+					"description": "Сгенерировать случайную строку"
 				},
 				"hash": {
-					"displayName": "Хэш",
+					"displayName": "Хеш",
 					"description": "Хешировать текст или файл в указанном формате"
 				},
 				"hmac": {
-					"displayName": "Хмак",
-					"description": "Hmac — текст или файл в указанном формате"
+					"displayName": "HMAC",
+					"description": "Вычислить HMAC для текста или файла в указанном формате"
 				},
 				"sign": {
-					"displayName": "Знак",
+					"displayName": "Подписать",
 					"description": "Подписать строку с помощью закрытого ключа"
 				}
 			}
@@ -43,7 +43,7 @@
 		},
 		"type": {
 			"displayName": "Тип",
-			"description": "Тип хеша, который нужно использовать",
+			"description": "Тип хеша для использования",
 			"options": {
 				"MD5": {
 					"displayName": "MD5"
@@ -72,15 +72,15 @@
 			}
 		},
 		"value": {
-			"displayName": "Ценить",
-			"description": "Для шифрования: открытый текст для шифрования. Для расшифровки: зашифрованный текст base64, созданный этим узлом."
+			"displayName": "Значение",
+			"description": "Для шифрования: открытый текст. Для расшифровки: зашифрованный текст base64 из этого узла."
 		},
 		"dataPropertyName": {
 			"displayName": "Имя свойства",
 			"description": "Имя свойства, в которое записать результат"
 		},
 		"encoding": {
-			"displayName": "Кодирование",
+			"displayName": "Кодировка",
 			"options": {
 				"base64": {
 					"displayName": "BASE64"
@@ -92,7 +92,7 @@
 		},
 		"algorithm": {
 			"displayName": "Имя или идентификатор алгоритма",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>",
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>",
 			"options": {
 				"RSA-MD5": {
 					"displayName": "RSA-MD5"
@@ -146,19 +146,19 @@
 					"displayName": "blake2s256"
 				},
 				"id-rsassa-pkcs1-v1_5-with-sha3-224": {
-					"displayName": "идентификатор-rsassa-pkcs1-v1_5-with-sha3-224"
+					"displayName": "id-rsassa-pkcs1-v1_5-with-sha3-224"
 				},
 				"id-rsassa-pkcs1-v1_5-with-sha3-256": {
-					"displayName": "идентификатор-rsassa-pkcs1-v1_5-с-sha3-256"
+					"displayName": "id-rsassa-pkcs1-v1_5-with-sha3-256"
 				},
 				"id-rsassa-pkcs1-v1_5-with-sha3-384": {
-					"displayName": "идентификатор-rsassa-pkcs1-v1_5-with-sha3-384"
+					"displayName": "id-rsassa-pkcs1-v1_5-with-sha3-384"
 				},
 				"id-rsassa-pkcs1-v1_5-with-sha3-512": {
-					"displayName": "идентификатор-rsassa-pkcs1-v1_5-with-sha3-512"
+					"displayName": "id-rsassa-pkcs1-v1_5-with-sha3-512"
 				},
 				"md5": {
-					"displayName": "мд5"
+					"displayName": "md5"
 				},
 				"md5-sha1": {
 					"displayName": "md5-sha1"
@@ -167,7 +167,7 @@
 					"displayName": "md5WithRSAEncryption"
 				},
 				"ripemd": {
-					"displayName": "зрелый"
+					"displayName": "ripemd"
 				},
 				"ripemd160": {
 					"displayName": "ripemd160"
@@ -179,82 +179,82 @@
 					"displayName": "rmd160"
 				},
 				"sha1": {
-					"displayName": "ша1"
+					"displayName": "sha1"
 				},
 				"sha1WithRSAEncryption": {
 					"displayName": "sha1WithRSAEncryption"
 				},
 				"sha224": {
-					"displayName": "ша224"
+					"displayName": "sha224"
 				},
 				"sha224WithRSAEncryption": {
 					"displayName": "sha224WithRSAEncryption"
 				},
 				"sha256": {
-					"displayName": "ша256"
+					"displayName": "sha256"
 				},
 				"sha256WithRSAEncryption": {
 					"displayName": "sha256WithRSAEncryption"
 				},
 				"sha3-224": {
-					"displayName": "ша3-224"
+					"displayName": "sha3-224"
 				},
 				"sha3-256": {
-					"displayName": "ша3-256"
+					"displayName": "sha3-256"
 				},
 				"sha3-384": {
-					"displayName": "ша3-384"
+					"displayName": "sha3-384"
 				},
 				"sha3-512": {
-					"displayName": "ша3-512"
+					"displayName": "sha3-512"
 				},
 				"sha384": {
-					"displayName": "ша384"
+					"displayName": "sha384"
 				},
 				"sha384WithRSAEncryption": {
 					"displayName": "sha384WithRSAEncryption"
 				},
 				"sha512": {
-					"displayName": "ша512"
+					"displayName": "sha512"
 				},
 				"sha512-224": {
-					"displayName": "ша512-224"
+					"displayName": "sha512-224"
 				},
 				"sha512-224WithRSAEncryption": {
-					"displayName": "sha512-224СRSAEncryption"
+					"displayName": "sha512-224WithRSAEncryption"
 				},
 				"sha512-256": {
-					"displayName": "ша512-256"
+					"displayName": "sha512-256"
 				},
 				"sha512-256WithRSAEncryption": {
-					"displayName": "sha512-256С RSAEncryption"
+					"displayName": "sha512-256WithRSAEncryption"
 				},
 				"sha512WithRSAEncryption": {
 					"displayName": "sha512WithRSAEncryption"
 				},
 				"shake128": {
-					"displayName": "встряхнуть128"
+					"displayName": "shake128"
 				},
 				"shake256": {
-					"displayName": "встряхнуть256"
+					"displayName": "shake256"
 				},
 				"sm3": {
-					"displayName": "см3"
+					"displayName": "sm3"
 				},
 				"sm3WithRSAEncryption": {
 					"displayName": "sm3WithRSAEncryption"
 				},
 				"ssl3-md5": {
-					"displayName": "SSL3-MD5"
+					"displayName": "ssl3-md5"
 				},
 				"ssl3-sha1": {
-					"displayName": "SSL3-sha1"
+					"displayName": "ssl3-sha1"
 				}
 			}
 		},
 		"encodingType": {
 			"displayName": "Тип",
-			"description": "Кодировка, которая будет использоваться для генерации строки",
+			"description": "Кодировка для генерации строки",
 			"options": {
 				"ascii": {
 					"displayName": "ASCII"
@@ -278,18 +278,18 @@
 			"displayName": "Режим",
 			"options": {
 				"symmetric": {
-					"displayName": "Симметричный (парольная фраза)",
-					"description": "Зашифруйте или дешифруйте с помощью парольной фразы, используя аутентифицированный шифр."
+					"displayName": "Симметричное (парольная фраза)",
+					"description": "Шифровать или расшифровать с помощью парольной фразы и аутентифицированного шифра"
 				},
 				"asymmetric": {
-					"displayName": "Асимметричный (RSA)",
-					"description": "Зашифровать открытым ключом RSA, расшифровать закрытым ключом RSA"
+					"displayName": "Асимметричное (RSA)",
+					"description": "Шифровать открытым ключом RSA, расшифровать закрытым ключом RSA"
 				}
 			}
 		},
 		"cipher": {
 			"displayName": "Шифр",
-			"description": "Аутентифицированный шифр для использования. Одно и то же значение должно быть выбрано при шифровании и дешифровании.",
+			"description": "Аутентифицированный шифр. Одно и то же значение должно быть выбрано при шифровании и расшифровке.",
 			"options": {
 				"aes-256-gcm": {
 					"displayName": "AES-256-GCM"
@@ -301,7 +301,7 @@
 					"displayName": "AES-128-GCM"
 				},
 				"chacha20-poly1305": {
-					"displayName": "ЧаЧа20-Поли1305"
+					"displayName": "ChaCha20-Poly1305"
 				}
 			}
 		}

@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Триггер планирования остроты зрения",
-		"description": "Обработка событий планирования Acuity с помощью веб-перехватчиков"
+		"displayName": "Триггер Acuity Scheduling",
+		"description": "Обработка событий Acuity Scheduling через вебхуки"
 	},
 	"nodeView": {
 		"authentication": {
@@ -20,33 +20,33 @@
 			"options": {
 				"appointment": {
 					"canceled": {
-						"displayName": "назначение.отменено",
-						"description": "Вызывается всякий раз, когда встреча отменяется"
+						"displayName": "appointment.canceled",
+						"description": "Вызывается при отмене встречи"
 					},
 					"changed": {
-						"displayName": "назначение.изменено",
-						"description": "Вызывается, когда встреча изменяется каким-либо образом"
+						"displayName": "appointment.changed",
+						"description": "Вызывается при любом изменении встречи"
 					},
 					"rescheduled": {
-						"displayName": "назначение.перенесено",
-						"description": "Вызывается, когда встреча переносится на новое время"
+						"displayName": "appointment.rescheduled",
+						"description": "Вызывается при переносе встречи на другое время"
 					},
 					"scheduled": {
-						"displayName": "назначение.запланировано",
-						"description": "Вызывается один раз при первоначальной записи на прием"
+						"displayName": "appointment.scheduled",
+						"description": "Вызывается при первоначальной записи на встречу"
 					}
 				},
 				"order": {
 					"completed": {
-						"displayName": "заказ.завершен",
-						"description": "Вызывается при выполнении заказа"
+						"displayName": "order.completed",
+						"description": "Вызывается при завершении заказа"
 					}
 				}
 			}
 		},
 		"resolveData": {
-			"displayName": "Разрешение данных",
-			"description": "По умолчанию данные веб-перехватчика содержат только идентификатор объекта. Если эта опция активирована, она автоматически разрешит данные."
+			"displayName": "Разрешить данные",
+			"description": "По умолчанию данные вебхука содержат только ID объекта. При активации этой опции данные будут разрешены автоматически."
 		}
 	}
 }

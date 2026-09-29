@@ -1,24 +1,24 @@
 {
 	"header": {
-		"displayName": "Netlify Триггер",
-		"description": "Обработка событий netlify через веб-перехватчики"
+		"displayName": "Триггер Netlify",
+		"description": "Обработка событий Netlify через вебхуки"
 	},
 	"nodeView": {
 		"siteId": {
 			"displayName": "Имя или идентификатор сайта",
-			"description": "Выберите идентификатор сайта. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"description": "Выберите идентификатор сайта. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"event": {
 			"displayName": "Событие",
 			"options": {
 				"deployBuilding": {
-					"displayName": "Развернуть здание"
+					"displayName": "Сборка развертывания"
 				},
 				"deployFailed": {
 					"displayName": "Развертывание не удалось"
 				},
 				"deployCreated": {
-					"displayName": "Развернуть создано"
+					"displayName": "Развертывание создано"
 				},
 				"submissionCreated": {
 					"displayName": "Форма отправлена"
@@ -26,12 +26,12 @@
 			}
 		},
 		"formId": {
-			"displayName": "Имя или идентификатор формы",
-			"description": "Выберите форму. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"displayName": "Название или идентификатор формы",
+			"description": "Выберите форму. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"simple": {
-			"displayName": "Упрощать",
-			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+			"displayName": "Упростить",
+			"description": "Возвращать ли упрощённую версию ответа вместо необработанных данных"
 		}
 	}
 }

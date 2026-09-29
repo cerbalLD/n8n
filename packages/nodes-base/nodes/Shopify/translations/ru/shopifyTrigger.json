@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Shopify Триггер",
-		"description": "Обработка событий Shopify через веб-перехватчики"
+		"displayName": "Триггер Shopify",
+		"description": "Обработка событий Shopify через вебхуки"
 	},
 	"nodeView": {
 		"authentication": {
@@ -19,7 +19,7 @@
 			}
 		},
 		"topic": {
-			"displayName": "Триггер включен",
+			"displayName": "Триггер для",
 			"options": {
 				"app/uninstalled": {
 					"displayName": "Приложение удалено"
@@ -34,10 +34,10 @@
 					"displayName": "Оформление заказа создано"
 				},
 				"checkouts/delete": {
-					"displayName": "Оформить заказ Удалить"
+					"displayName": "Оформление заказа удалено"
 				},
 				"checkouts/update": {
-					"displayName": "Обновление оформления заказа"
+					"displayName": "Оформление заказа обновлено"
 				},
 				"collections/create": {
 					"displayName": "Коллекция создана"
@@ -46,13 +46,13 @@
 					"displayName": "Коллекция удалена"
 				},
 				"collection_listings/add": {
-					"displayName": "Добавлены списки коллекций"
+					"displayName": "Перечисления коллекций добавлены"
 				},
 				"collection_listings/remove": {
-					"displayName": "Списки коллекций удалены"
+					"displayName": "Перечисления коллекций удалены"
 				},
 				"collection_listings/update": {
-					"displayName": "Списки коллекций обновлены"
+					"displayName": "Перечисления коллекций обновлены"
 				},
 				"collections/update": {
 					"displayName": "Коллекция обновлена"
@@ -61,7 +61,7 @@
 					"displayName": "Клиент создан"
 				},
 				"customers/delete": {
-					"displayName": "Клиент удален"
+					"displayName": "Клиент удалён"
 				},
 				"customers/disable": {
 					"displayName": "Клиент отключен"
@@ -82,19 +82,19 @@
 					"displayName": "Клиент обновлен"
 				},
 				"draft_orders/create": {
-					"displayName": "Проекты заказов созданы"
+					"displayName": "Черновики заказов созданы"
 				},
 				"draft_orders/delete": {
-					"displayName": "Черновики приказов удалены"
+					"displayName": "Черновики заказов удалены"
 				},
 				"draft_orders/update": {
-					"displayName": "Обновлены проекты приказов"
+					"displayName": "Черновики заказов обновлены"
 				},
 				"fulfillments/create": {
 					"displayName": "Выполнение создано"
 				},
 				"fulfillment_events/create": {
-					"displayName": "Созданы события выполнения"
+					"displayName": "События выполнения созданы"
 				},
 				"fulfillment_events/delete": {
 					"displayName": "События выполнения удалены"
@@ -103,13 +103,13 @@
 					"displayName": "Выполнение обновлено"
 				},
 				"inventory_items/create": {
-					"displayName": "Созданные предметы инвентаря"
+					"displayName": "Товары инвентаря созданы"
 				},
 				"inventory_items/delete": {
-					"displayName": "Предметы инвентаря удалены"
+					"displayName": "Товары инвентаря удалены"
 				},
 				"inventory_items/update": {
-					"displayName": "Обновлены предметы инвентаря"
+					"displayName": "Товары инвентаря обновлены"
 				},
 				"inventory_levels/connect": {
 					"displayName": "Уровни инвентаря подключены"
@@ -124,7 +124,7 @@
 					"displayName": "Локаль создана"
 				},
 				"locales/update": {
-					"displayName": "Языковой стандарт обновлен"
+					"displayName": "Локаль обновлена"
 				},
 				"locations/create": {
 					"displayName": "Местоположение создано"
@@ -136,7 +136,7 @@
 					"displayName": "Местоположение обновлено"
 				},
 				"orders/cancelled": {
-					"displayName": "Заказ отменен"
+					"displayName": "Заказ отменён"
 				},
 				"orders/create": {
 					"displayName": "Заказ создан"
@@ -151,7 +151,7 @@
 					"displayName": "Заказ частично выполнен"
 				},
 				"order_transactions/create": {
-					"displayName": "Созданы транзакции заказа"
+					"displayName": "Транзакции заказа созданы"
 				},
 				"orders/updated": {
 					"displayName": "Заказ обновлен"
@@ -160,22 +160,22 @@
 					"displayName": "Заказы удалены"
 				},
 				"products/create": {
-					"displayName": "Продукт создан"
+					"displayName": "Товар создан"
 				},
 				"products/delete": {
-					"displayName": "Продукт удален"
+					"displayName": "Товар удален"
 				},
 				"product_listings/add": {
-					"displayName": "Списки продуктов добавлены"
+					"displayName": "Перечисления товаров добавлены"
 				},
 				"product_listings/remove": {
-					"displayName": "Списки продуктов удалены"
+					"displayName": "Перечисления товаров удалены"
 				},
 				"product_listings/update": {
-					"displayName": "Списки продуктов обновлены"
+					"displayName": "Перечисления товаров обновлены"
 				},
 				"products/update": {
-					"displayName": "Продукт обновлен"
+					"displayName": "Товар обновлен"
 				},
 				"refunds/create": {
 					"displayName": "Возврат создан"
@@ -184,7 +184,7 @@
 					"displayName": "Магазин обновлен"
 				},
 				"tender_transactions/create": {
-					"displayName": "Тендерные сделки созданы"
+					"displayName": "Тендерные операции созданы"
 				},
 				"themes/create": {
 					"displayName": "Тема создана"

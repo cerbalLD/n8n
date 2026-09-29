@@ -8,52 +8,52 @@
 			"displayName": "Операция",
 			"options": {
 				"csv": {
-					"displayName": "Конвертировать в CSV",
+					"displayName": "Преобразовать в CSV",
 					"description": "Преобразование входных данных в файл CSV"
 				},
 				"html": {
-					"displayName": "Конвертировать в HTML",
+					"displayName": "Преобразовать в HTML",
 					"description": "Преобразование входных данных в таблицу в HTML-файле"
 				},
 				"iCal": {
-					"displayName": "Преобразование в ICS",
-					"description": "Преобразует каждый входной элемент в файл событий ICS."
+					"displayName": "Преобразовать в ICS",
+					"description": "Преобразование каждого входного элемента в файл события ICS"
 				},
 				"toJson": {
 					"displayName": "Преобразовать в JSON",
-					"description": "Преобразуйте входные данные в один или несколько файлов JSON."
+					"description": "Преобразование входных данных в один или несколько файлов JSON"
 				},
 				"ods": {
-					"displayName": "Конвертировать в ODS",
+					"displayName": "Преобразовать в ODS",
 					"description": "Преобразование входных данных в файл ODS"
 				},
 				"rtf": {
-					"displayName": "Конвертировать в RTF",
-					"description": "Преобразование входных данных в таблицу в файле RTF."
+					"displayName": "Преобразовать в RTF",
+					"description": "Преобразование входных данных в таблицу в файле RTF"
 				},
 				"toText": {
 					"displayName": "Преобразовать в текстовый файл",
-					"description": "Преобразовать строку входных данных в файл"
+					"description": "Преобразование строки входных данных в файл"
 				},
 				"xls": {
-					"displayName": "Конвертировать в XLS",
+					"displayName": "Преобразовать в XLS",
 					"description": "Преобразование входных данных в файл Excel"
 				},
 				"xlsx": {
-					"displayName": "Конвертировать в XLSX",
+					"displayName": "Преобразовать в XLSX",
 					"description": "Преобразование входных данных в файл Excel"
 				},
 				"toBinary": {
-					"displayName": "Переместить строку Base64 в файл",
-					"description": "Преобразование строки в кодировке Base64 в исходный формат файла."
+					"displayName": "Преобразовать строку Base64 в файл",
+					"description": "Преобразование строки в кодировке Base64 в исходный формат файла"
 				}
 			}
 		},
 		"binaryPropertyName": {
 			"displayName": "Поместите выходной файл в поле",
 			"hint": "Имя выходного двоичного поля, в которое помещается файл.",
-			"placeholder": "например данные",
-			"description": "Поле, в котором ваш файл iCalendar будет доступен в выходных данных."
+			"placeholder": "например data",
+			"description": "Поле, в котором файл iCalendar будет доступен в выходных данных"
 		},
 		"options": {
 			"displayName": "Параметры",
@@ -61,55 +61,55 @@
 			"options": {
 				"compression": {
 					"displayName": "Сжатие",
-					"description": "Уменьшить ли размер выходного файла"
+					"description": "Следует ли уменьшить размер выходного файла"
 				},
 				"delimiter": {
 					"displayName": "Разделитель",
-					"description": "Символ, используемый для разделения полей"
+					"description": "Символ для разделения полей"
 				},
 				"fileName": {
 					"displayName": "Имя файла",
-					"description": "Имя выходного файла",
-					"placeholder": "например мойФайл.json"
+					"description": "Название выходного файла",
+					"placeholder": "например myFile.json"
 				},
 				"headerRow": {
-					"displayName": "Заголовок строки",
+					"displayName": "Строка заголовка",
 					"description": "Содержит ли первая строка файла имена заголовков"
 				},
 				"sheetName": {
 					"displayName": "Имя листа",
-					"description": "Имя листа, который необходимо создать в электронной таблице.",
-					"placeholder": "например мой лист"
+					"description": "Имя листа для создания в электронной таблице",
+					"placeholder": "например mySheet"
 				},
 				"addBOM": {
 					"displayName": "Добавить метку порядка байтов (BOM)",
-					"description": "Добавлять ли специальный маркер в начало текстового файла. Этот маркер помогает некоторым программам понять, как правильно читать файл."
+					"description": "Добавлять ли специальный маркер в начало текстового файла. Этот маркер помогает некоторым программам правильно читать файл."
 				},
 				"dataIsBase64": {
-					"displayName": "Данные в формате Base64",
-					"description": "Закодированы ли данные уже в формате Base64"
+					"displayName": "Данные в Base64",
+					"description": "Закодированы ли данные уже в Base64"
 				},
 				"encoding": {
-					"displayName": "Кодирование",
-					"description": "Выберите набор символов, который будет использоваться для кодирования данных.",
+					"displayName": "Кодировка",
+					"description": "Выберите набор символов для кодирования данных",
 					"options": {
 						"armscii8": {
-							"displayName": "Armscii8"
+							"displayName": "armscii8"
 						},
 						"ascii": {
 							"displayName": "ascii"
 						},
 						"base64": {
-							"displayName": "база64"
+							"displayName": "base64"
 						},
 						"big5hkscs": {
 							"displayName": "big5hkscs"
 						},
 						"binary": {
-							"displayName": "двоичный"
+							"displayName": "binary"
 						},
 						"cesu8": {
-							"displayName": "цесу8"
+							"displayName": "cesu8"
 						},
 						"cp1046": {
 							"displayName": "cp1046"
@@ -208,19 +208,19 @@
 							"displayName": "eucjp"
 						},
 						"gb18030": {
-							"displayName": "GB18030"
+							"displayName": "gb18030"
 						},
 						"gbk": {
-							"displayName": "ГБК"
+							"displayName": "gbk"
 						},
 						"georgianacademy": {
-							"displayName": "Грузинская академия"
+							"displayName": "georgianacademy"
 						},
 						"georgianps": {
-							"displayName": "грузины"
+							"displayName": "georgianps"
 						},
 						"hex": {
-							"displayName": "шестигранник"
+							"displayName": "hex"
 						},
 						"hproman8": {
 							"displayName": "hproman8"
@@ -277,67 +277,67 @@
 							"displayName": "iso88599"
 						},
 						"koi8r": {
-							"displayName": "кои8р"
+							"displayName": "koi8r"
 						},
 						"koi8ru": {
-							"displayName": "кои8ру"
+							"displayName": "koi8ru"
 						},
 						"koi8t": {
-							"displayName": "кои8т"
+							"displayName": "koi8t"
 						},
 						"koi8u": {
-							"displayName": "кои8у"
+							"displayName": "koi8u"
 						},
 						"maccenteuro": {
 							"displayName": "maccenteuro"
 						},
 						"maccroatian": {
-							"displayName": "макроатийский"
+							"displayName": "maccroatian"
 						},
 						"maccyrillic": {
-							"displayName": "маккирилический"
+							"displayName": "maccyrillic"
 						},
 						"macgreek": {
-							"displayName": "Макгрек"
+							"displayName": "macgreek"
 						},
 						"maciceland": {
-							"displayName": "Мейсиленд"
+							"displayName": "maciceland"
 						},
 						"macintosh": {
-							"displayName": "Макинтош"
+							"displayName": "macintosh"
 						},
 						"macroman": {
-							"displayName": "макромен"
+							"displayName": "macroman"
 						},
 						"macromania": {
-							"displayName": "макромания"
+							"displayName": "macromania"
 						},
 						"macthai": {
-							"displayName": "Мактай"
+							"displayName": "macthai"
 						},
 						"macturkish": {
-							"displayName": "Мактурецкий"
+							"displayName": "macturkish"
 						},
 						"macukraine": {
-							"displayName": "Макукраина"
+							"displayName": "macukraine"
 						},
 						"mik": {
-							"displayName": "Мик"
+							"displayName": "mik"
 						},
 						"pt154": {
-							"displayName": "пт154"
+							"displayName": "pt154"
 						},
 						"rk1048": {
 							"displayName": "rk1048"
 						},
 						"shiftjis": {
-							"displayName": "Шифтджис"
+							"displayName": "shiftjis"
 						},
 						"tcvn": {
-							"displayName": "ТКВН"
+							"displayName": "tcvn"
 						},
 						"tis620": {
-							"displayName": "тис620"
+							"displayName": "tis620"
 						},
 						"ucs2": {
 							"displayName": "ucs2"
@@ -367,7 +367,7 @@
 							"displayName": "utf8"
 						},
 						"viscii": {
-							"displayName": "внутренние органы"
+							"displayName": "viscii"
 						},
 						"windows1250": {
 							"displayName": "windows1250"
@@ -402,20 +402,20 @@
 					}
 				},
 				"mimeType": {
-					"displayName": "MIME-тип",
-					"description": "MIME-тип выходного файла. <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types\" target=\"_blank\">Распространенные типы MIME</a>.",
-					"placeholder": "например текст/обычный"
+					"displayName": "Тип MIME",
+					"description": "Тип MIME выходного файла. <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types\" target=\"_blank\">Распространённые типы MIME</a>.",
+					"placeholder": "например text/plain"
 				},
 				"format": {
 					"displayName": "Формат",
-					"description": "Следует ли форматировать данные JSON для облегчения чтения."
+					"description": "Следует ли форматировать данные JSON для удобства чтения"
 				}
 			}
 		},
 		"sourceProperty": {
-			"displayName": "Поле ввода текста",
-			"description": "Имя поля ввода, содержащего строку для преобразования в файл. Используйте точечную нотацию для глубоких полей (например, «level1.level2.currentKey»).",
-			"placeholder": "например данные"
+			"displayName": "Текстовое поле ввода",
+			"description": "Имя поля ввода, содержащего строку для преобразования в файл. Используйте точечную нотацию для вложенных полей (например 'level1.level2.currentKey').",
+			"placeholder": "например data"
 		},
 		"mode": {
 			"displayName": "Режим",
@@ -433,17 +433,17 @@
 			"placeholder": "например Новое событие"
 		},
 		"start": {
-			"displayName": "Начинать",
-			"description": "Дата и время начала мероприятия. (Для мероприятий, продолжающихся целый день, время будет игнорироваться.)."
+			"displayName": "Начать",
+			"description": "Дата и время начала события. (Для мероприятий на весь день время будет игнорироваться.)"
 		},
 		"end": {
 			"displayName": "Конец",
-			"description": "Дата и время окончания мероприятия. (Для мероприятий, продолжающихся целый день, время будет игнорироваться.).",
-			"hint": "Если не установлено, будет равно дате начала."
+			"description": "Дата и время окончания события. (Для мероприятий на весь день время будет игнорироваться.)",
+			"hint": "Если не установлено, будет равно дате начала"
 		},
 		"allDay": {
-			"displayName": "Весь день",
-			"description": "Независимо от того, продлится ли мероприятие весь день или нет"
+			"displayName": "На весь день",
+			"description": "Длится ли событие весь день или нет"
 		},
 		"additionalFields": {
 			"displayName": "Параметры",
@@ -461,11 +461,11 @@
 								},
 								"email": {
 									"displayName": "Электронная почта",
-									"placeholder": "например имя@email.com"
+									"placeholder": "например name@email.com"
 								},
 								"rsvp": {
 									"displayName": "RSVP",
-									"description": "Должен ли участник подтверждать свое присутствие или нет"
+									"description": "Должен ли участник подтвердить своё присутствие или нет"
 								}
 							}
 						}
@@ -480,18 +480,18 @@
 				},
 				"busyStatus": {
 					"displayName": "Статус занятости",
-					"description": "Используется для указания статуса занятости для приложений Microsoft, таких как Outlook.",
+					"description": "Используется для указания статуса занятости в приложениях Microsoft, таких как Outlook",
 					"options": {
 						"BUSY": {
-							"displayName": "Занятый"
+							"displayName": "Занят"
 						},
 						"TENTATIVE": {
-							"displayName": "Пробный"
+							"displayName": "Предварительно"
 						}
 					}
 				},
 				"calName": {
-					"displayName": "Название календаря",
+					"displayName": "Имя календаря",
 					"description": "Указывает имя календаря (не события). Используется Apple iCal и Microsoft Outlook. <a href=\"https://docs.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-oxcical/1da58449-b97e-46bd-b018-a1ce576f3e6d\">Подробнее</a>."
 				},
 				"description": {
@@ -499,7 +499,7 @@
 				},
 				"fileName": {
 					"displayName": "Имя файла",
-					"description": "Имя создаваемого файла. Имя по умолчанию — event.ics.",
+					"description": "Имя создаваемого файла. По умолчанию — event.ics",
 					"placeholder": "например event.ics"
 				},
 				"geolocationUi": {
@@ -532,7 +532,7 @@
 				},
 				"recurrenceRule": {
 					"displayName": "Правило повторения",
-					"description": "Правило, определяющее шаблон повторения события (RRULE). (<a href=\"https://icalendar.org/rrule-tool.html\">Генератор правил</a>)."
+					"description": "Правило для определения шаблона повторения события (RRULE). (<a href=\"https://icalendar.org/rrule-tool.html\">Генератор правил</a>)."
 				},
 				"organizerUi": {
 					"values": {
@@ -546,7 +546,7 @@
 								},
 								"email": {
 									"displayName": "Электронная почта",
-									"placeholder": "например имя@email.com"
+									"placeholder": "например name@email.com"
 								}
 							}
 						}
@@ -561,33 +561,33 @@
 				},
 				"sequence": {
 					"displayName": "Последовательность",
-					"description": "При отправке обновления для события (с тем же uid) определяет порядковый номер версии."
+					"description": "При отправке обновления события (с тем же uid) определяет номер версии"
 				},
 				"status": {
 					"displayName": "Статус",
 					"options": {
 						"CONFIRMED": {
-							"displayName": "Подтвержденный"
+							"displayName": "Подтверждено"
 						},
 						"CANCELLED": {
 							"displayName": "Отменено"
 						},
 						"TENTATIVE": {
-							"displayName": "Пробный"
+							"displayName": "Предварительно"
 						}
 					}
 				},
 				"uid": {
 					"displayName": "UID",
-					"description": "Универсальный уникальный идентификатор события (будет сгенерирован автоматически, если здесь не указано). Должен быть глобально уникальным."
+					"description": "Уникальный ID события (будет сгенерирован автоматически, если не указано). Должен быть глобально уникальным."
 				},
 				"url": {
 					"displayName": "URL",
-					"description": "URL-адрес, связанный с событием"
+					"description": "URL, связанный с событием"
 				},
 				"useWorkflowTimezone": {
 					"displayName": "Использовать часовой пояс рабочего процесса",
-					"description": "Использовать ли часовой пояс рабочего процесса, установленный в настройках узла, а не UTC."
+					"description": "Использовать ли часовой пояс рабочего процесса из настроек узла вместо UTC"
 				}
 			}
 		}

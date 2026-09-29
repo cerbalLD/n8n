@@ -35,7 +35,7 @@
 					"description": "Комментировать ресурс"
 				},
 				"label": {
-					"displayName": "Этикетка",
+					"displayName": "Подпись",
 					"description": "Ресурс ярлыка"
 				},
 				"reminder": {
@@ -48,11 +48,11 @@
 			"displayName": "Операция",
 			"options": {
 				"close": {
-					"displayName": "Закрывать",
+					"displayName": "Закрыть",
 					"description": "Закрыть задачу"
 				},
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать новое напоминание"
 				},
 				"delete": {
@@ -68,7 +68,7 @@
 					"description": "Получайте много напоминаний"
 				},
 				"move": {
-					"displayName": "Двигаться",
+					"displayName": "Переместить",
 					"description": "Переместить задачу"
 				},
 				"quickAdd": {
@@ -80,11 +80,11 @@
 					"description": "Повторно открыть задачу"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить напоминание"
 				},
 				"archive": {
-					"displayName": "Архив",
+					"displayName": "Архивировать",
 					"description": "Архивировать проект"
 				},
 				"getCollaborators": {
@@ -92,7 +92,7 @@
 					"description": "Пригласите соавторов проекта"
 				},
 				"unarchive": {
-					"displayName": "Разархивировать",
+					"displayName": "Восстановить из архива",
 					"description": "Разархивировать проект"
 				}
 			}
@@ -122,7 +122,7 @@
 				},
 				"note": {
 					"displayName": "Примечание",
-					"description": "Содержание заметки"
+					"description": "Содержимое заметки"
 				},
 				"reminder": {
 					"displayName": "Напоминание",
@@ -157,7 +157,7 @@
 					"description": "Приоритет задачи от 1 (обычный) до 4 (срочный)."
 				},
 				"order": {
-					"displayName": "Заказ",
+					"displayName": "Порядок",
 					"description": "Ненулевое целое число, используемое для сортировки задач под одним родителем."
 				},
 				"dueDate": {
@@ -166,7 +166,7 @@
 					"placeholder": "YYYY-MM-DD"
 				},
 				"assigneeId": {
-					"displayName": "Идентификатор правопреемника",
+					"displayName": "Идентификатор ответственного",
 					"description": "Идентификатор ответственного пользователя (для общих задач)"
 				},
 				"duration": {
@@ -178,10 +178,10 @@
 					"description": "Единица времени для продолжительности (необходимо использовать с продолжительностью)",
 					"options": {
 						"minute": {
-							"displayName": "минута"
+							"displayName": "Минута"
 						},
 						"day": {
-							"displayName": "День"
+							"displayName": "день"
 						}
 					}
 				},
@@ -210,7 +210,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"filters": {
 			"displayName": "Фильтры",
@@ -221,7 +221,7 @@
 					"description": "Фильтровать по любому фильтру, поддерживаемому <a href=\"https://get.todoist.help/hc/en-us/articles/205248842\">.</a>"
 				},
 				"ids": {
-					"displayName": "идентификаторы",
+					"displayName": "Идентификаторы",
 					"description": "Список идентификаторов задач для получения. Это должен быть список, разделенный запятыми."
 				},
 				"labelId": {
@@ -279,7 +279,7 @@
 					"description": "Приоритет задачи от 1 (обычный) до 4 (срочный)."
 				},
 				"order": {
-					"displayName": "Заказ",
+					"displayName": "Порядок",
 					"description": "Ненулевое целое число, используемое для сортировки задач под одним родителем."
 				},
 				"dueDate": {
@@ -288,7 +288,7 @@
 					"placeholder": "YYYY-MM-DD"
 				},
 				"assigneeId": {
-					"displayName": "Идентификатор правопреемника",
+					"displayName": "Идентификатор ответственного",
 					"description": "Идентификатор ответственного пользователя (для общих задач)"
 				},
 				"duration": {
@@ -300,10 +300,10 @@
 					"description": "Единица времени для продолжительности (необходимо использовать с продолжительностью)",
 					"options": {
 						"minute": {
-							"displayName": "минута"
+							"displayName": "Минута"
 						},
 						"day": {
-							"displayName": "День"
+							"displayName": "день"
 						}
 					}
 				},
@@ -337,10 +337,10 @@
 							"displayName": "Красный"
 						},
 						"orange": {
-							"displayName": "Апельсин"
+							"displayName": "Оранжевый"
 						},
 						"yellow": {
-							"displayName": "Желтый"
+							"displayName": "Жёлтый"
 						},
 						"olive_green": {
 							"displayName": "Оливково-зеленый"
@@ -349,7 +349,7 @@
 							"displayName": "Лаймово-зеленый"
 						},
 						"green": {
-							"displayName": "Зеленый"
+							"displayName": "Зелёный"
 						},
 						"mint_green": {
 							"displayName": "Мятно-зеленый"
@@ -397,7 +397,7 @@
 					"description": "Является ли проект любимым"
 				},
 				"parent_id": {
-					"displayName": "Идентификатор родителя",
+					"displayName": "ID родительской папки",
 					"description": "Идентификатор родительского проекта"
 				},
 				"view_style": {
@@ -433,10 +433,10 @@
 							"displayName": "Красный"
 						},
 						"orange": {
-							"displayName": "Апельсин"
+							"displayName": "Оранжевый"
 						},
 						"yellow": {
-							"displayName": "Желтый"
+							"displayName": "Жёлтый"
 						},
 						"olive_green": {
 							"displayName": "Оливково-зеленый"
@@ -445,7 +445,7 @@
 							"displayName": "Лаймово-зеленый"
 						},
 						"green": {
-							"displayName": "Зеленый"
+							"displayName": "Зелёный"
 						},
 						"mint_green": {
 							"displayName": "Мятно-зеленый"
@@ -522,7 +522,7 @@
 			"placeholder": "Добавить поле",
 			"options": {
 				"order": {
-					"displayName": "Заказ",
+					"displayName": "Порядок",
 					"description": "Порядок раздела"
 				}
 			}
@@ -583,7 +583,7 @@
 			}
 		},
 		"labelId": {
-			"displayName": "Идентификатор этикетки"
+			"displayName": "Идентификатор метки"
 		},
 		"labelName": {
 			"displayName": "Имя",
@@ -604,10 +604,10 @@
 							"displayName": "Красный"
 						},
 						"orange": {
-							"displayName": "Апельсин"
+							"displayName": "Оранжевый"
 						},
 						"yellow": {
-							"displayName": "Желтый"
+							"displayName": "Жёлтый"
 						},
 						"olive_green": {
 							"displayName": "Оливково-зеленый"
@@ -616,7 +616,7 @@
 							"displayName": "Лаймово-зеленый"
 						},
 						"green": {
-							"displayName": "Зеленый"
+							"displayName": "Зелёный"
 						},
 						"mint_green": {
 							"displayName": "Мятно-зеленый"
@@ -660,7 +660,7 @@
 					}
 				},
 				"order": {
-					"displayName": "Заказ",
+					"displayName": "Порядок",
 					"description": "Порядок этикеток"
 				},
 				"is_favorite": {
@@ -688,10 +688,10 @@
 							"displayName": "Красный"
 						},
 						"orange": {
-							"displayName": "Апельсин"
+							"displayName": "Оранжевый"
 						},
 						"yellow": {
-							"displayName": "Желтый"
+							"displayName": "Жёлтый"
 						},
 						"olive_green": {
 							"displayName": "Оливково-зеленый"
@@ -700,7 +700,7 @@
 							"displayName": "Лаймово-зеленый"
 						},
 						"green": {
-							"displayName": "Зеленый"
+							"displayName": "Зелёный"
 						},
 						"mint_green": {
 							"displayName": "Мятно-зеленый"
@@ -744,7 +744,7 @@
 					}
 				},
 				"order": {
-					"displayName": "Заказ",
+					"displayName": "Порядок",
 					"description": "Порядок этикеток"
 				},
 				"is_favorite": {
@@ -754,7 +754,7 @@
 			}
 		},
 		"reminderId": {
-			"displayName": "Идентификатор напоминания"
+			"displayName": "ID напоминания"
 		},
 		"itemId": {
 			"displayName": "Идентификатор задачи",
@@ -834,7 +834,7 @@
 				"due": {
 					"values": {
 						"due": {
-							"displayName": "Должный",
+							"displayName": "Срок выполнения",
 							"description": "Когда должно сработать напоминание"
 						},
 						"string": {
@@ -858,7 +858,7 @@
 						}
 					},
 					"placeholder": "Добавить вариант даты сдачи",
-					"displayName": "Должный",
+					"displayName": "Срок выполнения",
 					"description": "Когда должно сработать напоминание"
 				},
 				"type": {

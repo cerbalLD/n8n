@@ -6,7 +6,7 @@
 	"nodeView": {
 		"authType": {
 			"displayName": "Аутентификация",
-			"description": "Используемый метод аутентификации",
+			"description": "Метод аутентификации",
 			"options": {
 				"basicAuth": {
 					"displayName": "Базовая аутентификация"
@@ -20,7 +20,7 @@
 			"displayName": "Ресурс",
 			"options": {
 				"post": {
-					"displayName": "Почта"
+					"displayName": "Тема"
 				},
 				"page": {
 					"displayName": "Страница"
@@ -34,7 +34,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать пользователя"
 				},
 				"get": {
@@ -43,16 +43,16 @@
 				},
 				"getAll": {
 					"displayName": "Получить много",
-					"description": "Получить много пользователей"
+					"description": "Получить нескольких пользователей"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить пользователя"
 				}
 			}
 		},
 		"title": {
-			"displayName": "Заголовок",
+			"displayName": "Название",
 			"description": "Заголовок страницы"
 		},
 		"additionalFields": {
@@ -68,7 +68,7 @@
 					"description": "Контент для страницы"
 				},
 				"slug": {
-					"displayName": "Слизень",
+					"displayName": "URL-слаг",
 					"description": "Буквенно-цифровой идентификатор пользователя."
 				},
 				"password": {
@@ -92,7 +92,7 @@
 							"displayName": "Частный"
 						},
 						"publish": {
-							"displayName": "Публиковать"
+							"displayName": "Публикация"
 						}
 					}
 				},
@@ -108,7 +108,7 @@
 							"displayName": "Открыть"
 						},
 						"closed": {
-							"displayName": "Закрывать"
+							"displayName": "Закрыть"
 						}
 					}
 				},
@@ -120,7 +120,7 @@
 							"displayName": "Открыть"
 						},
 						"closed": {
-							"displayName": "Закрывать"
+							"displayName": "Закрыть"
 						}
 					}
 				},
@@ -144,13 +144,13 @@
 							"displayName": "Изображение"
 						},
 						"link": {
-							"displayName": "Связь"
+							"displayName": "Ссылка"
 						},
 						"quote": {
-							"displayName": "Цитировать"
+							"displayName": "Предложение"
 						},
 						"standard": {
-							"displayName": "Стандартный"
+							"displayName": "Standard"
 						},
 						"status": {
 							"displayName": "Статус"
@@ -169,7 +169,7 @@
 					"description": "Термины, присвоенные объекту в таксономии категории. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"tags": {
-					"displayName": "Имена или идентификаторы тегов",
+					"displayName": "Имена или ID тегов",
 					"description": "Термины, присвоенные объекту в таксономии post_tag. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"postTemplate": {
@@ -188,7 +188,7 @@
 									"description": "Шаблон Elementor для использования",
 									"options": {
 										"": {
-											"displayName": "Стандартный"
+											"displayName": "Standard"
 										},
 										"elementor_canvas": {
 											"displayName": "Элементор Холст"
@@ -212,7 +212,7 @@
 					}
 				},
 				"parent": {
-					"displayName": "Идентификатор родителя",
+					"displayName": "ID родительской папки",
 					"description": "Идентификатор родителя публикации"
 				},
 				"pageTemplate": {
@@ -231,7 +231,7 @@
 									"description": "Шаблон Elementor для использования",
 									"options": {
 										"": {
-											"displayName": "Стандартный"
+											"displayName": "Standard"
 										},
 										"elementor_canvas": {
 											"displayName": "Элементор Холст"
@@ -277,7 +277,7 @@
 			}
 		},
 		"postId": {
-			"displayName": "Идентификатор сообщения",
+			"displayName": "ID темы",
 			"description": "Уникальный идентификатор объекта"
 		},
 		"updateFields": {
@@ -289,7 +289,7 @@
 					"description": "Идентификатор автора объекта. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"title": {
-					"displayName": "Заголовок",
+					"displayName": "Название",
 					"description": "Заголовок страницы"
 				},
 				"content": {
@@ -297,7 +297,7 @@
 					"description": "Контент для страницы"
 				},
 				"slug": {
-					"displayName": "Слизень",
+					"displayName": "URL-слаг",
 					"description": "Буквенно-цифровой идентификатор пользователя."
 				},
 				"password": {
@@ -321,7 +321,7 @@
 							"displayName": "Частный"
 						},
 						"publish": {
-							"displayName": "Публиковать"
+							"displayName": "Публикация"
 						}
 					}
 				},
@@ -349,13 +349,13 @@
 							"displayName": "Открыть"
 						},
 						"closed": {
-							"displayName": "Закрывать"
+							"displayName": "Закрыть"
 						}
 					}
 				},
 				"format": {
 					"displayName": "Формат",
-					"description": "Формат сообщения",
+					"description": "Формат публикации",
 					"options": {
 						"aside": {
 							"displayName": "В сторону"
@@ -373,13 +373,13 @@
 							"displayName": "Изображение"
 						},
 						"link": {
-							"displayName": "Связь"
+							"displayName": "Ссылка"
 						},
 						"quote": {
-							"displayName": "Цитировать"
+							"displayName": "Предложение"
 						},
 						"standard": {
-							"displayName": "Стандартный"
+							"displayName": "Standard"
 						},
 						"status": {
 							"displayName": "Статус"
@@ -398,7 +398,7 @@
 					"description": "Термины, присвоенные объекту в таксономии категории. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"tags": {
-					"displayName": "Имена или идентификаторы тегов",
+					"displayName": "Имена или ID тегов",
 					"description": "Термины, присвоенные объекту в таксономии post_tag. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"postTemplate": {
@@ -417,7 +417,7 @@
 									"description": "Шаблон Elementor для использования",
 									"options": {
 										"": {
-											"displayName": "Стандартный"
+											"displayName": "Standard"
 										},
 										"elementor_canvas": {
 											"displayName": "Элементор Холст"
@@ -441,7 +441,7 @@
 					}
 				},
 				"parent": {
-					"displayName": "Идентификатор родителя",
+					"displayName": "ID родительской папки",
 					"description": "Идентификатор родителя публикации"
 				},
 				"pageTemplate": {
@@ -460,7 +460,7 @@
 									"description": "Шаблон Elementor для использования",
 									"options": {
 										"": {
-											"displayName": "Стандартный"
+											"displayName": "Standard"
 										},
 										"elementor_canvas": {
 											"displayName": "Элементор Холст"
@@ -539,7 +539,7 @@
 					"description": "Область действия запроса; определяет поля, присутствующие в ответе",
 					"options": {
 						"view": {
-							"displayName": "Вид"
+							"displayName": "Просмотр"
 						},
 						"embed": {
 							"displayName": "Встроить"
@@ -554,7 +554,7 @@
 					"description": "Ограничить ответ на страницы, опубликованные после определенной даты, соответствующей стандарту ISO8601."
 				},
 				"author": {
-					"displayName": "Имена или идентификаторы авторов",
+					"displayName": "Имена авторов или их ID",
 					"description": "Ограничьте набор результатов страницами, назначенными конкретным авторам. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"before": {
@@ -574,7 +574,7 @@
 					"description": "Ограничьте набор результатов всеми элементами, кроме тех, которым указанный термин назначен в таксономии тегов. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"order": {
-					"displayName": "Заказ",
+					"displayName": "Порядок",
 					"description": "Атрибут сортировки порядка по возрастанию или убыванию",
 					"options": {
 						"asc": {
@@ -586,7 +586,7 @@
 					}
 				},
 				"orderBy": {
-					"displayName": "Заказать по",
+					"displayName": "Сортировать по",
 					"description": "Сортировка коллекции по атрибуту объекта",
 					"options": {
 						"author": {
@@ -599,25 +599,25 @@
 							"displayName": "ID"
 						},
 						"include": {
-							"displayName": "Включать"
+							"displayName": "Включить"
 						},
 						"include_slugs": {
 							"displayName": "Включить слизни"
 						},
 						"modified": {
-							"displayName": "Модифицированный"
+							"displayName": "Изменено"
 						},
 						"parent": {
 							"displayName": "Родитель"
 						},
 						"relevance": {
-							"displayName": "Актуальность"
+							"displayName": "Релевантность"
 						},
 						"slug": {
-							"displayName": "Слизень"
+							"displayName": "URL-слаг"
 						},
 						"title": {
-							"displayName": "Заголовок"
+							"displayName": "Название"
 						},
 						"email": {
 							"displayName": "Электронная почта"
@@ -654,7 +654,7 @@
 							"displayName": "Частный"
 						},
 						"publish": {
-							"displayName": "Публиковать"
+							"displayName": "Публикация"
 						}
 					}
 				},
@@ -663,11 +663,11 @@
 					"description": "Ограничить ли набор результатов липкими элементами"
 				},
 				"tags": {
-					"displayName": "Имена или идентификаторы тегов",
+					"displayName": "Имена или ID тегов",
 					"description": "Ограничьте набор результатов всеми элементами, которым указанный термин назначен в таксономии тегов. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"force": {
-					"displayName": "Сила",
+					"displayName": "Принудительно",
 					"description": "Следует ли обойти мусор и принудительно удалить"
 				},
 				"menuOrder": {
@@ -699,7 +699,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"pageId": {
 			"displayName": "Идентификатор страницы",

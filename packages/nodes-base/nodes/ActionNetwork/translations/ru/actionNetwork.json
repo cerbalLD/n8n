@@ -1,14 +1,14 @@
 {
 	"header": {
-		"displayName": "Сеть действий",
-		"description": "Используйте API сети действий"
+		"displayName": "Action Network",
+		"description": "Использовать API Action Network"
 	},
 	"nodeView": {
 		"resource": {
 			"displayName": "Ресурс",
 			"options": {
 				"attendance": {
-					"displayName": "посещаемость"
+					"displayName": "Посещаемость"
 				},
 				"event": {
 					"displayName": "Событие"
@@ -26,7 +26,7 @@
 					"displayName": "Подпись"
 				},
 				"tag": {
-					"displayName": "Ярлык"
+					"displayName": "Тег"
 				}
 			}
 		},
@@ -34,7 +34,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать"
+					"displayName": "Создать"
 				},
 				"get": {
 					"displayName": "Получать"
@@ -43,10 +43,10 @@
 					"displayName": "Получить много"
 				},
 				"update": {
-					"displayName": "Обновлять"
+					"displayName": "Обновить"
 				},
 				"add": {
-					"displayName": "Добавлять"
+					"displayName": "Добавить"
 				},
 				"remove": {
 					"displayName": "Удалять"
@@ -54,20 +54,20 @@
 			}
 		},
 		"personId": {
-			"displayName": "Идентификатор человека",
-			"description": "Идентификатор человека, к которому нужно добавить тег"
+			"displayName": "ID человека",
+			"description": "ID человека для добавления тега"
 		},
 		"eventId": {
-			"displayName": "Идентификатор события",
-			"description": "Идентификатор события, которое нужно получить"
+			"displayName": "ID события",
+			"description": "ID события для получения"
 		},
 		"simple": {
-			"displayName": "Упрощать",
-			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+			"displayName": "Упростить",
+			"description": "Возвращать ли упрощённую версию ответа вместо необработанных данных"
 		},
 		"attendanceId": {
-			"displayName": "Идентификатор посещаемости",
-			"description": "Идентификатор посещаемости для получения"
+			"displayName": "ID посещаемости",
+			"description": "ID посещаемости для получения"
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",
@@ -75,15 +75,15 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"originSystem": {
-			"displayName": "Система происхождения",
-			"description": "Источник, откуда возникла петиция"
+			"displayName": "Система источника",
+			"description": "Источник, откуда взялась петиция"
 		},
 		"title": {
-			"displayName": "Заголовок",
-			"description": "Название петиции о создании"
+			"displayName": "Название",
+			"description": "Название создаваемой петиции"
 		},
 		"additionalFields": {
 			"displayName": "Дополнительные поля",
@@ -95,19 +95,19 @@
 				},
 				"description": {
 					"displayName": "Описание",
-					"description": "Описание события. HTML поддерживается."
+					"description": "Описание события. Поддерживается HTML."
 				},
 				"end_date": {
 					"displayName": "Дата окончания",
-					"description": "Дата и время окончания мероприятия"
+					"description": "Дата и время окончания события"
 				},
 				"featured_image_url": {
-					"displayName": "URL избранного изображения",
+					"displayName": "URL-адрес избранного изображения",
 					"description": "URL-адрес избранного изображения этого действия в сети действий."
 				},
 				"instructions": {
 					"displayName": "Инструкции",
-					"description": "Инструкции для активистов, видимые после того, как они ответят на приглашение. HTML поддерживается."
+					"description": "Инструкции события для активистов, видимые после подтверждения участия. Поддерживается HTML."
 				},
 				"location": {
 					"values": {
@@ -117,7 +117,7 @@
 						"postal_addresses_fields": {
 							"options": {
 								"primary": {
-									"displayName": "Начальный",
+									"displayName": "Основной",
 									"description": "Является ли это основным адресом человека"
 								},
 								"address_lines": {
@@ -126,15 +126,15 @@
 								},
 								"locality": {
 									"displayName": "Местность",
-									"description": "Город или другая местная административная единица. Если поле пустое, оно будет заполнено на основе геокодирования Action Network."
+									"description": "Город или другая местная административная единица. Если пусто, будет заполнено на основе геокодирования Action Network."
 								},
 								"region": {
-									"displayName": "Область",
-									"description": "Код штата или подразделения по ISO 3166-2"
+									"displayName": "Регион",
+									"description": "Код штата или подразделения согласно ISO 3166-2"
 								},
 								"postal_code": {
 									"displayName": "Почтовый индекс",
-									"description": "Почтовый индекс конкретного региона, например почтовый индекс."
+									"description": "Почтовый индекс конкретного региона, например почтовый индекс США"
 								},
 								"country": {
 									"displayName": "Страна",
@@ -142,7 +142,7 @@
 								},
 								"language": {
 									"displayName": "Язык",
-									"description": "Язык, на котором записан адрес, согласно ISO 639."
+									"description": "Язык, на котором записан адрес, согласно ISO 639"
 								},
 								"location": {
 									"values": {
@@ -153,7 +153,7 @@
 											"options": {
 												"latitude": {
 													"displayName": "Широта",
-													"description": "Широта расположения адреса"
+													"description": "Широта местоположения адреса"
 												},
 												"longitude": {
 													"displayName": "Долгота",
@@ -182,18 +182,18 @@
 				},
 				"name": {
 					"displayName": "Имя",
-					"description": "Внутреннее (не публичное) название петиции"
+					"description": "Внутреннее (не общественное) название петиции"
 				},
 				"start_date": {
 					"displayName": "Дата начала",
-					"description": "Дата и время начала мероприятия"
+					"description": "Дата и время начала события"
 				},
 				"family_name": {
 					"displayName": "Фамилия",
 					"description": "Фамилия человека"
 				},
 				"given_name": {
-					"displayName": "Собственное имя",
+					"displayName": "Имя",
 					"description": "Имя человека"
 				},
 				"languages_spoken": {
@@ -204,16 +204,16 @@
 							"displayName": "датский"
 						},
 						"nl": {
-							"displayName": "Голландский"
+							"displayName": "голландский"
 						},
 						"en": {
-							"displayName": "Английский"
+							"displayName": "английский"
 						},
 						"fi": {
 							"displayName": "финский"
 						},
 						"fr": {
-							"displayName": "Французский"
+							"displayName": "французский"
 						},
 						"de": {
 							"displayName": "немецкий"
@@ -228,10 +228,10 @@
 							"displayName": "японский"
 						},
 						"pt": {
-							"displayName": "Португальский - Португалия"
+							"displayName": "португальский - Португалия"
 						},
 						"br": {
-							"displayName": "Португальский - Бразилия"
+							"displayName": "португальский - Бразилия"
 						},
 						"ru": {
 							"displayName": "румынский"
@@ -240,7 +240,7 @@
 							"displayName": "испанский"
 						},
 						"sv": {
-							"displayName": "Шведский"
+							"displayName": "шведский"
 						},
 						"tr": {
 							"displayName": "турецкий"
@@ -259,23 +259,23 @@
 							"options": {
 								"number": {
 									"displayName": "Число",
-									"description": "Номер мобильного телефона человека в международном формате без плюсика."
+									"description": "Номер мобильного телефона человека в международном формате без плюса"
 								},
 								"status": {
 									"displayName": "Статус",
-									"description": "Статус подписки этого номера",
+									"description": "Статус подписки на этот номер",
 									"options": {
 										"bouncing": {
-											"displayName": "подпрыгивая"
+											"displayName": "Отскок"
 										},
 										"previous bounce": {
-											"displayName": "Предыдущий отказ"
+											"displayName": "Предыдущий отскок"
 										},
 										"subscribed": {
 											"displayName": "Подписан"
 										},
 										"unsubscribed": {
-											"displayName": "Отменил подписку"
+											"displayName": "Отписан"
 										}
 									}
 								}
@@ -298,7 +298,7 @@
 						"postal_addresses_fields": {
 							"options": {
 								"primary": {
-									"displayName": "Начальный",
+									"displayName": "Основной",
 									"description": "Является ли это основным адресом человека"
 								},
 								"address_lines": {
@@ -307,15 +307,15 @@
 								},
 								"locality": {
 									"displayName": "Местность",
-									"description": "Город или другая местная административная единица. Если поле пустое, оно будет заполнено на основе геокодирования Action Network."
+									"description": "Город или другая местная административная единица. Если пусто, будет заполнено на основе геокодирования Action Network."
 								},
 								"region": {
-									"displayName": "Область",
-									"description": "Код штата или подразделения по ISO 3166-2"
+									"displayName": "Регион",
+									"description": "Код штата или подразделения согласно ISO 3166-2"
 								},
 								"postal_code": {
 									"displayName": "Почтовый индекс",
-									"description": "Почтовый индекс конкретного региона, например почтовый индекс."
+									"description": "Почтовый индекс конкретного региона, например почтовый индекс США"
 								},
 								"country": {
 									"displayName": "Страна",
@@ -323,7 +323,7 @@
 								},
 								"language": {
 									"displayName": "Язык",
-									"description": "Язык, на котором записан адрес, согласно ISO 639."
+									"description": "Язык, на котором записан адрес, согласно ISO 639"
 								},
 								"location": {
 									"values": {
@@ -334,7 +334,7 @@
 											"options": {
 												"latitude": {
 													"displayName": "Широта",
-													"description": "Широта расположения адреса"
+													"description": "Широта местоположения адреса"
 												},
 												"longitude": {
 													"displayName": "Долгота",
@@ -366,12 +366,12 @@
 					"description": "Текст письма адресату петиции"
 				},
 				"target": {
-					"displayName": "Цели",
-					"description": "Названия целей этой петиции, разделенные запятыми."
+					"displayName": "Целевые адресаты",
+					"description": "Названия целевых адресатов петиции, разделённые запятыми"
 				},
 				"comments": {
 					"displayName": "Комментарии",
-					"description": "Комментарии, которые следует оставить при подписании этой петиции"
+					"description": "Комментарии при подписании петиции"
 				}
 			}
 		},
@@ -393,10 +393,10 @@
 							"description": "Статус подписки на этот адрес электронной почты",
 							"options": {
 								"bouncing": {
-									"displayName": "подпрыгивая"
+									"displayName": "Отскок"
 								},
 								"previous bounce": {
-									"displayName": "Предыдущий отказ"
+									"displayName": "Предыдущий отскок"
 								},
 								"previous spam complaint": {
 									"displayName": "Предыдущая жалоба на спам"
@@ -408,7 +408,7 @@
 									"displayName": "Подписан"
 								},
 								"unsubscribed": {
-									"displayName": "Отменил подписку"
+									"displayName": "Отписан"
 								}
 							}
 						}
@@ -428,7 +428,7 @@
 					"description": "Фамилия человека"
 				},
 				"given_name": {
-					"displayName": "Собственное имя",
+					"displayName": "Имя",
 					"description": "Имя человека"
 				},
 				"languages_spoken": {
@@ -439,16 +439,16 @@
 							"displayName": "датский"
 						},
 						"nl": {
-							"displayName": "Голландский"
+							"displayName": "голландский"
 						},
 						"en": {
-							"displayName": "Английский"
+							"displayName": "английский"
 						},
 						"fi": {
 							"displayName": "финский"
 						},
 						"fr": {
-							"displayName": "Французский"
+							"displayName": "французский"
 						},
 						"de": {
 							"displayName": "немецкий"
@@ -463,10 +463,10 @@
 							"displayName": "японский"
 						},
 						"pt": {
-							"displayName": "Португальский - Португалия"
+							"displayName": "португальский - Португалия"
 						},
 						"br": {
-							"displayName": "Португальский - Бразилия"
+							"displayName": "португальский - Бразилия"
 						},
 						"ru": {
 							"displayName": "румынский"
@@ -475,7 +475,7 @@
 							"displayName": "испанский"
 						},
 						"sv": {
-							"displayName": "Шведский"
+							"displayName": "шведский"
 						},
 						"tr": {
 							"displayName": "турецкий"
@@ -494,23 +494,23 @@
 							"options": {
 								"number": {
 									"displayName": "Число",
-									"description": "Номер мобильного телефона человека в международном формате без плюсика."
+									"description": "Номер мобильного телефона человека в международном формате без плюса"
 								},
 								"status": {
 									"displayName": "Статус",
-									"description": "Статус подписки этого номера",
+									"description": "Статус подписки на этот номер",
 									"options": {
 										"bouncing": {
-											"displayName": "подпрыгивая"
+											"displayName": "Отскок"
 										},
 										"previous bounce": {
-											"displayName": "Предыдущий отказ"
+											"displayName": "Предыдущий отскок"
 										},
 										"subscribed": {
 											"displayName": "Подписан"
 										},
 										"unsubscribed": {
-											"displayName": "Отменил подписку"
+											"displayName": "Отписан"
 										}
 									}
 								}
@@ -533,7 +533,7 @@
 						"postal_addresses_fields": {
 							"options": {
 								"primary": {
-									"displayName": "Начальный",
+									"displayName": "Основной",
 									"description": "Является ли это основным адресом человека"
 								},
 								"address_lines": {
@@ -542,15 +542,15 @@
 								},
 								"locality": {
 									"displayName": "Местность",
-									"description": "Город или другая местная административная единица. Если поле пустое, оно будет заполнено на основе геокодирования Action Network."
+									"description": "Город или другая местная административная единица. Если пусто, будет заполнено на основе геокодирования Action Network."
 								},
 								"region": {
-									"displayName": "Область",
-									"description": "Код штата или подразделения по ISO 3166-2"
+									"displayName": "Регион",
+									"description": "Код штата или подразделения согласно ISO 3166-2"
 								},
 								"postal_code": {
 									"displayName": "Почтовый индекс",
-									"description": "Почтовый индекс конкретного региона, например почтовый индекс."
+									"description": "Почтовый индекс конкретного региона, например почтовый индекс США"
 								},
 								"country": {
 									"displayName": "Страна",
@@ -558,7 +558,7 @@
 								},
 								"language": {
 									"displayName": "Язык",
-									"description": "Язык, на котором записан адрес, согласно ISO 639."
+									"description": "Язык, на котором записан адрес, согласно ISO 639"
 								},
 								"location": {
 									"values": {
@@ -569,7 +569,7 @@
 											"options": {
 												"latitude": {
 													"displayName": "Широта",
-													"description": "Широта расположения адреса"
+													"description": "Широта местоположения адреса"
 												},
 												"longitude": {
 													"displayName": "Долгота",
@@ -601,46 +601,46 @@
 					"description": "URL-адрес страницы этой петиции в Action Network или на третьей стороне."
 				},
 				"featured_image_url": {
-					"displayName": "URL избранного изображения",
+					"displayName": "URL-адрес избранного изображения",
 					"description": "URL-адрес избранного изображения этого действия в сети действий."
 				},
 				"name": {
 					"displayName": "Имя",
-					"description": "Внутреннее (не публичное) название петиции"
+					"description": "Внутреннее (не общественное) название петиции"
 				},
 				"petition_text": {
 					"displayName": "Текст петиции",
 					"description": "Текст письма адресату петиции"
 				},
 				"target": {
-					"displayName": "Цели",
-					"description": "Названия целей этой петиции, разделенные запятыми."
+					"displayName": "Целевые адресаты",
+					"description": "Названия целевых адресатов петиции, разделённые запятыми"
 				},
 				"comments": {
 					"displayName": "Комментарии",
-					"description": "Комментарии, которые следует оставить при подписании этой петиции"
+					"description": "Комментарии при подписании петиции"
 				}
 			}
 		},
 		"petitionId": {
-			"displayName": "Идентификатор петиции",
-			"description": "Идентификатор петиции, подпись которой обновить"
+			"displayName": "ID петиции",
+			"description": "ID петиции, подпись которой нужно обновить"
 		},
 		"signatureId": {
-			"displayName": "Идентификатор подписи",
-			"description": "Идентификатор подписи для обновления"
+			"displayName": "ID подписи",
+			"description": "ID подписи для обновления"
 		},
 		"name": {
 			"displayName": "Имя",
-			"description": "Имя тега, который нужно создать"
+			"description": "Название создаваемого тега"
 		},
 		"tagId": {
-			"displayName": "Имя или идентификатор тега",
-			"description": "Идентификатор тега, пометку которого нужно удалить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"displayName": "Название или ID тега",
+			"description": "ID тега, пометку которого нужно удалить. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"taggingId": {
-			"displayName": "Имя или идентификатор тега",
-			"description": "Идентификатор тега, который нужно удалить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"displayName": "Название или ID пометки",
+			"description": "ID пометки для удаления. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		}
 	}
 }

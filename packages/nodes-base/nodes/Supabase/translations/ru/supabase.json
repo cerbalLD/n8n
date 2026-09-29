@@ -16,7 +16,7 @@
 			"displayName": "Ресурс",
 			"options": {
 				"row": {
-					"displayName": "Ряд"
+					"displayName": "строка"
 				}
 			}
 		},
@@ -24,7 +24,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать новую строку"
 				},
 				"delete": {
@@ -33,30 +33,30 @@
 				},
 				"get": {
 					"displayName": "Получать",
-					"description": "Получить ряд"
+					"description": "Получить строку"
 				},
 				"getAll": {
 					"displayName": "Получить много",
 					"description": "Получить много строк"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить строку"
 				}
 			}
 		},
 		"tableId": {
 			"displayName": "Имя или идентификатор таблицы",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"filterType": {
 			"displayName": "Фильтр",
 			"options": {
 				"manual": {
-					"displayName": "Сборка вручную"
+					"displayName": "Построить вручную"
 				},
 				"string": {
-					"displayName": "Нить"
+					"displayName": "Текст"
 				},
 				"none": {
 					"displayName": "Никто"
@@ -64,7 +64,7 @@
 			}
 		},
 		"matchType": {
-			"displayName": "Должен совпадать",
+			"displayName": "Должно совпадать",
 			"options": {
 				"anyFilter": {
 					"displayName": "Любой фильтр"
@@ -84,11 +84,11 @@
 					"displayName": "Условия",
 					"values": {
 						"keyName": {
-							"displayName": "Имя поля или идентификатор",
-							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+							"displayName": "Имя поля или ID",
+							"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 						},
 						"condition": {
-							"displayName": "Состояние",
+							"displayName": "Условие",
 							"options": {
 								"eq": {
 									"displayName": "Равно"
@@ -97,7 +97,7 @@
 									"displayName": "Полнотекстовый"
 								},
 								"gt": {
-									"displayName": "Больше, чем"
+									"displayName": "Больше чем"
 								},
 								"gte": {
 									"displayName": "Больше или равно"
@@ -107,11 +107,11 @@
 									"description": "Используйте * вместо %"
 								},
 								"is": {
-									"displayName": "Является",
+									"displayName": "Равно",
 									"description": "Проверка точного равенства (ноль, истина, ложь, неизвестно)"
 								},
 								"lt": {
-									"displayName": "Меньше, чем"
+									"displayName": "Меньше чем"
 								},
 								"lte": {
 									"displayName": "Меньше или равно"
@@ -163,19 +163,19 @@
 			"displayName": "Данные для отправки",
 			"options": {
 				"autoMapInputData": {
-					"displayName": "Автоматическое сопоставление входных данных с столбцами",
-					"description": "Используйте, когда входные свойства узла соответствуют именам столбцов назначения."
+					"displayName": "Автоматически сопоставить входные данные столбцам",
+					"description": "Используйте, когда входные свойства узла совпадают с именами целевых столбцов"
 				},
 				"defineBelow": {
-					"displayName": "Определите ниже для каждого столбца",
+					"displayName": "Определите для каждого столбца",
 					"description": "Установите значение для каждого столбца назначения"
 				}
 			}
 		},
 		"inputsToIgnore": {
-			"displayName": "Входные данные, которые следует игнорировать",
-			"description": "Список входных свойств, которые следует избегать при отправке, разделенных запятыми. Оставьте пустым, чтобы отправить все свойства.",
-			"placeholder": "Введите свойства..."
+			"displayName": "Входные данные для игнорирования",
+			"description": "Список входных свойств для пропуска, разделённых запятыми. Оставьте пусто, чтобы отправить все свойства.",
+			"placeholder": "Введите свойства…"
 		},
 		"fieldsUi": {
 			"options": {
@@ -186,8 +186,8 @@
 					"displayName": "Поле",
 					"values": {
 						"fieldId": {
-							"displayName": "Имя поля или идентификатор",
-							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+							"displayName": "Имя поля или ID",
+							"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 						},
 						"fieldValue": {
 							"displayName": "Значение поля"
@@ -205,10 +205,10 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"orderBy": {
-			"displayName": "Заказать по",
+			"displayName": "Сортировать по",
 			"description": "Столбец(и) для упорядочивания результатов, например. <code>ID</code> или <code>created_at.desc</code>. Рекомендуется при использовании «Вернуть все» или «Ограничить ≥ 1000», чтобы избежать дублирования или отсутствия записей.",
 			"placeholder": "например ID или созданный_at.desc"
 		}

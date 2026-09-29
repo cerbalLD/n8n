@@ -14,7 +14,7 @@
 					"displayName": "Компания"
 				},
 				"deal": {
-					"displayName": "Иметь дело"
+					"displayName": "Сделка"
 				}
 			}
 		},
@@ -22,7 +22,7 @@
 			"displayName": "Операция",
 			"options": {
 				"create": {
-					"displayName": "Создавать",
+					"displayName": "Создать",
 					"description": "Создать сделку"
 				},
 				"delete": {
@@ -31,14 +31,14 @@
 				},
 				"get": {
 					"displayName": "Получать",
-					"description": "Заключить сделку"
+					"description": "Получить сделку"
 				},
 				"getAll": {
 					"displayName": "Получить много",
-					"description": "Получите много предложений"
+					"description": "Получить несколько сделок"
 				},
 				"update": {
-					"displayName": "Обновлять",
+					"displayName": "Обновить",
 					"description": "Обновить сделку"
 				}
 			}
@@ -48,7 +48,7 @@
 		},
 		"owner": {
 			"displayName": "Имя или идентификатор владельца",
-			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"rawData": {
 			"displayName": "Необработанные данные",
@@ -80,10 +80,10 @@
 					"displayName": "Идентификатор Скайпа"
 				},
 				"twitterHandle": {
-					"displayName": "Твиттер-дескриптор"
+					"displayName": "Дескриптор Twitter"
 				},
 				"currency": {
-					"displayName": "Валюта"
+					"displayName": "валюта"
 				},
 				"billingAddressLine1": {
 					"displayName": "Строка платежного адреса 1"
@@ -125,8 +125,8 @@
 					"description": "Завершено ли действие или нет"
 				},
 				"primaryCompany": {
-					"displayName": "Основное название или идентификатор компании",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"displayName": "Основная компания — имя или идентификатор",
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"source": {
 					"displayName": "Источник",
@@ -135,7 +135,7 @@
 							"displayName": "Объявления"
 						},
 						"Referrals": {
-							"displayName": "Рефералы"
+							"displayName": "рефералы"
 						},
 						"Website": {
 							"displayName": "Веб-сайт"
@@ -158,7 +158,7 @@
 							"displayName": "Высокий"
 						},
 						"Medium": {
-							"displayName": "Середина"
+							"displayName": "Средний"
 						},
 						"Low": {
 							"displayName": "Низкий"
@@ -168,7 +168,7 @@
 			}
 		},
 		"id": {
-			"displayName": "Идентификатор сделки",
+			"displayName": "ID сделки",
 			"description": "Если сделок несколько, добавьте их через ,"
 		},
 		"updateFields": {
@@ -180,7 +180,7 @@
 				},
 				"owner": {
 					"displayName": "Имя или идентификатор владельца",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"website": {
 					"displayName": "Веб-сайт"
@@ -204,10 +204,10 @@
 					"displayName": "Идентификатор Скайпа"
 				},
 				"twitterHandle": {
-					"displayName": "Твиттер-дескриптор"
+					"displayName": "Дескриптор Twitter"
 				},
 				"currency": {
-					"displayName": "Валюта"
+					"displayName": "валюта"
 				},
 				"billingAddressLine1": {
 					"displayName": "Строка платежного адреса 1"
@@ -233,7 +233,7 @@
 					"description": "Это поле содержит теги, связанные со сделкой."
 				},
 				"title": {
-					"displayName": "Заголовок"
+					"displayName": "Название"
 				},
 				"type": {
 					"displayName": "Тип"
@@ -256,7 +256,7 @@
 				},
 				"primaryContact": {
 					"displayName": "Имя или идентификатор основного контактного лица",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"pipeline": {
 					"displayName": "Трубопровод",
@@ -273,10 +273,10 @@
 							"displayName": "Открыть"
 						},
 						"Close": {
-							"displayName": "Закрывать"
+							"displayName": "Закрыть"
 						},
 						"Lost": {
-							"displayName": "Потерянный"
+							"displayName": "Потеряна"
 						}
 					}
 				},
@@ -301,8 +301,8 @@
 					}
 				},
 				"primaryCompany": {
-					"displayName": "Основное название или идентификатор компании",
-					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"displayName": "Основная компания — имя или идентификатор",
+					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"source": {
 					"displayName": "Источник",
@@ -311,7 +311,7 @@
 							"displayName": "Объявления"
 						},
 						"Referrals": {
-							"displayName": "Рефералы"
+							"displayName": "рефералы"
 						},
 						"Website": {
 							"displayName": "Веб-сайт"
@@ -334,7 +334,7 @@
 							"displayName": "Высокий"
 						},
 						"Medium": {
-							"displayName": "Середина"
+							"displayName": "Средний"
 						},
 						"Low": {
 							"displayName": "Низкий"
@@ -349,7 +349,7 @@
 		},
 		"limit": {
 			"displayName": "Лимит",
-			"description": "Максимальное количество возвращаемых результатов"
+			"description": "Максимальное количество результатов для возврата"
 		},
 		"jsonParameters": {
 			"displayName": "Параметры JSON"
@@ -422,7 +422,7 @@
 													"displayName": "Телефон"
 												},
 												"title": {
-													"displayName": "Заголовок"
+													"displayName": "Название"
 												},
 												"tags": {
 													"displayName": "Теги"
@@ -433,8 +433,8 @@
 											}
 										},
 										"condition": {
-											"displayName": "Состояние",
-											"description": "Значение свойства для установки",
+											"displayName": "Условие",
+											"description": "Значение для установки",
 											"options": {
 												"EQUALS": {
 													"displayName": "Равно"
@@ -449,7 +449,7 @@
 													"displayName": "Не содержит"
 												},
 												"EMPTY": {
-													"displayName": "Пустой"
+													"displayName": "Пусто"
 												},
 												"NOT_EMPTY": {
 													"displayName": "Не пусто"
@@ -463,7 +463,7 @@
 											}
 										},
 										"value": {
-											"displayName": "Ценить"
+											"displayName": "Значение"
 										}
 									}
 								}
@@ -478,7 +478,7 @@
 			"displayName": "Фильтры"
 		},
 		"title": {
-			"displayName": "Заголовок"
+			"displayName": "Название"
 		},
 		"type": {
 			"displayName": "Тип",
@@ -503,10 +503,10 @@
 					"displayName": "Открыть"
 				},
 				"Close": {
-					"displayName": "Закрывать"
+					"displayName": "Закрыть"
 				},
 				"Lost": {
-					"displayName": "Потерянный"
+					"displayName": "Потеряна"
 				}
 			}
 		},
@@ -531,7 +531,7 @@
 			}
 		},
 		"currency": {
-			"displayName": "Валюта"
+			"displayName": "валюта"
 		}
 	}
 }

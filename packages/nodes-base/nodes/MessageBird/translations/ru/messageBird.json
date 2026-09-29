@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "СообщениеПтица",
-		"description": "Отправляет SMS через MessageBird"
+		"displayName": "MessageBird",
+		"description": "Отправка SMS через MessageBird"
 	},
 	"nodeView": {
 		"resource": {
@@ -19,8 +19,8 @@
 			"displayName": "Операция",
 			"options": {
 				"send": {
-					"displayName": "Отправлять",
-					"description": "Отправка текстовых сообщений (SMS)"
+					"displayName": "Отправить",
+					"description": "Отправить текстовые сообщения (SMS)"
 				},
 				"get": {
 					"displayName": "Получать",
@@ -34,13 +34,13 @@
 			"placeholder": "14155238886"
 		},
 		"recipients": {
-			"displayName": "К",
-			"description": "Все получатели разделены запятыми.",
+			"displayName": "До",
+			"description": "Все получатели, разделённые запятыми",
 			"placeholder": "14155238886/+14155238886"
 		},
 		"message": {
 			"displayName": "Сообщение",
-			"description": "Сообщение, которое нужно отправить"
+			"description": "Сообщение для отправки"
 		},
 		"additionalFields": {
 			"displayName": "Дополнительные поля",
@@ -52,7 +52,7 @@
 				},
 				"datacoding": {
 					"displayName": "Кодирование данных",
-					"description": "Использование Unicode ограничит максимальное количество символов до 70 вместо 160.",
+					"description": "Unicode ограничит максимум символов до 70 вместо 160",
 					"options": {
 						"auto": {
 							"displayName": "Авто"
@@ -61,22 +61,22 @@
 							"displayName": "Простой"
 						},
 						"unicode": {
-							"displayName": "Юникод"
+							"displayName": "Unicode"
 						}
 					}
 				},
 				"gateway": {
-					"displayName": "шлюз",
-					"description": "Маршрут SMS, используемый для отправки сообщения"
+					"displayName": "Шлюз",
+					"description": "Маршрут SMS для отправки сообщения"
 				},
 				"groupIds": {
-					"displayName": "Идентификаторы групп",
-					"description": "Идентификаторы групп, разделенные запятыми. Если указаны получатели, их можно опустить.",
+					"displayName": "ID групп",
+					"description": "Идентификаторы групп, разделённые запятыми. Если указаны, получатели можно опустить.",
 					"placeholder": "1,2"
 				},
 				"mclass": {
 					"displayName": "Тип сообщения",
-					"description": "Указал тип сообщения. 1 — обычное сообщение, 0 — мгновенное сообщение.",
+					"description": "Тип сообщения: 1 = обычное, 0 = вспышка",
 					"placeholder": "Допустимые значения от 0 до 3",
 					"options": {
 						"0": {
@@ -89,19 +89,19 @@
 				},
 				"reference": {
 					"displayName": "Ссылка",
-					"description": "Ссылка на клиента"
+					"description": "Ссылка клиента"
 				},
 				"reportUrl": {
-					"displayName": "URL-адрес отчета",
-					"description": "URL-адрес отчета о состоянии, который будет использоваться для каждого сообщения. Для отправки веб-перехватчика отчета о состоянии требуется ссылка."
+					"displayName": "URL отчёта",
+					"description": "URL отчёта о статусе для каждого сообщения. Требуется для отправки вебхука."
 				},
 				"scheduledDatetime": {
 					"displayName": "Запланированная дата и время",
-					"description": "Запланированная дата и время сообщения в формате RFC3339 (Y-m-dTH:i:sP)."
+					"description": "Запланированная дата и время сообщения в формате RFC3339 (Y-m-dTH:i:sP)"
 				},
 				"type": {
 					"displayName": "Тип",
-					"description": "Тип сообщения. Значения могут быть: sms, двоичные или flash.",
+					"description": "Тип сообщения: sms, binary или flash",
 					"options": {
 						"binary": {
 							"displayName": "Двоичный"
@@ -115,12 +115,12 @@
 					}
 				},
 				"typeDetails": {
-					"displayName": "Тип Детали",
-					"description": "Хэш с дополнительной информацией. Используется только при отправке двоичного сообщения."
+					"displayName": "Детали типа",
+					"description": "Хеш с дополнительной информацией. Используется только для двоичных сообщений."
 				},
 				"validity": {
 					"displayName": "Срок действия",
-					"description": "Количество секунд, в течение которых сообщение действительно"
+					"description": "Время в секундах, пока сообщение действительно"
 				}
 			}
 		}
