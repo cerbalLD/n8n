@@ -1,0 +1,844 @@
+{
+	"header": {
+		"displayName": "Улей",
+		"description": "Использование TheHive API"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"alert": {
+					"displayName": "Тревога"
+				},
+				"case": {
+					"displayName": "Случай"
+				},
+				"log": {
+					"displayName": "Бревно"
+				},
+				"observable": {
+					"displayName": "наблюдаемый"
+				},
+				"task": {
+					"displayName": "Задача"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать журнал задач"
+				},
+				"executeResponder": {
+					"displayName": "Выполнить ответчика",
+					"description": "Выполнить ответчик в выбранном журнале"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получите множество журналов задач"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить единый журнал"
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"id": {
+			"displayName": "Идентификатор журнала",
+			"description": "Идентификатор такса"
+		},
+		"caseId": {
+			"displayName": "Идентификатор дела",
+			"description": "Идентификатор дела"
+		},
+		"title": {
+			"displayName": "Заголовок",
+			"description": "Подробности задачи"
+		},
+		"description": {
+			"displayName": "Описание",
+			"description": "Описание случая"
+		},
+		"severity": {
+			"displayName": "Серьезность",
+			"description": "Серьезность предупреждения. По умолчанию = Средний.",
+			"options": {
+				"1": {
+					"displayName": "Низкий"
+				},
+				"2": {
+					"displayName": "Середина"
+				},
+				"3": {
+					"displayName": "Высокий"
+				}
+			}
+		},
+		"date": {
+			"displayName": "Дата",
+			"description": "Дата и время появления оповещения по умолчанию=сейчас"
+		},
+		"tags": {
+			"displayName": "Теги",
+			"description": "Теги корпуса",
+			"placeholder": "тег, тег2, тег3..."
+		},
+		"tlp": {
+			"displayName": "TLP",
+			"description": "Протокол светофора (TLP). По умолчанию = Янтарный.",
+			"options": {
+				"0": {
+					"displayName": "Белый"
+				},
+				"1": {
+					"displayName": "Зеленый"
+				},
+				"2": {
+					"displayName": "Янтарь"
+				},
+				"3": {
+					"displayName": "Красный"
+				}
+			}
+		},
+		"status": {
+			"displayName": "Статус",
+			"description": "Статус журнала (ОК или Удалено) по умолчанию = ОК",
+			"options": {
+				"New": {
+					"displayName": "Новый"
+				},
+				"Updated": {
+					"displayName": "Обновлено"
+				},
+				"Ignored": {
+					"displayName": "игнорируется"
+				},
+				"Imported": {
+					"displayName": "Импортировано"
+				},
+				"Ok": {
+					"displayName": "Хорошо"
+				},
+				"Deleted": {
+					"displayName": "Удалено"
+				},
+				"Cancel": {
+					"displayName": "Отмена"
+				},
+				"Completed": {
+					"displayName": "Завершенный"
+				},
+				"InProgress": {
+					"displayName": "В ходе выполнения"
+				},
+				"Waiting": {
+					"displayName": "Ожидающий"
+				}
+			}
+		},
+		"type": {
+			"displayName": "Тип",
+			"description": "Тип оповещения"
+		},
+		"source": {
+			"displayName": "Источник",
+			"description": "Источник оповещения"
+		},
+		"sourceRef": {
+			"displayName": "ИсточникСсылка",
+			"description": "Ссылка на источник оповещения"
+		},
+		"follow": {
+			"displayName": "Следовать",
+			"description": "Станет ли предупреждение активным при обновлении default=true"
+		},
+		"artifactUi": {
+			"options": {
+				"artifactUi": {
+					"displayName": "Артефакты",
+					"description": "Атрибуты артефакта"
+				},
+				"artifactValues": {
+					"displayName": "Артефакт",
+					"values": {
+						"dataType": {
+							"displayName": "Имя или идентификатор типа данных",
+							"description": "Тип наблюдаемого. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+						},
+						"data": {
+							"displayName": "Данные"
+						},
+						"binaryProperty": {
+							"displayName": "Входное двоичное поле",
+							"hint": "Имя входного двоичного поля, содержащего файл для записи."
+						},
+						"message": {
+							"displayName": "Сообщение"
+						},
+						"tags": {
+							"displayName": "Теги корпуса"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить артефакт",
+			"displayName": "Артефакты",
+			"description": "Атрибуты артефакта"
+		},
+		"responder": {
+			"displayName": "Имя или идентификатор ответчика",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"jsonParameters": {
+			"displayName": "Параметры JSON"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"caseTemplate": {
+					"displayName": "Шаблон дела",
+					"description": "Шаблон обращения, который будет использоваться при создании обращения на основе этого оповещения"
+				},
+				"customFieldsUi": {
+					"values": {
+						"customFieldsUi": {
+							"displayName": "Пользовательские поля"
+						},
+						"customFields": {
+							"options": {
+								"field": {
+									"displayName": "Имя поля или идентификатор",
+									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Значение пользовательского поля. Используйте выражение, если тип не является строкой."
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить настраиваемое поле",
+					"displayName": "Пользовательские поля",
+					"options": {
+						"customFields": {
+							"displayName": "Пользовательское поле"
+						}
+					}
+				},
+				"customFieldsJson": {
+					"displayName": "Пользовательские поля (JSON)",
+					"description": "Пользовательские поля в формате JSON. Переопределяет пользовательский интерфейс настраиваемых полей, если установлено."
+				}
+			}
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"artifactUi": {
+					"values": {
+						"artifactUi": {
+							"displayName": "Артефакты"
+						},
+						"artifactValues": {
+							"options": {
+								"dataType": {
+									"displayName": "Имя или идентификатор типа данных",
+									"description": "Тип наблюдаемого. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								},
+								"data": {
+									"displayName": "Данные"
+								},
+								"binaryProperty": {
+									"displayName": "Входное двоичное поле",
+									"hint": "Имя входного двоичного поля, содержащего файл для записи."
+								},
+								"message": {
+									"displayName": "Сообщение"
+								},
+								"tags": {
+									"displayName": "Теги корпуса"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить артефакт",
+					"displayName": "Артефакты",
+					"options": {
+						"artifactValues": {
+							"displayName": "Артефакт"
+						}
+					}
+				},
+				"customFieldsUi": {
+					"values": {
+						"customFieldsUi": {
+							"displayName": "Пользовательские поля"
+						},
+						"customFields": {
+							"options": {
+								"field": {
+									"displayName": "Имя поля или идентификатор",
+									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Значение пользовательского поля. Используйте выражение, если тип не является строкой."
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить настраиваемое поле",
+					"displayName": "Пользовательские поля",
+					"options": {
+						"customFields": {
+							"displayName": "Пользовательское поле"
+						}
+					}
+				},
+				"customFieldsJson": {
+					"displayName": "Пользовательские поля (JSON)",
+					"description": "Пользовательские поля в формате JSON. Переопределяет пользовательский интерфейс настраиваемых полей, если установлено."
+				},
+				"caseTemplate": {
+					"displayName": "Шаблон дела",
+					"description": "Шаблон обращения, который будет использоваться при создании обращения на основе этого оповещения"
+				},
+				"description": {
+					"displayName": "Описание",
+					"description": "Подробности задачи"
+				},
+				"follow": {
+					"displayName": "Следовать",
+					"description": "Станет ли предупреждение активным при обновлении default=true"
+				},
+				"severity": {
+					"displayName": "Серьезность",
+					"description": "Серьезность предупреждения. По умолчанию = Средний.",
+					"options": {
+						"1": {
+							"displayName": "Низкий"
+						},
+						"2": {
+							"displayName": "Середина"
+						},
+						"3": {
+							"displayName": "Высокий"
+						}
+					}
+				},
+				"status": {
+					"displayName": "Статус",
+					"options": {
+						"New": {
+							"displayName": "Новый"
+						},
+						"Updated": {
+							"displayName": "Обновлено"
+						},
+						"Ignored": {
+							"displayName": "игнорируется"
+						},
+						"Imported": {
+							"displayName": "Импортировано"
+						},
+						"Ok": {
+							"displayName": "Хорошо"
+						},
+						"Deleted": {
+							"displayName": "Удалено"
+						},
+						"Open": {
+							"displayName": "Открыть"
+						},
+						"Resolved": {
+							"displayName": "Решено"
+						},
+						"Cancel": {
+							"displayName": "Отмена"
+						},
+						"Completed": {
+							"displayName": "Завершенный"
+						},
+						"InProgress": {
+							"displayName": "В ходе выполнения"
+						},
+						"Waiting": {
+							"displayName": "Ожидающий"
+						}
+					},
+					"description": "Статус задачи. По умолчанию = Ожидание."
+				},
+				"tags": {
+					"displayName": "Теги",
+					"placeholder": "тег1, тег2"
+				},
+				"title": {
+					"displayName": "Заголовок",
+					"description": "Подробности задачи"
+				},
+				"tlp": {
+					"displayName": "TLP",
+					"description": "Протокол светофора (TLP). По умолчанию = Янтарный.",
+					"options": {
+						"0": {
+							"displayName": "Белый"
+						},
+						"1": {
+							"displayName": "Зеленый"
+						},
+						"2": {
+							"displayName": "Янтарь"
+						},
+						"3": {
+							"displayName": "Красный"
+						}
+					}
+				},
+				"message": {
+					"displayName": "Сообщение",
+					"description": "Описание наблюдаемого в контексте дела"
+				},
+				"ioc": {
+					"displayName": "IOC",
+					"description": "Является ли наблюдаемая IOC (индикатор компрометации)"
+				},
+				"sighted": {
+					"displayName": "зрячий",
+					"description": "Был ли замечен ранее"
+				},
+				"endDate": {
+					"displayName": "Дата окончания",
+					"description": "Дата окончания задачи. Это устанавливается автоматически, когда для статуса установлено значение «Завершено»."
+				},
+				"flag": {
+					"displayName": "Флаг",
+					"description": "Отмечать ли задачу. По умолчанию = ложь."
+				},
+				"impactStatus": {
+					"displayName": "Статус воздействия",
+					"description": "Статус воздействия дела",
+					"options": {
+						"NoImpact": {
+							"displayName": "Нет воздействия"
+						},
+						"WithImpact": {
+							"displayName": "С эффектом"
+						},
+						"NotApplicable": {
+							"displayName": "Непригодный"
+						}
+					}
+				},
+				"metrics": {
+					"displayName": "Метрики (JSON)",
+					"description": "Список метрик"
+				},
+				"owner": {
+					"displayName": "Владелец",
+					"description": "Пользователь, которому принадлежит задача. Это значение автоматически устанавливается для текущего пользователя, когда для статуса установлено значение InProgress."
+				},
+				"resolutionStatus": {
+					"displayName": "Статус разрешения",
+					"description": "Статус разрешения дела",
+					"options": {
+						"Duplicated": {
+							"displayName": "Дублированный"
+						},
+						"FalsePositive": {
+							"displayName": "Ложное срабатывание"
+						},
+						"Indeterminate": {
+							"displayName": "Неопределенный"
+						},
+						"Other": {
+							"displayName": "Другой"
+						},
+						"TruePositive": {
+							"displayName": "Истинный Позитив"
+						}
+					}
+				},
+				"startDate": {
+					"displayName": "Дата начала",
+					"description": "Дата начала выполнения задачи. Это значение устанавливается автоматически, когда для статуса установлено значение «Открыто»."
+				},
+				"summary": {
+					"displayName": "Краткое содержание",
+					"description": "Краткое изложение дела, которое необходимо предоставить при закрытии дела"
+				}
+			}
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"sort": {
+					"displayName": "Сортировать",
+					"placeholder": "±Атрибут, опыт +статус",
+					"description": "Укажите атрибут сортировки: + по возрастанию, - по убыванию."
+				},
+				"includeSimilar": {
+					"displayName": "Включить похожие случаи",
+					"description": "Включать ли аналогичные случаи"
+				},
+				"tags": {
+					"displayName": "Наблюдаемые теги",
+					"placeholder": "тег1, тег2"
+				},
+				"customFieldsUi": {
+					"values": {
+						"customFieldsUi": {
+							"displayName": "Пользовательские поля"
+						},
+						"customFields": {
+							"options": {
+								"field": {
+									"displayName": "Имя поля или идентификатор",
+									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Значение пользовательского поля. Используйте выражение, если тип не является строкой."
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить настраиваемое поле",
+					"displayName": "Пользовательские поля",
+					"options": {
+						"customFields": {
+							"displayName": "Пользовательское поле"
+						}
+					}
+				},
+				"customFieldsJson": {
+					"displayName": "Пользовательские поля (JSON)",
+					"description": "Пользовательские поля в формате JSON. Переопределяет пользовательский интерфейс настраиваемых полей, если установлено."
+				},
+				"endDate": {
+					"displayName": "Дата окончания",
+					"description": "Дата окончания задачи. Это устанавливается автоматически, когда для статуса установлено значение «Завершено»."
+				},
+				"summary": {
+					"displayName": "Краткое содержание",
+					"description": "Краткое изложение дела, которое необходимо предоставить при закрытии дела"
+				},
+				"metrics": {
+					"displayName": "Метрики (JSON)",
+					"description": "Список метрик"
+				},
+				"description": {
+					"displayName": "Описание",
+					"description": "Подробности задачи"
+				},
+				"owner": {
+					"displayName": "Владелец",
+					"description": "Пользователь, которому принадлежит задача. Это значение автоматически устанавливается для текущего пользователя, когда для статуса установлено значение InProgress."
+				},
+				"startDate": {
+					"displayName": "Дата начала",
+					"description": "Дата начала выполнения задачи. Это значение устанавливается автоматически, когда для статуса установлено значение «Открыто»."
+				},
+				"attachmentValues": {
+					"values": {
+						"attachmentValues": {
+							"displayName": "Вложение",
+							"description": "Файл прикреплен к логу",
+							"options": {
+								"binaryProperty": {
+									"displayName": "Входное двоичное поле",
+									"description": "Имя входного двоичного поля, содержащего двоичные данные."
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить вложение",
+					"displayName": "Вложение",
+					"description": "Файл прикреплен к логу",
+					"options": {
+						"attachmentValues": {
+							"displayName": "Вложение"
+						}
+					}
+				}
+			}
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"customFieldsUi": {
+					"values": {
+						"customFieldsUi": {
+							"displayName": "Пользовательские поля"
+						},
+						"customFields": {
+							"options": {
+								"field": {
+									"displayName": "Имя поля или идентификатор",
+									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Значение пользовательского поля. Используйте выражение, если тип не является строкой."
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить настраиваемое поле",
+					"displayName": "Пользовательские поля",
+					"options": {
+						"customFields": {
+							"displayName": "Пользовательское поле"
+						}
+					}
+				},
+				"description": {
+					"displayName": "Описание",
+					"description": "Подробности задачи",
+					"placeholder": "опыт, свободный текст"
+				},
+				"follow": {
+					"displayName": "Следовать",
+					"description": "Станет ли предупреждение активным при обновлении default=true"
+				},
+				"severity": {
+					"displayName": "Серьезность",
+					"description": "Серьезность предупреждения. По умолчанию = Средний.",
+					"options": {
+						"1": {
+							"displayName": "Низкий"
+						},
+						"2": {
+							"displayName": "Середина"
+						},
+						"3": {
+							"displayName": "Высокий"
+						}
+					}
+				},
+				"tags": {
+					"displayName": "Теги",
+					"placeholder": "тег1, тег2"
+				},
+				"title": {
+					"displayName": "Заголовок",
+					"description": "Подробности задачи"
+				},
+				"tlp": {
+					"displayName": "TLP",
+					"description": "Протокол светофора (TLP). По умолчанию = Янтарный.",
+					"options": {
+						"0": {
+							"displayName": "Белый"
+						},
+						"1": {
+							"displayName": "Зеленый"
+						},
+						"2": {
+							"displayName": "Янтарь"
+						},
+						"3": {
+							"displayName": "Красный"
+						}
+					}
+				},
+				"dataType": {
+					"displayName": "Имена или идентификаторы типов данных",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"range": {
+					"values": {
+						"range": {
+							"displayName": "Диапазон дат"
+						},
+						"dateRange": {
+							"options": {
+								"fromDate": {
+									"displayName": "С даты"
+								},
+								"toDate": {
+									"displayName": "На сегодняшний день"
+								}
+							}
+						}
+					},
+					"displayName": "Диапазон дат",
+					"options": {
+						"dateRange": {
+							"displayName": "Добавить входные данные диапазона дат"
+						}
+					}
+				},
+				"ioc": {
+					"displayName": "IOC",
+					"description": "Является ли наблюдаемая IOC (индикатор компрометации)"
+				},
+				"keyword": {
+					"displayName": "Ключевое слово",
+					"placeholder": "опыт, свободный текст"
+				},
+				"message": {
+					"displayName": "Сообщение",
+					"description": "Описание наблюдаемого в контексте дела"
+				},
+				"sighted": {
+					"displayName": "зрячий"
+				},
+				"Status": {
+					"displayName": "Статус",
+					"description": "Статус наблюдаемого. По умолчанию=ОК.",
+					"options": {
+						"Ok": {
+							"displayName": "Хорошо"
+						},
+						"Deleted": {
+							"displayName": "Удалено"
+						}
+					}
+				},
+				"data": {
+					"displayName": "Ценить",
+					"placeholder": "пример.com; 8.8.8.8"
+				},
+				"endDate": {
+					"displayName": "Дата окончания",
+					"description": "Дата окончания задачи. Это устанавливается автоматически, когда для статуса установлено значение «Завершено»."
+				},
+				"flag": {
+					"displayName": "Флаг",
+					"description": "Отмечать ли задачу. По умолчанию = ложь."
+				},
+				"impactStatus": {
+					"displayName": "Статус воздействия",
+					"options": {
+						"NoImpact": {
+							"displayName": "Нет воздействия"
+						},
+						"WithImpact": {
+							"displayName": "С эффектом"
+						},
+						"NotApplicable": {
+							"displayName": "Непригодный"
+						}
+					}
+				},
+				"owner": {
+					"displayName": "Владелец",
+					"description": "Пользователь, которому принадлежит задача. Это значение автоматически устанавливается для текущего пользователя, когда для статуса установлено значение InProgress."
+				},
+				"resolutionStatus": {
+					"displayName": "Статус разрешения",
+					"options": {
+						"Duplicated": {
+							"displayName": "Дублированный"
+						},
+						"False Positive": {
+							"displayName": "ЛожноеПоложительное"
+						},
+						"Indeterminate": {
+							"displayName": "Неопределенный"
+						},
+						"Other": {
+							"displayName": "Другой"
+						},
+						"True Positive": {
+							"displayName": "TruePositive"
+						}
+					}
+				},
+				"startDate": {
+					"displayName": "Дата начала",
+					"description": "Дата начала выполнения задачи. Это значение устанавливается автоматически, когда для статуса установлено значение «Открыто»."
+				},
+				"status": {
+					"displayName": "Статус",
+					"options": {
+						"Open": {
+							"displayName": "Открыть"
+						},
+						"Resolved": {
+							"displayName": "Решено"
+						},
+						"Deleted": {
+							"displayName": "Удалено"
+						},
+						"Cancel": {
+							"displayName": "Отмена"
+						},
+						"Completed": {
+							"displayName": "Завершенный"
+						},
+						"InProgress": {
+							"displayName": "В ходе выполнения"
+						},
+						"Waiting": {
+							"displayName": "Ожидающий"
+						}
+					},
+					"description": "Статус задачи. По умолчанию = Ожидание."
+				},
+				"summary": {
+					"displayName": "Краткое содержание",
+					"description": "Краткое изложение дела, которое необходимо предоставить при закрытии дела"
+				}
+			}
+		},
+		"dataType": {
+			"displayName": "Имя или идентификатор типа данных",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"data": {
+			"displayName": "Данные"
+		},
+		"binaryProperty": {
+			"displayName": "Входное двоичное поле",
+			"description": "Имя входного двоичного поля, представляющего файл вложения."
+		},
+		"message": {
+			"displayName": "Сообщение",
+			"description": "Содержание журнала"
+		},
+		"startDate": {
+			"displayName": "Дата начала",
+			"description": "Дата отправки журнала по умолчанию=сейчас"
+		},
+		"ioc": {
+			"displayName": "IOC",
+			"description": "Является ли наблюдаемая IOC (индикатор компрометации)"
+		},
+		"sighted": {
+			"displayName": "зрячий",
+			"description": "Был ли замечен ранее"
+		},
+		"analyzers": {
+			"displayName": "Имена или идентификаторы анализаторов",
+			"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"owner": {
+			"displayName": "Владелец"
+		},
+		"flag": {
+			"displayName": "Флаг",
+			"description": "Отмечать ли задачу. По умолчанию = ложь."
+		},
+		"taskId": {
+			"displayName": "Идентификатор задачи",
+			"description": "ID задачи"
+		}
+	}
+}

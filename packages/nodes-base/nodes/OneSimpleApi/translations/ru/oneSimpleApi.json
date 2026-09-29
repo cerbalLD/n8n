@@ -1,0 +1,211 @@
+{
+	"header": {
+		"displayName": "Один простой API",
+		"description": "Набор утилит без кода"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"information": {
+					"displayName": "Информация"
+				},
+				"socialProfile": {
+					"displayName": "Социальный профиль"
+				},
+				"utility": {
+					"displayName": "Утилита"
+				},
+				"website": {
+					"displayName": "Веб-сайт"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"pdf": {
+					"displayName": "Создать PDF",
+					"description": "Создать PDF-файл с веб-страницы"
+				},
+				"seo": {
+					"displayName": "Получить SEO-данные",
+					"description": "Получить SEO-информацию с сайта"
+				},
+				"screenshot": {
+					"displayName": "Сделать снимок экрана",
+					"description": "Создать снимок экрана с веб-страницы"
+				},
+				"instagramProfile": {
+					"displayName": "Инстаграм",
+					"description": "Получить подробную информацию о профиле Instagram"
+				},
+				"spotifyArtistProfile": {
+					"displayName": "Спотифай",
+					"description": "Получите подробную информацию об исполнителе Spotify"
+				},
+				"exchangeRate": {
+					"displayName": "Обменный курс",
+					"description": "Конвертируйте значение между валютами"
+				},
+				"imageMetadata": {
+					"displayName": "Метаданные изображения",
+					"description": "Получить метаданные изображения по URL-адресу"
+				},
+				"expandURL": {
+					"displayName": "Развернуть URL-адрес",
+					"description": "Развернуть сокращенный URL-адрес"
+				},
+				"qrCode": {
+					"displayName": "Создать QR-код",
+					"description": "Создать QR-код"
+				},
+				"validateEmail": {
+					"displayName": "Подтвердить адрес электронной почты",
+					"description": "Подтвердить адрес электронной почты"
+				}
+			}
+		},
+		"link": {
+			"displayName": "URL",
+			"description": "URL-адрес для восстановления"
+		},
+		"download": {
+			"displayName": "Загрузить скриншот?",
+			"description": "Загружать ли скриншот или вернуть ссылку на него"
+		},
+		"output": {
+			"displayName": "Поместите вывод в поле",
+			"description": "Имя выходного поля для помещения данных двоичного файла."
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"page": {
+					"displayName": "Размер страницы",
+					"options": {
+						"A0": {
+							"displayName": "A0"
+						},
+						"A1": {
+							"displayName": "A1"
+						},
+						"A2": {
+							"displayName": "A2"
+						},
+						"A3": {
+							"displayName": "A3"
+						},
+						"A4": {
+							"displayName": "A4"
+						},
+						"A5": {
+							"displayName": "A5"
+						},
+						"A6": {
+							"displayName": "A6"
+						},
+						"Ledger": {
+							"displayName": "Леджер"
+						},
+						"Legal": {
+							"displayName": "Юридический"
+						},
+						"Letter": {
+							"displayName": "Письмо"
+						},
+						"Tabloid": {
+							"displayName": "Таблоид"
+						}
+					}
+				},
+				"force": {
+					"displayName": "Принудительное обновление",
+					"description": "Обычно API повторно использует ранее сделанный снимок экрана URL-адреса, чтобы обеспечить более быстрый ответ. Эта опция позволяет вам сделать снимок экрана именно в тот момент, когда это необходимо."
+				},
+				"size": {
+					"displayName": "Размер",
+					"description": "Размер QR-кода",
+					"options": {
+						"Small": {
+							"displayName": "Маленький"
+						},
+						"Medium": {
+							"displayName": "Середина"
+						},
+						"Large": {
+							"displayName": "Большой"
+						}
+					}
+				},
+				"format": {
+					"displayName": "Формат",
+					"description": "Формат QR-кода",
+					"options": {
+						"PNG": {
+							"displayName": "PNG"
+						},
+						"SVG": {
+							"displayName": "SVG"
+						}
+					}
+				},
+				"screen": {
+					"displayName": "Размер экрана",
+					"options": {
+						"phone": {
+							"displayName": "Телефон"
+						},
+						"phone-landscape": {
+							"displayName": "Телефонный пейзаж"
+						},
+						"retina": {
+							"displayName": "сетчатка"
+						},
+						"tablet": {
+							"displayName": "Таблетка"
+						},
+						"tablet-landscape": {
+							"displayName": "Планшет Пейзаж"
+						}
+					}
+				},
+				"fullpage": {
+					"displayName": "Полная страница",
+					"description": "API делает снимок видимой области для нужного размера экрана. Если вам нужен скриншот всей страницы, используйте эту опцию."
+				},
+				"headers": {
+					"displayName": "Включить заголовки?"
+				}
+			}
+		},
+		"message": {
+			"displayName": "QR-контент",
+			"description": "Текст, который необходимо преобразовать в QR-код, например URL-адрес веб-сайта."
+		},
+		"profileName": {
+			"displayName": "Имя профиля",
+			"description": "Имя профиля, о котором нужно получить подробную информацию"
+		},
+		"artistName": {
+			"displayName": "Имя исполнителя",
+			"description": "Имя исполнителя, о котором нужно получить подробную информацию"
+		},
+		"value": {
+			"displayName": "Ценить",
+			"description": "Значение для конвертации"
+		},
+		"fromCurrency": {
+			"displayName": "Из валюты",
+			"placeholder": "USD"
+		},
+		"toCurrency": {
+			"displayName": "В валюту",
+			"placeholder": "EUR"
+		},
+		"emailAddress": {
+			"displayName": "Адрес электронной почты"
+		}
+	}
+}

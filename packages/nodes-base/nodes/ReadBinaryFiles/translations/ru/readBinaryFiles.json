@@ -1,0 +1,17 @@
+{
+	"header": {
+		"displayName": "Чтение двоичных файлов",
+		"description": "Читает двоичные файлы с диска"
+	},
+	"nodeView": {
+		"fileSelector": {
+			"displayName": "Выбор файлов",
+			"description": "Шаблон для файлов для чтения",
+			"placeholder": "*.jpg"
+		},
+		"dataPropertyName": {
+			"displayName": "Имя свойства",
+			"description": "Имя двоичного свойства, в которое записываются данные прочитанных файлов."
+		}
+	}
+}

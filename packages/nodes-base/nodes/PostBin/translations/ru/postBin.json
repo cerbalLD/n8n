@@ -1,0 +1,55 @@
+{
+	"header": {
+		"displayName": "PostBin",
+		"description": "Использование PostBin API"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"bin": {
+					"displayName": "Бин"
+				},
+				"request": {
+					"displayName": "Запрос"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать корзину"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить запрос"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить корзину"
+				},
+				"removeFirst": {
+					"displayName": "Сначала удалить",
+					"description": "Удалить первый запрос из корзины"
+				},
+				"send": {
+					"displayName": "Отправлять",
+					"description": "Отправить тестовый запрос в корзину"
+				}
+			}
+		},
+		"binId": {
+			"displayName": "Идентификатор бункера",
+			"description": "Уникальный идентификатор для каждого контейнера"
+		},
+		"binContent": {
+			"displayName": "Содержимое корзины"
+		},
+		"requestId": {
+			"displayName": "Идентификатор запроса",
+			"description": "Уникальный идентификатор для каждого запроса"
+		}
+	}
+}

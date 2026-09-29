@@ -1,0 +1,54 @@
+{
+	"header": {
+		"displayName": "Триггер SeaTable",
+		"description": "Запускает рабочий процесс при возникновении событий SeaTable."
+	},
+	"nodeView": {
+		"event": {
+			"displayName": "Событие",
+			"options": {
+				"newRow": {
+					"displayName": "Новый ряд",
+					"description": "Запуск по вновь созданным строкам"
+				},
+				"updatedRow": {
+					"displayName": "Новая или обновленная строка",
+					"description": "Триггер недавно создал или изменил строки"
+				},
+				"newAsset": {
+					"displayName": "Новая подпись",
+					"description": "Запуск по новым подписям"
+				}
+			}
+		},
+		"tableName": {
+			"displayName": "Имя таблицы",
+			"description": "Имя таблицы SeaTable, к которой осуществляется доступ. Выберите из списка или укажите имя с помощью <a href=\"https://docs.n8n.io/code-examples/expressions/\">expression</a>."
+		},
+		"viewName": {
+			"displayName": "Посмотреть имя",
+			"description": "Имя представления SeaTable для доступа. Выберите из списка или укажите имя с помощью <a href=\"https://docs.n8n.io/code-examples/expressions/\">expression</a>."
+		},
+		"assetColumn": {
+			"displayName": "Столбец подписи",
+			"description": "Выберите столбец цифровой подписи, который необходимо отслеживать. Выберите из списка или укажите имя с помощью <a href=\"https://docs.n8n.io/code-examples/expressions/\">expression</a>."
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"simple": {
+					"displayName": "Упрощать",
+					"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+				},
+				"convert": {
+					"displayName": "Возврат имен столбцов",
+					"description": "Возвращать ли ключи столбцов (false) или имена столбцов (true)"
+				}
+			}
+		},
+		"notice": {
+			"displayName": "«Извлечение тестового события» возвращает макс. три предмета за последний час."
+		}
+	}
+}

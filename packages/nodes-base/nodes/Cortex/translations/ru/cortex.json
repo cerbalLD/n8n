@@ -1,0 +1,371 @@
+{
+	"header": {
+		"displayName": "Кора головного мозга",
+		"description": "Примените анализатор/ответчик Cortex к данному объекту."
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"description": "Выберите ресурс",
+			"options": {
+				"analyzer": {
+					"displayName": "Анализатор"
+				},
+				"job": {
+					"displayName": "Работа"
+				},
+				"responder": {
+					"displayName": "Ответчик"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"description": "Выберите операцию",
+			"options": {
+				"execute": {
+					"displayName": "Выполнять",
+					"description": "Выполнить ответчика"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить подробную информацию о вакансии"
+				},
+				"report": {
+					"displayName": "Отчет",
+					"description": "Получить отчет о работе"
+				}
+			}
+		},
+		"analyzer": {
+			"displayName": "Имя или идентификатор типа анализатора",
+			"description": "Выберите анализатор. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"observableType": {
+			"displayName": "Имя или идентификатор наблюдаемого типа",
+			"description": "Выберите наблюдаемый тип. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"observableValue": {
+			"displayName": "Наблюдаемая ценность",
+			"description": "Введите наблюдаемое значение"
+		},
+		"binaryPropertyName": {
+			"displayName": "Поместите выходной файл в поле",
+			"hint": "Имя выходного двоичного поля, в которое помещается файл."
+		},
+		"tlp": {
+			"displayName": "TLP",
+			"description": "TLP анализируемой наблюдаемой",
+			"options": {
+				"0": {
+					"displayName": "Белый"
+				},
+				"1": {
+					"displayName": "Зеленый"
+				},
+				"2": {
+					"displayName": "Янтарь"
+				},
+				"3": {
+					"displayName": "Красный"
+				}
+			}
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"force": {
+					"displayName": "Сила",
+					"description": "Стоит ли принудительно обходить кеш"
+				},
+				"timeout": {
+					"displayName": "Тайм-аут (секунды)",
+					"description": "Тайм-аут ожидания отчета, если он недоступен на момент выполнения запроса."
+				}
+			}
+		},
+		"responder": {
+			"displayName": "Имя или идентификатор типа ответчика",
+			"description": "Выберите ответчика. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"entityType": {
+			"displayName": "Имя или идентификатор типа сущности",
+			"description": "Выберите тип данных. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"jsonObject": {
+			"displayName": "Параметры JSON",
+			"description": "Выберите между предоставлением объекта JSON или отдельных атрибутов."
+		},
+		"objectData": {
+			"displayName": "Объект сущности (JSON)"
+		},
+		"parameters": {
+			"options": {
+				"parameters": {
+					"displayName": "Параметры"
+				},
+				"values": {
+					"displayName": "Атрибуты журнала",
+					"values": {
+						"description": {
+							"displayName": "Описание",
+							"description": "Описание оповещения"
+						},
+						"flag": {
+							"displayName": "Флаг",
+							"description": "Флаг случая default=false"
+						},
+						"owner": {
+							"displayName": "Владелец",
+							"description": "Пользователь, которому принадлежит дело. Это значение автоматически устанавливается для текущего пользователя, когда для статуса установлено значение InProgress."
+						},
+						"severity": {
+							"displayName": "Серьезность",
+							"description": "Тяжесть случая. По умолчанию = Средний.",
+							"options": {
+								"1": {
+									"displayName": "Низкий"
+								},
+								"2": {
+									"displayName": "Середина"
+								},
+								"3": {
+									"displayName": "Высокий"
+								}
+							}
+						},
+						"startDate": {
+							"displayName": "Дата начала",
+							"description": "Дата и время начала дела по умолчанию=сейчас"
+						},
+						"tags": {
+							"displayName": "Теги",
+							"placeholder": "тег1, тег2,..."
+						},
+						"title": {
+							"displayName": "Заголовок",
+							"description": "Название задачи"
+						},
+						"tlp": {
+							"displayName": "TLP",
+							"description": "Протокол светофора (TLP). По умолчанию = Янтарный.",
+							"options": {
+								"0": {
+									"displayName": "Белый"
+								},
+								"1": {
+									"displayName": "Зеленый"
+								},
+								"2": {
+									"displayName": "Янтарь"
+								},
+								"3": {
+									"displayName": "Красный"
+								}
+							}
+						},
+						"artifacts": {
+							"options": {
+								"artifacts": {
+									"displayName": "Артефакты"
+								},
+								"artifactValues": {
+									"displayName": "Артефакт",
+									"values": {
+										"binaryProperty": {
+											"displayName": "Двоичное поле"
+										},
+										"data": {
+											"displayName": "Данные"
+										},
+										"dataType": {
+											"displayName": "Тип данных",
+											"options": {
+												"domain": {
+													"displayName": "Домен"
+												},
+												"file": {
+													"displayName": "Файл"
+												},
+												"filename": {
+													"displayName": "Имя файла"
+												},
+												"fqdn": {
+													"displayName": "Полное доменное имя"
+												},
+												"hash": {
+													"displayName": "Хэш"
+												},
+												"ip": {
+													"displayName": "IP"
+												},
+												"mail": {
+													"displayName": "Почта"
+												},
+												"mail_subject": {
+													"displayName": "Тема письма"
+												},
+												"other": {
+													"displayName": "Другой"
+												},
+												"regexp": {
+													"displayName": "регулярное выражение"
+												},
+												"registry": {
+													"displayName": "Реестр"
+												},
+												"uri_path": {
+													"displayName": "Ури Путь"
+												},
+												"url": {
+													"displayName": "URL"
+												},
+												"user-agent": {
+													"displayName": "Пользовательский агент"
+												}
+											}
+										},
+										"message": {
+											"displayName": "Сообщение"
+										},
+										"tags": {
+											"displayName": "Теги"
+										}
+									}
+								}
+							},
+							"placeholder": "Добавить артефакт",
+							"displayName": "Артефакты"
+						},
+						"date": {
+							"displayName": "Дата",
+							"description": "Дата и время появления оповещения по умолчанию=сейчас"
+						},
+						"follow": {
+							"displayName": "Следовать"
+						},
+						"source": {
+							"displayName": "Источник",
+							"description": "Источник оповещения"
+						},
+						"sourceRef": {
+							"displayName": "ИсточникСсылка",
+							"description": "Ссылка на источник оповещения"
+						},
+						"status": {
+							"displayName": "Статус",
+							"description": "Статус наблюдаемого (ОК или Удалено) по умолчанию = ОК",
+							"options": {
+								"New": {
+									"displayName": "Новый"
+								},
+								"Updated": {
+									"displayName": "Обновлено"
+								},
+								"Ignored": {
+									"displayName": "игнорируется"
+								},
+								"Imported": {
+									"displayName": "Импортировано"
+								},
+								"Ok": {
+									"displayName": "Хорошо"
+								},
+								"Deleted": {
+									"displayName": "Удалено"
+								},
+								"Waiting": {
+									"displayName": "Ожидающий"
+								},
+								"InProgress": {
+									"displayName": "В ходе выполнения"
+								},
+								"Completed": {
+									"displayName": "Завершенный"
+								},
+								"Cancel": {
+									"displayName": "Отмена"
+								}
+							}
+						},
+						"type": {
+							"displayName": "Тип",
+							"description": "Тип оповещения"
+						},
+						"binaryPropertyName": {
+							"displayName": "Входное двоичное поле",
+							"hint": "Имя входного двоичного поля, содержащего данные вложения."
+						},
+						"data": {
+							"displayName": "Данные"
+						},
+						"dataType": {
+							"displayName": "Тип данных",
+							"options": {
+								"domain": {
+									"displayName": "Домен"
+								},
+								"file": {
+									"displayName": "Файл"
+								},
+								"filename": {
+									"displayName": "Имя файла"
+								},
+								"fqdn": {
+									"displayName": "Полное доменное имя"
+								},
+								"hash": {
+									"displayName": "Хэш"
+								},
+								"ip": {
+									"displayName": "IP"
+								},
+								"mail": {
+									"displayName": "Почта"
+								},
+								"mail_subject": {
+									"displayName": "Тема письма"
+								},
+								"other": {
+									"displayName": "Другой"
+								},
+								"regexp": {
+									"displayName": "регулярное выражение"
+								},
+								"registry": {
+									"displayName": "Реестр"
+								},
+								"uri_path": {
+									"displayName": "Ури Путь"
+								},
+								"url": {
+									"displayName": "URL"
+								},
+								"user-agent": {
+									"displayName": "Пользовательский агент"
+								}
+							}
+						},
+						"ioc": {
+							"displayName": "IOC",
+							"description": "Является ли наблюдаемая IOC (индикатор компрометации)"
+						},
+						"message": {
+							"displayName": "Сообщение"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить параметр",
+			"displayName": "Параметры"
+		},
+		"artifacts": {
+			"multipleValueButtonText": "Добавить артефакт"
+		},
+		"jobId": {
+			"displayName": "Идентификатор вакансии",
+			"description": "идентификатор вакансии"
+		}
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"header": {
+		"displayName": "Redis триггер",
+		"description": "Подпишитесь на канал Redis"
+	},
+	"nodeView": {
+		"channels": {
+			"displayName": "Каналы",
+			"description": "Каналы, на которые можно подписаться, несколько каналов определяются через запятую. Поддерживается подстановочный знак (*)."
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"jsonParseBody": {
+					"displayName": "Тело синтаксического анализа JSON",
+					"description": "Стоит ли пытаться разобрать сообщение на объект"
+				},
+				"onlyMessage": {
+					"displayName": "Только сообщение",
+					"description": "Возвращать ли только свойство сообщения"
+				}
+			}
+		}
+	}
+}

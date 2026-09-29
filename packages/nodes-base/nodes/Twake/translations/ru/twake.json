@@ -1,0 +1,47 @@
+{
+	"header": {
+		"displayName": "Твейк",
+		"description": "Использование API Twake"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"message": {
+					"displayName": "Сообщение",
+					"description": "Отправьте данные в приложение сообщений"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"send": {
+					"displayName": "Отправлять",
+					"description": "Отправить сообщение"
+				}
+			}
+		},
+		"channelId": {
+			"displayName": "Название или идентификатор канала",
+			"description": "Идентификатор канала. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"content": {
+			"displayName": "Содержание",
+			"description": "Содержание сообщения"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"senderIcon": {
+					"displayName": "Значок отправителя",
+					"description": "URL изображения/значка"
+				},
+				"senderName": {
+					"displayName": "Имя отправителя"
+				}
+			}
+		}
+	}
+}

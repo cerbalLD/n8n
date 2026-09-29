@@ -1,0 +1,558 @@
+{
+	"header": {
+		"displayName": "самое важное",
+		"description": "Отправляет данные в Mattermost"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"channel": {
+					"displayName": "Канал"
+				},
+				"message": {
+					"displayName": "Сообщение"
+				},
+				"reaction": {
+					"displayName": "Реакция"
+				},
+				"user": {
+					"displayName": "Пользователь"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"addUser": {
+					"displayName": "Добавить пользователя",
+					"description": "Добавить пользователя на канал"
+				},
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать нового пользователя"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удаление реакции из публикации"
+				},
+				"members": {
+					"displayName": "Член",
+					"description": "Получить страницу участников канала"
+				},
+				"restore": {
+					"displayName": "Восстановить",
+					"description": "Восстанавливает мягко удаленный канал"
+				},
+				"search": {
+					"displayName": "Поиск",
+					"description": "Поиск канала"
+				},
+				"statistics": {
+					"displayName": "Статистика",
+					"description": "Получить статистику по каналу"
+				},
+				"post": {
+					"displayName": "Почта",
+					"description": "Опубликовать сообщение в канале"
+				},
+				"postEphemeral": {
+					"displayName": "Сообщение эфемерное",
+					"description": "Опубликовать эфемерное сообщение в канале"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить много пользователей"
+				},
+				"deactive": {
+					"displayName": "Деактивирован",
+					"description": "Деактивирует пользователя и отзывает все его сеансы, архивируя его пользовательский объект."
+				},
+				"getByEmail": {
+					"displayName": "Получить по электронной почте",
+					"description": "Получить пользователя по электронной почте"
+				},
+				"getById": {
+					"displayName": "Получить по идентификатору",
+					"description": "Получить пользователя по ID"
+				},
+				"invite": {
+					"displayName": "Приглашать",
+					"description": "Пригласить пользователя в команду"
+				}
+			}
+		},
+		"teamId": {
+			"displayName": "Название или идентификатор команды",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"displayName": {
+			"displayName": "Отображаемое имя",
+			"description": "Неуникальное имя пользовательского интерфейса канала.",
+			"placeholder": "Объявления"
+		},
+		"channel": {
+			"displayName": "Имя",
+			"description": "Уникальный дескриптор канала будет присутствовать в URL-адресе канала.",
+			"placeholder": "объявления"
+		},
+		"type": {
+			"displayName": "Тип",
+			"description": "Тип канала, который нужно создать",
+			"options": {
+				"private": {
+					"displayName": "Частный"
+				},
+				"public": {
+					"displayName": "Общественный"
+				}
+			}
+		},
+		"channelId": {
+			"displayName": "Название или идентификатор канала",
+			"description": "Идентификатор канала, по которому будет отправлено эфемерное сообщение. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"resolveData": {
+			"displayName": "Разрешение данных",
+			"description": "По умолчанию ответ содержит только идентификатор пользователя. Если эта опция активирована, она автоматически разрешит пользователя."
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"userId": {
+			"displayName": "ID пользователя",
+			"description": "GUID пользователя"
+		},
+		"term": {
+			"displayName": "Поисковый запрос",
+			"description": "Поисковый запрос для каналов в команде",
+			"placeholder": "Общий"
+		},
+		"postId": {
+			"displayName": "Идентификатор сообщения",
+			"description": "Одна или несколько публикаций (разделенных запятыми) для получения реакций от них.",
+			"placeholder": "3moacfqxmbdw38r38fjprh6zsr"
+		},
+		"message": {
+			"displayName": "Сообщение",
+			"description": "Текст для отправки в эфемерном сообщении"
+		},
+		"attachments": {
+			"displayName": "Вложения",
+			"description": "Вложение, которое нужно добавить",
+			"placeholder": "Добавить элемент вложения",
+			"multipleValueButtonText": "Добавить вложение",
+			"options": {
+				"actions": {
+					"values": {
+						"actions": {
+							"displayName": "Действия",
+							"description": "Действия для добавления в сообщение. Более подробную информацию можно найти <a href=\"https://docs.mattermost.com/developer/interactive-messages.html\" target=\"_blank\">здесь</a>."
+						},
+						"item": {
+							"options": {
+								"type": {
+									"displayName": "Тип",
+									"description": "Тип действия",
+									"options": {
+										"button": {
+											"displayName": "Кнопка"
+										},
+										"select": {
+											"displayName": "Выбирать"
+										}
+									}
+								},
+								"data_source": {
+									"displayName": "Источник данных",
+									"description": "Тип действия",
+									"options": {
+										"channels": {
+											"displayName": "Каналы"
+										},
+										"custom": {
+											"displayName": "Обычай"
+										},
+										"users": {
+											"displayName": "Пользователи"
+										}
+									}
+								},
+								"options": {
+									"values": {
+										"options": {
+											"displayName": "Параметры",
+											"description": "Добавляет новую опцию для выбора поля"
+										},
+										"option": {
+											"options": {
+												"text": {
+													"displayName": "Текст опции",
+													"description": "Текст опции"
+												},
+												"value": {
+													"displayName": "Значение параметра",
+													"description": "Стоимость опциона"
+												}
+											}
+										}
+									},
+									"placeholder": "Добавить вариант",
+									"displayName": "Параметры",
+									"description": "Добавляет новую опцию для выбора поля",
+									"options": {
+										"option": {
+											"displayName": "Вариант"
+										}
+									}
+								},
+								"name": {
+									"displayName": "Имя",
+									"description": "Название действия"
+								},
+								"integration": {
+									"values": {
+										"integration": {
+											"displayName": "Интеграция",
+											"description": "Интеграция для добавления в сообщение"
+										},
+										"item": {
+											"options": {
+												"url": {
+													"displayName": "URL",
+													"description": "URL-адрес интеграции"
+												},
+												"context": {
+													"values": {
+														"context": {
+															"displayName": "Контекст",
+															"description": "Добавляет набор значений контекста."
+														},
+														"property": {
+															"options": {
+																"name": {
+																	"displayName": "Имя свойства",
+																	"description": "Имя свойства, которое нужно установить"
+																},
+																"value": {
+																	"displayName": "Стоимость недвижимости",
+																	"description": "Значение свойства для установки"
+																}
+															}
+														}
+													},
+													"placeholder": "Добавьте контекст к интеграции",
+													"displayName": "Контекст",
+													"description": "Добавляет набор значений контекста.",
+													"options": {
+														"property": {
+															"displayName": "Свойство"
+														}
+													}
+												}
+											}
+										}
+									},
+									"placeholder": "Добавить интеграцию",
+									"displayName": "Интеграция",
+									"description": "Интеграция для добавления в сообщение",
+									"options": {
+										"item": {
+											"displayName": "Элемент"
+										}
+									}
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить действия",
+					"displayName": "Действия",
+					"description": "Действия для добавления в сообщение. Более подробную информацию можно найти <a href=\"https://docs.mattermost.com/developer/interactive-messages.html\" target=\"_blank\">здесь</a>.",
+					"options": {
+						"item": {
+							"displayName": "Элемент"
+						}
+					}
+				},
+				"author_icon": {
+					"displayName": "Значок автора",
+					"description": "Значок, который должен появиться у пользователя"
+				},
+				"author_link": {
+					"displayName": "Ссылка автора",
+					"description": "Ссылка для автора"
+				},
+				"author_name": {
+					"displayName": "Имя автора",
+					"description": "Имя, которое должно появиться"
+				},
+				"color": {
+					"displayName": "Цвет",
+					"description": "Цвет линии слева от текста"
+				},
+				"fallback": {
+					"displayName": "Резервный текст",
+					"description": "Обязательное текстовое резюме вложения."
+				},
+				"fields": {
+					"values": {
+						"fields": {
+							"displayName": "Поля",
+							"description": "Поля для добавления в сообщение"
+						},
+						"item": {
+							"options": {
+								"title": {
+									"displayName": "Заголовок",
+									"description": "Название предмета"
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Стоимость товара"
+								},
+								"short": {
+									"displayName": "Короткий",
+									"description": "Могут ли элементы отображаться рядом друг с другом"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить поля",
+					"displayName": "Поля",
+					"description": "Поля для добавления в сообщение",
+					"options": {
+						"item": {
+							"displayName": "Элемент"
+						}
+					}
+				},
+				"footer": {
+					"displayName": "Нижний колонтитул",
+					"description": "Текст нижнего колонтитула, который нужно добавить"
+				},
+				"footer_icon": {
+					"displayName": "Значок нижнего колонтитула",
+					"description": "Значок, который должен появиться рядом с нижним колонтитулом"
+				},
+				"image_url": {
+					"displayName": "URL-адрес изображения",
+					"description": "URL изображения"
+				},
+				"pretext": {
+					"displayName": "Предлог",
+					"description": "Текст, который появляется перед блоком сообщений"
+				},
+				"text": {
+					"displayName": "Текст",
+					"description": "Текст для отправки"
+				},
+				"thumb_url": {
+					"displayName": "URL-адрес миниатюры",
+					"description": "URL миниатюры"
+				},
+				"title": {
+					"displayName": "Заголовок",
+					"description": "Название сообщения"
+				},
+				"title_link": {
+					"displayName": "Название Ссылка",
+					"description": "Ссылка на заголовок"
+				}
+			}
+		},
+		"otherOptions": {
+			"displayName": "Другие варианты",
+			"description": "Другие варианты установки",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"root_id": {
+					"displayName": "Идентификатор родительского сообщения",
+					"description": "Если установлено, созданное сообщение будет веточным ответом на указанный идентификатор родительского сообщения."
+				}
+			}
+		},
+		"emojiName": {
+			"displayName": "Имя смайлика",
+			"description": "Название смайла, который нужно удалить"
+		},
+		"username": {
+			"displayName": "Имя пользователя"
+		},
+		"authService": {
+			"displayName": "Служба аутентификации",
+			"options": {
+				"email": {
+					"displayName": "Электронная почта"
+				},
+				"gitlab": {
+					"displayName": "Гитлаб"
+				},
+				"google": {
+					"displayName": "Google"
+				},
+				"ldap": {
+					"displayName": "LDAP"
+				},
+				"office365": {
+					"displayName": "Офис365"
+				},
+				"saml": {
+					"displayName": "SAML"
+				}
+			}
+		},
+		"authData": {
+			"displayName": "Данные аутентификации"
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"placeholder": "имя@email.com",
+			"description": "Электронная почта пользователя"
+		},
+		"password": {
+			"displayName": "Пароль",
+			"description": "Пароль, используемый для аутентификации электронной почты"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"first_name": {
+					"displayName": "Имя"
+				},
+				"last_name": {
+					"displayName": "Фамилия"
+				},
+				"locale": {
+					"displayName": "Языковой стандарт"
+				},
+				"nickname": {
+					"displayName": "Псевдоним"
+				},
+				"notificationUi": {
+					"values": {
+						"notificationUi": {
+							"displayName": "Настройки уведомлений"
+						},
+						"notificationValues": {
+							"options": {
+								"channel": {
+									"displayName": "Канал",
+									"description": "Включить ли уведомления по всему каналу (@channel, @all и т. д.), «false» для отключения. По умолчанию установлено значение «истина»."
+								},
+								"desktop": {
+									"displayName": "Рабочий стол",
+									"options": {
+										"all": {
+											"displayName": "Все",
+											"description": "Уведомления обо всех действиях"
+										},
+										"mention": {
+											"displayName": "Упомянуть",
+											"description": "Только упоминания и прямые сообщения"
+										},
+										"none": {
+											"displayName": "Никто",
+											"description": "Только упоминания и прямые сообщения"
+										}
+									}
+								},
+								"desktop_sound": {
+									"displayName": "Звук рабочего стола",
+									"description": "Включить ли звук в уведомлениях на рабочем столе, «false», чтобы отключить. По умолчанию установлено значение «истина»."
+								},
+								"email": {
+									"displayName": "Электронная почта",
+									"description": "Включить ли уведомления по электронной почте, «false», чтобы отключить. По умолчанию «ложь»."
+								},
+								"first_name": {
+									"displayName": "Имя",
+									"description": "Включить ли упоминание имени. По умолчанию установлено значение «истина», если задано имя, в противном случае — «ложь»."
+								},
+								"mention_keys": {
+									"displayName": "Упоминание ключей",
+									"description": "Список слов, разделенных запятыми, которые считаются упоминаниями. По умолчанию используется имя пользователя и @username."
+								},
+								"push": {
+									"displayName": "Толкать",
+									"options": {
+										"all": {
+											"displayName": "Все",
+											"description": "Уведомления обо всех действиях"
+										},
+										"mention": {
+											"displayName": "Упомянуть",
+											"description": "Только упоминания и прямые сообщения"
+										},
+										"none": {
+											"displayName": "Никто",
+											"description": "Только упоминания и прямые сообщения"
+										}
+									}
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить настройку уведомлений",
+					"displayName": "Настройки уведомлений",
+					"options": {
+						"notificationValues": {
+							"displayName": "Уведомить"
+						}
+					}
+				},
+				"inChannel": {
+					"displayName": "В канале",
+					"description": "Идентификатор канала, по которому нужно получить пользователей"
+				},
+				"inTeam": {
+					"displayName": "В команде",
+					"description": "Идентификатор команды, для которой нужно получить пользователей"
+				},
+				"notInTeam": {
+					"displayName": "Не в команде",
+					"description": "Идентификатор команды, для которой нужно исключить пользователей."
+				},
+				"notInChannel": {
+					"displayName": "Не в канале",
+					"description": "Идентификатор канала, для которого нужно исключить пользователей."
+				},
+				"sort": {
+					"displayName": "Сортировать",
+					"description": "Идентификатор канала, для которого нужно исключить пользователей.",
+					"options": {
+						"createdAt": {
+							"displayName": "Создано в"
+						},
+						"lastActivityAt": {
+							"displayName": "Последняя активность в"
+						},
+						"status": {
+							"displayName": "Статус"
+						},
+						"username": {
+							"displayName": "Имя пользователя"
+						}
+					}
+				},
+				"since": {
+					"displayName": "С",
+					"description": "Возвращать только тех пользователей, которые были изменены с момента указанной временной метки Unix (в миллисекундах)."
+				}
+			}
+		},
+		"userIds": {
+			"displayName": "Идентификаторы пользователей",
+			"description": "Идентификатор пользователя"
+		},
+		"emails": {
+			"displayName": "Электронная почта",
+			"description": "Электронная почта пользователя. Можно указать несколько адресов электронной почты, разделив их запятой."
+		}
+	}
+}

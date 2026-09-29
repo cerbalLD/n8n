@@ -1,0 +1,891 @@
+{
+	"header": {
+		"displayName": "Кип",
+		"description": "Использование Keap API"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"company": {
+					"displayName": "Компания"
+				},
+				"contact": {
+					"displayName": "Контакт"
+				},
+				"contactNote": {
+					"displayName": "Контактная информация"
+				},
+				"contactTag": {
+					"displayName": "Контактный тег"
+				},
+				"ecommerceOrder": {
+					"displayName": "Заказ электронной торговли"
+				},
+				"ecommerceProduct": {
+					"displayName": "Продукт электронной коммерции"
+				},
+				"email": {
+					"displayName": "Электронная почта"
+				},
+				"file": {
+					"displayName": "Файл"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создайте продукт электронной коммерции"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить много файлов"
+				},
+				"upsert": {
+					"displayName": "Создать или обновить",
+					"description": "Создайте новый контакт или обновите текущий, если он уже существует (upsert)"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить файл"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получите продукт для электронной коммерции"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить заметку"
+				},
+				"createRecord": {
+					"displayName": "Создать запись",
+					"description": "Создать запись электронного письма, отправленного контакту"
+				},
+				"send": {
+					"displayName": "Отправлять",
+					"description": "Отправить электронное письмо"
+				},
+				"upload": {
+					"displayName": "Загрузить",
+					"description": "Загрузить файл"
+				}
+			}
+		},
+		"companyName": {
+			"displayName": "Название компании"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"emailAddress": {
+					"displayName": "Электронная почта"
+				},
+				"notes": {
+					"displayName": "Примечания"
+				},
+				"optInReason": {
+					"displayName": "Причина согласия"
+				},
+				"website": {
+					"displayName": "Веб-сайт"
+				},
+				"anniversary": {
+					"displayName": "Годовщина"
+				},
+				"companyId": {
+					"displayName": "Идентификатор компании"
+				},
+				"contactType": {
+					"displayName": "Имя или идентификатор типа контакта",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"familyName": {
+					"displayName": "Фамилия"
+				},
+				"givenName": {
+					"displayName": "Собственное имя"
+				},
+				"ipAddress": {
+					"displayName": "IP-адрес"
+				},
+				"jobTitle": {
+					"displayName": "Должность"
+				},
+				"leadSourceId": {
+					"displayName": "Идентификатор источника потенциальных клиентов"
+				},
+				"middleName": {
+					"displayName": "Второе имя"
+				},
+				"ownerId": {
+					"displayName": "Имя или идентификатор владельца",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"preferredLocale": {
+					"displayName": "Предпочитаемый регион",
+					"placeholder": "ru"
+				},
+				"preferredName": {
+					"displayName": "Предпочтительное имя"
+				},
+				"sourceType": {
+					"displayName": "Тип источника",
+					"options": {
+						"API": {
+							"displayName": "API"
+						},
+						"IMPORT": {
+							"displayName": "Импорт"
+						},
+						"LANDINGPAGE": {
+							"displayName": "Целевая страница"
+						},
+						"MANUAL": {
+							"displayName": "Руководство"
+						},
+						"OTHER": {
+							"displayName": "Другой"
+						},
+						"UNKNOWN": {
+							"displayName": "Неизвестный"
+						}
+					}
+				},
+				"spouseName": {
+					"displayName": "Имя супруга"
+				},
+				"timezone": {
+					"displayName": "Имя или идентификатор часового пояса",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"body": {
+					"displayName": "Тело"
+				},
+				"title": {
+					"displayName": "Заголовок"
+				},
+				"type": {
+					"displayName": "Тип",
+					"options": {
+						"appointment": {
+							"displayName": "Встреча"
+						},
+						"call": {
+							"displayName": "Вызов"
+						},
+						"email": {
+							"displayName": "Электронная почта"
+						},
+						"fax": {
+							"displayName": "Факс"
+						},
+						"letter": {
+							"displayName": "Письмо"
+						},
+						"other": {
+							"displayName": "Другой"
+						}
+					}
+				},
+				"contactId": {
+					"displayName": "Идентификатор контакта"
+				},
+				"userId": {
+					"displayName": "Имя пользователя или идентификатор",
+					"description": "Пользователь infusionsoft, от имени которого создается заметка. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"leadAffiliateId": {
+					"displayName": "Идентификатор ведущего партнера"
+				},
+				"promoCodes": {
+					"displayName": "Промокоды",
+					"description": "В качестве промокодов используется несколько строк, разделенных запятой. К заказу будет применена соответствующая скидка."
+				},
+				"salesAffiliateId": {
+					"displayName": "Идентификатор партнера по продажам"
+				},
+				"active": {
+					"displayName": "Активный"
+				},
+				"productDesc": {
+					"displayName": "Описание продукта"
+				},
+				"productPrice": {
+					"displayName": "Цена продукта"
+				},
+				"productShortDesc": {
+					"displayName": "Краткое описание продукта"
+				},
+				"sku": {
+					"displayName": "SKU"
+				},
+				"subscriptionOnly": {
+					"displayName": "Только подписка"
+				},
+				"clickedDate": {
+					"displayName": "Дата нажатия"
+				},
+				"headers": {
+					"displayName": "Заголовки"
+				},
+				"htmlContent": {
+					"displayName": "HTML-контент",
+					"description": "Содержимое электронного письма в формате HTML, закодированное в Base64."
+				},
+				"openedDate": {
+					"displayName": "Дата открытия"
+				},
+				"originalProvider": {
+					"displayName": "Оригинальный поставщик",
+					"description": "Поставщик, отправивший электронное письмо без учета регистра, должен быть в списке.",
+					"options": {
+						"UNKNOWN": {
+							"displayName": "Неизвестный"
+						},
+						"INFUSIONSOFT": {
+							"displayName": "Инфузионсофт"
+						},
+						"MICROSOFT": {
+							"displayName": "Майкрософт"
+						},
+						"GOOGLE": {
+							"displayName": "Google"
+						}
+					}
+				},
+				"originalProviderId": {
+					"displayName": "Исходный идентификатор поставщика",
+					"description": "Идентификатор поставщика, отправившего электронное письмо, должен быть уникальным в сочетании с идентификатором поставщика. Если этот параметр опущен, для записи автоматически генерируется UUID без дефисов."
+				},
+				"plainContent": {
+					"displayName": "Простой контент",
+					"description": "Простое текстовое содержимое электронного письма, закодированное в Base64."
+				},
+				"providerSourceId": {
+					"displayName": "Идентификатор источника поставщика"
+				},
+				"receivedDate": {
+					"displayName": "Дата получения"
+				},
+				"sentDate": {
+					"displayName": "Дата отправки"
+				},
+				"sentFromReplyAddress": {
+					"displayName": "Отправлено с адреса ответа"
+				},
+				"sentToBccAddresses": {
+					"displayName": "Отправлено на адреса скрытой копии"
+				},
+				"sentToCCAddresses": {
+					"displayName": "Отправлено на адреса CC"
+				},
+				"subject": {
+					"displayName": "Предмет"
+				},
+				"addressField": {
+					"displayName": "Поле адреса",
+					"description": "Поле электронной почты каждой записи контакта, на которую можно отправить электронное письмо, например «EmailAddress1», «EmailAddress2», «EmailAddress3», по умолчанию используется основной адрес электронной почты контакта."
+				}
+			}
+		},
+		"addressesUi": {
+			"options": {
+				"addressesUi": {
+					"displayName": "Адреса"
+				},
+				"addressesValues": {
+					"displayName": "Адрес",
+					"values": {
+						"countryCode": {
+							"displayName": "Код страны, имя или идентификатор",
+							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+						},
+						"line1": {
+							"displayName": "Линия 1"
+						},
+						"line2": {
+							"displayName": "Линия 2"
+						},
+						"locality": {
+							"displayName": "Местность"
+						},
+						"postalCode": {
+							"displayName": "Почтовый индекс"
+						},
+						"region": {
+							"displayName": "Область"
+						},
+						"zipCode": {
+							"displayName": "Почтовый индекс"
+						},
+						"zipFour": {
+							"displayName": "Почтовый индекс четыре"
+						},
+						"field": {
+							"displayName": "Поле",
+							"options": {
+								"BILLING": {
+									"displayName": "Биллинг"
+								},
+								"SHIPPING": {
+									"displayName": "Перевозки"
+								},
+								"OTHER": {
+									"displayName": "Другой"
+								}
+							}
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить адрес",
+			"displayName": "Адреса"
+		},
+		"faxesUi": {
+			"options": {
+				"faxesUi": {
+					"displayName": "Факсы"
+				},
+				"faxesValues": {
+					"displayName": "Факс",
+					"values": {
+						"type": {
+							"displayName": "Тип"
+						},
+						"number": {
+							"displayName": "Число"
+						},
+						"field": {
+							"displayName": "Поле",
+							"options": {
+								"FAX1": {
+									"displayName": "Факс 1"
+								},
+								"FAX2": {
+									"displayName": "Факс 2"
+								}
+							}
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить факс",
+			"displayName": "Факсы"
+		},
+		"phonesUi": {
+			"options": {
+				"phonesUi": {
+					"displayName": "Телефоны"
+				},
+				"phonesValues": {
+					"displayName": "Телефоны",
+					"values": {
+						"type": {
+							"displayName": "Тип"
+						},
+						"number": {
+							"displayName": "Число"
+						},
+						"field": {
+							"displayName": "Поле",
+							"options": {
+								"PHONE1": {
+									"displayName": "Телефон 1"
+								},
+								"PHONE2": {
+									"displayName": "Телефон 2"
+								},
+								"PHONE3": {
+									"displayName": "Телефон 3"
+								},
+								"PHONE4": {
+									"displayName": "Телефон 4"
+								},
+								"PHONE5": {
+									"displayName": "Телефон 5"
+								}
+							}
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить телефон",
+			"displayName": "Телефоны"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"companyName": {
+					"displayName": "Название компании",
+					"description": "Название компании для запроса"
+				},
+				"order": {
+					"displayName": "Заказ",
+					"description": "Атрибут для упорядочения элементов по",
+					"options": {
+						"datecreated": {
+							"displayName": "Дата создания"
+						},
+						"id": {
+							"displayName": "ID"
+						},
+						"name": {
+							"displayName": "Имя"
+						},
+						"date": {
+							"displayName": "Дата"
+						},
+						"email": {
+							"displayName": "Электронная почта"
+						}
+					}
+				},
+				"orderDirection": {
+					"displayName": "Направление заказа",
+					"options": {
+						"ascending": {
+							"displayName": "ASC"
+						},
+						"descending": {
+							"displayName": "DES"
+						}
+					}
+				},
+				"fields": {
+					"displayName": "Поля",
+					"description": "Список свойств контакта, разделенных запятыми, которые нужно включить в ответ. (Некоторые поля, такие как lead_source_id, custom_fields и job_title, по умолчанию не включены)."
+				},
+				"email": {
+					"displayName": "Электронная почта",
+					"placeholder": "имя@email.com"
+				},
+				"givenName": {
+					"displayName": "Собственное имя"
+				},
+				"familyName": {
+					"displayName": "Фамилия"
+				},
+				"since": {
+					"displayName": "С",
+					"description": "Дата, с которой начать поиск"
+				},
+				"until": {
+					"displayName": "До",
+					"description": "Дата для поиска"
+				},
+				"paid": {
+					"displayName": "Оплаченный"
+				},
+				"contactId": {
+					"displayName": "Идентификатор контакта"
+				},
+				"productId": {
+					"displayName": "Идентификатор продукта"
+				}
+			}
+		},
+		"duplicateOption": {
+			"displayName": "Дублирующийся вариант",
+			"description": "Выполняет проверку дубликатов с помощью одного из следующих параметров: Email, EmailAndName. Если совпадение найдено с помощью предоставленной опции, существующий контакт будет обновлен.",
+			"options": {
+				"email": {
+					"displayName": "Электронная почта"
+				},
+				"emailAndName": {
+					"displayName": "Электронная почта и имя"
+				}
+			}
+		},
+		"emailsUi": {
+			"options": {
+				"emailsUi": {
+					"displayName": "Электронная почта"
+				},
+				"emailsValues": {
+					"displayName": "Электронная почта",
+					"values": {
+						"field": {
+							"displayName": "Поле",
+							"options": {
+								"EMAIL1": {
+									"displayName": "Электронная почта 1"
+								},
+								"EMAIL2": {
+									"displayName": "Электронная почта 2"
+								},
+								"EMAIL3": {
+									"displayName": "Электронная почта 3"
+								}
+							}
+						},
+						"email": {
+							"displayName": "Электронная почта",
+							"placeholder": "имя@email.com"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить адрес электронной почты",
+			"displayName": "Электронная почта"
+		},
+		"socialAccountsUi": {
+			"options": {
+				"socialAccountsUi": {
+					"displayName": "Социальные аккаунты"
+				},
+				"socialAccountsValues": {
+					"displayName": "Социальный аккаунт",
+					"values": {
+						"type": {
+							"displayName": "Тип",
+							"options": {
+								"Facebook": {
+									"displayName": "Фейсбук"
+								},
+								"Twitter": {
+									"displayName": "Твиттер"
+								},
+								"LinkedIn": {
+									"displayName": "LinkedIn"
+								}
+							}
+						},
+						"name": {
+							"displayName": "Имя"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить социальную учетную запись",
+			"displayName": "Социальные аккаунты"
+		},
+		"contactId": {
+			"displayName": "Идентификатор контакта"
+		},
+		"userId": {
+			"displayName": "Имя пользователя или идентификатор",
+			"description": "Пользователь infusionsoft, от имени которого необходимо отправить электронное письмо. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"noteId": {
+			"displayName": "Идентификатор заметки"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"contactId": {
+					"displayName": "Идентификатор контакта",
+					"description": "Фильтрация по идентификатору контакта, если у пользователя есть разрешение на просмотр файлов контактов."
+				},
+				"userId": {
+					"displayName": "Имя пользователя или идентификатор",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"active": {
+					"displayName": "Активный"
+				},
+				"email": {
+					"displayName": "Электронная почта",
+					"placeholder": "имя@email.com"
+				},
+				"sinceSentDate": {
+					"displayName": "С даты отправки",
+					"description": "Сообщения электронной почты, отправленные после указанной даты, должны присутствовать, если указана UntilDate."
+				},
+				"untilSentDate": {
+					"displayName": "До даты отправки",
+					"description": "Электронное письмо отправлено до указанной даты"
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Фильтрация файлов по имени, с символом «*» перед или после него для обозначения запросов LIKE."
+				},
+				"permission": {
+					"displayName": "Разрешение",
+					"description": "Фильтрация по разрешению файлов",
+					"options": {
+						"user": {
+							"displayName": "Пользователь"
+						},
+						"company": {
+							"displayName": "Компания"
+						},
+						"both": {
+							"displayName": "Оба"
+						}
+					}
+				},
+				"type": {
+					"displayName": "Тип",
+					"description": "Фильтр по типу файла",
+					"options": {
+						"application": {
+							"displayName": "Приложение"
+						},
+						"attachment": {
+							"displayName": "Вложение"
+						},
+						"contact": {
+							"displayName": "Контакт"
+						},
+						"digitalProduct": {
+							"displayName": "Цифровой продукт"
+						},
+						"fax": {
+							"displayName": "Факс"
+						},
+						"funnel": {
+							"displayName": "Воронка"
+						},
+						"hidden": {
+							"displayName": "Скрытый"
+						},
+						"image": {
+							"displayName": "Изображение"
+						},
+						"import": {
+							"displayName": "Импорт"
+						},
+						"logoThumnail": {
+							"displayName": "Миниатюра логотипа"
+						},
+						"reSampledImage": {
+							"displayName": "Повторное выборочное изображение"
+						},
+						"styleCart": {
+							"displayName": "Корзина стилей"
+						},
+						"templateThumnail": {
+							"displayName": "Миниатюра шаблона"
+						},
+						"ticket": {
+							"displayName": "Билет"
+						},
+						"webform": {
+							"displayName": "Веб-форма"
+						}
+					}
+				},
+				"viewable": {
+					"displayName": "Доступный для просмотра",
+					"description": "Включите в ответ общедоступные или частные файлы",
+					"options": {
+						"public": {
+							"displayName": "Общественный"
+						},
+						"private": {
+							"displayName": "Частный"
+						},
+						"both": {
+							"displayName": "Оба"
+						}
+					}
+				}
+			}
+		},
+		"tagIds": {
+			"displayName": "Идентификаторы тегов",
+			"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"orderDate": {
+			"displayName": "Дата заказа"
+		},
+		"orderTitle": {
+			"displayName": "Название заказа"
+		},
+		"orderType": {
+			"displayName": "Тип заказа",
+			"options": {
+				"offline": {
+					"displayName": "Оффлайн"
+				},
+				"online": {
+					"displayName": "Онлайн"
+				}
+			}
+		},
+		"addressUi": {
+			"options": {
+				"addressUi": {
+					"displayName": "Адрес доставки"
+				},
+				"addressValues": {
+					"displayName": "Адрес",
+					"values": {
+						"company": {
+							"displayName": "Компания"
+						},
+						"countryCode": {
+							"displayName": "Код страны, имя или идентификатор",
+							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+						},
+						"firstName": {
+							"displayName": "Имя"
+						},
+						"middleName": {
+							"displayName": "Второе имя"
+						},
+						"lastName": {
+							"displayName": "Фамилия"
+						},
+						"line1": {
+							"displayName": "Линия 1"
+						},
+						"line2": {
+							"displayName": "Линия 2"
+						},
+						"locality": {
+							"displayName": "Местность"
+						},
+						"region": {
+							"displayName": "Область"
+						},
+						"zipCode": {
+							"displayName": "Почтовый индекс"
+						},
+						"zipFour": {
+							"displayName": "Почтовый индекс четыре"
+						},
+						"phone": {
+							"displayName": "Телефон"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить адрес",
+			"displayName": "Адрес доставки"
+		},
+		"orderItemsUi": {
+			"options": {
+				"orderItemsUi": {
+					"displayName": "Заказ товаров"
+				},
+				"orderItemsValues": {
+					"displayName": "Заказать товар",
+					"values": {
+						"description": {
+							"displayName": "Описание"
+						},
+						"price": {
+							"displayName": "Цена",
+							"description": "Переопределяемая цена продукта, если не указана, будет использоваться цена по умолчанию."
+						},
+						"product ID": {
+							"displayName": "Идентификатор продукта"
+						},
+						"quantity": {
+							"displayName": "Количество"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить позицию заказа",
+			"displayName": "Заказ товаров"
+		},
+		"orderId": {
+			"displayName": "Идентификатор заказа"
+		},
+		"productName": {
+			"displayName": "Название продукта"
+		},
+		"productId": {
+			"displayName": "Идентификатор продукта"
+		},
+		"sentToAddress": {
+			"displayName": "Отправлено по адресу"
+		},
+		"sentFromAddress": {
+			"displayName": "Отправлено с адреса"
+		},
+		"contactIds": {
+			"displayName": "Идентификаторы контактов",
+			"description": "Идентификаторы контактов для получения электронной почты. Несколько можно добавить через запятую."
+		},
+		"subject": {
+			"displayName": "Предмет",
+			"description": "Тема письма"
+		},
+		"attachmentsUi": {
+			"options": {
+				"attachmentsUi": {
+					"displayName": "Вложения",
+					"description": "Вложения, которые необходимо отправлять с каждой копией электронного письма, максимум 10, размером 1 МБ каждое."
+				},
+				"attachmentsValues": {
+					"displayName": "Значения вложений",
+					"values": {
+						"fileData": {
+							"displayName": "Данные файла",
+							"description": "Содержимое вложения, закодированное в Base64."
+						},
+						"fileName": {
+							"displayName": "Имя файла",
+							"description": "Имя прикрепленного файла, включая расширение"
+						}
+					}
+				},
+				"attachmentsBinary": {
+					"displayName": "Вложения Бинарный",
+					"values": {
+						"property": {
+							"displayName": "Свойство",
+							"description": "Имя двоичных свойств, содержащих данные, которые следует добавить в электронное письмо во вложении."
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить вложения",
+			"displayName": "Вложения",
+			"description": "Вложения, которые необходимо отправлять с каждой копией электронного письма, максимум 10, размером 1 МБ каждое."
+		},
+		"binaryData": {
+			"displayName": "Двоичный файл",
+			"description": "Следует ли брать данные для загрузки из двоичного поля"
+		},
+		"binaryPropertyName": {
+			"displayName": "Входное двоичное поле",
+			"hint": "Имя входного двоичного поля, содержащего файл для загрузки."
+		},
+		"fileAssociation": {
+			"displayName": "Ассоциация файлов",
+			"options": {
+				"company": {
+					"displayName": "Компания"
+				},
+				"contact": {
+					"displayName": "Контакт"
+				},
+				"user": {
+					"displayName": "Пользователь"
+				}
+			}
+		},
+		"fileName": {
+			"displayName": "Имя файла",
+			"description": "Имя прикрепленного файла, включая расширение"
+		},
+		"fileData": {
+			"displayName": "Данные файла",
+			"description": "Содержимое вложения, закодированное в Base64."
+		},
+		"isPublic": {
+			"displayName": "Является общедоступным"
+		},
+		"fileId": {
+			"displayName": "Идентификатор файла"
+		}
+	}
+}

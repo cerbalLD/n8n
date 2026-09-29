@@ -1,0 +1,34 @@
+{
+	"header": {
+		"displayName": "Триггер автопилота",
+		"description": "Обработка событий автопилота с помощью веб-перехватчиков"
+	},
+	"nodeView": {
+		"event": {
+			"displayName": "Событие",
+			"options": {
+				"contactAdded": {
+					"displayName": "Контакт добавлен"
+				},
+				"contactAddedToList": {
+					"displayName": "Контакт добавлен в список"
+				},
+				"contactEnteredSegment": {
+					"displayName": "Контакт вошел в сегмент"
+				},
+				"contactLeftSegment": {
+					"displayName": "Контактный левый сегмент"
+				},
+				"contactRemovedFromList": {
+					"displayName": "Контакт удален из списка"
+				},
+				"contactUnsubscribed": {
+					"displayName": "Контакт Отписан от подписки"
+				},
+				"contactUpdated": {
+					"displayName": "Контакт обновлен"
+				}
+			}
+		}
+	}
+}

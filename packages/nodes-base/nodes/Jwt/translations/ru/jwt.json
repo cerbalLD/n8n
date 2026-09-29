@@ -1,0 +1,141 @@
+{
+	"header": {
+		"displayName": "JWT",
+		"description": "JWT"
+	},
+	"nodeView": {
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"decode": {
+					"displayName": "Декодировать"
+				},
+				"sign": {
+					"displayName": "Знак"
+				},
+				"verify": {
+					"displayName": "Проверять"
+				}
+			}
+		},
+		"useJson": {
+			"displayName": "Используйте JSON для создания полезной нагрузки",
+			"description": "Использовать ли JSON для построения утверждений"
+		},
+		"claims": {
+			"displayName": "Заявки на полезную нагрузку",
+			"placeholder": "Добавить претензию",
+			"options": {
+				"audience": {
+					"displayName": "Аудитория",
+					"description": "Идентифицирует получателей, для которых предназначен JWT.",
+					"placeholder": "например https://example.com"
+				},
+				"expiresIn": {
+					"displayName": "Срок действия истекает через",
+					"description": "Время жизни токена в секундах",
+					"placeholder": "например 3600"
+				},
+				"issuer": {
+					"displayName": "Эмитент",
+					"description": "Идентифицирует принципала, выдавшего JWT.",
+					"placeholder": "например https://example.com"
+				},
+				"jwtid": {
+					"displayName": "JWT-идентификатор",
+					"description": "Уникальный идентификатор JWT",
+					"placeholder": "например 123456"
+				},
+				"notBefore": {
+					"displayName": "Не раньше",
+					"description": "Время, до которого JWT не должен приниматься в обработку."
+				},
+				"subject": {
+					"displayName": "Предмет",
+					"description": "Идентифицирует принципала, который является предметом JWT."
+				}
+			}
+		},
+		"claimsJson": {
+			"displayName": "Заявки на полезную нагрузку (JSON)",
+			"description": "Утверждения о добавлении к токену в формате JSON."
+		},
+		"headerClaims": {
+			"displayName": "Утверждения заголовка (JSON)",
+			"description": "Пользовательские утверждения, добавляемые в заголовок JWT, например отпечаток сертификата (x5t) или идентификатор ключа (kid). Они объединяются с автоматически созданным заголовком, и заданные здесь значения имеют приоритет. Полезно для создания утверждений клиента сертификата Microsoft Entra."
+		},
+		"token": {
+			"displayName": "Токен",
+			"description": "Токен для проверки или декодирования"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"complete": {
+					"displayName": "Вернуть дополнительную информацию",
+					"description": "Возвращать ли полный декодированный токен с информацией о заголовке и подписи или только полезную нагрузку."
+				},
+				"ignoreExpiration": {
+					"displayName": "Игнорировать срок действия",
+					"description": "Игнорировать ли истечение срока действия токена"
+				},
+				"ignoreNotBefore": {
+					"displayName": "Игнорировать «Не перед претензией»",
+					"description": "Следует ли игнорировать требование токена «не раньше»"
+				},
+				"clockTolerance": {
+					"displayName": "Допуск часов",
+					"description": "Количество секунд, которое допускается при проверке утверждений nbf и exp, чтобы справиться с небольшой разницей в часах между разными серверами."
+				},
+				"kid": {
+					"displayName": "Идентификатор ключа",
+					"description": "Утверждение kid (идентификатор ключа) — это необязательное утверждение заголовка, используемое для указания ключа для проверки подписи.",
+					"placeholder": "например 123456"
+				},
+				"algorithm": {
+					"displayName": "Алгоритм переопределения",
+					"description": "Алгоритм, используемый для подписи или проверки токена, переопределяет алгоритм в учетных данных.",
+					"options": {
+						"ES256": {
+							"displayName": "ES256"
+						},
+						"ES384": {
+							"displayName": "ES384"
+						},
+						"ES512": {
+							"displayName": "ES512"
+						},
+						"HS256": {
+							"displayName": "HS256"
+						},
+						"HS384": {
+							"displayName": "HS384"
+						},
+						"HS512": {
+							"displayName": "HS512"
+						},
+						"PS256": {
+							"displayName": "PS256"
+						},
+						"PS384": {
+							"displayName": "PS384"
+						},
+						"PS512": {
+							"displayName": "PS512"
+						},
+						"RS256": {
+							"displayName": "RS256"
+						},
+						"RS384": {
+							"displayName": "RS384"
+						},
+						"RS512": {
+							"displayName": "RS512"
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,62 @@
+{
+	"header": {
+		"displayName": "Оура",
+		"description": "Использование API Oura"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"profile": {
+					"displayName": "Профиль"
+				},
+				"summary": {
+					"displayName": "Краткое содержание"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить личную информацию пользователя"
+				},
+				"getActivity": {
+					"displayName": "Получить сводку активности",
+					"description": "Получить сводку активности пользователя"
+				},
+				"getReadiness": {
+					"displayName": "Получить сводку готовности",
+					"description": "Получить сводку готовности пользователя"
+				},
+				"getSleep": {
+					"displayName": "Получить периоды сна",
+					"description": "Получить сводку сна пользователя"
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"end": {
+					"displayName": "Дата окончания",
+					"description": "Дата окончания получения сводной информации. Если этот параметр опущен, по умолчанию используется текущий день."
+				},
+				"start": {
+					"displayName": "Дата начала",
+					"description": "Дата начала получения сводки. Если этот параметр опущен, по умолчанию используется неделя назад."
+				}
+			}
+		}
+	}
+}

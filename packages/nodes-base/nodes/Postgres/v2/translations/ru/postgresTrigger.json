@@ -1,0 +1,85 @@
+{
+	"header": {
+		"displayName": "Постгрес триггер",
+		"description": "Прослушивает сообщения Postgres"
+	},
+	"nodeView": {
+		"triggerMode": {
+			"displayName": "Слушайте",
+			"options": {
+				"createTrigger": {
+					"displayName": "События изменения строки таблицы",
+					"description": "Вставка, обновление или удаление"
+				},
+				"listenTrigger": {
+					"displayName": "Передовой",
+					"description": "Прослушивание существующего канала Postgres"
+				}
+			}
+		},
+		"schema": {
+			"displayName": "Имя схемы"
+		},
+		"tableName": {
+			"displayName": "Имя таблицы"
+		},
+		"channelName": {
+			"displayName": "Название канала",
+			"description": "Название канала, который нужно слушать",
+			"placeholder": "например n8n_channel"
+		},
+		"firesOn": {
+			"displayName": "Событие, которое стоит прослушать",
+			"options": {
+				"INSERT": {
+					"displayName": "Вставлять"
+				},
+				"UPDATE": {
+					"displayName": "Обновлять"
+				},
+				"DELETE": {
+					"displayName": "Удалить"
+				}
+			}
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"channelName": {
+					"displayName": "Название канала",
+					"description": "Название канала, который нужно слушать",
+					"placeholder": "например n8n_channel"
+				},
+				"functionName": {
+					"displayName": "Имя функции",
+					"description": "Имя создаваемой функции",
+					"placeholder": "например n8n_trigger_function()"
+				},
+				"replaceIfExists": {
+					"displayName": "Заменить, если существует",
+					"description": "Заменять ли существующую функцию и триггер с тем же именем"
+				},
+				"triggerName": {
+					"displayName": "Имя триггера",
+					"description": "Имя создаваемого триггера",
+					"placeholder": "например n8n_trigger"
+				}
+			}
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"connectionTimeout": {
+					"displayName": "Тайм-аут соединения",
+					"description": "Количество секунд, зарезервированных для подключения к базе данных"
+				},
+				"delayClosingIdleConnection": {
+					"displayName": "Задержка закрытия соединения в режиме ожидания",
+					"description": "Количество секунд ожидания, прежде чем неактивное соединение можно будет закрыть."
+				}
+			}
+		}
+	}
+}

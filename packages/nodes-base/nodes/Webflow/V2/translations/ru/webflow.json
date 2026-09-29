@@ -1,0 +1,82 @@
+{
+	"header": {
+		"displayName": "веб-поток",
+		"description": "Используйте API Webflow"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"item": {
+					"displayName": "Элемент"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать"
+				},
+				"deleteItem": {
+					"displayName": "Удалить"
+				},
+				"get": {
+					"displayName": "Получать"
+				},
+				"getAll": {
+					"displayName": "Получить много"
+				},
+				"update": {
+					"displayName": "Обновлять"
+				}
+			}
+		},
+		"siteId": {
+			"displayName": "Имя или идентификатор сайта",
+			"description": "Идентификатор сайта, содержащего коллекцию, элементы которой нужно добавить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"collectionId": {
+			"displayName": "Название или идентификатор коллекции",
+			"description": "Идентификатор коллекции, в которую нужно добавить элемент. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"live": {
+			"displayName": "Жить",
+			"description": "Должен ли элемент быть опубликован на действующем сайте"
+		},
+		"fieldsUi": {
+			"options": {
+				"fieldsUi": {
+					"displayName": "Поля"
+				},
+				"fieldValues": {
+					"displayName": "Поле",
+					"values": {
+						"fieldId": {
+							"displayName": "Имя поля или идентификатор",
+							"description": "Поле для установки создаваемого элемента. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+						},
+						"fieldValue": {
+							"displayName": "Значение поля",
+							"description": "Значение, которое нужно установить для создаваемого элемента"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить поле",
+			"displayName": "Поля"
+		},
+		"itemId": {
+			"displayName": "Идентификатор предмета",
+			"description": "Идентификатор элемента для обновления"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		}
+	}
+}

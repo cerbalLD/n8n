@@ -1,0 +1,280 @@
+{
+	"header": {
+		"displayName": "Вебхук",
+		"description": "Запускает рабочий процесс при вызове вебхука"
+	},
+	"nodeView": {
+		"multipleMethods": {
+			"displayName": "Разрешить несколько методов HTTP",
+			"description": "Разрешить ли веб-перехватчику прослушивать несколько методов HTTP"
+		},
+		"httpMethod": {
+			"displayName": "HTTP-методы",
+			"description": "Методы HTTP для прослушивания",
+			"options": {
+				"DELETE": {
+					"displayName": "DELETE"
+				},
+				"GET": {
+					"displayName": "GET"
+				},
+				"HEAD": {
+					"displayName": "HEAD"
+				},
+				"PATCH": {
+					"displayName": "PATCH"
+				},
+				"POST": {
+					"displayName": "POST"
+				},
+				"PUT": {
+					"displayName": "PUT"
+				}
+			}
+		},
+		"path": {
+			"displayName": "Путь",
+			"description": "Путь для прослушивания, динамические значения могут быть указаны с помощью ':', например. 'ваш-путь/:динамическое-значение'. Если установлены динамические значения, к пути будет добавлен «webhookId».",
+			"placeholder": "вебхук"
+		},
+		"authentication": {
+			"displayName": "Аутентификация",
+			"description": "Способ аутентификации",
+			"options": {
+				"basicAuth": {
+					"displayName": "Базовая аутентификация"
+				},
+				"headerAuth": {
+					"displayName": "Аутентификация заголовка"
+				},
+				"jwtAuth": {
+					"displayName": "JWT-аутентификация"
+				},
+				"n8nOAuth2": {
+					"displayName": "n8n Аутентификация пользователя (OAuth2)",
+					"description": "Требовать от пользователя согласия на использование его учетной записи n8n."
+				},
+				"none": {
+					"displayName": "Никто"
+				}
+			}
+		},
+		"requireExecuteAccess": {
+			"displayName": "Требовать разрешение на выполнение рабочего процесса",
+			"description": "Должен ли инициирующий пользователь иметь разрешение на выполнение рабочего процесса в проекте, к которому он принадлежит."
+		},
+		"responseMode": {
+			"displayName": "Отвечать",
+			"description": "Когда и как реагировать на вебхук",
+			"options": {
+				"onReceived": {
+					"displayName": "Немедленно",
+					"description": "Как только этот узел выполнится"
+				},
+				"lastNode": {
+					"displayName": "Когда завершается последний узел",
+					"description": "Возвращает данные последнего выполненного узла"
+				},
+				"responseNode": {
+					"displayName": "Использование узла «Ответить на веб-перехватчик»",
+					"description": "Ответ определен в этом узле"
+				},
+				"streaming": {
+					"displayName": "Потоковое вещание",
+					"description": "Возвращает данные в режиме реального времени с узлов с поддержкой потоковой передачи."
+				}
+			}
+		},
+		"webhookNotice": {
+			"displayName": "Вставьте узел «Ответить на Webhook», чтобы контролировать, когда и как вы отвечаете. <a href=\"https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.respondtowebhook/\" target=\"_blank\">Подробнее</a>"
+		},
+		"webhookStreamingNotice": {
+			"displayName": "Вставьте узел, поддерживающий потоковую передачу (например, «Агент AI»), и включите потоковую передачу непосредственно в ответ во время выполнения рабочего процесса. <a href=\"https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.respondtowebhook/\" target=\"_blank\">Подробнее</a>"
+		},
+		"responseCode": {
+			"displayName": "Код ответа",
+			"description": "Код HTTP-ответа для возврата"
+		},
+		"responseData": {
+			"displayName": "Данные ответа",
+			"description": "Какие данные следует вернуть. Если он должен возвращать все элементы в виде массива или только первый элемент в качестве объекта.",
+			"options": {
+				"allEntries": {
+					"displayName": "Все записи",
+					"description": "Возвращает все записи последнего узла. Всегда возвращает массив."
+				},
+				"firstEntryJson": {
+					"displayName": "Первая запись JSON",
+					"description": "Возвращает данные JSON первой записи последнего узла. Всегда возвращает объект JSON."
+				},
+				"firstEntryBinary": {
+					"displayName": "Первая запись двоичного файла",
+					"description": "Возвращает двоичные данные первой записи последнего узла. Всегда возвращает двоичный файл."
+				},
+				"noData": {
+					"displayName": "Нет тела ответа",
+					"description": "Возвращается без тела"
+				}
+			}
+		},
+		"responseBinaryPropertyName": {
+			"displayName": "Имя свойства",
+			"description": "Имя возвращаемого двоичного свойства"
+		},
+		"contentTypeNotice": {
+			"displayName": "Если вы отправляете ответ обратно, добавьте заголовок ответа «Content-Type» с соответствующим значением, чтобы избежать неожиданного поведения."
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"binaryData": {
+					"displayName": "Двоичный файл",
+					"description": "Будет ли вебхук получать двоичные данные"
+				},
+				"binaryPropertyName": {
+					"displayName": "Поместите выходной файл в поле",
+					"description": "Если данные получены через «Form-Data Multipart», это будет префикс, и к нему будет прикреплено число, начинающееся с 0.",
+					"hint": "Имя выходного двоичного поля, в которое помещается файл."
+				},
+				"ignoreBots": {
+					"displayName": "Игнорировать ботов",
+					"description": "Следует ли игнорировать запросы от ботов, таких как программы предварительного просмотра ссылок и веб-сканеры."
+				},
+				"ipWhitelist": {
+					"displayName": "Белый список IP-адресов",
+					"description": "Список разрешенных IP-адресов или диапазонов CIDR, разделенный запятыми. Оставьте пустым, чтобы разрешить все IP-адреса.",
+					"placeholder": "например 127.0.0.1, 192.168.1.0/24"
+				},
+				"noResponseBody": {
+					"displayName": "Нет тела ответа",
+					"description": "Отправлять ли какое-либо тело в ответе"
+				},
+				"onlyRunIf": {
+					"displayName": "Запускать только если",
+					"description": "Выражение оценивается по входящему запросу. Рабочий процесс будет запущен только в том случае, если выражение возвращает true. <code>$json__N8N_TOKEN_1__ предоставляет запрос как <code>{ тело, заголовки, параметры, запрос }</code>. Запросы, которые не совпадают, получают ответ 200 без создания выполнения. Если выражение не может быть вычислено, запрос разрешается и ошибка регистрируется."
+				},
+				"responsePropertyName": {
+					"displayName": "Имя свойства",
+					"description": "Имя свойства, данные которого возвращаются вместо всего JSON."
+				},
+				"rawBody": {
+					"displayName": "сырое тело",
+					"description": "Возвращать ли сырое тело"
+				},
+				"responseCode": {
+					"values": {
+						"responseCode": {
+							"displayName": "Код ответа"
+						},
+						"values": {
+							"options": {
+								"responseCode": {
+									"displayName": "Код ответа",
+									"description": "Код ответа HTTP для возврата",
+									"options": {
+										"200": {
+											"displayName": "200",
+											"description": "ОК – запрос выполнен успешно"
+										},
+										"201": {
+											"displayName": "201",
+											"description": "Создано – запрос выполнен."
+										},
+										"204": {
+											"displayName": "204",
+											"description": "Нет контента – запрос обработан, контент не возвращен."
+										},
+										"301": {
+											"displayName": "301",
+											"description": "Перемещено навсегда — запрошенный ресурс перемещен навсегда."
+										},
+										"302": {
+											"displayName": "302",
+											"description": "Найден — запрошенный ресурс временно перемещен."
+										},
+										"304": {
+											"displayName": "304",
+											"description": "Не изменено — ресурс не был изменен."
+										},
+										"400": {
+											"displayName": "400",
+											"description": "Неверный запрос – запрос не может быть понят."
+										},
+										"401": {
+											"displayName": "401",
+											"description": "Несанкционировано – запрос требует аутентификации пользователя."
+										},
+										"403": {
+											"displayName": "403",
+											"description": "Запрещено — Сервер понял, но отказывается выполнять"
+										},
+										"404": {
+											"displayName": "404",
+											"description": "Не найдено — сервер не нашел совпадения."
+										},
+										"customCode": {
+											"displayName": "Пользовательский код",
+											"description": "Напишите любой HTTP-код"
+										}
+									}
+								},
+								"customCode": {
+									"displayName": "Код",
+									"placeholder": "например 400"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить код ответа",
+					"displayName": "Код ответа",
+					"options": {
+						"values": {
+							"displayName": "Ценности"
+						}
+					}
+				},
+				"responseContentType": {
+					"displayName": "Тип контента ответа",
+					"description": "Установите пользовательский тип контента, который будет возвращаться, если должен быть возвращен другой, например «application/json».",
+					"placeholder": "приложение/xml"
+				},
+				"responseData": {
+					"displayName": "Данные ответа",
+					"description": "Пользовательские данные ответа для отправки",
+					"placeholder": "успех"
+				},
+				"responseHeaders": {
+					"values": {
+						"responseHeaders": {
+							"displayName": "Заголовки ответов",
+							"description": "Добавьте заголовки в ответ вебхука"
+						},
+						"entries": {
+							"options": {
+								"name": {
+									"displayName": "Имя",
+									"description": "Название заголовка"
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Значение заголовка"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить заголовок ответа",
+					"displayName": "Заголовки ответов",
+					"description": "Добавьте заголовки в ответ вебхука",
+					"options": {
+						"entries": {
+							"displayName": "Записи"
+						}
+					}
+				}
+			}
+		},
+		"eventTriggerDescription": "Ожидание, пока вы позвоните по тестовому URL",
+		"activationMessage": "Теперь вы можете совершать вызовы по URL-адресу рабочего веб-перехватчика."
+	}
+}

@@ -1,0 +1,208 @@
+{
+	"header": {
+		"displayName": "Тапфилиат",
+		"description": "Использование API Tapfiliate"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"affiliate": {
+					"displayName": "Партнер"
+				},
+				"affiliateMetadata": {
+					"displayName": "Партнерские метаданные"
+				},
+				"programAffiliate": {
+					"displayName": "Партнерская программа"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать партнерку"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить партнера"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить партнерку в программе"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получите много партнеров в программе"
+				},
+				"add": {
+					"displayName": "Добавлять",
+					"description": "Добавить партнера в программу"
+				},
+				"remove": {
+					"displayName": "Удалять",
+					"description": "Удалить метаданные партнера"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить метаданные партнера"
+				},
+				"approve": {
+					"displayName": "Утвердить",
+					"description": "Утвердить партнера для программы"
+				},
+				"disapprove": {
+					"displayName": "Не одобрять",
+					"description": "Отклонить партнерство"
+				}
+			}
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"description": "Электронная почта партнера",
+			"placeholder": "имя@email.com"
+		},
+		"firstname": {
+			"displayName": "Имя",
+			"description": "Имя партнера"
+		},
+		"lastname": {
+			"displayName": "Фамилия",
+			"description": "Фамилия партнера"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"addressUi": {
+					"values": {
+						"addressUi": {
+							"displayName": "Адрес"
+						},
+						"addressValues": {
+							"options": {
+								"address": {
+									"displayName": "Линия 1"
+								},
+								"address_two": {
+									"displayName": "Линия 2"
+								},
+								"postal_code": {
+									"displayName": "Почтовый индекс"
+								},
+								"city": {
+									"displayName": "Город"
+								},
+								"state": {
+									"displayName": "Состояние"
+								},
+								"country": {
+									"displayName": "Код страны",
+									"description": "Код страны ISO_3166-1. <a href=\"https://en.wikipedia.org/wiki/ISO_3166-1\">Коды</a>."
+								}
+							}
+						}
+					},
+					"placeholder": "Адрес",
+					"displayName": "Адрес",
+					"options": {
+						"addressValues": {
+							"displayName": "Адрес"
+						}
+					}
+				},
+				"companyName": {
+					"displayName": "Название компании",
+					"description": "Данные компании партнера"
+				},
+				"approved": {
+					"displayName": "Одобренный",
+					"description": "Необязательный статус утверждения"
+				},
+				"coupon": {
+					"displayName": "Купон",
+					"description": "Дополнительный купон для этого партнера"
+				}
+			}
+		},
+		"affiliateId": {
+			"displayName": "Идентификатор партнера",
+			"description": "Идентификатор партнера"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"affiliate_group_id": {
+					"displayName": "Идентификатор партнерской группы",
+					"description": "Получает филиалы для определенной партнерской группы."
+				},
+				"click_id": {
+					"displayName": "Нажмите идентификатор"
+				},
+				"email": {
+					"displayName": "Электронная почта",
+					"description": "Адрес электронной почты",
+					"placeholder": "имя@email.com"
+				},
+				"parentId": {
+					"displayName": "Идентификатор родителя",
+					"description": "Извлекает детей для определенного родительского филиала"
+				},
+				"referral_code": {
+					"displayName": "Реферальный код",
+					"description": "Реферальный код партнера. Это соответствует значению ref= в их реферальной ссылке."
+				},
+				"source_id": {
+					"displayName": "Идентификатор источника"
+				}
+			}
+		},
+		"metadataUi": {
+			"options": {
+				"metadataUi": {
+					"displayName": "Метаданные",
+					"description": "Метаданные"
+				},
+				"metadataValues": {
+					"displayName": "Метаданные",
+					"values": {
+						"key": {
+							"displayName": "Ключ",
+							"description": "Имя добавляемого ключа метаданных"
+						},
+						"value": {
+							"displayName": "Ценить",
+							"description": "Значение, которое нужно установить для ключа метаданных"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить метаданные",
+			"displayName": "Метаданные",
+			"description": "Метаданные"
+		},
+		"key": {
+			"displayName": "Ключ",
+			"description": "Имя ключа метаданных для обновления"
+		},
+		"value": {
+			"displayName": "Ценить",
+			"description": "Значение, которое нужно установить для ключа метаданных"
+		},
+		"programId": {
+			"displayName": "Название или идентификатор программы",
+			"description": "Идентификатор программы, в которую нужно добавить партнера. Этот идентификатор можно найти как часть URL-адреса при просмотре программы на платформе. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		}
+	}
+}

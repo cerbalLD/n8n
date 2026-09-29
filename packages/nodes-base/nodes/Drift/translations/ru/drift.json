@@ -1,0 +1,94 @@
+{
+	"header": {
+		"displayName": "Дрифт",
+		"description": "Использовать Drift API"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"accessToken": {
+					"displayName": "Токен доступа"
+				},
+				"oAuth2": {
+					"displayName": "ОАут2"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"contact": {
+					"displayName": "Контакт"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать контакт"
+				},
+				"getCustomAttributes": {
+					"displayName": "Пользовательские атрибуты",
+					"description": "Получить пользовательские атрибуты"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удаление контакта"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить контакт"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить контакт"
+				}
+			}
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"description": "Электронная почта контактного лица",
+			"placeholder": "имя@email.com"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"name": {
+					"displayName": "Имя",
+					"description": "Имя контакта"
+				},
+				"phone": {
+					"displayName": "Телефон",
+					"description": "Номер телефона, связанный с контактом"
+				}
+			}
+		},
+		"contactId": {
+			"displayName": "Идентификатор контакта",
+			"description": "Уникальный идентификатор контакта"
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"email": {
+					"displayName": "Электронная почта",
+					"description": "Электронная почта контактного лица",
+					"placeholder": "имя@email.com"
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Имя контакта"
+				},
+				"phone": {
+					"displayName": "Телефон",
+					"description": "Номер телефона, связанный с контактом"
+				}
+			}
+		}
+	}
+}

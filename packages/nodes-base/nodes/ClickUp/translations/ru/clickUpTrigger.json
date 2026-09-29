@@ -1,0 +1,130 @@
+{
+	"header": {
+		"displayName": "Триггер ClickUp",
+		"description": "Обработка событий ClickUp с помощью веб-перехватчиков (бета-версия)"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"accessToken": {
+					"displayName": "Токен доступа"
+				},
+				"oAuth2": {
+					"displayName": "ОАут2"
+				}
+			}
+		},
+		"team": {
+			"displayName": "Название или идентификатор команды",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"events": {
+			"displayName": "События",
+			"options": {
+				"*": {
+					"displayName": "*"
+				},
+				"folderCreated": {
+					"displayName": "папка.создана"
+				},
+				"folderDeleted": {
+					"displayName": "папка.удалена"
+				},
+				"folderUpdated": {
+					"displayName": "папка.обновлено"
+				},
+				"goalCreated": {
+					"displayName": "цель.создано"
+				},
+				"goalDeleted": {
+					"displayName": "цель.удалена"
+				},
+				"goalUpdated": {
+					"displayName": "цель.обновлено"
+				},
+				"keyResultCreated": {
+					"displayName": "keyResult.created"
+				},
+				"keyResultDelete": {
+					"displayName": "keyResult.deleted"
+				},
+				"keyResultUpdated": {
+					"displayName": "keyResult.updated"
+				},
+				"listCreated": {
+					"displayName": "список.создан"
+				},
+				"listDeleted": {
+					"displayName": "список.удален"
+				},
+				"listUpdated": {
+					"displayName": "список.обновлено"
+				},
+				"spaceCreated": {
+					"displayName": "пространство.создано"
+				},
+				"spaceDeleted": {
+					"displayName": "пространство.удалено"
+				},
+				"spaceUpdated": {
+					"displayName": "пространство.обновлено"
+				},
+				"taskAssigneeUpdated": {
+					"displayName": "задача.назначенный.обновлено"
+				},
+				"taskCommentPosted": {
+					"displayName": "задача.комментарий.опубликовано"
+				},
+				"taskCommentUpdated": {
+					"displayName": "задача.комментарий.обновлено"
+				},
+				"taskCreated": {
+					"displayName": "задача.создано"
+				},
+				"taskDeleted": {
+					"displayName": "задача.удалена"
+				},
+				"taskDueDateUpdated": {
+					"displayName": "Task.dueDate.updated"
+				},
+				"taskMoved": {
+					"displayName": "задача.перемещено"
+				},
+				"taskStatusUpdated": {
+					"displayName": "задача.статус.обновлено"
+				},
+				"taskTagUpdated": {
+					"displayName": "Task.tag.updated"
+				},
+				"taskTimeEstimateUpdated": {
+					"displayName": "Task.timeEstimate.updated"
+				},
+				"taskTimeTrackedUpdated": {
+					"displayName": "Task.timeTracked.updated"
+				},
+				"taskUpdated": {
+					"displayName": "задача.обновлено"
+				}
+			}
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"folderId": {
+					"displayName": "Идентификатор папки"
+				},
+				"listId": {
+					"displayName": "Идентификатор списка"
+				},
+				"spaceId": {
+					"displayName": "Идентификатор пространства"
+				},
+				"taskId": {
+					"displayName": "Идентификатор задачи"
+				}
+			}
+		}
+	}
+}

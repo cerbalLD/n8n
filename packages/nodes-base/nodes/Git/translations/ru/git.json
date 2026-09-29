@@ -1,0 +1,212 @@
+{
+	"header": {
+		"displayName": "Гит",
+		"description": "Управляйте гит."
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"description": "Способ аутентификации",
+			"options": {
+				"gitPassword": {
+					"displayName": "Аутентификация"
+				},
+				"none": {
+					"displayName": "Никто"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"add": {
+					"displayName": "Добавлять",
+					"description": "Добавьте файл или папку для фиксации"
+				},
+				"addConfig": {
+					"displayName": "Добавить конфигурацию",
+					"description": "Добавить свойство конфигурации"
+				},
+				"clone": {
+					"displayName": "Клонировать",
+					"description": "Клонировать репозиторий"
+				},
+				"commit": {
+					"displayName": "Совершить",
+					"description": "Зафиксировать файлы или папки в git"
+				},
+				"fetch": {
+					"displayName": "Принести",
+					"description": "Получить из удаленного репозитория"
+				},
+				"listConfig": {
+					"displayName": "Список конфигураций",
+					"description": "Возврат текущей конфигурации"
+				},
+				"log": {
+					"displayName": "Бревно",
+					"description": "Вернуть историю коммитов git"
+				},
+				"pull": {
+					"displayName": "Тянуть",
+					"description": "Извлечь из удаленного репозитория"
+				},
+				"push": {
+					"displayName": "Толкать",
+					"description": "Отправить в удаленный репозиторий"
+				},
+				"pushTags": {
+					"displayName": "Push-теги",
+					"description": "Отправить теги в удаленный репозиторий"
+				},
+				"reflog": {
+					"displayName": "Рефлог",
+					"description": "Возвращаемый журнал ссылок"
+				},
+				"status": {
+					"displayName": "Статус",
+					"description": "Возвращаемый статус текущего репозитория"
+				},
+				"switchBranch": {
+					"displayName": "Переключить филиал",
+					"description": "Перейти в другую ветку"
+				},
+				"tag": {
+					"displayName": "Ярлык",
+					"description": "Создать новый тег"
+				},
+				"userSetup": {
+					"displayName": "Настройка пользователя",
+					"description": "Установить пользователя"
+				}
+			}
+		},
+		"repositoryPath": {
+			"displayName": "Новый путь к репозиторию",
+			"description": "Локальный путь, в который следует клонировать репозиторий git.",
+			"placeholder": "/tmp/репозиторий"
+		},
+		"pathsToAdd": {
+			"displayName": "Пути для добавления",
+			"description": "Разделенный запятыми список путей (абсолютных или относительных к пути к репозиторию) к файлам или папкам для добавления.",
+			"placeholder": "README.md"
+		},
+		"key": {
+			"displayName": "Ключ",
+			"description": "Имя ключа для установки",
+			"options": {
+				"user": {
+					"email": {
+						"displayName": "user.email"
+					},
+					"name": {
+						"displayName": "имя пользователя"
+					}
+				},
+				"remote": {
+					"origin": {
+						"url": {
+							"displayName": "удаленный.origin.url"
+						}
+					}
+				}
+			},
+			"placeholder": "user.email"
+		},
+		"value": {
+			"displayName": "Ценить",
+			"description": "Значение ключа для установки",
+			"placeholder": "имя@example.com"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"mode": {
+					"displayName": "Режим",
+					"description": "Добавить настройку, а не устанавливать ее в локальной конфигурации",
+					"options": {
+						"append": {
+							"displayName": "Добавить"
+						},
+						"set": {
+							"displayName": "Набор"
+						}
+					}
+				},
+				"branch": {
+					"displayName": "Ветвь",
+					"description": "Ветка, на которую нужно переключиться перед отправкой. Если пусто или не установлено, будет отправлена ​​текущая ветка.",
+					"placeholder": "основной"
+				},
+				"pathsToAdd": {
+					"displayName": "Пути для добавления",
+					"description": "Разделенный запятыми список путей (абсолютных или относительных к пути к репозиторию) к файлам или папкам для фиксации. Если не установлено, все «добавленные» файлы и папки будут зафиксированы.",
+					"placeholder": "/данные/file1.json"
+				},
+				"file": {
+					"displayName": "Файл",
+					"description": "Путь (абсолютный или относительный к пути к репозиторию) к файлу или папке, для получения истории"
+				},
+				"targetRepository": {
+					"displayName": "Целевой репозиторий",
+					"description": "URL-адрес или путь к репозиторию для отправки",
+					"placeholder": "https://github.com/n8n-io/n8n"
+				},
+				"reference": {
+					"displayName": "Ссылка",
+					"description": "Ссылка для отображения журнала ссылок (например, HEAD, имя ветки). Оставьте пустым для HEAD.",
+					"placeholder": "HEAD"
+				},
+				"createBranch": {
+					"displayName": "Создать ветку, если она не существует",
+					"description": "Создавать ли ветку, если она не существует"
+				},
+				"startPoint": {
+					"displayName": "Начальная точка",
+					"description": "Коммит/ветвь/тег, из которого создается новая ветка. Если не установлено, создается из текущего HEAD.",
+					"placeholder": "основной"
+				},
+				"force": {
+					"displayName": "Принудительный переключатель",
+					"description": "Следует ли принудительно переключать ветку, отбрасывая любые локальные изменения."
+				},
+				"setUpstream": {
+					"displayName": "Установить восходящий поток",
+					"description": "Настраивать ли отслеживание удаленной ветки при создании новой ветки"
+				},
+				"remoteName": {
+					"displayName": "Удаленное имя",
+					"description": "Имя пульта для отслеживания",
+					"placeholder": "источник"
+				}
+			}
+		},
+		"sourceRepository": {
+			"displayName": "Исходный репозиторий",
+			"description": "URL-адрес или путь к репозиторию для клонирования.",
+			"placeholder": "https://github.com/n8n-io/n8n"
+		},
+		"message": {
+			"displayName": "Сообщение",
+			"description": "Сообщение фиксации, которое нужно использовать"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"branchName": {
+			"displayName": "Название филиала",
+			"description": "Название ветки, на которую нужно переключиться",
+			"placeholder": "функция/новая функция"
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Имя тега, который нужно создать"
+		}
+	}
+}

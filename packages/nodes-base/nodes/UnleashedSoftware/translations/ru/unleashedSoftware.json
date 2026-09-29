@@ -1,0 +1,119 @@
+{
+	"header": {
+		"displayName": "Развязанное программное обеспечение",
+		"description": "Используйте Unleashed Software API"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"salesOrder": {
+					"displayName": "Заказ на продажу"
+				},
+				"stockOnHand": {
+					"displayName": "Наличие на складе"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получите много акций под рукой"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получите запас под рукой"
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"customerId": {
+					"displayName": "Идентификатор клиента",
+					"description": "Возвращает заказы только для указанного GUID клиента. CustomerId можно указать в виде списка идентификаторов GUID, разделенных запятыми.",
+					"placeholder": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
+				},
+				"customerCode": {
+					"displayName": "Код клиента",
+					"description": "Возвращает заказы, начинающиеся с определенного кода клиента."
+				},
+				"endDate": {
+					"displayName": "Дата окончания",
+					"description": "Возвращает заказы, дата заказа которых предшествует указанной дате. УНИВЕРСАЛЬНОЕ ГЛОБАЛЬНОЕ ВРЕМЯ."
+				},
+				"modifiedSince": {
+					"displayName": "Изменено с момента",
+					"description": "Возвращает значения имеющихся запасов, измененные после определенной даты."
+				},
+				"orderNumber": {
+					"displayName": "Номер заказа",
+					"description": "Возвращает один заказ с указанным номером заказа. Если установлено, он переопределяет все остальные фильтры."
+				},
+				"orderStatus": {
+					"displayName": "Статус заказа",
+					"description": "Возвращает заказы с указанным статусом. Если фильтр orderStatus не указан, то по умолчанию мы исключаем «Удален».",
+					"options": {
+						"Backordered": {
+							"displayName": "Отложенный заказ"
+						},
+						"Completed": {
+							"displayName": "Завершенный"
+						},
+						"Deleted": {
+							"displayName": "Удалено"
+						},
+						"Parked": {
+							"displayName": "Припаркован"
+						},
+						"Placed": {
+							"displayName": "Размещено"
+						}
+					}
+				},
+				"startDate": {
+					"displayName": "Дата начала",
+					"description": "Возвращает заказы с датой заказа после указанной даты. УНИВЕРСАЛЬНОЕ ГЛОБАЛЬНОЕ ВРЕМЯ."
+				},
+				"asAtDate": {
+					"displayName": "На дату",
+					"description": "Возвращает запасы в наличии на определенную дату"
+				},
+				"IsAssembled": {
+					"displayName": "Собран",
+					"description": "Будет ли AvailableQty также включать количество, которое можно собрать?"
+				},
+				"orderBy": {
+					"displayName": "Заказать по",
+					"description": "Упорядочивает список по определенному столбцу, по умолчанию список упорядочивается по коду продукта."
+				},
+				"productId": {
+					"displayName": "Идентификатор продукта",
+					"description": "Возвращает продукты с конкретным Руководством по продукту. Вы можете ввести несколько идентификаторов продуктов, разделенных запятыми."
+				},
+				"warehouseCode": {
+					"displayName": "Код склада",
+					"description": "Возвращает товар в наличии по определенному коду склада."
+				},
+				"warehouseName": {
+					"displayName": "Название склада",
+					"description": "Возвращает запасы на складе с определенным названием."
+				}
+			}
+		},
+		"productId": {
+			"displayName": "Идентификатор продукта"
+		}
+	}
+}

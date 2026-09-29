@@ -1,0 +1,33 @@
+{
+	"header": {
+		"displayName": "Мудрый триггер",
+		"description": "Обработка событий Wise с помощью веб-перехватчиков"
+	},
+	"nodeView": {
+		"profileId": {
+			"displayName": "Имя или идентификатор профиля",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"event": {
+			"displayName": "Событие",
+			"options": {
+				"balanceCredit": {
+					"displayName": "Баланс Кредит",
+					"description": "Срабатывает каждый раз при пополнении баланса счета"
+				},
+				"balanceUpdate": {
+					"displayName": "Обновление баланса",
+					"description": "Запускается каждый раз, когда балансовый счет зачисляется или дебетуется"
+				},
+				"transferActiveCases": {
+					"displayName": "Передача активного дела",
+					"description": "Срабатывает каждый раз, когда обновляется список активных дел перевода."
+				},
+				"tranferStateChange": {
+					"displayName": "Состояние передачи изменено",
+					"description": "Срабатывает каждый раз при обновлении статуса перевода."
+				}
+			}
+		}
+	}
+}

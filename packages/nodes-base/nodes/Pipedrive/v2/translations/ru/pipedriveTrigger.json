@@ -1,0 +1,153 @@
+{
+	"header": {
+		"displayName": "Триггер трубопроводного привода",
+		"description": "Запускает рабочий процесс при возникновении событий Pipedrive."
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"apiToken": {
+					"displayName": "API-токен"
+				},
+				"oAuth2": {
+					"displayName": "ОАут2"
+				}
+			}
+		},
+		"incomingAuthentication": {
+			"displayName": "Входящая аутентификация",
+			"description": "Должна ли быть активирована аутентификация для веб-перехватчика (делает его более безопасным)",
+			"options": {
+				"basicAuth": {
+					"displayName": "Базовая аутентификация"
+				},
+				"none": {
+					"displayName": "Никто"
+				}
+			}
+		},
+		"action": {
+			"displayName": "Действие",
+			"description": "Тип действия, о котором необходимо получать уведомления",
+			"options": {
+				"added": {
+					"displayName": "Добавлен",
+					"description": "Данные добавлены"
+				},
+				"*": {
+					"displayName": "Все",
+					"description": "Любое изменение"
+				},
+				"deleted": {
+					"displayName": "Удалено",
+					"description": "Данные удалены"
+				},
+				"merged": {
+					"displayName": "Объединено",
+					"description": "Данные были объединены"
+				},
+				"updated": {
+					"displayName": "Обновлено",
+					"description": "Данные обновлены"
+				},
+				"create": {
+					"displayName": "Создавать",
+					"description": "Данные добавлены"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Данные удалены"
+				},
+				"change": {
+					"displayName": "Изменять",
+					"description": "Данные изменились"
+				}
+			}
+		},
+		"entity": {
+			"displayName": "Сущность",
+			"description": "Тип объекта, о котором нужно получать уведомления",
+			"options": {
+				"activity": {
+					"displayName": "Активность"
+				},
+				"activityType": {
+					"displayName": "Тип деятельности"
+				},
+				"*": {
+					"displayName": "Все"
+				},
+				"deal": {
+					"displayName": "Иметь дело"
+				},
+				"lead": {
+					"displayName": "Вести"
+				},
+				"note": {
+					"displayName": "Примечание"
+				},
+				"organization": {
+					"displayName": "Организация"
+				},
+				"person": {
+					"displayName": "Человек"
+				},
+				"pipeline": {
+					"displayName": "Трубопровод"
+				},
+				"product": {
+					"displayName": "Продукт"
+				},
+				"stage": {
+					"displayName": "Этап"
+				},
+				"user": {
+					"displayName": "Пользователь"
+				}
+			}
+		},
+		"object": {
+			"displayName": "Объект",
+			"description": "Тип объекта, о котором нужно получать уведомления",
+			"options": {
+				"activity": {
+					"displayName": "Активность"
+				},
+				"activityType": {
+					"displayName": "Тип деятельности"
+				},
+				"*": {
+					"displayName": "Все"
+				},
+				"deal": {
+					"displayName": "Иметь дело"
+				},
+				"lead": {
+					"displayName": "Вести"
+				},
+				"note": {
+					"displayName": "Примечание"
+				},
+				"organization": {
+					"displayName": "Организация"
+				},
+				"person": {
+					"displayName": "Человек"
+				},
+				"pipeline": {
+					"displayName": "Трубопровод"
+				},
+				"product": {
+					"displayName": "Продукт"
+				},
+				"stage": {
+					"displayName": "Этап"
+				},
+				"user": {
+					"displayName": "Пользователь"
+				}
+			}
+		}
+	}
+}

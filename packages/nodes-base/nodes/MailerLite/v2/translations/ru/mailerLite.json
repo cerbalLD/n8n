@@ -1,0 +1,149 @@
+{
+	"header": {
+		"displayName": "MailerLite",
+		"description": "Использование API Mailer Lite"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"subscriber": {
+					"displayName": "подписчик"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать нового подписчика"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить подписчика"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить много подписчиков"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить подписчика"
+				}
+			}
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"description": "Электронная почта нового подписчика",
+			"placeholder": "имя@email.com"
+		},
+		"subscriberId": {
+			"displayName": "Электронная почта подписчика",
+			"description": "Электронная почта подписчика для получения"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"customFieldsUi": {
+					"values": {
+						"customFieldsUi": {
+							"displayName": "Пользовательские поля",
+							"description": "Фильтровать по настраиваемым полям"
+						},
+						"customFieldsValues": {
+							"options": {
+								"fieldId": {
+									"displayName": "Имя поля или идентификатор",
+									"description": "Идентификатор поля, к которому нужно добавить настраиваемое поле. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Значение, которое нужно установить в настраиваемом поле"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить настраиваемое поле",
+					"displayName": "Пользовательские поля",
+					"description": "Фильтровать по настраиваемым полям",
+					"options": {
+						"customFieldsValues": {
+							"displayName": "Пользовательское поле"
+						}
+					}
+				},
+				"status": {
+					"displayName": "Статус",
+					"options": {
+						"active": {
+							"displayName": "Активный"
+						},
+						"bounced": {
+							"displayName": "Отскочил"
+						},
+						"junk": {
+							"displayName": "Хлам"
+						},
+						"unconfirmed": {
+							"displayName": "Неподтвержденный"
+						},
+						"unsubscribed": {
+							"displayName": "Отменил подписку"
+						}
+					}
+				},
+				"subscribed_at": {
+					"displayName": "Подписан на"
+				},
+				"ip_address": {
+					"displayName": "IP-адрес"
+				},
+				"opted_in_at": {
+					"displayName": "Выполнил вход в"
+				},
+				"optin_ip": {
+					"displayName": "Включить IP-адрес"
+				},
+				"unsubscribed_at": {
+					"displayName": "Отписался в"
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"status": {
+					"displayName": "Статус",
+					"options": {
+						"active": {
+							"displayName": "Активный"
+						},
+						"bounced": {
+							"displayName": "Отскочил"
+						},
+						"junk": {
+							"displayName": "Хлам"
+						},
+						"unconfirmed": {
+							"displayName": "Неподтвержденный"
+						},
+						"unsubscribed": {
+							"displayName": "Отменил подписку"
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,69 @@
+{
+	"header": {
+		"displayName": "Пливо",
+		"description": "Отправляйте SMS/MMS-сообщения или совершайте телефонные звонки."
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"call": {
+					"displayName": "Вызов"
+				},
+				"mms": {
+					"displayName": "MMS"
+				},
+				"sms": {
+					"displayName": "SMS"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"send": {
+					"displayName": "Отправлять",
+					"description": "Отправка MMS-сообщения (только для США и Канады)"
+				},
+				"make": {
+					"displayName": "Делать",
+					"description": "Сделать голосовой вызов"
+				}
+			}
+		},
+		"from": {
+			"displayName": "От",
+			"description": "Идентификатор вызывающего абонента для совершения звонка",
+			"placeholder": "+14156667777"
+		},
+		"to": {
+			"displayName": "К",
+			"description": "Номер телефона, на который можно позвонить",
+			"placeholder": "+14156667778"
+		},
+		"message": {
+			"displayName": "Сообщение",
+			"description": "Сообщение для отправки"
+		},
+		"media_urls": {
+			"displayName": "URL-адреса мультимедиа",
+			"description": "Список URL-адресов файлов с вашего файлового сервера, разделенных запятыми."
+		},
+		"answer_method": {
+			"displayName": "Метод ответа",
+			"description": "HTTP-глагол, который будет использоваться при вызове URL-адреса ответа.",
+			"options": {
+				"GET": {
+					"displayName": "GET"
+				},
+				"POST": {
+					"displayName": "POST"
+				}
+			}
+		},
+		"answer_url": {
+			"displayName": "URL ответа",
+			"description": "URL-адрес, который будет вызван Plivo после ответа на вызов. Он должен вернуть XML для обработки вызова после ответа."
+		}
+	}
+}

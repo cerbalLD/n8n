@@ -1,0 +1,58 @@
+{
+	"header": {
+		"displayName": "Триггер GetResponse",
+		"description": "Запускает рабочий процесс при возникновении событий GetResponse."
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"apiKey": {
+					"displayName": "API-ключ"
+				},
+				"oAuth2": {
+					"displayName": "ОАут2"
+				}
+			}
+		},
+		"events": {
+			"displayName": "События",
+			"options": {
+				"subscribe": {
+					"displayName": "Клиент подписался",
+					"description": "Получайте уведомления, когда клиент подписан на список"
+				},
+				"unsubscribe": {
+					"displayName": "Клиент отписался",
+					"description": "Получайте уведомления, когда клиент отписывается от списка"
+				},
+				"click": {
+					"displayName": "Электронная почта нажата",
+					"description": "Получайте уведомления при нажатии на электронное письмо"
+				},
+				"open": {
+					"displayName": "Электронная почта открыта",
+					"description": "Получайте уведомления при открытии электронного письма"
+				},
+				"survey": {
+					"displayName": "Опрос отправлен",
+					"description": "Получайте уведомления при отправке опроса"
+				}
+			}
+		},
+		"listIds": {
+			"displayName": "Список имен или идентификаторов",
+			"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"delete": {
+					"displayName": "Удалить текущую подписку",
+					"description": "Удалить ли текущую подписку"
+				}
+			}
+		}
+	}
+}

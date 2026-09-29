@@ -1,0 +1,447 @@
+{
+	"header": {
+		"displayName": "GitLab",
+		"description": "Получить данные из GitLab API"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"accessToken": {
+					"displayName": "Токен доступа"
+				},
+				"oAuth2": {
+					"displayName": "ОАут2"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"file": {
+					"displayName": "Файл"
+				},
+				"issue": {
+					"displayName": "Проблема"
+				},
+				"release": {
+					"displayName": "Выпускать"
+				},
+				"repository": {
+					"displayName": "Репозиторий"
+				},
+				"user": {
+					"displayName": "Пользователь"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать новый файл в репозитории"
+				},
+				"createComment": {
+					"displayName": "Создать комментарий",
+					"description": "Создать новый комментарий к проблеме"
+				},
+				"edit": {
+					"displayName": "Редактировать",
+					"description": "Редактировать файл в репозитории"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить данные одного файла"
+				},
+				"lock": {
+					"displayName": "Замок",
+					"description": "Заблокировать задачу"
+				},
+				"getIssues": {
+					"displayName": "Получить проблемы",
+					"description": "Возвращает проблемы репозитория"
+				},
+				"getRepositories": {
+					"displayName": "Получить репозитории",
+					"description": "Возвращает репозитории пользователя"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить файл в репозитории"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получите много релизов"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить выпуск"
+				},
+				"list": {
+					"displayName": "Список",
+					"description": "Вывести содержимое папки"
+				}
+			}
+		},
+		"owner": {
+			"displayName": "Владелец проекта",
+			"description": "Пользователь, группа или пространство имен проекта",
+			"placeholder": "n8n-io"
+		},
+		"repository": {
+			"displayName": "Название проекта",
+			"description": "Название проекта",
+			"placeholder": "н8н"
+		},
+		"title": {
+			"displayName": "Заголовок",
+			"description": "Название вопроса"
+		},
+		"body": {
+			"displayName": "Тело",
+			"description": "Тело комментария"
+		},
+		"due_date": {
+			"displayName": "Срок оплаты",
+			"description": "Срок выдачи"
+		},
+		"labels": {
+			"displayName": "Этикетки",
+			"multipleValueButtonText": "Добавить ярлык",
+			"options": {
+				"label": {
+					"displayName": "Этикетка",
+					"description": "Ярлык для добавления в задачу"
+				}
+			}
+		},
+		"assignee_ids": {
+			"displayName": "Правопреемники",
+			"multipleValueButtonText": "Добавить правопреемника",
+			"options": {
+				"assignee": {
+					"displayName": "Правопреемник",
+					"description": "Идентификатор пользователя, которому нужно назначить задачу"
+				}
+			}
+		},
+		"issueNumber": {
+			"displayName": "Номер выпуска",
+			"description": "Номер проблемы для блокировки"
+		},
+		"editFields": {
+			"displayName": "Редактировать поля",
+			"multipleValueButtonText": "Добавить поле",
+			"options": {
+				"title": {
+					"displayName": "Заголовок",
+					"description": "Название вопроса"
+				},
+				"description": {
+					"displayName": "Тело",
+					"description": "Основная часть проблемы"
+				},
+				"state": {
+					"displayName": "Состояние",
+					"description": "Состояние, которое нужно установить",
+					"options": {
+						"closed": {
+							"displayName": "Закрыто",
+							"description": "Установите состояние «закрыто»."
+						},
+						"open": {
+							"displayName": "Открыть",
+							"description": "Установите состояние «открыто»."
+						}
+					}
+				},
+				"labels": {
+					"values": {
+						"labels": {
+							"displayName": "Этикетки"
+						},
+						"label": {
+							"displayName": "Этикетка",
+							"description": "Ярлык для добавления в задачу"
+						}
+					},
+					"displayName": "Этикетки"
+				},
+				"assignee_ids": {
+					"values": {
+						"assignee_ids": {
+							"displayName": "Правопреемники"
+						},
+						"assignee": {
+							"displayName": "Правопреемники",
+							"description": "Пользователь тоже может назначить задачу"
+						}
+					},
+					"displayName": "Правопреемники"
+				},
+				"due_date": {
+					"displayName": "Срок оплаты",
+					"description": "Срок выдачи"
+				}
+			}
+		},
+		"lockReason": {
+			"displayName": "Причина блокировки",
+			"description": "Причина блокировки проблемы",
+			"options": {
+				"off-topic": {
+					"displayName": "Не по теме",
+					"description": "Вопрос не по теме"
+				},
+				"too heated": {
+					"displayName": "Слишком жарко",
+					"description": "Дискуссия слишком горячая"
+				},
+				"resolved": {
+					"displayName": "Решено",
+					"description": "Проблема решена"
+				},
+				"spam": {
+					"displayName": "Спам",
+					"description": "Проблема в спаме"
+				}
+			}
+		},
+		"releaseTag": {
+			"displayName": "Ярлык",
+			"description": "Тег релиза"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"multipleValueButtonText": "Добавить поле",
+			"options": {
+				"name": {
+					"displayName": "Имя",
+					"description": "Название выпуска"
+				},
+				"description": {
+					"displayName": "Описание",
+					"description": "Описание выпуска. Вы можете использовать Маркдаун."
+				},
+				"ref": {
+					"displayName": "Ссылка",
+					"description": "Если тег не существует, релиз будет создан на основе ссылки. Это может быть SHA фиксации, другое имя тега или имя ветки."
+				},
+				"order_by": {
+					"displayName": "Заказать по",
+					"description": "Поле для использования в качестве заказа",
+					"options": {
+						"created_at": {
+							"displayName": "Создано в"
+						},
+						"released_at": {
+							"displayName": "Выпущено в"
+						}
+					}
+				},
+				"sort": {
+					"displayName": "Сортировать",
+					"description": "Направление заказа. .",
+					"options": {
+						"asc": {
+							"displayName": "ASC"
+						},
+						"desc": {
+							"displayName": "DESC"
+						}
+					}
+				},
+				"milestones": {
+					"displayName": "Вехи",
+					"description": "Название каждой вехи, связанной с выпуском (предоставьте список названий, разделенный запятой)."
+				},
+				"released_at": {
+					"displayName": "Выпущено в",
+					"description": "Дата, когда релиз готов/был готов"
+				}
+			}
+		},
+		"projectId": {
+			"displayName": "Идентификатор проекта",
+			"description": "Идентификатор или путь к проекту в кодировке URL."
+		},
+		"tag_name": {
+			"displayName": "Имя тега",
+			"description": "Тег Git, с которым связан релиз."
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"getRepositoryIssuesFilters": {
+			"displayName": "Фильтры",
+			"multipleValueButtonText": "Добавить фильтр",
+			"options": {
+				"assignee_username": {
+					"displayName": "Правопреемник",
+					"description": "Возвращать только задачи, назначенные конкретному пользователю"
+				},
+				"author_username": {
+					"displayName": "Создатель",
+					"description": "Возвращать только задачи, созданные конкретным пользователем"
+				},
+				"search": {
+					"displayName": "Поиск",
+					"description": "Искать проблемы по их названию и описанию"
+				},
+				"labels": {
+					"displayName": "Этикетки",
+					"description": "Возвращать только проблемы с указанными метками. Несколько меток могут быть разделены запятой."
+				},
+				"updated_after": {
+					"displayName": "Обновлено после",
+					"description": "Возвращать только выпуски, обновленные в это время или позже."
+				},
+				"state": {
+					"displayName": "Состояние",
+					"description": "Состояние для фильтрации",
+					"options": {
+						"": {
+							"displayName": "Все",
+							"description": "Возвращает проблемы с любым состоянием"
+						},
+						"closed": {
+							"displayName": "Закрыто",
+							"description": "Проблемы с возвратом с «закрытым» состоянием"
+						},
+						"opened": {
+							"displayName": "Открыть",
+							"description": "Проблемы с возвратом с «открытым» состоянием"
+						}
+					}
+				},
+				"order_by": {
+					"displayName": "Сортировать",
+					"description": "Порядок, в котором вопросы должны быть возвращены",
+					"options": {
+						"created_at": {
+							"displayName": "Создано в",
+							"description": "Сортировать по дате создания"
+						},
+						"updated_at": {
+							"displayName": "Обновлено в",
+							"description": "Сортировать по дате обновления"
+						},
+						"priority": {
+							"displayName": "Приоритет",
+							"description": "Сортировать по приоритету"
+						}
+					}
+				},
+				"sort": {
+					"displayName": "Направление",
+					"description": "Порядок сортировки",
+					"options": {
+						"asc": {
+							"displayName": "восходящий",
+							"description": "Сортировать по возрастанию"
+						},
+						"desc": {
+							"displayName": "По убыванию",
+							"description": "Сортировать по убыванию"
+						}
+					}
+				}
+			}
+		},
+		"filePath": {
+			"displayName": "Путь",
+			"description": "Путь к папке для отображения",
+			"placeholder": "документы/"
+		},
+		"page": {
+			"displayName": "Страница",
+			"description": "Страница результатов для отображения"
+		},
+		"additionalParameters": {
+			"displayName": "Дополнительные параметры",
+			"description": "Дополнительные поля для добавления",
+			"placeholder": "Добавить параметр",
+			"options": {
+				"ref": {
+					"displayName": "Ссылка",
+					"description": "Имя коммита/ветки/тега. По умолчанию: ветка репозитория по умолчанию (обычно основная).",
+					"placeholder": "основной"
+				},
+				"recursive": {
+					"displayName": "Рекурсивный",
+					"description": "Получать или нет рекурсивное дерево файлов. По умолчанию — ложь."
+				},
+				"reference": {
+					"displayName": "Ссылка",
+					"description": "Имя коммита/ветки/тега. По умолчанию: ветка репозитория по умолчанию (обычно основная).",
+					"placeholder": "основной"
+				},
+				"additionalParameters": {
+					"displayName": "Дополнительные параметры",
+					"description": "Дополнительные поля для добавления"
+				},
+				"branchStart": {
+					"displayName": "Начать ветку",
+					"values": {
+						"branchStart": {
+							"displayName": "Начать ветку",
+							"description": "Имя базовой ветки, на основе которой создается новая ветка."
+						}
+					}
+				},
+				"author": {
+					"displayName": "Автор",
+					"values": {
+						"name": {
+							"displayName": "Имя",
+							"description": "Имя автора коммита"
+						},
+						"email": {
+							"displayName": "Электронная почта",
+							"description": "Электронная почта автора коммита",
+							"placeholder": "имя@email.com"
+						}
+					}
+				},
+				"encoding": {
+					"displayName": "Кодирование",
+					"values": {
+						"encoding": {
+							"displayName": "Кодирование",
+							"description": "Измените кодировку на base64. По умолчанию — текст."
+						}
+					}
+				}
+			}
+		},
+		"asBinaryProperty": {
+			"displayName": "Как двоичное свойство",
+			"description": "Устанавливать ли данные файла как двоичное свойство вместо возврата необработанного ответа API."
+		},
+		"binaryPropertyName": {
+			"displayName": "Входное двоичное поле",
+			"hint": "Имя входного двоичного поля, содержащего файл для записи."
+		},
+		"binaryData": {
+			"displayName": "Двоичный файл",
+			"description": "Следует ли брать данные для загрузки из двоичного поля"
+		},
+		"fileContent": {
+			"displayName": "Содержимое файла",
+			"description": "Текстовое содержимое файла"
+		},
+		"commitMessage": {
+			"displayName": "Зафиксировать сообщение"
+		},
+		"branch": {
+			"displayName": "Ветвь",
+			"description": "Имя новой создаваемой ветки. Коммит добавляется в эту ветку."
+		}
+	}
+}

@@ -1,0 +1,507 @@
+{
+	"header": {
+		"displayName": "Google Таблицы",
+		"description": "Чтение, обновление и запись данных в Google Таблицы"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"serviceAccount": {
+					"displayName": "Сервисный аккаунт"
+				},
+				"oAuth2": {
+					"displayName": "OAuth2 (рекомендуется)"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"spreadsheet": {
+					"displayName": "Документ"
+				},
+				"sheet": {
+					"displayName": "Лист внутри документа"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"appendOrUpdate": {
+					"displayName": "Добавить или обновить строку",
+					"description": "Добавить новую строку или обновить существующую (upsert)"
+				},
+				"append": {
+					"displayName": "Добавить строку",
+					"description": "Создать новую строку на листе"
+				},
+				"clear": {
+					"displayName": "Прозрачный",
+					"description": "Удалить все содержимое или часть листа"
+				},
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать электронную таблицу"
+				},
+				"remove": {
+					"displayName": "Удалить",
+					"description": "Удаление листа навсегда"
+				},
+				"delete": {
+					"displayName": "Удалить строки или столбцы",
+					"description": "Удаление столбцов или строк с листа"
+				},
+				"read": {
+					"displayName": "Получить строки",
+					"description": "Получить одну или несколько строк из листа"
+				},
+				"update": {
+					"displayName": "Обновить строку",
+					"description": "Обновление существующей строки на листе"
+				},
+				"deleteSpreadsheet": {
+					"displayName": "Удалить",
+					"description": "Удаление таблицы"
+				}
+			}
+		},
+		"documentId": {
+			"displayName": "Документ"
+		},
+		"sheetName": {
+			"displayName": "Лист"
+		},
+		"dataMode": {
+			"displayName": "Режим данных",
+			"description": "Вставлять ли входные данные, которые получает этот узел, в новую строку",
+			"options": {
+				"autoMapInputData": {
+					"displayName": "Автоматическое сопоставление входных данных с столбцами",
+					"description": "Используйте, когда входные свойства узла соответствуют именам столбцов назначения."
+				},
+				"defineBelow": {
+					"displayName": "Сопоставьте каждый столбец ниже",
+					"description": "Установите значение для каждого столбца назначения"
+				},
+				"nothing": {
+					"displayName": "Ничего",
+					"description": "Ничего не отправлять"
+				}
+			}
+		},
+		"autoMapNotice": {
+			"displayName": "В этом режиме убедитесь, что входящие данные имеют те же имена, что и столбцы на вашем листе. (Используйте узел «Редактировать поля» перед этим узлом, чтобы изменить его, если необходимо.)"
+		},
+		"fieldsUi": {
+			"options": {
+				"fieldsUi": {
+					"displayName": "Значения для отправки"
+				},
+				"fieldValues": {
+					"displayName": "Поле",
+					"values": {
+						"fieldId": {
+							"displayName": "Имя поля или идентификатор",
+							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+						},
+						"fieldValue": {
+							"displayName": "Значение поля"
+						}
+					}
+				},
+				"values": {
+					"displayName": "Поле",
+					"values": {
+						"column": {
+							"displayName": "Столбец",
+							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+						},
+						"columnName": {
+							"displayName": "Имя столбца"
+						},
+						"fieldValue": {
+							"displayName": "Ценить"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить поле",
+			"displayName": "Значения для отправки",
+			"multipleValueButtonText": "Добавить поле для отправки"
+		},
+		"columns": {
+			"displayName": "Столбцы"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"cellFormat": {
+					"displayName": "Формат ячейки",
+					"description": "Определяет, как следует интерпретировать данные",
+					"options": {
+						"USER_ENTERED": {
+							"displayName": "Разрешить форматирование Google Таблиц",
+							"description": "Ячейки оформлены так, как будто вы вводите значения напрямую в Google Таблицы."
+						},
+						"RAW": {
+							"displayName": "Пусть n8n форматирует",
+							"description": "Ячейки имеют те же типы, что и входные данные."
+						}
+					}
+				},
+				"locationDefine": {
+					"values": {
+						"locationDefine": {
+							"displayName": "Расположение данных на листе"
+						},
+						"values": {
+							"options": {
+								"headerRow": {
+									"displayName": "Заголовок строки",
+									"description": "Индекс относится к набору «Диапазон», индекс первой строки равен 1.",
+									"hint": "Индекс строки, содержащей имена столбцов"
+								},
+								"firstDataRow": {
+									"displayName": "Первая строка данных",
+									"description": "Индекс относится к набору «Диапазон», индекс первой строки равен 1.",
+									"hint": "Индекс первой строки, содержащей фактические данные"
+								}
+							}
+						}
+					},
+					"placeholder": "Выберите диапазон",
+					"displayName": "Расположение данных на листе",
+					"options": {
+						"values": {
+							"displayName": "Ценности"
+						}
+					}
+				},
+				"handlingExtraData": {
+					"displayName": "Обработка дополнительных полей во входных данных",
+					"description": "Что делать с полями, которые не соответствуют ни одному столбцу в Google Sheet",
+					"options": {
+						"insertInNewColumn": {
+							"displayName": "Вставить в новые столбцы",
+							"description": "Создайте новый столбец для дополнительных данных."
+						},
+						"ignoreIt": {
+							"displayName": "Игнорируйте их",
+							"description": "Игнорировать дополнительные данные"
+						},
+						"error": {
+							"displayName": "Ошибка",
+							"description": "Выдать ошибку"
+						}
+					}
+				},
+				"useAppend": {
+					"displayName": "Минимизируйте вызовы API",
+					"description": "Использовать ли добавление вместо обновления (по умолчанию), это более эффективно, но в некоторых случаях данные могут быть смещены.",
+					"hint": "Используйте, если на вашем листе нет пробелов между строками и столбцами."
+				},
+				"hidden": {
+					"displayName": "Скрытый",
+					"description": "Скрыт ли лист в пользовательском интерфейсе; false, если он виден."
+				},
+				"rightToLeft": {
+					"displayName": "Справа налево",
+					"description": "Является ли лист листом RTL, а не листом LTR"
+				},
+				"sheetId": {
+					"displayName": "Идентификатор листа",
+					"description": "Идентификатор листа. Должно быть неотрицательным. Это поле нельзя изменить после установки."
+				},
+				"index": {
+					"displayName": "Указатель листа",
+					"description": "Индекс листа в электронной таблице"
+				},
+				"tabColor": {
+					"displayName": "Цвет вкладки",
+					"description": "Цвет вкладки в пользовательском интерфейсе"
+				},
+				"dataLocationOnSheet": {
+					"values": {
+						"dataLocationOnSheet": {
+							"displayName": "Расположение данных на листе"
+						},
+						"values": {
+							"options": {
+								"rangeDefinition": {
+									"displayName": "Определение диапазона",
+									"options": {
+										"detectAutomatically": {
+											"displayName": "Обнаруживать автоматически",
+											"description": "Автоматически определять диапазон данных"
+										},
+										"specifyRangeA1": {
+											"displayName": "Укажите диапазон (обозначение A1)",
+											"description": "Вручную укажите диапазон данных"
+										},
+										"specifyRange": {
+											"displayName": "Укажите диапазон (строки)",
+											"description": "Вручную укажите диапазон данных"
+										}
+									}
+								},
+								"readRowsUntil": {
+									"displayName": "Читать строки до",
+									"options": {
+										"firstEmptyRow": {
+											"displayName": "Первая пустая строка"
+										},
+										"lastRowInSheet": {
+											"displayName": "Последняя строка на листе"
+										}
+									}
+								},
+								"headerRow": {
+									"displayName": "Заголовок строки",
+									"description": "Индекс относится к набору «Диапазон», индекс первой строки равен 1.",
+									"hint": "Индекс строки, содержащей имена столбцов"
+								},
+								"firstDataRow": {
+									"displayName": "Первая строка данных",
+									"description": "Индекс относится к набору «Диапазон», индекс первой строки равен 1.",
+									"hint": "Индекс первой строки, содержащей фактические данные"
+								},
+								"range": {
+									"displayName": "Диапазон",
+									"description": "Диапазон таблицы для чтения или добавления данных. Подробности см. в документации Google <a href=\"https://developers.google.com/sheets/api/guides/values#writing\"></a>.",
+									"hint": "Вы можете указать как строки, так и столбцы, например. С4:Е7",
+									"placeholder": "A:Z"
+								}
+							}
+						}
+					},
+					"placeholder": "Выберите диапазон",
+					"displayName": "Расположение данных на листе",
+					"options": {
+						"values": {
+							"displayName": "Ценности"
+						}
+					}
+				},
+				"outputFormatting": {
+					"values": {
+						"outputFormatting": {
+							"displayName": "Форматирование вывода"
+						},
+						"values": {
+							"options": {
+								"general": {
+									"displayName": "Общее форматирование",
+									"description": "Определяет, как значения должны отображаться на выходе",
+									"options": {
+										"UNFORMATTED_VALUE": {
+											"displayName": "Значения (неформатированные)",
+											"description": "Числа остаются числами, но все знаки валют или специальное форматирование теряются."
+										},
+										"FORMATTED_VALUE": {
+											"displayName": "Значения (отформатированные)",
+											"description": "Числа преобразуются в текст и отображаются, как в Google Таблицах (например, с запятыми или знаками валюты)."
+										},
+										"FORMULA": {
+											"displayName": "Формулы"
+										}
+									}
+								},
+								"date": {
+									"displayName": "Форматирование даты",
+									"options": {
+										"FORMATTED_STRING": {
+											"displayName": "Форматированный текст",
+											"description": "Как показано в Google Sheets, например. '01.01.2022'"
+										},
+										"SERIAL_NUMBER": {
+											"displayName": "Серийный номер",
+											"description": "Число, обозначающее количество дней с 30 декабря 1899 г."
+										}
+									}
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить форматирование",
+					"displayName": "Форматирование вывода",
+					"options": {
+						"values": {
+							"displayName": "Ценности"
+						}
+					}
+				},
+				"returnFirstMatch": {
+					"displayName": "Возвращать только первую совпадающую строку",
+					"description": "Выбирать ли первую строку листа или первую совпадающую строку (если установлены фильтры)"
+				},
+				"returnAllMatches": {
+					"displayName": "Когда фильтр имеет несколько совпадений",
+					"description": "По умолчанию возвращается только первый результат. Установите значение «Вернуть все совпадения», чтобы получить несколько совпадений.",
+					"options": {
+						"returnFirstMatch": {
+							"displayName": "Возврат первого матча",
+							"description": "Вернуть только первое совпадение"
+						},
+						"returnAllMatches": {
+							"displayName": "Вернуть все совпадения",
+							"description": "Вернуть все значения, которые соответствуют"
+						}
+					}
+				},
+				"locale": {
+					"displayName": "Языковой стандарт",
+					"description": "Язык электронной таблицы в одном из следующих форматов:\n\t\t\t\t<ul>\n\t\t\t\t\t<li>ru (639-1)</li>\n\t\t\t\t\t<li>fil (639-2, если формат 639-1 не существует)</li>\n\t\t\t\t\t<li>en_US (сочетание языка ISO и страны)</li>\n\t\t\t\t<ul>",
+					"placeholder": "ru_US"
+				},
+				"autoRecalc": {
+					"displayName": "Интервал перерасчета",
+					"description": "Параметры интервала пересчета ячеек",
+					"options": {
+						"": {
+							"displayName": "По умолчанию",
+							"description": "Значение по умолчанию"
+						},
+						"ON_CHANGE": {
+							"displayName": "При изменении",
+							"description": "Волатильные функции обновляются при каждом изменении."
+						},
+						"MINUTE": {
+							"displayName": "минута",
+							"description": "Волатильные функции обновляются при каждом изменении и каждую минуту."
+						},
+						"HOUR": {
+							"displayName": "Час",
+							"description": "Волатильные функции обновляются при каждом изменении и ежечасно."
+						}
+					}
+				}
+			}
+		},
+		"clear": {
+			"displayName": "Прозрачный",
+			"description": "Что очистить",
+			"options": {
+				"wholeSheet": {
+					"displayName": "Весь лист"
+				},
+				"specificRows": {
+					"displayName": "Конкретные строки"
+				},
+				"specificColumns": {
+					"displayName": "Конкретные столбцы"
+				},
+				"specificRange": {
+					"displayName": "Конкретный диапазон"
+				}
+			}
+		},
+		"keepFirstRow": {
+			"displayName": "Сохраняйте первый ряд"
+		},
+		"startIndex": {
+			"displayName": "Начать столбец",
+			"description": "Столбец, который нужно удалить"
+		},
+		"rowsToDelete": {
+			"displayName": "Количество строк для удаления"
+		},
+		"columnsToDelete": {
+			"displayName": "Количество столбцов для удаления"
+		},
+		"range": {
+			"displayName": "Диапазон",
+			"description": "Диапазон таблицы для чтения или добавления данных. Подробности см. в документации Google <a href=\"https://developers.google.com/sheets/api/guides/values#writing\"></a>. Если он содержит несколько листов, его также можно добавить следующим образом: «MySheet!A:F»."
+		},
+		"title": {
+			"displayName": "Заголовок",
+			"description": "Название таблицы"
+		},
+		"toDelete": {
+			"displayName": "Удалить",
+			"description": "Что удалить",
+			"options": {
+				"rows": {
+					"displayName": "Строки",
+					"description": "Строки для удаления"
+				},
+				"columns": {
+					"displayName": "Столбцы",
+					"description": "Столбцы для удаления"
+				}
+			}
+		},
+		"numberToDelete": {
+			"displayName": "Количество столбцов для удаления"
+		},
+		"filtersUI": {
+			"options": {
+				"filtersUI": {
+					"displayName": "Фильтры"
+				},
+				"values": {
+					"displayName": "Фильтр",
+					"values": {
+						"lookupColumn": {
+							"displayName": "Столбец",
+							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+						},
+						"lookupValue": {
+							"displayName": "Ценить",
+							"hint": "Столбец должен иметь это значение для сопоставления"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить фильтр",
+			"displayName": "Фильтры",
+			"multipleValueButtonText": "Добавить фильтр"
+		},
+		"combineFilters": {
+			"displayName": "Комбинировать фильтры",
+			"description": "Как объединить условия, определенные в «Фильтрах»: И требует, чтобы все условия были истинными, ИЛИ требует, чтобы хотя бы одно условие было истинным.",
+			"options": {
+				"AND": {
+					"displayName": "AND",
+					"description": "Выбираются только строки, соответствующие всем условиям."
+				},
+				"OR": {
+					"displayName": "OR",
+					"description": "Выбираются строки, соответствующие хотя бы одному условию."
+				}
+			}
+		},
+		"columnToMatchOn": {
+			"displayName": "Столбец для сопоставления",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>",
+			"hint": "Используется для поиска правильной строки для обновления. Не меняется."
+		},
+		"valueToMatchOn": {
+			"displayName": "Значение столбца для сопоставления"
+		},
+		"sheetsUi": {
+			"options": {
+				"sheetsUi": {
+					"displayName": "Листы"
+				},
+				"sheetValues": {
+					"displayName": "Лист",
+					"values": {
+						"title": {
+							"displayName": "Заголовок",
+							"description": "Название объекта недвижимости, который необходимо создать"
+						},
+						"hidden": {
+							"displayName": "Скрытый",
+							"description": "Должен ли лист быть скрыт в пользовательском интерфейсе"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить лист",
+			"displayName": "Листы"
+		}
+	}
+}

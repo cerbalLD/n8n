@@ -1,0 +1,105 @@
+{
+	"header": {
+		"displayName": "AWS понимает",
+		"description": "Отправляет данные в Amazon Comprehend"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"iam": {
+					"displayName": "АВС (ИАМ)"
+				},
+				"assumeRole": {
+					"displayName": "AWS (принятие роли)"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"description": "Ресурс для выполнения",
+			"options": {
+				"text": {
+					"displayName": "Текст"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"detectDominantLanguage": {
+					"displayName": "Обнаружение доминирующего языка",
+					"description": "Определите доминирующий язык"
+				},
+				"detectEntities": {
+					"displayName": "Обнаружение сущностей",
+					"description": "Проверяет текст на наличие именованных сущностей и возвращает информацию о них."
+				},
+				"detectSentiment": {
+					"displayName": "Обнаружение настроений",
+					"description": "Проанализируйте настроение текста."
+				}
+			}
+		},
+		"languageCode": {
+			"displayName": "Код языка",
+			"description": "Код языка для текста",
+			"options": {
+				"ar": {
+					"displayName": "арабский"
+				},
+				"zh": {
+					"displayName": "китайский"
+				},
+				"zh-TW": {
+					"displayName": "Китайский (Т)"
+				},
+				"en": {
+					"displayName": "Английский"
+				},
+				"fr": {
+					"displayName": "Французский"
+				},
+				"de": {
+					"displayName": "немецкий"
+				},
+				"hi": {
+					"displayName": "хинди"
+				},
+				"it": {
+					"displayName": "итальянский"
+				},
+				"ja": {
+					"displayName": "японский"
+				},
+				"ko": {
+					"displayName": "корейский"
+				},
+				"pt": {
+					"displayName": "португальский"
+				},
+				"es": {
+					"displayName": "испанский"
+				}
+			}
+		},
+		"text": {
+			"displayName": "Текст",
+			"description": "Текст для отправки"
+		},
+		"simple": {
+			"displayName": "Упрощать",
+			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"endpointArn": {
+					"displayName": "Конечная точка Арн",
+					"description": "Имя ресурса Amazon конечной точки, связанной с пользовательской моделью распознавания объектов."
+				}
+			}
+		}
+	}
+}

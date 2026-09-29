@@ -1,0 +1,6 @@
+{
+	"header": {
+		"displayName": "Триггер Microsoft Outlook",
+		"description": "Получает электронные письма из Microsoft Outlook и запускает рабочий процесс через указанные интервалы опроса."
+	}
+}

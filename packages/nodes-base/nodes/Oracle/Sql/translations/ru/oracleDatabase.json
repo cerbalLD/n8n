@@ -1,0 +1,365 @@
+{
+	"header": {
+		"displayName": "База данных Oracle",
+		"description": "Получайте, добавляйте и обновляйте данные в базе данных Oracle."
+	},
+	"nodeView": {
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"deleteTable": {
+					"displayName": "Удалить",
+					"description": "Удалить всю таблицу или строки в таблице"
+				},
+				"execute": {
+					"displayName": "Выполнить SQL",
+					"description": "Выполнить SQL"
+				},
+				"insert": {
+					"displayName": "Вставлять",
+					"description": "Вставка строк в таблицу"
+				},
+				"upsert": {
+					"displayName": "Вставить или обновить",
+					"description": "Вставка или обновление строк в таблице"
+				},
+				"select": {
+					"displayName": "Выбирать",
+					"description": "Выбор строк из таблицы"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить строки в таблице"
+				}
+			}
+		},
+		"schema": {
+			"displayName": "Схема",
+			"description": "Схема, содержащая таблицу, над которой вы хотите работать.",
+			"placeholder": "например Скотт"
+		},
+		"table": {
+			"displayName": "Стол",
+			"description": "Таблица, над которой вы хотите работать"
+		},
+		"deleteCommand": {
+			"displayName": "Команда",
+			"options": {
+				"truncate": {
+					"displayName": "Усечь",
+					"description": "Удаляет только данные таблицы и сохраняет структуру таблицы."
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалите строки, соответствующие условиям «Выбрать строки» ниже. Если выбор не сделан, все строки таблицы удаляются."
+				},
+				"drop": {
+					"displayName": "Уронить",
+					"description": "Удаляет данные таблицы, а также ее структуру навсегда."
+				}
+			}
+		},
+		"where": {
+			"options": {
+				"where": {
+					"displayName": "Выберите строки",
+					"description": "Если не установлено, будут выбраны все строки."
+				},
+				"values": {
+					"displayName": "Ценности",
+					"values": {
+						"column": {
+							"displayName": "Столбец",
+							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\" target=\"_blank\">expression</a>",
+							"placeholder": "например ИДЕНТИФИКАТОР"
+						},
+						"condition": {
+							"displayName": "Оператор",
+							"description": "Оператор, по которому проверяется столбец. При использовании оператора LIKE знак процента ( %) соответствует нулю или более символам, знак подчеркивания ( _ ) соответствует любому отдельному символу.",
+							"options": {
+								"equal": {
+									"displayName": "Равный"
+								},
+								"!=": {
+									"displayName": "Не равно"
+								},
+								"LIKE": {
+									"displayName": "Нравиться"
+								},
+								">": {
+									"displayName": "Больше, чем"
+								},
+								"<": {
+									"displayName": "Меньше, чем"
+								},
+								">=": {
+									"displayName": "Больше или равно"
+								},
+								"<=": {
+									"displayName": "Меньше или равно"
+								},
+								"IS NULL": {
+									"displayName": "Нулевой"
+								},
+								"IS NOT NULL": {
+									"displayName": "Не является нулевым"
+								}
+							}
+						},
+						"value": {
+							"displayName": "Ценить",
+							"description": "Параметры для передачи инструменту в формате JSON или строки.",
+							"placeholder": "{ \"ключ\": \"значение\" }"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить условие",
+			"displayName": "Выберите строки",
+			"description": "Если не установлено, будут выбраны все строки."
+		},
+		"combineConditions": {
+			"displayName": "Объединить условия",
+			"description": "Как объединить условия, определенные в разделе «Выбор строк»: И требует, чтобы все условия были истинными, ИЛИ требует, чтобы хотя бы одно условие было истинным.",
+			"options": {
+				"AND": {
+					"displayName": "AND",
+					"description": "Выбираются только строки, соответствующие всем условиям."
+				},
+				"OR": {
+					"displayName": "OR",
+					"description": "Выбираются строки, соответствующие хотя бы одному условию."
+				}
+			}
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"autoCommit": {
+					"displayName": "Автоматическая фиксация",
+					"description": "Если это свойство истинно, транзакция в текущем соединении автоматически фиксируется в конце выполнения оператора."
+				},
+				"params": {
+					"values": {
+						"params": {
+							"displayName": "Привязать значения заполнителя переменной",
+							"description": "Введите значения параметров привязки, используемых в операторе."
+						},
+						"values": {
+							"options": {
+								"name": {
+									"displayName": "Привязать имя или номер",
+									"description": "Идентификатор или цифра заполнителя переменной привязки",
+									"placeholder": "например ``dept_id`` and ``dept_name`` — это два заполнителя переменных привязки в этом операторе SQL."
+								},
+								"bindDirection": {
+									"displayName": "Привязать направление",
+									"description": "Укажите, передаются ли значения данных, привязанные к параметрам привязки SQL или PL/SQL, в базу данных или из нее.",
+									"options": {
+										"in": {
+											"displayName": "IN"
+										},
+										"out": {
+											"displayName": "OUT"
+										},
+										"inout": {
+											"displayName": "IN-OUT"
+										}
+									}
+								},
+								"datatype": {
+									"displayName": "Тип данных",
+									"options": {
+										"blob": {
+											"displayName": "BLOB"
+										},
+										"boolean": {
+											"displayName": "логическое значение"
+										},
+										"date": {
+											"displayName": "Дата"
+										},
+										"json": {
+											"displayName": "JSON"
+										},
+										"number": {
+											"displayName": "Число"
+										},
+										"sparse": {
+											"displayName": "Разреженный вектор"
+										},
+										"string": {
+											"displayName": "Нить"
+										},
+										"vector": {
+											"displayName": "Вектор"
+										}
+									}
+								},
+								"valueString": {
+									"displayName": "Значение (строка)"
+								},
+								"valueNumber": {
+									"displayName": "Значение (число)"
+								},
+								"valueDate": {
+									"displayName": "Значение (Дата)"
+								},
+								"valueBoolean": {
+									"displayName": "Значение (логическое)"
+								},
+								"valueJson": {
+									"displayName": "Значение (JSON)"
+								},
+								"valueVector": {
+									"displayName": "Значение (ВЕКТОР)",
+									"description": "Массив значений измерений JSON.",
+									"placeholder": "[1.2, 3.4, 5.6]"
+								},
+								"valueBlob": {
+									"displayName": "Значение (BLOB)",
+									"description": "Двоичные данные",
+									"placeholder": "{ \"тип\": \"Буфер\", \"данные\": [98,10] }"
+								},
+								"valueSparse": {
+									"values": {
+										"valueSparse": {
+											"displayName": "Значение (разреженный вектор)"
+										},
+										"dimensions": {
+											"displayName": "Размеры",
+											"description": "Общее количество измерений"
+										},
+										"indices": {
+											"displayName": "Индексы",
+											"description": "Массив индексов JSON, например, [0, 2, 5]",
+											"placeholder": "[0, 2, 5]"
+										},
+										"values": {
+											"displayName": "Ценности",
+											"description": "Массив JSON значений, соответствующих индексам",
+											"placeholder": "[1.2, 3.4, 5.6]"
+										}
+									},
+									"displayName": "Значение (разреженный вектор)"
+								},
+								"parseInStatement": {
+									"displayName": "Анализ оператора IN",
+									"hint": "Если «Да», поле «Значение» должно представлять собой строку значений, разделенных запятыми. то есть: 1,2,3 или str1,str2,str3",
+									"options": {
+										"false": {
+											"displayName": "Нет"
+										},
+										"true": {
+											"displayName": "Да"
+										}
+									}
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить параметр",
+					"displayName": "Привязать значения заполнителя переменной",
+					"description": "Введите значения параметров привязки, используемых в операторе.",
+					"options": {
+						"values": {
+							"displayName": "Ценности"
+						}
+					}
+				},
+				"fetchArraySize": {
+					"displayName": "Получить размер массива",
+					"description": "Это свойство представляет собой число, определяющее размер внутреннего буфера, используемого для выборки строк запроса из базы данных Oracle. Его изменение может повлиять на производительность запроса, но не влияет на количество строк, возвращаемых приложению."
+				},
+				"prefetchRows": {
+					"displayName": "Количество строк для предварительной выборки",
+					"description": "Это свойство представляет собой параметр настройки запроса, позволяющий установить количество дополнительных строк, которые базовый драйвер Oracle извлекает во время внутренней фазы выполнения начального оператора запроса."
+				},
+				"stringOutBindMaxSize": {
+					"displayName": "Максимальный размер привязки строки OUT",
+					"description": "Максимальный размер в байтах для строковых параметров привязки OUT и IN-OUT в операторах выполнения."
+				},
+				"outputColumns": {
+					"displayName": "Выходные столбцы",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\" target=\"_blank\">expression</a>"
+				},
+				"largeNumbersOutputAsString": {
+					"displayName": "Вывод чисел в виде строки",
+					"description": "Следует ли получать числа в виде строки",
+					"hint": "Применяется только к столбцам типов NUMBER, FLOAT, LONG."
+				},
+				"stmtBatching": {
+					"displayName": "Пакетная обработка заявлений",
+					"description": "Способ отправки запросов в базу данных",
+					"options": {
+						"single": {
+							"displayName": "Одно заявление",
+							"description": "Единый отчет для всех входящих товаров"
+						},
+						"independently": {
+							"displayName": "Независимо",
+							"description": "Выполнить один оператор для каждого входящего элемента выполнения."
+						},
+						"transaction": {
+							"displayName": "Сделка",
+							"description": "Выполнить все операторы в транзакции. В случае сбоя все изменения откатываются."
+						}
+					}
+				}
+			}
+		},
+		"params": {
+			"multipleValueButtonText": "Добавить еще один параметр"
+		},
+		"stmtBatchingNotice": {
+			"displayName": "Важно: Режим одного оператора работает только для первого элемента."
+		},
+		"query": {
+			"displayName": "Заявление",
+			"description": "Оператор SQL, который необходимо выполнить. Вы можете использовать выражения n8n и позиционные параметры, такие как :1, :2, :3, или именованные параметры, такие как :name, :ID и т. д., для ссылки на «Значения заполнителя привязки переменных», установленные в параметрах ниже.",
+			"hint": "Рассмотрите возможность использования параметров привязки для предотвращения атак с использованием SQL-инъекций. Добавьте их в опции ниже",
+			"placeholder": "например ВЫБЕРИТЕ идентификатор, название ИЗ продукта ГДЕ количество > :1 И цена <= :2"
+		},
+		"columns": {
+			"displayName": "Столбцы"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"sort": {
+			"options": {
+				"sort": {
+					"displayName": "Сортировать"
+				},
+				"values": {
+					"displayName": "Ценности",
+					"values": {
+						"column": {
+							"displayName": "Столбец",
+							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\" target=\"_blank\">expression</a>"
+						},
+						"direction": {
+							"displayName": "Направление",
+							"options": {
+								"ASC": {
+									"displayName": "ASC"
+								},
+								"DESC": {
+									"displayName": "DESC"
+								}
+							}
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить правило сортировки",
+			"displayName": "Сортировать"
+		}
+	}
+}

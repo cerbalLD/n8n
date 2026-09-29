@@ -1,0 +1,750 @@
+{
+	"header": {
+		"displayName": "Ксеро",
+		"description": "Использование API Xero"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"contact": {
+					"displayName": "Контакт"
+				},
+				"invoice": {
+					"displayName": "Счет"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать счет"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить счет"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получите много счетов-фактур"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить счет"
+				}
+			}
+		},
+		"organizationId": {
+			"displayName": "Название или идентификатор организации",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Полное имя контакта/организации"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"accountNumber": {
+					"displayName": "Номер счета",
+					"description": "Определяемый пользователем номер счета"
+				},
+				"addressesUi": {
+					"values": {
+						"addressesUi": {
+							"displayName": "Адреса"
+						},
+						"addressesValues": {
+							"options": {
+								"type": {
+									"displayName": "Тип",
+									"options": {
+										"POBOX": {
+											"displayName": "почтовый ящик"
+										},
+										"STREET": {
+											"displayName": "Улица"
+										}
+									}
+								},
+								"line1": {
+									"displayName": "Линия 1"
+								},
+								"line2": {
+									"displayName": "Линия 2"
+								},
+								"city": {
+									"displayName": "Город"
+								},
+								"region": {
+									"displayName": "Область"
+								},
+								"postalCode": {
+									"displayName": "Почтовый индекс"
+								},
+								"country": {
+									"displayName": "Страна"
+								},
+								"attentionTo": {
+									"displayName": "Внимание к"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить адрес",
+					"displayName": "Адреса",
+					"options": {
+						"addressesValues": {
+							"displayName": "Адрес"
+						}
+					}
+				},
+				"bankAccountDetails": {
+					"displayName": "Детали банковского счета",
+					"description": "Номер банковского счета для связи"
+				},
+				"contactNumber": {
+					"displayName": "Контактный номер",
+					"description": "Это поле доступно только для чтения на экране контактов Xero и используется для идентификации контактов во внешних системах."
+				},
+				"contactStatus": {
+					"displayName": "Статус контакта",
+					"description": "Текущий статус контакта - см. типы статусов контакта",
+					"options": {
+						"ACTIVE": {
+							"displayName": "Активный",
+							"description": "Контакт активен и может использоваться в транзакциях."
+						},
+						"ARCHIVED": {
+							"displayName": "В архиве",
+							"description": "Контакт заархивирован и больше не может использоваться в транзакциях."
+						},
+						"GDPRREQUEST": {
+							"displayName": "GDPR-запрос",
+							"description": "Контакт является предметом запроса на удаление данных согласно GDPR."
+						}
+					}
+				},
+				"defaultCurrency": {
+					"displayName": "Валюта по умолчанию",
+					"description": "Валюта по умолчанию для выставления счетов против контакта"
+				},
+				"emailAddress": {
+					"displayName": "Электронная почта",
+					"description": "Адрес электронной почты контактного лица (умлауты не поддерживаются) (максимальная длина = 255)."
+				},
+				"firstName": {
+					"displayName": "Имя",
+					"description": "Имя контактного лица (максимальная длина = 255)"
+				},
+				"lastName": {
+					"displayName": "Фамилия",
+					"description": "Фамилия контактного лица (макс. длина = 255)"
+				},
+				"phonesUi": {
+					"values": {
+						"phonesUi": {
+							"displayName": "Телефоны"
+						},
+						"phonesValues": {
+							"options": {
+								"phoneType": {
+									"displayName": "Тип",
+									"options": {
+										"DEFAULT": {
+											"displayName": "По умолчанию"
+										},
+										"DDI": {
+											"displayName": "DDI"
+										},
+										"MOBILE": {
+											"displayName": "мобильный"
+										},
+										"FAX": {
+											"displayName": "Факс"
+										}
+									}
+								},
+								"phoneNumber": {
+									"displayName": "Число"
+								},
+								"phoneAreaCode": {
+									"displayName": "Код города"
+								},
+								"phoneCountryCode": {
+									"displayName": "Код страны"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить телефон",
+					"displayName": "Телефоны",
+					"options": {
+						"phonesValues": {
+							"displayName": "Телефоны"
+						}
+					}
+				},
+				"purchasesDefaultAccountCode": {
+					"displayName": "Имя или идентификатор кода учетной записи по умолчанию для покупки",
+					"description": "Код учетной записи покупок по умолчанию для контактов. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"salesDefaultAccountCode": {
+					"displayName": "Имя или идентификатор кода счета продаж по умолчанию",
+					"description": "Код счета продаж по умолчанию для контактов. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"skypeUserName": {
+					"displayName": "Скайп",
+					"description": "Имя пользователя Skype для контакта"
+				},
+				"taxNumber": {
+					"displayName": "Налоговый номер",
+					"description": "Налоговый номер контактного лица"
+				},
+				"xeroNetworkKey": {
+					"displayName": "Сетевой ключ Xero",
+					"description": "Храните XeroNetworkKey для контактов"
+				},
+				"brandingThemeId": {
+					"displayName": "Название или идентификатор темы брендинга",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"currency": {
+					"displayName": "Название или идентификатор валюты",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"currencyRate": {
+					"displayName": "Курс валюты",
+					"description": "Курс валюты для мультивалютного счета. Если тариф не указан, используется дневной тариф XE.com."
+				},
+				"date": {
+					"displayName": "Дата",
+					"description": "Дата выставления счета - ГГГГ-ММ-ДД. Если элемент «Дата» не указан, по умолчанию будет использоваться текущая дата в зависимости от настройки часового пояса организации."
+				},
+				"dueDate": {
+					"displayName": "Срок оплаты",
+					"description": "Дата оплаты счета — ГГГГ-ММ-ДД."
+				},
+				"expectedPaymentDate": {
+					"displayName": "Ожидаемая дата платежа",
+					"description": "Отображается в счетах-фактурах продаж (дебиторская задолженность), если это установлено."
+				},
+				"invoiceNumber": {
+					"displayName": "Номер счета"
+				},
+				"lineAmountType": {
+					"displayName": "Тип суммы строки",
+					"options": {
+						"Exclusive": {
+							"displayName": "Эксклюзивный",
+							"description": "Позиции не включают налог"
+						},
+						"Inclusive": {
+							"displayName": "Инклюзивно",
+							"description": "Позиции включают налог"
+						},
+						"NoTax": {
+							"displayName": "NoTax",
+							"description": "Линия не имеет налога"
+						}
+					}
+				},
+				"plannedPaymentDate": {
+					"displayName": "Планируемая дата платежа",
+					"description": "Отображается в счетах (счета к оплате), если это установлено."
+				},
+				"reference": {
+					"displayName": "Ссылка",
+					"description": "Только ACCREC — дополнительный ссылочный номер (максимальная длина = 255)"
+				},
+				"sendToContact": {
+					"displayName": "Отправить в контакт",
+					"description": "Должен ли счет в приложении Xero быть помечен как «отправленный». Это можно установить только для утвержденных счетов."
+				},
+				"status": {
+					"displayName": "Статус",
+					"options": {
+						"DRAFT": {
+							"displayName": "Черновик"
+						},
+						"SUBMITTED": {
+							"displayName": "Поданный"
+						},
+						"AUTHORISED": {
+							"displayName": "Авторизованный"
+						}
+					}
+				},
+				"url": {
+					"displayName": "URL",
+					"description": "URL-ссылка на исходный документ — отображается как «Перейти к [имя приложения]» в приложении Xero."
+				}
+			}
+		},
+		"contactId": {
+			"displayName": "Идентификатор контакта"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"includeArchived": {
+					"displayName": "Включить заархивированные",
+					"description": "Будут ли в ответ включены контакты со статусом АРХИВИРОВАНО"
+				},
+				"orderBy": {
+					"displayName": "Заказать по",
+					"description": "Упорядочить по любому возвращаемому элементу",
+					"placeholder": "Идентификатор счета"
+				},
+				"sortOrder": {
+					"displayName": "Порядок сортировки",
+					"options": {
+						"ASC": {
+							"displayName": "По возрастанию"
+						},
+						"DESC": {
+							"displayName": "Описание"
+						}
+					}
+				},
+				"where": {
+					"displayName": "Где",
+					"description": "Параметрwhere позволяет фильтровать конечные точки и элементы, которые не имеют явных параметров. <a href=\"https://developer.xero.com/documentation/api/requests-and-responses#get-modified\">Примеры здесь</a>.",
+					"placeholder": "EmailAddress!=null&&EmailAddress.StartsWith(\"boom\")"
+				},
+				"createdByMyApp": {
+					"displayName": "Создано моим приложением",
+					"description": "Будете ли вы получать только счета, созданные вашим приложением."
+				},
+				"statuses": {
+					"displayName": "Статусы",
+					"options": {
+						"DRAFT": {
+							"displayName": "Черновик"
+						},
+						"SUBMITTED": {
+							"displayName": "Поданный"
+						},
+						"AUTHORISED": {
+							"displayName": "Авторизованный"
+						}
+					}
+				}
+			}
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"accountNumber": {
+					"displayName": "Номер счета",
+					"description": "Определяемый пользователем номер счета"
+				},
+				"addressesUi": {
+					"values": {
+						"addressesUi": {
+							"displayName": "Адреса"
+						},
+						"addressesValues": {
+							"options": {
+								"type": {
+									"displayName": "Тип",
+									"options": {
+										"POBOX": {
+											"displayName": "почтовый ящик"
+										},
+										"STREET": {
+											"displayName": "Улица"
+										}
+									}
+								},
+								"line1": {
+									"displayName": "Линия 1"
+								},
+								"line2": {
+									"displayName": "Линия 2"
+								},
+								"city": {
+									"displayName": "Город"
+								},
+								"region": {
+									"displayName": "Область"
+								},
+								"postalCode": {
+									"displayName": "Почтовый индекс"
+								},
+								"country": {
+									"displayName": "Страна"
+								},
+								"attentionTo": {
+									"displayName": "Внимание к"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить адрес",
+					"displayName": "Адреса",
+					"options": {
+						"addressesValues": {
+							"displayName": "Адрес"
+						}
+					}
+				},
+				"bankAccountDetails": {
+					"displayName": "Детали банковского счета",
+					"description": "Номер банковского счета для связи"
+				},
+				"contactNumber": {
+					"displayName": "Контактный номер",
+					"description": "Это поле доступно только для чтения на экране контактов Xero и используется для идентификации контактов во внешних системах."
+				},
+				"contactStatus": {
+					"displayName": "Статус контакта",
+					"description": "Текущий статус контакта - см. типы статусов контакта",
+					"options": {
+						"ACTIVE": {
+							"displayName": "Активный",
+							"description": "Контакт активен и может использоваться в транзакциях."
+						},
+						"ARCHIVED": {
+							"displayName": "В архиве",
+							"description": "Контакт заархивирован и больше не может использоваться в транзакциях."
+						},
+						"GDPRREQUEST": {
+							"displayName": "GDPR-запрос",
+							"description": "Контакт является предметом запроса на удаление данных согласно GDPR."
+						}
+					}
+				},
+				"defaultCurrency": {
+					"displayName": "Валюта по умолчанию",
+					"description": "Валюта по умолчанию для выставления счетов против контакта"
+				},
+				"emailAddress": {
+					"displayName": "Электронная почта",
+					"description": "Адрес электронной почты контактного лица (умлауты не поддерживаются) (максимальная длина = 255)."
+				},
+				"firstName": {
+					"displayName": "Имя",
+					"description": "Имя контактного лица (максимальная длина = 255)"
+				},
+				"lastName": {
+					"displayName": "Фамилия",
+					"description": "Фамилия контактного лица (макс. длина = 255)"
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Полное имя контакта/организации"
+				},
+				"phonesUi": {
+					"values": {
+						"phonesUi": {
+							"displayName": "Телефоны"
+						},
+						"phonesValues": {
+							"options": {
+								"phoneType": {
+									"displayName": "Тип",
+									"options": {
+										"DEFAULT": {
+											"displayName": "По умолчанию"
+										},
+										"DDI": {
+											"displayName": "DDI"
+										},
+										"MOBILE": {
+											"displayName": "мобильный"
+										},
+										"FAX": {
+											"displayName": "Факс"
+										}
+									}
+								},
+								"phoneNumber": {
+									"displayName": "Число"
+								},
+								"phoneAreaCode": {
+									"displayName": "Код города"
+								},
+								"phoneCountryCode": {
+									"displayName": "Код страны"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить телефон",
+					"displayName": "Телефоны",
+					"options": {
+						"phonesValues": {
+							"displayName": "Телефоны"
+						}
+					}
+				},
+				"purchasesDefaultAccountCode": {
+					"displayName": "Имя или идентификатор кода учетной записи по умолчанию для покупки",
+					"description": "Код учетной записи покупок по умолчанию для контактов. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"salesDefaultAccountCode": {
+					"displayName": "Имя или идентификатор кода счета продаж по умолчанию",
+					"description": "Код счета продаж по умолчанию для контактов. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"skypeUserName": {
+					"displayName": "Скайп",
+					"description": "Имя пользователя Skype для контакта"
+				},
+				"taxNumber": {
+					"displayName": "Налоговый номер",
+					"description": "Налоговый номер контактного лица"
+				},
+				"xeroNetworkKey": {
+					"displayName": "Сетевой ключ Xero",
+					"description": "Храните XeroNetworkKey для контактов"
+				},
+				"brandingThemeId": {
+					"displayName": "Название или идентификатор темы брендинга",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"contactId": {
+					"displayName": "Идентификатор контакта"
+				},
+				"currency": {
+					"displayName": "Название или идентификатор валюты",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"currencyRate": {
+					"displayName": "Курс валюты",
+					"description": "Курс валюты для мультивалютного счета. Если тариф не указан, используется дневной тариф XE.com."
+				},
+				"date": {
+					"displayName": "Дата",
+					"description": "Дата выставления счета - ГГГГ-ММ-ДД. Если элемент «Дата» не указан, по умолчанию будет использоваться текущая дата в зависимости от настройки часового пояса организации."
+				},
+				"dueDate": {
+					"displayName": "Срок оплаты",
+					"description": "Дата оплаты счета — ГГГГ-ММ-ДД."
+				},
+				"expectedPaymentDate": {
+					"displayName": "Ожидаемая дата платежа",
+					"description": "Отображается в счетах-фактурах продаж (дебиторская задолженность), если это установлено."
+				},
+				"invoiceNumber": {
+					"displayName": "Номер счета"
+				},
+				"lineAmountType": {
+					"displayName": "Тип суммы строки",
+					"options": {
+						"Exclusive": {
+							"displayName": "Эксклюзивный",
+							"description": "Позиции не включают налог"
+						},
+						"Inclusive": {
+							"displayName": "Инклюзивно",
+							"description": "Позиции включают налог"
+						},
+						"NoTax": {
+							"displayName": "NoTax",
+							"description": "Линия не имеет налога"
+						}
+					}
+				},
+				"lineItemsUi": {
+					"values": {
+						"lineItemsUi": {
+							"displayName": "Позиции",
+							"description": "Данные позиции"
+						},
+						"lineItemsValues": {
+							"options": {
+								"lineItemId": {
+									"displayName": "Идентификатор позиции",
+									"description": "Идентификатор, сгенерированный Xero для LineItem."
+								},
+								"description": {
+									"displayName": "Описание",
+									"description": "Позиция, содержащая только описание"
+								},
+								"quantity": {
+									"displayName": "Количество",
+									"description": "Количество позиций"
+								},
+								"unitAmount": {
+									"displayName": "Сумма единицы",
+									"description": "Сумма единицы позиции. По умолчанию сумма единицы будет округлена до двух десятичных знаков."
+								},
+								"itemCode": {
+									"displayName": "Код товара Имя или идентификатор",
+									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+								},
+								"accountCode": {
+									"displayName": "Код счета, имя или идентификатор",
+									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+								},
+								"taxType": {
+									"displayName": "Тип налога",
+									"options": {
+										"INPUT": {
+											"displayName": "Налог на покупки"
+										},
+										"NONE": {
+											"displayName": "Освобождение от налогов"
+										},
+										"OUTPUT": {
+											"displayName": "Налог с продаж"
+										},
+										"GSTONIMPORTS": {
+											"displayName": "Налог с продаж на импорт"
+										}
+									}
+								},
+								"taxAmount": {
+									"displayName": "Сумма налога",
+									"description": "Сумма налога автоматически рассчитывается как процент от суммы строки на основе ставки налога."
+								},
+								"lineAmount": {
+									"displayName": "Сумма строки",
+									"description": "Сумма строки отражает цену со скидкой, если использовался DiscountRate."
+								},
+								"discountRate": {
+									"displayName": "Ставка скидки",
+									"description": "Процентная скидка или сумма скидки, применяемая к позиции. Поддерживается только для счетов-фактур ACCREC. Счета-фактуры и кредит-ноты ACCPAY в Xero не поддерживают скидки."
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить позицию",
+					"displayName": "Позиции",
+					"description": "Данные позиции",
+					"options": {
+						"lineItemsValues": {
+							"displayName": "Позиция"
+						}
+					}
+				},
+				"plannedPaymentDate": {
+					"displayName": "Планируемая дата платежа",
+					"description": "Отображается в счетах (счета к оплате), если это установлено."
+				},
+				"reference": {
+					"displayName": "Ссылка",
+					"description": "Только ACCREC — дополнительный ссылочный номер (максимальная длина = 255)"
+				},
+				"sendToContact": {
+					"displayName": "Отправить в контакт",
+					"description": "Должен ли счет в приложении Xero быть помечен как «отправленный». Это можно установить только для утвержденных счетов."
+				},
+				"status": {
+					"displayName": "Статус",
+					"options": {
+						"DRAFT": {
+							"displayName": "Черновик"
+						},
+						"SUBMITTED": {
+							"displayName": "Поданный"
+						},
+						"AUTHORISED": {
+							"displayName": "Авторизованный"
+						}
+					}
+				},
+				"url": {
+					"displayName": "URL",
+					"description": "URL-ссылка на исходный документ — отображается как «Перейти к [имя приложения]» в приложении Xero."
+				}
+			}
+		},
+		"type": {
+			"displayName": "Тип",
+			"description": "Тип счета",
+			"options": {
+				"ACCPAY": {
+					"displayName": "Счет",
+					"description": "Счета к оплате или счет-фактура поставщика"
+				},
+				"ACCREC": {
+					"displayName": "Счет продажи",
+					"description": "Дебиторская задолженность или счет клиента"
+				}
+			}
+		},
+		"lineItemsUi": {
+			"options": {
+				"lineItemsUi": {
+					"displayName": "Позиции",
+					"description": "Данные позиции"
+				},
+				"lineItemsValues": {
+					"displayName": "Позиция",
+					"values": {
+						"description": {
+							"displayName": "Описание",
+							"description": "Позиция, содержащая только описание"
+						},
+						"quantity": {
+							"displayName": "Количество",
+							"description": "Количество позиций"
+						},
+						"unitAmount": {
+							"displayName": "Сумма единицы",
+							"description": "Сумма единицы позиции. По умолчанию сумма единицы будет округлена до двух десятичных знаков."
+						},
+						"itemCode": {
+							"displayName": "Код товара Имя или идентификатор",
+							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+						},
+						"accountCode": {
+							"displayName": "Код счета, имя или идентификатор",
+							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+						},
+						"taxType": {
+							"displayName": "Тип налога",
+							"options": {
+								"INPUT": {
+									"displayName": "Налог на покупки"
+								},
+								"NONE": {
+									"displayName": "Освобождение от налогов"
+								},
+								"OUTPUT": {
+									"displayName": "Налог с продаж"
+								},
+								"GSTONIMPORTS": {
+									"displayName": "Налог с продаж на импорт"
+								}
+							}
+						},
+						"taxAmount": {
+							"displayName": "Сумма налога",
+							"description": "Сумма налога автоматически рассчитывается как процент от суммы строки на основе ставки налога."
+						},
+						"lineAmount": {
+							"displayName": "Сумма строки",
+							"description": "Сумма строки отражает цену со скидкой, если использовался DiscountRate."
+						},
+						"discountRate": {
+							"displayName": "Ставка скидки",
+							"description": "Процентная скидка или сумма скидки, применяемая к позиции. Поддерживается только для счетов-фактур ACCREC. Счета-фактуры и кредит-ноты ACCPAY в Xero не поддерживают скидки."
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить позицию",
+			"displayName": "Позиции",
+			"description": "Данные позиции"
+		},
+		"invoiceId": {
+			"displayName": "Идентификатор счета"
+		}
+	}
+}

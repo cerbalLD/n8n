@@ -1,0 +1,347 @@
+{
+	"header": {
+		"displayName": "S3",
+		"description": "Отправляет данные в любой S3-совместимый сервис."
+	},
+	"nodeView": {
+		"s3StandardNotice": {
+			"displayName": "Этот узел предназначен для сервисов, использующих стандарт S3, например. Минио или цифровые океанские пространства. Для AWS S3 используйте узел «AWS S3»."
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"bucket": {
+					"displayName": "Ведро"
+				},
+				"file": {
+					"displayName": "Файл"
+				},
+				"folder": {
+					"displayName": "Папка"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать папку"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить файл"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить много файлов"
+				},
+				"search": {
+					"displayName": "Поиск",
+					"description": "Поиск в сегменте"
+				},
+				"copy": {
+					"displayName": "Копировать",
+					"description": "Скопировать файл"
+				},
+				"download": {
+					"displayName": "Скачать",
+					"description": "Скачать файл"
+				},
+				"upload": {
+					"displayName": "Загрузить",
+					"description": "Загрузить файл"
+				}
+			}
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Имя корзины AWS S3, которую нужно удалить."
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"acl": {
+					"displayName": "ACL",
+					"description": "Стандартный список управления доступом для применения к объекту.",
+					"options": {
+						"authenticatedRead": {
+							"displayName": "Аутентифицированное чтение"
+						},
+						"Private": {
+							"displayName": "Частный"
+						},
+						"publicRead": {
+							"displayName": "Публичное чтение"
+						},
+						"publicReadWrite": {
+							"displayName": "Публичное чтение и запись"
+						},
+						"awsExecRead": {
+							"displayName": "Чтение руководителей AWS"
+						},
+						"bucketOwnerFullControl": {
+							"displayName": "Полный контроль владельца сегмента"
+						},
+						"bucketOwnerRead": {
+							"displayName": "Владелец сегмента прочитал"
+						},
+						"private": {
+							"displayName": "Частный"
+						}
+					}
+				},
+				"bucketObjectLockEnabled": {
+					"displayName": "Блокировка объекта сегмента включена",
+					"description": "Хотите ли вы, чтобы блокировка объектов S3 была включена для нового сегмента?"
+				},
+				"grantFullControl": {
+					"displayName": "Предоставить полный контроль",
+					"description": "Предоставлять ли получателю разрешения READ, READ_ACP и WRITE_ACP для объекта."
+				},
+				"grantRead": {
+					"displayName": "Грант Рид",
+					"description": "Разрешить ли грантополучателю читать данные объекта и его метаданные"
+				},
+				"grantReadAcp": {
+					"displayName": "Разрешить чтение ACP",
+					"description": "Разрешить ли грантополучателю читать объектный ACL"
+				},
+				"grantWrite": {
+					"displayName": "Грант на запись",
+					"description": "Разрешить ли грантополучателю создавать, перезаписывать и удалять любой объект в корзине"
+				},
+				"grantWriteAcp": {
+					"displayName": "Грант на запись ACP",
+					"description": "Разрешить ли грантополучателю писать ACL для соответствующего объекта"
+				},
+				"region": {
+					"displayName": "Область",
+					"description": "Регион, в котором вы хотите создать сегмент. По умолчанию сегменты создаются в регионе, определенном в учетных данных."
+				},
+				"delimiter": {
+					"displayName": "Разделитель",
+					"description": "Разделитель — это символ, который используется для группировки клавиш."
+				},
+				"encodingType": {
+					"displayName": "Тип кодировки",
+					"description": "Тип кодировки, используемый Amazon S3 для кодирования ключей объекта в ответе",
+					"options": {
+						"url": {
+							"displayName": "URL"
+						}
+					}
+				},
+				"fetchOwner": {
+					"displayName": "Получить владельца",
+					"description": "Поле владельца по умолчанию отсутствует в listV2. Если вы хотите вернуть поле владельца с каждым ключом в результате, установите для поля владельца выборки значение true."
+				},
+				"prefix": {
+					"displayName": "Префикс",
+					"description": "Ограничивает ответ ключами, начинающимися с указанного префикса."
+				},
+				"requesterPays": {
+					"displayName": "Запрашивающая сторона платит",
+					"description": "Будет ли запрашивающая сторона платить за запросы и передачу данных. Пока Requester Pays включен, анонимный доступ к этому сегменту отключен."
+				},
+				"startAfter": {
+					"displayName": "Начать после",
+					"description": "StartAfter — это место, с которого Amazon S3 должен начинать листинг. Amazon S3 начинает листинг после указанного ключа."
+				},
+				"parentFolderKey": {
+					"displayName": "Ключ родительской папки",
+					"description": "Родительская папка, в которой вы хотите создать файл"
+				},
+				"storageClass": {
+					"displayName": "Класс хранилища",
+					"description": "Классы хранилища Amazon S3",
+					"options": {
+						"deepArchive": {
+							"displayName": "Глубокий архив"
+						},
+						"glacier": {
+							"displayName": "Ледник"
+						},
+						"intelligentTiering": {
+							"displayName": "Интеллектуальное многоуровневое распределение"
+						},
+						"onezoneIA": {
+							"displayName": "Одна зона IA"
+						},
+						"RecudedRedundancy": {
+							"displayName": "Пониженное резервирование"
+						},
+						"standard": {
+							"displayName": "Стандартный"
+						},
+						"standardIA": {
+							"displayName": "Стандартный ИА"
+						}
+					}
+				},
+				"lockLegalHold": {
+					"displayName": "Заблокировать юридическое удержание",
+					"description": "Будет ли к этому объекту применено юридическое удержание"
+				},
+				"lockMode": {
+					"displayName": "Режим блокировки",
+					"description": "Режим блокировки объекта, который вы хотите применить к этому объекту.",
+					"options": {
+						"governance": {
+							"displayName": "Управление"
+						},
+						"compliance": {
+							"displayName": "Согласие"
+						}
+					}
+				},
+				"lockRetainUntilDate": {
+					"displayName": "Блокировать, сохранять до даты",
+					"description": "Дата и время истечения срока действия блокировки объекта."
+				},
+				"metadataDirective": {
+					"displayName": "Директива метаданных",
+					"description": "Указывает, копируются ли метаданные из исходного объекта или заменяются метаданными, предоставленными в запросе.",
+					"options": {
+						"copy": {
+							"displayName": "Копировать"
+						},
+						"replace": {
+							"displayName": "Заменять"
+						}
+					}
+				},
+				"serverSideEncryption": {
+					"displayName": "Шифрование на стороне сервера",
+					"description": "Алгоритм шифрования на стороне сервера, используемый при хранении этого объекта в Amazon S3.",
+					"options": {
+						"AES256": {
+							"displayName": "AES256"
+						},
+						"aws:kms": {
+							"displayName": "AWS:KMS"
+						}
+					}
+				},
+				"serverSideEncryptionContext": {
+					"displayName": "Контекст шифрования на стороне сервера",
+					"description": "Указывает контекст шифрования AWS KMS, который будет использоваться для шифрования объектов."
+				},
+				"encryptionAwsKmsKeyId": {
+					"displayName": "Шифрование на стороне сервера Идентификатор ключа AWS KMS",
+					"description": "Если присутствует шифрование на стороне сервера x-amz и имеет значение aws:kms"
+				},
+				"serversideEncryptionCustomerAlgorithm": {
+					"displayName": "Клиентский алгоритм шифрования на стороне сервера",
+					"description": "Указывает алгоритм, который будет использоваться при шифровании объекта (например, AES256)."
+				},
+				"serversideEncryptionCustomerKey": {
+					"displayName": "Ключ клиента для шифрования на стороне сервера",
+					"description": "Указывает предоставленный клиентом ключ шифрования, который Amazon S3 будет использовать при шифровании данных."
+				},
+				"serversideEncryptionCustomerKeyMD5": {
+					"displayName": "Ключ клиента для шифрования на стороне сервера MD5",
+					"description": "Указывает 128-битный дайджест MD5 ключа шифрования в соответствии с RFC 1321."
+				},
+				"taggingDirective": {
+					"displayName": "Директива по тегам",
+					"description": "Указывает, копируются ли метаданные из исходного объекта или заменяются метаданными, предоставленными в запросе.",
+					"options": {
+						"copy": {
+							"displayName": "Копировать"
+						},
+						"replace": {
+							"displayName": "Заменять"
+						}
+					}
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"bucketName": {
+			"displayName": "Имя сегмента"
+		},
+		"folderName": {
+			"displayName": "Имя папки"
+		},
+		"folderKey": {
+			"displayName": "Ключ папки"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"fetchOwner": {
+					"displayName": "Получить владельца",
+					"description": "Поле владельца по умолчанию отсутствует в listV2. Если вы хотите вернуть поле владельца с каждым ключом в результате, установите для поля владельца выборки значение true."
+				},
+				"folderKey": {
+					"displayName": "Ключ папки"
+				},
+				"versionId": {
+					"displayName": "Идентификатор версии"
+				}
+			}
+		},
+		"sourcePath": {
+			"displayName": "Исходный путь",
+			"description": "Имя исходного сегмента должно начинаться с (/) и ключевого имени исходного объекта, разделенного косой чертой (/).",
+			"placeholder": "/bucket/my-image.jpg"
+		},
+		"destinationPath": {
+			"displayName": "Путь назначения",
+			"description": "Имя целевого сегмента и ключевое имя целевого объекта, разделенные косой чертой (/).",
+			"placeholder": "/bucket/my-второе-изображение.jpg"
+		},
+		"fileName": {
+			"displayName": "Имя файла",
+			"placeholder": "привет.txt",
+			"description": "Если не установлено, будет использоваться имя файла двоичных данных."
+		},
+		"binaryData": {
+			"displayName": "Двоичный файл",
+			"description": "Следует ли брать данные для загрузки из двоичного поля"
+		},
+		"fileContent": {
+			"displayName": "Содержимое файла",
+			"description": "Текстовое содержимое файла для загрузки"
+		},
+		"binaryPropertyName": {
+			"displayName": "Поместите выходной файл в поле",
+			"hint": "Имя выходного двоичного поля, в которое помещается файл."
+		},
+		"tagsUi": {
+			"options": {
+				"tagsUi": {
+					"displayName": "Теги",
+					"description": "Необязательные дополнительные заголовки для добавления в сообщение (разрешено большинство заголовков)."
+				},
+				"tagsValues": {
+					"displayName": "Ярлык",
+					"values": {
+						"key": {
+							"displayName": "Ключ"
+						},
+						"value": {
+							"displayName": "Ценить"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить тег",
+			"displayName": "Теги",
+			"description": "Необязательные дополнительные заголовки для добавления в сообщение (разрешено большинство заголовков)."
+		},
+		"fileKey": {
+			"displayName": "Ключ файла"
+		}
+	}
+}

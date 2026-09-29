@@ -1,0 +1,276 @@
+{
+	"header": {
+		"displayName": "API графика Facebook",
+		"description": "Взаимодействует с Facebook с помощью Graph API."
+	},
+	"nodeView": {
+		"authType": {
+			"displayName": "Аутентификация",
+			"description": "Используемый метод аутентификации",
+			"options": {
+				"accessToken": {
+					"displayName": "Токен доступа"
+				},
+				"oAuth2": {
+					"displayName": "ОАут2"
+				}
+			}
+		},
+		"hostUrl": {
+			"displayName": "URL-адрес хоста",
+			"description": "URL-адрес хоста запроса. Почти все запросы передаются на URL-адрес хостаgraph.facebook.com. Единственным исключением являются загрузки видео, для которых используется сайт Graph-video.facebook.com.",
+			"options": {
+				"graph": {
+					"facebook": {
+						"com": {
+							"displayName": "По умолчанию"
+						}
+					}
+				},
+				"graph-video": {
+					"facebook": {
+						"com": {
+							"displayName": "Видео загрузки"
+						}
+					}
+				}
+			}
+		},
+		"httpRequestMethod": {
+			"displayName": "Метод HTTP-запроса",
+			"description": "Метод HTTP, который будет использоваться для запроса",
+			"options": {
+				"GET": {
+					"displayName": "GET"
+				},
+				"POST": {
+					"displayName": "POST"
+				},
+				"DELETE": {
+					"displayName": "DELETE"
+				}
+			}
+		},
+		"graphApiVersion": {
+			"displayName": "Версия API графа",
+			"description": "Версия API Graph, которая будет использоваться в запросе.",
+			"options": {
+				"": {
+					"displayName": "По умолчанию"
+				},
+				"v25": {
+					"0": {
+						"displayName": "v25.0"
+					}
+				},
+				"v24": {
+					"0": {
+						"displayName": "v24.0"
+					}
+				},
+				"v23": {
+					"0": {
+						"displayName": "v23.0"
+					}
+				},
+				"v22": {
+					"0": {
+						"displayName": "v22.0"
+					}
+				},
+				"v21": {
+					"0": {
+						"displayName": "v21.0"
+					}
+				},
+				"v20": {
+					"0": {
+						"displayName": "v20.0"
+					}
+				},
+				"v19": {
+					"0": {
+						"displayName": "v19.0"
+					}
+				},
+				"v18": {
+					"0": {
+						"displayName": "v18.0"
+					}
+				},
+				"v17": {
+					"0": {
+						"displayName": "v17.0"
+					}
+				},
+				"v16": {
+					"0": {
+						"displayName": "v16.0"
+					}
+				},
+				"v15": {
+					"0": {
+						"displayName": "v15.0"
+					}
+				},
+				"v14": {
+					"0": {
+						"displayName": "v14.0"
+					}
+				},
+				"v13": {
+					"0": {
+						"displayName": "v13.0"
+					}
+				},
+				"v12": {
+					"0": {
+						"displayName": "v12.0"
+					}
+				},
+				"v11": {
+					"0": {
+						"displayName": "v11.0"
+					}
+				},
+				"v10": {
+					"0": {
+						"displayName": "v10.0"
+					}
+				},
+				"v9": {
+					"0": {
+						"displayName": "v9.0"
+					}
+				},
+				"v8": {
+					"0": {
+						"displayName": "версия 8.0"
+					}
+				},
+				"v7": {
+					"0": {
+						"displayName": "v7.0"
+					}
+				},
+				"v6": {
+					"0": {
+						"displayName": "v6.0"
+					}
+				},
+				"v5": {
+					"0": {
+						"displayName": "v5.0"
+					}
+				},
+				"v4": {
+					"0": {
+						"displayName": "v4.0"
+					}
+				},
+				"v3": {
+					"0": {
+						"displayName": "v3.0"
+					},
+					"1": {
+						"displayName": "v3.1"
+					},
+					"2": {
+						"displayName": "v3.2"
+					},
+					"3": {
+						"displayName": "v3.3"
+					}
+				}
+			}
+		},
+		"node": {
+			"displayName": "Узел",
+			"description": "Узел, на котором нужно работать. Узел — это отдельный объект с уникальным идентификатором. Например, существует множество объектов узла пользователя, каждый из которых имеет уникальный идентификатор, представляющий человека на Facebook.",
+			"placeholder": "мне"
+		},
+		"edge": {
+			"displayName": "Край",
+			"description": "Край узла, над которым нужно работать. Ребра представляют собой коллекции объектов, прикрепленных к узлу.",
+			"placeholder": "видео"
+		},
+		"allowUnauthorizedCerts": {
+			"displayName": "Игнорировать проблемы с SSL (небезопасно)",
+			"description": "Подключаться ли, даже если проверка сертификата SSL невозможна"
+		},
+		"sendBinaryData": {
+			"displayName": "Отправить двоичный файл",
+			"description": "Загружать ли двоичные данные как multipart/form-data",
+			"hint": "Края страниц <code>/photos</code> и <code>/videos</code> принимают двоичную загрузку. Конечные точки контейнера Instagram (например, <code>/media</code>) вместо этого требуют <code>image_url</code> или <code>video_url</code> в качестве параметров запроса."
+		},
+		"binaryPropertyName": {
+			"displayName": "Входное двоичное поле",
+			"description": "Для составных частей данных формы можно предоставить несколько файлов в формате: <code>sendKey1:binaryProperty1,sendKey2:binaryProperty2</code>",
+			"hint": "Имя входного двоичного поля, содержащего файл для загрузки.",
+			"placeholder": "файл: данные"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"fields": {
+					"values": {
+						"fields": {
+							"displayName": "Поля",
+							"description": "Список полей для запроса в запросе GET"
+						},
+						"field": {
+							"options": {
+								"name": {
+									"displayName": "Имя",
+									"description": "Название поля"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить поле",
+					"displayName": "Поля",
+					"description": "Список полей для запроса в запросе GET",
+					"options": {
+						"field": {
+							"displayName": "Поле"
+						}
+					}
+				},
+				"queryParameters": {
+					"values": {
+						"queryParameters": {
+							"displayName": "Параметры запроса",
+							"description": "Параметры запроса для отправки"
+						},
+						"parameter": {
+							"options": {
+								"name": {
+									"displayName": "Имя",
+									"description": "Имя параметра"
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Значение параметра"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить параметр",
+					"displayName": "Параметры запроса",
+					"description": "Параметры запроса для отправки",
+					"options": {
+						"parameter": {
+							"displayName": "Параметр"
+						}
+					}
+				},
+				"queryParametersJson": {
+					"displayName": "Параметры запроса JSON",
+					"description": "Параметры запроса для отправки, определенные как объект JSON.",
+					"placeholder": "{\"имя_поля\": \"значение_поля\"}"
+				}
+			}
+		}
+	}
+}

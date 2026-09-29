@@ -1,0 +1,45 @@
+{
+	"header": {
+		"displayName": "Понятие триггера",
+		"description": "Запускает рабочий процесс при возникновении событий Notion."
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"apiKey": {
+					"displayName": "API-ключ"
+				},
+				"oAuth2": {
+					"displayName": "ОАут2"
+				}
+			}
+		},
+		"event": {
+			"displayName": "Событие",
+			"options": {
+				"pageAddedToDatabase": {
+					"displayName": "Страница добавлена ​​в базу данных"
+				},
+				"pagedUpdatedInDatabase": {
+					"displayName": "Страница обновлена ​​в базе данных"
+				}
+			}
+		},
+		"notionNotice": {
+			"displayName": "В Notion обязательно <a href=\"https://www.notion.com/help/add-and-manage-connections-with-the-api\" target=\"_blank\">добавьте свое соединение</a> на страницы, к которым вы хотите получить доступ."
+		},
+		"databaseId": {
+			"displayName": "База данных",
+			"description": "База данных Notion для работы"
+		},
+		"dataSourceId": {
+			"displayName": "Источник данных",
+			"description": "Источник данных Notion для работы"
+		},
+		"simple": {
+			"displayName": "Упрощать",
+			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+		}
+	}
+}

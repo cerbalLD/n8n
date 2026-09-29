@@ -1,0 +1,177 @@
+{
+	"header": {
+		"displayName": "КонвертироватьКит",
+		"description": "Использование API ConvertKit"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"customField": {
+					"displayName": "Пользовательское поле"
+				},
+				"form": {
+					"displayName": "Форма"
+				},
+				"sequence": {
+					"displayName": "Последовательность"
+				},
+				"tag": {
+					"displayName": "Ярлык"
+				},
+				"tagSubscriber": {
+					"displayName": "Тег подписчика"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать тег"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удаление тега у подписчика"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получение списка подписок на тег, включая данные подписчиков"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить поле"
+				},
+				"addSubscriber": {
+					"displayName": "Добавить подписчика",
+					"description": "Добавить подписчика"
+				},
+				"getSubscriptions": {
+					"displayName": "Получить подписки",
+					"description": "Получить все подписки на последовательность, включая данные подписчиков."
+				},
+				"add": {
+					"displayName": "Добавлять",
+					"description": "Добавить метку подписчику"
+				}
+			},
+			"description": "Операции, которые необходимо выполнить"
+		},
+		"id": {
+			"displayName": "Имя или идентификатор последовательности",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"label": {
+			"displayName": "Этикетка",
+			"description": "Метка настраиваемого поля"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"description": "Адрес электронной почты подписчика",
+			"placeholder": "имя@email.com"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"fieldsUi": {
+					"values": {
+						"fieldsUi": {
+							"displayName": "Пользовательские поля",
+							"description": "Объект пар ключ/значение для настраиваемых полей (настраиваемое поле должно существовать, прежде чем вы сможете использовать его здесь)"
+						},
+						"fieldsValues": {
+							"options": {
+								"key": {
+									"displayName": "Ключ поля",
+									"description": "Ключ поля",
+									"placeholder": "фамилия"
+								},
+								"value": {
+									"displayName": "Значение поля",
+									"description": "Значение поля",
+									"placeholder": "Доу"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить настраиваемое поле",
+					"displayName": "Пользовательские поля",
+					"description": "Объект пар ключ/значение для настраиваемых полей (настраиваемое поле должно существовать, прежде чем вы сможете использовать его здесь)",
+					"options": {
+						"fieldsValues": {
+							"displayName": "Пользовательское поле"
+						}
+					}
+				},
+				"firstName": {
+					"displayName": "Имя",
+					"description": "Имя подписчика"
+				},
+				"subscriberState": {
+					"displayName": "Состояние подписчика",
+					"options": {
+						"active": {
+							"displayName": "Активный"
+						},
+						"cancelled": {
+							"displayName": "Отменено"
+						}
+					}
+				},
+				"tags": {
+					"displayName": "Имена или идентификаторы тегов",
+					"description": "Теги. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"fields": {
+					"values": {
+						"fields": {
+							"displayName": "Пользовательские поля",
+							"description": "Объект пар ключ/значение для настраиваемых полей (настраиваемое поле должно существовать, прежде чем вы сможете использовать его здесь)"
+						},
+						"field": {
+							"options": {
+								"key": {
+									"displayName": "Ключ поля",
+									"description": "Ключ поля",
+									"placeholder": "фамилия"
+								},
+								"value": {
+									"displayName": "Значение поля",
+									"description": "Значение поля",
+									"placeholder": "Доу"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить настраиваемое поле",
+					"displayName": "Пользовательские поля",
+					"description": "Объект пар ключ/значение для настраиваемых полей (настраиваемое поле должно существовать, прежде чем вы сможете использовать его здесь)",
+					"options": {
+						"field": {
+							"displayName": "Пользовательское поле"
+						}
+					}
+				}
+			},
+			"description": "Получайте только активных подписчиков или отмененных подписчиков"
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Имя тега, можно добавить несколько через запятую"
+		},
+		"tagId": {
+			"displayName": "Имя или идентификатор тега",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		}
+	}
+}

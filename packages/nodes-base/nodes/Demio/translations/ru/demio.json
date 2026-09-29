@@ -1,0 +1,166 @@
+{
+	"header": {
+		"displayName": "Демио",
+		"description": "Используйте Demio API"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"event": {
+					"displayName": "Событие"
+				},
+				"report": {
+					"displayName": "Отчет"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить отчет о мероприятии"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить много событий"
+				},
+				"register": {
+					"displayName": "Зарегистрироваться",
+					"description": "Зарегистрируйте кого-нибудь на мероприятие"
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"type": {
+					"displayName": "Тип",
+					"options": {
+						"automated": {
+							"displayName": "Автоматизированный"
+						},
+						"past": {
+							"displayName": "Прошлое"
+						},
+						"upcoming": {
+							"displayName": "Предстоящие"
+						}
+					}
+				},
+				"status": {
+					"displayName": "Статус",
+					"description": "Фильтровать результаты по статусу участия",
+					"options": {
+						"attended": {
+							"displayName": "присутствовал"
+						},
+						"banned": {
+							"displayName": "Запрещено"
+						},
+						"completed": {
+							"displayName": "Завершенный"
+						},
+						"did-not-attend": {
+							"displayName": "Не присутствовал"
+						},
+						"left-early": {
+							"displayName": "Ушел рано"
+						}
+					}
+				}
+			}
+		},
+		"eventId": {
+			"displayName": "Название или идентификатор события",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"active": {
+					"displayName": "Активный",
+					"description": "Возвращать ли только активные даты в серии"
+				},
+				"date_id": {
+					"displayName": "Имя или идентификатор сеанса",
+					"description": "Идентификатор сеанса события. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"company": {
+					"displayName": "Компания",
+					"description": "Значение предопределенного поля «Компания»"
+				},
+				"customFieldsUi": {
+					"values": {
+						"customFieldsUi": {
+							"displayName": "Пользовательские поля"
+						},
+						"customFieldsValues": {
+							"options": {
+								"fieldId": {
+									"displayName": "Идентификатор поля",
+									"description": "Уникальный идентификатор каждого настраиваемого поля можно найти в блоке «Регистрация мероприятия» на вкладке «Настройка»."
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Значение, которое нужно установить в настраиваемом поле"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить поле",
+					"displayName": "Пользовательские поля",
+					"options": {
+						"customFieldsValues": {
+							"displayName": "Пользовательское поле"
+						}
+					}
+				},
+				"ref_url": {
+					"displayName": "URL-адрес регистрации мероприятия",
+					"description": "URL-адрес страницы регистрации мероприятия. Это может быть полезно, если вы не знаете идентификатор события, но имеете ссылку на событие."
+				},
+				"gdpr": {
+					"displayName": "GDPR",
+					"description": "Значение предопределенного поля GDPR"
+				},
+				"last_name": {
+					"displayName": "Фамилия",
+					"description": "Значение предопределенного поля «Фамилия»"
+				},
+				"phone_number": {
+					"displayName": "Номер телефона",
+					"description": "Значение предопределенного поля номера телефона"
+				},
+				"website": {
+					"displayName": "Веб-сайт",
+					"description": "Значение предопределенного поля «Веб-сайт»"
+				}
+			}
+		},
+		"firstName": {
+			"displayName": "Имя",
+			"description": "Имя регистранта"
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"description": "Адрес электронной почты регистранта",
+			"placeholder": "имя@email.com"
+		},
+		"dateId": {
+			"displayName": "Имя или идентификатор сеанса",
+			"description": "Идентификатор сеанса. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		}
+	}
+}

@@ -1,0 +1,541 @@
+{
+	"header": {
+		"displayName": "Облачное хранилище Google",
+		"description": "Используйте API облачного хранилища Google."
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"oAuth2": {
+					"displayName": "ОАут2"
+				},
+				"serviceAccount": {
+					"displayName": "Учетная запись службы (рекомендуется)"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"bucket": {
+					"displayName": "Ведро"
+				},
+				"object": {
+					"displayName": "Объект"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать объект"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить объект"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить данные объекта или метаданные"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить список объектов"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить метаданные объекта"
+				}
+			}
+		},
+		"projectId": {
+			"displayName": "Идентификатор проекта",
+			"placeholder": "Идентификатор проекта"
+		},
+		"projectRLC": {
+			"displayName": "Проект"
+		},
+		"bucketName": {
+			"displayName": "Имя сегмента",
+			"placeholder": "Имя сегмента"
+		},
+		"prefix": {
+			"displayName": "Префикс",
+			"placeholder": "Фильтровать имена сегментов"
+		},
+		"projection": {
+			"displayName": "Проекция",
+			"options": {
+				"full": {
+					"displayName": "Все объекты недвижимости"
+				},
+				"noAcl": {
+					"displayName": "Нет ACL"
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"getFilters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"ifMetagenerationMatch": {
+					"displayName": "Матч метагенерации",
+					"description": "Возвращайте данные только в том случае, если значение метагенерации Bucket соответствует отправленному значению."
+				},
+				"ifMetagenerationNotMatch": {
+					"displayName": "Исключить метагенерацию",
+					"description": "Возвращайте данные только в том случае, если значение метагенерации Bucket не соответствует отправленному значению."
+				}
+			}
+		},
+		"createAcl": {
+			"displayName": "Предопределенный контроль доступа",
+			"placeholder": "Добавить параметры контроля доступа",
+			"options": {
+				"predefinedAcl": {
+					"displayName": "Предопределенный список управления доступом",
+					"placeholder": "Примените предопределенный набор средств управления доступом к этому сегменту.",
+					"options": {
+						"authenticatedRead": {
+							"displayName": "Аутентифицированное чтение"
+						},
+						"private": {
+							"displayName": "Частный"
+						},
+						"projectPrivate": {
+							"displayName": "Частный проект"
+						},
+						"publicRead": {
+							"displayName": "Публичное чтение"
+						},
+						"publicReadWrite": {
+							"displayName": "Публичное чтение/запись"
+						}
+					}
+				},
+				"predefinedDefaultObjectAcl": {
+					"displayName": "Предопределенный список ACL для объектов по умолчанию",
+					"placeholder": "Примените к этому сегменту предопределенный набор элементов управления доступом к объектам по умолчанию.",
+					"options": {
+						"authenticatedRead": {
+							"displayName": "Аутентифицированное чтение"
+						},
+						"bucketOwnerFullControl": {
+							"displayName": "Полный контроль владельца сегмента"
+						},
+						"bucketOwnerRead": {
+							"displayName": "Владелец сегмента прочитал"
+						},
+						"private": {
+							"displayName": "Частный"
+						},
+						"projectPrivate": {
+							"displayName": "Частный проект"
+						},
+						"publicRead": {
+							"displayName": "Публичное чтение"
+						}
+					}
+				}
+			}
+		},
+		"createBody": {
+			"displayName": "Дополнительные параметры",
+			"placeholder": "Добавить параметр метаданных",
+			"options": {
+				"acl": {
+					"displayName": "Контроль доступа",
+					"placeholder": "Элементы управления доступом в Bucket"
+				},
+				"billing": {
+					"displayName": "Биллинг",
+					"placeholder": "Платежная конфигурация сегмента"
+				},
+				"cors": {
+					"displayName": "CORS",
+					"placeholder": "Конфигурация совместного использования ресурсов Cross Origin для сегмента"
+				},
+				"customPlacementConfig": {
+					"displayName": "Пользовательская конфигурация размещения",
+					"placeholder": "Конфигурация региона(ов) для сегмента"
+				},
+				"dataLocations": {
+					"displayName": "Расположение данных",
+					"placeholder": "Список отдельных регионов, входящих в двухрегиональный сегмент."
+				},
+				"defaultEventBasedHold": {
+					"displayName": "Удержание по умолчанию на основе событий",
+					"placeholder": "Следует ли автоматически применять удержание на основе событий к новым объектам."
+				},
+				"defaultObjectAcl": {
+					"displayName": "ACL объекта по умолчанию",
+					"placeholder": "Элементы управления доступом по умолчанию для новых объектов, когда ACL не указан."
+				},
+				"encryption": {
+					"displayName": "Шифрование",
+					"placeholder": "Конфигурация шифрования для корзины"
+				},
+				"iamConfiguration": {
+					"displayName": "Конфигурация IAM",
+					"placeholder": "Конфигурация IAM сегмента"
+				},
+				"labels": {
+					"displayName": "Этикетки",
+					"placeholder": "Метки сегментов, предоставленные пользователем, в парах ключ/значение."
+				},
+				"lifecycle": {
+					"displayName": "Жизненный цикл",
+					"placeholder": "Конфигурация жизненного цикла сегмента"
+				},
+				"location": {
+					"displayName": "Расположение",
+					"placeholder": "Расположение ведра"
+				},
+				"logging": {
+					"displayName": "Ведение журнала",
+					"placeholder": "Конфигурация журналирования сегмента"
+				},
+				"retentionPolicy": {
+					"displayName": "Политика хранения",
+					"placeholder": "Политика хранения сегмента"
+				},
+				"rpo": {
+					"displayName": "Цель точки восстановления",
+					"placeholder": "Целевая точка восстановления для сегмента"
+				},
+				"storageClass": {
+					"displayName": "Класс хранилища",
+					"placeholder": "Класс хранения сегмента по умолчанию для объектов, которые его не определяют."
+				},
+				"versioning": {
+					"displayName": "Управление версиями",
+					"placeholder": "Конфигурация управления версиями сегмента"
+				},
+				"website": {
+					"displayName": "Веб-сайт",
+					"placeholder": "Конфигурация веб-сайта сегмента, когда он используется для размещения веб-сайта."
+				}
+			}
+		},
+		"objectName": {
+			"displayName": "Имя объекта",
+			"placeholder": "Имя объекта"
+		},
+		"updateProjection": {
+			"displayName": "Проекция",
+			"options": {
+				"full": {
+					"displayName": "Все объекты недвижимости"
+				},
+				"noAcl": {
+					"displayName": "Нет ACL"
+				}
+			}
+		},
+		"alt": {
+			"displayName": "Возврат данных",
+			"placeholder": "Тип данных, которые возвращаются из запроса",
+			"options": {
+				"json": {
+					"displayName": "Метаданные"
+				},
+				"media": {
+					"displayName": "Данные объекта"
+				}
+			}
+		},
+		"createFromBinary": {
+			"displayName": "Использовать входное двоичное поле",
+			"description": "Должны ли данные для создания файла поступать из двоичного поля"
+		},
+		"createBinaryPropertyName": {
+			"displayName": "Входное двоичное поле",
+			"hint": "Имя входного двоичного поля, содержащего файл для записи."
+		},
+		"createContent": {
+			"displayName": "Содержимое файла",
+			"description": "Содержимое файла, который необходимо загрузить"
+		},
+		"binaryPropertyName": {
+			"displayName": "Поместите выходной файл в поле",
+			"hint": "Имя выходного двоичного поля, в которое помещается файл."
+		},
+		"maxResults": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"createData": {
+			"displayName": "Создать поля",
+			"placeholder": "Добавить поле «Создать тело»",
+			"options": {
+				"acl": {
+					"displayName": "Список контроля доступа"
+				},
+				"cacheControl": {
+					"displayName": "Управление кэшем"
+				},
+				"contentDisposition": {
+					"displayName": "Расположение контента"
+				},
+				"contentEncoding": {
+					"displayName": "Кодирование контента"
+				},
+				"contentLanguage": {
+					"displayName": "Язык контента"
+				},
+				"contentType": {
+					"displayName": "Тип контента"
+				},
+				"crc32c": {
+					"displayName": "Контрольная сумма CRC32c"
+				},
+				"customTime": {
+					"displayName": "Пользовательское время"
+				},
+				"eventBasedHold": {
+					"displayName": "Удержание на основе событий"
+				},
+				"md5Hash": {
+					"displayName": "MD5-хеш"
+				},
+				"metadata": {
+					"displayName": "Метаданные"
+				},
+				"storageClass": {
+					"displayName": "Класс хранилища"
+				},
+				"temporaryHold": {
+					"displayName": "Временное удержание"
+				}
+			}
+		},
+		"updateData": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле текста обновления",
+			"options": {
+				"acl": {
+					"displayName": "Контроль доступа"
+				},
+				"cacheControl": {
+					"displayName": "Управление кэшем"
+				},
+				"contentDisposition": {
+					"displayName": "Расположение контента"
+				},
+				"contentEncoding": {
+					"displayName": "Кодирование контента"
+				},
+				"contentLanguage": {
+					"displayName": "Язык контента"
+				},
+				"contentType": {
+					"displayName": "Тип контента"
+				},
+				"customTime": {
+					"displayName": "Пользовательское время"
+				},
+				"eventBasedHold": {
+					"displayName": "Удержание на основе событий"
+				},
+				"metadata": {
+					"displayName": "Метаданные"
+				},
+				"temporaryHold": {
+					"displayName": "Временное удержание"
+				}
+			}
+		},
+		"createQuery": {
+			"displayName": "Дополнительные параметры",
+			"placeholder": "Добавить дополнительные параметры",
+			"options": {
+				"contentEncoding": {
+					"displayName": "Кодирование контента"
+				},
+				"generation": {
+					"displayName": "Поколение",
+					"placeholder": "Выберите конкретную ревизию выбранного объекта"
+				},
+				"ifGenerationMatch": {
+					"displayName": "Матч поколений",
+					"placeholder": "Сделать операцию обусловленной генерацией объекта, соответствующего этому значению"
+				},
+				"ifGenerationNotMatch": {
+					"displayName": "Исключить поколение",
+					"placeholder": "Сделать операцию условной, если генерация объекта не соответствует этому значению"
+				},
+				"ifMetagenerationMatch": {
+					"displayName": "Матч метагенерации",
+					"placeholder": "Сделайте операцию обусловленной текущим метагенерированием объекта, соответствующим этому значению."
+				},
+				"ifMetagenerationNotMatch": {
+					"displayName": "Исключить метагенерацию",
+					"placeholder": "Сделайте операцию обусловленной текущим метагенерированием объекта, не соответствующим этому значению."
+				},
+				"kmsKeyName": {
+					"displayName": "Имя ключа KMS"
+				},
+				"predefinedAcl": {
+					"displayName": "Предопределенный список управления доступом",
+					"placeholder": "Примените к объекту предопределенный набор элементов управления доступом.",
+					"options": {
+						"authenticatedRead": {
+							"displayName": "Аутентифицированное чтение"
+						},
+						"bucketOwnerFullControl": {
+							"displayName": "Полный контроль владельца сегмента"
+						},
+						"bucketOwnerRead": {
+							"displayName": "Владелец сегмента прочитал"
+						},
+						"private": {
+							"displayName": "Частный"
+						},
+						"projectPrivate": {
+							"displayName": "Частный проект"
+						},
+						"publicRead": {
+							"displayName": "Публичное чтение"
+						}
+					}
+				}
+			}
+		},
+		"getParameters": {
+			"displayName": "Дополнительные параметры",
+			"placeholder": "Добавить дополнительные параметры",
+			"options": {
+				"generation": {
+					"displayName": "Поколение",
+					"placeholder": "Выберите конкретную ревизию выбранного объекта"
+				},
+				"ifGenerationMatch": {
+					"displayName": "Матч поколений",
+					"placeholder": "Сделать операцию обусловленной генерацией объекта, соответствующего этому значению"
+				},
+				"ifGenerationNotMatch": {
+					"displayName": "Исключить поколение",
+					"placeholder": "Сделать операцию условной, если генерация объекта не соответствует этому значению"
+				},
+				"ifMetagenerationMatch": {
+					"displayName": "Матч метагенерации",
+					"placeholder": "Сделайте операцию обусловленной текущим метагенерированием объекта, соответствующим этому значению."
+				},
+				"ifMetagenerationNotMatch": {
+					"displayName": "Исключить метагенерацию",
+					"placeholder": "Сделайте операцию обусловленной текущим метагенерированием объекта, не соответствующим этому значению."
+				}
+			}
+		},
+		"metagenAndAclQuery": {
+			"displayName": "Дополнительные параметры",
+			"placeholder": "Добавить дополнительные параметры",
+			"options": {
+				"generation": {
+					"displayName": "Поколение",
+					"placeholder": "Выберите конкретную ревизию выбранного объекта"
+				},
+				"ifGenerationMatch": {
+					"displayName": "Матч поколений",
+					"placeholder": "Сделать операцию обусловленной генерацией объекта, соответствующего этому значению"
+				},
+				"ifGenerationNotMatch": {
+					"displayName": "Исключить поколение",
+					"placeholder": "Сделать операцию условной, если генерация объекта не соответствует этому значению"
+				},
+				"ifMetagenerationMatch": {
+					"displayName": "Матч метагенерации",
+					"placeholder": "Сделайте операцию обусловленной текущим метагенерированием объекта, соответствующим этому значению."
+				},
+				"ifMetagenerationNotMatch": {
+					"displayName": "Исключить метагенерацию",
+					"placeholder": "Сделайте операцию обусловленной текущим метагенерированием объекта, не соответствующим этому значению."
+				},
+				"predefinedAcl": {
+					"displayName": "Предопределенный список управления доступом",
+					"placeholder": "Примените к объекту предопределенный набор элементов управления доступом.",
+					"options": {
+						"authenticatedRead": {
+							"displayName": "Аутентифицированное чтение"
+						},
+						"bucketOwnerFullControl": {
+							"displayName": "Полный контроль владельца сегмента"
+						},
+						"bucketOwnerRead": {
+							"displayName": "Владелец сегмента прочитал"
+						},
+						"private": {
+							"displayName": "Частный"
+						},
+						"projectPrivate": {
+							"displayName": "Частный проект"
+						},
+						"publicRead": {
+							"displayName": "Публичное чтение"
+						}
+					}
+				}
+			}
+		},
+		"encryptionHeaders": {
+			"displayName": "Заголовки шифрования",
+			"placeholder": "Добавить заголовки шифрования",
+			"options": {
+				"X-Goog-Encryption-Algorithm": {
+					"displayName": "Алгоритм шифрования",
+					"placeholder": "Используемый алгоритм шифрования: AES256. Используйте для предоставления собственного ключа в запросе",
+					"options": {
+						"AES256": {
+							"displayName": "AES256"
+						}
+					}
+				},
+				"X-Goog-Encryption-Key": {
+					"displayName": "Ключ шифрования",
+					"placeholder": "Строка вашего ключа шифрования AES256 в кодировке Base64."
+				},
+				"X-Goog-Encryption-Key-Sha256": {
+					"displayName": "Хэш ключа шифрования",
+					"placeholder": "Строка хэша SHA256 вашего ключа шифрования в кодировке Base64."
+				}
+			}
+		},
+		"listFilters": {
+			"displayName": "Дополнительные параметры",
+			"placeholder": "Добавить дополнительные параметры",
+			"options": {
+				"delimiter": {
+					"displayName": "Разделитель",
+					"placeholder": "Возвращает результаты в режиме каталога, используя это значение в качестве разделителя."
+				},
+				"endOffset": {
+					"displayName": "Конечное смещение",
+					"placeholder": "Фильтровать результаты по именам лексикографически перед этим значением"
+				},
+				"includeTrailingDelimiter": {
+					"displayName": "Включить завершающий разделитель",
+					"placeholder": "Если это правда, объекты будут отображаться только с одним экземпляром разделителя в конце имени."
+				},
+				"prefix": {
+					"displayName": "Префикс",
+					"placeholder": "Фильтровать результаты по именам, начинающимся с этого значения"
+				},
+				"startOffset": {
+					"displayName": "Начальное смещение",
+					"placeholder": "Фильтровать результаты по именам, лексикографически равным или после этого значения."
+				},
+				"versions": {
+					"displayName": "Версии",
+					"placeholder": "Если это правда, перечислить все версии объектов как отдельные записи."
+				}
+			}
+		}
+	}
+}

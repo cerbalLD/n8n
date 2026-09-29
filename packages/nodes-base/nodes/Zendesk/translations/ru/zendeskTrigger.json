@@ -1,0 +1,274 @@
+{
+	"header": {
+		"displayName": "Триггер Zendesk",
+		"description": "Обработка событий Zendesk с помощью веб-перехватчиков"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"apiToken": {
+					"displayName": "API-токен"
+				},
+				"oAuth2": {
+					"displayName": "ОАут2"
+				}
+			}
+		},
+		"service": {
+			"displayName": "Услуга",
+			"options": {
+				"support": {
+					"displayName": "Поддерживать"
+				}
+			}
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"fields": {
+					"displayName": "Имена полей или идентификаторы",
+					"description": "Поля, значения которых возвращаются. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				}
+			}
+		},
+		"conditions": {
+			"options": {
+				"conditions": {
+					"displayName": "Условия",
+					"description": "Условие, которое нужно установить"
+				},
+				"all": {
+					"displayName": "Все",
+					"values": {
+						"resource": {
+							"displayName": "Ресурс",
+							"options": {
+								"ticket": {
+									"displayName": "Билет"
+								}
+							}
+						},
+						"field": {
+							"displayName": "Поле",
+							"options": {
+								"assignee": {
+									"displayName": "Правопреемник"
+								},
+								"group": {
+									"displayName": "Группа"
+								},
+								"priority": {
+									"displayName": "Приоритет"
+								},
+								"status": {
+									"displayName": "Статус"
+								},
+								"type": {
+									"displayName": "Тип"
+								}
+							}
+						},
+						"operation": {
+							"displayName": "Операция",
+							"options": {
+								"changed": {
+									"displayName": "Измененный"
+								},
+								"value_previous": {
+									"displayName": "Изменено с"
+								},
+								"value": {
+									"displayName": "Изменено на"
+								},
+								"greater_than": {
+									"displayName": "Больше, чем"
+								},
+								"is": {
+									"displayName": "Является"
+								},
+								"is_not": {
+									"displayName": "Нет"
+								},
+								"less_than": {
+									"displayName": "Меньше, чем"
+								},
+								"not_changed": {
+									"displayName": "Не Изменено"
+								},
+								"not_value_previous": {
+									"displayName": "Не изменено с"
+								},
+								"not_value": {
+									"displayName": "Не изменено на"
+								}
+							}
+						},
+						"value": {
+							"displayName": "Ценить",
+							"options": {
+								"closed": {
+									"displayName": "Закрыто"
+								},
+								"new": {
+									"displayName": "Новый"
+								},
+								"open": {
+									"displayName": "Открыть"
+								},
+								"pending": {
+									"displayName": "В ожидании"
+								},
+								"solved": {
+									"displayName": "Решено"
+								},
+								"question": {
+									"displayName": "Вопрос"
+								},
+								"incident": {
+									"displayName": "Инцидент"
+								},
+								"problem": {
+									"displayName": "Проблема"
+								},
+								"task": {
+									"displayName": "Задача"
+								},
+								"low": {
+									"displayName": "Низкий"
+								},
+								"normal": {
+									"displayName": "Нормальный"
+								},
+								"high": {
+									"displayName": "Высокий"
+								},
+								"urgent": {
+									"displayName": "Срочный"
+								}
+							},
+							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+						}
+					}
+				},
+				"any": {
+					"displayName": "Любой",
+					"values": {
+						"resource": {
+							"displayName": "Ресурс",
+							"options": {
+								"ticket": {
+									"displayName": "Билет"
+								}
+							}
+						},
+						"field": {
+							"displayName": "Поле",
+							"options": {
+								"assignee": {
+									"displayName": "Правопреемник"
+								},
+								"group": {
+									"displayName": "Группа"
+								},
+								"priority": {
+									"displayName": "Приоритет"
+								},
+								"status": {
+									"displayName": "Статус"
+								},
+								"type": {
+									"displayName": "Тип"
+								}
+							}
+						},
+						"operation": {
+							"displayName": "Операция",
+							"options": {
+								"changed": {
+									"displayName": "Измененный"
+								},
+								"value_previous": {
+									"displayName": "Изменено с"
+								},
+								"value": {
+									"displayName": "Изменено на"
+								},
+								"greater_than": {
+									"displayName": "Больше, чем"
+								},
+								"is": {
+									"displayName": "Является"
+								},
+								"is_not": {
+									"displayName": "Нет"
+								},
+								"less_than": {
+									"displayName": "Меньше, чем"
+								},
+								"not_changed": {
+									"displayName": "Не Изменено"
+								},
+								"not_value_previous": {
+									"displayName": "Не изменено с"
+								},
+								"not_value": {
+									"displayName": "Не изменено на"
+								}
+							}
+						},
+						"value": {
+							"displayName": "Ценить",
+							"options": {
+								"closed": {
+									"displayName": "Закрыто"
+								},
+								"new": {
+									"displayName": "Новый"
+								},
+								"open": {
+									"displayName": "Открыть"
+								},
+								"pending": {
+									"displayName": "В ожидании"
+								},
+								"solved": {
+									"displayName": "Решено"
+								},
+								"question": {
+									"displayName": "Вопрос"
+								},
+								"incident": {
+									"displayName": "Инцидент"
+								},
+								"problem": {
+									"displayName": "Проблема"
+								},
+								"task": {
+									"displayName": "Задача"
+								},
+								"low": {
+									"displayName": "Низкий"
+								},
+								"normal": {
+									"displayName": "Нормальный"
+								},
+								"high": {
+									"displayName": "Высокий"
+								},
+								"urgent": {
+									"displayName": "Срочный"
+								}
+							},
+							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить условие",
+			"displayName": "Условия",
+			"description": "Условие, которое нужно установить"
+		}
+	}
+}

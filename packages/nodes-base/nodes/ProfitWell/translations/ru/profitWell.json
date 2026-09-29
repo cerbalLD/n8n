@@ -1,0 +1,296 @@
+{
+	"header": {
+		"displayName": "ПрибыльНу",
+		"description": "Используйте API ProfitWell"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"company": {
+					"displayName": "Компания"
+				},
+				"metric": {
+					"displayName": "Метрика"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"getSetting": {
+					"displayName": "Получить настройки",
+					"description": "Получите настройки учетной записи ProfitWell вашей компании"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить финансовые показатели с разбивкой по дням за текущий или последний месяц."
+				}
+			}
+		},
+		"type": {
+			"displayName": "Тип",
+			"options": {
+				"daily": {
+					"displayName": "Ежедневно",
+					"description": "Получить финансовые показатели с разбивкой по дням за текущий или последний месяц."
+				},
+				"monthly": {
+					"displayName": "Ежемесячно",
+					"description": "Получите все ежемесячные финансовые показатели вашей компании."
+				}
+			}
+		},
+		"month": {
+			"displayName": "Месяц",
+			"description": "Может быть только текущий или предыдущий месяц. Формат должен быть ГГГГ-ММ.",
+			"placeholder": "YYYY-MM"
+		},
+		"simple": {
+			"displayName": "Упрощать",
+			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"plan_id": {
+					"displayName": "Название или идентификатор плана",
+					"description": "Возвращайте метрику только для этого идентификатора плана. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"dailyMetrics": {
+					"displayName": "Метрики",
+					"description": "Разделенный запятыми список возвращаемых тенденций показателей (по умолчанию возвращаются все показатели).",
+					"options": {
+						"active_customers": {
+							"displayName": "Активные клиенты",
+							"description": "Количество платящих клиентов"
+						},
+						"churned_customers": {
+							"displayName": "Ушедшие клиенты",
+							"description": "Количество ушедших платежеспособных клиентов"
+						},
+						"churned_recurring_revenue": {
+							"displayName": "Увеличенный регулярный доход",
+							"description": "MRR проиграл из-за оттока (добровольных и просроченных)"
+						},
+						"cumulative_net_new_mrr": {
+							"displayName": "Совокупный чистый новый MRR",
+							"description": "Новые + Обновления – Понижения – MRR оттока, совокупный за месяц до указанного дня."
+						},
+						"cumulative_new_trialing_customers": {
+							"displayName": "Совокупное количество новых пробных клиентов",
+							"description": "Количество новых пробных клиентов, совокупно за месяц до указанного дня."
+						},
+						"downgraded_customers": {
+							"displayName": "Клиенты с пониженной версией",
+							"description": "Количество существующих клиентов, рейтинг которых был понижен"
+						},
+						"downgraded_recurring_revenue": {
+							"displayName": "Пониженный регулярный доход",
+							"description": "Насколько переход на более раннюю версию и уменьшение продолжительности плана влияют на ваш MRR"
+						},
+						"future_churn_mrr": {
+							"displayName": "Будущий отток MRR",
+							"description": "MRR, который будет потерян, когда пользователи, которые в настоящее время отменили подписку, действительно уйдут."
+						},
+						"new_customers": {
+							"displayName": "Новые клиенты",
+							"description": "Количество новых платежеспособных клиентов, которые у вас есть"
+						},
+						"new_recurring_revenue": {
+							"displayName": "Новый регулярный доход",
+							"description": "MRR от новых пользователей"
+						},
+						"reactivated_customers": {
+							"displayName": "Реактивированные клиенты",
+							"description": "Количество клиентов, которые повторно активировали"
+						},
+						"reactivated_recurring_revenue": {
+							"displayName": "Возобновление регулярного дохода",
+							"description": "Сколько MRR поступает от реактивированных клиентов"
+						},
+						"recurring_revenue": {
+							"displayName": "Регулярный доход",
+							"description": "MRR вашей компании"
+						},
+						"upgraded_customers": {
+							"displayName": "Обновленные клиенты",
+							"description": "Количество существующих клиентов, которые обновили систему"
+						},
+						"upgraded_recurring_revenue": {
+							"displayName": "Обновленный регулярный доход",
+							"description": "Насколько обновления и увеличение продолжительности плана влияют на ваш MRR"
+						}
+					}
+				},
+				"monthlyMetrics": {
+					"displayName": "Метрики",
+					"description": "Разделенный запятыми список возвращаемых тенденций показателей (по умолчанию возвращаются все показатели).",
+					"options": {
+						"active_customers": {
+							"displayName": "Активные клиенты",
+							"description": "Количество платящих клиентов"
+						},
+						"active_trialing_customers": {
+							"displayName": "Активные пробные клиенты",
+							"description": "Количество пробных клиентов"
+						},
+						"average_revenue_per_user": {
+							"displayName": "Средний доход на пользователя",
+							"description": "ARPU"
+						},
+						"churned_customers": {
+							"displayName": "Ушедшие клиенты",
+							"description": "Количество ушедших платежеспособных клиентов"
+						},
+						"churned_customers_cancellations": {
+							"displayName": "Отказы от ушедших клиентов",
+							"description": "Количество клиентов, которые ушли, отменив подписку(и)"
+						},
+						"churned_customers_delinquent": {
+							"displayName": "Отклонившиеся клиенты, просроченные платежи",
+							"description": "Количество клиентов, которые ушли из-за того, что не заплатили вам"
+						},
+						"churned_recurring_revenue": {
+							"displayName": "Увеличенный регулярный доход",
+							"description": "Доход, потерянный из-за оттока клиентов (добровольный и просроченный)"
+						},
+						"churned_recurring_revenue_cancellations": {
+							"displayName": "Отмена повторяющихся доходов",
+							"description": "Доход теряется из-за клиентов, которые ушли из-за отмены подписки."
+						},
+						"churned_recurring_revenue_delinquent": {
+							"displayName": "Невыплаченный регулярный доход",
+							"description": "Доход теряется из-за клиентов, которые отказались от просрочек"
+						},
+						"churned_trialing_customers": {
+							"displayName": "Ушедшие пробные клиенты",
+							"description": "Количество ушедших пробных клиентов"
+						},
+						"converted_customers": {
+							"displayName": "Конвертированные клиенты",
+							"description": "Количество клиентов, перешедших из пробной версии в активную"
+						},
+						"converted_recurring_revenue": {
+							"displayName": "Конвертированный регулярный доход",
+							"description": "Сколько MRR поступает от пользователей, которые перешли из пробной версии в активную"
+						},
+						"customers_churn_cancellations_rate": {
+							"displayName": "Коэффициент отмены оттока клиентов",
+							"description": "Процент платящих клиентов, которые ушли, отменив подписку(и)"
+						},
+						"customers_churn_delinquent_rate": {
+							"displayName": "Коэффициент оттока клиентов",
+							"description": "Процент платящих клиентов, которые ушли из-за того, что не смогли вам заплатить."
+						},
+						"customers_churn_rate": {
+							"displayName": "Уровень оттока клиентов",
+							"description": "Процент платежеспособных клиентов, которые ушли"
+						},
+						"customer_conversion_rate": {
+							"displayName": "Коэффициент конверсии клиентов",
+							"description": "Процент пробных клиентов, совершивших конверсию"
+						},
+						"customers_retention_rate": {
+							"displayName": "Уровень удержания клиентов",
+							"description": "Процент клиентов, активных в прошлом месяце, которые все еще активны в этом месяце"
+						},
+						"downgraded_customers": {
+							"displayName": "Понизить версию клиентов",
+							"description": "Количество существующих клиентов, рейтинг которых был понижен"
+						},
+						"downgrade_rate": {
+							"displayName": "Скорость понижения",
+							"description": "Понизить доход в процентах от существующего дохода"
+						},
+						"downgraded_recurring_revenue": {
+							"displayName": "Понизить регулярный доход",
+							"description": "Насколько переход на более раннюю версию и уменьшение продолжительности плана влияют на ваш MRR"
+						},
+						"existing_customers": {
+							"displayName": "Существующие клиенты",
+							"description": "Количество платящих клиентов, которые у вас были на начало данного месяца"
+						},
+						"existing_recurring_revenue": {
+							"displayName": "Существующий регулярный доход",
+							"description": "MRR вашей компании на начало данного месяца"
+						},
+						"existing_trialing_customers": {
+							"displayName": "Существующие пробные клиенты",
+							"description": "Количество пробных клиентов, существовавших на начало месяца"
+						},
+						"growth_rate": {
+							"displayName": "Скорость_роста",
+							"description": "Скорость роста MRR вашей компании по сравнению с предыдущим месяцем."
+						},
+						"lifetime_value": {
+							"displayName": "Пожизненная ценность",
+							"description": "Средний LTV, рассчитанный на конец данного периода"
+						},
+						"new_customers": {
+							"displayName": "Новые клиенты",
+							"description": "Количество новых платежеспособных клиентов, которые у вас есть"
+						},
+						"new_recurring_revenue": {
+							"displayName": "Новый регулярный доход",
+							"description": "MRR от новых пользователей"
+						},
+						"new_trialing_customers": {
+							"displayName": "Новые постоянные клиенты",
+							"description": "Количество новых пробных клиентов"
+						},
+						"plan_change_rate": {
+							"displayName": "Тариф на изменение плана",
+							"description": "Чистое изменение выручки в процентах от существующей выручки"
+						},
+						"plan_changed_recurring_revenue": {
+							"displayName": "План изменен регулярного дохода",
+							"description": "Чистое изменение дохода для этого плана"
+						},
+						"reactivated_customers": {
+							"displayName": "Реактивированные клиенты",
+							"description": "Количество клиентов, которые повторно активировали"
+						},
+						"reactivated_recurring_revenue": {
+							"displayName": "Возобновление регулярного дохода",
+							"description": "Сколько MRR поступает от реактивированных клиентов"
+						},
+						"recurring_revenue": {
+							"displayName": "Регулярный доход",
+							"description": "MRR вашей компании"
+						},
+						"revenue_churn_cancellations_rate": {
+							"displayName": "Коэффициент отмены оттока доходов",
+							"description": "Доход от добровольного оттока в процентах от начального дохода месяца."
+						},
+						"revenue_churn_delinquent_rate": {
+							"displayName": "Уровень просрочек по оттоку доходов_",
+							"description": "Доход от просроченных оттоков в процентах от начального дохода месяца"
+						},
+						"revenue_churn_rate": {
+							"displayName": "Уровень оттока доходов",
+							"description": "Доход, потерянный из-за оттока клиентов, в процентах от существующего дохода"
+						},
+						"revenue_retention_rate": {
+							"displayName": "Коэффициент сохранения дохода",
+							"description": "Процент дохода от существующих клиентов, который был сохранен к концу месяца"
+						},
+						"upgrade_rate": {
+							"displayName": "Скорость обновления",
+							"description": "Доход от обновления в процентах от существующего дохода"
+						},
+						"upgraded_customers": {
+							"displayName": "Обновленные клиенты",
+							"description": "Количество существующих клиентов, которые обновили систему"
+						},
+						"upgraded_recurring_revenue": {
+							"displayName": "Обновленный регулярный доход",
+							"description": "Насколько обновления и увеличение продолжительности плана влияют на ваш MRR"
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,90 @@
+{
+	"header": {
+		"displayName": "ДипЛ",
+		"description": "Переведите данные с помощью DeepL"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"language": {
+					"displayName": "Язык"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"translate": {
+					"displayName": "Переводить",
+					"description": "Перевести данные"
+				}
+			}
+		},
+		"text": {
+			"displayName": "Текст",
+			"description": "Введите текст для перевода"
+		},
+		"translateTo": {
+			"displayName": "Название или идентификатор целевого языка",
+			"description": "Язык для перевода. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"sourceLang": {
+					"displayName": "Название или идентификатор исходного языка",
+					"description": "Язык, с которого нужно перевести. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"splitSentences": {
+					"displayName": "Разделенные предложения",
+					"description": "Как система перевода должна разбивать предложения",
+					"options": {
+						"0": {
+							"displayName": "Нет разделения",
+							"description": "Рассматривать весь текст как одно предложение"
+						},
+						"1": {
+							"displayName": "О пунктуации и новой строке",
+							"description": "Разделить текст на интерпункты и новые строки"
+						},
+						"nonewlines": {
+							"displayName": "Только перестановка",
+							"description": "Разделить текст только при пересечении, игнорируя переводы строк"
+						}
+					}
+				},
+				"preserveFormatting": {
+					"displayName": "Сохранить форматирование",
+					"description": "Должен ли механизм перевода учитывать исходное форматирование, даже если обычно он исправляет некоторые аспекты",
+					"options": {
+						"0": {
+							"displayName": "Применить исправления",
+							"description": "Исправьте пунктуацию в начале и конце предложений, а также исправьте нижний/верхний регистр в начале."
+						},
+						"1": {
+							"displayName": "Не исправлять",
+							"description": "Текст должен быть максимально похож на оригинал."
+						}
+					}
+				},
+				"formality": {
+					"displayName": "Формальность",
+					"description": "Насколько формальным или неформальным должен быть целевой текст. Может поддерживаться не всеми языками.",
+					"options": {
+						"more": {
+							"displayName": "Формальный"
+						},
+						"less": {
+							"displayName": "Неофициальный"
+						},
+						"default": {
+							"displayName": "Нейтральный"
+						}
+					}
+				}
+			}
+		}
+	}
+}

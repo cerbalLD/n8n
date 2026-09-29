@@ -1,0 +1,357 @@
+{
+	"header": {
+		"displayName": "Векан",
+		"description": "Использование Wekan API"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"board": {
+					"displayName": "Доска"
+				},
+				"card": {
+					"displayName": "Карта"
+				},
+				"cardComment": {
+					"displayName": "Комментарий к карте"
+				},
+				"checklist": {
+					"displayName": "Контрольный список"
+				},
+				"checklistItem": {
+					"displayName": "Пункт контрольного списка"
+				},
+				"list": {
+					"displayName": "Список"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать новый список"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить список"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить данные списка"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получите много списков досок"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить элемент контрольного списка"
+				}
+			}
+		},
+		"title": {
+			"displayName": "Заголовок",
+			"description": "Название списка",
+			"placeholder": "Мой список"
+		},
+		"owner": {
+			"displayName": "Имя или идентификатор владельца",
+			"description": "Идентификатор пользователя в Wekan. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"isActive": {
+					"displayName": "Активный",
+					"description": "Делать ли доску активной"
+				},
+				"isAdmin": {
+					"displayName": "Админ",
+					"description": "Назначать ли владельца администратором доски"
+				},
+				"color": {
+					"displayName": "Цвет",
+					"description": "Цвет доски",
+					"options": {
+						"belize": {
+							"displayName": "Белиз"
+						},
+						"midnight": {
+							"displayName": "Полночь"
+						},
+						"nephritis": {
+							"displayName": "Нефрит"
+						},
+						"pomegranate": {
+							"displayName": "Гранат"
+						},
+						"pumpkin": {
+							"displayName": "Тыква"
+						},
+						"wisteria": {
+							"displayName": "Глициния"
+						}
+					}
+				},
+				"isCommentOnly": {
+					"displayName": "Только комментарии",
+					"description": "Включить ли комментарии"
+				},
+				"isNoComments": {
+					"displayName": "Без комментариев",
+					"description": "Отключить ли комментарии"
+				},
+				"permission": {
+					"displayName": "Разрешение",
+					"description": "Установите разрешение доски",
+					"options": {
+						"private": {
+							"displayName": "Частный"
+						},
+						"public": {
+							"displayName": "Общественный"
+						}
+					}
+				},
+				"isWorker": {
+					"displayName": "Рабочий",
+					"description": "Стоит ли только перемещать карточки, назначать себя карточкам и комментировать"
+				},
+				"assignees": {
+					"displayName": "Имена или идентификаторы правопреемников",
+					"description": "Новый список идентификаторов правопреемников, прикрепленных к карте. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"description": {
+					"displayName": "Описание",
+					"description": "Новое описание карты"
+				},
+				"members": {
+					"displayName": "Имена или идентификаторы участников",
+					"description": "Новый список идентификаторов участников, прикрепленный к карте. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				}
+			}
+		},
+		"boardId": {
+			"displayName": "Название или идентификатор доски",
+			"description": "Идентификатор доски, на которой находятся списки. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"IdUser": {
+			"displayName": "Имя пользователя или идентификатор",
+			"description": "Идентификатор пользователя, к которому прикреплены доски. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"listId": {
+			"displayName": "Идентификатор списка",
+			"description": "Идентификатор списка, который нужно получить"
+		},
+		"swimlaneId": {
+			"displayName": "Название или идентификатор дорожки для плавания",
+			"description": "Идентификатор дорожки, которой принадлежит карта. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"authorId": {
+			"displayName": "Имя или идентификатор автора",
+			"description": "Пользователь, разместивший комментарий. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"cardId": {
+			"displayName": "Имя или идентификатор карты",
+			"description": "Идентификатор карты, которой принадлежит checklistItem. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"fromObject": {
+			"displayName": "Из объекта",
+			"options": {
+				"list": {
+					"displayName": "Список"
+				},
+				"swimlane": {
+					"displayName": "Дорожка для плавания"
+				}
+			}
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"authorId": {
+					"displayName": "Имя или идентификатор автора",
+					"description": "Сообщите владельца карты. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"assignees": {
+					"displayName": "Имена или идентификаторы правопреемников",
+					"description": "Новый список идентификаторов правопреемников, прикрепленных к карте. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"color": {
+					"displayName": "Цвет",
+					"description": "Новый цвет карты",
+					"options": {
+						"black": {
+							"displayName": "Черный"
+						},
+						"blue": {
+							"displayName": "Синий"
+						},
+						"crimson": {
+							"displayName": "малиновый"
+						},
+						"darkgreen": {
+							"displayName": "темно-зеленый"
+						},
+						"gold": {
+							"displayName": "Золото"
+						},
+						"gray": {
+							"displayName": "Серый"
+						},
+						"green": {
+							"displayName": "Зеленый"
+						},
+						"indigo": {
+							"displayName": "Индиго"
+						},
+						"lime": {
+							"displayName": "Лайм"
+						},
+						"magenta": {
+							"displayName": "Пурпурный"
+						},
+						"mistyrose": {
+							"displayName": "Мистироза"
+						},
+						"navy": {
+							"displayName": "Военно-морской"
+						},
+						"orange": {
+							"displayName": "Апельсин"
+						},
+						"paleturquoise": {
+							"displayName": "Палибирюзовый"
+						},
+						"peachpuff": {
+							"displayName": "Персиковый слоеный"
+						},
+						"pink": {
+							"displayName": "Розовый"
+						},
+						"plum": {
+							"displayName": "слива"
+						},
+						"purple": {
+							"displayName": "Фиолетовый"
+						},
+						"red": {
+							"displayName": "Красный"
+						},
+						"saddlebrown": {
+							"displayName": "Сэддлбраун"
+						},
+						"silver": {
+							"displayName": "Серебро"
+						},
+						"sky": {
+							"displayName": "Небо"
+						},
+						"slateblue": {
+							"displayName": "Сланцево-голубой"
+						},
+						"white": {
+							"displayName": "Белый"
+						},
+						"yellow": {
+							"displayName": "Желтый"
+						}
+					}
+				},
+				"description": {
+					"displayName": "Описание",
+					"description": "Новое описание карты"
+				},
+				"dueAt": {
+					"displayName": "Срок оплаты в",
+					"description": "Новый платеж в поле карты"
+				},
+				"endAt": {
+					"displayName": "Конец в",
+					"description": "Новый конец в поле карты"
+				},
+				"labelIds": {
+					"displayName": "Идентификаторы ярлыков",
+					"description": "Идентификаторы этикеток, прикрепленные к карте"
+				},
+				"listId": {
+					"displayName": "Имя списка или идентификатор",
+					"description": "Новый идентификатор карты в списке (операция перемещения). Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"members": {
+					"displayName": "Имена или идентификаторы участников",
+					"description": "Новый список идентификаторов участников, прикрепленный к карте. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"isOverTime": {
+					"displayName": "Через некоторое время",
+					"description": "Новое поле карты с течением времени"
+				},
+				"parentId": {
+					"displayName": "Имя или идентификатор родителя",
+					"description": "Родитель карты. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"receivedAt": {
+					"displayName": "Получено в",
+					"description": "Новое поступление в поле карты"
+				},
+				"sort": {
+					"displayName": "Сортировать",
+					"description": "Внутренне используемое значение сортировки карты"
+				},
+				"spentTime": {
+					"displayName": "Проведенное время",
+					"description": "Новое поле потраченного времени на карточке"
+				},
+				"startAt": {
+					"displayName": "Начать с",
+					"description": "Новое начало в поле карты"
+				},
+				"swimlaneId": {
+					"displayName": "Название или идентификатор дорожки для плавания",
+					"description": "Новый идентификатор дорожки карты. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"title": {
+					"displayName": "Заголовок",
+					"description": "Новое название элемента checklistItem."
+				},
+				"isFinished": {
+					"displayName": "Законченный",
+					"description": "Проверен ли элемент"
+				}
+			}
+		},
+		"comment": {
+			"displayName": "Комментарий",
+			"description": "Текст комментария"
+		},
+		"commentId": {
+			"displayName": "Идентификатор комментария",
+			"description": "Идентификатор комментария, который нужно получить"
+		},
+		"items": {
+			"displayName": "Предметы",
+			"description": "Пункты, которые необходимо добавить в контрольный список"
+		},
+		"checklistId": {
+			"displayName": "Имя или идентификатор контрольного списка",
+			"description": "Идентификатор элемента контрольного списка, которому принадлежит карта. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"checklistItemId": {
+			"displayName": "Название или идентификатор элемента контрольного списка",
+			"description": "Идентификатор элемента checklistItem, который необходимо обновить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		}
+	}
+}

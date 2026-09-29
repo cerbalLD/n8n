@@ -1,0 +1,37 @@
+{
+	"header": {
+		"displayName": "Триггер для лид-рекламы в Facebook",
+		"description": "Обработка событий Facebook Lead Ads с помощью веб-перехватчиков"
+	},
+	"nodeView": {
+		"facebookLeadAdsNotice": {
+			"displayName": "Из-за ограничений Facebook API вы можете использовать только один триггер Facebook Lead Ads для каждого приложения Facebook."
+		},
+		"event": {
+			"displayName": "Событие",
+			"options": {
+				"newLead": {
+					"displayName": "Новый лидер"
+				}
+			}
+		},
+		"page": {
+			"displayName": "Страница",
+			"description": "Страница, связанная с формой для получения новых потенциальных клиентов."
+		},
+		"form": {
+			"displayName": "Форма",
+			"description": "Форма для отслеживания получения сведений о потенциальном клиенте после отправки"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"simplifyOutput": {
+					"displayName": "Упростите вывод",
+					"description": "Возвращать ли упрощенную версию события веб-перехватчика вместо всех полей"
+				}
+			}
+		}
+	}
+}

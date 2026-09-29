@@ -1,0 +1,208 @@
+{
+	"header": {
+		"displayName": "Менеджер сертификатов AWS",
+		"description": "Отправляет данные в диспетчер сертификатов AWS."
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"iam": {
+					"displayName": "АВС (ИАМ)"
+				},
+				"assumeRole": {
+					"displayName": "AWS (принятие роли)"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"certificate": {
+					"displayName": "Сертификат"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить сертификат"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить сертификат"
+				},
+				"getMany": {
+					"displayName": "Получить много",
+					"description": "Получите много сертификатов"
+				},
+				"getMetadata": {
+					"displayName": "Получить метаданные",
+					"description": "Получить метаданные сертификата"
+				},
+				"renew": {
+					"displayName": "Продлить",
+					"description": "Продлить сертификат"
+				}
+			}
+		},
+		"certificateArn": {
+			"displayName": "Сертификат АРН",
+			"description": "Строка, содержащая ARN обновляемого сертификата ACM. Он должен иметь следующий вид: arn:aws:acm:region:123456789012:certificate/12345678-1234-1234-1234-123456789012."
+		},
+		"bucketName": {
+			"displayName": "Имя сегмента"
+		},
+		"certificateKey": {
+			"displayName": "Ключ сертификата"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"certificateStatuses": {
+					"displayName": "Статусы сертификатов",
+					"description": "Фильтрация списка сертификатов по значению статуса",
+					"options": {
+						"EXPIRED": {
+							"displayName": "Истекший"
+						},
+						"FAILED": {
+							"displayName": "Неуспешный"
+						},
+						"INACTIVE": {
+							"displayName": "Неактивный"
+						},
+						"ISSUED": {
+							"displayName": "Изданный"
+						},
+						"PENDING_VALIDATION": {
+							"displayName": "Ожидает проверки"
+						},
+						"REVOKED": {
+							"displayName": "Отозван"
+						},
+						"VALIDATION_TIMED_OUT": {
+							"displayName": "Время проверки истекло"
+						}
+					}
+				},
+				"extendedKeyUsage": {
+					"displayName": "Расширенное использование ключей",
+					"description": "Укажите одно или несколько значений расширения ExtendedKeyUsage.",
+					"options": {
+						"ANY": {
+							"displayName": "Любой"
+						},
+						"CODE_SIGNING": {
+							"displayName": "Подписание кода"
+						},
+						"CUSTOM": {
+							"displayName": "Обычай"
+						},
+						"EMAIL_PROTECTION": {
+							"displayName": "Защита электронной почты"
+						},
+						"IPSEC_END_SYSTEM": {
+							"displayName": "Конечная система IPSEC"
+						},
+						"IPSEC_TUNNEL": {
+							"displayName": "IPSEC-туннель"
+						},
+						"IPSEC_USER": {
+							"displayName": "Пользователь IPSEC"
+						},
+						"NONE": {
+							"displayName": "Никто"
+						},
+						"OCSP_SIGNING": {
+							"displayName": "Подписание OCSP"
+						},
+						"TIME_STAMPING": {
+							"displayName": "Временная отметка"
+						},
+						"TLS_WEB_CLIENT_AUTHENTICATION": {
+							"displayName": "Аутентификация веб-клиента TLS"
+						},
+						"TLS_WEB_SERVER_AUTHENTICATION": {
+							"displayName": "Аутентификация веб-сервера TLS"
+						}
+					}
+				},
+				"keyTypes": {
+					"displayName": "Ключевые типы",
+					"description": "Укажите один или несколько алгоритмов, которые можно использовать для генерации пар ключей.",
+					"options": {
+						"EC_prime256v1": {
+							"displayName": "ЕС Prime256v1"
+						},
+						"EC_secp384r1": {
+							"displayName": "ЕС Secp384r1"
+						},
+						"EC_secp521r1": {
+							"displayName": "ЕС Secp521r1"
+						},
+						"RSA_1024": {
+							"displayName": "РСА 1024"
+						},
+						"RSA_2048": {
+							"displayName": "ЮАР 2048"
+						},
+						"RSA_4096": {
+							"displayName": "ЮАР 4096"
+						}
+					}
+				},
+				"keyUsage": {
+					"displayName": "Ключевое использование",
+					"description": "Укажите одно или несколько значений расширения KeyUsage.",
+					"options": {
+						"ANY": {
+							"displayName": "Любой"
+						},
+						"CERTIFICATE_SIGNING": {
+							"displayName": "Подписание сертификата"
+						},
+						"CRL_SIGNING": {
+							"displayName": "Подписание списка отзыва сертификатов"
+						},
+						"CUSTOM": {
+							"displayName": "Обычай"
+						},
+						"DATA_ENCIPHERMENT": {
+							"displayName": "Шифрование данных"
+						},
+						"DECIPHER_ONLY": {
+							"displayName": "Только расшифровать"
+						},
+						"DIGITAL_SIGNATURE": {
+							"displayName": "Цифровая подпись"
+						},
+						"ENCIPHER_ONLY": {
+							"displayName": "Только шифрование"
+						},
+						"KEY_AGREEMENT": {
+							"displayName": "Ключевое соглашение"
+						},
+						"KEY_ENCIPHERMENT": {
+							"displayName": "Ключевое шифрование"
+						},
+						"NON_REPUDIATION": {
+							"displayName": "Неотказ от ответственности"
+						}
+					}
+				}
+			}
+		}
+	}
+}

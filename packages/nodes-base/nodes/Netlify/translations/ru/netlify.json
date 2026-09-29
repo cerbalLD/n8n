@@ -1,0 +1,71 @@
+{
+	"header": {
+		"displayName": "Нетлифай",
+		"description": "Использование Netlify API"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"deploy": {
+					"displayName": "Развертывать"
+				},
+				"site": {
+					"displayName": "Сайт"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"cancel": {
+					"displayName": "Отмена",
+					"description": "Отменить развертывание"
+				},
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать новое развертывание"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить сайт"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Возвращает множество сайтов"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить сайт"
+				}
+			}
+		},
+		"siteId": {
+			"displayName": "Идентификатор сайта",
+			"description": "Введите идентификатор сайта. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"deployId": {
+			"displayName": "Идентификатор развертывания"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поля",
+			"options": {
+				"branch": {
+					"displayName": "Ветвь"
+				},
+				"title": {
+					"displayName": "Заголовок"
+				}
+			}
+		}
+	}
+}

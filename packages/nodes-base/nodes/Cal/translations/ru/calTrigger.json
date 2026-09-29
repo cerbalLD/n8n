@@ -1,0 +1,6 @@
+{
+	"header": {
+		"displayName": "Триггер Cal.com",
+		"description": "Обработка событий Cal.com с помощью веб-перехватчиков"
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"header": {
+		"displayName": "Записать двоичный файл",
+		"description": "Записывает двоичный файл на диск"
+	},
+	"nodeView": {
+		"fileName": {
+			"displayName": "Имя файла",
+			"description": "Путь, в который должен быть записан файл",
+			"placeholder": "/данные/пример.jpg"
+		},
+		"dataPropertyName": {
+			"displayName": "Имя свойства",
+			"description": "Имя двоичного свойства, которое содержит данные для записываемого файла."
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"append": {
+					"displayName": "Добавить",
+					"description": "Добавлять ли к существующему файлу"
+				}
+			}
+		}
+	}
+}

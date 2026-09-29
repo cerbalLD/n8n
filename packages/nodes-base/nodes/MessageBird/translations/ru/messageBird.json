@@ -1,0 +1,128 @@
+{
+	"header": {
+		"displayName": "СообщениеПтица",
+		"description": "Отправляет SMS через MessageBird"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"sms": {
+					"displayName": "SMS"
+				},
+				"balance": {
+					"displayName": "Баланс"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"send": {
+					"displayName": "Отправлять",
+					"description": "Отправка текстовых сообщений (SMS)"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить баланс"
+				}
+			}
+		},
+		"originator": {
+			"displayName": "От",
+			"description": "Номер, с которого отправить сообщение",
+			"placeholder": "14155238886"
+		},
+		"recipients": {
+			"displayName": "К",
+			"description": "Все получатели разделены запятыми.",
+			"placeholder": "14155238886/+14155238886"
+		},
+		"message": {
+			"displayName": "Сообщение",
+			"description": "Сообщение, которое нужно отправить"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поля",
+			"options": {
+				"createdDatetime": {
+					"displayName": "Дата и время создания",
+					"description": "Дата и время создания сообщения в формате RFC3339 (Y-m-dTH:i:sP)"
+				},
+				"datacoding": {
+					"displayName": "Кодирование данных",
+					"description": "Использование Unicode ограничит максимальное количество символов до 70 вместо 160.",
+					"options": {
+						"auto": {
+							"displayName": "Авто"
+						},
+						"plain": {
+							"displayName": "Простой"
+						},
+						"unicode": {
+							"displayName": "Юникод"
+						}
+					}
+				},
+				"gateway": {
+					"displayName": "шлюз",
+					"description": "Маршрут SMS, используемый для отправки сообщения"
+				},
+				"groupIds": {
+					"displayName": "Идентификаторы групп",
+					"description": "Идентификаторы групп, разделенные запятыми. Если указаны получатели, их можно опустить.",
+					"placeholder": "1,2"
+				},
+				"mclass": {
+					"displayName": "Тип сообщения",
+					"description": "Указал тип сообщения. 1 — обычное сообщение, 0 — мгновенное сообщение.",
+					"placeholder": "Допустимые значения от 0 до 3",
+					"options": {
+						"0": {
+							"displayName": "Нормальный"
+						},
+						"1": {
+							"displayName": "Вспышка"
+						}
+					}
+				},
+				"reference": {
+					"displayName": "Ссылка",
+					"description": "Ссылка на клиента"
+				},
+				"reportUrl": {
+					"displayName": "URL-адрес отчета",
+					"description": "URL-адрес отчета о состоянии, который будет использоваться для каждого сообщения. Для отправки веб-перехватчика отчета о состоянии требуется ссылка."
+				},
+				"scheduledDatetime": {
+					"displayName": "Запланированная дата и время",
+					"description": "Запланированная дата и время сообщения в формате RFC3339 (Y-m-dTH:i:sP)."
+				},
+				"type": {
+					"displayName": "Тип",
+					"description": "Тип сообщения. Значения могут быть: sms, двоичные или flash.",
+					"options": {
+						"binary": {
+							"displayName": "Двоичный"
+						},
+						"flash": {
+							"displayName": "Вспышка"
+						},
+						"sms": {
+							"displayName": "SMS"
+						}
+					}
+				},
+				"typeDetails": {
+					"displayName": "Тип Детали",
+					"description": "Хэш с дополнительной информацией. Используется только при отправке двоичного сообщения."
+				},
+				"validity": {
+					"displayName": "Срок действия",
+					"description": "Количество секунд, в течение которых сообщение действительно"
+				}
+			}
+		}
+	}
+}

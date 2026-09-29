@@ -1,0 +1,560 @@
+{
+	"header": {
+		"displayName": "Полоса",
+		"description": "Используйте Stripe API"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"balance": {
+					"displayName": "Баланс"
+				},
+				"charge": {
+					"displayName": "Заряжать"
+				},
+				"coupon": {
+					"displayName": "Купон"
+				},
+				"customer": {
+					"displayName": "Клиент"
+				},
+				"customerCard": {
+					"displayName": "Карта клиента"
+				},
+				"meterEvent": {
+					"displayName": "Событие счетчика"
+				},
+				"source": {
+					"displayName": "Источник"
+				},
+				"token": {
+					"displayName": "Токен"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить источник"
+				},
+				"add": {
+					"displayName": "Добавлять",
+					"description": "Добавить карточку клиента"
+				},
+				"remove": {
+					"displayName": "Удалять",
+					"description": "Удалить карточку клиента"
+				},
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать токен"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получите много клиентов"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить клиента"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить источник"
+				}
+			}
+		},
+		"customerId": {
+			"displayName": "Идентификатор клиента",
+			"description": "Идентификатор клиента, источник которого нужно удалить"
+		},
+		"token": {
+			"displayName": "Токен карты",
+			"description": "Токен, представляющий конфиденциальную информацию о карте",
+			"placeholder": "tok_1IMfKdJhRTnqS5TKQVG1LI9o"
+		},
+		"cardId": {
+			"displayName": "Идентификатор карты",
+			"description": "Идентификатор карты, которую нужно удалить"
+		},
+		"sourceId": {
+			"displayName": "Идентификатор источника",
+			"description": "Идентификатор источника для получения"
+		},
+		"amount": {
+			"displayName": "Количество",
+			"description": "Сумма в центах, подлежащая сбору за этот сбор, например. введите <code>100</code> за 1,00 доллара США"
+		},
+		"currency": {
+			"displayName": "Название или идентификатор валюты",
+			"description": "Трехбуквенный код валюты ISO, например. <code>USD</code> или <code>EUR</code>. Это должна быть валюта <a href=\"https://stripe.com/docs/currencies\">Stripe</a>. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"source": {
+			"displayName": "Идентификатор источника",
+			"description": "Идентификатор источника платежа клиента, с которого будет снята оплата"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"description": {
+					"displayName": "Описание",
+					"description": "Произвольный текст для описания клиента, которого нужно создать."
+				},
+				"metadata": {
+					"values": {
+						"metadata": {
+							"displayName": "Метаданные",
+							"description": "Набор пар ключ-значение для прикрепления к источнику для создания"
+						},
+						"metadataProperties": {
+							"options": {
+								"key": {
+									"displayName": "Ключ"
+								},
+								"value": {
+									"displayName": "Ценить"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить элемент метаданных",
+					"displayName": "Метаданные",
+					"description": "Набор пар ключ-значение для прикрепления к источнику для создания",
+					"options": {
+						"metadataProperties": {
+							"displayName": "Свойства метаданных"
+						}
+					}
+				},
+				"receipt_email": {
+					"displayName": "Электронная почта квитанции",
+					"description": "Адрес электронной почты, на который будет отправлена ​​квитанция об этом платеже."
+				},
+				"shipping": {
+					"values": {
+						"shipping": {
+							"displayName": "Перевозки",
+							"description": "Информация о доставке для клиента"
+						},
+						"shippingProperties": {
+							"options": {
+								"name": {
+									"displayName": "Имя получателя",
+									"description": "Имя человека, который получит посылку"
+								},
+								"address": {
+									"values": {
+										"address": {
+											"displayName": "Адрес получателя"
+										},
+										"details": {
+											"options": {
+												"line1": {
+													"displayName": "Линия 1",
+													"description": "Адресная строка 1 (например, улица, почтовый ящик или название компании)"
+												},
+												"line2": {
+													"displayName": "Линия 2",
+													"description": "Адресная строка 2 (например, квартира, номер, блок или здание)"
+												},
+												"city": {
+													"displayName": "Город",
+													"description": "Город, район, пригород, поселок или деревня"
+												},
+												"state": {
+													"displayName": "Состояние",
+													"description": "Штат, округ, провинция или регион"
+												},
+												"country": {
+													"displayName": "Страна",
+													"description": "Двухбуквенный код страны (<a href=\"https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2\">ISO 3166-1 альфа-2</a>)"
+												},
+												"postal_code": {
+													"displayName": "Почтовый индекс",
+													"description": "Почтовый индекс или почтовый индекс"
+												}
+											}
+										}
+									},
+									"placeholder": "Добавить данные адреса",
+									"displayName": "Адрес получателя",
+									"options": {
+										"details": {
+											"displayName": "Подробности"
+										}
+									}
+								},
+								"phone": {
+									"displayName": "Телефон получателя"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить поле",
+					"displayName": "Перевозки",
+					"description": "Информация о доставке для клиента",
+					"options": {
+						"shippingProperties": {
+							"displayName": "Свойства доставки"
+						}
+					}
+				},
+				"address": {
+					"values": {
+						"address": {
+							"displayName": "Адрес",
+							"description": "Адрес заказчика для создания"
+						},
+						"details": {
+							"options": {
+								"line1": {
+									"displayName": "Линия 1",
+									"description": "Адресная строка 1 (например, улица, почтовый ящик или название компании)"
+								},
+								"line2": {
+									"displayName": "Линия 2",
+									"description": "Адресная строка 2 (например, квартира, номер, блок или здание)"
+								},
+								"city": {
+									"displayName": "Город",
+									"description": "Город, район, пригород, поселок или деревня"
+								},
+								"state": {
+									"displayName": "Состояние",
+									"description": "Штат, округ, провинция или регион"
+								},
+								"country": {
+									"displayName": "Страна",
+									"description": "Двухбуквенный код страны (<a href=\"https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2\">ISO 3166-1 альфа-2</a>)"
+								},
+								"postal_code": {
+									"displayName": "Почтовый индекс",
+									"description": "Почтовый индекс или почтовый индекс"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить поле",
+					"displayName": "Адрес",
+					"description": "Адрес заказчика для создания",
+					"options": {
+						"details": {
+							"displayName": "Подробности"
+						}
+					}
+				},
+				"email": {
+					"displayName": "Электронная почта",
+					"description": "Электронная почта клиента для создания",
+					"placeholder": "имя@email.com"
+				},
+				"phone": {
+					"displayName": "Телефон",
+					"description": "Номер телефона заказчика для создания"
+				},
+				"identifier": {
+					"displayName": "Идентификатор",
+					"description": "Уникальный идентификатор события. Если он не указан, он будет создан. Уникальность обеспечивается в течение 24 часов."
+				},
+				"timestamp": {
+					"displayName": "Временная метка",
+					"description": "Время проведения мероприятия. Измеряется в секундах с эпохи Unix. Должно быть в течение последних 35 календарных дней или до 5 минут в будущем. По умолчанию используется текущее время, если не указано иное."
+				},
+				"customPayload": {
+					"values": {
+						"customPayload": {
+							"displayName": "Пользовательские свойства полезной нагрузки",
+							"description": "Дополнительные настраиваемые свойства для включения в полезные данные события. Используйте это для пользовательских конфигураций счетчиков с ключами полезной нагрузки, отличными от стандартных."
+						},
+						"properties": {
+							"options": {
+								"key": {
+									"displayName": "Ключ",
+									"description": "Ключ свойства"
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Стоимость недвижимости"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить пользовательское свойство",
+					"displayName": "Пользовательские свойства полезной нагрузки",
+					"description": "Дополнительные настраиваемые свойства для включения в полезные данные события. Используйте это для пользовательских конфигураций счетчиков с ключами полезной нагрузки, отличными от стандартных.",
+					"options": {
+						"properties": {
+							"displayName": "Характеристики"
+						}
+					}
+				},
+				"statement_descriptor": {
+					"displayName": "Дескриптор оператора",
+					"description": "Произвольный текст для отображения в выписке от клиента"
+				}
+			}
+		},
+		"chargeId": {
+			"displayName": "Идентификатор платежа",
+			"description": "Идентификатор платежа, который нужно обновить"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"description": {
+					"displayName": "Описание",
+					"description": "Произвольный текст для описания клиента, которого нужно создать."
+				},
+				"metadata": {
+					"values": {
+						"metadata": {
+							"displayName": "Метаданные",
+							"description": "Набор пар ключ-значение, которые можно прикрепить к клиенту для создания"
+						},
+						"metadataProperties": {
+							"options": {
+								"key": {
+									"displayName": "Ключ"
+								},
+								"value": {
+									"displayName": "Ценить"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить элемент метаданных",
+					"displayName": "Метаданные",
+					"description": "Набор пар ключ-значение, которые можно прикрепить к клиенту для создания",
+					"options": {
+						"metadataProperties": {
+							"displayName": "Свойства метаданных"
+						}
+					}
+				},
+				"receipt_email": {
+					"displayName": "Электронная почта квитанции",
+					"description": "Адрес электронной почты, на который будет отправлена ​​квитанция об этом платеже."
+				},
+				"shipping": {
+					"values": {
+						"shipping": {
+							"displayName": "Перевозки",
+							"description": "Информация о доставке для клиента"
+						},
+						"shippingProperties": {
+							"options": {
+								"name": {
+									"displayName": "Имя получателя",
+									"description": "Имя человека, который получит посылку"
+								},
+								"address": {
+									"values": {
+										"address": {
+											"displayName": "Адрес получателя"
+										},
+										"details": {
+											"options": {
+												"line1": {
+													"displayName": "Линия 1",
+													"description": "Адресная строка 1 (например, улица, почтовый ящик или название компании)"
+												},
+												"line2": {
+													"displayName": "Линия 2",
+													"description": "Адресная строка 2 (например, квартира, номер, блок или здание)"
+												},
+												"city": {
+													"displayName": "Город",
+													"description": "Город, район, пригород, поселок или деревня"
+												},
+												"state": {
+													"displayName": "Состояние",
+													"description": "Штат, округ, провинция или регион"
+												},
+												"country": {
+													"displayName": "Страна",
+													"description": "Двухбуквенный код страны (<a href=\"https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2\">ISO 3166-1 альфа-2</a>)"
+												},
+												"postal_code": {
+													"displayName": "Почтовый индекс",
+													"description": "Почтовый индекс или почтовый индекс"
+												}
+											}
+										}
+									},
+									"placeholder": "Добавить данные адреса",
+									"displayName": "Адрес получателя",
+									"options": {
+										"details": {
+											"displayName": "Подробности"
+										}
+									}
+								},
+								"phone": {
+									"displayName": "Телефон получателя",
+									"description": "Номер телефона человека, который получит посылку"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить поле",
+					"displayName": "Перевозки",
+					"description": "Информация о доставке для клиента",
+					"options": {
+						"shippingProperties": {
+							"displayName": "Свойства доставки"
+						}
+					}
+				},
+				"address": {
+					"values": {
+						"address": {
+							"displayName": "Адрес",
+							"description": "Адрес клиента для обновления"
+						},
+						"details": {
+							"options": {
+								"line1": {
+									"displayName": "Линия 1",
+									"description": "Адресная строка 1 (например, улица, почтовый ящик или название компании)"
+								},
+								"line2": {
+									"displayName": "Линия 2",
+									"description": "Адресная строка 2 (например, квартира, номер, блок или здание)"
+								},
+								"city": {
+									"displayName": "Город",
+									"description": "Город, район, пригород, поселок или деревня"
+								},
+								"state": {
+									"displayName": "Состояние",
+									"description": "Штат, округ, провинция или регион"
+								},
+								"country": {
+									"displayName": "Страна",
+									"description": "Двухбуквенный код страны (<a href=\"https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2\">ISO 3166-1 альфа-2</a>)"
+								},
+								"postal_code": {
+									"displayName": "Почтовый индекс",
+									"description": "Почтовый индекс или почтовый индекс"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить поле",
+					"displayName": "Адрес",
+					"description": "Адрес клиента для обновления",
+					"options": {
+						"details": {
+							"displayName": "Подробности"
+						}
+					}
+				},
+				"email": {
+					"displayName": "Электронная почта",
+					"description": "Электронная почта клиента для создания",
+					"placeholder": "имя@email.com"
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Полное имя или название компании клиента, которого необходимо создать."
+				},
+				"phone": {
+					"displayName": "Телефон",
+					"description": "Номер телефона этого клиента"
+				}
+			}
+		},
+		"duration": {
+			"displayName": "Применять",
+			"description": "Как долго будет действовать скидка",
+			"options": {
+				"forever": {
+					"displayName": "Навсегда"
+				},
+				"once": {
+					"displayName": "Один раз"
+				}
+			}
+		},
+		"type": {
+			"displayName": "Тип",
+			"description": "Тип создаваемого токена",
+			"options": {
+				"fixedAmount": {
+					"displayName": "Фиксированная сумма (в центах)"
+				},
+				"percent": {
+					"displayName": "Процент"
+				},
+				"wechat": {
+					"displayName": "Вичат"
+				},
+				"cardToken": {
+					"displayName": "Токен карты"
+				}
+			}
+		},
+		"amountOff": {
+			"displayName": "Сумма скидки",
+			"description": "Сумма в центах, которую необходимо вычесть из общей суммы счета, например введите <code>100</code> за 1,00 доллара США"
+		},
+		"percentOff": {
+			"displayName": "Процентная скидка",
+			"description": "Процент, который можно применить с купоном"
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Полное имя или название компании клиента, которого необходимо создать."
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"email": {
+					"displayName": "Электронная почта",
+					"description": "Адрес электронной почты клиента для фильтрации",
+					"placeholder": "имя@email.com"
+				}
+			}
+		},
+		"eventName": {
+			"displayName": "Название события",
+			"description": "Имя события счетчика. Соответствует полю event_name на счетчике."
+		},
+		"value": {
+			"displayName": "Ценить",
+			"description": "Значение события счетчика. Должно быть целое число. Может быть положительным или отрицательным."
+		},
+		"number": {
+			"displayName": "Номер карты",
+			"placeholder": "4242424242424242"
+		},
+		"cvc": {
+			"displayName": "CVC",
+			"description": "Код безопасности, напечатанный на обратной стороне карты.",
+			"placeholder": "314"
+		},
+		"expirationMonth": {
+			"displayName": "Месяц истечения срока действия",
+			"description": "Номер месяца, в котором истечет срок действия карты",
+			"placeholder": "10"
+		},
+		"expirationYear": {
+			"displayName": "Год истечения срока действия",
+			"description": "Год истечения срока действия карты",
+			"placeholder": "2022"
+		}
+	}
+}

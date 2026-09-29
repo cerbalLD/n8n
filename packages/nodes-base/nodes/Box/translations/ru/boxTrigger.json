@@ -1,0 +1,190 @@
+{
+	"header": {
+		"displayName": "Триггер коробки",
+		"description": "Запускает рабочий процесс при возникновении событий Box"
+	},
+	"nodeView": {
+		"events": {
+			"displayName": "События",
+			"description": "События, которые стоит послушать",
+			"options": {
+				"COLLABORATION": {
+					"ACCEPTED": {
+						"displayName": "Сотрудничество принято",
+						"description": "Сотрудничество принято"
+					},
+					"CREATED": {
+						"displayName": "Сотрудничество создано",
+						"description": "Создается сотрудничество"
+					},
+					"REJECTED": {
+						"displayName": "Сотрудничество отклонено",
+						"description": "Сотрудничество отклонено"
+					},
+					"REMOVED": {
+						"displayName": "Сотрудничество удалено",
+						"description": "Сотрудничество удалено."
+					},
+					"UPDATED": {
+						"displayName": "Сотрудничество обновлено",
+						"description": "Сотрудничество обновлено"
+					}
+				},
+				"COMMENT": {
+					"CREATED": {
+						"displayName": "Комментарий создан",
+						"description": "Объект комментария создан."
+					},
+					"DELETED": {
+						"displayName": "Комментарий удален",
+						"description": "Объект комментария удален."
+					},
+					"UPDATED": {
+						"displayName": "Комментарий обновлен",
+						"description": "Объект комментария редактируется"
+					}
+				},
+				"FILE": {
+					"COPIED": {
+						"displayName": "Файл скопирован",
+						"description": "Файл копируется"
+					},
+					"DELETED": {
+						"displayName": "Файл удален",
+						"description": "Файл перемещается в корзину"
+					},
+					"DOWNLOADED": {
+						"displayName": "Файл загружен",
+						"description": "Файл загружен"
+					},
+					"LOCKED": {
+						"displayName": "Файл заблокирован",
+						"description": "Файл заблокирован"
+					},
+					"MOVED": {
+						"displayName": "Файл перемещен",
+						"description": "Файл перемещается из одной папки в другую"
+					},
+					"PREVIEWED": {
+						"displayName": "Файл предварительно просмотрен",
+						"description": "Предварительный просмотр файла"
+					},
+					"RENAMED": {
+						"displayName": "Файл переименован",
+						"description": "Файл был переименован"
+					},
+					"RESTORED": {
+						"displayName": "Файл восстановлен",
+						"description": "Файл восстанавливается из корзины"
+					},
+					"TRASHED": {
+						"displayName": "Файл удален",
+						"description": "Файл перемещается в корзину"
+					},
+					"UNLOCKED": {
+						"displayName": "Файл разблокирован",
+						"description": "Файл разблокирован"
+					},
+					"UPLOADED": {
+						"displayName": "Файл загружен",
+						"description": "Файл загружается или перемещается в эту папку"
+					}
+				},
+				"FOLDER": {
+					"COPIED": {
+						"displayName": "Папка скопирована",
+						"description": "Создается копия папки"
+					},
+					"CREATED": {
+						"displayName": "Папка создана",
+						"description": "Папка создана"
+					},
+					"DELETED": {
+						"displayName": "Папка удалена",
+						"description": "Папка удалена навсегда"
+					},
+					"DOWNLOADED": {
+						"displayName": "Папка загружена",
+						"description": "Папка скачана."
+					},
+					"MOVED": {
+						"displayName": "Папка перемещена",
+						"description": "Папка перемещается в другую папку"
+					},
+					"RENAMED": {
+						"displayName": "Папка переименована",
+						"description": "Папка была переименована"
+					},
+					"RESTORED": {
+						"displayName": "Папка восстановлена",
+						"description": "Папка восстанавливается из корзины"
+					},
+					"TRASHED": {
+						"displayName": "Папка удалена",
+						"description": "Папка перемещается в корзину"
+					}
+				},
+				"METADATA_INSTANCE": {
+					"CREATED": {
+						"displayName": "Экземпляр метаданных создан.",
+						"description": "Новый экземпляр шаблона метаданных связан с файлом или папкой."
+					},
+					"DELETED": {
+						"displayName": "Экземпляр метаданных удален.",
+						"description": "Существующий экземпляр шаблона метаданных, связанный с файлом или папкой, удаляется."
+					},
+					"UPDATED": {
+						"displayName": "Экземпляр метаданных обновлен.",
+						"description": "Атрибут (значение) обновляется/удаляется для существующего экземпляра шаблона метаданных, связанного с файлом или папкой."
+					}
+				},
+				"SHARED_LINK": {
+					"CREATED": {
+						"displayName": "Общая ссылка создана",
+						"description": "Общая ссылка создана."
+					},
+					"DELETED": {
+						"displayName": "Общая ссылка удалена",
+						"description": "Общая ссылка удалена."
+					},
+					"UPDATED": {
+						"displayName": "Общая ссылка обновлена",
+						"description": "Общая ссылка обновлена."
+					}
+				},
+				"TASK_ASSIGNMENT": {
+					"CREATED": {
+						"displayName": "Назначение задачи создано",
+						"description": "Задача создана"
+					},
+					"UPDATED": {
+						"displayName": "Назначение задач обновлено",
+						"description": "Задача обновлена"
+					}
+				},
+				"WEBHOOK": {
+					"DELETED": {
+						"displayName": "Вебхук удален",
+						"description": "Когда вебхук удаляется"
+					}
+				}
+			}
+		},
+		"targetType": {
+			"displayName": "Тип цели",
+			"description": "Тип элемента для запуска вебхука",
+			"options": {
+				"file": {
+					"displayName": "Файл"
+				},
+				"folder": {
+					"displayName": "Папка"
+				}
+			}
+		},
+		"targetId": {
+			"displayName": "Идентификатор цели",
+			"description": "Идентификатор элемента для запуска вебхука"
+		}
+	}
+}

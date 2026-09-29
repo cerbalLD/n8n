@@ -1,0 +1,160 @@
+{
+	"header": {
+		"displayName": "Триггер RabbitMQ",
+		"description": "Прослушивает сообщения RabbitMQ"
+	},
+	"nodeView": {
+		"queue": {
+			"displayName": "Очередь/Тема",
+			"description": "Имя очереди для чтения",
+			"placeholder": "имя-очереди"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"arguments": {
+					"values": {
+						"arguments": {
+							"displayName": "Аргументы",
+							"description": "Аргументы для добавления"
+						},
+						"argument": {
+							"options": {
+								"key": {
+									"displayName": "Ключ"
+								},
+								"value": {
+									"displayName": "Ценить"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить аргумент",
+					"displayName": "Аргументы",
+					"description": "Аргументы для добавления",
+					"options": {
+						"argument": {
+							"displayName": "Аргумент"
+						}
+					}
+				},
+				"assertExchange": {
+					"displayName": "Утверждать обмен",
+					"description": "Подтверждать ли обмен существует перед отправкой"
+				},
+				"assertQueue": {
+					"displayName": "Подтвердить очередь",
+					"description": "Следует ли утверждать, что очередь существует перед отправкой"
+				},
+				"autoDelete": {
+					"displayName": "Автоматическое удаление очереди",
+					"description": "Будет ли очередь удалена, когда количество потребителей упадет до нуля"
+				},
+				"binding": {
+					"values": {
+						"binding": {
+							"displayName": "Связывание",
+							"description": "Добавить привязку в очередь"
+						},
+						"bindings": {
+							"options": {
+								"exchange": {
+									"displayName": "Обмен",
+									"placeholder": "обмен"
+								},
+								"routingKey": {
+									"displayName": "Ключ маршрутизации",
+									"placeholder": "ключ маршрутизации"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить привязку",
+					"displayName": "Связывание",
+					"description": "Добавить привязку в очередь",
+					"options": {
+						"bindings": {
+							"displayName": "Связывание"
+						}
+					}
+				},
+				"contentIsBinary": {
+					"displayName": "Содержимое является двоичным",
+					"description": "Сохранять ли контент как двоичный"
+				},
+				"acknowledge": {
+					"displayName": "Удалить из очереди, когда",
+					"description": "Когда подтвердить сообщение",
+					"options": {
+						"executionFinishes": {
+							"displayName": "Отделка исполнения",
+							"description": "После завершения выполнения рабочего процесса. Неважно, было ли исполнение успешным или нет."
+						},
+						"executionFinishesSuccessfully": {
+							"displayName": "Выполнение завершается успешно",
+							"description": "После успешного завершения рабочего процесса"
+						},
+						"immediately": {
+							"displayName": "Немедленно",
+							"description": "Как только сообщение было получено"
+						},
+						"laterMessageNode": {
+							"displayName": "Указывается позже в рабочем процессе",
+							"description": "Использование узла RabbitMQ для удаления элемента из очереди"
+						}
+					}
+				},
+				"durable": {
+					"displayName": "Прочный",
+					"description": "Выдержит ли очередь перезапуск брокера"
+				},
+				"exclusive": {
+					"displayName": "Эксклюзивный",
+					"description": "Следует ли ограничивать очередь соединением"
+				},
+				"headers": {
+					"values": {
+						"headers": {
+							"displayName": "Заголовки",
+							"description": "Заголовки, которые нужно добавить"
+						},
+						"header": {
+							"options": {
+								"key": {
+									"displayName": "Ключ"
+								},
+								"value": {
+									"displayName": "Ценить"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить заголовок",
+					"displayName": "Заголовки",
+					"description": "Заголовки, которые нужно добавить",
+					"options": {
+						"header": {
+							"displayName": "Заголовок"
+						}
+					}
+				},
+				"jsonParseBody": {
+					"displayName": "Тело синтаксического анализа JSON",
+					"description": "Следует ли анализировать тело на объект"
+				},
+				"onlyContent": {
+					"displayName": "Только контент",
+					"description": "Возвращать ли только свойство содержимого"
+				},
+				"parallelMessages": {
+					"displayName": "Ограничение параллельной обработки сообщений",
+					"description": "Максимальное количество казней за раз. Используйте -1 для отсутствия ограничений."
+				}
+			}
+		},
+		"laterMessageNode": {
+			"displayName": "Чтобы удалить элемент из очереди, вставьте узел RabbitMQ позже в рабочий процесс и используйте операцию «Удалить из очереди»."
+		}
+	}
+}

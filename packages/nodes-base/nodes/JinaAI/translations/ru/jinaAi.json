@@ -1,0 +1,125 @@
+{
+	"header": {
+		"displayName": "Джина А.И.",
+		"description": "Взаимодействие с Jina AI API"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"reader": {
+					"displayName": "Читатель"
+				},
+				"research": {
+					"displayName": "Исследовать"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"read": {
+					"displayName": "Читать",
+					"description": "Извлекает контент из URL-адреса и преобразует его в чистые, удобные для LLM форматы."
+				},
+				"search": {
+					"displayName": "Поиск",
+					"description": "Выполняет поиск в Интернете с помощью Jina AI и возвращает лучшие результаты в чистых, удобных для LLM форматах."
+				},
+				"deepResearch": {
+					"displayName": "Глубокие исследования",
+					"description": "Изучите тему и подготовьте структурированный отчет об исследовании."
+				}
+			}
+		},
+		"url": {
+			"displayName": "URL",
+			"description": "URL-адрес для получения контента с",
+			"placeholder": "https://jina.ai/"
+		},
+		"simplify": {
+			"displayName": "Упрощать",
+			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"outputFormat": {
+					"displayName": "Формат вывода",
+					"description": "Укажите желаемый формат вывода",
+					"options": {
+						"html": {
+							"displayName": "HTML"
+						},
+						"": {
+							"displayName": "JSON"
+						},
+						"markdown": {
+							"displayName": "Уценка"
+						},
+						"screenshot": {
+							"displayName": "Скриншот"
+						},
+						"text": {
+							"displayName": "Текст"
+						}
+					}
+				},
+				"targetSelector": {
+					"displayName": "Целевой CSS-селектор",
+					"description": "Селектор CSS для фокусировки на определенных элементах страницы",
+					"placeholder": "например #main-content .article"
+				},
+				"excludeSelector": {
+					"displayName": "Исключить селектор CSS",
+					"description": "CSS-селектор для элементов, которые нужно исключить",
+					"placeholder": "например заголовок, нижний колонтитул, .ads"
+				},
+				"enableImageCaptioning": {
+					"displayName": "Включить субтитры к изображениям",
+					"description": "Создавать ли подписи для изображений в контенте"
+				},
+				"waitForSelector": {
+					"displayName": "Дождитесь селектора CSS",
+					"description": "Прежде чем извлекать контент, дождитесь появления определенного элемента (для динамических страниц).",
+					"placeholder": "например #results-loaded"
+				},
+				"siteFilter": {
+					"displayName": "Фильтр сайта",
+					"description": "Ограничить поиск определенными веб-сайтами",
+					"placeholder": "например jina.ai, github.com"
+				},
+				"pageNumber": {
+					"displayName": "Номер страницы",
+					"description": "Номер страницы результатов поиска, которую необходимо получить.",
+					"placeholder": "1"
+				},
+				"maxReturnedSources": {
+					"displayName": "Максимальное количество возвращаемых источников",
+					"description": "Максимальное количество URL-адресов, которые можно включить в окончательный ответ.",
+					"placeholder": "например 5"
+				},
+				"prioritizeSources": {
+					"displayName": "Расставьте приоритеты источников",
+					"description": "Список доменов, которым присвоен более высокий приоритет при поиске контента.",
+					"placeholder": "например jina.ai, github.com"
+				},
+				"excludeSources": {
+					"displayName": "Исключить источники",
+					"description": "Список доменов, которые должны быть строго исключены из поиска контента",
+					"placeholder": "например jina.ai, github.com"
+				}
+			}
+		},
+		"searchQuery": {
+			"displayName": "Поисковый запрос",
+			"placeholder": "например Джина А.И."
+		},
+		"researchQuery": {
+			"displayName": "Исследовательский запрос",
+			"description": "Тема или вопрос для исследования ИИ.",
+			"placeholder": "например Анализ влияния возобновляемых источников энергии на смягчение последствий изменения климата"
+		}
+	}
+}

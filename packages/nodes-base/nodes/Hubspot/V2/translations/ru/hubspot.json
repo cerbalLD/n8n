@@ -1,0 +1,3952 @@
+{
+	"header": {
+		"displayName": "HubSpot",
+		"description": "Использование API HubSpot"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"apiKey": {
+					"displayName": "API-ключ"
+				},
+				"appToken": {
+					"displayName": "Сервисный ключ"
+				},
+				"oAuth2": {
+					"displayName": "ОАут2"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"company": {
+					"displayName": "Компания"
+				},
+				"contact": {
+					"displayName": "Контакт"
+				},
+				"contactList": {
+					"displayName": "Список контактов"
+				},
+				"deal": {
+					"displayName": "Иметь дело"
+				},
+				"engagement": {
+					"displayName": "Обручение"
+				},
+				"ticket": {
+					"displayName": "Билет"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"upsert": {
+					"displayName": "Создать или обновить",
+					"description": "Создайте новый контакт или обновите текущий, если он уже существует (upsert)"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить билет"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить билет"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получите много билетов"
+				},
+				"getRecentlyCreatedUpdated": {
+					"displayName": "Получить недавно созданные/обновленные",
+					"description": "Получайте недавно созданные/обновленные предложения"
+				},
+				"search": {
+					"displayName": "Поиск",
+					"description": "Поиск предложений"
+				},
+				"add": {
+					"displayName": "Добавлять",
+					"description": "Добавить контакт в список"
+				},
+				"remove": {
+					"displayName": "Удалять",
+					"description": "Удаление контакта из списка"
+				},
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать билет"
+				},
+				"searchByDomain": {
+					"displayName": "Поиск",
+					"description": "Поиск компаний по домену их сайта"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить билет"
+				}
+			}
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"placeholder": "имя@email.com"
+		},
+		"additionalFields": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"annualRevenue": {
+					"displayName": "Годовой доход",
+					"description": "Фактический или предполагаемый годовой доход компании."
+				},
+				"associatedCompanyId": {
+					"displayName": "Название или идентификатор связанной компании",
+					"description": "Компании, связанные с билетом. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"buyingRole": {
+					"displayName": "Покупательская роль",
+					"description": "Роль, которую контакт играет в процессе продаж. Контакты могут иметь несколько ролей и могут делиться ими с другими.",
+					"options": {
+						"BLOCKER": {
+							"displayName": "Блокатор"
+						},
+						"BUDGET_HOLDER": {
+							"displayName": "Держатель бюджета"
+						},
+						"CHAMPION": {
+							"displayName": "Чемпион"
+						},
+						"DECISION_MAKER": {
+							"displayName": "Лицо, принимающее решения"
+						},
+						"END_USER": {
+							"displayName": "Конечный пользователь"
+						},
+						"EXECUTIVE_SPONSOR": {
+							"displayName": "Исполнительный спонсор"
+						},
+						"INFLUENCER": {
+							"displayName": "Влиятельный человек"
+						},
+						"LEGAL_AND_COMPLIANCE": {
+							"displayName": "Юридические вопросы и соблюдение требований"
+						},
+						"OTHER": {
+							"displayName": "Другой"
+						}
+					}
+				},
+				"city": {
+					"displayName": "Город",
+					"description": "Город, в котором находится компания"
+				},
+				"clickedFacebookAd": {
+					"displayName": "Нажали на рекламу в Facebook"
+				},
+				"closeDate": {
+					"displayName": "Дата закрытия",
+					"description": "Дата закрытия билета. При использовании выражений время следует указывать в формате ГГГГ-ММ-ДД чч-мм-сс."
+				},
+				"companyName": {
+					"displayName": "Название компании"
+				},
+				"companySize": {
+					"displayName": "Размер компании"
+				},
+				"contactOwner": {
+					"displayName": "Имя или идентификатор владельца контакта",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"properties": {
+					"displayName": "Свойства билета, которые необходимо включить",
+					"description": "Включать ли определенные свойства билета в возвращаемые результаты. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"country": {
+					"displayName": "Страна/регион"
+				},
+				"countryRegionCode": {
+					"displayName": "Код страны/региона",
+					"description": "Двухбуквенный код страны контакта"
+				},
+				"customPropertiesUi": {
+					"values": {
+						"customPropertiesUi": {
+							"displayName": "Пользовательские свойства"
+						},
+						"customPropertiesValues": {
+							"options": {
+								"property": {
+									"displayName": "Имя или идентификатор объекта недвижимости",
+									"description": "Название объекта недвижимости. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Стоимость недвижимости"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить пользовательское свойство",
+					"displayName": "Пользовательские свойства",
+					"options": {
+						"customPropertiesValues": {
+							"displayName": "Пользовательское свойство"
+						}
+					}
+				},
+				"dateOfBirth": {
+					"displayName": "Дата рождения",
+					"description": "При использовании выражений время следует указывать в формате ГГГГ-ММ-ДД чч-мм-сс."
+				},
+				"degree": {
+					"displayName": "Степень"
+				},
+				"emailCustomerQuarantinedReason": {
+					"displayName": "Причина карантина адреса электронной почты",
+					"description": "Причина, по которой адрес электронной почты был помещен в карантин",
+					"options": {
+						"SUSPENSION_REMEDIATION": {
+							"displayName": "Исправление подвески"
+						},
+						"BLOCKLIST_REMEDIATION": {
+							"displayName": "Исправление черного списка"
+						},
+						"TRUST_SAFETY_REMEDIATION": {
+							"displayName": "Восстановление доверия и безопасности"
+						}
+					}
+				},
+				"employmentRole": {
+					"displayName": "Должность",
+					"description": "Должность",
+					"options": {
+						"accounting": {
+							"displayName": "Бухгалтерский учет"
+						},
+						"administrative": {
+							"displayName": "Административный"
+						},
+						"business_development": {
+							"displayName": "Развитие бизнеса"
+						},
+						"communications": {
+							"displayName": "Коммуникации"
+						},
+						"consulting": {
+							"displayName": "Консалтинг"
+						},
+						"customer_service": {
+							"displayName": "Обслуживание клиентов"
+						},
+						"design": {
+							"displayName": "Дизайн"
+						},
+						"education": {
+							"displayName": "Образование"
+						},
+						"engineering": {
+							"displayName": "Инженерное дело"
+						},
+						"entrepreneurship": {
+							"displayName": "Предпринимательство"
+						},
+						"finance": {
+							"displayName": "Финансы"
+						},
+						"health_professional": {
+							"displayName": "Медицинский работник"
+						},
+						"human_resources": {
+							"displayName": "Человеческие ресурсы"
+						},
+						"information_technology": {
+							"displayName": "Информационные технологии"
+						},
+						"legal": {
+							"displayName": "Юридический"
+						},
+						"marketing": {
+							"displayName": "Маркетинг"
+						},
+						"operations": {
+							"displayName": "Операции"
+						},
+						"product": {
+							"displayName": "Продукт"
+						},
+						"project_management": {
+							"displayName": "Управление проектом"
+						},
+						"public_relations": {
+							"displayName": "Связи с общественностью"
+						},
+						"quality_assurance": {
+							"displayName": "Гарантия качества"
+						},
+						"real_estate": {
+							"displayName": "Недвижимость"
+						},
+						"recruiting": {
+							"displayName": "Рекрутинг"
+						},
+						"research": {
+							"displayName": "Исследовать"
+						},
+						"retired": {
+							"displayName": "Ушедший на пенсию"
+						},
+						"sales": {
+							"displayName": "Продажи"
+						},
+						"support": {
+							"displayName": "Поддерживать"
+						}
+					}
+				},
+				"employmentSeniority": {
+					"displayName": "Трудовой стаж",
+					"description": "Стаж работы",
+					"options": {
+						"director": {
+							"displayName": "Директор"
+						},
+						"employee": {
+							"displayName": "Сотрудник"
+						},
+						"entry": {
+							"displayName": "Вход"
+						},
+						"executive": {
+							"displayName": "Исполнительный"
+						},
+						"manager": {
+							"displayName": "Менеджер"
+						},
+						"owner": {
+							"displayName": "Владелец"
+						},
+						"partner": {
+							"displayName": "Партнер"
+						},
+						"senior": {
+							"displayName": "Старший"
+						},
+						"vp": {
+							"displayName": "VP"
+						}
+					}
+				},
+				"employmentSubRole": {
+					"displayName": "Подроль занятости",
+					"description": "Подроль должности",
+					"options": {
+						"account_executive": {
+							"displayName": "Менеджер по работе с клиентами"
+						},
+						"account_manager": {
+							"displayName": "Менеджер по работе с клиентами"
+						},
+						"accountant": {
+							"displayName": "Бухгалтер"
+						},
+						"accounting_manager": {
+							"displayName": "Менеджер по бухгалтерскому учету"
+						},
+						"administrative_assistant": {
+							"displayName": "административный помощник"
+						},
+						"appraisal": {
+							"displayName": "Оценка"
+						},
+						"architect_it": {
+							"displayName": "ИТ-архитектор"
+						},
+						"assistant": {
+							"displayName": "Ассистент"
+						},
+						"attorney": {
+							"displayName": "Адвокат"
+						},
+						"auditor": {
+							"displayName": "Аудитор"
+						},
+						"brand_marketing": {
+							"displayName": "Бренд-маркетинг"
+						},
+						"business_analyst": {
+							"displayName": "Бизнес-аналитик"
+						},
+						"business_consultant": {
+							"displayName": "Бизнес-консультант"
+						},
+						"business_manager": {
+							"displayName": "Бизнес-менеджер"
+						},
+						"chief_compliance_officer": {
+							"displayName": "Директор по соблюдению нормативных требований"
+						},
+						"chief_data_officer": {
+							"displayName": "Директор по данным"
+						},
+						"chief_executive_officer": {
+							"displayName": "Директор компании"
+						},
+						"chief_experience_officer": {
+							"displayName": "Главный специалист по опыту"
+						},
+						"chief_financial_officer": {
+							"displayName": "Финансовый директор"
+						},
+						"chief_human_resources_officer": {
+							"displayName": "Директор по персоналу"
+						},
+						"chief_information_officer": {
+							"displayName": "Главный информационный директор"
+						},
+						"chief_innovation_officer": {
+							"displayName": "Главный директор по инновациям"
+						},
+						"chief_legal_officer": {
+							"displayName": "Главный юридический директор"
+						},
+						"chief_marketing_officer": {
+							"displayName": "Директор по маркетингу"
+						},
+						"chief_operating_officer": {
+							"displayName": "Главный операционный директор"
+						},
+						"chief_product_officer": {
+							"displayName": "Главный директор по продукту"
+						},
+						"chief_revenue_officer": {
+							"displayName": "Директор по доходам"
+						},
+						"chief_risk_officer": {
+							"displayName": "Директор по рискам"
+						},
+						"chief_security_officer": {
+							"displayName": "Главный офицер безопасности"
+						},
+						"chief_sustainability_officer": {
+							"displayName": "Главный директор по устойчивому развитию"
+						},
+						"chief_technology_officer": {
+							"displayName": "Главный технический директор"
+						},
+						"communications_manager": {
+							"displayName": "Менеджер по связям с общественностью"
+						},
+						"community": {
+							"displayName": "Сообщество"
+						},
+						"content_marketing": {
+							"displayName": "Контент-маркетинг"
+						},
+						"contracts": {
+							"displayName": "Контракты"
+						},
+						"creative": {
+							"displayName": "Креатив"
+						},
+						"customer_service_specialist": {
+							"displayName": "Специалист по обслуживанию клиентов"
+						},
+						"customer_success": {
+							"displayName": "Успех клиентов"
+						},
+						"data_it": {
+							"displayName": "ИТ-данные"
+						},
+						"data_science_engineer": {
+							"displayName": "Инженер по науке о данных"
+						},
+						"database_administrator": {
+							"displayName": "Администратор базы данных"
+						},
+						"design_engineer": {
+							"displayName": "Инженер-конструктор"
+						},
+						"development_specialist": {
+							"displayName": "Специалист по развитию"
+						},
+						"devops_engineer": {
+							"displayName": "Devops-инженер"
+						},
+						"digital_marketing": {
+							"displayName": "Цифровой маркетинг"
+						},
+						"director_of_development": {
+							"displayName": "Директор по развитию"
+						},
+						"editorial": {
+							"displayName": "Редакционный"
+						},
+						"electrical_engineer": {
+							"displayName": "Инженер-электрик"
+						},
+						"engineering_manager": {
+							"displayName": "Инженерный менеджер"
+						},
+						"events": {
+							"displayName": "События"
+						},
+						"executive_assistant": {
+							"displayName": "Исполнительный помощник"
+						},
+						"facilities": {
+							"displayName": "Удобства"
+						},
+						"fashion_design": {
+							"displayName": "Дизайн одежды"
+						},
+						"field_marketing": {
+							"displayName": "Полевой маркетинг"
+						},
+						"financial_analyst": {
+							"displayName": "Финансовый аналитик"
+						},
+						"financial_controller": {
+							"displayName": "Финансовый контролер"
+						},
+						"fitness": {
+							"displayName": "Фитнес"
+						},
+						"founder": {
+							"displayName": "Основатель"
+						},
+						"general_counsel": {
+							"displayName": "Главный юрисконсульт"
+						},
+						"general_manager": {
+							"displayName": "Главный управляющий"
+						},
+						"general_partner": {
+							"displayName": "Генеральный партнер"
+						},
+						"graphic_design": {
+							"displayName": "Графический дизайн"
+						},
+						"human_resources_specialist": {
+							"displayName": "Специалист по кадрам"
+						},
+						"information_technology_specialist": {
+							"displayName": "Специалист по информационным технологиям"
+						},
+						"investment": {
+							"displayName": "Инвестиции"
+						},
+						"investment_banker": {
+							"displayName": "Инвестиционный банкир"
+						},
+						"journalist": {
+							"displayName": "Журналист"
+						},
+						"key_account_manager": {
+							"displayName": "Менеджер по работе с ключевыми клиентами"
+						},
+						"law_enforcement": {
+							"displayName": "Правоохранительные органы"
+						},
+						"lawyer": {
+							"displayName": "Адвокат"
+						},
+						"logistics_manager": {
+							"displayName": "Менеджер по логистике"
+						},
+						"management": {
+							"displayName": "Управление"
+						},
+						"marketing_specialist": {
+							"displayName": "Специалист по маркетингу"
+						},
+						"mechanical_engineer": {
+							"displayName": "Инженер-механик"
+						},
+						"medical_doctor": {
+							"displayName": "врач"
+						},
+						"network_engineer": {
+							"displayName": "Сетевой инженер"
+						},
+						"nurse": {
+							"displayName": "Медсестра"
+						},
+						"office_management": {
+							"displayName": "Управление офисом"
+						},
+						"office_manager": {
+							"displayName": "Офис-менеджер"
+						},
+						"operational_specialist": {
+							"displayName": "Операционный специалист"
+						},
+						"owner": {
+							"displayName": "Владелец"
+						},
+						"paralegal": {
+							"displayName": "Помощник юриста"
+						},
+						"principal": {
+							"displayName": "Главный"
+						},
+						"product_design": {
+							"displayName": "Дизайн продукта"
+						},
+						"product_manager": {
+							"displayName": "Менеджер по продукту"
+						},
+						"product_marketing": {
+							"displayName": "Маркетинг продукта"
+						},
+						"production_manager": {
+							"displayName": "Менеджер по производству"
+						},
+						"professor": {
+							"displayName": "Профессор"
+						},
+						"program_coordinator": {
+							"displayName": "Координатор программы"
+						},
+						"program_manager": {
+							"displayName": "Менеджер программы"
+						},
+						"project_engineer": {
+							"displayName": "Инженер проекта"
+						},
+						"project_manager": {
+							"displayName": "Руководитель проекта"
+						},
+						"property_manager": {
+							"displayName": "Менеджер по недвижимости"
+						},
+						"qa_engineer": {
+							"displayName": "Инженер по обеспечению качества"
+						},
+						"qa_it": {
+							"displayName": "Контроль качества ИТ"
+						},
+						"quality_assurance_manager": {
+							"displayName": "Менеджер по обеспечению качества"
+						},
+						"quality_assurance_specialist": {
+							"displayName": "Специалист по обеспечению качества"
+						},
+						"realtor": {
+							"displayName": "Риэлтор"
+						},
+						"recruiter": {
+							"displayName": "Рекрутер"
+						},
+						"relationship_manager": {
+							"displayName": "Менеджер по связям с общественностью"
+						},
+						"research_analyst": {
+							"displayName": "Аналитик-исследователь"
+						},
+						"retail": {
+							"displayName": "Розничная торговля"
+						},
+						"retired": {
+							"displayName": "Ушедший на пенсию"
+						},
+						"risk_compliance": {
+							"displayName": "Соблюдение рисков"
+						},
+						"sales_executive": {
+							"displayName": "Директор по продажам"
+						},
+						"sales_operations": {
+							"displayName": "Операции по продажам"
+						},
+						"sales_specialist": {
+							"displayName": "Специалист по продажам"
+						},
+						"salesperson": {
+							"displayName": "Продавец"
+						},
+						"secretary": {
+							"displayName": "Секретарь"
+						},
+						"social_marketing": {
+							"displayName": "Социальный маркетинг"
+						},
+						"software_engineer": {
+							"displayName": "Инженер-программист"
+						},
+						"strategy": {
+							"displayName": "Стратегия"
+						},
+						"student": {
+							"displayName": "Студент"
+						},
+						"support": {
+							"displayName": "Поддерживать"
+						},
+						"support_specialist": {
+							"displayName": "Специалист поддержки"
+						},
+						"system_administrator": {
+							"displayName": "Системный администратор"
+						},
+						"system_analyst": {
+							"displayName": "Системный аналитик"
+						},
+						"systems_engineer": {
+							"displayName": "Системный инженер"
+						},
+						"talent": {
+							"displayName": "Талант"
+						},
+						"tax_audit": {
+							"displayName": "Налоговый аудит"
+						},
+						"teacher": {
+							"displayName": "Учитель"
+						},
+						"technical_manager": {
+							"displayName": "Технический менеджер"
+						},
+						"technical_support_specialist": {
+							"displayName": "Специалист технической поддержки"
+						},
+						"therapist": {
+							"displayName": "Терапевт"
+						},
+						"training": {
+							"displayName": "Обучение"
+						},
+						"video": {
+							"displayName": "Видео"
+						},
+						"web_developer": {
+							"displayName": "Веб-разработчик"
+						},
+						"writer": {
+							"displayName": "Писатель"
+						}
+					}
+				},
+				"enrichedEmailBounceDetected": {
+					"displayName": "Обнаружен отказ расширенной электронной почты"
+				},
+				"facebookClickId": {
+					"displayName": "Идентификатор клика Facebook"
+				},
+				"faxNumber": {
+					"displayName": "Номер факса"
+				},
+				"fieldOfStudy": {
+					"displayName": "Область исследования",
+					"description": "Область обучения контактного лица. Это свойство необходимо для интеграции рекламы с Facebook. Этот ресурс будет автоматически синхронизирован с помощью инструмента Lead Ads."
+				},
+				"firstName": {
+					"displayName": "Имя",
+					"description": "Имя контакта"
+				},
+				"gender": {
+					"displayName": "Пол"
+				},
+				"googleAdClickId": {
+					"displayName": "Идентификатор клика по объявлению Google"
+				},
+				"graduationDate": {
+					"displayName": "Дата окончания",
+					"description": "Дата окончания контакта. Это свойство необходимо для интеграции рекламы с Facebook. Этот ресурс будет автоматически синхронизирован с помощью инструмента Lead Ads. При использовании выражений время следует указывать в формате ГГГГ-ММ-ДД чч-мм-сс."
+				},
+				"industry": {
+					"displayName": "Название или идентификатор отрасли",
+					"description": "Вид деятельности, которую ведет компания. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"inferredLanguageCodes": {
+					"displayName": "Предполагаемые языковые коды",
+					"description": "Предполагаемые языки в зависимости от местоположения. ИСО 639-1.",
+					"options": {
+						"ab": {
+							"displayName": "абхазский"
+						},
+						"aa": {
+							"displayName": "издалека"
+						},
+						"af": {
+							"displayName": "африкаанс"
+						},
+						"ak": {
+							"displayName": "Акан"
+						},
+						"sq": {
+							"displayName": "албанский"
+						},
+						"am": {
+							"displayName": "амхарский"
+						},
+						"ar": {
+							"displayName": "арабский"
+						},
+						"an": {
+							"displayName": "Арагонский"
+						},
+						"hy": {
+							"displayName": "Армянский"
+						},
+						"as": {
+							"displayName": "ассамский"
+						},
+						"av": {
+							"displayName": "Аварик"
+						},
+						"ae": {
+							"displayName": "Авестийский"
+						},
+						"ay": {
+							"displayName": "аймара"
+						},
+						"az": {
+							"displayName": "азербайджанский"
+						},
+						"bm": {
+							"displayName": "Бамбара"
+						},
+						"ba": {
+							"displayName": "Башкирский"
+						},
+						"eu": {
+							"displayName": "Баскский"
+						},
+						"be": {
+							"displayName": "белорусский"
+						},
+						"bn": {
+							"displayName": "Бенгальский"
+						},
+						"bi": {
+							"displayName": "Бислама"
+						},
+						"nb": {
+							"displayName": "букмол, норвежский; Норвежский букмол"
+						},
+						"bs": {
+							"displayName": "Боснийский"
+						},
+						"br": {
+							"displayName": "бретонский"
+						},
+						"bg": {
+							"displayName": "болгарский"
+						},
+						"my": {
+							"displayName": "бирманский"
+						},
+						"ca": {
+							"displayName": "каталанский; Валенсийский"
+						},
+						"km": {
+							"displayName": "Центральный кхмерский"
+						},
+						"ch": {
+							"displayName": "Чаморро"
+						},
+						"ce": {
+							"displayName": "Чеченский"
+						},
+						"ny": {
+							"displayName": "Чичева; Чева; Ньянджа"
+						},
+						"zh": {
+							"displayName": "китайский"
+						},
+						"cu": {
+							"displayName": "церковнославянский; старославянский; церковнославянский; Староболгарский; Староцерковнославянский"
+						},
+						"cv": {
+							"displayName": "чувашский"
+						},
+						"kw": {
+							"displayName": "Корнуолл"
+						},
+						"co": {
+							"displayName": "корсиканец"
+						},
+						"cr": {
+							"displayName": "Кри"
+						},
+						"hr": {
+							"displayName": "хорватский"
+						},
+						"cs": {
+							"displayName": "чешский"
+						},
+						"da": {
+							"displayName": "датский"
+						},
+						"dv": {
+							"displayName": "Дивехи; Дивехи; Мальдивский"
+						},
+						"nl": {
+							"displayName": "Голландский; фламандский"
+						},
+						"dz": {
+							"displayName": "Дзонгка"
+						},
+						"en": {
+							"displayName": "Английский"
+						},
+						"eo": {
+							"displayName": "эсперанто"
+						},
+						"et": {
+							"displayName": "эстонский"
+						},
+						"ee": {
+							"displayName": "овца"
+						},
+						"fo": {
+							"displayName": "фарерский"
+						},
+						"fj": {
+							"displayName": "Фиджийский"
+						},
+						"fi": {
+							"displayName": "финский"
+						},
+						"fr": {
+							"displayName": "Французский"
+						},
+						"ff": {
+							"displayName": "Фула"
+						},
+						"gd": {
+							"displayName": "гэльский; Шотландский гэльский"
+						},
+						"gl": {
+							"displayName": "галисийский"
+						},
+						"lg": {
+							"displayName": "Ганда"
+						},
+						"ka": {
+							"displayName": "грузинский"
+						},
+						"de": {
+							"displayName": "немецкий"
+						},
+						"el": {
+							"displayName": "Греческий, современный (1453-)"
+						},
+						"gn": {
+							"displayName": "Гуарани"
+						},
+						"gu": {
+							"displayName": "Гуджарати"
+						},
+						"ht": {
+							"displayName": "гаитянский; гаитянский креольский"
+						},
+						"ha": {
+							"displayName": "Хауса"
+						},
+						"he": {
+							"displayName": "иврит"
+						},
+						"hz": {
+							"displayName": "Гереро"
+						},
+						"hi": {
+							"displayName": "хинди"
+						},
+						"ho": {
+							"displayName": "Хири Моту"
+						},
+						"hu": {
+							"displayName": "венгерский"
+						},
+						"is": {
+							"displayName": "исландский"
+						},
+						"io": {
+							"displayName": "Я делаю"
+						},
+						"ig": {
+							"displayName": "Игбо"
+						},
+						"id": {
+							"displayName": "индонезийский"
+						},
+						"ia": {
+							"displayName": "Интерлингва (Международная ассоциация вспомогательных языков)"
+						},
+						"ie": {
+							"displayName": "Интерлингв; Западный"
+						},
+						"iu": {
+							"displayName": "Инуктитут"
+						},
+						"ik": {
+							"displayName": "Инупиак"
+						},
+						"ga": {
+							"displayName": "ирландский"
+						},
+						"it": {
+							"displayName": "итальянский"
+						},
+						"ja": {
+							"displayName": "японский"
+						},
+						"jv": {
+							"displayName": "яванский"
+						},
+						"kl": {
+							"displayName": "Калааллисут; гренландский"
+						},
+						"kn": {
+							"displayName": "Каннада"
+						},
+						"kr": {
+							"displayName": "Канури"
+						},
+						"ks": {
+							"displayName": "Кашмири"
+						},
+						"kk": {
+							"displayName": "казахский"
+						},
+						"ki": {
+							"displayName": "Кикую; Гикую"
+						},
+						"rw": {
+							"displayName": "Киньяруанда"
+						},
+						"ky": {
+							"displayName": "киргизский; киргизский"
+						},
+						"kv": {
+							"displayName": "Коми"
+						},
+						"kg": {
+							"displayName": "Конго"
+						},
+						"ko": {
+							"displayName": "корейский"
+						},
+						"kj": {
+							"displayName": "Куаньяма; Кваньяма"
+						},
+						"ku": {
+							"displayName": "курдский"
+						},
+						"lo": {
+							"displayName": "Лаосский"
+						},
+						"la": {
+							"displayName": "латинский"
+						},
+						"lv": {
+							"displayName": "латышский"
+						},
+						"li": {
+							"displayName": "Лимбурган; Лимбургер; Лимбургский"
+						},
+						"ln": {
+							"displayName": "Лингала"
+						},
+						"lt": {
+							"displayName": "литовский"
+						},
+						"lu": {
+							"displayName": "Люба-Катанга"
+						},
+						"lb": {
+							"displayName": "люксембургский; Летцебургеш"
+						},
+						"mk": {
+							"displayName": "македонский"
+						},
+						"mg": {
+							"displayName": "малагасийский"
+						},
+						"ms": {
+							"displayName": "Малайский (макроязык)"
+						},
+						"ml": {
+							"displayName": "малаялам"
+						},
+						"mt": {
+							"displayName": "мальтийский"
+						},
+						"gv": {
+							"displayName": "Мэнкс"
+						},
+						"mi": {
+							"displayName": "маори"
+						},
+						"mr": {
+							"displayName": "маратхи"
+						},
+						"mh": {
+							"displayName": "Маршаллийский остров"
+						},
+						"mn": {
+							"displayName": "Монгольский"
+						},
+						"na": {
+							"displayName": "Науру"
+						},
+						"nv": {
+							"displayName": "Навахо; Навахо"
+						},
+						"nd": {
+							"displayName": "Ндебеле, Север; Северный Ндебеле"
+						},
+						"nr": {
+							"displayName": "Ндебеле, Юг; Южный Ндебеле"
+						},
+						"ng": {
+							"displayName": "Ндонга"
+						},
+						"ne": {
+							"displayName": "Непальский (макроязык)"
+						},
+						"se": {
+							"displayName": "Северные саамы"
+						},
+						"no": {
+							"displayName": "норвежский"
+						},
+						"nn": {
+							"displayName": "норвежский Нюнорск; Нюнорск, Норвежский"
+						},
+						"oc": {
+							"displayName": "Окситан (Пост 1500)"
+						},
+						"oj": {
+							"displayName": "Оджибва"
+						},
+						"or": {
+							"displayName": "Ория (макроязык)"
+						},
+						"om": {
+							"displayName": "Оромо"
+						},
+						"os": {
+							"displayName": "Осетинский; осетинский"
+						},
+						"pi": {
+							"displayName": "пали"
+						},
+						"pa": {
+							"displayName": "панджаби; панджаби"
+						},
+						"fa": {
+							"displayName": "персидский"
+						},
+						"pl": {
+							"displayName": "Польский"
+						},
+						"pt": {
+							"displayName": "португальский"
+						},
+						"ps": {
+							"displayName": "Пушту; пушту"
+						},
+						"qu": {
+							"displayName": "кечуа"
+						},
+						"ro": {
+							"displayName": "Румынский; молдавский; Молдавский"
+						},
+						"rm": {
+							"displayName": "ретороманский"
+						},
+						"rn": {
+							"displayName": "Рунди"
+						},
+						"ru": {
+							"displayName": "Русский"
+						},
+						"sm": {
+							"displayName": "Самоанец"
+						},
+						"sg": {
+							"displayName": "Санго"
+						},
+						"sa": {
+							"displayName": "санскрит"
+						},
+						"sc": {
+							"displayName": "Сардинский"
+						},
+						"sr": {
+							"displayName": "сербский"
+						},
+						"sn": {
+							"displayName": "Шона"
+						},
+						"ii": {
+							"displayName": "Сычуань И; Нуосу"
+						},
+						"sd": {
+							"displayName": "Синдхи"
+						},
+						"si": {
+							"displayName": "сингальский; сингальский"
+						},
+						"sk": {
+							"displayName": "словацкий"
+						},
+						"sl": {
+							"displayName": "словенский"
+						},
+						"so": {
+							"displayName": "Сомали"
+						},
+						"st": {
+							"displayName": "Сото, Южный"
+						},
+						"es": {
+							"displayName": "Испанский; кастильский"
+						},
+						"su": {
+							"displayName": "суданский"
+						},
+						"sw": {
+							"displayName": "Суахили (макроязык)"
+						},
+						"ss": {
+							"displayName": "Свати"
+						},
+						"sv": {
+							"displayName": "Шведский"
+						},
+						"tl": {
+							"displayName": "Тагальский"
+						},
+						"ty": {
+							"displayName": "таитянский"
+						},
+						"tg": {
+							"displayName": "таджикский"
+						},
+						"ta": {
+							"displayName": "тамильский"
+						},
+						"tt": {
+							"displayName": "татарский"
+						},
+						"te": {
+							"displayName": "телугу"
+						},
+						"th": {
+							"displayName": "тайский"
+						},
+						"bo": {
+							"displayName": "тибетский"
+						},
+						"ti": {
+							"displayName": "Тигринья"
+						},
+						"to": {
+							"displayName": "Тонга (острова Тонга)"
+						},
+						"ts": {
+							"displayName": "Тсонга"
+						},
+						"tn": {
+							"displayName": "Тсвана"
+						},
+						"tr": {
+							"displayName": "турецкий"
+						},
+						"tk": {
+							"displayName": "туркменский"
+						},
+						"tw": {
+							"displayName": "Тви"
+						},
+						"ug": {
+							"displayName": "уйгурский; уйгурский"
+						},
+						"uk": {
+							"displayName": "Украинский"
+						},
+						"ur": {
+							"displayName": "Урду"
+						},
+						"uz": {
+							"displayName": "Узбекский"
+						},
+						"ve": {
+							"displayName": "Венда"
+						},
+						"vi": {
+							"displayName": "вьетнамский"
+						},
+						"vo": {
+							"displayName": "Волапюк"
+						},
+						"wa": {
+							"displayName": "валлонский"
+						},
+						"cy": {
+							"displayName": "валлийский"
+						},
+						"fy": {
+							"displayName": "Западно-фризский"
+						},
+						"wo": {
+							"displayName": "Волоф"
+						},
+						"xh": {
+							"displayName": "Коса"
+						},
+						"yi": {
+							"displayName": "идиш"
+						},
+						"yo": {
+							"displayName": "Йоруба"
+						},
+						"za": {
+							"displayName": "Чжуан; Чуанг"
+						},
+						"zu": {
+							"displayName": "Зулу"
+						}
+					}
+				},
+				"jobFunction": {
+					"displayName": "Функция работы",
+					"description": "Должностная функция контакта. Это свойство необходимо для интеграции рекламы с Facebook. Этот ресурс будет автоматически синхронизирован с помощью инструмента Lead Ads."
+				},
+				"jobTitle": {
+					"displayName": "Должность",
+					"description": "Должность контакта"
+				},
+				"lastName": {
+					"displayName": "Фамилия",
+					"description": "Фамилия контакта"
+				},
+				"latestTrafficSource": {
+					"displayName": "Последний источник трафика",
+					"description": "Источник последней сессии контакта",
+					"options": {
+						"DIRECT_TRAFFIC": {
+							"displayName": "Прямой трафик"
+						},
+						"EMAIL_MARKETING": {
+							"displayName": "Электронный маркетинг"
+						},
+						"OFFLINE": {
+							"displayName": "Офлайн-источники"
+						},
+						"ORGANIC_SEARCH": {
+							"displayName": "Органический поиск"
+						},
+						"SOCIAL_MEDIA": {
+							"displayName": "Органические социальные сети"
+						},
+						"OTHER_CAMPAIGNS": {
+							"displayName": "Другие кампании"
+						},
+						"PAID_SEARCH": {
+							"displayName": "Платный поиск"
+						},
+						"PAID_SOCIAL": {
+							"displayName": "Платные социальные сети"
+						},
+						"REFERRALS": {
+							"displayName": "Рефералы"
+						}
+					}
+				},
+				"latestTrafficSourceDate": {
+					"displayName": "Последняя дата источника трафика",
+					"description": "Время последней сессии контакта"
+				},
+				"leadStatus": {
+					"displayName": "Имя или идентификатор статуса интереса",
+					"description": "Статус продаж, поиска или распространения информации компании. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"processingContactData": {
+					"displayName": "Legal Basic Для обработки контактных данных Имя или идентификатор",
+					"description": "Правовая основа обработки контактных данных; «Неприменимо» освобождает контакт от защиты GDPR. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"lifeCycleStage": {
+					"displayName": "Название или идентификатор этапа жизненного цикла",
+					"description": "Квалификация контактов на готовность к продажам. Его можно настроить с помощью импорта, форм, рабочих процессов и вручную для каждого контакта. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"linkedinUrl": {
+					"displayName": "URL-адрес LinkedIn",
+					"description": "URL-адрес страницы контакта в LinkedIn."
+				},
+				"maritalStatus": {
+					"displayName": "Семейное положение",
+					"description": "Семейное положение контакта. Это свойство необходимо для интеграции рекламы Facebook. Этот ресурс будет автоматически синхронизирован с помощью инструмента Lead Ads."
+				},
+				"memberEmail": {
+					"displayName": "Электронная почта участника",
+					"description": "Электронная почта, используемая для отправки участникам информации о личном контенте"
+				},
+				"membershipNote": {
+					"displayName": "Примечание о членстве",
+					"description": "Примечания, касающиеся членства в контенте контакта"
+				},
+				"message": {
+					"displayName": "Сообщение",
+					"description": "Свойство по умолчанию, которое будет использоваться для любого сообщения или комментария, который контакт может захотеть оставить в форме."
+				},
+				"militaryStatus": {
+					"displayName": "Военный статус",
+					"description": "Военный статус контакта. Требуется для интеграции рекламы в Facebook. Автоматически синхронизируется с инструментом Lead Ads."
+				},
+				"mobilePhoneNumber": {
+					"displayName": "Номер мобильного телефона",
+					"description": "Номер мобильного телефона контакта"
+				},
+				"numberOfEmployees": {
+					"displayName": "Количество сотрудников",
+					"description": "Общее количество сотрудников, работающих в компании или организации"
+				},
+				"originalSource": {
+					"displayName": "Имя или идентификатор исходного источника",
+					"description": "Первый известный источник, через который контакт нашел ваш сайт. Источник автоматически устанавливается HubSpot, но его можно обновить вручную. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"persona": {
+					"displayName": "Персона",
+					"description": "Личность контакта"
+				},
+				"phoneNumber": {
+					"displayName": "Номер телефона",
+					"description": "Основной номер телефона компании. При поддержке HubSpot Insights."
+				},
+				"postalCode": {
+					"displayName": "Почтовый индекс",
+					"description": "Почтовый индекс компании или организации. При поддержке HubSpot Insights."
+				},
+				"prefferedLanguage": {
+					"displayName": "Название или идентификатор предпочтительного языка",
+					"description": "Установите предпочтительный язык общения вашего контакта. Это свойство можно изменить при импорте, форме или интеграции. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"prospectingAgentLastEnrolled": {
+					"displayName": "Последний зарегистрированный агент по поиску клиентов",
+					"description": "Последний раз, когда агент по поиску клиентов зарегистрировал этот контакт"
+				},
+				"prospectingAgentTotalEnrolledCount": {
+					"displayName": "Общее количество зарегистрированных поисковых агентов"
+				},
+				"relationshipStatus": {
+					"displayName": "Статус отношений",
+					"description": "Статус отношений контакта. Это свойство необходимо для интеграции рекламы с Facebook. Этот ресурс будет автоматически синхронизирован с помощью инструмента Lead Ads."
+				},
+				"salutation": {
+					"displayName": "Приветствие",
+					"description": "Название, используемое для обращения к контакту"
+				},
+				"school": {
+					"displayName": "Школа",
+					"description": "Школа контакта. Это свойство необходимо для интеграции рекламы с Facebook. Этот ресурс будет автоматически синхронизирован с помощью инструмента Lead Ads."
+				},
+				"seniority": {
+					"displayName": "Старшинство",
+					"description": "Старшинство контакта. Это свойство необходимо для интеграции рекламы с Facebook. Этот ресурс будет автоматически синхронизирован с помощью инструмента Lead Ads."
+				},
+				"startDate": {
+					"displayName": "Дата начала",
+					"description": "Дата начала контакта. Это свойство необходимо для интеграции рекламы Facebook. Этот ресурс будет автоматически синхронизирован с помощью инструмента Lead Ads. При использовании выражений время следует указывать в формате ГГГГ-ММ-ДД чч-мм-сс."
+				},
+				"stateRegion": {
+					"displayName": "Штат/регион",
+					"description": "Штат или регион, в котором находится компания или организация. При поддержке HubSpot Insights."
+				},
+				"stateRegionCode": {
+					"displayName": "Код штата/региона",
+					"description": "Код штата или региона контакта"
+				},
+				"status": {
+					"displayName": "Имя или идентификатор статуса",
+					"description": "Статус членства в контенте контакта. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"streetAddress": {
+					"displayName": "Адрес улицы",
+					"description": "Адрес компании или организации, включая номер подразделения. При поддержке HubSpot Insights."
+				},
+				"timeZone": {
+					"displayName": "Часовой пояс",
+					"description": "Часовой пояс контакта. HubSpot может установить это автоматически на основе других свойств контакта. Его также можно установить вручную для каждого контакта.",
+					"options": {
+						"atlantic_slash_cape_verde": {
+							"displayName": "UTC -01:00 Атлантический океан, Кабо-Верде"
+						},
+						"america_slash_godthab": {
+							"displayName": "UTC -02:00 Америка Годтаб"
+						},
+						"america_slash_miquelon": {
+							"displayName": "UTC -02:00 Америка Микелон"
+						},
+						"america_slash_noronha": {
+							"displayName": "UTC -02:00 Америка Норонья"
+						},
+						"atlantic_slash_south_georgia": {
+							"displayName": "UTC -02:00 Атлантика, Южная Георгия"
+						},
+						"brazil_slash_denoronha": {
+							"displayName": "UTC -02:00 Бразилия ДеНоронья"
+						},
+						"america_slash_st_johns": {
+							"displayName": "UTC -02:30 Америка Сент-Джонс"
+						},
+						"canada_slash_newfoundland": {
+							"displayName": "UTC -02:30 Канада Ньюфаундленд"
+						},
+						"america_slash_araguaina": {
+							"displayName": "UTC -03:00 Америка Арагуайна"
+						},
+						"america_slash_argentina_slash_buenos_aires": {
+							"displayName": "UTC -03:00 Америка Аргентина (Буэнос-Айрес)"
+						},
+						"america_slash_argentina_slash_catamarca": {
+							"displayName": "UTC -03:00 Америка Аргентина (Катамарка)"
+						},
+						"america_slash_argentina_slash_comodrivadavia": {
+							"displayName": "UTC -03:00 Америка Аргентина (ComodRivadavia)"
+						},
+						"america_slash_argentina_slash_cordoba": {
+							"displayName": "UTC -03:00 Америка Аргентина (Кордова)"
+						},
+						"america_slash_argentina_slash_jujuy": {
+							"displayName": "UTC -03:00 Америка Аргентина (Жужуй)"
+						},
+						"america_slash_argentina_slash_la_rioja": {
+							"displayName": "UTC -03:00 Америка Аргентина (Ла-Риоха)"
+						},
+						"america_slash_argentina_slash_mendoza": {
+							"displayName": "UTC -03:00 Америка Аргентина (Мендоса)"
+						},
+						"america_slash_argentina_slash_rio_gallegos": {
+							"displayName": "UTC -03:00 Америка Аргентина (Рио-Гальегос)"
+						},
+						"america_slash_argentina_slash_salta": {
+							"displayName": "UTC -03:00 Америка Аргентина (Сальта)"
+						},
+						"america_slash_argentina_slash_san_juan": {
+							"displayName": "UTC -03:00 Америка Аргентина (Сан-Хуан)"
+						},
+						"america_slash_argentina_slash_san_luis": {
+							"displayName": "UTC -03:00 Америка Аргентина (Сан-Луис)"
+						},
+						"america_slash_argentina_slash_tucuman": {
+							"displayName": "UTC -03:00 Америка Аргентина (Тукуман)"
+						},
+						"america_slash_argentina_slash_ushuaia": {
+							"displayName": "UTC -03:00 Америка Аргентина (Ушуайя)"
+						},
+						"america_slash_bahia": {
+							"displayName": "UTC -03:00 Америка Баия"
+						},
+						"america_slash_belem": {
+							"displayName": "UTC -03:00 Америка Белем"
+						},
+						"america_slash_buenos_aires": {
+							"displayName": "UTC -03:00 Америка Буэнос-Айрес"
+						},
+						"america_slash_catamarca": {
+							"displayName": "UTC -03:00 Америка Катамарка"
+						},
+						"america_slash_cayenne": {
+							"displayName": "UTC -03:00 Америка Кайенна"
+						},
+						"america_slash_cordoba": {
+							"displayName": "UTC -03:00 Америка Кордова"
+						},
+						"america_slash_fortaleza": {
+							"displayName": "UTC -03:00 Америка Форталеза"
+						},
+						"america_slash_glace_bay": {
+							"displayName": "UTC -03:00 Америка Глейс Бэй"
+						},
+						"america_slash_goose_bay": {
+							"displayName": "UTC -03:00 Америка Гус Бэй"
+						},
+						"america_slash_halifax": {
+							"displayName": "UTC -03:00 Америка Галифакс"
+						},
+						"america_slash_jujuy": {
+							"displayName": "UTC -03:00 Америка Жужуй"
+						},
+						"america_slash_maceio": {
+							"displayName": "UTC -03:00 Америка Масейо"
+						},
+						"america_slash_mendoza": {
+							"displayName": "UTC -03:00 Америка Мендоса"
+						},
+						"america_slash_moncton": {
+							"displayName": "UTC -03:00 Америка Монктон"
+						},
+						"america_slash_montevideo": {
+							"displayName": "UTC -03:00 Америка Монтевидео"
+						},
+						"america_slash_paramaribo": {
+							"displayName": "UTC -03:00 Америка Парамарибо"
+						},
+						"america_slash_punta_arenas": {
+							"displayName": "UTC -03:00 Америка Пунта-Аренас"
+						},
+						"america_slash_recife": {
+							"displayName": "UTC -03:00 Америка Ресифи"
+						},
+						"america_slash_rosario": {
+							"displayName": "UTC -03:00 Америка Росарио"
+						},
+						"america_slash_santarem": {
+							"displayName": "UTC -03:00 Америка Сантарен"
+						},
+						"america_slash_sao_paulo": {
+							"displayName": "UTC -03:00 Америка Сан-Паулу"
+						},
+						"america_slash_thule": {
+							"displayName": "UTC -03:00 Америка Туле"
+						},
+						"antarctica_slash_palmer": {
+							"displayName": "UTC -03:00 Антарктида Палмер"
+						},
+						"antarctica_slash_rothera": {
+							"displayName": "UTC -03:00 Антарктида Ротера"
+						},
+						"atlantic_slash_bermuda": {
+							"displayName": "UTC -03:00 Атлантические Бермудские острова"
+						},
+						"atlantic_slash_stanley": {
+							"displayName": "UTC -03:00 Атлантик Стэнли"
+						},
+						"brazil_slash_east": {
+							"displayName": "UTC -03:00 Бразилия Восток"
+						},
+						"canada_slash_atlantic": {
+							"displayName": "UTC -03:00 Канада Атлантика"
+						},
+						"america_slash_anguilla": {
+							"displayName": "UTC -04:00 Америка Ангилья"
+						},
+						"america_slash_antigua": {
+							"displayName": "UTC -04:00 Америка Антигуа"
+						},
+						"america_slash_aruba": {
+							"displayName": "UTC -04:00 Америка Аруба"
+						},
+						"america_slash_asuncion": {
+							"displayName": "UTC -04:00 Америка Асунсьон"
+						},
+						"america_slash_barbados": {
+							"displayName": "UTC -04:00 Америка Барбадос"
+						},
+						"america_slash_blanc_hyphen_sablon": {
+							"displayName": "UTC -04:00 Америка Блан-Саблон"
+						},
+						"america_slash_boa_vista": {
+							"displayName": "UTC -04:00 Америка Боа-Виста"
+						},
+						"america_slash_campo_grande": {
+							"displayName": "UTC -04:00 Америка Кампо-Гранде"
+						},
+						"america_slash_caracas": {
+							"displayName": "UTC -04:00 Америка Каракас"
+						},
+						"cuba": {
+							"displayName": "UTC -04:00 Америка Куба"
+						},
+						"america_slash_cuiaba": {
+							"displayName": "UTC -04:00 Америка Куяба"
+						},
+						"america_slash_curacao": {
+							"displayName": "UTC -04:00 Америка Кюрасао"
+						},
+						"america_slash_detroit": {
+							"displayName": "UTC -04:00 Америка Детройт"
+						},
+						"america_slash_dominica": {
+							"displayName": "UTC -04:00 Америка Доминика"
+						},
+						"america_slash_fort_wayne": {
+							"displayName": "UTC -04:00 Америка Форт-Уэйн"
+						},
+						"america_slash_grand_turk": {
+							"displayName": "UTC -04:00 Америка Гранд Терк"
+						},
+						"america_slash_grenada": {
+							"displayName": "UTC -04:00 Америка Гренада"
+						},
+						"america_slash_guadeloupe": {
+							"displayName": "UTC -04:00 Америка Гваделупа"
+						},
+						"america_slash_guyana": {
+							"displayName": "UTC -04:00 Америка Гайана"
+						},
+						"america_slash_havana": {
+							"displayName": "UTC -04:00 Америка Гавана"
+						},
+						"america_slash_indiana_slash_indianapolis": {
+							"displayName": "UTC -04:00 Америка Индиана (Индианаполис)"
+						},
+						"america_slash_indiana_slash_marengo": {
+							"displayName": "UTC -04:00 Америка Индиана (Маренго)"
+						},
+						"america_slash_indiana_slash_petersburg": {
+							"displayName": "UTC -04:00 Америка Индиана (Петербург)"
+						},
+						"america_slash_indiana_slash_vevay": {
+							"displayName": "UTC -04:00 Америка Индиана (Вевай)"
+						},
+						"america_slash_indiana_slash_vincennes": {
+							"displayName": "UTC -04:00 Америка Индиана (Винсеннес)"
+						},
+						"america_slash_indiana_slash_winamac": {
+							"displayName": "UTC -04:00 Америка Индиана (Винамак)"
+						},
+						"america_slash_indianapolis": {
+							"displayName": "UTC -04:00 Америка Индианаполис"
+						},
+						"america_slash_iqaluit": {
+							"displayName": "UTC -04:00 Америка Икалуит"
+						},
+						"america_slash_kentucky_slash_louisville": {
+							"displayName": "UTC -04:00 Америка Кентукки (Луисвилл)"
+						},
+						"america_slash_kentucky_slash_monticello": {
+							"displayName": "UTC -04:00 Америка Кентукки (Монтичелло)"
+						},
+						"america_slash_kralendijk": {
+							"displayName": "UTC -04:00 Америка Кралендейк"
+						},
+						"america_slash_la_paz": {
+							"displayName": "UTC -04:00 Америка Ла-Пас"
+						},
+						"america_slash_louisville": {
+							"displayName": "UTC -04:00 Америка Луисвилл"
+						},
+						"america_slash_lower_princes": {
+							"displayName": "UTC -04:00 Америка Нижние Принцы"
+						},
+						"america_slash_manaus": {
+							"displayName": "UTC -04:00 Америка Манаус"
+						},
+						"america_slash_marigot": {
+							"displayName": "UTC -04:00 Америка Мариго"
+						},
+						"america_slash_martinique": {
+							"displayName": "UTC -04:00 Америка Мартиника"
+						},
+						"america_slash_montreal": {
+							"displayName": "UTC -04:00 Америка Монреаль"
+						},
+						"america_slash_montserrat": {
+							"displayName": "UTC -04:00 Америка Монтсеррат"
+						},
+						"america_slash_nassau": {
+							"displayName": "UTC -04:00 Америка Нассау"
+						},
+						"america_slash_new_york": {
+							"displayName": "UTC -04:00 Америка Нью-Йорк"
+						},
+						"america_slash_nipigon": {
+							"displayName": "UTC -04:00 Америка Нипигон"
+						},
+						"america_slash_pangnirtung": {
+							"displayName": "UTC -04:00 Америка Пангниртунг"
+						},
+						"america_slash_port_of_spain": {
+							"displayName": "UTC -04:00 Америка Порт-оф-Спейн"
+						},
+						"america_slash_port_hyphen_au_hyphen_prince": {
+							"displayName": "UTC -04:00 Америка Порт-о-Пренс"
+						},
+						"america_slash_porto_velho": {
+							"displayName": "UTC -04:00 Америка Порту-Велью"
+						},
+						"america_slash_puerto_rico": {
+							"displayName": "UTC -04:00 Америка Пуэрто-Рико"
+						},
+						"america_slash_santiago": {
+							"displayName": "UTC -04:00 Америка Сантьяго"
+						},
+						"america_slash_santo_domingo": {
+							"displayName": "UTC -04:00 Америка Санто-Доминго"
+						},
+						"america_slash_st_barthelemy": {
+							"displayName": "UTC -04:00 Америка, Сен-Бартелеми"
+						},
+						"america_slash_st_kitts": {
+							"displayName": "UTC -04:00 Америка Сент-Китс"
+						},
+						"america_slash_st_lucia": {
+							"displayName": "UTC -04:00 Америка Сент-Люсия"
+						},
+						"america_slash_st_thomas": {
+							"displayName": "UTC -04:00 Америка Сент-Томас"
+						},
+						"america_slash_st_vincent": {
+							"displayName": "UTC -04:00 Америка Сент-Винсент"
+						},
+						"america_slash_thunder_bay": {
+							"displayName": "UTC -04:00 Америка Тандер-Бей"
+						},
+						"america_slash_toronto": {
+							"displayName": "UTC -04:00 Америка Торонто"
+						},
+						"america_slash_tortola": {
+							"displayName": "UTC -04:00 Америка Тортола"
+						},
+						"america_slash_virgin": {
+							"displayName": "UTC -04:00 Америка Дева"
+						},
+						"brazil_slash_west": {
+							"displayName": "UTC -04:00 Запад Бразилии"
+						},
+						"canada_slash_eastern": {
+							"displayName": "UTC -04:00 Канада Восточная"
+						},
+						"chile_slash_continental": {
+							"displayName": "UTC -04:00 Чили Континентальный"
+						},
+						"us_slash_east_hyphen_indiana": {
+							"displayName": "UTC -04:00 США, Восточная Индиана"
+						},
+						"us_slash_eastern": {
+							"displayName": "UTC -04:00 Восточное побережье США"
+						},
+						"us_slash_michigan": {
+							"displayName": "UTC -04:00 США, Мичиган"
+						},
+						"america_slash_atikokan": {
+							"displayName": "UTC -05:00 Америка Атикокан"
+						},
+						"america_slash_bahia_banderas": {
+							"displayName": "UTC -05:00 Америка Баия Бандерас"
+						},
+						"america_slash_bogota": {
+							"displayName": "UTC -05:00 Америка Богота"
+						},
+						"america_slash_cancun": {
+							"displayName": "UTC -05:00 Америка Канкун"
+						},
+						"america_slash_cayman": {
+							"displayName": "UTC -05:00 Америка Кайманы"
+						},
+						"america_slash_chicago": {
+							"displayName": "UTC -05:00 Америка Чикаго"
+						},
+						"america_slash_coral_harbour": {
+							"displayName": "UTC -05:00 Америка Корал Харбор"
+						},
+						"america_slash_eirunepe": {
+							"displayName": "UTC -05:00 Америка Эйрунепе"
+						},
+						"america_slash_guayaquil": {
+							"displayName": "UTC -05:00 Америка Гуаякиль"
+						},
+						"america_slash_indiana_slash_knox": {
+							"displayName": "UTC -05:00 Америка Индиана (Нокс)"
+						},
+						"america_slash_indiana_slash_tell_city": {
+							"displayName": "UTC -05:00 Америка Индиана (Телл-Сити)"
+						},
+						"america_slash_jamaica": {
+							"displayName": "UTC -05:00 Америка Ямайка"
+						},
+						"america_slash_knox_in": {
+							"displayName": "UTC -05:00 Америка Нокс IN"
+						},
+						"america_slash_lima": {
+							"displayName": "UTC -05:00 Америка Лима"
+						},
+						"america_slash_matamoros": {
+							"displayName": "UTC -05:00 Америка Матаморос"
+						},
+						"america_slash_menominee": {
+							"displayName": "UTC -05:00 Америка Меномини"
+						},
+						"america_slash_merida": {
+							"displayName": "UTC -05:00 Америка Мерида"
+						},
+						"america_slash_mexico_city": {
+							"displayName": "UTC -05:00 Америка Мехико"
+						},
+						"america_slash_monterrey": {
+							"displayName": "UTC -05:00 Америка Монтеррей"
+						},
+						"america_slash_north_dakota_slash_beulah": {
+							"displayName": "UTC -05:00 Америка Северная Дакота (Бьюла)"
+						},
+						"america_slash_north_dakota_slash_center": {
+							"displayName": "UTC -05:00 Америка Северная Дакота (Центр)"
+						},
+						"america_slash_north_dakota_slash_new_salem": {
+							"displayName": "UTC -05:00 Америка Северная Дакота (Нью-Салем)"
+						},
+						"america_slash_panama": {
+							"displayName": "UTC -05:00 Америка Панама"
+						},
+						"america_slash_porto_acre": {
+							"displayName": "UTC -05:00 Америка Порто-Акко"
+						},
+						"america_slash_rainy_river": {
+							"displayName": "UTC -05:00 Америка Дождливая река"
+						},
+						"america_slash_rankin_inlet": {
+							"displayName": "UTC -05:00 Америка Рэнкин-Инлет"
+						},
+						"america_slash_resolute": {
+							"displayName": "UTC -05:00 Америка Решительная"
+						},
+						"america_slash_rio_branco": {
+							"displayName": "UTC -05:00 Америка Рио-Бранку"
+						},
+						"america_slash_winnipeg": {
+							"displayName": "UTC -05:00 Америка Виннипег"
+						},
+						"brazil_slash_acre": {
+							"displayName": "UTC -05:00 Бразилия Акр"
+						},
+						"canada_slash_central": {
+							"displayName": "UTC -05:00 Центральная Канада"
+						},
+						"mexico_slash_general": {
+							"displayName": "UTC -05:00 Мексика Общие сведения"
+						},
+						"us_slash_central": {
+							"displayName": "UTC -05:00 Центральный регион США"
+						},
+						"us_slash_indiana_hyphen_starke": {
+							"displayName": "UTC -05:00 США Индиана-Старк"
+						},
+						"america_slash_belize": {
+							"displayName": "UTC -06:00 Америка Белиз"
+						},
+						"america_slash_boise": {
+							"displayName": "UTC -06:00 Америка Бойсе"
+						},
+						"america_slash_cambridge_bay": {
+							"displayName": "UTC -06:00 Америка Кембридж-Бей"
+						},
+						"america_slash_chihuahua": {
+							"displayName": "UTC -06:00 Американский Чихуахуа"
+						},
+						"america_slash_costa_rica": {
+							"displayName": "UTC -06:00 Америка Коста-Рика"
+						},
+						"america_slash_denver": {
+							"displayName": "UTC -06:00 Америка Денвер"
+						},
+						"america_slash_edmonton": {
+							"displayName": "UTC -06:00 Америка Эдмонтон"
+						},
+						"america_slash_el_salvador": {
+							"displayName": "UTC -06:00 Америка Сальвадор"
+						},
+						"america_slash_guatemala": {
+							"displayName": "UTC -06:00 Америка Гватемала"
+						},
+						"america_slash_inuvik": {
+							"displayName": "UTC -06:00 Америка Инувик"
+						},
+						"america_slash_managua": {
+							"displayName": "UTC -06:00 Америка Манагуа"
+						},
+						"america_slash_mazatlan": {
+							"displayName": "UTC -06:00 Америка Масатлан"
+						},
+						"navajo": {
+							"displayName": "UTC -06:00 Америка Навахо"
+						},
+						"america_slash_ojinaga": {
+							"displayName": "UTC -06:00 Америка Охинага"
+						},
+						"america_slash_regina": {
+							"displayName": "UTC -06:00 Америка Регина"
+						},
+						"america_slash_shiprock": {
+							"displayName": "UTC -06:00 Америка Шипрок"
+						},
+						"america_slash_swift_current": {
+							"displayName": "UTC -06:00 Америка Свифт Каррент"
+						},
+						"america_slash_tegucigalpa": {
+							"displayName": "UTC -06:00 Америка Тегусигальпа"
+						},
+						"america_slash_yellowknife": {
+							"displayName": "UTC -06:00 Америка Йеллоунайф"
+						},
+						"canada_slash_mountain": {
+							"displayName": "UTC -06:00 Канада Гора"
+						},
+						"canada_slash_saskatchewan": {
+							"displayName": "UTC -06:00 Канада Саскачеван"
+						},
+						"chile_slash_easterisland": {
+							"displayName": "UTC -06:00 ЧилиОстров Пасхи"
+						},
+						"mexico_slash_bajasur": {
+							"displayName": "UTC -06:00 Мексика Нижняя Сур"
+						},
+						"pacific_slash_easter": {
+							"displayName": "UTC -06:00 Тихоокеанская Пасха"
+						},
+						"pacific_slash_galapagos": {
+							"displayName": "UTC -06:00 Тихоокеанские Галапагосские острова"
+						},
+						"us_slash_mountain": {
+							"displayName": "UTC -06:00 Гора США"
+						},
+						"america_slash_creston": {
+							"displayName": "UTC -07:00 Америка Крестон"
+						},
+						"america_slash_dawson": {
+							"displayName": "UTC -07:00 Америка Доусон"
+						},
+						"america_slash_dawson_creek": {
+							"displayName": "UTC -07:00 Америка Доусон Крик"
+						},
+						"america_slash_ensenada": {
+							"displayName": "UTC -07:00 Америка Энсенада"
+						},
+						"america_slash_fort_nelson": {
+							"displayName": "UTC -07:00 Америка Форт Нельсон"
+						},
+						"america_slash_hermosillo": {
+							"displayName": "UTC -07:00 Америка Эрмосильо"
+						},
+						"america_slash_los_angeles": {
+							"displayName": "UTC -07:00 Америка Лос-Анджелес"
+						},
+						"america_slash_phoenix": {
+							"displayName": "UTC -07:00 Америка Феникс"
+						},
+						"america_slash_santa_isabel": {
+							"displayName": "UTC -07:00 Америка Санта-Исабель"
+						},
+						"america_slash_tijuana": {
+							"displayName": "UTC -07:00 Америка Тихуана"
+						},
+						"america_slash_vancouver": {
+							"displayName": "UTC -07:00 Америка Ванкувер"
+						},
+						"america_slash_whitehorse": {
+							"displayName": "UTC -07:00 Америка Уайтхорс"
+						},
+						"canada_slash_pacific": {
+							"displayName": "UTC -07:00 Канада-Тихоокеанский регион"
+						},
+						"canada_slash_yukon": {
+							"displayName": "UTC -07:00 Канада Юкон"
+						},
+						"mexico_slash_bajanorte": {
+							"displayName": "UTC -07:00 Мексика Баха-Норте"
+						},
+						"us_slash_arizona": {
+							"displayName": "UTC -07:00 США, Аризона"
+						},
+						"us_slash_pacific": {
+							"displayName": "UTC -07:00 Тихоокеанский регион США"
+						},
+						"us_slash_pacific_hyphen_new": {
+							"displayName": "UTC-07:00 США Тихоокеанский регион-Новый"
+						},
+						"america_slash_anchorage": {
+							"displayName": "UTC -08:00 Америка Анкоридж"
+						},
+						"america_slash_juneau": {
+							"displayName": "UTC -08:00 Америка Джуно"
+						},
+						"america_slash_metlakatla": {
+							"displayName": "UTC -08:00 Америка Метлакатла"
+						},
+						"america_slash_nome": {
+							"displayName": "UTC -08:00 Америка Ном"
+						},
+						"america_slash_sitka": {
+							"displayName": "UTC -08:00 Америка Ситка"
+						},
+						"america_slash_yakutat": {
+							"displayName": "UTC -08:00 Америка Якутат"
+						},
+						"pacific_slash_pitcairn": {
+							"displayName": "UTC -08:00 Тихоокеанский остров Питкэрн"
+						},
+						"us_slash_alaska": {
+							"displayName": "UTC -08:00 США, Аляска"
+						},
+						"america_slash_adak": {
+							"displayName": "UTC -09:00 Америка Адак"
+						},
+						"america_slash_atka": {
+							"displayName": "UTC -09:00 Америка Атка"
+						},
+						"pacific_slash_gambier": {
+							"displayName": "UTC -09:00 Пасифик Гамбье"
+						},
+						"us_slash_aleutian": {
+							"displayName": "UTC -09:00 Американские Алеутские острова"
+						},
+						"pacific_slash_marquesas": {
+							"displayName": "UTC -09:30 Тихоокеанские Маркизские острова"
+						},
+						"pacific_slash_honolulu": {
+							"displayName": "UTC -10:00 Тихоокеанский Гонолулу"
+						},
+						"pacific_slash_johnston": {
+							"displayName": "UTC -10:00 Пасифик Джонстон"
+						},
+						"pacific_slash_rarotonga": {
+							"displayName": "UTC -10:00 Тихоокеанский Раротонга"
+						},
+						"pacific_slash_tahiti": {
+							"displayName": "UTC -10:00 Тихоокеанский Таити"
+						},
+						"us_slash_hawaii": {
+							"displayName": "UTC -10:00 США, Гавайи"
+						},
+						"pacific_slash_midway": {
+							"displayName": "UTC -11:00 Тихоокеанский Мидуэй"
+						},
+						"pacific_slash_niue": {
+							"displayName": "UTC -11:00 Тихоокеанский регион Ниуэ"
+						},
+						"pacific_slash_pago_pago": {
+							"displayName": "UTC -11:00 Пасифик-Паго-Паго"
+						},
+						"pacific_slash_samoa": {
+							"displayName": "UTC -11:00 Тихоокеанское Самоа"
+						},
+						"us_slash_samoa": {
+							"displayName": "UTC -11:00 Американское Самоа"
+						},
+						"africa_slash_abidjan": {
+							"displayName": "UTC +00:00 Африка Абиджан"
+						},
+						"africa_slash_accra": {
+							"displayName": "UTC +00:00 Африка Аккра"
+						},
+						"africa_slash_bamako": {
+							"displayName": "UTC +00:00 Африка Бамако"
+						},
+						"africa_slash_banjul": {
+							"displayName": "UTC +00:00 Африка Банжул"
+						},
+						"africa_slash_bissau": {
+							"displayName": "UTC +00:00 Африка Бисау"
+						},
+						"africa_slash_conakry": {
+							"displayName": "UTC +00:00 Африка Конакри"
+						},
+						"africa_slash_dakar": {
+							"displayName": "UTC +00:00 Африка Дакар"
+						},
+						"africa_slash_freetown": {
+							"displayName": "UTC +00:00 Африка Фритаун"
+						},
+						"africa_slash_lome": {
+							"displayName": "UTC +00:00 Африка Ломе"
+						},
+						"africa_slash_monrovia": {
+							"displayName": "UTC +00:00 Африка Монровия"
+						},
+						"africa_slash_nouakchott": {
+							"displayName": "UTC +00:00 Африка Нуакшот"
+						},
+						"africa_slash_ouagadougou": {
+							"displayName": "UTC +00:00 Африка Уагадугу"
+						},
+						"africa_slash_timbuktu": {
+							"displayName": "UTC +00:00 Африка Тимбукту"
+						},
+						"america_slash_danmarkshavn": {
+							"displayName": "UTC +00:00 Америка Данмарксхавн"
+						},
+						"america_slash_scoresbysund": {
+							"displayName": "UTC +00:00 Америка Скорсбисунд"
+						},
+						"atlantic_slash_azores": {
+							"displayName": "UTC +00:00 Атлантические Азорские острова"
+						},
+						"atlantic_slash_reykjavik": {
+							"displayName": "UTC +00:00 Атлантик Рейкьявик"
+						},
+						"atlantic_slash_st_helena": {
+							"displayName": "UTC +00:00 Атлантик, остров Святой Елены"
+						},
+						"iceland": {
+							"displayName": "UTC +00:00 Европа Исландия"
+						},
+						"africa_slash_algiers": {
+							"displayName": "UTC +01:00 Африка Алжир"
+						},
+						"africa_slash_bangui": {
+							"displayName": "UTC +01:00 Африка Банги"
+						},
+						"africa_slash_brazzaville": {
+							"displayName": "UTC +01:00 Африка Браззавиль"
+						},
+						"africa_slash_casablanca": {
+							"displayName": "UTC +01:00 Африка Касабланка"
+						},
+						"africa_slash_douala": {
+							"displayName": "UTC +01:00 Африка Дуала"
+						},
+						"africa_slash_el_aaiun": {
+							"displayName": "UTC +01:00 Африка Эль-Аюн"
+						},
+						"africa_slash_kinshasa": {
+							"displayName": "UTC +01:00 Африка Киншаса"
+						},
+						"africa_slash_lagos": {
+							"displayName": "UTC +01:00 Африка Лагос"
+						},
+						"africa_slash_libreville": {
+							"displayName": "UTC +01:00 Африка Либревиль"
+						},
+						"africa_slash_luanda": {
+							"displayName": "UTC +01:00 Африка Луанда"
+						},
+						"africa_slash_malabo": {
+							"displayName": "UTC +01:00 Африка Малабо"
+						},
+						"africa_slash_ndjamena": {
+							"displayName": "UTC +01:00 Африка Нджамена"
+						},
+						"africa_slash_niamey": {
+							"displayName": "UTC +01:00 Африка Ниамей"
+						},
+						"africa_slash_porto_hyphen_novo": {
+							"displayName": "UTC +01:00 Африка Порто-Ново"
+						},
+						"africa_slash_sao_tome": {
+							"displayName": "UTC +01:00 Африка Сан-Томе"
+						},
+						"africa_slash_tunis": {
+							"displayName": "UTC +01:00 Африка Тунис"
+						},
+						"atlantic_slash_canary": {
+							"displayName": "UTC +01:00 Атлантические Канарские острова"
+						},
+						"atlantic_slash_faeroe": {
+							"displayName": "UTC +01:00 Атлантические Фарерские острова"
+						},
+						"atlantic_slash_faroe": {
+							"displayName": "UTC +01:00 Атлантические Фарерские острова"
+						},
+						"atlantic_slash_madeira": {
+							"displayName": "UTC +01:00 Атлантик, Мадейра"
+						},
+						"europe_slash_belfast": {
+							"displayName": "UTC +01:00 Европа Белфаст"
+						},
+						"europe_slash_dublin": {
+							"displayName": "UTC +01:00 Европа Дублин"
+						},
+						"eire": {
+							"displayName": "UTC +01:00 Европа Ирландия"
+						},
+						"europe_slash_guernsey": {
+							"displayName": "UTC +01:00 Европа Гернси"
+						},
+						"europe_slash_isle_of_man": {
+							"displayName": "UTC +01:00 Европа Остров Мэн"
+						},
+						"europe_slash_jersey": {
+							"displayName": "UTC +01:00 Европа Джерси"
+						},
+						"europe_slash_lisbon": {
+							"displayName": "UTC +01:00 Европа Лиссабон"
+						},
+						"europe_slash_london": {
+							"displayName": "UTC +01:00 Европа Лондон"
+						},
+						"portugal": {
+							"displayName": "UTC +01:00 Европа Португалия"
+						},
+						"africa_slash_blantyre": {
+							"displayName": "UTC +02:00 Африка Блантайр"
+						},
+						"africa_slash_bujumbura": {
+							"displayName": "UTC +02:00 Африка Бужумбура"
+						},
+						"africa_slash_cairo": {
+							"displayName": "UTC +02:00 Африка Каир"
+						},
+						"africa_slash_ceuta": {
+							"displayName": "UTC +02:00 Африка Сеута"
+						},
+						"egypt": {
+							"displayName": "UTC +02:00 Африка Египет"
+						},
+						"africa_slash_gaborone": {
+							"displayName": "UTC +02:00 Африка Габороне"
+						},
+						"africa_slash_harare": {
+							"displayName": "UTC +02:00 Африка Хараре"
+						},
+						"africa_slash_johannesburg": {
+							"displayName": "UTC +02:00 Африка Йоханнесбург"
+						},
+						"africa_slash_khartoum": {
+							"displayName": "UTC +02:00 Африка Хартум"
+						},
+						"africa_slash_kigali": {
+							"displayName": "UTC +02:00 Африка Кигали"
+						},
+						"libya": {
+							"displayName": "UTC +02:00 Африка Ливия"
+						},
+						"africa_slash_lubumbashi": {
+							"displayName": "UTC +02:00 Африка Лубумбаши"
+						},
+						"africa_slash_lusaka": {
+							"displayName": "UTC +02:00 Африка Лусака"
+						},
+						"africa_slash_maputo": {
+							"displayName": "UTC +02:00 Африка Мапуту"
+						},
+						"africa_slash_maseru": {
+							"displayName": "UTC +02:00 Африка Масеру"
+						},
+						"africa_slash_mbabane": {
+							"displayName": "UTC +02:00 Африка Мбабане"
+						},
+						"africa_slash_tripoli": {
+							"displayName": "UTC +02:00 Африка Триполи"
+						},
+						"africa_slash_windhoek": {
+							"displayName": "UTC +02:00 Африка Виндхук"
+						},
+						"antarctica_slash_troll": {
+							"displayName": "UTC +02:00 Антарктический тролль"
+						},
+						"arctic_slash_longyearbyen": {
+							"displayName": "UTC +02:00 Арктический Лонгйирбиен"
+						},
+						"atlantic_slash_jan_mayen": {
+							"displayName": "UTC +02:00 Атлантика Ян-Майен"
+						},
+						"europe_slash_amsterdam": {
+							"displayName": "UTC +02:00 Европа Амстердам"
+						},
+						"europe_slash_andorra": {
+							"displayName": "UTC +02:00 Европа Андорра"
+						},
+						"europe_slash_belgrade": {
+							"displayName": "UTC +02:00 Европа Белград"
+						},
+						"europe_slash_berlin": {
+							"displayName": "UTC +02:00 Европа Берлин"
+						},
+						"europe_slash_bratislava": {
+							"displayName": "UTC +02:00 Европа Братислава"
+						},
+						"europe_slash_brussels": {
+							"displayName": "UTC +02:00 Европа Брюссель"
+						},
+						"europe_slash_budapest": {
+							"displayName": "UTC +02:00 Европа Будапешт"
+						},
+						"europe_slash_busingen": {
+							"displayName": "UTC +02:00 Европа Бюзинген"
+						},
+						"europe_slash_copenhagen": {
+							"displayName": "UTC +02:00 Европа Копенгаген"
+						},
+						"europe_slash_gibraltar": {
+							"displayName": "UTC +02:00 Европа Гибралтар"
+						},
+						"europe_slash_kaliningrad": {
+							"displayName": "UTC +02:00 Европа Калининград"
+						},
+						"europe_slash_ljubljana": {
+							"displayName": "UTC +02:00 Европа Любляна"
+						},
+						"europe_slash_luxembourg": {
+							"displayName": "UTC +02:00 Европа Люксембург"
+						},
+						"europe_slash_madrid": {
+							"displayName": "UTC +02:00 Европа Мадрид"
+						},
+						"europe_slash_malta": {
+							"displayName": "UTC +02:00 Европа Мальта"
+						},
+						"europe_slash_monaco": {
+							"displayName": "UTC +02:00 Европа Монако"
+						},
+						"europe_slash_oslo": {
+							"displayName": "UTC +02:00 Европа Осло"
+						},
+						"europe_slash_paris": {
+							"displayName": "UTC +02:00 Европа Париж"
+						},
+						"europe_slash_podgorica": {
+							"displayName": "UTC +02:00 Европа Подгорица"
+						},
+						"poland": {
+							"displayName": "UTC +02:00 Европа Польша"
+						},
+						"europe_slash_prague": {
+							"displayName": "UTC +02:00 Европа Прага"
+						},
+						"europe_slash_rome": {
+							"displayName": "UTC +02:00 Европа Рим"
+						},
+						"europe_slash_san_marino": {
+							"displayName": "UTC +02:00 Европа Сан-Марино"
+						},
+						"europe_slash_sarajevo": {
+							"displayName": "UTC +02:00 Европа Сараево"
+						},
+						"europe_slash_skopje": {
+							"displayName": "UTC +02:00 Европа Скопье"
+						},
+						"europe_slash_stockholm": {
+							"displayName": "UTC +02:00 Европа Стокгольм"
+						},
+						"europe_slash_tirane": {
+							"displayName": "UTC +02:00 Европа Тиран"
+						},
+						"europe_slash_vaduz": {
+							"displayName": "UTC +02:00 Европа Вадуц"
+						},
+						"europe_slash_vatican": {
+							"displayName": "UTC +02:00 Европа Ватикан"
+						},
+						"europe_slash_vienna": {
+							"displayName": "UTC +02:00 Европа Вена"
+						},
+						"europe_slash_warsaw": {
+							"displayName": "UTC +02:00 Европа Варшава"
+						},
+						"europe_slash_zagreb": {
+							"displayName": "UTC +02:00 Европа Загреб"
+						},
+						"europe_slash_zurich": {
+							"displayName": "UTC +02:00 Европа Цюрих"
+						},
+						"africa_slash_addis_ababa": {
+							"displayName": "UTC +03:00 Африка Аддис-Абеба"
+						},
+						"africa_slash_asmara": {
+							"displayName": "UTC +03:00 Африка Асмэра"
+						},
+						"africa_slash_asmera": {
+							"displayName": "UTC +03:00 Африка Асмера"
+						},
+						"africa_slash_dar_es_salaam": {
+							"displayName": "UTC +03:00 Африка Дар-эс-Салам"
+						},
+						"africa_slash_djibouti": {
+							"displayName": "UTC +03:00 Африка Джибути"
+						},
+						"africa_slash_juba": {
+							"displayName": "UTC +03:00 Африка Джуба"
+						},
+						"africa_slash_kampala": {
+							"displayName": "UTC +03:00 Африка Кампала"
+						},
+						"africa_slash_mogadishu": {
+							"displayName": "UTC +03:00 Африка Могадишо"
+						},
+						"africa_slash_nairobi": {
+							"displayName": "UTC +03:00 Африка Найроби"
+						},
+						"antarctica_slash_syowa": {
+							"displayName": "UTC +03:00 Антарктида Сёва"
+						},
+						"asia_slash_aden": {
+							"displayName": "UTC +03:00 Азия Аден"
+						},
+						"asia_slash_amman": {
+							"displayName": "UTC +03:00 Азия Амман"
+						},
+						"asia_slash_baghdad": {
+							"displayName": "UTC +03:00 Азия Багдад"
+						},
+						"asia_slash_bahrain": {
+							"displayName": "UTC +03:00 Азия Бахрейн"
+						},
+						"asia_slash_beirut": {
+							"displayName": "UTC +03:00 Азия Бейрут"
+						},
+						"asia_slash_damascus": {
+							"displayName": "UTC +03:00 Азия Дамаск"
+						},
+						"asia_slash_famagusta": {
+							"displayName": "UTC +03:00 Азия Фамагуста"
+						},
+						"asia_slash_gaza": {
+							"displayName": "UTC +03:00 Азия Газа"
+						},
+						"asia_slash_hebron": {
+							"displayName": "UTC +03:00 Азия Хеврон"
+						},
+						"israel": {
+							"displayName": "UTC +03:00 Азия Израиль"
+						},
+						"asia_slash_istanbul": {
+							"displayName": "UTC +03:00 Азия Стамбул"
+						},
+						"asia_slash_jerusalem": {
+							"displayName": "UTC +03:00 Азия Иерусалим"
+						},
+						"asia_slash_kuwait": {
+							"displayName": "UTC +03:00 Азия Кувейт"
+						},
+						"asia_slash_nicosia": {
+							"displayName": "UTC +03:00 Азия Никосия"
+						},
+						"asia_slash_qatar": {
+							"displayName": "UTC +03:00 Азия Катар"
+						},
+						"asia_slash_riyadh": {
+							"displayName": "UTC +03:00 Азия Эр-Рияд"
+						},
+						"asia_slash_tel_aviv": {
+							"displayName": "UTC +03:00 Азия Тель-Авив"
+						},
+						"turkey": {
+							"displayName": "UTC +03:00 Азия Турция"
+						},
+						"europe_slash_athens": {
+							"displayName": "UTC +03:00 Европа Афины"
+						},
+						"europe_slash_bucharest": {
+							"displayName": "UTC +03:00 Европа Бухарест"
+						},
+						"europe_slash_chisinau": {
+							"displayName": "UTC +03:00 Европа Кишинев"
+						},
+						"europe_slash_helsinki": {
+							"displayName": "UTC +03:00 Европа Хельсинки"
+						},
+						"europe_slash_istanbul": {
+							"displayName": "UTC +03:00 Европа Стамбул"
+						},
+						"europe_slash_kirov": {
+							"displayName": "UTC +03:00 Европа Киров"
+						},
+						"europe_slash_kiev": {
+							"displayName": "UTC +03:00 Европа Киев"
+						},
+						"europe_slash_mariehamn": {
+							"displayName": "UTC +03:00 Европа Мариехамн"
+						},
+						"europe_slash_minsk": {
+							"displayName": "UTC +03:00 Европа Минск"
+						},
+						"europe_slash_moscow": {
+							"displayName": "UTC +03:00 Европа Москва"
+						},
+						"europe_slash_nicosia": {
+							"displayName": "UTC +03:00 Европа Никосия"
+						},
+						"europe_slash_riga": {
+							"displayName": "UTC +03:00 Европа Рига"
+						},
+						"europe_slash_simferopol": {
+							"displayName": "UTC +03:00 Европа Симферополь"
+						},
+						"europe_slash_sofia": {
+							"displayName": "UTC +03:00 Европа София"
+						},
+						"europe_slash_tallinn": {
+							"displayName": "UTC +03:00 Европа Таллинн"
+						},
+						"europe_slash_tiraspol": {
+							"displayName": "UTC +03:00 Европа Тирасполь"
+						},
+						"europe_slash_uzhgorod": {
+							"displayName": "UTC +03:00 Европа Ужгород"
+						},
+						"europe_slash_vilnius": {
+							"displayName": "UTC +03:00 Европа Вильнюс"
+						},
+						"europe_slash_zaporozhye": {
+							"displayName": "UTC +03:00 Европа Запорожье"
+						},
+						"indian_slash_antananarivo": {
+							"displayName": "UTC +03:00 Индийский Антананариву"
+						},
+						"indian_slash_comoro": {
+							"displayName": "UTC +03:00 Индийское Коморо"
+						},
+						"indian_slash_mayotte": {
+							"displayName": "UTC +03:00 Индийская Майотта"
+						},
+						"asia_slash_baku": {
+							"displayName": "UTC +04:00 Азия Баку"
+						},
+						"asia_slash_dubai": {
+							"displayName": "UTC +04:00 Азия Дубай"
+						},
+						"asia_slash_muscat": {
+							"displayName": "UTC +04:00 Азия Маскат"
+						},
+						"asia_slash_tbilisi": {
+							"displayName": "UTC +04:00 Азия Тбилиси"
+						},
+						"asia_slash_yerevan": {
+							"displayName": "UTC +04:00 Азия Ереван"
+						},
+						"europe_slash_astrakhan": {
+							"displayName": "UTC +04:00 Европа Астрахань"
+						},
+						"europe_slash_samara": {
+							"displayName": "UTC +04:00 Европа Самара"
+						},
+						"europe_slash_saratov": {
+							"displayName": "UTC +04:00 Европа Саратов"
+						},
+						"europe_slash_ulyanovsk": {
+							"displayName": "UTC +04:00 Европа Ульяновск"
+						},
+						"europe_slash_volgograd": {
+							"displayName": "UTC +04:00 Европа Волгоград"
+						},
+						"indian_slash_mahe": {
+							"displayName": "UTC +04:00 Индийский Маэ"
+						},
+						"indian_slash_mauritius": {
+							"displayName": "UTC +04:00 Индийский Маврикий"
+						},
+						"indian_slash_reunion": {
+							"displayName": "UTC +04:00 Индийское воссоединение"
+						},
+						"iran": {
+							"displayName": "UTC +04:30 Азия Иран"
+						},
+						"asia_slash_kabul": {
+							"displayName": "UTC +04:30 Азия Кабул"
+						},
+						"asia_slash_tehran": {
+							"displayName": "UTC +04:30 Азия Тегеран"
+						},
+						"antarctica_slash_mawson": {
+							"displayName": "UTC +05:00 Антарктида Моусон"
+						},
+						"asia_slash_aqtau": {
+							"displayName": "UTC +05:00 Азия Актау"
+						},
+						"asia_slash_aqtobe": {
+							"displayName": "UTC +05:00 Азия Актобе"
+						},
+						"asia_slash_ashgabat": {
+							"displayName": "UTC +05:00 Азия Ашхабад"
+						},
+						"asia_slash_ashkhabad": {
+							"displayName": "UTC +05:00 Азия Ашхабад"
+						},
+						"asia_slash_atyrau": {
+							"displayName": "UTC +05:00 Азия Атырау"
+						},
+						"asia_slash_dushanbe": {
+							"displayName": "UTC +05:00 Азия Душанбе"
+						},
+						"asia_slash_karachi": {
+							"displayName": "UTC +05:00 Азия Карачи"
+						},
+						"asia_slash_oral": {
+							"displayName": "UTC +05:00 Азия Орал"
+						},
+						"asia_slash_samarkand": {
+							"displayName": "UTC +05:00 Азия Самарканд"
+						},
+						"asia_slash_tashkent": {
+							"displayName": "UTC +05:00 Азия Ташкент"
+						},
+						"asia_slash_yekaterinburg": {
+							"displayName": "UTC +05:00 Азия Екатеринбург"
+						},
+						"indian_slash_kerguelen": {
+							"displayName": "UTC +05:00 Индийский Кергелен"
+						},
+						"indian_slash_maldives": {
+							"displayName": "UTC +05:00 Индийские Мальдивы"
+						},
+						"asia_slash_calcutta": {
+							"displayName": "UTC +05:30 Азия Калькутта"
+						},
+						"asia_slash_colombo": {
+							"displayName": "UTC +05:30 Азия Коломбо"
+						},
+						"asia_slash_kolkata": {
+							"displayName": "UTC +05:30 Азия Калькутта"
+						},
+						"asia_slash_kathmandu": {
+							"displayName": "UTC +05:45 Азия Катманду"
+						},
+						"asia_slash_katmandu": {
+							"displayName": "UTC +05:45 Азия Катманду"
+						},
+						"antarctica_slash_vostok": {
+							"displayName": "UTC +06:00 Антарктида Восток"
+						},
+						"asia_slash_almaty": {
+							"displayName": "UTC +06:00 Азия Алматы"
+						},
+						"asia_slash_bishkek": {
+							"displayName": "UTC +06:00 Азия Бишкек"
+						},
+						"asia_slash_dacca": {
+							"displayName": "UTC +06:00 Азия Дакка"
+						},
+						"asia_slash_dhaka": {
+							"displayName": "UTC +06:00 Азия Дакка"
+						},
+						"asia_slash_kashgar": {
+							"displayName": "UTC +06:00 Азия Кашгар"
+						},
+						"asia_slash_omsk": {
+							"displayName": "UTC +06:00 Азия Омск"
+						},
+						"asia_slash_qyzylorda": {
+							"displayName": "UTC +06:00 Азия Кызылорда"
+						},
+						"asia_slash_thimbu": {
+							"displayName": "UTC +06:00 Азия Тимбу"
+						},
+						"asia_slash_thimphu": {
+							"displayName": "UTC +06:00 Азия Тхимпху"
+						},
+						"asia_slash_urumqi": {
+							"displayName": "UTC +06:00 Азия Урумчи"
+						},
+						"indian_slash_chagos": {
+							"displayName": "UTC +06:00 Индийский Чагос"
+						},
+						"asia_slash_rangoon": {
+							"displayName": "UTC +06:30 Азия Рангун"
+						},
+						"asia_slash_yangon": {
+							"displayName": "UTC +06:30 Азия Янгон"
+						},
+						"indian_slash_cocos": {
+							"displayName": "UTC +06:30 Индийские Кокосы"
+						},
+						"antarctica_slash_davis": {
+							"displayName": "UTC +07:00 Антарктида Дэвис"
+						},
+						"asia_slash_bangkok": {
+							"displayName": "UTC +07:00 Азия Бангкок"
+						},
+						"asia_slash_barnaul": {
+							"displayName": "UTC +07:00 Азия Барнаул"
+						},
+						"asia_slash_ho_chi_minh": {
+							"displayName": "UTC +07:00 Азия Хошимин"
+						},
+						"asia_slash_hovd": {
+							"displayName": "UTC +07:00 Азия Ховд"
+						},
+						"asia_slash_jakarta": {
+							"displayName": "UTC +07:00 Азия Джакарта"
+						},
+						"asia_slash_krasnoyarsk": {
+							"displayName": "UTC +07:00 Азия Красноярск"
+						},
+						"asia_slash_novokuznetsk": {
+							"displayName": "UTC +07:00 Азия Новокузнецк"
+						},
+						"asia_slash_novosibirsk": {
+							"displayName": "UTC +07:00 Азия Новосибирск"
+						},
+						"asia_slash_phnom_penh": {
+							"displayName": "UTC +07:00 Азия Пномпень"
+						},
+						"asia_slash_pontianak": {
+							"displayName": "UTC +07:00 Азия Понтианак"
+						},
+						"asia_slash_saigon": {
+							"displayName": "UTC +07:00 Азия Сайгон"
+						},
+						"asia_slash_tomsk": {
+							"displayName": "UTC +07:00 Азия Томск"
+						},
+						"asia_slash_vientiane": {
+							"displayName": "UTC +07:00 Азия Вьентьян"
+						},
+						"indian_slash_christmas": {
+							"displayName": "UTC +07:00 Индийское Рождество"
+						},
+						"antarctica_slash_casey": {
+							"displayName": "UTC +08:00 Антарктида Кейси"
+						},
+						"asia_slash_brunei": {
+							"displayName": "UTC +08:00 Азия Бруней"
+						},
+						"asia_slash_choibalsan": {
+							"displayName": "UTC +08:00 Азия Чойбалсан"
+						},
+						"asia_slash_chongqing": {
+							"displayName": "UTC +08:00 Азия Чунцин"
+						},
+						"asia_slash_chungking": {
+							"displayName": "UTC +08:00 Азия Чунцин"
+						},
+						"asia_slash_harbin": {
+							"displayName": "UTC +08:00 Азия Харбин"
+						},
+						"asia_slash_hong_kong": {
+							"displayName": "UTC +08:00 Азия Гонконг"
+						},
+						"asia_slash_irkutsk": {
+							"displayName": "UTC +08:00 Азия Иркутск"
+						},
+						"asia_slash_kuala_lumpur": {
+							"displayName": "UTC +08:00 Азия Куала-Лумпур"
+						},
+						"asia_slash_kuching": {
+							"displayName": "UTC +08:00 Азия Кучинг"
+						},
+						"asia_slash_macao": {
+							"displayName": "UTC +08:00 Азия Макао"
+						},
+						"asia_slash_macau": {
+							"displayName": "UTC +08:00 Азия Макао"
+						},
+						"asia_slash_makassar": {
+							"displayName": "UTC +08:00 Азия Макассар"
+						},
+						"asia_slash_manila": {
+							"displayName": "UTC +08:00 Азия Манила"
+						},
+						"asia_slash_shanghai": {
+							"displayName": "UTC +08:00 Азия Шанхай"
+						},
+						"asia_slash_singapore": {
+							"displayName": "UTC +08:00 Азия Сингапур"
+						},
+						"asia_slash_taipei": {
+							"displayName": "UTC +08:00 Азия Тайбэй"
+						},
+						"asia_slash_ujung_pandang": {
+							"displayName": "UTC +08:00 Азия Уджунг Панданг"
+						},
+						"asia_slash_ulaanbaatar": {
+							"displayName": "UTC +08:00 Азия Улан-Батор"
+						},
+						"asia_slash_ulan_bator": {
+							"displayName": "UTC +08:00 Азия Улан-Батор"
+						},
+						"australia_slash_perth": {
+							"displayName": "UTC +08:00 Австралия Перт"
+						},
+						"australia_slash_west": {
+							"displayName": "UTC +08:00 Запад Австралии"
+						},
+						"australia_slash_eucla": {
+							"displayName": "UTC +08:45 Австралия Юкла"
+						},
+						"asia_slash_chita": {
+							"displayName": "UTC +09:00 Азия Чита"
+						},
+						"asia_slash_dili": {
+							"displayName": "UTC +09:00 Азия Дили"
+						},
+						"japan": {
+							"displayName": "UTC +09:00 Азия Япония"
+						},
+						"asia_slash_jayapura": {
+							"displayName": "UTC +09:00 Азия Джаяпура"
+						},
+						"asia_slash_khandyga": {
+							"displayName": "UTC +09:00 Азия Хандыга"
+						},
+						"asia_slash_pyongyang": {
+							"displayName": "UTC +09:00 Азия Пхеньян"
+						},
+						"asia_slash_seoul": {
+							"displayName": "UTC +09:00 Азия Сеул"
+						},
+						"asia_slash_tokyo": {
+							"displayName": "UTC +09:00 Азия Токио"
+						},
+						"asia_slash_yakutsk": {
+							"displayName": "UTC +09:00 Азия Якутск"
+						},
+						"pacific_slash_palau": {
+							"displayName": "UTC +09:00 Тихоокеанский регион Палау"
+						},
+						"australia_slash_adelaide": {
+							"displayName": "UTC +09:30 Австралия Аделаида"
+						},
+						"australia_slash_broken_hill": {
+							"displayName": "UTC +09:30 Австралия Брокен-Хилл"
+						},
+						"australia_slash_darwin": {
+							"displayName": "UTC +09:30 Австралия Дарвин"
+						},
+						"australia_slash_north": {
+							"displayName": "UTC +09:30 Северная Австралия"
+						},
+						"australia_slash_south": {
+							"displayName": "UTC +09:30 Юг Австралии"
+						},
+						"australia_slash_yancowinna": {
+							"displayName": "UTC +09:30 Австралия Янковинна"
+						},
+						"antarctica_slash_dumontdurville": {
+							"displayName": "UTC +10:00 Антарктида Дюмон-Дюрвиль"
+						},
+						"asia_slash_ust_hyphen_nera": {
+							"displayName": "UTC +10:00 Азия Усть-Нера"
+						},
+						"asia_slash_vladivostok": {
+							"displayName": "UTC +10:00 Азия Владивосток"
+						},
+						"australia_slash_act": {
+							"displayName": "UTC +10:00 Австралия, ACT"
+						},
+						"australia_slash_brisbane": {
+							"displayName": "UTC +10:00 Австралия Брисбен"
+						},
+						"australia_slash_canberra": {
+							"displayName": "UTC +10:00 Австралия Канберра"
+						},
+						"australia_slash_currie": {
+							"displayName": "UTC +10:00 Австралия Карри"
+						},
+						"australia_slash_hobart": {
+							"displayName": "UTC +10:00 Австралия Хобарт"
+						},
+						"australia_slash_lindeman": {
+							"displayName": "UTC +10:00 Австралия Линдеман"
+						},
+						"australia_slash_melbourne": {
+							"displayName": "UTC +10:00 Австралия Мельбурн"
+						},
+						"australia_slash_nsw": {
+							"displayName": "UTC +10:00 Австралия Новый Южный Уэльс"
+						},
+						"australia_slash_queensland": {
+							"displayName": "UTC +10:00 Австралия Квинсленд"
+						},
+						"australia_slash_sydney": {
+							"displayName": "UTC +10:00 Австралия Сидней"
+						},
+						"australia_slash_tasmania": {
+							"displayName": "UTC +10:00 Австралия Тасмания"
+						},
+						"australia_slash_victoria": {
+							"displayName": "UTC +10:00 Австралия Виктория"
+						},
+						"pacific_slash_chuuk": {
+							"displayName": "UTC +10:00 Пасифик Чуук"
+						},
+						"pacific_slash_guam": {
+							"displayName": "UTC +10:00 Тихоокеанский Гуам"
+						},
+						"pacific_slash_port_moresby": {
+							"displayName": "UTC +10:00 Тихоокеанский Порт-Морсби"
+						},
+						"pacific_slash_saipan": {
+							"displayName": "UTC +10:00 Тихоокеанский Сайпан"
+						},
+						"pacific_slash_truk": {
+							"displayName": "UTC +10:00 Пасифик Трук"
+						},
+						"pacific_slash_yap": {
+							"displayName": "UTC +10:00 Тихоокеанский Яп"
+						},
+						"australia_slash_lhi": {
+							"displayName": "UTC +10:30 Австралия LHI"
+						},
+						"australia_slash_lord_howe": {
+							"displayName": "UTC +10:30 Австралия Лорд Хоу"
+						},
+						"antarctica_slash_macquarie": {
+							"displayName": "UTC +11:00 Антарктида Маккуори"
+						},
+						"asia_slash_magadan": {
+							"displayName": "UTC +11:00 Азия Магадан"
+						},
+						"asia_slash_sakhalin": {
+							"displayName": "UTC +11:00 Азия Сахалин"
+						},
+						"asia_slash_srednekolymsk": {
+							"displayName": "UTC +11:00 Азия Среднеколымск"
+						},
+						"pacific_slash_bougainville": {
+							"displayName": "UTC +11:00 Тихоокеанский Бугенвиль"
+						},
+						"pacific_slash_efate": {
+							"displayName": "UTC +11:00 Тихоокеанский Эфате"
+						},
+						"pacific_slash_guadalcanal": {
+							"displayName": "UTC +11:00 Тихоокеанский Гуадалканал"
+						},
+						"pacific_slash_kosrae": {
+							"displayName": "UTC +11:00 Пасифик Косраэ"
+						},
+						"pacific_slash_norfolk": {
+							"displayName": "UTC +11:00 Тихоокеанский Норфолк"
+						},
+						"pacific_slash_noumea": {
+							"displayName": "UTC +11:00 Пасифик Нумеа"
+						},
+						"pacific_slash_pohnpei": {
+							"displayName": "UTC +11:00 Пасифик Понпеи"
+						},
+						"pacific_slash_ponape": {
+							"displayName": "UTC +11:00 Тихоокеанский Понапе"
+						},
+						"antarctica_slash_mcmurdo": {
+							"displayName": "UTC +12:00 Антарктида МакМердо"
+						},
+						"antarctica_slash_south_pole": {
+							"displayName": "UTC +12:00 Южный полюс Антарктиды"
+						},
+						"asia_slash_anadyr": {
+							"displayName": "UTC +12:00 Азия Анадырь"
+						},
+						"asia_slash_kamchatka": {
+							"displayName": "UTC +12:00 Азия Камчатка"
+						},
+						"pacific_slash_auckland": {
+							"displayName": "UTC +12:00 Пасифик Окленд"
+						},
+						"pacific_slash_fiji": {
+							"displayName": "UTC +12:00 Тихоокеанский регион Фиджи"
+						},
+						"pacific_slash_funafuti": {
+							"displayName": "UTC +12:00 Тихоокеанский Фунафути"
+						},
+						"kwajalein": {
+							"displayName": "UTC +12:00 Пасифик Кваджалейн"
+						},
+						"pacific_slash_majuro": {
+							"displayName": "UTC +12:00 Пасифик Маджуро"
+						},
+						"pacific_slash_nauru": {
+							"displayName": "UTC +12:00 Тихоокеанский регион Науру"
+						},
+						"pacific_slash_tarawa": {
+							"displayName": "UTC +12:00 Тихоокеанская Тарава"
+						},
+						"pacific_slash_wake": {
+							"displayName": "UTC +12:00 Тихоокеанское пробуждение"
+						},
+						"pacific_slash_wallis": {
+							"displayName": "UTC +12:00 Пасифик Уоллис"
+						},
+						"pacific_slash_chatham": {
+							"displayName": "UTC +12:45 Пасифик Чатем"
+						},
+						"pacific_slash_apia": {
+							"displayName": "UTC +13:00 Тихоокеанский Апиа"
+						},
+						"pacific_slash_enderbury": {
+							"displayName": "UTC +13:00 Пасифик Эндербери"
+						},
+						"pacific_slash_fakaofo": {
+							"displayName": "UTC +13:00 Тихоокеанский Факаофо"
+						},
+						"pacific_slash_tongatapu": {
+							"displayName": "UTC +13:00 Тихоокеанский Тонгатапу"
+						},
+						"pacific_slash_kiritimati": {
+							"displayName": "UTC +14:00 Тихоокеанский Киритимати"
+						}
+					}
+				},
+				"twitterUsername": {
+					"displayName": "Имя пользователя Твиттера",
+					"description": "Дескриптор контакта в Твиттере. Это устанавливается HubSpot с использованием адреса электронной почты контакта."
+				},
+				"websiteUrl": {
+					"displayName": "URL-адрес веб-сайта",
+					"description": "Основной сайт компании или организации. Это свойство используется для идентификации уникальных компаний. При поддержке HubSpot Insights."
+				},
+				"whatsappPhoneNumber": {
+					"displayName": "Номер телефона WhatsApp",
+					"description": "Номер телефона, связанный с учетной записью WhatsApp контакта."
+				},
+				"workEmail": {
+					"displayName": "Рабочая электронная почта",
+					"description": "Рабочий адрес электронной почты контакта. Это свойство необходимо для интеграции рекламы с Facebook. Этот ресурс будет автоматически синхронизирован с помощью инструмента Lead Ads."
+				},
+				"formSubmissionMode": {
+					"displayName": "Режим отправки формы",
+					"description": "Укажите, какие отправленные формы следует получить",
+					"options": {
+						"all": {
+							"displayName": "Все"
+						},
+						"none": {
+							"displayName": "Никто"
+						},
+						"newest": {
+							"displayName": "Новейший"
+						},
+						"oldest": {
+							"displayName": "Самый старый"
+						}
+					}
+				},
+				"listMemberships": {
+					"displayName": "Включить членство в списке",
+					"description": "Следует ли получать данные о текущем членстве в списке для контакта"
+				},
+				"propertiesCollection": {
+					"values": {
+						"propertiesCollection": {
+							"displayName": "Свойства компании, которые следует включить",
+							"description": "Включать ли определенные свойства компании в возвращаемые результаты. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+						},
+						"propertiesValues": {
+							"options": {
+								"properties": {
+									"displayName": "Объекты компаний, которые следует включить",
+									"description": "Включать ли определенные свойства компании в возвращаемые результаты. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								},
+								"propertyMode": {
+									"displayName": "Включать",
+									"description": "Укажите, следует ли получать текущее значение свойства или значение и все исторические значения для этого свойства.",
+									"options": {
+										"valueAndHistory": {
+											"displayName": "Ценность и история"
+										},
+										"valueOnly": {
+											"displayName": "Только значение"
+										}
+									}
+								}
+							}
+						}
+					},
+					"displayName": "Свойства компании, которые следует включить",
+					"description": "Включать ли определенные свойства компании в возвращаемые результаты. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>.",
+					"options": {
+						"propertiesValues": {
+							"displayName": "Объекты компаний, которые следует включить"
+						}
+					}
+				},
+				"direction": {
+					"displayName": "Направление",
+					"description": "Определяет направление упорядочения результатов поиска. Значение по умолчанию — по убыванию.",
+					"options": {
+						"ASCENDING": {
+							"displayName": "восходящий"
+						},
+						"DESCENDING": {
+							"displayName": "По убыванию"
+						}
+					}
+				},
+				"query": {
+					"displayName": "Запрос",
+					"description": "Выполните текстовый поиск по всем значениям свойств для типа объекта."
+				},
+				"sortBy": {
+					"displayName": "Сортировать по",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"aboutUs": {
+					"displayName": "О нас"
+				},
+				"companyDomainName": {
+					"displayName": "Доменное имя компании",
+					"description": "Доменное имя компании или организации"
+				},
+				"companyOwner": {
+					"displayName": "Имя или идентификатор владельца компании",
+					"description": "Владелец компании. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"countryRegion": {
+					"displayName": "Страна/регион",
+					"description": "Страна/регион, в котором находится компания или организация."
+				},
+				"description": {
+					"displayName": "Описание",
+					"description": "Описание билета"
+				},
+				"facebookFans": {
+					"displayName": "Поклонники Facebook",
+					"description": "Количество поклонников Facebook"
+				},
+				"googlePlusPage": {
+					"displayName": "Страница Google Плюс",
+					"description": "URL-адрес страницы Google Plus компании или организации."
+				},
+				"isPublic": {
+					"displayName": "Является общедоступным",
+					"description": "Является ли компания публичной"
+				},
+				"lifecycleStatus": {
+					"displayName": "Название или идентификатор этапа жизненного цикла",
+					"description": "Самый продвинутый этап жизненного цикла для всех контактов, связанных с этой компанией или организацией. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"linkedinBio": {
+					"displayName": "LinkedIn Биография",
+					"description": "Биография LinkedIn для компании или организации"
+				},
+				"linkedInCompanyPage": {
+					"displayName": "Страница компании в LinkedIn",
+					"description": "URL-адрес страницы компании LinkedIn для компании или организации."
+				},
+				"originalSourceType": {
+					"displayName": "Имя или идентификатор типа исходного источника",
+					"description": "Первоначальный источник контактов с самой ранней деятельностью этой компании или организации. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"streetAddress2": {
+					"displayName": "Адрес улицы 2",
+					"description": "Дополнительный адрес компании или организации. При поддержке HubSpot Insights."
+				},
+				"targetAccount": {
+					"displayName": "Имя или идентификатор целевой учетной записи",
+					"description": "Свойство «Целевой аккаунт» позволяет отметить высокоприоритетные компании, если вы следуете стратегии, основанной на аккаунте. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"timezone": {
+					"displayName": "Часовой пояс",
+					"description": "Часовой пояс, в котором находится компания или организация. При поддержке HubSpot Insights."
+				},
+				"totalMoneyRaised": {
+					"displayName": "Общая сумма собранных денег",
+					"description": "Общая сумма денег, собранная компанией. При поддержке HubSpot Insights."
+				},
+				"twitterBio": {
+					"displayName": "Твиттер Биография",
+					"description": "Биография компании или организации в Твиттере"
+				},
+				"twitterFollowers": {
+					"displayName": "Последователи Твиттера",
+					"description": "Количество подписчиков компании или организации в Твиттере"
+				},
+				"twitterHandle": {
+					"displayName": "Твиттер-дескриптор",
+					"description": "Основной твиттер-аккаунт компании или организации"
+				},
+				"type": {
+					"displayName": "Введите имя или идентификатор",
+					"description": "Необязательная классификация записи компании — потенциальный клиент, партнер и т. д. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"webTechnologies": {
+					"displayName": "Имя или идентификатор веб-технологий",
+					"description": "Веб-технологии, используемые компанией или организацией. При поддержке HubSpot Insights. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"yearFounded": {
+					"displayName": "Год основания",
+					"description": "Год создания компании. При поддержке HubSpot Insights."
+				},
+				"includeMergeAudits": {
+					"displayName": "Включить аудит слияния",
+					"description": "Возвращать ли историю слияний, если компания ранее была объединена с записью другой компании. По умолчанию ложь."
+				},
+				"since": {
+					"displayName": "С",
+					"description": "Возвращайте только компании, созданные после временной метки x. При использовании выражений время следует указывать в формате ГГГГ-ММ-ДД чч-мм-сс."
+				},
+				"amount": {
+					"displayName": "Количество"
+				},
+				"associatedCompany": {
+					"displayName": "Названия или идентификаторы связанных компаний",
+					"description": "Включать ли определенные свойства ассоциированной компании в возвращаемые результаты. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"associatedVids": {
+					"displayName": "Связанные имена или идентификаторы видео",
+					"description": "Включать ли определенный связанный видео в возвращаемые результаты. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"dealName": {
+					"displayName": "Название сделки"
+				},
+				"dealOwner": {
+					"displayName": "Владелец сделки",
+					"description": "Пользователь HubSpot, который будет назначен для сделки"
+				},
+				"dealType": {
+					"displayName": "Название или идентификатор типа сделки",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"pipeline": {
+					"displayName": "Имя или идентификатор конвейера",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"associations": {
+					"values": {
+						"associations": {
+							"displayName": "Ассоциации"
+						},
+						"companyIds": {
+							"displayName": "Идентификаторы компании"
+						},
+						"contactIds": {
+							"displayName": "Идентификаторы контактов"
+						},
+						"dealIds": {
+							"displayName": "Идентификаторы сделок"
+						},
+						"ownerIds": {
+							"displayName": "Идентификаторы владельцев"
+						},
+						"ownerId": {
+							"displayName": "Идентификатор владельца"
+						},
+						"ticketIds": {
+							"displayName": "Идентификаторы билетов"
+						}
+					},
+					"placeholder": "Добавить поле",
+					"displayName": "Ассоциации"
+				},
+				"associatedCompanyIds": {
+					"displayName": "Названия компаний или идентификаторы",
+					"description": "Включать ли определенные свойства компании в возвращаемые результаты. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"associatedContactIds": {
+					"displayName": "Имена или идентификаторы контактов",
+					"description": "Включать ли определенные свойства контакта в возвращаемые результаты. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"category": {
+					"displayName": "Название или идентификатор категории",
+					"description": "Основная причина, по которой клиент обратился за помощью. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"createDate": {
+					"displayName": "Создать дату",
+					"description": "Дата создания билета. При использовании выражений время следует указывать в формате ГГГГ-ММ-ДД чч-мм-сс."
+				},
+				"priority": {
+					"displayName": "Имя или идентификатор приоритета",
+					"description": "Уровень внимания, необходимый для билета. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"resolution": {
+					"displayName": "Имя или идентификатор разрешения",
+					"description": "Действия, предпринятые для разрешения заявки. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"source": {
+					"displayName": "Имя или идентификатор источника",
+					"description": "Канал, на котором изначально был отправлен билет. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"ticketOwnerId": {
+					"displayName": "Имя или идентификатор владельца билета",
+					"description": "Пользователь из вашей команды, которому назначен билет. Вы можете назначить дополнительных пользователей записи заявки, создав настраиваемое свойство пользователя HubSpot. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"includeDeleted": {
+					"displayName": "Включить удаленные"
+				},
+				"propertiesWithHistory": {
+					"displayName": "Недвижимость с историей",
+					"description": "Работает аналогично свойствам=, но этот параметр будет включать историю указанного свойства, а не просто текущее значение. Используйте этот параметр, если вам нужна полная история изменений значения свойства."
+				}
+			}
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"resolveData": {
+					"displayName": "Упростите вывод",
+					"description": "По умолчанию ответ включает только идентификатор. Если эта опция активирована, она автоматически разрешит данные."
+				},
+				"includeMergeAudits": {
+					"displayName": "Включить аудит слияния",
+					"description": "Возвращать ли историю слияний, если компания ранее была объединена с записью другой компании. По умолчанию ложь."
+				},
+				"propertiesCollection": {
+					"values": {
+						"propertiesCollection": {
+							"displayName": "Свойства компании, которые следует включить",
+							"description": "Включать ли определенные свойства компании в возвращаемые результаты. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+						},
+						"propertiesValues": {
+							"options": {
+								"properties": {
+									"displayName": "Объекты компаний, которые следует включить",
+									"description": "Включать ли определенные свойства компании в возвращаемые результаты. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								},
+								"propertyMode": {
+									"displayName": "Включать",
+									"description": "Укажите, следует ли получать текущее значение свойства или значение и все исторические значения для этого свойства.",
+									"options": {
+										"valueAndHistory": {
+											"displayName": "Ценность и история"
+										},
+										"valueOnly": {
+											"displayName": "Только значение"
+										}
+									}
+								}
+							}
+						}
+					},
+					"displayName": "Свойства компании, которые следует включить",
+					"description": "Включать ли определенные свойства компании в возвращаемые результаты. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>.",
+					"options": {
+						"propertiesValues": {
+							"displayName": "Объекты компаний, которые следует включить"
+						}
+					}
+				},
+				"properties": {
+					"displayName": "Свойства компании, которые следует включить",
+					"description": "Включать ли определенные свойства компании в возвращаемые результаты. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				}
+			}
+		},
+		"contactId": {
+			"displayName": "Контакт для удаления",
+			"description": "Это не адрес электронной почты контакта, а номер типа 1485.",
+			"hint": "Чтобы найти пользователя по адресу электронной почты, используйте операцию поиска."
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"filterGroupsUi": {
+			"options": {
+				"filterGroupsUi": {
+					"displayName": "Фильтровать группы",
+					"description": "Если в группе фильтров предусмотрено несколько фильтров, они будут объединены с помощью логического оператора «И». Если предоставлено несколько групп фильтров, они будут объединены с помощью логического оператора ИЛИ. Система поддерживает максимум три группы фильтров по три фильтра в каждой. Подробнее <a href=\"https://developers.hubspot.com/docs/api/crm/search\">здесь</a>"
+				},
+				"filterGroupsValues": {
+					"displayName": "Группа фильтров",
+					"values": {
+						"filtersUi": {
+							"options": {
+								"filtersUi": {
+									"displayName": "Фильтры",
+									"description": "Используйте фильтры, чтобы ограничить результаты только объектами CRM с совпадающими значениями свойств. Подробнее <a href=\"https://developers.hubspot.com/docs/api/crm/search\">здесь</a>."
+								},
+								"filterValues": {
+									"displayName": "Фильтр",
+									"values": {
+										"propertyName": {
+											"displayName": "Имя или идентификатор объекта недвижимости",
+											"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+										},
+										"operator": {
+											"displayName": "Оператор",
+											"options": {
+												"CONTAINS_TOKEN": {
+													"displayName": "Содержит ровно"
+												},
+												"EQ": {
+													"displayName": "Равный"
+												},
+												"HAS_PROPERTY": {
+													"displayName": "известен"
+												},
+												"NOT_HAS_PROPERTY": {
+													"displayName": "Неизвестно"
+												},
+												"NEQ": {
+													"displayName": "Не равно"
+												},
+												"GT": {
+													"displayName": "Больше, чем"
+												},
+												"GTE": {
+													"displayName": "Больше или равно"
+												},
+												"LT": {
+													"displayName": "Меньше, чем"
+												},
+												"LTE": {
+													"displayName": "Меньше или равно"
+												}
+											}
+										},
+										"value": {
+											"displayName": "Ценить"
+										}
+									}
+								}
+							},
+							"placeholder": "Добавить фильтр",
+							"displayName": "Фильтры",
+							"description": "Используйте фильтры, чтобы ограничить результаты только объектами CRM с совпадающими значениями свойств. Подробнее <a href=\"https://developers.hubspot.com/docs/api/crm/search\">здесь</a>."
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить группу фильтров",
+			"displayName": "Фильтровать группы",
+			"description": "Если в группе фильтров предусмотрено несколько фильтров, они будут объединены с помощью логического оператора «И». Если предоставлено несколько групп фильтров, они будут объединены с помощью логического оператора ИЛИ. Система поддерживает максимум три группы фильтров по три фильтра в каждой. Подробнее <a href=\"https://developers.hubspot.com/docs/api/crm/search\">здесь</a>"
+		},
+		"by": {
+			"displayName": "К",
+			"options": {
+				"id": {
+					"displayName": "Идентификатор контакта"
+				},
+				"email": {
+					"displayName": "Электронная почта"
+				}
+			}
+		},
+		"id": {
+			"displayName": "Контакт для удаления"
+		},
+		"listId": {
+			"displayName": "Список для удаления"
+		},
+		"name": {
+			"displayName": "Имя"
+		},
+		"companyId": {
+			"displayName": "Компания для удаления"
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"aboutUs": {
+					"displayName": "О нас"
+				},
+				"annualRevenue": {
+					"displayName": "Годовой доход",
+					"description": "Фактический или предполагаемый годовой доход компании."
+				},
+				"city": {
+					"displayName": "Город",
+					"description": "Город, в котором находится компания"
+				},
+				"closeDate": {
+					"displayName": "Дата закрытия",
+					"description": "Дата закрытия билета. При использовании выражений время следует указывать в формате ГГГГ-ММ-ДД чч-мм-сс."
+				},
+				"companyDomainName": {
+					"displayName": "Доменное имя компании",
+					"description": "Доменное имя компании или организации"
+				},
+				"companyOwner": {
+					"displayName": "Имя или идентификатор владельца компании",
+					"description": "Владелец компании. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"countryRegion": {
+					"displayName": "Страна/регион",
+					"description": "Страна/регион, в котором находится компания или организация."
+				},
+				"customPropertiesUi": {
+					"values": {
+						"customPropertiesUi": {
+							"displayName": "Пользовательские свойства"
+						},
+						"customPropertiesValues": {
+							"options": {
+								"property": {
+									"displayName": "Имя или идентификатор объекта недвижимости",
+									"description": "Название объекта недвижимости. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Стоимость недвижимости"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить пользовательское свойство",
+					"displayName": "Пользовательские свойства",
+					"options": {
+						"customPropertiesValues": {
+							"displayName": "Пользовательское свойство"
+						}
+					}
+				},
+				"description": {
+					"displayName": "Описание",
+					"description": "Описание билета"
+				},
+				"facebookFans": {
+					"displayName": "Поклонники Facebook",
+					"description": "Количество поклонников Facebook"
+				},
+				"googlePlusPage": {
+					"displayName": "Страница Google Плюс",
+					"description": "URL-адрес страницы Google Plus компании или организации."
+				},
+				"industry": {
+					"displayName": "Название или идентификатор отрасли",
+					"description": "Вид деятельности, которую ведет компания. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"isPublic": {
+					"displayName": "Является общедоступным",
+					"description": "Является ли компания публичной"
+				},
+				"leadStatus": {
+					"displayName": "Имя или идентификатор статуса интереса",
+					"description": "Статус продаж, поиска или распространения информации компании. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"lifecycleStatus": {
+					"displayName": "Название или идентификатор этапа жизненного цикла",
+					"description": "Самый продвинутый этап жизненного цикла для всех контактов, связанных с этой компанией или организацией. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"linkedinBio": {
+					"displayName": "Linkedin Биография",
+					"description": "Биография LinkedIn для компании или организации"
+				},
+				"linkedInCompanyPage": {
+					"displayName": "Страница компании в LinkedIn",
+					"description": "URL-адрес страницы компании LinkedIn для компании или организации."
+				},
+				"name": {
+					"displayName": "Имя"
+				},
+				"numberOfEmployees": {
+					"displayName": "Количество сотрудников",
+					"description": "Общее количество сотрудников, работающих в компании или организации"
+				},
+				"originalSourceType": {
+					"displayName": "Имя или идентификатор типа исходного источника",
+					"description": "Первоначальный источник контактов с самой ранней деятельностью этой компании или организации. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"phoneNumber": {
+					"displayName": "Номер телефона",
+					"description": "Основной номер телефона компании. При поддержке HubSpot Insights."
+				},
+				"postalCode": {
+					"displayName": "Почтовый индекс",
+					"description": "Почтовый индекс компании или организации. При поддержке HubSpot Insights."
+				},
+				"stateRegion": {
+					"displayName": "Штат/регион",
+					"description": "Штат или регион, в котором находится компания или организация. При поддержке HubSpot Insights."
+				},
+				"streetAddress": {
+					"displayName": "Адрес улицы",
+					"description": "Адрес компании или организации, включая номер подразделения. При поддержке HubSpot Insights."
+				},
+				"streetAddress2": {
+					"displayName": "Адрес улицы 2",
+					"description": "Дополнительный адрес компании или организации. При поддержке HubSpot Insights."
+				},
+				"targetAccount": {
+					"displayName": "Имя или идентификатор целевой учетной записи",
+					"description": "Свойство «Целевой аккаунт» позволяет отметить высокоприоритетные компании, если вы следуете стратегии, основанной на аккаунте. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"timezone": {
+					"displayName": "Часовой пояс",
+					"description": "Часовой пояс, в котором находится компания или организация. При поддержке HubSpot Insights."
+				},
+				"totalMoneyRaised": {
+					"displayName": "Общая сумма собранных денег",
+					"description": "Общая сумма денег, собранная компанией. При поддержке HubSpot Insights."
+				},
+				"twitterBio": {
+					"displayName": "Твиттер Биография",
+					"description": "Биография компании или организации в Твиттере"
+				},
+				"twitterFollowers": {
+					"displayName": "Последователи Твиттера",
+					"description": "Количество подписчиков компании или организации в Твиттере"
+				},
+				"twitterHandle": {
+					"displayName": "Твиттер-дескриптор",
+					"description": "Основной твиттер-аккаунт компании или организации"
+				},
+				"type": {
+					"displayName": "Введите имя или идентификатор",
+					"description": "Необязательная классификация записи компании — потенциальный клиент, партнер и т. д. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"webTechnologies": {
+					"displayName": "Имя или идентификатор веб-технологий",
+					"description": "Веб-технологии, используемые компанией или организацией. При поддержке HubSpot Insights. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"websiteUrl": {
+					"displayName": "URL-адрес веб-сайта",
+					"description": "Основной сайт компании или организации. Это свойство используется для идентификации уникальных компаний. При поддержке HubSpot Insights."
+				},
+				"yearFounded": {
+					"displayName": "Год основания",
+					"description": "Год создания компании. При поддержке HubSpot Insights."
+				},
+				"amount": {
+					"displayName": "Количество"
+				},
+				"dealName": {
+					"displayName": "Название сделки"
+				},
+				"dealOwner": {
+					"displayName": "Владелец сделки",
+					"description": "Пользователь HubSpot, который будет назначен для сделки"
+				},
+				"stage": {
+					"displayName": "Название или идентификатор этапа сделки",
+					"description": "Этап сделки обязателен при создании сделки. Подробную информацию об управлении конвейерами и этапами см. в API CRM Pipelines. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"dealType": {
+					"displayName": "Название или идентификатор типа сделки",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"pipeline": {
+					"displayName": "Трубопровод"
+				},
+				"associatedCompanyIds": {
+					"displayName": "Названия компаний или идентификаторы",
+					"description": "Включать ли определенные свойства компании в возвращаемые результаты. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"associatedContactIds": {
+					"displayName": "Имена или идентификаторы контактов",
+					"description": "Включать ли определенные свойства контакта в возвращаемые результаты. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"category": {
+					"displayName": "Название или идентификатор категории",
+					"description": "Основная причина, по которой клиент обратился за помощью. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"createDate": {
+					"displayName": "Создать дату",
+					"description": "Дата создания билета. При использовании выражений время следует указывать в формате ГГГГ-ММ-ДД чч-мм-сс."
+				},
+				"pipelineId": {
+					"displayName": "Имя или идентификатор конвейера",
+					"description": "Идентификатор конвейера, в котором находится билет. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"priority": {
+					"displayName": "Имя или идентификатор приоритета",
+					"description": "Уровень внимания, необходимый для билета. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"resolution": {
+					"displayName": "Имя или идентификатор разрешения",
+					"description": "Действия, предпринятые для разрешения заявки. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"source": {
+					"displayName": "Имя или идентификатор источника",
+					"description": "Канал, на котором изначально был отправлен билет. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"stageId": {
+					"displayName": "Сценическое имя или идентификатор",
+					"description": "Идентификатор этапа конвейера, в котором находится заявка; зависит от идентификатора конвейера. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"ticketName": {
+					"displayName": "Название билета"
+				},
+				"ticketOwnerId": {
+					"displayName": "Имя или идентификатор владельца билета",
+					"description": "Пользователь из вашей команды, которому назначен билет. Вы можете назначить дополнительных пользователей записи заявки, создав настраиваемое свойство пользователя HubSpot. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				}
+			}
+		},
+		"domain": {
+			"displayName": "Домен",
+			"description": "Домен веб-сайта компании для поиска, например n8n.io."
+		},
+		"stage": {
+			"displayName": "Название или идентификатор этапа сделки",
+			"description": "Этап сделки обязателен при создании сделки. Подробную информацию об управлении конвейерами и этапами см. в API CRM Pipelines. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"dealId": {
+			"displayName": "Сделка для удаления"
+		},
+		"filters": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"includePropertyVersions": {
+					"displayName": "Включить версии свойств",
+					"description": "По умолчанию вы получите данные только для самой последней версии свойства в данных «Версии». Если вы включите этот параметр, вы получите данные для всех предыдущих версий."
+				},
+				"propertiesCollection": {
+					"values": {
+						"propertiesCollection": {
+							"displayName": "Свойства сделки, которые нужно включить",
+							"description": "<p>Используется для включения в результаты определенных свойств сделки. По умолчанию результаты будут включать только идентификатор сделки и не будут включать значения каких-либо свойств ваших сделок.</p><p>Включение этого параметра приведет к включению в результаты данных для указанного свойства. Вы можете включить этот параметр несколько раз, чтобы запросить несколько свойств, разделенных запятой: <code>,</code>.</p>. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
+						},
+						"propertiesValues": {
+							"options": {
+								"properties": {
+									"displayName": "Свойства сделки, которые нужно включить",
+									"description": "Включать ли определенные свойства сделки в возвращаемые результаты. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								},
+								"propertyMode": {
+									"displayName": "Включать",
+									"description": "Укажите, следует ли получать текущее значение свойства или значение и все исторические значения для этого свойства.",
+									"options": {
+										"valueAndHistory": {
+											"displayName": "Ценность и история"
+										},
+										"valueOnly": {
+											"displayName": "Только значение"
+										}
+									}
+								}
+							}
+						}
+					},
+					"displayName": "Свойства сделки, которые нужно включить",
+					"description": "<p>Используется для включения в результаты определенных свойств сделки. По умолчанию результаты будут включать только идентификатор сделки и не будут включать значения каких-либо свойств ваших сделок.</p><p>Включение этого параметра приведет к включению в результаты данных для указанного свойства. Вы можете включить этот параметр несколько раз, чтобы запросить несколько свойств, разделенных запятой: <code>,</code>.</p>. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>.",
+					"options": {
+						"propertiesValues": {
+							"displayName": "Свойства сделки, которые нужно включить"
+						}
+					}
+				},
+				"includeAssociations": {
+					"displayName": "Включить ассоциации",
+					"description": "Включать ли в результаты идентификаторы связанных контактов и компаний. Это также автоматически включит свойство num_associated_contacts."
+				},
+				"properties": {
+					"displayName": "Свойства сделки, которые нужно включить",
+					"description": "Включите в результаты конкретные свойства сделки. По умолчанию результаты будут включать только идентификатор сделки и не будут включать значения каких-либо свойств ваших сделок."
+				},
+				"propertiesWithHistory": {
+					"displayName": "Свойства сделки с историей для включения",
+					"description": "Работает аналогично свойствам, но этот параметр будет включать историю указанного свойства."
+				},
+				"since": {
+					"displayName": "С",
+					"description": "Возвращайте только сделки, созданные после временной метки x. При использовании выражений время следует указывать в формате ГГГГ-ММ-ДД чч-мм-сс."
+				}
+			}
+		},
+		"type": {
+			"displayName": "Тип",
+			"options": {
+				"call": {
+					"displayName": "Вызов"
+				},
+				"email": {
+					"displayName": "Электронная почта"
+				},
+				"meeting": {
+					"displayName": "Встреча"
+				},
+				"task": {
+					"displayName": "Задача"
+				}
+			}
+		},
+		"dueDate": {
+			"displayName": "Срок оплаты",
+			"description": "Срок выполнения задачи"
+		},
+		"metadata": {
+			"displayName": "Метаданные",
+			"placeholder": "Добавить поле",
+			"options": {
+				"body": {
+					"displayName": "Тело"
+				},
+				"forObjectType": {
+					"displayName": "Для типа объекта",
+					"options": {
+						"COMPANY": {
+							"displayName": "Компания"
+						},
+						"CONTACT": {
+							"displayName": "Контакт"
+						}
+					}
+				},
+				"status": {
+					"displayName": "Статус",
+					"options": {
+						"COMPLETED": {
+							"displayName": "Завершенный"
+						},
+						"DEFERRED": {
+							"displayName": "Отложенный"
+						},
+						"IN_PROGRESS": {
+							"displayName": "В ходе выполнения"
+						},
+						"NOT_STARTED": {
+							"displayName": "Не запущено"
+						},
+						"WAITING": {
+							"displayName": "Ожидающий"
+						},
+						"BUSY": {
+							"displayName": "Занятый"
+						},
+						"CALLING_CRM_USER": {
+							"displayName": "Звонок пользователю CRM"
+						},
+						"CANCELED": {
+							"displayName": "Отменено"
+						},
+						"CONNECTING": {
+							"displayName": "Подключение"
+						},
+						"FAILED": {
+							"displayName": "Неуспешный"
+						},
+						"NO_ANSWER": {
+							"displayName": "Нет ответа"
+						},
+						"QUEUED": {
+							"displayName": "В очереди"
+						},
+						"RINGING": {
+							"displayName": "Звонок"
+						}
+					}
+				},
+				"subject": {
+					"displayName": "Предмет"
+				},
+				"bcc": {
+					"displayName": "BCC"
+				},
+				"cc": {
+					"displayName": "CC"
+				},
+				"fromEmail": {
+					"displayName": "Из электронной почты"
+				},
+				"firstName": {
+					"displayName": "От имени"
+				},
+				"lastName": {
+					"displayName": "От фамилии"
+				},
+				"html": {
+					"displayName": "HTML"
+				},
+				"toEmail": {
+					"displayName": "На электронную почту"
+				},
+				"endTime": {
+					"displayName": "Конец Времени",
+					"description": "При использовании выражений время следует указывать в формате ГГГГ-ММ-ДД чч-мм-сс."
+				},
+				"internalMeetingNotes": {
+					"displayName": "Заметки о внутреннем совещании"
+				},
+				"startTime": {
+					"displayName": "Время начала",
+					"description": "При использовании выражений время следует указывать в формате ГГГГ-ММ-ДД чч-мм-сс."
+				},
+				"title": {
+					"displayName": "Заголовок"
+				},
+				"durationMilliseconds": {
+					"displayName": "Продолжительность миллисекунды"
+				},
+				"fromNumber": {
+					"displayName": "С номера"
+				},
+				"recordingUrl": {
+					"displayName": "URL-адрес записи"
+				},
+				"toNumber": {
+					"displayName": "На номер"
+				}
+			}
+		},
+		"engagementId": {
+			"displayName": "Помолвка, которую нужно удалить"
+		},
+		"pipelineId": {
+			"displayName": "Имя или идентификатор конвейера",
+			"description": "Идентификатор конвейера, в котором находится билет. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"stageId": {
+			"displayName": "Сценическое имя или идентификатор",
+			"description": "Идентификатор этапа конвейера, в котором находится заявка; зависит от идентификатора конвейера. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"ticketName": {
+			"displayName": "Название билета"
+		},
+		"ticketId": {
+			"displayName": "Билет на удаление"
+		}
+	}
+}

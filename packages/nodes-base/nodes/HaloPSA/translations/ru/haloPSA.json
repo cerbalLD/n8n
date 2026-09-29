@@ -1,0 +1,252 @@
+{
+	"header": {
+		"displayName": "ГалоПСА",
+		"description": "Использование API HaloPSA"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"client": {
+					"displayName": "Клиент"
+				},
+				"site": {
+					"displayName": "Сайт"
+				},
+				"ticket": {
+					"displayName": "Билет"
+				},
+				"user": {
+					"displayName": "Пользователь"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать пользователя"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удаление пользователя"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить пользователя"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить много пользователей"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить пользователя"
+				}
+			}
+		},
+		"clientName": {
+			"displayName": "Имя",
+			"description": "Введите имя клиента"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"inactive": {
+					"displayName": "Пользователь неактивен",
+					"options": {
+						"false": {
+							"displayName": "Активный"
+						},
+						"true": {
+							"displayName": "Неактивный"
+						}
+					}
+				},
+				"notes": {
+					"displayName": "Примечания"
+				},
+				"is_vip": {
+					"displayName": "VIP",
+					"description": "VIP клиент или нет"
+				},
+				"website": {
+					"displayName": "Веб-сайт"
+				},
+				"agent_id": {
+					"displayName": "Назначенное имя или идентификатор агента",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"startdate": {
+					"displayName": "Дата начала"
+				},
+				"targetdate": {
+					"displayName": "Целевая дата"
+				},
+				"maincontact_name": {
+					"displayName": "Главный контакт"
+				},
+				"phonenumber": {
+					"displayName": "Номер телефона"
+				},
+				"emailaddress": {
+					"displayName": "Электронная почта"
+				},
+				"password": {
+					"displayName": "Пароль",
+					"description": "Ваш новый пароль должен иметь длину не менее 8 символов и содержать хотя бы одну букву, одну цифру или символ, один символ верхнего и одного нижнего регистра."
+				},
+				"surname": {
+					"displayName": "Фамилия"
+				}
+			}
+		},
+		"clientId": {
+			"displayName": "Имя или идентификатор клиента",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"simplify": {
+			"displayName": "Упрощать",
+			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"activeStatus": {
+					"displayName": "Активный статус",
+					"options": {
+						"active": {
+							"displayName": "Только активный",
+							"description": "Включать ли в ответ активных клиентов"
+						},
+						"all": {
+							"displayName": "Все",
+							"description": "Включать ли в ответ активных и неактивных клиентов"
+						},
+						"inactive": {
+							"displayName": "Только неактивный",
+							"description": "Включать ли в ответ неактивных клиентов"
+						}
+					}
+				},
+				"search": {
+					"displayName": "Текст для фильтрации",
+					"description": "Фильтруйте пользователей по строке поиска"
+				}
+			}
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"inactive": {
+					"displayName": "Пользователь неактивен",
+					"options": {
+						"false": {
+							"displayName": "Активный"
+						},
+						"true": {
+							"displayName": "Неактивный"
+						}
+					}
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Введите имя пользователя"
+				},
+				"notes": {
+					"displayName": "Примечания"
+				},
+				"is_vip": {
+					"displayName": "VIP",
+					"description": "VIP клиент или нет"
+				},
+				"website": {
+					"displayName": "Веб-сайт"
+				},
+				"agent_id": {
+					"displayName": "Назначенное имя или идентификатор агента",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"details": {
+					"displayName": "Подробности"
+				},
+				"startdate": {
+					"displayName": "Дата начала"
+				},
+				"summary": {
+					"displayName": "Краткое содержание"
+				},
+				"targetdate": {
+					"displayName": "Целевая дата"
+				},
+				"client_id": {
+					"displayName": "Идентификатор клиента"
+				},
+				"maincontact_name": {
+					"displayName": "Главный контакт"
+				},
+				"phonenumber": {
+					"displayName": "Номер телефона"
+				},
+				"emailaddress": {
+					"displayName": "Электронная почта"
+				},
+				"password": {
+					"displayName": "Пароль",
+					"description": "Ваш новый пароль должен иметь длину не менее 8 символов и содержать хотя бы одну букву, одну цифру или символ, один символ верхнего и одного нижнего регистра."
+				},
+				"site_id": {
+					"displayName": "Имя или идентификатор сайта",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"surname": {
+					"displayName": "Фамилия"
+				}
+			}
+		},
+		"ticketType": {
+			"displayName": "Название или идентификатор типа билета",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"summary": {
+			"displayName": "Краткое содержание"
+		},
+		"details": {
+			"displayName": "Подробности"
+		},
+		"ticketId": {
+			"displayName": "Идентификатор билета"
+		},
+		"siteName": {
+			"displayName": "Имя",
+			"description": "Введите название сайта"
+		},
+		"selectOption": {
+			"displayName": "Выбор клиента по идентификатору",
+			"description": "Можно ли выбрать клиента по идентификатору"
+		},
+		"siteId": {
+			"displayName": "Имя или идентификатор сайта",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"userName": {
+			"displayName": "Имя",
+			"description": "Введите имя пользователя"
+		},
+		"userId": {
+			"displayName": "ID пользователя"
+		}
+	}
+}

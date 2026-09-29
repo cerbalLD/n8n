@@ -1,0 +1,93 @@
+{
+	"header": {
+		"displayName": "Гугл Книги",
+		"description": "Чтение данных из Google Книг"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"serviceAccount": {
+					"displayName": "Сервисный аккаунт"
+				},
+				"oAuth2": {
+					"displayName": "OAuth2 (рекомендуется)"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"bookshelf": {
+					"displayName": "Книжная полка"
+				},
+				"bookshelfVolume": {
+					"displayName": "Объем книжной полки"
+				},
+				"volume": {
+					"displayName": "Объем"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить ресурс тома на основе идентификатора"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получите множество томов, отфильтрованных по запросу"
+				},
+				"add": {
+					"displayName": "Добавлять",
+					"description": "Добавьте том на книжную полку"
+				},
+				"clear": {
+					"displayName": "Прозрачный",
+					"description": "Убирает все тома с книжной полки."
+				},
+				"move": {
+					"displayName": "Двигаться",
+					"description": "Перемещает том на книжной полке"
+				},
+				"remove": {
+					"displayName": "Удалять",
+					"description": "Убирает том с книжной полки"
+				}
+			}
+		},
+		"myLibrary": {
+			"displayName": "Моя библиотека"
+		},
+		"searchQuery": {
+			"displayName": "Поисковый запрос",
+			"description": "Строка запроса полнотекстового поиска"
+		},
+		"userId": {
+			"displayName": "ID пользователя",
+			"description": "идентификатор пользователя"
+		},
+		"shelfId": {
+			"displayName": "Идентификатор книжной полки",
+			"description": "Идентификатор книжной полки"
+		},
+		"volumeId": {
+			"displayName": "Идентификатор тома",
+			"description": "Идентификатор тома"
+		},
+		"volumePosition": {
+			"displayName": "Позиция громкости",
+			"description": "Позиция на полке для перемещения предмета (0 помещает предмет перед текущим первым предметом, 1 помещает его между первым и вторым и т. д.)"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		}
+	}
+}

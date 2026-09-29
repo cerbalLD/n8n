@@ -1,0 +1,185 @@
+{
+	"header": {
+		"displayName": "Оду",
+		"description": "Использование API Odoo"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"odooApiKeyApi": {
+					"displayName": "Ключ API (рекомендуется)",
+					"description": "Используйте ключ API — сгенерируйте его в «Настройки» > «Технические» > «Ключи API». Требуется Odoo 19+."
+				},
+				"odooApi": {
+					"displayName": "Имя пользователя и пароль",
+					"description": "Устаревшая аутентификация с использованием имени пользователя и пароля"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"activity": {
+					"displayName": "Активность"
+				},
+				"contact": {
+					"displayName": "Контакт"
+				},
+				"custom": {
+					"displayName": "Пользовательский ресурс"
+				},
+				"opportunity": {
+					"displayName": "Возможность"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создайте новую возможность"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить возможность"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получите возможность"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получите много возможностей"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить возможность"
+				}
+			}
+		},
+		"res_model": {
+			"displayName": "Модель связанного документа",
+			"description": "Модель документа Odoo, к которому нужно прикрепить действие."
+		},
+		"res_id": {
+			"displayName": "Связанный документ",
+			"description": "Запись, к которой нужно прикрепить действие"
+		},
+		"activity_type_id": {
+			"displayName": "Тип деятельности",
+			"description": "Вид деятельности по расписанию"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля"
+		},
+		"activityId": {
+			"displayName": "Активность",
+			"description": "Действия для обновления"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"fieldsList": {
+					"displayName": "Поля для включения",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>",
+					"placeholder": "например имя, электронная почта, телефон"
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"res_model": {
+					"displayName": "Модель связанного документа",
+					"description": "Фильтровать действия, связанные с этой моделью",
+					"placeholder": "например Рез.партнер"
+				},
+				"res_id": {
+					"displayName": "Идентификатор связанного документа",
+					"description": "Фильтрация действий, связанных с определенным идентификатором записи"
+				},
+				"filters": {
+					"displayName": "Фильтры"
+				},
+				"filter": {
+					"displayName": "Фильтр",
+					"values": {
+						"fieldName": {
+							"displayName": "Имя поля или идентификатор",
+							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+						},
+						"operator": {
+							"displayName": "Оператор",
+							"options": {
+								"equal": {
+									"displayName": "Равный"
+								},
+								"notEqual": {
+									"displayName": "Не равно"
+								},
+								"greaterThen": {
+									"displayName": "Больше, чем"
+								},
+								"lesserThen": {
+									"displayName": "Меньше, чем"
+								},
+								"greaterOrEqual": {
+									"displayName": "Больше или Равно"
+								},
+								"lesserOrEqual": {
+									"displayName": "Меньше или равно"
+								},
+								"like": {
+									"displayName": "Нравиться"
+								},
+								"in": {
+									"displayName": "В"
+								},
+								"notIn": {
+									"displayName": "Не в"
+								},
+								"childOf": {
+									"displayName": "Дитя"
+								}
+							}
+						},
+						"value": {
+							"displayName": "Ценить"
+						}
+					}
+				}
+			}
+		},
+		"fieldsToSend": {
+			"displayName": "Поля для обновления"
+		},
+		"contactId": {
+			"displayName": "Контакт",
+			"description": "Свяжитесь для обновления"
+		},
+		"customResource": {
+			"displayName": "Имя или идентификатор ресурса",
+			"description": "Модель Odoo для работы"
+		},
+		"recordId": {
+			"displayName": "Записывать",
+			"description": "Запись для обновления"
+		},
+		"opportunityId": {
+			"displayName": "Возможность",
+			"description": "Возможность обновления"
+		}
+	}
+}

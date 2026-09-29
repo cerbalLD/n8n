@@ -1,0 +1,239 @@
+{
+	"header": {
+		"displayName": "Сегмент",
+		"description": "API потребления сегмента"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"group": {
+					"displayName": "Группа",
+					"description": "Группа позволяет связать идентифицированного пользователя с группой."
+				},
+				"identify": {
+					"displayName": "Идентифицировать",
+					"description": "Определить позволяет привязать пользователя к его действиям"
+				},
+				"track": {
+					"displayName": "Отслеживать",
+					"description": "Трек позволяет записывать события"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"add": {
+					"displayName": "Добавлять",
+					"description": "Добавить пользователя в группу"
+				},
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создайте личность"
+				},
+				"event": {
+					"displayName": "Событие",
+					"description": "Записывайте действия, которые выполняют ваши пользователи. Каждое действие вызывает событие, которое также может иметь связанные свойства."
+				},
+				"page": {
+					"displayName": "Страница",
+					"description": "Записывайте просмотры страниц на своем веб-сайте, а также дополнительную информацию о просматриваемой странице."
+				}
+			}
+		},
+		"userId": {
+			"displayName": "ID пользователя"
+		},
+		"groupId": {
+			"displayName": "Идентификатор группы",
+			"description": "Идентификатор группы — это уникальный идентификатор, по которому вы узнаете группу в вашей собственной базе данных."
+		},
+		"traits": {
+			"options": {
+				"traits": {
+					"displayName": "Черты"
+				},
+				"traitsUi": {
+					"displayName": "Черта",
+					"values": {
+						"key": {
+							"displayName": "Ключ"
+						},
+						"value": {
+							"displayName": "Ценить"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить черту",
+			"displayName": "Черты"
+		},
+		"context": {
+			"options": {
+				"context": {
+					"displayName": "Контекст"
+				},
+				"contextUi": {
+					"displayName": "Контекст",
+					"values": {
+						"active": {
+							"displayName": "Активный",
+							"description": "Активен ли пользователь"
+						},
+						"ip": {
+							"displayName": "IP",
+							"description": "IP-адрес текущего пользователя"
+						},
+						"locate": {
+							"displayName": "Языковой стандарт",
+							"description": "Строка локали для текущего пользователя, например en-US."
+						},
+						"page": {
+							"displayName": "Страница",
+							"description": "Словарь информации о текущей странице в браузере, содержащий хеш, путь, реферер, поиск, заголовок и URL-адрес."
+						},
+						"timezone": {
+							"displayName": "Часовой пояс",
+							"description": "Часовые пояса отправляются в виде строк tzdata для добавления информации о часовом поясе пользователя, которая может быть удалена из метки времени, например Америка/Нью_Йорк."
+						},
+						"app": {
+							"options": {
+								"app": {
+									"displayName": "Приложение"
+								},
+								"appUi": {
+									"displayName": "Приложение",
+									"values": {
+										"name": {
+											"displayName": "Имя"
+										},
+										"version": {
+											"displayName": "Версия"
+										},
+										"build": {
+											"displayName": "Строить"
+										}
+									}
+								}
+							},
+							"placeholder": "Добавить приложение",
+							"displayName": "Приложение"
+						},
+						"campaign": {
+							"options": {
+								"campaign": {
+									"displayName": "Кампания"
+								},
+								"campaignUi": {
+									"displayName": "Кампания",
+									"values": {
+										"name": {
+											"displayName": "Имя"
+										},
+										"source": {
+											"displayName": "Источник"
+										},
+										"medium": {
+											"displayName": "Середина"
+										},
+										"term": {
+											"displayName": "Срок"
+										},
+										"content": {
+											"displayName": "Содержание"
+										}
+									}
+								}
+							},
+							"placeholder": "Приложение кампании",
+							"displayName": "Кампания"
+						},
+						"device": {
+							"options": {
+								"device": {
+									"displayName": "Устройство"
+								},
+								"deviceUi": {
+									"displayName": "Устройство",
+									"values": {
+										"id": {
+											"displayName": "ID"
+										},
+										"manufacturer": {
+											"displayName": "Производитель"
+										},
+										"model": {
+											"displayName": "Модель"
+										},
+										"name": {
+											"displayName": "Имя"
+										},
+										"type": {
+											"displayName": "Тип"
+										},
+										"version": {
+											"displayName": "Версия"
+										}
+									}
+								}
+							},
+							"placeholder": "Добавить устройство",
+							"displayName": "Устройство"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить контекст",
+			"displayName": "Контекст"
+		},
+		"integrations": {
+			"options": {
+				"integrations": {
+					"displayName": "Интеграция"
+				},
+				"integrationsUi": {
+					"displayName": "Интеграция",
+					"values": {
+						"all": {
+							"displayName": "Все"
+						},
+						"salesforce": {
+							"displayName": "Salesforce"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить интеграцию",
+			"displayName": "Интеграция"
+		},
+		"event": {
+			"displayName": "Событие",
+			"description": "Название действия, которое выполнил пользователь"
+		},
+		"properties": {
+			"options": {
+				"properties": {
+					"displayName": "Характеристики"
+				},
+				"propertiesUi": {
+					"displayName": "Свойство",
+					"values": {
+						"key": {
+							"displayName": "Ключ"
+						},
+						"value": {
+							"displayName": "Ценить"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить свойства",
+			"displayName": "Характеристики"
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Название страницы. Например, на большинстве сайтов есть страница «Регистрация», которую полезно пометить, чтобы вы могли видеть пользователей по мере их продвижения по воронке продаж."
+		}
+	}
+}

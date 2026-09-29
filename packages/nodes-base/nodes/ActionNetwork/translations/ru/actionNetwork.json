@@ -1,0 +1,646 @@
+{
+	"header": {
+		"displayName": "Сеть действий",
+		"description": "Используйте API сети действий"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"attendance": {
+					"displayName": "посещаемость"
+				},
+				"event": {
+					"displayName": "Событие"
+				},
+				"person": {
+					"displayName": "Человек"
+				},
+				"personTag": {
+					"displayName": "Тег человека"
+				},
+				"petition": {
+					"displayName": "Петиция"
+				},
+				"signature": {
+					"displayName": "Подпись"
+				},
+				"tag": {
+					"displayName": "Ярлык"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать"
+				},
+				"get": {
+					"displayName": "Получать"
+				},
+				"getAll": {
+					"displayName": "Получить много"
+				},
+				"update": {
+					"displayName": "Обновлять"
+				},
+				"add": {
+					"displayName": "Добавлять"
+				},
+				"remove": {
+					"displayName": "Удалять"
+				}
+			}
+		},
+		"personId": {
+			"displayName": "Идентификатор человека",
+			"description": "Идентификатор человека, к которому нужно добавить тег"
+		},
+		"eventId": {
+			"displayName": "Идентификатор события",
+			"description": "Идентификатор события, которое нужно получить"
+		},
+		"simple": {
+			"displayName": "Упрощать",
+			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+		},
+		"attendanceId": {
+			"displayName": "Идентификатор посещаемости",
+			"description": "Идентификатор посещаемости для получения"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"originSystem": {
+			"displayName": "Система происхождения",
+			"description": "Источник, откуда возникла петиция"
+		},
+		"title": {
+			"displayName": "Заголовок",
+			"description": "Название петиции о создании"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"browser_url": {
+					"displayName": "URL-адрес браузера",
+					"description": "URL-адрес страницы этой петиции в Action Network или на третьей стороне."
+				},
+				"description": {
+					"displayName": "Описание",
+					"description": "Описание события. HTML поддерживается."
+				},
+				"end_date": {
+					"displayName": "Дата окончания",
+					"description": "Дата и время окончания мероприятия"
+				},
+				"featured_image_url": {
+					"displayName": "URL избранного изображения",
+					"description": "URL-адрес избранного изображения этого действия в сети действий."
+				},
+				"instructions": {
+					"displayName": "Инструкции",
+					"description": "Инструкции для активистов, видимые после того, как они ответят на приглашение. HTML поддерживается."
+				},
+				"location": {
+					"values": {
+						"location": {
+							"displayName": "Расположение"
+						},
+						"postal_addresses_fields": {
+							"options": {
+								"primary": {
+									"displayName": "Начальный",
+									"description": "Является ли это основным адресом человека"
+								},
+								"address_lines": {
+									"displayName": "Адресная строка",
+									"description": "Строка для адреса человека"
+								},
+								"locality": {
+									"displayName": "Местность",
+									"description": "Город или другая местная административная единица. Если поле пустое, оно будет заполнено на основе геокодирования Action Network."
+								},
+								"region": {
+									"displayName": "Область",
+									"description": "Код штата или подразделения по ISO 3166-2"
+								},
+								"postal_code": {
+									"displayName": "Почтовый индекс",
+									"description": "Почтовый индекс конкретного региона, например почтовый индекс."
+								},
+								"country": {
+									"displayName": "Страна",
+									"description": "Код страны согласно ISO 3166-1 Alpha-2. По умолчанию США."
+								},
+								"language": {
+									"displayName": "Язык",
+									"description": "Язык, на котором записан адрес, согласно ISO 639."
+								},
+								"location": {
+									"values": {
+										"location": {
+											"displayName": "Расположение"
+										},
+										"location_fields": {
+											"options": {
+												"latitude": {
+													"displayName": "Широта",
+													"description": "Широта расположения адреса"
+												},
+												"longitude": {
+													"displayName": "Долгота",
+													"description": "Долгота местоположения адреса"
+												}
+											}
+										}
+									},
+									"displayName": "Расположение",
+									"options": {
+										"location_fields": {
+											"displayName": "Поля местоположения"
+										}
+									}
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить поле местоположения",
+					"displayName": "Расположение",
+					"options": {
+						"postal_addresses_fields": {
+							"displayName": "Поля почтовых адресов"
+						}
+					}
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Внутреннее (не публичное) название петиции"
+				},
+				"start_date": {
+					"displayName": "Дата начала",
+					"description": "Дата и время начала мероприятия"
+				},
+				"family_name": {
+					"displayName": "Фамилия",
+					"description": "Фамилия человека"
+				},
+				"given_name": {
+					"displayName": "Собственное имя",
+					"description": "Имя человека"
+				},
+				"languages_spoken": {
+					"displayName": "Язык общения",
+					"description": "Язык, на котором говорит человек",
+					"options": {
+						"da": {
+							"displayName": "датский"
+						},
+						"nl": {
+							"displayName": "Голландский"
+						},
+						"en": {
+							"displayName": "Английский"
+						},
+						"fi": {
+							"displayName": "финский"
+						},
+						"fr": {
+							"displayName": "Французский"
+						},
+						"de": {
+							"displayName": "немецкий"
+						},
+						"hu": {
+							"displayName": "венгерский"
+						},
+						"id": {
+							"displayName": "индонезийский"
+						},
+						"ja": {
+							"displayName": "японский"
+						},
+						"pt": {
+							"displayName": "Португальский - Португалия"
+						},
+						"br": {
+							"displayName": "Португальский - Бразилия"
+						},
+						"ru": {
+							"displayName": "румынский"
+						},
+						"es": {
+							"displayName": "испанский"
+						},
+						"sv": {
+							"displayName": "Шведский"
+						},
+						"tr": {
+							"displayName": "турецкий"
+						},
+						"cy": {
+							"displayName": "валлийский"
+						}
+					}
+				},
+				"phone_numbers": {
+					"values": {
+						"phone_numbers": {
+							"displayName": "Номер телефона"
+						},
+						"phone_numbers_fields": {
+							"options": {
+								"number": {
+									"displayName": "Число",
+									"description": "Номер мобильного телефона человека в международном формате без плюсика."
+								},
+								"status": {
+									"displayName": "Статус",
+									"description": "Статус подписки этого номера",
+									"options": {
+										"bouncing": {
+											"displayName": "подпрыгивая"
+										},
+										"previous bounce": {
+											"displayName": "Предыдущий отказ"
+										},
+										"subscribed": {
+											"displayName": "Подписан"
+										},
+										"unsubscribed": {
+											"displayName": "Отменил подписку"
+										}
+									}
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить поле номеров телефонов",
+					"displayName": "Номер телефона",
+					"options": {
+						"phone_numbers_fields": {
+							"displayName": "Поля номеров телефонов"
+						}
+					}
+				},
+				"postal_addresses": {
+					"values": {
+						"postal_addresses": {
+							"displayName": "Почтовые адреса"
+						},
+						"postal_addresses_fields": {
+							"options": {
+								"primary": {
+									"displayName": "Начальный",
+									"description": "Является ли это основным адресом человека"
+								},
+								"address_lines": {
+									"displayName": "Адресная строка",
+									"description": "Строка для адреса человека"
+								},
+								"locality": {
+									"displayName": "Местность",
+									"description": "Город или другая местная административная единица. Если поле пустое, оно будет заполнено на основе геокодирования Action Network."
+								},
+								"region": {
+									"displayName": "Область",
+									"description": "Код штата или подразделения по ISO 3166-2"
+								},
+								"postal_code": {
+									"displayName": "Почтовый индекс",
+									"description": "Почтовый индекс конкретного региона, например почтовый индекс."
+								},
+								"country": {
+									"displayName": "Страна",
+									"description": "Код страны согласно ISO 3166-1 Alpha-2. По умолчанию США."
+								},
+								"language": {
+									"displayName": "Язык",
+									"description": "Язык, на котором записан адрес, согласно ISO 639."
+								},
+								"location": {
+									"values": {
+										"location": {
+											"displayName": "Расположение"
+										},
+										"location_fields": {
+											"options": {
+												"latitude": {
+													"displayName": "Широта",
+													"description": "Широта расположения адреса"
+												},
+												"longitude": {
+													"displayName": "Долгота",
+													"description": "Долгота местоположения адреса"
+												}
+											}
+										}
+									},
+									"displayName": "Расположение",
+									"options": {
+										"location_fields": {
+											"displayName": "Поля местоположения"
+										}
+									}
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить поле почтовых адресов",
+					"displayName": "Почтовые адреса",
+					"options": {
+						"postal_addresses_fields": {
+							"displayName": "Поля почтовых адресов"
+						}
+					}
+				},
+				"petition_text": {
+					"displayName": "Текст петиции",
+					"description": "Текст письма адресату петиции"
+				},
+				"target": {
+					"displayName": "Цели",
+					"description": "Названия целей этой петиции, разделенные запятыми."
+				},
+				"comments": {
+					"displayName": "Комментарии",
+					"description": "Комментарии, которые следует оставить при подписании этой петиции"
+				}
+			}
+		},
+		"email_addresses": {
+			"options": {
+				"email_addresses": {
+					"displayName": "Адрес электронной почты",
+					"description": "Адреса электронной почты человека"
+				},
+				"email_addresses_fields": {
+					"displayName": "Поля адресов электронной почты",
+					"values": {
+						"address": {
+							"displayName": "Адрес",
+							"description": "Адрес электронной почты человека"
+						},
+						"status": {
+							"displayName": "Статус",
+							"description": "Статус подписки на этот адрес электронной почты",
+							"options": {
+								"bouncing": {
+									"displayName": "подпрыгивая"
+								},
+								"previous bounce": {
+									"displayName": "Предыдущий отказ"
+								},
+								"previous spam complaint": {
+									"displayName": "Предыдущая жалоба на спам"
+								},
+								"spam complaint": {
+									"displayName": "Жалоба на спам"
+								},
+								"subscribed": {
+									"displayName": "Подписан"
+								},
+								"unsubscribed": {
+									"displayName": "Отменил подписку"
+								}
+							}
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить поле адреса электронной почты",
+			"displayName": "Адрес электронной почты",
+			"description": "Адреса электронной почты человека"
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"family_name": {
+					"displayName": "Фамилия",
+					"description": "Фамилия человека"
+				},
+				"given_name": {
+					"displayName": "Собственное имя",
+					"description": "Имя человека"
+				},
+				"languages_spoken": {
+					"displayName": "Язык общения",
+					"description": "Язык, на котором говорит человек",
+					"options": {
+						"da": {
+							"displayName": "датский"
+						},
+						"nl": {
+							"displayName": "Голландский"
+						},
+						"en": {
+							"displayName": "Английский"
+						},
+						"fi": {
+							"displayName": "финский"
+						},
+						"fr": {
+							"displayName": "Французский"
+						},
+						"de": {
+							"displayName": "немецкий"
+						},
+						"hu": {
+							"displayName": "венгерский"
+						},
+						"id": {
+							"displayName": "индонезийский"
+						},
+						"ja": {
+							"displayName": "японский"
+						},
+						"pt": {
+							"displayName": "Португальский - Португалия"
+						},
+						"br": {
+							"displayName": "Португальский - Бразилия"
+						},
+						"ru": {
+							"displayName": "румынский"
+						},
+						"es": {
+							"displayName": "испанский"
+						},
+						"sv": {
+							"displayName": "Шведский"
+						},
+						"tr": {
+							"displayName": "турецкий"
+						},
+						"cy": {
+							"displayName": "валлийский"
+						}
+					}
+				},
+				"phone_numbers": {
+					"values": {
+						"phone_numbers": {
+							"displayName": "Номер телефона"
+						},
+						"phone_numbers_fields": {
+							"options": {
+								"number": {
+									"displayName": "Число",
+									"description": "Номер мобильного телефона человека в международном формате без плюсика."
+								},
+								"status": {
+									"displayName": "Статус",
+									"description": "Статус подписки этого номера",
+									"options": {
+										"bouncing": {
+											"displayName": "подпрыгивая"
+										},
+										"previous bounce": {
+											"displayName": "Предыдущий отказ"
+										},
+										"subscribed": {
+											"displayName": "Подписан"
+										},
+										"unsubscribed": {
+											"displayName": "Отменил подписку"
+										}
+									}
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить поле номеров телефонов",
+					"displayName": "Номер телефона",
+					"options": {
+						"phone_numbers_fields": {
+							"displayName": "Поля номеров телефонов"
+						}
+					}
+				},
+				"postal_addresses": {
+					"values": {
+						"postal_addresses": {
+							"displayName": "Почтовые адреса"
+						},
+						"postal_addresses_fields": {
+							"options": {
+								"primary": {
+									"displayName": "Начальный",
+									"description": "Является ли это основным адресом человека"
+								},
+								"address_lines": {
+									"displayName": "Адресная строка",
+									"description": "Строка для адреса человека"
+								},
+								"locality": {
+									"displayName": "Местность",
+									"description": "Город или другая местная административная единица. Если поле пустое, оно будет заполнено на основе геокодирования Action Network."
+								},
+								"region": {
+									"displayName": "Область",
+									"description": "Код штата или подразделения по ISO 3166-2"
+								},
+								"postal_code": {
+									"displayName": "Почтовый индекс",
+									"description": "Почтовый индекс конкретного региона, например почтовый индекс."
+								},
+								"country": {
+									"displayName": "Страна",
+									"description": "Код страны согласно ISO 3166-1 Alpha-2. По умолчанию США."
+								},
+								"language": {
+									"displayName": "Язык",
+									"description": "Язык, на котором записан адрес, согласно ISO 639."
+								},
+								"location": {
+									"values": {
+										"location": {
+											"displayName": "Расположение"
+										},
+										"location_fields": {
+											"options": {
+												"latitude": {
+													"displayName": "Широта",
+													"description": "Широта расположения адреса"
+												},
+												"longitude": {
+													"displayName": "Долгота",
+													"description": "Долгота местоположения адреса"
+												}
+											}
+										}
+									},
+									"displayName": "Расположение",
+									"options": {
+										"location_fields": {
+											"displayName": "Поля местоположения"
+										}
+									}
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить поле почтовых адресов",
+					"displayName": "Почтовые адреса",
+					"options": {
+						"postal_addresses_fields": {
+							"displayName": "Поля почтовых адресов"
+						}
+					}
+				},
+				"browser_url": {
+					"displayName": "URL-адрес браузера",
+					"description": "URL-адрес страницы этой петиции в Action Network или на третьей стороне."
+				},
+				"featured_image_url": {
+					"displayName": "URL избранного изображения",
+					"description": "URL-адрес избранного изображения этого действия в сети действий."
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Внутреннее (не публичное) название петиции"
+				},
+				"petition_text": {
+					"displayName": "Текст петиции",
+					"description": "Текст письма адресату петиции"
+				},
+				"target": {
+					"displayName": "Цели",
+					"description": "Названия целей этой петиции, разделенные запятыми."
+				},
+				"comments": {
+					"displayName": "Комментарии",
+					"description": "Комментарии, которые следует оставить при подписании этой петиции"
+				}
+			}
+		},
+		"petitionId": {
+			"displayName": "Идентификатор петиции",
+			"description": "Идентификатор петиции, подпись которой обновить"
+		},
+		"signatureId": {
+			"displayName": "Идентификатор подписи",
+			"description": "Идентификатор подписи для обновления"
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Имя тега, который нужно создать"
+		},
+		"tagId": {
+			"displayName": "Имя или идентификатор тега",
+			"description": "Идентификатор тега, пометку которого нужно удалить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"taggingId": {
+			"displayName": "Имя или идентификатор тега",
+			"description": "Идентификатор тега, который нужно удалить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		}
+	}
+}

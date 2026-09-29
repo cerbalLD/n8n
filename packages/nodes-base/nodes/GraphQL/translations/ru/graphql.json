@@ -1,0 +1,125 @@
+{
+	"header": {
+		"displayName": "ГрафQL",
+		"description": "Делает запрос GraphQL и возвращает полученные данные."
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"description": "Способ аутентификации",
+			"options": {
+				"basicAuth": {
+					"displayName": "Базовая аутентификация"
+				},
+				"customAuth": {
+					"displayName": "Пользовательская аутентификация"
+				},
+				"digestAuth": {
+					"displayName": "Дайджест-аутентификация"
+				},
+				"headerAuth": {
+					"displayName": "Аутентификация заголовка"
+				},
+				"none": {
+					"displayName": "Никто"
+				},
+				"oAuth1": {
+					"displayName": "ОАут1"
+				},
+				"oAuth2": {
+					"displayName": "ОАут2"
+				},
+				"queryAuth": {
+					"displayName": "Запрос аутентификации"
+				}
+			}
+		},
+		"requestMethod": {
+			"displayName": "Метод HTTP-запроса",
+			"description": "Используемый базовый метод HTTP-запроса",
+			"options": {
+				"GET": {
+					"displayName": "GET"
+				},
+				"POST": {
+					"displayName": "POST"
+				}
+			}
+		},
+		"endpoint": {
+			"displayName": "Конечная точка",
+			"description": "Конечная точка GraphQL",
+			"placeholder": "http://example.com/graphql"
+		},
+		"allowUnauthorizedCerts": {
+			"displayName": "Игнорировать проблемы с SSL (небезопасно)",
+			"description": "Загружать ли ответ, даже если проверка сертификата SSL невозможна"
+		},
+		"requestFormat": {
+			"displayName": "Формат запроса",
+			"description": "Формат запроса для полезных данных запроса",
+			"options": {
+				"graphql": {
+					"displayName": "GraphQL (необработанный)",
+					"description": "Необработанная строка запроса GraphQL. Не все серверы поддерживают этот формат. Используйте JSON для лучшей совместимости."
+				},
+				"json": {
+					"displayName": "JSON (рекомендуется)",
+					"description": "Объект JSON со свойствами запроса, переменных и имя_операции. Стандартный и наиболее широко поддерживаемый формат запросов GraphQL."
+				}
+			}
+		},
+		"query": {
+			"displayName": "Запрос",
+			"description": "GraphQL-запрос"
+		},
+		"variables": {
+			"displayName": "Переменные",
+			"description": "Переменные запроса как объект JSON"
+		},
+		"operationName": {
+			"displayName": "Название операции",
+			"description": "Название операции для выполнения"
+		},
+		"responseFormat": {
+			"displayName": "Формат ответа",
+			"description": "Формат, в котором данные возвращаются с URL-адреса.",
+			"options": {
+				"json": {
+					"displayName": "JSON"
+				},
+				"string": {
+					"displayName": "Нить"
+				}
+			}
+		},
+		"dataPropertyName": {
+			"displayName": "Имя свойства данных ответа",
+			"description": "Имя свойства, в которое следует записать данные ответа"
+		},
+		"headerParametersUi": {
+			"options": {
+				"headerParametersUi": {
+					"displayName": "Заголовки",
+					"description": "Заголовки для отправки"
+				},
+				"parameter": {
+					"displayName": "Заголовок",
+					"values": {
+						"name": {
+							"displayName": "Имя",
+							"description": "Название заголовка"
+						},
+						"value": {
+							"displayName": "Ценить",
+							"description": "Значение, которое нужно установить для заголовка"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить заголовок",
+			"displayName": "Заголовки",
+			"description": "Заголовки для отправки"
+		}
+	}
+}

@@ -1,0 +1,63 @@
+{
+	"header": {
+		"displayName": "TOTP",
+		"description": "Сгенерируйте одноразовый пароль на основе времени"
+	},
+	"nodeView": {
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"generateSecret": {
+					"displayName": "Создать секрет"
+				}
+			}
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"algorithm": {
+					"displayName": "Алгоритм",
+					"description": "Алгоритм хеширования HMAC. По умолчанию используется SHA1.",
+					"options": {
+						"SHA1": {
+							"displayName": "SHA1"
+						},
+						"SHA224": {
+							"displayName": "SHA224"
+						},
+						"SHA256": {
+							"displayName": "SHA256"
+						},
+						"SHA3-224": {
+							"displayName": "SHA3-224"
+						},
+						"SHA3-256": {
+							"displayName": "SHA3-256"
+						},
+						"SHA3-384": {
+							"displayName": "SHA3-384"
+						},
+						"SHA3-512": {
+							"displayName": "SHA3-512"
+						},
+						"SHA384": {
+							"displayName": "SHA384"
+						},
+						"SHA512": {
+							"displayName": "SHA512"
+						}
+					}
+				},
+				"digits": {
+					"displayName": "Цифры",
+					"description": "Количество цифр в сгенерированном TOTP-коде. По умолчанию 6 цифр."
+				},
+				"period": {
+					"displayName": "Период",
+					"description": "Сколько секунд действителен сгенерированный код TOTP. По умолчанию 30 секунд."
+				}
+			}
+		}
+	}
+}

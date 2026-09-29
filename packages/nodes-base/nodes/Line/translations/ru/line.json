@@ -1,0 +1,99 @@
+{
+	"header": {
+		"displayName": "Линия",
+		"description": "API потребляемой линии"
+	},
+	"nodeView": {
+		"notice": {
+			"displayName": "Окончание обслуживания: поддержка LINE Notify будет прекращена с 1 апреля 2025 г. Дополнительную информацию можно найти <a href=\"https://notify-bot.line.me/closing-announce\" target=\"_blank\">здесь</a>."
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"notification": {
+					"displayName": "Уведомление"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"send": {
+					"displayName": "Отправлять",
+					"description": "Отправляет уведомления пользователям или группам."
+				}
+			}
+		},
+		"message": {
+			"displayName": "Сообщение"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"imageUi": {
+					"values": {
+						"imageUi": {
+							"displayName": "Изображение"
+						},
+						"imageValue": {
+							"options": {
+								"binaryData": {
+									"displayName": "Двоичный файл"
+								},
+								"imageFullsize": {
+									"displayName": "Изображение в полном размере",
+									"description": "URL-адрес HTTP/HTTPS. Максимальный размер JPEG 2048×2048 пикселей."
+								},
+								"imageThumbnail": {
+									"displayName": "Миниатюра изображения",
+									"description": "URL-адрес HTTP/HTTPS. Максимальный размер JPEG 240×240 пикселей."
+								},
+								"binaryProperty": {
+									"displayName": "Входное двоичное поле",
+									"hint": "Имя входного двоичного поля, содержащего файл для записи."
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить изображение",
+					"displayName": "Изображение",
+					"options": {
+						"imageValue": {
+							"displayName": "Изображение"
+						}
+					}
+				},
+				"notificationDisabled": {
+					"displayName": "Уведомление отключено",
+					"description": "<p>true: пользователь не получает push-уведомление при отправке сообщения.</p><p>false: пользователь получает push-уведомление при отправке сообщения</p>"
+				},
+				"stickerUi": {
+					"values": {
+						"stickerUi": {
+							"displayName": "наклейка"
+						},
+						"stickerValue": {
+							"options": {
+								"stickerId": {
+									"displayName": "Идентификатор стикера"
+								},
+								"stickerPackageId": {
+									"displayName": "Идентификатор пакета стикеров",
+									"description": "Идентификатор пакета"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить стикер",
+					"displayName": "наклейка",
+					"options": {
+						"stickerValue": {
+							"displayName": "наклейка"
+						}
+					}
+				}
+			}
+		}
+	}
+}

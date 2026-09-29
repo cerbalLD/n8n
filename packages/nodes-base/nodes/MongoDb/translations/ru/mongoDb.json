@@ -1,0 +1,146 @@
+{
+	"header": {
+		"displayName": "МонгоБД",
+		"description": "Находите, вставляйте и обновляйте документы в MongoDB."
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"searchIndexes": {
+					"displayName": "Индекс поиска"
+				},
+				"document": {
+					"displayName": "Документ"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"aggregate": {
+					"displayName": "Совокупный",
+					"description": "Совокупные документы"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить документы"
+				},
+				"find": {
+					"displayName": "Находить",
+					"description": "Найти документы"
+				},
+				"findOneAndReplace": {
+					"displayName": "Найти и заменить",
+					"description": "Найти и заменить документы"
+				},
+				"findOneAndUpdate": {
+					"displayName": "Найти и обновить",
+					"description": "Найдите и обновите документы"
+				},
+				"insert": {
+					"displayName": "Вставлять",
+					"description": "Вставка документов"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить документы"
+				},
+				"createSearchIndex": {
+					"displayName": "Создавать"
+				},
+				"dropSearchIndex": {
+					"displayName": "Уронить"
+				},
+				"listSearchIndexes": {
+					"displayName": "Список"
+				},
+				"updateSearchIndex": {
+					"displayName": "Обновлять"
+				}
+			}
+		},
+		"collection": {
+			"displayName": "Коллекция",
+			"description": "Коллекция MongoDB"
+		},
+		"query": {
+			"displayName": "Запрос (формат JSON)",
+			"description": "MongoDB Найти запрос",
+			"hint": "Подробнее о конвейере агрегации <a href=\"https://docs.mongodb.com/manual/core/aggregation-pipeline/\"> можно узнать здесь</a>.",
+			"placeholder": "{ \"рождение\": { \"$gt\": \"1950-01-01\" } }"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"description": "Добавить параметры запроса",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"limit": {
+					"displayName": "Лимит",
+					"description": "Используйте ограничение, чтобы указать максимальное количество документов или 0 для неограниченного количества документов."
+				},
+				"skip": {
+					"displayName": "Пропускать",
+					"description": "Количество документов, которые нужно пропустить в наборе результатов."
+				},
+				"sort": {
+					"displayName": "Сортировка (формат JSON)",
+					"description": "JSON, определяющий порядок сортировки набора результатов.",
+					"placeholder": "{ \"поле\": -1 }"
+				},
+				"projection": {
+					"displayName": "Проекция (формат JSON)",
+					"description": "JSON, определяющий набор полей для получения или исключения из набора результатов.",
+					"placeholder": "{ \"_id\": 0, \"поле\": 1 }"
+				},
+				"dateFields": {
+					"displayName": "Поля даты",
+					"description": "Список полей, разделенных запятыми, которые будут анализироваться как тип даты Mongo."
+				},
+				"useDotNotation": {
+					"displayName": "Используйте точечную нотацию",
+					"description": "Использовать ли точечную запись для доступа к полям даты"
+				}
+			}
+		},
+		"fields": {
+			"displayName": "Поля",
+			"description": "Список полей, разделенных запятыми, которые будут включены в новый документ.",
+			"placeholder": "имя, описание"
+		},
+		"updateKey": {
+			"displayName": "Обновить ключ",
+			"description": "Имя свойства, которое определяет, какие строки в базе данных следует обновить. Обычно это будет «id»."
+		},
+		"upsert": {
+			"displayName": "Upsert",
+			"description": "Следует ли выполнять вставку, если ни один документ не соответствует ключу обновления."
+		},
+		"indexName": {
+			"displayName": "Имя индекса",
+			"description": "Если указано, выводятся только индексы с указанным именем."
+		},
+		"indexNameRequired": {
+			"displayName": "Имя индекса",
+			"description": "Название поискового индекса"
+		},
+		"indexDefinition": {
+			"displayName": "Определение индекса",
+			"description": "Определение индекса поиска",
+			"hint": "Подробнее об определениях индексов поиска <a href=\"https://www.mongodb.com/docs/atlas/atlas-search/index-definitions/\"> можно узнать здесь</a>.",
+			"placeholder": "{ \"type\": \"vectorSearch\", \"definition\": {} }"
+		},
+		"indexType": {
+			"displayName": "Тип индекса",
+			"description": "Тип индекса поискового индекса",
+			"options": {
+				"vectorSearch": {
+					"displayName": "Векторный поиск"
+				},
+				"search": {
+					"displayName": "Поиск"
+				}
+			}
+		}
+	}
+}

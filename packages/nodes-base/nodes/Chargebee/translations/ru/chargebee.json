@@ -1,0 +1,194 @@
+{
+	"header": {
+		"displayName": "Плательщик",
+		"description": "Получить данные из Chargebee API"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"customer": {
+					"displayName": "Клиент"
+				},
+				"invoice": {
+					"displayName": "Счет"
+				},
+				"subscription": {
+					"displayName": "Подписка"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать клиента"
+				},
+				"list": {
+					"displayName": "Список",
+					"description": "Верните счета-фактуры"
+				},
+				"pdfUrl": {
+					"displayName": "URL-адрес счета-фактуры в формате PDF",
+					"description": "Получить URL-адрес счета-фактуры в формате PDF"
+				},
+				"cancel": {
+					"displayName": "Отмена",
+					"description": "Отменить подписку"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить подписку"
+				}
+			}
+		},
+		"properties": {
+			"displayName": "Характеристики",
+			"description": "Свойства, которые нужно установить для нового пользователя",
+			"placeholder": "Добавить недвижимость",
+			"options": {
+				"id": {
+					"displayName": "ID пользователя",
+					"description": "Идентификатор нового клиента. Если не задано, оно будет сгенерировано автоматически."
+				},
+				"first_name": {
+					"displayName": "Имя",
+					"description": "Имя клиента"
+				},
+				"last_name": {
+					"displayName": "Фамилия",
+					"description": "Фамилия клиента"
+				},
+				"email": {
+					"displayName": "Электронная почта",
+					"description": "Адрес электронной почты клиента",
+					"placeholder": "имя@email.com"
+				},
+				"phone": {
+					"displayName": "Телефон",
+					"description": "Номер телефона клиента"
+				},
+				"company": {
+					"displayName": "Компания",
+					"description": "Компания заказчика"
+				},
+				"customProperties": {
+					"values": {
+						"customProperties": {
+							"displayName": "Пользовательские свойства",
+							"description": "Добавляет пользовательское свойство для установки значений, которые не были предварительно определены."
+						},
+						"property": {
+							"options": {
+								"name": {
+									"displayName": "Имя свойства",
+									"description": "Имя свойства, которое нужно установить"
+								},
+								"value": {
+									"displayName": "Стоимость недвижимости",
+									"description": "Значение свойства для установки"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить пользовательское свойство",
+					"displayName": "Пользовательские свойства",
+					"description": "Добавляет пользовательское свойство для установки значений, которые не были предварительно определены.",
+					"options": {
+						"property": {
+							"displayName": "Свойство"
+						}
+					}
+				}
+			}
+		},
+		"maxResults": {
+			"displayName": "Максимальные результаты",
+			"description": "Макс. количество возвращаемых результатов (< 100)."
+		},
+		"filters": {
+			"options": {
+				"filters": {
+					"displayName": "Фильтры",
+					"description": "Фильтровать счета"
+				},
+				"date": {
+					"displayName": "Дата счета",
+					"values": {
+						"operation": {
+							"displayName": "Операция",
+							"description": "Операция по решению, куда следует сопоставить данные",
+							"options": {
+								"is": {
+									"displayName": "Является"
+								},
+								"is_not": {
+									"displayName": "Нет"
+								},
+								"after": {
+									"displayName": "После"
+								},
+								"before": {
+									"displayName": "До"
+								}
+							}
+						},
+						"value": {
+							"displayName": "Дата",
+							"description": "Дата запроса"
+						}
+					}
+				},
+				"total": {
+					"displayName": "Сумма счета",
+					"values": {
+						"operation": {
+							"displayName": "Операция",
+							"description": "Операция по решению, куда следует сопоставить данные",
+							"options": {
+								"gte": {
+									"displayName": "Больше Равно Чем"
+								},
+								"gt": {
+									"displayName": "Больше, чем"
+								},
+								"is": {
+									"displayName": "Является"
+								},
+								"is_not": {
+									"displayName": "Нет"
+								},
+								"lte": {
+									"displayName": "Меньше равно, чем"
+								},
+								"lt": {
+									"displayName": "Меньше, чем"
+								}
+							}
+						},
+						"value": {
+							"displayName": "Количество",
+							"description": "Сумма запроса"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить фильтр",
+			"displayName": "Фильтры",
+			"description": "Фильтровать счета"
+		},
+		"invoiceId": {
+			"displayName": "Идентификатор счета",
+			"description": "Идентификатор счета, который нужно получить"
+		},
+		"subscriptionId": {
+			"displayName": "Идентификатор подписки",
+			"description": "Идентификатор подписки, которую необходимо удалить."
+		},
+		"endOfTerm": {
+			"displayName": "Расписание окончания срока",
+			"description": "Если он не отменит его напрямую, вместо этого запланирует отмену на конец срока."
+		}
+	}
+}

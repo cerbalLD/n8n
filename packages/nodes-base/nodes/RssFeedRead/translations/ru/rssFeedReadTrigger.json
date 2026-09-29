@@ -1,0 +1,12 @@
+{
+	"header": {
+		"displayName": "Триггер RSS-канала",
+		"description": "Запускает рабочий процесс при обновлении RSS-канала."
+	},
+	"nodeView": {
+		"feedUrl": {
+			"displayName": "URL-адрес фида",
+			"description": "URL-адрес RSS-канала для опроса"
+		}
+	}
+}

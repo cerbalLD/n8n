@@ -1,0 +1,1052 @@
+{
+	"header": {
+		"displayName": "Гугл Аналитика",
+		"description": "Используйте API Google Analytics"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"report": {
+					"displayName": "Отчет"
+				},
+				"userActivity": {
+					"displayName": "Активность пользователя"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"get": {
+					"displayName": "Получать",
+					"description": "Возврат данных аналитики"
+				},
+				"search": {
+					"displayName": "Поиск",
+					"description": "Возвращать данные об активности пользователей"
+				}
+			}
+		},
+		"propertyType": {
+			"displayName": "Тип недвижимости",
+			"description": "Google Analytics 4 – последняя версия. Universal Analytics – это старая версия, которая не работает полностью после конца июня 2023 года.",
+			"options": {
+				"ga4": {
+					"displayName": "Гугл Аналитика 4"
+				},
+				"universal": {
+					"displayName": "Универсальная аналитика"
+				}
+			}
+		},
+		"propertyId": {
+			"displayName": "Свойство",
+			"description": "Собственность Google Analytics",
+			"hint": "Если это не помогло, попробуйте изменить поле «Тип свойства» выше."
+		},
+		"dateRange": {
+			"displayName": "Диапазон дат",
+			"options": {
+				"last7days": {
+					"displayName": "Последние 7 дней"
+				},
+				"last30days": {
+					"displayName": "Последние 30 дней"
+				},
+				"today": {
+					"displayName": "Сегодня"
+				},
+				"yesterday": {
+					"displayName": "Вчера"
+				},
+				"lastCalendarWeek": {
+					"displayName": "Последняя полная календарная неделя"
+				},
+				"lastCalendarMonth": {
+					"displayName": "Последний полный календарный месяц"
+				},
+				"custom": {
+					"displayName": "Обычай"
+				}
+			}
+		},
+		"startDate": {
+			"displayName": "Начинать"
+		},
+		"endDate": {
+			"displayName": "Конец"
+		},
+		"metricsGA4": {
+			"options": {
+				"metricsGA4": {
+					"displayName": "Метрики",
+					"description": "Количественные измерения отчета. Например, метрика eventCount — это общее количество событий. Запросы разрешены до 10 метрик."
+				},
+				"metricValues": {
+					"displayName": "Ценности",
+					"values": {
+						"listName": {
+							"displayName": "Метрика",
+							"options": {
+								"active1DayUsers": {
+									"displayName": "Активные пользователи за 1 день"
+								},
+								"active28DayUsers": {
+									"displayName": "Активные пользователи за 28 дней"
+								},
+								"active7DayUsers": {
+									"displayName": "Активные пользователи за 7 дней"
+								},
+								"checkouts": {
+									"displayName": "Кассы"
+								},
+								"eventCount": {
+									"displayName": "События"
+								},
+								"screenPageViews": {
+									"displayName": "Просмотры страниц"
+								},
+								"userEngagementDuration": {
+									"displayName": "Продолжительность сеанса"
+								},
+								"sessions": {
+									"displayName": "Сессии"
+								},
+								"sessionsPerUser": {
+									"displayName": "Сессий на пользователя"
+								},
+								"totalUsers": {
+									"displayName": "Всего пользователей"
+								},
+								"other": {
+									"displayName": "Другие показатели…"
+								},
+								"custom": {
+									"displayName": "Пользовательский показатель…"
+								}
+							}
+						},
+						"name": {
+							"displayName": "Имя",
+							"description": "Имя метрики. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>.",
+							"hint": "Если указано выражение, имя может быть любой строкой, которую вы хотите."
+						},
+						"expression": {
+							"displayName": "Выражение",
+							"description": "Математическое выражение для производных показателей. Например, метрика «Количество событий на пользователя» — eventCount/totalUsers.",
+							"placeholder": "например eventCount/totalUsers"
+						},
+						"invisible": {
+							"displayName": "Невидимый",
+							"description": "Является ли метрика невидимой в ответе отчета. Если метрика невидима, она не будет создавать столбец в ответе, но ее можно использовать в metricFilter, orderBys или выражении метрики."
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить показатель",
+			"displayName": "Метрики",
+			"description": "Количественные измерения отчета. Например, метрика eventCount — это общее количество событий. Запросы разрешены до 10 метрик."
+		},
+		"dimensionsGA4": {
+			"options": {
+				"dimensionsGA4": {
+					"displayName": "Размеры, по которым нужно разделить",
+					"description": "Измерения — это атрибуты ваших данных. Например, параметр «Город» указывает город, из которого происходит событие. Значения измерений в ответах отчета представляют собой строки; например, городом может быть «Париж» или «Нью-Йорк». Запросы могут иметь до 9 измерений."
+				},
+				"dimensionValues": {
+					"displayName": "Ценности",
+					"values": {
+						"listName": {
+							"displayName": "Измерение",
+							"options": {
+								"browser": {
+									"displayName": "Браузер"
+								},
+								"campaignName": {
+									"displayName": "Кампания"
+								},
+								"city": {
+									"displayName": "Город"
+								},
+								"country": {
+									"displayName": "Страна"
+								},
+								"date": {
+									"displayName": "Дата"
+								},
+								"deviceCategory": {
+									"displayName": "Категория устройства"
+								},
+								"itemName": {
+									"displayName": "Название предмета"
+								},
+								"language": {
+									"displayName": "Язык"
+								},
+								"pageLocation": {
+									"displayName": "Местоположение страницы"
+								},
+								"sourceMedium": {
+									"displayName": "Источник/Средство"
+								},
+								"other": {
+									"displayName": "Другие размеры…"
+								}
+							}
+						},
+						"name": {
+							"displayName": "Имя или идентификатор",
+							"description": "Имя измерения. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить измерение",
+			"displayName": "Размеры, по которым нужно разделить",
+			"description": "Измерения — это атрибуты ваших данных. Например, параметр «Город» указывает город, из которого происходит событие. Значения измерений в ответах отчета представляют собой строки; например, городом может быть «Париж» или «Нью-Йорк». Запросы могут иметь до 9 измерений."
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"simple": {
+			"displayName": "Упростите вывод",
+			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"currencyCode": {
+					"displayName": "Код валюты",
+					"description": "Код валюты в формате ISO4217, например «AED», «USD», «JPY». Если поле пусто, в отчете используется валюта ресурса по умолчанию."
+				},
+				"dimensionFiltersUI": {
+					"values": {
+						"dimensionFiltersUI": {
+							"displayName": "Фильтры размеров"
+						},
+						"filterExpressions": {
+							"options": {
+								"filterExpressionType": {
+									"displayName": "Тип выражения фильтра",
+									"options": {
+										"andGroup": {
+											"displayName": "И группа"
+										},
+										"orGroup": {
+											"displayName": "Или группа"
+										}
+									}
+								},
+								"expression": {
+									"values": {
+										"expression": {
+											"displayName": "Выражение"
+										},
+										"stringFilter": {
+											"options": {
+												"listName": {
+													"displayName": "Измерение",
+													"options": {
+														"browser": {
+															"displayName": "Браузер"
+														},
+														"campaignName": {
+															"displayName": "Кампания"
+														},
+														"city": {
+															"displayName": "Город"
+														},
+														"country": {
+															"displayName": "Страна"
+														},
+														"date": {
+															"displayName": "Дата"
+														},
+														"deviceCategory": {
+															"displayName": "Категория устройства"
+														},
+														"itemName": {
+															"displayName": "Название предмета"
+														},
+														"language": {
+															"displayName": "Язык"
+														},
+														"pageLocation": {
+															"displayName": "Местоположение страницы"
+														},
+														"sourceMedium": {
+															"displayName": "Источник/Средство"
+														},
+														"other": {
+															"displayName": "Другие размеры…"
+														}
+													}
+												},
+												"name": {
+													"displayName": "Имя или идентификатор",
+													"description": "Имя измерения. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+												},
+												"value": {
+													"displayName": "Ценить"
+												},
+												"caseSensitive": {
+													"displayName": "С учетом регистра"
+												},
+												"matchType": {
+													"displayName": "Тип соответствия",
+													"options": {
+														"BEGINS_WITH": {
+															"displayName": "Начинается с"
+														},
+														"CONTAINS": {
+															"displayName": "Содержит значение"
+														},
+														"ENDS_WITH": {
+															"displayName": "Заканчивается на"
+														},
+														"EXACT": {
+															"displayName": "Точное совпадение"
+														},
+														"FULL_REGEXP": {
+															"displayName": "Полное совпадение с регулярным выражением"
+														},
+														"PARTIAL_REGEXP": {
+															"displayName": "Частичное совпадение регулярного выражения"
+														}
+													}
+												}
+											}
+										},
+										"inListFilter": {
+											"options": {
+												"listName": {
+													"displayName": "Измерение",
+													"options": {
+														"browser": {
+															"displayName": "Браузер"
+														},
+														"campaignName": {
+															"displayName": "Кампания"
+														},
+														"city": {
+															"displayName": "Город"
+														},
+														"country": {
+															"displayName": "Страна"
+														},
+														"date": {
+															"displayName": "Дата"
+														},
+														"deviceCategory": {
+															"displayName": "Категория устройства"
+														},
+														"itemName": {
+															"displayName": "Название предмета"
+														},
+														"language": {
+															"displayName": "Язык"
+														},
+														"pageLocation": {
+															"displayName": "Местоположение страницы"
+														},
+														"sourceMedium": {
+															"displayName": "Источник/Средство"
+														},
+														"other": {
+															"displayName": "Другие размеры…"
+														}
+													}
+												},
+												"name": {
+													"displayName": "Имя или идентификатор",
+													"description": "Имя измерения. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+												},
+												"values": {
+													"displayName": "Ценности",
+													"hint": "Список значений, разделенных запятыми. Должно быть непусто."
+												},
+												"caseSensitive": {
+													"displayName": "С учетом регистра"
+												}
+											}
+										},
+										"numericFilter": {
+											"options": {
+												"listName": {
+													"displayName": "Измерение",
+													"options": {
+														"browser": {
+															"displayName": "Браузер"
+														},
+														"campaignName": {
+															"displayName": "Кампания"
+														},
+														"city": {
+															"displayName": "Город"
+														},
+														"country": {
+															"displayName": "Страна"
+														},
+														"date": {
+															"displayName": "Дата"
+														},
+														"deviceCategory": {
+															"displayName": "Категория устройства"
+														},
+														"itemName": {
+															"displayName": "Название предмета"
+														},
+														"language": {
+															"displayName": "Язык"
+														},
+														"pageLocation": {
+															"displayName": "Местоположение страницы"
+														},
+														"sourceMedium": {
+															"displayName": "Источник/Средство"
+														},
+														"other": {
+															"displayName": "Другие размеры…"
+														}
+													}
+												},
+												"name": {
+													"displayName": "Имя или идентификатор",
+													"description": "Имя измерения. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+												},
+												"valueType": {
+													"displayName": "Тип значения",
+													"options": {
+														"doubleValue": {
+															"displayName": "Двойное значение"
+														},
+														"int64Value": {
+															"displayName": "Целое значение"
+														}
+													}
+												},
+												"value": {
+													"displayName": "Ценить"
+												},
+												"operation": {
+													"displayName": "Операция",
+													"options": {
+														"EQUAL": {
+															"displayName": "Равный"
+														},
+														"GREATER_THAN": {
+															"displayName": "Больше, чем"
+														},
+														"GREATER_THAN_OR_EQUAL": {
+															"displayName": "Больше или равно"
+														},
+														"LESS_THAN": {
+															"displayName": "Меньше, чем"
+														},
+														"LESS_THAN_OR_EQUAL": {
+															"displayName": "Меньше или равно"
+														}
+													}
+												}
+											}
+										}
+									},
+									"placeholder": "Добавить выражение",
+									"displayName": "Выражение",
+									"options": {
+										"stringFilter": {
+											"displayName": "Строковый фильтр"
+										},
+										"inListFilter": {
+											"displayName": "В фильтре списка"
+										},
+										"numericFilter": {
+											"displayName": "Числовой фильтр"
+										}
+									}
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить фильтр",
+					"displayName": "Фильтры размеров",
+					"options": {
+						"filterExpressions": {
+							"displayName": "Фильтровать выражения"
+						}
+					}
+				},
+				"metricAggregations": {
+					"displayName": "Агрегация показателей",
+					"options": {
+						"MAXIMUM": {
+							"displayName": "MAXIMUM"
+						},
+						"MINIMUM": {
+							"displayName": "MINIMUM"
+						},
+						"TOTAL": {
+							"displayName": "TOTAL"
+						}
+					}
+				},
+				"metricsFiltersUI": {
+					"values": {
+						"metricsFiltersUI": {
+							"displayName": "Фильтры метрик"
+						},
+						"filterExpressions": {
+							"options": {
+								"filterExpressionType": {
+									"displayName": "Тип выражения фильтра",
+									"options": {
+										"andGroup": {
+											"displayName": "И группа"
+										},
+										"orGroup": {
+											"displayName": "Или группа"
+										}
+									}
+								},
+								"expression": {
+									"values": {
+										"expression": {
+											"displayName": "Выражение"
+										},
+										"betweenFilter": {
+											"options": {
+												"listName": {
+													"displayName": "Метрика",
+													"options": {
+														"active1DayUsers": {
+															"displayName": "Активные пользователи за 1 день"
+														},
+														"active28DayUsers": {
+															"displayName": "Активные пользователи за 28 дней"
+														},
+														"active7DayUsers": {
+															"displayName": "Активные пользователи за 7 дней"
+														},
+														"checkouts": {
+															"displayName": "Кассы"
+														},
+														"eventCount": {
+															"displayName": "События"
+														},
+														"screenPageViews": {
+															"displayName": "Просмотры страниц"
+														},
+														"userEngagementDuration": {
+															"displayName": "Продолжительность сеанса"
+														},
+														"sessions": {
+															"displayName": "Сессии"
+														},
+														"sessionsPerUser": {
+															"displayName": "Сессий на пользователя"
+														},
+														"totalUsers": {
+															"displayName": "Всего пользователей"
+														},
+														"other": {
+															"displayName": "Другие показатели…"
+														},
+														"custom": {
+															"displayName": "Пользовательский показатель…"
+														}
+													}
+												},
+												"name": {
+													"displayName": "Имя",
+													"description": "Имя метрики. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>.",
+													"hint": "Если указано выражение, имя может быть любой строкой, которую вы хотите."
+												},
+												"valueType": {
+													"displayName": "Тип значения",
+													"options": {
+														"doubleValue": {
+															"displayName": "Двойное значение"
+														},
+														"int64Value": {
+															"displayName": "Целое значение"
+														}
+													}
+												},
+												"fromValue": {
+													"displayName": "От значения"
+												},
+												"toValue": {
+													"displayName": "Ценить"
+												}
+											}
+										},
+										"numericFilter": {
+											"options": {
+												"listName": {
+													"displayName": "Метрика",
+													"options": {
+														"active1DayUsers": {
+															"displayName": "Активные пользователи за 1 день"
+														},
+														"active28DayUsers": {
+															"displayName": "Активные пользователи за 28 дней"
+														},
+														"active7DayUsers": {
+															"displayName": "Активные пользователи за 7 дней"
+														},
+														"checkouts": {
+															"displayName": "Кассы"
+														},
+														"eventCount": {
+															"displayName": "События"
+														},
+														"screenPageViews": {
+															"displayName": "Просмотры страниц"
+														},
+														"userEngagementDuration": {
+															"displayName": "Продолжительность сеанса"
+														},
+														"sessions": {
+															"displayName": "Сессии"
+														},
+														"sessionsPerUser": {
+															"displayName": "Сессий на пользователя"
+														},
+														"totalUsers": {
+															"displayName": "Всего пользователей"
+														},
+														"other": {
+															"displayName": "Другие показатели…"
+														},
+														"custom": {
+															"displayName": "Пользовательский показатель…"
+														}
+													}
+												},
+												"name": {
+													"displayName": "Имя",
+													"description": "Имя метрики. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>.",
+													"hint": "Если указано выражение, имя может быть любой строкой, которую вы хотите."
+												},
+												"valueType": {
+													"displayName": "Тип значения",
+													"options": {
+														"doubleValue": {
+															"displayName": "Двойное значение"
+														},
+														"int64Value": {
+															"displayName": "Целое значение"
+														}
+													}
+												},
+												"value": {
+													"displayName": "Ценить"
+												},
+												"operation": {
+													"displayName": "Операция",
+													"options": {
+														"EQUAL": {
+															"displayName": "Равный"
+														},
+														"GREATER_THAN": {
+															"displayName": "Больше, чем"
+														},
+														"GREATER_THAN_OR_EQUAL": {
+															"displayName": "Больше или равно"
+														},
+														"LESS_THAN": {
+															"displayName": "Меньше, чем"
+														},
+														"LESS_THAN_OR_EQUAL": {
+															"displayName": "Меньше или равно"
+														}
+													}
+												}
+											}
+										}
+									},
+									"placeholder": "Добавить выражение",
+									"displayName": "Выражение",
+									"options": {
+										"betweenFilter": {
+											"displayName": "Между фильтром"
+										},
+										"numericFilter": {
+											"displayName": "Числовой фильтр"
+										}
+									}
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить фильтр",
+					"displayName": "Фильтры метрик",
+					"options": {
+						"filterExpressions": {
+							"displayName": "Фильтровать выражения"
+						}
+					}
+				},
+				"keepEmptyRows": {
+					"displayName": "Сохраняйте пустые строки",
+					"description": "Независимо от того, является ли значение false или не указано, каждая строка со всеми метриками, равными 0, не будет возвращена. Если это правда, эти строки будут возвращены, если они не будут удалены фильтром отдельно."
+				},
+				"orderByUI": {
+					"values": {
+						"orderByUI": {
+							"displayName": "Заказать по",
+							"description": "Указывает, как упорядочены строки в ответе."
+						},
+						"metricOrderBy": {
+							"options": {
+								"desc": {
+									"displayName": "По убыванию",
+									"description": "Верно ли, сортируется по убыванию"
+								},
+								"metricName": {
+									"displayName": "Имя или идентификатор метрики",
+									"description": "Сортировка по значениям показателей. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								}
+							}
+						},
+						"dimmensionOrderBy": {
+							"options": {
+								"desc": {
+									"displayName": "По убыванию",
+									"description": "Верно ли, сортируется по убыванию"
+								},
+								"dimensionName": {
+									"displayName": "Имя или идентификатор измерения",
+									"description": "Сортировка по значениям показателей. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								},
+								"orderType": {
+									"displayName": "Тип заказа",
+									"options": {
+										"ALPHANUMERIC": {
+											"displayName": "Буквенно-цифровой",
+											"description": "Буквенно-цифровая сортировка по кодовой точке Юникода"
+										},
+										"CASE_INSENSITIVE_ALPHANUMERIC": {
+											"displayName": "Нечувствительный к регистру буквенно-цифровой",
+											"description": "Буквенно-цифровая сортировка без учета регистра по строчным буквам кода Юникода"
+										},
+										"NUMERIC": {
+											"displayName": "Числовой",
+											"description": "Значения измерений преобразуются в числа перед сортировкой."
+										},
+										"ORDER_TYPE_UNSPECIFIED": {
+											"displayName": "Не указано"
+										}
+									}
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить заказ",
+					"displayName": "Заказать по",
+					"description": "Указывает, как упорядочены строки в ответе.",
+					"options": {
+						"metricOrderBy": {
+							"displayName": "Метрический порядок по"
+						},
+						"dimmensionOrderBy": {
+							"displayName": "Порядок размеров по"
+						}
+					}
+				},
+				"returnPropertyQuota": {
+					"displayName": "Возврат квоты на недвижимость",
+					"description": "Возвращать ли текущее состояние квоты этого ресурса аналитики. Квота возвращается в PropertyQuota."
+				},
+				"dimensionFiltersUi": {
+					"values": {
+						"dimensionFiltersUi": {
+							"displayName": "Фильтры измерений",
+							"description": "Фильтры параметров в запросе"
+						},
+						"filterValues": {
+							"options": {
+								"listName": {
+									"displayName": "Измерение",
+									"options": {
+										"ga:browser": {
+											"displayName": "Браузер"
+										},
+										"ga:campaign": {
+											"displayName": "Кампания"
+										},
+										"ga:city": {
+											"displayName": "Город"
+										},
+										"ga:country": {
+											"displayName": "Страна"
+										},
+										"ga:date": {
+											"displayName": "Дата"
+										},
+										"ga:deviceCategory": {
+											"displayName": "Категория устройства"
+										},
+										"ga:productName": {
+											"displayName": "Название предмета"
+										},
+										"ga:language": {
+											"displayName": "Язык"
+										},
+										"ga:pagePath": {
+											"displayName": "Страница"
+										},
+										"ga:sourceMedium": {
+											"displayName": "Источник/Средство"
+										},
+										"other": {
+											"displayName": "Другие размеры…"
+										}
+									}
+								},
+								"name": {
+									"displayName": "Имя или идентификатор",
+									"description": "Имя извлекаемого измерения, например ga:browser. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								},
+								"operator": {
+									"displayName": "Оператор",
+									"description": "Оператор для использования в сочетании со значением",
+									"options": {
+										"BEGINS_WITH": {
+											"displayName": "Начинается с"
+										},
+										"ENDS_WITH": {
+											"displayName": "Заканчивается на"
+										},
+										"NUMERIC_EQUAL": {
+											"displayName": "Равно (число)"
+										},
+										"EXACT": {
+											"displayName": "Точно совпадает"
+										},
+										"NUMERIC_GREATER_THAN": {
+											"displayName": "Больше (число)"
+										},
+										"NUMERIC_LESS_THAN": {
+											"displayName": "Меньше чем (число)"
+										},
+										"PARTIAL": {
+											"displayName": "Частично совпадения"
+										},
+										"REGEXP": {
+											"displayName": "Регулярное выражение"
+										}
+									}
+								},
+								"expressions": {
+									"displayName": "Ценить",
+									"description": "Строка или <a href=\"https://support.google.com/analytics/answer/1034324?hl=en\">регулярное выражение</a> для сопоставления"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить фильтр измерений",
+					"displayName": "Фильтры измерений",
+					"description": "Фильтры параметров в запросе",
+					"options": {
+						"filterValues": {
+							"displayName": "Фильтры"
+						}
+					}
+				},
+				"hideTotals": {
+					"displayName": "Скрыть итоги",
+					"description": "Скрывать ли общую сумму всех показателей для всех совпадающих строк для каждого диапазона дат."
+				},
+				"hideValueRanges": {
+					"displayName": "Скрыть диапазоны значений",
+					"description": "Скрывать ли минимум и максимум во всех совпадающих строках"
+				},
+				"includeEmptyRows": {
+					"displayName": "Включить пустые строки",
+					"description": "Исключает ли ответ строки, если все полученные метрики равны нулю"
+				},
+				"useResourceQuotas": {
+					"displayName": "Используйте квоты ресурсов",
+					"description": "Включить ли квоты на основе ресурсов"
+				},
+				"activityTypes": {
+					"displayName": "Виды деятельности",
+					"description": "Запрошенный вид деятельности",
+					"options": {
+						"ECOMMERCE": {
+							"displayName": "Электронная коммерция"
+						},
+						"EVENT": {
+							"displayName": "Событие"
+						},
+						"GOAL": {
+							"displayName": "Цель"
+						},
+						"PAGEVIEW": {
+							"displayName": "Просмотр страницы"
+						},
+						"SCREENVIEW": {
+							"displayName": "Просмотр экрана"
+						}
+					}
+				}
+			}
+		},
+		"viewId": {
+			"displayName": "Просмотр имени или идентификатора",
+			"description": "Вид из Google Analytics. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>.",
+			"hint": "Если здесь ничего нет, попробуйте изменить поле «Тип объекта» выше.",
+			"placeholder": "123456"
+		},
+		"metricsUA": {
+			"options": {
+				"metricsUA": {
+					"displayName": "Метрики",
+					"description": "Метрики в запросе"
+				},
+				"metricValues": {
+					"displayName": "Метрика",
+					"values": {
+						"listName": {
+							"displayName": "Метрика",
+							"options": {
+								"ga:productCheckouts": {
+									"displayName": "Кассы"
+								},
+								"ga:totalEvents": {
+									"displayName": "События"
+								},
+								"ga:pageviews": {
+									"displayName": "Просмотры страниц"
+								},
+								"ga:sessionDuration": {
+									"displayName": "Продолжительность сеанса"
+								},
+								"ga:sessions": {
+									"displayName": "Сессии"
+								},
+								"ga:sessionsPerUser": {
+									"displayName": "Сессий на пользователя"
+								},
+								"ga:users": {
+									"displayName": "Всего пользователей"
+								},
+								"other": {
+									"displayName": "Другие показатели…"
+								},
+								"custom": {
+									"displayName": "Пользовательский показатель…"
+								}
+							}
+						},
+						"name": {
+							"displayName": "Имя",
+							"description": "Имя метрики. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>.",
+							"hint": "Если указано выражение, имя может быть любой строкой, которую вы хотите."
+						},
+						"expression": {
+							"displayName": "Выражение",
+							"description": "Подробнее о <a href=\"https://developers.google.com/analytics/devguides/reporting/core/v4/rest/v4/reports/batchGet#Metric\">метрических выражениях Google Analytics</a>…",
+							"placeholder": "например ga:totalRefunds/ga:users"
+						},
+						"formattingType": {
+							"displayName": "Тип форматирования",
+							"description": "Указывает, как должно быть отформатировано выражение метрики.",
+							"options": {
+								"CURRENCY": {
+									"displayName": "Валюта"
+								},
+								"FLOAT": {
+									"displayName": "Плавать"
+								},
+								"INTEGER": {
+									"displayName": "Целое число"
+								},
+								"PERCENT": {
+									"displayName": "Процент"
+								},
+								"TIME": {
+									"displayName": "Время"
+								}
+							}
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить показатель",
+			"displayName": "Метрики",
+			"description": "Метрики в запросе"
+		},
+		"dimensionsUA": {
+			"options": {
+				"dimensionsUA": {
+					"displayName": "Размеры, по которым нужно разделить",
+					"description": "Измерения — это атрибуты ваших данных. Например, измерение ga:city указывает город, например «Париж» или «Нью-Йорк», из которого происходит сеанс."
+				},
+				"dimensionValues": {
+					"displayName": "Ценности",
+					"values": {
+						"listName": {
+							"displayName": "Измерение",
+							"options": {
+								"ga:browser": {
+									"displayName": "Браузер"
+								},
+								"ga:campaign": {
+									"displayName": "Кампания"
+								},
+								"ga:city": {
+									"displayName": "Город"
+								},
+								"ga:country": {
+									"displayName": "Страна"
+								},
+								"ga:date": {
+									"displayName": "Дата"
+								},
+								"ga:deviceCategory": {
+									"displayName": "Категория устройства"
+								},
+								"ga:productName": {
+									"displayName": "Название предмета"
+								},
+								"ga:language": {
+									"displayName": "Язык"
+								},
+								"ga:pagePath": {
+									"displayName": "Страница"
+								},
+								"ga:sourceMedium": {
+									"displayName": "Источник/Средство"
+								},
+								"other": {
+									"displayName": "Другие размеры…"
+								}
+							}
+						},
+						"name": {
+							"displayName": "Имя или идентификатор",
+							"description": "Имя извлекаемого измерения, например ga:browser. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить измерение",
+			"displayName": "Размеры, по которым нужно разделить",
+			"description": "Измерения — это атрибуты ваших данных. Например, измерение ga:city указывает город, например «Париж» или «Нью-Йорк», из которого происходит сеанс."
+		},
+		"userId": {
+			"displayName": "ID пользователя",
+			"description": "идентификатор пользователя",
+			"placeholder": "123456"
+		}
+	}
+}

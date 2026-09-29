@@ -1,0 +1,1673 @@
+{
+	"header": {
+		"displayName": "Быстрые книги онлайн",
+		"description": "Используйте API QuickBooks Online"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"bill": {
+					"displayName": "Счет"
+				},
+				"customer": {
+					"displayName": "Клиент"
+				},
+				"employee": {
+					"displayName": "Сотрудник"
+				},
+				"estimate": {
+					"displayName": "Оценивать"
+				},
+				"invoice": {
+					"displayName": "Счет"
+				},
+				"item": {
+					"displayName": "Элемент"
+				},
+				"payment": {
+					"displayName": "Оплата"
+				},
+				"purchase": {
+					"displayName": "Покупка"
+				},
+				"transaction": {
+					"displayName": "Сделка"
+				},
+				"vendor": {
+					"displayName": "Продавец"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать"
+				},
+				"delete": {
+					"displayName": "Удалить"
+				},
+				"get": {
+					"displayName": "Получать"
+				},
+				"getAll": {
+					"displayName": "Получить много"
+				},
+				"update": {
+					"displayName": "Обновлять"
+				},
+				"send": {
+					"displayName": "Отправлять"
+				},
+				"void": {
+					"displayName": "Пустота"
+				},
+				"getReport": {
+					"displayName": "Получить отчет"
+				}
+			}
+		},
+		"VendorRef": {
+			"displayName": "Для имени или идентификатора поставщика",
+			"description": "Идентификатор поставщика, которому выставлен счет. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"Line": {
+			"displayName": "Линия",
+			"description": "Отдельная позиция транзакции",
+			"placeholder": "Добавить свойство позиции",
+			"options": {
+				"accountId": {
+					"displayName": "Идентификатор аккаунта"
+				},
+				"Amount": {
+					"displayName": "Количество",
+					"description": "Денежная сумма позиции"
+				},
+				"Description": {
+					"displayName": "Описание",
+					"description": "Текстовое описание позиции"
+				},
+				"DetailType": {
+					"displayName": "Тип детали",
+					"options": {
+						"AccountBasedExpenseLineDetail": {
+							"displayName": "Детализация строки расходов на основе счета"
+						},
+						"ItemBasedExpenseLineDetail": {
+							"displayName": "Детализация строки расходов по статьям"
+						},
+						"SalesItemLineDetail": {
+							"displayName": "Подробности строки позиции продаж"
+						}
+					}
+				},
+				"itemId": {
+					"displayName": "Имя или идентификатор элемента",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"LineNum": {
+					"displayName": "Позиция",
+					"description": "Позиция позиции относительно других"
+				},
+				"TaxCodeRef": {
+					"displayName": "Налоговый код Имя или идентификатор",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"Qty": {
+					"displayName": "Количество",
+					"description": "Количество единиц позиции"
+				}
+			}
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"APAccountRef": {
+					"values": {
+						"APAccountRef": {
+							"displayName": "Счета к оплате",
+							"description": "Счет кредиторской задолженности, на который будет зачислен счет"
+						},
+						"details": {
+							"options": {
+								"name": {
+									"displayName": "Имя"
+								},
+								"value": {
+									"displayName": "ID"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить поля APA",
+					"displayName": "Счета к оплате",
+					"description": "Счет кредиторской задолженности, на который будет зачислен счет",
+					"options": {
+						"details": {
+							"displayName": "Подробности"
+						}
+					}
+				},
+				"Balance": {
+					"displayName": "Баланс",
+					"description": "Баланс, отражающий любые платежи, произведенные по транзакции"
+				},
+				"DueDate": {
+					"displayName": "Срок оплаты",
+					"description": "Дата наступления срока оплаты сделки"
+				},
+				"SalesTermRef": {
+					"values": {
+						"SalesTermRef": {
+							"displayName": "Срок продажи",
+							"description": "Срок продажи, связанный со сделкой"
+						},
+						"details": {
+							"options": {
+								"name": {
+									"displayName": "Имя"
+								},
+								"value": {
+									"displayName": "ID"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавьте поля условий продажи",
+					"displayName": "Срок продажи",
+					"description": "Срок продажи, связанный со сделкой",
+					"options": {
+						"details": {
+							"displayName": "Подробности"
+						}
+					}
+				},
+				"TotalAmt": {
+					"displayName": "Общая сумма",
+					"description": "Общая сумма сделки"
+				},
+				"TxnDate": {
+					"displayName": "Дата транзакции",
+					"description": "Дата, когда произошла транзакция"
+				},
+				"Active": {
+					"displayName": "Активный",
+					"description": "Включен ли сотрудник в настоящее время для использования QuickBooks"
+				},
+				"BalanceWithJobs": {
+					"displayName": "Баланс с работой",
+					"description": "Совокупная сумма открытого баланса для клиента (или задания) и всех его подзаданий."
+				},
+				"BillAddr": {
+					"values": {
+						"BillAddr": {
+							"displayName": "Адрес для выставления счета"
+						},
+						"details": {
+							"options": {
+								"City": {
+									"displayName": "Город"
+								},
+								"Line1": {
+									"displayName": "Линия 1"
+								},
+								"PostalCode": {
+									"displayName": "Почтовый индекс"
+								},
+								"Lat": {
+									"displayName": "Широта"
+								},
+								"Long": {
+									"displayName": "Долгота"
+								},
+								"CountrySubDivisionCode": {
+									"displayName": "Код подразделения страны"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавьте поля адреса для выставления счетов",
+					"displayName": "Адрес для выставления счета",
+					"options": {
+						"details": {
+							"displayName": "Подробности"
+						}
+					}
+				},
+				"BillWithParent": {
+					"displayName": "Билл с родителем",
+					"description": "Выставлять ли счет этому клиенту вместе с его родительским предприятием"
+				},
+				"CompanyName": {
+					"displayName": "Название компании"
+				},
+				"FamilyName": {
+					"displayName": "Фамилия"
+				},
+				"FullyQualifiedName": {
+					"displayName": "Полное имя"
+				},
+				"GivenName": {
+					"displayName": "Собственное имя"
+				},
+				"PreferredDeliveryMethod": {
+					"displayName": "Предпочтительный способ доставки",
+					"options": {
+						"Print": {
+							"displayName": "Распечатать"
+						},
+						"Email": {
+							"displayName": "Электронная почта"
+						},
+						"None": {
+							"displayName": "Никто"
+						}
+					}
+				},
+				"PrimaryEmailAddr": {
+					"displayName": "Основной адрес электронной почты"
+				},
+				"PrimaryPhone": {
+					"displayName": "Основной телефон"
+				},
+				"PrintOnCheckName": {
+					"displayName": "Имя для печати на чеке",
+					"description": "Имя поставщика, указанное на чеке"
+				},
+				"Taxable": {
+					"displayName": "облагаемый налогом",
+					"description": "Облагаются ли налогом транзакции для этого клиента"
+				},
+				"BillableTime": {
+					"displayName": "Оплачиваемое время"
+				},
+				"DisplayName": {
+					"displayName": "Отображаемое имя"
+				},
+				"SSN": {
+					"displayName": "Номер социального страхования"
+				},
+				"ApplyTaxAfterDiscount": {
+					"displayName": "Применить налог после скидки"
+				},
+				"BillEmail": {
+					"displayName": "Электронная почта для выставления счетов",
+					"description": "Адрес электронной почты, на который будет отправлен счет"
+				},
+				"CustomFields": {
+					"values": {
+						"CustomFields": {
+							"displayName": "Пользовательские поля"
+						},
+						"Field": {
+							"options": {
+								"DefinitionId": {
+									"displayName": "Имя или идентификатор определения поля",
+									"description": "Идентификатор поля, которое необходимо установить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								},
+								"StringValue": {
+									"displayName": "Значение поля",
+									"description": "Значение поля для установки"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить пользовательские поля",
+					"displayName": "Пользовательские поля",
+					"options": {
+						"Field": {
+							"displayName": "Поле"
+						}
+					}
+				},
+				"CustomerMemo": {
+					"displayName": "Памятка для клиента",
+					"description": "Введенное пользователем сообщение клиенту. Это сообщение видно конечному пользователю во время его транзакций."
+				},
+				"DocNumber": {
+					"displayName": "Номер документа",
+					"description": "Номер ссылки на транзакцию"
+				},
+				"EmailStatus": {
+					"displayName": "Статус электронной почты",
+					"options": {
+						"NotSet": {
+							"displayName": "Не установлено"
+						},
+						"NeedToSend": {
+							"displayName": "Нужно отправить"
+						},
+						"EmailSent": {
+							"displayName": "Письмо отправлено"
+						}
+					}
+				},
+				"PrintStatus": {
+					"displayName": "Статус печати",
+					"options": {
+						"NotSet": {
+							"displayName": "Не установлено"
+						},
+						"NeedToPrint": {
+							"displayName": "Нужно распечатать"
+						},
+						"PrintComplete": {
+							"displayName": "РаспечататьЗавершить"
+						}
+					}
+				},
+				"ShipAddr": {
+					"values": {
+						"ShipAddr": {
+							"displayName": "Адрес доставки"
+						},
+						"details": {
+							"options": {
+								"City": {
+									"displayName": "Город"
+								},
+								"Line1": {
+									"displayName": "Линия 1"
+								},
+								"PostalCode": {
+									"displayName": "Почтовый индекс"
+								},
+								"Lat": {
+									"displayName": "Широта"
+								},
+								"Long": {
+									"displayName": "Долгота"
+								},
+								"CountrySubDivisionCode": {
+									"displayName": "Код подразделения страны"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавьте поля адреса доставки",
+					"displayName": "Адрес доставки",
+					"options": {
+						"details": {
+							"displayName": "Подробности"
+						}
+					}
+				},
+				"TotalTax": {
+					"displayName": "Общий налог",
+					"description": "Общая сумма уплаченного налога"
+				},
+				"AcctNum": {
+					"displayName": "Номер счета"
+				},
+				"Vendor1099": {
+					"displayName": "Продавец 1099",
+					"description": "Является ли поставщик независимым подрядчиком, учитывая форму 1099-MISC в конце года."
+				}
+			}
+		},
+		"billId": {
+			"displayName": "Идентификатор счета",
+			"description": "Идентификатор счета для обновления"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"query": {
+					"displayName": "Запрос",
+					"description": "Условие выбора поставщиков. См. поддерживаемый синтаксис в <a href=\"https://developer.intuit.com/app/developer/qbo/docs/develop/explore-the-quickbooks-online-api/data-queries\">guide</a>.",
+					"placeholder": "ГДЕ Metadata.LastUpdatedTime > '2021-01-01'"
+				},
+				"appaid": {
+					"displayName": "Кредиторская задолженность оплачена",
+					"options": {
+						"All": {
+							"displayName": "Все"
+						},
+						"Paid": {
+							"displayName": "Оплаченный"
+						},
+						"Unpaid": {
+							"displayName": "Неоплачиваемый"
+						}
+					}
+				},
+				"arpaid": {
+					"displayName": "Дебиторская задолженность оплачена",
+					"options": {
+						"All": {
+							"displayName": "Все"
+						},
+						"Paid": {
+							"displayName": "Оплаченный"
+						},
+						"Unpaid": {
+							"displayName": "Неоплачиваемый"
+						}
+					}
+				},
+				"cleared": {
+					"displayName": "Очищенный статус",
+					"options": {
+						"Cleared": {
+							"displayName": "Очищено"
+						},
+						"Uncleared": {
+							"displayName": "Неочищено"
+						},
+						"Reconciled": {
+							"displayName": "Примирился"
+						},
+						"Deposited": {
+							"displayName": "Депонированный"
+						}
+					}
+				},
+				"columns": {
+					"displayName": "Столбцы",
+					"description": "Столбцы для возврата",
+					"options": {
+						"account_name": {
+							"displayName": "Имя учетной записи"
+						},
+						"create_by": {
+							"displayName": "Создано"
+						},
+						"create_date": {
+							"displayName": "Создать дату"
+						},
+						"cust_msg": {
+							"displayName": "Сообщение клиента"
+						},
+						"dept_name": {
+							"displayName": "Название отдела"
+						},
+						"due_date": {
+							"displayName": "Срок оплаты"
+						},
+						"doc_num": {
+							"displayName": "Номер документа"
+						},
+						"inv_date": {
+							"displayName": "Дата счета"
+						},
+						"is_ap_paid": {
+							"displayName": "Оплачена ли кредиторская задолженность"
+						},
+						"is_cleared": {
+							"displayName": "Очищено"
+						},
+						"last_mod_by": {
+							"displayName": "Последнее изменение кем"
+						},
+						"memo": {
+							"displayName": "Памятка"
+						},
+						"name": {
+							"displayName": "Имя"
+						},
+						"other_account": {
+							"displayName": "Другой аккаунт"
+						},
+						"pmt_mthod": {
+							"displayName": "Способ оплаты"
+						},
+						"is_no_post": {
+							"displayName": "Публикация"
+						},
+						"printed": {
+							"displayName": "Распечатанный статус"
+						},
+						"sales_cust1": {
+							"displayName": "Клиент продаж 1"
+						},
+						"sales_cust2": {
+							"displayName": "Клиент продаж 2"
+						},
+						"sales_cust3": {
+							"displayName": "Клиент продаж 3"
+						},
+						"term_name": {
+							"displayName": "Название термина"
+						},
+						"tracking_num": {
+							"displayName": "Идентификационный номер"
+						},
+						"tx_date": {
+							"displayName": "Дата транзакции"
+						},
+						"txn_type": {
+							"displayName": "Тип транзакции"
+						}
+					}
+				},
+				"customer": {
+					"displayName": "Имена или идентификаторы клиентов",
+					"description": "Клиент, по которому можно фильтровать результаты. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"dateRangeCustom": {
+					"values": {
+						"dateRangeCustom": {
+							"displayName": "Диапазон дат (настраиваемый)"
+						},
+						"dateRangeCustomProperties": {
+							"options": {
+								"start_date": {
+									"displayName": "Дата начала",
+									"description": "Дата начала диапазона дат для фильтрации результатов по"
+								},
+								"end_date": {
+									"displayName": "Дата окончания",
+									"description": "Дата окончания диапазона дат для фильтрации результатов по"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить диапазон дат",
+					"displayName": "Диапазон дат (настраиваемый)",
+					"options": {
+						"dateRangeCustomProperties": {
+							"displayName": "Свойства диапазона дат"
+						}
+					}
+				},
+				"date_macro": {
+					"displayName": "Диапазон дат (предварительно задан)",
+					"description": "Предопределенный диапазон дат для фильтрации результатов по",
+					"options": {
+						"Today": {
+							"displayName": "Сегодня"
+						},
+						"Yesterday": {
+							"displayName": "Вчера"
+						},
+						"This Week": {
+							"displayName": "На этой неделе"
+						},
+						"Last Week": {
+							"displayName": "На прошлой неделе"
+						},
+						"This Week-to-Date": {
+							"displayName": "С этой недели по сегодняшний день"
+						},
+						"Last Week-to-Date": {
+							"displayName": "Последняя неделя по настоящее время"
+						},
+						"Next Week": {
+							"displayName": "На следующей неделе"
+						},
+						"Next 4 Weeks": {
+							"displayName": "Следующие 4 недели"
+						},
+						"This Month": {
+							"displayName": "В этом месяце"
+						},
+						"Last Month": {
+							"displayName": "В прошлом месяце"
+						},
+						"This Month-to-Date": {
+							"displayName": "С этого месяца"
+						},
+						"Last Month-to-Date": {
+							"displayName": "За последний месяц до настоящего времени"
+						},
+						"Next Month": {
+							"displayName": "В следующем месяце"
+						},
+						"This Fiscal Quarter": {
+							"displayName": "Этот финансовый квартал"
+						},
+						"Last Fiscal Quarter": {
+							"displayName": "Последний финансовый квартал"
+						},
+						"This Fiscal Quarter-to-Date": {
+							"displayName": "Этот финансовый квартал с начала текущего года"
+						},
+						"Last Fiscal Quarter-to-Date": {
+							"displayName": "Последний финансовый квартал с текущей даты"
+						},
+						"Next Fiscal Quarter": {
+							"displayName": "Следующий финансовый квартал"
+						},
+						"This Fiscal Year": {
+							"displayName": "В этом финансовом году"
+						},
+						"Last Fiscal Year": {
+							"displayName": "Последний финансовый год"
+						},
+						"This Fiscal Year-to-Date": {
+							"displayName": "Этот финансовый год с начала года"
+						},
+						"Last Fiscal Year-to-Date": {
+							"displayName": "Последний финансовый год с начала года"
+						},
+						"Next Fiscal Year": {
+							"displayName": "Следующий финансовый год"
+						}
+					}
+				},
+				"dateRangeCreationCustom": {
+					"values": {
+						"dateRangeCreationCustom": {
+							"displayName": "Диапазон дат для даты создания (настраиваемый)"
+						},
+						"dateRangeCreationCustomProperties": {
+							"options": {
+								"start_createdate": {
+									"displayName": "Дата начала создания",
+									"description": "Дата начала диапазона дат создания учетной записи для фильтрации результатов по"
+								},
+								"end_createdate": {
+									"displayName": "Дата окончания создания",
+									"description": "Дата окончания диапазона дат создания учетной записи для фильтрации результатов по"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить диапазон дат создания",
+					"displayName": "Диапазон дат для даты создания (настраиваемый)",
+					"options": {
+						"dateRangeCreationCustomProperties": {
+							"displayName": "Свойства диапазона дат создания"
+						}
+					}
+				},
+				"createdate_macro": {
+					"displayName": "Диапазон дат для даты создания (предварительно задан)",
+					"description": "Предопределенный диапазон дат создания учетной записи отчета",
+					"options": {
+						"Today": {
+							"displayName": "Сегодня"
+						},
+						"Yesterday": {
+							"displayName": "Вчера"
+						},
+						"This Week": {
+							"displayName": "На этой неделе"
+						},
+						"Last Week": {
+							"displayName": "На прошлой неделе"
+						},
+						"This Week-to-Date": {
+							"displayName": "С этой недели по сегодняшний день"
+						},
+						"Last Week-to-Date": {
+							"displayName": "Последняя неделя по настоящее время"
+						},
+						"Next Week": {
+							"displayName": "На следующей неделе"
+						},
+						"Next 4 Weeks": {
+							"displayName": "Следующие 4 недели"
+						},
+						"This Month": {
+							"displayName": "В этом месяце"
+						},
+						"Last Month": {
+							"displayName": "В прошлом месяце"
+						},
+						"This Month-to-Date": {
+							"displayName": "С этого месяца"
+						},
+						"Last Month-to-Date": {
+							"displayName": "За последний месяц до настоящего времени"
+						},
+						"Next Month": {
+							"displayName": "В следующем месяце"
+						},
+						"This Fiscal Quarter": {
+							"displayName": "Этот финансовый квартал"
+						},
+						"Last Fiscal Quarter": {
+							"displayName": "Последний финансовый квартал"
+						},
+						"This Fiscal Quarter-to-Date": {
+							"displayName": "Этот финансовый квартал с начала текущего года"
+						},
+						"Last Fiscal Quarter-to-Date": {
+							"displayName": "Последний финансовый квартал с текущей даты"
+						},
+						"Next Fiscal Quarter": {
+							"displayName": "Следующий финансовый квартал"
+						},
+						"This Fiscal Year": {
+							"displayName": "В этом финансовом году"
+						},
+						"Last Fiscal Year": {
+							"displayName": "Последний финансовый год"
+						},
+						"This Fiscal Year-to-Date": {
+							"displayName": "Этот финансовый год с начала года"
+						},
+						"Last Fiscal Year-to-Date": {
+							"displayName": "Последний финансовый год с начала года"
+						},
+						"Next Fiscal Year": {
+							"displayName": "Следующий финансовый год"
+						}
+					}
+				},
+				"dateRangeDueCustom": {
+					"values": {
+						"dateRangeDueCustom": {
+							"displayName": "Диапазон дат для срока выполнения (настраиваемый)"
+						},
+						"dateRangeDueCustomProperties": {
+							"options": {
+								"start_duedate": {
+									"displayName": "Дата начала выполнения",
+									"description": "Дата начала диапазона сроков сдачи для фильтрации результатов по"
+								},
+								"end_duedate": {
+									"displayName": "Конечная дата сдачи",
+									"description": "Конечная дата диапазона сроков сдачи для фильтрации результатов по"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить диапазон сроков выполнения",
+					"displayName": "Диапазон дат для срока выполнения (настраиваемый)",
+					"options": {
+						"dateRangeDueCustomProperties": {
+							"displayName": "Свойства диапазона сроков выполнения"
+						}
+					}
+				},
+				"duedate_macro": {
+					"displayName": "Диапазон дат для срока платежа (предварительно задан)",
+					"description": "Предопределенный диапазон сроков выполнения для фильтрации результатов по",
+					"options": {
+						"Today": {
+							"displayName": "Сегодня"
+						},
+						"Yesterday": {
+							"displayName": "Вчера"
+						},
+						"This Week": {
+							"displayName": "На этой неделе"
+						},
+						"Last Week": {
+							"displayName": "На прошлой неделе"
+						},
+						"This Week-to-Date": {
+							"displayName": "С этой недели по сегодняшний день"
+						},
+						"Last Week-to-Date": {
+							"displayName": "Последняя неделя по настоящее время"
+						},
+						"Next Week": {
+							"displayName": "На следующей неделе"
+						},
+						"Next 4 Weeks": {
+							"displayName": "Следующие 4 недели"
+						},
+						"This Month": {
+							"displayName": "В этом месяце"
+						},
+						"Last Month": {
+							"displayName": "В прошлом месяце"
+						},
+						"This Month-to-Date": {
+							"displayName": "С этого месяца"
+						},
+						"Last Month-to-Date": {
+							"displayName": "За последний месяц до настоящего времени"
+						},
+						"Next Month": {
+							"displayName": "В следующем месяце"
+						},
+						"This Fiscal Quarter": {
+							"displayName": "Этот финансовый квартал"
+						},
+						"Last Fiscal Quarter": {
+							"displayName": "Последний финансовый квартал"
+						},
+						"This Fiscal Quarter-to-Date": {
+							"displayName": "Этот финансовый квартал с начала текущего года"
+						},
+						"Last Fiscal Quarter-to-Date": {
+							"displayName": "Последний финансовый квартал с текущей даты"
+						},
+						"Next Fiscal Quarter": {
+							"displayName": "Следующий финансовый квартал"
+						},
+						"This Fiscal Year": {
+							"displayName": "В этом финансовом году"
+						},
+						"Last Fiscal Year": {
+							"displayName": "Последний финансовый год"
+						},
+						"This Fiscal Year-to-Date": {
+							"displayName": "Этот финансовый год с начала года"
+						},
+						"Last Fiscal Year-to-Date": {
+							"displayName": "Последний финансовый год с начала года"
+						},
+						"Next Fiscal Year": {
+							"displayName": "Следующий финансовый год"
+						}
+					}
+				},
+				"dateRangeModificationCustom": {
+					"values": {
+						"dateRangeModificationCustom": {
+							"displayName": "Диапазон дат для даты изменения (настраиваемый)"
+						},
+						"dateRangeModificationCustomProperties": {
+							"options": {
+								"start_moddate": {
+									"displayName": "Дата начала изменения",
+									"description": "Дата начала диапазона дат изменения учетной записи для фильтрации результатов по"
+								},
+								"end_moddate": {
+									"displayName": "Дата окончания изменения",
+									"description": "Дата окончания диапазона дат изменения учетной записи для фильтрации результатов по"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить диапазон дат изменения",
+					"displayName": "Диапазон дат для даты изменения (настраиваемый)",
+					"options": {
+						"dateRangeModificationCustomProperties": {
+							"displayName": "Свойства диапазона дат модификации"
+						}
+					}
+				},
+				"moddate_macro": {
+					"displayName": "Диапазон дат для даты изменения (предварительно задан)",
+					"description": "Предопределенный диапазон дат изменения учетной записи для фильтрации результатов по",
+					"options": {
+						"Today": {
+							"displayName": "Сегодня"
+						},
+						"Yesterday": {
+							"displayName": "Вчера"
+						},
+						"This Week": {
+							"displayName": "На этой неделе"
+						},
+						"Last Week": {
+							"displayName": "На прошлой неделе"
+						},
+						"This Week-to-Date": {
+							"displayName": "С этой недели по сегодняшний день"
+						},
+						"Last Week-to-Date": {
+							"displayName": "Последняя неделя по настоящее время"
+						},
+						"Next Week": {
+							"displayName": "На следующей неделе"
+						},
+						"Next 4 Weeks": {
+							"displayName": "Следующие 4 недели"
+						},
+						"This Month": {
+							"displayName": "В этом месяце"
+						},
+						"Last Month": {
+							"displayName": "В прошлом месяце"
+						},
+						"This Month-to-Date": {
+							"displayName": "С этого месяца"
+						},
+						"Last Month-to-Date": {
+							"displayName": "За последний месяц до настоящего времени"
+						},
+						"Next Month": {
+							"displayName": "В следующем месяце"
+						},
+						"This Fiscal Quarter": {
+							"displayName": "Этот финансовый квартал"
+						},
+						"Last Fiscal Quarter": {
+							"displayName": "Последний финансовый квартал"
+						},
+						"This Fiscal Quarter-to-Date": {
+							"displayName": "Этот финансовый квартал с начала текущего года"
+						},
+						"Last Fiscal Quarter-to-Date": {
+							"displayName": "Последний финансовый квартал с текущей даты"
+						},
+						"Next Fiscal Quarter": {
+							"displayName": "Следующий финансовый квартал"
+						},
+						"This Fiscal Year": {
+							"displayName": "В этом финансовом году"
+						},
+						"Last Fiscal Year": {
+							"displayName": "Последний финансовый год"
+						},
+						"This Fiscal Year-to-Date": {
+							"displayName": "Этот финансовый год с начала года"
+						},
+						"Last Fiscal Year-to-Date": {
+							"displayName": "Последний финансовый год с начала года"
+						},
+						"Next Fiscal Year": {
+							"displayName": "Следующий финансовый год"
+						}
+					}
+				},
+				"department": {
+					"displayName": "Названия или идентификаторы отделов",
+					"description": "Отдел для фильтрации результатов. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"docnum": {
+					"displayName": "Номер документа",
+					"description": "Номер документа транзакции, по которому нужно фильтровать результаты"
+				},
+				"group_by": {
+					"displayName": "Группировать по",
+					"description": "Поле транзакции для группировки результатов по",
+					"options": {
+						"Account": {
+							"displayName": "Счет"
+						},
+						"Customer": {
+							"displayName": "Клиент"
+						},
+						"Day": {
+							"displayName": "День"
+						},
+						"Employee": {
+							"displayName": "Сотрудник"
+						},
+						"Location": {
+							"displayName": "Расположение"
+						},
+						"Month": {
+							"displayName": "Месяц"
+						},
+						"Name": {
+							"displayName": "Имя"
+						},
+						"None": {
+							"displayName": "Никто"
+						},
+						"Payment Method": {
+							"displayName": "Способ оплаты"
+						},
+						"Quarter": {
+							"displayName": "Четверть"
+						},
+						"Transaction Type": {
+							"displayName": "Тип транзакции"
+						},
+						"Vendor": {
+							"displayName": "Продавец"
+						},
+						"Week": {
+							"displayName": "Неделя"
+						},
+						"Year": {
+							"displayName": "Год"
+						}
+					}
+				},
+				"memo": {
+					"displayName": "Имена или идентификаторы заметок",
+					"description": "Памятка для фильтрации результатов. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"payment_Method": {
+					"displayName": "Способ оплаты",
+					"description": "Способ оплаты для фильтрации результатов по",
+					"options": {
+						"American Express": {
+							"displayName": "Американ Экспресс"
+						},
+						"Cash": {
+							"displayName": "Наличные"
+						},
+						"Check": {
+							"displayName": "Проверять"
+						},
+						"Dinners Club": {
+							"displayName": "Ужины Клуб"
+						},
+						"Discover": {
+							"displayName": "Обнаружить"
+						},
+						"Master Card": {
+							"displayName": "Мастер Кард"
+						},
+						"Visa": {
+							"displayName": "Виза"
+						}
+					}
+				},
+				"printed": {
+					"displayName": "Распечатанный статус",
+					"description": "Распечатанное состояние для фильтрации результатов по",
+					"options": {
+						"Printed": {
+							"displayName": "Печатный"
+						},
+						"To_be_printed": {
+							"displayName": "Для печати"
+						}
+					}
+				},
+				"qzurl": {
+					"displayName": "URL-адрес быстрого масштабирования",
+					"description": "Следует ли генерировать информацию об URL-адресе быстрого масштабирования"
+				},
+				"sort_by": {
+					"displayName": "Сортировать по",
+					"description": "Столбец для сортировки результатов по",
+					"options": {
+						"account_name": {
+							"displayName": "Имя учетной записи"
+						},
+						"create_by": {
+							"displayName": "Создано"
+						},
+						"create_date": {
+							"displayName": "Создать дату"
+						},
+						"cust_msg": {
+							"displayName": "Сообщение клиента"
+						},
+						"dept_name": {
+							"displayName": "Название отдела"
+						},
+						"due_date": {
+							"displayName": "Срок оплаты"
+						},
+						"doc_num": {
+							"displayName": "Номер документа"
+						},
+						"inv_date": {
+							"displayName": "Дата счета"
+						},
+						"is_ap_paid": {
+							"displayName": "Оплачена ли кредиторская задолженность"
+						},
+						"is_cleared": {
+							"displayName": "Очищено"
+						},
+						"last_mod_by": {
+							"displayName": "Последнее изменение кем"
+						},
+						"memo": {
+							"displayName": "Памятка"
+						},
+						"name": {
+							"displayName": "Имя"
+						},
+						"other_account": {
+							"displayName": "Другой аккаунт"
+						},
+						"pmt_mthod": {
+							"displayName": "Способ оплаты"
+						},
+						"is_no_post": {
+							"displayName": "Публикация"
+						},
+						"printed": {
+							"displayName": "Распечатанный статус"
+						},
+						"sales_cust1": {
+							"displayName": "Клиент продаж 1"
+						},
+						"sales_cust2": {
+							"displayName": "Клиент продаж 2"
+						},
+						"sales_cust3": {
+							"displayName": "Клиент продаж 3"
+						},
+						"term_name": {
+							"displayName": "Название термина"
+						},
+						"tracking_num": {
+							"displayName": "Идентификационный номер"
+						},
+						"tx_date": {
+							"displayName": "Дата транзакции"
+						},
+						"txn_type": {
+							"displayName": "Тип транзакции"
+						}
+					}
+				},
+				"sort_order": {
+					"displayName": "Порядок сортировки",
+					"options": {
+						"Ascend": {
+							"displayName": "Восхождение"
+						},
+						"Descend": {
+							"displayName": "Спуститься"
+						}
+					}
+				},
+				"source_account_type": {
+					"displayName": "Тип исходного аккаунта",
+					"description": "Тип учетной записи для фильтрации результатов",
+					"options": {
+						"AccountsPayable": {
+							"displayName": "Кредиторская задолженность"
+						},
+						"AccountsReceivable": {
+							"displayName": "Дебиторская задолженность"
+						},
+						"Bank": {
+							"displayName": "Банк"
+						},
+						"CostOfGoodsSold": {
+							"displayName": "Стоимость проданных товаров"
+						},
+						"CreditCard": {
+							"displayName": "Кредитная карта"
+						},
+						"Equity": {
+							"displayName": "Капитал"
+						},
+						"Expense": {
+							"displayName": "Расход"
+						},
+						"FixedAsset": {
+							"displayName": "Основные средства"
+						},
+						"Income": {
+							"displayName": "Доход"
+						},
+						"LongTermLiability": {
+							"displayName": "Долгосрочная ответственность"
+						},
+						"NonPosting": {
+							"displayName": "Без публикации"
+						},
+						"OtherAsset": {
+							"displayName": "Другой актив"
+						},
+						"OtherCurrentAsset": {
+							"displayName": "Прочие оборотные активы"
+						},
+						"OtherCurrentLiability": {
+							"displayName": "Прочие текущие обязательства"
+						},
+						"OtherExpense": {
+							"displayName": "Другие расходы"
+						},
+						"OtherIncome": {
+							"displayName": "Прочие доходы"
+						}
+					}
+				},
+				"term": {
+					"displayName": "Имена или идентификаторы терминов",
+					"description": "Термин для фильтрации результатов. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"bothamount": {
+					"displayName": "Сумма транзакции",
+					"description": "Денежная сумма для фильтрации результатов по"
+				},
+				"transaction_type": {
+					"displayName": "Тип транзакции",
+					"description": "Тип транзакции для фильтрации результатов",
+					"options": {
+						"Bill": {
+							"displayName": "Счет"
+						},
+						"BillPaymentCheck": {
+							"displayName": "Чек оплаты счета"
+						},
+						"BillPaymentCreditCard": {
+							"displayName": "Оплата счетов кредитной картой"
+						},
+						"BillableCharge": {
+							"displayName": "Оплачиваемая плата"
+						},
+						"CashPurchase": {
+							"displayName": "Покупка за наличные"
+						},
+						"Charge": {
+							"displayName": "Заряжать"
+						},
+						"Check": {
+							"displayName": "Проверять"
+						},
+						"Credit": {
+							"displayName": "Кредит"
+						},
+						"CreditCardCharge": {
+							"displayName": "Плата за кредитную карту"
+						},
+						"CreditCardCredit": {
+							"displayName": "Кредитная карта Кредит"
+						},
+						"CreditMemo": {
+							"displayName": "Кредитное авизо"
+						},
+						"CreditRefund": {
+							"displayName": "Возврат кредита"
+						},
+						"Deposit": {
+							"displayName": "Депозит"
+						},
+						"Estimate": {
+							"displayName": "Оценивать"
+						},
+						"GlobalTaxAdjustment": {
+							"displayName": "Глобальная налоговая корректировка"
+						},
+						"GlobalTaxPayment": {
+							"displayName": "Глобальный налоговый платеж"
+						},
+						"InventoryQuantityAdjustment": {
+							"displayName": "Корректировка количества запасов"
+						},
+						"Invoice": {
+							"displayName": "Счет"
+						},
+						"JournalEntry": {
+							"displayName": "Запись в журнале"
+						},
+						"PurchaseOrder": {
+							"displayName": "Заказ на покупку"
+						},
+						"ReceivePayment": {
+							"displayName": "Получить оплату"
+						},
+						"SalesReceipt": {
+							"displayName": "Квитанция о продаже"
+						},
+						"Service Tax Defer": {
+							"displayName": "Отсрочка налога на услуги"
+						},
+						"Service Tax Gross Adjustment": {
+							"displayName": "Валовая корректировка налога на услуги"
+						},
+						"Service Tax Partial Utilisation": {
+							"displayName": "Частичное использование налога на услуги"
+						},
+						"Service Tax Refund": {
+							"displayName": "Возврат налога на услуги"
+						},
+						"Service Tax Reversal": {
+							"displayName": "Возврат налога на услуги"
+						},
+						"Statement": {
+							"displayName": "Заявление"
+						},
+						"TimeActivity": {
+							"displayName": "Время Активность"
+						},
+						"Transfer": {
+							"displayName": "Передача"
+						},
+						"VendorCredit": {
+							"displayName": "Кредит поставщика"
+						}
+					}
+				},
+				"vendor": {
+					"displayName": "Имена или идентификаторы поставщиков",
+					"description": "Поставщик, по которому нужно фильтровать результаты. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				}
+			}
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"APAccountRef": {
+					"values": {
+						"APAccountRef": {
+							"displayName": "Счета к оплате",
+							"description": "Счет кредиторской задолженности, на который будет зачислен счет"
+						},
+						"details": {
+							"options": {
+								"name": {
+									"displayName": "Имя"
+								},
+								"value": {
+									"displayName": "ID"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить поля APA",
+					"displayName": "Счета к оплате",
+					"description": "Счет кредиторской задолженности, на который будет зачислен счет",
+					"options": {
+						"details": {
+							"displayName": "Подробности"
+						}
+					}
+				},
+				"DueDate": {
+					"displayName": "Срок оплаты",
+					"description": "Дата наступления срока оплаты сделки"
+				},
+				"SalesTermRef": {
+					"values": {
+						"SalesTermRef": {
+							"displayName": "Срок продажи",
+							"description": "Срок продажи, связанный со сделкой"
+						},
+						"details": {
+							"options": {
+								"name": {
+									"displayName": "Имя"
+								},
+								"value": {
+									"displayName": "ID"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавьте поля условий продажи",
+					"displayName": "Срок продажи",
+					"description": "Срок продажи, связанный со сделкой",
+					"options": {
+						"details": {
+							"displayName": "Подробности"
+						}
+					}
+				},
+				"TxnDate": {
+					"displayName": "Дата транзакции",
+					"description": "Дата, когда произошла транзакция"
+				},
+				"Active": {
+					"displayName": "Активный",
+					"description": "Включен ли сотрудник в настоящее время для использования QuickBooks"
+				},
+				"Balance": {
+					"displayName": "Баланс",
+					"description": "Баланс, отражающий любые платежи, произведенные по транзакции"
+				},
+				"BalanceWithJobs": {
+					"displayName": "Баланс с работой",
+					"description": "Совокупная сумма открытого баланса для клиента (или задания) и всех его подзаданий."
+				},
+				"BillAddr": {
+					"values": {
+						"BillAddr": {
+							"displayName": "Адрес для выставления счета"
+						},
+						"details": {
+							"options": {
+								"City": {
+									"displayName": "Город"
+								},
+								"Line1": {
+									"displayName": "Линия 1"
+								},
+								"PostalCode": {
+									"displayName": "Почтовый индекс"
+								},
+								"Lat": {
+									"displayName": "Широта"
+								},
+								"Long": {
+									"displayName": "Долгота"
+								},
+								"CountrySubDivisionCode": {
+									"displayName": "Код подразделения страны"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавьте поля адреса для выставления счетов",
+					"displayName": "Адрес для выставления счета",
+					"options": {
+						"details": {
+							"displayName": "Подробности"
+						}
+					}
+				},
+				"BillWithParent": {
+					"displayName": "Билл с родителем",
+					"description": "Выставлять ли счет этому клиенту вместе с его родительским предприятием"
+				},
+				"CompanyName": {
+					"displayName": "Название компании"
+				},
+				"FamilyName": {
+					"displayName": "Фамилия"
+				},
+				"FullyQualifiedName": {
+					"displayName": "Полное имя"
+				},
+				"GivenName": {
+					"displayName": "Собственное имя"
+				},
+				"PreferredDeliveryMethod": {
+					"displayName": "Предпочтительный способ доставки",
+					"options": {
+						"Print": {
+							"displayName": "Распечатать"
+						},
+						"Email": {
+							"displayName": "Электронная почта"
+						},
+						"None": {
+							"displayName": "Никто"
+						}
+					}
+				},
+				"PrimaryEmailAddr": {
+					"displayName": "Основной адрес электронной почты"
+				},
+				"PrimaryPhone": {
+					"displayName": "Основной телефон"
+				},
+				"PrintOnCheckName": {
+					"displayName": "Имя для печати на чеке",
+					"description": "Имя поставщика, указанное на чеке"
+				},
+				"Taxable": {
+					"displayName": "облагаемый налогом",
+					"description": "Облагаются ли налогом транзакции для этого клиента"
+				},
+				"BillableTime": {
+					"displayName": "Оплачиваемое время"
+				},
+				"DisplayName": {
+					"displayName": "Отображаемое имя"
+				},
+				"SSN": {
+					"displayName": "Номер социального страхования"
+				},
+				"ApplyTaxAfterDiscount": {
+					"displayName": "Применить налог после скидки"
+				},
+				"BillEmail": {
+					"displayName": "Электронная почта для выставления счетов",
+					"description": "Адрес электронной почты, на который будет отправлен счет"
+				},
+				"CustomFields": {
+					"values": {
+						"CustomFields": {
+							"displayName": "Пользовательские поля"
+						},
+						"Field": {
+							"options": {
+								"DefinitionId": {
+									"displayName": "Имя или идентификатор определения поля",
+									"description": "Идентификатор поля, которое необходимо установить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								},
+								"StringValue": {
+									"displayName": "Значение поля",
+									"description": "Значение поля для установки"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить пользовательские поля",
+					"displayName": "Пользовательские поля",
+					"options": {
+						"Field": {
+							"displayName": "Поле"
+						}
+					}
+				},
+				"CustomerMemo": {
+					"displayName": "Памятка для клиента",
+					"description": "Введенное пользователем сообщение клиенту. Это сообщение видно конечному пользователю во время его транзакций."
+				},
+				"DocNumber": {
+					"displayName": "Номер документа",
+					"description": "Номер ссылки на транзакцию"
+				},
+				"EmailStatus": {
+					"displayName": "Статус электронной почты",
+					"options": {
+						"NotSet": {
+							"displayName": "Не установлено"
+						},
+						"NeedToSend": {
+							"displayName": "Нужно отправить"
+						},
+						"EmailSent": {
+							"displayName": "Письмо отправлено"
+						}
+					}
+				},
+				"PrintStatus": {
+					"displayName": "Статус печати",
+					"options": {
+						"NotSet": {
+							"displayName": "Не установлено"
+						},
+						"NeedToPrint": {
+							"displayName": "Нужно распечатать"
+						},
+						"PrintComplete": {
+							"displayName": "РаспечататьЗавершить"
+						}
+					}
+				},
+				"ShipAddr": {
+					"values": {
+						"ShipAddr": {
+							"displayName": "Адрес доставки"
+						},
+						"details": {
+							"options": {
+								"City": {
+									"displayName": "Город"
+								},
+								"Line1": {
+									"displayName": "Линия 1"
+								},
+								"PostalCode": {
+									"displayName": "Почтовый индекс"
+								},
+								"Lat": {
+									"displayName": "Широта"
+								},
+								"Long": {
+									"displayName": "Долгота"
+								},
+								"CountrySubDivisionCode": {
+									"displayName": "Код подразделения страны"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавьте поля адреса доставки",
+					"displayName": "Адрес доставки",
+					"options": {
+						"details": {
+							"displayName": "Подробности"
+						}
+					}
+				},
+				"AcctNum": {
+					"displayName": "Номер счета"
+				},
+				"Vendor1099": {
+					"displayName": "Продавец 1099",
+					"description": "Является ли поставщик независимым подрядчиком, учитывая форму 1099-MISC в конце года."
+				}
+			}
+		},
+		"displayName": {
+			"displayName": "Отображаемое имя",
+			"description": "Отображаемое имя создаваемого поставщика"
+		},
+		"customerId": {
+			"displayName": "Идентификатор клиента",
+			"description": "Идентификатор клиента, которого необходимо обновить."
+		},
+		"FamilyName": {
+			"displayName": "Фамилия"
+		},
+		"GivenName": {
+			"displayName": "Собственное имя"
+		},
+		"employeeId": {
+			"displayName": "Идентификатор сотрудника",
+			"description": "Идентификатор сотрудника, которого необходимо обновить"
+		},
+		"CustomerRef": {
+			"displayName": "Для имени или идентификатора клиента",
+			"description": "Идентификатор клиента, которому предназначен платеж. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"estimateId": {
+			"displayName": "Приблизительный идентификатор",
+			"description": "Идентификатор оценки для обновления"
+		},
+		"download": {
+			"displayName": "Скачать",
+			"description": "Загружать ли смету в формате PDF"
+		},
+		"binaryProperty": {
+			"displayName": "Поместите выходной файл в поле",
+			"hint": "Имя выходного двоичного поля, в которое помещается файл."
+		},
+		"fileName": {
+			"displayName": "Имя файла",
+			"description": "Имя файла, который будет загружен",
+			"placeholder": "данные.pdf"
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"description": "Электронная почта получателя платежа",
+			"placeholder": "имя@email.com"
+		},
+		"invoiceId": {
+			"displayName": "Идентификатор счета",
+			"description": "Идентификатор счета, который необходимо обновить."
+		},
+		"itemId": {
+			"displayName": "Идентификатор предмета",
+			"description": "Идентификатор элемента, который нужно получить"
+		},
+		"TotalAmt": {
+			"displayName": "Общая сумма",
+			"description": "Общая сумма сделки"
+		},
+		"paymentId": {
+			"displayName": "Идентификатор платежа",
+			"description": "Идентификатор платежа для обновления"
+		},
+		"purchaseId": {
+			"displayName": "Идентификатор покупки",
+			"description": "Идентификатор покупки, которую нужно получить"
+		},
+		"simple": {
+			"displayName": "Упрощать",
+			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+		},
+		"vendorId": {
+			"displayName": "Идентификатор поставщика",
+			"description": "Идентификатор поставщика для обновления"
+		}
+	}
+}

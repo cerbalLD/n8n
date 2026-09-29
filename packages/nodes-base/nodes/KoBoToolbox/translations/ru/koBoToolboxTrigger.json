@@ -1,0 +1,75 @@
+{
+	"header": {
+		"displayName": "Триггер KoBoToolbox",
+		"description": "Обработка заявок KoBoToolbox"
+	},
+	"nodeView": {
+		"formId": {
+			"displayName": "Имя или идентификатор формы",
+			"description": "Идентификатор формы (например, aSAvYreNzVEkrWg5Gdcvg). Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"triggerOn": {
+			"displayName": "Триггер включен",
+			"options": {
+				"formSubmission": {
+					"displayName": "При отправке формы"
+				}
+			}
+		},
+		"formatOptions": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"download": {
+					"displayName": "Загрузить вложения",
+					"description": "Загружать ли отправленные вложения"
+				},
+				"binaryNamingScheme": {
+					"displayName": "Схема именования вложений",
+					"options": {
+						"sequence": {
+							"displayName": "Последовательность (например, Attachment_N)"
+						},
+						"question": {
+							"displayName": "Использовать идентификатор вопроса исходной формы"
+						}
+					}
+				},
+				"dataPropertyAttachmentsPrefixName": {
+					"displayName": "Префикс вложений",
+					"description": "Префикс имени двоичного свойства, в которое следует записывать вложения. Будет добавлен индекс, начинающийся с 0. Итак, если имя «attachment_», первое вложение сохраняется в «attachment_0»."
+				},
+				"version": {
+					"displayName": "Размер файла",
+					"description": "Размер вложения для получения, если доступно несколько версий",
+					"options": {
+						"download_url": {
+							"displayName": "Оригинал"
+						},
+						"download_small_url": {
+							"displayName": "Маленький"
+						},
+						"download_medium_url": {
+							"displayName": "Середина"
+						},
+						"download_large_url": {
+							"displayName": "Большой"
+						}
+					}
+				},
+				"selectMask": {
+					"displayName": "Множественная маска",
+					"description": "Разделенный запятыми список селекторов в стиле подстановочных знаков для полей, которые следует рассматривать как поля с множественным выбором, т. е. анализировать как массивы."
+				},
+				"numberMask": {
+					"displayName": "Маска номера",
+					"description": "Список разделенных запятыми селекторов в стиле подстановочных знаков для полей, которые следует рассматривать как числа."
+				},
+				"reformat": {
+					"displayName": "Переформатировать",
+					"description": "Следует ли применять какое-либо переформатирование к отправляемым данным, например анализ координат GeoJSON."
+				}
+			}
+		}
+	}
+}

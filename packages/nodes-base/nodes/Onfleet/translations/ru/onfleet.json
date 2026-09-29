@@ -1,0 +1,1026 @@
+{
+	"header": {
+		"displayName": "На флоте",
+		"description": "Использование API Onfleet"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"description": "Ресурс для выполнения операций",
+			"options": {
+				"admin": {
+					"displayName": "Админ"
+				},
+				"container": {
+					"displayName": "Контейнер"
+				},
+				"destination": {
+					"displayName": "Место назначения"
+				},
+				"hub": {
+					"displayName": "Центр"
+				},
+				"organization": {
+					"displayName": "Организация"
+				},
+				"recipient": {
+					"displayName": "Получатель"
+				},
+				"task": {
+					"displayName": "Задача"
+				},
+				"team": {
+					"displayName": "Команда"
+				},
+				"worker": {
+					"displayName": "Рабочий"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создайте нового работника Onfleet"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удаление работника Onfleet"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получите много рабочих на флоте"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновление работника Onfleet"
+				},
+				"addTask": {
+					"displayName": "Добавить задачи",
+					"description": "Добавить задачу по индексу (или добавить)"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получите конкретного работника Onfleet"
+				},
+				"updateTask": {
+					"displayName": "Обновить задачи",
+					"description": "Полная замена задач контейнера"
+				},
+				"getDelegatee": {
+					"displayName": "Получить информацию о делегате",
+					"description": "Получить информацию об организации, с которой вы связаны"
+				},
+				"clone": {
+					"displayName": "Клонировать",
+					"description": "Клонировать задачу Onfleet"
+				},
+				"complete": {
+					"displayName": "Полный",
+					"description": "Принудительно завершить запущенную задачу Onfleet"
+				},
+				"autoDispatch": {
+					"displayName": "Автоотправка",
+					"description": "Автоматически распределяйте порученные команде задачи дежурным водителям."
+				},
+				"getTimeEstimates": {
+					"displayName": "Получить оценку времени",
+					"description": "Получите расчетное время выполнения предстоящих задач для команды, возвращает выбранного водителя."
+				},
+				"getSchedule": {
+					"displayName": "Получить расписание",
+					"description": "Получите конкретный график работы автопарка"
+				}
+			}
+		},
+		"id": {
+			"displayName": "Идентификатор работника",
+			"description": "Идентификатор рабочего объекта для поиска"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Имя работника"
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"description": "Адрес электронной почты администратора",
+			"placeholder": "имя@email.com"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"phone": {
+					"displayName": "Телефон",
+					"description": "Телефон администратора"
+				},
+				"isReadOnly": {
+					"displayName": "Только чтение",
+					"description": "Может ли этот администратор выполнять операции записи"
+				},
+				"addressApartment": {
+					"displayName": "Квартира",
+					"description": "Номер люкса или квартиры или любая дополнительная соответствующая информация."
+				},
+				"addressName": {
+					"displayName": "Адрес Имя",
+					"description": "Имя, связанное с этим адресом"
+				},
+				"addressNotes": {
+					"displayName": "Адресные примечания",
+					"description": "Примечания о пункте назначения"
+				},
+				"addressPostalCode": {
+					"displayName": "Почтовый индекс",
+					"description": "Почтовый индекс"
+				},
+				"teams": {
+					"displayName": "Названия или идентификаторы команд",
+					"description": "Это команды, которым будет назначен этот Хаб. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"recipientNotes": {
+					"displayName": "Переопределение примечаний о получателях",
+					"description": "Переопределить примечания получателя только для этой задачи"
+				},
+				"recipientSkipSMSNotifications": {
+					"displayName": "Переопределение пропуска получателем SMS-уведомлений",
+					"description": "Следует ли переопределить настройки уведомлений получателей для этой задачи."
+				},
+				"notes": {
+					"displayName": "Примечания",
+					"description": "Примечания к задаче"
+				},
+				"completeAfter": {
+					"displayName": "Завершить после",
+					"description": "Самый ранний срок, когда задача должна быть завершена"
+				},
+				"completeBefore": {
+					"displayName": "Завершить до",
+					"description": "Последний раз, когда задача должна быть завершена"
+				},
+				"executor": {
+					"displayName": "Идентификатор исполнителя",
+					"description": "Идентификатор организации, которая будет отвечать за выполнение задачи"
+				},
+				"merchant": {
+					"displayName": "Идентификатор продавца",
+					"description": "Идентификатор организации, который будет отображаться получателю задания"
+				},
+				"pickupTask": {
+					"displayName": "Поднять задачу",
+					"description": "Является ли задача задачей самовывоза"
+				},
+				"quantity": {
+					"displayName": "Количество",
+					"description": "Количество единиц, которые необходимо высадить при выполнении этой задачи, в целях оптимизации маршрута."
+				},
+				"recipient": {
+					"values": {
+						"recipient": {
+							"displayName": "Получатель"
+						},
+						"recipientProperties": {
+							"options": {
+								"recipientName": {
+									"displayName": "Имя получателя",
+									"description": "Полное имя получателя"
+								},
+								"recipientPhone": {
+									"displayName": "Телефон получателя",
+									"description": "Уникальный действительный номер телефона в соответствии со страной организации, если в начале нет знака +. Если в номере телефона есть знак +, настройки страны организации будут игнорироваться."
+								},
+								"recipientNotes": {
+									"displayName": "Примечания получателя",
+									"description": "Заметки для этого получателя: это глобальные заметки, которые не должны быть привязаны к конкретной задаче или месту назначения."
+								},
+								"recipientSkipSMSNotifications": {
+									"displayName": "Пропустить SMS-уведомления получателя",
+									"description": "Запросил ли этот получатель пропустить SMS-уведомления"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить получателя",
+					"displayName": "Получатель",
+					"options": {
+						"recipientProperties": {
+							"displayName": "Свойства получателя"
+						}
+					}
+				},
+				"recipientName": {
+					"displayName": "Переопределение имени получателя",
+					"description": "Переопределить имя получателя только для этой задачи"
+				},
+				"serviceTime": {
+					"displayName": "Время обслуживания",
+					"description": "Время обслуживания по умолчанию, которое применяется к задачам в минутах, если время обслуживания задач не существует."
+				},
+				"useMerchantForProxy": {
+					"displayName": "Использовать Merchant для переопределения прокси",
+					"description": "Следует ли переопределить идентификатор организации идентификатором организации продавца для этой задачи."
+				},
+				"hub": {
+					"displayName": "Имя или идентификатор хаба",
+					"description": "Центр команды. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"enableSelfAssignment": {
+					"displayName": "Самостоятельное назначение",
+					"description": "Разрешить ли водителям самостоятельно назначать задачи, находящиеся в неназначенном контейнере команды."
+				},
+				"endingRoute": {
+					"values": {
+						"endingRoute": {
+							"displayName": "Конечный маршрут"
+						},
+						"endingRouteProperties": {
+							"options": {
+								"routeEnd": {
+									"displayName": "Конец маршрута",
+									"description": "Где закончится маршрут",
+									"options": {
+										"team_hub": {
+											"displayName": "Центр команды"
+										},
+										"worker_routing_address": {
+											"displayName": "Маршрутный адрес работника"
+										},
+										"hub": {
+											"displayName": "Центр"
+										},
+										"anywhere": {
+											"displayName": "Конец где угодно"
+										}
+									}
+								},
+								"hub": {
+									"displayName": "Имя или идентификатор хаба",
+									"description": "Центр команды. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить маршрут",
+					"displayName": "Конечный маршрут",
+					"options": {
+						"endingRouteProperties": {
+							"displayName": "Завершение свойств маршрута"
+						}
+					}
+				},
+				"maxAllowedDelay": {
+					"displayName": "Макс. допустимая задержка",
+					"description": "Максимально допустимое время в минутах, в течение которого задача может быть задержана"
+				},
+				"maxTasksPerRoute": {
+					"displayName": "Максимальное количество задач на маршрут",
+					"description": "Общее количество задач, разрешенных на маршруте"
+				},
+				"scheduleTimeWindow": {
+					"values": {
+						"scheduleTimeWindow": {
+							"displayName": "Временное окно расписания"
+						},
+						"scheduleTimeWindowProperties": {
+							"options": {
+								"startTime": {
+									"displayName": "Время начала"
+								},
+								"endTime": {
+									"displayName": "Конец Времени"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить временное окно",
+					"displayName": "Временное окно расписания",
+					"options": {
+						"scheduleTimeWindowProperties": {
+							"displayName": "Свойства временного окна расписания"
+						}
+					}
+				},
+				"taskTimeWindow": {
+					"values": {
+						"taskTimeWindow": {
+							"displayName": "Окно времени задачи"
+						},
+						"taskTimeWindowProperties": {
+							"options": {
+								"startTime": {
+									"displayName": "Время начала"
+								},
+								"endTime": {
+									"displayName": "Конец Времени"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить временное окно",
+					"displayName": "Окно времени задачи",
+					"options": {
+						"taskTimeWindowProperties": {
+							"displayName": "Свойства окна времени задачи"
+						}
+					}
+				},
+				"capacity": {
+					"displayName": "Емкость",
+					"description": "Максимальное количество единиц, которое может перевезти этот работник, в целях оптимизации маршрута."
+				},
+				"displayName": {
+					"displayName": "Отображаемое имя",
+					"description": "Это значение используется вместо настоящего имени работника в SMS-уведомлениях, на страницах отслеживания доставки и за пределами организации."
+				},
+				"vehicle": {
+					"values": {
+						"vehicle": {
+							"displayName": "Транспортное средство"
+						},
+						"vehicleProperties": {
+							"options": {
+								"type": {
+									"displayName": "Тип",
+									"description": "Есть ли у работника автомобиль или нет. Если его не предусмотреть, к этому работнику будут относиться как к пешему.",
+									"options": {
+										"BICYCLE": {
+											"displayName": "Велосипед"
+										},
+										"CAR": {
+											"displayName": "Машина"
+										},
+										"MOTORCYCLE": {
+											"displayName": "Мотоцикл"
+										},
+										"TRUCK": {
+											"displayName": "Грузовик"
+										}
+									}
+								},
+								"description": {
+									"displayName": "Описание",
+									"description": "Марка, модель, год транспортного средства или любые другие соответствующие идентификационные данные."
+								},
+								"licensePlate": {
+									"displayName": "Номерной знак",
+									"description": "Номерной знак транспортного средства"
+								},
+								"color": {
+									"displayName": "Цвет",
+									"description": "Цвет автомобиля"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить автомобиль",
+					"displayName": "Транспортное средство",
+					"options": {
+						"vehicleProperties": {
+							"displayName": "Свойства автомобиля"
+						}
+					}
+				}
+			}
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"name": {
+					"displayName": "Имя",
+					"description": "Имя работника"
+				},
+				"phone": {
+					"displayName": "Телефон",
+					"description": "Телефон администратора"
+				},
+				"isReadOnly": {
+					"displayName": "Только чтение",
+					"description": "Может ли этот администратор выполнять операции записи"
+				},
+				"destination": {
+					"values": {
+						"destination": {
+							"displayName": "Место назначения"
+						},
+						"destinationProperties": {
+							"options": {
+								"unparsed": {
+									"displayName": "Неразобранный адрес",
+									"description": "Независимо от того, указан ли адрес в одной неанализируемой строке."
+								},
+								"address": {
+									"displayName": "Адрес назначения",
+									"description": "Подробная информация об адресе пункта назначения"
+								},
+								"addressNumber": {
+									"displayName": "Число",
+									"description": "Числовая составляющая этого адреса, он также может содержать буквы"
+								},
+								"addressStreet": {
+									"displayName": "Улица",
+									"description": "Название улицы"
+								},
+								"addressCity": {
+									"displayName": "Город",
+									"description": "Название муниципалитета"
+								},
+								"addressState": {
+									"displayName": "Состояние"
+								},
+								"addressCountry": {
+									"displayName": "Страна",
+									"description": "Название страны"
+								},
+								"addressPostalCode": {
+									"displayName": "Почтовый индекс",
+									"description": "Почтовый индекс"
+								},
+								"addressName": {
+									"displayName": "Адрес Имя",
+									"description": "Имя, связанное с этим адресом"
+								},
+								"addressApartment": {
+									"displayName": "Квартира",
+									"description": "Номер люкса или квартиры или любая дополнительная соответствующая информация."
+								},
+								"addressNotes": {
+									"displayName": "Адресные примечания",
+									"description": "Примечания о пункте назначения"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить пункт назначения",
+					"displayName": "Место назначения",
+					"options": {
+						"destinationProperties": {
+							"displayName": "Свойства назначения"
+						}
+					}
+				},
+				"teams": {
+					"displayName": "Названия или идентификаторы команд",
+					"description": "Одна или несколько команд, членом которых является работник. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"recipientName": {
+					"displayName": "Имя получателя",
+					"description": "Полное имя получателя"
+				},
+				"notes": {
+					"displayName": "Примечания",
+					"description": "Примечания к задаче"
+				},
+				"recipientPhone": {
+					"displayName": "Телефон получателя",
+					"description": "Уникальный действительный номер телефона в соответствии со страной организации, если в начале нет знака +. Если в номере телефона есть знак +, настройки страны организации будут игнорироваться."
+				},
+				"skipSMSNotifications": {
+					"displayName": "Пропустить SMS-уведомления получателя",
+					"description": "Запросил ли этот получатель пропустить SMS-уведомления"
+				},
+				"completeAfter": {
+					"displayName": "Завершить после",
+					"description": "Самый ранний срок, когда задача должна быть завершена"
+				},
+				"completeBefore": {
+					"displayName": "Завершить до",
+					"description": "Последний раз, когда задача должна быть завершена"
+				},
+				"executor": {
+					"displayName": "Идентификатор исполнителя",
+					"description": "Идентификатор организации, которая будет отвечать за выполнение задачи"
+				},
+				"merchant": {
+					"displayName": "Идентификатор продавца",
+					"description": "Идентификатор организации, который будет отображаться получателю задания"
+				},
+				"pickupTask": {
+					"displayName": "Поднять задачу",
+					"description": "Является ли задача задачей самовывоза"
+				},
+				"quantity": {
+					"displayName": "Количество",
+					"description": "Количество единиц, которые необходимо высадить при выполнении этой задачи, в целях оптимизации маршрута."
+				},
+				"serviceTime": {
+					"displayName": "Время обслуживания",
+					"description": "Количество минут, которое работник потратит по прибытии в пункт назначения этой задачи в целях оптимизации маршрута."
+				},
+				"managers": {
+					"displayName": "Имена или идентификаторы администраторов",
+					"description": "Список управляющих администраторов. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"hub": {
+					"displayName": "Имя или идентификатор хаба",
+					"description": "Центр команды. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"enableSelfAssignment": {
+					"displayName": "Самостоятельное назначение",
+					"description": "Разрешить ли водителям самостоятельно назначать задачи, находящиеся в неназначенном контейнере команды."
+				},
+				"workers": {
+					"displayName": "Имена или идентификаторы работников",
+					"description": "Список работников. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"capacity": {
+					"displayName": "Емкость",
+					"description": "Максимальное количество единиц, которое может перевезти этот работник, в целях оптимизации маршрута."
+				},
+				"displayName": {
+					"displayName": "Отображаемое имя",
+					"description": "Это значение используется вместо настоящего имени работника в SMS-уведомлениях, на страницах отслеживания доставки и за пределами организации."
+				}
+			}
+		},
+		"containerType": {
+			"displayName": "Тип контейнера",
+			"options": {
+				"organizations": {
+					"displayName": "Организации"
+				},
+				"teams": {
+					"displayName": "Команды"
+				},
+				"workers": {
+					"displayName": "Рабочие"
+				}
+			}
+		},
+		"containerId": {
+			"displayName": "Идентификатор контейнера",
+			"description": "Идентификатор объекта в соответствии с выбранным контейнером"
+		},
+		"type": {
+			"displayName": "Тип вставки",
+			"options": {
+				"0": {
+					"displayName": "Подготовить"
+				},
+				"1": {
+					"displayName": "По конкретному индексу"
+				},
+				"-1": {
+					"displayName": "Добавить"
+				}
+			}
+		},
+		"index": {
+			"displayName": "Индекс",
+			"description": "Указанный индекс указывает позицию, в которую будут вставлены задачи."
+		},
+		"tasks": {
+			"displayName": "Идентификаторы задач",
+			"description": "Идентификатор задачи, которая будет использоваться"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"considerDependencies": {
+					"displayName": "Учитывайте зависимости",
+					"description": "Включать ли семейство зависимостей целевой задачи (родительскую и дочернюю задачи) в результирующую операцию назначения."
+				},
+				"recipientSkipPhoneNumberValidation": {
+					"displayName": "Пропустить проверку номера телефона получателя",
+					"description": "Пропускать ли проверку номера телефона этого получателя"
+				},
+				"filter": {
+					"displayName": "Поля для возврата",
+					"description": "Список полей для отображения в ответе, если все они нежелательны.",
+					"options": {
+						"accountStatus": {
+							"displayName": "Статус аккаунта"
+						},
+						"activeTask": {
+							"displayName": "Активная задача"
+						},
+						"capacity": {
+							"displayName": "Емкость"
+						},
+						"delayTime": {
+							"displayName": "Время задержки"
+						},
+						"displayName": {
+							"displayName": "Отображаемое имя"
+						},
+						"imageUrl": {
+							"displayName": "URL-адрес изображения"
+						},
+						"location": {
+							"displayName": "Расположение"
+						},
+						"metadata": {
+							"displayName": "Метаданные"
+						},
+						"name": {
+							"displayName": "Имя"
+						},
+						"onDuty": {
+							"displayName": "На дежурстве"
+						},
+						"organization": {
+							"displayName": "Организация"
+						},
+						"phone": {
+							"displayName": "Телефон"
+						},
+						"tasks": {
+							"displayName": "Задачи"
+						},
+						"teams": {
+							"displayName": "Команды"
+						},
+						"timeCreated": {
+							"displayName": "Время создания"
+						},
+						"timeLastModified": {
+							"displayName": "Время последнего изменения"
+						},
+						"timeLastSeen": {
+							"displayName": "Время последнего посещения"
+						},
+						"userData": {
+							"displayName": "Пользовательские данные"
+						},
+						"vehicle": {
+							"displayName": "Транспортное средство"
+						},
+						"id": {
+							"displayName": "Идентификатор работника"
+						}
+					}
+				},
+				"analytics": {
+					"displayName": "Аналитика",
+					"description": "Требуется ли более подробный ответ, включая базовое событие, связанное с дежурством работника, пройденное расстояние (в метрах) и анализ времени"
+				}
+			}
+		},
+		"unparsed": {
+			"displayName": "Неразобранный адрес",
+			"description": "Независимо от того, указан ли адрес в одной неанализируемой строке."
+		},
+		"address": {
+			"displayName": "Адрес назначения",
+			"description": "Подробная информация об адресе пункта назначения"
+		},
+		"addressNumber": {
+			"displayName": "Число",
+			"description": "Числовая составляющая этого адреса, он также может содержать буквы"
+		},
+		"addressStreet": {
+			"displayName": "Улица",
+			"description": "Название улицы"
+		},
+		"addressCity": {
+			"displayName": "Город",
+			"description": "Название муниципалитета"
+		},
+		"addressCountry": {
+			"displayName": "Страна",
+			"description": "Название страны"
+		},
+		"destination": {
+			"options": {
+				"destination": {
+					"displayName": "Место назначения"
+				},
+				"destinationProperties": {
+					"displayName": "Свойства назначения",
+					"values": {
+						"unparsed": {
+							"displayName": "Неразобранный адрес",
+							"description": "Независимо от того, указан ли адрес в одной неанализируемой строке."
+						},
+						"address": {
+							"displayName": "Адрес назначения",
+							"description": "Подробная информация об адресе пункта назначения"
+						},
+						"addressNumber": {
+							"displayName": "Число",
+							"description": "Числовая составляющая этого адреса, он также может содержать буквы"
+						},
+						"addressStreet": {
+							"displayName": "Улица",
+							"description": "Название улицы"
+						},
+						"addressCity": {
+							"displayName": "Город",
+							"description": "Название муниципалитета"
+						},
+						"addressState": {
+							"displayName": "Состояние"
+						},
+						"addressCountry": {
+							"displayName": "Страна",
+							"description": "Название страны"
+						},
+						"addressPostalCode": {
+							"displayName": "Почтовый индекс",
+							"description": "Почтовый индекс"
+						},
+						"addressName": {
+							"displayName": "Адрес Имя",
+							"description": "Имя, связанное с этим адресом"
+						},
+						"addressApartment": {
+							"displayName": "Квартира",
+							"description": "Номер люкса или квартиры или любая дополнительная соответствующая информация."
+						},
+						"addressNotes": {
+							"displayName": "Адресные примечания",
+							"description": "Примечания о пункте назначения"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить пункт назначения",
+			"displayName": "Место назначения"
+		},
+		"getBy": {
+			"displayName": "Пройти",
+			"description": "Переменная, которая используется для поиска получателя.",
+			"options": {
+				"id": {
+					"displayName": "ID"
+				},
+				"phone": {
+					"displayName": "Телефон"
+				},
+				"name": {
+					"displayName": "Имя"
+				}
+			}
+		},
+		"phone": {
+			"displayName": "Телефон",
+			"description": "Список телефонов работников"
+		},
+		"recipientName": {
+			"displayName": "Имя получателя",
+			"description": "Полное имя получателя"
+		},
+		"recipientPhone": {
+			"displayName": "Телефон получателя",
+			"description": "Уникальный действительный номер телефона в соответствии со страной организации, если в начале нет знака +. Если в номере телефона есть знак +, настройки страны организации будут игнорироваться."
+		},
+		"success": {
+			"displayName": "Завершить как успех",
+			"description": "Было ли завершение задачи успешным"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"from": {
+					"displayName": "От",
+					"description": "Время начала диапазона. Будут включены задачи, созданные или завершенные в это время или после него."
+				},
+				"state": {
+					"displayName": "Состояние",
+					"description": "Состояние задач",
+					"options": {
+						"0": {
+							"displayName": "Неназначенный"
+						},
+						"1": {
+							"displayName": "Назначенный"
+						},
+						"2": {
+							"displayName": "Активный"
+						},
+						"3": {
+							"displayName": "Завершенный"
+						},
+						"all": {
+							"displayName": "[Все]"
+						}
+					}
+				},
+				"to": {
+					"displayName": "К",
+					"description": "Время окончания диапазона. По умолчанию используется текущее время, если не указано иное."
+				},
+				"dropOff": {
+					"values": {
+						"dropOff": {
+							"displayName": "Высадка"
+						},
+						"dropOffProperties": {
+							"options": {
+								"dropOffLongitude": {
+									"displayName": "Долгота сброса",
+									"description": "Долгота места высадки"
+								},
+								"dropOffLatitude": {
+									"displayName": "Выбросить широту",
+									"description": "Широта места высадки"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить вылет",
+					"displayName": "Высадка",
+					"options": {
+						"dropOffProperties": {
+							"displayName": "Свойства высадки"
+						}
+					}
+				},
+				"pickUp": {
+					"values": {
+						"pickUp": {
+							"displayName": "Подобрать"
+						},
+						"pickUpProperties": {
+							"options": {
+								"pickupLongitude": {
+									"displayName": "Подобрать долготу",
+									"description": "Долгота места получения"
+								},
+								"pickupLatitude": {
+									"displayName": "Выберите широту",
+									"description": "Широта места посадки"
+								},
+								"pickupTime": {
+									"displayName": "Время встречи",
+									"description": "Если запрос включает параметр PickupLocation, параметр PickupTime должен присутствовать, если в будущем время будет менее 3 часов."
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить самовывоз",
+					"displayName": "Подобрать",
+					"options": {
+						"pickUpProperties": {
+							"displayName": "Подобрать недвижимость"
+						}
+					}
+				},
+				"restrictedVehicleTypes": {
+					"displayName": "Ограниченные типы транспортных средств",
+					"description": "Типы транспортных средств, которые следует игнорировать в запросе",
+					"options": {
+						"CAR": {
+							"displayName": "Машина"
+						},
+						"MOTORCYCLE": {
+							"displayName": "Мотоцикл"
+						},
+						"BICYCLE": {
+							"displayName": "Велосипед"
+						},
+						"TRUCK": {
+							"displayName": "Грузовик"
+						}
+					}
+				},
+				"serviceTime": {
+					"displayName": "Время обслуживания",
+					"description": "Ожидаемое время, которое работник займет в пункте выдачи, пункте высадки или в обоих местах (в зависимости от обстоятельств). Единица измерения: секунды."
+				},
+				"radius": {
+					"displayName": "Радиус",
+					"description": "Длина в метрах радиуса сферической площадки, в которой следует искать рабочих. По умолчанию 1000, если отсутствует. Максимальное значение — 10000."
+				},
+				"states": {
+					"displayName": "Штаты",
+					"description": "Список рабочих штатов",
+					"options": {
+						"0": {
+							"displayName": "В свободное от работы время"
+						},
+						"1": {
+							"displayName": "Ожидание (при исполнении служебных обязанностей, без активных задач)"
+						},
+						"2": {
+							"displayName": "Активный (Дежурство, Активная задача)"
+						}
+					}
+				},
+				"teams": {
+					"displayName": "Названия или идентификаторы команд",
+					"description": "Список команд, в которых должны состоять работники. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"phones": {
+					"displayName": "Телефоны",
+					"description": "Список телефонов работников"
+				}
+			}
+		},
+		"overrideFields": {
+			"displayName": "Переопределить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"completeAfter": {
+					"displayName": "Завершить после",
+					"description": "Самый ранний срок, когда задача должна быть завершена"
+				},
+				"completeBefore": {
+					"displayName": "Завершить до",
+					"description": "Последний раз, когда задача должна быть завершена"
+				},
+				"includeBarcodes": {
+					"displayName": "Включить штрих-коды"
+				},
+				"includeDependencies": {
+					"displayName": "Включить зависимости"
+				},
+				"includeMetadata": {
+					"displayName": "Включить метаданные"
+				},
+				"notes": {
+					"displayName": "Примечания",
+					"description": "Примечания к задаче"
+				},
+				"pickupTask": {
+					"displayName": "Поднять задачу",
+					"description": "Является ли задача задачей самовывоза"
+				},
+				"serviceTime": {
+					"displayName": "Время обслуживания",
+					"description": "Количество минут, которое работник потратит по прибытии в пункт назначения этой задачи в целях оптимизации маршрута."
+				}
+			}
+		},
+		"workers": {
+			"displayName": "Имена или идентификаторы работников",
+			"description": "Список работников. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"managers": {
+			"displayName": "Имена или идентификаторы администраторов",
+			"description": "Список управляющих администраторов. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"byLocation": {
+			"displayName": "Поиск по местоположению",
+			"description": "Следует ли искать только тех работников, которые в настоящее время находятся в определенной целевой области"
+		},
+		"teams": {
+			"displayName": "Названия или идентификаторы команд",
+			"description": "Одна или несколько команд, членом которых является работник. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"longitude": {
+			"displayName": "Долгота",
+			"description": "Долготная составляющая пары координат"
+		},
+		"latitude": {
+			"displayName": "Широта",
+			"description": "Широтная составляющая пары координат"
+		},
+		"schedule": {
+			"options": {
+				"schedule": {
+					"displayName": "Расписание"
+				},
+				"scheduleProperties": {
+					"displayName": "Свойства расписания",
+					"values": {
+						"date": {
+							"displayName": "Дата",
+							"description": "Дата расписания"
+						},
+						"timezone": {
+							"displayName": "Имя или идентификатор часового пояса",
+							"description": "Действительный часовой пояс. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+						},
+						"shifts": {
+							"options": {
+								"shifts": {
+									"displayName": "Смены"
+								},
+								"shiftsProperties": {
+									"displayName": "Свойства сдвигов",
+									"values": {
+										"start": {
+											"displayName": "Начинать",
+											"description": "Время начала"
+										},
+										"end": {
+											"displayName": "Конец",
+											"description": "Время окончания"
+										}
+									}
+								}
+							},
+							"placeholder": "Добавить смену",
+							"displayName": "Смены"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить расписание",
+			"displayName": "Расписание",
+			"multipleValueButtonText": "Добавить расписание"
+		}
+	}
+}

@@ -1,0 +1,87 @@
+{
+	"header": {
+		"displayName": "Кафка",
+		"description": "Отправляет сообщения в тему Kafka."
+	},
+	"nodeView": {
+		"topic": {
+			"displayName": "Тема",
+			"description": "Имя очереди темы для публикации",
+			"placeholder": "название темы"
+		},
+		"sendInputData": {
+			"displayName": "Отправить входные данные",
+			"description": "Отправлять ли данные, полученные узлом, в формате JSON в Kafka"
+		},
+		"message": {
+			"displayName": "Сообщение",
+			"description": "Сообщение для отправки"
+		},
+		"jsonParameters": {
+			"displayName": "Параметры JSON"
+		},
+		"useSchemaRegistry": {
+			"displayName": "Использовать реестр схемы",
+			"description": "Использовать ли реестр Confluent Schema"
+		},
+		"schemaRegistryUrl": {
+			"displayName": "URL-адрес реестра схемы",
+			"description": "URL-адрес реестра схемы. Используется только в том случае, если учетные данные реестра схемы не выбраны.",
+			"placeholder": "https://schema-registry-domain:8081"
+		},
+		"useKey": {
+			"displayName": "Использовать ключ",
+			"description": "Использовать ли ключ сообщения"
+		},
+		"key": {
+			"displayName": "Ключ",
+			"description": "Ключ сообщения"
+		},
+		"eventName": {
+			"displayName": "Название события",
+			"description": "Пространство имен и имя схемы в реестре схем (namespace.name)"
+		},
+		"headersUi": {
+			"options": {
+				"headersUi": {
+					"displayName": "Заголовки"
+				},
+				"headerValues": {
+					"displayName": "Заголовок",
+					"values": {
+						"key": {
+							"displayName": "Ключ"
+						},
+						"value": {
+							"displayName": "Ценить"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить заголовок",
+			"displayName": "Заголовки"
+		},
+		"headerParametersJson": {
+			"displayName": "Заголовки (JSON)",
+			"description": "Параметры заголовка в формате JSON (плоский объект)"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"acks": {
+					"displayName": "Аккс",
+					"description": "Должен ли производитель ждать подтверждения от всех реплик?"
+				},
+				"compression": {
+					"displayName": "Сжатие",
+					"description": "Следует ли отправлять данные в сжатом формате с использованием кодека GZIP."
+				},
+				"timeout": {
+					"displayName": "Тайм-аут",
+					"description": "Время ожидания ответа в мс"
+				}
+			}
+		}
+	}
+}

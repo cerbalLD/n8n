@@ -1,0 +1,54 @@
+{
+	"header": {
+		"displayName": "Ваши",
+		"description": "Используйте API Yourls"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"url": {
+					"displayName": "URL"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"expand": {
+					"displayName": "Расширять",
+					"description": "Развернуть URL-адрес"
+				},
+				"shorten": {
+					"displayName": "Сократить",
+					"description": "Сократить URL-адрес"
+				},
+				"stats": {
+					"displayName": "Статистика",
+					"description": "Получите статистику по одному короткому URL-адресу"
+				}
+			}
+		},
+		"url": {
+			"displayName": "URL",
+			"description": "URL-адрес, который нужно сократить"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"keyword": {
+					"displayName": "Ключевое слово"
+				},
+				"title": {
+					"displayName": "Заголовок",
+					"description": "Заголовок для пользовательских коротких URL-адресов"
+				}
+			}
+		},
+		"shortUrl": {
+			"displayName": "Короткий URL-адрес",
+			"description": "Короткий URL-адрес, по которому можно получить статистику"
+		}
+	}
+}

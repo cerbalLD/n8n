@@ -1,0 +1,189 @@
+{
+	"header": {
+		"displayName": "Дропбокс",
+		"description": "Доступ к данным в Dropbox"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"description": "Средства аутентификации в сервисе",
+			"options": {
+				"accessToken": {
+					"displayName": "Токен доступа"
+				},
+				"oAuth2": {
+					"displayName": "ОАут2"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"file": {
+					"displayName": "Файл"
+				},
+				"folder": {
+					"displayName": "Папка"
+				},
+				"search": {
+					"displayName": "Поиск"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"copy": {
+					"displayName": "Копировать",
+					"description": "Копирование папки"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить папку"
+				},
+				"download": {
+					"displayName": "Скачать",
+					"description": "Скачать файл"
+				},
+				"move": {
+					"displayName": "Двигаться",
+					"description": "Переместить папку"
+				},
+				"upload": {
+					"displayName": "Загрузить",
+					"description": "Загрузить файл"
+				},
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать папку"
+				},
+				"list": {
+					"displayName": "Список",
+					"description": "Вернуть файлы и папки в заданную папку"
+				},
+				"query": {
+					"displayName": "Запрос"
+				}
+			}
+		},
+		"path": {
+			"displayName": "Путь к папке",
+			"description": "Путь для перечисления содержимого",
+			"placeholder": "/счета/2019/"
+		},
+		"toPath": {
+			"displayName": "К пути",
+			"description": "Новый путь к файлу или папке",
+			"placeholder": "/invoices/новое_имя.txt"
+		},
+		"binaryPropertyName": {
+			"displayName": "Входное двоичное поле",
+			"hint": "Имя входного двоичного поля, содержащего файл для загрузки."
+		},
+		"binaryData": {
+			"displayName": "Двоичный файл",
+			"description": "Следует ли брать данные для загрузки из двоичного поля"
+		},
+		"fileContent": {
+			"displayName": "Содержимое файла",
+			"description": "Текстовое содержимое файла для загрузки"
+		},
+		"query": {
+			"displayName": "Запрос",
+			"description": "Строка для поиска. Может соответствовать нескольким полям в зависимости от аргументов запроса."
+		},
+		"fileStatus": {
+			"displayName": "Статус файла",
+			"description": "Строка для поиска. Может соответствовать нескольким полям в зависимости от аргументов запроса.",
+			"options": {
+				"active": {
+					"displayName": "Активный"
+				},
+				"deleted": {
+					"displayName": "Удалено"
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"simple": {
+			"displayName": "Упрощать",
+			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"file_categories": {
+					"displayName": "Категории файлов",
+					"options": {
+						"audio": {
+							"displayName": "Аудио (mp3, qav, Mid и т. д.)"
+						},
+						"document": {
+							"displayName": "Документ (doc, docx, txt и т. д.)"
+						},
+						"paper": {
+							"displayName": "Dropbox Бумага"
+						},
+						"folder": {
+							"displayName": "Папка"
+						},
+						"image": {
+							"displayName": "Изображение (jpg, png, gif и т. д.)"
+						},
+						"other": {
+							"displayName": "Другой"
+						},
+						"pdf": {
+							"displayName": "PDF"
+						},
+						"presentation": {
+							"displayName": "Презентация (ppt, pptx, ключ и т. д.)"
+						},
+						"spreadsheet": {
+							"displayName": "Электронная таблица (xlsx, xls, csv и т. д.)"
+						},
+						"video": {
+							"displayName": "Видео (avi, wmv, mp4 и т. д.)"
+						}
+					}
+				},
+				"file_extensions": {
+					"displayName": "Расширения файлов",
+					"description": "Можно указать несколько расширений файлов, разделенных запятой. Пример: jpg,pdf."
+				},
+				"path": {
+					"displayName": "Папка",
+					"description": "Если это поле не указано, этот модуль выполняет поиск по всему Dropbox."
+				},
+				"include_deleted": {
+					"displayName": "Включить удаленные",
+					"description": "Будут ли результаты включать записи для файлов и папок, которые существовали раньше, но были удалены. По умолчанию для этого поля установлено значение False."
+				},
+				"include_has_explicit_shared_members": {
+					"displayName": "Включить общих участников",
+					"description": "Будут ли результаты включать в себя флаг для каждого файла, указывающий, имеет ли этот файл какие-либо явные члены. По умолчанию для этого поля установлено значение False."
+				},
+				"include_mounted_folders": {
+					"displayName": "Включить смонтированные папки",
+					"description": "Будут ли результаты включать записи в подключенных папках, включая папку приложения, общую папку и папку группы. По умолчанию для этого поля установлено значение True."
+				},
+				"include_non_downloadable_files": {
+					"displayName": "Включить незагружаемые файлы",
+					"description": "Включать ли файлы, которые невозможно загрузить, например Документы Google. По умолчанию для этого поля установлено значение True."
+				},
+				"recursive": {
+					"displayName": "Рекурсивный",
+					"description": "Будет ли операция списка папок применяться рекурсивно ко всем подпапкам, и ответ будет содержать содержимое всех подпапок. По умолчанию для этого поля установлено значение False."
+				}
+			}
+		}
+	}
+}

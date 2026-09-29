@@ -1,0 +1,340 @@
+{
+	"header": {
+		"displayName": "Биминдер",
+		"description": "Использование API Beeminder"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"apiToken": {
+					"displayName": "API-токен"
+				},
+				"oAuth2": {
+					"displayName": "ОАут2"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"charge": {
+					"displayName": "Заряжать"
+				},
+				"datapoint": {
+					"displayName": "Точка данных"
+				},
+				"goal": {
+					"displayName": "Цель"
+				},
+				"user": {
+					"displayName": "Пользователь"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать новую цель"
+				},
+				"createAll": {
+					"displayName": "Создать все",
+					"description": "Создать несколько точек данных одновременно"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удаление точки данных"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить информацию о пользователе"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Ставьте много целей"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить цель"
+				},
+				"getArchived": {
+					"displayName": "Получить в архив",
+					"description": "Получить заархивированные цели"
+				},
+				"refresh": {
+					"displayName": "Обновить",
+					"description": "Обновить данные о цели"
+				},
+				"shortCircuit": {
+					"displayName": "Короткое замыкание",
+					"description": "Залог короткого замыкания"
+				},
+				"stepDown": {
+					"displayName": "Шаг вниз",
+					"description": "Отказ от обязательства"
+				},
+				"cancelStepDown": {
+					"displayName": "Отменить шаг вниз"
+				},
+				"uncle": {
+					"displayName": "Дядя",
+					"description": "Сорвать цель и списать сумму залога"
+				}
+			}
+		},
+		"goalName": {
+			"displayName": "Название или идентификатор цели",
+			"description": "Название цели. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"amount": {
+			"displayName": "Количество",
+			"description": "Сумма комиссии в долларах США"
+		},
+		"datapoints": {
+			"displayName": "Точки данных",
+			"description": "Массив объектов данных, которые нужно создать. Каждый объект должен содержать значение и, при необходимости, метку времени, комментарий и т. д.",
+			"placeholder": "[{\"значение\": 1, \"комментарий\": \"Первая точка данных\"}, {\"значение\": 2, \"комментарий\": \"Вторая точка данных\"}]"
+		},
+		"slug": {
+			"displayName": "Гол Слаг",
+			"description": "Уникальный идентификатор цели"
+		},
+		"title": {
+			"displayName": "Название цели",
+			"description": "Читабельное название цели"
+		},
+		"goal_type": {
+			"displayName": "Тип цели",
+			"description": "Тип цели. <a href=\"https://api.beeminder.com/#attributes-2\">Подробнее здесь.</a>.",
+			"options": {
+				"hustler": {
+					"displayName": "Хастлер"
+				},
+				"biker": {
+					"displayName": "Байкер"
+				},
+				"fatloser": {
+					"displayName": "Толстяк"
+				},
+				"gainer": {
+					"displayName": "Гейнер"
+				},
+				"inboxer": {
+					"displayName": "Входящие"
+				},
+				"drinker": {
+					"displayName": "Пьющий"
+				},
+				"custom": {
+					"displayName": "Обычай"
+				}
+			}
+		},
+		"gunits": {
+			"displayName": "Целевые единицы",
+			"description": "Единицы измерения цели (например, «часы», «страницы», «фунты»)."
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"value": {
+			"displayName": "Ценить",
+			"description": "Значение точки данных для отправки"
+		},
+		"datapointId": {
+			"displayName": "Идентификатор точки данных"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"comment": {
+					"displayName": "Комментарий"
+				},
+				"timestamp": {
+					"displayName": "Временная метка",
+					"description": "По умолчанию установлено значение «сейчас», если ничего не передано, или существующая временная метка, если точка данных обновляется, а не создается."
+				},
+				"requestid": {
+					"displayName": "Идентификатор запроса",
+					"description": "Строка для уникальной идентификации точки данных."
+				},
+				"note": {
+					"displayName": "Примечание",
+					"description": "Объяснение заряда"
+				},
+				"dryrun": {
+					"displayName": "Пробный прогон",
+					"description": "Стоит ли тестировать конечную точку без фактического создания цели"
+				},
+				"goaldate": {
+					"displayName": "Дата цели",
+					"description": "Целевая дата достижения цели"
+				},
+				"goalval": {
+					"displayName": "Ценность цели",
+					"description": "Целевое значение цели"
+				},
+				"rate": {
+					"displayName": "Ставка",
+					"description": "Скорость прогресса (единиц в день)"
+				},
+				"initval": {
+					"displayName": "Начальное значение",
+					"description": "Начальное значение на сегодняшнюю дату"
+				},
+				"secret": {
+					"displayName": "Секрет",
+					"description": "Является ли цель секретной"
+				},
+				"datapublic": {
+					"displayName": "Данные общедоступны",
+					"description": "Являются ли данные общедоступными"
+				},
+				"datasource": {
+					"displayName": "Источник данных",
+					"description": "Источник данных для цели",
+					"options": {
+						"api": {
+							"displayName": "API"
+						},
+						"ifttt": {
+							"displayName": "IFTTT"
+						},
+						"zapier": {
+							"displayName": "Запир"
+						},
+						"manual": {
+							"displayName": "Руководство"
+						}
+					}
+				},
+				"tags": {
+					"displayName": "Теги",
+					"description": "Массив буквенно-цифровых тегов цели. Заменяет существующие теги.",
+					"placeholder": "[\"тег1\", \"тег2\"]"
+				},
+				"datapoints": {
+					"displayName": "Включить точки данных",
+					"description": "Включать ли точки данных в ответ"
+				},
+				"emaciated": {
+					"displayName": "Истощенный",
+					"description": "Включение атрибутов цели, называемых «дорога», «Roadall» и «Fullroad», будет удалено из целевых объектов."
+				},
+				"associations": {
+					"displayName": "Ассоциации",
+					"description": "Включать ли ассоциации в ответ"
+				},
+				"diff_since": {
+					"displayName": "Разница с",
+					"description": "Будут возвращены только цели и точки данных, которые были созданы или обновлены после отметки времени."
+				},
+				"skinny": {
+					"displayName": "Тощий",
+					"description": "Возвращать ли минимальные пользовательские данные"
+				},
+				"datapoints_count": {
+					"displayName": "Количество точек данных",
+					"description": "Количество точек данных для включения"
+				}
+			}
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"title": {
+					"displayName": "Заголовок",
+					"description": "Читабельное название цели"
+				},
+				"yaxis": {
+					"displayName": "Ось Y",
+					"description": "Метка оси Y для графика целей"
+				},
+				"tmin": {
+					"displayName": "Тмин",
+					"description": "Минимальная дата достижения цели в формате гггг-мм-дд.",
+					"placeholder": "гггг-мм-дд"
+				},
+				"tmax": {
+					"displayName": "Тмакс",
+					"description": "Максимальная дата достижения цели в формате гггг-мм-дд.",
+					"placeholder": "гггг-мм-дд"
+				},
+				"secret": {
+					"displayName": "Секрет",
+					"description": "Является ли цель секретной"
+				},
+				"datapublic": {
+					"displayName": "Данные общедоступны",
+					"description": "Являются ли данные общедоступными"
+				},
+				"roadall": {
+					"displayName": "Дорога Все",
+					"description": "Массив массивов, определяющих ярко-красную линию. Каждый подмассив содержит [дата, значение, курс] ровно с одним нулевым полем.",
+					"placeholder": "[[\"2023-01-01\", 0, ноль], [ноль, 100, 1]]"
+				},
+				"datasource": {
+					"displayName": "Источник данных",
+					"description": "Источник данных для цели. Используйте пустую строку для ввода вручную.",
+					"options": {
+						"api": {
+							"displayName": "API"
+						},
+						"ifttt": {
+							"displayName": "IFTTT"
+						},
+						"zapier": {
+							"displayName": "Запир"
+						},
+						"": {
+							"displayName": "Руководство"
+						}
+					}
+				},
+				"tags": {
+					"displayName": "Теги",
+					"description": "Массив буквенно-цифровых тегов цели. Заменяет существующие теги.",
+					"placeholder": "[\"тег1\", \"тег2\"]"
+				},
+				"value": {
+					"displayName": "Ценить",
+					"description": "Значение точки данных для отправки"
+				},
+				"comment": {
+					"displayName": "Комментарий"
+				},
+				"timestamp": {
+					"displayName": "Временная метка",
+					"description": "По умолчанию установлено значение «сейчас», если ничего не передано, или существующая временная метка, если точка данных обновляется, а не создается."
+				}
+			}
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"sort": {
+					"displayName": "Сортировать",
+					"description": "Атрибут для сортировки"
+				},
+				"page": {
+					"displayName": "Страница",
+					"description": "Используется для разбивки результатов на страницы, индексируется 1, что означает, что страница 1 является первой страницей."
+				},
+				"per": {
+					"displayName": "За страницу",
+					"description": "Количество результатов на странице. По умолчанию 25. Без параметра страницы игнорируется. Должно быть неотрицательным"
+				}
+			}
+		}
+	}
+}

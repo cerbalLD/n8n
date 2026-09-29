@@ -1,0 +1,27 @@
+{
+	"header": {
+		"displayName": "Триггер стека форм",
+		"description": "Запускает рабочий процесс при отправке формы Formstack."
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"accessToken": {
+					"displayName": "Токен доступа"
+				},
+				"oAuth2": {
+					"displayName": "ОАут2"
+				}
+			}
+		},
+		"formId": {
+			"displayName": "Имя или идентификатор формы",
+			"description": "Форма Formstack для отслеживания новых отправок. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"simple": {
+			"displayName": "Упрощать",
+			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+		}
+	}
+}

@@ -1,0 +1,101 @@
+{
+	"header": {
+		"displayName": "Dropконтакт",
+		"description": "Найдите электронную почту B2B и обогатите контакты"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"contact": {
+					"displayName": "Контакт"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"enrich": {
+					"displayName": "Обогащать",
+					"description": "Найдите электронные письма B2B и обогатите свой контакт, используя его имя и его веб-сайт."
+				},
+				"fetchRequest": {
+					"displayName": "Получить запрос"
+				}
+			}
+		},
+		"requestId": {
+			"displayName": "Идентификатор запроса"
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"placeholder": "имя@email.com"
+		},
+		"simplify": {
+			"displayName": "Упростить вывод (быстрее)",
+			"description": "Если выключено, перед завершением ожидается получение контактных данных. Время ожидания можно настроить с помощью опции «Продлить время ожидания». Если этот параметр включен, возвращается request_id, который можно использовать позже в операции запроса выборки."
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"num_siren": {
+					"displayName": "Номер компании СИРЕНА"
+				},
+				"siret": {
+					"displayName": "Код компании SIRET"
+				},
+				"company": {
+					"displayName": "Название компании"
+				},
+				"country": {
+					"displayName": "Страна"
+				},
+				"first_name": {
+					"displayName": "Имя"
+				},
+				"full_name": {
+					"displayName": "Полное имя"
+				},
+				"last_name": {
+					"displayName": "Фамилия"
+				},
+				"linkedin": {
+					"displayName": "Профиль в LinkedIn"
+				},
+				"phone": {
+					"displayName": "Номер телефона"
+				},
+				"website": {
+					"displayName": "Веб-сайт"
+				}
+			}
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"waitTime": {
+					"displayName": "Время ожидания получения данных",
+					"description": "Если не упрощать ответ, данные будут получены в два этапа. Этот параметр определяет, как долго ждать (в секундах) перед попыткой второго шага."
+				},
+				"siren": {
+					"displayName": "Французская компания Enrich",
+					"description": "Если вам нужен номер <a href=\"https://en.wikipedia.org/wiki/SIREN_code\" target=\"_blank\">SIREN</a>, код NAF, номер TVA, адрес компании и информацию о руководителе компании. Применяется только к французским компаниям."
+				},
+				"language": {
+					"displayName": "Язык",
+					"description": "Будет ли ответ на английском или французском языке",
+					"options": {
+						"en": {
+							"displayName": "Английский"
+						},
+						"fr": {
+							"displayName": "Французский"
+						}
+					}
+				}
+			}
+		}
+	}
+}

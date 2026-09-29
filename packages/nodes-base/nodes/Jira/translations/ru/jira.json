@@ -1,0 +1,487 @@
+{
+	"header": {
+		"displayName": "Джира Программное обеспечение",
+		"description": "Использование API программного обеспечения Jira"
+	},
+	"nodeView": {
+		"jiraVersion": {
+			"displayName": "Версия Джиры",
+			"options": {
+				"cloud": {
+					"displayName": "Облако"
+				},
+				"cloudOAuth2": {
+					"displayName": "Облако (OAuth2)"
+				},
+				"server": {
+					"displayName": "Сервер (самостоятельный хостинг)"
+				},
+				"serverPat": {
+					"displayName": "Патент сервера (самостоятельный хостинг)"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"issue": {
+					"displayName": "Проблема",
+					"description": "Создает задачу или, если в Jira включена возможность создания подзадач, подзадачу."
+				},
+				"issueAttachment": {
+					"displayName": "Приложение к выпуску",
+					"description": "Добавляйте, удаляйте и получайте вложения к задаче"
+				},
+				"issueComment": {
+					"displayName": "Комментарий к проблеме",
+					"description": "Получение, создание, обновление и удаление комментария к задаче"
+				},
+				"user": {
+					"displayName": "Пользователь",
+					"description": "Получить, создать и удалить пользователя"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"changelog": {
+					"displayName": "Журнал изменений",
+					"description": "Получить журнал изменений проблемы"
+				},
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать нового пользователя"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удаление пользователя"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить пользователя"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получите много комментариев"
+				},
+				"notify": {
+					"displayName": "Уведомить",
+					"description": "Создайте уведомление по электронной почте о проблеме и добавьте его в очередь почты."
+				},
+				"transitions": {
+					"displayName": "Статус",
+					"description": "Возвращает либо все переходы, либо переход, который может выполнить пользователь по задаче, в зависимости от ее статуса."
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить комментарий"
+				},
+				"add": {
+					"displayName": "Добавлять",
+					"description": "Добавить комментарий к проблеме"
+				},
+				"remove": {
+					"displayName": "Удалять",
+					"description": "Удалить комментарий"
+				}
+			}
+		},
+		"project": {
+			"displayName": "Проект"
+		},
+		"issueType": {
+			"displayName": "Тип проблемы"
+		},
+		"summary": {
+			"displayName": "Краткое содержание"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"assignee": {
+					"displayName": "Правопреемник"
+				},
+				"description": {
+					"displayName": "Описание"
+				},
+				"componentIds": {
+					"displayName": "Имена или идентификаторы компонентов",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"customFieldsUi": {
+					"values": {
+						"customFieldsUi": {
+							"displayName": "Пользовательские поля"
+						},
+						"customFieldsValues": {
+							"options": {
+								"fieldId": {
+									"displayName": "Поле"
+								},
+								"fieldValue": {
+									"displayName": "Значение поля",
+									"description": "Значение поля для установки"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить настраиваемое поле",
+					"displayName": "Пользовательские поля",
+					"options": {
+						"customFieldsValues": {
+							"displayName": "Пользовательское поле"
+						}
+					}
+				},
+				"labels": {
+					"displayName": "Имена или идентификаторы этикеток",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"serverLabels": {
+					"displayName": "Этикетки"
+				},
+				"parentIssueKey": {
+					"displayName": "Ключ родительской проблемы"
+				},
+				"priority": {
+					"displayName": "Приоритет"
+				},
+				"reporter": {
+					"displayName": "Репортер"
+				},
+				"updateHistory": {
+					"displayName": "Обновить историю",
+					"description": "Будет ли проект, в котором создана проблема, добавлен в список недавно просмотренных проектов пользователя, как показано в разделе «Проекты в Jira». Это также заполняет поле поиска проблем JQL LastViewed."
+				},
+				"expand": {
+					"displayName": "Расширять",
+					"description": "Включите дополнительную информацию о пользователе",
+					"options": {
+						"groups": {
+							"displayName": "Группы",
+							"description": "Включить все группы, к которым принадлежит пользователь"
+						},
+						"applicationRoles": {
+							"displayName": "Роли приложения",
+							"description": "Включите подробную информацию обо всех приложениях, к которым пользователь может получить доступ."
+						}
+					}
+				},
+				"fields": {
+					"displayName": "Поля",
+					"description": "Список полей для возврата по задаче. Этот параметр принимает список, разделенный запятыми. Используйте его для получения подмножества полей. Допустимые значения: <code>*all</code> Возвращает все поля. <code>*navigable</code> Возвращает поля, доступные для навигации. Любое поле проблемы с префиксом минус для исключения."
+				},
+				"fieldsByKey": {
+					"displayName": "Поля по ключу",
+					"description": "Ссылаются ли на поля в полях ключи, а не идентификаторы. Этот параметр полезен, если поля были добавлены приложением Connect и ключ поля может отличаться от его идентификатора."
+				},
+				"properties": {
+					"displayName": "Характеристики",
+					"description": "Список свойств задачи, которые необходимо вернуть для этой задачи. Этот параметр принимает список, разделенный запятыми. Допустимые значения: <code>*all</code> Возвращает все свойства задачи. Любой ключ свойства проблемы с префиксом минус для исключения. Примеры: <code>*all</code> Возвращает все свойства. <code>*all</code>,-prop1 Возвращает все свойства, кроме prop1. <code>prop1,prop2</code> Возвращает свойства prop1 и prop2. Этот параметр можно указывать несколько раз. Например, Properties=prop1,prop2& Properties=prop3."
+				},
+				"htmlBody": {
+					"displayName": "HTML-тело",
+					"description": "HTML-текст электронного уведомления о проблеме."
+				},
+				"subject": {
+					"displayName": "Предмет",
+					"description": "Тема электронного уведомления о проблеме. Если это не указано, то в качестве темы указывается ключ задачи и краткое описание."
+				},
+				"textBody": {
+					"displayName": "Текстовое тело",
+					"description": "Тема электронного уведомления о проблеме. Если это не указано, то в качестве темы указывается ключ задачи и краткое описание."
+				},
+				"transitionId": {
+					"displayName": "Идентификатор перехода",
+					"description": "Идентификатор перехода"
+				},
+				"skipRemoteOnlyCondition": {
+					"displayName": "Пропустить условие только удаленного доступа",
+					"description": "Включены ли в ответ переходы с условием Hide From User Condition"
+				},
+				"password": {
+					"displayName": "Пароль",
+					"description": "Пароль для пользователя. Если пароль не установлен, генерируется случайный пароль."
+				},
+				"notification": {
+					"displayName": "Уведомление",
+					"description": "Отправлять ли пользователю электронное письмо с подтверждением того, что он добавлен в Jira"
+				}
+			}
+		},
+		"issueKey": {
+			"displayName": "Ключ проблемы",
+			"description": "Ключ комментария к проблеме"
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"assignee": {
+					"displayName": "Правопреемник"
+				},
+				"description": {
+					"displayName": "Описание"
+				},
+				"customFieldsUi": {
+					"values": {
+						"customFieldsUi": {
+							"displayName": "Пользовательские поля"
+						},
+						"customFieldsValues": {
+							"options": {
+								"fieldId": {
+									"displayName": "Поле"
+								},
+								"fieldValue": {
+									"displayName": "Значение поля",
+									"description": "Значение поля для установки"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить настраиваемое поле",
+					"displayName": "Пользовательские поля",
+					"options": {
+						"customFieldsValues": {
+							"displayName": "Пользовательское поле"
+						}
+					}
+				},
+				"issueType": {
+					"displayName": "Тип проблемы",
+					"description": "Типы проблем"
+				},
+				"labels": {
+					"displayName": "Имена или идентификаторы этикеток",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"serverLabels": {
+					"displayName": "Этикетки"
+				},
+				"parentIssueKey": {
+					"displayName": "Ключ родительской проблемы"
+				},
+				"priority": {
+					"displayName": "Приоритет"
+				},
+				"reporter": {
+					"displayName": "Репортер"
+				},
+				"summary": {
+					"displayName": "Краткое содержание"
+				},
+				"statusId": {
+					"displayName": "Статус"
+				}
+			}
+		},
+		"deleteSubtasks": {
+			"displayName": "Удалить подзадачи"
+		},
+		"simplifyOutput": {
+			"displayName": "Упрощать",
+			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"expand": {
+					"displayName": "Расширять",
+					"description": "Используйте «Развернуть», чтобы включить в ответ дополнительную информацию о комментариях. Этот параметр принимает отображаемое тело, которое возвращает тело комментария, отображаемое в HTML.",
+					"options": {
+						"changelog": {
+							"displayName": "Журнал изменений",
+							"description": "Возвращает список последних обновлений проблемы, отсортированный по дате, начиная с самого последнего."
+						},
+						"editmeta": {
+							"displayName": "Эдитмета",
+							"description": "Возвращает информацию о том, как можно редактировать каждое поле."
+						},
+						"names": {
+							"displayName": "Имена",
+							"description": "Возвращает отображаемое имя каждого поля"
+						},
+						"operations": {
+							"displayName": "Операции",
+							"description": "Возвращает все возможные операции для задачи"
+						},
+						"renderedFields": {
+							"displayName": "Отрисованные поля",
+							"description": "Возвращает значения полей, отображаемые в формате HTML."
+						},
+						"schema": {
+							"displayName": "Схема",
+							"description": "Возвращает схему, описывающую тип поля."
+						},
+						"transitions": {
+							"displayName": "Переходы",
+							"description": "Возвращает все возможные переходы для задачи"
+						},
+						"versionedRepresentations": {
+							"displayName": "Версионные представления",
+							"description": "Массив JSON, содержащий каждую версию значения поля."
+						},
+						"renderedBody": {
+							"displayName": "Визуализированное тело"
+						}
+					}
+				},
+				"fields": {
+					"displayName": "Поля",
+					"description": "Список полей, возвращаемых для каждой проблемы. Используйте его для получения подмножества полей. Этот параметр принимает список, разделенный запятыми. Варианты расширения включают: <code>*all</code> Возвращает все поля. <code>*navigable</code> Возвращает поля, доступные для навигации. Любое поле проблемы с префиксом минус для исключения."
+				},
+				"fieldsByKey": {
+					"displayName": "Поля по ключу",
+					"description": "Ссылаются ли на поля в полях ключи, а не идентификаторы. Этот параметр полезен, если поля были добавлены приложением Connect и ключ поля может отличаться от его идентификатора."
+				},
+				"jql": {
+					"displayName": "JQL",
+					"description": "JQL-выражение"
+				},
+				"wikiMarkup": {
+					"displayName": "Используйте вики-разметку",
+					"description": "Включить ли синтаксический анализ викиформатирования для этого комментария. По умолчанию — ложь."
+				},
+				"orderBy": {
+					"displayName": "Заказать по",
+					"description": "Упорядочить комментарии по дате создания",
+					"options": {
+						"+created": {
+							"displayName": "Создано по возрастанию"
+						},
+						"-created": {
+							"displayName": "Создано по убыванию"
+						}
+					}
+				}
+			}
+		},
+		"jsonParameters": {
+			"displayName": "Параметры JSON"
+		},
+		"notificationRecipientsUi": {
+			"options": {
+				"notificationRecipientsUi": {
+					"displayName": "Получатели уведомлений",
+					"description": "Получатели электронного уведомления о проблеме"
+				},
+				"notificationRecipientsValues": {
+					"displayName": "Получатели",
+					"values": {
+						"reporter": {
+							"displayName": "Репортер",
+							"description": "Следует ли отправлять уведомление корреспонденту выпуска"
+						},
+						"assignee": {
+							"displayName": "Правопреемник",
+							"description": "Следует ли отправлять уведомление правопреемникам проблемы"
+						},
+						"watchers": {
+							"displayName": "Наблюдатели",
+							"description": "Следует ли отправлять уведомление правопреемникам проблемы"
+						},
+						"voters": {
+							"displayName": "Избиратели",
+							"description": "Следует ли направлять уведомление избирателям вопроса"
+						},
+						"users": {
+							"displayName": "Имена пользователей или идентификаторы",
+							"description": "Список пользователей, которые получат уведомление. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+						},
+						"groups": {
+							"displayName": "Имена или идентификаторы групп",
+							"description": "Список групп для получения уведомления. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить получателей",
+			"displayName": "Получатели уведомлений",
+			"description": "Получатели электронного уведомления о проблеме"
+		},
+		"notificationRecipientsJson": {
+			"displayName": "Получатели уведомлений",
+			"description": "Получатели электронного уведомления о проблеме"
+		},
+		"notificationRecipientsRestrictionsUi": {
+			"options": {
+				"notificationRecipientsRestrictionsUi": {
+					"displayName": "Ограничения получателей уведомлений",
+					"description": "Ограничивает уведомления пользователями с указанными разрешениями"
+				},
+				"notificationRecipientsRestrictionsValues": {
+					"displayName": "Ограничения получателей",
+					"values": {
+						"users": {
+							"displayName": "Имена пользователей или идентификаторы",
+							"description": "Список пользователей, которые получат уведомление. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+						},
+						"groups": {
+							"displayName": "Имена или идентификаторы групп",
+							"description": "Список групп для получения уведомления. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить ограничение получателей",
+			"displayName": "Ограничения получателей уведомлений",
+			"description": "Ограничивает уведомления пользователями с указанными разрешениями"
+		},
+		"notificationRecipientsRestrictionsJson": {
+			"displayName": "Ограничения получателей уведомлений",
+			"description": "Ограничивает уведомления пользователями с указанными разрешениями"
+		},
+		"binaryPropertyName": {
+			"displayName": "Входное двоичное поле",
+			"hint": "Имя входного двоичного поля, содержащего файл для записи."
+		},
+		"attachmentId": {
+			"displayName": "Идентификатор вложения",
+			"description": "Идентификатор вложения"
+		},
+		"download": {
+			"displayName": "Скачать"
+		},
+		"binaryProperty": {
+			"displayName": "Поместите выходной файл в поле",
+			"hint": "Имя выходного двоичного поля, в которое помещается файл."
+		},
+		"comment": {
+			"displayName": "Комментарий",
+			"description": "Текст комментария"
+		},
+		"commentJson": {
+			"displayName": "Формат документа (JSON)",
+			"description": "Формат документа Atlassian (ADF). Онлайн-конструктор можно найти <a href=\"https://developer.atlassian.com/cloud/jira/platform/apis/document/playground/\">здесь</a>."
+		},
+		"commentId": {
+			"displayName": "Идентификатор комментария",
+			"description": "Идентификатор комментария"
+		},
+		"username": {
+			"displayName": "Имя пользователя"
+		},
+		"emailAddress": {
+			"displayName": "Адрес электронной почты"
+		},
+		"displayName": {
+			"displayName": "Отображаемое имя"
+		},
+		"accountId": {
+			"displayName": "Идентификатор аккаунта",
+			"description": "Идентификатор учетной записи пользователя, которого требуется получить"
+		}
+	}
+}

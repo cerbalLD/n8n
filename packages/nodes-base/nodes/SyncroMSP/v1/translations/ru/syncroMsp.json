@@ -1,0 +1,454 @@
+{
+	"header": {
+		"displayName": "СинкроМСП",
+		"description": "Получает данные из SyncroMSP"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"contact": {
+					"displayName": "Контакт"
+				},
+				"customer": {
+					"displayName": "Клиент"
+				},
+				"rmm": {
+					"displayName": "RMM"
+				},
+				"ticket": {
+					"displayName": "Билет"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать новое оповещение RMM"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить оповещение RMM"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить оповещение RMM"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получайте множество оповещений RMM"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить контакт"
+				},
+				"mute": {
+					"displayName": "Немой",
+					"description": "Отключить оповещение RMM"
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"businessName": {
+					"displayName": "Название компании"
+				},
+				"email": {
+					"displayName": "Электронная почта",
+					"placeholder": "имя@email.com"
+				},
+				"firstName": {
+					"displayName": "Имя"
+				},
+				"includeDisabled": {
+					"displayName": "Включить отключенное"
+				},
+				"lastname": {
+					"displayName": "Фамилия"
+				},
+				"query": {
+					"displayName": "Поисковый запрос",
+					"description": "Поисковый запрос, это может быть что угодно, связанное с данными билета, например, пользователь и т. д.",
+					"placeholder": "Джон Доу"
+				},
+				"sort": {
+					"displayName": "Сортировать",
+					"description": "Поле клиента для заказа, например: «имя ASC», «город DESC» и т. д.",
+					"placeholder": "имя ASC"
+				},
+				"status": {
+					"displayName": "Статус",
+					"options": {
+						"Customer Reply": {
+							"displayName": "Ответ клиента"
+						},
+						"In Progress": {
+							"displayName": "В ходе выполнения"
+						},
+						"New": {
+							"displayName": "Новый"
+						},
+						"Resolved": {
+							"displayName": "Решено"
+						},
+						"Scheduled": {
+							"displayName": "Запланировано"
+						},
+						"Waiting for Parts": {
+							"displayName": "В ожидании запчастей"
+						},
+						"Waiting on Customer": {
+							"displayName": "Ожидание клиента"
+						},
+						"active": {
+							"displayName": "Активный"
+						},
+						"all": {
+							"displayName": "Все"
+						},
+						"resolved": {
+							"displayName": "Решено"
+						}
+					}
+				}
+			}
+		},
+		"customerId": {
+			"displayName": "Идентификатор клиента",
+			"description": "Удаление конкретного клиента по идентификатору"
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"placeholder": "имя@email.com"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"address": {
+					"values": {
+						"address": {
+							"displayName": "Адрес"
+						},
+						"addressFields": {
+							"options": {
+								"address": {
+									"displayName": "Линия 1"
+								},
+								"address2": {
+									"displayName": "Линия 2"
+								},
+								"city": {
+									"displayName": "Город"
+								},
+								"state": {
+									"displayName": "Состояние"
+								},
+								"zip": {
+									"displayName": "ZIP"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить поля адреса",
+					"displayName": "Адрес",
+					"options": {
+						"addressFields": {
+							"displayName": "Поля адреса"
+						}
+					}
+				},
+				"businessName": {
+					"displayName": "Название компании"
+				},
+				"firstName": {
+					"displayName": "Имя"
+				},
+				"getSms": {
+					"displayName": "Получить СМС"
+				},
+				"invoiceCcEmails": {
+					"displayName": "Электронные письма со счетами"
+				},
+				"lastname": {
+					"displayName": "Фамилия"
+				},
+				"noEmail": {
+					"displayName": "Нет электронной почты"
+				},
+				"notes": {
+					"displayName": "Примечания"
+				},
+				"notificationEmail": {
+					"displayName": "Уведомление по электронной почте"
+				},
+				"phone": {
+					"displayName": "Телефон"
+				},
+				"referredBy": {
+					"displayName": "По рекомендации",
+					"description": "Источник, из которого клиент перенаправляется на платформу, например Linkedin, Google, имя клиента и т. д."
+				},
+				"assetId": {
+					"displayName": "Идентификатор актива"
+				},
+				"contactId": {
+					"displayName": "Назначить контакту",
+					"description": "Идентификатор контакта, которому вы хотите назначить заявку."
+				},
+				"issueType": {
+					"displayName": "Тип проблемы",
+					"options": {
+						"Contract Work": {
+							"displayName": "Контрактная работа"
+						},
+						"Network Project": {
+							"displayName": "Сетевой проект"
+						},
+						"Other": {
+							"displayName": "Другой"
+						},
+						"Regular Maintenance": {
+							"displayName": "Регулярное техническое обслуживание"
+						},
+						"Remote Support": {
+							"displayName": "Удаленная поддержка"
+						}
+					}
+				},
+				"status": {
+					"displayName": "Статус",
+					"description": "Если используется вместе с параметром «Поисковой запрос», будет применен только поисковый запрос.",
+					"options": {
+						"Customer Reply": {
+							"displayName": "Ответ клиента"
+						},
+						"In Progress": {
+							"displayName": "В ходе выполнения"
+						},
+						"New": {
+							"displayName": "Новый"
+						},
+						"Resolved": {
+							"displayName": "Решено"
+						},
+						"Scheduled": {
+							"displayName": "Запланировано"
+						},
+						"Waiting for Parts": {
+							"displayName": "В ожидании запчастей"
+						},
+						"Waiting on Customer": {
+							"displayName": "Ожидание клиента"
+						}
+					}
+				},
+				"name": {
+					"displayName": "Имя"
+				},
+				"resolved": {
+					"displayName": "Решено"
+				}
+			}
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"address": {
+					"values": {
+						"address": {
+							"displayName": "Адрес"
+						},
+						"addressFields": {
+							"options": {
+								"address": {
+									"displayName": "Линия 1"
+								},
+								"address2": {
+									"displayName": "Линия 2"
+								},
+								"city": {
+									"displayName": "Город"
+								},
+								"state": {
+									"displayName": "Состояние"
+								},
+								"zip": {
+									"displayName": "ZIP"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить поля адреса",
+					"displayName": "Адрес",
+					"options": {
+						"addressFields": {
+							"displayName": "Поля адреса"
+						}
+					}
+				},
+				"businessName": {
+					"displayName": "Название компании"
+				},
+				"email": {
+					"displayName": "Электронная почта",
+					"placeholder": "имя@email.com"
+				},
+				"firstName": {
+					"displayName": "Имя"
+				},
+				"getSms": {
+					"displayName": "Получить СМС"
+				},
+				"invoiceCcEmails": {
+					"displayName": "Электронные письма со счетами"
+				},
+				"lastName": {
+					"displayName": "Фамилия"
+				},
+				"noEmail": {
+					"displayName": "Нет электронной почты"
+				},
+				"notes": {
+					"displayName": "Примечания"
+				},
+				"notificationEmail": {
+					"displayName": "Уведомление по электронной почте"
+				},
+				"phone": {
+					"displayName": "Телефон"
+				},
+				"referredBy": {
+					"displayName": "По рекомендации",
+					"description": "Источник, из которого клиент перенаправляется на платформу, например Linkedin, Google, имя клиента и т. д."
+				},
+				"assetId": {
+					"displayName": "Идентификатор актива"
+				},
+				"contactId": {
+					"displayName": "Назначить контакту",
+					"description": "Идентификатор контакта, которому вы хотите назначить заявку."
+				},
+				"customerId": {
+					"displayName": "Идентификатор клиента"
+				},
+				"dueDate": {
+					"displayName": "Срок оплаты"
+				},
+				"issueType": {
+					"displayName": "Тип проблемы",
+					"options": {
+						"Contract Work": {
+							"displayName": "Контрактная работа"
+						},
+						"Network Project": {
+							"displayName": "Сетевой проект"
+						},
+						"Other": {
+							"displayName": "Другой"
+						},
+						"Regular Maintenance": {
+							"displayName": "Регулярное техническое обслуживание"
+						},
+						"Remote Support": {
+							"displayName": "Удаленная поддержка"
+						}
+					}
+				},
+				"status": {
+					"displayName": "Статус",
+					"options": {
+						"Customer Reply": {
+							"displayName": "Ответ клиента"
+						},
+						"In Progress": {
+							"displayName": "В ходе выполнения"
+						},
+						"New": {
+							"displayName": "Новый"
+						},
+						"Resolved": {
+							"displayName": "Решено"
+						},
+						"Scheduled": {
+							"displayName": "Запланировано"
+						},
+						"Waiting for Parts": {
+							"displayName": "В ожидании запчастей"
+						},
+						"Waiting on Customer": {
+							"displayName": "Ожидание клиента"
+						}
+					}
+				},
+				"subject": {
+					"displayName": "Предмет"
+				},
+				"name": {
+					"displayName": "Имя"
+				}
+			}
+		},
+		"subject": {
+			"displayName": "Предмет"
+		},
+		"ticketId": {
+			"displayName": "Идентификатор билета",
+			"description": "Удаление конкретного клиента по идентификатору"
+		},
+		"contactId": {
+			"displayName": "Идентификатор контакта",
+			"description": "Удаление определенного контакта по идентификатору"
+		},
+		"alertId": {
+			"displayName": "Идентификатор оповещения RMM",
+			"description": "Отключить оповещение RMM по идентификатору"
+		},
+		"assetId": {
+			"displayName": "Идентификатор актива"
+		},
+		"description": {
+			"displayName": "Описание"
+		},
+		"muteFor": {
+			"displayName": "Период отключения звука",
+			"description": "Время отключения оповещения",
+			"options": {
+				"1-hour": {
+					"displayName": "1 час"
+				},
+				"1-day": {
+					"displayName": "1 день"
+				},
+				"2-days": {
+					"displayName": "2 дня"
+				},
+				"1-week": {
+					"displayName": "1 неделя"
+				},
+				"2-weeks": {
+					"displayName": "2 недели"
+				},
+				"1-month": {
+					"displayName": "1 месяц"
+				},
+				"forever": {
+					"displayName": "Навсегда"
+				}
+			}
+		}
+	}
+}

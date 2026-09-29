@@ -1,0 +1,107 @@
+{
+	"header": {
+		"displayName": "Триггер сходства",
+		"description": "Обработка событий Affinity с помощью веб-перехватчиков"
+	},
+	"nodeView": {
+		"events": {
+			"displayName": "События",
+			"description": "События веб-перехватчика, которые будут включены для этой конечной точки",
+			"options": {
+				"field_value": {
+					"created": {
+						"displayName": "поле_значение.создано"
+					},
+					"deleted": {
+						"displayName": "поле_значение.удалено"
+					},
+					"updated": {
+						"displayName": "поле_значение.обновлено"
+					}
+				},
+				"field": {
+					"created": {
+						"displayName": "поле.создано"
+					},
+					"deleted": {
+						"displayName": "поле.удалено"
+					},
+					"updated": {
+						"displayName": "поле.обновлено"
+					}
+				},
+				"file": {
+					"created": {
+						"displayName": "файл.создан"
+					},
+					"deleted": {
+						"displayName": "файл.удален"
+					}
+				},
+				"list_entry": {
+					"created": {
+						"displayName": "list_entry.created"
+					},
+					"deleted": {
+						"displayName": "list_entry.deleted"
+					}
+				},
+				"list": {
+					"created": {
+						"displayName": "список.создан"
+					},
+					"deleted": {
+						"displayName": "список.удален"
+					},
+					"updated": {
+						"displayName": "список.обновлено"
+					}
+				},
+				"note": {
+					"created": {
+						"displayName": "Примечание.создано"
+					},
+					"deleted": {
+						"displayName": "Примечание.удалено"
+					},
+					"updated": {
+						"displayName": "Примечание.обновлено"
+					}
+				},
+				"opportunity": {
+					"created": {
+						"displayName": "возможность.создана"
+					},
+					"deleted": {
+						"displayName": "возможность.удалено"
+					},
+					"updated": {
+						"displayName": "возможность.обновлено"
+					}
+				},
+				"organization": {
+					"created": {
+						"displayName": "организация.создано"
+					},
+					"deleted": {
+						"displayName": "организация.удалено"
+					},
+					"updated": {
+						"displayName": "организация.обновлено"
+					}
+				},
+				"person": {
+					"created": {
+						"displayName": "человек.создан"
+					},
+					"deleted": {
+						"displayName": "человек.удален"
+					},
+					"updated": {
+						"displayName": "человек.обновлено"
+					}
+				}
+			}
+		}
+	}
+}

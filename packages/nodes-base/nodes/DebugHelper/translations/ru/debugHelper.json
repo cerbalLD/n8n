@@ -1,0 +1,113 @@
+{
+	"header": {
+		"displayName": "DebugHelper",
+		"description": "Умышленно вызывает проблемы и генерирует полезные данные для отладки."
+	},
+	"nodeView": {
+		"category": {
+			"displayName": "Категория",
+			"options": {
+				"doNothing": {
+					"displayName": "Ничего не делать",
+					"description": "Ничего не делает"
+				},
+				"throwError": {
+					"displayName": "Выбросить ошибку",
+					"description": "Выдает ошибку с указанным типом и сообщением"
+				},
+				"oom": {
+					"displayName": "Недостаточно памяти",
+					"description": "Генерирует большой объем памяти, что приводит к ошибке нехватки памяти."
+				},
+				"randomData": {
+					"displayName": "Генерация случайных данных",
+					"description": "Генерирует случайные наборы данных"
+				}
+			}
+		},
+		"throwErrorType": {
+			"displayName": "Тип ошибки",
+			"options": {
+				"NodeApiError": {
+					"displayName": "NodeApiError"
+				},
+				"NodeOperationError": {
+					"displayName": "Нодеоператионеррор"
+				},
+				"Error": {
+					"displayName": "Ошибка"
+				}
+			}
+		},
+		"throwErrorMessage": {
+			"displayName": "Сообщение об ошибке",
+			"description": "Сообщение, которое нужно отправить как часть ошибки"
+		},
+		"memorySizeValue": {
+			"displayName": "Размер памяти для генерации",
+			"description": "Приблизительный объем памяти, который необходимо сгенерировать. Будьте щедры..."
+		},
+		"randomDataType": {
+			"displayName": "Тип данных",
+			"options": {
+				"address": {
+					"displayName": "Адрес"
+				},
+				"latLong": {
+					"displayName": "Координаты"
+				},
+				"creditCard": {
+					"displayName": "Кредитная карта"
+				},
+				"email": {
+					"displayName": "Электронная почта"
+				},
+				"ipv4": {
+					"displayName": "IPv4"
+				},
+				"ipv6": {
+					"displayName": "IPv6"
+				},
+				"macAddress": {
+					"displayName": "MAC"
+				},
+				"nanoid": {
+					"displayName": "НаноИды"
+				},
+				"url": {
+					"displayName": "URL"
+				},
+				"user": {
+					"displayName": "Пользовательские данные"
+				},
+				"uuid": {
+					"displayName": "UUID"
+				},
+				"semver": {
+					"displayName": "Версия"
+				}
+			}
+		},
+		"nanoidAlphabet": {
+			"displayName": "НаноИд Алфавит",
+			"description": "Алфавит, который будет использоваться для генерации наноидов."
+		},
+		"nanoidLength": {
+			"displayName": "Длина наноидентификатора",
+			"description": "Длина каждого наноида"
+		},
+		"randomDataSeed": {
+			"displayName": "Семя",
+			"description": "Если установлено, начальное значение будет использоваться для генерации данных (то же начальное значение будет генерировать те же данные)",
+			"placeholder": "Оставьте пустым для случайного начального значения"
+		},
+		"randomDataCount": {
+			"displayName": "Количество элементов для создания",
+			"description": "Количество случайных элементов данных, которые нужно сгенерировать в массив."
+		},
+		"randomDataSingleArray": {
+			"displayName": "Вывод в виде одного массива",
+			"description": "Выводить ли один массив вместо нескольких элементов"
+		}
+	}
+}

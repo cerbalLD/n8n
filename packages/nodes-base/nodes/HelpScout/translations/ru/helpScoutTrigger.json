@@ -1,0 +1,65 @@
+{
+	"header": {
+		"displayName": "Помогите скауту триггеру",
+		"description": "Запускает рабочий процесс при возникновении событий Help Scout."
+	},
+	"nodeView": {
+		"events": {
+			"displayName": "События",
+			"options": {
+				"convo": {
+					"assigned": {
+						"displayName": "Разговор – назначено"
+					},
+					"created": {
+						"displayName": "Разговор – создано"
+					},
+					"deleted": {
+						"displayName": "Разговор – удален"
+					},
+					"merged": {
+						"displayName": "Разговор – объединен"
+					},
+					"moved": {
+						"displayName": "Разговор — перемещён"
+					},
+					"status": {
+						"displayName": "Разговор – Статус"
+					},
+					"tags": {
+						"displayName": "Разговор — Теги"
+					},
+					"agent": {
+						"reply": {
+							"created": {
+								"displayName": "Ответ агента беседы — создано"
+							}
+						}
+					},
+					"customer": {
+						"reply": {
+							"created": {
+								"displayName": "Ответ клиента в диалоге – создано"
+							}
+						}
+					},
+					"note": {
+						"created": {
+							"displayName": "Заметка для разговора – создано"
+						}
+					}
+				},
+				"customer": {
+					"created": {
+						"displayName": "Клиент - Создано"
+					}
+				},
+				"satisfaction": {
+					"ratings": {
+						"displayName": "Рейтинг – получено"
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,128 @@
+{
+	"header": {
+		"displayName": "APITemplate.io",
+		"description": "Используйте API APITemplate.io."
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"account": {
+					"displayName": "Счет"
+				},
+				"image": {
+					"displayName": "Изображение"
+				},
+				"pdf": {
+					"displayName": "PDF"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать"
+				},
+				"get": {
+					"displayName": "Получать"
+				}
+			}
+		},
+		"imageTemplateId": {
+			"displayName": "Имя или идентификатор шаблона",
+			"description": "Идентификатор шаблона изображения, который будет использоваться. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"pdfTemplateId": {
+			"displayName": "Имя или идентификатор шаблона",
+			"description": "Идентификатор используемого шаблона PDF. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"jsonParameters": {
+			"displayName": "Параметры JSON"
+		},
+		"download": {
+			"displayName": "Скачать",
+			"description": "Имя двоичного свойства, в которое записываются данные считанного файла."
+		},
+		"binaryProperty": {
+			"displayName": "Поместите выходной файл в поле",
+			"hint": "Имя выходного двоичного поля, в которое помещается файл."
+		},
+		"overridesJson": {
+			"displayName": "Переопределения (JSON)",
+			"placeholder": "[ {\"name\": \"text_1\", \"text\": \"hello world\", \"textBackgroundColor\": \"rgba(246, 243, 243, 0)\" } ]"
+		},
+		"propertiesJson": {
+			"displayName": "Свойства (JSON)",
+			"placeholder": "{ \"имя\": \"text_1\" }"
+		},
+		"overridesUi": {
+			"options": {
+				"overridesUi": {
+					"displayName": "Переопределения"
+				},
+				"overrideValues": {
+					"displayName": "Переопределить",
+					"values": {
+						"propertiesUi": {
+							"options": {
+								"propertiesUi": {
+									"displayName": "Характеристики"
+								},
+								"propertyValues": {
+									"displayName": "Свойство",
+									"values": {
+										"key": {
+											"displayName": "Ключ",
+											"description": "Название объекта размещения"
+										},
+										"value": {
+											"displayName": "Ценить",
+											"description": "Стоимость недвижимости"
+										}
+									}
+								}
+							},
+							"placeholder": "Добавить недвижимость",
+							"displayName": "Характеристики"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить переопределение",
+			"displayName": "Переопределения"
+		},
+		"propertiesUi": {
+			"options": {
+				"propertiesUi": {
+					"displayName": "Характеристики"
+				},
+				"propertyValues": {
+					"displayName": "Свойство",
+					"values": {
+						"key": {
+							"displayName": "Ключ",
+							"description": "Название объекта размещения"
+						},
+						"value": {
+							"displayName": "Ценить",
+							"description": "Стоимость недвижимости"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить недвижимость",
+			"displayName": "Характеристики"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"fileName": {
+					"displayName": "Имя файла",
+					"description": "Имя загруженного изображения/pdf. Он должен включать расширение. Например: отчет.pdf"
+				}
+			}
+		}
+	}
+}

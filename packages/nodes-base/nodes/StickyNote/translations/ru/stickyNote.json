@@ -1,0 +1,20 @@
+{
+	"header": {
+		"displayName": "Заметка",
+		"description": "Сделайте ваш рабочий процесс более понятным"
+	},
+	"nodeView": {
+		"content": {
+			"displayName": "Содержание"
+		},
+		"height": {
+			"displayName": "Высота"
+		},
+		"width": {
+			"displayName": "Ширина"
+		},
+		"color": {
+			"displayName": "Цвет"
+		}
+	}
+}

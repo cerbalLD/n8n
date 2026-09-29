@@ -1,0 +1,130 @@
+{
+	"header": {
+		"displayName": "ТрэвисСИ",
+		"description": "Использование API TravisCI"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"build": {
+					"displayName": "Строить"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"cancel": {
+					"displayName": "Отмена",
+					"description": "Отменить сборку"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить сборку"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получите много сборок"
+				},
+				"restart": {
+					"displayName": "Перезапуск",
+					"description": "Перезапустить сборку"
+				},
+				"trigger": {
+					"displayName": "Курок",
+					"description": "Запустить сборку"
+				}
+			}
+		},
+		"buildId": {
+			"displayName": "Идентификатор сборки",
+			"description": "Значение, однозначно идентифицирующее сборку"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"include": {
+					"displayName": "Включать",
+					"description": "Список атрибутов для активной загрузки",
+					"placeholder": "build.commit"
+				},
+				"order": {
+					"displayName": "Заказ",
+					"description": "Вы можете указать порядок сортировки вашего ответа",
+					"options": {
+						"asc": {
+							"displayName": "ASC"
+						},
+						"desc": {
+							"displayName": "DESC"
+						}
+					}
+				},
+				"sortBy": {
+					"displayName": "Сортировать по",
+					"options": {
+						"created_at": {
+							"displayName": "Создано в"
+						},
+						"finished_at": {
+							"displayName": "Завершено в"
+						},
+						"id": {
+							"displayName": "ID"
+						},
+						"number": {
+							"displayName": "Число"
+						},
+						"started_at": {
+							"displayName": "Началось с"
+						}
+					}
+				},
+				"message": {
+					"displayName": "Сообщение",
+					"description": "Сообщение о статусе Travis-ci, прикрепленное к запросу"
+				},
+				"mergeMode": {
+					"displayName": "Режим слияния",
+					"options": {
+						"deep_merge": {
+							"displayName": "Глубокое слияние"
+						},
+						"deep_merge_append": {
+							"displayName": "Глубокое слияние, добавление"
+						},
+						"deep_merge_prepend": {
+							"displayName": "Глубокое слияние в начале"
+						},
+						"merge": {
+							"displayName": "Объединить"
+						},
+						"replace": {
+							"displayName": "Заменять"
+						}
+					}
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"slug": {
+			"displayName": "Слизень",
+			"description": "То же, что {ownerName}/{repositoryName}",
+			"placeholder": "n8n-io/n8n"
+		},
+		"branch": {
+			"displayName": "Ветвь",
+			"description": "Филиал просили построить",
+			"placeholder": "владелец"
+		}
+	}
+}

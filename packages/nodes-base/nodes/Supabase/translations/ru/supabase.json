@@ -1,0 +1,216 @@
+{
+	"header": {
+		"displayName": "Супабаза",
+		"description": "Добавлять, получать, удалять и обновлять данные в таблице"
+	},
+	"nodeView": {
+		"useCustomSchema": {
+			"displayName": "Использовать пользовательскую схему",
+			"description": "Использовать ли схему базы данных, отличную от «общедоступной» схемы по умолчанию (требуется раскрытие схемы в <a href=\"https://supabase.com/docs/guides/api/using-custom-schemas?queryGroups=language&language=curl#exposing-custom-schemas\">Supabase API</a>)"
+		},
+		"schema": {
+			"displayName": "Схема",
+			"description": "Имя схемы базы данных, которая будет использоваться для таблицы"
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"row": {
+					"displayName": "Ряд"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать новую строку"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить строку"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить ряд"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить много строк"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить строку"
+				}
+			}
+		},
+		"tableId": {
+			"displayName": "Имя или идентификатор таблицы",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"filterType": {
+			"displayName": "Фильтр",
+			"options": {
+				"manual": {
+					"displayName": "Сборка вручную"
+				},
+				"string": {
+					"displayName": "Нить"
+				},
+				"none": {
+					"displayName": "Никто"
+				}
+			}
+		},
+		"matchType": {
+			"displayName": "Должен совпадать",
+			"options": {
+				"anyFilter": {
+					"displayName": "Любой фильтр"
+				},
+				"allFilters": {
+					"displayName": "Все фильтры"
+				}
+			}
+		},
+		"filters": {
+			"options": {
+				"filters": {
+					"displayName": "Фильтры",
+					"description": "Фильтруйте, чтобы решить, какие строки будут извлечены."
+				},
+				"conditions": {
+					"displayName": "Условия",
+					"values": {
+						"keyName": {
+							"displayName": "Имя поля или идентификатор",
+							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+						},
+						"condition": {
+							"displayName": "Состояние",
+							"options": {
+								"eq": {
+									"displayName": "Равно"
+								},
+								"fullText": {
+									"displayName": "Полнотекстовый"
+								},
+								"gt": {
+									"displayName": "Больше, чем"
+								},
+								"gte": {
+									"displayName": "Больше или равно"
+								},
+								"ilike": {
+									"displayName": "оператор ILIKE",
+									"description": "Используйте * вместо %"
+								},
+								"is": {
+									"displayName": "Является",
+									"description": "Проверка точного равенства (ноль, истина, ложь, неизвестно)"
+								},
+								"lt": {
+									"displayName": "Меньше, чем"
+								},
+								"lte": {
+									"displayName": "Меньше или равно"
+								},
+								"like": {
+									"displayName": "НРАВИТСЯ оператор",
+									"description": "Используйте * вместо %"
+								},
+								"neq": {
+									"displayName": "Не Равно"
+								}
+							}
+						},
+						"searchFunction": {
+							"displayName": "Функция поиска",
+							"options": {
+								"fts": {
+									"displayName": "to_tsquery"
+								},
+								"plfts": {
+									"displayName": "Plainto_tsquery"
+								},
+								"phfts": {
+									"displayName": "фразаto_tsquery"
+								},
+								"wfts": {
+									"displayName": "websearch_to_tsquery"
+								}
+							}
+						},
+						"keyValue": {
+							"displayName": "Значение поля"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить условие",
+			"displayName": "Фильтры",
+			"description": "Фильтруйте, чтобы решить, какие строки будут извлечены."
+		},
+		"jsonNotice": {
+			"displayName": "См. руководство <a href=\"https://postgrest.org/en/stable/references/api/tables_views.html#horizontal-filtering\" target=\"_blank\">PostgREST</a> по созданию фильтров."
+		},
+		"filterString": {
+			"displayName": "Фильтры (строка)",
+			"placeholder": "name=eq.jhon"
+		},
+		"dataToSend": {
+			"displayName": "Данные для отправки",
+			"options": {
+				"autoMapInputData": {
+					"displayName": "Автоматическое сопоставление входных данных с столбцами",
+					"description": "Используйте, когда входные свойства узла соответствуют именам столбцов назначения."
+				},
+				"defineBelow": {
+					"displayName": "Определите ниже для каждого столбца",
+					"description": "Установите значение для каждого столбца назначения"
+				}
+			}
+		},
+		"inputsToIgnore": {
+			"displayName": "Входные данные, которые следует игнорировать",
+			"description": "Список входных свойств, которые следует избегать при отправке, разделенных запятыми. Оставьте пустым, чтобы отправить все свойства.",
+			"placeholder": "Введите свойства..."
+		},
+		"fieldsUi": {
+			"options": {
+				"fieldsUi": {
+					"displayName": "Поля для отправки"
+				},
+				"fieldValues": {
+					"displayName": "Поле",
+					"values": {
+						"fieldId": {
+							"displayName": "Имя поля или идентификатор",
+							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+						},
+						"fieldValue": {
+							"displayName": "Значение поля"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить поле",
+			"displayName": "Поля для отправки",
+			"multipleValueButtonText": "Добавить поле для отправки"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"orderBy": {
+			"displayName": "Заказать по",
+			"description": "Столбец(и) для упорядочивания результатов, например. <code>ID</code> или <code>created_at.desc</code>. Рекомендуется при использовании «Вернуть все» или «Ограничить ≥ 1000», чтобы избежать дублирования или отсутствия записей.",
+			"placeholder": "например ID или созданный_at.desc"
+		}
+	}
+}

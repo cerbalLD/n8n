@@ -1,0 +1,148 @@
+{
+	"header": {
+		"displayName": "Веро",
+		"description": "Использование Vero API"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"user": {
+					"displayName": "Пользователь",
+					"description": "Создавайте, обновляйте и управляйте статусом подписки ваших пользователей."
+				},
+				"event": {
+					"displayName": "Событие",
+					"description": "Отслеживайте события на основе действий ваших клиентов в режиме реального времени."
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"addTags": {
+					"displayName": "Добавить теги",
+					"description": "Добавляет тег в профиль пользователя"
+				},
+				"alias": {
+					"displayName": "Псевдоним",
+					"description": "Изменение идентификатора пользователя"
+				},
+				"create": {
+					"displayName": "Создать или обновить",
+					"description": "Создайте или обновите профиль пользователя"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удаление пользователя"
+				},
+				"resubscribe": {
+					"displayName": "Повторная подписка",
+					"description": "Повторная подписка пользователя"
+				},
+				"removeTags": {
+					"displayName": "Удалить теги",
+					"description": "Удаляет тег из профиля пользователя"
+				},
+				"unsubscribe": {
+					"displayName": "Отписаться",
+					"description": "Отписаться от пользователя"
+				},
+				"track": {
+					"displayName": "Отслеживать",
+					"description": "Отслеживание события для конкретного клиента"
+				}
+			}
+		},
+		"id": {
+			"displayName": "ID",
+			"description": "Уникальный идентификатор клиента"
+		},
+		"jsonParameters": {
+			"displayName": "Параметры JSON"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"email": {
+					"displayName": "Электронная почта",
+					"description": "Таблица, в которой создается строка",
+					"placeholder": "имя@email.com"
+				}
+			}
+		},
+		"dataAttributesUi": {
+			"options": {
+				"dataAttributesUi": {
+					"displayName": "Данные",
+					"description": "Пары «ключ-значение», представляющие любые свойства, которые вы хотите отслеживать с помощью этого события."
+				},
+				"dataAttributesValues": {
+					"displayName": "Данные",
+					"values": {
+						"key": {
+							"displayName": "Ключ",
+							"description": "Имя свойства, которое нужно установить"
+						},
+						"value": {
+							"displayName": "Ценить",
+							"description": "Значение свойства для установки"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить данные",
+			"displayName": "Данные",
+			"description": "Пары «ключ-значение», представляющие любые свойства, которые вы хотите отслеживать с помощью этого события."
+		},
+		"dataAttributesJson": {
+			"displayName": "Данные",
+			"description": "Пары «ключ-значение», представляющие настраиваемые свойства пользователя, которые вы хотите обновить."
+		},
+		"newId": {
+			"displayName": "Новый идентификатор",
+			"description": "Новый уникальный идентификатор пользователя"
+		},
+		"tags": {
+			"displayName": "Теги",
+			"description": "Теги для удаления, разделенные знаком \",\""
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"placeholder": "имя@email.com"
+		},
+		"eventName": {
+			"displayName": "Название события",
+			"description": "Название отслеживаемого события"
+		},
+		"extraAttributesUi": {
+			"options": {
+				"extraAttributesUi": {
+					"displayName": "Дополнительный",
+					"description": "Пары ключ-значение, представляющие зарезервированные операторы, специфичные для Vero. См. примечание о «дедупликации» ниже."
+				},
+				"extraAttributesValues": {
+					"displayName": "Дополнительный",
+					"values": {
+						"key": {
+							"displayName": "Ключ",
+							"description": "Имя свойства, которое нужно установить"
+						},
+						"value": {
+							"displayName": "Ценить",
+							"description": "Значение свойства для установки"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить Экстра",
+			"displayName": "Дополнительный",
+			"description": "Пары ключ-значение, представляющие зарезервированные операторы, специфичные для Vero. См. примечание о «дедупликации» ниже."
+		},
+		"extraAttributesJson": {
+			"displayName": "Дополнительный",
+			"description": "Пары ключ-значение, представляющие зарезервированные операторы, специфичные для Vero. См. примечание о «дедупликации» ниже."
+		}
+	}
+}

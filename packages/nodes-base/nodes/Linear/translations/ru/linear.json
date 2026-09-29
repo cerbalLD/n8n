@@ -1,0 +1,172 @@
+{
+	"header": {
+		"displayName": "Линейный",
+		"description": "Использовать линейный API"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"apiToken": {
+					"displayName": "API-токен"
+				},
+				"oAuth2": {
+					"displayName": "ОАут2"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"comment": {
+					"displayName": "Комментарий"
+				},
+				"issue": {
+					"displayName": "Проблема"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"addComment": {
+					"displayName": "Добавить комментарий",
+					"description": "Добавить комментарий к проблеме"
+				},
+				"addLink": {
+					"displayName": "Добавить ссылку",
+					"description": "Добавить ссылку на задачу"
+				},
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать задачу"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить проблему"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить проблему"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получите много проблем"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить проблему"
+				}
+			}
+		},
+		"issueId": {
+			"displayName": "Идентификатор проблемы"
+		},
+		"comment": {
+			"displayName": "Комментарий"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"parentId": {
+					"displayName": "Идентификатор родительского комментария",
+					"description": "Идентификатор родительского комментария, если это ответ"
+				},
+				"assigneeId": {
+					"displayName": "Имя или идентификатор правопреемника",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"description": {
+					"displayName": "Описание"
+				},
+				"priorityId": {
+					"displayName": "Приоритет",
+					"options": {
+						"0": {
+							"displayName": "Нет приоритета"
+						},
+						"1": {
+							"displayName": "Срочный"
+						},
+						"2": {
+							"displayName": "Высокий"
+						},
+						"3": {
+							"displayName": "Нормальный"
+						},
+						"4": {
+							"displayName": "Низкий"
+						}
+					}
+				},
+				"stateId": {
+					"displayName": "Название или идентификатор штата",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				}
+			}
+		},
+		"teamId": {
+			"displayName": "Название или идентификатор команды",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"title": {
+			"displayName": "Заголовок"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"assigneeId": {
+					"displayName": "Имя или идентификатор правопреемника",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"description": {
+					"displayName": "Описание"
+				},
+				"priorityId": {
+					"displayName": "Имя/идентификатор приоритета",
+					"options": {
+						"0": {
+							"displayName": "Нет приоритета"
+						},
+						"1": {
+							"displayName": "Срочный"
+						},
+						"2": {
+							"displayName": "Высокий"
+						},
+						"3": {
+							"displayName": "Середина"
+						},
+						"4": {
+							"displayName": "Низкий"
+						}
+					}
+				},
+				"stateId": {
+					"displayName": "Название или идентификатор штата",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"teamId": {
+					"displayName": "Название или идентификатор команды",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"title": {
+					"displayName": "Заголовок"
+				}
+			}
+		},
+		"link": {
+			"displayName": "Связь"
+		}
+	}
+}

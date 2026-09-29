@@ -1,0 +1,6 @@
+{
+	"header": {
+		"displayName": "MailerLite Триггер",
+		"description": "Запускает рабочий процесс при возникновении событий MailerLite."
+	}
+}

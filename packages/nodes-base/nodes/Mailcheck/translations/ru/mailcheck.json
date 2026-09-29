@@ -1,0 +1,29 @@
+{
+	"header": {
+		"displayName": "проверка почты",
+		"description": "Использование API Mailcheck"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"email": {
+					"displayName": "Электронная почта"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"check": {
+					"displayName": "Проверять"
+				}
+			}
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"description": "Адрес электронной почты для проверки",
+			"placeholder": "имя@email.com"
+		}
+	}
+}

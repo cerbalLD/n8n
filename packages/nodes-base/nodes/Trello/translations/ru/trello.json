@@ -1,0 +1,611 @@
+{
+	"header": {
+		"displayName": "Трелло",
+		"description": "Создание, изменение и удаление досок и карточек"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"apiKey": {
+					"displayName": "API-ключ"
+				},
+				"oAuth1": {
+					"displayName": "ОАут1"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"attachment": {
+					"displayName": "Вложение"
+				},
+				"board": {
+					"displayName": "Доска"
+				},
+				"boardMember": {
+					"displayName": "Член правления"
+				},
+				"card": {
+					"displayName": "Карта"
+				},
+				"cardComment": {
+					"displayName": "Комментарий к карте"
+				},
+				"checklist": {
+					"displayName": "Контрольный список"
+				},
+				"label": {
+					"displayName": "Этикетка"
+				},
+				"list": {
+					"displayName": "Список"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать новый список"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить ярлык"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить данные списка"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить много списков"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить список"
+				},
+				"add": {
+					"displayName": "Добавлять",
+					"description": "Добавьте участника в доску, используя идентификатор участника"
+				},
+				"invite": {
+					"displayName": "Приглашать",
+					"description": "Пригласить нового участника на доску по электронной почте"
+				},
+				"remove": {
+					"displayName": "Удалять",
+					"description": "Удалить участника из доски, используя идентификатор участника"
+				},
+				"createCheckItem": {
+					"displayName": "Создать элемент контрольного списка",
+					"description": "Создайте элемент контрольного списка"
+				},
+				"deleteCheckItem": {
+					"displayName": "Удалить элемент контрольного списка",
+					"description": "Удаление элемента контрольного списка"
+				},
+				"getCheckItem": {
+					"displayName": "Получить элементы контрольного списка",
+					"description": "Получите конкретный контрольный список на карте"
+				},
+				"completedCheckItems": {
+					"displayName": "Получите выполненные пункты контрольного списка",
+					"description": "Получите заполненные пункты чек-листа на карту"
+				},
+				"updateCheckItem": {
+					"displayName": "Обновить элемент контрольного списка",
+					"description": "Обновление элемента в контрольном списке на карточке"
+				},
+				"addLabel": {
+					"displayName": "Добавить на карту",
+					"description": "Добавить метку на карточку"
+				},
+				"removeLabel": {
+					"displayName": "Удалить с карты",
+					"description": "Удаление метки с карты"
+				},
+				"archive": {
+					"displayName": "Архив",
+					"description": "Архивировать/разархивировать список"
+				},
+				"getCards": {
+					"displayName": "Получить карты",
+					"description": "Получить все карты в списке"
+				}
+			}
+		},
+		"cardId": {
+			"displayName": "Идентификатор карты",
+			"description": "Идентификатор карты"
+		},
+		"url": {
+			"displayName": "URL-адрес источника",
+			"description": "URL-адрес вложения, которое нужно добавить."
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"mimeType": {
+					"displayName": "MIME-тип",
+					"description": "MIME-тип добавляемого вложения.",
+					"placeholder": "изображение/png"
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Новое имя для элемента контрольного списка"
+				},
+				"fields": {
+					"displayName": "Поля",
+					"description": "Поля для возврата. Либо «все», либо список полей, разделенных запятыми."
+				},
+				"prefs_cardAging": {
+					"displayName": "Старение",
+					"description": "Определяет тип устаревания карты, который должен иметь место на плате, если включено устаревание карты.",
+					"options": {
+						"pirate": {
+							"displayName": "Пират"
+						},
+						"regular": {
+							"displayName": "Обычный"
+						}
+					}
+				},
+				"prefs_background": {
+					"displayName": "Фон",
+					"description": "Идентификатор пользовательского фона или одного из следующих цветов: синего, оранжевого, зеленого, красного, фиолетового, розового, салатового, неба, серого."
+				},
+				"prefs_comments": {
+					"displayName": "Комментарии",
+					"description": "Кто может комментировать карточки на этой доске?",
+					"options": {
+						"disabled": {
+							"displayName": "Неполноценный"
+						},
+						"members": {
+							"displayName": "Члены"
+						},
+						"observers": {
+							"displayName": "наблюдатели"
+						},
+						"org": {
+							"displayName": "Организация"
+						},
+						"public": {
+							"displayName": "Общественный"
+						}
+					}
+				},
+				"prefs_cardCovers": {
+					"displayName": "Обложки",
+					"description": "Включены ли обложки карт"
+				},
+				"prefs_invitations": {
+					"displayName": "Приглашения",
+					"description": "Определяет, какие типы участников могут приглашать пользователей присоединиться.",
+					"options": {
+						"admins": {
+							"displayName": "Админы"
+						},
+						"members": {
+							"displayName": "Члены"
+						}
+					}
+				},
+				"keepFromSource": {
+					"displayName": "Хранить в исходном коде",
+					"description": "При использовании idCardSource вы можете указать, какие свойства копировать. все или список, разделенный запятыми: вложения, контрольные списки, комментарии, сроки, ярлыки, участники, наклейки."
+				},
+				"defaultLabels": {
+					"displayName": "Этикетки",
+					"description": "Использовать ли набор меток по умолчанию"
+				},
+				"defaultLists": {
+					"displayName": "Списки",
+					"description": "Добавлять ли на доску набор списков по умолчанию («Сделать», «Делать», «Готово»). Игнорируется, если указан idBoardSource."
+				},
+				"idOrganization": {
+					"displayName": "Идентификатор организации",
+					"description": "Идентификатор или название команды, к которой должна принадлежать доска."
+				},
+				"prefs_permissionLevel": {
+					"displayName": "Уровень разрешений",
+					"description": "Уровень разрешений доски",
+					"options": {
+						"org": {
+							"displayName": "Организация"
+						},
+						"private": {
+							"displayName": "Частный"
+						},
+						"public": {
+							"displayName": "Общественный"
+						}
+					}
+				},
+				"powerUps": {
+					"displayName": "Бонусы",
+					"description": "Бонусы, которые следует включить на новой плате",
+					"options": {
+						"all": {
+							"displayName": "Все"
+						},
+						"calendar": {
+							"displayName": "Календарь"
+						},
+						"cardAging": {
+							"displayName": "Срок действия карты"
+						},
+						"recap": {
+							"displayName": "Резюме"
+						},
+						"voting": {
+							"displayName": "Голосование"
+						}
+					}
+				},
+				"prefs_selfJoin": {
+					"displayName": "Самостоятельное присоединение",
+					"description": "Могут ли пользователи сами присоединяться к форумам или их нужно приглашать"
+				},
+				"idBoardSource": {
+					"displayName": "Идентификаторы источников",
+					"description": "Идентификатор доски, которую нужно скопировать в новую доску."
+				},
+				"prefs_voting": {
+					"displayName": "Голосование",
+					"description": "Кто может голосовать на этой доске",
+					"options": {
+						"disabled": {
+							"displayName": "Неполноценный"
+						},
+						"members": {
+							"displayName": "Члены"
+						},
+						"observers": {
+							"displayName": "наблюдатели"
+						},
+						"org": {
+							"displayName": "Организация"
+						},
+						"public": {
+							"displayName": "Общественный"
+						}
+					}
+				},
+				"pluginData": {
+					"displayName": "Данные плагина",
+					"description": "Включать ли в ответ данные плагина на карте"
+				},
+				"allowBillableGuest": {
+					"displayName": "Разрешить оплачиваемого гостя",
+					"description": "Разрешить ли администраторам организации добавлять на доску гостей с несколькими досками"
+				},
+				"type": {
+					"displayName": "Тип",
+					"description": "Определяет тип членства, который должен иметь добавляемый пользователь.",
+					"options": {
+						"normal": {
+							"displayName": "Нормальный",
+							"description": "Пригласить как обычного участника"
+						},
+						"admin": {
+							"displayName": "Админ",
+							"description": "Пригласить от имени администратора"
+						},
+						"observer": {
+							"displayName": "наблюдатель",
+							"description": "Пригласить в качестве наблюдателя (премиум-функция Trello)"
+						}
+					}
+				},
+				"fullName": {
+					"displayName": "Полное имя",
+					"description": "Полное имя пользователя, которого нужно добавить в качестве члена форума. Должен иметь длину не менее 1 и не может начинаться и заканчиваться пробелом."
+				},
+				"due": {
+					"displayName": "Срок оплаты",
+					"description": "Срок оформления карты"
+				},
+				"dueComplete": {
+					"displayName": "Срок завершения",
+					"description": "Заполнена ли карта"
+				},
+				"pos": {
+					"displayName": "Позиция",
+					"description": "Позиция нового списка. верхнее, нижнее или положительное плавающее значение."
+				},
+				"idMembers": {
+					"displayName": "Идентификаторы участников",
+					"description": "Список идентификаторов участников, разделенных запятыми, которые можно добавить на карту."
+				},
+				"idLabels": {
+					"displayName": "Идентификаторы ярлыков",
+					"description": "Список идентификаторов меток, разделенных запятыми, которые можно добавить на карту."
+				},
+				"urlSource": {
+					"displayName": "Источник URL",
+					"description": "URL-адрес источника для прикрепления к карте"
+				},
+				"idCardSource": {
+					"displayName": "Идентификатор источника",
+					"description": "Идентификатор карты, которую необходимо скопировать в новую карту."
+				},
+				"board": {
+					"displayName": "Доска",
+					"description": "Возвращать ли объект доски, на котором находится карта"
+				},
+				"board_fields": {
+					"displayName": "Поля доски",
+					"description": "Поля для возврата. Либо «все», либо список, разделенный запятыми: имя, описание, descData, закрытый, idOrganization, закрепленный, URL, настройки."
+				},
+				"customFieldItems": {
+					"displayName": "Пользовательские элементы поля",
+					"description": "Включать ли customFieldItems"
+				},
+				"members": {
+					"displayName": "Члены",
+					"description": "Возвращать ли объекты участников для участников на карте"
+				},
+				"member_fields": {
+					"displayName": "Поля участников",
+					"description": "Поля для возврата. Либо «все», либо список через запятую: avatarHash, полное имя, инициалы, имя пользователя."
+				},
+				"stickers": {
+					"displayName": "Наклейки",
+					"description": "Включать ли в ответ модели стикеров"
+				},
+				"sticker_fields": {
+					"displayName": "Поля стикеров",
+					"description": "Поля для возврата. Либо «все», либо список полей стикеров, разделенных запятыми."
+				},
+				"idChecklistSource": {
+					"displayName": "Идентификатор источника контрольного списка",
+					"description": "Идентификатор исходного контрольного списка для копирования в новый"
+				},
+				"checked": {
+					"displayName": "Проверено",
+					"description": "Проверен ли уже элемент проверки при создании"
+				},
+				"state": {
+					"displayName": "Состояние",
+					"options": {
+						"complete": {
+							"displayName": "Полный"
+						},
+						"incomplete": {
+							"displayName": "Неполный"
+						}
+					}
+				},
+				"checklistId": {
+					"displayName": "Идентификатор контрольного списка",
+					"description": "Идентификатор контрольного списка, в котором находится этот элемент"
+				},
+				"idListSource": {
+					"displayName": "Список источников",
+					"description": "Идентификатор списка для копирования в новый список"
+				}
+			}
+		},
+		"id": {
+			"displayName": "Идентификатор списка",
+			"description": "Идентификатор списка для обновления"
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Название списка",
+			"placeholder": "Мой список"
+		},
+		"description": {
+			"displayName": "Описание",
+			"description": "Описание карты"
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"closed": {
+					"displayName": "Закрыто",
+					"description": "Закрыт ли список"
+				},
+				"desc": {
+					"displayName": "Описание",
+					"description": "Новое описание платы"
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Новое название списка"
+				},
+				"idOrganization": {
+					"displayName": "Идентификатор организации",
+					"description": "Идентификатор команды, в которую следует переместить доску."
+				},
+				"subscribed": {
+					"displayName": "Подписан",
+					"description": "Подписан ли действующий пользователь на список"
+				},
+				"idAttachmentCover": {
+					"displayName": "Крышка крепления",
+					"description": "Идентификатор вложения изображения, которое карта должна использовать в качестве обложки, или значение NULL, если оно отсутствует."
+				},
+				"idBoard": {
+					"displayName": "Идентификатор доски",
+					"description": "ID доски, на которую следует переместить список"
+				},
+				"due": {
+					"displayName": "Срок оплаты",
+					"description": "Срок оформления карты"
+				},
+				"dueComplete": {
+					"displayName": "Срок завершения",
+					"description": "Заполнена ли карта"
+				},
+				"idLabels": {
+					"displayName": "Идентификаторы ярлыков",
+					"description": "Разделенный запятыми список идентификаторов этикеток для установки на карту"
+				},
+				"idList": {
+					"displayName": "Идентификатор списка",
+					"description": "Идентификатор списка, в котором должна находиться карта."
+				},
+				"idMembers": {
+					"displayName": "Идентификаторы участников",
+					"description": "Список идентификаторов участников, разделенных запятыми, для установки на карте"
+				},
+				"pos": {
+					"displayName": "Позиция",
+					"description": "Позиция списка. верхнее, нижнее или положительное плавающее значение."
+				},
+				"color": {
+					"displayName": "Цвет",
+					"description": "Цвет для этикетки",
+					"options": {
+						"black": {
+							"displayName": "Черный"
+						},
+						"blue": {
+							"displayName": "Синий"
+						},
+						"green": {
+							"displayName": "Зеленый"
+						},
+						"lime": {
+							"displayName": "Лайм"
+						},
+						"null": {
+							"displayName": "Нулевой"
+						},
+						"orange": {
+							"displayName": "Апельсин"
+						},
+						"pink": {
+							"displayName": "Розовый"
+						},
+						"purple": {
+							"displayName": "Фиолетовый"
+						},
+						"red": {
+							"displayName": "Красный"
+						},
+						"sky": {
+							"displayName": "Небо"
+						},
+						"yellow": {
+							"displayName": "Желтый"
+						}
+					}
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"idMember": {
+			"displayName": "Идентификатор участника",
+			"description": "Идентификатор участника, которого нужно удалить с доски"
+		},
+		"type": {
+			"displayName": "Тип",
+			"description": "Определяет тип членства, который должен иметь добавляемый пользователь.",
+			"options": {
+				"normal": {
+					"displayName": "Нормальный",
+					"description": "Пригласить как обычного участника"
+				},
+				"admin": {
+					"displayName": "Админ",
+					"description": "Пригласить от имени администратора"
+				},
+				"observer": {
+					"displayName": "наблюдатель",
+					"description": "Пригласить в качестве наблюдателя (премиум-функция Trello)"
+				}
+			}
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"description": "Идентификатор доски для обновления",
+			"placeholder": "имя@email.com"
+		},
+		"listId": {
+			"displayName": "Идентификатор списка",
+			"description": "Идентификатор списка, в котором нужно создать карту"
+		},
+		"text": {
+			"displayName": "Текст",
+			"description": "Текст комментария"
+		},
+		"commentId": {
+			"displayName": "Идентификатор комментария",
+			"description": "Идентификатор комментария, который нужно удалить."
+		},
+		"checklistId": {
+			"displayName": "Идентификатор контрольного списка",
+			"description": "Идентификатор контрольного списка для обновления"
+		},
+		"checkItemId": {
+			"displayName": "Идентификатор элемента проверки",
+			"description": "Идентификатор элемента контрольного списка, который необходимо обновить."
+		},
+		"boardId": {
+			"displayName": "Доска",
+			"description": "Идентификатор доски"
+		},
+		"color": {
+			"displayName": "Цвет",
+			"description": "Цвет для этикетки",
+			"options": {
+				"black": {
+					"displayName": "Черный"
+				},
+				"blue": {
+					"displayName": "Синий"
+				},
+				"green": {
+					"displayName": "Зеленый"
+				},
+				"lime": {
+					"displayName": "Лайм"
+				},
+				"null": {
+					"displayName": "Нулевой"
+				},
+				"orange": {
+					"displayName": "Апельсин"
+				},
+				"pink": {
+					"displayName": "Розовый"
+				},
+				"purple": {
+					"displayName": "Фиолетовый"
+				},
+				"red": {
+					"displayName": "Красный"
+				},
+				"sky": {
+					"displayName": "Небо"
+				},
+				"yellow": {
+					"displayName": "Желтый"
+				}
+			}
+		},
+		"archive": {
+			"displayName": "Архив",
+			"description": "Должен ли список быть заархивирован или разархивирован"
+		},
+		"idBoard": {
+			"displayName": "Идентификатор доски",
+			"description": "Идентификатор доски, на которой должен быть создан список."
+		}
+	}
+}

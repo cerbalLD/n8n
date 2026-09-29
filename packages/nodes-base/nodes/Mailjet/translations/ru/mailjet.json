@@ -1,0 +1,170 @@
+{
+	"header": {
+		"displayName": "Мейлджет",
+		"description": "Использование API Mailjet"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"email": {
+					"displayName": "Электронная почта"
+				},
+				"sms": {
+					"displayName": "SMS"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"send": {
+					"displayName": "Отправлять",
+					"description": "Отправить смс"
+				},
+				"sendTemplate": {
+					"displayName": "Отправить шаблон",
+					"description": "Отправить шаблон электронной почты"
+				}
+			}
+		},
+		"fromEmail": {
+			"displayName": "Из электронной почты",
+			"description": "Заголовок электронного письма",
+			"placeholder": "admin@example.com"
+		},
+		"toEmail": {
+			"displayName": "Отправить по электронной почте",
+			"description": "Адрес электронной почты получателя. Несколько можно разделить запятой.",
+			"placeholder": "info@example.com"
+		},
+		"subject": {
+			"displayName": "Предмет",
+			"description": "Тема письма",
+			"placeholder": "Моя тема"
+		},
+		"text": {
+			"displayName": "Текст",
+			"description": "Обычное текстовое сообщение электронной почты"
+		},
+		"html": {
+			"displayName": "HTML",
+			"description": "HTML текстовое сообщение электронной почты"
+		},
+		"jsonParameters": {
+			"displayName": "Параметры JSON"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"bccEmail": {
+					"displayName": "СК Электронная почта",
+					"description": "BCC Получатели электронного письма, разделенные ,"
+				},
+				"ccAddresses": {
+					"displayName": "Адреса копий",
+					"description": "Копия Адрес электронной почты получателя. Несколько можно разделить запятой."
+				},
+				"fromName": {
+					"displayName": "От имени"
+				},
+				"priority": {
+					"displayName": "Приоритет"
+				},
+				"replyTo": {
+					"displayName": "Отвечать на",
+					"description": "Адрес электронной почты для ответа. Несколько можно разделить запятой."
+				},
+				"templateLanguage": {
+					"displayName": "Язык шаблонов"
+				},
+				"trackClicks": {
+					"displayName": "Отслеживать клики",
+					"description": "Включить или отключить открытое отслеживание этого сообщения",
+					"options": {
+						"account_default": {
+							"displayName": "Учетная запись по умолчанию",
+							"description": "Используйте значения, указанные в учетной записи Mailjet."
+						},
+						"disabled": {
+							"displayName": "Неполноценный",
+							"description": "Отключить отслеживание этого сообщения"
+						},
+						"enabled": {
+							"displayName": "Включено",
+							"description": "Включить отслеживание этого сообщения"
+						}
+					}
+				},
+				"trackOpens": {
+					"displayName": "Трек открывается",
+					"description": "Включить или отключить открытое отслеживание этого сообщения",
+					"options": {
+						"account_default": {
+							"displayName": "Учетная запись по умолчанию",
+							"description": "Используйте значения, указанные в учетной записи Mailjet."
+						},
+						"disabled": {
+							"displayName": "Неполноценный",
+							"description": "Отключить отслеживание этого сообщения"
+						},
+						"enabled": {
+							"displayName": "Включено",
+							"description": "Включить отслеживание этого сообщения"
+						}
+					}
+				},
+				"customCampaign": {
+					"displayName": "Пользовательская кампания"
+				},
+				"deduplicateCampaign": {
+					"displayName": "Кампания по дедупликации"
+				},
+				"ccEmail": {
+					"displayName": "Электронная почта копии",
+					"description": "Копия получателей электронного письма, разделенная ,"
+				},
+				"subject": {
+					"displayName": "Предмет"
+				}
+			}
+		},
+		"variablesJson": {
+			"displayName": "Переменные (JSON)",
+			"description": "HTML текстовое сообщение электронной почты"
+		},
+		"variablesUi": {
+			"options": {
+				"variablesUi": {
+					"displayName": "Переменные"
+				},
+				"variablesValues": {
+					"displayName": "Переменная",
+					"values": {
+						"name": {
+							"displayName": "Имя"
+						},
+						"value": {
+							"displayName": "Ценить"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить переменную",
+			"displayName": "Переменные"
+		},
+		"templateId": {
+			"displayName": "Имя или идентификатор шаблона",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"from": {
+			"displayName": "От",
+			"description": "Настраиваемое имя отправителя. Длина должна составлять от 3 до 11 символов. Допускаются только буквенно-цифровые символы."
+		},
+		"to": {
+			"displayName": "К",
+			"description": "Получатель сообщения. Длина должна составлять от 3 до 15 символов. Номер всегда начинается со знака плюс, за которым следует код страны и номер. Ожидается, что телефонные номера будут соответствовать формату E.164."
+		}
+	}
+}

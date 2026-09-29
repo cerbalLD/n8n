@@ -1,0 +1,87 @@
+{
+	"header": {
+		"displayName": "Мистраль ИИ",
+		"description": "Используйте API Mistral AI"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"document": {
+					"displayName": "Документ"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"extractText": {
+					"displayName": "Извлечь текст",
+					"description": "Извлечь текст из документа с помощью OCR"
+				}
+			}
+		},
+		"model": {
+			"displayName": "Модель",
+			"description": "Используемая модель OCR",
+			"options": {
+				"mistral-ocr-latest": {
+					"displayName": "мистраль-ocr-последний"
+				}
+			}
+		},
+		"documentType": {
+			"displayName": "Тип документа",
+			"description": "Тип документа для обработки",
+			"options": {
+				"document_url": {
+					"displayName": "Документ"
+				},
+				"image_url": {
+					"displayName": "Изображение"
+				}
+			}
+		},
+		"inputType": {
+			"displayName": "Тип входа",
+			"description": "Как будет предоставляться документ",
+			"options": {
+				"binary": {
+					"displayName": "Двоичные данные"
+				},
+				"url": {
+					"displayName": "URL"
+				}
+			}
+		},
+		"binaryProperty": {
+			"displayName": "Входное двоичное поле",
+			"description": "Имя входного двоичного поля, содержащего файл для обработки.",
+			"hint": "Размер загружаемых файлов документов не должен превышать 50 МБ и содержать не более 1000 страниц.",
+			"placeholder": "например данные"
+		},
+		"url": {
+			"displayName": "URL",
+			"description": "URL-адрес документа или изображения для обработки",
+			"placeholder": "например https://example.com/document.pdf"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"batch": {
+					"displayName": "Включить пакетную обработку",
+					"description": "Следует ли обрабатывать несколько документов за один вызов API (более экономично)"
+				},
+				"batchSize": {
+					"displayName": "Размер партии",
+					"description": "Максимальное количество документов для обработки в одном пакете"
+				},
+				"deleteFiles": {
+					"displayName": "Удалить файлы после обработки",
+					"description": "Удалять ли файлы в Mistral Cloud после обработки"
+				}
+			}
+		}
+	}
+}

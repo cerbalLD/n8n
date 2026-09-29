@@ -1,0 +1,262 @@
+{
+	"header": {
+		"displayName": "Дата и время",
+		"description": "Манипулирование значениями даты и времени"
+	},
+	"nodeView": {
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"addToDate": {
+					"displayName": "Добавить к дате"
+				},
+				"extractDate": {
+					"displayName": "Извлечь часть даты"
+				},
+				"formatDate": {
+					"displayName": "Форматировать дату"
+				},
+				"getCurrentDate": {
+					"displayName": "Получить текущую дату"
+				},
+				"getTimeBetweenDates": {
+					"displayName": "Получите время между свиданиями"
+				},
+				"roundDate": {
+					"displayName": "Вокруг свидания"
+				},
+				"subtractFromDate": {
+					"displayName": "Вычесть из даты"
+				}
+			}
+		},
+		"notice": {
+			"displayName": "Вы также можете сделать это, используя выражение, например. <code>{{ your_date.extract(\"month\") }}}</code>. <a target=\"_blank\" href=\"https://docs.n8n.io/code/cookbook/luxon/\">Подробнее</a>"
+		},
+		"includeTime": {
+			"displayName": "Включить текущее время",
+			"description": "При деактивации время будет установлено на полночь."
+		},
+		"outputFieldName": {
+			"displayName": "Имя выходного поля",
+			"description": "Имя поля, в которое нужно поместить выходные данные"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"includeInputFields": {
+					"displayName": "Включить поля ввода",
+					"description": "Включить ли все поля входного элемента в выходной элемент"
+				},
+				"timezone": {
+					"displayName": "Использовать часовой пояс рабочего процесса",
+					"description": "Использовать ли часовой пояс ввода или часовой пояс рабочего процесса",
+					"placeholder": "Америка/Нью_Йорк"
+				},
+				"fromFormat": {
+					"displayName": "Из формата даты",
+					"description": "Формат ввода «Дата» полезен, когда формат не распознается автоматически. Используйте эти <a href=\"https://moment.github.io/luxon/#/formatting?id=table-of-tokens&id=table-of-tokens\" target=\"_blank\">tokens</a> для определения формата.",
+					"hint": "Токены чувствительны к регистру"
+				},
+				"isoString": {
+					"displayName": "Вывод в виде строки ISO",
+					"description": "Выводить ли дату в виде строки ISO или нет"
+				}
+			}
+		},
+		"magnitude": {
+			"displayName": "Дата, из которой нужно вычесть",
+			"description": "Дата, которую вы хотите изменить"
+		},
+		"timeUnit": {
+			"displayName": "Единица времени для вычитания",
+			"description": "Единица времени для параметра «Продолжительность» ниже",
+			"options": {
+				"years": {
+					"displayName": "Годы"
+				},
+				"quarters": {
+					"displayName": "кварталы"
+				},
+				"months": {
+					"displayName": "Месяцы"
+				},
+				"weeks": {
+					"displayName": "Недели"
+				},
+				"days": {
+					"displayName": "Дни"
+				},
+				"hours": {
+					"displayName": "Часы"
+				},
+				"minutes": {
+					"displayName": "Минуты"
+				},
+				"seconds": {
+					"displayName": "Секунды"
+				},
+				"milliseconds": {
+					"displayName": "Миллисекунды"
+				}
+			}
+		},
+		"duration": {
+			"displayName": "Продолжительность",
+			"description": "Количество единиц времени, которое нужно вычесть из даты"
+		},
+		"date": {
+			"displayName": "Дата",
+			"description": "Дата, которую вы хотите округлить"
+		},
+		"format": {
+			"displayName": "Формат",
+			"description": "Формат, в который нужно преобразовать дату",
+			"options": {
+				"custom": {
+					"displayName": "Пользовательский формат"
+				},
+				"MM/dd/yyyy": {
+					"displayName": "MM/DD/YYYY",
+					"description": "Пример: 04.09.1986"
+				},
+				"yyyy/MM/dd": {
+					"displayName": "YYYY/MM/DD",
+					"description": "Пример: 1986/04/09"
+				},
+				"MMMM dd yyyy": {
+					"displayName": "ММММ ДД ГГГГ",
+					"description": "Пример: 9 апреля 1986 г."
+				},
+				"MM-dd-yyyy": {
+					"displayName": "MM-DD-YYYY",
+					"description": "Пример: 04.09.1986"
+				},
+				"yyyy-MM-dd": {
+					"displayName": "YYYY-MM-DD",
+					"description": "Пример: 9 апреля 1986 г."
+				},
+				"X": {
+					"displayName": "Временная метка Unix",
+					"description": "Пример: 1672531200"
+				},
+				"x": {
+					"displayName": "Временная метка Unix г-жи",
+					"description": "Пример: 1674691200000"
+				}
+			}
+		},
+		"customFormat": {
+			"displayName": "Пользовательский формат",
+			"hint": "Список специальных токенов <a target=\"_blank\" href=\"https://moment.github.io/luxon/#/formatting?id=table-of-tokens\">Подробнее</a>",
+			"placeholder": "гггг-ММ-дд"
+		},
+		"mode": {
+			"displayName": "Режим",
+			"options": {
+				"roundDown": {
+					"displayName": "Округлить вниз"
+				},
+				"roundUp": {
+					"displayName": "Округлять"
+				}
+			}
+		},
+		"toNearest": {
+			"displayName": "До ближайшего",
+			"options": {
+				"year": {
+					"displayName": "Год"
+				},
+				"month": {
+					"displayName": "Месяц"
+				},
+				"week": {
+					"displayName": "Неделя"
+				},
+				"day": {
+					"displayName": "День"
+				},
+				"hour": {
+					"displayName": "Час"
+				},
+				"minute": {
+					"displayName": "минута"
+				},
+				"second": {
+					"displayName": "Второй"
+				}
+			}
+		},
+		"to": {
+			"displayName": "К",
+			"options": {
+				"month": {
+					"displayName": "Конец месяца"
+				}
+			}
+		},
+		"startDate": {
+			"displayName": "Дата начала"
+		},
+		"endDate": {
+			"displayName": "Дата окончания"
+		},
+		"units": {
+			"displayName": "Единицы",
+			"options": {
+				"year": {
+					"displayName": "Год"
+				},
+				"month": {
+					"displayName": "Месяц"
+				},
+				"week": {
+					"displayName": "Неделя"
+				},
+				"day": {
+					"displayName": "День"
+				},
+				"hour": {
+					"displayName": "Час"
+				},
+				"minute": {
+					"displayName": "минута"
+				},
+				"second": {
+					"displayName": "Второй"
+				},
+				"millisecond": {
+					"displayName": "Миллисекунда"
+				}
+			}
+		},
+		"part": {
+			"displayName": "Часть",
+			"options": {
+				"year": {
+					"displayName": "Год"
+				},
+				"month": {
+					"displayName": "Месяц"
+				},
+				"week": {
+					"displayName": "Неделя"
+				},
+				"day": {
+					"displayName": "День"
+				},
+				"hour": {
+					"displayName": "Час"
+				},
+				"minute": {
+					"displayName": "минута"
+				},
+				"second": {
+					"displayName": "Второй"
+				}
+			}
+		}
+	}
+}

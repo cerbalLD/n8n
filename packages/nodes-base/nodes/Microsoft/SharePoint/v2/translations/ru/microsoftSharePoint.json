@@ -1,0 +1,159 @@
+{
+	"header": {
+		"displayName": "Microsoft SharePoint",
+		"description": "Взаимодействие с Microsoft SharePoint API"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"file": {
+					"displayName": "Файл"
+				},
+				"item": {
+					"displayName": "Элемент"
+				},
+				"list": {
+					"displayName": "Список"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"download": {
+					"displayName": "Скачать",
+					"description": "Скачать файл"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить элемент в существующем списке"
+				},
+				"upload": {
+					"displayName": "Загрузить",
+					"description": "Загрузите существующий файл"
+				},
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать элемент в существующем списке"
+				},
+				"upsert": {
+					"displayName": "Создать или обновить",
+					"description": "Создайте новый элемент или обновите текущий, если он уже существует (upsert)"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить элемент из списка"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить подробную информацию об одном списке"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить список списков"
+				}
+			}
+		},
+		"site": {
+			"displayName": "Сайт",
+			"description": "Выберите сайт, с которого нужно получить списки"
+		},
+		"folder": {
+			"displayName": "Родительская папка",
+			"description": "Выберите папку, в которую нужно загрузить файл",
+			"placeholder": "/ (корень библиотеки)"
+		},
+		"file": {
+			"displayName": "Файл",
+			"description": "Выберите файл для обновления",
+			"placeholder": "например. мой-файл.pdf"
+		},
+		"fileName": {
+			"displayName": "Имя файла",
+			"description": "Имя загружаемого файла",
+			"placeholder": "например Мой новый файл"
+		},
+		"changeFileContent": {
+			"displayName": "Изменить содержимое файла",
+			"description": "Следует ли обновлять содержимое файла",
+			"placeholder": "например Мой новый файл"
+		},
+		"fileContents": {
+			"displayName": "Содержимое файла",
+			"description": "Найдите имя поля ввода, содержащего двоичные данные для загрузки, на панели ввода слева на вкладке «Двоичные данные».",
+			"hint": "Имя поля ввода, содержащего данные двоичного файла для загрузки.",
+			"placeholder": "данные"
+		},
+		"list": {
+			"displayName": "Список",
+			"description": "Выберите список, который вы хотите получить"
+		},
+		"noticeUnsupportedFields": {
+			"displayName": "Из-за ограничений API невозможно обновить следующие типы столбцов: гиперссылка, местоположение, метаданные."
+		},
+		"columns": {
+			"displayName": "Столбцы"
+		},
+		"item": {
+			"displayName": "Элемент",
+			"description": "Выберите предмет, который хотите получить"
+		},
+		"simplify": {
+			"displayName": "Упрощать"
+		},
+		"filter": {
+			"displayName": "Фильтровать по формуле",
+			"description": "Формула будет оцениваться для каждой записи. <a href=\"https://learn.microsoft.com/en-us/graph/filter-query-parameter\">Подробнее</a>.",
+			"hint": "Если пусто, все элементы будут возвращены",
+			"placeholder": "например поля/заголовок eq 'item1'"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"fields": {
+					"displayName": "Поля",
+					"description": "Поля, которые вы хотите включить в выходные данные",
+					"options": {
+						"contentType": {
+							"displayName": "Тип контента"
+						},
+						"createdDateTime": {
+							"displayName": "Создано в"
+						},
+						"createdBy": {
+							"displayName": "Создано"
+						},
+						"fields": {
+							"displayName": "Поля"
+						},
+						"id": {
+							"displayName": "ID"
+						},
+						"lastModifiedDateTime": {
+							"displayName": "Последнее изменение:"
+						},
+						"lastModifiedBy": {
+							"displayName": "Последнее изменение кем"
+						},
+						"parentReference": {
+							"displayName": "Родительская ссылка"
+						},
+						"webUrl": {
+							"displayName": "URL-адрес веб-страницы"
+						}
+					}
+				}
+			}
+		}
+	}
+}

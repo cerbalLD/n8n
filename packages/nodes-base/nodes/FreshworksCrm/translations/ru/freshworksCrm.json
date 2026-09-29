@@ -1,0 +1,4456 @@
+{
+	"header": {
+		"displayName": "CRM-система Freshworks",
+		"description": "Используйте API Freshworks CRM"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"account": {
+					"displayName": "Счет"
+				},
+				"appointment": {
+					"displayName": "Встреча"
+				},
+				"contact": {
+					"displayName": "Контакт"
+				},
+				"deal": {
+					"displayName": "Иметь дело"
+				},
+				"note": {
+					"displayName": "Примечание"
+				},
+				"salesActivity": {
+					"displayName": "Торговая деятельность"
+				},
+				"search": {
+					"displayName": "Поиск"
+				},
+				"task": {
+					"displayName": "Задача"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать задачу"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить задачу"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить задачу"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить множество задач"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить задачу"
+				},
+				"query": {
+					"displayName": "Запрос",
+					"description": "Ищите записи, вводя поисковые запросы по вашему выбору"
+				},
+				"lookup": {
+					"displayName": "Искать",
+					"description": "Поиск имени или адреса электронной почты записей"
+				}
+			}
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Название сделки"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"address": {
+					"displayName": "Адрес",
+					"description": "Адрес контакта"
+				},
+				"annual_revenue": {
+					"displayName": "Годовой доход",
+					"description": "Годовой доход по счету"
+				},
+				"business_type_id": {
+					"displayName": "Название или идентификатор типа бизнеса",
+					"description": "Идентификатор компании, которой принадлежит аккаунт. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"city": {
+					"displayName": "Город",
+					"description": "Город, к которому принадлежит контакт"
+				},
+				"country": {
+					"displayName": "Страна",
+					"description": "Страна, к которой принадлежит контакт"
+				},
+				"facebook": {
+					"displayName": "Фейсбук",
+					"description": "Имя пользователя Facebook контакта"
+				},
+				"industry_type_id": {
+					"displayName": "Название или идентификатор типа отрасли",
+					"description": "Идентификатор отрасли, к которой принадлежит аккаунт. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"linkedin": {
+					"displayName": "LinkedIn",
+					"description": "LinkedIn аккаунт контакта"
+				},
+				"number_of_employees": {
+					"displayName": "Количество сотрудников",
+					"description": "Количество сотрудников на счету"
+				},
+				"owner_id": {
+					"displayName": "Имя или идентификатор владельца",
+					"description": "Идентификатор пользователя, которому назначена сделка. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"parent_sales_account_id": {
+					"displayName": "Идентификатор родительского аккаунта продаж",
+					"description": "Идентификатор родительской учетной записи"
+				},
+				"phone": {
+					"displayName": "Телефон",
+					"description": "Номер телефона аккаунта"
+				},
+				"state": {
+					"displayName": "Состояние",
+					"description": "Укажите, что контакт принадлежит"
+				},
+				"territory_id": {
+					"displayName": "Название или идентификатор территории",
+					"description": "Идентификатор территории, к которой относится сделка. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"twitter": {
+					"displayName": "Твиттер",
+					"description": "Имя пользователя Twitter контакта"
+				},
+				"website": {
+					"displayName": "Веб-сайт",
+					"description": "Сайт аккаунта"
+				},
+				"zipcode": {
+					"displayName": "Почтовый индекс",
+					"description": "Почтовый индекс региона, к которому принадлежит контакт"
+				},
+				"creater_id": {
+					"displayName": "Имя или идентификатор создателя",
+					"description": "Идентификатор пользователя, создавшего задачу. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"is_allday": {
+					"displayName": "Весь день",
+					"description": "Независимо от того, назначена ли это встреча на целый день или нет"
+				},
+				"latitude": {
+					"displayName": "Широта",
+					"description": "Широта местоположения при проверке продаж"
+				},
+				"location": {
+					"displayName": "Расположение",
+					"description": "Место осуществления продаж"
+				},
+				"longitude": {
+					"displayName": "Долгота",
+					"description": "Долгота местоположения, когда вы регистрируетесь для совершения продаж."
+				},
+				"outcome_id": {
+					"displayName": "Имя или идентификатор результата",
+					"description": "Идентификатор результата задачи. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"targetable_id": {
+					"displayName": "Идентификатор цели",
+					"description": "Идентификатор контакта/учетной записи, для которого создана встреча"
+				},
+				"targetable_type": {
+					"displayName": "Тип цели",
+					"options": {
+						"Contact": {
+							"displayName": "Контакт"
+						},
+						"Deal": {
+							"displayName": "Иметь дело"
+						},
+						"SalesAccount": {
+							"displayName": "ПродажиАккаунт"
+						}
+					}
+				},
+				"time_zone": {
+					"displayName": "Часовой пояс",
+					"description": "Часовой пояс, к которому принадлежит контакт",
+					"options": {
+						"Africa/Abidjan": {
+							"displayName": "Африка/Абиджан"
+						},
+						"Africa/Accra": {
+							"displayName": "Африка/Аккра"
+						},
+						"Africa/Addis_Ababa": {
+							"displayName": "Африка/Аддис_Абеба"
+						},
+						"Africa/Algiers": {
+							"displayName": "Африка/Алжир"
+						},
+						"Africa/Asmara": {
+							"displayName": "Африка/Асмэра"
+						},
+						"Africa/Asmera": {
+							"displayName": "Африка/Асмера"
+						},
+						"Africa/Bamako": {
+							"displayName": "Африка/Бамако"
+						},
+						"Africa/Bangui": {
+							"displayName": "Африка/Банги"
+						},
+						"Africa/Banjul": {
+							"displayName": "Африка/Банжул"
+						},
+						"Africa/Bissau": {
+							"displayName": "Африка/Бисау"
+						},
+						"Africa/Blantyre": {
+							"displayName": "Африка/Блантайр"
+						},
+						"Africa/Brazzaville": {
+							"displayName": "Африка/Браззавиль"
+						},
+						"Africa/Bujumbura": {
+							"displayName": "Африка/Бужумбура"
+						},
+						"Africa/Cairo": {
+							"displayName": "Африка/Каир"
+						},
+						"Africa/Casablanca": {
+							"displayName": "Африка/Касабланка"
+						},
+						"Africa/Ceuta": {
+							"displayName": "Африка/Сеута"
+						},
+						"Africa/Conakry": {
+							"displayName": "Африка/Конакри"
+						},
+						"Africa/Dakar": {
+							"displayName": "Африка/Дакар"
+						},
+						"Africa/Dar_es_Salaam": {
+							"displayName": "Африка/Дар_эс_Салам"
+						},
+						"Africa/Djibouti": {
+							"displayName": "Африка/Джибути"
+						},
+						"Africa/Douala": {
+							"displayName": "Африка/Дуала"
+						},
+						"Africa/El_Aaiun": {
+							"displayName": "Африка/Эль_Аюн"
+						},
+						"Africa/Freetown": {
+							"displayName": "Африка/Фритаун"
+						},
+						"Africa/Gaborone": {
+							"displayName": "Африка/Габороне"
+						},
+						"Africa/Harare": {
+							"displayName": "Африка/Хараре"
+						},
+						"Africa/Johannesburg": {
+							"displayName": "Африка/Йоханнесбург"
+						},
+						"Africa/Juba": {
+							"displayName": "Африка/Джуба"
+						},
+						"Africa/Kampala": {
+							"displayName": "Африка/Кампала"
+						},
+						"Africa/Khartoum": {
+							"displayName": "Африка/Хартум"
+						},
+						"Africa/Kigali": {
+							"displayName": "Африка/Кигали"
+						},
+						"Africa/Kinshasa": {
+							"displayName": "Африка/Киншаса"
+						},
+						"Africa/Lagos": {
+							"displayName": "Африка/Лагос"
+						},
+						"Africa/Libreville": {
+							"displayName": "Африка/Либревиль"
+						},
+						"Africa/Lome": {
+							"displayName": "Африка/Ломе"
+						},
+						"Africa/Luanda": {
+							"displayName": "Африка/Луанда"
+						},
+						"Africa/Lubumbashi": {
+							"displayName": "Африка/Лубумбаши"
+						},
+						"Africa/Lusaka": {
+							"displayName": "Африка/Лусака"
+						},
+						"Africa/Malabo": {
+							"displayName": "Африка/Малабо"
+						},
+						"Africa/Maputo": {
+							"displayName": "Африка/Мапуту"
+						},
+						"Africa/Maseru": {
+							"displayName": "Африка/Масеру"
+						},
+						"Africa/Mbabane": {
+							"displayName": "Африка/Мбабане"
+						},
+						"Africa/Mogadishu": {
+							"displayName": "Африка/Могадишо"
+						},
+						"Africa/Monrovia": {
+							"displayName": "Африка/Монровия"
+						},
+						"Africa/Nairobi": {
+							"displayName": "Африка/Найроби"
+						},
+						"Africa/Ndjamena": {
+							"displayName": "Африка/Нджамена"
+						},
+						"Africa/Niamey": {
+							"displayName": "Африка/Ниамей"
+						},
+						"Africa/Nouakchott": {
+							"displayName": "Африка/Нуакшот"
+						},
+						"Africa/Ouagadougou": {
+							"displayName": "Африка/Уагадугу"
+						},
+						"Africa/Porto-Novo": {
+							"displayName": "Африка/Порто-Ново"
+						},
+						"Africa/Sao_Tome": {
+							"displayName": "Африка/Сан_Томе"
+						},
+						"Africa/Timbuktu": {
+							"displayName": "Африка/Тимбукту"
+						},
+						"Africa/Tripoli": {
+							"displayName": "Африка/Триполи"
+						},
+						"Africa/Tunis": {
+							"displayName": "Африка/Тунис"
+						},
+						"Africa/Windhoek": {
+							"displayName": "Африка/Виндхук"
+						},
+						"America/Adak": {
+							"displayName": "Америка/Адак"
+						},
+						"America/Anchorage": {
+							"displayName": "Америка/Анкоридж"
+						},
+						"America/Anguilla": {
+							"displayName": "Америка/Ангилья"
+						},
+						"America/Antigua": {
+							"displayName": "Америка/Антигуа"
+						},
+						"America/Araguaina": {
+							"displayName": "Америка/Арагуайна"
+						},
+						"America/Argentina/Buenos_Aires": {
+							"displayName": "Америка/Аргентина/Буэнос-Айрес"
+						},
+						"America/Argentina/Catamarca": {
+							"displayName": "Америка/Аргентина/Катамарка"
+						},
+						"America/Argentina/ComodRivadavia": {
+							"displayName": "Америка/Аргентина/ComodRivadavia"
+						},
+						"America/Argentina/Cordoba": {
+							"displayName": "Америка/Аргентина/Кордова"
+						},
+						"America/Argentina/Jujuy": {
+							"displayName": "Америка/Аргентина/Жужуй"
+						},
+						"America/Argentina/La_Rioja": {
+							"displayName": "Америка/Аргентина/La_Rioja"
+						},
+						"America/Argentina/Mendoza": {
+							"displayName": "Америка/Аргентина/Мендоса"
+						},
+						"America/Argentina/Rio_Gallegos": {
+							"displayName": "Америка/Аргентина/Rio_Gallegos"
+						},
+						"America/Argentina/Salta": {
+							"displayName": "Америка/Аргентина/Сальта"
+						},
+						"America/Argentina/San_Juan": {
+							"displayName": "Америка/Аргентина/Сан_Хуан"
+						},
+						"America/Argentina/San_Luis": {
+							"displayName": "Америка/Аргентина/Сан_Луис"
+						},
+						"America/Argentina/Tucuman": {
+							"displayName": "Америка/Аргентина/Тукуман"
+						},
+						"America/Argentina/Ushuaia": {
+							"displayName": "Америка/Аргентина/Ушуайя"
+						},
+						"America/Aruba": {
+							"displayName": "Америка/Аруба"
+						},
+						"America/Asuncion": {
+							"displayName": "Америка/Асунсьон"
+						},
+						"America/Atikokan": {
+							"displayName": "Америка/Атикокан"
+						},
+						"America/Atka": {
+							"displayName": "Америка/Атка"
+						},
+						"America/Bahia": {
+							"displayName": "Америка/Баия"
+						},
+						"America/Bahia_Banderas": {
+							"displayName": "Америка/Баия_Бандерас"
+						},
+						"America/Barbados": {
+							"displayName": "Америка/Барбадос"
+						},
+						"America/Belem": {
+							"displayName": "Америка/Белем"
+						},
+						"America/Belize": {
+							"displayName": "Америка/Белиз"
+						},
+						"America/Blanc-Sablon": {
+							"displayName": "Америка/Блан-Саблон"
+						},
+						"America/Boa_Vista": {
+							"displayName": "Америка/Boa_Vista"
+						},
+						"America/Bogota": {
+							"displayName": "Америка/Богота"
+						},
+						"America/Boise": {
+							"displayName": "Америка/Бойсе"
+						},
+						"America/Buenos_Aires": {
+							"displayName": "Америка/Буэнос-Айрес"
+						},
+						"America/Cambridge_Bay": {
+							"displayName": "Америка/Кембридж_Бэй"
+						},
+						"America/Campo_Grande": {
+							"displayName": "Америка/Кампо_Гранде"
+						},
+						"America/Cancun": {
+							"displayName": "Америка/Канкун"
+						},
+						"America/Caracas": {
+							"displayName": "Америка/Каракас"
+						},
+						"America/Catamarca": {
+							"displayName": "Америка/Катамарка"
+						},
+						"America/Cayenne": {
+							"displayName": "Америка/Кайенна"
+						},
+						"America/Cayman": {
+							"displayName": "Америка/Кайманы"
+						},
+						"America/Chicago": {
+							"displayName": "Америка/Чикаго"
+						},
+						"America/Chihuahua": {
+							"displayName": "Америка/Чиуауа"
+						},
+						"America/Ciudad_Juarez": {
+							"displayName": "Америка/Сьюдад_Хуарес"
+						},
+						"America/Coral_Harbour": {
+							"displayName": "Америка/Coral_Harbour"
+						},
+						"America/Cordoba": {
+							"displayName": "Америка/Кордова"
+						},
+						"America/Costa_Rica": {
+							"displayName": "Америка/Коста_Рика"
+						},
+						"America/Coyhaique": {
+							"displayName": "Америка/Койайке"
+						},
+						"America/Creston": {
+							"displayName": "Америка/Крестон"
+						},
+						"America/Cuiaba": {
+							"displayName": "Америка/Куяба"
+						},
+						"America/Curacao": {
+							"displayName": "Америка/Кюрасао"
+						},
+						"America/Danmarkshavn": {
+							"displayName": "Америка/Данмарксхавн"
+						},
+						"America/Dawson": {
+							"displayName": "Америка/Доусон"
+						},
+						"America/Dawson_Creek": {
+							"displayName": "Америка/Доусон_Крик"
+						},
+						"America/Denver": {
+							"displayName": "Америка/Денвер"
+						},
+						"America/Detroit": {
+							"displayName": "Америка/Детройт"
+						},
+						"America/Dominica": {
+							"displayName": "Америка/Доминика"
+						},
+						"America/Edmonton": {
+							"displayName": "Америка/Эдмонтон"
+						},
+						"America/Eirunepe": {
+							"displayName": "Америка/Эйрунепе"
+						},
+						"America/El_Salvador": {
+							"displayName": "Америка/Эль_Сальвадор"
+						},
+						"America/Ensenada": {
+							"displayName": "Америка/Энсенада"
+						},
+						"America/Fort_Nelson": {
+							"displayName": "Америка/Форт_Нельсон"
+						},
+						"America/Fort_Wayne": {
+							"displayName": "Америка/Форт_Уэйн"
+						},
+						"America/Fortaleza": {
+							"displayName": "Америка/Форталеза"
+						},
+						"America/Glace_Bay": {
+							"displayName": "Америка/Glase_Bay"
+						},
+						"America/Godthab": {
+							"displayName": "Америка/Годтаб"
+						},
+						"America/Goose_Bay": {
+							"displayName": "Америка/Гусиная бухта"
+						},
+						"America/Grand_Turk": {
+							"displayName": "Америка/Grand_Turk"
+						},
+						"America/Grenada": {
+							"displayName": "Америка/Гренада"
+						},
+						"America/Guadeloupe": {
+							"displayName": "Америка/Гваделупа"
+						},
+						"America/Guatemala": {
+							"displayName": "Америка/Гватемала"
+						},
+						"America/Guayaquil": {
+							"displayName": "Америка/Гуаякиль"
+						},
+						"America/Guyana": {
+							"displayName": "Америка/Гайана"
+						},
+						"America/Halifax": {
+							"displayName": "Америка/Галифакс"
+						},
+						"America/Havana": {
+							"displayName": "Америка/Гавана"
+						},
+						"America/Hermosillo": {
+							"displayName": "Америка/Эрмосильо"
+						},
+						"America/Indiana/Indianapolis": {
+							"displayName": "Америка/Индиана/Индианаполис"
+						},
+						"America/Indiana/Knox": {
+							"displayName": "Америка/Индиана/Нокс"
+						},
+						"America/Indiana/Marengo": {
+							"displayName": "Америка/Индиана/Маренго"
+						},
+						"America/Indiana/Petersburg": {
+							"displayName": "Америка/Индиана/Петербург"
+						},
+						"America/Indiana/Tell_City": {
+							"displayName": "Америка/Индиана/Tell_City"
+						},
+						"America/Indiana/Vevay": {
+							"displayName": "Америка/Индиана/Вевей"
+						},
+						"America/Indiana/Vincennes": {
+							"displayName": "Америка/Индиана/Винсеннес"
+						},
+						"America/Indiana/Winamac": {
+							"displayName": "Америка/Индиана/Винамак"
+						},
+						"America/Indianapolis": {
+							"displayName": "Америка/Индианаполис"
+						},
+						"America/Inuvik": {
+							"displayName": "Америка/Инувик"
+						},
+						"America/Iqaluit": {
+							"displayName": "Америка/Икалуит"
+						},
+						"America/Jamaica": {
+							"displayName": "Америка/Ямайка"
+						},
+						"America/Jujuy": {
+							"displayName": "Америка/Жужуй"
+						},
+						"America/Juneau": {
+							"displayName": "Америка/Джуно"
+						},
+						"America/Kentucky/Louisville": {
+							"displayName": "Америка/Кентукки/Луисвилл"
+						},
+						"America/Kentucky/Monticello": {
+							"displayName": "Америка/Кентукки/Монтичелло"
+						},
+						"America/Knox_IN": {
+							"displayName": "Америка/Knox_IN"
+						},
+						"America/Kralendijk": {
+							"displayName": "Америка/Кралендейк"
+						},
+						"America/La_Paz": {
+							"displayName": "Америка/Ла_Пас"
+						},
+						"America/Lima": {
+							"displayName": "Америка/Лима"
+						},
+						"America/Los_Angeles": {
+							"displayName": "Америка/Лос-Анджелес"
+						},
+						"America/Louisville": {
+							"displayName": "Америка/Луисвилл"
+						},
+						"America/Lower_Princes": {
+							"displayName": "Америка/Нижние_Принцы"
+						},
+						"America/Maceio": {
+							"displayName": "Америка/Масейо"
+						},
+						"America/Managua": {
+							"displayName": "Америка/Манагуа"
+						},
+						"America/Manaus": {
+							"displayName": "Америка/Манаус"
+						},
+						"America/Marigot": {
+							"displayName": "Америка/Мариго"
+						},
+						"America/Martinique": {
+							"displayName": "Америка/Мартиника"
+						},
+						"America/Matamoros": {
+							"displayName": "Америка/Матаморос"
+						},
+						"America/Mazatlan": {
+							"displayName": "Америка/Мазатлан"
+						},
+						"America/Mendoza": {
+							"displayName": "Америка/Мендоса"
+						},
+						"America/Menominee": {
+							"displayName": "Америка/Меномини"
+						},
+						"America/Merida": {
+							"displayName": "Америка/Мерида"
+						},
+						"America/Metlakatla": {
+							"displayName": "Америка/Метлакатла"
+						},
+						"America/Mexico_City": {
+							"displayName": "Америка/Мехико_Сити"
+						},
+						"America/Miquelon": {
+							"displayName": "Америка/Микелон"
+						},
+						"America/Moncton": {
+							"displayName": "Америка/Монктон"
+						},
+						"America/Monterrey": {
+							"displayName": "Америка/Монтеррей"
+						},
+						"America/Montevideo": {
+							"displayName": "Америка/Монтевидео"
+						},
+						"America/Montreal": {
+							"displayName": "Америка/Монреаль"
+						},
+						"America/Montserrat": {
+							"displayName": "Америка/Монтсеррат"
+						},
+						"America/Nassau": {
+							"displayName": "Америка/Нассау"
+						},
+						"America/New_York": {
+							"displayName": "Америка/Нью_Йорк"
+						},
+						"America/Nipigon": {
+							"displayName": "Америка/Нипигон"
+						},
+						"America/Nome": {
+							"displayName": "Америка/Ном"
+						},
+						"America/Noronha": {
+							"displayName": "Америка/Норонья"
+						},
+						"America/North_Dakota/Beulah": {
+							"displayName": "Америка/Северная Дакота/Бьюла"
+						},
+						"America/North_Dakota/Center": {
+							"displayName": "Америка/Северная Дакота/Центр"
+						},
+						"America/North_Dakota/New_Salem": {
+							"displayName": "Америка/Северная Дакота/Нью-Салем"
+						},
+						"America/Nuuk": {
+							"displayName": "Америка/Нуук"
+						},
+						"America/Ojinaga": {
+							"displayName": "Америка/Охинага"
+						},
+						"America/Panama": {
+							"displayName": "Америка/Панама"
+						},
+						"America/Pangnirtung": {
+							"displayName": "Америка/Пангниртунг"
+						},
+						"America/Paramaribo": {
+							"displayName": "Америка/Парамарибо"
+						},
+						"America/Phoenix": {
+							"displayName": "Америка/Феникс"
+						},
+						"America/Port-au-Prince": {
+							"displayName": "Америка/Порт-о-Пренс"
+						},
+						"America/Port_of_Spain": {
+							"displayName": "Америка/Порт_Испании"
+						},
+						"America/Porto_Acre": {
+							"displayName": "Америка/Порто_Акр"
+						},
+						"America/Porto_Velho": {
+							"displayName": "Америка/Порту_Велью"
+						},
+						"America/Puerto_Rico": {
+							"displayName": "Америка/Пуэрто_Рико"
+						},
+						"America/Punta_Arenas": {
+							"displayName": "Америка/Пунта_Аренас"
+						},
+						"America/Rainy_River": {
+							"displayName": "Америка/Rainy_River"
+						},
+						"America/Rankin_Inlet": {
+							"displayName": "Америка/Рэнкин_Инлет"
+						},
+						"America/Recife": {
+							"displayName": "Америка/Ресифи"
+						},
+						"America/Regina": {
+							"displayName": "Америка/Регина"
+						},
+						"America/Resolute": {
+							"displayName": "Америка/Решительный"
+						},
+						"America/Rio_Branco": {
+							"displayName": "Америка/Рио_Бранко"
+						},
+						"America/Rosario": {
+							"displayName": "Америка/Росарио"
+						},
+						"America/Santa_Isabel": {
+							"displayName": "Америка/Санта_Изабель"
+						},
+						"America/Santarem": {
+							"displayName": "Америка/Сантарем"
+						},
+						"America/Santiago": {
+							"displayName": "Америка/Сантьяго"
+						},
+						"America/Santo_Domingo": {
+							"displayName": "Америка/Санто_Доминго"
+						},
+						"America/Sao_Paulo": {
+							"displayName": "Америка/Сан-Паулу"
+						},
+						"America/Scoresbysund": {
+							"displayName": "Америка/Скорсбисунд"
+						},
+						"America/Shiprock": {
+							"displayName": "Америка/Шипрок"
+						},
+						"America/Sitka": {
+							"displayName": "Америка/Ситка"
+						},
+						"America/St_Barthelemy": {
+							"displayName": "Америка/Сент_Бартелеми"
+						},
+						"America/St_Johns": {
+							"displayName": "Америка/Сент_Джонс"
+						},
+						"America/St_Kitts": {
+							"displayName": "Америка/Сент-Китс"
+						},
+						"America/St_Lucia": {
+							"displayName": "Америка/Сент-Люсия"
+						},
+						"America/St_Thomas": {
+							"displayName": "Америка/Сент_Томас"
+						},
+						"America/St_Vincent": {
+							"displayName": "Америка/Сент_Винсент"
+						},
+						"America/Swift_Current": {
+							"displayName": "Америка/Swift_Current"
+						},
+						"America/Tegucigalpa": {
+							"displayName": "Америка/Тегусигальпа"
+						},
+						"America/Thule": {
+							"displayName": "Америка/Туле"
+						},
+						"America/Thunder_Bay": {
+							"displayName": "Америка/Thunder_Bay"
+						},
+						"America/Tijuana": {
+							"displayName": "Америка/Тихуана"
+						},
+						"America/Toronto": {
+							"displayName": "Америка/Торонто"
+						},
+						"America/Tortola": {
+							"displayName": "Америка/Тортола"
+						},
+						"America/Vancouver": {
+							"displayName": "Америка/Ванкувер"
+						},
+						"America/Virgin": {
+							"displayName": "Америка/Девственница"
+						},
+						"America/Whitehorse": {
+							"displayName": "Америка/Уайтхорс"
+						},
+						"America/Winnipeg": {
+							"displayName": "Америка/Виннипег"
+						},
+						"America/Yakutat": {
+							"displayName": "Америка/Якутат"
+						},
+						"America/Yellowknife": {
+							"displayName": "Америка/Йеллоунайф"
+						},
+						"Antarctica/Casey": {
+							"displayName": "Антарктида/Кейси"
+						},
+						"Antarctica/Davis": {
+							"displayName": "Антарктида/Дэвис"
+						},
+						"Antarctica/DumontDUrville": {
+							"displayName": "Антарктида/Дюмон-Дюрвиль"
+						},
+						"Antarctica/Macquarie": {
+							"displayName": "Антарктида/Маккуори"
+						},
+						"Antarctica/Mawson": {
+							"displayName": "Антарктида/Моусон"
+						},
+						"Antarctica/McMurdo": {
+							"displayName": "Антарктида/МакМердо"
+						},
+						"Antarctica/Palmer": {
+							"displayName": "Антарктида/Палмер"
+						},
+						"Antarctica/Rothera": {
+							"displayName": "Антарктида/Ротера"
+						},
+						"Antarctica/South_Pole": {
+							"displayName": "Антарктида/Южный_Полюс"
+						},
+						"Antarctica/Syowa": {
+							"displayName": "Антарктида/Сёва"
+						},
+						"Antarctica/Troll": {
+							"displayName": "Антарктида/Тролль"
+						},
+						"Antarctica/Vostok": {
+							"displayName": "Антарктида/Восток"
+						},
+						"Arctic/Longyearbyen": {
+							"displayName": "Арктика/Лонгйирбиен"
+						},
+						"Asia/Aden": {
+							"displayName": "Азия/Аден"
+						},
+						"Asia/Almaty": {
+							"displayName": "Азия/Алматы"
+						},
+						"Asia/Amman": {
+							"displayName": "Азия/Амман"
+						},
+						"Asia/Anadyr": {
+							"displayName": "Азия/Анадырь"
+						},
+						"Asia/Aqtau": {
+							"displayName": "Азия/Актау"
+						},
+						"Asia/Aqtobe": {
+							"displayName": "Азия/Актобе"
+						},
+						"Asia/Ashgabat": {
+							"displayName": "Азия/Ашхабад"
+						},
+						"Asia/Ashkhabad": {
+							"displayName": "Азия/Ашхабад"
+						},
+						"Asia/Atyrau": {
+							"displayName": "Азия/Атырау"
+						},
+						"Asia/Baghdad": {
+							"displayName": "Азия/Багдад"
+						},
+						"Asia/Bahrain": {
+							"displayName": "Азия/Бахрейн"
+						},
+						"Asia/Baku": {
+							"displayName": "Азия/Баку"
+						},
+						"Asia/Bangkok": {
+							"displayName": "Азия/Бангкок"
+						},
+						"Asia/Barnaul": {
+							"displayName": "Азия/Барнаул"
+						},
+						"Asia/Beirut": {
+							"displayName": "Азия/Бейрут"
+						},
+						"Asia/Bishkek": {
+							"displayName": "Азия/Бишкек"
+						},
+						"Asia/Brunei": {
+							"displayName": "Азия/Бруней"
+						},
+						"Asia/Calcutta": {
+							"displayName": "Азия/Калькутта"
+						},
+						"Asia/Chita": {
+							"displayName": "Азия/Чита"
+						},
+						"Asia/Choibalsan": {
+							"displayName": "Азия/Чойбалсан"
+						},
+						"Asia/Chongqing": {
+							"displayName": "Азия/Чунцин"
+						},
+						"Asia/Chungking": {
+							"displayName": "Азия/Чунгкинг"
+						},
+						"Asia/Colombo": {
+							"displayName": "Азия/Коломбо"
+						},
+						"Asia/Dacca": {
+							"displayName": "Азия/Дакка"
+						},
+						"Asia/Damascus": {
+							"displayName": "Азия/Дамаск"
+						},
+						"Asia/Dhaka": {
+							"displayName": "Азия/Дакка"
+						},
+						"Asia/Dili": {
+							"displayName": "Азия/Дили"
+						},
+						"Asia/Dubai": {
+							"displayName": "Азия/Дубай"
+						},
+						"Asia/Dushanbe": {
+							"displayName": "Азия/Душанбе"
+						},
+						"Asia/Famagusta": {
+							"displayName": "Азия/Фамагуста"
+						},
+						"Asia/Gaza": {
+							"displayName": "Азия/Газа"
+						},
+						"Asia/Harbin": {
+							"displayName": "Азия/Харбин"
+						},
+						"Asia/Hebron": {
+							"displayName": "Азия/Хеврон"
+						},
+						"Asia/Ho_Chi_Minh": {
+							"displayName": "Азия/Хо_Чи_Мин"
+						},
+						"Asia/Hong_Kong": {
+							"displayName": "Азия/Гонконг"
+						},
+						"Asia/Hovd": {
+							"displayName": "Азия/Ховд"
+						},
+						"Asia/Irkutsk": {
+							"displayName": "Азия/Иркутск"
+						},
+						"Asia/Istanbul": {
+							"displayName": "Азия/Стамбул"
+						},
+						"Asia/Jakarta": {
+							"displayName": "Азия/Джакарта"
+						},
+						"Asia/Jayapura": {
+							"displayName": "Азия/Джаяпура"
+						},
+						"Asia/Jerusalem": {
+							"displayName": "Азия/Иерусалим"
+						},
+						"Asia/Kabul": {
+							"displayName": "Азия/Кабул"
+						},
+						"Asia/Kamchatka": {
+							"displayName": "Азия/Камчатка"
+						},
+						"Asia/Karachi": {
+							"displayName": "Азия/Карачи"
+						},
+						"Asia/Kashgar": {
+							"displayName": "Азия/Кашгар"
+						},
+						"Asia/Kathmandu": {
+							"displayName": "Азия/Катманду"
+						},
+						"Asia/Katmandu": {
+							"displayName": "Азия/Катманду"
+						},
+						"Asia/Khandyga": {
+							"displayName": "Азия/Хандыга"
+						},
+						"Asia/Kolkata": {
+							"displayName": "Азия/Калькутта"
+						},
+						"Asia/Krasnoyarsk": {
+							"displayName": "Азия/Красноярск"
+						},
+						"Asia/Kuala_Lumpur": {
+							"displayName": "Азия/Куала-Лумпур"
+						},
+						"Asia/Kuching": {
+							"displayName": "Азия/Кучинг"
+						},
+						"Asia/Kuwait": {
+							"displayName": "Азия/Кувейт"
+						},
+						"Asia/Macao": {
+							"displayName": "Азия/Макао"
+						},
+						"Asia/Macau": {
+							"displayName": "Азия/Макао"
+						},
+						"Asia/Magadan": {
+							"displayName": "Азия/Магадан"
+						},
+						"Asia/Makassar": {
+							"displayName": "Азия/Макассар"
+						},
+						"Asia/Manila": {
+							"displayName": "Азия/Манила"
+						},
+						"Asia/Muscat": {
+							"displayName": "Азия/Маскат"
+						},
+						"Asia/Nicosia": {
+							"displayName": "Азия/Никосия"
+						},
+						"Asia/Novokuznetsk": {
+							"displayName": "Азия/Новокузнецк"
+						},
+						"Asia/Novosibirsk": {
+							"displayName": "Азия/Новосибирск"
+						},
+						"Asia/Omsk": {
+							"displayName": "Азия/Омск"
+						},
+						"Asia/Oral": {
+							"displayName": "Азия/Устный"
+						},
+						"Asia/Phnom_Penh": {
+							"displayName": "Азия/Пномпень"
+						},
+						"Asia/Pontianak": {
+							"displayName": "Азия/Понтианак"
+						},
+						"Asia/Pyongyang": {
+							"displayName": "Азия/Пхеньян"
+						},
+						"Asia/Qatar": {
+							"displayName": "Азия/Катар"
+						},
+						"Asia/Qostanay": {
+							"displayName": "Азия/Костанай"
+						},
+						"Asia/Qyzylorda": {
+							"displayName": "Азия/Кызылорда"
+						},
+						"Asia/Rangoon": {
+							"displayName": "Азия/Рангун"
+						},
+						"Asia/Riyadh": {
+							"displayName": "Азия/Эр-Рияд"
+						},
+						"Asia/Saigon": {
+							"displayName": "Азия/Сайгон"
+						},
+						"Asia/Sakhalin": {
+							"displayName": "Азия/Сахалин"
+						},
+						"Asia/Samarkand": {
+							"displayName": "Азия/Самарканд"
+						},
+						"Asia/Seoul": {
+							"displayName": "Азия/Сеул"
+						},
+						"Asia/Shanghai": {
+							"displayName": "Азия/Шанхай"
+						},
+						"Asia/Singapore": {
+							"displayName": "Азия/Сингапур"
+						},
+						"Asia/Srednekolymsk": {
+							"displayName": "Азия/Среднеколымск"
+						},
+						"Asia/Taipei": {
+							"displayName": "Азия/Тайбэй"
+						},
+						"Asia/Tashkent": {
+							"displayName": "Азия/Ташкент"
+						},
+						"Asia/Tbilisi": {
+							"displayName": "Азия/Тбилиси"
+						},
+						"Asia/Tehran": {
+							"displayName": "Азия/Тегеран"
+						},
+						"Asia/Tel_Aviv": {
+							"displayName": "Азия/Тель-Авив"
+						},
+						"Asia/Thimbu": {
+							"displayName": "Азия/Тимбу"
+						},
+						"Asia/Thimphu": {
+							"displayName": "Азия/Тхимпху"
+						},
+						"Asia/Tokyo": {
+							"displayName": "Азия/Токио"
+						},
+						"Asia/Tomsk": {
+							"displayName": "Азия/Томск"
+						},
+						"Asia/Ujung_Pandang": {
+							"displayName": "Азия/Уджунг_Панданг"
+						},
+						"Asia/Ulaanbaatar": {
+							"displayName": "Азия/Улан-Батор"
+						},
+						"Asia/Ulan_Bator": {
+							"displayName": "Азия/Улан_Батор"
+						},
+						"Asia/Urumqi": {
+							"displayName": "Азия/Урумчи"
+						},
+						"Asia/Ust-Nera": {
+							"displayName": "Азия/Усть-Нера"
+						},
+						"Asia/Vientiane": {
+							"displayName": "Азия/Вьентьян"
+						},
+						"Asia/Vladivostok": {
+							"displayName": "Азия/Владивосток"
+						},
+						"Asia/Yakutsk": {
+							"displayName": "Азия/Якутск"
+						},
+						"Asia/Yangon": {
+							"displayName": "Азия/Янгон"
+						},
+						"Asia/Yekaterinburg": {
+							"displayName": "Азия/Екатеринбург"
+						},
+						"Asia/Yerevan": {
+							"displayName": "Азия/Ереван"
+						},
+						"Atlantic/Azores": {
+							"displayName": "Атлантика/Азорские острова"
+						},
+						"Atlantic/Bermuda": {
+							"displayName": "Атлантика/Бермудские острова"
+						},
+						"Atlantic/Canary": {
+							"displayName": "Атлантический/Канарский"
+						},
+						"Atlantic/Cape_Verde": {
+							"displayName": "Атлантический океан/Кабо-Верде"
+						},
+						"Atlantic/Faeroe": {
+							"displayName": "Атлантика/Фарерские острова"
+						},
+						"Atlantic/Faroe": {
+							"displayName": "Атлантика/Фарерские острова"
+						},
+						"Atlantic/Jan_Mayen": {
+							"displayName": "Атлантика/январь-майен"
+						},
+						"Atlantic/Madeira": {
+							"displayName": "Атлантика/Мадейра"
+						},
+						"Atlantic/Reykjavik": {
+							"displayName": "Атлантик/Рейкьявик"
+						},
+						"Atlantic/South_Georgia": {
+							"displayName": "Атлантика/Южная Грузия"
+						},
+						"Atlantic/St_Helena": {
+							"displayName": "Атлантика/Св. Елены"
+						},
+						"Atlantic/Stanley": {
+							"displayName": "Атлантик/Стэнли"
+						},
+						"Australia/ACT": {
+							"displayName": "Австралия/ACT"
+						},
+						"Australia/Adelaide": {
+							"displayName": "Австралия/Аделаида"
+						},
+						"Australia/Brisbane": {
+							"displayName": "Австралия/Брисбен"
+						},
+						"Australia/Broken_Hill": {
+							"displayName": "Австралия/Broken_Hill"
+						},
+						"Australia/Canberra": {
+							"displayName": "Австралия/Канберра"
+						},
+						"Australia/Currie": {
+							"displayName": "Австралия/Карри"
+						},
+						"Australia/Darwin": {
+							"displayName": "Австралия/Дарвин"
+						},
+						"Australia/Eucla": {
+							"displayName": "Австралия/Юкла"
+						},
+						"Australia/Hobart": {
+							"displayName": "Австралия/Хобарт"
+						},
+						"Australia/LHI": {
+							"displayName": "Австралия/LHI"
+						},
+						"Australia/Lindeman": {
+							"displayName": "Австралия/Линдеман"
+						},
+						"Australia/Lord_Howe": {
+							"displayName": "Австралия/Lord_Howe"
+						},
+						"Australia/Melbourne": {
+							"displayName": "Австралия/Мельбурн"
+						},
+						"Australia/NSW": {
+							"displayName": "Австралия/Новый Южный Уэльс"
+						},
+						"Australia/North": {
+							"displayName": "Австралия/Север"
+						},
+						"Australia/Perth": {
+							"displayName": "Австралия/Перт"
+						},
+						"Australia/Queensland": {
+							"displayName": "Австралия/Квинсленд"
+						},
+						"Australia/South": {
+							"displayName": "Австралия/Юг"
+						},
+						"Australia/Sydney": {
+							"displayName": "Австралия/Сидней"
+						},
+						"Australia/Tasmania": {
+							"displayName": "Австралия/Тасмания"
+						},
+						"Australia/Victoria": {
+							"displayName": "Австралия/Виктория"
+						},
+						"Australia/West": {
+							"displayName": "Австралия/Запад"
+						},
+						"Australia/Yancowinna": {
+							"displayName": "Австралия/Янковинна"
+						},
+						"Brazil/Acre": {
+							"displayName": "Бразилия/Акко"
+						},
+						"Brazil/DeNoronha": {
+							"displayName": "Бразилия/Деноронья"
+						},
+						"Brazil/East": {
+							"displayName": "Бразилия/Восток"
+						},
+						"Brazil/West": {
+							"displayName": "Бразилия/Запад"
+						},
+						"CET": {
+							"displayName": "CET"
+						},
+						"CST6CDT": {
+							"displayName": "CST6CDT"
+						},
+						"Canada/Atlantic": {
+							"displayName": "Канада/Атлантика"
+						},
+						"Canada/Central": {
+							"displayName": "Канада/Центральный"
+						},
+						"Canada/Eastern": {
+							"displayName": "Канада/Восточная"
+						},
+						"Canada/Mountain": {
+							"displayName": "Канада/Горы"
+						},
+						"Canada/Newfoundland": {
+							"displayName": "Канада/Ньюфаундленд"
+						},
+						"Canada/Pacific": {
+							"displayName": "Канада/Тихоокеанский регион"
+						},
+						"Canada/Saskatchewan": {
+							"displayName": "Канада/Саскачеван"
+						},
+						"Canada/Yukon": {
+							"displayName": "Канада/Юкон"
+						},
+						"Chile/Continental": {
+							"displayName": "Чили/Континентальный"
+						},
+						"Chile/EasterIsland": {
+							"displayName": "Чили/Остров Пасхи"
+						},
+						"Cuba": {
+							"displayName": "Куба"
+						},
+						"EET": {
+							"displayName": "EET"
+						},
+						"EST": {
+							"displayName": "EST"
+						},
+						"EST5EDT": {
+							"displayName": "EST5EDT"
+						},
+						"Egypt": {
+							"displayName": "Египет"
+						},
+						"Eire": {
+							"displayName": "Эйре"
+						},
+						"Etc/GMT": {
+							"displayName": "И т.д./GMT"
+						},
+						"Etc/GMT+0": {
+							"displayName": "И т.д./GMT+0"
+						},
+						"Etc/GMT+1": {
+							"displayName": "И т.д./GMT+1"
+						},
+						"Etc/GMT+10": {
+							"displayName": "И т.д./GMT+10"
+						},
+						"Etc/GMT+11": {
+							"displayName": "И т.д./GMT+11"
+						},
+						"Etc/GMT+12": {
+							"displayName": "И т.д./GMT+12"
+						},
+						"Etc/GMT+2": {
+							"displayName": "И т.д./GMT+2"
+						},
+						"Etc/GMT+3": {
+							"displayName": "И т.д./GMT+3"
+						},
+						"Etc/GMT+4": {
+							"displayName": "И т.д./GMT+4"
+						},
+						"Etc/GMT+5": {
+							"displayName": "И т.д./GMT+5"
+						},
+						"Etc/GMT+6": {
+							"displayName": "И т.д./GMT+6"
+						},
+						"Etc/GMT+7": {
+							"displayName": "И т.д./GMT+7"
+						},
+						"Etc/GMT+8": {
+							"displayName": "И т.д./GMT+8"
+						},
+						"Etc/GMT+9": {
+							"displayName": "И т.д./GMT+9"
+						},
+						"Etc/GMT-0": {
+							"displayName": "И т.д./GMT-0"
+						},
+						"Etc/GMT-1": {
+							"displayName": "И т.д./GMT-1"
+						},
+						"Etc/GMT-10": {
+							"displayName": "И т.д./GMT-10"
+						},
+						"Etc/GMT-11": {
+							"displayName": "И т.д./GMT-11"
+						},
+						"Etc/GMT-12": {
+							"displayName": "И т.д./GMT-12"
+						},
+						"Etc/GMT-13": {
+							"displayName": "И т.д./GMT-13"
+						},
+						"Etc/GMT-14": {
+							"displayName": "И т.д./GMT-14"
+						},
+						"Etc/GMT-2": {
+							"displayName": "И т.д./GMT-2"
+						},
+						"Etc/GMT-3": {
+							"displayName": "И т.д./GMT-3"
+						},
+						"Etc/GMT-4": {
+							"displayName": "И т.д./GMT-4"
+						},
+						"Etc/GMT-5": {
+							"displayName": "И т.д./GMT-5"
+						},
+						"Etc/GMT-6": {
+							"displayName": "И т.д./GMT-6"
+						},
+						"Etc/GMT-7": {
+							"displayName": "И т.д./GMT-7"
+						},
+						"Etc/GMT-8": {
+							"displayName": "И т.д./GMT-8"
+						},
+						"Etc/GMT-9": {
+							"displayName": "И т.д./GMT-9"
+						},
+						"Etc/GMT0": {
+							"displayName": "И т.д./GMT0"
+						},
+						"Etc/Greenwich": {
+							"displayName": "И т.д./Гринвич"
+						},
+						"Etc/UCT": {
+							"displayName": "И т.д./UCT"
+						},
+						"Etc/UTC": {
+							"displayName": "И т.д./UTC"
+						},
+						"Etc/Universal": {
+							"displayName": "И т.д./Универсальный"
+						},
+						"Etc/Zulu": {
+							"displayName": "И т.д./Зулу"
+						},
+						"Europe/Amsterdam": {
+							"displayName": "Европа/Амстердам"
+						},
+						"Europe/Andorra": {
+							"displayName": "Европа/Андорра"
+						},
+						"Europe/Astrakhan": {
+							"displayName": "Европа/Астрахань"
+						},
+						"Europe/Athens": {
+							"displayName": "Европа/Афины"
+						},
+						"Europe/Belfast": {
+							"displayName": "Европа/Белфаст"
+						},
+						"Europe/Belgrade": {
+							"displayName": "Европа/Белград"
+						},
+						"Europe/Berlin": {
+							"displayName": "Европа/Берлин"
+						},
+						"Europe/Bratislava": {
+							"displayName": "Европа/Братислава"
+						},
+						"Europe/Brussels": {
+							"displayName": "Европа/Брюссель"
+						},
+						"Europe/Bucharest": {
+							"displayName": "Европа/Бухарест"
+						},
+						"Europe/Budapest": {
+							"displayName": "Европа/Будапешт"
+						},
+						"Europe/Busingen": {
+							"displayName": "Европа/Бюзинген"
+						},
+						"Europe/Chisinau": {
+							"displayName": "Европа/Кишинёв"
+						},
+						"Europe/Copenhagen": {
+							"displayName": "Европа/Копенгаген"
+						},
+						"Europe/Dublin": {
+							"displayName": "Европа/Дублин"
+						},
+						"Europe/Gibraltar": {
+							"displayName": "Европа/Гибралтар"
+						},
+						"Europe/Guernsey": {
+							"displayName": "Европа/Гернси"
+						},
+						"Europe/Helsinki": {
+							"displayName": "Европа/Хельсинки"
+						},
+						"Europe/Isle_of_Man": {
+							"displayName": "Европа/Остров_Мэн"
+						},
+						"Europe/Istanbul": {
+							"displayName": "Европа/Стамбул"
+						},
+						"Europe/Jersey": {
+							"displayName": "Европа/Джерси"
+						},
+						"Europe/Kaliningrad": {
+							"displayName": "Европа/Калининград"
+						},
+						"Europe/Kiev": {
+							"displayName": "Европа/Киев"
+						},
+						"Europe/Kirov": {
+							"displayName": "Европа/Киров"
+						},
+						"Europe/Kyiv": {
+							"displayName": "Европа/Киев"
+						},
+						"Europe/Lisbon": {
+							"displayName": "Европа/Лиссабон"
+						},
+						"Europe/Ljubljana": {
+							"displayName": "Европа/Любляна"
+						},
+						"Europe/London": {
+							"displayName": "Европа/Лондон"
+						},
+						"Europe/Luxembourg": {
+							"displayName": "Европа/Люксембург"
+						},
+						"Europe/Madrid": {
+							"displayName": "Европа/Мадрид"
+						},
+						"Europe/Malta": {
+							"displayName": "Европа/Мальта"
+						},
+						"Europe/Mariehamn": {
+							"displayName": "Европа/Мариехамн"
+						},
+						"Europe/Minsk": {
+							"displayName": "Европа/Минск"
+						},
+						"Europe/Monaco": {
+							"displayName": "Европа/Монако"
+						},
+						"Europe/Moscow": {
+							"displayName": "Европа/Москва"
+						},
+						"Europe/Nicosia": {
+							"displayName": "Европа/Никосия"
+						},
+						"Europe/Oslo": {
+							"displayName": "Европа/Осло"
+						},
+						"Europe/Paris": {
+							"displayName": "Европа/Париж"
+						},
+						"Europe/Podgorica": {
+							"displayName": "Европа/Подгорица"
+						},
+						"Europe/Prague": {
+							"displayName": "Европа/Прага"
+						},
+						"Europe/Riga": {
+							"displayName": "Европа/Рига"
+						},
+						"Europe/Rome": {
+							"displayName": "Европа/Рим"
+						},
+						"Europe/Samara": {
+							"displayName": "Европа/Самара"
+						},
+						"Europe/San_Marino": {
+							"displayName": "Европа/Сан_Марино"
+						},
+						"Europe/Sarajevo": {
+							"displayName": "Европа/Сараево"
+						},
+						"Europe/Saratov": {
+							"displayName": "Европа/Саратов"
+						},
+						"Europe/Simferopol": {
+							"displayName": "Европа/Симферополь"
+						},
+						"Europe/Skopje": {
+							"displayName": "Европа/Скопье"
+						},
+						"Europe/Sofia": {
+							"displayName": "Европа/София"
+						},
+						"Europe/Stockholm": {
+							"displayName": "Европа/Стокгольм"
+						},
+						"Europe/Tallinn": {
+							"displayName": "Европа/Таллинн"
+						},
+						"Europe/Tirane": {
+							"displayName": "Европа/Тиран"
+						},
+						"Europe/Tiraspol": {
+							"displayName": "Европа/Тирасполь"
+						},
+						"Europe/Ulyanovsk": {
+							"displayName": "Европа/Ульяновск"
+						},
+						"Europe/Uzhgorod": {
+							"displayName": "Европа/Ужгород"
+						},
+						"Europe/Vaduz": {
+							"displayName": "Европа/Вадуц"
+						},
+						"Europe/Vatican": {
+							"displayName": "Европа/Ватикан"
+						},
+						"Europe/Vienna": {
+							"displayName": "Европа/Вена"
+						},
+						"Europe/Vilnius": {
+							"displayName": "Европа/Вильнюс"
+						},
+						"Europe/Volgograd": {
+							"displayName": "Европа/Волгоград"
+						},
+						"Europe/Warsaw": {
+							"displayName": "Европа/Варшава"
+						},
+						"Europe/Zagreb": {
+							"displayName": "Европа/Загреб"
+						},
+						"Europe/Zaporozhye": {
+							"displayName": "Европа/Запорожье"
+						},
+						"Europe/Zurich": {
+							"displayName": "Европа/Цюрих"
+						},
+						"GB": {
+							"displayName": "GB"
+						},
+						"GB-Eire": {
+							"displayName": "Великобритания-Ирландия"
+						},
+						"GMT": {
+							"displayName": "GMT"
+						},
+						"GMT+0": {
+							"displayName": "Время по Гринвичу+0"
+						},
+						"GMT-0": {
+							"displayName": "GMT-0"
+						},
+						"GMT0": {
+							"displayName": "GMT0"
+						},
+						"Greenwich": {
+							"displayName": "Гринвич"
+						},
+						"HST": {
+							"displayName": "HST"
+						},
+						"Hongkong": {
+							"displayName": "Гонконг"
+						},
+						"Iceland": {
+							"displayName": "Исландия"
+						},
+						"Indian/Antananarivo": {
+							"displayName": "Индия/Антананариву"
+						},
+						"Indian/Chagos": {
+							"displayName": "Индийский/Чагос"
+						},
+						"Indian/Christmas": {
+							"displayName": "Индийский/Рождество"
+						},
+						"Indian/Cocos": {
+							"displayName": "Индия/Кокосовые острова"
+						},
+						"Indian/Comoro": {
+							"displayName": "Индийский/Коморский"
+						},
+						"Indian/Kerguelen": {
+							"displayName": "Индийский/Кергелен"
+						},
+						"Indian/Mahe": {
+							"displayName": "Индийский/Маэ"
+						},
+						"Indian/Maldives": {
+							"displayName": "Индия/Мальдивы"
+						},
+						"Indian/Mauritius": {
+							"displayName": "Индия/Маврикий"
+						},
+						"Indian/Mayotte": {
+							"displayName": "Индийский/Майотта"
+						},
+						"Indian/Reunion": {
+							"displayName": "Индийский/Реюньон"
+						},
+						"Iran": {
+							"displayName": "Иран"
+						},
+						"Israel": {
+							"displayName": "Израиль"
+						},
+						"Jamaica": {
+							"displayName": "Ямайка"
+						},
+						"Japan": {
+							"displayName": "Япония"
+						},
+						"Kwajalein": {
+							"displayName": "Кваджалейн"
+						},
+						"Libya": {
+							"displayName": "Ливия"
+						},
+						"MET": {
+							"displayName": "MET"
+						},
+						"MST": {
+							"displayName": "MST"
+						},
+						"MST7MDT": {
+							"displayName": "MST7MDT"
+						},
+						"Mexico/BajaNorte": {
+							"displayName": "Мексика/Баха-Норте"
+						},
+						"Mexico/BajaSur": {
+							"displayName": "Мексика/Баха-Сур"
+						},
+						"Mexico/General": {
+							"displayName": "Мексика/Общий"
+						},
+						"NZ": {
+							"displayName": "NZ"
+						},
+						"NZ-CHAT": {
+							"displayName": "NZ-CHAT"
+						},
+						"Navajo": {
+							"displayName": "Навахо"
+						},
+						"PRC": {
+							"displayName": "PRC"
+						},
+						"PST8PDT": {
+							"displayName": "PST8PDT"
+						},
+						"Pacific/Apia": {
+							"displayName": "Тихий океан/Апиа"
+						},
+						"Pacific/Auckland": {
+							"displayName": "Тихий океан/Окленд"
+						},
+						"Pacific/Bougainville": {
+							"displayName": "Тихий океан/Бугенвиль"
+						},
+						"Pacific/Chatham": {
+							"displayName": "Тихий океан/Чатем"
+						},
+						"Pacific/Chuuk": {
+							"displayName": "Тихий океан/Чуук"
+						},
+						"Pacific/Easter": {
+							"displayName": "Тихий океан/Пасха"
+						},
+						"Pacific/Efate": {
+							"displayName": "Тихий океан/Эфате"
+						},
+						"Pacific/Enderbury": {
+							"displayName": "Тихий океан/Эндербери"
+						},
+						"Pacific/Fakaofo": {
+							"displayName": "Тихий океан/Факаофо"
+						},
+						"Pacific/Fiji": {
+							"displayName": "Тихий океан/Фиджи"
+						},
+						"Pacific/Funafuti": {
+							"displayName": "Тихий океан/Фунафути"
+						},
+						"Pacific/Galapagos": {
+							"displayName": "Тихий океан/Галапагосские острова"
+						},
+						"Pacific/Gambier": {
+							"displayName": "Тихий океан/Гамбье"
+						},
+						"Pacific/Guadalcanal": {
+							"displayName": "Тихий океан/Гуадалканал"
+						},
+						"Pacific/Guam": {
+							"displayName": "Тихий океан/Гуам"
+						},
+						"Pacific/Honolulu": {
+							"displayName": "Тихий океан/Гонолулу"
+						},
+						"Pacific/Johnston": {
+							"displayName": "Тихий океан/Джонстон"
+						},
+						"Pacific/Kanton": {
+							"displayName": "Тихий океан/Кантон"
+						},
+						"Pacific/Kiritimati": {
+							"displayName": "Тихий океан/Киритимати"
+						},
+						"Pacific/Kosrae": {
+							"displayName": "Тихий океан/Косраэ"
+						},
+						"Pacific/Kwajalein": {
+							"displayName": "Тихий океан/Кваджалейн"
+						},
+						"Pacific/Majuro": {
+							"displayName": "Тихий океан/Маджуро"
+						},
+						"Pacific/Marquesas": {
+							"displayName": "Тихий океан/Маркизские острова"
+						},
+						"Pacific/Midway": {
+							"displayName": "Тихий океан/Мидуэй"
+						},
+						"Pacific/Nauru": {
+							"displayName": "Тихий океан/Науру"
+						},
+						"Pacific/Niue": {
+							"displayName": "Тихий океан/Ниуэ"
+						},
+						"Pacific/Norfolk": {
+							"displayName": "Тихий океан/Норфолк"
+						},
+						"Pacific/Noumea": {
+							"displayName": "Тихий океан/Нумеа"
+						},
+						"Pacific/Pago_Pago": {
+							"displayName": "Тихий океан/Паго_Паго"
+						},
+						"Pacific/Palau": {
+							"displayName": "Тихий океан/Палау"
+						},
+						"Pacific/Pitcairn": {
+							"displayName": "Тихий океан/Питкэрн"
+						},
+						"Pacific/Pohnpei": {
+							"displayName": "Тихий океан/Понпеи"
+						},
+						"Pacific/Ponape": {
+							"displayName": "Тихий океан/Понапе"
+						},
+						"Pacific/Port_Moresby": {
+							"displayName": "Тихий океан/Порт_Морсби"
+						},
+						"Pacific/Rarotonga": {
+							"displayName": "Тихий океан/Раротонга"
+						},
+						"Pacific/Saipan": {
+							"displayName": "Тихий океан/Сайпан"
+						},
+						"Pacific/Samoa": {
+							"displayName": "Тихий океан/Самоа"
+						},
+						"Pacific/Tahiti": {
+							"displayName": "Тихий океан/Таити"
+						},
+						"Pacific/Tarawa": {
+							"displayName": "Тихий океан/Тарава"
+						},
+						"Pacific/Tongatapu": {
+							"displayName": "Тихий океан/Тонгатапу"
+						},
+						"Pacific/Truk": {
+							"displayName": "Тихий океан/Трук"
+						},
+						"Pacific/Wake": {
+							"displayName": "Тихий океан/Уэйк"
+						},
+						"Pacific/Wallis": {
+							"displayName": "Пасифик/Уоллис"
+						},
+						"Pacific/Yap": {
+							"displayName": "Тихий океан/Яп"
+						},
+						"Poland": {
+							"displayName": "Польша"
+						},
+						"Portugal": {
+							"displayName": "Португалия"
+						},
+						"ROC": {
+							"displayName": "ROC"
+						},
+						"ROK": {
+							"displayName": "ROK"
+						},
+						"Singapore": {
+							"displayName": "Сингапур"
+						},
+						"Turkey": {
+							"displayName": "Турция"
+						},
+						"UCT": {
+							"displayName": "UCT"
+						},
+						"US/Alaska": {
+							"displayName": "США/Аляска"
+						},
+						"US/Aleutian": {
+							"displayName": "США/Алеутский"
+						},
+						"US/Arizona": {
+							"displayName": "США/Аризона"
+						},
+						"US/Central": {
+							"displayName": "США/Центральный"
+						},
+						"US/East-Indiana": {
+							"displayName": "США/Восточная Индиана"
+						},
+						"US/Eastern": {
+							"displayName": "США/Восточная Европа"
+						},
+						"US/Hawaii": {
+							"displayName": "США/Гавайи"
+						},
+						"US/Indiana-Starke": {
+							"displayName": "США/Индиана-Старк"
+						},
+						"US/Michigan": {
+							"displayName": "США/Мичиган"
+						},
+						"US/Mountain": {
+							"displayName": "США/Горы"
+						},
+						"US/Pacific": {
+							"displayName": "США/Тихоокеанский регион"
+						},
+						"US/Samoa": {
+							"displayName": "США/Самоа"
+						},
+						"UTC": {
+							"displayName": "UTC"
+						},
+						"Universal": {
+							"displayName": "Универсальный"
+						},
+						"W-SU": {
+							"displayName": "W-SU"
+						},
+						"WET": {
+							"displayName": "WET"
+						},
+						"Zulu": {
+							"displayName": "Зулу"
+						}
+					}
+				},
+				"campaign_id": {
+					"displayName": "Название или идентификатор кампании",
+					"description": "Идентификатор кампании, в рамках которой была заключена эта сделка. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"contact_status_id": {
+					"displayName": "Имя или идентификатор статуса контакта",
+					"description": "Идентификатор статуса контакта, которому принадлежит контакт. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"external_id": {
+					"displayName": "Внешний идентификатор",
+					"description": "Внешний идентификатор контакта"
+				},
+				"job_title": {
+					"displayName": "Должность",
+					"description": "Обозначение контакта в аккаунте, к которому он принадлежит"
+				},
+				"keyword": {
+					"displayName": "Ключевые слова",
+					"description": "Ключевые слова, которые контакт использовал для перехода на ваш сайт/веб-приложение."
+				},
+				"lead_source_id": {
+					"displayName": "Идентификатор источника потенциальных клиентов",
+					"description": "Идентификатор источника, откуда пришла сделка"
+				},
+				"lifecycle_stage_id": {
+					"displayName": "Название или идентификатор этапа жизненного цикла",
+					"description": "Идентификатор этапа жизненного цикла, к которому принадлежит контакт. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"medium": {
+					"displayName": "Середина",
+					"description": "Канал, который привел ваш контакт на ваш сайт/веб-приложение"
+				},
+				"mobile_number": {
+					"displayName": "Номер мобильного телефона",
+					"description": "Номер мобильного телефона контактного лица"
+				},
+				"sales_accounts": {
+					"displayName": "Имена или идентификаторы учетных записей продаж",
+					"description": "Аккаунты, которым принадлежит контакт. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"subscription_status": {
+					"displayName": "Статус подписки",
+					"description": "Статус подписки, в которой находится контакт"
+				},
+				"subscription_types": {
+					"displayName": "Типы подписки",
+					"description": "Тип подписки, в которой находится контакт"
+				},
+				"work_number": {
+					"displayName": "Рабочий номер",
+					"description": "Рабочий телефон контактного лица"
+				},
+				"base_currency_amount": {
+					"displayName": "Сумма в базовой валюте",
+					"description": "Стоимость сделки в базовой валюте"
+				},
+				"currency_id": {
+					"displayName": "Название или идентификатор валюты",
+					"description": "Идентификатор валюты, к которой принадлежит сделка. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"deal_payment_status_id": {
+					"displayName": "Имя или идентификатор статуса платежа по сделке",
+					"description": "Идентификатор способа оплаты сделки. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"deal_pipeline_id": {
+					"displayName": "Название или идентификатор канала сделки",
+					"description": "Идентификатор конвейера сделок, к которому он принадлежит. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"deal_product_id": {
+					"displayName": "Название или идентификатор продукта сделки",
+					"description": "Идентификатор продукта, которому принадлежит сделка (в многопродуктовой компании). Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"deal_reason_id": {
+					"displayName": "Название или идентификатор причины сделки",
+					"description": "ID причины проигрыша сделки. Может быть установлено только в том случае, если сделка находится в стадии «Проиграна». Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"deal_stage_id": {
+					"displayName": "Название или идентификатор этапа сделки",
+					"description": "Идентификатор этапа сделки, к которому относится сделка. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"deal_type_id": {
+					"displayName": "Название или идентификатор типа сделки",
+					"description": "Идентификатор типа сделки, к которой она относится. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"probability": {
+					"displayName": "Вероятность",
+					"description": "Вероятность выигрыша сделки как число от 0 до 100."
+				},
+				"sales_account_id": {
+					"displayName": "Имя или идентификатор учетной записи продаж",
+					"description": "Идентификатор аккаунта, которому принадлежит сделка. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"notes": {
+					"displayName": "Примечания",
+					"description": "Описание о торговой деятельности"
+				},
+				"sales_activity_outcome_id": {
+					"displayName": "Название или идентификатор результата деятельности по продажам",
+					"description": "Идентификатор результата продаж. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"task_type_id": {
+					"displayName": "Идентификатор типа задачи",
+					"description": "ID типа задачи"
+				}
+			}
+		},
+		"accountId": {
+			"displayName": "Идентификатор аккаунта",
+			"description": "Идентификатор учетной записи для обновления"
+		},
+		"view": {
+			"displayName": "Просмотр имени или идентификатора",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"address": {
+					"displayName": "Адрес",
+					"description": "Адрес контакта"
+				},
+				"annual_revenue": {
+					"displayName": "Годовой доход",
+					"description": "Годовой доход по счету"
+				},
+				"business_type_id": {
+					"displayName": "Название или идентификатор типа бизнеса",
+					"description": "Идентификатор компании, которой принадлежит аккаунт. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"city": {
+					"displayName": "Город",
+					"description": "Город, к которому принадлежит контакт"
+				},
+				"country": {
+					"displayName": "Страна",
+					"description": "Страна, к которой принадлежит контакт"
+				},
+				"facebook": {
+					"displayName": "Фейсбук",
+					"description": "Имя пользователя Facebook контакта"
+				},
+				"industry_type_id": {
+					"displayName": "Название или идентификатор типа отрасли",
+					"description": "Идентификатор отрасли, к которой принадлежит аккаунт. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"linkedin": {
+					"displayName": "LinkedIn",
+					"description": "LinkedIn аккаунт контакта"
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Название сделки"
+				},
+				"number_of_employees": {
+					"displayName": "Количество сотрудников",
+					"description": "Количество сотрудников на счету"
+				},
+				"owner_id": {
+					"displayName": "Имя или идентификатор владельца",
+					"description": "Идентификатор пользователя, которому назначена задача. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"parent_sales_account_id": {
+					"displayName": "Идентификатор родительского аккаунта продаж",
+					"description": "Идентификатор родительской учетной записи"
+				},
+				"phone": {
+					"displayName": "Телефон",
+					"description": "Номер телефона аккаунта"
+				},
+				"state": {
+					"displayName": "Состояние",
+					"description": "Укажите, что контакт принадлежит"
+				},
+				"territory_id": {
+					"displayName": "Название или идентификатор территории",
+					"description": "Идентификатор территории, к которой относится сделка. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"twitter": {
+					"displayName": "Твиттер",
+					"description": "Имя пользователя Twitter контакта"
+				},
+				"website": {
+					"displayName": "Веб-сайт",
+					"description": "Сайт аккаунта"
+				},
+				"zipcode": {
+					"displayName": "Почтовый индекс",
+					"description": "Почтовый индекс региона, к которому принадлежит контакт"
+				},
+				"attendees": {
+					"values": {
+						"attendees": {
+							"displayName": "Участники"
+						},
+						"attendee": {
+							"options": {
+								"type": {
+									"displayName": "Тип",
+									"options": {
+										"contact": {
+											"displayName": "Контакт"
+										},
+										"user": {
+											"displayName": "Пользователь"
+										}
+									}
+								},
+								"userId": {
+									"displayName": "Имя пользователя или идентификатор",
+									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+								},
+								"contactId": {
+									"displayName": "Идентификатор контакта"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить участника",
+					"displayName": "Участники",
+					"options": {
+						"attendee": {
+							"displayName": "Посетитель"
+						}
+					}
+				},
+				"creater_id": {
+					"displayName": "Имя или идентификатор создателя",
+					"description": "Идентификатор пользователя, создавшего торговую деятельность. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"endDate": {
+					"displayName": "Дата окончания",
+					"description": "Временная метка, обозначающая окончание встречи. Дата окончания, если это встреча на целый день."
+				},
+				"is_allday": {
+					"displayName": "Весь день",
+					"description": "Независимо от того, назначена ли это встреча на целый день или нет"
+				},
+				"latitude": {
+					"displayName": "Широта",
+					"description": "Широта местоположения при проверке продаж"
+				},
+				"location": {
+					"displayName": "Расположение",
+					"description": "Место осуществления продаж"
+				},
+				"longitude": {
+					"displayName": "Долгота",
+					"description": "Долгота местоположения, когда вы регистрируетесь для совершения продаж."
+				},
+				"outcome_id": {
+					"displayName": "Имя или идентификатор результата",
+					"description": "Идентификатор результата задачи. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"fromDate": {
+					"displayName": "Дата начала",
+					"description": "Временная метка, обозначающая начало встречи. Дата начала, если это встреча на целый день."
+				},
+				"targetable_id": {
+					"displayName": "Идентификатор цели",
+					"description": "Идентификатор сущности, для которой обновляется задача. Тип сущности выбирается в «Типе цели»."
+				},
+				"targetable_type": {
+					"displayName": "Тип цели",
+					"options": {
+						"Contact": {
+							"displayName": "Контакт"
+						},
+						"Deal": {
+							"displayName": "Иметь дело"
+						},
+						"SalesAccount": {
+							"displayName": "ПродажиАккаунт"
+						}
+					},
+					"description": "Тип сущности, для которой обновляется задача"
+				},
+				"time_zone": {
+					"displayName": "Часовой пояс",
+					"description": "Часовой пояс, к которому принадлежит контакт",
+					"options": {
+						"Africa/Abidjan": {
+							"displayName": "Африка/Абиджан"
+						},
+						"Africa/Accra": {
+							"displayName": "Африка/Аккра"
+						},
+						"Africa/Addis_Ababa": {
+							"displayName": "Африка/Аддис_Абеба"
+						},
+						"Africa/Algiers": {
+							"displayName": "Африка/Алжир"
+						},
+						"Africa/Asmara": {
+							"displayName": "Африка/Асмэра"
+						},
+						"Africa/Asmera": {
+							"displayName": "Африка/Асмера"
+						},
+						"Africa/Bamako": {
+							"displayName": "Африка/Бамако"
+						},
+						"Africa/Bangui": {
+							"displayName": "Африка/Банги"
+						},
+						"Africa/Banjul": {
+							"displayName": "Африка/Банжул"
+						},
+						"Africa/Bissau": {
+							"displayName": "Африка/Бисау"
+						},
+						"Africa/Blantyre": {
+							"displayName": "Африка/Блантайр"
+						},
+						"Africa/Brazzaville": {
+							"displayName": "Африка/Браззавиль"
+						},
+						"Africa/Bujumbura": {
+							"displayName": "Африка/Бужумбура"
+						},
+						"Africa/Cairo": {
+							"displayName": "Африка/Каир"
+						},
+						"Africa/Casablanca": {
+							"displayName": "Африка/Касабланка"
+						},
+						"Africa/Ceuta": {
+							"displayName": "Африка/Сеута"
+						},
+						"Africa/Conakry": {
+							"displayName": "Африка/Конакри"
+						},
+						"Africa/Dakar": {
+							"displayName": "Африка/Дакар"
+						},
+						"Africa/Dar_es_Salaam": {
+							"displayName": "Африка/Дар_эс_Салам"
+						},
+						"Africa/Djibouti": {
+							"displayName": "Африка/Джибути"
+						},
+						"Africa/Douala": {
+							"displayName": "Африка/Дуала"
+						},
+						"Africa/El_Aaiun": {
+							"displayName": "Африка/Эль_Аюн"
+						},
+						"Africa/Freetown": {
+							"displayName": "Африка/Фритаун"
+						},
+						"Africa/Gaborone": {
+							"displayName": "Африка/Габороне"
+						},
+						"Africa/Harare": {
+							"displayName": "Африка/Хараре"
+						},
+						"Africa/Johannesburg": {
+							"displayName": "Африка/Йоханнесбург"
+						},
+						"Africa/Juba": {
+							"displayName": "Африка/Джуба"
+						},
+						"Africa/Kampala": {
+							"displayName": "Африка/Кампала"
+						},
+						"Africa/Khartoum": {
+							"displayName": "Африка/Хартум"
+						},
+						"Africa/Kigali": {
+							"displayName": "Африка/Кигали"
+						},
+						"Africa/Kinshasa": {
+							"displayName": "Африка/Киншаса"
+						},
+						"Africa/Lagos": {
+							"displayName": "Африка/Лагос"
+						},
+						"Africa/Libreville": {
+							"displayName": "Африка/Либревиль"
+						},
+						"Africa/Lome": {
+							"displayName": "Африка/Ломе"
+						},
+						"Africa/Luanda": {
+							"displayName": "Африка/Луанда"
+						},
+						"Africa/Lubumbashi": {
+							"displayName": "Африка/Лубумбаши"
+						},
+						"Africa/Lusaka": {
+							"displayName": "Африка/Лусака"
+						},
+						"Africa/Malabo": {
+							"displayName": "Африка/Малабо"
+						},
+						"Africa/Maputo": {
+							"displayName": "Африка/Мапуту"
+						},
+						"Africa/Maseru": {
+							"displayName": "Африка/Масеру"
+						},
+						"Africa/Mbabane": {
+							"displayName": "Африка/Мбабане"
+						},
+						"Africa/Mogadishu": {
+							"displayName": "Африка/Могадишо"
+						},
+						"Africa/Monrovia": {
+							"displayName": "Африка/Монровия"
+						},
+						"Africa/Nairobi": {
+							"displayName": "Африка/Найроби"
+						},
+						"Africa/Ndjamena": {
+							"displayName": "Африка/Нджамена"
+						},
+						"Africa/Niamey": {
+							"displayName": "Африка/Ниамей"
+						},
+						"Africa/Nouakchott": {
+							"displayName": "Африка/Нуакшот"
+						},
+						"Africa/Ouagadougou": {
+							"displayName": "Африка/Уагадугу"
+						},
+						"Africa/Porto-Novo": {
+							"displayName": "Африка/Порто-Ново"
+						},
+						"Africa/Sao_Tome": {
+							"displayName": "Африка/Сан_Томе"
+						},
+						"Africa/Timbuktu": {
+							"displayName": "Африка/Тимбукту"
+						},
+						"Africa/Tripoli": {
+							"displayName": "Африка/Триполи"
+						},
+						"Africa/Tunis": {
+							"displayName": "Африка/Тунис"
+						},
+						"Africa/Windhoek": {
+							"displayName": "Африка/Виндхук"
+						},
+						"America/Adak": {
+							"displayName": "Америка/Адак"
+						},
+						"America/Anchorage": {
+							"displayName": "Америка/Анкоридж"
+						},
+						"America/Anguilla": {
+							"displayName": "Америка/Ангилья"
+						},
+						"America/Antigua": {
+							"displayName": "Америка/Антигуа"
+						},
+						"America/Araguaina": {
+							"displayName": "Америка/Арагуайна"
+						},
+						"America/Argentina/Buenos_Aires": {
+							"displayName": "Америка/Аргентина/Буэнос-Айрес"
+						},
+						"America/Argentina/Catamarca": {
+							"displayName": "Америка/Аргентина/Катамарка"
+						},
+						"America/Argentina/ComodRivadavia": {
+							"displayName": "Америка/Аргентина/ComodRivadavia"
+						},
+						"America/Argentina/Cordoba": {
+							"displayName": "Америка/Аргентина/Кордова"
+						},
+						"America/Argentina/Jujuy": {
+							"displayName": "Америка/Аргентина/Жужуй"
+						},
+						"America/Argentina/La_Rioja": {
+							"displayName": "Америка/Аргентина/La_Rioja"
+						},
+						"America/Argentina/Mendoza": {
+							"displayName": "Америка/Аргентина/Мендоса"
+						},
+						"America/Argentina/Rio_Gallegos": {
+							"displayName": "Америка/Аргентина/Rio_Gallegos"
+						},
+						"America/Argentina/Salta": {
+							"displayName": "Америка/Аргентина/Сальта"
+						},
+						"America/Argentina/San_Juan": {
+							"displayName": "Америка/Аргентина/Сан_Хуан"
+						},
+						"America/Argentina/San_Luis": {
+							"displayName": "Америка/Аргентина/Сан_Луис"
+						},
+						"America/Argentina/Tucuman": {
+							"displayName": "Америка/Аргентина/Тукуман"
+						},
+						"America/Argentina/Ushuaia": {
+							"displayName": "Америка/Аргентина/Ушуайя"
+						},
+						"America/Aruba": {
+							"displayName": "Америка/Аруба"
+						},
+						"America/Asuncion": {
+							"displayName": "Америка/Асунсьон"
+						},
+						"America/Atikokan": {
+							"displayName": "Америка/Атикокан"
+						},
+						"America/Atka": {
+							"displayName": "Америка/Атка"
+						},
+						"America/Bahia": {
+							"displayName": "Америка/Баия"
+						},
+						"America/Bahia_Banderas": {
+							"displayName": "Америка/Баия_Бандерас"
+						},
+						"America/Barbados": {
+							"displayName": "Америка/Барбадос"
+						},
+						"America/Belem": {
+							"displayName": "Америка/Белем"
+						},
+						"America/Belize": {
+							"displayName": "Америка/Белиз"
+						},
+						"America/Blanc-Sablon": {
+							"displayName": "Америка/Блан-Саблон"
+						},
+						"America/Boa_Vista": {
+							"displayName": "Америка/Boa_Vista"
+						},
+						"America/Bogota": {
+							"displayName": "Америка/Богота"
+						},
+						"America/Boise": {
+							"displayName": "Америка/Бойсе"
+						},
+						"America/Buenos_Aires": {
+							"displayName": "Америка/Буэнос-Айрес"
+						},
+						"America/Cambridge_Bay": {
+							"displayName": "Америка/Кембридж_Бэй"
+						},
+						"America/Campo_Grande": {
+							"displayName": "Америка/Кампо_Гранде"
+						},
+						"America/Cancun": {
+							"displayName": "Америка/Канкун"
+						},
+						"America/Caracas": {
+							"displayName": "Америка/Каракас"
+						},
+						"America/Catamarca": {
+							"displayName": "Америка/Катамарка"
+						},
+						"America/Cayenne": {
+							"displayName": "Америка/Кайенна"
+						},
+						"America/Cayman": {
+							"displayName": "Америка/Кайманы"
+						},
+						"America/Chicago": {
+							"displayName": "Америка/Чикаго"
+						},
+						"America/Chihuahua": {
+							"displayName": "Америка/Чиуауа"
+						},
+						"America/Ciudad_Juarez": {
+							"displayName": "Америка/Сьюдад_Хуарес"
+						},
+						"America/Coral_Harbour": {
+							"displayName": "Америка/Coral_Harbour"
+						},
+						"America/Cordoba": {
+							"displayName": "Америка/Кордова"
+						},
+						"America/Costa_Rica": {
+							"displayName": "Америка/Коста_Рика"
+						},
+						"America/Coyhaique": {
+							"displayName": "Америка/Койайке"
+						},
+						"America/Creston": {
+							"displayName": "Америка/Крестон"
+						},
+						"America/Cuiaba": {
+							"displayName": "Америка/Куяба"
+						},
+						"America/Curacao": {
+							"displayName": "Америка/Кюрасао"
+						},
+						"America/Danmarkshavn": {
+							"displayName": "Америка/Данмарксхавн"
+						},
+						"America/Dawson": {
+							"displayName": "Америка/Доусон"
+						},
+						"America/Dawson_Creek": {
+							"displayName": "Америка/Доусон_Крик"
+						},
+						"America/Denver": {
+							"displayName": "Америка/Денвер"
+						},
+						"America/Detroit": {
+							"displayName": "Америка/Детройт"
+						},
+						"America/Dominica": {
+							"displayName": "Америка/Доминика"
+						},
+						"America/Edmonton": {
+							"displayName": "Америка/Эдмонтон"
+						},
+						"America/Eirunepe": {
+							"displayName": "Америка/Эйрунепе"
+						},
+						"America/El_Salvador": {
+							"displayName": "Америка/Эль_Сальвадор"
+						},
+						"America/Ensenada": {
+							"displayName": "Америка/Энсенада"
+						},
+						"America/Fort_Nelson": {
+							"displayName": "Америка/Форт_Нельсон"
+						},
+						"America/Fort_Wayne": {
+							"displayName": "Америка/Форт_Уэйн"
+						},
+						"America/Fortaleza": {
+							"displayName": "Америка/Форталеза"
+						},
+						"America/Glace_Bay": {
+							"displayName": "Америка/Glase_Bay"
+						},
+						"America/Godthab": {
+							"displayName": "Америка/Годтаб"
+						},
+						"America/Goose_Bay": {
+							"displayName": "Америка/Гусиная бухта"
+						},
+						"America/Grand_Turk": {
+							"displayName": "Америка/Grand_Turk"
+						},
+						"America/Grenada": {
+							"displayName": "Америка/Гренада"
+						},
+						"America/Guadeloupe": {
+							"displayName": "Америка/Гваделупа"
+						},
+						"America/Guatemala": {
+							"displayName": "Америка/Гватемала"
+						},
+						"America/Guayaquil": {
+							"displayName": "Америка/Гуаякиль"
+						},
+						"America/Guyana": {
+							"displayName": "Америка/Гайана"
+						},
+						"America/Halifax": {
+							"displayName": "Америка/Галифакс"
+						},
+						"America/Havana": {
+							"displayName": "Америка/Гавана"
+						},
+						"America/Hermosillo": {
+							"displayName": "Америка/Эрмосильо"
+						},
+						"America/Indiana/Indianapolis": {
+							"displayName": "Америка/Индиана/Индианаполис"
+						},
+						"America/Indiana/Knox": {
+							"displayName": "Америка/Индиана/Нокс"
+						},
+						"America/Indiana/Marengo": {
+							"displayName": "Америка/Индиана/Маренго"
+						},
+						"America/Indiana/Petersburg": {
+							"displayName": "Америка/Индиана/Петербург"
+						},
+						"America/Indiana/Tell_City": {
+							"displayName": "Америка/Индиана/Tell_City"
+						},
+						"America/Indiana/Vevay": {
+							"displayName": "Америка/Индиана/Вевей"
+						},
+						"America/Indiana/Vincennes": {
+							"displayName": "Америка/Индиана/Винсеннес"
+						},
+						"America/Indiana/Winamac": {
+							"displayName": "Америка/Индиана/Винамак"
+						},
+						"America/Indianapolis": {
+							"displayName": "Америка/Индианаполис"
+						},
+						"America/Inuvik": {
+							"displayName": "Америка/Инувик"
+						},
+						"America/Iqaluit": {
+							"displayName": "Америка/Икалуит"
+						},
+						"America/Jamaica": {
+							"displayName": "Америка/Ямайка"
+						},
+						"America/Jujuy": {
+							"displayName": "Америка/Жужуй"
+						},
+						"America/Juneau": {
+							"displayName": "Америка/Джуно"
+						},
+						"America/Kentucky/Louisville": {
+							"displayName": "Америка/Кентукки/Луисвилл"
+						},
+						"America/Kentucky/Monticello": {
+							"displayName": "Америка/Кентукки/Монтичелло"
+						},
+						"America/Knox_IN": {
+							"displayName": "Америка/Knox_IN"
+						},
+						"America/Kralendijk": {
+							"displayName": "Америка/Кралендейк"
+						},
+						"America/La_Paz": {
+							"displayName": "Америка/Ла_Пас"
+						},
+						"America/Lima": {
+							"displayName": "Америка/Лима"
+						},
+						"America/Los_Angeles": {
+							"displayName": "Америка/Лос-Анджелес"
+						},
+						"America/Louisville": {
+							"displayName": "Америка/Луисвилл"
+						},
+						"America/Lower_Princes": {
+							"displayName": "Америка/Нижние_Принцы"
+						},
+						"America/Maceio": {
+							"displayName": "Америка/Масейо"
+						},
+						"America/Managua": {
+							"displayName": "Америка/Манагуа"
+						},
+						"America/Manaus": {
+							"displayName": "Америка/Манаус"
+						},
+						"America/Marigot": {
+							"displayName": "Америка/Мариго"
+						},
+						"America/Martinique": {
+							"displayName": "Америка/Мартиника"
+						},
+						"America/Matamoros": {
+							"displayName": "Америка/Матаморос"
+						},
+						"America/Mazatlan": {
+							"displayName": "Америка/Мазатлан"
+						},
+						"America/Mendoza": {
+							"displayName": "Америка/Мендоса"
+						},
+						"America/Menominee": {
+							"displayName": "Америка/Меномини"
+						},
+						"America/Merida": {
+							"displayName": "Америка/Мерида"
+						},
+						"America/Metlakatla": {
+							"displayName": "Америка/Метлакатла"
+						},
+						"America/Mexico_City": {
+							"displayName": "Америка/Мехико_Сити"
+						},
+						"America/Miquelon": {
+							"displayName": "Америка/Микелон"
+						},
+						"America/Moncton": {
+							"displayName": "Америка/Монктон"
+						},
+						"America/Monterrey": {
+							"displayName": "Америка/Монтеррей"
+						},
+						"America/Montevideo": {
+							"displayName": "Америка/Монтевидео"
+						},
+						"America/Montreal": {
+							"displayName": "Америка/Монреаль"
+						},
+						"America/Montserrat": {
+							"displayName": "Америка/Монтсеррат"
+						},
+						"America/Nassau": {
+							"displayName": "Америка/Нассау"
+						},
+						"America/New_York": {
+							"displayName": "Америка/Нью_Йорк"
+						},
+						"America/Nipigon": {
+							"displayName": "Америка/Нипигон"
+						},
+						"America/Nome": {
+							"displayName": "Америка/Ном"
+						},
+						"America/Noronha": {
+							"displayName": "Америка/Норонья"
+						},
+						"America/North_Dakota/Beulah": {
+							"displayName": "Америка/Северная Дакота/Бьюла"
+						},
+						"America/North_Dakota/Center": {
+							"displayName": "Америка/Северная Дакота/Центр"
+						},
+						"America/North_Dakota/New_Salem": {
+							"displayName": "Америка/Северная Дакота/Нью-Салем"
+						},
+						"America/Nuuk": {
+							"displayName": "Америка/Нуук"
+						},
+						"America/Ojinaga": {
+							"displayName": "Америка/Охинага"
+						},
+						"America/Panama": {
+							"displayName": "Америка/Панама"
+						},
+						"America/Pangnirtung": {
+							"displayName": "Америка/Пангниртунг"
+						},
+						"America/Paramaribo": {
+							"displayName": "Америка/Парамарибо"
+						},
+						"America/Phoenix": {
+							"displayName": "Америка/Феникс"
+						},
+						"America/Port-au-Prince": {
+							"displayName": "Америка/Порт-о-Пренс"
+						},
+						"America/Port_of_Spain": {
+							"displayName": "Америка/Порт_Испании"
+						},
+						"America/Porto_Acre": {
+							"displayName": "Америка/Порто_Акр"
+						},
+						"America/Porto_Velho": {
+							"displayName": "Америка/Порту_Велью"
+						},
+						"America/Puerto_Rico": {
+							"displayName": "Америка/Пуэрто_Рико"
+						},
+						"America/Punta_Arenas": {
+							"displayName": "Америка/Пунта_Аренас"
+						},
+						"America/Rainy_River": {
+							"displayName": "Америка/Rainy_River"
+						},
+						"America/Rankin_Inlet": {
+							"displayName": "Америка/Рэнкин_Инлет"
+						},
+						"America/Recife": {
+							"displayName": "Америка/Ресифи"
+						},
+						"America/Regina": {
+							"displayName": "Америка/Регина"
+						},
+						"America/Resolute": {
+							"displayName": "Америка/Решительный"
+						},
+						"America/Rio_Branco": {
+							"displayName": "Америка/Рио_Бранко"
+						},
+						"America/Rosario": {
+							"displayName": "Америка/Росарио"
+						},
+						"America/Santa_Isabel": {
+							"displayName": "Америка/Санта_Изабель"
+						},
+						"America/Santarem": {
+							"displayName": "Америка/Сантарем"
+						},
+						"America/Santiago": {
+							"displayName": "Америка/Сантьяго"
+						},
+						"America/Santo_Domingo": {
+							"displayName": "Америка/Санто_Доминго"
+						},
+						"America/Sao_Paulo": {
+							"displayName": "Америка/Сан-Паулу"
+						},
+						"America/Scoresbysund": {
+							"displayName": "Америка/Скорсбисунд"
+						},
+						"America/Shiprock": {
+							"displayName": "Америка/Шипрок"
+						},
+						"America/Sitka": {
+							"displayName": "Америка/Ситка"
+						},
+						"America/St_Barthelemy": {
+							"displayName": "Америка/Сент_Бартелеми"
+						},
+						"America/St_Johns": {
+							"displayName": "Америка/Сент_Джонс"
+						},
+						"America/St_Kitts": {
+							"displayName": "Америка/Сент-Китс"
+						},
+						"America/St_Lucia": {
+							"displayName": "Америка/Сент-Люсия"
+						},
+						"America/St_Thomas": {
+							"displayName": "Америка/Сент_Томас"
+						},
+						"America/St_Vincent": {
+							"displayName": "Америка/Сент_Винсент"
+						},
+						"America/Swift_Current": {
+							"displayName": "Америка/Swift_Current"
+						},
+						"America/Tegucigalpa": {
+							"displayName": "Америка/Тегусигальпа"
+						},
+						"America/Thule": {
+							"displayName": "Америка/Туле"
+						},
+						"America/Thunder_Bay": {
+							"displayName": "Америка/Thunder_Bay"
+						},
+						"America/Tijuana": {
+							"displayName": "Америка/Тихуана"
+						},
+						"America/Toronto": {
+							"displayName": "Америка/Торонто"
+						},
+						"America/Tortola": {
+							"displayName": "Америка/Тортола"
+						},
+						"America/Vancouver": {
+							"displayName": "Америка/Ванкувер"
+						},
+						"America/Virgin": {
+							"displayName": "Америка/Девственница"
+						},
+						"America/Whitehorse": {
+							"displayName": "Америка/Уайтхорс"
+						},
+						"America/Winnipeg": {
+							"displayName": "Америка/Виннипег"
+						},
+						"America/Yakutat": {
+							"displayName": "Америка/Якутат"
+						},
+						"America/Yellowknife": {
+							"displayName": "Америка/Йеллоунайф"
+						},
+						"Antarctica/Casey": {
+							"displayName": "Антарктида/Кейси"
+						},
+						"Antarctica/Davis": {
+							"displayName": "Антарктида/Дэвис"
+						},
+						"Antarctica/DumontDUrville": {
+							"displayName": "Антарктида/Дюмон-Дюрвиль"
+						},
+						"Antarctica/Macquarie": {
+							"displayName": "Антарктида/Маккуори"
+						},
+						"Antarctica/Mawson": {
+							"displayName": "Антарктида/Моусон"
+						},
+						"Antarctica/McMurdo": {
+							"displayName": "Антарктида/МакМердо"
+						},
+						"Antarctica/Palmer": {
+							"displayName": "Антарктида/Палмер"
+						},
+						"Antarctica/Rothera": {
+							"displayName": "Антарктида/Ротера"
+						},
+						"Antarctica/South_Pole": {
+							"displayName": "Антарктида/Южный_Полюс"
+						},
+						"Antarctica/Syowa": {
+							"displayName": "Антарктида/Сёва"
+						},
+						"Antarctica/Troll": {
+							"displayName": "Антарктида/Тролль"
+						},
+						"Antarctica/Vostok": {
+							"displayName": "Антарктида/Восток"
+						},
+						"Arctic/Longyearbyen": {
+							"displayName": "Арктика/Лонгйирбиен"
+						},
+						"Asia/Aden": {
+							"displayName": "Азия/Аден"
+						},
+						"Asia/Almaty": {
+							"displayName": "Азия/Алматы"
+						},
+						"Asia/Amman": {
+							"displayName": "Азия/Амман"
+						},
+						"Asia/Anadyr": {
+							"displayName": "Азия/Анадырь"
+						},
+						"Asia/Aqtau": {
+							"displayName": "Азия/Актау"
+						},
+						"Asia/Aqtobe": {
+							"displayName": "Азия/Актобе"
+						},
+						"Asia/Ashgabat": {
+							"displayName": "Азия/Ашхабад"
+						},
+						"Asia/Ashkhabad": {
+							"displayName": "Азия/Ашхабад"
+						},
+						"Asia/Atyrau": {
+							"displayName": "Азия/Атырау"
+						},
+						"Asia/Baghdad": {
+							"displayName": "Азия/Багдад"
+						},
+						"Asia/Bahrain": {
+							"displayName": "Азия/Бахрейн"
+						},
+						"Asia/Baku": {
+							"displayName": "Азия/Баку"
+						},
+						"Asia/Bangkok": {
+							"displayName": "Азия/Бангкок"
+						},
+						"Asia/Barnaul": {
+							"displayName": "Азия/Барнаул"
+						},
+						"Asia/Beirut": {
+							"displayName": "Азия/Бейрут"
+						},
+						"Asia/Bishkek": {
+							"displayName": "Азия/Бишкек"
+						},
+						"Asia/Brunei": {
+							"displayName": "Азия/Бруней"
+						},
+						"Asia/Calcutta": {
+							"displayName": "Азия/Калькутта"
+						},
+						"Asia/Chita": {
+							"displayName": "Азия/Чита"
+						},
+						"Asia/Choibalsan": {
+							"displayName": "Азия/Чойбалсан"
+						},
+						"Asia/Chongqing": {
+							"displayName": "Азия/Чунцин"
+						},
+						"Asia/Chungking": {
+							"displayName": "Азия/Чунгкинг"
+						},
+						"Asia/Colombo": {
+							"displayName": "Азия/Коломбо"
+						},
+						"Asia/Dacca": {
+							"displayName": "Азия/Дакка"
+						},
+						"Asia/Damascus": {
+							"displayName": "Азия/Дамаск"
+						},
+						"Asia/Dhaka": {
+							"displayName": "Азия/Дакка"
+						},
+						"Asia/Dili": {
+							"displayName": "Азия/Дили"
+						},
+						"Asia/Dubai": {
+							"displayName": "Азия/Дубай"
+						},
+						"Asia/Dushanbe": {
+							"displayName": "Азия/Душанбе"
+						},
+						"Asia/Famagusta": {
+							"displayName": "Азия/Фамагуста"
+						},
+						"Asia/Gaza": {
+							"displayName": "Азия/Газа"
+						},
+						"Asia/Harbin": {
+							"displayName": "Азия/Харбин"
+						},
+						"Asia/Hebron": {
+							"displayName": "Азия/Хеврон"
+						},
+						"Asia/Ho_Chi_Minh": {
+							"displayName": "Азия/Хо_Чи_Мин"
+						},
+						"Asia/Hong_Kong": {
+							"displayName": "Азия/Гонконг"
+						},
+						"Asia/Hovd": {
+							"displayName": "Азия/Ховд"
+						},
+						"Asia/Irkutsk": {
+							"displayName": "Азия/Иркутск"
+						},
+						"Asia/Istanbul": {
+							"displayName": "Азия/Стамбул"
+						},
+						"Asia/Jakarta": {
+							"displayName": "Азия/Джакарта"
+						},
+						"Asia/Jayapura": {
+							"displayName": "Азия/Джаяпура"
+						},
+						"Asia/Jerusalem": {
+							"displayName": "Азия/Иерусалим"
+						},
+						"Asia/Kabul": {
+							"displayName": "Азия/Кабул"
+						},
+						"Asia/Kamchatka": {
+							"displayName": "Азия/Камчатка"
+						},
+						"Asia/Karachi": {
+							"displayName": "Азия/Карачи"
+						},
+						"Asia/Kashgar": {
+							"displayName": "Азия/Кашгар"
+						},
+						"Asia/Kathmandu": {
+							"displayName": "Азия/Катманду"
+						},
+						"Asia/Katmandu": {
+							"displayName": "Азия/Катманду"
+						},
+						"Asia/Khandyga": {
+							"displayName": "Азия/Хандыга"
+						},
+						"Asia/Kolkata": {
+							"displayName": "Азия/Калькутта"
+						},
+						"Asia/Krasnoyarsk": {
+							"displayName": "Азия/Красноярск"
+						},
+						"Asia/Kuala_Lumpur": {
+							"displayName": "Азия/Куала-Лумпур"
+						},
+						"Asia/Kuching": {
+							"displayName": "Азия/Кучинг"
+						},
+						"Asia/Kuwait": {
+							"displayName": "Азия/Кувейт"
+						},
+						"Asia/Macao": {
+							"displayName": "Азия/Макао"
+						},
+						"Asia/Macau": {
+							"displayName": "Азия/Макао"
+						},
+						"Asia/Magadan": {
+							"displayName": "Азия/Магадан"
+						},
+						"Asia/Makassar": {
+							"displayName": "Азия/Макассар"
+						},
+						"Asia/Manila": {
+							"displayName": "Азия/Манила"
+						},
+						"Asia/Muscat": {
+							"displayName": "Азия/Маскат"
+						},
+						"Asia/Nicosia": {
+							"displayName": "Азия/Никосия"
+						},
+						"Asia/Novokuznetsk": {
+							"displayName": "Азия/Новокузнецк"
+						},
+						"Asia/Novosibirsk": {
+							"displayName": "Азия/Новосибирск"
+						},
+						"Asia/Omsk": {
+							"displayName": "Азия/Омск"
+						},
+						"Asia/Oral": {
+							"displayName": "Азия/Устный"
+						},
+						"Asia/Phnom_Penh": {
+							"displayName": "Азия/Пномпень"
+						},
+						"Asia/Pontianak": {
+							"displayName": "Азия/Понтианак"
+						},
+						"Asia/Pyongyang": {
+							"displayName": "Азия/Пхеньян"
+						},
+						"Asia/Qatar": {
+							"displayName": "Азия/Катар"
+						},
+						"Asia/Qostanay": {
+							"displayName": "Азия/Костанай"
+						},
+						"Asia/Qyzylorda": {
+							"displayName": "Азия/Кызылорда"
+						},
+						"Asia/Rangoon": {
+							"displayName": "Азия/Рангун"
+						},
+						"Asia/Riyadh": {
+							"displayName": "Азия/Эр-Рияд"
+						},
+						"Asia/Saigon": {
+							"displayName": "Азия/Сайгон"
+						},
+						"Asia/Sakhalin": {
+							"displayName": "Азия/Сахалин"
+						},
+						"Asia/Samarkand": {
+							"displayName": "Азия/Самарканд"
+						},
+						"Asia/Seoul": {
+							"displayName": "Азия/Сеул"
+						},
+						"Asia/Shanghai": {
+							"displayName": "Азия/Шанхай"
+						},
+						"Asia/Singapore": {
+							"displayName": "Азия/Сингапур"
+						},
+						"Asia/Srednekolymsk": {
+							"displayName": "Азия/Среднеколымск"
+						},
+						"Asia/Taipei": {
+							"displayName": "Азия/Тайбэй"
+						},
+						"Asia/Tashkent": {
+							"displayName": "Азия/Ташкент"
+						},
+						"Asia/Tbilisi": {
+							"displayName": "Азия/Тбилиси"
+						},
+						"Asia/Tehran": {
+							"displayName": "Азия/Тегеран"
+						},
+						"Asia/Tel_Aviv": {
+							"displayName": "Азия/Тель-Авив"
+						},
+						"Asia/Thimbu": {
+							"displayName": "Азия/Тимбу"
+						},
+						"Asia/Thimphu": {
+							"displayName": "Азия/Тхимпху"
+						},
+						"Asia/Tokyo": {
+							"displayName": "Азия/Токио"
+						},
+						"Asia/Tomsk": {
+							"displayName": "Азия/Томск"
+						},
+						"Asia/Ujung_Pandang": {
+							"displayName": "Азия/Уджунг_Панданг"
+						},
+						"Asia/Ulaanbaatar": {
+							"displayName": "Азия/Улан-Батор"
+						},
+						"Asia/Ulan_Bator": {
+							"displayName": "Азия/Улан_Батор"
+						},
+						"Asia/Urumqi": {
+							"displayName": "Азия/Урумчи"
+						},
+						"Asia/Ust-Nera": {
+							"displayName": "Азия/Усть-Нера"
+						},
+						"Asia/Vientiane": {
+							"displayName": "Азия/Вьентьян"
+						},
+						"Asia/Vladivostok": {
+							"displayName": "Азия/Владивосток"
+						},
+						"Asia/Yakutsk": {
+							"displayName": "Азия/Якутск"
+						},
+						"Asia/Yangon": {
+							"displayName": "Азия/Янгон"
+						},
+						"Asia/Yekaterinburg": {
+							"displayName": "Азия/Екатеринбург"
+						},
+						"Asia/Yerevan": {
+							"displayName": "Азия/Ереван"
+						},
+						"Atlantic/Azores": {
+							"displayName": "Атлантика/Азорские острова"
+						},
+						"Atlantic/Bermuda": {
+							"displayName": "Атлантика/Бермудские острова"
+						},
+						"Atlantic/Canary": {
+							"displayName": "Атлантический/Канарский"
+						},
+						"Atlantic/Cape_Verde": {
+							"displayName": "Атлантический океан/Кабо-Верде"
+						},
+						"Atlantic/Faeroe": {
+							"displayName": "Атлантика/Фарерские острова"
+						},
+						"Atlantic/Faroe": {
+							"displayName": "Атлантика/Фарерские острова"
+						},
+						"Atlantic/Jan_Mayen": {
+							"displayName": "Атлантика/январь-майен"
+						},
+						"Atlantic/Madeira": {
+							"displayName": "Атлантика/Мадейра"
+						},
+						"Atlantic/Reykjavik": {
+							"displayName": "Атлантик/Рейкьявик"
+						},
+						"Atlantic/South_Georgia": {
+							"displayName": "Атлантика/Южная Грузия"
+						},
+						"Atlantic/St_Helena": {
+							"displayName": "Атлантика/Св. Елены"
+						},
+						"Atlantic/Stanley": {
+							"displayName": "Атлантик/Стэнли"
+						},
+						"Australia/ACT": {
+							"displayName": "Австралия/ACT"
+						},
+						"Australia/Adelaide": {
+							"displayName": "Австралия/Аделаида"
+						},
+						"Australia/Brisbane": {
+							"displayName": "Австралия/Брисбен"
+						},
+						"Australia/Broken_Hill": {
+							"displayName": "Австралия/Broken_Hill"
+						},
+						"Australia/Canberra": {
+							"displayName": "Австралия/Канберра"
+						},
+						"Australia/Currie": {
+							"displayName": "Австралия/Карри"
+						},
+						"Australia/Darwin": {
+							"displayName": "Австралия/Дарвин"
+						},
+						"Australia/Eucla": {
+							"displayName": "Австралия/Юкла"
+						},
+						"Australia/Hobart": {
+							"displayName": "Австралия/Хобарт"
+						},
+						"Australia/LHI": {
+							"displayName": "Австралия/LHI"
+						},
+						"Australia/Lindeman": {
+							"displayName": "Австралия/Линдеман"
+						},
+						"Australia/Lord_Howe": {
+							"displayName": "Австралия/Lord_Howe"
+						},
+						"Australia/Melbourne": {
+							"displayName": "Австралия/Мельбурн"
+						},
+						"Australia/NSW": {
+							"displayName": "Австралия/Новый Южный Уэльс"
+						},
+						"Australia/North": {
+							"displayName": "Австралия/Север"
+						},
+						"Australia/Perth": {
+							"displayName": "Австралия/Перт"
+						},
+						"Australia/Queensland": {
+							"displayName": "Австралия/Квинсленд"
+						},
+						"Australia/South": {
+							"displayName": "Австралия/Юг"
+						},
+						"Australia/Sydney": {
+							"displayName": "Австралия/Сидней"
+						},
+						"Australia/Tasmania": {
+							"displayName": "Австралия/Тасмания"
+						},
+						"Australia/Victoria": {
+							"displayName": "Австралия/Виктория"
+						},
+						"Australia/West": {
+							"displayName": "Австралия/Запад"
+						},
+						"Australia/Yancowinna": {
+							"displayName": "Австралия/Янковинна"
+						},
+						"Brazil/Acre": {
+							"displayName": "Бразилия/Акко"
+						},
+						"Brazil/DeNoronha": {
+							"displayName": "Бразилия/Деноронья"
+						},
+						"Brazil/East": {
+							"displayName": "Бразилия/Восток"
+						},
+						"Brazil/West": {
+							"displayName": "Бразилия/Запад"
+						},
+						"CET": {
+							"displayName": "CET"
+						},
+						"CST6CDT": {
+							"displayName": "CST6CDT"
+						},
+						"Canada/Atlantic": {
+							"displayName": "Канада/Атлантика"
+						},
+						"Canada/Central": {
+							"displayName": "Канада/Центральный"
+						},
+						"Canada/Eastern": {
+							"displayName": "Канада/Восточная"
+						},
+						"Canada/Mountain": {
+							"displayName": "Канада/Горы"
+						},
+						"Canada/Newfoundland": {
+							"displayName": "Канада/Ньюфаундленд"
+						},
+						"Canada/Pacific": {
+							"displayName": "Канада/Тихоокеанский регион"
+						},
+						"Canada/Saskatchewan": {
+							"displayName": "Канада/Саскачеван"
+						},
+						"Canada/Yukon": {
+							"displayName": "Канада/Юкон"
+						},
+						"Chile/Continental": {
+							"displayName": "Чили/Континентальный"
+						},
+						"Chile/EasterIsland": {
+							"displayName": "Чили/Остров Пасхи"
+						},
+						"Cuba": {
+							"displayName": "Куба"
+						},
+						"EET": {
+							"displayName": "EET"
+						},
+						"EST": {
+							"displayName": "EST"
+						},
+						"EST5EDT": {
+							"displayName": "EST5EDT"
+						},
+						"Egypt": {
+							"displayName": "Египет"
+						},
+						"Eire": {
+							"displayName": "Эйре"
+						},
+						"Etc/GMT": {
+							"displayName": "И т.д./GMT"
+						},
+						"Etc/GMT+0": {
+							"displayName": "И т.д./GMT+0"
+						},
+						"Etc/GMT+1": {
+							"displayName": "И т.д./GMT+1"
+						},
+						"Etc/GMT+10": {
+							"displayName": "И т.д./GMT+10"
+						},
+						"Etc/GMT+11": {
+							"displayName": "И т.д./GMT+11"
+						},
+						"Etc/GMT+12": {
+							"displayName": "И т.д./GMT+12"
+						},
+						"Etc/GMT+2": {
+							"displayName": "И т.д./GMT+2"
+						},
+						"Etc/GMT+3": {
+							"displayName": "И т.д./GMT+3"
+						},
+						"Etc/GMT+4": {
+							"displayName": "И т.д./GMT+4"
+						},
+						"Etc/GMT+5": {
+							"displayName": "И т.д./GMT+5"
+						},
+						"Etc/GMT+6": {
+							"displayName": "И т.д./GMT+6"
+						},
+						"Etc/GMT+7": {
+							"displayName": "И т.д./GMT+7"
+						},
+						"Etc/GMT+8": {
+							"displayName": "И т.д./GMT+8"
+						},
+						"Etc/GMT+9": {
+							"displayName": "И т.д./GMT+9"
+						},
+						"Etc/GMT-0": {
+							"displayName": "И т.д./GMT-0"
+						},
+						"Etc/GMT-1": {
+							"displayName": "И т.д./GMT-1"
+						},
+						"Etc/GMT-10": {
+							"displayName": "И т.д./GMT-10"
+						},
+						"Etc/GMT-11": {
+							"displayName": "И т.д./GMT-11"
+						},
+						"Etc/GMT-12": {
+							"displayName": "И т.д./GMT-12"
+						},
+						"Etc/GMT-13": {
+							"displayName": "И т.д./GMT-13"
+						},
+						"Etc/GMT-14": {
+							"displayName": "И т.д./GMT-14"
+						},
+						"Etc/GMT-2": {
+							"displayName": "И т.д./GMT-2"
+						},
+						"Etc/GMT-3": {
+							"displayName": "И т.д./GMT-3"
+						},
+						"Etc/GMT-4": {
+							"displayName": "И т.д./GMT-4"
+						},
+						"Etc/GMT-5": {
+							"displayName": "И т.д./GMT-5"
+						},
+						"Etc/GMT-6": {
+							"displayName": "И т.д./GMT-6"
+						},
+						"Etc/GMT-7": {
+							"displayName": "И т.д./GMT-7"
+						},
+						"Etc/GMT-8": {
+							"displayName": "И т.д./GMT-8"
+						},
+						"Etc/GMT-9": {
+							"displayName": "И т.д./GMT-9"
+						},
+						"Etc/GMT0": {
+							"displayName": "И т.д./GMT0"
+						},
+						"Etc/Greenwich": {
+							"displayName": "И т.д./Гринвич"
+						},
+						"Etc/UCT": {
+							"displayName": "И т.д./UCT"
+						},
+						"Etc/UTC": {
+							"displayName": "И т.д./UTC"
+						},
+						"Etc/Universal": {
+							"displayName": "И т.д./Универсальный"
+						},
+						"Etc/Zulu": {
+							"displayName": "И т.д./Зулу"
+						},
+						"Europe/Amsterdam": {
+							"displayName": "Европа/Амстердам"
+						},
+						"Europe/Andorra": {
+							"displayName": "Европа/Андорра"
+						},
+						"Europe/Astrakhan": {
+							"displayName": "Европа/Астрахань"
+						},
+						"Europe/Athens": {
+							"displayName": "Европа/Афины"
+						},
+						"Europe/Belfast": {
+							"displayName": "Европа/Белфаст"
+						},
+						"Europe/Belgrade": {
+							"displayName": "Европа/Белград"
+						},
+						"Europe/Berlin": {
+							"displayName": "Европа/Берлин"
+						},
+						"Europe/Bratislava": {
+							"displayName": "Европа/Братислава"
+						},
+						"Europe/Brussels": {
+							"displayName": "Европа/Брюссель"
+						},
+						"Europe/Bucharest": {
+							"displayName": "Европа/Бухарест"
+						},
+						"Europe/Budapest": {
+							"displayName": "Европа/Будапешт"
+						},
+						"Europe/Busingen": {
+							"displayName": "Европа/Бюзинген"
+						},
+						"Europe/Chisinau": {
+							"displayName": "Европа/Кишинёв"
+						},
+						"Europe/Copenhagen": {
+							"displayName": "Европа/Копенгаген"
+						},
+						"Europe/Dublin": {
+							"displayName": "Европа/Дублин"
+						},
+						"Europe/Gibraltar": {
+							"displayName": "Европа/Гибралтар"
+						},
+						"Europe/Guernsey": {
+							"displayName": "Европа/Гернси"
+						},
+						"Europe/Helsinki": {
+							"displayName": "Европа/Хельсинки"
+						},
+						"Europe/Isle_of_Man": {
+							"displayName": "Европа/Остров_Мэн"
+						},
+						"Europe/Istanbul": {
+							"displayName": "Европа/Стамбул"
+						},
+						"Europe/Jersey": {
+							"displayName": "Европа/Джерси"
+						},
+						"Europe/Kaliningrad": {
+							"displayName": "Европа/Калининград"
+						},
+						"Europe/Kiev": {
+							"displayName": "Европа/Киев"
+						},
+						"Europe/Kirov": {
+							"displayName": "Европа/Киров"
+						},
+						"Europe/Kyiv": {
+							"displayName": "Европа/Киев"
+						},
+						"Europe/Lisbon": {
+							"displayName": "Европа/Лиссабон"
+						},
+						"Europe/Ljubljana": {
+							"displayName": "Европа/Любляна"
+						},
+						"Europe/London": {
+							"displayName": "Европа/Лондон"
+						},
+						"Europe/Luxembourg": {
+							"displayName": "Европа/Люксембург"
+						},
+						"Europe/Madrid": {
+							"displayName": "Европа/Мадрид"
+						},
+						"Europe/Malta": {
+							"displayName": "Европа/Мальта"
+						},
+						"Europe/Mariehamn": {
+							"displayName": "Европа/Мариехамн"
+						},
+						"Europe/Minsk": {
+							"displayName": "Европа/Минск"
+						},
+						"Europe/Monaco": {
+							"displayName": "Европа/Монако"
+						},
+						"Europe/Moscow": {
+							"displayName": "Европа/Москва"
+						},
+						"Europe/Nicosia": {
+							"displayName": "Европа/Никосия"
+						},
+						"Europe/Oslo": {
+							"displayName": "Европа/Осло"
+						},
+						"Europe/Paris": {
+							"displayName": "Европа/Париж"
+						},
+						"Europe/Podgorica": {
+							"displayName": "Европа/Подгорица"
+						},
+						"Europe/Prague": {
+							"displayName": "Европа/Прага"
+						},
+						"Europe/Riga": {
+							"displayName": "Европа/Рига"
+						},
+						"Europe/Rome": {
+							"displayName": "Европа/Рим"
+						},
+						"Europe/Samara": {
+							"displayName": "Европа/Самара"
+						},
+						"Europe/San_Marino": {
+							"displayName": "Европа/Сан_Марино"
+						},
+						"Europe/Sarajevo": {
+							"displayName": "Европа/Сараево"
+						},
+						"Europe/Saratov": {
+							"displayName": "Европа/Саратов"
+						},
+						"Europe/Simferopol": {
+							"displayName": "Европа/Симферополь"
+						},
+						"Europe/Skopje": {
+							"displayName": "Европа/Скопье"
+						},
+						"Europe/Sofia": {
+							"displayName": "Европа/София"
+						},
+						"Europe/Stockholm": {
+							"displayName": "Европа/Стокгольм"
+						},
+						"Europe/Tallinn": {
+							"displayName": "Европа/Таллинн"
+						},
+						"Europe/Tirane": {
+							"displayName": "Европа/Тиран"
+						},
+						"Europe/Tiraspol": {
+							"displayName": "Европа/Тирасполь"
+						},
+						"Europe/Ulyanovsk": {
+							"displayName": "Европа/Ульяновск"
+						},
+						"Europe/Uzhgorod": {
+							"displayName": "Европа/Ужгород"
+						},
+						"Europe/Vaduz": {
+							"displayName": "Европа/Вадуц"
+						},
+						"Europe/Vatican": {
+							"displayName": "Европа/Ватикан"
+						},
+						"Europe/Vienna": {
+							"displayName": "Европа/Вена"
+						},
+						"Europe/Vilnius": {
+							"displayName": "Европа/Вильнюс"
+						},
+						"Europe/Volgograd": {
+							"displayName": "Европа/Волгоград"
+						},
+						"Europe/Warsaw": {
+							"displayName": "Европа/Варшава"
+						},
+						"Europe/Zagreb": {
+							"displayName": "Европа/Загреб"
+						},
+						"Europe/Zaporozhye": {
+							"displayName": "Европа/Запорожье"
+						},
+						"Europe/Zurich": {
+							"displayName": "Европа/Цюрих"
+						},
+						"GB": {
+							"displayName": "GB"
+						},
+						"GB-Eire": {
+							"displayName": "Великобритания-Ирландия"
+						},
+						"GMT": {
+							"displayName": "GMT"
+						},
+						"GMT+0": {
+							"displayName": "Время по Гринвичу+0"
+						},
+						"GMT-0": {
+							"displayName": "GMT-0"
+						},
+						"GMT0": {
+							"displayName": "GMT0"
+						},
+						"Greenwich": {
+							"displayName": "Гринвич"
+						},
+						"HST": {
+							"displayName": "HST"
+						},
+						"Hongkong": {
+							"displayName": "Гонконг"
+						},
+						"Iceland": {
+							"displayName": "Исландия"
+						},
+						"Indian/Antananarivo": {
+							"displayName": "Индия/Антананариву"
+						},
+						"Indian/Chagos": {
+							"displayName": "Индийский/Чагос"
+						},
+						"Indian/Christmas": {
+							"displayName": "Индийский/Рождество"
+						},
+						"Indian/Cocos": {
+							"displayName": "Индия/Кокосовые острова"
+						},
+						"Indian/Comoro": {
+							"displayName": "Индийский/Коморский"
+						},
+						"Indian/Kerguelen": {
+							"displayName": "Индийский/Кергелен"
+						},
+						"Indian/Mahe": {
+							"displayName": "Индийский/Маэ"
+						},
+						"Indian/Maldives": {
+							"displayName": "Индия/Мальдивы"
+						},
+						"Indian/Mauritius": {
+							"displayName": "Индия/Маврикий"
+						},
+						"Indian/Mayotte": {
+							"displayName": "Индийский/Майотта"
+						},
+						"Indian/Reunion": {
+							"displayName": "Индийский/Реюньон"
+						},
+						"Iran": {
+							"displayName": "Иран"
+						},
+						"Israel": {
+							"displayName": "Израиль"
+						},
+						"Jamaica": {
+							"displayName": "Ямайка"
+						},
+						"Japan": {
+							"displayName": "Япония"
+						},
+						"Kwajalein": {
+							"displayName": "Кваджалейн"
+						},
+						"Libya": {
+							"displayName": "Ливия"
+						},
+						"MET": {
+							"displayName": "MET"
+						},
+						"MST": {
+							"displayName": "MST"
+						},
+						"MST7MDT": {
+							"displayName": "MST7MDT"
+						},
+						"Mexico/BajaNorte": {
+							"displayName": "Мексика/Баха-Норте"
+						},
+						"Mexico/BajaSur": {
+							"displayName": "Мексика/Баха-Сур"
+						},
+						"Mexico/General": {
+							"displayName": "Мексика/Общий"
+						},
+						"NZ": {
+							"displayName": "NZ"
+						},
+						"NZ-CHAT": {
+							"displayName": "NZ-CHAT"
+						},
+						"Navajo": {
+							"displayName": "Навахо"
+						},
+						"PRC": {
+							"displayName": "PRC"
+						},
+						"PST8PDT": {
+							"displayName": "PST8PDT"
+						},
+						"Pacific/Apia": {
+							"displayName": "Тихий океан/Апиа"
+						},
+						"Pacific/Auckland": {
+							"displayName": "Тихий океан/Окленд"
+						},
+						"Pacific/Bougainville": {
+							"displayName": "Тихий океан/Бугенвиль"
+						},
+						"Pacific/Chatham": {
+							"displayName": "Тихий океан/Чатем"
+						},
+						"Pacific/Chuuk": {
+							"displayName": "Тихий океан/Чуук"
+						},
+						"Pacific/Easter": {
+							"displayName": "Тихий океан/Пасха"
+						},
+						"Pacific/Efate": {
+							"displayName": "Тихий океан/Эфате"
+						},
+						"Pacific/Enderbury": {
+							"displayName": "Тихий океан/Эндербери"
+						},
+						"Pacific/Fakaofo": {
+							"displayName": "Тихий океан/Факаофо"
+						},
+						"Pacific/Fiji": {
+							"displayName": "Тихий океан/Фиджи"
+						},
+						"Pacific/Funafuti": {
+							"displayName": "Тихий океан/Фунафути"
+						},
+						"Pacific/Galapagos": {
+							"displayName": "Тихий океан/Галапагосские острова"
+						},
+						"Pacific/Gambier": {
+							"displayName": "Тихий океан/Гамбье"
+						},
+						"Pacific/Guadalcanal": {
+							"displayName": "Тихий океан/Гуадалканал"
+						},
+						"Pacific/Guam": {
+							"displayName": "Тихий океан/Гуам"
+						},
+						"Pacific/Honolulu": {
+							"displayName": "Тихий океан/Гонолулу"
+						},
+						"Pacific/Johnston": {
+							"displayName": "Тихий океан/Джонстон"
+						},
+						"Pacific/Kanton": {
+							"displayName": "Тихий океан/Кантон"
+						},
+						"Pacific/Kiritimati": {
+							"displayName": "Тихий океан/Киритимати"
+						},
+						"Pacific/Kosrae": {
+							"displayName": "Тихий океан/Косраэ"
+						},
+						"Pacific/Kwajalein": {
+							"displayName": "Тихий океан/Кваджалейн"
+						},
+						"Pacific/Majuro": {
+							"displayName": "Тихий океан/Маджуро"
+						},
+						"Pacific/Marquesas": {
+							"displayName": "Тихий океан/Маркизские острова"
+						},
+						"Pacific/Midway": {
+							"displayName": "Тихий океан/Мидуэй"
+						},
+						"Pacific/Nauru": {
+							"displayName": "Тихий океан/Науру"
+						},
+						"Pacific/Niue": {
+							"displayName": "Тихий океан/Ниуэ"
+						},
+						"Pacific/Norfolk": {
+							"displayName": "Тихий океан/Норфолк"
+						},
+						"Pacific/Noumea": {
+							"displayName": "Тихий океан/Нумеа"
+						},
+						"Pacific/Pago_Pago": {
+							"displayName": "Тихий океан/Паго_Паго"
+						},
+						"Pacific/Palau": {
+							"displayName": "Тихий океан/Палау"
+						},
+						"Pacific/Pitcairn": {
+							"displayName": "Тихий океан/Питкэрн"
+						},
+						"Pacific/Pohnpei": {
+							"displayName": "Тихий океан/Понпеи"
+						},
+						"Pacific/Ponape": {
+							"displayName": "Тихий океан/Понапе"
+						},
+						"Pacific/Port_Moresby": {
+							"displayName": "Тихий океан/Порт_Морсби"
+						},
+						"Pacific/Rarotonga": {
+							"displayName": "Тихий океан/Раротонга"
+						},
+						"Pacific/Saipan": {
+							"displayName": "Тихий океан/Сайпан"
+						},
+						"Pacific/Samoa": {
+							"displayName": "Тихий океан/Самоа"
+						},
+						"Pacific/Tahiti": {
+							"displayName": "Тихий океан/Таити"
+						},
+						"Pacific/Tarawa": {
+							"displayName": "Тихий океан/Тарава"
+						},
+						"Pacific/Tongatapu": {
+							"displayName": "Тихий океан/Тонгатапу"
+						},
+						"Pacific/Truk": {
+							"displayName": "Тихий океан/Трук"
+						},
+						"Pacific/Wake": {
+							"displayName": "Тихий океан/Уэйк"
+						},
+						"Pacific/Wallis": {
+							"displayName": "Пасифик/Уоллис"
+						},
+						"Pacific/Yap": {
+							"displayName": "Тихий океан/Яп"
+						},
+						"Poland": {
+							"displayName": "Польша"
+						},
+						"Portugal": {
+							"displayName": "Португалия"
+						},
+						"ROC": {
+							"displayName": "ROC"
+						},
+						"ROK": {
+							"displayName": "ROK"
+						},
+						"Singapore": {
+							"displayName": "Сингапур"
+						},
+						"Turkey": {
+							"displayName": "Турция"
+						},
+						"UCT": {
+							"displayName": "UCT"
+						},
+						"US/Alaska": {
+							"displayName": "США/Аляска"
+						},
+						"US/Aleutian": {
+							"displayName": "США/Алеутский"
+						},
+						"US/Arizona": {
+							"displayName": "США/Аризона"
+						},
+						"US/Central": {
+							"displayName": "США/Центральный"
+						},
+						"US/East-Indiana": {
+							"displayName": "США/Восточная Индиана"
+						},
+						"US/Eastern": {
+							"displayName": "США/Восточная Европа"
+						},
+						"US/Hawaii": {
+							"displayName": "США/Гавайи"
+						},
+						"US/Indiana-Starke": {
+							"displayName": "США/Индиана-Старк"
+						},
+						"US/Michigan": {
+							"displayName": "США/Мичиган"
+						},
+						"US/Mountain": {
+							"displayName": "США/Горы"
+						},
+						"US/Pacific": {
+							"displayName": "США/Тихоокеанский регион"
+						},
+						"US/Samoa": {
+							"displayName": "США/Самоа"
+						},
+						"UTC": {
+							"displayName": "UTC"
+						},
+						"Universal": {
+							"displayName": "Универсальный"
+						},
+						"W-SU": {
+							"displayName": "W-SU"
+						},
+						"WET": {
+							"displayName": "WET"
+						},
+						"Zulu": {
+							"displayName": "Зулу"
+						}
+					}
+				},
+				"title": {
+					"displayName": "Заголовок",
+					"description": "Название задачи"
+				},
+				"campaign_id": {
+					"displayName": "Название или идентификатор кампании",
+					"description": "Идентификатор кампании, в рамках которой была заключена эта сделка. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"contact_status_id": {
+					"displayName": "Имя или идентификатор статуса контакта",
+					"description": "Идентификатор статуса контакта, которому принадлежит контакт. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"external_id": {
+					"displayName": "Внешний идентификатор",
+					"description": "Внешний идентификатор контакта"
+				},
+				"first_name": {
+					"displayName": "Имя",
+					"description": "Имя контактного лица"
+				},
+				"job_title": {
+					"displayName": "Должность",
+					"description": "Обозначение контакта в аккаунте, к которому он принадлежит"
+				},
+				"keyword": {
+					"displayName": "Ключевые слова",
+					"description": "Ключевые слова, которые контакт использовал для перехода на ваш сайт/веб-приложение."
+				},
+				"last_name": {
+					"displayName": "Фамилия",
+					"description": "Фамилия контакта"
+				},
+				"lead_source_id": {
+					"displayName": "Идентификатор источника потенциальных клиентов",
+					"description": "Идентификатор источника, откуда пришла сделка"
+				},
+				"lifecycle_stage_id": {
+					"displayName": "Название или идентификатор этапа жизненного цикла",
+					"description": "Идентификатор этапа жизненного цикла, к которому принадлежит контакт. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"medium": {
+					"displayName": "Середина",
+					"description": "Канал, который привел ваш контакт на ваш сайт/веб-приложение"
+				},
+				"mobile_number": {
+					"displayName": "Номер мобильного телефона",
+					"description": "Номер мобильного телефона контактного лица"
+				},
+				"sales_accounts": {
+					"displayName": "Имена или идентификаторы учетных записей продаж",
+					"description": "Аккаунты, которым принадлежит контакт. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"subscription_status": {
+					"displayName": "Имя или идентификатор статуса подписки",
+					"description": "Статус подписки, в которой находится контакт. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"subscription_types": {
+					"displayName": "Типы подписки Имя или идентификатор",
+					"description": "Тип подписки, в которой находится контакт. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"work_number": {
+					"displayName": "Рабочий номер",
+					"description": "Рабочий телефон контактного лица"
+				},
+				"amount": {
+					"displayName": "Количество",
+					"description": "Стоимость сделки"
+				},
+				"base_currency_amount": {
+					"displayName": "Сумма в базовой валюте",
+					"description": "Стоимость сделки в базовой валюте"
+				},
+				"currency_id": {
+					"displayName": "Название или идентификатор валюты",
+					"description": "Идентификатор валюты, к которой принадлежит сделка. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"deal_payment_status_id": {
+					"displayName": "Имя или идентификатор статуса платежа по сделке",
+					"description": "Идентификатор способа оплаты сделки. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"deal_pipeline_id": {
+					"displayName": "Название или идентификатор канала сделки",
+					"description": "Идентификатор конвейера сделок, к которому он принадлежит. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"deal_product_id": {
+					"displayName": "Название или идентификатор продукта сделки",
+					"description": "Идентификатор продукта, которому принадлежит сделка (в многопродуктовой компании). Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"deal_reason_id": {
+					"displayName": "Название или идентификатор причины сделки",
+					"description": "ID причины проигрыша сделки. Может быть установлено только в том случае, если сделка находится в стадии «Проиграна». Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"deal_stage_id": {
+					"displayName": "Название или идентификатор этапа сделки",
+					"description": "Идентификатор этапа сделки, к которому относится сделка. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"deal_type_id": {
+					"displayName": "Название или идентификатор типа сделки",
+					"description": "Идентификатор типа сделки, к которой она относится. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"probability": {
+					"displayName": "Вероятность",
+					"description": "Вероятность выигрыша сделки как число от 0 до 100."
+				},
+				"sales_account_id": {
+					"displayName": "Имя или идентификатор учетной записи продаж",
+					"description": "Идентификатор аккаунта, которому принадлежит сделка. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"description": {
+					"displayName": "Содержание",
+					"description": "Содержание заметки"
+				},
+				"end_date": {
+					"displayName": "Дата начала",
+					"description": "Временная метка, обозначающая начало продаж."
+				},
+				"notes": {
+					"displayName": "Примечания",
+					"description": "Описание о торговой деятельности"
+				},
+				"sales_activity_outcome_id": {
+					"displayName": "Название или идентификатор результата деятельности по продажам",
+					"description": "Идентификатор результата продаж. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"sales_activity_type_id": {
+					"displayName": "Имя или идентификатор типа торговой деятельности",
+					"description": "Идентификатор типа активности продаж, для которого обновляется активность продаж. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"from_date": {
+					"displayName": "Дата начала",
+					"description": "Временная метка, обозначающая начало продаж."
+				},
+				"dueDate": {
+					"displayName": "Срок оплаты",
+					"description": "Временная метка, указывающая, когда задача должна быть завершена."
+				},
+				"task_type_id": {
+					"displayName": "Идентификатор типа задачи",
+					"description": "ID типа задачи"
+				}
+			}
+		},
+		"title": {
+			"displayName": "Заголовок",
+			"description": "Название задачи"
+		},
+		"fromDate": {
+			"displayName": "Дата начала",
+			"description": "Временная метка, обозначающая начало встречи. Дата начала, если это встреча на целый день."
+		},
+		"endDate": {
+			"displayName": "Дата окончания",
+			"description": "Временная метка, обозначающая окончание встречи. Дата окончания, если это встреча на целый день."
+		},
+		"attendees": {
+			"options": {
+				"attendees": {
+					"displayName": "Участники"
+				},
+				"attendee": {
+					"displayName": "Посетитель",
+					"values": {
+						"type": {
+							"displayName": "Тип",
+							"options": {
+								"contact": {
+									"displayName": "Контакт"
+								},
+								"user": {
+									"displayName": "Пользователь"
+								}
+							}
+						},
+						"userId": {
+							"displayName": "Имя пользователя или идентификатор",
+							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+						},
+						"contactId": {
+							"displayName": "Идентификатор контакта"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить участника",
+			"displayName": "Участники"
+		},
+		"appointmentId": {
+			"displayName": "Идентификатор встречи",
+			"description": "Идентификатор встречи для обновления"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"include": {
+					"displayName": "Включать",
+					"options": {
+						"appointment_attendees": {
+							"displayName": "Участники встречи"
+						},
+						"creater": {
+							"displayName": "Создатель"
+						},
+						"targetable": {
+							"displayName": "Цель"
+						},
+						"owner": {
+							"displayName": "Владелец"
+						},
+						"users": {
+							"displayName": "Пользователи"
+						}
+					}
+				},
+				"filter": {
+					"displayName": "Статус",
+					"options": {
+						"past": {
+							"displayName": "Прошлое"
+						},
+						"upcoming": {
+							"displayName": "Предстоящие"
+						},
+						"completed": {
+							"displayName": "Завершенный"
+						},
+						"due_today": {
+							"displayName": "Срок оплаты сегодня"
+						},
+						"due_tomorrow": {
+							"displayName": "Срок завтра"
+						},
+						"open": {
+							"displayName": "Открыть"
+						},
+						"overdue": {
+							"displayName": "Просрочено"
+						}
+					}
+				}
+			}
+		},
+		"firstName": {
+			"displayName": "Имя",
+			"description": "Имя контактного лица"
+		},
+		"lastName": {
+			"displayName": "Фамилия",
+			"description": "Фамилия контакта"
+		},
+		"emails": {
+			"displayName": "Адрес электронной почты",
+			"description": "Адреса электронной почты контактного лица"
+		},
+		"contactId": {
+			"displayName": "Идентификатор контакта",
+			"description": "Идентификатор контакта для обновления"
+		},
+		"amount": {
+			"displayName": "Количество",
+			"description": "Стоимость сделки"
+		},
+		"dealId": {
+			"displayName": "Идентификатор сделки",
+			"description": "Идентификатор сделки, которую необходимо обновить"
+		},
+		"description": {
+			"displayName": "Содержание",
+			"description": "Содержание заметки"
+		},
+		"targetableType": {
+			"displayName": "Тип цели",
+			"description": "Тип сущности, для которой обновляется задача",
+			"options": {
+				"Contact": {
+					"displayName": "Контакт"
+				},
+				"Deal": {
+					"displayName": "Иметь дело"
+				},
+				"SalesAccount": {
+					"displayName": "ПродажиАккаунт"
+				}
+			}
+		},
+		"targetable_id": {
+			"displayName": "Идентификатор цели",
+			"description": "Идентификатор сущности, для которой создается задача. Тип сущности выбирается в «Типе цели»."
+		},
+		"noteId": {
+			"displayName": "Идентификатор заметки",
+			"description": "Идентификатор заметки для обновления"
+		},
+		"sales_activity_type_id": {
+			"displayName": "Имя или идентификатор типа торговой деятельности",
+			"description": "Идентификатор вида торговой активности, для которого создается торговая деятельность. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"ownerId": {
+			"displayName": "Имя или идентификатор владельца",
+			"description": "Идентификатор пользователя, которому назначена задача. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"from_date": {
+			"displayName": "Дата начала",
+			"description": "Временная метка, обозначающая окончание продаж."
+		},
+		"end_date": {
+			"displayName": "Дата окончания",
+			"description": "Временная метка, обозначающая окончание продаж."
+		},
+		"salesActivityId": {
+			"displayName": "Идентификатор активности продаж",
+			"description": "Идентификатор активности продаж для обновления"
+		},
+		"query": {
+			"displayName": "Поисковый запрос",
+			"description": "Введите термин, который будет использоваться для поиска объектов"
+		},
+		"entities": {
+			"displayName": "Поиск по объектам",
+			"description": "Введите термин, который будет использоваться для поиска объектов",
+			"options": {
+				"contact": {
+					"displayName": "Контакт"
+				},
+				"deal": {
+					"displayName": "Иметь дело"
+				},
+				"sales_account": {
+					"displayName": "Счет продаж"
+				},
+				"user": {
+					"displayName": "Пользователь"
+				}
+			}
+		},
+		"searchField": {
+			"displayName": "Поле поиска",
+			"description": "Поле, по которому следует искать сущности",
+			"options": {
+				"email": {
+					"displayName": "Электронная почта"
+				},
+				"name": {
+					"displayName": "Имя"
+				},
+				"customField": {
+					"displayName": "Пользовательское поле",
+					"description": "Разрешены только настраиваемые поля типа «Текстовое поле», «Число», «Раскрывающийся список» или «Переключатель»."
+				}
+			}
+		},
+		"customFieldName": {
+			"displayName": "Имя настраиваемого поля"
+		},
+		"customFieldValue": {
+			"displayName": "Значение пользовательского поля"
+		},
+		"fieldValue": {
+			"displayName": "Значение поля"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"entities": {
+					"displayName": "Сущности",
+					"description": "Используйте «сущности» для запроса связанных объектов. Вы можете включить несколько сущностей одновременно при условии, что поле доступно в обеих сущностях, иначе вы получите ответ об ошибке.",
+					"options": {
+						"contact": {
+							"displayName": "Контакт"
+						},
+						"deal": {
+							"displayName": "Иметь дело"
+						},
+						"sales_account": {
+							"displayName": "Счет продаж"
+						}
+					}
+				}
+			}
+		},
+		"dueDate": {
+			"displayName": "Срок оплаты",
+			"description": "Временная метка, указывающая, когда задача должна быть завершена."
+		},
+		"taskId": {
+			"displayName": "Идентификатор задачи",
+			"description": "Идентификатор задачи для обновления"
+		}
+	}
+}

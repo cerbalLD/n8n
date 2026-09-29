@@ -1,0 +1,1831 @@
+{
+	"header": {
+		"displayName": "АктивнаяКампания",
+		"description": "Создание и редактирование данных в ActiveCampaign."
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"account": {
+					"displayName": "Счет"
+				},
+				"accountContact": {
+					"displayName": "Контактная информация по учетной записи"
+				},
+				"connection": {
+					"displayName": "Связь"
+				},
+				"contact": {
+					"displayName": "Контакт"
+				},
+				"contactList": {
+					"displayName": "Список контактов"
+				},
+				"contactTag": {
+					"displayName": "Контактный тег"
+				},
+				"deal": {
+					"displayName": "Иметь дело"
+				},
+				"ecommerceCustomer": {
+					"displayName": "Клиент электронной коммерции"
+				},
+				"ecommerceOrder": {
+					"displayName": "Заказ электронной коммерции"
+				},
+				"ecommerceOrderProducts": {
+					"displayName": "Заказ продукта через электронную коммерцию"
+				},
+				"list": {
+					"displayName": "Список"
+				},
+				"tag": {
+					"displayName": "Ярлык"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать клиента электронной коммерции"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удаление клиента электронной коммерции"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить данные о клиенте электронной коммерции"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получите данные о многих заказанных продуктах"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновление клиента электронной коммерции"
+				},
+				"add": {
+					"displayName": "Добавлять",
+					"description": "Добавить метку к контакту"
+				},
+				"remove": {
+					"displayName": "Удалять",
+					"description": "Удаление метки из контакта"
+				},
+				"createNote": {
+					"displayName": "Создать заметку",
+					"description": "Создать заметку о сделке"
+				},
+				"updateNote": {
+					"displayName": "Обновить примечание к сделке",
+					"description": "Обновить примечание к сделке"
+				},
+				"getByProductId": {
+					"displayName": "Получить по идентификатору продукта",
+					"description": "Получить данные о заказанном товаре"
+				},
+				"getByOrderId": {
+					"displayName": "Получить по идентификатору заказа",
+					"description": "Получить данные о товарах заказа"
+				}
+			}
+		},
+		"tagType": {
+			"displayName": "Тип",
+			"description": "Тип тега нового тега",
+			"options": {
+				"contact": {
+					"displayName": "Контакт",
+					"description": "Отметить контакт"
+				},
+				"template": {
+					"displayName": "Шаблон",
+					"description": "Шаблон тега"
+				}
+			}
+		},
+		"name": {
+			"displayName": "Имя учетной записи",
+			"description": "Имя, связанное с учетной записью во внешней службе. Часто это будет название компании (например, «My Toystore, Inc.»)."
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"description": {
+					"displayName": "Описание",
+					"description": "Описание сделки"
+				},
+				"accountUrl": {
+					"displayName": "URL-адрес аккаунта",
+					"description": "Сайт аккаунта"
+				},
+				"fields": {
+					"values": {
+						"fields": {
+							"displayName": "Поля",
+							"description": "Добавляет настраиваемые поля для установки значений, которые не были заданы заранее."
+						},
+						"property": {
+							"options": {
+								"customFieldId": {
+									"displayName": "Имя поля или идентификатор",
+									"description": "Идентификатор поля, которое необходимо установить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								},
+								"fieldValue": {
+									"displayName": "Значение поля",
+									"description": "Значение поля для установки"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить пользовательские поля",
+					"displayName": "Поля",
+					"description": "Добавляет настраиваемые поля для установки значений, которые не были заданы заранее.",
+					"options": {
+						"property": {
+							"displayName": "Поле"
+						}
+					}
+				},
+				"jobTitle": {
+					"displayName": "Должность",
+					"description": "Должность контакта в аккаунте"
+				},
+				"fieldValues": {
+					"values": {
+						"fieldValues": {
+							"displayName": "Пользовательские поля",
+							"description": "Добавляет настраиваемые поля для установки значений, которые не были заданы заранее."
+						},
+						"property": {
+							"options": {
+								"field": {
+									"displayName": "Имя поля или идентификатор",
+									"description": "Идентификатор поля, которое необходимо установить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								},
+								"value": {
+									"displayName": "Значение поля",
+									"description": "Значение поля для установки"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить пользовательские поля",
+					"displayName": "Пользовательские поля",
+					"description": "Добавляет настраиваемые поля для установки значений, которые не были заданы заранее.",
+					"options": {
+						"property": {
+							"displayName": "Пользовательское поле"
+						}
+					}
+				},
+				"firstName": {
+					"displayName": "Имя",
+					"description": "Имя контакта, который нужно создать"
+				},
+				"lastName": {
+					"displayName": "Фамилия",
+					"description": "Фамилия контакта, который необходимо создать"
+				},
+				"phone": {
+					"displayName": "Телефон",
+					"description": "Телефон контактного лица"
+				},
+				"datetime": {
+					"displayName": "Дата и время",
+					"description": "Контакты, созданные в указанную дату"
+				},
+				"email": {
+					"displayName": "Электронная почта",
+					"description": "Адрес электронной почты контакта, которого вы хотите получить",
+					"placeholder": "имя@email.com"
+				},
+				"email_like": {
+					"displayName": "Отправьте лайк по электронной почте",
+					"description": "Фильтровать контакты, содержащие заданное значение в адресе электронной почты"
+				},
+				"exclude": {
+					"displayName": "Исключать",
+					"description": "Исключить из ответа контакт с указанным ID"
+				},
+				"formid": {
+					"displayName": "Идентификатор формы",
+					"description": "Фильтровать контакты, связанные с данной формой"
+				},
+				"listid": {
+					"displayName": "Идентификатор списка",
+					"description": "Фильтровать контакты, связанные с данным списком"
+				},
+				"search": {
+					"displayName": "Поиск",
+					"description": "Фильтровать контакты, соответствующие заданному значению в именах контактов, организации, телефоне или электронной почте."
+				},
+				"segmentid": {
+					"displayName": "Идентификатор сегмента",
+					"description": "Возвращать только контакты, соответствующие сегменту списка"
+				},
+				"seriesid": {
+					"displayName": "Идентификатор серии",
+					"description": "Фильтровать контакты, связанные с данной автоматикой"
+				},
+				"status": {
+					"displayName": "Статус сделки",
+					"options": {
+						"0": {
+							"displayName": "Неподтвержденный"
+						},
+						"1": {
+							"displayName": "Активный"
+						},
+						"2": {
+							"displayName": "Отменил подписку"
+						},
+						"3": {
+							"displayName": "Отскочил"
+						},
+						"-1": {
+							"displayName": "Любой"
+						}
+					},
+					"description": "Статус сделки"
+				},
+				"tagid": {
+					"displayName": "Идентификатор тега",
+					"description": "Фильтровать контакты, связанные с данным тегом"
+				},
+				"filters": {
+					"displayName": "Обновлено после",
+					"description": "Фильтровать контакты, которые были обновлены после этой даты"
+				},
+				"waitid": {
+					"displayName": "Идентификатор ожидания",
+					"description": "Фильтровать по контактам в очереди ожидания блока автоматизации"
+				},
+				"orderBy": {
+					"displayName": "Заказать по",
+					"options": {
+						"orders[cdate]": {
+							"displayName": "Дата создания",
+							"description": "Упорядочить контакты по дате создания"
+						},
+						"orders[email]": {
+							"displayName": "Электронная почта",
+							"description": "Заказ контактов по электронной почте"
+						},
+						"orders[first_name]": {
+							"displayName": "Имя",
+							"description": "Упорядочить контакты по имени"
+						},
+						"orders[last_name]": {
+							"displayName": "Фамилия",
+							"description": "Упорядочить контакты по фамилии"
+						},
+						"orders[name]": {
+							"displayName": "Имя",
+							"description": "Упорядочить контакты по полному имени"
+						},
+						"orders[score]": {
+							"displayName": "Счет",
+							"description": "Упорядочить контакты по баллам"
+						}
+					}
+				},
+				"percent": {
+					"displayName": "Процент сделки",
+					"description": "Процент от сделки"
+				},
+				"shippingAmount": {
+					"displayName": "Сумма доставки",
+					"description": "Общая сумма доставки заказа в центах"
+				},
+				"taxAmount": {
+					"displayName": "Сумма налога",
+					"description": "Общая сумма налога по заказу в центах"
+				},
+				"discountAmount": {
+					"displayName": "Сумма скидки",
+					"description": "Общая сумма скидки на заказ в центах"
+				},
+				"orderUrl": {
+					"displayName": "URL заказа",
+					"description": "URL заказа во внешнем сервисе"
+				},
+				"externalUpdatedDate": {
+					"displayName": "Внешняя дата обновления",
+					"description": "Дата обновления заказа"
+				},
+				"shippingMethod": {
+					"displayName": "Способ доставки",
+					"description": "Способ доставки заказа"
+				},
+				"orderNumber": {
+					"displayName": "Номер заказа",
+					"description": "Номер заказа. Он может отличаться от внешнего идентификатора."
+				},
+				"acceptsMarketing": {
+					"displayName": "Принимает маркетинг",
+					"description": "Согласился ли клиент на маркетинговые коммуникации"
+				}
+			}
+		},
+		"tagId": {
+			"displayName": "Имя или идентификатор тега",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"description": "Поля для обновления",
+			"placeholder": "Добавить поле",
+			"options": {
+				"tag": {
+					"displayName": "Ярлык",
+					"description": "Имя контакта"
+				},
+				"description": {
+					"displayName": "Описание",
+					"description": "Описание сделки"
+				},
+				"name": {
+					"displayName": "Имя учетной записи",
+					"description": "Имя, связанное с учетной записью во внешней службе. Часто это будет название компании (например, «My Toystore, Inc.»)."
+				},
+				"accountUrl": {
+					"displayName": "URL-адрес аккаунта",
+					"description": "Сайт аккаунта"
+				},
+				"fields": {
+					"values": {
+						"fields": {
+							"displayName": "Поля",
+							"description": "Добавляет настраиваемые поля для установки значений, которые не были заданы заранее."
+						},
+						"property": {
+							"options": {
+								"customFieldId": {
+									"displayName": "Имя поля или идентификатор",
+									"description": "Идентификатор поля, которое необходимо установить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								},
+								"fieldValue": {
+									"displayName": "Значение поля",
+									"description": "Значение поля для установки"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить поля",
+					"displayName": "Поля",
+					"description": "Добавляет настраиваемые поля для установки значений, которые не были заданы заранее.",
+					"options": {
+						"property": {
+							"displayName": "Поле"
+						}
+					}
+				},
+				"jobTitle": {
+					"displayName": "Должность",
+					"description": "Должность контакта в аккаунте"
+				},
+				"fieldValues": {
+					"values": {
+						"fieldValues": {
+							"displayName": "Пользовательские поля",
+							"description": "Добавляет настраиваемые поля для установки значений, которые не были заданы заранее."
+						},
+						"property": {
+							"options": {
+								"field": {
+									"displayName": "Имя поля или идентификатор",
+									"description": "Идентификатор поля, которое необходимо установить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								},
+								"value": {
+									"displayName": "Значение поля",
+									"description": "Значение поля для установки"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить пользовательские поля",
+					"displayName": "Пользовательские поля",
+					"description": "Добавляет настраиваемые поля для установки значений, которые не были заданы заранее.",
+					"options": {
+						"property": {
+							"displayName": "Пользовательское поле"
+						}
+					}
+				},
+				"email": {
+					"displayName": "Электронная почта клиента",
+					"description": "Адрес электронной почты клиента",
+					"placeholder": "имя@email.com"
+				},
+				"firstName": {
+					"displayName": "Имя",
+					"description": "Имя контактного лица"
+				},
+				"lastName": {
+					"displayName": "Фамилия",
+					"description": "Фамилия контакта"
+				},
+				"phone": {
+					"displayName": "Телефон",
+					"description": "Телефон контактного лица"
+				},
+				"title": {
+					"displayName": "Заголовок",
+					"description": "Название сделки"
+				},
+				"contact": {
+					"displayName": "Контактный идентификатор сделки",
+					"description": "ID контакта сделки"
+				},
+				"value": {
+					"displayName": "Стоимость сделки",
+					"description": "Стоимость сделки в центах"
+				},
+				"currency": {
+					"displayName": "Валюта заказа",
+					"description": "Валюта заказа (3-значный код ISO, например, «USD»).",
+					"options": {
+						"eur": {
+							"displayName": "Евро"
+						},
+						"usd": {
+							"displayName": "Доллар США"
+						},
+						"gbp": {
+							"displayName": "Британский фунт стерлингов"
+						},
+						"chf": {
+							"displayName": "Швейцарский франк"
+						},
+						"cny": {
+							"displayName": "юань"
+						},
+						"": {
+							"displayName": "--------"
+						},
+						"aed": {
+							"displayName": "Дирхам ОАЭ"
+						},
+						"afn": {
+							"displayName": "афганский афгани"
+						},
+						"all": {
+							"displayName": "Албанский лек"
+						},
+						"amd": {
+							"displayName": "Армянский драм"
+						},
+						"ang": {
+							"displayName": "Нидерландский Антильский гульден"
+						},
+						"aoa": {
+							"displayName": "Ангольская Кванза"
+						},
+						"ars": {
+							"displayName": "Аргентинское песо"
+						},
+						"aud": {
+							"displayName": "Австралийский доллар"
+						},
+						"awg": {
+							"displayName": "Арубанский Флорин"
+						},
+						"azn": {
+							"displayName": "Азербайджанский манат"
+						},
+						"bam": {
+							"displayName": "Конвертируемая марка Боснии и Герцеговины"
+						},
+						"bbd": {
+							"displayName": "Барбадосский доллар"
+						},
+						"bdt": {
+							"displayName": "Бангладешская така"
+						},
+						"bgn": {
+							"displayName": "Болгарский лев"
+						},
+						"bhd": {
+							"displayName": "Бахрейнский динар"
+						},
+						"bif": {
+							"displayName": "Бурундийский франк"
+						},
+						"bmd": {
+							"displayName": "Бермудский доллар"
+						},
+						"bnd": {
+							"displayName": "Брунейский доллар"
+						},
+						"bob": {
+							"displayName": "Боливийский боливиано"
+						},
+						"brl": {
+							"displayName": "Бразильский реал"
+						},
+						"bsd": {
+							"displayName": "Багамский доллар"
+						},
+						"btc": {
+							"displayName": "Биткойн"
+						},
+						"btn": {
+							"displayName": "Бутанский нгултрум"
+						},
+						"bwp": {
+							"displayName": "Ботсванская Пула"
+						},
+						"byn": {
+							"displayName": "Белорусский рубль"
+						},
+						"bzd": {
+							"displayName": "Белизский доллар"
+						},
+						"cad": {
+							"displayName": "Канадский доллар"
+						},
+						"cdf": {
+							"displayName": "Конголезский франк"
+						},
+						"clf": {
+							"displayName": "Чилийская расчетная единица (UF)"
+						},
+						"clp": {
+							"displayName": "Чилийское песо"
+						},
+						"cnh": {
+							"displayName": "Китайский юань (оффшор)"
+						},
+						"cop": {
+							"displayName": "Колумбийское песо"
+						},
+						"crc": {
+							"displayName": "Костариканский колон"
+						},
+						"cuc": {
+							"displayName": "Кубинское конвертируемое песо"
+						},
+						"cup": {
+							"displayName": "Кубинское песо"
+						},
+						"cve": {
+							"displayName": "Эскудо Кабо-Верде"
+						},
+						"czk": {
+							"displayName": "Чешская крона"
+						},
+						"djf": {
+							"displayName": "Джибутийский франк"
+						},
+						"dkk": {
+							"displayName": "Датская крона"
+						},
+						"dop": {
+							"displayName": "Доминиканское песо"
+						},
+						"dzd": {
+							"displayName": "Алжирский динар"
+						},
+						"egp": {
+							"displayName": "Египетский фунт"
+						},
+						"ern": {
+							"displayName": "Эритрейская Накфа"
+						},
+						"etb": {
+							"displayName": "Эфиопский быр"
+						},
+						"fjd": {
+							"displayName": "Фиджийский доллар"
+						},
+						"fkp": {
+							"displayName": "Фунт Фолклендских островов"
+						},
+						"gel": {
+							"displayName": "Грузинский лари"
+						},
+						"ggp": {
+							"displayName": "Гернси Фунт"
+						},
+						"ghs": {
+							"displayName": "Ганский седи"
+						},
+						"gip": {
+							"displayName": "Гибралтарский фунт"
+						},
+						"gmd": {
+							"displayName": "Гамбийский даласи"
+						},
+						"gnf": {
+							"displayName": "Гвинейский франк"
+						},
+						"gtq": {
+							"displayName": "Гватемальский кетсаль"
+						},
+						"gyd": {
+							"displayName": "Гайанский доллар"
+						},
+						"hkd": {
+							"displayName": "Гонконгский доллар"
+						},
+						"hnl": {
+							"displayName": "Гондурасская Лемпира"
+						},
+						"hrk": {
+							"displayName": "Хорватская куна"
+						},
+						"htg": {
+							"displayName": "Гаитянский гурд"
+						},
+						"huf": {
+							"displayName": "Венгерский форинт"
+						},
+						"idr": {
+							"displayName": "Индонезийская рупия"
+						},
+						"ils": {
+							"displayName": "Израильский новый шекель"
+						},
+						"imp": {
+							"displayName": "Мэнский фунт"
+						},
+						"inr": {
+							"displayName": "Индийская рупия"
+						},
+						"iqd": {
+							"displayName": "Иракский динар"
+						},
+						"irr": {
+							"displayName": "Иранский риал"
+						},
+						"isk": {
+							"displayName": "Исландская крона"
+						},
+						"jep": {
+							"displayName": "Джерси фунт"
+						},
+						"jmd": {
+							"displayName": "Ямайский доллар"
+						},
+						"jod": {
+							"displayName": "Иорданский динар"
+						},
+						"jpy": {
+							"displayName": "Японская иена"
+						},
+						"kes": {
+							"displayName": "Кенийский шиллинг"
+						},
+						"kgs": {
+							"displayName": "Кыргызский Сом"
+						},
+						"khr": {
+							"displayName": "Камбоджийский риель"
+						},
+						"kmf": {
+							"displayName": "Коморский франк"
+						},
+						"kpw": {
+							"displayName": "Северокорейская вона"
+						},
+						"krw": {
+							"displayName": "Южнокорейская вона"
+						},
+						"kwd": {
+							"displayName": "Кувейтский динар"
+						},
+						"kyd": {
+							"displayName": "Доллар Каймановых островов"
+						},
+						"kzt": {
+							"displayName": "Казахстанский тенге"
+						},
+						"lak": {
+							"displayName": "Лаосский кип"
+						},
+						"lbp": {
+							"displayName": "Ливанский фунт"
+						},
+						"lkr": {
+							"displayName": "Шри-ланкийская рупия"
+						},
+						"lrd": {
+							"displayName": "Либерийский доллар"
+						},
+						"lsl": {
+							"displayName": "Лесото Лоти"
+						},
+						"lyd": {
+							"displayName": "Ливийский динар"
+						},
+						"mad": {
+							"displayName": "Марокканский дирхам"
+						},
+						"mdl": {
+							"displayName": "Молдавский лей"
+						},
+						"mga": {
+							"displayName": "Малагасийский ариари"
+						},
+						"mkd": {
+							"displayName": "Македонский денар"
+						},
+						"mmk": {
+							"displayName": "Мьянма Кьят"
+						},
+						"mnt": {
+							"displayName": "Монгольский тугрик"
+						},
+						"mop": {
+							"displayName": "Макао Патака"
+						},
+						"mro": {
+							"displayName": "Мавританская угия (до 2018 г.)"
+						},
+						"mru": {
+							"displayName": "Мавританская угия"
+						},
+						"mur": {
+							"displayName": "Маврикийская рупия"
+						},
+						"mvr": {
+							"displayName": "Мальдивская руфия"
+						},
+						"mwk": {
+							"displayName": "Малавийская квача"
+						},
+						"mxn": {
+							"displayName": "Мексиканское песо"
+						},
+						"myr": {
+							"displayName": "Малазийский ринггит"
+						},
+						"mzn": {
+							"displayName": "Мозамбикский Метикал"
+						},
+						"nad": {
+							"displayName": "Намибийский доллар"
+						},
+						"ngn": {
+							"displayName": "Нигерийская найра"
+						},
+						"nio": {
+							"displayName": "Никарагуанская Кордова"
+						},
+						"nok": {
+							"displayName": "Норвежская крона"
+						},
+						"npr": {
+							"displayName": "Непальская рупия"
+						},
+						"nzd": {
+							"displayName": "Новозеландский доллар"
+						},
+						"omr": {
+							"displayName": "Оманский риал"
+						},
+						"pab": {
+							"displayName": "Панамский Бальбоа"
+						},
+						"pen": {
+							"displayName": "Перуанский Нуэво-Соль"
+						},
+						"pgk": {
+							"displayName": "Папуа-Новая Гвинея Кина"
+						},
+						"php": {
+							"displayName": "Филиппинское песо"
+						},
+						"pkr": {
+							"displayName": "Пакистанская рупия"
+						},
+						"pln": {
+							"displayName": "Польский злотый"
+						},
+						"pyg": {
+							"displayName": "Парагвайский гуарани"
+						},
+						"qar": {
+							"displayName": "Катарский риал"
+						},
+						"ron": {
+							"displayName": "Румынский лей"
+						},
+						"rsd": {
+							"displayName": "Сербский динар"
+						},
+						"rub": {
+							"displayName": "Российский рубль"
+						},
+						"rwf": {
+							"displayName": "Руандийский франк"
+						},
+						"sar": {
+							"displayName": "Саудовский риал"
+						},
+						"sbd": {
+							"displayName": "Доллар Соломоновых Островов"
+						},
+						"scr": {
+							"displayName": "Сейшельская рупия"
+						},
+						"sdg": {
+							"displayName": "Суданский фунт"
+						},
+						"sek": {
+							"displayName": "Шведская крона"
+						},
+						"sgd": {
+							"displayName": "Сингапурский доллар"
+						},
+						"shp": {
+							"displayName": "Паунд Святой Елены"
+						},
+						"sll": {
+							"displayName": "Сьерра-Леоне Леоне"
+						},
+						"sos": {
+							"displayName": "Сомалийский шиллинг"
+						},
+						"srd": {
+							"displayName": "Суринамский доллар"
+						},
+						"ssp": {
+							"displayName": "Южносуданский фунт"
+						},
+						"std": {
+							"displayName": "Сан-Томе и Принсипи Добра (до 2018 г.)"
+						},
+						"stn": {
+							"displayName": "Сан-Томе и Принсипи Добра"
+						},
+						"svc": {
+							"displayName": "Сальвадорский Колон"
+						},
+						"syp": {
+							"displayName": "Сирийский фунт"
+						},
+						"szl": {
+							"displayName": "Свази Лилангени"
+						},
+						"thb": {
+							"displayName": "Тайский бат"
+						},
+						"tjs": {
+							"displayName": "таджикский сомони"
+						},
+						"tmt": {
+							"displayName": "Туркменский манат"
+						},
+						"tnd": {
+							"displayName": "Тунисский динар"
+						},
+						"top": {
+							"displayName": "Тонганская Паанга"
+						},
+						"try": {
+							"displayName": "Турецкая лира"
+						},
+						"ttd": {
+							"displayName": "Доллар Тринидада и Тобаго"
+						},
+						"twd": {
+							"displayName": "Новый тайваньский доллар"
+						},
+						"tzs": {
+							"displayName": "Танзанийский шиллинг"
+						},
+						"uah": {
+							"displayName": "Украинская гривна"
+						},
+						"ugx": {
+							"displayName": "Угандийский шиллинг"
+						},
+						"uyu": {
+							"displayName": "Уругвайское песо"
+						},
+						"uzs": {
+							"displayName": "Узбекский сум"
+						},
+						"vef": {
+							"displayName": "Венесуэльский Боливар Фуэрте"
+						},
+						"vnd": {
+							"displayName": "Вьетнамский донг"
+						},
+						"vuv": {
+							"displayName": "Вануату Вату"
+						},
+						"wst": {
+							"displayName": "Самоанская Тала"
+						},
+						"xaf": {
+							"displayName": "Франк КФА BEAC"
+						},
+						"xag": {
+							"displayName": "Серебряная унция"
+						},
+						"xau": {
+							"displayName": "Золотая унция"
+						},
+						"xcd": {
+							"displayName": "Восточно-карибский доллар"
+						},
+						"xdr": {
+							"displayName": "Специальные права заимствования"
+						},
+						"xof": {
+							"displayName": "Франк КФА BCEAO"
+						},
+						"xpd": {
+							"displayName": "Палладиевая унция"
+						},
+						"xpf": {
+							"displayName": "Франк КФП"
+						},
+						"xpt": {
+							"displayName": "Платиновая унция"
+						},
+						"yer": {
+							"displayName": "Йеменский риал"
+						},
+						"zar": {
+							"displayName": "Южноафриканский рэнд"
+						},
+						"zmw": {
+							"displayName": "Замбийская квача"
+						},
+						"zwl": {
+							"displayName": "Зимбабвийский доллар"
+						}
+					}
+				},
+				"group": {
+					"displayName": "Идентификатор конвейера сделок",
+					"description": "Идентификатор конвейера сделки"
+				},
+				"stage": {
+					"displayName": "Идентификатор этапа сделки",
+					"description": "Идентификатор этапа сделки"
+				},
+				"owner": {
+					"displayName": "Идентификатор владельца сделки",
+					"description": "Идентификатор владельца сделки"
+				},
+				"percent": {
+					"displayName": "Процент сделки",
+					"description": "Процент от сделки"
+				},
+				"status": {
+					"displayName": "Статус",
+					"description": "Статус соединения (0 = ошибка; 1 = подключено)"
+				},
+				"service": {
+					"displayName": "Услуга",
+					"description": "Название услуги"
+				},
+				"externalid": {
+					"displayName": "Идентификатор клиента",
+					"description": "Идентификатор клиента во внешнем сервисе"
+				},
+				"logoUrl": {
+					"displayName": "URL-адрес логотипа",
+					"description": "URL-адрес изображения логотипа внешней службы."
+				},
+				"linkUrl": {
+					"displayName": "URL-адрес ссылки",
+					"description": "URL-адрес страницы, где можно управлять интеграцией с внешним сервисом на стороннем веб-сайте."
+				},
+				"syncStatus": {
+					"displayName": "Статус синхронизации",
+					"description": "Статус синхронизации, запущенной при подключении (0 = синхронизация остановлена; 1 = синхронизация выполняется)."
+				},
+				"externalcheckoutid": {
+					"displayName": "Внешний идентификатор оформления заказа",
+					"description": "Идентификатор корзины во внешнем сервисе. ТРЕБУЕТСЯ ТОЛЬКО ЕСЛИ EXTERNALID НЕ ВКЛЮЧЕН."
+				},
+				"source": {
+					"displayName": "Источник заказа",
+					"description": "Исходный код заказа (0 – не активирует автоматизацию, 1 – активирует автоматизацию)"
+				},
+				"totalPrice": {
+					"displayName": "Общая стоимость",
+					"description": "Общая стоимость заказа в центах, включая налоги и стоимость доставки. (т. е. $456,78 => 45678). Должно быть больше или равно нулю."
+				},
+				"connectionid": {
+					"displayName": "Идентификатор услуги",
+					"description": "Идентификатор объекта подключения для услуги, от которой исходит клиент."
+				},
+				"customerid": {
+					"displayName": "Идентификатор клиента",
+					"description": "Идентификатор клиента, связанного с этим заказом"
+				},
+				"externalupdatedDate": {
+					"displayName": "Дата создания",
+					"description": "Дата размещения заказа"
+				},
+				"abandonedDate": {
+					"displayName": "Отказ от даты",
+					"description": "Дата, когда тележку бросили. ТРЕБУЕТСЯ ТОЛЬКО ЕСЛИ ВКЛЮЧАЕТ EXTERNALCHECKOUTID."
+				},
+				"shippingAmount": {
+					"displayName": "Сумма доставки",
+					"description": "Общая сумма доставки заказа в центах"
+				},
+				"taxAmount": {
+					"displayName": "Сумма налога",
+					"description": "Общая сумма налога по заказу в центах"
+				},
+				"discountAmount": {
+					"displayName": "Сумма скидки",
+					"description": "Общая сумма скидки на заказ в центах"
+				},
+				"orderUrl": {
+					"displayName": "URL заказа",
+					"description": "URL заказа во внешнем сервисе"
+				},
+				"externalUpdatedDate": {
+					"displayName": "Внешняя дата обновления",
+					"description": "Дата обновления заказа"
+				},
+				"shippingMethod": {
+					"displayName": "Способ доставки",
+					"description": "Способ доставки заказа"
+				},
+				"orderNumber": {
+					"displayName": "Номер заказа",
+					"description": "Номер заказа. Он может отличаться от внешнего идентификатора."
+				},
+				"orderProducts": {
+					"values": {
+						"orderProducts": {
+							"displayName": "Продукты",
+							"description": "Все заказанные товары"
+						},
+						"name": {
+							"displayName": "Имя",
+							"description": "Название продукта"
+						},
+						"price": {
+							"displayName": "Цена",
+							"description": "Цена товара, в центах. (т. е. $456,78 => 45678). Должно быть больше или равно нулю."
+						},
+						"quantity": {
+							"displayName": "Количество продукта",
+							"description": "Заказанное количество"
+						},
+						"externalid": {
+							"displayName": "Внешний идентификатор продукта",
+							"description": "Идентификатор продукта во внешнем сервисе"
+						},
+						"category": {
+							"displayName": "Категория продукта",
+							"description": "Категория продукта"
+						},
+						"sku": {
+							"displayName": "SKU",
+							"description": "Артикул продукта"
+						},
+						"description": {
+							"displayName": "Описание",
+							"description": "Описание продукта"
+						},
+						"imageUrl": {
+							"displayName": "URL-адрес изображения",
+							"description": "URL-адрес изображения, на котором отображается изображение продукта."
+						},
+						"productUrl": {
+							"displayName": "URL-адрес продукта",
+							"description": "URL-адрес, ссылающийся на продукт в вашем магазине."
+						}
+					},
+					"placeholder": "Добавить поле продукта",
+					"displayName": "Продукты",
+					"description": "Все заказанные товары"
+				},
+				"acceptsMarketing": {
+					"displayName": "Принимает маркетинг",
+					"description": "Согласился ли клиент на маркетинговые коммуникации"
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"simple": {
+			"displayName": "Упрощать",
+			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+		},
+		"contactId": {
+			"displayName": "Идентификатор контакта",
+			"description": "ID контакта, который нужно получить"
+		},
+		"contactTagId": {
+			"displayName": "Идентификатор тега контакта",
+			"description": "Идентификатор тега контакта, который нужно удалить"
+		},
+		"listId": {
+			"displayName": "Идентификатор списка"
+		},
+		"accountId": {
+			"displayName": "Идентификатор аккаунта",
+			"description": "ID аккаунта, который нужно получить"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"search": {
+					"displayName": "Поиск",
+					"description": "Поиск по имени"
+				}
+			}
+		},
+		"account": {
+			"displayName": "Идентификатор аккаунта"
+		},
+		"contact": {
+			"displayName": "Контактный идентификатор сделки",
+			"description": "ID контакта сделки"
+		},
+		"accountContactId": {
+			"displayName": "Контактный идентификатор аккаунта",
+			"description": "Идентификатор аккаунта"
+		},
+		"email": {
+			"displayName": "Электронная почта клиента",
+			"description": "Адрес электронной почты клиента",
+			"placeholder": "имя@email.com"
+		},
+		"updateIfExists": {
+			"displayName": "Обновить, если существует",
+			"description": "Следует ли обновлять пользователя, если он уже существует. Если не установлено и пользователь существует, вместо этого произойдет ошибка."
+		},
+		"title": {
+			"displayName": "Заголовок",
+			"description": "Название сделки"
+		},
+		"value": {
+			"displayName": "Стоимость сделки",
+			"description": "Стоимость сделки в центах"
+		},
+		"currency": {
+			"displayName": "Валюта заказа",
+			"description": "Валюта заказа (3-значный код ISO, например, «USD»).",
+			"options": {
+				"eur": {
+					"displayName": "Евро"
+				},
+				"usd": {
+					"displayName": "Доллар США"
+				},
+				"gbp": {
+					"displayName": "Британский фунт стерлингов"
+				},
+				"chf": {
+					"displayName": "Швейцарский франк"
+				},
+				"cny": {
+					"displayName": "юань"
+				},
+				"": {
+					"displayName": "--------"
+				},
+				"aed": {
+					"displayName": "Дирхам ОАЭ"
+				},
+				"afn": {
+					"displayName": "афганский афгани"
+				},
+				"all": {
+					"displayName": "Албанский лек"
+				},
+				"amd": {
+					"displayName": "Армянский драм"
+				},
+				"ang": {
+					"displayName": "Нидерландский Антильский гульден"
+				},
+				"aoa": {
+					"displayName": "Ангольская Кванза"
+				},
+				"ars": {
+					"displayName": "Аргентинское песо"
+				},
+				"aud": {
+					"displayName": "Австралийский доллар"
+				},
+				"awg": {
+					"displayName": "Арубанский Флорин"
+				},
+				"azn": {
+					"displayName": "Азербайджанский манат"
+				},
+				"bam": {
+					"displayName": "Конвертируемая марка Боснии и Герцеговины"
+				},
+				"bbd": {
+					"displayName": "Барбадосский доллар"
+				},
+				"bdt": {
+					"displayName": "Бангладешская така"
+				},
+				"bgn": {
+					"displayName": "Болгарский лев"
+				},
+				"bhd": {
+					"displayName": "Бахрейнский динар"
+				},
+				"bif": {
+					"displayName": "Бурундийский франк"
+				},
+				"bmd": {
+					"displayName": "Бермудский доллар"
+				},
+				"bnd": {
+					"displayName": "Брунейский доллар"
+				},
+				"bob": {
+					"displayName": "Боливийский боливиано"
+				},
+				"brl": {
+					"displayName": "Бразильский реал"
+				},
+				"bsd": {
+					"displayName": "Багамский доллар"
+				},
+				"btc": {
+					"displayName": "Биткойн"
+				},
+				"btn": {
+					"displayName": "Бутанский нгултрум"
+				},
+				"bwp": {
+					"displayName": "Ботсванская Пула"
+				},
+				"byn": {
+					"displayName": "Белорусский рубль"
+				},
+				"bzd": {
+					"displayName": "Белизский доллар"
+				},
+				"cad": {
+					"displayName": "Канадский доллар"
+				},
+				"cdf": {
+					"displayName": "Конголезский франк"
+				},
+				"clf": {
+					"displayName": "Чилийская расчетная единица (UF)"
+				},
+				"clp": {
+					"displayName": "Чилийское песо"
+				},
+				"cnh": {
+					"displayName": "Китайский юань (оффшор)"
+				},
+				"cop": {
+					"displayName": "Колумбийское песо"
+				},
+				"crc": {
+					"displayName": "Костариканский колон"
+				},
+				"cuc": {
+					"displayName": "Кубинское конвертируемое песо"
+				},
+				"cup": {
+					"displayName": "Кубинское песо"
+				},
+				"cve": {
+					"displayName": "Эскудо Кабо-Верде"
+				},
+				"czk": {
+					"displayName": "Чешская крона"
+				},
+				"djf": {
+					"displayName": "Джибутийский франк"
+				},
+				"dkk": {
+					"displayName": "Датская крона"
+				},
+				"dop": {
+					"displayName": "Доминиканское песо"
+				},
+				"dzd": {
+					"displayName": "Алжирский динар"
+				},
+				"egp": {
+					"displayName": "Египетский фунт"
+				},
+				"ern": {
+					"displayName": "Эритрейская Накфа"
+				},
+				"etb": {
+					"displayName": "Эфиопский быр"
+				},
+				"fjd": {
+					"displayName": "Фиджийский доллар"
+				},
+				"fkp": {
+					"displayName": "Фунт Фолклендских островов"
+				},
+				"gel": {
+					"displayName": "Грузинский лари"
+				},
+				"ggp": {
+					"displayName": "Гернси Фунт"
+				},
+				"ghs": {
+					"displayName": "Ганский седи"
+				},
+				"gip": {
+					"displayName": "Гибралтарский фунт"
+				},
+				"gmd": {
+					"displayName": "Гамбийский даласи"
+				},
+				"gnf": {
+					"displayName": "Гвинейский франк"
+				},
+				"gtq": {
+					"displayName": "Гватемальский кетсаль"
+				},
+				"gyd": {
+					"displayName": "Гайанский доллар"
+				},
+				"hkd": {
+					"displayName": "Гонконгский доллар"
+				},
+				"hnl": {
+					"displayName": "Гондурасская Лемпира"
+				},
+				"hrk": {
+					"displayName": "Хорватская куна"
+				},
+				"htg": {
+					"displayName": "Гаитянский гурд"
+				},
+				"huf": {
+					"displayName": "Венгерский форинт"
+				},
+				"idr": {
+					"displayName": "Индонезийская рупия"
+				},
+				"ils": {
+					"displayName": "Израильский новый шекель"
+				},
+				"imp": {
+					"displayName": "Мэнский фунт"
+				},
+				"inr": {
+					"displayName": "Индийская рупия"
+				},
+				"iqd": {
+					"displayName": "Иракский динар"
+				},
+				"irr": {
+					"displayName": "Иранский риал"
+				},
+				"isk": {
+					"displayName": "Исландская крона"
+				},
+				"jep": {
+					"displayName": "Джерси фунт"
+				},
+				"jmd": {
+					"displayName": "Ямайский доллар"
+				},
+				"jod": {
+					"displayName": "Иорданский динар"
+				},
+				"jpy": {
+					"displayName": "Японская иена"
+				},
+				"kes": {
+					"displayName": "Кенийский шиллинг"
+				},
+				"kgs": {
+					"displayName": "Кыргызский Сом"
+				},
+				"khr": {
+					"displayName": "Камбоджийский риель"
+				},
+				"kmf": {
+					"displayName": "Коморский франк"
+				},
+				"kpw": {
+					"displayName": "Северокорейская вона"
+				},
+				"krw": {
+					"displayName": "Южнокорейская вона"
+				},
+				"kwd": {
+					"displayName": "Кувейтский динар"
+				},
+				"kyd": {
+					"displayName": "Доллар Каймановых островов"
+				},
+				"kzt": {
+					"displayName": "Казахстанский тенге"
+				},
+				"lak": {
+					"displayName": "Лаосский кип"
+				},
+				"lbp": {
+					"displayName": "Ливанский фунт"
+				},
+				"lkr": {
+					"displayName": "Шри-ланкийская рупия"
+				},
+				"lrd": {
+					"displayName": "Либерийский доллар"
+				},
+				"lsl": {
+					"displayName": "Лесото Лоти"
+				},
+				"lyd": {
+					"displayName": "Ливийский динар"
+				},
+				"mad": {
+					"displayName": "Марокканский дирхам"
+				},
+				"mdl": {
+					"displayName": "Молдавский лей"
+				},
+				"mga": {
+					"displayName": "Малагасийский ариари"
+				},
+				"mkd": {
+					"displayName": "Македонский денар"
+				},
+				"mmk": {
+					"displayName": "Мьянма Кьят"
+				},
+				"mnt": {
+					"displayName": "Монгольский тугрик"
+				},
+				"mop": {
+					"displayName": "Макао Патака"
+				},
+				"mro": {
+					"displayName": "Мавританская угия (до 2018 г.)"
+				},
+				"mru": {
+					"displayName": "Мавританская угия"
+				},
+				"mur": {
+					"displayName": "Маврикийская рупия"
+				},
+				"mvr": {
+					"displayName": "Мальдивская руфия"
+				},
+				"mwk": {
+					"displayName": "Малавийская квача"
+				},
+				"mxn": {
+					"displayName": "Мексиканское песо"
+				},
+				"myr": {
+					"displayName": "Малазийский ринггит"
+				},
+				"mzn": {
+					"displayName": "Мозамбикский Метикал"
+				},
+				"nad": {
+					"displayName": "Намибийский доллар"
+				},
+				"ngn": {
+					"displayName": "Нигерийская найра"
+				},
+				"nio": {
+					"displayName": "Никарагуанская Кордова"
+				},
+				"nok": {
+					"displayName": "Норвежская крона"
+				},
+				"npr": {
+					"displayName": "Непальская рупия"
+				},
+				"nzd": {
+					"displayName": "Новозеландский доллар"
+				},
+				"omr": {
+					"displayName": "Оманский риал"
+				},
+				"pab": {
+					"displayName": "Панамский Бальбоа"
+				},
+				"pen": {
+					"displayName": "Перуанский Нуэво-Соль"
+				},
+				"pgk": {
+					"displayName": "Папуа-Новая Гвинея Кина"
+				},
+				"php": {
+					"displayName": "Филиппинское песо"
+				},
+				"pkr": {
+					"displayName": "Пакистанская рупия"
+				},
+				"pln": {
+					"displayName": "Польский злотый"
+				},
+				"pyg": {
+					"displayName": "Парагвайский гуарани"
+				},
+				"qar": {
+					"displayName": "Катарский риал"
+				},
+				"ron": {
+					"displayName": "Румынский лей"
+				},
+				"rsd": {
+					"displayName": "Сербский динар"
+				},
+				"rub": {
+					"displayName": "Российский рубль"
+				},
+				"rwf": {
+					"displayName": "Руандийский франк"
+				},
+				"sar": {
+					"displayName": "Саудовский риал"
+				},
+				"sbd": {
+					"displayName": "Доллар Соломоновых Островов"
+				},
+				"scr": {
+					"displayName": "Сейшельская рупия"
+				},
+				"sdg": {
+					"displayName": "Суданский фунт"
+				},
+				"sek": {
+					"displayName": "Шведская крона"
+				},
+				"sgd": {
+					"displayName": "Сингапурский доллар"
+				},
+				"shp": {
+					"displayName": "Паунд Святой Елены"
+				},
+				"sll": {
+					"displayName": "Сьерра-Леоне Леоне"
+				},
+				"sos": {
+					"displayName": "Сомалийский шиллинг"
+				},
+				"srd": {
+					"displayName": "Суринамский доллар"
+				},
+				"ssp": {
+					"displayName": "Южносуданский фунт"
+				},
+				"std": {
+					"displayName": "Сан-Томе и Принсипи Добра (до 2018 г.)"
+				},
+				"stn": {
+					"displayName": "Сан-Томе и Принсипи Добра"
+				},
+				"svc": {
+					"displayName": "Сальвадорский Колон"
+				},
+				"syp": {
+					"displayName": "Сирийский фунт"
+				},
+				"szl": {
+					"displayName": "Свази Лилангени"
+				},
+				"thb": {
+					"displayName": "Тайский бат"
+				},
+				"tjs": {
+					"displayName": "таджикский сомони"
+				},
+				"tmt": {
+					"displayName": "Туркменский манат"
+				},
+				"tnd": {
+					"displayName": "Тунисский динар"
+				},
+				"top": {
+					"displayName": "Тонганская Паанга"
+				},
+				"try": {
+					"displayName": "Турецкая лира"
+				},
+				"ttd": {
+					"displayName": "Доллар Тринидада и Тобаго"
+				},
+				"twd": {
+					"displayName": "Новый тайваньский доллар"
+				},
+				"tzs": {
+					"displayName": "Танзанийский шиллинг"
+				},
+				"uah": {
+					"displayName": "Украинская гривна"
+				},
+				"ugx": {
+					"displayName": "Угандийский шиллинг"
+				},
+				"uyu": {
+					"displayName": "Уругвайское песо"
+				},
+				"uzs": {
+					"displayName": "Узбекский сум"
+				},
+				"vef": {
+					"displayName": "Венесуэльский Боливар Фуэрте"
+				},
+				"vnd": {
+					"displayName": "Вьетнамский донг"
+				},
+				"vuv": {
+					"displayName": "Вануату Вату"
+				},
+				"wst": {
+					"displayName": "Самоанская Тала"
+				},
+				"xaf": {
+					"displayName": "Франк КФА BEAC"
+				},
+				"xag": {
+					"displayName": "Серебряная унция"
+				},
+				"xau": {
+					"displayName": "Золотая унция"
+				},
+				"xcd": {
+					"displayName": "Восточно-карибский доллар"
+				},
+				"xdr": {
+					"displayName": "Специальные права заимствования"
+				},
+				"xof": {
+					"displayName": "Франк КФА BCEAO"
+				},
+				"xpd": {
+					"displayName": "Палладиевая унция"
+				},
+				"xpf": {
+					"displayName": "Франк КФП"
+				},
+				"xpt": {
+					"displayName": "Платиновая унция"
+				},
+				"yer": {
+					"displayName": "Йеменский риал"
+				},
+				"zar": {
+					"displayName": "Южноафриканский рэнд"
+				},
+				"zmw": {
+					"displayName": "Замбийская квача"
+				},
+				"zwl": {
+					"displayName": "Зимбабвийский доллар"
+				}
+			}
+		},
+		"group": {
+			"displayName": "Идентификатор конвейера сделок",
+			"description": "Идентификатор конвейера сделки"
+		},
+		"stage": {
+			"displayName": "Идентификатор этапа сделки",
+			"description": "Идентификатор этапа сделки"
+		},
+		"owner": {
+			"displayName": "Идентификатор владельца сделки",
+			"description": "Идентификатор владельца сделки"
+		},
+		"dealId": {
+			"displayName": "Идентификатор сделки",
+			"description": "Идентификатор сделки"
+		},
+		"dealNote": {
+			"displayName": "Примечание к сделке",
+			"description": "Содержание уведомления о сделке"
+		},
+		"dealNoteId": {
+			"displayName": "Идентификатор примечания к сделке",
+			"description": "Идентификатор сделки"
+		},
+		"service": {
+			"displayName": "Услуга",
+			"description": "Название услуги"
+		},
+		"externalid": {
+			"displayName": "Идентификатор клиента",
+			"description": "Идентификатор клиента во внешнем сервисе"
+		},
+		"logoUrl": {
+			"displayName": "URL-адрес логотипа",
+			"description": "URL-адрес изображения логотипа внешней службы."
+		},
+		"linkUrl": {
+			"displayName": "URL-адрес ссылки",
+			"description": "URL-адрес страницы, где можно управлять интеграцией с внешним сервисом на стороннем веб-сайте."
+		},
+		"connectionId": {
+			"displayName": "Идентификатор соединения",
+			"description": "ID соединения, которое необходимо получить"
+		},
+		"externalcheckoutid": {
+			"displayName": "Внешний идентификатор оформления заказа",
+			"description": "Идентификатор корзины во внешнем сервисе. ТРЕБУЕТСЯ ТОЛЬКО ЕСЛИ EXTERNALID НЕ ВКЛЮЧЕН."
+		},
+		"source": {
+			"displayName": "Источник заказа",
+			"description": "Исходный код заказа (0 – не активирует автоматизацию, 1 – активирует автоматизацию)"
+		},
+		"totalPrice": {
+			"displayName": "Общая стоимость",
+			"description": "Общая стоимость заказа в центах, включая налоги и стоимость доставки. (т. е. $456,78 => 45678). Должно быть больше или равно нулю."
+		},
+		"connectionid": {
+			"displayName": "Идентификатор услуги",
+			"description": "Идентификатор объекта подключения для услуги, от которой исходит клиент."
+		},
+		"customerid": {
+			"displayName": "Идентификатор клиента",
+			"description": "Идентификатор клиента, связанного с этим заказом"
+		},
+		"externalCreatedDate": {
+			"displayName": "Дата создания",
+			"description": "Дата размещения заказа"
+		},
+		"abandonedDate": {
+			"displayName": "Отказ от даты",
+			"description": "Дата, когда тележку бросили. ТРЕБУЕТСЯ ТОЛЬКО ЕСЛИ ВКЛЮЧАЕТ EXTERNALCHECKOUTID."
+		},
+		"orderProducts": {
+			"displayName": "Продукты",
+			"description": "Все заказанные товары",
+			"placeholder": "Добавить поле продукта",
+			"multipleValueButtonText": "Добавить продукт",
+			"options": {
+				"name": {
+					"displayName": "Имя",
+					"description": "Название продукта"
+				},
+				"price": {
+					"displayName": "Цена",
+					"description": "Цена товара, в центах. (т. е. $456,78 => 45678). Должно быть больше или равно нулю."
+				},
+				"quantity": {
+					"displayName": "Количество продукта",
+					"description": "Заказанное количество"
+				},
+				"externalid": {
+					"displayName": "Внешний идентификатор продукта",
+					"description": "Идентификатор продукта во внешнем сервисе"
+				},
+				"category": {
+					"displayName": "Категория продукта",
+					"description": "Категория продукта"
+				},
+				"sku": {
+					"displayName": "SKU",
+					"description": "Артикул продукта"
+				},
+				"description": {
+					"displayName": "Описание",
+					"description": "Описание продукта"
+				},
+				"imageUrl": {
+					"displayName": "URL-адрес изображения",
+					"description": "URL-адрес изображения, на котором отображается изображение продукта."
+				},
+				"productUrl": {
+					"displayName": "URL-адрес продукта",
+					"description": "URL-адрес, ссылающийся на продукт в вашем магазине."
+				}
+			}
+		},
+		"orderId": {
+			"displayName": "Идентификатор заказа",
+			"description": "Идентификатор заказа, товары которого вы хотите вернуть."
+		},
+		"ecommerceCustomerId": {
+			"displayName": "Идентификатор клиента",
+			"description": "Идентификатор клиента электронной коммерции, которого необходимо получить"
+		},
+		"procuctId": {
+			"displayName": "Идентификатор продукта",
+			"description": "Идентификатор продукта, который вы хотите вернуть."
+		}
+	}
+}

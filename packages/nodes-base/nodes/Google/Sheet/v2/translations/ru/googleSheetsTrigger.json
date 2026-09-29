@@ -1,0 +1,144 @@
+{
+	"header": {
+		"displayName": "Триггер Google Таблиц",
+		"description": "Запускает рабочий процесс при возникновении событий Google Таблиц."
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"serviceAccount": {
+					"displayName": "Сервисный аккаунт"
+				},
+				"triggerOAuth2": {
+					"displayName": "OAuth2 (рекомендуется)"
+				}
+			}
+		},
+		"documentId": {
+			"displayName": "Документ"
+		},
+		"sheetName": {
+			"displayName": "Лист"
+		},
+		"event": {
+			"displayName": "Триггер включен",
+			"description": "Он также будет активироваться вновь созданными столбцами (если опция «Столбцы для наблюдения» не установлена).",
+			"options": {
+				"rowAdded": {
+					"displayName": "Строка добавлена"
+				},
+				"rowUpdate": {
+					"displayName": "Строка обновлена"
+				},
+				"anyUpdate": {
+					"displayName": "Строка добавлена ​​или обновлена"
+				}
+			}
+		},
+		"includeInOutput": {
+			"displayName": "Включить в вывод",
+			"description": "Эта опция будет эффективна только при автоматическом выполнении рабочего процесса.",
+			"options": {
+				"new": {
+					"displayName": "Новая версия"
+				},
+				"old": {
+					"displayName": "Старая версия"
+				},
+				"both": {
+					"displayName": "Обе версии"
+				}
+			}
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"columnsToWatch": {
+					"displayName": "Столбцы, которые стоит посмотреть",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"dataLocationOnSheet": {
+					"values": {
+						"dataLocationOnSheet": {
+							"displayName": "Расположение данных на листе"
+						},
+						"values": {
+							"options": {
+								"rangeDefinition": {
+									"displayName": "Определение диапазона",
+									"options": {
+										"specifyRangeA1": {
+											"displayName": "Укажите диапазон (обозначение A1)",
+											"description": "Вручную укажите диапазон данных"
+										},
+										"specifyRange": {
+											"displayName": "Укажите диапазон (строки)",
+											"description": "Вручную укажите диапазон данных"
+										}
+									}
+								},
+								"headerRow": {
+									"displayName": "Заголовок строки",
+									"description": "Индекс строки, содержащей ключи. Начинается с 1. Входящие данные узла сопоставляются с ключами для назначения. Сопоставление чувствительно к регистру.",
+									"hint": "Первая строка – это строка 1."
+								},
+								"firstDataRow": {
+									"displayName": "Первая строка данных",
+									"description": "Индекс первой строки, содержащей фактические данные, а не ключи. Начинается с 1.",
+									"hint": "Первая строка – это строка 1."
+								},
+								"range": {
+									"displayName": "Диапазон",
+									"description": "Диапазон таблицы для чтения или добавления данных. Подробности см. в документации Google <a href=\"https://developers.google.com/sheets/api/guides/values#writing\"></a>.",
+									"hint": "Вы можете указать как строки, так и столбцы, например. С4:Е7",
+									"placeholder": "A:Z"
+								}
+							}
+						}
+					},
+					"placeholder": "Выберите диапазон",
+					"displayName": "Расположение данных на листе",
+					"options": {
+						"values": {
+							"displayName": "Ценности"
+						}
+					}
+				},
+				"valueRender": {
+					"displayName": "Рендеринг значений",
+					"description": "Определяет, как значения будут отображаться в выходных данных. <a href=\"https://developers.google.com/sheets/api/reference/rest/v4/ValueRenderOption\" target=\"_blank\">Подробнее</a>.",
+					"options": {
+						"UNFORMATTED_VALUE": {
+							"displayName": "Неформатированный",
+							"description": "Значения будут рассчитаны, но не отформатированы в ответе."
+						},
+						"FORMATTED_VALUE": {
+							"displayName": "Отформатированный",
+							"description": "Значения будут отформатированы и рассчитаны в соответствии с форматированием ячейки (на основе языкового стандарта электронной таблицы)."
+						},
+						"FORMULA": {
+							"displayName": "Формула",
+							"description": "Значения не будут рассчитаны. В ответе будут содержаться формулы."
+						}
+					}
+				},
+				"dateTimeRenderOption": {
+					"displayName": "Дата и время рендеринга",
+					"description": "Определяет, как даты должны отображаться в выходных данных.  <a href=\"https://developers.google.com/sheets/api/reference/rest/v4/DateTimeRenderOption\" target=\"_blank\">Подробнее</a>.",
+					"options": {
+						"SERIAL_NUMBER": {
+							"displayName": "Серийный номер",
+							"description": "Поля будут возвращены как двойные значения в формате «серийный номер» (популярном в Lotus 1-2-3)."
+						},
+						"FORMATTED_STRING": {
+							"displayName": "Форматированная строка",
+							"description": "Поля будут отображаться как строки в заданном числовом формате (который зависит от языкового стандарта электронной таблицы)."
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,94 @@
+{
+	"header": {
+		"displayName": "Маркетстек",
+		"description": "Использование Marketstack API"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"endOfDayData": {
+					"displayName": "Данные на конец дня",
+					"description": "Данные о закрытии фондового рынка"
+				},
+				"exchange": {
+					"displayName": "Обмен",
+					"description": "Фондовая биржа"
+				},
+				"ticker": {
+					"displayName": "Тикер",
+					"description": "Символ фондового рынка"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"getAll": {
+					"displayName": "Получить много"
+				},
+				"get": {
+					"displayName": "Получать"
+				}
+			}
+		},
+		"symbols": {
+			"displayName": "Тикер",
+			"description": "Один или несколько разделенных запятыми символов акций (тикеров) для извлечения, например <code>AAPL</code> или <code>AAPL,MSFT</code>"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"exchange": {
+					"displayName": "Обмен",
+					"description": "Фондовая биржа для фильтрации результатов по, указанному в <a href=\"https://en.wikipedia.org/wiki/Market_Identifier_Code\">Код рыночного идентификатора</a>, например. <code>XNAS</code>"
+				},
+				"latest": {
+					"displayName": "Последний",
+					"description": "Нужно ли получать самые последние данные фондового рынка"
+				},
+				"sort": {
+					"displayName": "Порядок сортировки",
+					"description": "Порядок сортировки результатов в",
+					"options": {
+						"ASC": {
+							"displayName": "восходящий"
+						},
+						"DESC": {
+							"displayName": "По убыванию"
+						}
+					}
+				},
+				"specificDate": {
+					"displayName": "Конкретная дата",
+					"description": "Дата в формате ГГГГ-ММ-ДД, например. <code>2020-01-01</code> или в формате даты ISO-8601, например. <code>2020-05-21T00:00:00+0000</code>"
+				},
+				"dateFrom": {
+					"displayName": "Дата начала периода",
+					"description": "Дата начала таймфрейма в формате ГГГГ-ММ-ДД, например. <code>2020-01-01</code> или в формате даты ISO-8601, например. <code>2020-05-21T00:00:00+0000</code>"
+				},
+				"dateTo": {
+					"displayName": "Дата окончания периода",
+					"description": "Дата окончания таймфрейма в формате ГГГГ-ММ-ДД, например. <code>2020-01-01</code> или в формате даты ISO-8601, например. <code>2020-05-21T00:00:00+0000</code>"
+				}
+			}
+		},
+		"exchange": {
+			"displayName": "Обмен",
+			"description": "Фондовая биржа для получения, указанная в <a href=\"https://en.wikipedia.org/wiki/Market_Identifier_Code\">Код рыночного идентификатора</a>, например. <code>XNAS</code>"
+		},
+		"symbol": {
+			"displayName": "Тикер",
+			"description": "Символ акции (тикер), который необходимо получить, например <code>AAPL</code>"
+		}
+	}
+}

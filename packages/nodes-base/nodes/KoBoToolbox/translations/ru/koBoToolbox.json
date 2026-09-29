@@ -1,0 +1,292 @@
+{
+	"header": {
+		"displayName": "KoBoToolbox",
+		"description": "Работа с формами и отправками KoBoToolbox"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"file": {
+					"displayName": "Файл"
+				},
+				"form": {
+					"displayName": "Форма"
+				},
+				"hook": {
+					"displayName": "Крюк"
+				},
+				"submission": {
+					"displayName": "Подчинение"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить содержимое файла"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить много файлов"
+				},
+				"redeploy": {
+					"displayName": "Перераспределить",
+					"description": "Повторное развертывание текущей версии формы"
+				},
+				"getLogs": {
+					"displayName": "Журналы",
+					"description": "Получить логи крючков"
+				},
+				"retryAll": {
+					"displayName": "Повторить все",
+					"description": "Повторить все неудачные попытки для данного хука"
+				},
+				"retryOne": {
+					"displayName": "Повторить попытку",
+					"description": "Повторить конкретный хук"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить файл"
+				},
+				"getValidation": {
+					"displayName": "Получить статус проверки",
+					"description": "Получить статус проверки отправки"
+				},
+				"setValidation": {
+					"displayName": "Обновить статус проверки",
+					"description": "Установите статус проверки отправки"
+				},
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать файл"
+				}
+			}
+		},
+		"formId": {
+			"displayName": "Имя или идентификатор формы",
+			"description": "Идентификатор формы (например, aSAvYreNzVEkrWg5Gdcvg). Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"sort": {
+					"values": {
+						"sort": {
+							"displayName": "Сортировать"
+						},
+						"value": {
+							"options": {
+								"descending": {
+									"displayName": "По убыванию",
+									"description": "Сортировать ли по убыванию"
+								},
+								"ordering": {
+									"displayName": "Заказать по",
+									"description": "Поле для заказа по",
+									"options": {
+										"asset_type": {
+											"displayName": "Тип актива"
+										},
+										"date_modified": {
+											"displayName": "Дата изменения"
+										},
+										"name": {
+											"displayName": "Имя"
+										},
+										"owner__username": {
+											"displayName": "Имя пользователя владельца"
+										},
+										"subscribers_count": {
+											"displayName": "Количество подписчиков"
+										}
+									}
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить сортировку",
+					"displayName": "Сортировать",
+					"options": {
+						"value": {
+							"displayName": "Сортировать"
+						}
+					},
+					"description": "Сортировка предикатов в формате MongoDB JSON (например, {\"_submission_time\":1})"
+				},
+				"download": {
+					"displayName": "Загрузить вложения",
+					"description": "Загружать ли отправленные вложения"
+				},
+				"binaryNamingScheme": {
+					"displayName": "Схема именования вложений",
+					"options": {
+						"sequence": {
+							"displayName": "Последовательность (например, Attachment_N)"
+						},
+						"question": {
+							"displayName": "Использовать идентификатор вопроса исходной формы"
+						}
+					}
+				},
+				"dataPropertyAttachmentsPrefixName": {
+					"displayName": "Префикс вложений",
+					"description": "Префикс имени двоичного свойства, в которое следует записывать вложения. Будет добавлен индекс, начинающийся с 0. Итак, если имя «attachment_», первое вложение сохраняется в «attachment_0»."
+				},
+				"fields": {
+					"displayName": "Поля для получения",
+					"description": "Список полей, разделенных запятыми, которые необходимо получить (например, _submission_time,_submit_by). Если оставить пустым, будут получены все поля."
+				},
+				"version": {
+					"displayName": "Размер файла",
+					"description": "Размер вложения для получения, если доступно несколько версий",
+					"options": {
+						"download_url": {
+							"displayName": "Оригинал"
+						},
+						"download_small_url": {
+							"displayName": "Маленький"
+						},
+						"download_medium_url": {
+							"displayName": "Середина"
+						},
+						"download_large_url": {
+							"displayName": "Большой"
+						}
+					}
+				},
+				"selectMask": {
+					"displayName": "Множественная маска",
+					"description": "Разделенный запятыми список селекторов в стиле подстановочных знаков для полей, которые следует рассматривать как поля с множественным выбором, т. е. анализировать как массивы."
+				},
+				"numberMask": {
+					"displayName": "Маска номера",
+					"description": "Список разделенных запятыми селекторов в стиле подстановочных знаков для полей, которые следует рассматривать как числа."
+				},
+				"reformat": {
+					"displayName": "Переформатировать",
+					"description": "Следует ли применять какое-либо переформатирование к отправляемым данным, например анализ координат GeoJSON."
+				}
+			}
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"filter": {
+					"displayName": "Фильтр",
+					"description": "Текстовый поисковый запрос на основе данных формы – например. «owner__username:meg AND name__icontains:quixotic» — более подробную информацию см. в <a href=\"https://github.com/kobotoolbox/kpi#searching\" target=\"_blank\">docs</a>."
+				}
+			}
+		},
+		"hookId": {
+			"displayName": "Идентификатор крючка",
+			"description": "Идентификатор перехватчика (начинается с h, например, hVehywQ2oXPYGHJHKtqth4)"
+		},
+		"logId": {
+			"displayName": "Идентификатор журнала перехвата",
+			"description": "Идентификатор журнала перехвата (начинается с hl, например hlSbGKaUKzTVNoWEVMYbLHe)"
+		},
+		"status": {
+			"displayName": "Статус журнала",
+			"description": "Извлекать журналы только с определенным статусом",
+			"options": {
+				"0": {
+					"displayName": "Неуспешный"
+				},
+				"1": {
+					"displayName": "В ожидании"
+				},
+				"2": {
+					"displayName": "Успех"
+				},
+				"": {
+					"displayName": "Все"
+				}
+			}
+		},
+		"startDate": {
+			"displayName": "Дата начала",
+			"description": "Минимальная дата для получения журнала хуков"
+		},
+		"endDate": {
+			"displayName": "Дата окончания",
+			"description": "Максимальная дата для получения журнала хуков"
+		},
+		"submissionId": {
+			"displayName": "Идентификатор отправки",
+			"description": "Идентификатор отправки (номер, например 245128)"
+		},
+		"validationStatus": {
+			"displayName": "Статус проверки",
+			"description": "Желаемый статус проверки",
+			"options": {
+				"validation_status_approved": {
+					"displayName": "Одобренный"
+				},
+				"validation_status_not_approved": {
+					"displayName": "Не одобрено"
+				},
+				"validation_status_on_hold": {
+					"displayName": "На удерживании"
+				}
+			}
+		},
+		"filterType": {
+			"displayName": "Фильтр",
+			"options": {
+				"none": {
+					"displayName": "Никто"
+				},
+				"json": {
+					"displayName": "JSON"
+				}
+			}
+		},
+		"jsonNotice": {
+			"displayName": "См. документацию <a href=\"https://github.com/SEL-Columbia/formhub/wiki/Formhub-Access-Points-(API)#api-parameters\" target=\"_blank\">Formhub API</a> для создания фильтров с использованием формата MongoDB JSON, например {\"_submission_time\":{\"$lt\":\"2021-10-01T01:02:03\"}}"
+		},
+		"filterJson": {
+			"displayName": "Фильтры (JSON)"
+		},
+		"fileId": {
+			"displayName": "Идентификатор файла",
+			"description": "Uid файла (должен начинаться с «af», например «afQoJxA4kmKEXVpkH6SYbhb»)."
+		},
+		"binaryPropertyName": {
+			"displayName": "Имя свойства",
+			"description": "Имя двоичного свойства, содержащего файл для загрузки. Поддерживаемые типы: изображение, аудио, видео, csv, xml, zip."
+		},
+		"download": {
+			"displayName": "Загрузить содержимое файла",
+			"description": "Загружать ли содержимое файла в двоичное свойство"
+		},
+		"fileMode": {
+			"displayName": "Режим загрузки файлов",
+			"options": {
+				"binary": {
+					"displayName": "Двоичный файл"
+				},
+				"url": {
+					"displayName": "URL"
+				}
+			}
+		},
+		"fileUrl": {
+			"displayName": "URL-адрес файла",
+			"description": "HTTP(s) ссылка на файл для загрузки"
+		}
+	}
+}

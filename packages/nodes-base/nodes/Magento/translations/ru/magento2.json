@@ -1,0 +1,651 @@
+{
+	"header": {
+		"displayName": "Магенто 2",
+		"description": "Использовать API Magento"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"customer": {
+					"displayName": "Клиент"
+				},
+				"invoice": {
+					"displayName": "Счет"
+				},
+				"order": {
+					"displayName": "Заказ"
+				},
+				"product": {
+					"displayName": "Продукт"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать продукт"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить продукт"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить продукт"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получите много продуктов"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить продукт"
+				},
+				"cancel": {
+					"displayName": "Отмена",
+					"description": "Отменить заказ"
+				},
+				"ship": {
+					"displayName": "Корабль",
+					"description": "Отправьте заказ"
+				}
+			}
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"description": "Адрес электронной почты пользователя, которого необходимо создать",
+			"placeholder": "имя@email.com"
+		},
+		"firstname": {
+			"displayName": "Имя",
+			"description": "Имя пользователя, которого нужно создать"
+		},
+		"lastname": {
+			"displayName": "Фамилия",
+			"description": "Фамилия пользователя, которого необходимо создать"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"addresses": {
+					"values": {
+						"addresses": {
+							"displayName": "Адреса"
+						},
+						"address": {
+							"options": {
+								"street": {
+									"displayName": "Улица"
+								},
+								"city": {
+									"displayName": "Город"
+								},
+								"region": {
+									"displayName": "Область"
+								},
+								"postcode": {
+									"displayName": "Почтовый индекс"
+								},
+								"country_id": {
+									"displayName": "Название или идентификатор страны",
+									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+								},
+								"company": {
+									"displayName": "Компания"
+								},
+								"fax": {
+									"displayName": "Факс"
+								},
+								"firstname": {
+									"displayName": "Имя"
+								},
+								"lastname": {
+									"displayName": "Фамилия"
+								},
+								"middlename": {
+									"displayName": "Второе имя"
+								},
+								"prefix": {
+									"displayName": "Префикс"
+								},
+								"suffix": {
+									"displayName": "Суффикс"
+								},
+								"telephone": {
+									"displayName": "Телефон"
+								},
+								"default_billing": {
+									"displayName": "Платежи по умолчанию",
+									"description": "Является ли этот адрес платежным адресом по умолчанию"
+								},
+								"default_shipping": {
+									"displayName": "Доставка по умолчанию",
+									"description": "Является ли этот адрес адресом доставки по умолчанию"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить адрес",
+					"displayName": "Адреса",
+					"options": {
+						"address": {
+							"displayName": "Адрес"
+						}
+					}
+				},
+				"amazon_id": {
+					"displayName": "Идентификатор Amazon"
+				},
+				"confirmation": {
+					"displayName": "Подтверждение"
+				},
+				"customAttributes": {
+					"values": {
+						"customAttributes": {
+							"displayName": "Пользовательские атрибуты"
+						},
+						"customAttribute": {
+							"options": {
+								"attribute_code": {
+									"displayName": "Кодовое имя или идентификатор атрибута",
+									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+								},
+								"value": {
+									"displayName": "Ценить"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить пользовательский атрибут",
+					"displayName": "Пользовательские атрибуты",
+					"options": {
+						"customAttribute": {
+							"displayName": "Пользовательский атрибут"
+						}
+					}
+				},
+				"dob": {
+					"displayName": "Дата рождения"
+				},
+				"default_billing": {
+					"displayName": "Идентификатор платежного адреса по умолчанию"
+				},
+				"default_shipping": {
+					"displayName": "Идентификатор адреса доставки по умолчанию"
+				},
+				"gender": {
+					"displayName": "Пол",
+					"options": {
+						"1": {
+							"displayName": "Мужской"
+						},
+						"2": {
+							"displayName": "Женский"
+						},
+						"3": {
+							"displayName": "Не указан"
+						}
+					}
+				},
+				"group_id": {
+					"displayName": "Имя или идентификатор группы",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"is_subscribed": {
+					"displayName": "Подписан"
+				},
+				"middlename": {
+					"displayName": "Второе имя"
+				},
+				"password": {
+					"displayName": "Пароль"
+				},
+				"prefix": {
+					"displayName": "Префикс"
+				},
+				"store_id": {
+					"displayName": "Название или идентификатор магазина",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"suffix": {
+					"displayName": "Суффикс"
+				},
+				"vertex_customer_code": {
+					"displayName": "Код клиента Vertex"
+				},
+				"vertex_customer_country": {
+					"displayName": "Страна клиента Vertex"
+				},
+				"website_id": {
+					"displayName": "Название или идентификатор веб-сайта",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"attribute_set_id": {
+					"displayName": "Имя или идентификатор набора атрибутов",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"name": {
+					"displayName": "Имя"
+				},
+				"price": {
+					"displayName": "Цена"
+				},
+				"status": {
+					"displayName": "Статус",
+					"options": {
+						"1": {
+							"displayName": "Включено"
+						},
+						"2": {
+							"displayName": "Неполноценный"
+						}
+					}
+				},
+				"type_id": {
+					"displayName": "Введите имя или идентификатор",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"visibility": {
+					"displayName": "Видимость",
+					"options": {
+						"1": {
+							"displayName": "Не видно"
+						},
+						"2": {
+							"displayName": "Каталог"
+						},
+						"3": {
+							"displayName": "Поиск"
+						},
+						"4": {
+							"displayName": "Каталог и поиск"
+						}
+					}
+				},
+				"weight": {
+					"displayName": "Вес (фунты)"
+				}
+			}
+		},
+		"customerId": {
+			"displayName": "Идентификатор клиента",
+			"description": "Идентификатор клиента для обновления"
+		},
+		"firstName": {
+			"displayName": "Имя"
+		},
+		"lastName": {
+			"displayName": "Фамилия"
+		},
+		"website_id": {
+			"displayName": "Название или идентификатор веб-сайта",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"addresses": {
+					"values": {
+						"addresses": {
+							"displayName": "Адреса"
+						},
+						"address": {
+							"options": {
+								"street": {
+									"displayName": "Улица"
+								},
+								"city": {
+									"displayName": "Город"
+								},
+								"region": {
+									"displayName": "Область"
+								},
+								"postcode": {
+									"displayName": "Почтовый индекс"
+								},
+								"country_id": {
+									"displayName": "Название или идентификатор страны",
+									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+								},
+								"company": {
+									"displayName": "Компания"
+								},
+								"fax": {
+									"displayName": "Факс"
+								},
+								"firstname": {
+									"displayName": "Имя"
+								},
+								"lastname": {
+									"displayName": "Фамилия"
+								},
+								"middlename": {
+									"displayName": "Второе имя"
+								},
+								"prefix": {
+									"displayName": "Префикс"
+								},
+								"suffix": {
+									"displayName": "Суффикс"
+								},
+								"telephone": {
+									"displayName": "Телефон"
+								},
+								"default_billing": {
+									"displayName": "Платежи по умолчанию",
+									"description": "Является ли этот адрес платежным адресом по умолчанию"
+								},
+								"default_shipping": {
+									"displayName": "Доставка по умолчанию",
+									"description": "Является ли этот адрес адресом доставки по умолчанию"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить адрес",
+					"displayName": "Адреса",
+					"options": {
+						"address": {
+							"displayName": "Адрес"
+						}
+					}
+				},
+				"amazon_id": {
+					"displayName": "Идентификатор Amazon"
+				},
+				"confirmation": {
+					"displayName": "Подтверждение"
+				},
+				"customAttributes": {
+					"values": {
+						"customAttributes": {
+							"displayName": "Пользовательские атрибуты"
+						},
+						"customAttribute": {
+							"options": {
+								"attribute_code": {
+									"displayName": "Кодовое имя или идентификатор атрибута",
+									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+								},
+								"value": {
+									"displayName": "Ценить"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить пользовательский атрибут",
+					"displayName": "Пользовательские атрибуты",
+					"options": {
+						"customAttribute": {
+							"displayName": "Пользовательский атрибут"
+						}
+					}
+				},
+				"dob": {
+					"displayName": "Дата рождения"
+				},
+				"default_billing": {
+					"displayName": "Идентификатор платежного адреса по умолчанию"
+				},
+				"default_shipping": {
+					"displayName": "Идентификатор адреса доставки по умолчанию"
+				},
+				"gender": {
+					"displayName": "Пол",
+					"options": {
+						"1": {
+							"displayName": "Мужской"
+						},
+						"2": {
+							"displayName": "Женский"
+						},
+						"3": {
+							"displayName": "Не указан"
+						}
+					}
+				},
+				"group_id": {
+					"displayName": "Имя или идентификатор группы",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"is_subscribed": {
+					"displayName": "Подписан"
+				},
+				"middlename": {
+					"displayName": "Второе имя"
+				},
+				"password": {
+					"displayName": "Пароль"
+				},
+				"prefix": {
+					"displayName": "Префикс"
+				},
+				"store_id": {
+					"displayName": "Название или идентификатор магазина",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"suffix": {
+					"displayName": "Суффикс"
+				},
+				"vertex_customer_code": {
+					"displayName": "Код клиента Vertex"
+				},
+				"vertex_customer_country": {
+					"displayName": "Страна клиента Vertex"
+				},
+				"website_id": {
+					"displayName": "Название или идентификатор веб-сайта",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"attribute_set_id": {
+					"displayName": "Имя или идентификатор набора атрибутов",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"name": {
+					"displayName": "Имя"
+				},
+				"price": {
+					"displayName": "Цена"
+				},
+				"status": {
+					"displayName": "Статус",
+					"options": {
+						"1": {
+							"displayName": "Включено"
+						},
+						"2": {
+							"displayName": "Неполноценный"
+						}
+					}
+				},
+				"type_id": {
+					"displayName": "Введите имя или идентификатор",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"visibility": {
+					"displayName": "Видимость",
+					"options": {
+						"1": {
+							"displayName": "Не видно"
+						},
+						"2": {
+							"displayName": "Каталог"
+						},
+						"3": {
+							"displayName": "Поиск"
+						},
+						"4": {
+							"displayName": "Каталог и поиск"
+						}
+					}
+				},
+				"weight": {
+					"displayName": "Вес (фунты)"
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"filterType": {
+			"displayName": "Фильтр",
+			"options": {
+				"none": {
+					"displayName": "Никто"
+				},
+				"manual": {
+					"displayName": "Сборка вручную"
+				},
+				"json": {
+					"displayName": "JSON"
+				}
+			}
+		},
+		"matchType": {
+			"displayName": "Должен совпадать",
+			"options": {
+				"anyFilter": {
+					"displayName": "Любой фильтр"
+				},
+				"allFilters": {
+					"displayName": "Все фильтры"
+				}
+			}
+		},
+		"filters": {
+			"options": {
+				"filters": {
+					"displayName": "Фильтры"
+				},
+				"conditions": {
+					"displayName": "Условия",
+					"values": {
+						"field": {
+							"displayName": "Поле"
+						},
+						"condition_type": {
+							"displayName": "Тип условия",
+							"options": {
+								"eq": {
+									"displayName": "Равно"
+								},
+								"gt": {
+									"displayName": "Больше, чем"
+								},
+								"gteq": {
+									"displayName": "Больше или равно"
+								},
+								"in": {
+									"displayName": "В",
+									"description": "Значение может содержать список значений, разделенных запятыми."
+								},
+								"lt": {
+									"displayName": "Меньше, чем"
+								},
+								"lte": {
+									"displayName": "Меньше или равно"
+								},
+								"like": {
+									"displayName": "Нравиться",
+									"description": "Значение может содержать подстановочные знаки SQL, если указано «like»."
+								},
+								"moreq": {
+									"displayName": "Больше или равно"
+								},
+								"neq": {
+									"displayName": "Не равно"
+								},
+								"nin": {
+									"displayName": "Не в",
+									"description": "Значение может содержать список значений, разделенных запятыми."
+								},
+								"notnull": {
+									"displayName": "Не нуль"
+								},
+								"null": {
+									"displayName": "Нулевой"
+								}
+							}
+						},
+						"value": {
+							"displayName": "Ценить"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить условие",
+			"displayName": "Фильтры"
+		},
+		"jsonNotice": {
+			"displayName": "См. <a href=\"https://devdocs.magento.com/guides/v2.4/rest/performing-searches.html\" target=\"_blank\">Руководство Magento</a> по созданию фильтров."
+		},
+		"filterJson": {
+			"displayName": "Фильтры (JSON)"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"sort": {
+					"values": {
+						"sort": {
+							"displayName": "Сортировать",
+							"options": {
+								"direction": {
+									"displayName": "Направление",
+									"description": "Направление сортировки",
+									"options": {
+										"ASC": {
+											"displayName": "восходящий"
+										},
+										"DESC": {
+											"displayName": "По убыванию"
+										}
+									}
+								},
+								"field": {
+									"displayName": "Поле",
+									"description": "Поле сортировки"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить сортировку",
+					"displayName": "Сортировать",
+					"options": {
+						"sort": {
+							"displayName": "Сортировать"
+						}
+					}
+				}
+			}
+		},
+		"orderId": {
+			"displayName": "Идентификатор заказа"
+		},
+		"sku": {
+			"displayName": "SKU",
+			"description": "Складская единица продукции"
+		},
+		"name": {
+			"displayName": "Имя"
+		},
+		"attributeSetId": {
+			"displayName": "Имя или идентификатор набора атрибутов",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"price": {
+			"displayName": "Цена"
+		}
+	}
+}

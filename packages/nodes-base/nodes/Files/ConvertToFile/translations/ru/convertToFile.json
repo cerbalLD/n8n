@@ -1,0 +1,595 @@
+{
+	"header": {
+		"displayName": "Преобразовать в файл",
+		"description": "Преобразование данных JSON в двоичные данные"
+	},
+	"nodeView": {
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"csv": {
+					"displayName": "Конвертировать в CSV",
+					"description": "Преобразование входных данных в файл CSV"
+				},
+				"html": {
+					"displayName": "Конвертировать в HTML",
+					"description": "Преобразование входных данных в таблицу в HTML-файле"
+				},
+				"iCal": {
+					"displayName": "Преобразование в ICS",
+					"description": "Преобразует каждый входной элемент в файл событий ICS."
+				},
+				"toJson": {
+					"displayName": "Преобразовать в JSON",
+					"description": "Преобразуйте входные данные в один или несколько файлов JSON."
+				},
+				"ods": {
+					"displayName": "Конвертировать в ODS",
+					"description": "Преобразование входных данных в файл ODS"
+				},
+				"rtf": {
+					"displayName": "Конвертировать в RTF",
+					"description": "Преобразование входных данных в таблицу в файле RTF."
+				},
+				"toText": {
+					"displayName": "Преобразовать в текстовый файл",
+					"description": "Преобразовать строку входных данных в файл"
+				},
+				"xls": {
+					"displayName": "Конвертировать в XLS",
+					"description": "Преобразование входных данных в файл Excel"
+				},
+				"xlsx": {
+					"displayName": "Конвертировать в XLSX",
+					"description": "Преобразование входных данных в файл Excel"
+				},
+				"toBinary": {
+					"displayName": "Переместить строку Base64 в файл",
+					"description": "Преобразование строки в кодировке Base64 в исходный формат файла."
+				}
+			}
+		},
+		"binaryPropertyName": {
+			"displayName": "Поместите выходной файл в поле",
+			"hint": "Имя выходного двоичного поля, в которое помещается файл.",
+			"placeholder": "например данные",
+			"description": "Поле, в котором ваш файл iCalendar будет доступен в выходных данных."
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"compression": {
+					"displayName": "Сжатие",
+					"description": "Уменьшить ли размер выходного файла"
+				},
+				"delimiter": {
+					"displayName": "Разделитель",
+					"description": "Символ, используемый для разделения полей"
+				},
+				"fileName": {
+					"displayName": "Имя файла",
+					"description": "Имя выходного файла",
+					"placeholder": "например мойФайл.json"
+				},
+				"headerRow": {
+					"displayName": "Заголовок строки",
+					"description": "Содержит ли первая строка файла имена заголовков"
+				},
+				"sheetName": {
+					"displayName": "Имя листа",
+					"description": "Имя листа, который необходимо создать в электронной таблице.",
+					"placeholder": "например мой лист"
+				},
+				"addBOM": {
+					"displayName": "Добавить метку порядка байтов (BOM)",
+					"description": "Добавлять ли специальный маркер в начало текстового файла. Этот маркер помогает некоторым программам понять, как правильно читать файл."
+				},
+				"dataIsBase64": {
+					"displayName": "Данные в формате Base64",
+					"description": "Закодированы ли данные уже в формате Base64"
+				},
+				"encoding": {
+					"displayName": "Кодирование",
+					"description": "Выберите набор символов, который будет использоваться для кодирования данных.",
+					"options": {
+						"armscii8": {
+							"displayName": "Armscii8"
+						},
+						"ascii": {
+							"displayName": "ascii"
+						},
+						"base64": {
+							"displayName": "база64"
+						},
+						"big5hkscs": {
+							"displayName": "big5hkscs"
+						},
+						"binary": {
+							"displayName": "двоичный"
+						},
+						"cesu8": {
+							"displayName": "цесу8"
+						},
+						"cp1046": {
+							"displayName": "cp1046"
+						},
+						"cp1124": {
+							"displayName": "cp1124"
+						},
+						"cp1125": {
+							"displayName": "cp1125"
+						},
+						"cp1129": {
+							"displayName": "cp1129"
+						},
+						"cp1133": {
+							"displayName": "cp1133"
+						},
+						"cp1161": {
+							"displayName": "cp1161"
+						},
+						"cp1162": {
+							"displayName": "cp1162"
+						},
+						"cp1163": {
+							"displayName": "cp1163"
+						},
+						"cp437": {
+							"displayName": "cp437"
+						},
+						"cp720": {
+							"displayName": "cp720"
+						},
+						"cp737": {
+							"displayName": "cp737"
+						},
+						"cp775": {
+							"displayName": "cp775"
+						},
+						"cp808": {
+							"displayName": "cp808"
+						},
+						"cp850": {
+							"displayName": "cp850"
+						},
+						"cp852": {
+							"displayName": "cp852"
+						},
+						"cp855": {
+							"displayName": "cp855"
+						},
+						"cp856": {
+							"displayName": "cp856"
+						},
+						"cp857": {
+							"displayName": "cp857"
+						},
+						"cp858": {
+							"displayName": "cp858"
+						},
+						"cp860": {
+							"displayName": "cp860"
+						},
+						"cp861": {
+							"displayName": "cp861"
+						},
+						"cp862": {
+							"displayName": "cp862"
+						},
+						"cp863": {
+							"displayName": "cp863"
+						},
+						"cp864": {
+							"displayName": "cp864"
+						},
+						"cp865": {
+							"displayName": "cp865"
+						},
+						"cp866": {
+							"displayName": "cp866"
+						},
+						"cp869": {
+							"displayName": "cp869"
+						},
+						"cp922": {
+							"displayName": "cp922"
+						},
+						"cp936": {
+							"displayName": "cp936"
+						},
+						"cp949": {
+							"displayName": "cp949"
+						},
+						"cp950": {
+							"displayName": "cp950"
+						},
+						"eucjp": {
+							"displayName": "eucjp"
+						},
+						"gb18030": {
+							"displayName": "GB18030"
+						},
+						"gbk": {
+							"displayName": "ГБК"
+						},
+						"georgianacademy": {
+							"displayName": "Грузинская академия"
+						},
+						"georgianps": {
+							"displayName": "грузины"
+						},
+						"hex": {
+							"displayName": "шестигранник"
+						},
+						"hproman8": {
+							"displayName": "hproman8"
+						},
+						"iso646cn": {
+							"displayName": "iso646cn"
+						},
+						"iso646jp": {
+							"displayName": "iso646jp"
+						},
+						"iso88591": {
+							"displayName": "iso88591"
+						},
+						"iso885910": {
+							"displayName": "iso885910"
+						},
+						"iso885911": {
+							"displayName": "iso885911"
+						},
+						"iso885913": {
+							"displayName": "iso885913"
+						},
+						"iso885914": {
+							"displayName": "iso885914"
+						},
+						"iso885915": {
+							"displayName": "iso885915"
+						},
+						"iso885916": {
+							"displayName": "iso885916"
+						},
+						"iso88592": {
+							"displayName": "iso88592"
+						},
+						"iso88593": {
+							"displayName": "iso88593"
+						},
+						"iso88594": {
+							"displayName": "iso88594"
+						},
+						"iso88595": {
+							"displayName": "iso88595"
+						},
+						"iso88596": {
+							"displayName": "iso88596"
+						},
+						"iso88597": {
+							"displayName": "iso88597"
+						},
+						"iso88598": {
+							"displayName": "iso88598"
+						},
+						"iso88599": {
+							"displayName": "iso88599"
+						},
+						"koi8r": {
+							"displayName": "кои8р"
+						},
+						"koi8ru": {
+							"displayName": "кои8ру"
+						},
+						"koi8t": {
+							"displayName": "кои8т"
+						},
+						"koi8u": {
+							"displayName": "кои8у"
+						},
+						"maccenteuro": {
+							"displayName": "maccenteuro"
+						},
+						"maccroatian": {
+							"displayName": "макроатийский"
+						},
+						"maccyrillic": {
+							"displayName": "маккирилический"
+						},
+						"macgreek": {
+							"displayName": "Макгрек"
+						},
+						"maciceland": {
+							"displayName": "Мейсиленд"
+						},
+						"macintosh": {
+							"displayName": "Макинтош"
+						},
+						"macroman": {
+							"displayName": "макромен"
+						},
+						"macromania": {
+							"displayName": "макромания"
+						},
+						"macthai": {
+							"displayName": "Мактай"
+						},
+						"macturkish": {
+							"displayName": "Мактурецкий"
+						},
+						"macukraine": {
+							"displayName": "Макукраина"
+						},
+						"mik": {
+							"displayName": "Мик"
+						},
+						"pt154": {
+							"displayName": "пт154"
+						},
+						"rk1048": {
+							"displayName": "rk1048"
+						},
+						"shiftjis": {
+							"displayName": "Шифтджис"
+						},
+						"tcvn": {
+							"displayName": "ТКВН"
+						},
+						"tis620": {
+							"displayName": "тис620"
+						},
+						"ucs2": {
+							"displayName": "ucs2"
+						},
+						"utf16": {
+							"displayName": "utf16"
+						},
+						"utf16be": {
+							"displayName": "utf16be"
+						},
+						"utf32": {
+							"displayName": "utf32"
+						},
+						"utf32be": {
+							"displayName": "utf32be"
+						},
+						"utf32le": {
+							"displayName": "utf32le"
+						},
+						"utf7": {
+							"displayName": "utf7"
+						},
+						"utf7imap": {
+							"displayName": "utf7imap"
+						},
+						"utf8": {
+							"displayName": "utf8"
+						},
+						"viscii": {
+							"displayName": "внутренние органы"
+						},
+						"windows1250": {
+							"displayName": "windows1250"
+						},
+						"windows1251": {
+							"displayName": "windows1251"
+						},
+						"windows1252": {
+							"displayName": "windows1252"
+						},
+						"windows1253": {
+							"displayName": "windows1253"
+						},
+						"windows1254": {
+							"displayName": "windows1254"
+						},
+						"windows1255": {
+							"displayName": "windows1255"
+						},
+						"windows1256": {
+							"displayName": "windows1256"
+						},
+						"windows1257": {
+							"displayName": "windows1257"
+						},
+						"windows1258": {
+							"displayName": "windows1258"
+						},
+						"windows874": {
+							"displayName": "windows874"
+						}
+					}
+				},
+				"mimeType": {
+					"displayName": "MIME-тип",
+					"description": "MIME-тип выходного файла. <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types\" target=\"_blank\">Распространенные типы MIME</a>.",
+					"placeholder": "например текст/обычный"
+				},
+				"format": {
+					"displayName": "Формат",
+					"description": "Следует ли форматировать данные JSON для облегчения чтения."
+				}
+			}
+		},
+		"sourceProperty": {
+			"displayName": "Поле ввода текста",
+			"description": "Имя поля ввода, содержащего строку для преобразования в файл. Используйте точечную нотацию для глубоких полей (например, «level1.level2.currentKey»).",
+			"placeholder": "например данные"
+		},
+		"mode": {
+			"displayName": "Режим",
+			"options": {
+				"once": {
+					"displayName": "Все элементы в один файл"
+				},
+				"each": {
+					"displayName": "Каждый элемент в отдельный файл"
+				}
+			}
+		},
+		"title": {
+			"displayName": "Название события",
+			"placeholder": "например Новое событие"
+		},
+		"start": {
+			"displayName": "Начинать",
+			"description": "Дата и время начала мероприятия. (Для мероприятий, продолжающихся целый день, время будет игнорироваться.)."
+		},
+		"end": {
+			"displayName": "Конец",
+			"description": "Дата и время окончания мероприятия. (Для мероприятий, продолжающихся целый день, время будет игнорироваться.).",
+			"hint": "Если не установлено, будет равно дате начала."
+		},
+		"allDay": {
+			"displayName": "Весь день",
+			"description": "Независимо от того, продлится ли мероприятие весь день или нет"
+		},
+		"additionalFields": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"attendeesUi": {
+					"values": {
+						"attendeesUi": {
+							"displayName": "Участники"
+						},
+						"attendeeValues": {
+							"options": {
+								"name": {
+									"displayName": "Имя"
+								},
+								"email": {
+									"displayName": "Электронная почта",
+									"placeholder": "например имя@email.com"
+								},
+								"rsvp": {
+									"displayName": "RSVP",
+									"description": "Должен ли участник подтверждать свое присутствие или нет"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить участника",
+					"displayName": "Участники",
+					"options": {
+						"attendeeValues": {
+							"displayName": "Участники"
+						}
+					}
+				},
+				"busyStatus": {
+					"displayName": "Статус занятости",
+					"description": "Используется для указания статуса занятости для приложений Microsoft, таких как Outlook.",
+					"options": {
+						"BUSY": {
+							"displayName": "Занятый"
+						},
+						"TENTATIVE": {
+							"displayName": "Пробный"
+						}
+					}
+				},
+				"calName": {
+					"displayName": "Название календаря",
+					"description": "Указывает имя календаря (не события). Используется Apple iCal и Microsoft Outlook. <a href=\"https://docs.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-oxcical/1da58449-b97e-46bd-b018-a1ce576f3e6d\">Подробнее</a>."
+				},
+				"description": {
+					"displayName": "Описание"
+				},
+				"fileName": {
+					"displayName": "Имя файла",
+					"description": "Имя создаваемого файла. Имя по умолчанию — event.ics.",
+					"placeholder": "например event.ics"
+				},
+				"geolocationUi": {
+					"values": {
+						"geolocationUi": {
+							"displayName": "Геолокация"
+						},
+						"geolocationValues": {
+							"options": {
+								"lat": {
+									"displayName": "Широта"
+								},
+								"lon": {
+									"displayName": "Долгота"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить геолокацию",
+					"displayName": "Геолокация",
+					"options": {
+						"geolocationValues": {
+							"displayName": "Геолокация"
+						}
+					}
+				},
+				"location": {
+					"displayName": "Расположение",
+					"description": "Предполагаемое место проведения"
+				},
+				"recurrenceRule": {
+					"displayName": "Правило повторения",
+					"description": "Правило, определяющее шаблон повторения события (RRULE). (<a href=\"https://icalendar.org/rrule-tool.html\">Генератор правил</a>)."
+				},
+				"organizerUi": {
+					"values": {
+						"organizerUi": {
+							"displayName": "Организатор"
+						},
+						"organizerValues": {
+							"options": {
+								"name": {
+									"displayName": "Имя"
+								},
+								"email": {
+									"displayName": "Электронная почта",
+									"placeholder": "например имя@email.com"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить организатора",
+					"displayName": "Организатор",
+					"options": {
+						"organizerValues": {
+							"displayName": "Организатор"
+						}
+					}
+				},
+				"sequence": {
+					"displayName": "Последовательность",
+					"description": "При отправке обновления для события (с тем же uid) определяет порядковый номер версии."
+				},
+				"status": {
+					"displayName": "Статус",
+					"options": {
+						"CONFIRMED": {
+							"displayName": "Подтвержденный"
+						},
+						"CANCELLED": {
+							"displayName": "Отменено"
+						},
+						"TENTATIVE": {
+							"displayName": "Пробный"
+						}
+					}
+				},
+				"uid": {
+					"displayName": "UID",
+					"description": "Универсальный уникальный идентификатор события (будет сгенерирован автоматически, если здесь не указано). Должен быть глобально уникальным."
+				},
+				"url": {
+					"displayName": "URL",
+					"description": "URL-адрес, связанный с событием"
+				},
+				"useWorkflowTimezone": {
+					"displayName": "Использовать часовой пояс рабочего процесса",
+					"description": "Использовать ли часовой пояс рабочего процесса, установленный в настройках узла, а не UTC."
+				}
+			}
+		}
+	}
+}

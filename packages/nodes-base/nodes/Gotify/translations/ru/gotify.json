@@ -1,0 +1,77 @@
+{
+	"header": {
+		"displayName": "Готифай",
+		"description": "Использование API Gotify"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"message": {
+					"displayName": "Сообщение"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать"
+				},
+				"delete": {
+					"displayName": "Удалить"
+				},
+				"getAll": {
+					"displayName": "Получить много"
+				}
+			}
+		},
+		"message": {
+			"displayName": "Сообщение",
+			"description": "Сообщение для отправки. Если вы используете Markdown, добавьте параметр «Тип контента»."
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"priority": {
+					"displayName": "Приоритет",
+					"description": "Приоритет сообщения"
+				},
+				"title": {
+					"displayName": "Заголовок",
+					"description": "Название сообщения"
+				}
+			}
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"contentType": {
+					"displayName": "Тип контента",
+					"description": "Тип содержимого сообщения",
+					"options": {
+						"text/plain": {
+							"displayName": "Простой"
+						},
+						"text/markdown": {
+							"displayName": "Уценка"
+						}
+					}
+				}
+			}
+		},
+		"messageId": {
+			"displayName": "Идентификатор сообщения"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		}
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"header": {
+		"displayName": "PayPal Триггер",
+		"description": "Обработка событий PayPal через веб-перехватчики"
+	},
+	"nodeView": {
+		"events": {
+			"displayName": "Имена или идентификаторы событий",
+			"description": "Событие, которое нужно прослушать. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		}
+	}
+}

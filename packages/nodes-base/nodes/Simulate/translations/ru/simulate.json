@@ -1,0 +1,41 @@
+{
+	"header": {
+		"displayName": "Имитировать",
+		"description": "Имитировать узел"
+	},
+	"nodeView": {
+		"icon": {
+			"displayName": "Значок для отображения на холсте",
+			"description": "Выберите тип узла, чтобы отобразить соответствующий значок."
+		},
+		"subtitle": {
+			"displayName": "Субтитры",
+			"placeholder": "например 'запись: прочитать'"
+		},
+		"output": {
+			"displayName": "Выход",
+			"options": {
+				"all": {
+					"displayName": "Возвращает все входные элементы"
+				},
+				"specify": {
+					"displayName": "Укажите, сколько входных элементов нужно вернуть"
+				},
+				"custom": {
+					"displayName": "Укажите вывод в формате JSON"
+				}
+			}
+		},
+		"numberOfItems": {
+			"displayName": "Количество предметов",
+			"description": "Ввод количества элементов для возврата. Если больше, чем длина ввода, все элементы будут возвращены."
+		},
+		"jsonOutput": {
+			"displayName": "JSON"
+		},
+		"executionDuration": {
+			"displayName": "Продолжительность выполнения (мс)",
+			"description": "Длительность выполнения в миллисекундах"
+		}
+	}
+}

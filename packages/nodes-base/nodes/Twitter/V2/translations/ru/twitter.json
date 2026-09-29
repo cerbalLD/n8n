@@ -1,0 +1,218 @@
+{
+	"header": {
+		"displayName": "X (ранее Твиттер)",
+		"description": "Публикуйте, ставьте лайки и ищите твиты, отправляйте сообщения, ищите пользователей и добавляйте пользователей в списки."
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"directMessage": {
+					"displayName": "Прямое сообщение",
+					"description": "Отправить прямое сообщение пользователю"
+				},
+				"list": {
+					"displayName": "Список",
+					"description": "Добавить пользователя в список"
+				},
+				"tweet": {
+					"displayName": "Твитнуть",
+					"description": "Создать, поставить лайк, найти или удалить твит"
+				},
+				"user": {
+					"displayName": "Пользователь",
+					"description": "Поиск пользователей по имени пользователя"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать, процитировать или ответить на твит"
+				},
+				"add": {
+					"displayName": "Добавить участника",
+					"description": "Добавить участника в список"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить твит"
+				},
+				"like": {
+					"displayName": "Нравиться",
+					"description": "Как твит"
+				},
+				"retweet": {
+					"displayName": "Ретвитнуть",
+					"description": "Ретвитнуть твит"
+				},
+				"search": {
+					"displayName": "Поиск",
+					"description": "Поиск твитов за последние семь дней"
+				},
+				"searchUser": {
+					"displayName": "Получать",
+					"description": "Получить пользователя по имени пользователя"
+				}
+			}
+		},
+		"user": {
+			"displayName": "Пользователь",
+			"description": "Пользователь, которого вы хотите найти"
+		},
+		"text": {
+			"displayName": "Текст",
+			"description": "Текст обновления статуса. URL-адреса должны быть закодированы. Ссылки, обернутые сокращателем t.co, будут влиять на количество символов."
+		},
+		"additionalFields": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"attachments": {
+					"displayName": "Идентификатор носителя",
+					"description": "Идентификатор вложения, который нужно связать с сообщением.",
+					"placeholder": "1664279886239010824"
+				},
+				"location": {
+					"displayName": "Идентификатор местоположения",
+					"description": "Информация о местоположении твита",
+					"placeholder": "4e696bef7e24d378"
+				},
+				"inQuoteToStatusId": {
+					"displayName": "Цитировать твит",
+					"description": "Цитируемый твит"
+				},
+				"inReplyToStatusId": {
+					"displayName": "Ответ на твит",
+					"description": "Твит, на который ответили"
+				},
+				"sortOrder": {
+					"displayName": "Порядок сортировки",
+					"description": "Порядок возврата результатов",
+					"options": {
+						"recency": {
+							"displayName": "Недавний"
+						},
+						"relevancy": {
+							"displayName": "Соответствующий"
+						}
+					}
+				},
+				"startTime": {
+					"displayName": "После",
+					"description": "Твиты до этой даты не будут возвращены. Эта дата должна быть в пределах последних 7 дней, если у вас нет доступа к академическим исследованиям."
+				},
+				"endTime": {
+					"displayName": "До",
+					"description": "Твиты после этой даты не будут возвращены. Эта дата должна быть в пределах последних 7 дней, если у вас нет доступа к академическим исследованиям."
+				},
+				"tweetFieldsObject": {
+					"displayName": "Поля для твитов",
+					"description": "Поля, добавляемые к каждому возвращаемому объекту твита. Поля по умолчанию: ID, текст, edit_history_tweet_ids.",
+					"options": {
+						"attachments": {
+							"displayName": "Вложения"
+						},
+						"author_id": {
+							"displayName": "Идентификатор автора"
+						},
+						"context_annotations": {
+							"displayName": "Контекстные аннотации"
+						},
+						"conversation_id": {
+							"displayName": "Идентификатор беседы"
+						},
+						"created_at": {
+							"displayName": "Создано в"
+						},
+						"edit_controls": {
+							"displayName": "Редактировать элементы управления"
+						},
+						"entities": {
+							"displayName": "Сущности"
+						},
+						"geo": {
+							"displayName": "Гео"
+						},
+						"id": {
+							"displayName": "ID"
+						},
+						"in_reply_to_user_id": {
+							"displayName": "В ответ на идентификатор пользователя"
+						},
+						"lang": {
+							"displayName": "Ланг"
+						},
+						"non_public_metrics": {
+							"displayName": "Непубличные показатели"
+						},
+						"public_metrics": {
+							"displayName": "Публичные показатели"
+						},
+						"organic_metrics": {
+							"displayName": "Органические показатели"
+						},
+						"promoted_metrics": {
+							"displayName": "Продвигаемые метрики"
+						},
+						"possibly_sensitive": {
+							"displayName": "Возможно чувствительный"
+						},
+						"referenced_tweets": {
+							"displayName": "Ссылки на твиты"
+						},
+						"reply_settings": {
+							"displayName": "Настройки ответа"
+						},
+						"source": {
+							"displayName": "Источник"
+						},
+						"text": {
+							"displayName": "Текст"
+						},
+						"withheld": {
+							"displayName": "Удержано"
+						}
+					}
+				}
+			}
+		},
+		"list": {
+			"displayName": "Список",
+			"description": "Список, в который вы хотите добавить пользователя"
+		},
+		"noticeLocation": {
+			"displayName": "Местоположение не поддерживается из-за ограничений API Twitter V2."
+		},
+		"noticeAttachments": {
+			"displayName": "Вложения не поддерживаются из-за ограничений API Twitter V2."
+		},
+		"tweetDeleteId": {
+			"displayName": "Твитнуть",
+			"description": "Твит, который нужно удалить"
+		},
+		"tweetId": {
+			"displayName": "Твитнуть",
+			"description": "Твит, который нужно ретвитнуть"
+		},
+		"searchText": {
+			"displayName": "Поисковый запрос",
+			"description": "Поисковый запрос в кодировке URL-адреса UTF-8 длиной не более 500 символов, включая операторы. Запросы могут быть дополнительно ограничены по сложности. Ознакомьтесь с примерами поиска <a href=\"https://developer.twitter.com/en/docs/tweets/search/guides/standard-operators\">здесь</a>.",
+			"placeholder": "например автоматизация"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"me": {
+			"displayName": "Мне",
+			"description": "Хотите ли вы выполнить поиск аутентифицированного пользователя"
+		}
+	}
+}

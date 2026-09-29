@@ -1,0 +1,255 @@
+{
+	"header": {
+		"displayName": "Следующее облако",
+		"description": "Доступ к данным в Nextcloud"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"accessToken": {
+					"displayName": "Токен доступа"
+				},
+				"oAuth2": {
+					"displayName": "ОАут2"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"file": {
+					"displayName": "Файл"
+				},
+				"folder": {
+					"displayName": "Папка"
+				},
+				"user": {
+					"displayName": "Пользователь"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"copy": {
+					"displayName": "Копировать",
+					"description": "Копирование папки"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удаление пользователя"
+				},
+				"download": {
+					"displayName": "Скачать",
+					"description": "Скачать файл"
+				},
+				"move": {
+					"displayName": "Двигаться",
+					"description": "Переместить папку"
+				},
+				"share": {
+					"displayName": "Делиться",
+					"description": "Поделиться папкой"
+				},
+				"upload": {
+					"displayName": "Загрузить",
+					"description": "Загрузить файл"
+				},
+				"create": {
+					"displayName": "Создавать",
+					"description": "Пригласить пользователя в организацию NextCloud"
+				},
+				"list": {
+					"displayName": "Список",
+					"description": "Вернуть содержимое заданной папки"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить информацию об одном пользователе"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить список пользователей"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Редактировать атрибуты, связанные с пользователем"
+				}
+			}
+		},
+		"path": {
+			"displayName": "Путь к папке",
+			"description": "Путь для перечисления содержимого. Путь должен начинаться с «/».",
+			"placeholder": "/счета/2019/"
+		},
+		"toPath": {
+			"displayName": "К пути",
+			"description": "Новый путь к файлу или папке. Путь должен начинаться с «/».",
+			"placeholder": "/invoices/новое_имя.txt"
+		},
+		"binaryPropertyName": {
+			"displayName": "Входное двоичное поле",
+			"hint": "Имя входного двоичного поля, содержащего файл для загрузки."
+		},
+		"binaryDataUpload": {
+			"displayName": "Двоичный файл"
+		},
+		"fileContent": {
+			"displayName": "Содержимое файла",
+			"description": "Текстовое содержимое файла для загрузки"
+		},
+		"shareType": {
+			"displayName": "Тип акции",
+			"description": "Разрешения на общий доступ, которые можно установить",
+			"options": {
+				"0": {
+					"displayName": "Пользователь"
+				},
+				"1": {
+					"displayName": "Группа"
+				},
+				"3": {
+					"displayName": "Публичная ссылка"
+				},
+				"4": {
+					"displayName": "Электронная почта"
+				},
+				"7": {
+					"displayName": "Круг"
+				},
+				"200": {
+					"displayName": "Внутренняя ссылка",
+					"description": "Создает внутренний URL-адрес Nextcloud (не общедоступный ресурс). Использует идентификатор файла/папки из вызова PROPFIND. Вывод: { link: \"...\" }. Не используйте с полями ShareWith."
+				}
+			}
+		},
+		"circleId": {
+			"displayName": "Идентификатор круга",
+			"description": "Идентификатор круга, с которым можно поделиться"
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"description": "Электронная почта пользователя, которого следует пригласить",
+			"placeholder": "john@email.com"
+		},
+		"groupId": {
+			"displayName": "Идентификатор группы",
+			"description": "Идентификатор группы, с которой можно поделиться"
+		},
+		"user": {
+			"displayName": "Пользователь",
+			"description": "Пользователь, с которым можно поделиться"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"password": {
+					"displayName": "Пароль",
+					"description": "Необязательная строка поиска"
+				},
+				"permissions": {
+					"displayName": "Разрешения",
+					"description": "Разрешения на общий доступ, которые можно установить",
+					"options": {
+						"1": {
+							"displayName": "Читать"
+						},
+						"2": {
+							"displayName": "Обновлять"
+						},
+						"4": {
+							"displayName": "Создавать"
+						},
+						"8": {
+							"displayName": "Удалить"
+						},
+						"31": {
+							"displayName": "Все"
+						}
+					}
+				},
+				"search": {
+					"displayName": "Поиск",
+					"description": "Необязательная строка поиска"
+				},
+				"offset": {
+					"displayName": "Компенсировать",
+					"description": "Дополнительное значение смещения"
+				}
+			}
+		},
+		"userId": {
+			"displayName": "Имя пользователя",
+			"description": "Имя пользователя, которое будет иметь пользователь",
+			"placeholder": "Джон"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"displayName": {
+					"displayName": "Отображаемое имя",
+					"description": "Отображаемое имя пользователя, которого нужно пригласить."
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"updateFields": {
+			"options": {
+				"updateFields": {
+					"displayName": "Обновить поля"
+				},
+				"field": {
+					"displayName": "Поля",
+					"values": {
+						"key": {
+							"displayName": "Ключ",
+							"description": "Ключ обновленного атрибута",
+							"options": {
+								"address": {
+									"displayName": "Адрес",
+									"description": "Новый адрес пользователя"
+								},
+								"displayname": {
+									"displayName": "Отображаемое имя",
+									"description": "Новое отображаемое имя пользователя."
+								},
+								"email": {
+									"displayName": "Электронная почта",
+									"description": "Новый адрес электронной почты пользователя"
+								},
+								"password": {
+									"displayName": "Пароль",
+									"description": "Новый пароль для пользователя"
+								},
+								"twitter": {
+									"displayName": "Твиттер",
+									"description": "Новый дескриптор Twitter для пользователя"
+								},
+								"website": {
+									"displayName": "Веб-сайт",
+									"description": "Новый сайт для пользователя"
+								}
+							}
+						},
+						"value": {
+							"displayName": "Ценить",
+							"description": "Значение обновленного атрибута"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить вариант",
+			"displayName": "Обновить поля"
+		}
+	}
+}

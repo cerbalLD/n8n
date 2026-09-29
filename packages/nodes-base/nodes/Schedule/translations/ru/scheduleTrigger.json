@@ -1,0 +1,205 @@
+{
+	"header": {
+		"displayName": "Расписание триггера",
+		"description": "Запускает рабочий процесс по заданному расписанию"
+	},
+	"nodeView": {
+		"notice": {
+			"displayName": "Этот рабочий процесс будет выполняться по расписанию, которое вы определите здесь, как только вы его опубликуете.<br><br>Для тестирования вы также можете запустить его вручную: вернувшись на холст и нажав «Выполнить рабочий процесс»."
+		},
+		"rule": {
+			"options": {
+				"rule": {
+					"displayName": "Триггерные правила"
+				},
+				"interval": {
+					"displayName": "Интервал запуска",
+					"values": {
+						"field": {
+							"displayName": "Интервал запуска",
+							"options": {
+								"seconds": {
+									"displayName": "Секунды"
+								},
+								"minutes": {
+									"displayName": "Минуты"
+								},
+								"hours": {
+									"displayName": "Часы"
+								},
+								"days": {
+									"displayName": "Дни"
+								},
+								"weeks": {
+									"displayName": "Недели"
+								},
+								"months": {
+									"displayName": "Месяцы"
+								},
+								"cronExpression": {
+									"displayName": "Пользовательский (Cron)"
+								}
+							}
+						},
+						"secondsInterval": {
+							"displayName": "Секунды между триггерами",
+							"description": "Количество секунд между каждым триггером рабочего процесса",
+							"hint": "Должно быть в диапазоне 1–59."
+						},
+						"minutesInterval": {
+							"displayName": "Минуты между триггерами",
+							"description": "Количество минут между каждым триггером рабочего процесса",
+							"hint": "Должно быть в диапазоне 1–59."
+						},
+						"hoursInterval": {
+							"displayName": "Часы между триггерами",
+							"description": "Количество часов между каждым триггером рабочего процесса",
+							"hint": "Должно быть в диапазоне 1–23."
+						},
+						"daysInterval": {
+							"displayName": "Дней между триггерами",
+							"description": "Количество дней между каждым триггером рабочего процесса",
+							"hint": "Должно быть в диапазоне 1–31."
+						},
+						"weeksInterval": {
+							"displayName": "Недели между триггерами",
+							"description": "Будет запускаться каждую неделю, если не указано иное"
+						},
+						"monthsInterval": {
+							"displayName": "Месяцы между триггерами",
+							"description": "Будет запускаться каждый месяц, если не указано иное"
+						},
+						"triggerAtDayOfMonth": {
+							"displayName": "Триггер в день месяца",
+							"description": "День месяца срабатывания (1-31)",
+							"hint": "Если в месяце нет этого дня, узел не сработает"
+						},
+						"triggerAtDay": {
+							"displayName": "Триггер по будням",
+							"options": {
+								"0": {
+									"displayName": "Воскресенье"
+								},
+								"1": {
+									"displayName": "Понедельник"
+								},
+								"2": {
+									"displayName": "Вторник"
+								},
+								"3": {
+									"displayName": "Среда"
+								},
+								"4": {
+									"displayName": "Четверг"
+								},
+								"5": {
+									"displayName": "Пятница"
+								},
+								"6": {
+									"displayName": "Суббота"
+								}
+							}
+						},
+						"triggerAtHour": {
+							"displayName": "Триггер в час",
+							"description": "Час дня для срабатывания",
+							"options": {
+								"0": {
+									"displayName": "Полночь"
+								},
+								"1": {
+									"displayName": "1 утра"
+								},
+								"2": {
+									"displayName": "2 часа ночи"
+								},
+								"3": {
+									"displayName": "3 часа ночи"
+								},
+								"4": {
+									"displayName": "4 утра"
+								},
+								"5": {
+									"displayName": "5 утра"
+								},
+								"6": {
+									"displayName": "6 утра"
+								},
+								"7": {
+									"displayName": "7 утра"
+								},
+								"8": {
+									"displayName": "8 утра"
+								},
+								"9": {
+									"displayName": "9 утра"
+								},
+								"10": {
+									"displayName": "10 утра"
+								},
+								"11": {
+									"displayName": "11 утра"
+								},
+								"12": {
+									"displayName": "Полдень"
+								},
+								"13": {
+									"displayName": "13:00"
+								},
+								"14": {
+									"displayName": "14:00"
+								},
+								"15": {
+									"displayName": "15:00"
+								},
+								"16": {
+									"displayName": "16:00"
+								},
+								"17": {
+									"displayName": "17:00"
+								},
+								"18": {
+									"displayName": "18:00"
+								},
+								"19": {
+									"displayName": "19:00"
+								},
+								"20": {
+									"displayName": "8 вечера"
+								},
+								"21": {
+									"displayName": "21:00"
+								},
+								"22": {
+									"displayName": "22:00"
+								},
+								"23": {
+									"displayName": "23:00"
+								}
+							}
+						},
+						"triggerAtMinute": {
+							"displayName": "Триггер через минуту",
+							"description": "Минута после часа для срабатывания (0-59)"
+						},
+						"notice": {
+							"displayName": "Вы можете найти помощь в создании выражения cron <a href=\"https://crontab.guru/examples.html\" target=\"_blank\">здесь</a>."
+						},
+						"expression": {
+							"displayName": "Выражение",
+							"hint": "Формат: ([Секунда]) [Минута] [Час] [День месяца] [Месяц] [День недели]",
+							"placeholder": "например. 0 15 * 1 солнце"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить правило",
+			"displayName": "Триггерные правила"
+		},
+		"skipDurableScheduler": {
+			"displayName": "Пропустить устойчивый планировщик",
+			"description": "Следует ли запускать этот триггер через устаревший планировщик в памяти вместо надежного планировщика."
+		},
+		"activationMessage": "Ваш триггер расписания теперь будет запускать выполнение по заданному вами расписанию."
+	}
+}

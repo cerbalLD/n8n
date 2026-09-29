@@ -1,0 +1,134 @@
+{
+	"header": {
+		"displayName": "Google Cloud Естественный язык",
+		"description": "Использование API естественного языка Google Cloud"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"document": {
+					"displayName": "Документ"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"analyzeSentiment": {
+					"displayName": "Анализ настроений"
+				}
+			}
+		},
+		"source": {
+			"displayName": "Источник",
+			"description": "Источник документа: строка, содержащая контент, или URI Google Cloud Storage.",
+			"options": {
+				"content": {
+					"displayName": "Содержание"
+				},
+				"gcsContentUri": {
+					"displayName": "URI облачного хранилища Google"
+				}
+			}
+		},
+		"content": {
+			"displayName": "Содержание",
+			"description": "Содержимое ввода в строковом формате. Ведение журнала облачного аудита не облагается, поскольку оно основано на пользовательских данных."
+		},
+		"gcsContentUri": {
+			"displayName": "URI облачного хранилища Google",
+			"description": "URI Google Cloud Storage, в котором находится содержимое файла. Этот URI должен иметь вид: <code>gs://bucket_name/object_name</code>. Дополнительные сведения см. в разделе <a href=\"https://cloud.google.com/storage/docs/reference-uris.\">reference</a>."
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"documentType": {
+					"displayName": "Тип документа",
+					"description": "Тип входного документа",
+					"options": {
+						"HTML": {
+							"displayName": "HTML"
+						},
+						"PLAIN_TEXT": {
+							"displayName": "Обычный текст"
+						}
+					}
+				},
+				"encodingType": {
+					"displayName": "Тип кодировки",
+					"description": "Тип кодировки, используемый API для расчета смещений предложений.",
+					"options": {
+						"NONE": {
+							"displayName": "Никто"
+						},
+						"UTF8": {
+							"displayName": "UTF-8"
+						},
+						"UTF16": {
+							"displayName": "UTF-16"
+						},
+						"UTF32": {
+							"displayName": "UTF-32"
+						}
+					}
+				},
+				"language": {
+					"displayName": "Язык",
+					"description": "Язык документа (если не указан, язык определяется автоматически). Принимаются языковые коды ISO и BCP-47.",
+					"options": {
+						"ar": {
+							"displayName": "арабский"
+						},
+						"zh": {
+							"displayName": "Китайский (упрощенный)"
+						},
+						"zh-Hant": {
+							"displayName": "Китайский (традиционный)"
+						},
+						"nl": {
+							"displayName": "Голландский"
+						},
+						"en": {
+							"displayName": "Английский"
+						},
+						"fr": {
+							"displayName": "Французский"
+						},
+						"de": {
+							"displayName": "немецкий"
+						},
+						"id": {
+							"displayName": "индонезийский"
+						},
+						"it": {
+							"displayName": "итальянский"
+						},
+						"ja": {
+							"displayName": "японский"
+						},
+						"ko": {
+							"displayName": "корейский"
+						},
+						"pt": {
+							"displayName": "Португальский (бразильский и континентальный)"
+						},
+						"es": {
+							"displayName": "испанский"
+						},
+						"th": {
+							"displayName": "тайский"
+						},
+						"tr": {
+							"displayName": "турецкий"
+						},
+						"vi": {
+							"displayName": "вьетнамский"
+						}
+					}
+				}
+			}
+		}
+	}
+}

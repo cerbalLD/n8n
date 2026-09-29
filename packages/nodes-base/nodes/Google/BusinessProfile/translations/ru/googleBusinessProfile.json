@@ -1,0 +1,224 @@
+{
+	"header": {
+		"displayName": "Профиль компании в Google",
+		"description": "Использование API профиля компании Google"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"post": {
+					"displayName": "Почта"
+				},
+				"review": {
+					"displayName": "Обзор"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создайте новую публикацию в профиле компании в Google."
+				},
+				"delete": {
+					"displayName": "Удалить ответ",
+					"description": "Удалить ответ на отзыв"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить подробную информацию о конкретном отзыве в профиле компании в Google."
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить несколько отзывов"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить существующую публикацию"
+				},
+				"reply": {
+					"displayName": "Отвечать",
+					"description": "Ответ на отзыв"
+				}
+			}
+		},
+		"account": {
+			"displayName": "Счет",
+			"description": "Аккаунт профиля компании в Google"
+		},
+		"location": {
+			"displayName": "Расположение",
+			"description": "Конкретное местоположение или компания, связанная с учетной записью."
+		},
+		"postType": {
+			"displayName": "Тип сообщения",
+			"description": "Тип создаваемой публикации (стандартная, событие, предложение или оповещение).",
+			"options": {
+				"STANDARD": {
+					"displayName": "Стандартный"
+				},
+				"EVENT": {
+					"displayName": "Событие"
+				},
+				"OFFER": {
+					"displayName": "Предложение"
+				},
+				"ALERT": {
+					"displayName": "Тревога"
+				}
+			}
+		},
+		"summary": {
+			"displayName": "Краткое содержание",
+			"description": "Основной текст поста"
+		},
+		"title": {
+			"displayName": "Заголовок",
+			"description": "Например. Скидка 20% в магазине или онлайн."
+		},
+		"startDateTime": {
+			"displayName": "Дата и время начала",
+			"description": "Дата и время начала мероприятия"
+		},
+		"endDateTime": {
+			"displayName": "Дата и время окончания",
+			"description": "Дата и время окончания мероприятия"
+		},
+		"startDate": {
+			"displayName": "Дата начала",
+			"description": "Дата начала действия предложения",
+			"placeholder": "YYYY-MM-DD"
+		},
+		"endDate": {
+			"displayName": "Дата окончания",
+			"description": "Дата окончания предложения",
+			"placeholder": "YYYY-MM-DD"
+		},
+		"alertType": {
+			"displayName": "Тип оповещения",
+			"description": "Подтип оповещения",
+			"options": {
+				"COVID_19": {
+					"displayName": "COVID-19",
+					"description": "Это предупреждение связано с пандемией коронавирусного заболевания 2019 года."
+				}
+			}
+		},
+		"additionalOptions": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"languageCode": {
+					"displayName": "Язык",
+					"description": "Код языка содержимого публикации. <a href=\"https://cloud.google.com/translate/docs/languages\" target=\"_blank\">Подробнее</a>.",
+					"placeholder": "например ru"
+				},
+				"callToActionType": {
+					"displayName": "Тип призыва к действию",
+					"description": "Тип призыва к действию",
+					"options": {
+						"ACTION_TYPE_UNSPECIFIED": {
+							"displayName": "Тип действия не указан",
+							"description": "Тип не указан"
+						},
+						"BOOK": {
+							"displayName": "Книга",
+							"description": "В этом сообщении пользователь хочет записаться на прием/стол/и т. д."
+						},
+						"CALL": {
+							"displayName": "Вызов",
+							"description": "В этом сообщении пользователь хочет позвонить в компанию"
+						},
+						"LEARN_MORE": {
+							"displayName": "Узнать больше",
+							"description": "Этот пост хочет, чтобы пользователь узнал больше (на своем веб-сайте)."
+						},
+						"ORDER": {
+							"displayName": "Заказ",
+							"description": "Этот пост хочет, чтобы пользователь что-то заказал"
+						},
+						"SHOP": {
+							"displayName": "Магазин",
+							"description": "В этом сообщении пользователю предлагается просмотреть каталог продуктов."
+						},
+						"SIGN_UP": {
+							"displayName": "Зарегистрироваться",
+							"description": "В этом сообщении пользователю предлагается зарегистрироваться/зарегистрироваться/присоединиться к чему-либо."
+						},
+						"GET_OFFER": {
+							"displayName": "Получить предложение",
+							"description": "Устарело. Используйте OFFER в LocalPostTopicType, чтобы создать публикацию с содержанием предложения."
+						}
+					}
+				},
+				"url": {
+					"displayName": "URL-адрес призыва к действию",
+					"description": "URL-адрес, на который перенаправляются пользователи при переходе по рекламному объявлению."
+				},
+				"couponCode": {
+					"displayName": "Код купона",
+					"description": "Код купона для предложения"
+				},
+				"redeemOnlineUrl": {
+					"displayName": "Активировать онлайн-URL",
+					"description": "Ссылка для активации предложения"
+				},
+				"termsConditions": {
+					"displayName": "Условия и положения",
+					"description": "Условия предложения"
+				},
+				"summary": {
+					"displayName": "Краткое содержание",
+					"description": "Основной текст поста"
+				},
+				"startDateTime": {
+					"displayName": "Дата и время начала",
+					"description": "Дата и время начала мероприятия"
+				},
+				"endDateTime": {
+					"displayName": "Дата и время окончания",
+					"description": "Дата и время окончания мероприятия"
+				},
+				"title": {
+					"displayName": "Заголовок",
+					"description": "Например. Скидка 20% в магазине или онлайн."
+				},
+				"startDate": {
+					"displayName": "Дата начала",
+					"description": "Дата начала действия предложения",
+					"placeholder": "YYYY-MM-DD"
+				},
+				"endDate": {
+					"displayName": "Дата окончания",
+					"description": "Дата окончания предложения",
+					"placeholder": "YYYY-MM-DD"
+				}
+			}
+		},
+		"post": {
+			"displayName": "Почта",
+			"description": "Выберите публикацию, чтобы получить ее подробную информацию."
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"notice": {
+			"displayName": "Убедитесь, что обновленные параметры поддерживаются типом публикации. <a target='_blank' href='https://developers.google.com/my-business/reference/rest/v4/accounts.locations.localPosts#resource:-localpost'>Подробнее</a>."
+		},
+		"review": {
+			"displayName": "Обзор",
+			"description": "Выберите отзыв, чтобы получить его подробную информацию."
+		},
+		"reply": {
+			"displayName": "Отвечать",
+			"description": "Тело ответа (до 4096 символов)"
+		}
+	}
+}

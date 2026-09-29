@@ -1,0 +1,43 @@
+{
+	"header": {
+		"displayName": "AMQP-отправитель",
+		"description": "Отправляет необработанное сообщение через AMQP 1.0, выполняется один раз для каждого элемента."
+	},
+	"nodeView": {
+		"sink": {
+			"displayName": "Очередь/Тема",
+			"description": "Имя очереди или темы для публикации",
+			"placeholder": "например тема://имя_источника.что-то"
+		},
+		"headerParametersJson": {
+			"displayName": "Заголовки",
+			"description": "Параметры заголовка в формате JSON (плоский объект). Отправляется как application_properties в метаинформации amqp-сообщения."
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"containerId": {
+					"displayName": "Идентификатор контейнера",
+					"description": "Будет использоваться для передачи на серверную часть RHEA какContainer_id."
+				},
+				"dataAsObject": {
+					"displayName": "Данные как объект",
+					"description": "Отправлять ли данные как объект"
+				},
+				"reconnect": {
+					"displayName": "Восстановить соединение",
+					"description": "Следует ли автоматически переподключаться в случае отключения"
+				},
+				"reconnectLimit": {
+					"displayName": "Лимит повторного подключения",
+					"description": "Максимальное количество попыток переподключения"
+				},
+				"sendOnlyProperty": {
+					"displayName": "Отправить недвижимость",
+					"description": "Единственное имущество для отправки. Если пусто, будет отправлен весь товар."
+				}
+			}
+		}
+	}
+}

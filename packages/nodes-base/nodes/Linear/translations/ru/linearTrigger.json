@@ -1,0 +1,49 @@
+{
+	"header": {
+		"displayName": "Линейный триггер",
+		"description": "Запускает рабочий процесс при возникновении линейных событий."
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"apiToken": {
+					"displayName": "API-токен"
+				},
+				"oAuth2": {
+					"displayName": "ОАут2"
+				}
+			}
+		},
+		"notice": {
+			"displayName": "Убедитесь, что ваши учетные данные имеют область действия «Администратор» для создания веб-перехватчиков."
+		},
+		"teamId": {
+			"displayName": "Название или идентификатор команды",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"resources": {
+			"displayName": "Слушайте ресурсы",
+			"options": {
+				"reaction": {
+					"displayName": "Комментарий Реакция"
+				},
+				"cycle": {
+					"displayName": "Цикл"
+				},
+				"issue": {
+					"displayName": "Проблема"
+				},
+				"comment": {
+					"displayName": "Комментарий к проблеме"
+				},
+				"issueLabel": {
+					"displayName": "Этикетка проблемы"
+				},
+				"project": {
+					"displayName": "Проект"
+				}
+			}
+		}
+	}
+}

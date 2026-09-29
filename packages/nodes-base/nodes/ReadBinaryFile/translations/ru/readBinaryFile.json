@@ -1,0 +1,17 @@
+{
+	"header": {
+		"displayName": "Чтение двоичного файла",
+		"description": "Читает двоичный файл с диска"
+	},
+	"nodeView": {
+		"filePath": {
+			"displayName": "Путь к файлу",
+			"description": "Путь к файлу для чтения",
+			"placeholder": "/данные/пример.jpg"
+		},
+		"dataPropertyName": {
+			"displayName": "Имя свойства",
+			"description": "Имя двоичного свойства, в которое записываются данные считанного файла."
+		}
+	}
+}

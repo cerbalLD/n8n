@@ -1,0 +1,321 @@
+{
+	"header": {
+		"displayName": "Тайга",
+		"description": "Использование API Тайги"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"epic": {
+					"displayName": "Эпический"
+				},
+				"issue": {
+					"displayName": "Проблема"
+				},
+				"task": {
+					"displayName": "Задача"
+				},
+				"userStory": {
+					"displayName": "История пользователя"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создайте пользовательскую историю"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удаление пользовательской истории"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить пользовательскую историю"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получите множество пользовательских историй"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить историю пользователя"
+				}
+			}
+		},
+		"projectId": {
+			"displayName": "Название или идентификатор проекта",
+			"description": "Идентификатор проекта, для которого нужно установить пользовательскую историю. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"subject": {
+			"displayName": "Предмет"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"assigned_to": {
+					"displayName": "Имя или идентификатор правопреемника",
+					"description": "Идентификатор пользователя, которому назначена пользовательская история. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"blocked_note": {
+					"displayName": "Заблокированная заметка",
+					"description": "Причина, по которой история пользователя заблокирована. Требуется, чтобы переключатель «Заблокировано» был включен."
+				},
+				"color": {
+					"displayName": "Цвет",
+					"description": "Цветовой код в шестнадцатеричной системе счисления"
+				},
+				"description": {
+					"displayName": "Описание"
+				},
+				"is_blocked": {
+					"displayName": "заблокирован",
+					"description": "Блокируется ли пользовательская история"
+				},
+				"tags": {
+					"displayName": "Имена или идентификаторы тегов",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"milestone": {
+					"displayName": "Название или идентификатор этапа (спринта)",
+					"description": "Идентификатор вехи пользовательской истории. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"priority": {
+					"displayName": "Имя или идентификатор приоритета",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"severity": {
+					"displayName": "Имя или идентификатор серьезности",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"status": {
+					"displayName": "Имя или идентификатор статуса",
+					"description": "Идентификатор статуса пользовательской истории. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"type": {
+					"displayName": "Введите имя или идентификатор",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"taskboard_order": {
+					"displayName": "Порядок на панели задач",
+					"description": "Порядок задач на доске задач"
+				},
+				"user_story": {
+					"displayName": "Имя или идентификатор пользовательской истории",
+					"description": "Идентификатор пользовательской истории задачи. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"us_order": {
+					"displayName": "Порядок пользовательских историй",
+					"description": "Порядок выполнения задачи в пользовательской истории"
+				},
+				"backlog_order": {
+					"displayName": "Невыполненный заказ",
+					"description": "Порядок пользовательской истории в бэклоге"
+				},
+				"kanban_order": {
+					"displayName": "Канбан-заказ",
+					"description": "Порядок пользовательской истории в канбане"
+				},
+				"sprint_order": {
+					"displayName": "Порядок спринта",
+					"description": "Порядок пользовательской истории в вехе"
+				}
+			}
+		},
+		"epicId": {
+			"displayName": "Эпический идентификатор",
+			"description": "Идентификатор эпика для обновления"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"assigned_to": {
+					"displayName": "Имя или идентификатор правопреемника",
+					"description": "Идентификатор пользователя, которому назначена пользовательская история. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"statusIsClosed": {
+					"displayName": "Закрыто",
+					"description": "Закрыта ли история пользователя"
+				},
+				"orderBy": {
+					"displayName": "Заказать по",
+					"description": "Поле для упорядочивания задач по",
+					"options": {
+						"assigned_to": {
+							"displayName": "Назначено"
+						},
+						"created_date": {
+							"displayName": "Дата создания"
+						},
+						"modified_date": {
+							"displayName": "Дата изменения"
+						},
+						"owner": {
+							"displayName": "Владелец"
+						},
+						"priority": {
+							"displayName": "Приоритет"
+						},
+						"severity": {
+							"displayName": "Серьезность"
+						},
+						"status": {
+							"displayName": "Статус"
+						},
+						"subject": {
+							"displayName": "Предмет"
+						},
+						"type": {
+							"displayName": "Тип"
+						}
+					}
+				},
+				"owner": {
+					"displayName": "Имя или идентификатор владельца",
+					"description": "Идентификатор владельца задачи. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"priority": {
+					"displayName": "Имя или идентификатор приоритета",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"role": {
+					"displayName": "Имя или идентификатор роли",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"severity": {
+					"displayName": "Имя или идентификатор серьезности",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"status": {
+					"displayName": "Имя или идентификатор статуса",
+					"description": "Идентификатор статуса пользовательской истории. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"tags": {
+					"displayName": "Имена или идентификаторы тегов",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"type": {
+					"displayName": "Введите имя или идентификатор",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"milestone": {
+					"displayName": "Название или идентификатор этапа (спринта)",
+					"description": "Идентификатор вехи пользовательской истории. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"userStory": {
+					"displayName": "Имя или идентификатор пользовательской истории",
+					"description": "Идентификатор пользовательской истории, которой принадлежит задача. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"epic": {
+					"displayName": "Эпическое имя или идентификатор",
+					"description": "Идентификатор эпика, к которому принадлежит пользовательская история. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"statusIsArchived": {
+					"displayName": "В архиве",
+					"description": "Была ли пользовательская история заархивирована"
+				}
+			}
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"assigned_to": {
+					"displayName": "Имя или идентификатор правопреемника",
+					"description": "Идентификатор пользователя, которому нужно назначить пользовательскую историю. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"blocked_note": {
+					"displayName": "Заблокированная заметка",
+					"description": "Причина, по которой история пользователя заблокирована. Требуется, чтобы переключатель «Заблокировано» был включен."
+				},
+				"color": {
+					"displayName": "Цвет",
+					"description": "Цветовой код в шестнадцатеричной системе счисления"
+				},
+				"description": {
+					"displayName": "Описание"
+				},
+				"is_blocked": {
+					"displayName": "заблокирован",
+					"description": "Блокируется ли пользовательская история"
+				},
+				"subject": {
+					"displayName": "Предмет"
+				},
+				"tags": {
+					"displayName": "Имена или идентификаторы тегов",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"milestone": {
+					"displayName": "Название или идентификатор этапа (спринта)",
+					"description": "Идентификатор вехи пользовательской истории. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"priority": {
+					"displayName": "Имя или идентификатор приоритета",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"severity": {
+					"displayName": "Имя или идентификатор серьезности",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"status": {
+					"displayName": "Имя или идентификатор статуса",
+					"description": "Идентификатор статуса пользовательской истории. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"type": {
+					"displayName": "Введите имя или идентификатор",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"user_story": {
+					"displayName": "Имя или идентификатор пользовательской истории",
+					"description": "Идентификатор пользовательской истории задачи. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"us_order": {
+					"displayName": "Порядок пользовательских историй",
+					"description": "Порядок выполнения задачи в пользовательской истории"
+				},
+				"taskboard_order": {
+					"displayName": "Порядок на панели задач",
+					"description": "Порядок задач на доске задач"
+				},
+				"backlog_order": {
+					"displayName": "Невыполненный заказ",
+					"description": "Порядок пользовательской истории в бэклоге"
+				},
+				"kanban_order": {
+					"displayName": "Канбан-заказ",
+					"description": "Порядок пользовательской истории в канбане"
+				},
+				"sprint_order": {
+					"displayName": "Порядок спринта",
+					"description": "Порядок пользовательской истории в вехе"
+				}
+			}
+		},
+		"issueId": {
+			"displayName": "Идентификатор проблемы",
+			"description": "Идентификатор проблемы, которую необходимо обновить"
+		},
+		"taskId": {
+			"displayName": "Идентификатор задачи",
+			"description": "Идентификатор задачи для обновления"
+		},
+		"userStoryId": {
+			"displayName": "Идентификатор пользовательской истории",
+			"description": "Идентификатор пользовательской истории для обновления"
+		}
+	}
+}

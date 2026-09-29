@@ -1,0 +1,121 @@
+{
+	"header": {
+		"displayName": "Охотник",
+		"description": "Использовать Hunter API"
+	},
+	"nodeView": {
+		"operation": {
+			"displayName": "Операция",
+			"description": "Операция по потреблению",
+			"options": {
+				"domainSearch": {
+					"displayName": "Поиск домена",
+					"description": "Получите каждый адрес электронной почты, найденный в Интернете, используя заданное доменное имя, с источниками."
+				},
+				"emailFinder": {
+					"displayName": "Поиск электронной почты",
+					"description": "Создайте или получите наиболее вероятный адрес электронной почты из имени домена, имени и фамилии."
+				},
+				"emailVerifier": {
+					"displayName": "Верификатор электронной почты",
+					"description": "Проверьте доставляемость адреса электронной почты"
+				}
+			}
+		},
+		"domain": {
+			"displayName": "Домен",
+			"description": "Доменное имя, адреса электронной почты которого вы хотите найти. Например, «stripe.com»."
+		},
+		"onlyEmails": {
+			"displayName": "Только электронные письма",
+			"description": "Возвращать ли только найденные электронные письма"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"type": {
+					"displayName": "Тип",
+					"options": {
+						"personal": {
+							"displayName": "Персональный"
+						},
+						"generic": {
+							"displayName": "Общий"
+						}
+					}
+				},
+				"seniority": {
+					"displayName": "Старшинство",
+					"options": {
+						"junior": {
+							"displayName": "Юниор"
+						},
+						"senior": {
+							"displayName": "Старший"
+						},
+						"executive": {
+							"displayName": "Исполнительный"
+						}
+					}
+				},
+				"department": {
+					"displayName": "Отделение",
+					"options": {
+						"communication": {
+							"displayName": "Коммуникация"
+						},
+						"executive": {
+							"displayName": "Исполнительный"
+						},
+						"finance": {
+							"displayName": "Финансы"
+						},
+						"hr": {
+							"displayName": "HR"
+						},
+						"it": {
+							"displayName": "IT"
+						},
+						"legal": {
+							"displayName": "Юридический"
+						},
+						"management": {
+							"displayName": "Управление"
+						},
+						"marketing": {
+							"displayName": "Маркетинг"
+						},
+						"sales": {
+							"displayName": "Продажи"
+						},
+						"support": {
+							"displayName": "Поддерживать"
+						}
+					}
+				}
+			}
+		},
+		"firstname": {
+			"displayName": "Имя",
+			"description": "Имя человека. Это не обязательно должно быть в нижнем регистре."
+		},
+		"lastname": {
+			"displayName": "Фамилия",
+			"description": "Фамилия человека. Это не обязательно должно быть в нижнем регистре."
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"description": "Адрес электронной почты, который вы хотите подтвердить",
+			"placeholder": "имя@email.com"
+		}
+	}
+}

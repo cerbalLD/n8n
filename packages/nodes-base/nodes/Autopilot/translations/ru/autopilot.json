@@ -1,0 +1,203 @@
+{
+	"header": {
+		"displayName": "Автопилот",
+		"description": "Использование API автопилота"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"contact": {
+					"displayName": "Контакт"
+				},
+				"contactJourney": {
+					"displayName": "Контакт Путешествие"
+				},
+				"contactList": {
+					"displayName": "Список контактов"
+				},
+				"list": {
+					"displayName": "Список"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"upsert": {
+					"displayName": "Создать или обновить",
+					"description": "Создайте новый контакт или обновите текущий, если он уже существует (upsert)"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удаление контакта"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить контакт"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить много списков"
+				},
+				"add": {
+					"displayName": "Добавлять",
+					"description": "Добавить контакт в список"
+				},
+				"exist": {
+					"displayName": "Существовать",
+					"description": "Проверьте, есть ли контакт в списке"
+				},
+				"remove": {
+					"displayName": "Удалять",
+					"description": "Удаление контакта из списка"
+				},
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать список"
+				}
+			}
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"description": "Адрес электронной почты контактного лица",
+			"placeholder": "имя@email.com"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"Company": {
+					"displayName": "Компания"
+				},
+				"customFieldsUi": {
+					"values": {
+						"customFieldsUi": {
+							"displayName": "Пользовательские поля"
+						},
+						"customFieldsValues": {
+							"options": {
+								"key": {
+									"displayName": "Имя ключа или идентификатор",
+									"description": "User-specified key of user-defined data. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Пользовательское значение пользовательских данных"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить настраиваемое поле",
+					"displayName": "Пользовательские поля",
+					"options": {
+						"customFieldsValues": {
+							"displayName": "Пользовательское поле"
+						}
+					}
+				},
+				"Fax": {
+					"displayName": "Факс"
+				},
+				"FirstName": {
+					"displayName": "Имя"
+				},
+				"Industry": {
+					"displayName": "Промышленность"
+				},
+				"LastName": {
+					"displayName": "Фамилия"
+				},
+				"LeadSource": {
+					"displayName": "Ведущий источник"
+				},
+				"LinkedIn": {
+					"displayName": "URL-адрес LinkedIn"
+				},
+				"autopilotList": {
+					"displayName": "Имя списка или идентификатор",
+					"description": "Список, в который этот контакт будет добавлен при создании. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"MailingCountry": {
+					"displayName": "Страна отправки"
+				},
+				"MailingPostalCode": {
+					"displayName": "Почтовый индекс"
+				},
+				"MailingState": {
+					"displayName": "Государство отправки"
+				},
+				"MailingStreet": {
+					"displayName": "Почтовая улица"
+				},
+				"MailingCity": {
+					"displayName": "Почтовый город"
+				},
+				"MobilePhone": {
+					"displayName": "Мобильный телефон"
+				},
+				"newEmail": {
+					"displayName": "Новый адрес электронной почты",
+					"description": "Если указано, будет изменен адрес электронной почты контакта, указанного в поле «Электронная почта»."
+				},
+				"notify": {
+					"displayName": "Уведомить",
+					"description": "По умолчанию автопилот уведомляет зарегистрированные конечные точки перехватчика REST о событиях contact_added/contact_updated при добавлении нового контакта или обновлении существующего контакта через API. Отключите, чтобы пропускать уведомления."
+				},
+				"NumberOfEmployees": {
+					"displayName": "Количество сотрудников"
+				},
+				"owner_name": {
+					"displayName": "Имя владельца"
+				},
+				"Phone": {
+					"displayName": "Телефон"
+				},
+				"Salutation": {
+					"displayName": "Приветствие"
+				},
+				"autopilotSessionId": {
+					"displayName": "Идентификатор сеанса",
+					"description": "Используется для привязки контакта к сеансу"
+				},
+				"Status": {
+					"displayName": "Статус"
+				},
+				"Title": {
+					"displayName": "Заголовок"
+				},
+				"unsubscribed": {
+					"displayName": "Подписаться",
+					"description": "Подписаться или отказаться от подписки на контакт"
+				},
+				"Website": {
+					"displayName": "URL-адрес веб-сайта"
+				}
+			}
+		},
+		"contactId": {
+			"displayName": "Идентификатор контакта",
+			"description": "Может быть идентификатор или адрес электронной почты"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"triggerId": {
+			"displayName": "Имя или идентификатор триггера",
+			"description": "Идентификатор списка. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"listId": {
+			"displayName": "Имя списка или идентификатор",
+			"description": "Идентификатор списка, над которым нужно работать. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Имя списка, который нужно создать"
+		}
+	}
+}

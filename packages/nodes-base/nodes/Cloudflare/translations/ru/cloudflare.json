@@ -1,0 +1,83 @@
+{
+	"header": {
+		"displayName": "Облачное сияние",
+		"description": "Использование Cloudflare API"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"zoneCertificate": {
+					"displayName": "Сертификат зоны"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить сертификат"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить сертификат"
+				},
+				"getMany": {
+					"displayName": "Получить много",
+					"description": "Получите много сертификатов"
+				},
+				"upload": {
+					"displayName": "Загрузить",
+					"description": "Загрузить сертификат"
+				}
+			}
+		},
+		"zoneId": {
+			"displayName": "Имя или идентификатор зоны",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"certificate": {
+			"displayName": "Содержание сертификата",
+			"description": "Листовой сертификат зоны"
+		},
+		"privateKey": {
+			"displayName": "Закрытый ключ"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"status": {
+					"displayName": "Статус",
+					"description": "Статус пользовательского SSL зоны",
+					"options": {
+						"active": {
+							"displayName": "Активный"
+						},
+						"expired": {
+							"displayName": "Истекший"
+						},
+						"deleted": {
+							"displayName": "Удалено"
+						},
+						"pending": {
+							"displayName": "В ожидании"
+						}
+					}
+				}
+			}
+		},
+		"certificateId": {
+			"displayName": "Идентификатор сертификата"
+		}
+	}
+}

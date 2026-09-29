@@ -1,0 +1,168 @@
+{
+	"header": {
+		"displayName": "PayPal",
+		"description": "Использование API PayPal"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"payout": {
+					"displayName": "Выплата"
+				},
+				"payoutItem": {
+					"displayName": "Пункт выплаты"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать пакетную выплату"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Показать сведения об элементе выплаты"
+				},
+				"cancel": {
+					"displayName": "Отмена",
+					"description": "Отменяет невостребованную позицию выплаты"
+				}
+			}
+		},
+		"senderBatchId": {
+			"displayName": "Идентификатор пакета отправителя",
+			"description": "Идентификатор, указанный отправителем. Отслеживает выплаты в учетной системе."
+		},
+		"jsonParameters": {
+			"displayName": "Параметры JSON"
+		},
+		"itemsUi": {
+			"options": {
+				"itemsUi": {
+					"displayName": "Предметы"
+				},
+				"itemsValues": {
+					"displayName": "Элемент",
+					"values": {
+						"recipientType": {
+							"displayName": "Тип получателя",
+							"description": "Тип идентификатора, идентифицирующий получателя платежа",
+							"options": {
+								"phone": {
+									"displayName": "Телефон",
+									"description": "Незашифрованный номер телефона"
+								},
+								"email": {
+									"displayName": "Электронная почта",
+									"description": "Незашифрованное электронное письмо"
+								},
+								"paypalId": {
+									"displayName": "Идентификатор PayPal",
+									"description": "Зашифрованный номер счета PayPal"
+								}
+							}
+						},
+						"receiverValue": {
+							"displayName": "Значение приемника",
+							"description": "Получатель платежа. Соответствует значению получателя_типа в запросе. Максимальная длина: 127 символов."
+						},
+						"currency": {
+							"displayName": "Валюта",
+							"options": {
+								"AUD": {
+									"displayName": "Австралийский доллар"
+								},
+								"BRL": {
+									"displayName": "Бразильский реал"
+								},
+								"CAD": {
+									"displayName": "Канадский доллар"
+								},
+								"CZK": {
+									"displayName": "Чешская крона"
+								},
+								"DKK": {
+									"displayName": "Датская крона"
+								},
+								"EUR": {
+									"displayName": "Евро"
+								},
+								"USD": {
+									"displayName": "Доллар США"
+								}
+							}
+						},
+						"amount": {
+							"displayName": "Количество",
+							"description": "Значение, которое может быть"
+						},
+						"note": {
+							"displayName": "Примечание",
+							"description": "Примечание отправителя для уведомлений. Поддерживает до 4000 символов ASCII и 1000 символов, отличных от ASCII."
+						},
+						"senderItemId": {
+							"displayName": "Идентификатор элемента отправителя",
+							"description": "Идентификатор, указанный отправителем. Отслеживает выплаты в учетной системе."
+						},
+						"recipientWallet": {
+							"displayName": "Кошелек получателя",
+							"options": {
+								"paypal": {
+									"displayName": "PayPal",
+									"description": "PayPal кошелек"
+								},
+								"venmo": {
+									"displayName": "Венмо",
+									"description": "Венмо кошелек"
+								}
+							}
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить элемент",
+			"displayName": "Предметы"
+		},
+		"itemsJson": {
+			"displayName": "Предметы",
+			"description": "Массив отдельных элементов выплат"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"emailSubject": {
+					"displayName": "Тема письма",
+					"description": "Строка темы электронного письма, которое PayPal отправляет после завершения оплаты элемента выплаты. Тема письма одинакова для всех получателей. Максимальная длина: 255 символов."
+				},
+				"emailMessage": {
+					"displayName": "Сообщение электронной почты",
+					"description": "Сообщение электронной почты, которое PayPal отправляет после завершения выплаты. Сообщение одинаково для всех получателей."
+				},
+				"note": {
+					"displayName": "Примечание",
+					"description": "Выплаты и примечания на уровне предметов объединяются в электронном письме. Максимальная длина: 1000 символов."
+				}
+			}
+		},
+		"payoutBatchId": {
+			"displayName": "Идентификатор пакета выплат",
+			"description": "Идентификатор выплаты, для которой нужно показать подробную информацию"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"payoutItemId": {
+			"displayName": "Идентификатор элемента выплаты",
+			"description": "Идентификатор объекта выплаты, который необходимо отменить."
+		}
+	}
+}

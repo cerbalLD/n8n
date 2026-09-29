@@ -1,0 +1,52 @@
+{
+	"header": {
+		"displayName": "Разделиться",
+		"description": "Превратите список внутри элементов в отдельные элементы"
+	},
+	"nodeView": {
+		"fieldToSplitOut": {
+			"displayName": "Поля для разделения",
+			"description": "Имя полей ввода, которые нужно разбить на отдельные элементы. Разделяйте несколько имен полей запятыми. Для двоичных данных используйте $binary..",
+			"hint": "Используйте $binary, чтобы разделить входной элемент по двоичным данным.",
+			"placeholder": "Перетащите поля слева или введите их имена."
+		},
+		"include": {
+			"displayName": "Включать",
+			"description": "Копировать ли какие-либо другие поля в новые элементы",
+			"options": {
+				"noOtherFields": {
+					"displayName": "Никаких других полей"
+				},
+				"allOtherFields": {
+					"displayName": "Все остальные поля"
+				},
+				"selectedOtherFields": {
+					"displayName": "Выбранные другие поля"
+				}
+			}
+		},
+		"fieldsToInclude": {
+			"displayName": "Поля для включения",
+			"description": "Поля во входных элементах для агрегирования",
+			"placeholder": "например электронная почта, имя"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"disableDotNotation": {
+					"displayName": "Отключить точечную нотацию",
+					"description": "Запретить ли ссылаться на дочерние поля, используя `parent.child` в имени поля."
+				},
+				"destinationFieldName": {
+					"displayName": "Имя поля назначения",
+					"description": "Поле в выводе, под которое помещается содержимое разделенного поля."
+				},
+				"includeBinary": {
+					"displayName": "Включить двоичный файл",
+					"description": "Включать ли двоичные данные в новые элементы"
+				}
+			}
+		}
+	}
+}

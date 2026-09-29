@@ -5,6 +5,7 @@ import { createI18n } from 'vue-i18n';
 import type { I18n } from 'vue-i18n';
 
 import englishBaseText from './locales/en.json';
+import russianBaseText from './locales/ru.json';
 import type { BaseTextKey, LocaleMessages, INodeTranslationHeaders } from './types';
 import {
 	deriveMiddleKey,
@@ -435,6 +436,24 @@ export function loadLanguage(locale: string, messages: LocaleMessages) {
 	loadedLanguages.push(locale);
 
 	return setLanguage(locale);
+}
+
+// Base-text locales bundled directly with this package (alongside `en`), keyed by locale
+// code. Consumers load a non-English locale's base text (menus, buttons, dialogs) via
+// `loadBuiltInLocale()` rather than importing these JSON files themselves.
+const builtInLocales: Record<string, LocaleMessages> = {
+	ru: russianBaseText as unknown as LocaleMessages,
+};
+
+/**
+ * Load the base text for a locale bundled with this package, if one exists. No-op for `en`
+ * (already the default) and for locales with no bundled base text (falls back silently to
+ * English base text via vue-i18n's `fallbackLocale`).
+ */
+export function loadBuiltInLocale(locale: string) {
+	const messages = builtInLocales[locale];
+	if (!messages) return locale;
+	return loadLanguage(locale, messages);
 }
 
 /**

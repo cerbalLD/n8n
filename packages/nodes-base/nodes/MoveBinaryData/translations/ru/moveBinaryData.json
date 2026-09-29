@@ -1,0 +1,395 @@
+{
+	"header": {
+		"displayName": "Преобразование в/из двоичных данных",
+		"description": "Перемещение данных между двоичными свойствами и свойствами JSON."
+	},
+	"nodeView": {
+		"mode": {
+			"displayName": "Режим",
+			"description": "Откуда и куда следует переместить данные",
+			"options": {
+				"binaryToJson": {
+					"displayName": "Двоичный файл в JSON",
+					"description": "Переместить данные из двоичного формата в JSON"
+				},
+				"jsonToBinary": {
+					"displayName": "JSON в двоичный файл",
+					"description": "Переместить данные из JSON в двоичный формат"
+				}
+			}
+		},
+		"setAllData": {
+			"displayName": "Установить все данные",
+			"description": "Следует ли заменять все данные JSON данными, полученными из двоичного ключа. В противном случае данные будут записаны в один ключ."
+		},
+		"sourceKey": {
+			"displayName": "Исходный ключ",
+			"description": "Имя ключа JSON, из которого нужно получить данные. Также возможно определить глубокие ключи, используя точечную запись, например: «level1.level2.currentKey».",
+			"placeholder": "данные"
+		},
+		"destinationKey": {
+			"displayName": "Ключ назначения",
+			"description": "Имя двоичного ключа, в который нужно скопировать данные. Также возможно определить глубокие ключи, используя точечную запись, например: «level1.level2.newKey».",
+			"placeholder": "данные"
+		},
+		"convertAllData": {
+			"displayName": "Конвертировать все данные",
+			"description": "Должны ли все данные JSON быть преобразованы в двоичные файлы. В противном случае будут преобразованы только данные одного ключа."
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"addBOM": {
+					"displayName": "Добавить метку порядка байтов (BOM)",
+					"description": "Добавлять ли специальный маркер в начало текстового файла. Этот маркер помогает некоторым программам понять, как правильно читать файл."
+				},
+				"dataIsBase64": {
+					"displayName": "Данные в формате Base64",
+					"description": "Сохранять ли двоичные данные в виде строки base64"
+				},
+				"encoding": {
+					"displayName": "Кодирование",
+					"description": "Выберите набор символов, который будет использоваться для кодирования данных.",
+					"options": {
+						"armscii8": {
+							"displayName": "Armscii8"
+						},
+						"ascii": {
+							"displayName": "ascii"
+						},
+						"base64": {
+							"displayName": "база64"
+						},
+						"big5hkscs": {
+							"displayName": "big5hkscs"
+						},
+						"binary": {
+							"displayName": "двоичный"
+						},
+						"cesu8": {
+							"displayName": "цесу8"
+						},
+						"cp1046": {
+							"displayName": "cp1046"
+						},
+						"cp1124": {
+							"displayName": "cp1124"
+						},
+						"cp1125": {
+							"displayName": "cp1125"
+						},
+						"cp1129": {
+							"displayName": "cp1129"
+						},
+						"cp1133": {
+							"displayName": "cp1133"
+						},
+						"cp1161": {
+							"displayName": "cp1161"
+						},
+						"cp1162": {
+							"displayName": "cp1162"
+						},
+						"cp1163": {
+							"displayName": "cp1163"
+						},
+						"cp437": {
+							"displayName": "cp437"
+						},
+						"cp720": {
+							"displayName": "cp720"
+						},
+						"cp737": {
+							"displayName": "cp737"
+						},
+						"cp775": {
+							"displayName": "cp775"
+						},
+						"cp808": {
+							"displayName": "cp808"
+						},
+						"cp850": {
+							"displayName": "cp850"
+						},
+						"cp852": {
+							"displayName": "cp852"
+						},
+						"cp855": {
+							"displayName": "cp855"
+						},
+						"cp856": {
+							"displayName": "cp856"
+						},
+						"cp857": {
+							"displayName": "cp857"
+						},
+						"cp858": {
+							"displayName": "cp858"
+						},
+						"cp860": {
+							"displayName": "cp860"
+						},
+						"cp861": {
+							"displayName": "cp861"
+						},
+						"cp862": {
+							"displayName": "cp862"
+						},
+						"cp863": {
+							"displayName": "cp863"
+						},
+						"cp864": {
+							"displayName": "cp864"
+						},
+						"cp865": {
+							"displayName": "cp865"
+						},
+						"cp866": {
+							"displayName": "cp866"
+						},
+						"cp869": {
+							"displayName": "cp869"
+						},
+						"cp922": {
+							"displayName": "cp922"
+						},
+						"cp936": {
+							"displayName": "cp936"
+						},
+						"cp949": {
+							"displayName": "cp949"
+						},
+						"cp950": {
+							"displayName": "cp950"
+						},
+						"eucjp": {
+							"displayName": "eucjp"
+						},
+						"gb18030": {
+							"displayName": "GB18030"
+						},
+						"gbk": {
+							"displayName": "ГБК"
+						},
+						"georgianacademy": {
+							"displayName": "Грузинская академия"
+						},
+						"georgianps": {
+							"displayName": "грузины"
+						},
+						"hex": {
+							"displayName": "шестигранник"
+						},
+						"hproman8": {
+							"displayName": "hproman8"
+						},
+						"iso646cn": {
+							"displayName": "iso646cn"
+						},
+						"iso646jp": {
+							"displayName": "iso646jp"
+						},
+						"iso88591": {
+							"displayName": "iso88591"
+						},
+						"iso885910": {
+							"displayName": "iso885910"
+						},
+						"iso885911": {
+							"displayName": "iso885911"
+						},
+						"iso885913": {
+							"displayName": "iso885913"
+						},
+						"iso885914": {
+							"displayName": "iso885914"
+						},
+						"iso885915": {
+							"displayName": "iso885915"
+						},
+						"iso885916": {
+							"displayName": "iso885916"
+						},
+						"iso88592": {
+							"displayName": "iso88592"
+						},
+						"iso88593": {
+							"displayName": "iso88593"
+						},
+						"iso88594": {
+							"displayName": "iso88594"
+						},
+						"iso88595": {
+							"displayName": "iso88595"
+						},
+						"iso88596": {
+							"displayName": "iso88596"
+						},
+						"iso88597": {
+							"displayName": "iso88597"
+						},
+						"iso88598": {
+							"displayName": "iso88598"
+						},
+						"iso88599": {
+							"displayName": "iso88599"
+						},
+						"koi8r": {
+							"displayName": "кои8р"
+						},
+						"koi8ru": {
+							"displayName": "кои8ру"
+						},
+						"koi8t": {
+							"displayName": "кои8т"
+						},
+						"koi8u": {
+							"displayName": "кои8у"
+						},
+						"maccenteuro": {
+							"displayName": "maccenteuro"
+						},
+						"maccroatian": {
+							"displayName": "макроатийский"
+						},
+						"maccyrillic": {
+							"displayName": "маккирилический"
+						},
+						"macgreek": {
+							"displayName": "Макгрек"
+						},
+						"maciceland": {
+							"displayName": "Мейсиленд"
+						},
+						"macintosh": {
+							"displayName": "Макинтош"
+						},
+						"macroman": {
+							"displayName": "макромен"
+						},
+						"macromania": {
+							"displayName": "макромания"
+						},
+						"macthai": {
+							"displayName": "Мактай"
+						},
+						"macturkish": {
+							"displayName": "Мактурецкий"
+						},
+						"macukraine": {
+							"displayName": "Макукраина"
+						},
+						"mik": {
+							"displayName": "Мик"
+						},
+						"pt154": {
+							"displayName": "пт154"
+						},
+						"rk1048": {
+							"displayName": "rk1048"
+						},
+						"shiftjis": {
+							"displayName": "Шифтджис"
+						},
+						"tcvn": {
+							"displayName": "ТКВН"
+						},
+						"tis620": {
+							"displayName": "тис620"
+						},
+						"ucs2": {
+							"displayName": "ucs2"
+						},
+						"utf16": {
+							"displayName": "utf16"
+						},
+						"utf16be": {
+							"displayName": "utf16be"
+						},
+						"utf32": {
+							"displayName": "utf32"
+						},
+						"utf32be": {
+							"displayName": "utf32be"
+						},
+						"utf32le": {
+							"displayName": "utf32le"
+						},
+						"utf7": {
+							"displayName": "utf7"
+						},
+						"utf7imap": {
+							"displayName": "utf7imap"
+						},
+						"utf8": {
+							"displayName": "utf8"
+						},
+						"viscii": {
+							"displayName": "внутренние органы"
+						},
+						"windows1250": {
+							"displayName": "windows1250"
+						},
+						"windows1251": {
+							"displayName": "windows1251"
+						},
+						"windows1252": {
+							"displayName": "windows1252"
+						},
+						"windows1253": {
+							"displayName": "windows1253"
+						},
+						"windows1254": {
+							"displayName": "windows1254"
+						},
+						"windows1255": {
+							"displayName": "windows1255"
+						},
+						"windows1256": {
+							"displayName": "windows1256"
+						},
+						"windows1257": {
+							"displayName": "windows1257"
+						},
+						"windows1258": {
+							"displayName": "windows1258"
+						},
+						"windows874": {
+							"displayName": "windows874"
+						}
+					}
+				},
+				"stripBOM": {
+					"displayName": "Полоса спецификации"
+				},
+				"fileName": {
+					"displayName": "Имя файла",
+					"description": "Имя файла, которое нужно установить",
+					"placeholder": "пример.json"
+				},
+				"jsonParse": {
+					"displayName": "Анализ JSON",
+					"description": "Следует ли запускать анализ JSON данных для получения правильных данных объекта."
+				},
+				"keepSource": {
+					"displayName": "Сохранить исходный код",
+					"description": "Следует ли сохранять исходный ключ. По умолчанию оно будет удалено."
+				},
+				"keepAsBase64": {
+					"displayName": "Сохранить как Base64",
+					"description": "Сохранять ли двоичные данные в виде строки base64"
+				},
+				"mimeType": {
+					"displayName": "MIME-тип",
+					"description": "Устанавливаемый MIME-тип. По умолчанию будет установлен mime-тип для JSON.",
+					"placeholder": "приложение/json"
+				},
+				"useRawData": {
+					"displayName": "Используйте необработанные данные",
+					"description": "Следует ли использовать данные как есть, а не JSON.stringify."
+				}
+			}
+		}
+	}
+}

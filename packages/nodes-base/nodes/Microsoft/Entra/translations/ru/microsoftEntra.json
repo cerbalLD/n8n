@@ -1,0 +1,726 @@
+{
+	"header": {
+		"displayName": "Microsoft Энтра идентификатор",
+		"description": "Взаимодействие с API Microsoft Entra ID"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"group": {
+					"displayName": "Группа"
+				},
+				"user": {
+					"displayName": "Пользователь"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать пользователя"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удаление пользователя"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить данные для конкретного пользователя"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить список пользователей"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить пользователя"
+				},
+				"addGroup": {
+					"displayName": "Добавить в группу",
+					"description": "Добавить пользователя в группу"
+				},
+				"removeGroup": {
+					"displayName": "Удалить из группы",
+					"description": "Удалить пользователя из группы"
+				}
+			}
+		},
+		"groupType": {
+			"displayName": "Тип группы",
+			"options": {
+				"Unified": {
+					"displayName": "Майкрософт 365"
+				},
+				"": {
+					"displayName": "Безопасность"
+				}
+			}
+		},
+		"displayName": {
+			"displayName": "Отображаемое имя",
+			"description": "Имя, которое будет отображаться в адресной книге пользователя.",
+			"placeholder": "например Натан Смит"
+		},
+		"mailNickname": {
+			"displayName": "Почтовый псевдоним",
+			"description": "Почтовый псевдоним пользователя",
+			"placeholder": "например Натан Смит"
+		},
+		"mailEnabled": {
+			"displayName": "Почта включена",
+			"description": "Поддерживает ли группа почту"
+		},
+		"membershipType": {
+			"displayName": "Тип членства",
+			"options": {
+				"": {
+					"displayName": "Назначенный",
+					"description": "Позволяет добавлять определенных пользователей в качестве членов группы и иметь уникальные разрешения."
+				},
+				"DynamicMembership": {
+					"displayName": "Динамический",
+					"description": "Позволяет использовать правила для автоматического добавления и удаления пользователей в качестве участников."
+				}
+			}
+		},
+		"securityEnabled": {
+			"displayName": "Безопасность включена",
+			"description": "Является ли группа группой безопасности"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"isAssignableToRole": {
+					"displayName": "Назначается на роль",
+					"description": "Можно ли назначить группе роли Microsoft Entra"
+				},
+				"description": {
+					"displayName": "Описание",
+					"description": "Описание для группы"
+				},
+				"membershipRule": {
+					"displayName": "Правило членства",
+					"description": "Правила динамического членства <a href=\"https://learn.microsoft.com/en-us/entra/identity/users/groups-dynamic-membership\"></a>",
+					"placeholder": "например user.department -eq \"Маркетинг\""
+				},
+				"membershipRuleProcessingState": {
+					"displayName": "Состояние обработки правила членства",
+					"description": "Указывает, включена или приостановлена ​​обработка динамического членства.",
+					"options": {
+						"On": {
+							"displayName": "На"
+						},
+						"Paused": {
+							"displayName": "Приостановлено"
+						}
+					}
+				},
+				"preferredDataLocation": {
+					"displayName": "Предпочтительное расположение данных",
+					"description": "Набор свойств для группы, которую службы Office 365 используют для подготовки соответствующих ресурсов неактивных данных (почтовый ящик, OneDrive, сайты групп и т. д.)."
+				},
+				"uniqueName": {
+					"displayName": "Уникальное имя",
+					"description": "Уникальный идентификатор группы может быть обновлен только в том случае, если он равен нулю, и является неизменяемым после установки."
+				},
+				"visibility": {
+					"displayName": "Видимость",
+					"description": "Определяет видимость группы",
+					"options": {
+						"Private": {
+							"displayName": "Частный"
+						},
+						"Public": {
+							"displayName": "Общественный"
+						}
+					}
+				},
+				"aboutMe": {
+					"displayName": "Обо мне",
+					"description": "Поле ввода текста произвольной формы, позволяющее пользователю описать себя."
+				},
+				"ageGroup": {
+					"displayName": "Возрастная группа",
+					"description": "Устанавливает возрастную группу пользователя",
+					"options": {
+						"Adult": {
+							"displayName": "Взрослый"
+						},
+						"Minor": {
+							"displayName": "Незначительный"
+						},
+						"NotAdult": {
+							"displayName": "Не взрослый"
+						}
+					}
+				},
+				"birthday": {
+					"displayName": "День рождения",
+					"description": "День рождения пользователя"
+				},
+				"businessPhones": {
+					"displayName": "Деловой телефон",
+					"description": "Телефонный номер пользователя"
+				},
+				"city": {
+					"displayName": "Город",
+					"description": "Город, в котором находится пользователь"
+				},
+				"companyName": {
+					"displayName": "Название компании",
+					"description": "Название компании, связанной с пользователем"
+				},
+				"consentProvidedForMinor": {
+					"displayName": "Согласие предоставлено",
+					"description": "Указывает, предоставляется ли согласие для несовершеннолетних.",
+					"options": {
+						"Denied": {
+							"displayName": "Отклонен"
+						},
+						"Granted": {
+							"displayName": "Предоставленный"
+						},
+						"NotRequired": {
+							"displayName": "Не требуется"
+						}
+					}
+				},
+				"country": {
+					"displayName": "Страна",
+					"description": "Страна/регион пользователя",
+					"placeholder": "например НАС"
+				},
+				"department": {
+					"displayName": "Отделение",
+					"description": "Название отдела, в котором работает пользователь"
+				},
+				"employeeId": {
+					"displayName": "Идентификатор сотрудника",
+					"description": "Идентификатор сотрудника, присвоенный организацией"
+				},
+				"employeeType": {
+					"displayName": "Тип сотрудника",
+					"description": "Определяет тип работника предприятия",
+					"placeholder": "например Подрядчик"
+				},
+				"employeeHireDate": {
+					"displayName": "Дата найма сотрудника",
+					"description": "Дата найма пользователя",
+					"placeholder": "например 2014-01-01T00:00:00Z"
+				},
+				"employeeLeaveDateTime": {
+					"displayName": "Дата отпуска сотрудника",
+					"description": "Дата и время, когда пользователь покинул или покинет организацию.",
+					"placeholder": "например 2014-01-01T00:00:00Z"
+				},
+				"employeeOrgData": {
+					"values": {
+						"employeeOrgData": {
+							"displayName": "Данные организации сотрудников",
+							"description": "Представляет данные организации (например, подразделение и центр затрат), связанные с пользователем."
+						},
+						"employeeOrgValues": {
+							"options": {
+								"costCenter": {
+									"displayName": "МВЗ",
+									"description": "Центр затрат, связанный с пользователем"
+								},
+								"division": {
+									"displayName": "Разделение",
+									"description": "Название подразделения, в котором работает пользователь"
+								}
+							}
+						}
+					},
+					"displayName": "Данные организации сотрудников",
+					"description": "Представляет данные организации (например, подразделение и центр затрат), связанные с пользователем.",
+					"options": {
+						"employeeOrgValues": {
+							"displayName": "Данные организации сотрудников"
+						}
+					}
+				},
+				"givenName": {
+					"displayName": "Имя",
+					"description": "Имя (имя) пользователя"
+				},
+				"forceChangePassword": {
+					"displayName": "Принудительно изменить пароль",
+					"description": "Должен ли пользователь изменить свой пароль при следующем входе в систему",
+					"options": {
+						"forceChangePasswordNextSignIn": {
+							"displayName": "Следующий вход"
+						},
+						"forceChangePasswordNextSignInWithMfa": {
+							"displayName": "Далее Войти через MFA"
+						}
+					}
+				},
+				"interests": {
+					"displayName": "Интересы",
+					"description": "Список, в котором пользователь может описать свои интересы."
+				},
+				"jobTitle": {
+					"displayName": "Должность",
+					"description": "Должность пользователя"
+				},
+				"surname": {
+					"displayName": "Фамилия",
+					"description": "Фамилия пользователя (фамилия)"
+				},
+				"mail": {
+					"displayName": "Почта",
+					"description": "SMTP-адрес пользователя",
+					"placeholder": "например Джефф@contoso.com"
+				},
+				"mobilePhone": {
+					"displayName": "Мобильный телефон",
+					"description": "Основной номер сотового телефона пользователя."
+				},
+				"mySite": {
+					"displayName": "Мой сайт",
+					"description": "URL-адрес личного сайта пользователя"
+				},
+				"officeLocation": {
+					"displayName": "Расположение офиса",
+					"description": "Местоположение офиса пользователя"
+				},
+				"onPremisesImmutableId": {
+					"displayName": "Локальный неизменяемый идентификатор",
+					"description": "Это свойство используется для связи локальной учетной записи пользователя Active Directory с их объектом пользователя Microsoft Entra."
+				},
+				"otherMails": {
+					"displayName": "Другие электронные письма",
+					"description": "Дополнительные адреса электронной почты пользователя"
+				},
+				"passwordPolicies": {
+					"displayName": "Политика паролей",
+					"description": "Определяет политику паролей",
+					"options": {
+						"DisablePasswordExpiration": {
+							"displayName": "Отключить срок действия пароля"
+						},
+						"DisableStrongPassword": {
+							"displayName": "Отключить надежный пароль"
+						}
+					}
+				},
+				"pastProjects": {
+					"displayName": "Прошлые проекты",
+					"description": "Список прошлых проектов, над которыми работал пользователь."
+				},
+				"postalCode": {
+					"displayName": "Почтовый индекс",
+					"description": "Почтовый индекс адреса пользователя"
+				},
+				"preferredLanguage": {
+					"displayName": "Предпочитаемый язык",
+					"description": "Предпочитаемый язык пользователя в коде ISO 639-1.",
+					"placeholder": "например ru-US"
+				},
+				"responsibilities": {
+					"displayName": "Обязанности",
+					"description": "Перечень обязанностей пользователя"
+				},
+				"schools": {
+					"displayName": "Посещаемые школы",
+					"description": "Список школ, которые посещал пользователь"
+				},
+				"skills": {
+					"displayName": "Навыки",
+					"description": "Список навыков, которыми обладает пользователь"
+				},
+				"state": {
+					"displayName": "Состояние",
+					"description": "Штат или провинция адреса пользователя"
+				},
+				"streetAddress": {
+					"displayName": "Адрес улицы",
+					"description": "Адрес места деятельности пользователя."
+				},
+				"usageLocation": {
+					"displayName": "Место использования",
+					"description": "Двухбуквенный код страны, в которой находится пользователь",
+					"placeholder": "например НАС"
+				},
+				"userType": {
+					"displayName": "Тип пользователя",
+					"description": "Классифицирует тип пользователя",
+					"options": {
+						"Guest": {
+							"displayName": "Гость"
+						},
+						"Member": {
+							"displayName": "Член"
+						}
+					}
+				}
+			}
+		},
+		"group": {
+			"displayName": "Группа"
+		},
+		"output": {
+			"displayName": "Выход",
+			"options": {
+				"simple": {
+					"displayName": "Упрощенный"
+				},
+				"raw": {
+					"displayName": "Сырой"
+				},
+				"fields": {
+					"displayName": "Выбранные поля"
+				}
+			}
+		},
+		"fields": {
+			"displayName": "Поля",
+			"description": "Поля, которые нужно добавить в выходные данные"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"includeMembers": {
+					"displayName": "Включить участников"
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"filter": {
+			"displayName": "Фильтр",
+			"description": "<a href=\"https://docs.microsoft.com/en-us/graph/query-parameters#filter-parameter\">Параметр запроса</a> для фильтрации результатов по",
+			"hint": "Если пусто, будут возвращены все группы.",
+			"placeholder": "например начинается с (displayName, 'a')"
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"allowExternalSenders": {
+					"displayName": "Разрешить внешних отправителей",
+					"description": "Могут ли люди, не входящие в организацию, отправлять сообщения в группу. Подождите несколько секунд, прежде чем редактировать это поле во вновь созданной группе."
+				},
+				"autoSubscribeNewMembers": {
+					"displayName": "Автоматическая подписка для новых участников",
+					"description": "Будут ли новые участники, добавленные в группу, автоматически подписываться на получение уведомлений по электронной почте. Подождите несколько секунд, прежде чем редактировать это поле во вновь созданной группе."
+				},
+				"description": {
+					"displayName": "Описание",
+					"description": "Описание для группы"
+				},
+				"displayName": {
+					"displayName": "Отображаемое имя",
+					"description": "Имя, которое будет отображаться в адресной книге пользователя."
+				},
+				"mailNickname": {
+					"displayName": "Почтовый псевдоним",
+					"description": "Почтовый псевдоним пользователя",
+					"placeholder": "например псевдоним"
+				},
+				"membershipRule": {
+					"displayName": "Правило членства",
+					"description": "Правила динамического членства <a href=\"https://learn.microsoft.com/en-us/entra/identity/users/groups-dynamic-membership\"></a>",
+					"placeholder": "например user.department -eq \"Маркетинг\""
+				},
+				"membershipRuleProcessingState": {
+					"displayName": "Состояние обработки правила членства",
+					"description": "Указывает, включена или приостановлена ​​обработка динамического членства.",
+					"options": {
+						"On": {
+							"displayName": "На"
+						},
+						"Paused": {
+							"displayName": "Приостановлено"
+						}
+					}
+				},
+				"preferredDataLocation": {
+					"displayName": "Предпочтительное расположение данных",
+					"description": "Набор свойств для группы, которую службы Office 365 используют для подготовки соответствующих ресурсов неактивных данных (почтовый ящик, OneDrive, сайты групп и т. д.)."
+				},
+				"securityEnabled": {
+					"displayName": "Безопасность включена",
+					"description": "Является ли группа группой безопасности"
+				},
+				"uniqueName": {
+					"displayName": "Уникальное имя",
+					"description": "Уникальный идентификатор группы может быть обновлен только в том случае, если он равен нулю, и является неизменяемым после установки."
+				},
+				"visibility": {
+					"displayName": "Видимость",
+					"description": "Определяет видимость группы",
+					"options": {
+						"Private": {
+							"displayName": "Частный"
+						},
+						"Public": {
+							"displayName": "Общественный"
+						}
+					}
+				},
+				"aboutMe": {
+					"displayName": "Обо мне",
+					"description": "Поле ввода текста произвольной формы, позволяющее пользователю описать себя."
+				},
+				"accountEnabled": {
+					"displayName": "Аккаунт включен",
+					"description": "Включена ли учетная запись"
+				},
+				"ageGroup": {
+					"displayName": "Возрастная группа",
+					"description": "Устанавливает возрастную группу пользователя",
+					"options": {
+						"Adult": {
+							"displayName": "Взрослый"
+						},
+						"Minor": {
+							"displayName": "Незначительный"
+						},
+						"NotAdult": {
+							"displayName": "Не взрослый"
+						}
+					}
+				},
+				"birthday": {
+					"displayName": "День рождения",
+					"description": "День рождения пользователя"
+				},
+				"businessPhones": {
+					"displayName": "Деловой телефон",
+					"description": "Телефонный номер пользователя"
+				},
+				"city": {
+					"displayName": "Город",
+					"description": "Город, в котором находится пользователь"
+				},
+				"companyName": {
+					"displayName": "Название компании",
+					"description": "Название компании, связанной с пользователем"
+				},
+				"consentProvidedForMinor": {
+					"displayName": "Согласие предоставлено",
+					"description": "Указывает, предоставляется ли согласие для несовершеннолетних.",
+					"options": {
+						"Denied": {
+							"displayName": "Отклонен"
+						},
+						"Granted": {
+							"displayName": "Предоставленный"
+						},
+						"NotRequired": {
+							"displayName": "Не требуется"
+						}
+					}
+				},
+				"country": {
+					"displayName": "Страна",
+					"description": "Страна/регион пользователя",
+					"placeholder": "например НАС"
+				},
+				"department": {
+					"displayName": "Отделение",
+					"description": "Название отдела, в котором работает пользователь"
+				},
+				"employeeId": {
+					"displayName": "Идентификатор сотрудника",
+					"description": "Идентификатор сотрудника, присвоенный организацией"
+				},
+				"employeeType": {
+					"displayName": "Тип сотрудника",
+					"description": "Определяет тип работника предприятия",
+					"placeholder": "например Подрядчик"
+				},
+				"givenName": {
+					"displayName": "Имя",
+					"description": "Имя (имя) пользователя"
+				},
+				"employeeHireDate": {
+					"displayName": "Дата найма сотрудника",
+					"description": "Дата найма пользователя",
+					"placeholder": "например 2014-01-01T00:00:00Z"
+				},
+				"employeeLeaveDateTime": {
+					"displayName": "Дата отпуска сотрудника",
+					"description": "Дата и время, когда пользователь покинул или покинет организацию.",
+					"placeholder": "например 2014-01-01T00:00:00Z"
+				},
+				"employeeOrgData": {
+					"values": {
+						"employeeOrgData": {
+							"displayName": "Данные организации сотрудников",
+							"description": "Представляет данные организации (например, подразделение и центр затрат), связанные с пользователем."
+						},
+						"employeeOrgValues": {
+							"options": {
+								"costCenter": {
+									"displayName": "МВЗ",
+									"description": "Центр затрат, связанный с пользователем"
+								},
+								"division": {
+									"displayName": "Разделение",
+									"description": "Название подразделения, в котором работает пользователь"
+								}
+							}
+						}
+					},
+					"displayName": "Данные организации сотрудников",
+					"description": "Представляет данные организации (например, подразделение и центр затрат), связанные с пользователем.",
+					"options": {
+						"employeeOrgValues": {
+							"displayName": "Данные организации сотрудников"
+						}
+					}
+				},
+				"forceChangePassword": {
+					"displayName": "Принудительно изменить пароль",
+					"description": "Должен ли пользователь изменить свой пароль при следующем входе в систему",
+					"options": {
+						"forceChangePasswordNextSignIn": {
+							"displayName": "Следующий вход"
+						},
+						"forceChangePasswordNextSignInWithMfa": {
+							"displayName": "Далее Войти через MFA"
+						}
+					}
+				},
+				"interests": {
+					"displayName": "Интересы",
+					"description": "Список, в котором пользователь может описать свои интересы."
+				},
+				"jobTitle": {
+					"displayName": "Должность",
+					"description": "Должность пользователя"
+				},
+				"surname": {
+					"displayName": "Фамилия",
+					"description": "Фамилия пользователя (фамилия)"
+				},
+				"mail": {
+					"displayName": "Почта",
+					"description": "SMTP-адрес пользователя",
+					"placeholder": "например Джефф@contoso.com"
+				},
+				"mobilePhone": {
+					"displayName": "Мобильный телефон",
+					"description": "Основной номер сотового телефона пользователя."
+				},
+				"mySite": {
+					"displayName": "Мой сайт",
+					"description": "URL-адрес личного сайта пользователя"
+				},
+				"officeLocation": {
+					"displayName": "Расположение офиса",
+					"description": "Местоположение офиса пользователя"
+				},
+				"onPremisesImmutableId": {
+					"displayName": "Локальный неизменяемый идентификатор",
+					"description": "Это свойство используется для связи локальной учетной записи пользователя Active Directory с их объектом пользователя Microsoft Entra."
+				},
+				"otherMails": {
+					"displayName": "Другие электронные письма",
+					"description": "Дополнительные адреса электронной почты пользователя"
+				},
+				"password": {
+					"displayName": "Пароль",
+					"description": "Пароль для пользователя. Пароль должен удовлетворять минимальным требованиям, указанным в свойстве пароляPolicies."
+				},
+				"passwordPolicies": {
+					"displayName": "Политика паролей",
+					"description": "Определяет политику паролей",
+					"options": {
+						"DisablePasswordExpiration": {
+							"displayName": "Отключить срок действия пароля"
+						},
+						"DisableStrongPassword": {
+							"displayName": "Отключить надежный пароль"
+						}
+					}
+				},
+				"pastProjects": {
+					"displayName": "Прошлые проекты",
+					"description": "Список прошлых проектов, над которыми работал пользователь."
+				},
+				"postalCode": {
+					"displayName": "Почтовый индекс",
+					"description": "Почтовый индекс адреса пользователя"
+				},
+				"preferredLanguage": {
+					"displayName": "Предпочитаемый язык",
+					"description": "Предпочитаемый язык пользователя в коде ISO 639-1.",
+					"placeholder": "например ru-US"
+				},
+				"responsibilities": {
+					"displayName": "Обязанности",
+					"description": "Перечень обязанностей пользователя"
+				},
+				"schools": {
+					"displayName": "Посещаемые школы",
+					"description": "Список школ, которые посещал пользователь"
+				},
+				"skills": {
+					"displayName": "Навыки",
+					"description": "Список навыков, которыми обладает пользователь"
+				},
+				"state": {
+					"displayName": "Состояние",
+					"description": "Штат или провинция адреса пользователя"
+				},
+				"streetAddress": {
+					"displayName": "Адрес улицы",
+					"description": "Адрес места деятельности пользователя."
+				},
+				"usageLocation": {
+					"displayName": "Место использования",
+					"description": "Двухбуквенный код страны, в которой находится пользователь",
+					"placeholder": "например НАС"
+				},
+				"userPrincipalName": {
+					"displayName": "Имя участника-пользователя",
+					"description": "Имя участника-пользователя (UPN)",
+					"placeholder": "например АдельВ@contoso.com"
+				},
+				"userType": {
+					"displayName": "Тип пользователя",
+					"description": "Классифицирует тип пользователя",
+					"options": {
+						"Guest": {
+							"displayName": "Гость"
+						},
+						"Member": {
+							"displayName": "Член"
+						}
+					}
+				}
+			}
+		},
+		"user": {
+			"displayName": "Пользователь для обновления"
+		},
+		"accountEnabled": {
+			"displayName": "Аккаунт включен",
+			"description": "Включена ли учетная запись"
+		},
+		"userPrincipalName": {
+			"displayName": "Имя участника-пользователя",
+			"description": "Имя участника-пользователя (UPN)",
+			"placeholder": "например НатанСмит@contoso.com"
+		},
+		"password": {
+			"displayName": "Пароль",
+			"description": "Пароль для пользователя"
+		}
+	}
+}

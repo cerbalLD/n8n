@@ -1,0 +1,36 @@
+{
+	"header": {
+		"displayName": "Календарный триггер",
+		"description": "Запускает рабочий процесс при возникновении событий Calendly."
+	},
+	"nodeView": {
+		"scope": {
+			"displayName": "Объем",
+			"options": {
+				"organization": {
+					"displayName": "Организация",
+					"description": "Запускает вебхук для всех подписанных событий внутри организации."
+				},
+				"user": {
+					"displayName": "Пользователь",
+					"description": "Запускает вебхук для подписанных событий, принадлежащих текущему пользователю."
+				}
+			}
+		},
+		"events": {
+			"displayName": "События",
+			"options": {
+				"invitee": {
+					"created": {
+						"displayName": "Событие создано",
+						"description": "Получайте уведомления при создании нового события Calendly."
+					},
+					"canceled": {
+						"displayName": "Мероприятие отменено",
+						"description": "Получайте уведомления при отмене мероприятия Calendly"
+					}
+				}
+			}
+		}
+	}
+}

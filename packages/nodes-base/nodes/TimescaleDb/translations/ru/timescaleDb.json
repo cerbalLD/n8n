@@ -1,0 +1,80 @@
+{
+	"header": {
+		"displayName": "TimescaleDB",
+		"description": "Добавляйте и обновляйте данные в TimescaleDB."
+	},
+	"nodeView": {
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"executeQuery": {
+					"displayName": "Выполнить запрос",
+					"description": "Выполнить SQL-запрос"
+				},
+				"insert": {
+					"displayName": "Вставлять",
+					"description": "Вставить строки в базу данных"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить строки в базе данных"
+				}
+			}
+		},
+		"query": {
+			"displayName": "Запрос",
+			"description": "SQL-запрос, который необходимо выполнить. Вы можете использовать выражения n8n или $1 и $2 вместе с параметрами запроса.",
+			"placeholder": "ВЫБЕРИТЕ идентификатор, имя ИЗ продукта, ГДЕ количество > 1 доллар США И цена <= 2 доллара США."
+		},
+		"schema": {
+			"displayName": "Схема",
+			"description": "Имя схемы, которой принадлежит таблица."
+		},
+		"table": {
+			"displayName": "Стол",
+			"description": "Имя таблицы, в которой обновляются данные"
+		},
+		"columns": {
+			"displayName": "Столбцы",
+			"description": "Список свойств, разделенных запятыми, которые следует использовать в качестве столбцов для обновляемых строк.",
+			"placeholder": "имя, описание"
+		},
+		"updateKey": {
+			"displayName": "Обновить ключ",
+			"description": "Имя свойства, которое определяет, какие строки в базе данных следует обновить. Обычно это будет «id»."
+		},
+		"returnFields": {
+			"displayName": "Возвратные поля",
+			"description": "Список полей, разделенных запятыми, которые вернет операция."
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"mode": {
+					"displayName": "Режим",
+					"description": "Способ отправки запросов в базу данных. Может использоваться вместе с <b>Продолжить при сбое </b>. Дополнительные примеры см. в <a href=\"https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.timescaledb/\">документации</a>.",
+					"options": {
+						"independently": {
+							"displayName": "Независимо",
+							"description": "Выполнять каждый запрос независимо"
+						},
+						"multiple": {
+							"displayName": "Несколько запросов",
+							"description": "<b>По умолчанию</b>. Отправляет несколько запросов одновременно в базу данных."
+						},
+						"transaction": {
+							"displayName": "Сделка",
+							"description": "Выполняет все запросы в одной транзакции"
+						}
+					}
+				},
+				"queryParams": {
+					"displayName": "Параметры запроса",
+					"description": "Список свойств, разделенных запятыми, которые следует использовать в качестве параметров запроса.",
+					"placeholder": "количество, цена"
+				}
+			}
+		}
+	}
+}

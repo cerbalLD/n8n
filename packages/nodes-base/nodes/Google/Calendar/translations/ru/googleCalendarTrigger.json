@@ -1,0 +1,42 @@
+{
+	"header": {
+		"displayName": "Триггер Календаря Google",
+		"description": "Запускает рабочий процесс при возникновении событий Календаря Google."
+	},
+	"nodeView": {
+		"calendarId": {
+			"displayName": "Календарь",
+			"description": "Календарь Google для работы"
+		},
+		"triggerOn": {
+			"displayName": "Триггер включен",
+			"options": {
+				"eventCancelled": {
+					"displayName": "Мероприятие отменено"
+				},
+				"eventCreated": {
+					"displayName": "Событие создано"
+				},
+				"eventEnded": {
+					"displayName": "Событие завершено"
+				},
+				"eventStarted": {
+					"displayName": "Событие началось"
+				},
+				"eventUpdated": {
+					"displayName": "Событие обновлено"
+				}
+			}
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"matchTerm": {
+					"displayName": "Срок матча",
+					"description": "Произвольные текстовые поисковые запросы для фильтрации событий, соответствующих этим условиям в любом поле, за исключением расширенных свойств."
+				}
+			}
+		}
+	}
+}

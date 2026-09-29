@@ -1,0 +1,542 @@
+{
+	"header": {
+		"displayName": "Команды Майкрософт",
+		"description": "Использование API Microsoft Teams"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"microsoftTeamsOAuth2Api": {
+					"displayName": "Команды OAuth2"
+				},
+				"microsoftOAuth2Api": {
+					"displayName": "Microsoft OAuth2 (график)",
+					"description": "Общие учетные данные Microsoft Graph. Добавьте области графика Teams (например, Chat.ReadWrite, ChannelMessage.Read.All, Group.ReadWrite.All) и предоставьте согласие администратора на учетные данные. Полную строку области видимости смотрите в документации."
+				},
+				"microsoftEntraServicePrincipalApi": {
+					"displayName": "Принципал службы (только для приложения)",
+					"description": "Доступ только через приложение через регистрацию приложения Microsoft Entra. Graph только для приложений не может действовать как вошедший в систему пользователь, поэтому действия чата и триггеры чата недоступны. Предоставьте соответствующие разрешения приложения (например, Team.ReadBasic.All, Channel.ReadBasic.All, Tasks.ReadWrite.All) и согласие администратора на учетные данные."
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"channel": {
+					"displayName": "Канал"
+				},
+				"channelMessage": {
+					"displayName": "Сообщение канала"
+				},
+				"chatMessage": {
+					"displayName": "Сообщение в чате"
+				},
+				"task": {
+					"displayName": "Задача"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать задачу"
+				},
+				"deleteChannel": {
+					"displayName": "Удалить",
+					"description": "Удалить канал"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить задачу"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получите много задач"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить задачу"
+				},
+				"sendAndWait": {
+					"displayName": "Отправить и дождаться ответа",
+					"description": "Отправьте сообщение и дождитесь ответа"
+				},
+				"deleteTask": {
+					"displayName": "Удалить",
+					"description": "Удалить задачу"
+				}
+			}
+		},
+		"teamId": {
+			"displayName": "Команда",
+			"description": "Выберите команду из списка, по URL-адресу или по идентификатору (идентификатор — это параметр groupId в URL-адресе, который вы получаете в разделе \"Получить ссылку на команду\")."
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Название канала",
+			"placeholder": "например Имя моего нового канала"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"description": {
+					"displayName": "Описание",
+					"description": "Описание канала"
+				},
+				"type": {
+					"displayName": "Тип",
+					"description": "Стандартный: доступен всем членам команды. Частное: доступно только определенной группе людей в команде.",
+					"options": {
+						"private": {
+							"displayName": "Частный"
+						},
+						"standard": {
+							"displayName": "Стандартный"
+						}
+					}
+				},
+				"includeLinkToWorkflow": {
+					"displayName": "Включить ссылку на рабочий процесс",
+					"description": "Добавлять ли ссылку на этот рабочий процесс в конце сообщения. Это полезно, если у вас много рабочих процессов, отправляющих сообщения."
+				},
+				"makeReply": {
+					"displayName": "Ответ на идентификатор",
+					"description": "Необязательный идентификатор сообщения, на которое вы хотите ответить. Идентификатор сообщения — это число перед «?tenantId» в URL-адресе сообщения.",
+					"placeholder": "например 1673348720590"
+				},
+				"limitWaitTime": {
+					"values": {
+						"limitWaitTime": {
+							"displayName": "Ограничить время ожидания",
+							"description": "Ограничить ли время, в течение которого этот узел должен ждать ответа пользователя, прежде чем возобновится выполнение."
+						},
+						"values": {
+							"options": {
+								"limitType": {
+									"displayName": "Тип лимита",
+									"description": "Устанавливает условие возобновления выполнения. Может быть указанная дата или через некоторое время.",
+									"options": {
+										"afterTimeInterval": {
+											"displayName": "После временного интервала",
+											"description": "Ждет определенное время"
+										},
+										"atSpecifiedTime": {
+											"displayName": "В указанное время",
+											"description": "Ожидает установленной даты и времени, чтобы продолжить"
+										}
+									}
+								},
+								"resumeAmount": {
+									"displayName": "Количество",
+									"description": "Время ждать"
+								},
+								"resumeUnit": {
+									"displayName": "Единица",
+									"description": "Единица значения интервала",
+									"options": {
+										"minutes": {
+											"displayName": "Минуты"
+										},
+										"hours": {
+											"displayName": "Часы"
+										},
+										"days": {
+											"displayName": "Дни"
+										}
+									}
+								},
+								"maxDateAndTime": {
+									"displayName": "Максимальная дата и время",
+									"description": "Продолжить выполнение после указанной даты и времени"
+								}
+							}
+						}
+					},
+					"displayName": "Ограничить время ожидания",
+					"description": "Ограничить ли время, в течение которого этот узел должен ждать ответа пользователя, прежде чем возобновится выполнение.",
+					"options": {
+						"values": {
+							"displayName": "Ценности"
+						}
+					}
+				},
+				"appendAttribution": {
+					"displayName": "Добавить авторство n8n",
+					"description": "Включить ли в конец сообщения фразу «Это сообщение было отправлено автоматически с помощью n8n»"
+				},
+				"messageButtonLabel": {
+					"displayName": "Метка кнопки сообщения"
+				},
+				"responseFormTitle": {
+					"displayName": "Название формы ответа",
+					"description": "Название формы, к которой пользователь может получить доступ для ответа"
+				},
+				"responseFormDescription": {
+					"displayName": "Форма ответа Описание",
+					"description": "Описание формы, к которой пользователь может получить доступ для ответа."
+				},
+				"responseFormButtonLabel": {
+					"displayName": "Метка кнопки формы ответа"
+				},
+				"responseFormCustomCss": {
+					"displayName": "Пользовательский стиль формы ответа",
+					"description": "Переопределить стиль формы ответа по умолчанию с помощью CSS"
+				},
+				"assignedTo": {
+					"displayName": "Назначено",
+					"description": "Кому поручить задачу"
+				},
+				"dueDateTime": {
+					"displayName": "Срок выполнения Время",
+					"description": "Дата и время выполнения задачи. Тип Timestamp представляет информацию о дате и времени в формате ISO 8601 и всегда в формате UTC."
+				},
+				"percentComplete": {
+					"displayName": "Процент завершения",
+					"description": "Процент выполнения задачи. При значении 100 задача считается выполненной.",
+					"placeholder": "например 75"
+				}
+			},
+			"description": "Другие варианты установки"
+		},
+		"channelId": {
+			"displayName": "Канал",
+			"description": "Выберите канал из списка, по URL-адресу или по идентификатору (идентификатор — это «threadId» в URL-адресе)."
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"channelMessageCreateServicePrincipalNotice": {
+			"displayName": "Отправка сообщений канала недоступна с учетными данными субъекта-службы (Graph только для приложений поддерживает только импорт миграции). Используйте учетные данные OAuth2 для публикации сообщений."
+		},
+		"channelMessageGetAllServicePrincipalNotice": {
+			"displayName": "Чтение сообщений канала с учетными данными субъекта-службы использует измеренный API Microsoft Teams, для чего может потребоваться настройка модели выставления счетов или оценки в клиенте."
+		},
+		"contentType": {
+			"displayName": "Тип контента",
+			"description": "Является ли сообщение обычным текстом или HTML",
+			"options": {
+				"text": {
+					"displayName": "Текст"
+				},
+				"html": {
+					"displayName": "HTML"
+				}
+			}
+		},
+		"message": {
+			"displayName": "Сообщение",
+			"description": "Содержание сообщения, которое будет отправлено"
+		},
+		"chatMessageServicePrincipalNotice": {
+			"displayName": "Сообщения чата недоступны с учетными данными субъекта службы. В Microsoft Graph только для приложений нет вошедшего в систему пользователя; используйте учетные данные OAuth2 для действий в чате."
+		},
+		"chatId": {
+			"displayName": "Чат",
+			"description": "Выберите чат из списка, по URL-адресу или по идентификатору (найдите идентификатор чата после «conversations/» в URL-адресе)."
+		},
+		"messageId": {
+			"displayName": "Идентификатор сообщения",
+			"description": "Идентификатор сообщения, которое нужно получить",
+			"placeholder": "например 1673355049064"
+		},
+		"responseType": {
+			"displayName": "Тип ответа",
+			"options": {
+				"approval": {
+					"displayName": "Одобрение",
+					"description": "Пользователь может одобрить/отклонить сообщение прямо в сообщении."
+				},
+				"freeText": {
+					"displayName": "Свободный текст",
+					"description": "Пользователь может отправить ответ через форму"
+				},
+				"customForm": {
+					"displayName": "Пользовательская форма",
+					"description": "Пользователь может отправить ответ через специальную форму"
+				}
+			}
+		},
+		"defineForm": {
+			"displayName": "Определить форму",
+			"options": {
+				"fields": {
+					"displayName": "Использование полей ниже"
+				},
+				"json": {
+					"displayName": "Использование JSON"
+				}
+			}
+		},
+		"jsonOutput": {
+			"displayName": "Поля формы",
+			"hint": "<a href=\"https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.form/\" target=\"_blank\">См. в документации </a> синтаксис полей."
+		},
+		"formFields": {
+			"options": {
+				"formFields": {
+					"displayName": "Элементы формы"
+				},
+				"values": {
+					"displayName": "Ценности",
+					"values": {
+						"fieldName": {
+							"displayName": "Имя настраиваемого поля",
+							"description": "Имя поля, используемое во входных атрибутах и ​​на которое ссылается рабочий процесс."
+						},
+						"fieldLabel": {
+							"displayName": "Имя поля",
+							"description": "Метка, которая появляется над полем ввода",
+							"placeholder": "например Как вас зовут?"
+						},
+						"fieldType": {
+							"displayName": "Тип элемента",
+							"description": "Тип поля, добавляемого в форму",
+							"options": {
+								"checkbox": {
+									"displayName": "Флажки"
+								},
+								"html": {
+									"displayName": "Пользовательский HTML"
+								},
+								"date": {
+									"displayName": "Дата"
+								},
+								"dropdown": {
+									"displayName": "Падать"
+								},
+								"email": {
+									"displayName": "Электронная почта"
+								},
+								"file": {
+									"displayName": "Файл"
+								},
+								"hiddenField": {
+									"displayName": "Скрытое поле"
+								},
+								"number": {
+									"displayName": "Число"
+								},
+								"password": {
+									"displayName": "Пароль"
+								},
+								"radio": {
+									"displayName": "Радиокнопки"
+								},
+								"text": {
+									"displayName": "Ввод текста"
+								},
+								"textarea": {
+									"displayName": "Текстовая область"
+								}
+							}
+						},
+						"elementName": {
+							"displayName": "Имя элемента",
+							"description": "Необязательное поле. Его можно использовать для включения HTML в выходные данные.",
+							"placeholder": "например раздел контента"
+						},
+						"placeholder": {
+							"displayName": "Заполнитель",
+							"description": "Пример текста для отображения внутри поля"
+						},
+						"defaultValue": {
+							"displayName": "Значение по умолчанию",
+							"description": "Значения по умолчанию, которые будут выбраны заранее. Должно соответствовать одному или нескольким меткам опций. Разделите несколько предварительно выбранных опций запятой."
+						},
+						"fieldValue": {
+							"displayName": "Значение поля",
+							"description": "Входное значение можно установить здесь или оно будет передано в качестве параметра запроса через имя поля, если значение не установлено."
+						},
+						"fieldOptions": {
+							"options": {
+								"fieldOptions": {
+									"displayName": "Радиокнопки",
+									"description": "Список опций, которые можно выбрать из раскрывающегося списка"
+								},
+								"values": {
+									"displayName": "Ценности",
+									"values": {
+										"option": {
+											"displayName": "Метка радиокнопки"
+										}
+									}
+								}
+							},
+							"placeholder": "Добавить переключатель",
+							"displayName": "Радиокнопки",
+							"description": "Список опций, которые можно выбрать из раскрывающегося списка"
+						},
+						"multiselectLegacyNotice": {
+							"displayName": "Множественный выбор является устаревшим вариантом, вместо этого используйте тип поля «Флажки» или «Переключатели»."
+						},
+						"multiselect": {
+							"displayName": "Множественный выбор",
+							"description": "Разрешить ли пользователю выбирать несколько вариантов из раскрывающегося списка"
+						},
+						"limitSelection": {
+							"displayName": "Ограничить выбор",
+							"options": {
+								"exact": {
+									"displayName": "Точный номер"
+								},
+								"range": {
+									"displayName": "Диапазон"
+								},
+								"unlimited": {
+									"displayName": "Безлимитный"
+								}
+							}
+						},
+						"numberOfSelections": {
+							"displayName": "Количество вариантов выбора"
+						},
+						"minSelections": {
+							"displayName": "Минимальный выбор"
+						},
+						"maxSelections": {
+							"displayName": "Максимальный выбор"
+						},
+						"html": {
+							"displayName": "HTML",
+							"description": "HTML-элементы для отображения на странице формы",
+							"hint": "Не принимает теги <code><script></code>, <code><style></code> или <code><input></code>."
+						},
+						"multipleFiles": {
+							"displayName": "Несколько файлов",
+							"description": "Разрешить ли пользователю выбирать несколько файлов из входного файла или только один"
+						},
+						"acceptFileTypes": {
+							"displayName": "Допустимые типы файлов",
+							"description": "Список разрешенных расширений файлов, разделенный запятыми",
+							"hint": "Оставьте пустым, чтобы разрешить все типы файлов.",
+							"placeholder": "например .jpg, .png"
+						},
+						"formatDate": {
+							"displayName": "Отображаемая дата форматируется на основе языкового стандарта браузера пользователя."
+						},
+						"requiredField": {
+							"displayName": "Обязательное поле",
+							"description": "Требовать ли от пользователя ввода значения в это поле перед отправкой формы"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить элемент формы",
+			"displayName": "Элементы формы",
+			"addOptionalFieldButtonText": "Добавить атрибуты"
+		},
+		"approvalOptions": {
+			"options": {
+				"approvalOptions": {
+					"displayName": "Варианты утверждения"
+				},
+				"values": {
+					"displayName": "Ценности",
+					"values": {
+						"approvalType": {
+							"displayName": "Тип одобрения",
+							"placeholder": "Добавить вариант",
+							"options": {
+								"single": {
+									"displayName": "Только утвердить"
+								},
+								"double": {
+									"displayName": "Одобрить и не одобрить"
+								}
+							}
+						},
+						"approveLabel": {
+							"displayName": "Метка кнопки «Утвердить»"
+						},
+						"disapproveLabel": {
+							"displayName": "Ярлык кнопки «Отклонить»"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить вариант",
+			"displayName": "Варианты утверждения"
+		},
+		"groupId": {
+			"displayName": "Команда"
+		},
+		"planId": {
+			"displayName": "План",
+			"description": "План принадлежности задачи"
+		},
+		"bucketId": {
+			"displayName": "Ведро",
+			"description": "Сегмент, которому будет принадлежать задача"
+		},
+		"title": {
+			"displayName": "Заголовок",
+			"description": "Название задачи",
+			"placeholder": "например новая задача"
+		},
+		"taskId": {
+			"displayName": "Идентификатор задачи",
+			"description": "Идентификатор задачи для обновления",
+			"placeholder": "например h3ufgLvXPkSRzYm-zO5cY5gANTBQ"
+		},
+		"tasksFor": {
+			"displayName": "Задачи для",
+			"description": "Получать ли задачи для пользователя или для плана",
+			"options": {
+				"member": {
+					"displayName": "Член группы",
+					"description": "Задачи, назначенные участнику группы"
+				},
+				"plan": {
+					"displayName": "План",
+					"description": "Задачи в групповом плане"
+				}
+			}
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"assignedTo": {
+					"displayName": "Назначено",
+					"description": "Кому поручить задачу",
+					"hint": "Сначала выберите «Команда» из вариантов."
+				},
+				"bucketId": {
+					"displayName": "Ведро",
+					"description": "Сегмент, которому будет принадлежать задача"
+				},
+				"dueDateTime": {
+					"displayName": "Срок выполнения Время",
+					"description": "Дата и время выполнения задачи. Тип Timestamp представляет информацию о дате и времени в формате ISO 8601 и всегда в формате UTC."
+				},
+				"groupId": {
+					"displayName": "Команда"
+				},
+				"percentComplete": {
+					"displayName": "Процент завершения",
+					"description": "Процент выполнения задачи. При значении 100 задача считается выполненной.",
+					"placeholder": "например 75"
+				},
+				"planId": {
+					"displayName": "План",
+					"description": "План принадлежности задачи",
+					"hint": "Сначала выберите «Команда» из вариантов."
+				},
+				"title": {
+					"displayName": "Заголовок",
+					"description": "Название задачи",
+					"placeholder": "например моя задача"
+				}
+			}
+		}
+	}
+}

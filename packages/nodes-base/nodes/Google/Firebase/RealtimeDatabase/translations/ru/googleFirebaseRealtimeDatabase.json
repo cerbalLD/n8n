@@ -1,0 +1,48 @@
+{
+	"header": {
+		"displayName": "Облачная база данных Google в реальном времени",
+		"description": "Взаимодействие с Google Firebase — API базы данных в реальном времени"
+	},
+	"nodeView": {
+		"projectId": {
+			"displayName": "Название или идентификатор проекта",
+			"description": "Как показано в URL-адресе консоли Firebase. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Запись данных в базу данных"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить данные из базы данных"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить запись из базы данных"
+				},
+				"push": {
+					"displayName": "Толкать",
+					"description": "Добавить в список данных"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить элемент в базе данных"
+				}
+			}
+		},
+		"path": {
+			"displayName": "Путь к объекту",
+			"description": "Путь к объекту в базе данных. Не добавляйте .json.",
+			"placeholder": "например /приложение/пользователи",
+			"hint": "Оставьте поле пустым, чтобы получить весь объект базы данных."
+		},
+		"attributes": {
+			"displayName": "Столбцы/Атрибуты",
+			"description": "Атрибуты для сохранения",
+			"placeholder": "возраст, имя, город"
+		}
+	}
+}

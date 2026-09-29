@@ -1,0 +1,163 @@
+{
+	"header": {
+		"displayName": "Итерируемый",
+		"description": "Использовать итерируемый API"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"event": {
+					"displayName": "Событие"
+				},
+				"user": {
+					"displayName": "Пользователь"
+				},
+				"userList": {
+					"displayName": "Список пользователей"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"track": {
+					"displayName": "Отслеживать",
+					"description": "Записывайте действия, которые выполняет пользователь"
+				},
+				"upsert": {
+					"displayName": "Создать или обновить",
+					"description": "Создайте нового пользователя или обновите текущего, если он уже существует (upsert)"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удаление пользователя"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить пользователя"
+				},
+				"add": {
+					"displayName": "Добавлять",
+					"description": "Добавить пользователя в список"
+				},
+				"remove": {
+					"displayName": "Удалять",
+					"description": "Удаление пользователя из списка"
+				}
+			}
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Название события для отслеживания"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"campaignId": {
+					"displayName": "Идентификатор кампании",
+					"description": "Атрибут отписки от кампании"
+				},
+				"createdAt": {
+					"displayName": "Создано в",
+					"description": "Время, когда произошло событие"
+				},
+				"dataFieldsUi": {
+					"values": {
+						"dataFieldsUi": {
+							"displayName": "Поля данных"
+						},
+						"dataFieldValues": {
+							"options": {
+								"key": {
+									"displayName": "Ключ",
+									"description": "Указанный конечным пользователем ключ определяемых пользователем данных"
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Указанное конечным пользователем значение определяемых пользователем данных"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить поле данных",
+					"displayName": "Поля данных",
+					"options": {
+						"dataFieldValues": {
+							"displayName": "Поле данных"
+						}
+					}
+				},
+				"email": {
+					"displayName": "Электронная почта",
+					"description": "Для идентификации пользователя необходимо передать адрес электронной почты или идентификатор пользователя. Если переданы оба, электронная почта имеет приоритет.",
+					"placeholder": "имя@email.com"
+				},
+				"id": {
+					"displayName": "ID",
+					"description": "Необязательный идентификатор события. Если событие с таким идентификатором существует, оно будет обновлено. Если ничего не указано, новый идентификатор будет автоматически сгенерирован и возвращен."
+				},
+				"templateId": {
+					"displayName": "Идентификатор шаблона"
+				},
+				"userId": {
+					"displayName": "ID пользователя",
+					"description": "userId, который был передан в вызов updateUser"
+				},
+				"mergeNestedObjects": {
+					"displayName": "Объединение вложенных объектов",
+					"description": "Следует ли объединять объекты верхнего уровня вместо перезаписи (по умолчанию: false), например. если в профиле пользователя есть данные: {mySettings:{mobile:true}} и в поле контакта изменения есть данные: {mySettings:{email:true}}, результирующий профиль: {mySettings:{mobile:true,email:true}}"
+				},
+				"channelUnsubscribe": {
+					"displayName": "Отписаться от канала",
+					"description": "Отписаться ли от подписки на электронную почту из связанного со списком канала — по сути, глобальная отписка."
+				}
+			}
+		},
+		"identifier": {
+			"displayName": "Идентификатор",
+			"description": "Идентификатор, который будет использоваться",
+			"options": {
+				"email": {
+					"displayName": "Электронная почта"
+				},
+				"userId": {
+					"displayName": "ID пользователя"
+				}
+			}
+		},
+		"value": {
+			"displayName": "Ценить"
+		},
+		"preferUserId": {
+			"displayName": "Создать, если не существует",
+			"description": "Создавать ли нового пользователя, если идентификатор не существует"
+		},
+		"by": {
+			"displayName": "К",
+			"description": "Идентификатор, который будет использоваться",
+			"options": {
+				"email": {
+					"displayName": "Электронная почта"
+				},
+				"userId": {
+					"displayName": "ID пользователя"
+				}
+			}
+		},
+		"userId": {
+			"displayName": "ID пользователя",
+			"description": "Уникальный идентификатор конкретного пользователя"
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"description": "Электронная почта для конкретного пользователя",
+			"placeholder": "имя@email.com"
+		},
+		"listId": {
+			"displayName": "Имя списка или идентификатор",
+			"description": "Идентификатор, который будет использоваться. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		}
+	}
+}

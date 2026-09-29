@@ -1,0 +1,306 @@
+{
+	"header": {
+		"displayName": "n8n Форма триггера",
+		"description": "Создавайте веб-формы в n8n и передайте их ответы в рабочий процесс."
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"basicAuth": {
+					"displayName": "Базовая аутентификация"
+				},
+				"none": {
+					"displayName": "Никто"
+				},
+				"n8nUserAuth": {
+					"displayName": "n8n Аутентификация пользователя",
+					"description": "Требовать, чтобы пользователь вошел в систему под своей учетной записью n8n"
+				}
+			}
+		},
+		"requireExecuteAccess": {
+			"displayName": "Требовать разрешение на выполнение рабочего процесса",
+			"description": "Должен ли инициирующий пользователь иметь разрешение на выполнение рабочего процесса в проекте, к которому он принадлежит."
+		},
+		"path": {
+			"displayName": "Форма пути",
+			"description": "Последний сегмент URL-адреса формы как для тестирования, так и для рабочей версии.",
+			"placeholder": "вебхук"
+		},
+		"formTitle": {
+			"displayName": "Название формы",
+			"description": "Отображается вверху формы",
+			"placeholder": "например Связаться с нами"
+		},
+		"formDescription": {
+			"displayName": "Описание формы",
+			"description": "Отображается под заголовком формы. Может использоваться для подсказки пользователю о том, как заполнить форму. Принимает HTML. Не принимает теги <code><script></code>, <code><style></code> или <code><input></code>.",
+			"placeholder": "например Мы скоро свяжемся с вами"
+		},
+		"formFields": {
+			"options": {
+				"formFields": {
+					"displayName": "Элементы формы"
+				},
+				"values": {
+					"displayName": "Ценности",
+					"values": {
+						"fieldName": {
+							"displayName": "Имя настраиваемого поля",
+							"description": "Имя поля, используемое во входных атрибутах и ​​на которое ссылается рабочий процесс."
+						},
+						"fieldLabel": {
+							"displayName": "Имя поля",
+							"description": "Метка, которая появляется над полем ввода",
+							"placeholder": "например Как вас зовут?"
+						},
+						"fieldType": {
+							"displayName": "Тип элемента",
+							"description": "Тип поля, добавляемого в форму",
+							"options": {
+								"checkbox": {
+									"displayName": "Флажки"
+								},
+								"html": {
+									"displayName": "Пользовательский HTML"
+								},
+								"date": {
+									"displayName": "Дата"
+								},
+								"dropdown": {
+									"displayName": "Падать"
+								},
+								"email": {
+									"displayName": "Электронная почта"
+								},
+								"file": {
+									"displayName": "Файл"
+								},
+								"hiddenField": {
+									"displayName": "Скрытое поле"
+								},
+								"number": {
+									"displayName": "Число"
+								},
+								"password": {
+									"displayName": "Пароль"
+								},
+								"radio": {
+									"displayName": "Радиокнопки"
+								},
+								"text": {
+									"displayName": "Ввод текста"
+								},
+								"textarea": {
+									"displayName": "Текстовая область"
+								}
+							}
+						},
+						"elementName": {
+							"displayName": "Имя элемента",
+							"description": "Необязательное поле. Его можно использовать для включения HTML в выходные данные.",
+							"placeholder": "например раздел контента"
+						},
+						"placeholder": {
+							"displayName": "Заполнитель",
+							"description": "Пример текста для отображения внутри поля"
+						},
+						"defaultValue": {
+							"displayName": "Значение по умолчанию",
+							"description": "Значения по умолчанию, которые будут выбраны заранее. Должно соответствовать одному или нескольким меткам опций. Разделите несколько предварительно выбранных опций запятой."
+						},
+						"fieldValue": {
+							"displayName": "Значение поля",
+							"description": "Входное значение можно установить здесь или оно будет передано в качестве параметра запроса через имя поля, если значение не установлено."
+						},
+						"fieldOptions": {
+							"options": {
+								"fieldOptions": {
+									"displayName": "Радиокнопки",
+									"description": "Список опций, которые можно выбрать из раскрывающегося списка"
+								},
+								"values": {
+									"displayName": "Ценности",
+									"values": {
+										"option": {
+											"displayName": "Метка радиокнопки"
+										}
+									}
+								}
+							},
+							"placeholder": "Добавить переключатель",
+							"displayName": "Радиокнопки",
+							"description": "Список опций, которые можно выбрать из раскрывающегося списка"
+						},
+						"multiselectLegacyNotice": {
+							"displayName": "Множественный выбор является устаревшим вариантом, вместо этого используйте тип поля «Флажки» или «Переключатели»."
+						},
+						"multiselect": {
+							"displayName": "Множественный выбор",
+							"description": "Разрешить ли пользователю выбирать несколько вариантов из раскрывающегося списка"
+						},
+						"limitSelection": {
+							"displayName": "Ограничить выбор",
+							"options": {
+								"exact": {
+									"displayName": "Точный номер"
+								},
+								"range": {
+									"displayName": "Диапазон"
+								},
+								"unlimited": {
+									"displayName": "Безлимитный"
+								}
+							}
+						},
+						"numberOfSelections": {
+							"displayName": "Количество вариантов выбора"
+						},
+						"minSelections": {
+							"displayName": "Минимальный выбор"
+						},
+						"maxSelections": {
+							"displayName": "Максимальный выбор"
+						},
+						"html": {
+							"displayName": "HTML",
+							"description": "HTML-элементы для отображения на странице формы",
+							"hint": "Не принимает теги <code><script></code>, <code><style></code> или <code><input></code>."
+						},
+						"multipleFiles": {
+							"displayName": "Несколько файлов",
+							"description": "Разрешить ли пользователю выбирать несколько файлов из входного файла или только один"
+						},
+						"acceptFileTypes": {
+							"displayName": "Допустимые типы файлов",
+							"description": "Список разрешенных расширений файлов, разделенный запятыми",
+							"hint": "Оставьте пустым, чтобы разрешить все типы файлов.",
+							"placeholder": "например .jpg, .png"
+						},
+						"formatDate": {
+							"displayName": "Отображаемая дата форматируется на основе языкового стандарта браузера пользователя."
+						},
+						"requiredField": {
+							"displayName": "Обязательное поле",
+							"description": "Требовать ли от пользователя ввода значения в это поле перед отправкой формы"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить элемент формы",
+			"displayName": "Элементы формы",
+			"addOptionalFieldButtonText": "Добавить атрибуты"
+		},
+		"responseMode": {
+			"displayName": "Ответить, когда",
+			"description": "Когда отвечать на отправку формы",
+			"options": {
+				"onReceived": {
+					"displayName": "Форма отправлена",
+					"description": "Как только этот узел получит отправку формы"
+				},
+				"lastNode": {
+					"displayName": "Завершение рабочего процесса",
+					"description": "Когда выполняется последний узел рабочего процесса"
+				},
+				"responseNode": {
+					"displayName": "Использование узла «Ответить на веб-перехватчик»",
+					"description": "Когда выполняется узел «Ответить на Webhook»"
+				}
+			}
+		},
+		"formNotice": {
+			"displayName": "В узле «Ответить на Webhook» выберите «Ответить с помощью JSON» и установите ключ <strong>formSubmitText</strong> для отображения пользовательского ответа в форме или ключ <strong>redirectURL</strong> для перенаправления пользователей на URL-адрес."
+		},
+		"addFormPage": {
+			"displayName": "Создавайте многоэтапные формы, добавляя страницу формы позже в рабочий процесс."
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"appendAttribution": {
+					"displayName": "Добавить авторство n8n",
+					"description": "Включить ли ссылку «Форма автоматизирована с помощью n8n» внизу формы."
+				},
+				"ipWhitelist": {
+					"displayName": "Белый список IP-адресов",
+					"description": "Список разрешенных IP-адресов или диапазонов CIDR, разделенный запятыми. Оставьте пустым, чтобы разрешить все IP-адреса.",
+					"placeholder": "например 127.0.0.1, 192.168.1.0/24"
+				},
+				"buttonLabel": {
+					"displayName": "Метка кнопки",
+					"description": "Метка кнопки отправки в форме"
+				},
+				"path": {
+					"displayName": "Форма пути",
+					"description": "Последний сегмент URL-адреса формы как для тестирования, так и для рабочей версии.",
+					"placeholder": "вебхук"
+				},
+				"respondWithOptions": {
+					"values": {
+						"respondWithOptions": {
+							"displayName": "Форма ответа"
+						},
+						"values": {
+							"options": {
+								"respondWith": {
+									"displayName": "Ответить с",
+									"options": {
+										"text": {
+											"displayName": "Текст, отправленный через форму",
+											"description": "Показать текст ответа пользователю"
+										},
+										"redirect": {
+											"displayName": "URL-адрес перенаправления",
+											"description": "Перенаправить пользователя на URL-адрес"
+										}
+									}
+								},
+								"formSubmittedText": {
+									"displayName": "Текст для показа",
+									"description": "Текст, отображаемый пользователям после заполнения формы. Оставьте это поле пустым, если не хотите отображать дополнительный текст."
+								},
+								"redirectUrl": {
+									"displayName": "URL-адрес для перенаправления",
+									"description": "URL-адрес, на который перенаправляются пользователи после заполнения формы. Должен быть действительным URL-адресом.",
+									"placeholder": "например http://www.n8n.io"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить вариант",
+					"displayName": "Форма ответа",
+					"options": {
+						"values": {
+							"displayName": "Ценности"
+						}
+					}
+				},
+				"ignoreBots": {
+					"displayName": "Игнорировать ботов",
+					"description": "Следует ли игнорировать запросы от ботов, таких как программы предварительного просмотра ссылок и веб-сканеры."
+				},
+				"includeUserInOutput": {
+					"displayName": "Включить пользователя в вывод",
+					"description": "Следует ли включать идентификатор, адрес электронной почты и имя вошедшего в систему пользователя в выходные данные триггера."
+				},
+				"useWorkflowTimezone": {
+					"displayName": "Использовать часовой пояс рабочего процесса",
+					"description": "Использовать ли часовой пояс рабочего процесса в поле «submitedAt» или UTC."
+				},
+				"customCss": {
+					"displayName": "Пользовательский стиль формы",
+					"description": "Переопределить стиль по умолчанию интерфейса общедоступной формы с помощью CSS."
+				},
+				"showHeaders": {
+					"displayName": "Показать заголовки",
+					"description": "Отображаются ли заголовки запроса на отправку формы"
+				}
+			}
+		},
+		"eventTriggerDescription": "Жду, пока вы отправите форму",
+		"activationMessage": "Теперь вы можете совершать вызовы по URL-адресу рабочей формы."
+	}
+}

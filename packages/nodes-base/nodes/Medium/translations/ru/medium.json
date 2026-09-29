@@ -1,0 +1,148 @@
+{
+	"header": {
+		"displayName": "Середина",
+		"description": "Использовать средний API"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"accessToken": {
+					"displayName": "Токен доступа"
+				},
+				"oAuth2": {
+					"displayName": "ОАут2"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"post": {
+					"displayName": "Почта"
+				},
+				"publication": {
+					"displayName": "Публикация"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать публикацию"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получите много публикаций"
+				}
+			}
+		},
+		"publication": {
+			"displayName": "Публикация",
+			"description": "Публикуете ли вы публикацию"
+		},
+		"publicationId": {
+			"displayName": "Название или идентификатор публикации",
+			"description": "Идентификаторы публикаций. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"title": {
+			"displayName": "Заголовок",
+			"description": "Название поста. Максимальная длина: 100 символов.",
+			"placeholder": "Мой вклад в открытый исходный код"
+		},
+		"contentFormat": {
+			"displayName": "Формат контента",
+			"description": "Формат публикуемого контента",
+			"options": {
+				"html": {
+					"displayName": "HTML"
+				},
+				"markdown": {
+					"displayName": "Уценка"
+				}
+			}
+		},
+		"content": {
+			"displayName": "Содержание",
+			"description": "Тело сообщения в допустимом семантическом фрагменте HTML или Markdown.",
+			"placeholder": "Мой вклад в открытый исходный код"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"canonicalUrl": {
+					"displayName": "Канонический URL-адрес",
+					"description": "Исходный дом этого контента, если он изначально был опубликован где-то еще."
+				},
+				"license": {
+					"displayName": "Лицензия",
+					"description": "Лицензия почты",
+					"options": {
+						"all-rights-reserved": {
+							"displayName": "все права защищены"
+						},
+						"cc-40-by": {
+							"displayName": "cc-40-от"
+						},
+						"cc-40-by-nc": {
+							"displayName": "cc-40-by-nc"
+						},
+						"cc-40-by-nc-nd": {
+							"displayName": "cc-40-от nc-nd"
+						},
+						"cc-40-by-nc-sa": {
+							"displayName": "cc-40-от nc-sa"
+						},
+						"cc-40-by-nd": {
+							"displayName": "cc-40-по-nd"
+						},
+						"cc-40-by-sa": {
+							"displayName": "cc-40-by-sa"
+						},
+						"cc-40-zero": {
+							"displayName": "cc-40-ноль"
+						},
+						"public-domain": {
+							"displayName": "общественное достояние"
+						}
+					}
+				},
+				"notifyFollowers": {
+					"displayName": "Уведомить подписчиков",
+					"description": "Уведомлять ли подписчиков о том, что пользователь опубликовал"
+				},
+				"publishStatus": {
+					"displayName": "Статус публикации",
+					"description": "Статус сообщения",
+					"options": {
+						"public": {
+							"displayName": "Общественный"
+						},
+						"draft": {
+							"displayName": "Черновик"
+						},
+						"unlisted": {
+							"displayName": "Нет в списке"
+						}
+					}
+				},
+				"tags": {
+					"displayName": "Теги",
+					"description": "Строки, разделенные запятыми, которые будут использоваться в качестве тегов для классификации сообщений. Максимальное количество тегов: 5. Максимальная длина тега: 25 символов.",
+					"placeholder": "открытый исходный код, млх, стипендия"
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		}
+	}
+}

@@ -1,0 +1,1942 @@
+{
+	"header": {
+		"displayName": "WhatsApp Бизнес-облако",
+		"description": "Доступ к API WhatsApp"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"message": {
+					"displayName": "Сообщение"
+				},
+				"media": {
+					"displayName": "СМИ"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"send": {
+					"displayName": "Отправлять"
+				},
+				"sendAndWait": {
+					"displayName": "Отправить и дождаться ответа"
+				},
+				"sendTemplate": {
+					"displayName": "Отправить шаблон"
+				},
+				"mediaUpload": {
+					"displayName": "Загрузить"
+				},
+				"mediaUrlGet": {
+					"displayName": "Скачать"
+				},
+				"mediaDelete": {
+					"displayName": "Удалить"
+				}
+			},
+			"description": "Операция, выполняемая на носителе"
+		},
+		"phoneNumberId": {
+			"displayName": "Номер телефона отправителя (или идентификатор)",
+			"description": "Идентификатор номера телефона бизнес-аккаунта для хранения медиафайлов."
+		},
+		"recipientPhoneNumber": {
+			"displayName": "Номер телефона получателя",
+			"description": "Номер телефона получателя сообщения",
+			"hint": "При вводе номера телефона обязательно указывайте код страны."
+		},
+		"messageType": {
+			"displayName": "Тип сообщения",
+			"description": "Тип сообщения",
+			"options": {
+				"audio": {
+					"displayName": "Аудио"
+				},
+				"contacts": {
+					"displayName": "Контакты"
+				},
+				"document": {
+					"displayName": "Документ"
+				},
+				"image": {
+					"displayName": "Изображение"
+				},
+				"location": {
+					"displayName": "Расположение"
+				},
+				"text": {
+					"displayName": "Текст"
+				},
+				"video": {
+					"displayName": "Видео"
+				}
+			}
+		},
+		"name": {
+			"options": {
+				"name": {
+					"displayName": "Имя"
+				},
+				"data": {
+					"displayName": "Имя",
+					"values": {
+						"formatted_name": {
+							"displayName": "Форматированное имя"
+						},
+						"first_name": {
+							"displayName": "Имя"
+						},
+						"last_name": {
+							"displayName": "Фамилия"
+						},
+						"middle_name": {
+							"displayName": "Второе имя"
+						},
+						"suffix": {
+							"displayName": "Суффикс"
+						},
+						"prefix": {
+							"displayName": "Префикс"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить параметр",
+			"displayName": "Имя"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"addresses": {
+					"values": {
+						"addresses": {
+							"displayName": "Адреса"
+						},
+						"address": {
+							"options": {
+								"type": {
+									"displayName": "Тип",
+									"options": {
+										"HOME": {
+											"displayName": "Дом"
+										},
+										"WORK": {
+											"displayName": "Работа"
+										}
+									}
+								},
+								"street": {
+									"displayName": "Улица"
+								},
+								"city": {
+									"displayName": "Город"
+								},
+								"state": {
+									"displayName": "Состояние"
+								},
+								"zip": {
+									"displayName": "Почтовый индекс"
+								},
+								"country": {
+									"displayName": "Страна"
+								},
+								"country_code": {
+									"displayName": "Код страны"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить параметр",
+					"displayName": "Адреса",
+					"options": {
+						"address": {
+							"displayName": "Адрес"
+						}
+					}
+				},
+				"birthday": {
+					"displayName": "День рождения",
+					"placeholder": "YYYY-MM-DD"
+				},
+				"emails": {
+					"values": {
+						"emails": {
+							"displayName": "Электронная почта"
+						},
+						"data": {
+							"options": {
+								"type": {
+									"displayName": "Тип",
+									"options": {
+										"HOME": {
+											"displayName": "Дом"
+										},
+										"WORK": {
+											"displayName": "Работа"
+										}
+									}
+								},
+								"email": {
+									"displayName": "Электронная почта",
+									"placeholder": "имя@email.com"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить параметр",
+					"displayName": "Электронная почта",
+					"options": {
+						"data": {
+							"displayName": "Электронная почта"
+						}
+					}
+				},
+				"organization": {
+					"values": {
+						"organization": {
+							"displayName": "Организация"
+						},
+						"data": {
+							"options": {
+								"company": {
+									"displayName": "Компания"
+								},
+								"department": {
+									"displayName": "Отделение"
+								},
+								"title": {
+									"displayName": "Заголовок"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить параметр",
+					"displayName": "Организация",
+					"options": {
+						"data": {
+							"displayName": "Организация"
+						}
+					}
+				},
+				"phones": {
+					"values": {
+						"phones": {
+							"displayName": "Телефоны"
+						},
+						"data": {
+							"options": {
+								"type": {
+									"displayName": "Тип",
+									"options": {
+										"CELL": {
+											"displayName": "Клетка"
+										},
+										"HOME": {
+											"displayName": "Дом"
+										},
+										"IPHONE": {
+											"displayName": "айфон"
+										},
+										"MAIN": {
+											"displayName": "Основной"
+										},
+										"wa_id": {
+											"displayName": "Идентификатор WhatsApp"
+										},
+										"WORK": {
+											"displayName": "Работа"
+										}
+									}
+								},
+								"phone": {
+									"displayName": "Телефон"
+								},
+								"whatsapp_user_id": {
+									"displayName": "Идентификатор пользователя WhatsApp",
+									"description": "Если этот параметр опущен, в сообщении вместо стандартных кнопок будет отображаться кнопка «Пригласить в WhatsApp»."
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить параметр",
+					"displayName": "Телефоны",
+					"options": {
+						"data": {
+							"displayName": "Телефон"
+						}
+					}
+				},
+				"urls": {
+					"values": {
+						"urls": {
+							"displayName": "URL-адреса"
+						},
+						"url": {
+							"options": {
+								"type": {
+									"displayName": "Тип",
+									"options": {
+										"HOME": {
+											"displayName": "Дом"
+										},
+										"WORK": {
+											"displayName": "Работа"
+										}
+									}
+								},
+								"url": {
+									"displayName": "URL"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить параметр",
+					"displayName": "URL-адреса",
+					"options": {
+						"url": {
+							"displayName": "URL"
+						}
+					}
+				},
+				"additionalFields": {
+					"displayName": "Дополнительные поля"
+				},
+				"nameAndAddress": {
+					"displayName": "Имя и адрес",
+					"values": {
+						"name": {
+							"displayName": "Имя"
+						},
+						"address": {
+							"displayName": "Адрес"
+						}
+					}
+				},
+				"mediaFilename": {
+					"displayName": "Имя файла",
+					"description": "Имя файла"
+				},
+				"mediaCaption": {
+					"displayName": "Подпись",
+					"description": "Заголовок СМИ"
+				},
+				"previewUrl": {
+					"displayName": "Показать предварительный просмотр URL-адресов",
+					"description": "Отображать ли предварительный просмотр URL-адресов в текстовых сообщениях"
+				},
+				"mediaFileName": {
+					"displayName": "Имя файла",
+					"description": "Имя, которое будет использоваться для файла"
+				}
+			}
+		},
+		"longitude": {
+			"displayName": "Долгота"
+		},
+		"latitude": {
+			"displayName": "Широта"
+		},
+		"textBody": {
+			"displayName": "Текстовое тело",
+			"description": "Тело сообщения (максимум 4096 символов)"
+		},
+		"mediaPath": {
+			"displayName": "Взять видео с",
+			"description": "Используйте ссылку, идентификатор или n8n, чтобы загрузить видео.",
+			"options": {
+				"useMediaLink": {
+					"displayName": "Связь",
+					"description": "При использовании ссылки WhatsApp загрузит видео, избавляя вас от необходимости загружать видео самостоятельно."
+				},
+				"useMediaId": {
+					"displayName": "WhatsApp Медиа",
+					"description": "Вы можете использовать идентификатор, если вы уже загрузили видео в WhatsApp."
+				},
+				"useMedian8n": {
+					"displayName": "н8н",
+					"description": "Загрузите двоичный файл об элементе, обрабатываемом в n8n."
+				}
+			}
+		},
+		"mediaLink": {
+			"displayName": "Связь",
+			"description": "Ссылка на медиа для отправки"
+		},
+		"mediaId": {
+			"displayName": "ID",
+			"description": "Идентификатор носителя для отправки"
+		},
+		"mediaPropertyName": {
+			"displayName": "Имя свойства",
+			"description": "Имя двоичного свойства, содержащего данные для загружаемого файла."
+		},
+		"mediaFilename": {
+			"displayName": "Имя файла",
+			"description": "Имя файла (обязательно при использовании идентификатора файла)"
+		},
+		"template": {
+			"displayName": "Шаблон",
+			"description": "Название шаблона"
+		},
+		"components": {
+			"options": {
+				"components": {
+					"displayName": "Компоненты"
+				},
+				"component": {
+					"displayName": "Компонент",
+					"values": {
+						"type": {
+							"displayName": "Тип",
+							"options": {
+								"body": {
+									"displayName": "Тело"
+								},
+								"button": {
+									"displayName": "Кнопка"
+								},
+								"header": {
+									"displayName": "Заголовок"
+								}
+							}
+						},
+						"bodyParameters": {
+							"options": {
+								"bodyParameters": {
+									"displayName": "Параметры"
+								},
+								"parameter": {
+									"displayName": "Параметр",
+									"values": {
+										"type": {
+											"displayName": "Тип",
+											"options": {
+												"text": {
+													"displayName": "Текст"
+												},
+												"currency": {
+													"displayName": "Валюта"
+												},
+												"date_time": {
+													"displayName": "Дата Время"
+												}
+											}
+										},
+										"text": {
+											"displayName": "Текст"
+										},
+										"code": {
+											"displayName": "Код валюты",
+											"placeholder": "USD",
+											"options": {
+												"AED": {
+													"displayName": "AED - Дирхам ОАЭ"
+												},
+												"AFN": {
+													"displayName": "AFN – афгани"
+												},
+												"ALL": {
+													"displayName": "ВСЕ - Лек"
+												},
+												"AMD": {
+													"displayName": "AMD - Армянский драм"
+												},
+												"ANG": {
+													"displayName": "ANG – Гульдены Нидерландских Антильских островов"
+												},
+												"AOA": {
+													"displayName": "АОА - Кванза"
+												},
+												"ARS": {
+													"displayName": "ARS - Аргентинское песо"
+												},
+												"AUD": {
+													"displayName": "AUD - австралийский доллар"
+												},
+												"AWG": {
+													"displayName": "AWG – Арубанский флорин"
+												},
+												"AZN": {
+													"displayName": "AZN - Азербайджанский манат"
+												},
+												"BAM": {
+													"displayName": "БАМ – конвертируемая марка"
+												},
+												"BBD": {
+													"displayName": "BBD - Барбадосский доллар"
+												},
+												"BDT": {
+													"displayName": "БДТ - Така"
+												},
+												"BGN": {
+													"displayName": "BGN - Болгарский лев"
+												},
+												"BHD": {
+													"displayName": "BHD - бахрейнский динар"
+												},
+												"BIF": {
+													"displayName": "BIF – Бурундийский франк"
+												},
+												"BMD": {
+													"displayName": "BMD - Бермудский доллар"
+												},
+												"BND": {
+													"displayName": "BND - Брунейский доллар"
+												},
+												"BOB": {
+													"displayName": "Лучшим представителем породы - Боливиано"
+												},
+												"BOV": {
+													"displayName": "БОВ - Мвдол"
+												},
+												"BRL": {
+													"displayName": "BRL – Бразильский реал"
+												},
+												"BSD": {
+													"displayName": "BSD - Багамский доллар"
+												},
+												"BTN": {
+													"displayName": "БТН - Нгултрум"
+												},
+												"BWP": {
+													"displayName": "BWP - Пула"
+												},
+												"BYN": {
+													"displayName": "BYN - Белорусский рубль"
+												},
+												"BZD": {
+													"displayName": "BZD - Белизский доллар"
+												},
+												"CAD": {
+													"displayName": "CAD - канадский доллар"
+												},
+												"CDF": {
+													"displayName": "CDF - Конголезский франк"
+												},
+												"CHE": {
+													"displayName": "CHE - WIR Евро"
+												},
+												"CHF": {
+													"displayName": "CHF - Швейцарский франк"
+												},
+												"CHW": {
+													"displayName": "CHW – WIR Франк"
+												},
+												"CLF": {
+													"displayName": "CLF - Единство Фоменто"
+												},
+												"CLP": {
+													"displayName": "CLP - чилийское песо"
+												},
+												"CNY": {
+													"displayName": "CNY – юань женьминьби"
+												},
+												"COP": {
+													"displayName": "COP – колумбийское песо"
+												},
+												"COU": {
+													"displayName": "COU - Реалистическое единство доблести"
+												},
+												"CRC": {
+													"displayName": "CRC - Костариканский колон"
+												},
+												"CUC": {
+													"displayName": "CUC – конвертируемое песо"
+												},
+												"CUP": {
+													"displayName": "CUP - Кубинское песо"
+												},
+												"CVE": {
+													"displayName": "CVE – Кабо-Верде Эскудо"
+												},
+												"CZK": {
+													"displayName": "CZK - Чешская крона"
+												},
+												"DJF": {
+													"displayName": "DJF – Франк Джибути"
+												},
+												"DKK": {
+													"displayName": "DKK – датская крона"
+												},
+												"DOP": {
+													"displayName": "DOP – Доминиканское песо"
+												},
+												"DZD": {
+													"displayName": "DZD - Алжирский динар"
+												},
+												"EGP": {
+													"displayName": "EGP - египетский фунт"
+												},
+												"ERN": {
+													"displayName": "ЭРН - Накфа"
+												},
+												"ETB": {
+													"displayName": "ETB - Эфиопский быр"
+												},
+												"EUR": {
+													"displayName": "евро - евро"
+												},
+												"FJD": {
+													"displayName": "FJD - Фиджийский доллар"
+												},
+												"FKP": {
+													"displayName": "FKP - фунт Фолклендских островов"
+												},
+												"GBP": {
+													"displayName": "GBP - Фунт стерлингов"
+												},
+												"GEL": {
+													"displayName": "ГЕЛЬ - Лари"
+												},
+												"GHS": {
+													"displayName": "GHS – Гана Седи"
+												},
+												"GIP": {
+													"displayName": "GIP – Гибралтарский фунт"
+												},
+												"GMD": {
+													"displayName": "GMD - Даласи"
+												},
+												"GNF": {
+													"displayName": "GNF - гвинейский франк"
+												},
+												"GTQ": {
+													"displayName": "GTQ — Кетцаль"
+												},
+												"GYD": {
+													"displayName": "GYD - Гайанский доллар"
+												},
+												"HKD": {
+													"displayName": "HKD - Гонконгский доллар"
+												},
+												"HNL": {
+													"displayName": "ХНЛ - Лемпира"
+												},
+												"HRK": {
+													"displayName": "HRK – Куна"
+												},
+												"HTG": {
+													"displayName": "HTG - Гурд"
+												},
+												"HUF": {
+													"displayName": "HUF - Форинт"
+												},
+												"IDR": {
+													"displayName": "РДЭ - рупия"
+												},
+												"ILS": {
+													"displayName": "ILS – новый израильский шекель"
+												},
+												"INR": {
+													"displayName": "INR - Индийская рупия"
+												},
+												"IQD": {
+													"displayName": "IQD - Иракский динар"
+												},
+												"IRR": {
+													"displayName": "IRR - иранский риал"
+												},
+												"ISK": {
+													"displayName": "ISK - Исландская крона"
+												},
+												"JMD": {
+													"displayName": "JMD - Ямайский доллар"
+												},
+												"JOD": {
+													"displayName": "JOD - иорданский динар"
+												},
+												"JPY": {
+													"displayName": "JPY - Йена"
+												},
+												"KES": {
+													"displayName": "KES - Кенийский шиллинг"
+												},
+												"KGS": {
+													"displayName": "КГС - Сом"
+												},
+												"KHR": {
+													"displayName": "KHR - Риель"
+												},
+												"KMF": {
+													"displayName": "KMF - Франк Коморских островов"
+												},
+												"KPW": {
+													"displayName": "KPW – северокорейская вона"
+												},
+												"KRW": {
+													"displayName": "KRW - Выигран"
+												},
+												"KWD": {
+													"displayName": "KWD - Кувейтский динар"
+												},
+												"KYD": {
+													"displayName": "KYD - Доллар Каймановых островов"
+												},
+												"KZT": {
+													"displayName": "KZT - Тенге"
+												},
+												"LAK": {
+													"displayName": "ЛАК - Лао Кип"
+												},
+												"LBP": {
+													"displayName": "LBP - ливанский фунт"
+												},
+												"LKR": {
+													"displayName": "LKR - Шри-Ланкийская рупия"
+												},
+												"LRD": {
+													"displayName": "LRD - либерийский доллар"
+												},
+												"LSL": {
+													"displayName": "ЛСЛ — Лоти"
+												},
+												"LYD": {
+													"displayName": "LYD - Ливийский динар"
+												},
+												"MAD": {
+													"displayName": "MAD - Марокканский дирхам"
+												},
+												"MDL": {
+													"displayName": "MDL - Молдавский лей"
+												},
+												"MGA": {
+													"displayName": "MGA – малагасийский ариари"
+												},
+												"MKD": {
+													"displayName": "МКД - Денар"
+												},
+												"MMK": {
+													"displayName": "ММК - Кят"
+												},
+												"MNT": {
+													"displayName": "МНТ - Тугрик"
+												},
+												"MOP": {
+													"displayName": "СС - Патака"
+												},
+												"MRU": {
+													"displayName": "MRU - Угия"
+												},
+												"MUR": {
+													"displayName": "MUR - Маврикийская рупия"
+												},
+												"MVR": {
+													"displayName": "МВР - Руфия"
+												},
+												"MWK": {
+													"displayName": "MWK – Малавийская квача"
+												},
+												"MXN": {
+													"displayName": "MXN - мексиканское песо"
+												},
+												"MXV": {
+													"displayName": "MXV — Мексиканское единство инверсии (UDI)"
+												},
+												"MYR": {
+													"displayName": "MYR - Малайзийский ринггит"
+												},
+												"MZN": {
+													"displayName": "MZN - Мозамбик Метикал"
+												},
+												"NAD": {
+													"displayName": "NAD - доллар Намибии"
+												},
+												"NGN": {
+													"displayName": "NGN – Найра"
+												},
+												"NIO": {
+													"displayName": "NIO - Кордова Оро"
+												},
+												"NOK": {
+													"displayName": "NOK - Норвежская крона"
+												},
+												"NPR": {
+													"displayName": "NPR – непальская рупия"
+												},
+												"NZD": {
+													"displayName": "NZD - Новозеландский доллар"
+												},
+												"OMR": {
+													"displayName": "OMR - Оманский риал"
+												},
+												"PAB": {
+													"displayName": "PAB - Бальбоа"
+												},
+												"PEN": {
+													"displayName": "ПЕН-Соль"
+												},
+												"PGK": {
+													"displayName": "ПГК - Кина"
+												},
+												"PHP": {
+													"displayName": "PHP – филиппинское песо"
+												},
+												"PKR": {
+													"displayName": "PKR - Пакистанская рупия"
+												},
+												"PLN": {
+													"displayName": "PLN - Злотый"
+												},
+												"PYG": {
+													"displayName": "PYG – Гуарани"
+												},
+												"QAR": {
+													"displayName": "QAR - Катарский риал"
+												},
+												"RON": {
+													"displayName": "RON - румынский лей"
+												},
+												"RSD": {
+													"displayName": "RSD - Сербский динар"
+												},
+												"RUB": {
+													"displayName": "РУБ - Российский рубль"
+												},
+												"RWF": {
+													"displayName": "RWF – Руандийский франк"
+												},
+												"SAR": {
+													"displayName": "SAR - Саудовский риал"
+												},
+												"SBD": {
+													"displayName": "SBD - Доллар Соломоновых Островов"
+												},
+												"SCR": {
+													"displayName": "SCR - Сейшельская рупия"
+												},
+												"SDG": {
+													"displayName": "SDG - Суданский фунт"
+												},
+												"SEK": {
+													"displayName": "SEK - шведская крона"
+												},
+												"SGD": {
+													"displayName": "SGD - Сингапурский доллар"
+												},
+												"SHP": {
+													"displayName": "SHP - Паунд Святой Елены"
+												},
+												"SLL": {
+													"displayName": "SLL - Леоне"
+												},
+												"SOS": {
+													"displayName": "SOS – сомалийский шиллинг"
+												},
+												"SRD": {
+													"displayName": "SRD - Суринамский доллар"
+												},
+												"SSP": {
+													"displayName": "SSP - Южносуданский фунт"
+												},
+												"STN": {
+													"displayName": "СТН - Добра"
+												},
+												"SVC": {
+													"displayName": "SVC – Сальвадор Колон"
+												},
+												"SYP": {
+													"displayName": "SYP – сирийский фунт"
+												},
+												"SZL": {
+													"displayName": "SZL - Лилангени"
+												},
+												"THB": {
+													"displayName": "THB - бат"
+												},
+												"TJS": {
+													"displayName": "TJS - Сомони"
+												},
+												"TMT": {
+													"displayName": "ТМТ - Туркменистан Новый манат"
+												},
+												"TND": {
+													"displayName": "TND - Тунисский динар"
+												},
+												"TOP": {
+													"displayName": "ТОП – Паанга"
+												},
+												"TRY": {
+													"displayName": "TRY - Турецкая лира"
+												},
+												"TTD": {
+													"displayName": "TTD - доллар Тринидада и Тобаго"
+												},
+												"TWD": {
+													"displayName": "TWD - Новый тайваньский доллар"
+												},
+												"TZS": {
+													"displayName": "TZS - Танзанийский шиллинг"
+												},
+												"UAH": {
+													"displayName": "UAH - Гривна"
+												},
+												"UGX": {
+													"displayName": "UGX – угандийский шиллинг"
+												},
+												"USD": {
+													"displayName": "Доллар США - Доллар США"
+												},
+												"USN": {
+													"displayName": "USN - доллар США (на следующий день)"
+												},
+												"UYI": {
+													"displayName": "UYI – Уругвайское песо и индексированные индексы (UI)"
+												},
+												"UYU": {
+													"displayName": "UYU - Уругвайское песо"
+												},
+												"UYW": {
+													"displayName": "UYW - Предварительное единство"
+												},
+												"UZS": {
+													"displayName": "UZS - Узбекский сум"
+												},
+												"VES": {
+													"displayName": "ВЕС - Боливар Соберано"
+												},
+												"VND": {
+													"displayName": "VND - Донг"
+												},
+												"VUV": {
+													"displayName": "ВУВ - Вату"
+												},
+												"WST": {
+													"displayName": "WST – Тала"
+												},
+												"XAF": {
+													"displayName": "XAF - Франк КФА BEAC"
+												},
+												"XAG": {
+													"displayName": "XAG — серебро"
+												},
+												"XAU": {
+													"displayName": "ХАУ - Золото"
+												},
+												"XBA": {
+													"displayName": "XBA - Европейская композитная единица рынков облигаций (EURCO)"
+												},
+												"XBB": {
+													"displayName": "XBB — Европейская денежная единица (EMU-6)"
+												},
+												"XBC": {
+													"displayName": "XBC — Европейская расчетная единица 9 (EUA-9) подразделения рынков облигаций"
+												},
+												"XBD": {
+													"displayName": "XBD — Европейская расчетная единица 17 (E.U.A.-17)"
+												},
+												"XCD": {
+													"displayName": "XCD - Восточно-карибский доллар"
+												},
+												"XDR": {
+													"displayName": "XDR – SDR (специальные права заимствования)"
+												},
+												"XOF": {
+													"displayName": "XOF – Франк КФА BCEAO"
+												},
+												"XPD": {
+													"displayName": "XPD — Палладий"
+												},
+												"XPF": {
+													"displayName": "XPF - Франк КФП"
+												},
+												"XPT": {
+													"displayName": "XPT – Платиновый"
+												},
+												"XSU": {
+													"displayName": "XSU - Сукре"
+												},
+												"XTS": {
+													"displayName": "XTS — коды, специально зарезервированные для целей тестирования."
+												},
+												"XUA": {
+													"displayName": "XUA – расчетная единица АБР"
+												},
+												"XXX": {
+													"displayName": "XXX – коды, присвоенные транзакциям, в которых не используется валюта."
+												},
+												"YER": {
+													"displayName": "YER - йеменский риал"
+												},
+												"ZAR": {
+													"displayName": "ZAR - Рэнд"
+												},
+												"ZMW": {
+													"displayName": "ZMW - Замбийская квача"
+												},
+												"ZWL": {
+													"displayName": "ZWL - Доллар Зимбабве"
+												}
+											}
+										},
+										"amount_1000": {
+											"displayName": "Количество"
+										},
+										"date_time": {
+											"displayName": "Дата Время"
+										},
+										"fallback_value": {
+											"displayName": "Резервное значение"
+										}
+									}
+								}
+							},
+							"placeholder": "Добавить параметр",
+							"displayName": "Параметры"
+						},
+						"sub_type": {
+							"displayName": "Подтип",
+							"options": {
+								"quick_reply": {
+									"displayName": "Быстрый ответ",
+									"description": "Позволяет вашему клиенту позвонить по номеру телефона и посетить веб-сайт."
+								},
+								"url": {
+									"displayName": "URL"
+								}
+							}
+						},
+						"index": {
+							"displayName": "Индекс"
+						},
+						"buttonParameters": {
+							"options": {
+								"buttonParameters": {
+									"displayName": "Параметры"
+								},
+								"parameter": {
+									"displayName": "Параметр",
+									"values": {
+										"type": {
+											"displayName": "Тип",
+											"options": {
+												"payload": {
+													"displayName": "Полезная нагрузка"
+												},
+												"text": {
+													"displayName": "Текст"
+												}
+											}
+										},
+										"payload": {
+											"displayName": "Полезная нагрузка"
+										},
+										"text": {
+											"displayName": "Текст"
+										}
+									}
+								}
+							},
+							"placeholder": "Добавить параметр",
+							"displayName": "Параметры"
+						},
+						"headerParameters": {
+							"options": {
+								"headerParameters": {
+									"displayName": "Параметры"
+								},
+								"parameter": {
+									"displayName": "Параметр",
+									"values": {
+										"type": {
+											"displayName": "Тип",
+											"options": {
+												"text": {
+													"displayName": "Текст"
+												},
+												"currency": {
+													"displayName": "Валюта"
+												},
+												"date_time": {
+													"displayName": "Дата Время"
+												},
+												"image": {
+													"displayName": "Изображение"
+												}
+											}
+										},
+										"text": {
+											"displayName": "Текст"
+										},
+										"code": {
+											"displayName": "Код валюты",
+											"placeholder": "USD",
+											"options": {
+												"AED": {
+													"displayName": "AED - Дирхам ОАЭ"
+												},
+												"AFN": {
+													"displayName": "AFN – афгани"
+												},
+												"ALL": {
+													"displayName": "ВСЕ - Лек"
+												},
+												"AMD": {
+													"displayName": "AMD - Армянский драм"
+												},
+												"ANG": {
+													"displayName": "ANG – Гульдены Нидерландских Антильских островов"
+												},
+												"AOA": {
+													"displayName": "АОА - Кванза"
+												},
+												"ARS": {
+													"displayName": "ARS - Аргентинское песо"
+												},
+												"AUD": {
+													"displayName": "AUD - австралийский доллар"
+												},
+												"AWG": {
+													"displayName": "AWG – Арубанский флорин"
+												},
+												"AZN": {
+													"displayName": "AZN - Азербайджанский манат"
+												},
+												"BAM": {
+													"displayName": "БАМ – конвертируемая марка"
+												},
+												"BBD": {
+													"displayName": "BBD - Барбадосский доллар"
+												},
+												"BDT": {
+													"displayName": "БДТ - Така"
+												},
+												"BGN": {
+													"displayName": "BGN - Болгарский лев"
+												},
+												"BHD": {
+													"displayName": "BHD - бахрейнский динар"
+												},
+												"BIF": {
+													"displayName": "BIF – Бурундийский франк"
+												},
+												"BMD": {
+													"displayName": "BMD - Бермудский доллар"
+												},
+												"BND": {
+													"displayName": "BND - Брунейский доллар"
+												},
+												"BOB": {
+													"displayName": "Лучшим представителем породы - Боливиано"
+												},
+												"BOV": {
+													"displayName": "БОВ - Мвдол"
+												},
+												"BRL": {
+													"displayName": "BRL – Бразильский реал"
+												},
+												"BSD": {
+													"displayName": "BSD - Багамский доллар"
+												},
+												"BTN": {
+													"displayName": "БТН - Нгултрум"
+												},
+												"BWP": {
+													"displayName": "BWP - Пула"
+												},
+												"BYN": {
+													"displayName": "BYN - Белорусский рубль"
+												},
+												"BZD": {
+													"displayName": "BZD - Белизский доллар"
+												},
+												"CAD": {
+													"displayName": "CAD - канадский доллар"
+												},
+												"CDF": {
+													"displayName": "CDF - Конголезский франк"
+												},
+												"CHE": {
+													"displayName": "CHE - WIR Евро"
+												},
+												"CHF": {
+													"displayName": "CHF - Швейцарский франк"
+												},
+												"CHW": {
+													"displayName": "CHW – WIR Франк"
+												},
+												"CLF": {
+													"displayName": "CLF - Единство Фоменто"
+												},
+												"CLP": {
+													"displayName": "CLP - чилийское песо"
+												},
+												"CNY": {
+													"displayName": "CNY – юань женьминьби"
+												},
+												"COP": {
+													"displayName": "COP – колумбийское песо"
+												},
+												"COU": {
+													"displayName": "COU - Реалистическое единство доблести"
+												},
+												"CRC": {
+													"displayName": "CRC - Костариканский колон"
+												},
+												"CUC": {
+													"displayName": "CUC – конвертируемое песо"
+												},
+												"CUP": {
+													"displayName": "CUP - Кубинское песо"
+												},
+												"CVE": {
+													"displayName": "CVE – Кабо-Верде Эскудо"
+												},
+												"CZK": {
+													"displayName": "CZK - Чешская крона"
+												},
+												"DJF": {
+													"displayName": "DJF – Франк Джибути"
+												},
+												"DKK": {
+													"displayName": "DKK – датская крона"
+												},
+												"DOP": {
+													"displayName": "DOP – Доминиканское песо"
+												},
+												"DZD": {
+													"displayName": "DZD - Алжирский динар"
+												},
+												"EGP": {
+													"displayName": "EGP - египетский фунт"
+												},
+												"ERN": {
+													"displayName": "ЭРН - Накфа"
+												},
+												"ETB": {
+													"displayName": "ETB - Эфиопский быр"
+												},
+												"EUR": {
+													"displayName": "евро - евро"
+												},
+												"FJD": {
+													"displayName": "FJD - Фиджийский доллар"
+												},
+												"FKP": {
+													"displayName": "FKP - фунт Фолклендских островов"
+												},
+												"GBP": {
+													"displayName": "GBP - Фунт стерлингов"
+												},
+												"GEL": {
+													"displayName": "ГЕЛЬ - Лари"
+												},
+												"GHS": {
+													"displayName": "GHS – Гана Седи"
+												},
+												"GIP": {
+													"displayName": "GIP – Гибралтарский фунт"
+												},
+												"GMD": {
+													"displayName": "GMD - Даласи"
+												},
+												"GNF": {
+													"displayName": "GNF - гвинейский франк"
+												},
+												"GTQ": {
+													"displayName": "GTQ — Кетцаль"
+												},
+												"GYD": {
+													"displayName": "GYD - Гайанский доллар"
+												},
+												"HKD": {
+													"displayName": "HKD - Гонконгский доллар"
+												},
+												"HNL": {
+													"displayName": "ХНЛ - Лемпира"
+												},
+												"HRK": {
+													"displayName": "HRK – Куна"
+												},
+												"HTG": {
+													"displayName": "HTG - Гурд"
+												},
+												"HUF": {
+													"displayName": "HUF - Форинт"
+												},
+												"IDR": {
+													"displayName": "РДЭ - рупия"
+												},
+												"ILS": {
+													"displayName": "ILS – новый израильский шекель"
+												},
+												"INR": {
+													"displayName": "INR - Индийская рупия"
+												},
+												"IQD": {
+													"displayName": "IQD - Иракский динар"
+												},
+												"IRR": {
+													"displayName": "IRR - иранский риал"
+												},
+												"ISK": {
+													"displayName": "ISK - Исландская крона"
+												},
+												"JMD": {
+													"displayName": "JMD - Ямайский доллар"
+												},
+												"JOD": {
+													"displayName": "JOD - иорданский динар"
+												},
+												"JPY": {
+													"displayName": "JPY - Йена"
+												},
+												"KES": {
+													"displayName": "KES - Кенийский шиллинг"
+												},
+												"KGS": {
+													"displayName": "КГС - Сом"
+												},
+												"KHR": {
+													"displayName": "KHR - Риель"
+												},
+												"KMF": {
+													"displayName": "KMF - Франк Коморских островов"
+												},
+												"KPW": {
+													"displayName": "KPW – северокорейская вона"
+												},
+												"KRW": {
+													"displayName": "KRW - Выигран"
+												},
+												"KWD": {
+													"displayName": "KWD - Кувейтский динар"
+												},
+												"KYD": {
+													"displayName": "KYD - Доллар Каймановых островов"
+												},
+												"KZT": {
+													"displayName": "KZT - Тенге"
+												},
+												"LAK": {
+													"displayName": "ЛАК - Лао Кип"
+												},
+												"LBP": {
+													"displayName": "LBP - ливанский фунт"
+												},
+												"LKR": {
+													"displayName": "LKR - Шри-Ланкийская рупия"
+												},
+												"LRD": {
+													"displayName": "LRD - либерийский доллар"
+												},
+												"LSL": {
+													"displayName": "ЛСЛ — Лоти"
+												},
+												"LYD": {
+													"displayName": "LYD - Ливийский динар"
+												},
+												"MAD": {
+													"displayName": "MAD - Марокканский дирхам"
+												},
+												"MDL": {
+													"displayName": "MDL - Молдавский лей"
+												},
+												"MGA": {
+													"displayName": "MGA – малагасийский ариари"
+												},
+												"MKD": {
+													"displayName": "МКД - Денар"
+												},
+												"MMK": {
+													"displayName": "ММК - Кят"
+												},
+												"MNT": {
+													"displayName": "МНТ - Тугрик"
+												},
+												"MOP": {
+													"displayName": "СС - Патака"
+												},
+												"MRU": {
+													"displayName": "MRU - Угия"
+												},
+												"MUR": {
+													"displayName": "MUR - Маврикийская рупия"
+												},
+												"MVR": {
+													"displayName": "МВР - Руфия"
+												},
+												"MWK": {
+													"displayName": "MWK – Малавийская квача"
+												},
+												"MXN": {
+													"displayName": "MXN - мексиканское песо"
+												},
+												"MXV": {
+													"displayName": "MXV — Мексиканское единство инверсии (UDI)"
+												},
+												"MYR": {
+													"displayName": "MYR - Малайзийский ринггит"
+												},
+												"MZN": {
+													"displayName": "MZN - Мозамбик Метикал"
+												},
+												"NAD": {
+													"displayName": "NAD - доллар Намибии"
+												},
+												"NGN": {
+													"displayName": "NGN – Найра"
+												},
+												"NIO": {
+													"displayName": "NIO - Кордова Оро"
+												},
+												"NOK": {
+													"displayName": "NOK - Норвежская крона"
+												},
+												"NPR": {
+													"displayName": "NPR – непальская рупия"
+												},
+												"NZD": {
+													"displayName": "NZD - Новозеландский доллар"
+												},
+												"OMR": {
+													"displayName": "OMR - Оманский риал"
+												},
+												"PAB": {
+													"displayName": "PAB - Бальбоа"
+												},
+												"PEN": {
+													"displayName": "ПЕН-Соль"
+												},
+												"PGK": {
+													"displayName": "ПГК - Кина"
+												},
+												"PHP": {
+													"displayName": "PHP – филиппинское песо"
+												},
+												"PKR": {
+													"displayName": "PKR - Пакистанская рупия"
+												},
+												"PLN": {
+													"displayName": "PLN - Злотый"
+												},
+												"PYG": {
+													"displayName": "PYG – Гуарани"
+												},
+												"QAR": {
+													"displayName": "QAR - Катарский риал"
+												},
+												"RON": {
+													"displayName": "RON - румынский лей"
+												},
+												"RSD": {
+													"displayName": "RSD - Сербский динар"
+												},
+												"RUB": {
+													"displayName": "РУБ - Российский рубль"
+												},
+												"RWF": {
+													"displayName": "RWF – Руандийский франк"
+												},
+												"SAR": {
+													"displayName": "SAR - Саудовский риал"
+												},
+												"SBD": {
+													"displayName": "SBD - Доллар Соломоновых Островов"
+												},
+												"SCR": {
+													"displayName": "SCR - Сейшельская рупия"
+												},
+												"SDG": {
+													"displayName": "SDG - Суданский фунт"
+												},
+												"SEK": {
+													"displayName": "SEK - шведская крона"
+												},
+												"SGD": {
+													"displayName": "SGD - Сингапурский доллар"
+												},
+												"SHP": {
+													"displayName": "SHP - Паунд Святой Елены"
+												},
+												"SLL": {
+													"displayName": "SLL - Леоне"
+												},
+												"SOS": {
+													"displayName": "SOS – сомалийский шиллинг"
+												},
+												"SRD": {
+													"displayName": "SRD - Суринамский доллар"
+												},
+												"SSP": {
+													"displayName": "SSP - Южносуданский фунт"
+												},
+												"STN": {
+													"displayName": "СТН - Добра"
+												},
+												"SVC": {
+													"displayName": "SVC – Сальвадор Колон"
+												},
+												"SYP": {
+													"displayName": "SYP – сирийский фунт"
+												},
+												"SZL": {
+													"displayName": "SZL - Лилангени"
+												},
+												"THB": {
+													"displayName": "THB - бат"
+												},
+												"TJS": {
+													"displayName": "TJS - Сомони"
+												},
+												"TMT": {
+													"displayName": "ТМТ - Туркменистан Новый манат"
+												},
+												"TND": {
+													"displayName": "TND - Тунисский динар"
+												},
+												"TOP": {
+													"displayName": "ТОП – Паанга"
+												},
+												"TRY": {
+													"displayName": "TRY - Турецкая лира"
+												},
+												"TTD": {
+													"displayName": "TTD - доллар Тринидада и Тобаго"
+												},
+												"TWD": {
+													"displayName": "TWD - Новый тайваньский доллар"
+												},
+												"TZS": {
+													"displayName": "TZS - Танзанийский шиллинг"
+												},
+												"UAH": {
+													"displayName": "UAH - Гривна"
+												},
+												"UGX": {
+													"displayName": "UGX – угандийский шиллинг"
+												},
+												"USD": {
+													"displayName": "Доллар США - Доллар США"
+												},
+												"USN": {
+													"displayName": "USN - доллар США (на следующий день)"
+												},
+												"UYI": {
+													"displayName": "UYI – Уругвайское песо и индексированные индексы (UI)"
+												},
+												"UYU": {
+													"displayName": "UYU - Уругвайское песо"
+												},
+												"UYW": {
+													"displayName": "UYW - Предварительное единство"
+												},
+												"UZS": {
+													"displayName": "UZS - Узбекский сум"
+												},
+												"VES": {
+													"displayName": "ВЕС - Боливар Соберано"
+												},
+												"VND": {
+													"displayName": "VND - Донг"
+												},
+												"VUV": {
+													"displayName": "ВУВ - Вату"
+												},
+												"WST": {
+													"displayName": "WST – Тала"
+												},
+												"XAF": {
+													"displayName": "XAF - Франк КФА BEAC"
+												},
+												"XAG": {
+													"displayName": "XAG — серебро"
+												},
+												"XAU": {
+													"displayName": "ХАУ - Золото"
+												},
+												"XBA": {
+													"displayName": "XBA - Европейская композитная единица рынков облигаций (EURCO)"
+												},
+												"XBB": {
+													"displayName": "XBB — Европейская денежная единица (EMU-6)"
+												},
+												"XBC": {
+													"displayName": "XBC — Европейская расчетная единица 9 (EUA-9) подразделения рынков облигаций"
+												},
+												"XBD": {
+													"displayName": "XBD — Европейская расчетная единица 17 (E.U.A.-17)"
+												},
+												"XCD": {
+													"displayName": "XCD - Восточно-карибский доллар"
+												},
+												"XDR": {
+													"displayName": "XDR – SDR (специальные права заимствования)"
+												},
+												"XOF": {
+													"displayName": "XOF – Франк КФА BCEAO"
+												},
+												"XPD": {
+													"displayName": "XPD — Палладий"
+												},
+												"XPF": {
+													"displayName": "XPF - Франк КФП"
+												},
+												"XPT": {
+													"displayName": "XPT – Платиновый"
+												},
+												"XSU": {
+													"displayName": "XSU - Сукре"
+												},
+												"XTS": {
+													"displayName": "XTS — коды, специально зарезервированные для целей тестирования."
+												},
+												"XUA": {
+													"displayName": "XUA – расчетная единица АБР"
+												},
+												"XXX": {
+													"displayName": "XXX – коды, присвоенные транзакциям, в которых не используется валюта."
+												},
+												"YER": {
+													"displayName": "YER - йеменский риал"
+												},
+												"ZAR": {
+													"displayName": "ZAR - Рэнд"
+												},
+												"ZMW": {
+													"displayName": "ZMW - Замбийская квача"
+												},
+												"ZWL": {
+													"displayName": "ZWL - Доллар Зимбабве"
+												}
+											}
+										},
+										"amount_1000": {
+											"displayName": "Количество"
+										},
+										"date_time": {
+											"displayName": "Дата Время"
+										},
+										"imageLink": {
+											"displayName": "Ссылка на изображение"
+										}
+									}
+								}
+							},
+							"placeholder": "Добавить параметр",
+							"displayName": "Параметры"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить компонент",
+			"displayName": "Компоненты"
+		},
+		"mediaGetId": {
+			"displayName": "Идентификатор носителя",
+			"description": "Идентификатор СМИ"
+		},
+		"mediaDeleteId": {
+			"displayName": "Идентификатор носителя",
+			"description": "Идентификатор СМИ"
+		},
+		"message": {
+			"displayName": "Сообщение"
+		},
+		"responseType": {
+			"displayName": "Тип ответа",
+			"options": {
+				"approval": {
+					"displayName": "Одобрение",
+					"description": "Пользователь может одобрить/отклонить сообщение прямо в сообщении."
+				},
+				"freeText": {
+					"displayName": "Свободный текст",
+					"description": "Пользователь может отправить ответ через форму"
+				},
+				"customForm": {
+					"displayName": "Пользовательская форма",
+					"description": "Пользователь может отправить ответ через специальную форму"
+				}
+			}
+		},
+		"defineForm": {
+			"displayName": "Определить форму",
+			"options": {
+				"fields": {
+					"displayName": "Использование полей ниже"
+				},
+				"json": {
+					"displayName": "Использование JSON"
+				}
+			}
+		},
+		"jsonOutput": {
+			"displayName": "Поля формы",
+			"hint": "<a href=\"https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.form/\" target=\"_blank\">См. в документации </a> синтаксис полей."
+		},
+		"formFields": {
+			"options": {
+				"formFields": {
+					"displayName": "Элементы формы"
+				},
+				"values": {
+					"displayName": "Ценности",
+					"values": {
+						"fieldName": {
+							"displayName": "Имя настраиваемого поля",
+							"description": "Имя поля, используемое во входных атрибутах и ​​на которое ссылается рабочий процесс."
+						},
+						"fieldLabel": {
+							"displayName": "Имя поля",
+							"description": "Метка, которая появляется над полем ввода",
+							"placeholder": "например Как вас зовут?"
+						},
+						"fieldType": {
+							"displayName": "Тип элемента",
+							"description": "Тип поля, добавляемого в форму",
+							"options": {
+								"checkbox": {
+									"displayName": "Флажки"
+								},
+								"html": {
+									"displayName": "Пользовательский HTML"
+								},
+								"date": {
+									"displayName": "Дата"
+								},
+								"dropdown": {
+									"displayName": "Падать"
+								},
+								"email": {
+									"displayName": "Электронная почта"
+								},
+								"file": {
+									"displayName": "Файл"
+								},
+								"hiddenField": {
+									"displayName": "Скрытое поле"
+								},
+								"number": {
+									"displayName": "Число"
+								},
+								"password": {
+									"displayName": "Пароль"
+								},
+								"radio": {
+									"displayName": "Радиокнопки"
+								},
+								"text": {
+									"displayName": "Ввод текста"
+								},
+								"textarea": {
+									"displayName": "Текстовая область"
+								}
+							}
+						},
+						"elementName": {
+							"displayName": "Имя элемента",
+							"description": "Необязательное поле. Его можно использовать для включения HTML в выходные данные.",
+							"placeholder": "например раздел контента"
+						},
+						"placeholder": {
+							"displayName": "Заполнитель",
+							"description": "Пример текста для отображения внутри поля"
+						},
+						"defaultValue": {
+							"displayName": "Значение по умолчанию",
+							"description": "Значения по умолчанию, которые будут выбраны заранее. Должно соответствовать одному или нескольким меткам опций. Разделите несколько предварительно выбранных опций запятой."
+						},
+						"fieldValue": {
+							"displayName": "Значение поля",
+							"description": "Входное значение можно установить здесь или оно будет передано в качестве параметра запроса через имя поля, если значение не установлено."
+						},
+						"fieldOptions": {
+							"options": {
+								"fieldOptions": {
+									"displayName": "Радиокнопки",
+									"description": "Список опций, которые можно выбрать из раскрывающегося списка"
+								},
+								"values": {
+									"displayName": "Ценности",
+									"values": {
+										"option": {
+											"displayName": "Метка радиокнопки"
+										}
+									}
+								}
+							},
+							"placeholder": "Добавить переключатель",
+							"displayName": "Радиокнопки",
+							"description": "Список опций, которые можно выбрать из раскрывающегося списка"
+						},
+						"multiselectLegacyNotice": {
+							"displayName": "Множественный выбор является устаревшим вариантом, вместо этого используйте тип поля «Флажки» или «Переключатели»."
+						},
+						"multiselect": {
+							"displayName": "Множественный выбор",
+							"description": "Разрешить ли пользователю выбирать несколько вариантов из раскрывающегося списка"
+						},
+						"limitSelection": {
+							"displayName": "Ограничить выбор",
+							"options": {
+								"exact": {
+									"displayName": "Точный номер"
+								},
+								"range": {
+									"displayName": "Диапазон"
+								},
+								"unlimited": {
+									"displayName": "Безлимитный"
+								}
+							}
+						},
+						"numberOfSelections": {
+							"displayName": "Количество вариантов выбора"
+						},
+						"minSelections": {
+							"displayName": "Минимальный выбор"
+						},
+						"maxSelections": {
+							"displayName": "Максимальный выбор"
+						},
+						"html": {
+							"displayName": "HTML",
+							"description": "HTML-элементы для отображения на странице формы",
+							"hint": "Не принимает теги <code><script></code>, <code><style></code> или <code><input></code>."
+						},
+						"multipleFiles": {
+							"displayName": "Несколько файлов",
+							"description": "Разрешить ли пользователю выбирать несколько файлов из входного файла или только один"
+						},
+						"acceptFileTypes": {
+							"displayName": "Допустимые типы файлов",
+							"description": "Список разрешенных расширений файлов, разделенный запятыми",
+							"hint": "Оставьте пустым, чтобы разрешить все типы файлов.",
+							"placeholder": "например .jpg, .png"
+						},
+						"formatDate": {
+							"displayName": "Отображаемая дата форматируется на основе языкового стандарта браузера пользователя."
+						},
+						"requiredField": {
+							"displayName": "Обязательное поле",
+							"description": "Требовать ли от пользователя ввода значения в это поле перед отправкой формы"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить элемент формы",
+			"displayName": "Элементы формы",
+			"addOptionalFieldButtonText": "Добавить атрибуты"
+		},
+		"approvalOptions": {
+			"options": {
+				"approvalOptions": {
+					"displayName": "Варианты утверждения"
+				},
+				"values": {
+					"displayName": "Ценности",
+					"values": {
+						"approvalType": {
+							"displayName": "Тип одобрения",
+							"placeholder": "Добавить вариант",
+							"options": {
+								"single": {
+									"displayName": "Только утвердить"
+								},
+								"double": {
+									"displayName": "Одобрить и не одобрить"
+								}
+							}
+						},
+						"approveLabel": {
+							"displayName": "Метка кнопки «Утвердить»"
+						},
+						"disapproveLabel": {
+							"displayName": "Ярлык кнопки «Отклонить»"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить вариант",
+			"displayName": "Варианты утверждения"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"limitWaitTime": {
+					"values": {
+						"limitWaitTime": {
+							"displayName": "Ограничить время ожидания",
+							"description": "Ограничить ли время, в течение которого этот узел должен ждать ответа пользователя, прежде чем возобновится выполнение."
+						},
+						"values": {
+							"options": {
+								"limitType": {
+									"displayName": "Тип лимита",
+									"description": "Устанавливает условие возобновления выполнения. Может быть указанная дата или через некоторое время.",
+									"options": {
+										"afterTimeInterval": {
+											"displayName": "После временного интервала",
+											"description": "Ждет определенное время"
+										},
+										"atSpecifiedTime": {
+											"displayName": "В указанное время",
+											"description": "Ожидает установленной даты и времени, чтобы продолжить"
+										}
+									}
+								},
+								"resumeAmount": {
+									"displayName": "Количество",
+									"description": "Время ждать"
+								},
+								"resumeUnit": {
+									"displayName": "Единица",
+									"description": "Единица значения интервала",
+									"options": {
+										"minutes": {
+											"displayName": "Минуты"
+										},
+										"hours": {
+											"displayName": "Часы"
+										},
+										"days": {
+											"displayName": "Дни"
+										}
+									}
+								},
+								"maxDateAndTime": {
+									"displayName": "Максимальная дата и время",
+									"description": "Продолжить выполнение после указанной даты и времени"
+								}
+							}
+						}
+					},
+					"displayName": "Ограничить время ожидания",
+					"description": "Ограничить ли время, в течение которого этот узел должен ждать ответа пользователя, прежде чем возобновится выполнение.",
+					"options": {
+						"values": {
+							"displayName": "Ценности"
+						}
+					}
+				},
+				"appendAttribution": {
+					"displayName": "Добавить авторство n8n",
+					"description": "Включить ли в конец сообщения фразу «Это сообщение было отправлено автоматически с помощью n8n»"
+				},
+				"messageButtonLabel": {
+					"displayName": "Метка кнопки сообщения"
+				},
+				"responseFormTitle": {
+					"displayName": "Название формы ответа",
+					"description": "Название формы, к которой пользователь может получить доступ для ответа"
+				},
+				"responseFormDescription": {
+					"displayName": "Форма ответа Описание",
+					"description": "Описание формы, к которой пользователь может получить доступ для ответа."
+				},
+				"responseFormButtonLabel": {
+					"displayName": "Метка кнопки формы ответа"
+				},
+				"responseFormCustomCss": {
+					"displayName": "Пользовательский стиль формы ответа",
+					"description": "Переопределить стиль формы ответа по умолчанию с помощью CSS"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"header": {
+		"displayName": "Мессенджер для клиентов (обучение n8n)",
+		"description": "Фиктивный узел, используемый для обучения n8n"
+	},
+	"nodeView": {
+		"customerId": {
+			"displayName": "Идентификатор клиента"
+		},
+		"message": {
+			"displayName": "Сообщение"
+		}
+	}
+}

@@ -1,0 +1,24 @@
+{
+	"header": {
+		"displayName": "Трелло Триггер",
+		"description": "Запускает рабочий процесс при возникновении событий Trello."
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"apiKey": {
+					"displayName": "API-ключ"
+				},
+				"oAuth1": {
+					"displayName": "ОАут1"
+				}
+			}
+		},
+		"id": {
+			"displayName": "Идентификатор модели",
+			"description": "ID модели, на события которой подписываться",
+			"placeholder": "4d5ea62fd76aa1136000000c"
+		}
+	}
+}

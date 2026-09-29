@@ -1,0 +1,26 @@
+{
+	"header": {
+		"displayName": "RSS-чтение",
+		"description": "Считывает данные из RSS-канала."
+	},
+	"nodeView": {
+		"url": {
+			"displayName": "URL",
+			"description": "URL-адрес RSS-канала"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"customFields": {
+					"displayName": "Пользовательские поля",
+					"description": "Список настраиваемых полей, разделенных запятыми, которые нужно включить в выходные данные. Например, «автор, contentSnippet»."
+				},
+				"ignoreSSL": {
+					"displayName": "Игнорировать проблемы с SSL (небезопасно)",
+					"description": "Игнорировать проблемы с сертификатами SSL/TLS или нет"
+				}
+			}
+		}
+	}
+}

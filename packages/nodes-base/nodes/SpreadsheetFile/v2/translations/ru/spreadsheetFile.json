@@ -1,0 +1,171 @@
+{
+	"header": {
+		"displayName": "Файл электронной таблицы",
+		"description": "Считывает и записывает данные из файла электронной таблицы, такого как CSV, XLS, ODS и т. д."
+	},
+	"nodeView": {
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"fromFile": {
+					"displayName": "Чтение из файла",
+					"description": "Считывает данные из файла электронной таблицы"
+				},
+				"toFile": {
+					"displayName": "Записать в файл",
+					"description": "Записывает данные рабочего процесса в файл электронной таблицы."
+				}
+			}
+		},
+		"binaryPropertyName": {
+			"displayName": "Поместите выходной файл в поле",
+			"hint": "Имя выходного двоичного поля, в которое помещается файл."
+		},
+		"fileFormat": {
+			"displayName": "Формат файла",
+			"description": "Формат файла для сохранения данных как",
+			"options": {
+				"autodetect": {
+					"displayName": "Автоопределение"
+				},
+				"csv": {
+					"displayName": "CSV",
+					"description": "Значения, разделенные запятыми"
+				},
+				"html": {
+					"displayName": "HTML",
+					"description": "HTML-таблица"
+				},
+				"ods": {
+					"displayName": "ODS",
+					"description": "Таблица OpenDocument"
+				},
+				"rtf": {
+					"displayName": "RTF",
+					"description": "Расширенный текстовый формат"
+				},
+				"xls": {
+					"displayName": "XLS",
+					"description": "Эксель"
+				},
+				"xlsx": {
+					"displayName": "XLSX",
+					"description": "Эксель"
+				}
+			}
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"delimiter": {
+					"displayName": "Разделитель",
+					"description": "Установите разделитель полей, обычно запятую.",
+					"placeholder": "например ,"
+				},
+				"encoding": {
+					"displayName": "Кодирование",
+					"options": {
+						"ascii": {
+							"displayName": "ASCII"
+						},
+						"latin1": {
+							"displayName": "латынь1"
+						},
+						"ucs-2": {
+							"displayName": "UCS-2"
+						},
+						"ucs2": {
+							"displayName": "UCS2"
+						},
+						"utf-8": {
+							"displayName": "UTF-8"
+						},
+						"utf16le": {
+							"displayName": "UTF16LE"
+						},
+						"utf8": {
+							"displayName": "UTF8"
+						}
+					}
+				},
+				"enableBOM": {
+					"displayName": "Исключить метку порядка байтов (BOM)",
+					"description": "Следует ли обнаруживать и исключать метку порядка байтов из входных данных CSV, если она присутствует."
+				},
+				"relaxQuotes": {
+					"displayName": "Сохранить цитаты",
+					"description": "Следует ли обрабатывать незакрытые кавычки в полях CSV как часть содержимого поля вместо выдачи ошибки синтаксического анализа."
+				},
+				"headerRow": {
+					"displayName": "Заголовок строки",
+					"description": "Содержит ли первая строка файла имена заголовков"
+				},
+				"includeEmptyCells": {
+					"displayName": "Включить пустые ячейки",
+					"description": "Включать ли пустые ячейки при чтении из файла. Они будут заполнены пустой строкой."
+				},
+				"maxRowCount": {
+					"displayName": "Максимальное количество строк для загрузки",
+					"description": "Прекратите обработку записей после того, как будет прочитано запрошенное количество строк. Используйте -1, если вы хотите загрузить все строки.",
+					"placeholder": "например 10"
+				},
+				"range": {
+					"displayName": "Диапазон",
+					"description": "Диапазон чтения из таблицы. Если установлено число, это будет начальная строка. Если установлено значение string, оно будет использоваться как диапазон обозначений в стиле A1."
+				},
+				"rawData": {
+					"displayName": "Необработанные данные",
+					"description": "Возвращать ли данные RAW вместо их анализа"
+				},
+				"readAsString": {
+					"displayName": "Читать как строку",
+					"description": "В некоторых случаях и форматах файлов необходимо читать как строку, чтобы обеспечить правильную интерпретацию специальных символов."
+				},
+				"sheetName": {
+					"displayName": "Имя листа",
+					"description": "Имя листа, который необходимо создать в электронной таблице.",
+					"placeholder": "например мой лист"
+				},
+				"fromLine": {
+					"displayName": "Стартовая линия",
+					"description": "Начать обработку записей с запрошенного номера строки. Начинается с 0.",
+					"placeholder": "например 0"
+				},
+				"skipRecordsWithErrors": {
+					"values": {
+						"skipRecordsWithErrors": {
+							"displayName": "Пропускать записи с ошибками"
+						},
+						"value": {
+							"options": {
+								"enabled": {
+									"displayName": "Включено",
+									"description": "Пропускать ли записи с ошибками при чтении из файла"
+								},
+								"maxSkippedRecords": {
+									"displayName": "Макс пропущенные записи",
+									"description": "Максимальное количество записей, которое можно пропустить, при превышении выдаст ошибку. Установите значение -1, чтобы удалить ограничение."
+								}
+							}
+						}
+					},
+					"displayName": "Пропускать записи с ошибками",
+					"options": {
+						"value": {
+							"displayName": "Ценить"
+						}
+					}
+				},
+				"compression": {
+					"displayName": "Сжатие",
+					"description": "Будет ли применяться сжатие или нет"
+				},
+				"fileName": {
+					"displayName": "Имя файла",
+					"description": "Имя файла для установки в двоичных данных. По умолчанию будет использоваться электронная таблица.<fileFormat>."
+				}
+			}
+		}
+	}
+}

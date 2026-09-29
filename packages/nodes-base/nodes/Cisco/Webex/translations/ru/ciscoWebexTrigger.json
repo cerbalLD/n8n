@@ -1,0 +1,126 @@
+{
+	"header": {
+		"displayName": "Webex от Cisco Trigger",
+		"description": "Запускает рабочий процесс при возникновении событий Cisco Webex."
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"all": {
+					"displayName": "[Все]"
+				},
+				"attachmentAction": {
+					"displayName": "Действие вложения"
+				},
+				"meeting": {
+					"displayName": "Встреча"
+				},
+				"membership": {
+					"displayName": "Членство"
+				},
+				"message": {
+					"displayName": "Сообщение"
+				},
+				"recording": {
+					"displayName": "Запись"
+				},
+				"room": {
+					"displayName": "Комната"
+				}
+			}
+		},
+		"event": {
+			"displayName": "Событие",
+			"options": {
+				"created": {
+					"displayName": "Созданный"
+				},
+				"deleted": {
+					"displayName": "Удалено"
+				},
+				"updated": {
+					"displayName": "Обновлено"
+				},
+				"all": {
+					"displayName": "*"
+				},
+				"started": {
+					"displayName": "Началось"
+				},
+				"ended": {
+					"displayName": "Закончено"
+				}
+			}
+		},
+		"resolveData": {
+			"displayName": "Разрешение данных",
+			"description": "По умолчанию ответ содержит только ссылку на данные, введенные пользователем. Если эта опция активирована, она автоматически разрешит данные."
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"hasFiles": {
+					"displayName": "Имеет файлы",
+					"description": "Ограничивать ли сообщениями, содержащими вложения с содержимым файлов"
+				},
+				"isLocked": {
+					"displayName": "Заблокировано",
+					"description": "Ограничивать ли запертыми комнатами"
+				},
+				"isModerator": {
+					"displayName": "Является модератором",
+					"description": "Ограничить ли модераторами комнаты"
+				},
+				"mentionedPeople": {
+					"displayName": "Упомянутые люди",
+					"description": "Ограничить сообщения, содержащие упомянутых людей, по идентификатору человека; принимает меня как сокращение для вашего личного идентификатора; разделяйте несколько значений запятыми"
+				},
+				"messageId": {
+					"displayName": "Идентификатор сообщения",
+					"description": "Ограничить конкретное сообщение по идентификатору"
+				},
+				"ownedBy": {
+					"displayName": "Принадлежит"
+				},
+				"personEmail": {
+					"displayName": "Электронная почта человека",
+					"description": "Ограничить конкретному человеку по электронной почте"
+				},
+				"personId": {
+					"displayName": "Идентификатор человека",
+					"description": "Ограничение на конкретного человека по идентификатору"
+				},
+				"roomId": {
+					"displayName": "Идентификатор комнаты",
+					"description": "Ограничить конкретную комнату по идентификатору"
+				},
+				"roomType": {
+					"displayName": "Тип номера",
+					"description": "Ограничить определенный тип номера",
+					"options": {
+						"direct": {
+							"displayName": "Прямой"
+						},
+						"group": {
+							"displayName": "Группа"
+						}
+					}
+				},
+				"type": {
+					"displayName": "Тип",
+					"description": "Ограничить определенный тип номера",
+					"options": {
+						"direct": {
+							"displayName": "Прямой"
+						},
+						"group": {
+							"displayName": "Группа"
+						}
+					}
+				}
+			}
+		}
+	}
+}

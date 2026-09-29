@@ -1,0 +1,42 @@
+{
+	"header": {
+		"displayName": "Битбакет-триггер",
+		"description": "Обработка событий Bitbucket с помощью веб-перехватчиков"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"password": {
+					"displayName": "Пароль (устаревший)"
+				},
+				"accessToken": {
+					"displayName": "Токен доступа"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"repository": {
+					"displayName": "Репозиторий"
+				},
+				"workspace": {
+					"displayName": "Рабочая область"
+				}
+			}
+		},
+		"workspace": {
+			"displayName": "Имя или идентификатор рабочей области",
+			"description": "Репозиторий, из которого можно прослушивать события. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"events": {
+			"displayName": "Имена или идентификаторы событий",
+			"description": "События, которые стоит прослушать. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"repository": {
+			"displayName": "Имя или идентификатор репозитория",
+			"description": "Репозиторий, из которого можно прослушивать события. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		}
+	}
+}

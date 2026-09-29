@@ -1,0 +1,77 @@
+{
+	"header": {
+		"displayName": "Google Перспектива",
+		"description": "Использование Google Perspective API"
+	},
+	"nodeView": {
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"analyzeComment": {
+					"displayName": "Анализировать комментарий"
+				}
+			}
+		},
+		"text": {
+			"displayName": "Текст"
+		},
+		"requestedAttributesUi": {
+			"options": {
+				"requestedAttributesUi": {
+					"displayName": "Атрибуты для анализа"
+				},
+				"requestedAttributesValues": {
+					"displayName": "Характеристики",
+					"values": {
+						"attributeName": {
+							"displayName": "Имя атрибута",
+							"description": "Атрибут для анализа в тексте. Подробности <a href=\"https://developers.perspectiveapi.com/s/about-the-api-attributes-and-languages\">здесь</a>.",
+							"options": {
+								"flirtation": {
+									"displayName": "Флирт"
+								},
+								"identity_attack": {
+									"displayName": "Идентификационная атака"
+								},
+								"insult": {
+									"displayName": "Оскорблять"
+								},
+								"profanity": {
+									"displayName": "Ненормативная лексика"
+								},
+								"severe_toxicity": {
+									"displayName": "Тяжелая токсичность"
+								},
+								"sexually_explicit": {
+									"displayName": "Сексуально откровенно"
+								},
+								"threat": {
+									"displayName": "Угроза"
+								},
+								"toxicity": {
+									"displayName": "Токсичность"
+								}
+							}
+						},
+						"scoreThreshold": {
+							"displayName": "Порог оценки",
+							"description": "Оценка, выше которой возвращаются результаты. При нулевом значении возвращаются все оценки."
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить атрибут",
+			"displayName": "Атрибуты для анализа"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"languages": {
+					"displayName": "Название или идентификатор языка",
+					"description": "Языки ввода текста. Если не указано, API автоматически определит язык комментариев. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				}
+			}
+		}
+	}
+}

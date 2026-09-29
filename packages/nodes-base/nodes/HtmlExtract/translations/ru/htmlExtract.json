@@ -1,0 +1,89 @@
+{
+	"header": {
+		"displayName": "HTML-извлечение",
+		"description": "Извлекает данные из HTML"
+	},
+	"nodeView": {
+		"sourceData": {
+			"displayName": "Исходные данные",
+			"description": "Если HTML следует читать из двоичных данных или данных JSON",
+			"options": {
+				"binary": {
+					"displayName": "Двоичный"
+				},
+				"json": {
+					"displayName": "JSON"
+				}
+			}
+		},
+		"dataPropertyName": {
+			"displayName": "Свойство JSON",
+			"hint": "Имя входного двоичного поля, содержащего извлекаемый файл.",
+			"description": "Имя свойства JSON, в котором можно найти HTML-код для извлечения данных. Свойство может содержать строку или массив строк."
+		},
+		"extractionValues": {
+			"options": {
+				"extractionValues": {
+					"displayName": "Значения извлечения"
+				},
+				"values": {
+					"displayName": "Ценности",
+					"values": {
+						"key": {
+							"displayName": "Ключ",
+							"description": "Ключ, под которым должно быть сохранено извлеченное значение"
+						},
+						"cssSelector": {
+							"displayName": "CSS-селектор",
+							"description": "Селектор CSS, который нужно использовать",
+							"placeholder": ".цена"
+						},
+						"returnValue": {
+							"displayName": "Возвращаемое значение",
+							"description": "Какие данные должны быть возвращены",
+							"options": {
+								"attribute": {
+									"displayName": "Атрибут",
+									"description": "Получите значение атрибута, например «класс», из элемента."
+								},
+								"html": {
+									"displayName": "HTML",
+									"description": "Получите HTML-код, который содержит элемент."
+								},
+								"text": {
+									"displayName": "Текст",
+									"description": "Получить только текстовое содержимое элемента"
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Получить значение ввода, выбора или текстового поля"
+								}
+							}
+						},
+						"attribute": {
+							"displayName": "Атрибут",
+							"description": "Имя атрибута, значение которого возвращается.",
+							"placeholder": "сорт"
+						},
+						"returnArray": {
+							"displayName": "Возвращаемый массив",
+							"description": "Возвращать ли значения в виде массива, чтобы при обнаружении нескольких значений они также возвращались отдельно. Если не установлено, все будет возвращено как одна строка."
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить ценность",
+			"displayName": "Значения извлечения"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"trimValues": {
+					"displayName": "Обрезать значения",
+					"description": "Удалять ли автоматически все пробелы и символы новой строки в начале и конце значений."
+				}
+			}
+		}
+	}
+}

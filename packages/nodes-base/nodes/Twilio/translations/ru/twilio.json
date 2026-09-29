@@ -1,0 +1,63 @@
+{
+	"header": {
+		"displayName": "Твилио",
+		"description": "Отправляйте SMS и сообщения WhatsApp или звоните по телефону."
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"call": {
+					"displayName": "Вызов"
+				},
+				"sms": {
+					"displayName": "SMS"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"send": {
+					"displayName": "Отправлять",
+					"description": "Отправьте SMS/MMS/WhatsApp сообщение."
+				},
+				"make": {
+					"displayName": "Делать"
+				}
+			}
+		},
+		"from": {
+			"displayName": "От",
+			"description": "Номер, с которого отправить сообщение",
+			"placeholder": "+14155238886"
+		},
+		"to": {
+			"displayName": "К",
+			"description": "Номер, на который отправить сообщение",
+			"placeholder": "+14155238886"
+		},
+		"toWhatsapp": {
+			"displayName": "В WhatsApp",
+			"description": "Следует ли отправлять сообщение в WhatsApp"
+		},
+		"message": {
+			"displayName": "Сообщение",
+			"description": "Сообщение для отправки"
+		},
+		"twiml": {
+			"displayName": "Используйте ТвиМЛ",
+			"description": "Использовать ли в сообщении <a href=\"https://www.twilio.com/docs/voice/twiml\">Twilio Markup Language</a>"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"statusCallback": {
+					"displayName": "Статус обратного вызова",
+					"description": "Обратные вызовы состояния позволяют получать события, связанные с ресурсами REST, управляемыми Twilio: помещениями, записями и композициями."
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,90 @@
+{
+	"header": {
+		"displayName": "Триггер Salesforce",
+		"description": "Получает данные из Salesforce и запускает рабочий процесс через указанные интервалы опроса."
+	},
+	"nodeView": {
+		"triggerOn": {
+			"displayName": "Триггер включен",
+			"description": "Какое событие Salesforce должно активировать узел",
+			"options": {
+				"accountCreated": {
+					"displayName": "Аккаунт создан",
+					"description": "Когда создается новая учетная запись"
+				},
+				"accountUpdated": {
+					"displayName": "Аккаунт обновлен",
+					"description": "Когда существующая учетная запись изменена"
+				},
+				"attachmentCreated": {
+					"displayName": "Вложение создано",
+					"description": "Когда файл загружен и прикреплен к объекту"
+				},
+				"attachmentUpdated": {
+					"displayName": "Вложение обновлено",
+					"description": "При изменении существующего файла"
+				},
+				"caseCreated": {
+					"displayName": "Дело создано",
+					"description": "При создании нового дела"
+				},
+				"caseUpdated": {
+					"displayName": "Дело обновлено",
+					"description": "При изменении существующего дела"
+				},
+				"contactCreated": {
+					"displayName": "Контакт создан",
+					"description": "При создании нового контакта"
+				},
+				"contactUpdated": {
+					"displayName": "Контакт обновлен",
+					"description": "При изменении существующего контакта"
+				},
+				"customObjectCreated": {
+					"displayName": "Пользовательский объект создан",
+					"description": "Когда создается новый объект данного типа"
+				},
+				"customObjectUpdated": {
+					"displayName": "Пользовательский объект обновлен",
+					"description": "Когда объект данного типа изменяется"
+				},
+				"leadCreated": {
+					"displayName": "Лид создан",
+					"description": "Когда создается новый лид"
+				},
+				"leadUpdated": {
+					"displayName": "Свинец обновлен",
+					"description": "При изменении существующего интереса"
+				},
+				"opportunityCreated": {
+					"displayName": "Возможность создана",
+					"description": "Когда создается новая возможность"
+				},
+				"opportunityUpdated": {
+					"displayName": "Возможность обновлена",
+					"description": "Когда существующая возможность изменяется"
+				},
+				"taskCreated": {
+					"displayName": "Задача создана",
+					"description": "Когда создается новая задача"
+				},
+				"taskUpdated": {
+					"displayName": "Задача обновлена",
+					"description": "При изменении существующей задачи"
+				},
+				"userCreated": {
+					"displayName": "Создано пользователем",
+					"description": "Когда создается новый пользователь"
+				},
+				"userUpdated": {
+					"displayName": "Пользователь обновлен",
+					"description": "Когда существующий пользователь изменен"
+				}
+			}
+		},
+		"customObject": {
+			"displayName": "Имя или идентификатор пользовательского объекта",
+			"description": "Имя пользовательского объекта. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		}
+	}
+}

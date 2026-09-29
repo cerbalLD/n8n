@@ -1,0 +1,1532 @@
+{
+	"header": {
+		"displayName": "Фрешсервис",
+		"description": "Используйте API Freshservice"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"agent": {
+					"displayName": "Агент"
+				},
+				"agentGroup": {
+					"displayName": "Группа агентов"
+				},
+				"agentRole": {
+					"displayName": "Роль агента"
+				},
+				"announcement": {
+					"displayName": "Объявление"
+				},
+				"assetType": {
+					"displayName": "Тип актива"
+				},
+				"change": {
+					"displayName": "Изменять"
+				},
+				"department": {
+					"displayName": "Отделение"
+				},
+				"location": {
+					"displayName": "Расположение"
+				},
+				"problem": {
+					"displayName": "Проблема"
+				},
+				"product": {
+					"displayName": "Продукт"
+				},
+				"release": {
+					"displayName": "Выпускать"
+				},
+				"requester": {
+					"displayName": "Запрашивающая сторона"
+				},
+				"requesterGroup": {
+					"displayName": "Группа запрашивающих"
+				},
+				"software": {
+					"displayName": "Программное обеспечение"
+				},
+				"ticket": {
+					"displayName": "Билет"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать билет"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить билет"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить билет"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить много билетов"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить билет"
+				}
+			}
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"placeholder": "имя@email.com",
+			"description": "Адрес электронной почты автора заявки"
+		},
+		"firstName": {
+			"displayName": "Имя"
+		},
+		"roles": {
+			"options": {
+				"roles": {
+					"displayName": "Роли",
+					"description": "Роль, которую можно назначить агенту"
+				},
+				"roleProperties": {
+					"displayName": "Свойства роли",
+					"values": {
+						"role": {
+							"displayName": "Имя или идентификатор роли",
+							"description": "Имя роли, которую нужно назначить агенту. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+						},
+						"assignment_scope": {
+							"displayName": "Объем",
+							"description": "Область, в которой агент может использовать разрешения, предоставленные ролью.",
+							"options": {
+								"entire_helpdesk": {
+									"displayName": "Вся служба поддержки"
+								},
+								"member_groups": {
+									"displayName": "Группы участников"
+								},
+								"specified_groups": {
+									"displayName": "Указанные группы"
+								},
+								"assigned_items": {
+									"displayName": "Назначенные предметы"
+								}
+							}
+						},
+						"groups": {
+							"displayName": "Имена или идентификаторы групп",
+							"description": "Группы, к которым применяются разрешения, предоставленные ролью. Требуется только в том случае, если область действия указана для групп, в противном случае игнорируется. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить роль",
+			"displayName": "Роли",
+			"description": "Роль, которую можно назначить агенту"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"address": {
+					"displayName": "Адрес",
+					"values": {
+						"address": {
+							"displayName": "Адрес"
+						},
+						"addressFields": {
+							"options": {
+								"line1": {
+									"displayName": "Линия 1"
+								},
+								"line2": {
+									"displayName": "Линия 2"
+								},
+								"city": {
+									"displayName": "Город"
+								},
+								"country": {
+									"displayName": "Страна"
+								},
+								"state": {
+									"displayName": "Состояние"
+								},
+								"zipcode": {
+									"displayName": "Почтовый индекс"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить поля адреса",
+					"options": {
+						"addressFields": {
+							"displayName": "Детали адреса"
+						}
+					}
+				},
+				"background_information": {
+					"displayName": "Справочная информация"
+				},
+				"department_ids": {
+					"displayName": "Названия или идентификаторы отделов",
+					"description": "Разделенные запятыми идентификаторы отделов, связанных с запрашивающим. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"job_title": {
+					"displayName": "Должность"
+				},
+				"language": {
+					"displayName": "Язык",
+					"options": {
+						"en": {
+							"displayName": "Английский"
+						},
+						"ar": {
+							"displayName": "арабский"
+						},
+						"ca": {
+							"displayName": "каталонский"
+						},
+						"cs": {
+							"displayName": "чешский"
+						},
+						"cy-GB": {
+							"displayName": "валлийский"
+						},
+						"da": {
+							"displayName": "датский"
+						},
+						"de": {
+							"displayName": "немецкий"
+						},
+						"es": {
+							"displayName": "испанский"
+						},
+						"es-LA": {
+							"displayName": "Испанский (Латинская Америка)"
+						},
+						"et": {
+							"displayName": "эстонский"
+						},
+						"fi": {
+							"displayName": "финский"
+						},
+						"fr": {
+							"displayName": "Французский"
+						},
+						"he": {
+							"displayName": "иврит"
+						},
+						"hu": {
+							"displayName": "венгерский"
+						},
+						"id": {
+							"displayName": "индонезийский"
+						},
+						"it": {
+							"displayName": "итальянский"
+						},
+						"ja-JP": {
+							"displayName": "японский"
+						},
+						"ko": {
+							"displayName": "корейский"
+						},
+						"LV": {
+							"displayName": "латышский"
+						},
+						"nb-NO": {
+							"displayName": "норвежский"
+						},
+						"nl": {
+							"displayName": "Голландский"
+						},
+						"pl": {
+							"displayName": "Польский"
+						},
+						"pt": {
+							"displayName": "португальский"
+						},
+						"pt-BR": {
+							"displayName": "Португальский (Бразилия)"
+						},
+						"pt-PT": {
+							"displayName": "Португальский (Португалия)"
+						},
+						"ru-RU": {
+							"displayName": "Русский"
+						},
+						"sk": {
+							"displayName": "словацкий"
+						},
+						"sk-SK": {
+							"displayName": "словацкий"
+						},
+						"sl": {
+							"displayName": "словенский"
+						},
+						"sv-SE": {
+							"displayName": "Шведский"
+						},
+						"th": {
+							"displayName": "тайский"
+						},
+						"tr": {
+							"displayName": "турецкий"
+						},
+						"UK": {
+							"displayName": "Украинский"
+						},
+						"vi": {
+							"displayName": "вьетнамский"
+						},
+						"zh-CN": {
+							"displayName": "Китайский (упрощенный)"
+						},
+						"zh-TW": {
+							"displayName": "Китайский (традиционный)"
+						}
+					}
+				},
+				"last_name": {
+					"displayName": "Фамилия"
+				},
+				"location_id": {
+					"displayName": "Название или идентификатор местоположения",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"member_of": {
+					"displayName": "Имена или идентификаторы групп",
+					"description": "Разделенные запятыми идентификаторы групп, членом которых является агент. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"mobile_phone_number": {
+					"displayName": "Мобильный телефон"
+				},
+				"observer_of": {
+					"displayName": "Наблюдатель за именами/идентификаторами групп",
+					"description": "Разделенные запятыми идентификаторы групп, наблюдателями за которыми является агент. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"scoreboard_level_id": {
+					"displayName": "Идентификатор уровня табло",
+					"description": "ID уровня агента в Аркаде",
+					"options": {
+						"1": {
+							"displayName": "Новичок"
+						},
+						"2": {
+							"displayName": "Средний"
+						},
+						"3": {
+							"displayName": "Профессиональный"
+						},
+						"4": {
+							"displayName": "Эксперт"
+						},
+						"5": {
+							"displayName": "Владелец"
+						},
+						"6": {
+							"displayName": "Гуру"
+						}
+					}
+				},
+				"time_format": {
+					"displayName": "Формат времени",
+					"options": {
+						"12h": {
+							"displayName": "12-часовой формат"
+						},
+						"24h": {
+							"displayName": "24-часовой формат"
+						}
+					}
+				},
+				"work_phone_number": {
+					"displayName": "Рабочий телефон"
+				},
+				"description": {
+					"displayName": "Описание",
+					"description": "HTML поддерживается"
+				},
+				"escalate_to": {
+					"displayName": "Эскалация до имени или идентификатора агента",
+					"description": "Идентификатор пользователя, которому отправляется электронное письмо с эскалацией, если заявка в этой группе не назначена. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"members": {
+					"displayName": "Имена или идентификаторы участников",
+					"description": "Разделенные запятыми идентификаторы агентов, входящих в эту группу. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"observers": {
+					"displayName": "Имена или идентификаторы наблюдателей",
+					"description": "Идентификаторы агентов, разделенных запятыми, которые являются наблюдателями этой группы. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"unassigned_for": {
+					"displayName": "Не назначено для",
+					"description": "Время, по истечении которого отправляется электронное письмо с эскалацией, если заявка в группе остается неназначенной.",
+					"options": {
+						"1d": {
+							"displayName": "1 день"
+						},
+						"1h": {
+							"displayName": "1 час"
+						},
+						"12h": {
+							"displayName": "12 часов"
+						},
+						"2d": {
+							"displayName": "2 дня"
+						},
+						"2h": {
+							"displayName": "2 часа"
+						},
+						"3d": {
+							"displayName": "3 дня"
+						},
+						"30m": {
+							"displayName": "30 минут"
+						},
+						"8h": {
+							"displayName": "8 часов"
+						}
+					}
+				},
+				"additional_emails": {
+					"displayName": "Дополнительные электронные письма",
+					"description": "Дополнительные адреса электронной почты, разделенные запятыми, на которые необходимо отправить объявление."
+				},
+				"departments": {
+					"displayName": "Названия или идентификаторы отделов",
+					"description": "Разделенные запятыми идентификаторы отделов, которые могут просматривать это объявление. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"visible_from": {
+					"displayName": "Видно с",
+					"description": "Временная метка, когда объявление становится активным"
+				},
+				"visible_till": {
+					"displayName": "Видно до",
+					"description": "Временная метка, до которой объявление активно"
+				},
+				"parent_asset_type_id": {
+					"displayName": "Имя или идентификатор типа родительского актива",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"agent_id": {
+					"displayName": "Имя или идентификатор агента",
+					"description": "Идентификатор агента, которому назначена проблема. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"change_type": {
+					"displayName": "Тип изменения",
+					"options": {
+						"1": {
+							"displayName": "Незначительный"
+						},
+						"2": {
+							"displayName": "Стандартный"
+						},
+						"3": {
+							"displayName": "Главный"
+						},
+						"4": {
+							"displayName": "Чрезвычайная ситуация"
+						}
+					}
+				},
+				"department_id": {
+					"displayName": "Название или идентификатор отдела",
+					"description": "Идентификатор отдела, которому принадлежит этот билет. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"group_id": {
+					"displayName": "Имя или идентификатор группы",
+					"description": "Идентификатор группы, которой назначен билет. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"impact": {
+					"displayName": "Влияние",
+					"options": {
+						"1": {
+							"displayName": "Низкий"
+						},
+						"2": {
+							"displayName": "Середина"
+						},
+						"3": {
+							"displayName": "Высокий"
+						}
+					}
+				},
+				"priority": {
+					"displayName": "Приоритет",
+					"options": {
+						"1": {
+							"displayName": "Низкий"
+						},
+						"2": {
+							"displayName": "Середина"
+						},
+						"3": {
+							"displayName": "Высокий"
+						},
+						"4": {
+							"displayName": "Срочный"
+						}
+					}
+				},
+				"risk": {
+					"displayName": "Риск",
+					"options": {
+						"1": {
+							"displayName": "Низкий"
+						},
+						"2": {
+							"displayName": "Середина"
+						},
+						"3": {
+							"displayName": "Высокий"
+						},
+						"4": {
+							"displayName": "Очень высокий"
+						}
+					}
+				},
+				"status": {
+					"displayName": "Статус",
+					"options": {
+						"1": {
+							"displayName": "Открыть"
+						},
+						"2": {
+							"displayName": "Запрошено изменение"
+						},
+						"3": {
+							"displayName": "Закрыто"
+						},
+						"4": {
+							"displayName": "Ожидается выпуск"
+						},
+						"5": {
+							"displayName": "Ожидает рассмотрения"
+						},
+						"6": {
+							"displayName": "Закрыто"
+						},
+						"In Production": {
+							"displayName": "В производстве"
+						},
+						"In Pipeline": {
+							"displayName": "В трубопроводе"
+						},
+						"Retired": {
+							"displayName": "Ушедший на пенсию"
+						},
+						"disabled": {
+							"displayName": "Неполноценный"
+						},
+						"ignored": {
+							"displayName": "игнорируется"
+						},
+						"needs review": {
+							"displayName": "Требуется проверка"
+						},
+						"restricted": {
+							"displayName": "Ограниченный"
+						}
+					}
+				},
+				"subject": {
+					"displayName": "Предмет"
+				},
+				"domains": {
+					"displayName": "Домены",
+					"description": "Домены электронной почты, разделенные запятыми, связанные с отделом"
+				},
+				"manufacturer": {
+					"displayName": "Производитель"
+				},
+				"mode_of_procurement": {
+					"displayName": "Способ закупок",
+					"options": {
+						"Buy": {
+							"displayName": "Купить"
+						},
+						"Lease": {
+							"displayName": "Арендовать"
+						},
+						"Both": {
+							"displayName": "Оба"
+						}
+					}
+				},
+				"secondary_emails": {
+					"displayName": "Вторичные электронные письма",
+					"description": "Дополнительные адреса электронной почты, разделенные запятыми, связанные с отправителем запроса."
+				},
+				"notes": {
+					"displayName": "Примечания"
+				},
+				"cc_emails": {
+					"displayName": "Электронная почта CC",
+					"description": "Адреса электронной почты, разделенные запятыми, которые нужно добавить в поле «Копия» электронного письма с заявкой."
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Имя автора билета"
+				},
+				"requester_id": {
+					"displayName": "Имя или идентификатор запрашивающего",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				}
+			}
+		},
+		"agentId": {
+			"displayName": "Идентификатор агента",
+			"description": "Идентификатор агента для обновления"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"department_id": {
+					"displayName": "Название или идентификатор отдела",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"email": {
+					"displayName": "Электронная почта",
+					"placeholder": "имя@email.com"
+				},
+				"first_name": {
+					"displayName": "Имя"
+				},
+				"job_title": {
+					"displayName": "Должность"
+				},
+				"language": {
+					"displayName": "Язык",
+					"options": {
+						"en": {
+							"displayName": "Английский"
+						},
+						"ar": {
+							"displayName": "арабский"
+						},
+						"ca": {
+							"displayName": "каталонский"
+						},
+						"cs": {
+							"displayName": "чешский"
+						},
+						"cy-GB": {
+							"displayName": "валлийский"
+						},
+						"da": {
+							"displayName": "датский"
+						},
+						"de": {
+							"displayName": "немецкий"
+						},
+						"es": {
+							"displayName": "испанский"
+						},
+						"es-LA": {
+							"displayName": "Испанский (Латинская Америка)"
+						},
+						"et": {
+							"displayName": "эстонский"
+						},
+						"fi": {
+							"displayName": "финский"
+						},
+						"fr": {
+							"displayName": "Французский"
+						},
+						"he": {
+							"displayName": "иврит"
+						},
+						"hu": {
+							"displayName": "венгерский"
+						},
+						"id": {
+							"displayName": "индонезийский"
+						},
+						"it": {
+							"displayName": "итальянский"
+						},
+						"ja-JP": {
+							"displayName": "японский"
+						},
+						"ko": {
+							"displayName": "корейский"
+						},
+						"LV": {
+							"displayName": "латышский"
+						},
+						"nb-NO": {
+							"displayName": "норвежский"
+						},
+						"nl": {
+							"displayName": "Голландский"
+						},
+						"pl": {
+							"displayName": "Польский"
+						},
+						"pt": {
+							"displayName": "португальский"
+						},
+						"pt-BR": {
+							"displayName": "Португальский (Бразилия)"
+						},
+						"pt-PT": {
+							"displayName": "Португальский (Португалия)"
+						},
+						"ru-RU": {
+							"displayName": "Русский"
+						},
+						"sk": {
+							"displayName": "словацкий"
+						},
+						"sk-SK": {
+							"displayName": "словацкий"
+						},
+						"sl": {
+							"displayName": "словенский"
+						},
+						"sv-SE": {
+							"displayName": "Шведский"
+						},
+						"th": {
+							"displayName": "тайский"
+						},
+						"tr": {
+							"displayName": "турецкий"
+						},
+						"UK": {
+							"displayName": "Украинский"
+						},
+						"vi": {
+							"displayName": "вьетнамский"
+						},
+						"zh-CN": {
+							"displayName": "Китайский (упрощенный)"
+						},
+						"zh-TW": {
+							"displayName": "Китайский (традиционный)"
+						}
+					}
+				},
+				"last_name": {
+					"displayName": "Фамилия"
+				},
+				"location_id": {
+					"displayName": "Название или идентификатор местоположения",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"mobile_phone_number": {
+					"displayName": "Номер мобильного телефона"
+				},
+				"work_phone_number": {
+					"displayName": "Рабочий номер телефона"
+				},
+				"filter": {
+					"displayName": "Предопределенные фильтры",
+					"options": {
+						"closed": {
+							"displayName": "Закрыто"
+						},
+						"my_open": {
+							"displayName": "Мой открытый"
+						},
+						"release_requested": {
+							"displayName": "Запрошен выпуск"
+						},
+						"requester_id": {
+							"displayName": "Идентификатор запрашивающего"
+						},
+						"unassigned": {
+							"displayName": "Неназначенный"
+						}
+					}
+				},
+				"sort_by": {
+					"displayName": "Порядок сортировки",
+					"options": {
+						"asc": {
+							"displayName": "восходящий"
+						},
+						"desc": {
+							"displayName": "По убыванию"
+						}
+					}
+				},
+				"updated_since": {
+					"displayName": "Обновлено с"
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Название отдела"
+				},
+				"primary_email": {
+					"displayName": "Основной адрес электронной почты"
+				},
+				"agent_id": {
+					"displayName": "Имя или идентификатор агента",
+					"description": "Идентификатор агента, которому были назначены билеты. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"group_id": {
+					"displayName": "Имя или идентификатор группы",
+					"description": "Идентификатор группы, которой были назначены заявки. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"impact": {
+					"displayName": "Влияние",
+					"options": {
+						"1": {
+							"displayName": "Низкий"
+						},
+						"2": {
+							"displayName": "Середина"
+						},
+						"3": {
+							"displayName": "Высокий"
+						}
+					}
+				},
+				"priority": {
+					"displayName": "Приоритет",
+					"options": {
+						"1": {
+							"displayName": "Низкий"
+						},
+						"2": {
+							"displayName": "Середина"
+						},
+						"3": {
+							"displayName": "Высокий"
+						},
+						"4": {
+							"displayName": "Срочный"
+						}
+					}
+				},
+				"status": {
+					"displayName": "Статус",
+					"options": {
+						"2": {
+							"displayName": "Открыть"
+						},
+						"3": {
+							"displayName": "В ожидании"
+						},
+						"4": {
+							"displayName": "Решено"
+						},
+						"5": {
+							"displayName": "Закрыто"
+						}
+					}
+				},
+				"created_at": {
+					"displayName": "Дата создания",
+					"description": "Дата создания билета"
+				},
+				"due_by": {
+					"displayName": "К оплате",
+					"description": "Дата, когда заявка должна быть решена"
+				}
+			}
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"address": {
+					"displayName": "Адрес",
+					"values": {
+						"address": {
+							"displayName": "Адрес"
+						},
+						"addressFields": {
+							"options": {
+								"line1": {
+									"displayName": "Линия 1"
+								},
+								"line2": {
+									"displayName": "Линия 2"
+								},
+								"city": {
+									"displayName": "Город"
+								},
+								"country": {
+									"displayName": "Страна"
+								},
+								"state": {
+									"displayName": "Состояние"
+								},
+								"zipcode": {
+									"displayName": "Почтовый индекс"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить поля адреса",
+					"options": {
+						"addressFields": {
+							"displayName": "Детали адреса"
+						}
+					}
+				},
+				"background_information": {
+					"displayName": "Справочная информация"
+				},
+				"department_ids": {
+					"displayName": "Названия или идентификаторы отделов",
+					"description": "Разделенные запятыми идентификаторы отделов, связанных с запрашивающим. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"email": {
+					"displayName": "Электронная почта",
+					"placeholder": "имя@email.com",
+					"description": "Адрес электронной почты автора заявки"
+				},
+				"first_name": {
+					"displayName": "Имя"
+				},
+				"job_title": {
+					"displayName": "Должность"
+				},
+				"language": {
+					"displayName": "Язык",
+					"options": {
+						"en": {
+							"displayName": "Английский"
+						},
+						"ar": {
+							"displayName": "арабский"
+						},
+						"ca": {
+							"displayName": "каталонский"
+						},
+						"cs": {
+							"displayName": "чешский"
+						},
+						"cy-GB": {
+							"displayName": "валлийский"
+						},
+						"da": {
+							"displayName": "датский"
+						},
+						"de": {
+							"displayName": "немецкий"
+						},
+						"es": {
+							"displayName": "испанский"
+						},
+						"es-LA": {
+							"displayName": "Испанский (Латинская Америка)"
+						},
+						"et": {
+							"displayName": "эстонский"
+						},
+						"fi": {
+							"displayName": "финский"
+						},
+						"fr": {
+							"displayName": "Французский"
+						},
+						"he": {
+							"displayName": "иврит"
+						},
+						"hu": {
+							"displayName": "венгерский"
+						},
+						"id": {
+							"displayName": "индонезийский"
+						},
+						"it": {
+							"displayName": "итальянский"
+						},
+						"ja-JP": {
+							"displayName": "японский"
+						},
+						"ko": {
+							"displayName": "корейский"
+						},
+						"LV": {
+							"displayName": "латышский"
+						},
+						"nb-NO": {
+							"displayName": "норвежский"
+						},
+						"nl": {
+							"displayName": "Голландский"
+						},
+						"pl": {
+							"displayName": "Польский"
+						},
+						"pt": {
+							"displayName": "португальский"
+						},
+						"pt-BR": {
+							"displayName": "Португальский (Бразилия)"
+						},
+						"pt-PT": {
+							"displayName": "Португальский (Португалия)"
+						},
+						"ru-RU": {
+							"displayName": "Русский"
+						},
+						"sk": {
+							"displayName": "словацкий"
+						},
+						"sk-SK": {
+							"displayName": "словацкий"
+						},
+						"sl": {
+							"displayName": "словенский"
+						},
+						"sv-SE": {
+							"displayName": "Шведский"
+						},
+						"th": {
+							"displayName": "тайский"
+						},
+						"tr": {
+							"displayName": "турецкий"
+						},
+						"UK": {
+							"displayName": "Украинский"
+						},
+						"vi": {
+							"displayName": "вьетнамский"
+						},
+						"zh-CN": {
+							"displayName": "Китайский (упрощенный)"
+						},
+						"zh-TW": {
+							"displayName": "Китайский (традиционный)"
+						}
+					}
+				},
+				"last_name": {
+					"displayName": "Фамилия"
+				},
+				"location_id": {
+					"displayName": "Название или идентификатор местоположения",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"member_of": {
+					"displayName": "Имена или идентификаторы групп",
+					"description": "Разделенные запятыми идентификаторы групп, членом которых является агент. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"mobile_phone_number": {
+					"displayName": "Мобильный телефон"
+				},
+				"observer_of": {
+					"displayName": "Наблюдатель за именами/идентификаторами групп",
+					"description": "Разделенные запятыми идентификаторы групп, наблюдателями за которыми является агент. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"scoreboard_level_id": {
+					"displayName": "Идентификатор уровня табло",
+					"description": "ID уровня агента в Аркаде",
+					"options": {
+						"1": {
+							"displayName": "Новичок"
+						},
+						"2": {
+							"displayName": "Средний"
+						},
+						"3": {
+							"displayName": "Профессиональный"
+						},
+						"4": {
+							"displayName": "Эксперт"
+						},
+						"5": {
+							"displayName": "Владелец"
+						},
+						"6": {
+							"displayName": "Гуру"
+						}
+					}
+				},
+				"time_format": {
+					"displayName": "Формат времени",
+					"options": {
+						"12h": {
+							"displayName": "12-часовой формат"
+						},
+						"24h": {
+							"displayName": "24-часовой формат"
+						}
+					}
+				},
+				"work_phone_number": {
+					"displayName": "Рабочий телефон"
+				},
+				"description": {
+					"displayName": "Описание",
+					"description": "HTML поддерживается"
+				},
+				"escalate_to": {
+					"displayName": "Эскалация до имени или идентификатора агента",
+					"description": "Идентификатор агента, которому отправляется электронное письмо с эскалацией, если заявка в этой группе не назначена. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"members": {
+					"displayName": "Имена или идентификаторы участников",
+					"description": "Разделенные запятыми идентификаторы агентов, входящих в эту группу. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Имя автора билета"
+				},
+				"observers": {
+					"displayName": "Имена или идентификаторы наблюдателей",
+					"description": "Идентификаторы пользователей агентов, разделенных запятыми, которые являются наблюдателями этой группы. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"unassigned_for": {
+					"displayName": "Не назначено для",
+					"description": "Время, по истечении которого отправляется электронное письмо с эскалацией, если заявка в группе остается неназначенной.",
+					"options": {
+						"1d": {
+							"displayName": "1 день"
+						},
+						"1h": {
+							"displayName": "1 час"
+						},
+						"12h": {
+							"displayName": "12 часов"
+						},
+						"2d": {
+							"displayName": "2 дня"
+						},
+						"2h": {
+							"displayName": "2 часа"
+						},
+						"3d": {
+							"displayName": "3 дня"
+						},
+						"30m": {
+							"displayName": "30 минут"
+						},
+						"8h": {
+							"displayName": "8 часов"
+						}
+					}
+				},
+				"additional_emails": {
+					"displayName": "Дополнительные электронные письма",
+					"description": "Дополнительные адреса электронной почты, разделенные запятыми, на которые необходимо отправить объявление."
+				},
+				"body_html": {
+					"displayName": "Тело",
+					"description": "HTML поддерживается"
+				},
+				"departments": {
+					"displayName": "Названия или идентификаторы отделов",
+					"description": "Разделенные запятыми идентификаторы отделов, которые могут просматривать это объявление. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"title": {
+					"displayName": "Заголовок"
+				},
+				"visibility": {
+					"displayName": "Видимость",
+					"options": {
+						"agents_only": {
+							"displayName": "Только агенты"
+						},
+						"grouped_visibility": {
+							"displayName": "Агенты и группы"
+						},
+						"everyone": {
+							"displayName": "Каждый"
+						}
+					}
+				},
+				"agent_id": {
+					"displayName": "Имя или идентификатор агента",
+					"description": "Идентификатор агента, которому назначена проблема. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"change_type": {
+					"displayName": "Тип изменения",
+					"options": {
+						"1": {
+							"displayName": "Незначительный"
+						},
+						"2": {
+							"displayName": "Стандартный"
+						},
+						"3": {
+							"displayName": "Главный"
+						},
+						"4": {
+							"displayName": "Чрезвычайная ситуация"
+						}
+					}
+				},
+				"department_id": {
+					"displayName": "Название или идентификатор отдела",
+					"description": "Идентификатор отдела, которому присвоен этот билет. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"group_id": {
+					"displayName": "Имя или идентификатор группы",
+					"description": "Идентификатор группы, которой назначен билет. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"impact": {
+					"displayName": "Влияние",
+					"description": "Влияние изменения",
+					"options": {
+						"1": {
+							"displayName": "Низкий"
+						},
+						"2": {
+							"displayName": "Середина"
+						},
+						"3": {
+							"displayName": "Высокий"
+						}
+					}
+				},
+				"priority": {
+					"displayName": "Приоритет",
+					"options": {
+						"1": {
+							"displayName": "Низкий"
+						},
+						"2": {
+							"displayName": "Середина"
+						},
+						"3": {
+							"displayName": "Высокий"
+						},
+						"4": {
+							"displayName": "Срочный"
+						}
+					},
+					"description": "Приоритет билета"
+				},
+				"requester_id": {
+					"displayName": "Имя или идентификатор запрашивающего",
+					"description": "ID инициатора проблемы. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"risk": {
+					"displayName": "Риск",
+					"options": {
+						"1": {
+							"displayName": "Низкий"
+						},
+						"2": {
+							"displayName": "Середина"
+						},
+						"3": {
+							"displayName": "Высокий"
+						},
+						"4": {
+							"displayName": "Очень высокий"
+						}
+					}
+				},
+				"status": {
+					"displayName": "Статус",
+					"options": {
+						"1": {
+							"displayName": "Открыть"
+						},
+						"2": {
+							"displayName": "Открыть"
+						},
+						"3": {
+							"displayName": "В ожидании"
+						},
+						"4": {
+							"displayName": "Решено"
+						},
+						"5": {
+							"displayName": "Закрыто"
+						},
+						"6": {
+							"displayName": "Закрыто"
+						},
+						"In Production": {
+							"displayName": "В производстве"
+						},
+						"In Pipeline": {
+							"displayName": "В трубопроводе"
+						},
+						"Retired": {
+							"displayName": "Ушедший на пенсию"
+						},
+						"disabled": {
+							"displayName": "Неполноценный"
+						},
+						"ignored": {
+							"displayName": "игнорируется"
+						},
+						"needs review": {
+							"displayName": "Требуется проверка"
+						},
+						"restricted": {
+							"displayName": "Ограниченный"
+						}
+					}
+				},
+				"subject": {
+					"displayName": "Предмет"
+				},
+				"domains": {
+					"displayName": "Домены",
+					"description": "Домены электронной почты, разделенные запятыми, связанные с отделом"
+				},
+				"due_by": {
+					"displayName": "К оплате",
+					"description": "Дата, когда проблема должна быть решена"
+				},
+				"asset_type_id": {
+					"displayName": "Имя или идентификатор типа актива",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"manufacturer": {
+					"displayName": "Производитель"
+				},
+				"mode_of_procurement": {
+					"displayName": "Способ закупок",
+					"options": {
+						"Buy": {
+							"displayName": "Купить"
+						},
+						"Lease": {
+							"displayName": "Арендовать"
+						},
+						"Both": {
+							"displayName": "Оба"
+						}
+					}
+				},
+				"release_type": {
+					"displayName": "Тип выпуска",
+					"options": {
+						"1": {
+							"displayName": "Незначительный"
+						},
+						"2": {
+							"displayName": "Стандартный"
+						},
+						"3": {
+							"displayName": "Главный"
+						},
+						"4": {
+							"displayName": "Чрезвычайная ситуация"
+						}
+					}
+				},
+				"primary_email": {
+					"displayName": "Основной адрес электронной почты"
+				},
+				"secondary_emails": {
+					"displayName": "Вторичные электронные письма",
+					"description": "Дополнительные адреса электронной почты, разделенные запятыми, связанные с отправителем запроса."
+				},
+				"application_type": {
+					"displayName": "Тип приложения",
+					"description": "Тип программного обеспечения",
+					"options": {
+						"desktop": {
+							"displayName": "Рабочий стол"
+						},
+						"mobile": {
+							"displayName": "мобильный"
+						},
+						"saas": {
+							"displayName": "SaaS"
+						}
+					}
+				},
+				"notes": {
+					"displayName": "Примечания"
+				},
+				"phone": {
+					"displayName": "Телефон"
+				}
+			}
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Название локации"
+		},
+		"agentGroupId": {
+			"displayName": "Идентификатор группы агентов",
+			"description": "Идентификатор группы агентов для обновления"
+		},
+		"agentRoleId": {
+			"displayName": "Идентификатор роли агента",
+			"description": "Идентификатор роли агента для получения"
+		},
+		"title": {
+			"displayName": "Заголовок"
+		},
+		"bodyHtml": {
+			"displayName": "Тело",
+			"description": "HTML поддерживается"
+		},
+		"visibility": {
+			"displayName": "Видимость",
+			"options": {
+				"agents_only": {
+					"displayName": "Только агенты"
+				},
+				"grouped_visibility": {
+					"displayName": "Агенты и группы"
+				},
+				"everyone": {
+					"displayName": "Каждый"
+				}
+			}
+		},
+		"visibleFrom": {
+			"displayName": "Видно с",
+			"description": "Временная метка, когда объявление становится активным"
+		},
+		"announcementId": {
+			"displayName": "Идентификатор объявления",
+			"description": "Идентификатор объявления для обновления"
+		},
+		"assetTypeId": {
+			"displayName": "Имя или идентификатор типа актива",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"requesterId": {
+			"displayName": "Идентификатор запрашивающего",
+			"description": "Идентификатор запрашивающей стороны для обновления"
+		},
+		"subject": {
+			"displayName": "Предмет"
+		},
+		"plannedStartDate": {
+			"displayName": "Планируемая дата начала"
+		},
+		"plannedEndDate": {
+			"displayName": "Запланированная дата окончания"
+		},
+		"changeId": {
+			"displayName": "Изменить идентификатор",
+			"description": "Идентификатор изменения для обновления"
+		},
+		"departmentId": {
+			"displayName": "Идентификатор отдела",
+			"description": "Идентификатор отдела для обновления"
+		},
+		"locationId": {
+			"displayName": "Идентификатор местоположения",
+			"description": "Идентификатор местоположения для обновления"
+		},
+		"dueBy": {
+			"displayName": "К оплате",
+			"description": "Дата, когда проблема должна быть решена"
+		},
+		"problemId": {
+			"displayName": "Идентификатор проблемы",
+			"description": "Идентификатор проблемы, которую необходимо обновить"
+		},
+		"productId": {
+			"displayName": "Идентификатор продукта",
+			"description": "Идентификатор продукта для обновления"
+		},
+		"releaseType": {
+			"displayName": "Тип выпуска",
+			"options": {
+				"1": {
+					"displayName": "Незначительный"
+				},
+				"2": {
+					"displayName": "Стандартный"
+				},
+				"3": {
+					"displayName": "Главный"
+				},
+				"4": {
+					"displayName": "Чрезвычайная ситуация"
+				}
+			}
+		},
+		"priority": {
+			"displayName": "Приоритет",
+			"options": {
+				"1": {
+					"displayName": "Низкий"
+				},
+				"2": {
+					"displayName": "Середина"
+				},
+				"3": {
+					"displayName": "Высокий"
+				},
+				"4": {
+					"displayName": "Срочный"
+				}
+			}
+		},
+		"status": {
+			"displayName": "Статус",
+			"options": {
+				"1": {
+					"displayName": "Открыть"
+				},
+				"2": {
+					"displayName": "Открыть"
+				},
+				"3": {
+					"displayName": "В ожидании"
+				},
+				"4": {
+					"displayName": "Решено"
+				},
+				"5": {
+					"displayName": "Закрыто"
+				}
+			}
+		},
+		"releaseId": {
+			"displayName": "Идентификатор выпуска",
+			"description": "Идентификатор выпуска для обновления"
+		},
+		"primaryEmail": {
+			"displayName": "Основной адрес электронной почты"
+		},
+		"requesterGroupId": {
+			"displayName": "Идентификатор группы запрашивающей стороны",
+			"description": "Идентификатор группы запрашивающих, которую необходимо обновить."
+		},
+		"applicationType": {
+			"displayName": "Тип приложения",
+			"options": {
+				"desktop": {
+					"displayName": "Рабочий стол"
+				},
+				"mobile": {
+					"displayName": "мобильный"
+				},
+				"saas": {
+					"displayName": "SaaS"
+				}
+			}
+		},
+		"softwareId": {
+			"displayName": "Идентификатор программного обеспечения",
+			"description": "Идентификатор программного приложения для обновления"
+		},
+		"description": {
+			"displayName": "Описание",
+			"description": "HTML поддерживается"
+		},
+		"ticketId": {
+			"displayName": "Идентификатор билета",
+			"description": "Идентификатор билета для обновления"
+		}
+	}
+}

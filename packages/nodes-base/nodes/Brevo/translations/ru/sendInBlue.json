@@ -1,0 +1,480 @@
+{
+	"header": {
+		"displayName": "Брево",
+		"description": "Использование API Брево"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"contact": {
+					"displayName": "Контакт"
+				},
+				"attribute": {
+					"displayName": "Атрибут контакта"
+				},
+				"email": {
+					"displayName": "Электронная почта"
+				},
+				"sender": {
+					"displayName": "Отправитель"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать"
+				},
+				"update": {
+					"displayName": "Обновлять"
+				},
+				"delete": {
+					"displayName": "Удалить"
+				},
+				"getAll": {
+					"displayName": "Получить много"
+				},
+				"upsert": {
+					"displayName": "Создать или обновить"
+				},
+				"get": {
+					"displayName": "Получать"
+				},
+				"send": {
+					"displayName": "Отправлять"
+				},
+				"sendTemplate": {
+					"displayName": "Отправить шаблон"
+				}
+			}
+		},
+		"attributeCategory": {
+			"displayName": "Категория",
+			"description": "Категория атрибута",
+			"options": {
+				"calculated": {
+					"displayName": "Рассчитано"
+				},
+				"category": {
+					"displayName": "Категория"
+				},
+				"global": {
+					"displayName": "Глобальный"
+				},
+				"normal": {
+					"displayName": "Нормальный"
+				},
+				"transactional": {
+					"displayName": "Транзакционный"
+				}
+			}
+		},
+		"attributeName": {
+			"displayName": "Имя",
+			"description": "Имя атрибута"
+		},
+		"attributeType": {
+			"displayName": "Тип",
+			"description": "Тип атрибута",
+			"options": {
+				"boolean": {
+					"displayName": "логическое значение"
+				},
+				"date": {
+					"displayName": "Дата"
+				},
+				"float": {
+					"displayName": "Плавать"
+				},
+				"text": {
+					"displayName": "Текст"
+				}
+			}
+		},
+		"attributeValue": {
+			"displayName": "Ценить",
+			"description": "Значение атрибута"
+		},
+		"attributeCategoryList": {
+			"displayName": "Список атрибутов контакта",
+			"placeholder": "Добавить атрибуты",
+			"options": {
+				"categoryEnumeration": {
+					"values": {
+						"categoryEnumeration": {
+							"displayName": "Атрибуты контакта",
+							"description": "Список значений и меток, которые может принимать атрибут."
+						},
+						"attributesValues": {
+							"options": {
+								"attributeCategoryValue": {
+									"displayName": "Идентификатор значения",
+									"description": "Идентификатор значения должен быть числовым."
+								},
+								"attributeCategoryLabel": {
+									"displayName": "Этикетка",
+									"description": "Метка значения"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить атрибут",
+					"displayName": "Атрибуты контакта",
+					"description": "Список значений и меток, которые может принимать атрибут.",
+					"options": {
+						"attributesValues": {
+							"displayName": "Атрибут"
+						}
+					}
+				}
+			}
+		},
+		"updateAttributeCategory": {
+			"displayName": "Категория",
+			"description": "Категория атрибута",
+			"options": {
+				"calculated": {
+					"displayName": "Рассчитано"
+				},
+				"category": {
+					"displayName": "Категория"
+				},
+				"global": {
+					"displayName": "Глобальный"
+				}
+			}
+		},
+		"updateAttributeName": {
+			"displayName": "Имя",
+			"description": "Имя существующего атрибута"
+		},
+		"updateAttributeValue": {
+			"displayName": "Ценить",
+			"description": "Значение атрибута для обновления"
+		},
+		"updateAttributeCategoryList": {
+			"displayName": "Обновить поля",
+			"description": "Список значений и меток, которые может принимать атрибут.",
+			"placeholder": "Добавить поле",
+			"options": {
+				"updateCategoryEnumeration": {
+					"values": {
+						"updateCategoryEnumeration": {
+							"displayName": "Атрибуты контакта",
+							"description": "Список значений и меток, которые может принимать атрибут."
+						},
+						"updateAttributesValues": {
+							"options": {
+								"attributeCategoryValue": {
+									"displayName": "Ценить",
+									"description": "Идентификатор значения должен быть числовым."
+								},
+								"attributeCategoryLabel": {
+									"displayName": "Этикетка",
+									"description": "Метка значения"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить атрибут",
+					"displayName": "Атрибуты контакта",
+					"description": "Список значений и меток, которые может принимать атрибут.",
+					"options": {
+						"updateAttributesValues": {
+							"displayName": "Атрибут"
+						}
+					}
+				}
+			}
+		},
+		"deleteAttributeCategory": {
+			"displayName": "Категория",
+			"description": "Категория атрибута",
+			"options": {
+				"calculated": {
+					"displayName": "Рассчитано"
+				},
+				"category": {
+					"displayName": "Категория"
+				},
+				"global": {
+					"displayName": "Глобальный"
+				},
+				"normal": {
+					"displayName": "Нормальный"
+				},
+				"transactional": {
+					"displayName": "Транзакционный"
+				}
+			}
+		},
+		"deleteAttributeName": {
+			"displayName": "Имя",
+			"description": "Имя атрибута"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Имя отправителя"
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"description": "Электронная почта контактного лица",
+			"placeholder": "имя@email.com"
+		},
+		"id": {
+			"displayName": "Идентификатор отправителя",
+			"description": "Идентификатор отправителя, которого нужно удалить"
+		},
+		"createContactAttributes": {
+			"options": {
+				"createContactAttributes": {
+					"displayName": "Атрибуты контакта",
+					"description": "Массив добавляемых атрибутов"
+				},
+				"attributesValues": {
+					"displayName": "Атрибут",
+					"values": {
+						"fieldName": {
+							"displayName": "Имя поля"
+						},
+						"fieldValue": {
+							"displayName": "Значение поля"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить атрибут",
+			"displayName": "Атрибуты контакта",
+			"description": "Массив добавляемых атрибутов"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"sort": {
+					"displayName": "Сортировать",
+					"description": "Отсортируйте результаты в порядке возрастания/убывания создания записи.",
+					"options": {
+						"desc": {
+							"displayName": "DESC"
+						},
+						"asc": {
+							"displayName": "ASC"
+						}
+					}
+				}
+			}
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"modifiedSince": {
+					"displayName": "Изменено с момента",
+					"description": "Фильтровать (в кодировке urlencode) контакты, измененные после заданной даты и времени в формате UTC (ГГГГ-ММ-ДДТЧЧ:мм:сс.SSSZ)."
+				}
+			}
+		},
+		"identifier": {
+			"displayName": "Контактный идентификатор",
+			"description": "Адрес электронной почты (urlencoded) ИЛИ идентификатор контакта ИЛИ значение атрибута SMS"
+		},
+		"updateAttributes": {
+			"options": {
+				"updateAttributes": {
+					"displayName": "Атрибуты",
+					"description": "Массив атрибутов, которые необходимо обновить"
+				},
+				"updateAttributesValues": {
+					"displayName": "Атрибут",
+					"values": {
+						"fieldName": {
+							"displayName": "Имя поля"
+						},
+						"fieldValue": {
+							"displayName": "Значение поля"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить атрибут",
+			"displayName": "Атрибуты",
+			"description": "Массив атрибутов, которые необходимо обновить"
+		},
+		"upsertAttributes": {
+			"options": {
+				"upsertAttributes": {
+					"displayName": "Атрибуты контакта",
+					"description": "Массив атрибутов, которые необходимо обновить"
+				},
+				"upsertAttributesValues": {
+					"displayName": "Атрибут",
+					"values": {
+						"fieldName": {
+							"displayName": "Имя поля"
+						},
+						"fieldValue": {
+							"displayName": "Значение поля"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить атрибут",
+			"displayName": "Атрибуты контакта",
+			"description": "Массив атрибутов, которые необходимо обновить"
+		},
+		"sendHTML": {
+			"displayName": "Отправить HTML"
+		},
+		"subject": {
+			"displayName": "Предмет",
+			"description": "Тема письма"
+		},
+		"textContent": {
+			"displayName": "Текстовый контент",
+			"description": "Текстовое содержание сообщения"
+		},
+		"htmlContent": {
+			"displayName": "HTML-контент",
+			"description": "HTML-содержимое сообщения"
+		},
+		"sender": {
+			"displayName": "Отправитель"
+		},
+		"receipients": {
+			"displayName": "Получатели"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"description": "Дополнительные поля для добавления",
+			"placeholder": "Добавить поле",
+			"options": {
+				"emailAttachments": {
+					"values": {
+						"emailAttachments": {
+							"displayName": "Вложения"
+						},
+						"attachment": {
+							"options": {
+								"binaryPropertyName": {
+									"displayName": "Имя поля входных данных",
+									"description": "Имя входящего поля, содержащего данные двоичного файла, подлежащие обработке."
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить вложение",
+					"displayName": "Вложения",
+					"options": {
+						"attachment": {
+							"displayName": "Данные вложения"
+						}
+					}
+				},
+				"receipientsBCC": {
+					"values": {
+						"receipientsBCC": {
+							"displayName": "Получатели СК"
+						},
+						"receipientBcc": {
+							"options": {
+								"bcc": {
+									"displayName": "Получатель"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить скрытую копию",
+					"displayName": "Получатели СК",
+					"options": {
+						"receipientBcc": {
+							"displayName": "Получатель"
+						}
+					}
+				},
+				"receipientsCC": {
+					"values": {
+						"receipientsCC": {
+							"displayName": "Получатели CC"
+						},
+						"receipientCc": {
+							"options": {
+								"cc": {
+									"displayName": "Получатель"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить копию копии",
+					"displayName": "Получатели CC",
+					"options": {
+						"receipientCc": {
+							"displayName": "Получатель"
+						}
+					}
+				},
+				"emailTags": {
+					"values": {
+						"emailTags": {
+							"displayName": "Теги электронной почты",
+							"description": "Добавляйте теги в свои электронные письма, чтобы их было легче найти."
+						},
+						"tags": {
+							"options": {
+								"tag": {
+									"displayName": "Ярлык"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить теги электронной почты",
+					"displayName": "Теги электронной почты",
+					"description": "Добавляйте теги в свои электронные письма, чтобы их было легче найти.",
+					"options": {
+						"tags": {
+							"displayName": "Теги"
+						}
+					}
+				},
+				"templateParameters": {
+					"values": {
+						"templateParameters": {
+							"displayName": "Параметры шаблона",
+							"description": "Передайте набор атрибутов для настройки шаблона."
+						},
+						"parameterValues": {
+							"options": {
+								"parameters": {
+									"displayName": "Параметр",
+									"description": "Пары ключ=значение, разделенные запятыми",
+									"placeholder": "ключ=значение"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить параметр",
+					"displayName": "Параметры шаблона",
+					"description": "Передайте набор атрибутов для настройки шаблона.",
+					"options": {
+						"parameterValues": {
+							"displayName": "Параметры"
+						}
+					}
+				}
+			}
+		},
+		"templateId": {
+			"displayName": "Идентификатор шаблона"
+		}
+	}
+}

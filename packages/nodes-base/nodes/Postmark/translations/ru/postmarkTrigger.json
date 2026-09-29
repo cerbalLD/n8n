@@ -1,0 +1,46 @@
+{
+	"header": {
+		"displayName": "Триггер по почтовому штемпелю",
+		"description": "Запускает рабочий процесс при возникновении событий почтового штемпеля."
+	},
+	"nodeView": {
+		"events": {
+			"displayName": "События",
+			"description": "События веб-перехватчика, которые будут включены для этой конечной точки",
+			"options": {
+				"bounce": {
+					"displayName": "Подпрыгивать",
+					"description": "Триггер при отскоке"
+				},
+				"click": {
+					"displayName": "Нажмите",
+					"description": "Триггер по клику"
+				},
+				"delivery": {
+					"displayName": "Доставка",
+					"description": "Триггер при доставке"
+				},
+				"open": {
+					"displayName": "Открыть",
+					"description": "Запуск вебхука при открытии"
+				},
+				"spamComplaint": {
+					"displayName": "Жалоба на спам",
+					"description": "Триггер по жалобе на спам"
+				},
+				"subscriptionChange": {
+					"displayName": "Изменение подписки",
+					"description": "Триггер при изменении подписки"
+				}
+			}
+		},
+		"firstOpen": {
+			"displayName": "Первый открытый",
+			"description": "Срабатывает только при первом открытии для события «Открыть»."
+		},
+		"includeContent": {
+			"displayName": "Включить контент",
+			"description": "Включать ли содержимое сообщения для событий «Отказ» и «Жалоба на спам»"
+		}
+	}
+}

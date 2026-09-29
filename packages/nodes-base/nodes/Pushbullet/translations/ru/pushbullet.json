@@ -1,0 +1,122 @@
+{
+	"header": {
+		"displayName": "Пушбуллет",
+		"description": "Использование API Pushbullet"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"push": {
+					"displayName": "Толкать"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать push-уведомление"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить push-уведомление"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получите много нажатий"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить push-уведомление"
+				}
+			}
+		},
+		"type": {
+			"displayName": "Тип",
+			"options": {
+				"file": {
+					"displayName": "Файл"
+				},
+				"link": {
+					"displayName": "Связь"
+				},
+				"note": {
+					"displayName": "Примечание"
+				}
+			}
+		},
+		"title": {
+			"displayName": "Заголовок",
+			"description": "Название push-уведомления"
+		},
+		"body": {
+			"displayName": "Тело",
+			"description": "Тело толчка"
+		},
+		"url": {
+			"displayName": "URL",
+			"description": "URL-адрес push-уведомления"
+		},
+		"binaryPropertyName": {
+			"displayName": "Входное двоичное поле",
+			"hint": "Имя входного двоичного поля, содержащего файл для записи."
+		},
+		"target": {
+			"displayName": "Цель",
+			"description": "Определите среду, которая будет использоваться для отправки push-уведомлений.",
+			"options": {
+				"channel_tag": {
+					"displayName": "Тег канала",
+					"description": "Отправьте уведомление всем подписчикам вашего канала, на котором есть этот тег."
+				},
+				"default": {
+					"displayName": "По умолчанию",
+					"description": "Транслируйте его на все устройства пользователя."
+				},
+				"device_iden": {
+					"displayName": "Идентификатор устройства",
+					"description": "Отправьте push-уведомление на определенное устройство"
+				},
+				"email": {
+					"displayName": "Электронная почта",
+					"description": "Отправьте сообщение на этот адрес электронной почты"
+				}
+			}
+		},
+		"value": {
+			"displayName": "Имя или идентификатор значения",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"pushId": {
+			"displayName": "Нажмите идентификатор"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"active": {
+					"displayName": "Активный",
+					"description": "Не возвращать удаленные push-уведомления"
+				},
+				"modified_after": {
+					"displayName": "Изменено после",
+					"description": "Запросы на отправку изменены после этой временной метки"
+				}
+			}
+		},
+		"dismissed": {
+			"displayName": "Уволен",
+			"description": "Если пометить push-уведомление как отклоненное пользователем, все уведомления о push-уведомлении будут скрыты, если это возможно."
+		}
+	}
+}

@@ -1,0 +1,537 @@
+{
+	"header": {
+		"displayName": "Продавец",
+		"description": "Использование API Salesmate"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"activity": {
+					"displayName": "Активность"
+				},
+				"company": {
+					"displayName": "Компания"
+				},
+				"deal": {
+					"displayName": "Иметь дело"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать сделку"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить сделку"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Заключить сделку"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получите много предложений"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить сделку"
+				}
+			}
+		},
+		"name": {
+			"displayName": "Имя"
+		},
+		"owner": {
+			"displayName": "Имя или идентификатор владельца",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"rawData": {
+			"displayName": "Необработанные данные",
+			"description": "Должны ли данные включать сведения о полях"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"website": {
+					"displayName": "Веб-сайт"
+				},
+				"phone": {
+					"displayName": "Телефон"
+				},
+				"otherPhone": {
+					"displayName": "Другой телефон"
+				},
+				"facebookHandle": {
+					"displayName": "Фейсбук-дескриптор"
+				},
+				"googlePlusHandle": {
+					"displayName": "Ручка Google Плюс"
+				},
+				"linkedInHandle": {
+					"displayName": "Ручка LinkedIn"
+				},
+				"skypeId": {
+					"displayName": "Идентификатор Скайпа"
+				},
+				"twitterHandle": {
+					"displayName": "Твиттер-дескриптор"
+				},
+				"currency": {
+					"displayName": "Валюта"
+				},
+				"billingAddressLine1": {
+					"displayName": "Строка платежного адреса 1"
+				},
+				"billingAddressLine2": {
+					"displayName": "Строка платежного адреса 2"
+				},
+				"billingCity": {
+					"displayName": "Биллинг-Сити"
+				},
+				"billingZipCode": {
+					"displayName": "Почтовый индекс для выставления счетов"
+				},
+				"billingState": {
+					"displayName": "Страна выставления счета"
+				},
+				"description": {
+					"displayName": "Описание",
+					"description": "В этом поле содержится информация о сделке."
+				},
+				"tags": {
+					"displayName": "Теги",
+					"description": "Это поле содержит теги, связанные со сделкой."
+				},
+				"dueDate": {
+					"displayName": "Срок оплаты",
+					"description": "Дата окончания действия"
+				},
+				"duration": {
+					"displayName": "Продолжительность",
+					"description": "Продолжительность действия"
+				},
+				"isCalendarInvite": {
+					"displayName": "Приглашение в календаре",
+					"description": "Отправлять ли приглашение в календарь"
+				},
+				"isCompleted": {
+					"displayName": "Завершено",
+					"description": "Завершено ли действие или нет"
+				},
+				"primaryCompany": {
+					"displayName": "Основное название или идентификатор компании",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"source": {
+					"displayName": "Источник",
+					"options": {
+						"Ads": {
+							"displayName": "Объявления"
+						},
+						"Referrals": {
+							"displayName": "Рефералы"
+						},
+						"Website": {
+							"displayName": "Веб-сайт"
+						},
+						"Word of mouth": {
+							"displayName": "Сарафанное радио"
+						}
+					}
+				},
+				"estimatedCloseDate": {
+					"displayName": "Предполагаемая дата закрытия"
+				},
+				"dealValue": {
+					"displayName": "Стоимость сделки"
+				},
+				"priority": {
+					"displayName": "Приоритет",
+					"options": {
+						"High": {
+							"displayName": "Высокий"
+						},
+						"Medium": {
+							"displayName": "Середина"
+						},
+						"Low": {
+							"displayName": "Низкий"
+						}
+					}
+				}
+			}
+		},
+		"id": {
+			"displayName": "Идентификатор сделки",
+			"description": "Если сделок несколько, добавьте их через ,"
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"name": {
+					"displayName": "Имя"
+				},
+				"owner": {
+					"displayName": "Имя или идентификатор владельца",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"website": {
+					"displayName": "Веб-сайт"
+				},
+				"phone": {
+					"displayName": "Телефон"
+				},
+				"otherPhone": {
+					"displayName": "Другой телефон"
+				},
+				"facebookHandle": {
+					"displayName": "Фейсбук-дескриптор"
+				},
+				"googlePlusHandle": {
+					"displayName": "Ручка Google Плюс"
+				},
+				"linkedInHandle": {
+					"displayName": "Ручка LinkedIn"
+				},
+				"skypeId": {
+					"displayName": "Идентификатор Скайпа"
+				},
+				"twitterHandle": {
+					"displayName": "Твиттер-дескриптор"
+				},
+				"currency": {
+					"displayName": "Валюта"
+				},
+				"billingAddressLine1": {
+					"displayName": "Строка платежного адреса 1"
+				},
+				"billingAddressLine2": {
+					"displayName": "Строка платежного адреса 2"
+				},
+				"billingCity": {
+					"displayName": "Биллинг-Сити"
+				},
+				"billingZipCode": {
+					"displayName": "Почтовый индекс для выставления счетов"
+				},
+				"billingState": {
+					"displayName": "Страна выставления счета"
+				},
+				"description": {
+					"displayName": "Описание",
+					"description": "В этом поле содержится информация о сделке."
+				},
+				"tags": {
+					"displayName": "Теги",
+					"description": "Это поле содержит теги, связанные со сделкой."
+				},
+				"title": {
+					"displayName": "Заголовок"
+				},
+				"type": {
+					"displayName": "Тип"
+				},
+				"dueDate": {
+					"displayName": "Срок оплаты",
+					"description": "Дата окончания действия"
+				},
+				"duration": {
+					"displayName": "Продолжительность",
+					"description": "Продолжительность действия"
+				},
+				"isCalendarInvite": {
+					"displayName": "Приглашение в календаре",
+					"description": "Отправлять ли приглашение в календарь"
+				},
+				"isCompleted": {
+					"displayName": "Завершено",
+					"description": "Завершено ли действие или нет"
+				},
+				"primaryContact": {
+					"displayName": "Имя или идентификатор основного контактного лица",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"pipeline": {
+					"displayName": "Трубопровод",
+					"options": {
+						"Sales": {
+							"displayName": "Продажи"
+						}
+					}
+				},
+				"status": {
+					"displayName": "Статус",
+					"options": {
+						"Open": {
+							"displayName": "Открыть"
+						},
+						"Close": {
+							"displayName": "Закрывать"
+						},
+						"Lost": {
+							"displayName": "Потерянный"
+						}
+					}
+				},
+				"stage": {
+					"displayName": "Этап",
+					"options": {
+						"Contacted": {
+							"displayName": "Связались"
+						},
+						"In Negotiation": {
+							"displayName": "В стадии переговоров"
+						},
+						"New (Untouched)": {
+							"displayName": "Новый (нетронутый)"
+						},
+						"Proposal Presented": {
+							"displayName": "Предложение представлено"
+						},
+						"Qualified": {
+							"displayName": "Квалифицированный"
+						}
+					}
+				},
+				"primaryCompany": {
+					"displayName": "Основное название или идентификатор компании",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"source": {
+					"displayName": "Источник",
+					"options": {
+						"Ads": {
+							"displayName": "Объявления"
+						},
+						"Referrals": {
+							"displayName": "Рефералы"
+						},
+						"Website": {
+							"displayName": "Веб-сайт"
+						},
+						"Word of mouth": {
+							"displayName": "Сарафанное радио"
+						}
+					}
+				},
+				"estimatedCloseDate": {
+					"displayName": "Предполагаемая дата закрытия"
+				},
+				"dealValue": {
+					"displayName": "Стоимость сделки"
+				},
+				"priority": {
+					"displayName": "Приоритет",
+					"options": {
+						"High": {
+							"displayName": "Высокий"
+						},
+						"Medium": {
+							"displayName": "Середина"
+						},
+						"Low": {
+							"displayName": "Низкий"
+						}
+					}
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"jsonParameters": {
+			"displayName": "Параметры JSON"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"fields": {
+					"displayName": "Поля",
+					"description": "Список полей, разделенных запятыми, которые нужно вернуть."
+				},
+				"sortBy": {
+					"displayName": "Сортировать по",
+					"description": "Поле для сортировки"
+				},
+				"sortOrder": {
+					"displayName": "Порядок сортировки",
+					"options": {
+						"asc": {
+							"displayName": "ASC"
+						},
+						"desc": {
+							"displayName": "DESC"
+						}
+					}
+				}
+			}
+		},
+		"filtersJson": {
+			"displayName": "Фильтры"
+		},
+		"filters": {
+			"options": {
+				"filters": {
+					"displayName": "Фильтры"
+				},
+				"filtersUi": {
+					"displayName": "Фильтры",
+					"values": {
+						"operator": {
+							"displayName": "Оператор",
+							"options": {
+								"AND": {
+									"displayName": "AND"
+								},
+								"OR": {
+									"displayName": "OR"
+								}
+							}
+						},
+						"conditions": {
+							"options": {
+								"conditions": {
+									"displayName": "Условия"
+								},
+								"conditionsUi": {
+									"displayName": "Условия",
+									"values": {
+										"field": {
+											"displayName": "Поле",
+											"options": {
+												"name": {
+													"displayName": "Имя"
+												},
+												"email": {
+													"displayName": "Электронная почта"
+												},
+												"phone": {
+													"displayName": "Телефон"
+												},
+												"title": {
+													"displayName": "Заголовок"
+												},
+												"tags": {
+													"displayName": "Теги"
+												},
+												"lastCommunicationMode": {
+													"displayName": "Последний режим связи"
+												}
+											}
+										},
+										"condition": {
+											"displayName": "Состояние",
+											"description": "Значение свойства для установки",
+											"options": {
+												"EQUALS": {
+													"displayName": "Равно"
+												},
+												"NOT_EQUALS": {
+													"displayName": "Не Равно"
+												},
+												"Contains": {
+													"displayName": "CONTAINS"
+												},
+												"DOES_NOT_CONTAINS": {
+													"displayName": "Не содержит"
+												},
+												"EMPTY": {
+													"displayName": "Пустой"
+												},
+												"NOT_EMPTY": {
+													"displayName": "Не пусто"
+												},
+												"STARTS_WITH": {
+													"displayName": "Начинается с"
+												},
+												"ENDS_WITH": {
+													"displayName": "Заканчивается на"
+												}
+											}
+										},
+										"value": {
+											"displayName": "Ценить"
+										}
+									}
+								}
+							},
+							"placeholder": "Добавить условие",
+							"displayName": "Условия"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить фильтр",
+			"displayName": "Фильтры"
+		},
+		"title": {
+			"displayName": "Заголовок"
+		},
+		"type": {
+			"displayName": "Тип",
+			"description": "В этом поле отображается тип активности, например звонок, встреча и т. д."
+		},
+		"primaryContact": {
+			"displayName": "Имя или идентификатор основного контактного лица",
+			"description": "Основное контактное лицо по сделке. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"pipeline": {
+			"displayName": "Трубопровод",
+			"options": {
+				"Sales": {
+					"displayName": "Продажи"
+				}
+			}
+		},
+		"status": {
+			"displayName": "Статус",
+			"options": {
+				"Open": {
+					"displayName": "Открыть"
+				},
+				"Close": {
+					"displayName": "Закрывать"
+				},
+				"Lost": {
+					"displayName": "Потерянный"
+				}
+			}
+		},
+		"stage": {
+			"displayName": "Этап",
+			"options": {
+				"New (Untouched)": {
+					"displayName": "Новый (нетронутый)"
+				},
+				"Contacted": {
+					"displayName": "Связались"
+				},
+				"Qualified": {
+					"displayName": "Квалифицированный"
+				},
+				"In Negotiation": {
+					"displayName": "В стадии переговоров"
+				},
+				"Proposal Presented": {
+					"displayName": "Предложение представлено"
+				}
+			}
+		},
+		"currency": {
+			"displayName": "Валюта"
+		}
+	}
+}

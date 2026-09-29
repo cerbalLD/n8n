@@ -1,0 +1,176 @@
+{
+	"header": {
+		"displayName": "Быстрая диаграмма",
+		"description": "Создайте диаграмму через QuickChart"
+	},
+	"nodeView": {
+		"chartType": {
+			"displayName": "Тип диаграммы",
+			"description": "Тип создаваемой диаграммы",
+			"options": {
+				"bar": {
+					"displayName": "Гистограмма"
+				},
+				"doughnut": {
+					"displayName": "Пончиковая диаграмма"
+				},
+				"line": {
+					"displayName": "Линейный график"
+				},
+				"pie": {
+					"displayName": "Круговая диаграмма"
+				},
+				"polarArea": {
+					"displayName": "Полярная карта"
+				}
+			}
+		},
+		"labelsMode": {
+			"displayName": "Добавить ярлыки",
+			"options": {
+				"manually": {
+					"displayName": "Вручную"
+				},
+				"array": {
+					"displayName": "Из массива"
+				}
+			}
+		},
+		"labelsUi": {
+			"options": {
+				"labelsUi": {
+					"displayName": "Этикетки",
+					"description": "Метки для использования на диаграмме"
+				},
+				"labelsValues": {
+					"displayName": "Этикетки",
+					"values": {
+						"label": {
+							"displayName": "Этикетка"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить ярлык",
+			"displayName": "Этикетки",
+			"description": "Метки для использования на диаграмме"
+		},
+		"labelsArray": {
+			"displayName": "Массив меток",
+			"description": "Массив меток, которые будут использоваться на диаграмме.",
+			"placeholder": "например [\"Берлин\", \"Париж\", \"Рим\", \"Нью-Йорк\"]"
+		},
+		"data": {
+			"displayName": "Данные",
+			"description": "Данные для использования в наборе данных, документация и примеры <a href=\"https://quickchart.io/documentation/chart-types/\" target=\"_blank\">здесь</a>",
+			"placeholder": "например [60, 10, 12, 20]"
+		},
+		"output": {
+			"displayName": "Поместите вывод в поле",
+			"description": "Двоичные данные будут отображаться на панели «Вывод» справа на вкладке «Двоичные данные».",
+			"hint": "Имя выходного поля для помещения данных двоичного файла."
+		},
+		"chartOptions": {
+			"displayName": "Параметры диаграммы",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"backgroundColor": {
+					"displayName": "Цвет фона",
+					"description": "Цвет фона диаграммы"
+				},
+				"devicePixelRatio": {
+					"displayName": "Соотношение пикселей устройства",
+					"description": "Соотношение пикселей диаграммы"
+				},
+				"format": {
+					"displayName": "Формат",
+					"description": "Формат файла полученной диаграммы",
+					"options": {
+						"png": {
+							"displayName": "PNG"
+						},
+						"pdf": {
+							"displayName": "PDF"
+						},
+						"svg": {
+							"displayName": "SVG"
+						},
+						"webp": {
+							"displayName": "ВебП"
+						}
+					}
+				},
+				"height": {
+					"displayName": "Высота",
+					"description": "Высота диаграммы"
+				},
+				"horizontal": {
+					"displayName": "Горизонтальный",
+					"description": "Должна ли диаграмма использовать горизонтальную ось Y"
+				},
+				"width": {
+					"displayName": "Ширина",
+					"description": "Ширина диаграммы"
+				}
+			}
+		},
+		"datasetOptions": {
+			"displayName": "Параметры набора данных",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"backgroundColor": {
+					"displayName": "Цвет фона",
+					"description": "Цвет, используемый для фона набора данных (область линейного графика, заливка гистограммы и т. д.)."
+				},
+				"borderColor": {
+					"displayName": "Цвет границы",
+					"description": "Цвет, используемый для линий набора данных"
+				},
+				"fill": {
+					"displayName": "Наполнять",
+					"description": "Заполнять ли область набора данных"
+				},
+				"label": {
+					"displayName": "Этикетка",
+					"description": "Метка набора данных"
+				},
+				"pointStyle": {
+					"displayName": "Стиль точки",
+					"description": "Стиль, используемый для точек набора данных",
+					"options": {
+						"circle": {
+							"displayName": "Круг"
+						},
+						"cross": {
+							"displayName": "Крест"
+						},
+						"crossRot": {
+							"displayName": "КроссРот"
+						},
+						"dash": {
+							"displayName": "Бросаться"
+						},
+						"line": {
+							"displayName": "Линия"
+						},
+						"rect": {
+							"displayName": "Прямой"
+						},
+						"rectRot": {
+							"displayName": "Прямая гниль"
+						},
+						"rectRounded": {
+							"displayName": "Прямоугольный Закругленный"
+						},
+						"star": {
+							"displayName": "Звезда"
+						},
+						"triangle": {
+							"displayName": "Треугольник"
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,6 @@
+{
+	"header": {
+		"displayName": "самое важное",
+		"description": "Отправляет данные в Mattermost"
+	}
+}

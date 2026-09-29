@@ -1,0 +1,32 @@
+{
+	"header": {
+		"displayName": "Триггер Mailjet",
+		"description": "Обработка событий Mailjet с помощью веб-перехватчиков"
+	},
+	"nodeView": {
+		"event": {
+			"displayName": "Событие",
+			"description": "Определяет, для каких событий ресурса срабатывает вебхук.",
+			"options": {
+				"blocked": {
+					"displayName": "электронная почта.заблокировано"
+				},
+				"bounce": {
+					"displayName": "электронная почта.bounce"
+				},
+				"open": {
+					"displayName": "электронная почта.открыть"
+				},
+				"sent": {
+					"displayName": "электронная почта.отправлено"
+				},
+				"spam": {
+					"displayName": "электронная почта.спам"
+				},
+				"unsub": {
+					"displayName": "электронная почта.unsub"
+				}
+			}
+		}
+	}
+}

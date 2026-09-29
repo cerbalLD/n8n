@@ -1,0 +1,16 @@
+{
+	"header": {
+		"displayName": "Кип Триггер",
+		"description": "Запускает рабочий процесс при возникновении событий Infusionsoft."
+	},
+	"nodeView": {
+		"eventId": {
+			"displayName": "Название или идентификатор события",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"rawData": {
+			"displayName": "Необработанные данные",
+			"description": "Возвращать ли данные именно в том виде, в каком они были получены от API"
+		}
+	}
+}

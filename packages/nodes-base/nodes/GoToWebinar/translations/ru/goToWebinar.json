@@ -1,0 +1,457 @@
+{
+	"header": {
+		"displayName": "GoToВебинар",
+		"description": "Используйте API GoToWebinar"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"attendee": {
+					"displayName": "Посетитель"
+				},
+				"coorganizer": {
+					"displayName": "Соорганизатор"
+				},
+				"panelist": {
+					"displayName": "Участник дискуссии"
+				},
+				"registrant": {
+					"displayName": "Регистрант"
+				},
+				"session": {
+					"displayName": "Сессия"
+				},
+				"webinar": {
+					"displayName": "Вебинар"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"get": {
+					"displayName": "Получать"
+				},
+				"getAll": {
+					"displayName": "Получить много"
+				},
+				"getDetails": {
+					"displayName": "Получить подробности"
+				},
+				"create": {
+					"displayName": "Создавать"
+				},
+				"delete": {
+					"displayName": "Удалить"
+				},
+				"reinvite": {
+					"displayName": "Повторно пригласить"
+				},
+				"update": {
+					"displayName": "Обновлять"
+				}
+			}
+		},
+		"webinarKey": {
+			"displayName": "Ключ к вебинару",
+			"description": "Ключ вебинара для обновления"
+		},
+		"sessionKey": {
+			"displayName": "Сеансовый ключ",
+			"description": "Ключ сеанса, который посетил участник. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"registrantKey": {
+			"displayName": "Ключ регистратора",
+			"description": "Ключ регистранта для получения"
+		},
+		"details": {
+			"displayName": "Подробности",
+			"description": "Детали, которые необходимо получить для участника",
+			"options": {
+				"polls": {
+					"displayName": "Опросы",
+					"description": "Вопросы и ответы для опросов из вебинара"
+				},
+				"questions": {
+					"displayName": "Вопросы",
+					"description": "Вопросы и ответы по прошедшему вебинару"
+				},
+				"surveyAnswers": {
+					"displayName": "Ответы на опрос",
+					"description": "Ответы на опрос участника вебинара"
+				},
+				"performance": {
+					"displayName": "Производительность",
+					"description": "Подробности производительности для сеанса вебинара"
+				},
+				"surveys": {
+					"displayName": "Опросы",
+					"description": "Опросы для прошедшего вебинара"
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"isExternal": {
+			"displayName": "Является внешним",
+			"description": "Нет ли у соорганизатора учетной записи GoToWebinar"
+		},
+		"organizerKey": {
+			"displayName": "Ключ органайзера",
+			"description": "Ключ-органайзер соорганизатора вебинара"
+		},
+		"givenName": {
+			"displayName": "Собственное имя",
+			"description": "Имя соорганизатора"
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"description": "Адрес электронной почты регистранта для создания",
+			"placeholder": "имя@email.com"
+		},
+		"coorganizerKey": {
+			"displayName": "Ключ соорганизатора",
+			"description": "Ключ соорганизатора для повторного приглашения"
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Имя участника дискуссии, которого нужно создать"
+		},
+		"panelistKey": {
+			"displayName": "Ключ участника дискуссии",
+			"description": "Ключ участника дискуссии для повторного приглашения"
+		},
+		"firstName": {
+			"displayName": "Имя",
+			"description": "Имя регистранта, которого необходимо создать"
+		},
+		"lastName": {
+			"displayName": "Фамилия",
+			"description": "Фамилия регистранта, которого необходимо создать"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"fullAddress": {
+					"values": {
+						"fullAddress": {
+							"displayName": "Полный адрес",
+							"description": "Полный адрес регистранта для создания"
+						},
+						"details": {
+							"options": {
+								"address": {
+									"displayName": "Адрес"
+								},
+								"city": {
+									"displayName": "Город"
+								},
+								"state": {
+									"displayName": "Состояние"
+								},
+								"zipCode": {
+									"displayName": "Почтовый индекс"
+								},
+								"country": {
+									"displayName": "Страна"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить поля адреса",
+					"displayName": "Полный адрес",
+					"description": "Полный адрес регистранта для создания",
+					"options": {
+						"details": {
+							"displayName": "Подробности"
+						}
+					}
+				},
+				"industry": {
+					"displayName": "Промышленность",
+					"description": "Тип отрасли, к которой принадлежит организация регистранта"
+				},
+				"jobTitle": {
+					"displayName": "Должность"
+				},
+				"multiChoiceResponses": {
+					"values": {
+						"multiChoiceResponses": {
+							"displayName": "Ответы с несколькими вариантами ответов",
+							"description": "Установите ответы на все вопросы"
+						},
+						"details": {
+							"options": {
+								"questionKey": {
+									"displayName": "Имя или идентификатор ключа вопроса",
+									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+								},
+								"AnswerKey": {
+									"displayName": "Ключ ответа",
+									"description": "Идентификатор ответа на вопрос"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить ответ с несколькими вариантами ответов",
+					"displayName": "Ответы с несколькими вариантами ответов",
+					"description": "Установите ответы на все вопросы",
+					"options": {
+						"details": {
+							"displayName": "Подробности"
+						}
+					}
+				},
+				"numberOfEmployees": {
+					"displayName": "Количество сотрудников",
+					"description": "Размер в сотрудниках организации регистранта"
+				},
+				"organization": {
+					"displayName": "Организация"
+				},
+				"phone": {
+					"displayName": "Телефон"
+				},
+				"purchasingRole": {
+					"displayName": "Роль закупок",
+					"description": "Роль регистранта в покупке продукта"
+				},
+				"purchasingTimeFrame": {
+					"displayName": "Сроки покупки",
+					"description": "Сроки, в течение которых товар будет куплен"
+				},
+				"questionsAndComments": {
+					"displayName": "Вопросы и комментарии",
+					"description": "Вопросы или комментарии, оставленные регистрантом во время регистрации"
+				},
+				"resendConfirmation": {
+					"displayName": "Повторно отправить подтверждение"
+				},
+				"simpleResponses": {
+					"values": {
+						"simpleResponses": {
+							"displayName": "Простые ответы",
+							"description": "Установите ответы на все вопросы"
+						},
+						"details": {
+							"options": {
+								"questionKey": {
+									"displayName": "Имя или идентификатор ключа вопроса",
+									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+								},
+								"responseText": {
+									"displayName": "Текст ответа",
+									"description": "Текст ответа на вопрос"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить простой ответ",
+					"displayName": "Простые ответы",
+					"description": "Установите ответы на все вопросы",
+					"options": {
+						"details": {
+							"displayName": "Подробности"
+						}
+					}
+				},
+				"source": {
+					"displayName": "Источник",
+					"description": "Источник, который привел к регистрации"
+				},
+				"times": {
+					"values": {
+						"times": {
+							"displayName": "Временной диапазон"
+						},
+						"timesProperties": {
+							"options": {
+								"fromTime": {
+									"displayName": "Время начала",
+									"description": "Начало диапазона дат и времени вебинара"
+								},
+								"toTime": {
+									"displayName": "Конец Времени",
+									"description": "Конец диапазона дат и времени вебинара."
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить временной диапазон",
+					"displayName": "Временной диапазон",
+					"options": {
+						"timesProperties": {
+							"displayName": "Свойства времени"
+						}
+					}
+				},
+				"webinarKey": {
+					"displayName": "Имя или идентификатор ключа вебинара",
+					"description": "Вебинар, с помощью которого можно отфильтровать сеансы для получения. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"description": {
+					"displayName": "Описание"
+				},
+				"experienceType": {
+					"displayName": "Тип опыта",
+					"options": {
+						"CLASSIC": {
+							"displayName": "Классический"
+						},
+						"BROADCAST": {
+							"displayName": "Транслировать"
+						},
+						"SIMULIVE": {
+							"displayName": "Симулив"
+						}
+					}
+				},
+				"isOnDemand": {
+					"displayName": "По требованию"
+				},
+				"isPasswordProtected": {
+					"displayName": "Защищено паролем"
+				},
+				"timezone": {
+					"displayName": "Имя или идентификатор часового пояса",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>",
+					"placeholder": "2020-12-11T09:00:00Z"
+				},
+				"type": {
+					"displayName": "Тип вебинара",
+					"options": {
+						"single_session": {
+							"displayName": "Один сеанс",
+							"description": "Вебинар с одной встречей"
+						},
+						"series": {
+							"displayName": "Ряд",
+							"description": "Вебинар с несколькими встречами, где участники выбирают только одно для участия"
+						},
+						"sequence": {
+							"displayName": "Последовательность",
+							"description": "Вебинар с несколькими встречами, где ожидается, что участники будут одинаковыми для всех сеансов."
+						}
+					}
+				},
+				"sendCancellationEmails": {
+					"displayName": "Отправить электронное письмо об отмене"
+				}
+			}
+		},
+		"subject": {
+			"displayName": "Предмет"
+		},
+		"times": {
+			"options": {
+				"times": {
+					"displayName": "Временной диапазон"
+				},
+				"timesProperties": {
+					"displayName": "Свойства времени",
+					"values": {
+						"startTime": {
+							"displayName": "Время начала"
+						},
+						"endTime": {
+							"displayName": "Конец Времени"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить временной диапазон",
+			"displayName": "Временной диапазон"
+		},
+		"notifyParticipants": {
+			"displayName": "Уведомить участников"
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"description": {
+					"displayName": "Описание"
+				},
+				"experienceType": {
+					"displayName": "Тип опыта",
+					"options": {
+						"CLASSIC": {
+							"displayName": "Классический"
+						},
+						"BROADCAST": {
+							"displayName": "Транслировать"
+						},
+						"SIMULIVE": {
+							"displayName": "Симулив"
+						}
+					}
+				},
+				"isOnDemand": {
+					"displayName": "По требованию",
+					"description": "Можно ли смотреть вебинар в любое время"
+				},
+				"isPasswordProtected": {
+					"displayName": "Защищено паролем",
+					"description": "Требуется ли для участия в вебинаре пароль для присоединения участников"
+				},
+				"times": {
+					"values": {
+						"times": {
+							"displayName": "Время"
+						},
+						"timesProperties": {
+							"options": {
+								"startTime": {
+									"displayName": "Время начала"
+								},
+								"endTime": {
+									"displayName": "Конец Времени"
+								}
+							}
+						}
+					},
+					"displayName": "Время",
+					"options": {
+						"timesProperties": {
+							"displayName": "Свойства времени"
+						}
+					}
+				},
+				"subject": {
+					"displayName": "Предмет",
+					"description": "Название или тема вебинара"
+				},
+				"timezone": {
+					"displayName": "Имя или идентификатор часового пояса",
+					"description": "Часовой пояс, в котором будет проходить вебинар. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>.",
+					"placeholder": "2020-12-11T09:00:00Z"
+				},
+				"type": {
+					"displayName": "Тип вебинара",
+					"options": {
+						"single_session": {
+							"displayName": "Один сеанс",
+							"description": "Вебинар с одной встречей"
+						},
+						"series": {
+							"displayName": "Ряд",
+							"description": "Вебинар с несколькими встречами, где участники выбирают только одно для участия"
+						},
+						"sequence": {
+							"displayName": "Последовательность",
+							"description": "Вебинар с несколькими встречами, где ожидается, что участники будут одинаковыми для всех сеансов."
+						}
+					}
+				}
+			}
+		}
+	}
+}

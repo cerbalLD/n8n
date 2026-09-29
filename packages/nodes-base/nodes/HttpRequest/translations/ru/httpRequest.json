@@ -1,0 +1,6 @@
+{
+	"header": {
+		"displayName": "HTTP-запрос",
+		"description": "Делает HTTP-запрос и возвращает данные ответа."
+	}
+}

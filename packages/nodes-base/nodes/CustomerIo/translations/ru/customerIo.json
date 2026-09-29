@@ -1,0 +1,212 @@
+{
+	"header": {
+		"displayName": "Клиент.io",
+		"description": "Использование API Customer.io"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"customer": {
+					"displayName": "Клиент"
+				},
+				"event": {
+					"displayName": "Событие"
+				},
+				"campaign": {
+					"displayName": "Кампания"
+				},
+				"segment": {
+					"displayName": "Сегмент"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"get": {
+					"displayName": "Получать"
+				},
+				"getAll": {
+					"displayName": "Получить много"
+				},
+				"getMetrics": {
+					"displayName": "Получить метрики"
+				},
+				"upsert": {
+					"displayName": "Создать или обновить",
+					"description": "Создайте нового клиента или обновите текущего, если он уже существует (upsert)"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удаление клиента"
+				},
+				"track": {
+					"displayName": "Отслеживать",
+					"description": "Отслеживание событий клиента"
+				},
+				"trackAnonymous": {
+					"displayName": "Отследить анонимно",
+					"description": "Отслеживать анонимное событие"
+				},
+				"add": {
+					"displayName": "Добавить клиента"
+				},
+				"remove": {
+					"displayName": "Удалить клиента"
+				}
+			}
+		},
+		"campaignId": {
+			"displayName": "Идентификатор кампании",
+			"description": "Уникальный идентификатор кампании."
+		},
+		"period": {
+			"displayName": "Период",
+			"description": "Укажите метрический период",
+			"options": {
+				"hours": {
+					"displayName": "Часы"
+				},
+				"days": {
+					"displayName": "Дни"
+				},
+				"weeks": {
+					"displayName": "Недели"
+				},
+				"months": {
+					"displayName": "Месяцы"
+				}
+			}
+		},
+		"jsonParameters": {
+			"displayName": "Параметры JSON"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"steps": {
+					"displayName": "Шаги",
+					"description": "Целое число, указывающее количество шагов для возврата. По умолчанию установлено максимальное количество доступных периодов времени или 12 при использовании периода месяцев. Максимальные доступные периоды времени: 24 часа, 45 дней, 12 недель и 120 месяцев."
+				},
+				"type": {
+					"displayName": "Тип",
+					"description": "Используется для изменения типа события. Для событий просмотра страницы установите значение «страница».",
+					"options": {
+						"email": {
+							"displayName": "Электронная почта"
+						},
+						"empty": {
+							"displayName": "Пустой"
+						},
+						"push": {
+							"displayName": "Толкать"
+						},
+						"slack": {
+							"displayName": "Слабый"
+						},
+						"twilio": {
+							"displayName": "Твилио"
+						},
+						"urbanAirship": {
+							"displayName": "Городской дирижабль"
+						},
+						"webhook": {
+							"displayName": "Вебхук"
+						}
+					}
+				},
+				"customProperties": {
+					"values": {
+						"customProperties": {
+							"displayName": "Пользовательские свойства"
+						},
+						"customProperty": {
+							"options": {
+								"key": {
+									"displayName": "Ключ",
+									"description": "Имя свойства",
+									"placeholder": "План"
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Стоимость недвижимости",
+									"placeholder": "Базовый"
+								}
+							}
+						}
+					},
+					"displayName": "Пользовательские свойства",
+					"options": {
+						"customProperty": {
+							"displayName": "Свойство"
+						}
+					}
+				},
+				"email": {
+					"displayName": "Электронная почта",
+					"description": "Адрес электронной почты пользователя",
+					"placeholder": "имя@email.com"
+				},
+				"createdAt": {
+					"displayName": "Создано в",
+					"description": "Временная метка UNIX с момента создания пользователя."
+				},
+				"customAttributes": {
+					"values": {
+						"customAttributes": {
+							"displayName": "Пользовательские атрибуты",
+							"description": "Пользовательские свойства"
+						},
+						"customAttribute": {
+							"options": {
+								"key": {
+									"displayName": "Ключ",
+									"description": "Имя атрибута",
+									"placeholder": "Цена"
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Значение атрибута",
+									"placeholder": "25.50"
+								}
+							}
+						}
+					},
+					"displayName": "Пользовательские атрибуты",
+					"description": "Пользовательские свойства",
+					"options": {
+						"customAttribute": {
+							"displayName": "Атрибут"
+						}
+					}
+				}
+			}
+		},
+		"id": {
+			"displayName": "ID",
+			"description": "Уникальный идентификатор клиента"
+		},
+		"additionalFieldsJson": {
+			"displayName": "Дополнительные поля",
+			"description": "Объект значений для установки, как описано <a href=\"https://customer.io/docs/api-triggered-data-format#basic-data-formatting\">здесь</a>"
+		},
+		"customerId": {
+			"displayName": "Идентификатор клиента",
+			"description": "Уникальный идентификатор клиента"
+		},
+		"eventName": {
+			"displayName": "Название события",
+			"description": "Уникальный идентификатор клиента"
+		},
+		"segmentId": {
+			"displayName": "Идентификатор сегмента",
+			"description": "Уникальный идентификатор сегмента"
+		},
+		"customerIds": {
+			"displayName": "Идентификаторы клиентов",
+			"description": "Список идентификаторов клиентов для добавления в сегмент."
+		}
+	}
+}

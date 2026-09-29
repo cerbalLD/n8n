@@ -1,0 +1,1266 @@
+{
+	"header": {
+		"displayName": "Слабый",
+		"description": "Использование Slack API"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"accessToken": {
+					"displayName": "Токен доступа"
+				},
+				"oAuth2": {
+					"displayName": "ОАут2"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"channel": {
+					"displayName": "Канал"
+				},
+				"file": {
+					"displayName": "Файл"
+				},
+				"message": {
+					"displayName": "Сообщение"
+				},
+				"reaction": {
+					"displayName": "Реакция"
+				},
+				"star": {
+					"displayName": "Звезда"
+				},
+				"user": {
+					"displayName": "Пользователь"
+				},
+				"userGroup": {
+					"displayName": "Группа пользователей"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"archive": {
+					"displayName": "Архив",
+					"description": "Архивирует разговор"
+				},
+				"close": {
+					"displayName": "Закрывать",
+					"description": "Закрывает прямое сообщение или прямое сообщение нескольким людям."
+				},
+				"create": {
+					"displayName": "Создавать",
+					"description": "Инициирует общедоступный или частный разговор на основе канала."
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить реакцию на сообщение"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить список многих пользователей"
+				},
+				"history": {
+					"displayName": "История",
+					"description": "Получить историю сообщений и событий разговора"
+				},
+				"invite": {
+					"displayName": "Приглашать",
+					"description": "Пригласить пользователя на канал"
+				},
+				"join": {
+					"displayName": "Присоединиться",
+					"description": "Присоединяется к существующему разговору"
+				},
+				"kick": {
+					"displayName": "Пинать",
+					"description": "Удаляет пользователя из канала"
+				},
+				"leave": {
+					"displayName": "Оставлять",
+					"description": "Оставляет разговор"
+				},
+				"member": {
+					"displayName": "Член",
+					"description": "Список участников беседы"
+				},
+				"open": {
+					"displayName": "Открыть",
+					"description": "Открывает или возобновляет прямое сообщение или прямое сообщение нескольким людям."
+				},
+				"rename": {
+					"displayName": "Переименовать",
+					"description": "Переименовывает разговор"
+				},
+				"replies": {
+					"displayName": "Ответы",
+					"description": "Получить цепочку сообщений, опубликованных на канале"
+				},
+				"setPurpose": {
+					"displayName": "Установить цель",
+					"description": "Устанавливает цель разговора"
+				},
+				"setTopic": {
+					"displayName": "Установить тему",
+					"description": "Задает тему для разговора"
+				},
+				"unarchive": {
+					"displayName": "Разархивировать",
+					"description": "Разархивирует беседу"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить звездочку с объекта"
+				},
+				"deleteScheduled": {
+					"displayName": "Удалить запланированное"
+				},
+				"getManyScheduled": {
+					"displayName": "Получить много запланированных"
+				},
+				"getPermalink": {
+					"displayName": "Получить постоянную ссылку"
+				},
+				"schedule": {
+					"displayName": "Расписание"
+				},
+				"search": {
+					"displayName": "Поиск"
+				},
+				"post": {
+					"displayName": "Отправлять"
+				},
+				"sendAndWait": {
+					"displayName": "Отправить и дождаться ответа"
+				},
+				"update": {
+					"displayName": "Обновлять"
+				},
+				"add": {
+					"displayName": "Добавлять",
+					"description": "Добавляет реакцию на сообщение"
+				},
+				"upload": {
+					"displayName": "Загрузить",
+					"description": "Создайте или загрузите существующий файл"
+				},
+				"remove": {
+					"displayName": "Удалять",
+					"description": "Удалить реакцию на сообщение"
+				},
+				"info": {
+					"displayName": "Получать",
+					"description": "Получить информацию о пользователе"
+				},
+				"getProfile": {
+					"displayName": "Получить профиль пользователя",
+					"description": "Получить профиль пользователя"
+				},
+				"getPresence": {
+					"displayName": "Получить статус пользователя",
+					"description": "Получить онлайн-статус пользователя"
+				},
+				"lookupByEmail": {
+					"displayName": "Поиск по электронной почте",
+					"description": "Найдите пользователя по его адресу электронной почты"
+				},
+				"updateProfile": {
+					"displayName": "Обновить профиль пользователя",
+					"description": "Обновить профиль пользователя"
+				},
+				"updateUsers": {
+					"displayName": "Добавить пользователей"
+				},
+				"disable": {
+					"displayName": "Запрещать"
+				},
+				"enable": {
+					"displayName": "Давать возможность"
+				},
+				"getUsers": {
+					"displayName": "Получить пользователей"
+				}
+			}
+		},
+		"channelId": {
+			"displayName": "Канал",
+			"description": "Канал Slack для получения реакций",
+			"placeholder": "Выберите канал..."
+		},
+		"channelVisibility": {
+			"displayName": "Видимость канала",
+			"description": "Создавать ли публичный или частный канал Slack. <a href=\"https://slack.com/help/articles/360017938993-What-is-a-channel\">Подробнее</a>.",
+			"options": {
+				"public": {
+					"displayName": "Общественный канал"
+				},
+				"private": {
+					"displayName": "Частный канал"
+				}
+			}
+		},
+		"userIds": {
+			"displayName": "Имена пользователей или идентификаторы",
+			"description": "Идентификатор пользователя, которого нужно пригласить в канал. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"includeNumMembers": {
+					"displayName": "Включить количество участников"
+				},
+				"channelId": {
+					"displayName": "Название или идентификатор канала",
+					"description": "Канал, на который нужно отправить файл. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"returnIm": {
+					"displayName": "Обратный обмен мгновенными сообщениями",
+					"description": "Хотите ли вы получить полное определение канала обмена мгновенными сообщениями в ответе?"
+				},
+				"users": {
+					"displayName": "Имена пользователей или идентификаторы",
+					"description": "Если включен только один пользователь, создается DM 1:1. Порядок пользователей сохраняется всякий раз, когда возвращается прямое сообщение для нескольких человек. Укажите канал, если не предоставлены пользователи. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"searchChannel": {
+					"displayName": "Искать в канале",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"limitWaitTime": {
+					"values": {
+						"limitWaitTime": {
+							"displayName": "Ограничить время ожидания",
+							"description": "Ограничить ли время, в течение которого этот узел должен ждать ответа пользователя, прежде чем возобновится выполнение."
+						},
+						"values": {
+							"options": {
+								"limitType": {
+									"displayName": "Тип лимита",
+									"description": "Устанавливает условие возобновления выполнения. Может быть указанная дата или через некоторое время.",
+									"options": {
+										"afterTimeInterval": {
+											"displayName": "После временного интервала",
+											"description": "Ждет определенное время"
+										},
+										"atSpecifiedTime": {
+											"displayName": "В указанное время",
+											"description": "Ожидает установленной даты и времени, чтобы продолжить"
+										}
+									}
+								},
+								"resumeAmount": {
+									"displayName": "Количество",
+									"description": "Время ждать"
+								},
+								"resumeUnit": {
+									"displayName": "Единица",
+									"description": "Единица значения интервала",
+									"options": {
+										"minutes": {
+											"displayName": "Минуты"
+										},
+										"hours": {
+											"displayName": "Часы"
+										},
+										"days": {
+											"displayName": "Дни"
+										}
+									}
+								},
+								"maxDateAndTime": {
+									"displayName": "Максимальная дата и время",
+									"description": "Продолжить выполнение после указанной даты и времени"
+								}
+							}
+						}
+					},
+					"displayName": "Ограничить время ожидания",
+					"description": "Ограничить ли время, в течение которого этот узел должен ждать ответа пользователя, прежде чем возобновится выполнение.",
+					"options": {
+						"values": {
+							"displayName": "Ценности"
+						}
+					}
+				},
+				"appendAttribution": {
+					"displayName": "Добавить авторство n8n",
+					"description": "Включить ли в конец сообщения фразу «Это сообщение было отправлено автоматически с помощью n8n»"
+				},
+				"thread_ts": {
+					"values": {
+						"thread_ts": {
+							"displayName": "Ответ на сообщение",
+							"description": "Укажите значение временной метки другого сообщения, чтобы сделать это сообщение ответом."
+						},
+						"replyValues": {
+							"options": {
+								"thread_ts": {
+									"displayName": "Временная метка сообщения для ответа",
+									"description": "Временные метки сообщений включаются в выходные данные узлов Slack и обозначаются сокращенно ts.",
+									"placeholder": "1663233118.856619"
+								},
+								"reply_broadcast": {
+									"displayName": "Также отправить в канал",
+									"description": "Должен ли ответ быть виден всем в канале или беседе"
+								}
+							}
+						}
+					},
+					"placeholder": "Ответ на сообщение",
+					"displayName": "Ответ на сообщение",
+					"description": "Укажите значение временной метки другого сообщения, чтобы сделать это сообщение ответом.",
+					"options": {
+						"replyValues": {
+							"displayName": "Ответ на сообщение"
+						}
+					}
+				},
+				"messageButtonLabel": {
+					"displayName": "Метка кнопки сообщения"
+				},
+				"responseFormTitle": {
+					"displayName": "Название формы ответа",
+					"description": "Название формы, к которой пользователь может получить доступ для ответа"
+				},
+				"responseFormDescription": {
+					"displayName": "Форма ответа Описание",
+					"description": "Описание формы, к которой пользователь может получить доступ для ответа."
+				},
+				"responseFormButtonLabel": {
+					"displayName": "Метка кнопки формы ответа"
+				},
+				"responseFormCustomCss": {
+					"displayName": "Пользовательский стиль формы ответа",
+					"description": "Переопределить стиль формы ответа по умолчанию с помощью CSS"
+				},
+				"fileComment": {
+					"displayName": "Комментарий к файлу",
+					"description": "Комментарий к файлу, к которому нужно добавить звездочку"
+				},
+				"fileId": {
+					"displayName": "Идентификатор файла",
+					"description": "Файл, к которому нужно добавить звездочку"
+				},
+				"timestamp": {
+					"displayName": "Временная метка сообщения",
+					"description": "Временная метка сообщения, которое нужно удалить",
+					"placeholder": "1663233118.856619"
+				},
+				"channelIds": {
+					"displayName": "Названия или идентификаторы каналов",
+					"description": "Каналы для отправки файла. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"fileName": {
+					"displayName": "Имя файла"
+				},
+				"initialComment": {
+					"displayName": "Первоначальный комментарий",
+					"description": "Текст сообщения, представляющего файл в указанных каналах."
+				},
+				"threadTs": {
+					"displayName": "Временная метка потока",
+					"description": "Укажите значение временной метки другого сообщения, чтобы загрузить этот файл в качестве ответа. Никогда не используйте значение отметки времени ответа; вместо этого используйте его родителя."
+				},
+				"title": {
+					"displayName": "Заголовок"
+				},
+				"customFieldUi": {
+					"values": {
+						"customFieldUi": {
+							"displayName": "Пользовательские поля"
+						},
+						"customFieldValues": {
+							"options": {
+								"id": {
+									"displayName": "Имя поля или идентификатор",
+									"description": "Идентификатор поля, которое необходимо установить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								},
+								"value": {
+									"displayName": "Значение поля",
+									"description": "Значение поля для установки"
+								},
+								"alt": {
+									"displayName": "Альтернативный вариант"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить пользовательские поля",
+					"displayName": "Пользовательские поля",
+					"options": {
+						"customFieldValues": {
+							"displayName": "Пользовательское поле"
+						}
+					}
+				},
+				"email": {
+					"displayName": "Электронная почта",
+					"description": "Это поле могут изменить только администраторы для пользователей платных команд.",
+					"placeholder": "имя@email.com"
+				},
+				"first_name": {
+					"displayName": "Имя"
+				},
+				"last_name": {
+					"displayName": "Фамилия"
+				},
+				"status": {
+					"values": {
+						"status": {
+							"displayName": "Установить статус"
+						},
+						"set_status": {
+							"options": {
+								"status_emoji": {
+									"displayName": "Эмодзи статуса",
+									"description": "Это строка, ссылающаяся на эмодзи, включенный для команды Slack, например :mountain_railway:"
+								},
+								"status_expiration": {
+									"displayName": "Срок действия статуса",
+									"description": "Количество минут ожидания, пока этот статус не истечет и не будет очищен. Необязательный."
+								},
+								"status_text": {
+									"displayName": "Текст статуса",
+									"description": "Допускается до 100 символов, однако мы настоятельно рекомендуем быть краткими."
+								}
+							}
+						}
+					},
+					"placeholder": "Установить статус",
+					"displayName": "Установить статус",
+					"options": {
+						"set_status": {
+							"displayName": "Установить статус"
+						}
+					}
+				},
+				"user": {
+					"displayName": "ID пользователя",
+					"description": "Идентификатор пользователя, которого необходимо изменить. Этот аргумент могут указывать только администраторы платных команд."
+				},
+				"include_count": {
+					"displayName": "Включить количество",
+					"description": "Включать ли количество пользователей в группу пользователей"
+				},
+				"include_disabled": {
+					"displayName": "Включить отключенное",
+					"description": "Включать ли отключенные группы пользователей"
+				},
+				"include_users": {
+					"displayName": "Включить пользователей",
+					"description": "Включать ли список пользователей для каждой группы пользователей"
+				},
+				"resolveData": {
+					"displayName": "Разрешение данных",
+					"description": "Возвращать ли полные объекты пользователей вместо только идентификаторов пользователей"
+				}
+			},
+			"description": "Другие варианты установки"
+		},
+		"userId": {
+			"displayName": "Имя пользователя или идентификатор",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов",
+			"placeholder": "Лимит"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"excludeArchived": {
+					"displayName": "Исключить заархивированные",
+					"description": "Исключить ли заархивированные каналы из списка"
+				},
+				"types": {
+					"displayName": "Типы",
+					"description": "Фильтровать файлы по типу",
+					"options": {
+						"public_channel": {
+							"displayName": "Общественный канал"
+						},
+						"private_channel": {
+							"displayName": "Частный канал"
+						},
+						"mpim": {
+							"displayName": "МПИМ"
+						},
+						"im": {
+							"displayName": "я"
+						},
+						"all": {
+							"displayName": "Все"
+						},
+						"gdocs": {
+							"displayName": "Google Документы"
+						},
+						"images": {
+							"displayName": "Изображения"
+						},
+						"pdfs": {
+							"displayName": "PDF-файлы"
+						},
+						"snippets": {
+							"displayName": "Фрагменты"
+						},
+						"spaces": {
+							"displayName": "Пространства"
+						},
+						"zips": {
+							"displayName": "молнии"
+						}
+					}
+				},
+				"inclusive": {
+					"displayName": "Инклюзивно",
+					"description": "Включать ли в результаты сообщения с самой последней или самой старой отметкой времени, только если указана любая из них."
+				},
+				"latest": {
+					"displayName": "Последний",
+					"description": "Момент времени, до которого запланированные сообщения должны быть возвращены."
+				},
+				"oldest": {
+					"displayName": "Самый старый",
+					"description": "Момент времени, после которого запланированные сообщения должны быть возвращены."
+				},
+				"channelId": {
+					"displayName": "Название или идентификатор канала",
+					"description": "Канал, содержащий файл для вывода в список. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>.",
+					"placeholder": "Выберите канал..."
+				},
+				"showFilesHidden": {
+					"displayName": "Показать файлы, скрытые лимитом",
+					"description": "Показывать ли усеченную информацию о файле для файлов, скрытых из-за того, что они слишком старые, а команда, владеющая файлом, превысила лимит файлов."
+				},
+				"tsFrom": {
+					"displayName": "Временная метка сообщения от",
+					"description": "Фильтровать файлы, созданные после этой отметки времени (включительно)"
+				},
+				"tsTo": {
+					"displayName": "Временная метка сообщения",
+					"description": "Фильтровать файлы, созданные до этой отметки времени (включительно)"
+				},
+				"userId": {
+					"displayName": "Имя пользователя или идентификатор",
+					"description": "Фильтровать файлы, созданные одним пользователем. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				}
+			}
+		},
+		"resolveData": {
+			"displayName": "Разрешение данных",
+			"description": "Следует ли разрешать данные автоматически. По умолчанию ответ содержит только идентификатор ресурса."
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Имя группы пользователей. Должно быть уникальным среди групп пользователей.",
+			"placeholder": "+1"
+		},
+		"ts": {
+			"displayName": "Временная метка сообщения",
+			"description": "Временная метка сообщения для обновления",
+			"placeholder": "1663233118.856619"
+		},
+		"purpose": {
+			"displayName": "Цель",
+			"description": "Новая, особая цель"
+		},
+		"topic": {
+			"displayName": "Тема"
+		},
+		"timestamp": {
+			"displayName": "Временная метка сообщения",
+			"description": "Временная метка сообщения, которое нужно добавить, получить или удалить.",
+			"placeholder": "1663233118.856619"
+		},
+		"select": {
+			"displayName": "Отправить сообщение",
+			"placeholder": "Выбирать...",
+			"options": {
+				"channel": {
+					"displayName": "Канал"
+				},
+				"user": {
+					"displayName": "Пользователь"
+				}
+			}
+		},
+		"user": {
+			"displayName": "Пользователь",
+			"placeholder": "Выберите пользователя...",
+			"description": "Идентификатор пользователя для получения онлайн-статуса"
+		},
+		"messageType": {
+			"displayName": "Тип сообщения",
+			"description": "Отправлять ли простое текстовое сообщение или использовать конструктор пользовательского интерфейса Slack Blocks для более сложных сообщений, включающих поля формы, разделы и многое другое.",
+			"options": {
+				"text": {
+					"displayName": "Простое текстовое сообщение",
+					"description": "Поддерживает базовый Markdown"
+				},
+				"block": {
+					"displayName": "Блоки",
+					"description": "Объедините текст, кнопки, элементы форм, разделители и многое другое в визуальном конструкторе Slack."
+				},
+				"attachment": {
+					"displayName": "Вложения"
+				}
+			}
+		},
+		"text": {
+			"displayName": "Текст сообщения",
+			"description": "Текст сообщения, которое необходимо обновить. По умолчанию поддерживает <a href=\"https://api.slack.com/reference/surfaces/formatting/\">markdown</a> — это можно отключить в «Параметры»."
+		},
+		"blocksUi": {
+			"displayName": "Блоки",
+			"description": "Введите здесь вывод JSON из визуального конструктора блоков блоков Slack. Затем вы можете использовать выражения для добавления переменного содержимого в ваши блоки. Для создания блоков используйте <a target='_blank' href='https://app.slack.com/block-kit-builder'>Slack's Block Kit Builder</a>.",
+			"hint": "Для создания блоков используйте <a target='_blank' href='https://app.slack.com/block-kit-builder'>Slack's Block Kit Builder</a>."
+		},
+		"noticeAttachments": {
+			"displayName": "Это устаревшая функция Slack. Slack советует вместо этого использовать блоки."
+		},
+		"attachments": {
+			"displayName": "Вложения",
+			"placeholder": "Добавить элемент вложения",
+			"multipleValueButtonText": "Добавить вложение",
+			"options": {
+				"fallback": {
+					"displayName": "Резервный текст",
+					"description": "Обязательное текстовое резюме вложения."
+				},
+				"text": {
+					"displayName": "Текст"
+				},
+				"title": {
+					"displayName": "Заголовок"
+				},
+				"title_link": {
+					"displayName": "Название Ссылка"
+				},
+				"color": {
+					"displayName": "Цвет",
+					"description": "Цвет линии слева от текста"
+				},
+				"pretext": {
+					"displayName": "Предлог",
+					"description": "Текст, который появляется перед блоком сообщений"
+				},
+				"author_name": {
+					"displayName": "Имя автора",
+					"description": "Имя, которое должно появиться"
+				},
+				"author_link": {
+					"displayName": "Ссылка автора"
+				},
+				"author_icon": {
+					"displayName": "Значок автора",
+					"description": "Значок, который должен появиться у пользователя"
+				},
+				"image_url": {
+					"displayName": "URL-адрес изображения"
+				},
+				"thumb_url": {
+					"displayName": "URL-адрес миниатюры"
+				},
+				"footer": {
+					"displayName": "Нижний колонтитул",
+					"description": "Текст нижнего колонтитула, который нужно добавить"
+				},
+				"footer_icon": {
+					"displayName": "Значок нижнего колонтитула",
+					"description": "Значок, который должен появиться рядом с нижним колонтитулом"
+				},
+				"ts": {
+					"displayName": "Временная метка сообщения",
+					"description": "Временная метка сообщения для публикации",
+					"placeholder": "1663233118.856619"
+				},
+				"fields": {
+					"values": {
+						"fields": {
+							"displayName": "Поля",
+							"description": "Поля для добавления в сообщение"
+						},
+						"item": {
+							"options": {
+								"title": {
+									"displayName": "Заголовок"
+								},
+								"value": {
+									"displayName": "Ценить"
+								},
+								"short": {
+									"displayName": "Короткий",
+									"description": "Могут ли элементы отображаться рядом друг с другом"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить поля",
+					"displayName": "Поля",
+					"description": "Поля для добавления в сообщение",
+					"options": {
+						"item": {
+							"displayName": "Элемент"
+						}
+					}
+				}
+			}
+		},
+		"postAt": {
+			"displayName": "Опубликовать в",
+			"description": "Когда сообщение должно быть отправлено. Должно быть в будущем и в течение 120 дней с настоящего момента."
+		},
+		"otherOptions": {
+			"displayName": "Параметры",
+			"description": "Другие варианты установки",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"includeLinkToWorkflow": {
+					"displayName": "Включить ссылку на рабочий процесс",
+					"description": "Добавлять ли ссылку на этот рабочий процесс в конце сообщения. Это полезно, если у вас много рабочих процессов, отправляющих сообщения Slack."
+				},
+				"botProfile": {
+					"values": {
+						"botProfile": {
+							"displayName": "Пользовательское фото профиля бота",
+							"description": "Установите изображение или смайлик в качестве фотографии профиля (аватара) бота, отправляющего сообщение. Не будет использоваться при отправке сообщения от имени пользователя. Добавьте область действия Chat:write.customize в Slack API."
+						},
+						"imageValues": {
+							"options": {
+								"profilePhotoType": {
+									"displayName": "Тип фотографии профиля",
+									"placeholder": "Выберите тип…",
+									"options": {
+										"image": {
+											"displayName": "URL-адрес изображения"
+										},
+										"emoji": {
+											"displayName": "Код эмодзи"
+										}
+									}
+								},
+								"icon_emoji": {
+									"displayName": "Код эмодзи",
+									"description": "Используется только при отправке сообщения от имени бота. Используйте коды смайликов, например +1, а не настоящие смайлы, например 👍. <a target=\"_blank\" href=\" https://www.webfx.com/tools/emoji-cheat-sheet/\">Список распространенных кодов эмодзи</a>"
+								},
+								"icon_url": {
+									"displayName": "URL-адрес изображения",
+									"description": "Используется только при отправке сообщения от имени бота."
+								}
+							}
+						}
+					},
+					"displayName": "Пользовательское фото профиля бота",
+					"description": "Установите изображение или смайлик в качестве фотографии профиля (аватара) бота, отправляющего сообщение. Не будет использоваться при отправке сообщения от имени пользователя. Добавьте область действия Chat:write.customize в Slack API.",
+					"options": {
+						"imageValues": {
+							"displayName": "Добавить фотографию профиля бота"
+						}
+					}
+				},
+				"link_names": {
+					"displayName": "Свяжите имена пользователей и каналов",
+					"description": "Превращать ли @users и #channels в тексте сообщения в кликабельные ссылки"
+				},
+				"thread_ts": {
+					"values": {
+						"thread_ts": {
+							"displayName": "Ответ на сообщение",
+							"description": "Укажите значение временной метки другого сообщения, чтобы сделать это сообщение ответом."
+						},
+						"replyValues": {
+							"options": {
+								"thread_ts": {
+									"displayName": "Временная метка сообщения для ответа",
+									"description": "Временные метки сообщений включаются в выходные данные узлов Slack и обозначаются сокращенно ts.",
+									"placeholder": "1663233118.856619"
+								},
+								"reply_broadcast": {
+									"displayName": "Также отправить в канал",
+									"description": "Должен ли ответ быть виден всем в канале или беседе"
+								}
+							}
+						}
+					},
+					"placeholder": "Ответ на сообщение",
+					"displayName": "Ответ на сообщение",
+					"description": "Укажите значение временной метки другого сообщения, чтобы сделать это сообщение ответом.",
+					"options": {
+						"replyValues": {
+							"displayName": "Ответ на сообщение"
+						}
+					}
+				},
+				"mrkdwn": {
+					"displayName": "Использовать Маркдаун?",
+					"description": "Использовать ли Slack Markdown для форматирования сообщения"
+				},
+				"unfurl_links": {
+					"displayName": "Развернуть ссылки",
+					"description": "Развертывать ли в сообщении преимущественно текстовый контент"
+				},
+				"unfurl_media": {
+					"displayName": "Развернуть медиа",
+					"description": "Разворачивать ли медиаконтент в сообщении"
+				},
+				"ephemeral": {
+					"values": {
+						"ephemeral": {
+							"displayName": "Отправить как эфемерное сообщение",
+							"description": "Отправлять ли временное эфемерное сообщение"
+						},
+						"ephemeralValues": {
+							"options": {
+								"user": {
+									"displayName": "Пользователь для отправки",
+									"placeholder": "Выберите пользователя..."
+								},
+								"ephemeral": {
+									"displayName": "Отправить как эфемерное сообщение",
+									"description": "Отправлять ли временное эфемерное сообщение"
+								}
+							}
+						}
+					},
+					"placeholder": "Отправить как эфемерное сообщение",
+					"displayName": "Отправить как эфемерное сообщение",
+					"description": "Отправлять ли временное эфемерное сообщение",
+					"options": {
+						"ephemeralValues": {
+							"displayName": "Отправить как эфемерное сообщение"
+						}
+					}
+				},
+				"sendAsUser": {
+					"displayName": "Отправить как пользователь",
+					"description": "Сообщение будет отправлено от этого имени пользователя (т. е. как если бы сообщение отправил этот человек). Добавьте область действия Chat:write.customize в Slack API."
+				}
+			}
+		},
+		"scheduledMessageId": {
+			"displayName": "Идентификатор запланированного сообщения",
+			"description": "Идентификатор, возвращенный, когда сообщение было изначально запланировано",
+			"placeholder": "Q1298393284"
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"link_names": {
+					"displayName": "Свяжите имена пользователей и каналов",
+					"description": "Нужно ли находить и связывать названия каналов и имена пользователей"
+				},
+				"parse": {
+					"displayName": "Разобрать",
+					"description": "Изменение способа обработки сообщений",
+					"options": {
+						"client": {
+							"displayName": "Клиент"
+						},
+						"full": {
+							"displayName": "Полный"
+						},
+						"none": {
+							"displayName": "Никто"
+						}
+					}
+				},
+				"channels": {
+					"displayName": "Названия или идентификаторы каналов",
+					"description": "Разделенная запятыми строка кодированных идентификаторов каналов, которые группа пользователей использует по умолчанию. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"description": {
+					"displayName": "Описание",
+					"description": "Краткое описание группы пользователей"
+				},
+				"handle": {
+					"displayName": "Ручка",
+					"description": "Ручка упоминания. Должно быть уникальным среди каналов, пользователей и групп пользователей."
+				},
+				"include_count": {
+					"displayName": "Включить количество",
+					"description": "Включать ли количество пользователей в каждую группу пользователей"
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Имя группы пользователей. Должно быть уникальным среди групп пользователей."
+				}
+			}
+		},
+		"query": {
+			"displayName": "Поисковый запрос",
+			"description": "Текст для поиска в сообщениях"
+		},
+		"sort": {
+			"displayName": "Сортировать по",
+			"description": "Как следует сортировать результаты поиска. Вы можете сортировать.",
+			"options": {
+				"desc": {
+					"displayName": "Новейший"
+				},
+				"asc": {
+					"displayName": "Самый старый"
+				},
+				"relevance": {
+					"displayName": "Оценка релевантности"
+				}
+			}
+		},
+		"message": {
+			"displayName": "Сообщение"
+		},
+		"responseType": {
+			"displayName": "Тип ответа",
+			"options": {
+				"approval": {
+					"displayName": "Одобрение",
+					"description": "Пользователь может одобрить/отклонить сообщение прямо в сообщении."
+				},
+				"freeText": {
+					"displayName": "Свободный текст",
+					"description": "Пользователь может отправить ответ через форму"
+				},
+				"customForm": {
+					"displayName": "Пользовательская форма",
+					"description": "Пользователь может отправить ответ через специальную форму"
+				}
+			}
+		},
+		"defineForm": {
+			"displayName": "Определить форму",
+			"options": {
+				"fields": {
+					"displayName": "Использование полей ниже"
+				},
+				"json": {
+					"displayName": "Использование JSON"
+				}
+			}
+		},
+		"jsonOutput": {
+			"displayName": "Поля формы",
+			"hint": "<a href=\"https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.form/\" target=\"_blank\">См. в документации </a> синтаксис полей."
+		},
+		"formFields": {
+			"options": {
+				"formFields": {
+					"displayName": "Элементы формы"
+				},
+				"values": {
+					"displayName": "Ценности",
+					"values": {
+						"fieldName": {
+							"displayName": "Имя настраиваемого поля",
+							"description": "Имя поля, используемое во входных атрибутах и ​​на которое ссылается рабочий процесс."
+						},
+						"fieldLabel": {
+							"displayName": "Имя поля",
+							"description": "Метка, которая появляется над полем ввода",
+							"placeholder": "например Как вас зовут?"
+						},
+						"fieldType": {
+							"displayName": "Тип элемента",
+							"description": "Тип поля, добавляемого в форму",
+							"options": {
+								"checkbox": {
+									"displayName": "Флажки"
+								},
+								"html": {
+									"displayName": "Пользовательский HTML"
+								},
+								"date": {
+									"displayName": "Дата"
+								},
+								"dropdown": {
+									"displayName": "Падать"
+								},
+								"email": {
+									"displayName": "Электронная почта"
+								},
+								"file": {
+									"displayName": "Файл"
+								},
+								"hiddenField": {
+									"displayName": "Скрытое поле"
+								},
+								"number": {
+									"displayName": "Число"
+								},
+								"password": {
+									"displayName": "Пароль"
+								},
+								"radio": {
+									"displayName": "Радиокнопки"
+								},
+								"text": {
+									"displayName": "Ввод текста"
+								},
+								"textarea": {
+									"displayName": "Текстовая область"
+								}
+							}
+						},
+						"elementName": {
+							"displayName": "Имя элемента",
+							"description": "Необязательное поле. Его можно использовать для включения HTML в выходные данные.",
+							"placeholder": "например раздел контента"
+						},
+						"placeholder": {
+							"displayName": "Заполнитель",
+							"description": "Пример текста для отображения внутри поля"
+						},
+						"defaultValue": {
+							"displayName": "Значение по умолчанию",
+							"description": "Значения по умолчанию, которые будут выбраны заранее. Должно соответствовать одному или нескольким меткам опций. Разделите несколько предварительно выбранных опций запятой."
+						},
+						"fieldValue": {
+							"displayName": "Значение поля",
+							"description": "Входное значение можно установить здесь или оно будет передано в качестве параметра запроса через имя поля, если значение не установлено."
+						},
+						"fieldOptions": {
+							"options": {
+								"fieldOptions": {
+									"displayName": "Радиокнопки",
+									"description": "Список опций, которые можно выбрать из раскрывающегося списка"
+								},
+								"values": {
+									"displayName": "Ценности",
+									"values": {
+										"option": {
+											"displayName": "Метка радиокнопки"
+										}
+									}
+								}
+							},
+							"placeholder": "Добавить переключатель",
+							"displayName": "Радиокнопки",
+							"description": "Список опций, которые можно выбрать из раскрывающегося списка"
+						},
+						"multiselectLegacyNotice": {
+							"displayName": "Множественный выбор является устаревшим вариантом, вместо этого используйте тип поля «Флажки» или «Переключатели»."
+						},
+						"multiselect": {
+							"displayName": "Множественный выбор",
+							"description": "Разрешить ли пользователю выбирать несколько вариантов из раскрывающегося списка"
+						},
+						"limitSelection": {
+							"displayName": "Ограничить выбор",
+							"options": {
+								"exact": {
+									"displayName": "Точный номер"
+								},
+								"range": {
+									"displayName": "Диапазон"
+								},
+								"unlimited": {
+									"displayName": "Безлимитный"
+								}
+							}
+						},
+						"numberOfSelections": {
+							"displayName": "Количество вариантов выбора"
+						},
+						"minSelections": {
+							"displayName": "Минимальный выбор"
+						},
+						"maxSelections": {
+							"displayName": "Максимальный выбор"
+						},
+						"html": {
+							"displayName": "HTML",
+							"description": "HTML-элементы для отображения на странице формы",
+							"hint": "Не принимает теги <code><script></code>, <code><style></code> или <code><input></code>."
+						},
+						"multipleFiles": {
+							"displayName": "Несколько файлов",
+							"description": "Разрешить ли пользователю выбирать несколько файлов из входного файла или только один"
+						},
+						"acceptFileTypes": {
+							"displayName": "Допустимые типы файлов",
+							"description": "Список разрешенных расширений файлов, разделенный запятыми",
+							"hint": "Оставьте пустым, чтобы разрешить все типы файлов.",
+							"placeholder": "например .jpg, .png"
+						},
+						"formatDate": {
+							"displayName": "Отображаемая дата форматируется на основе языкового стандарта браузера пользователя."
+						},
+						"requiredField": {
+							"displayName": "Обязательное поле",
+							"description": "Требовать ли от пользователя ввода значения в это поле перед отправкой формы"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить элемент формы",
+			"displayName": "Элементы формы",
+			"addOptionalFieldButtonText": "Добавить атрибуты"
+		},
+		"approvalOptions": {
+			"options": {
+				"approvalOptions": {
+					"displayName": "Варианты утверждения"
+				},
+				"values": {
+					"displayName": "Ценности",
+					"values": {
+						"approvalType": {
+							"displayName": "Тип одобрения",
+							"placeholder": "Добавить вариант",
+							"options": {
+								"single": {
+									"displayName": "Только утвердить"
+								},
+								"double": {
+									"displayName": "Одобрить и не одобрить"
+								}
+							}
+						},
+						"approveLabel": {
+							"displayName": "Метка кнопки «Утвердить»"
+						},
+						"buttonApprovalStyle": {
+							"displayName": "Утвердить стиль кнопки",
+							"options": {
+								"primary": {
+									"displayName": "Начальный"
+								},
+								"secondary": {
+									"displayName": "вторичный"
+								}
+							}
+						},
+						"disapproveLabel": {
+							"displayName": "Ярлык кнопки «Отклонить»"
+						},
+						"buttonDisapprovalStyle": {
+							"displayName": "Стиль кнопки «Отклонить»",
+							"options": {
+								"primary": {
+									"displayName": "Начальный"
+								},
+								"secondary": {
+									"displayName": "вторичный"
+								}
+							}
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить вариант",
+			"displayName": "Варианты утверждения"
+		},
+		"advancedInteractivityNotice": {
+			"displayName": "Расширенная интерактивность"
+		},
+		"captureResponder": {
+			"displayName": "Зафиксируйте, кто ответил",
+			"description": "Следует ли использовать интерактивные кнопки Slack, чтобы личность ответчика (идентификатор, имя, адрес электронной почты) фиксировалась и возвращалась вместе с ответом. Требуется, чтобы в приложении Slack была включена интерактивность (URL-адрес запроса, указанный на этом экземпляре n8n), секрет подписи для учетных данных и области пользователей: чтение и пользователи: чтение.email."
+		},
+		"approvers": {
+			"displayName": "Ограничить тех, кто может одобрить",
+			"description": "Ограничьте круг лиц, которые могут одобрять или отклонять: клик пользователя, не указанного в списке, игнорируется, и он получает личное уведомление. Оставьте пустым, чтобы любой мог ответить. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"unauthorizedReplyText": {
+			"displayName": "Несанкционированный ответ",
+			"description": "Личное (эфемерное) сообщение, отображаемое тому, кто нажимает кнопку, но не находится в списке утверждающих."
+		},
+		"postDecisionBehavior": {
+			"displayName": "После решения",
+			"description": "Что происходит с исходным сообщением, когда кто-то одобряет или отклоняет его",
+			"options": {
+				"showOutcome": {
+					"displayName": "Кнопки «Показать результат» и «Удалить»"
+				},
+				"removeButtons": {
+					"displayName": "Удалить только кнопки"
+				},
+				"keepMessage": {
+					"displayName": "Сохранить сообщение без изменений"
+				}
+			}
+		},
+		"target": {
+			"displayName": "Предмет для добавления звезды",
+			"description": "Выберите, добавлять ли звездочку к сообщению или файлу",
+			"placeholder": "Выбирать...",
+			"options": {
+				"message": {
+					"displayName": "Сообщение"
+				},
+				"file": {
+					"displayName": "Файл"
+				}
+			}
+		},
+		"fileId": {
+			"displayName": "Идентификатор файла",
+			"description": "Файл, к которому нужно добавить звездочку"
+		},
+		"binaryData": {
+			"displayName": "Двоичный файл",
+			"description": "Следует ли брать данные для загрузки из двоичного поля"
+		},
+		"fileContent": {
+			"displayName": "Содержимое файла"
+		},
+		"binaryPropertyName": {
+			"displayName": "Свойство файла",
+			"description": "Имя двоичного свойства, содержащего данные для загружаемого файла."
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"description": "Адрес электронной почты пользователя, которого нужно найти.",
+			"placeholder": "имя@email.com"
+		},
+		"Options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"channelIds": {
+					"displayName": "Названия или идентификаторы каналов",
+					"description": "Разделенная запятыми строка кодированных идентификаторов каналов, которые группа пользователей использует по умолчанию. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"description": {
+					"displayName": "Описание",
+					"description": "Краткое описание группы пользователей"
+				},
+				"handle": {
+					"displayName": "Ручка",
+					"description": "Ручка упоминания. Должно быть уникальным среди каналов, пользователей и групп пользователей."
+				},
+				"include_count": {
+					"displayName": "Включить количество",
+					"description": "Включать ли количество пользователей в каждую группу пользователей"
+				}
+			}
+		},
+		"userGroupId": {
+			"displayName": "Идентификатор группы пользователей",
+			"description": "Закодированный идентификатор группы пользователей."
+		},
+		"option": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"include_count": {
+					"displayName": "Включить количество",
+					"description": "Включать ли количество пользователей в каждую группу пользователей"
+				}
+			}
+		},
+		"users": {
+			"displayName": "Имена пользователей или идентификаторы",
+			"description": "Пользователи, которых нужно добавить в группу пользователей. Существующие пользователи будут сохранены. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		}
+	}
+}

@@ -1,0 +1,38 @@
+{
+	"header": {
+		"displayName": "E2E-тест",
+		"description": "Фиктивный узел, используемый для тестирования e2e"
+	},
+	"nodeView": {
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"remoteOptions": {
+					"displayName": "Удаленные параметры"
+				},
+				"resourceLocator": {
+					"displayName": "Поиск ресурсов"
+				},
+				"resourceMapper": {
+					"displayName": "Компонент сопоставления ресурсов"
+				}
+			}
+		},
+		"fieldId": {
+			"displayName": "Идентификатор поля"
+		},
+		"remoteOptions": {
+			"displayName": "Имя или идентификатор удаленных опций",
+			"description": "Удаленные варианты загрузки. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"rlc": {
+			"displayName": "Поиск ресурсов"
+		},
+		"resourceMapper": {
+			"displayName": "Компонент сопоставления ресурсов"
+		},
+		"otherField": {
+			"displayName": "Другое неважное поле"
+		}
+	}
+}

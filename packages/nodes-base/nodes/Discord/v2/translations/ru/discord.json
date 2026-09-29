@@ -1,0 +1,650 @@
+{
+	"header": {
+		"displayName": "Раздор",
+		"description": "Отправляет данные в Discord"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Тип подключения",
+			"options": {
+				"botToken": {
+					"displayName": "Токен бота",
+					"description": "Управление сообщениями, каналами и участниками на сервере"
+				},
+				"oAuth2": {
+					"displayName": "ОАут2",
+					"description": "Те же функции, что и у «Bot Token», но более простая установка бота."
+				},
+				"webhook": {
+					"displayName": "Вебхук",
+					"description": "Отправка сообщений в определенный канал"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"channel": {
+					"displayName": "Канал"
+				},
+				"message": {
+					"displayName": "Сообщение"
+				},
+				"member": {
+					"displayName": "Член"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"deleteMessage": {
+					"displayName": "Удалить",
+					"description": "Удаление сообщения в канале"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить канал"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить участников сервера"
+				},
+				"react": {
+					"displayName": "Реагируйте с помощью эмодзи",
+					"description": "Реагируйте на сообщение смайлом"
+				},
+				"send": {
+					"displayName": "Отправлять",
+					"description": "Отправьте сообщение каналу, теме или участнику"
+				},
+				"sendAndWait": {
+					"displayName": "Отправить и дождаться ответа",
+					"description": "Отправьте сообщение и дождитесь ответа"
+				},
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать новый канал"
+				},
+				"deleteChannel": {
+					"displayName": "Удалить",
+					"description": "Удалить канал"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить канал"
+				},
+				"roleAdd": {
+					"displayName": "Роль Добавить",
+					"description": "Добавить роль участнику"
+				},
+				"roleRemove": {
+					"displayName": "Роль Удалить",
+					"description": "Удаление роли у участника"
+				},
+				"sendLegacy": {
+					"displayName": "Отправить сообщение",
+					"description": "Отправьте сообщение в канал с помощью вебхука"
+				}
+			}
+		},
+		"guildId": {
+			"displayName": "Сервер",
+			"description": "Выберите сервер (гильдию), к которому подключен ваш бот"
+		},
+		"channelId": {
+			"displayName": "Канал",
+			"description": "Выберите канал по имени, URL-адресу или идентификатору."
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"simplify": {
+					"displayName": "Упрощать",
+					"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+				},
+				"flags": {
+					"displayName": "Флаги",
+					"description": "Флаги сообщений. <a href=\"https://discord.com/developers/docs/resources/channel#message-object-message-flags\" target=\"_blank\">Подробнее </a>».",
+					"options": {
+						"SUPPRESS_EMBEDS": {
+							"displayName": "Подавить встраивание"
+						},
+						"SUPPRESS_NOTIFICATIONS": {
+							"displayName": "Подавить уведомления"
+						}
+					}
+				},
+				"message_reference": {
+					"displayName": "Сообщение для ответа",
+					"description": "Заполните это поле, чтобы ваше сообщение стало ответом. Добавьте идентификатор сообщения.",
+					"placeholder": "например 1059467601836773386"
+				},
+				"tts": {
+					"displayName": "Преобразование текста в речь (TTS)",
+					"description": "Должен ли бот читать сообщение прямо в канале?"
+				},
+				"limitWaitTime": {
+					"values": {
+						"limitWaitTime": {
+							"displayName": "Ограничить время ожидания",
+							"description": "Ограничить ли время, в течение которого этот узел должен ждать ответа пользователя, прежде чем возобновится выполнение."
+						},
+						"values": {
+							"options": {
+								"limitType": {
+									"displayName": "Тип лимита",
+									"description": "Устанавливает условие возобновления выполнения. Может быть указанная дата или через некоторое время.",
+									"options": {
+										"afterTimeInterval": {
+											"displayName": "После временного интервала",
+											"description": "Ждет определенное время"
+										},
+										"atSpecifiedTime": {
+											"displayName": "В указанное время",
+											"description": "Ожидает установленной даты и времени, чтобы продолжить"
+										}
+									}
+								},
+								"resumeAmount": {
+									"displayName": "Количество",
+									"description": "Время ждать"
+								},
+								"resumeUnit": {
+									"displayName": "Единица",
+									"description": "Единица значения интервала",
+									"options": {
+										"minutes": {
+											"displayName": "Минуты"
+										},
+										"hours": {
+											"displayName": "Часы"
+										},
+										"days": {
+											"displayName": "Дни"
+										}
+									}
+								},
+								"maxDateAndTime": {
+									"displayName": "Максимальная дата и время",
+									"description": "Продолжить выполнение после указанной даты и времени"
+								}
+							}
+						}
+					},
+					"displayName": "Ограничить время ожидания",
+					"description": "Ограничить ли время, в течение которого этот узел должен ждать ответа пользователя, прежде чем возобновится выполнение.",
+					"options": {
+						"values": {
+							"displayName": "Ценности"
+						}
+					}
+				},
+				"appendAttribution": {
+					"displayName": "Добавить авторство n8n",
+					"description": "Включить ли в конец сообщения фразу «Это сообщение было отправлено автоматически с помощью n8n»"
+				},
+				"messageButtonLabel": {
+					"displayName": "Метка кнопки сообщения"
+				},
+				"responseFormTitle": {
+					"displayName": "Название формы ответа",
+					"description": "Название формы, к которой пользователь может получить доступ для ответа"
+				},
+				"responseFormDescription": {
+					"displayName": "Форма ответа Описание",
+					"description": "Описание формы, к которой пользователь может получить доступ для ответа."
+				},
+				"responseFormButtonLabel": {
+					"displayName": "Метка кнопки формы ответа"
+				},
+				"responseFormCustomCss": {
+					"displayName": "Пользовательский стиль формы ответа",
+					"description": "Переопределить стиль формы ответа по умолчанию с помощью CSS"
+				},
+				"nsfw": {
+					"displayName": "Ограничение по возрасту (NSFW)",
+					"description": "Может ли контент канала быть nsfw (небезопасно для работы)"
+				},
+				"bitrate": {
+					"displayName": "Битрейт",
+					"description": "Битрейт (в битах) голосового канала",
+					"placeholder": "например 8000",
+					"hint": "Применимо только к голосовым каналам"
+				},
+				"categoryId": {
+					"displayName": "Родительская категория",
+					"description": "Родительская категория, в которой вы хотите разместить канал."
+				},
+				"position": {
+					"displayName": "Позиция"
+				},
+				"rate_limit_per_user": {
+					"displayName": "Ограничение скорости на пользователя",
+					"description": "Количество секунд, в течение которых пользователь должен подождать перед отправкой следующего сообщения."
+				},
+				"topic": {
+					"displayName": "Тема",
+					"description": "Описание темы канала (0–1024 символа).",
+					"placeholder": "например Этот канал о…"
+				},
+				"user_limit": {
+					"displayName": "Пользовательский лимит",
+					"description": "Ограничение количества участников, которые могут быть в канале (0 означает отсутствие ограничения).",
+					"placeholder": "например 20",
+					"hint": "Применимо только к голосовым каналам"
+				},
+				"filter": {
+					"displayName": "Фильтровать по типу",
+					"options": {
+						"0": {
+							"displayName": "Текст гильдии"
+						},
+						"2": {
+							"displayName": "Голос гильдии"
+						},
+						"4": {
+							"displayName": "Категория гильдии"
+						}
+					}
+				},
+				"avatar_url": {
+					"displayName": "URL-адрес аватара",
+					"description": "Переопределить аватар веб-перехватчика по умолчанию",
+					"placeholder": "например https://example.com/image.png"
+				},
+				"username": {
+					"displayName": "Имя пользователя",
+					"description": "Переопределить имя пользователя веб-перехватчика по умолчанию.",
+					"placeholder": "например Мое имя пользователя"
+				},
+				"wait": {
+					"displayName": "Ждать",
+					"description": "Ожидать ли создание сообщения перед возвратом ответа"
+				}
+			}
+		},
+		"messageId": {
+			"displayName": "Идентификатор сообщения",
+			"description": "Идентификатор сообщения",
+			"placeholder": "например 1057576506244726804"
+		},
+		"emoji": {
+			"displayName": "Эмодзи",
+			"description": "Смайлик, которым вы хотите отреагировать"
+		},
+		"sendTo": {
+			"displayName": "Отправить",
+			"description": "Отправьте сообщение в канал или в DM пользователю",
+			"options": {
+				"user": {
+					"displayName": "Пользователь"
+				},
+				"channel": {
+					"displayName": "Канал"
+				}
+			}
+		},
+		"userId": {
+			"displayName": "Пользователь",
+			"description": "Выберите пользователя, которому хотите назначить роль"
+		},
+		"content": {
+			"displayName": "Сообщение",
+			"description": "Содержание сообщения (до 2000 символов)",
+			"placeholder": "например Мое сообщение"
+		},
+		"embeds": {
+			"options": {
+				"embeds": {
+					"displayName": "Встраивает"
+				},
+				"values": {
+					"displayName": "Ценности",
+					"values": {
+						"inputMethod": {
+							"displayName": "Метод ввода",
+							"options": {
+								"fields": {
+									"displayName": "Введите поля"
+								},
+								"json": {
+									"displayName": "Необработанный JSON"
+								}
+							}
+						},
+						"json": {
+							"displayName": "Ценить"
+						},
+						"description": {
+							"displayName": "Описание",
+							"description": "Описание для встроить",
+							"placeholder": "например Мое описание"
+						},
+						"author": {
+							"displayName": "Автор",
+							"description": "Имя автора",
+							"placeholder": "например Джон Доу"
+						},
+						"color": {
+							"displayName": "Цвет",
+							"description": "Цветовой код вставки",
+							"placeholder": "например 12123432"
+						},
+						"timestamp": {
+							"displayName": "Временная метка",
+							"description": "Время отображается внизу вставки. Предоставьте в формате ISO8601.",
+							"placeholder": "например 2023-02-08 09:30:26"
+						},
+						"title": {
+							"displayName": "Заголовок",
+							"description": "Название вставки",
+							"placeholder": "например Название вставки"
+						},
+						"url": {
+							"displayName": "URL",
+							"description": "URL-адрес, на который вы хотите связать встраивание",
+							"placeholder": "например https://discord.com/"
+						},
+						"image": {
+							"displayName": "URL-изображение",
+							"description": "Исходный URL-адрес изображения (поддерживается только http(s) и вложения)",
+							"placeholder": "например https://example.com/image.png"
+						},
+						"thumbnail": {
+							"displayName": "Миниатюра URL-адреса",
+							"description": "Исходный URL миниатюры (поддерживается только http(s) и вложения)",
+							"placeholder": "например https://example.com/image.png"
+						},
+						"video": {
+							"displayName": "URL-видео",
+							"description": "URL-адрес источника видео",
+							"placeholder": "например https://example.com/video.mp4"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить встраивания",
+			"displayName": "Встраивает"
+		},
+		"files": {
+			"options": {
+				"files": {
+					"displayName": "Файлы"
+				},
+				"values": {
+					"displayName": "Ценности",
+					"values": {
+						"inputFieldName": {
+							"displayName": "Имя поля входных данных",
+							"description": "Содержимое файла, отправляемого с сообщением",
+							"hint": "Имя поля ввода, содержащего данные двоичного файла для отправки.",
+							"placeholder": "например данные"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить файлы",
+			"displayName": "Файлы"
+		},
+		"message": {
+			"displayName": "Сообщение"
+		},
+		"responseType": {
+			"displayName": "Тип ответа",
+			"options": {
+				"approval": {
+					"displayName": "Одобрение",
+					"description": "Пользователь может одобрить/отклонить сообщение прямо в сообщении."
+				},
+				"freeText": {
+					"displayName": "Свободный текст",
+					"description": "Пользователь может отправить ответ через форму"
+				},
+				"customForm": {
+					"displayName": "Пользовательская форма",
+					"description": "Пользователь может отправить ответ через специальную форму"
+				}
+			}
+		},
+		"defineForm": {
+			"displayName": "Определить форму",
+			"options": {
+				"fields": {
+					"displayName": "Использование полей ниже"
+				},
+				"json": {
+					"displayName": "Использование JSON"
+				}
+			}
+		},
+		"jsonOutput": {
+			"displayName": "Поля формы",
+			"hint": "<a href=\"https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.form/\" target=\"_blank\">См. в документации </a> синтаксис полей."
+		},
+		"formFields": {
+			"options": {
+				"formFields": {
+					"displayName": "Элементы формы"
+				},
+				"values": {
+					"displayName": "Ценности",
+					"values": {
+						"fieldName": {
+							"displayName": "Имя настраиваемого поля",
+							"description": "Имя поля, используемое во входных атрибутах и ​​на которое ссылается рабочий процесс."
+						},
+						"fieldLabel": {
+							"displayName": "Имя поля",
+							"description": "Метка, которая появляется над полем ввода",
+							"placeholder": "например Как вас зовут?"
+						},
+						"fieldType": {
+							"displayName": "Тип элемента",
+							"description": "Тип поля, добавляемого в форму",
+							"options": {
+								"checkbox": {
+									"displayName": "Флажки"
+								},
+								"html": {
+									"displayName": "Пользовательский HTML"
+								},
+								"date": {
+									"displayName": "Дата"
+								},
+								"dropdown": {
+									"displayName": "Падать"
+								},
+								"email": {
+									"displayName": "Электронная почта"
+								},
+								"file": {
+									"displayName": "Файл"
+								},
+								"hiddenField": {
+									"displayName": "Скрытое поле"
+								},
+								"number": {
+									"displayName": "Число"
+								},
+								"password": {
+									"displayName": "Пароль"
+								},
+								"radio": {
+									"displayName": "Радиокнопки"
+								},
+								"text": {
+									"displayName": "Ввод текста"
+								},
+								"textarea": {
+									"displayName": "Текстовая область"
+								}
+							}
+						},
+						"elementName": {
+							"displayName": "Имя элемента",
+							"description": "Необязательное поле. Его можно использовать для включения HTML в выходные данные.",
+							"placeholder": "например раздел контента"
+						},
+						"placeholder": {
+							"displayName": "Заполнитель",
+							"description": "Пример текста для отображения внутри поля"
+						},
+						"defaultValue": {
+							"displayName": "Значение по умолчанию",
+							"description": "Значения по умолчанию, которые будут выбраны заранее. Должно соответствовать одному или нескольким меткам опций. Разделите несколько предварительно выбранных опций запятой."
+						},
+						"fieldValue": {
+							"displayName": "Значение поля",
+							"description": "Входное значение можно установить здесь или оно будет передано в качестве параметра запроса через имя поля, если значение не установлено."
+						},
+						"fieldOptions": {
+							"options": {
+								"fieldOptions": {
+									"displayName": "Радиокнопки",
+									"description": "Список опций, которые можно выбрать из раскрывающегося списка"
+								},
+								"values": {
+									"displayName": "Ценности",
+									"values": {
+										"option": {
+											"displayName": "Метка радиокнопки"
+										}
+									}
+								}
+							},
+							"placeholder": "Добавить переключатель",
+							"displayName": "Радиокнопки",
+							"description": "Список опций, которые можно выбрать из раскрывающегося списка"
+						},
+						"multiselectLegacyNotice": {
+							"displayName": "Множественный выбор является устаревшим вариантом, вместо этого используйте тип поля «Флажки» или «Переключатели»."
+						},
+						"multiselect": {
+							"displayName": "Множественный выбор",
+							"description": "Разрешить ли пользователю выбирать несколько вариантов из раскрывающегося списка"
+						},
+						"limitSelection": {
+							"displayName": "Ограничить выбор",
+							"options": {
+								"exact": {
+									"displayName": "Точный номер"
+								},
+								"range": {
+									"displayName": "Диапазон"
+								},
+								"unlimited": {
+									"displayName": "Безлимитный"
+								}
+							}
+						},
+						"numberOfSelections": {
+							"displayName": "Количество вариантов выбора"
+						},
+						"minSelections": {
+							"displayName": "Минимальный выбор"
+						},
+						"maxSelections": {
+							"displayName": "Максимальный выбор"
+						},
+						"html": {
+							"displayName": "HTML",
+							"description": "HTML-элементы для отображения на странице формы",
+							"hint": "Не принимает теги <code><script></code>, <code><style></code> или <code><input></code>."
+						},
+						"multipleFiles": {
+							"displayName": "Несколько файлов",
+							"description": "Разрешить ли пользователю выбирать несколько файлов из входного файла или только один"
+						},
+						"acceptFileTypes": {
+							"displayName": "Допустимые типы файлов",
+							"description": "Список разрешенных расширений файлов, разделенный запятыми",
+							"hint": "Оставьте пустым, чтобы разрешить все типы файлов.",
+							"placeholder": "например .jpg, .png"
+						},
+						"formatDate": {
+							"displayName": "Отображаемая дата форматируется на основе языкового стандарта браузера пользователя."
+						},
+						"requiredField": {
+							"displayName": "Обязательное поле",
+							"description": "Требовать ли от пользователя ввода значения в это поле перед отправкой формы"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить элемент формы",
+			"displayName": "Элементы формы",
+			"addOptionalFieldButtonText": "Добавить атрибуты"
+		},
+		"approvalOptions": {
+			"options": {
+				"approvalOptions": {
+					"displayName": "Варианты утверждения"
+				},
+				"values": {
+					"displayName": "Ценности",
+					"values": {
+						"approvalType": {
+							"displayName": "Тип одобрения",
+							"placeholder": "Добавить вариант",
+							"options": {
+								"single": {
+									"displayName": "Только утвердить"
+								},
+								"double": {
+									"displayName": "Одобрить и не одобрить"
+								}
+							}
+						},
+						"approveLabel": {
+							"displayName": "Метка кнопки «Утвердить»"
+						},
+						"disapproveLabel": {
+							"displayName": "Ярлык кнопки «Отклонить»"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить вариант",
+			"displayName": "Варианты утверждения"
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Новое название канала. Заполните это поле только в том случае, если вы хотите изменить название канала.",
+			"placeholder": "например новое-имя-канала"
+		},
+		"type": {
+			"displayName": "Тип",
+			"description": "Тип канала, который нужно создать",
+			"options": {
+				"0": {
+					"displayName": "Текст гильдии"
+				},
+				"2": {
+					"displayName": "Голос гильдии"
+				},
+				"4": {
+					"displayName": "Категория гильдии"
+				}
+			}
+		},
+		"after": {
+			"displayName": "После",
+			"description": "Идентификатор пользователя, после которого следует вернуть участников",
+			"placeholder": "например 786953432728469534"
+		},
+		"role": {
+			"displayName": "Роль",
+			"description": "Выберите роли, которые вы хотите добавить пользователю."
+		}
+	}
+}

@@ -1,0 +1,115 @@
+{
+	"header": {
+		"displayName": "Google Реклама",
+		"description": "Используйте API Google Рекламы"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"campaign": {
+					"displayName": "Кампания"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить множество кампаний, связанных с указанным аккаунтом"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить конкретную кампанию"
+				}
+			}
+		},
+		"campaigsNotice": {
+			"displayName": "Разделите имена полей, выраженные с помощью <i>micros</i>, на 1 000 000, чтобы получить фактическое значение."
+		},
+		"managerCustomerId": {
+			"displayName": "Идентификатор клиента менеджера",
+			"placeholder": "9998887777"
+		},
+		"clientCustomerId": {
+			"displayName": "Идентификатор клиента клиента",
+			"placeholder": "6665554444"
+		},
+		"campaignId": {
+			"displayName": "Идентификатор кампании",
+			"description": "Идентификатор кампании"
+		},
+		"additionalOptions": {
+			"displayName": "Дополнительные опции",
+			"description": "Дополнительные параметры для получения кампаний",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"dateRange": {
+					"displayName": "Диапазон дат",
+					"description": "Фильтрует статистику по периоду",
+					"options": {
+						"allTime": {
+							"displayName": "Все время",
+							"description": "Получить статистику за весь период"
+						},
+						"TODAY": {
+							"displayName": "Сегодня",
+							"description": "только сегодня"
+						},
+						"YESTERDAY": {
+							"displayName": "Вчера",
+							"description": "только вчера"
+						},
+						"LAST_7_DAYS": {
+							"displayName": "Последние 7 дней",
+							"description": "Последние 7 дней, не считая сегодняшнего дня"
+						},
+						"LAST_BUSINESS_WEEK": {
+							"displayName": "Последняя рабочая неделя",
+							"description": "Пятидневная рабочая неделя с понедельника по пятницу предыдущей рабочей недели."
+						},
+						"THIS_MONTH": {
+							"displayName": "В этом месяце",
+							"description": "Все дни текущего месяца"
+						},
+						"LAST_MONTH": {
+							"displayName": "В прошлом месяце",
+							"description": "Все дни предыдущего месяца"
+						},
+						"LAST_14_DAYS": {
+							"displayName": "Последние 14 дней",
+							"description": "Последние 14 дней, не считая сегодняшнего дня"
+						},
+						"LAST_30_DAYS": {
+							"displayName": "Последние 30 дней",
+							"description": "Последние 30 дней, не считая сегодняшнего дня"
+						}
+					}
+				},
+				"campaignStatus": {
+					"displayName": "Показать кампании по статусу",
+					"description": "Фильтрует кампании по статусу",
+					"options": {
+						"all": {
+							"displayName": "Все",
+							"description": "Получить все кампании независимо от статуса"
+						},
+						"ENABLED": {
+							"displayName": "Включено",
+							"description": "Фильтровать только активные кампании"
+						},
+						"PAUSED": {
+							"displayName": "Приостановлено",
+							"description": "Фильтровать только приостановленные кампании"
+						},
+						"REMOVED": {
+							"displayName": "Удаленный",
+							"description": "Фильтровать только удаленные кампании"
+						}
+					}
+				}
+			}
+		}
+	}
+}

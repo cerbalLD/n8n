@@ -27,7 +27,7 @@ import { useSSOStore } from '@/features/settings/sso/sso.store';
 import { useUsersStore } from '@/features/settings/users/users.store';
 import { useVersionsStore } from '@n8n/stores/versions.store';
 import { useBannersStore } from '@/features/shared/banners/banners.store';
-import { useI18n } from '@n8n/i18n';
+import { loadBuiltInLocale, useI18n } from '@n8n/i18n';
 import { useRootStore } from '@n8n/stores/useRootStore';
 import { h } from 'vue';
 import { useRolesStore } from '@n8n/stores/roles.store';
@@ -163,6 +163,7 @@ export async function initializeAuthenticatedFeatures(
 	}
 
 	if (rootStore.defaultLocale !== 'en') {
+		loadBuiltInLocale(rootStore.defaultLocale);
 		await nodeTypesStore.getNodeTranslationHeaders();
 	}
 

@@ -1,0 +1,296 @@
+{
+	"header": {
+		"displayName": "Окта",
+		"description": "Используйте Окта API"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"user": {
+					"displayName": "Пользователь"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать нового пользователя"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить существующего пользователя"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить подробную информацию о пользователе"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить много пользователей"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить существующего пользователя"
+				}
+			}
+		},
+		"userId": {
+			"displayName": "Пользователь",
+			"description": "Пользователь, над которым вы хотите работать. Выберите из списка или укажите идентификатор."
+		},
+		"firstName": {
+			"displayName": "Имя",
+			"placeholder": "например Натан"
+		},
+		"lastName": {
+			"displayName": "Фамилия",
+			"placeholder": "например Смит"
+		},
+		"login": {
+			"displayName": "Имя пользователя",
+			"hint": "Уникальный идентификатор пользователя (должен быть адресом электронной почты).",
+			"placeholder": "например nathan@example.com"
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"placeholder": "например nathan@example.com"
+		},
+		"activate": {
+			"displayName": "Активировать",
+			"description": "Активировать ли пользователя и разрешить ли доступ ко всем назначенным приложениям"
+		},
+		"getCreateFields": {
+			"displayName": "Поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"city": {
+					"displayName": "Город"
+				},
+				"costCenter": {
+					"displayName": "МВЗ"
+				},
+				"countryCode": {
+					"displayName": "Код страны"
+				},
+				"department": {
+					"displayName": "Отделение"
+				},
+				"displayName": {
+					"displayName": "Отображаемое имя"
+				},
+				"division": {
+					"displayName": "Разделение"
+				},
+				"employeeNumber": {
+					"displayName": "Номер сотрудника"
+				},
+				"honorificPrefix": {
+					"displayName": "Почетный префикс"
+				},
+				"honorificSuffix": {
+					"displayName": "Почетный суффикс"
+				},
+				"locale": {
+					"displayName": "Языковой стандарт"
+				},
+				"manager": {
+					"displayName": "Менеджер"
+				},
+				"managerId": {
+					"displayName": "идентификатор менеджера"
+				},
+				"middleName": {
+					"displayName": "Второе имя"
+				},
+				"mobilePhone": {
+					"displayName": "Мобильный телефон"
+				},
+				"nickName": {
+					"displayName": "Ник Имя"
+				},
+				"password": {
+					"displayName": "Пароль"
+				},
+				"organization": {
+					"displayName": "Организация"
+				},
+				"postalAddress": {
+					"displayName": "Почтовый адрес"
+				},
+				"preferredLanguage": {
+					"displayName": "Предпочитаемый язык"
+				},
+				"primaryPhone": {
+					"displayName": "Основной телефон"
+				},
+				"profileUrl": {
+					"displayName": "URL-адрес профиля"
+				},
+				"recoveryQuestionAnswer": {
+					"displayName": "Вопрос восстановления Ответ"
+				},
+				"recoveryQuestionQuestion": {
+					"displayName": "Вопрос по восстановлению Вопрос"
+				},
+				"secondEmail": {
+					"displayName": "Второе письмо"
+				},
+				"state": {
+					"displayName": "Состояние"
+				},
+				"streetAddress": {
+					"displayName": "Адрес улицы"
+				},
+				"timezone": {
+					"displayName": "Часовой пояс"
+				},
+				"title": {
+					"displayName": "Заголовок"
+				},
+				"userType": {
+					"displayName": "Тип пользователя"
+				},
+				"zipCode": {
+					"displayName": "Почтовый индекс"
+				}
+			}
+		},
+		"getUpdateFields": {
+			"displayName": "Поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"city": {
+					"displayName": "Город"
+				},
+				"costCenter": {
+					"displayName": "МВЗ"
+				},
+				"countryCode": {
+					"displayName": "Код страны"
+				},
+				"department": {
+					"displayName": "Отделение"
+				},
+				"displayName": {
+					"displayName": "Отображаемое имя"
+				},
+				"division": {
+					"displayName": "Разделение"
+				},
+				"email": {
+					"displayName": "Электронная почта",
+					"placeholder": "например nathan@example.com"
+				},
+				"employeeNumber": {
+					"displayName": "Номер сотрудника"
+				},
+				"firstName": {
+					"displayName": "Имя",
+					"placeholder": "например Натан"
+				},
+				"honorificPrefix": {
+					"displayName": "Почетный префикс"
+				},
+				"honorificSuffix": {
+					"displayName": "Почетный суффикс"
+				},
+				"lastName": {
+					"displayName": "Фамилия",
+					"placeholder": "например Смит"
+				},
+				"locale": {
+					"displayName": "Языковой стандарт"
+				},
+				"manager": {
+					"displayName": "Менеджер"
+				},
+				"managerId": {
+					"displayName": "идентификатор менеджера"
+				},
+				"middleName": {
+					"displayName": "Второе имя"
+				},
+				"mobilePhone": {
+					"displayName": "Мобильный телефон"
+				},
+				"nickName": {
+					"displayName": "Ник Имя"
+				},
+				"organization": {
+					"displayName": "Организация"
+				},
+				"password": {
+					"displayName": "Пароль"
+				},
+				"postalAddress": {
+					"displayName": "Почтовый адрес"
+				},
+				"preferredLanguage": {
+					"displayName": "Предпочитаемый язык"
+				},
+				"primaryPhone": {
+					"displayName": "Основной телефон"
+				},
+				"profileUrl": {
+					"displayName": "URL-адрес профиля"
+				},
+				"recoveryQuestionAnswer": {
+					"displayName": "Вопрос восстановления Ответ"
+				},
+				"recoveryQuestionQuestion": {
+					"displayName": "Вопрос по восстановлению Вопрос"
+				},
+				"secondEmail": {
+					"displayName": "Второе письмо"
+				},
+				"state": {
+					"displayName": "Состояние"
+				},
+				"streetAddress": {
+					"displayName": "Адрес улицы"
+				},
+				"timezone": {
+					"displayName": "Часовой пояс"
+				},
+				"title": {
+					"displayName": "Заголовок"
+				},
+				"userType": {
+					"displayName": "Тип пользователя"
+				},
+				"login": {
+					"displayName": "Имя пользователя",
+					"hint": "Уникальный идентификатор пользователя (должен быть адресом электронной почты).",
+					"placeholder": "например nathan@example.com"
+				},
+				"zipCode": {
+					"displayName": "Почтовый индекс"
+				}
+			}
+		},
+		"searchQuery": {
+			"displayName": "Поисковый запрос",
+			"hint": "Фильтруйте пользователей, используя разрешенный синтаксис. <a href=\"https://developer.okta.com/docs/reference/core-okta-api/#filter\" target=\"_blank\">Подробнее</a>.",
+			"placeholder": "например Profile.lastName SW \"Сми\""
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"simplify": {
+			"displayName": "Упрощать",
+			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+		},
+		"sendEmail": {
+			"displayName": "Отправить электронное письмо",
+			"description": "Отправлять ли электронное письмо о деактивации администратору"
+		}
+	}
+}

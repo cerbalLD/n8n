@@ -1,0 +1,920 @@
+{
+	"header": {
+		"displayName": "Webex от Cisco",
+		"description": "Использование API Cisco Webex"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"meeting": {
+					"displayName": "Встреча"
+				},
+				"message": {
+					"displayName": "Сообщение"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать"
+				},
+				"delete": {
+					"displayName": "Удалить"
+				},
+				"get": {
+					"displayName": "Получать"
+				},
+				"getAll": {
+					"displayName": "Получить много"
+				},
+				"update": {
+					"displayName": "Обновлять"
+				}
+			}
+		},
+		"title": {
+			"displayName": "Заголовок",
+			"description": "Название встречи. Длина заголовка может составлять не более 128 символов."
+		},
+		"start": {
+			"displayName": "Начинать",
+			"description": "Дата и время начала встречи. Приемлемый формат <a href=\"https://datatracker.ietf.org/doc/html/rfc2445\"> </a>."
+		},
+		"end": {
+			"displayName": "Конец",
+			"description": "Дата и время окончания встречи. Приемлемый формат <a href=\"https://datatracker.ietf.org/doc/html/rfc2445\"> </a>."
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"agenda": {
+					"displayName": "Повестка дня",
+					"description": "Повестка дня встречи. Длина повестки дня не может превышать 1300 символов."
+				},
+				"allowAnyUserToBeCoHost": {
+					"displayName": "Разрешить любому пользователю быть соорганизатором",
+					"description": "Разрешить ли любому участнику с учетной записью организатора на целевом сайте стать соорганизатором при присоединении к совещанию."
+				},
+				"allowAuthenticatedDevices": {
+					"displayName": "Разрешить аутентифицированные устройства",
+					"description": "Разрешить ли аутентифицированным видеоустройствам в организации собрания начинать собрание или присоединяться к нему без запроса"
+				},
+				"allowFirstUserToBeCoHost": {
+					"displayName": "Разрешить первому пользователю быть соорганизатором",
+					"description": "Разрешить ли первому участнику собрания с учетной записью организатора на целевом сайте стать соорганизатором"
+				},
+				"autoAcceptRequest": {
+					"displayName": "Автоматическое принятие запроса",
+					"description": "Будет ли запрос на регистрацию на собрание принят автоматически"
+				},
+				"enableConnectAudioBeforeHost": {
+					"displayName": "Включить подключение аудио перед хостом",
+					"description": "Разрешить ли любому участнику подключать аудио на собрании до того, как организатор присоединится к совещанию."
+				},
+				"enabledAutoRecordMeeting": {
+					"displayName": "Включена автоматическая запись собрания",
+					"description": "Будет ли встреча записываться автоматически"
+				},
+				"enabledJoinBeforeHost": {
+					"displayName": "Включено Присоединение перед хостом",
+					"description": "Разрешить ли любому участнику присоединиться к собранию до того, как к совещанию присоединится организатор."
+				},
+				"excludePassword": {
+					"displayName": "Исключить пароль",
+					"description": "Исключить ли пароль из приглашения на собрание по электронной почте"
+				},
+				"hostEmail": {
+					"displayName": "Электронная почта хоста",
+					"description": "Адрес электронной почты организатора собрания. Можно установить только в том случае, если вы являетесь администратором."
+				},
+				"integrationTags": {
+					"displayName": "Теги интеграции",
+					"description": "Внешние ключи, созданные приложением интеграции в его собственном домене. Это могут быть идентификаторы заявок Zendesk, идентификаторы Jira, идентификаторы возможностей Salesforce и т. д."
+				},
+				"inviteesUi": {
+					"values": {
+						"inviteesUi": {
+							"displayName": "Приглашенные"
+						},
+						"inviteeValues": {
+							"options": {
+								"email": {
+									"displayName": "Электронная почта",
+									"description": "Адрес электронной почты приглашенного на встречу",
+									"placeholder": "имя@email.com"
+								},
+								"displayName": {
+									"displayName": "Отображаемое имя",
+									"description": "Отображаемое имя приглашенного на встречу"
+								},
+								"coHost": {
+									"displayName": "Соведущий",
+									"description": "Разрешено ли приглашенному быть соорганизатором собрания"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить приглашенного",
+					"displayName": "Приглашенные",
+					"options": {
+						"inviteeValues": {
+							"displayName": "Приглашенный"
+						}
+					}
+				},
+				"joinBeforeHostMinutes": {
+					"displayName": "Присоединяйтесь до минут проведения",
+					"description": "Количество минут, за которое участник может присоединиться к собранию до начала собрания и присоединения организатора.",
+					"options": {
+						"0": {
+							"displayName": "0"
+						},
+						"5": {
+							"displayName": "5"
+						},
+						"10": {
+							"displayName": "10"
+						},
+						"15": {
+							"displayName": "15"
+						}
+					}
+				},
+				"publicMeeting": {
+					"displayName": "Общественное собрание",
+					"description": "Разрешить или запретить включение собрания в общедоступный календарь"
+				},
+				"recurrence": {
+					"displayName": "Повторение",
+					"description": "Правило того, как должна повторяться встреча. Приемлемый формат <a href=\"https://datatracker.ietf.org/doc/html/rfc2445\"> </a>."
+				},
+				"requireRegistrationInfo": {
+					"displayName": "Необходимая регистрационная информация",
+					"description": "Данные необходимые для регистрации на встречу",
+					"options": {
+						"requireFirstName": {
+							"displayName": "Требовать имя"
+						},
+						"requireLastName": {
+							"displayName": "Требовать фамилию"
+						},
+						"requireEmail": {
+							"displayName": "Требовать электронную почту"
+						},
+						"requireJobTitle": {
+							"displayName": "Требовать должность"
+						},
+						"requireCompanyName": {
+							"displayName": "Требовать название компании"
+						},
+						"requireAddress1": {
+							"displayName": "Требовать адрес 1"
+						},
+						"requireAddress2": {
+							"displayName": "Требовать адрес 2"
+						},
+						"requireCity": {
+							"displayName": "Требовать город"
+						},
+						"requireState": {
+							"displayName": "Требовать состояние"
+						},
+						"requireZipCode": {
+							"displayName": "Требовать почтовый индекс"
+						},
+						"requireCountryRegion": {
+							"displayName": "Требовать регион страны"
+						},
+						"requireWorkPhone": {
+							"displayName": "Требовать рабочий телефон"
+						},
+						"requireFax": {
+							"displayName": "Требовать факс"
+						}
+					}
+				},
+				"reminderTime": {
+					"displayName": "Время напоминания",
+					"description": "Количество минут до начала собрания для отправки напоминания по электронной почте организатору."
+				},
+				"sendEmail": {
+					"displayName": "Отправить электронное письмо",
+					"description": "Отправлять ли электронные письма организатору и приглашенным"
+				},
+				"siteUrl": {
+					"displayName": "URL-адрес сайта",
+					"description": "URL-адрес веб-сайта Webex, на котором создано совещание. Если не указано, собрание создается на предпочитаемом пользователем сайте. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"attachmentsUi": {
+					"values": {
+						"attachmentsUi": {
+							"displayName": "Вложения"
+						},
+						"attachmentValues": {
+							"options": {
+								"elementsUi": {
+									"values": {
+										"elementsUi": {
+											"displayName": "Элементы"
+										},
+										"elementValues": {
+											"options": {
+												"type": {
+													"displayName": "Тип",
+													"options": {
+														"textBlock": {
+															"displayName": "Текстовый блок"
+														},
+														"inputText": {
+															"displayName": "Введите текст"
+														}
+													}
+												},
+												"text": {
+													"displayName": "Текст",
+													"description": "Текст для отображения. Поддерживается подмножество уценки (https://aka.ms/ACTextFeatures)."
+												},
+												"color": {
+													"displayName": "Цвет",
+													"description": "Цвет элемента TextBlock",
+													"options": {
+														"accent": {
+															"displayName": "Акцент"
+														},
+														"attention": {
+															"displayName": "Внимание"
+														},
+														"dark": {
+															"displayName": "Темный"
+														},
+														"default": {
+															"displayName": "По умолчанию"
+														},
+														"good": {
+															"displayName": "Хороший"
+														},
+														"light": {
+															"displayName": "Свет"
+														},
+														"warning": {
+															"displayName": "Предупреждение"
+														}
+													}
+												},
+												"fontType": {
+													"displayName": "Тип шрифта",
+													"description": "Тип шрифта, используемый для рендеринга",
+													"options": {
+														"default": {
+															"displayName": "По умолчанию"
+														},
+														"monospace": {
+															"displayName": "Моноширинный"
+														}
+													}
+												},
+												"horizontalAlignment": {
+													"displayName": "Горизонтальное выравнивание",
+													"description": "Управляет горизонтальным выравниванием текста",
+													"options": {
+														"left": {
+															"displayName": "Левый"
+														},
+														"center": {
+															"displayName": "Центр"
+														},
+														"right": {
+															"displayName": "Верно"
+														}
+													}
+												},
+												"isSubtle": {
+													"displayName": "Тонкий",
+													"description": "Отображать ли текст слегка смягченным, чтобы он казался менее заметным"
+												},
+												"maxLines": {
+													"displayName": "Макс Лайнс",
+													"description": "Указывает максимальное количество отображаемых строк."
+												},
+												"size": {
+													"displayName": "Размер",
+													"description": "Управляет размером текста",
+													"options": {
+														"default": {
+															"displayName": "По умолчанию"
+														},
+														"extraLarge": {
+															"displayName": "Очень большой"
+														},
+														"large": {
+															"displayName": "Большой"
+														},
+														"medium": {
+															"displayName": "Середина"
+														},
+														"small": {
+															"displayName": "Маленький"
+														}
+													}
+												},
+												"weight": {
+													"displayName": "Масса",
+													"description": "Управляет весом элементов TextBlock.",
+													"options": {
+														"default": {
+															"displayName": "По умолчанию"
+														},
+														"lighter": {
+															"displayName": "Зажигалка"
+														},
+														"bolder": {
+															"displayName": "смелее"
+														}
+													}
+												},
+												"wrap": {
+													"displayName": "Сворачивать",
+													"description": "Разрешить ли перенос текста. В противном случае текст обрезается."
+												},
+												"height": {
+													"displayName": "Высота",
+													"description": "Определяет высоту элемента",
+													"options": {
+														"auto": {
+															"displayName": "Авто"
+														},
+														"stretch": {
+															"displayName": "Потягиваться"
+														}
+													}
+												},
+												"separator": {
+													"displayName": "Сепаратор",
+													"description": "Следует ли рисовать разделительную линию вверху элемента."
+												},
+												"spacing": {
+													"displayName": "Расстояние",
+													"description": "Управляет расстоянием между этим элементом и предыдущим элементом.",
+													"options": {
+														"default": {
+															"displayName": "По умолчанию"
+														},
+														"extraLarge": {
+															"displayName": "Очень большой"
+														},
+														"large": {
+															"displayName": "Большой"
+														},
+														"medium": {
+															"displayName": "Середина"
+														},
+														"none": {
+															"displayName": "Никто"
+														},
+														"padding": {
+															"displayName": "Заполнение"
+														},
+														"small": {
+															"displayName": "Маленький"
+														}
+													}
+												},
+												"id": {
+													"displayName": "ID",
+													"description": "Уникальный идентификатор значения. Используется для идентификации собранных входных данных при выполнении действия «Отправить»."
+												},
+												"isVisible": {
+													"displayName": "Виден",
+													"description": "Будет ли этот элемент удален из визуальных деревьев"
+												},
+												"isMultiline": {
+													"displayName": "Многострочный",
+													"description": "Разрешить ли ввод нескольких строк ввода"
+												},
+												"maxLength": {
+													"displayName": "Максимальная длина",
+													"description": "Подсказка о максимальной длине символов для сбора (некоторые клиенты могут игнорировать)"
+												},
+												"placeholder": {
+													"displayName": "Заполнитель",
+													"description": "Описание желаемого ввода. Отображается, когда текст не введен."
+												},
+												"regex": {
+													"displayName": "регулярное выражение",
+													"description": "Регулярное выражение, указывающее необходимый формат данного текстового ввода"
+												},
+												"style": {
+													"displayName": "Стиль",
+													"description": "Подсказка стиля для ввода текста",
+													"options": {
+														"text": {
+															"displayName": "Текст"
+														},
+														"tel": {
+															"displayName": "Тел."
+														},
+														"url": {
+															"displayName": "URL"
+														},
+														"email": {
+															"displayName": "Электронная почта"
+														}
+													}
+												},
+												"value": {
+													"displayName": "Ценить",
+													"description": "Начальное значение для этого поля"
+												}
+											}
+										}
+									},
+									"placeholder": "Добавить элемент",
+									"displayName": "Элементы",
+									"options": {
+										"elementValues": {
+											"displayName": "Элемент"
+										}
+									}
+								},
+								"actionsUi": {
+									"values": {
+										"actionsUi": {
+											"displayName": "Действия"
+										},
+										"actionValues": {
+											"options": {
+												"type": {
+													"displayName": "Тип",
+													"options": {
+														"execute": {
+															"displayName": "Выполнять"
+														},
+														"openUrl": {
+															"displayName": "Открыть URL-адрес"
+														},
+														"submit": {
+															"displayName": "Представлять на рассмотрение"
+														}
+													}
+												},
+												"url": {
+													"displayName": "URL",
+													"description": "URL-адрес для открытия"
+												},
+												"data": {
+													"displayName": "Данные",
+													"description": "Любые дополнительные данные для передачи. По сути, это «скрытые» свойства."
+												},
+												"verb": {
+													"displayName": "Глагол",
+													"description": "Определенный автором карты глагол, связанный с этим действием."
+												},
+												"title": {
+													"displayName": "Заголовок",
+													"description": "Метка кнопки или ссылки, представляющей это действие"
+												},
+												"iconUrl": {
+													"displayName": "URL-адрес значка",
+													"description": "Дополнительный значок, который будет отображаться в действии вместе с заголовком. Поддерживает URI данных в версии 1.2+."
+												},
+												"style": {
+													"displayName": "Стиль",
+													"description": "Управляет стилем действия, который влияет на то, как действие отображается, произносится и т. д.",
+													"options": {
+														"default": {
+															"displayName": "По умолчанию"
+														},
+														"positive": {
+															"displayName": "Позитивный"
+														},
+														"destructive": {
+															"displayName": "Разрушительный"
+														}
+													}
+												}
+											}
+										}
+									},
+									"placeholder": "Добавить действие",
+									"displayName": "Действия",
+									"options": {
+										"actionValues": {
+											"displayName": "Действие"
+										}
+									}
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить вложение",
+					"displayName": "Вложения",
+					"options": {
+						"attachmentValues": {
+							"displayName": "Вложение"
+						}
+					}
+				},
+				"fileUi": {
+					"values": {
+						"fileUi": {
+							"displayName": "Файл"
+						},
+						"fileValue": {
+							"options": {
+								"fileLocation": {
+									"displayName": "Расположение файла",
+									"options": {
+										"url": {
+											"displayName": "URL"
+										},
+										"binaryData": {
+											"displayName": "Двоичный файл"
+										}
+									}
+								},
+								"binaryPropertyName": {
+									"displayName": "Поле ввода с файлом",
+									"description": "Поле во входных данных узла, содержащее данные двоичного файла."
+								},
+								"url": {
+									"displayName": "URL",
+									"description": "Публичный URL-адрес файла"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить файл",
+					"displayName": "Файл",
+					"options": {
+						"fileValue": {
+							"displayName": "Файл"
+						}
+					}
+				},
+				"markdown": {
+					"displayName": "Уценка",
+					"description": "Сообщение в формате уценки. При использовании параметр text используется для предоставления альтернативного текста для клиентов пользовательского интерфейса, которые не поддерживают форматированный текст."
+				}
+			}
+		},
+		"meetingId": {
+			"displayName": "Идентификатор встречи",
+			"description": "идентификатор встречи"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"hostEmail": {
+					"displayName": "Электронная почта хоста",
+					"description": "Адрес электронной почты организатора собрания. Этот параметр используется только в том случае, если пользователь или приложение, вызывающее API, имеет области уровня администратора."
+				},
+				"sendEmail": {
+					"displayName": "Отправить электронное письмо",
+					"description": "Следует ли отправлять электронные письма организатору и приглашенным. Это необязательное поле, и значение по умолчанию — true."
+				},
+				"password": {
+					"displayName": "Пароль",
+					"description": "Пароль встречи. Это необходимо, если собрание защищено паролем и у текущего пользователя нет прав на его просмотр, если он не является организатором, соорганизатором или приглашенным на собрание."
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"from": {
+					"displayName": "От",
+					"description": "Дата и время начала (включительно) встречи. Приемлемый формат <a href=\"https://datatracker.ietf.org/doc/html/rfc2445\"> </a>."
+				},
+				"hostEmail": {
+					"displayName": "Электронная почта хоста",
+					"description": "Адрес электронной почты организатора встречи"
+				},
+				"integrationTag": {
+					"displayName": "Интеграционный тег",
+					"description": "Внешний тег, созданный другим приложением, например. Идентификатор билета Zendesk или идентификатор Jira"
+				},
+				"current": {
+					"displayName": "Ограничить текущими собраниями",
+					"description": "Возвращать ли только текущую встречу или все встречи"
+				},
+				"meetingNumber": {
+					"displayName": "Номер встречи",
+					"description": "Номер встречи для запрашиваемых объектов встречи"
+				},
+				"meetingType": {
+					"displayName": "Тип встречи",
+					"options": {
+						"meetingSeries": {
+							"displayName": "Серия встреч",
+							"description": "Мастер запланированной серии собраний, состоящей из одного или нескольких запланированных собраний на основе правила повторения."
+						},
+						"scheduledMeeting": {
+							"displayName": "Запланированная встреча",
+							"description": "Экземпляр из серии основных совещаний"
+						},
+						"meeting": {
+							"displayName": "Встреча",
+							"description": "Экземпляр собрания, которое действительно происходит или уже произошло"
+						}
+					}
+				},
+				"participantEmail": {
+					"displayName": "Электронная почта участника",
+					"description": "Электронная почта человека, который должен быть участником встречи"
+				},
+				"siteUrl": {
+					"displayName": "URL-адрес сайта",
+					"description": "URL-адрес сайта Webex, с которого API перечисляет совещания. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"state": {
+					"displayName": "Состояние",
+					"description": "Состояние встречи для запрашиваемых объектов встречи",
+					"options": {
+						"active": {
+							"displayName": "Активный"
+						},
+						"ended": {
+							"displayName": "Закончено"
+						},
+						"expired": {
+							"displayName": "Истекший"
+						},
+						"inProgress": {
+							"displayName": "В ходе выполнения"
+						},
+						"lobby": {
+							"displayName": "Лобби"
+						},
+						"missed": {
+							"displayName": "Пропущенный"
+						},
+						"ready": {
+							"displayName": "Готовый"
+						},
+						"scheduled": {
+							"displayName": "Запланировано"
+						}
+					}
+				},
+				"to": {
+					"displayName": "К",
+					"description": "Дата и время окончания (включительно) собрания. Приемлемый формат <a href=\"https://datatracker.ietf.org/doc/html/rfc2445\"> </a>."
+				},
+				"webLink": {
+					"displayName": "Веб-ссылка",
+					"description": "URL-кодированная ссылка на информационную страницу для запрашиваемых объектов собрания"
+				},
+				"before": {
+					"displayName": "До",
+					"description": "Список сообщений, отправленных до определенной даты и времени"
+				},
+				"beforeMessage": {
+					"displayName": "Перед сообщением",
+					"description": "Список сообщений, отправленных перед сообщением, по идентификатору"
+				},
+				"parentId": {
+					"displayName": "Идентификатор родительского сообщения",
+					"description": "Список сообщений с родителем по идентификатору"
+				},
+				"mentionedPeople": {
+					"displayName": "Упомянутое лицо",
+					"description": "Перечисляйте только сообщения с упоминанием определенного человека. Введите их идентификатор. Вы можете использовать слово «я» как сокращение для себя."
+				}
+			}
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"agenda": {
+					"displayName": "Повестка дня",
+					"description": "Повестка дня встречи. Не может быть длиннее 1300 символов."
+				},
+				"allowAnyUserToBeCoHost": {
+					"displayName": "Разрешить любому пользователю быть соорганизатором",
+					"description": "Разрешить ли любому участнику с учетной записью организатора на целевом сайте стать соорганизатором при присоединении к совещанию."
+				},
+				"allowAuthenticatedDevices": {
+					"displayName": "Разрешить аутентифицированные устройства",
+					"description": "Разрешить ли аутентифицированным видеоустройствам в организации собрания начинать собрание или присоединяться к нему без запроса"
+				},
+				"allowFirstUserToBeCoHost": {
+					"displayName": "Разрешить первому пользователю быть соорганизатором",
+					"description": "Разрешить ли первому участнику собрания с учетной записью организатора на целевом сайте стать соорганизатором"
+				},
+				"enableConnectAudioBeforeHost": {
+					"displayName": "Включить подключение аудио перед хостом",
+					"description": "Разрешить ли любому участнику подключать аудио на собрании до того, как организатор присоединится к совещанию."
+				},
+				"enabledAutoRecordMeeting": {
+					"displayName": "Включена автоматическая запись собрания",
+					"description": "Будет ли встреча записываться автоматически"
+				},
+				"enabledJoinBeforeHost": {
+					"displayName": "Включено Присоединение перед хостом",
+					"description": "Разрешить ли любому участнику присоединиться к собранию до того, как к совещанию присоединится организатор."
+				},
+				"end": {
+					"displayName": "Конец",
+					"description": "Дата и время окончания встречи. Приемлемый формат <a href=\"https://datatracker.ietf.org/doc/html/rfc2445\"> </a>."
+				},
+				"excludePassword": {
+					"displayName": "Исключить пароль",
+					"description": "Исключить ли пароль из приглашения на собрание по электронной почте"
+				},
+				"hostEmail": {
+					"displayName": "Электронная почта хоста",
+					"description": "Адрес электронной почты организатора собрания. Этот атрибут следует устанавливать только в том случае, если пользователь или приложение, вызывающее API, имеет области уровня администратора."
+				},
+				"inviteesUi": {
+					"values": {
+						"inviteesUi": {
+							"displayName": "Приглашенные"
+						},
+						"inviteeValues": {
+							"options": {
+								"email": {
+									"displayName": "Электронная почта",
+									"description": "Адрес электронной почты приглашенного на встречу",
+									"placeholder": "имя@email.com"
+								},
+								"displayName": {
+									"displayName": "Отображаемое имя",
+									"description": "Отображаемое имя приглашенного на встречу"
+								},
+								"coHost": {
+									"displayName": "Соведущий",
+									"description": "Разрешено ли приглашенному быть соорганизатором собрания"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить приглашенного",
+					"displayName": "Приглашенные",
+					"options": {
+						"inviteeValues": {
+							"displayName": "Приглашенный"
+						}
+					}
+				},
+				"joinBeforeHostMinutes": {
+					"displayName": "Присоединяйтесь до минут проведения",
+					"description": "Количество минут, за которое участник может присоединиться к собранию до начала собрания и присоединения организатора.",
+					"options": {
+						"0": {
+							"displayName": "0"
+						},
+						"5": {
+							"displayName": "5"
+						},
+						"10": {
+							"displayName": "10"
+						},
+						"15": {
+							"displayName": "15"
+						}
+					}
+				},
+				"password": {
+					"displayName": "Пароль",
+					"description": "Пароль встречи. Должен соответствовать настройкам сложности пароля сайта. Если не указано, случайный пароль, соответствующий правилам пароля сайта, будет сгенерирован автоматически."
+				},
+				"publicMeeting": {
+					"displayName": "Общественное собрание",
+					"description": "Разрешить или запретить включение собрания в общедоступный календарь"
+				},
+				"recurrence": {
+					"displayName": "Повторение",
+					"description": "Правило повторения серии собраний (в соответствии с RFC 2445), применимое только к серии собраний"
+				},
+				"requireRegistrationInfo": {
+					"displayName": "Необходимая регистрационная информация",
+					"description": "Данные необходимые для регистрации на встречу",
+					"options": {
+						"requireFirstName": {
+							"displayName": "Требовать имя"
+						},
+						"requireLastName": {
+							"displayName": "Требовать фамилию"
+						},
+						"requireEmail": {
+							"displayName": "Требовать электронную почту"
+						},
+						"requireJobTitle": {
+							"displayName": "Требовать должность"
+						},
+						"requireCompanyName": {
+							"displayName": "Требовать название компании"
+						},
+						"requireAddress1": {
+							"displayName": "Требовать адрес 1"
+						},
+						"requireAddress2": {
+							"displayName": "Требовать адрес 2"
+						},
+						"requireCity": {
+							"displayName": "Требовать город"
+						},
+						"requireState": {
+							"displayName": "Требовать состояние"
+						},
+						"requireZipCode": {
+							"displayName": "Требовать почтовый индекс"
+						},
+						"requireCountryRegion": {
+							"displayName": "Требовать регион страны"
+						},
+						"requireWorkPhone": {
+							"displayName": "Требовать рабочий телефон"
+						},
+						"requireFax": {
+							"displayName": "Требовать факс"
+						}
+					}
+				},
+				"reminderTime": {
+					"displayName": "Время напоминания",
+					"description": "Количество минут до начала собрания для отправки напоминания по электронной почте организатору."
+				},
+				"sendEmail": {
+					"displayName": "Отправить электронное письмо",
+					"description": "Следует ли отправлять электронные письма организатору и приглашенным. Это необязательное поле, и значение по умолчанию — true."
+				},
+				"siteUrl": {
+					"displayName": "URL-адрес сайта",
+					"description": "URL-адрес веб-сайта Webex, на котором создано совещание. Если не указано, собрание создается на предпочитаемом пользователем сайте. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"start": {
+					"displayName": "Начинать",
+					"description": "Дата и время начала встречи. Приемлемый формат <a href=\"https://datatracker.ietf.org/doc/html/rfc2445\"> </a>."
+				},
+				"title": {
+					"displayName": "Заголовок",
+					"description": "Название встречи"
+				}
+			}
+		},
+		"destination": {
+			"displayName": "Место назначения",
+			"options": {
+				"room": {
+					"displayName": "Комната"
+				},
+				"person": {
+					"displayName": "Человек"
+				}
+			}
+		},
+		"roomId": {
+			"displayName": "Название или идентификатор комнаты",
+			"description": "Список сообщений в комнате по идентификатору. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"specifyPersonBy": {
+			"displayName": "Укажите человека по",
+			"options": {
+				"email": {
+					"displayName": "Электронная почта"
+				},
+				"id": {
+					"displayName": "ID"
+				}
+			}
+		},
+		"toPersonId": {
+			"displayName": "Идентификатор человека"
+		},
+		"toPersonEmail": {
+			"displayName": "Электронная почта человека"
+		},
+		"text": {
+			"displayName": "Текст",
+			"description": "Сообщение в виде обычного текста"
+		},
+		"messageId": {
+			"displayName": "Идентификатор сообщения",
+			"description": "Идентификатор сообщения для обновления"
+		},
+		"markdown": {
+			"displayName": "Является ли уценка",
+			"description": "Использует ли сообщение уценку"
+		},
+		"markdownText": {
+			"displayName": "Уценка",
+			"description": "Сообщение в формате Markdown. Максимальная длина сообщения составляет 7439 байт."
+		}
+	}
+}

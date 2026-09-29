@@ -1,0 +1,486 @@
+{
+	"header": {
+		"displayName": "Ждать",
+		"description": "Подождите, прежде чем продолжить выполнение"
+	},
+	"nodeView": {
+		"resume": {
+			"displayName": "Резюме",
+			"description": "Определяет режим ожидания, который следует использовать перед продолжением рабочего процесса.",
+			"options": {
+				"timeInterval": {
+					"displayName": "После временного интервала",
+					"description": "Ждет определенное время"
+				},
+				"specificTime": {
+					"displayName": "В указанное время",
+					"description": "Ожидает определенной даты и времени, чтобы продолжить"
+				},
+				"webhook": {
+					"displayName": "При вызове через вебхук",
+					"description": "Прежде чем продолжить, ожидает вызова веб-перехватчика."
+				},
+				"form": {
+					"displayName": "При отправке формы",
+					"description": "Прежде чем продолжить, ожидает отправки формы."
+				}
+			}
+		},
+		"incomingAuthentication": {
+			"displayName": "Аутентификация",
+			"description": "Если и каким образом входящие запросы резюме-вебхука к $execution.resumeUrl должны аутентифицироваться для дополнительной безопасности",
+			"options": {
+				"basicAuth": {
+					"displayName": "Базовая аутентификация"
+				},
+				"none": {
+					"displayName": "Никто"
+				},
+				"headerAuth": {
+					"displayName": "Аутентификация заголовка"
+				},
+				"jwtAuth": {
+					"displayName": "JWT-аутентификация"
+				}
+			}
+		},
+		"dateTime": {
+			"displayName": "Дата и время",
+			"description": "Дата и время ожидания, прежде чем продолжить"
+		},
+		"amount": {
+			"displayName": "Сумма ожидания",
+			"description": "Время ждать"
+		},
+		"unit": {
+			"displayName": "Подождите",
+			"description": "Единица времени значения суммы ожидания.",
+			"options": {
+				"seconds": {
+					"displayName": "Секунды"
+				},
+				"minutes": {
+					"displayName": "Минуты"
+				},
+				"hours": {
+					"displayName": "Часы"
+				},
+				"days": {
+					"displayName": "Дни"
+				}
+			}
+		},
+		"webhookNotice": {
+			"displayName": "URL-адрес веб-перехватчика будет создан во время выполнения. На него можно ссылаться с помощью переменной <strong>$execution.resumeUrl__N8N_TOKEN_1__. Отправьте его куда-нибудь, прежде чем добраться до этого узла. <a href=\"https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.wait/?utm_source=n8n_app&utm_medium=node_settings_modal-credential_link&utm_campaign=n8n-nodes-base.wait\" target=\"_blank\">Подробнее</a>"
+		},
+		"formNotice": {
+			"displayName": "URL-адрес формы будет сгенерирован во время выполнения. На него можно ссылаться с помощью переменной <strong>$execution.resumeFormUrl__N8N_TOKEN_1__. Отправьте его куда-нибудь, прежде чем добраться до этого узла. <a href=\"https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.wait/?utm_source=n8n_app&utm_medium=node_settings_modal-credential_link&utm_campaign=n8n-nodes-base.wait\" target=\"_blank\">Подробнее</a>"
+		},
+		"formTitle": {
+			"displayName": "Название формы",
+			"description": "Отображается вверху формы",
+			"placeholder": "например Связаться с нами"
+		},
+		"formDescription": {
+			"displayName": "Описание формы",
+			"description": "Отображается под заголовком формы. Может использоваться для подсказки пользователю о том, как заполнить форму. Принимает HTML. Не принимает теги <code><script></code>, <code><style></code> или <code><input></code>.",
+			"placeholder": "например Мы скоро свяжемся с вами"
+		},
+		"formFields": {
+			"options": {
+				"formFields": {
+					"displayName": "Элементы формы"
+				},
+				"values": {
+					"displayName": "Ценности",
+					"values": {
+						"fieldName": {
+							"displayName": "Имя настраиваемого поля",
+							"description": "Имя поля, используемое во входных атрибутах и ​​на которое ссылается рабочий процесс."
+						},
+						"fieldLabel": {
+							"displayName": "Имя поля",
+							"description": "Метка, которая появляется над полем ввода",
+							"placeholder": "например Как вас зовут?"
+						},
+						"fieldType": {
+							"displayName": "Тип элемента",
+							"description": "Тип поля, добавляемого в форму",
+							"options": {
+								"checkbox": {
+									"displayName": "Флажки"
+								},
+								"html": {
+									"displayName": "Пользовательский HTML"
+								},
+								"date": {
+									"displayName": "Дата"
+								},
+								"dropdown": {
+									"displayName": "Падать"
+								},
+								"email": {
+									"displayName": "Электронная почта"
+								},
+								"file": {
+									"displayName": "Файл"
+								},
+								"hiddenField": {
+									"displayName": "Скрытое поле"
+								},
+								"number": {
+									"displayName": "Число"
+								},
+								"password": {
+									"displayName": "Пароль"
+								},
+								"radio": {
+									"displayName": "Радиокнопки"
+								},
+								"text": {
+									"displayName": "Ввод текста"
+								},
+								"textarea": {
+									"displayName": "Текстовая область"
+								}
+							}
+						},
+						"elementName": {
+							"displayName": "Имя элемента",
+							"description": "Необязательное поле. Его можно использовать для включения HTML в выходные данные.",
+							"placeholder": "например раздел контента"
+						},
+						"placeholder": {
+							"displayName": "Заполнитель",
+							"description": "Пример текста для отображения внутри поля"
+						},
+						"defaultValue": {
+							"displayName": "Значение по умолчанию",
+							"description": "Значения по умолчанию, которые будут выбраны заранее. Должно соответствовать одному или нескольким меткам опций. Разделите несколько предварительно выбранных опций запятой."
+						},
+						"fieldValue": {
+							"displayName": "Значение поля",
+							"description": "Входное значение можно установить здесь или оно будет передано в качестве параметра запроса через имя поля, если значение не установлено."
+						},
+						"fieldOptions": {
+							"options": {
+								"fieldOptions": {
+									"displayName": "Радиокнопки",
+									"description": "Список опций, которые можно выбрать из раскрывающегося списка"
+								},
+								"values": {
+									"displayName": "Ценности",
+									"values": {
+										"option": {
+											"displayName": "Метка радиокнопки"
+										}
+									}
+								}
+							},
+							"placeholder": "Добавить переключатель",
+							"displayName": "Радиокнопки",
+							"description": "Список опций, которые можно выбрать из раскрывающегося списка"
+						},
+						"multiselectLegacyNotice": {
+							"displayName": "Множественный выбор является устаревшим вариантом, вместо этого используйте тип поля «Флажки» или «Переключатели»."
+						},
+						"multiselect": {
+							"displayName": "Множественный выбор",
+							"description": "Разрешить ли пользователю выбирать несколько вариантов из раскрывающегося списка"
+						},
+						"limitSelection": {
+							"displayName": "Ограничить выбор",
+							"options": {
+								"exact": {
+									"displayName": "Точный номер"
+								},
+								"range": {
+									"displayName": "Диапазон"
+								},
+								"unlimited": {
+									"displayName": "Безлимитный"
+								}
+							}
+						},
+						"numberOfSelections": {
+							"displayName": "Количество вариантов выбора"
+						},
+						"minSelections": {
+							"displayName": "Минимальный выбор"
+						},
+						"maxSelections": {
+							"displayName": "Максимальный выбор"
+						},
+						"html": {
+							"displayName": "HTML",
+							"description": "HTML-элементы для отображения на странице формы",
+							"hint": "Не принимает теги <code><script></code>, <code><style></code> или <code><input></code>."
+						},
+						"multipleFiles": {
+							"displayName": "Несколько файлов",
+							"description": "Разрешить ли пользователю выбирать несколько файлов из входного файла или только один"
+						},
+						"acceptFileTypes": {
+							"displayName": "Допустимые типы файлов",
+							"description": "Список разрешенных расширений файлов, разделенный запятыми",
+							"hint": "Оставьте пустым, чтобы разрешить все типы файлов.",
+							"placeholder": "например .jpg, .png"
+						},
+						"formatDate": {
+							"displayName": "Отображаемая дата форматируется на основе языкового стандарта браузера пользователя."
+						},
+						"requiredField": {
+							"displayName": "Обязательное поле",
+							"description": "Требовать ли от пользователя ввода значения в это поле перед отправкой формы"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить элемент формы",
+			"displayName": "Элементы формы"
+		},
+		"responseMode": {
+			"displayName": "Отвечать",
+			"description": "Когда и как реагировать на вебхук",
+			"options": {
+				"onReceived": {
+					"displayName": "Немедленно",
+					"description": "Как только этот узел выполнится"
+				},
+				"lastNode": {
+					"displayName": "Когда завершается последний узел",
+					"description": "Возвращает данные последнего выполненного узла"
+				},
+				"responseNode": {
+					"displayName": "Использование узла «Ответить на веб-перехватчик»",
+					"description": "Ответ определен в этом узле"
+				}
+			}
+		},
+		"httpMethod": {
+			"displayName": "HTTP-метод",
+			"description": "HTTP-метод вызова Webhook",
+			"options": {
+				"DELETE": {
+					"displayName": "DELETE"
+				},
+				"GET": {
+					"displayName": "GET"
+				},
+				"HEAD": {
+					"displayName": "HEAD"
+				},
+				"PATCH": {
+					"displayName": "PATCH"
+				},
+				"POST": {
+					"displayName": "POST"
+				},
+				"PUT": {
+					"displayName": "PUT"
+				}
+			}
+		},
+		"responseCode": {
+			"displayName": "Код ответа",
+			"description": "Код HTTP-ответа для возврата"
+		},
+		"responseData": {
+			"displayName": "Данные ответа",
+			"description": "Какие данные следует вернуть. Если он должен возвращать все элементы в виде массива или только первый элемент в качестве объекта.",
+			"options": {
+				"allEntries": {
+					"displayName": "Все записи",
+					"description": "Возвращает все записи последнего узла. Всегда возвращает массив."
+				},
+				"firstEntryJson": {
+					"displayName": "Первая запись JSON",
+					"description": "Возвращает данные JSON первой записи последнего узла. Всегда возвращает объект JSON."
+				},
+				"firstEntryBinary": {
+					"displayName": "Первая запись двоичного файла",
+					"description": "Возвращает двоичные данные первой записи последнего узла. Всегда возвращает двоичный файл."
+				},
+				"noData": {
+					"displayName": "Нет тела ответа",
+					"description": "Возвращается без тела"
+				}
+			}
+		},
+		"responseBinaryPropertyName": {
+			"displayName": "Имя свойства",
+			"description": "Имя возвращаемого двоичного свойства"
+		},
+		"limitWaitTime": {
+			"displayName": "Ограничить время ожидания",
+			"description": "Ограничить ли время, в течение которого этот узел должен ждать ответа пользователя, прежде чем возобновится выполнение."
+		},
+		"limitType": {
+			"displayName": "Тип лимита",
+			"description": "Устанавливает условие возобновления выполнения. Может быть указанная дата или через некоторое время.",
+			"options": {
+				"afterTimeInterval": {
+					"displayName": "После временного интервала",
+					"description": "Ждет определенное время"
+				},
+				"atSpecifiedTime": {
+					"displayName": "В указанное время",
+					"description": "Ожидает установленной даты и времени, чтобы продолжить"
+				}
+			}
+		},
+		"resumeAmount": {
+			"displayName": "Количество",
+			"description": "Время ждать"
+		},
+		"resumeUnit": {
+			"displayName": "Единица",
+			"description": "Единица значения интервала",
+			"options": {
+				"seconds": {
+					"displayName": "Секунды"
+				},
+				"minutes": {
+					"displayName": "Минуты"
+				},
+				"hours": {
+					"displayName": "Часы"
+				},
+				"days": {
+					"displayName": "Дни"
+				}
+			}
+		},
+		"maxDateAndTime": {
+			"displayName": "Максимальная дата и время",
+			"description": "Продолжить выполнение после указанной даты и времени"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"binaryData": {
+					"displayName": "Двоичный файл",
+					"description": "Будет ли вебхук получать двоичные данные"
+				},
+				"binaryPropertyName": {
+					"displayName": "Имя поля для двоичных данных",
+					"description": "Имя выходного поля для помещения любых данных двоичного файла. Актуально только в том случае, если получены двоичные данные.",
+					"hint": "Имя выходного двоичного поля, в которое помещается файл."
+				},
+				"ignoreBots": {
+					"displayName": "Игнорировать ботов",
+					"description": "Следует ли игнорировать запросы от ботов, таких как программы предварительного просмотра ссылок и веб-сканеры."
+				},
+				"onlyRunIf": {
+					"displayName": "Запускать только если",
+					"description": "Выражение оценивается по входящему запросу. Рабочий процесс будет запущен только в том случае, если выражение возвращает true. <code>$json__N8N_TOKEN_1__ предоставляет запрос как <code>{ тело, заголовки, параметры, запрос }</code>. Запросы, которые не совпадают, получают ответ 200 без создания выполнения. Если выражение не может быть вычислено, запрос разрешается и ошибка регистрируется."
+				},
+				"ipWhitelist": {
+					"displayName": "Белый список IP-адресов",
+					"description": "Список разрешенных IP-адресов или диапазонов CIDR, разделенный запятыми. Оставьте пустым, чтобы разрешить все IP-адреса.",
+					"placeholder": "например 127.0.0.1, 192.168.1.0/24"
+				},
+				"noResponseBody": {
+					"displayName": "Нет тела ответа",
+					"description": "Отправлять ли какое-либо тело в ответе"
+				},
+				"rawBody": {
+					"displayName": "сырое тело",
+					"description": "Возвращать ли сырое тело"
+				},
+				"responseData": {
+					"displayName": "Данные ответа",
+					"description": "Пользовательские данные ответа для отправки",
+					"placeholder": "успех"
+				},
+				"responseContentType": {
+					"displayName": "Тип контента ответа",
+					"description": "Установите пользовательский тип контента, который будет возвращаться, если должен быть возвращен другой, например «application/json».",
+					"placeholder": "приложение/xml"
+				},
+				"responseHeaders": {
+					"values": {
+						"responseHeaders": {
+							"displayName": "Заголовки ответов",
+							"description": "Добавьте заголовки в ответ вебхука"
+						},
+						"entries": {
+							"options": {
+								"name": {
+									"displayName": "Имя",
+									"description": "Название заголовка"
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Значение заголовка"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить заголовок ответа",
+					"displayName": "Заголовки ответов",
+					"description": "Добавьте заголовки в ответ вебхука",
+					"options": {
+						"entries": {
+							"displayName": "Записи"
+						}
+					}
+				},
+				"responsePropertyName": {
+					"displayName": "Имя свойства",
+					"description": "Имя свойства, данные которого возвращаются вместо всего JSON."
+				},
+				"webhookSuffix": {
+					"displayName": "Суффикс вебхука",
+					"description": "Этот суффиксный путь будет добавлен к URL-адресу перезапуска. Полезно при использовании нескольких узлов ожидания.",
+					"placeholder": "вебхук"
+				},
+				"appendAttribution": {
+					"displayName": "Добавить авторство n8n",
+					"description": "Включить ли ссылку «Форма автоматизирована с помощью n8n» внизу формы."
+				},
+				"respondWithOptions": {
+					"values": {
+						"respondWithOptions": {
+							"displayName": "Форма ответа"
+						},
+						"values": {
+							"options": {
+								"respondWith": {
+									"displayName": "Ответить с",
+									"options": {
+										"text": {
+											"displayName": "Текст, отправленный через форму",
+											"description": "Показать текст ответа пользователю"
+										},
+										"redirect": {
+											"displayName": "URL-адрес перенаправления",
+											"description": "Перенаправить пользователя на URL-адрес"
+										}
+									}
+								},
+								"formSubmittedText": {
+									"displayName": "Текст для показа",
+									"description": "Текст, отображаемый пользователям после заполнения формы. Оставьте это поле пустым, если не хотите отображать дополнительный текст."
+								},
+								"redirectUrl": {
+									"displayName": "URL-адрес для перенаправления",
+									"description": "URL-адрес, на который перенаправляются пользователи после заполнения формы. Должен быть действительным URL-адресом.",
+									"placeholder": "например http://www.n8n.io"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить вариант",
+					"displayName": "Форма ответа",
+					"options": {
+						"values": {
+							"displayName": "Ценности"
+						}
+					}
+				}
+			}
+		}
+	}
+}

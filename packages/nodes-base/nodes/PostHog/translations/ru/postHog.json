@@ -1,0 +1,121 @@
+{
+	"header": {
+		"displayName": "PostHog",
+		"description": "Использование PostHog API"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"alias": {
+					"displayName": "Псевдоним"
+				},
+				"event": {
+					"displayName": "Событие"
+				},
+				"identity": {
+					"displayName": "Личность"
+				},
+				"track": {
+					"displayName": "Отслеживать"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать событие"
+				},
+				"page": {
+					"displayName": "Страница",
+					"description": "Отслеживать страницу"
+				},
+				"screen": {
+					"displayName": "Экран",
+					"description": "Отслеживание экрана"
+				}
+			}
+		},
+		"alias": {
+			"displayName": "Псевдоним",
+			"description": "Имя псевдонима"
+		},
+		"distinctId": {
+			"displayName": "Отличительный идентификатор",
+			"description": "Отличительный идентификатор пользователя"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"contextUi": {
+					"values": {
+						"contextUi": {
+							"displayName": "Контекст"
+						},
+						"contextValues": {
+							"options": {
+								"key": {
+									"displayName": "Ключ"
+								},
+								"value": {
+									"displayName": "Ценить"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить недвижимость",
+					"displayName": "Контекст",
+					"options": {
+						"contextValues": {
+							"displayName": "Контекст"
+						}
+					}
+				},
+				"timestamp": {
+					"displayName": "Временная метка",
+					"description": "Если не установлено, будет автоматически установлено текущее время."
+				},
+				"propertiesUi": {
+					"values": {
+						"propertiesUi": {
+							"displayName": "Характеристики"
+						},
+						"propertyValues": {
+							"options": {
+								"key": {
+									"displayName": "Ключ"
+								},
+								"value": {
+									"displayName": "Ценить"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить недвижимость",
+					"displayName": "Характеристики",
+					"options": {
+						"propertyValues": {
+							"displayName": "Свойство"
+						}
+					}
+				},
+				"messageId": {
+					"displayName": "Идентификатор сообщения"
+				},
+				"category": {
+					"displayName": "Категория"
+				}
+			}
+		},
+		"eventName": {
+			"displayName": "Событие",
+			"description": "Название мероприятия"
+		},
+		"name": {
+			"displayName": "Имя"
+		}
+	}
+}

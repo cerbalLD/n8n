@@ -1,0 +1,159 @@
+{
+	"header": {
+		"displayName": "Графана",
+		"description": "Используйте API Grafana"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"dashboard": {
+					"displayName": "Панель управления"
+				},
+				"team": {
+					"displayName": "Команда"
+				},
+				"teamMember": {
+					"displayName": "Член команды"
+				},
+				"user": {
+					"displayName": "Пользователь"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать команду"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удаление пользователя из текущей организации"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Собрать команду"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить множество пользователей в текущей организации"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить пользователя в текущей организации"
+				},
+				"add": {
+					"displayName": "Добавлять",
+					"description": "Добавить участника в команду"
+				},
+				"remove": {
+					"displayName": "Удалять",
+					"description": "Удаление участника из команды"
+				}
+			}
+		},
+		"title": {
+			"displayName": "Заголовок",
+			"description": "Название создаваемой информационной панели"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"folderId": {
+					"displayName": "Имя или идентификатор папки",
+					"description": "Папка для создания панели мониторинга — если папка не указана, панель мониторинга будет сохранена в папке «Общие». Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"email": {
+					"displayName": "Электронная почта",
+					"description": "Электронная почта команды, которую нужно создать",
+					"placeholder": "Engineering@n8n.io"
+				}
+			}
+		},
+		"dashboardUidOrUrl": {
+			"displayName": "UID или URL-адрес информационной панели",
+			"description": "Уникальный буквенный идентификатор или URL-адрес информационной панели для обновления.",
+			"placeholder": "cIBgcSjkk"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"query": {
+					"displayName": "Поисковый запрос"
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Название команды для фильтрации"
+				}
+			}
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"folderId": {
+					"displayName": "Имя или идентификатор папки",
+					"description": "Папка для перемещения панели мониторинга — если папка не указана, панель мониторинга будет сохранена в папке «Общие». Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"title": {
+					"displayName": "Заголовок",
+					"description": "Новое название информационной панели"
+				},
+				"email": {
+					"displayName": "Электронная почта",
+					"description": "Электронная почта команды для обновления",
+					"placeholder": "Engineering@n8n.io"
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Название команды, которую нужно обновить",
+					"placeholder": "Инженерная команда"
+				},
+				"role": {
+					"displayName": "Роль",
+					"description": "Новая роль для пользователя",
+					"options": {
+						"Admin": {
+							"displayName": "Админ"
+						},
+						"Editor": {
+							"displayName": "Редактор"
+						},
+						"Viewer": {
+							"displayName": "Зритель"
+						}
+					}
+				}
+			}
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Название команды, которую нужно создать",
+			"placeholder": "Инженерное дело"
+		},
+		"teamId": {
+			"displayName": "Название или идентификатор команды",
+			"description": "Команда, из которой нужно получить всех участников. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"userId": {
+			"displayName": "ID пользователя",
+			"description": "Идентификатор пользователя, которого нужно удалить"
+		},
+		"memberId": {
+			"displayName": "Имя пользователя или идентификатор",
+			"description": "Пользователь, которого нужно удалить из команды. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		}
+	}
+}

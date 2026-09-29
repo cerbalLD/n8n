@@ -1,0 +1,346 @@
+{
+	"header": {
+		"displayName": "Лемлист",
+		"description": "Используйте API лемлиста"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"activity": {
+					"displayName": "Активность"
+				},
+				"campaign": {
+					"displayName": "Кампания"
+				},
+				"enrich": {
+					"displayName": "Обогащение"
+				},
+				"lead": {
+					"displayName": "Вести"
+				},
+				"team": {
+					"displayName": "Команда"
+				},
+				"unsubscribe": {
+					"displayName": "Отписаться"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"getAll": {
+					"displayName": "Получить много"
+				},
+				"getStats": {
+					"displayName": "Получить статистику"
+				},
+				"get": {
+					"displayName": "Получать"
+				},
+				"enrichLead": {
+					"displayName": "Обогатить лидерство"
+				},
+				"enrichPerson": {
+					"displayName": "Обогатить человека"
+				},
+				"create": {
+					"displayName": "Создавать"
+				},
+				"delete": {
+					"displayName": "Удалить"
+				},
+				"unsubscribe": {
+					"displayName": "Отписаться"
+				},
+				"getCredits": {
+					"displayName": "Получить кредиты"
+				},
+				"add": {
+					"displayName": "Добавлять"
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"campaignId": {
+					"displayName": "Название или идентификатор кампании",
+					"description": "Идентификатор кампании, для которой требуется получить данные об активности. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"isFirst": {
+					"displayName": "первый"
+				},
+				"leadId": {
+					"displayName": "Идентификатор лида"
+				},
+				"type": {
+					"displayName": "Тип",
+					"description": "Тип активности для получения",
+					"options": {
+						"aircallCreated": {
+							"displayName": "Воздушный звонок создан"
+						},
+						"aircallDone": {
+							"displayName": "Воздушный звонок завершен"
+						},
+						"aircallEnded": {
+							"displayName": "Воздушный звонок завершен"
+						},
+						"aircallInterested": {
+							"displayName": "Заинтересованы в авиавызове"
+						},
+						"aircallNotInterested": {
+							"displayName": "Воздушный звонок не интересует"
+						},
+						"apiDone": {
+							"displayName": "API готово"
+						},
+						"apiFailed": {
+							"displayName": "Ошибка API"
+						},
+						"apiInterested": {
+							"displayName": "API заинтересован"
+						},
+						"apiNotInterested": {
+							"displayName": "API не интересует"
+						},
+						"attracted": {
+							"displayName": "Привлечённый"
+						},
+						"connectionIssue": {
+							"displayName": "Проблема с подключением"
+						},
+						"contacted": {
+							"displayName": "Связались"
+						},
+						"customDomainErrors": {
+							"displayName": "Ошибки пользовательского домена"
+						},
+						"emailsBounced": {
+							"displayName": "Письма возвращены"
+						},
+						"emailsClicked": {
+							"displayName": "Нажатые электронные письма"
+						},
+						"emailsFailed": {
+							"displayName": "Электронная почта не удалась"
+						},
+						"emailsInterested": {
+							"displayName": "Электронная почта заинтересована"
+						},
+						"emailsNotInterested": {
+							"displayName": "Электронная почта не интересует"
+						},
+						"emailsOpened": {
+							"displayName": "Письма открыты"
+						},
+						"emailsReplied": {
+							"displayName": "Ответы на электронные письма"
+						},
+						"emailsSendFailed": {
+							"displayName": "Отправка электронных писем не удалась"
+						},
+						"emailsSent": {
+							"displayName": "Письма отправлены"
+						},
+						"emailsUnsubscribed": {
+							"displayName": "Электронная почта отписана"
+						},
+						"hooked": {
+							"displayName": "на крючке"
+						},
+						"interested": {
+							"displayName": "Заинтересовано"
+						},
+						"lemwarmPaused": {
+							"displayName": "Лемварм приостановлен"
+						},
+						"linkedinInterested": {
+							"displayName": "LinkedIn заинтересован"
+						},
+						"linkedinInviteAccepted": {
+							"displayName": "Приглашение LinkedIn принято"
+						},
+						"linkedinInviteDone": {
+							"displayName": "Приглашение в LinkedIn готово"
+						},
+						"linkedinInviteFailed": {
+							"displayName": "Приглашение LinkedIn не удалось"
+						},
+						"linkedinNotInterested": {
+							"displayName": "LinkedIn не интересует"
+						},
+						"linkedinReplied": {
+							"displayName": "LinkedIn ответил"
+						},
+						"linkedinSendFailed": {
+							"displayName": "Ошибка отправки в LinkedIn"
+						},
+						"linkedinSent": {
+							"displayName": "LinkedIn отправлено"
+						},
+						"linkedinVisitDone": {
+							"displayName": "Посещение LinkedIn завершено"
+						},
+						"linkedinVisitFailed": {
+							"displayName": "Не удалось посетить LinkedIn"
+						},
+						"linkedinVoiceNoteDone": {
+							"displayName": "Голосовая заметка LinkedIn завершена"
+						},
+						"linkedinVoiceNoteFailed": {
+							"displayName": "Голосовая заметка LinkedIn не удалась"
+						},
+						"manualInterested": {
+							"displayName": "Руководство интересно"
+						},
+						"manualNotInterested": {
+							"displayName": "Руководство не интересует"
+						},
+						"notInterested": {
+							"displayName": "Не интересно"
+						},
+						"opportunitiesDone": {
+							"displayName": "Возможности реализованы"
+						},
+						"paused": {
+							"displayName": "Приостановлено"
+						},
+						"resumed": {
+							"displayName": "Возобновлено"
+						},
+						"sendLimitReached": {
+							"displayName": "Достигнут лимит отправки"
+						},
+						"skipped": {
+							"displayName": "Пропущено"
+						},
+						"warmed": {
+							"displayName": "Утепленный"
+						}
+					}
+				},
+				"version": {
+					"displayName": "Версия"
+				}
+			}
+		},
+		"campaignId": {
+			"displayName": "Название или идентификатор кампании",
+			"description": "Идентификатор кампании, от которой нужно отказаться от подписки. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"startDate": {
+			"displayName": "Дата начала",
+			"placeholder": "например 2024-09-03 00:00:00Z"
+		},
+		"endDate": {
+			"displayName": "Дата окончания",
+			"placeholder": "например 2024-09-03 00:00:00Z"
+		},
+		"timezone": {
+			"displayName": "Часовой пояс",
+			"placeholder": "например Европа/Париж"
+		},
+		"enrichId": {
+			"displayName": "Идентификатор расширения",
+			"description": "Идентификатор дополнения для получения"
+		},
+		"leadId": {
+			"displayName": "Идентификатор лида"
+		},
+		"findEmail": {
+			"displayName": "Найти электронную почту"
+		},
+		"verifyEmail": {
+			"displayName": "Подтвердите адрес электронной почты"
+		},
+		"linkedinEnrichment": {
+			"displayName": "Расширение LinkedIn"
+		},
+		"findPhone": {
+			"displayName": "Найти телефон"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"email": {
+					"displayName": "Электронная почта",
+					"placeholder": "имя@email.com"
+				},
+				"firstName": {
+					"displayName": "Имя",
+					"description": "Имя руководителя, которого нужно создать"
+				},
+				"lastName": {
+					"displayName": "Фамилия",
+					"description": "Фамилия лида, которого нужно создать"
+				},
+				"linkedinUrl": {
+					"displayName": "URL-адрес LinkedIn",
+					"description": "LinkedIn URL-адрес потенциального клиента, которого необходимо создать"
+				},
+				"companyName": {
+					"displayName": "Название компании",
+					"description": "Название компании руководителя, которого нужно создать"
+				},
+				"companyDomain": {
+					"displayName": "Домен компании",
+					"description": "Домен компании лида для создания"
+				},
+				"deduplicate": {
+					"displayName": "Дедупликация",
+					"description": "Не вставлять ли это письмо, если это письмо уже присутствует в другой кампании"
+				},
+				"findEmail": {
+					"displayName": "Найти электронную почту",
+					"description": "Найти ли подтвержденный адрес электронной почты"
+				},
+				"findPhone": {
+					"displayName": "Найти телефон",
+					"description": "Найти ли номер телефона"
+				},
+				"icebreaker": {
+					"displayName": "Ледокол",
+					"description": "Ледокол ведет к созданию"
+				},
+				"jobTitle": {
+					"displayName": "Должность",
+					"description": "Должность руководителя создания"
+				},
+				"linkedinEnrichment": {
+					"displayName": "Расширение LinkedIn",
+					"description": "Стоит ли запускать расширение LinkedIn"
+				},
+				"phone": {
+					"displayName": "Телефон",
+					"description": "Телефон лида для создания"
+				},
+				"picture": {
+					"displayName": "URL-адрес изображения",
+					"description": "URL-адрес изображения потенциального клиента, который необходимо создать"
+				},
+				"verifyEmail": {
+					"displayName": "Подтвердите адрес электронной почты",
+					"description": "Подтверждать ли существующую электронную почту (отменить отказ)"
+				}
+			}
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"description": "Электронная почта для удаления из списка отписок",
+			"placeholder": "имя@email.com"
+		}
+	}
+}

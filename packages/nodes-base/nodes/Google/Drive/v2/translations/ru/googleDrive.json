@@ -1,0 +1,767 @@
+{
+	"header": {
+		"displayName": "Гугл Диск",
+		"description": "Доступ к данным на Google Диске"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"oAuth2": {
+					"displayName": "OAuth2 (рекомендуется)"
+				},
+				"serviceAccount": {
+					"displayName": "Сервисный аккаунт"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"file": {
+					"displayName": "Файл"
+				},
+				"fileFolder": {
+					"displayName": "Файл/Папка"
+				},
+				"folder": {
+					"displayName": "Папка"
+				},
+				"drive": {
+					"displayName": "Общий диск"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать папку"
+				},
+				"deleteDrive": {
+					"displayName": "Удалить",
+					"description": "Удалить общий диск навсегда"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить общий диск"
+				},
+				"list": {
+					"displayName": "Получить много",
+					"description": "Получить список общих дисков"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить файл"
+				},
+				"copy": {
+					"displayName": "Копировать",
+					"description": "Создать копию существующего файла"
+				},
+				"createFromText": {
+					"displayName": "Создать из текста",
+					"description": "Создать файл из предоставленного текста"
+				},
+				"deleteFile": {
+					"displayName": "Удалить",
+					"description": "Удалить файл навсегда"
+				},
+				"download": {
+					"displayName": "Скачать",
+					"description": "Скачать файл"
+				},
+				"move": {
+					"displayName": "Двигаться",
+					"description": "Переместить файл в другую папку"
+				},
+				"share": {
+					"displayName": "Делиться",
+					"description": "Добавить разрешения на общий доступ к папке"
+				},
+				"upload": {
+					"displayName": "Загрузить",
+					"description": "Загрузите существующий файл на Google Диск."
+				},
+				"search": {
+					"displayName": "Поиск",
+					"description": "Поиск или список файлов и папок"
+				},
+				"deleteFolder": {
+					"displayName": "Удалить",
+					"description": "Удалить папку навсегда"
+				}
+			}
+		},
+		"name": {
+			"displayName": "Имя папки",
+			"description": "Имя новой папки. Если не установлено, будет использоваться «Без названия».",
+			"placeholder": "например Новая папка"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"capabilities": {
+					"values": {
+						"capabilities": {
+							"displayName": "Возможности"
+						},
+						"canAddChildren": {
+							"displayName": "Можно добавить детей",
+							"description": "Может ли текущий пользователь добавлять детей в папки на этом общем диске."
+						},
+						"canChangeCopyRequiresWriterPermissionRestriction": {
+							"displayName": "Можно изменить копию. Требуется ограничение прав записи.",
+							"description": "Может ли текущий пользователь изменить ограничение copyRequiresWriterPermission для этого общего диска."
+						},
+						"canChangeDomainUsersOnlyRestriction": {
+							"displayName": "Можно изменить ограничение только для пользователей домена",
+							"description": "Может ли текущий пользователь изменить ограничение DomainUsersOnly для этого общего диска."
+						},
+						"canChangeDriveBackground": {
+							"displayName": "Можно изменить фон диска",
+							"description": "Может ли текущий пользователь изменить фон этого общего диска"
+						},
+						"canChangeDriveMembersOnlyRestriction": {
+							"displayName": "Можно изменить ограничение только для участников диска",
+							"description": "Может ли текущий пользователь изменить ограничение DriveMembersOnly этого общего диска."
+						},
+						"canComment": {
+							"displayName": "Могу комментировать",
+							"description": "Может ли текущий пользователь комментировать файлы на этом общем диске"
+						},
+						"canCopy": {
+							"displayName": "Можно скопировать",
+							"description": "Может ли текущий пользователь копировать файлы на этом общем диске"
+						},
+						"canDeleteChildren": {
+							"displayName": "Можно удалить детей",
+							"description": "Может ли текущий пользователь удалять детей из папок на этом общем диске"
+						},
+						"canDeleteDrive": {
+							"displayName": "Можно удалить диск",
+							"description": "Может ли текущий пользователь удалить этот общий диск. Попытка удалить общий диск может потерпеть неудачу, если на общем диске есть неудаленные элементы."
+						},
+						"canDownload": {
+							"displayName": "Можно скачать",
+							"description": "Может ли текущий пользователь загружать файлы на этом общем диске"
+						},
+						"canEdit": {
+							"displayName": "Можно редактировать",
+							"description": "Может ли текущий пользователь редактировать файлы на этом общем диске"
+						},
+						"canListChildren": {
+							"displayName": "Можно перечислить детей",
+							"description": "Может ли текущий пользователь перечислять дочерние папки на этом общем диске"
+						},
+						"canManageMembers": {
+							"displayName": "Может управлять участниками",
+							"description": "Может ли текущий пользователь добавлять участников на этот общий диск, удалять их или изменять их роли."
+						},
+						"canReadRevisions": {
+							"displayName": "Может читать версии",
+							"description": "Может ли текущий пользователь читать ресурс редакций файлов на этом общем диске."
+						},
+						"canRename": {
+							"displayName": "Можно переименовать",
+							"description": "Может ли текущий пользователь переименовывать файлы и папки на этом общем диске."
+						},
+						"canRenameDrive": {
+							"displayName": "Можно переименовать диск",
+							"description": "Может ли текущий пользователь переименовать этот общий диск"
+						},
+						"canShare": {
+							"displayName": "Могу поделиться",
+							"description": "Может ли текущий пользователь делиться файлами или папками на этом общем диске"
+						},
+						"canTrashChildren": {
+							"displayName": "Можно ли выбрасывать детей в мусор",
+							"description": "Может ли текущий пользователь удалять детей из папок на этом общем диске"
+						}
+					},
+					"placeholder": "Добавить поле",
+					"displayName": "Возможности"
+				},
+				"colorRgb": {
+					"displayName": "Цвет RGB",
+					"description": "Цвет этого общего диска в виде шестнадцатеричной строки RGB."
+				},
+				"hidden": {
+					"displayName": "Скрытый",
+					"description": "Скрыт ли общий диск в представлении по умолчанию"
+				},
+				"restrictions": {
+					"values": {
+						"restrictions": {
+							"displayName": "Ограничения"
+						},
+						"adminManagedRestrictions": {
+							"displayName": "Ограничения, управляемые администратором",
+							"description": "Должны ли быть отключены возможности копирования, печати или загрузки файлов на этом общем диске для читателей и комментаторов. Если для этого ограничения установлено значение true, оно переопределит значение true для поля с таким же именем для любого файла на этом общем диске."
+						},
+						"copyRequiresWriterPermission": {
+							"displayName": "Копирование требует разрешения автора",
+							"description": "Должны ли быть отключены возможности копирования, печати или загрузки файлов на этом общем диске для читателей и комментаторов. Если для этого ограничения установлено значение true, оно переопределит значение true для поля с таким же именем для любого файла на этом общем диске."
+						},
+						"domainUsersOnly": {
+							"displayName": "Только для пользователей домена",
+							"description": "Ограничен ли доступ к этому общему диску и объектам на этом общем диске только пользователям домена, к которому принадлежит этот общий диск. Это ограничение может быть отменено другими политиками общего доступа, контролируемыми за пределами этого общего диска."
+						},
+						"driveMembersOnly": {
+							"displayName": "Только для участников Диска",
+							"description": "Разрешен ли доступ к объектам на этом общем диске только его участникам."
+						}
+					},
+					"placeholder": "Добавить поле",
+					"displayName": "Ограничения"
+				},
+				"useDomainAdminAccess": {
+					"displayName": "Используйте доступ администратора домена",
+					"description": "Следует ли выполнять операцию от имени администратора домена, т. е. если вы являетесь администратором домена, к которому принадлежит общий диск, вам будет предоставлен доступ автоматически."
+				},
+				"q": {
+					"displayName": "Запрос",
+					"description": "Строка запроса для поиска общих дисков. Поддерживаемый синтаксис см. в руководстве <a href=\"https://developers.google.com/drive/api/v3/search-shareddrives\"> «Поиск общих дисков» </a>."
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Обновленное имя общего диска."
+				},
+				"copyRequiresWriterPermission": {
+					"displayName": "Копирование требует разрешения автора",
+					"description": "Должны ли быть отключены возможности копирования, печати или загрузки этого файла для читателей и комментаторов."
+				},
+				"description": {
+					"displayName": "Описание",
+					"description": "Краткое описание файла"
+				},
+				"deletePermanently": {
+					"displayName": "Удалить навсегда",
+					"description": "Удалить ли папку немедленно. Если false, папка будет перемещена в корзину."
+				},
+				"appPropertiesUi": {
+					"values": {
+						"appPropertiesUi": {
+							"displayName": "Свойства приложения",
+							"description": "Коллекция произвольных пар ключ-значение, которые являются личными для запрашивающего приложения."
+						},
+						"appPropertyValues": {
+							"options": {
+								"key": {
+									"displayName": "Ключ",
+									"description": "Имя ключа, который нужно добавить"
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Значение, которое нужно установить для ключа"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить недвижимость",
+					"displayName": "Свойства приложения",
+					"description": "Коллекция произвольных пар ключ-значение, которые являются личными для запрашивающего приложения.",
+					"options": {
+						"appPropertyValues": {
+							"displayName": "Свойство приложения"
+						}
+					}
+				},
+				"propertiesUi": {
+					"values": {
+						"propertiesUi": {
+							"displayName": "Характеристики",
+							"description": "Коллекция произвольных пар ключ-значение, видимых всем приложениям."
+						},
+						"propertyValues": {
+							"options": {
+								"key": {
+									"displayName": "Ключ",
+									"description": "Имя ключа, который нужно добавить"
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Значение, которое нужно установить для ключа"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить недвижимость",
+					"displayName": "Характеристики",
+					"description": "Коллекция произвольных пар ключ-значение, видимых всем приложениям.",
+					"options": {
+						"propertyValues": {
+							"displayName": "Свойство"
+						}
+					}
+				},
+				"keepRevisionForever": {
+					"displayName": "Сохранить редакцию навсегда",
+					"description": "Устанавливать ли поле «keepForever» в новой версии заголовка. Это применимо только к файлам с двоичным содержимым на Google Диске. Только 200 редакций файла могут храниться вечно. Если предел достигнут, попробуйте удалить закрепленные версии."
+				},
+				"ocrLanguage": {
+					"displayName": "Язык оптического распознавания символов",
+					"description": "Языковая подсказка для обработки оптического распознавания символов во время импорта изображений (код ISO 639-1).",
+					"placeholder": "например ru"
+				},
+				"useContentAsIndexableText": {
+					"displayName": "Используйте контент как индексируемый текст",
+					"description": "Использовать ли загруженный контент в качестве индексируемого текста"
+				},
+				"convertToGoogleDocument": {
+					"displayName": "Конвертировать в документ Google",
+					"description": "Создавать ли документ Google (вместо формата по умолчанию .txt)",
+					"hint": "Google Docs API должен быть включен в <a href=\"https://console.developers.google.com/apis/library/docs.googleapis.com\" target=\"_blank\">Google API Console</a>."
+				},
+				"binaryPropertyName": {
+					"displayName": "Поместите выходной файл в поле",
+					"description": "Используйте это имя поля в следующих узлах, чтобы использовать данные двоичного файла.",
+					"hint": "Имя выходного двоичного поля, в которое помещается файл.",
+					"placeholder": "например данные"
+				},
+				"googleFileConversion": {
+					"values": {
+						"googleFileConversion": {
+							"displayName": "Преобразование файлов Google"
+						},
+						"conversion": {
+							"options": {
+								"docsToFormat": {
+									"displayName": "Google Документы",
+									"description": "Формат, используемый для экспорта при загрузке файлов Google Docs.",
+									"options": {
+										"text/html": {
+											"displayName": "HTML"
+										},
+										"text/markdown": {
+											"displayName": "Уценка (мкр)"
+										},
+										"application/vnd": {
+											"openxmlformats-officedocument": {
+												"wordprocessingml": {
+													"document": {
+														"displayName": "Документ MS Word"
+													}
+												}
+											},
+											"oasis": {
+												"opendocument": {
+													"text": {
+														"displayName": "Открытый документ Office"
+													}
+												}
+											}
+										},
+										"application/pdf": {
+											"displayName": "PDF"
+										},
+										"application/rtf": {
+											"displayName": "Форматированный текст (rtf)"
+										},
+										"text/plain": {
+											"displayName": "Текст (текст)"
+										}
+									}
+								},
+								"drawingsToFormat": {
+									"displayName": "Гугл рисунки",
+									"description": "Формат, используемый для экспорта при загрузке файлов Google Drawings",
+									"options": {
+										"image/jpeg": {
+											"displayName": "JPEG"
+										},
+										"application/pdf": {
+											"displayName": "PDF"
+										},
+										"image/png": {
+											"displayName": "PNG"
+										},
+										"image/svg+xml": {
+											"displayName": "SVG"
+										}
+									}
+								},
+								"slidesToFormat": {
+									"displayName": "Google Презентации",
+									"description": "Формат, используемый для экспорта при загрузке файлов Google Slides",
+									"options": {
+										"application/vnd": {
+											"openxmlformats-officedocument": {
+												"presentationml": {
+													"presentation": {
+														"displayName": "MS PowerPoint"
+													}
+												}
+											},
+											"oasis": {
+												"opendocument": {
+													"presentation": {
+														"displayName": "Презентация OpenOffice"
+													}
+												}
+											}
+										},
+										"application/pdf": {
+											"displayName": "PDF"
+										}
+									}
+								},
+								"sheetsToFormat": {
+									"displayName": "Google Таблицы",
+									"description": "Формат, используемый для экспорта при загрузке файлов Google Sheets",
+									"options": {
+										"text/csv": {
+											"displayName": "CSV"
+										},
+										"application/vnd": {
+											"openxmlformats-officedocument": {
+												"spreadsheetml": {
+													"sheet": {
+														"displayName": "MS Excel"
+													}
+												}
+											},
+											"oasis": {
+												"opendocument": {
+													"spreadsheet": {
+														"displayName": "Открыть офисный лист"
+													}
+												}
+											}
+										},
+										"application/pdf": {
+											"displayName": "PDF"
+										}
+									}
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить конверсию",
+					"displayName": "Преобразование файлов Google",
+					"options": {
+						"conversion": {
+							"displayName": "Конверсия"
+						}
+					}
+				},
+				"fileName": {
+					"displayName": "Имя файла",
+					"description": "Имя файла. Пример: данные.pdf."
+				},
+				"emailMessage": {
+					"displayName": "Сообщение электронной почты",
+					"description": "Простое текстовое сообщение для включения в электронное письмо с уведомлением."
+				},
+				"moveToNewOwnersRoot": {
+					"displayName": "Переехать в корень нового владельца",
+					"description": "<p>Этот параметр вступает в силу только в том случае, если элемент не находится на общем диске и запрос пытается передать право собственности на этот элемент.</p><p>Если установлено значение true, элемент перемещается в корневую папку «Мой диск» нового владельца, а все предыдущие родительские элементы удаляются.</p>"
+				},
+				"sendNotificationEmail": {
+					"displayName": "Отправить уведомление по электронной почте",
+					"description": "Отправлять ли уведомление по электронной почте при совместном использовании пользователям или группам"
+				},
+				"transferOwnership": {
+					"displayName": "Передача права собственности",
+					"description": "Передавать ли право собственности указанному пользователю и понизить статус текущего владельца до писателя"
+				},
+				"trashed": {
+					"displayName": "Отправить в корзину",
+					"description": "Перемещать ли файл в корзину. Только владелец может удалить файл."
+				},
+				"fields": {
+					"displayName": "Поля",
+					"description": "Поля для возврата",
+					"options": {
+						"*": {
+							"displayName": "*",
+							"description": "Все поля"
+						},
+						"explicitlyTrashed": {
+							"displayName": "явноTrashed"
+						},
+						"exportLinks": {
+							"displayName": "экспортСсылки"
+						},
+						"hasThumbnail": {
+							"displayName": "естьМиниатюра"
+						},
+						"iconLink": {
+							"displayName": "значокСсылка"
+						},
+						"id": {
+							"displayName": "ID"
+						},
+						"kind": {
+							"displayName": "Добрый"
+						},
+						"mimeType": {
+							"displayName": "mimeType"
+						},
+						"name": {
+							"displayName": "Имя"
+						},
+						"permissions": {
+							"displayName": "Разрешения"
+						},
+						"shared": {
+							"displayName": "Общий"
+						},
+						"spaces": {
+							"displayName": "Пространства"
+						},
+						"starred": {
+							"displayName": "Помечено"
+						},
+						"thumbnailLink": {
+							"displayName": "миниатюраСсылка"
+						},
+						"trashed": {
+							"displayName": "Выброшен"
+						},
+						"version": {
+							"displayName": "Версия"
+						},
+						"webViewLink": {
+							"displayName": "вебViewLink"
+						}
+					}
+				},
+				"simplifyOutput": {
+					"displayName": "Упростите вывод",
+					"description": "Возвращать ли упрощенную версию ответа вместо всех полей"
+				},
+				"folderColorRgb": {
+					"displayName": "Цвет папки",
+					"description": "Цвет папки в виде шестнадцатеричной строки RGB. Если указан неподдерживаемый цвет, вместо него будет использоваться ближайший цвет в палитре."
+				}
+			}
+		},
+		"driveId": {
+			"displayName": "Родительский диск",
+			"description": "Диск, на котором создать новую папку"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"fileId": {
+			"displayName": "Файл для обновления",
+			"description": "Файл для обновления"
+		},
+		"sameFolder": {
+			"displayName": "Скопировать в ту же папку",
+			"description": "Копировать ли файл в ту же папку, что и исходный файл"
+		},
+		"folderId": {
+			"displayName": "Родительская папка",
+			"description": "Родительская папка, в которой создается новая папка"
+		},
+		"content": {
+			"displayName": "Содержимое файла",
+			"description": "Текст для создания файла"
+		},
+		"permissionsUi": {
+			"options": {
+				"permissionsUi": {
+					"displayName": "Разрешения"
+				},
+				"permissionsValues": {
+					"displayName": "Разрешение",
+					"values": {
+						"role": {
+							"displayName": "Роль",
+							"description": "Определяет, что пользователи могут делать с файлом или папкой.",
+							"options": {
+								"commenter": {
+									"displayName": "Комментатор"
+								},
+								"fileOrganizer": {
+									"displayName": "Организатор файлов"
+								},
+								"organizer": {
+									"displayName": "Организатор"
+								},
+								"owner": {
+									"displayName": "Владелец"
+								},
+								"reader": {
+									"displayName": "Читатель"
+								},
+								"writer": {
+									"displayName": "Писатель"
+								}
+							}
+						},
+						"type": {
+							"displayName": "Тип",
+							"description": "Объем разрешения. Разрешение с типом=пользователь применяется к конкретному пользователю, тогда как разрешение с типом=домен применяется ко всем в определенном домене.",
+							"options": {
+								"user": {
+									"displayName": "Пользователь"
+								},
+								"group": {
+									"displayName": "Группа"
+								},
+								"domain": {
+									"displayName": "Домен"
+								},
+								"anyone": {
+									"displayName": "Любой"
+								}
+							}
+						},
+						"emailAddress": {
+							"displayName": "Адрес электронной почты",
+							"description": "Адрес электронной почты пользователя или группы, к которым относится это разрешение.",
+							"placeholder": "«например, имя@mail.com"
+						},
+						"domain": {
+							"displayName": "Домен",
+							"description": "Домен, к которому относится это разрешение",
+							"placeholder": "например mycompany.com"
+						},
+						"allowFileDiscovery": {
+							"displayName": "Разрешить обнаружение файлов",
+							"description": "Разрешить ли обнаружение файла с помощью поиска"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить разрешение",
+			"displayName": "Разрешения"
+		},
+		"changeFileContent": {
+			"displayName": "Изменить содержимое файла",
+			"description": "Отправлять ли новые двоичные данные для обновления файла"
+		},
+		"inputDataFieldName": {
+			"displayName": "Имя поля входных данных",
+			"description": "Найдите имя поля ввода, содержащего двоичные данные, чтобы обновить файл, на панели ввода слева на вкладке «Двоичные данные».",
+			"hint": "Имя поля ввода, содержащего данные двоичного файла для обновления файла.",
+			"placeholder": "«например, данные"
+		},
+		"newUpdatedFileName": {
+			"displayName": "Новое обновленное имя файла",
+			"description": "Если не указано, имя файла не будет изменено.",
+			"placeholder": "например Мой новый файл"
+		},
+		"searchMethod": {
+			"displayName": "Метод поиска",
+			"description": "Искать ли имя файла/папки или использовать строку запроса",
+			"options": {
+				"name": {
+					"displayName": "Поиск по имени файла/папки"
+				},
+				"query": {
+					"displayName": "Расширенный поиск"
+				}
+			}
+		},
+		"queryString": {
+			"displayName": "Строка запроса",
+			"description": "Используйте синтаксис строк запроса Google для поиска определенного набора файлов или папок. <a href=\"https://developers.google.com/drive/api/v3/search-files\" target=\"_blank\">Подробнее</a>.",
+			"placeholder": "например имя не содержит \"привет\""
+		},
+		"filter": {
+			"displayName": "Фильтр",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"driveId": {
+					"displayName": "Водить машину",
+					"description": "Диск, на котором вы хотите выполнить поиск. По умолчанию используется личный «Мой диск»."
+				},
+				"folderId": {
+					"displayName": "Папка",
+					"description": "Папка, в которой вы хотите выполнить поиск. По умолчанию используется корневая папка диска. Если вы выберете папку, отличную от корневой, будут включены только прямые дочерние папки."
+				},
+				"whatToSearch": {
+					"displayName": "Что искать",
+					"options": {
+						"all": {
+							"displayName": "Файлы и папки"
+						},
+						"files": {
+							"displayName": "Файлы"
+						},
+						"folders": {
+							"displayName": "Папки"
+						}
+					}
+				},
+				"fileTypes": {
+					"displayName": "Типы файлов",
+					"description": "Возвращать только элементы, соответствующие выбранным типам MIME.",
+					"options": {
+						"*": {
+							"displayName": "Все",
+							"description": "Вернуть все типы файлов"
+						},
+						"application/vnd": {
+							"google-apps": {
+								"drive-sdk": {
+									"displayName": "Сторонний ярлык"
+								},
+								"audio": {
+									"displayName": "Аудио"
+								},
+								"folder": {
+									"displayName": "Папка"
+								},
+								"script": {
+									"displayName": "Скрипты Google Apps"
+								},
+								"document": {
+									"displayName": "Google Документы"
+								},
+								"drawing": {
+									"displayName": "Google Рисунок"
+								},
+								"form": {
+									"displayName": "Google Формы"
+								},
+								"fusiontable": {
+									"displayName": "Сводные таблицы Google"
+								},
+								"map": {
+									"displayName": "Google Мои карты"
+								},
+								"spreadsheet": {
+									"displayName": "Google Таблицы"
+								},
+								"sites": {
+									"displayName": "Google Сайты"
+								},
+								"presentation": {
+									"displayName": "Google Презентации"
+								},
+								"photo": {
+									"displayName": "Фото"
+								},
+								"unknown": {
+									"displayName": "Неизвестный"
+								},
+								"video": {
+									"displayName": "Видео"
+								}
+							}
+						}
+					}
+				},
+				"includeTrashed": {
+					"displayName": "Включить удаленные элементы",
+					"description": "Возвращать ли также предметы из корзины Диска"
+				}
+			}
+		},
+		"folderNoRootId": {
+			"displayName": "Папка",
+			"description": "Папка, которой можно поделиться"
+		}
+	}
+}

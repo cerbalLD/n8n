@@ -1,0 +1,155 @@
+{
+	"header": {
+		"displayName": "КроликMQ",
+		"description": "Отправляет сообщения в тему RabbitMQ"
+	},
+	"nodeView": {
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"sendMessage": {
+					"displayName": "Отправить сообщение RabbitMQ"
+				},
+				"deleteMessage": {
+					"displayName": "Удалить из очереди"
+				}
+			}
+		},
+		"deleteMessage": {
+			"displayName": "Удалит элемент из очереди, запущенной ранее в рабочем процессе узлом RabbitMQ Trigger."
+		},
+		"mode": {
+			"displayName": "Режим",
+			"description": "Куда следует переместить данные",
+			"options": {
+				"queue": {
+					"displayName": "Очередь",
+					"description": "Публикация данных в очередь"
+				},
+				"exchange": {
+					"displayName": "Обмен",
+					"description": "Публикация данных для обмена"
+				}
+			}
+		},
+		"queue": {
+			"displayName": "Очередь/Тема",
+			"description": "Имя очереди для публикации",
+			"placeholder": "имя-очереди"
+		},
+		"exchange": {
+			"displayName": "Обмен",
+			"description": "Название биржи для публикации",
+			"placeholder": "имя обмена"
+		},
+		"exchangeType": {
+			"displayName": "Тип",
+			"description": "Тип обмена",
+			"options": {
+				"direct": {
+					"displayName": "Прямой",
+					"description": "Тип прямого обмена"
+				},
+				"topic": {
+					"displayName": "Тема",
+					"description": "Тип обмена темами"
+				},
+				"headers": {
+					"displayName": "Заголовки",
+					"description": "Тип обмена заголовками"
+				},
+				"fanout": {
+					"displayName": "Разветвление",
+					"description": "Тип обмена разветвлениями"
+				}
+			}
+		},
+		"routingKey": {
+			"displayName": "Ключ маршрутизации",
+			"description": "Ключ маршрутизации сообщения",
+			"placeholder": "ключ маршрутизации"
+		},
+		"sendInputData": {
+			"displayName": "Отправить входные данные",
+			"description": "Отправлять ли данные, которые получает узел, в формате JSON."
+		},
+		"message": {
+			"displayName": "Сообщение",
+			"description": "Сообщение для отправки"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"alternateExchange": {
+					"displayName": "Альтернативный обмен",
+					"description": "Биржа для отправки сообщений, если эта биржа не может направить их в какие-либо очереди."
+				},
+				"arguments": {
+					"values": {
+						"arguments": {
+							"displayName": "Аргументы",
+							"description": "Аргументы для добавления. Допустимые параметры см. в <a href=\"https://amqp-node.github.io/amqplib/channel_api.html#channel_publish\" target=\"_blank\">здесь</a>."
+						},
+						"argument": {
+							"options": {
+								"key": {
+									"displayName": "Ключ"
+								},
+								"value": {
+									"displayName": "Ценить"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить аргумент",
+					"displayName": "Аргументы",
+					"description": "Аргументы для добавления. Допустимые параметры см. в <a href=\"https://amqp-node.github.io/amqplib/channel_api.html#channel_publish\" target=\"_blank\">здесь</a>.",
+					"options": {
+						"argument": {
+							"displayName": "Аргумент"
+						}
+					}
+				},
+				"autoDelete": {
+					"displayName": "Автоматическое удаление очереди",
+					"description": "Будет ли очередь удалена, когда количество потребителей упадет до нуля"
+				},
+				"durable": {
+					"displayName": "Прочный",
+					"description": "Выдержит ли очередь перезапуск брокера"
+				},
+				"exclusive": {
+					"displayName": "Эксклюзивный",
+					"description": "Следует ли ограничивать очередь соединением"
+				},
+				"headers": {
+					"values": {
+						"headers": {
+							"displayName": "Заголовки",
+							"description": "Заголовки, которые нужно добавить"
+						},
+						"header": {
+							"options": {
+								"key": {
+									"displayName": "Ключ"
+								},
+								"value": {
+									"displayName": "Ценить"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить заголовок",
+					"displayName": "Заголовки",
+					"description": "Заголовки, которые нужно добавить",
+					"options": {
+						"header": {
+							"displayName": "Заголовок"
+						}
+					}
+				}
+			}
+		}
+	}
+}

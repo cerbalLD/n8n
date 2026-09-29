@@ -1,0 +1,1186 @@
+{
+	"header": {
+		"displayName": "Медь",
+		"description": "Используйте Copper API"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"company": {
+					"displayName": "Компания"
+				},
+				"customerSource": {
+					"displayName": "Источник клиента"
+				},
+				"lead": {
+					"displayName": "Вести"
+				},
+				"opportunity": {
+					"displayName": "Возможность"
+				},
+				"person": {
+					"displayName": "Человек"
+				},
+				"project": {
+					"displayName": "Проект"
+				},
+				"task": {
+					"displayName": "Задача"
+				},
+				"user": {
+					"displayName": "Пользователь"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать"
+				},
+				"delete": {
+					"displayName": "Удалить"
+				},
+				"get": {
+					"displayName": "Получать"
+				},
+				"getAll": {
+					"displayName": "Получить много"
+				},
+				"update": {
+					"displayName": "Обновлять"
+				}
+			}
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Название проекта, который нужно создать"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"address": {
+					"values": {
+						"address": {
+							"displayName": "Адрес"
+						},
+						"addressFields": {
+							"options": {
+								"street": {
+									"displayName": "Улица"
+								},
+								"city": {
+									"displayName": "Город"
+								},
+								"state": {
+									"displayName": "Состояние"
+								},
+								"postal_code": {
+									"displayName": "Почтовый индекс"
+								},
+								"country": {
+									"displayName": "Страна",
+									"description": "Код страны ISO 3166 альфа-2"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить поля адреса",
+					"displayName": "Адрес",
+					"options": {
+						"addressFields": {
+							"displayName": "Поля адреса"
+						}
+					}
+				},
+				"details": {
+					"displayName": "Подробности",
+					"description": "Описание задачи по созданию"
+				},
+				"email_domain": {
+					"displayName": "Электронный домен"
+				},
+				"phone_numbers": {
+					"values": {
+						"phone_numbers": {
+							"displayName": "Номера телефонов"
+						},
+						"phoneFields": {
+							"options": {
+								"number": {
+									"displayName": "Число"
+								},
+								"category": {
+									"displayName": "Категория"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить номер телефона",
+					"displayName": "Номера телефонов",
+					"options": {
+						"phoneFields": {
+							"displayName": "Поля телефона"
+						}
+					}
+				},
+				"email": {
+					"values": {
+						"email": {
+							"displayName": "Электронная почта"
+						},
+						"emailFields": {
+							"options": {
+								"email": {
+									"displayName": "Электронная почта",
+									"placeholder": "имя@email.com"
+								},
+								"category": {
+									"displayName": "Категория"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить адрес электронной почты",
+					"displayName": "Электронная почта",
+					"options": {
+						"emailFields": {
+							"displayName": "Поля электронной почты"
+						}
+					}
+				},
+				"emails": {
+					"values": {
+						"emails": {
+							"displayName": "Электронная почта"
+						},
+						"emailFields": {
+							"options": {
+								"email": {
+									"displayName": "Электронная почта",
+									"placeholder": "имя@email.com"
+								},
+								"category": {
+									"displayName": "Категория"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить адрес электронной почты",
+					"displayName": "Электронная почта",
+					"options": {
+						"emailFields": {
+							"displayName": "Поля электронной почты"
+						}
+					}
+				},
+				"assignee_id": {
+					"displayName": "Идентификатор правопреемника",
+					"description": "Идентификатор пользователя, которому будет принадлежать создаваемая задача"
+				},
+				"status": {
+					"displayName": "Статус",
+					"options": {
+						"Completed": {
+							"displayName": "Завершенный"
+						},
+						"Open": {
+							"displayName": "Открыть"
+						}
+					}
+				},
+				"priority": {
+					"displayName": "Приоритет",
+					"options": {
+						"High": {
+							"displayName": "Высокий"
+						},
+						"None": {
+							"displayName": "Никто"
+						}
+					}
+				}
+			}
+		},
+		"companyId": {
+			"displayName": "Идентификатор компании",
+			"description": "Идентификатор компании для обновления"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"filterFields": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"country": {
+					"displayName": "Страна",
+					"description": "Название страны для фильтрации",
+					"options": {
+						"AF": {
+							"displayName": "Афганистан"
+						},
+						"AX": {
+							"displayName": "Аландские острова"
+						},
+						"AL": {
+							"displayName": "Албания"
+						},
+						"DZ": {
+							"displayName": "Алжир"
+						},
+						"AS": {
+							"displayName": "Американское Самоа"
+						},
+						"AD": {
+							"displayName": "Андорра"
+						},
+						"AO": {
+							"displayName": "Ангола"
+						},
+						"AI": {
+							"displayName": "Ангилья"
+						},
+						"AQ": {
+							"displayName": "Антарктида"
+						},
+						"AG": {
+							"displayName": "Антигуа и Барбуда"
+						},
+						"AR": {
+							"displayName": "Аргентина"
+						},
+						"AM": {
+							"displayName": "Армения"
+						},
+						"AW": {
+							"displayName": "Аруба"
+						},
+						"AU": {
+							"displayName": "Австралия"
+						},
+						"AT": {
+							"displayName": "Австрия"
+						},
+						"AZ": {
+							"displayName": "Азербайджан"
+						},
+						"BS": {
+							"displayName": "Багамские Острова (англ.)"
+						},
+						"BH": {
+							"displayName": "Бахрейн"
+						},
+						"BD": {
+							"displayName": "Бангладеш"
+						},
+						"BB": {
+							"displayName": "Барбадос"
+						},
+						"BY": {
+							"displayName": "Беларусь"
+						},
+						"BE": {
+							"displayName": "Бельгия"
+						},
+						"BZ": {
+							"displayName": "Белиз"
+						},
+						"BJ": {
+							"displayName": "Бенин"
+						},
+						"BM": {
+							"displayName": "Бермуды"
+						},
+						"BT": {
+							"displayName": "Бутан"
+						},
+						"BO": {
+							"displayName": "Боливия (Многонациональное Государство)"
+						},
+						"BQ": {
+							"displayName": "Бонэйр, Синт-Эстатиус и Саба"
+						},
+						"BA": {
+							"displayName": "Босния и Герцеговина"
+						},
+						"BW": {
+							"displayName": "Ботсвана"
+						},
+						"BV": {
+							"displayName": "Остров Буве"
+						},
+						"BR": {
+							"displayName": "Бразилия"
+						},
+						"IO": {
+							"displayName": "Британская территория в Индийском океане (англ.)"
+						},
+						"BN": {
+							"displayName": "Бруней-Даруссалам"
+						},
+						"BG": {
+							"displayName": "Болгария"
+						},
+						"BF": {
+							"displayName": "Буркина-Фасо"
+						},
+						"BI": {
+							"displayName": "Бурунди"
+						},
+						"CV": {
+							"displayName": "Кабо-Верде"
+						},
+						"KH": {
+							"displayName": "Камбоджа"
+						},
+						"CM": {
+							"displayName": "Камерун"
+						},
+						"CA": {
+							"displayName": "Канада"
+						},
+						"KY": {
+							"displayName": "Каймановы острова (англ.)"
+						},
+						"CF": {
+							"displayName": "Центральноафриканская Республика (англ.)"
+						},
+						"TD": {
+							"displayName": "Чад"
+						},
+						"CL": {
+							"displayName": "Чили"
+						},
+						"CN": {
+							"displayName": "Китай"
+						},
+						"CX": {
+							"displayName": "Остров Рождества"
+						},
+						"CC": {
+							"displayName": "Кокосовые острова (Килинг)"
+						},
+						"CO": {
+							"displayName": "Колумбия"
+						},
+						"KM": {
+							"displayName": "Коморские Острова (англ.)"
+						},
+						"CD": {
+							"displayName": "Конго (Демократическая Республика)"
+						},
+						"CG": {
+							"displayName": "Конго (англ.)"
+						},
+						"CK": {
+							"displayName": "Острова Кука (англ.)"
+						},
+						"CR": {
+							"displayName": "Коста-Рика"
+						},
+						"CI": {
+							"displayName": "Берег Слоновой Кости"
+						},
+						"HR": {
+							"displayName": "Хорватия"
+						},
+						"CU": {
+							"displayName": "Куба"
+						},
+						"CW": {
+							"displayName": "Кюрасао"
+						},
+						"CY": {
+							"displayName": "Кипр"
+						},
+						"CZ": {
+							"displayName": "Чехия"
+						},
+						"DK": {
+							"displayName": "Дания"
+						},
+						"DJ": {
+							"displayName": "Джибути"
+						},
+						"DM": {
+							"displayName": "Доминика"
+						},
+						"DO": {
+							"displayName": "Доминиканская Республика (англ.)"
+						},
+						"EC": {
+							"displayName": "Эквадор"
+						},
+						"EG": {
+							"displayName": "Египет"
+						},
+						"SV": {
+							"displayName": "Сальвадор"
+						},
+						"GQ": {
+							"displayName": "Экваториальная Гвинея"
+						},
+						"ER": {
+							"displayName": "Эритрея"
+						},
+						"EE": {
+							"displayName": "Эстония"
+						},
+						"ET": {
+							"displayName": "Эфиопия"
+						},
+						"FK": {
+							"displayName": "Фолклендские острова (Мальвинские острова)"
+						},
+						"FO": {
+							"displayName": "Фарерские острова (англ.)"
+						},
+						"FJ": {
+							"displayName": "Фиджи"
+						},
+						"FI": {
+							"displayName": "Финляндия"
+						},
+						"FR": {
+							"displayName": "Франция"
+						},
+						"GF": {
+							"displayName": "Французская Гвиана"
+						},
+						"PF": {
+							"displayName": "Французская Полинезия"
+						},
+						"TF": {
+							"displayName": "Южные территории Франции (англ.)"
+						},
+						"GA": {
+							"displayName": "Габон"
+						},
+						"GM": {
+							"displayName": "Гамбия (англ.)"
+						},
+						"GE": {
+							"displayName": "Грузия"
+						},
+						"DE": {
+							"displayName": "Германия"
+						},
+						"GH": {
+							"displayName": "Гана"
+						},
+						"GI": {
+							"displayName": "Гибралтар"
+						},
+						"GR": {
+							"displayName": "Греция"
+						},
+						"GL": {
+							"displayName": "Гренландия"
+						},
+						"GD": {
+							"displayName": "Гренада"
+						},
+						"GP": {
+							"displayName": "Гваделупа"
+						},
+						"GU": {
+							"displayName": "Гуам"
+						},
+						"GT": {
+							"displayName": "Гватемала"
+						},
+						"GG": {
+							"displayName": "Гернси"
+						},
+						"GN": {
+							"displayName": "Гвинея"
+						},
+						"GW": {
+							"displayName": "Гвинея-Бисау"
+						},
+						"GY": {
+							"displayName": "Гайана"
+						},
+						"HT": {
+							"displayName": "Гаити"
+						},
+						"HM": {
+							"displayName": "Остров Херд и острова Макдональда"
+						},
+						"VA": {
+							"displayName": "Святой Престол (англ.)"
+						},
+						"HN": {
+							"displayName": "Гондурас"
+						},
+						"HK": {
+							"displayName": "Гонконг"
+						},
+						"HU": {
+							"displayName": "Венгрия"
+						},
+						"IS": {
+							"displayName": "Исландия"
+						},
+						"IN": {
+							"displayName": "Индия"
+						},
+						"ID": {
+							"displayName": "Индонезия"
+						},
+						"IR": {
+							"displayName": "Иран (Исламская Республика)"
+						},
+						"IQ": {
+							"displayName": "Ирак"
+						},
+						"IE": {
+							"displayName": "Ирландия"
+						},
+						"IM": {
+							"displayName": "Остров Мэн"
+						},
+						"IL": {
+							"displayName": "Израиль"
+						},
+						"IT": {
+							"displayName": "Италия"
+						},
+						"JM": {
+							"displayName": "Ямайка"
+						},
+						"JP": {
+							"displayName": "Япония"
+						},
+						"JE": {
+							"displayName": "Джерси"
+						},
+						"JO": {
+							"displayName": "Иордания"
+						},
+						"KZ": {
+							"displayName": "Казахстан"
+						},
+						"KE": {
+							"displayName": "Кения"
+						},
+						"KI": {
+							"displayName": "Кирибати"
+						},
+						"KP": {
+							"displayName": "Корея (Народно-Демократическая Республика)"
+						},
+						"KR": {
+							"displayName": "Корея (Республика)"
+						},
+						"KW": {
+							"displayName": "Кувейт"
+						},
+						"KG": {
+							"displayName": "Кыргызстан"
+						},
+						"LA": {
+							"displayName": "Лаосская Народно-Демократическая Республика (англ.)"
+						},
+						"LV": {
+							"displayName": "Латвия"
+						},
+						"LB": {
+							"displayName": "Ливан"
+						},
+						"LS": {
+							"displayName": "Лесото"
+						},
+						"LR": {
+							"displayName": "Либерия"
+						},
+						"LY": {
+							"displayName": "Ливия"
+						},
+						"LI": {
+							"displayName": "Лихтенштейн"
+						},
+						"LT": {
+							"displayName": "Литва"
+						},
+						"LU": {
+							"displayName": "Люксембург"
+						},
+						"MO": {
+							"displayName": "Макао"
+						},
+						"MK": {
+							"displayName": "Македония (бывшая Югославская Республика)"
+						},
+						"MG": {
+							"displayName": "Мадагаскар"
+						},
+						"MW": {
+							"displayName": "Малави"
+						},
+						"MY": {
+							"displayName": "Малайзия"
+						},
+						"MV": {
+							"displayName": "Мальдивы"
+						},
+						"ML": {
+							"displayName": "Мали"
+						},
+						"MT": {
+							"displayName": "Мальта"
+						},
+						"MH": {
+							"displayName": "Маршалловы Острова (англ.)"
+						},
+						"MQ": {
+							"displayName": "Мартиника"
+						},
+						"MR": {
+							"displayName": "Мавритания"
+						},
+						"MU": {
+							"displayName": "Маврикий"
+						},
+						"YT": {
+							"displayName": "Майотта"
+						},
+						"MX": {
+							"displayName": "Мексика"
+						},
+						"FM": {
+							"displayName": "Микронезия (Федеративные Штаты)"
+						},
+						"MD": {
+							"displayName": "Молдова (Республика)"
+						},
+						"MC": {
+							"displayName": "Монако"
+						},
+						"MN": {
+							"displayName": "Монголия"
+						},
+						"ME": {
+							"displayName": "Черногория"
+						},
+						"MS": {
+							"displayName": "Монтсеррат"
+						},
+						"MA": {
+							"displayName": "Марокко"
+						},
+						"MZ": {
+							"displayName": "Мозамбик"
+						},
+						"MM": {
+							"displayName": "Мьянма"
+						},
+						"NA": {
+							"displayName": "Намибия"
+						},
+						"NR": {
+							"displayName": "Науру"
+						},
+						"NP": {
+							"displayName": "Непал"
+						},
+						"NL": {
+							"displayName": "Нидерланды (англ.)"
+						},
+						"NC": {
+							"displayName": "Новая Каледония"
+						},
+						"NZ": {
+							"displayName": "Новая Зеландия"
+						},
+						"NI": {
+							"displayName": "Никарагуа"
+						},
+						"NE": {
+							"displayName": "Нигер (англ.)"
+						},
+						"NG": {
+							"displayName": "Нигерия"
+						},
+						"NU": {
+							"displayName": "Ниуэ"
+						},
+						"NF": {
+							"displayName": "Остров Норфолк"
+						},
+						"MP": {
+							"displayName": "Северные Марианские острова (англ.)"
+						},
+						"NO": {
+							"displayName": "Норвегия"
+						},
+						"OM": {
+							"displayName": "Оман"
+						},
+						"PK": {
+							"displayName": "Пакистан"
+						},
+						"PW": {
+							"displayName": "Палау"
+						},
+						"PS": {
+							"displayName": "Палестина, Государство"
+						},
+						"PA": {
+							"displayName": "Панама"
+						},
+						"PG": {
+							"displayName": "Папуа-Новая Гвинея"
+						},
+						"PY": {
+							"displayName": "Парагвай"
+						},
+						"PE": {
+							"displayName": "Перу"
+						},
+						"PH": {
+							"displayName": "Филиппины (англ.)"
+						},
+						"PN": {
+							"displayName": "Питкэрн"
+						},
+						"PL": {
+							"displayName": "Польша"
+						},
+						"PT": {
+							"displayName": "Португалия"
+						},
+						"PR": {
+							"displayName": "Пуэрто-Рико"
+						},
+						"QA": {
+							"displayName": "Катар"
+						},
+						"RE": {
+							"displayName": "Реюньон"
+						},
+						"RO": {
+							"displayName": "Румыния"
+						},
+						"RU": {
+							"displayName": "Российская Федерация (англ.)"
+						},
+						"RW": {
+							"displayName": "Руанда"
+						},
+						"BL": {
+							"displayName": "Сен-Бартелеми"
+						},
+						"SH": {
+							"displayName": "Остров Святой Елены, Вознесения и Тристан-да-Кунья"
+						},
+						"KN": {
+							"displayName": "Сент-Китс и Невис"
+						},
+						"LC": {
+							"displayName": "Сент-Люсия"
+						},
+						"MF": {
+							"displayName": "Сен-Мартен (французская часть)"
+						},
+						"PM": {
+							"displayName": "Сен-Пьер и Микелон"
+						},
+						"VC": {
+							"displayName": "Сент-Винсент и Гренадины"
+						},
+						"WS": {
+							"displayName": "Самоа"
+						},
+						"SM": {
+							"displayName": "Сан-Марино"
+						},
+						"ST": {
+							"displayName": "Сан-Томе и Принсипи"
+						},
+						"SA": {
+							"displayName": "Саудовская Аравия"
+						},
+						"SN": {
+							"displayName": "Сенегал"
+						},
+						"RS": {
+							"displayName": "Сербия"
+						},
+						"SC": {
+							"displayName": "Сейшельские острова"
+						},
+						"SL": {
+							"displayName": "Сьерра-Леоне"
+						},
+						"SG": {
+							"displayName": "Сингапур"
+						},
+						"SX": {
+							"displayName": "Синт-Мартен (голландская часть)"
+						},
+						"SK": {
+							"displayName": "Словакия"
+						},
+						"SI": {
+							"displayName": "Словения"
+						},
+						"SB": {
+							"displayName": "Соломоновы Острова"
+						},
+						"SO": {
+							"displayName": "Сомали"
+						},
+						"ZA": {
+							"displayName": "ЮАР"
+						},
+						"GS": {
+							"displayName": "Южная Георгия и Южные Сандвичевы острова"
+						},
+						"SS": {
+							"displayName": "Южный Судан"
+						},
+						"ES": {
+							"displayName": "Испания"
+						},
+						"LK": {
+							"displayName": "Шри-Ланка"
+						},
+						"SD": {
+							"displayName": "Судан (англ.)"
+						},
+						"SR": {
+							"displayName": "Суринам"
+						},
+						"SJ": {
+							"displayName": "Шпицберген и Ян-Майен"
+						},
+						"SZ": {
+							"displayName": "Свазиленд"
+						},
+						"SE": {
+							"displayName": "Швеция"
+						},
+						"CH": {
+							"displayName": "Швейцария"
+						},
+						"SY": {
+							"displayName": "Сирийская Арабская Республика"
+						},
+						"TW": {
+							"displayName": "Тайвань (Провинция Китая)"
+						},
+						"TJ": {
+							"displayName": "Таджикистан"
+						},
+						"TZ": {
+							"displayName": "Танзания, Объединенная Республика"
+						},
+						"TH": {
+							"displayName": "Таиланд"
+						},
+						"TL": {
+							"displayName": "Тимор-Лешти"
+						},
+						"TG": {
+							"displayName": "Того"
+						},
+						"TK": {
+							"displayName": "Токелау"
+						},
+						"TO": {
+							"displayName": "Тонга"
+						},
+						"TT": {
+							"displayName": "Тринидад и Тобаго"
+						},
+						"TN": {
+							"displayName": "Тунис"
+						},
+						"TR": {
+							"displayName": "Турция"
+						},
+						"TM": {
+							"displayName": "Туркменистан"
+						},
+						"TC": {
+							"displayName": "Острова Тёркс и Кайкос (англ.)"
+						},
+						"TV": {
+							"displayName": "Тувалу"
+						},
+						"UG": {
+							"displayName": "Уганда"
+						},
+						"UA": {
+							"displayName": "Украина"
+						},
+						"AE": {
+							"displayName": "Объединенные Арабские Эмираты (англ.)"
+						},
+						"GB": {
+							"displayName": "Соединенное Королевство Великобритании и Северной Ирландии (англ.)"
+						},
+						"UM": {
+							"displayName": "Малые отдаленные острова США (the)"
+						},
+						"US": {
+							"displayName": "Соединенные Штаты Америки (англ.)"
+						},
+						"UY": {
+							"displayName": "Уругвай"
+						},
+						"UZ": {
+							"displayName": "Узбекистан"
+						},
+						"VU": {
+							"displayName": "Вануату"
+						},
+						"VE": {
+							"displayName": "Венесуэла (Боливарианская Республика)"
+						},
+						"VN": {
+							"displayName": "Вьетнам"
+						},
+						"VG": {
+							"displayName": "Виргинские острова (Британские)"
+						},
+						"VI": {
+							"displayName": "Виргинские острова (США)"
+						},
+						"WF": {
+							"displayName": "Уоллис и Футуна"
+						},
+						"EH": {
+							"displayName": "Западная Сахара*"
+						},
+						"YE": {
+							"displayName": "Йемен"
+						},
+						"ZM": {
+							"displayName": "Замбия"
+						},
+						"ZW": {
+							"displayName": "Зимбабве"
+						}
+					}
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Название проекта для фильтрации"
+				},
+				"company_ids": {
+					"displayName": "Идентификаторы компании",
+					"description": "Разделенные запятыми идентификаторы основных компаний для фильтрации."
+				},
+				"customer_source_ids": {
+					"displayName": "Идентификаторы источников клиентов",
+					"description": "Разделенные запятыми идентификаторы источников клиентов для фильтрации."
+				},
+				"assignee_ids": {
+					"displayName": "Идентификаторы правопреемников",
+					"description": "Идентификаторы идентификаторов правопреемников, разделенных запятыми, для фильтрации."
+				},
+				"project_ids": {
+					"displayName": "Идентификаторы проектов",
+					"description": "Идентификаторы проектов, разделенные запятыми, для фильтрации."
+				}
+			}
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"address": {
+					"values": {
+						"address": {
+							"displayName": "Адрес"
+						},
+						"addressFields": {
+							"options": {
+								"street": {
+									"displayName": "Улица"
+								},
+								"city": {
+									"displayName": "Город"
+								},
+								"state": {
+									"displayName": "Состояние"
+								},
+								"postal_code": {
+									"displayName": "Почтовый индекс"
+								},
+								"country": {
+									"displayName": "Страна",
+									"description": "Код страны ISO 3166 альфа-2"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить поля адреса",
+					"displayName": "Адрес",
+					"options": {
+						"addressFields": {
+							"displayName": "Поля адреса"
+						}
+					}
+				},
+				"details": {
+					"displayName": "Подробности",
+					"description": "Описание, которое нужно задать для задачи"
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Имя, которое нужно задать для задачи"
+				},
+				"phone_numbers": {
+					"values": {
+						"phone_numbers": {
+							"displayName": "Номера телефонов"
+						},
+						"phoneFields": {
+							"options": {
+								"number": {
+									"displayName": "Число"
+								},
+								"category": {
+									"displayName": "Категория"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить номер телефона",
+					"displayName": "Номера телефонов",
+					"options": {
+						"phoneFields": {
+							"displayName": "Поля телефона"
+						}
+					}
+				},
+				"email": {
+					"values": {
+						"email": {
+							"displayName": "Электронная почта"
+						},
+						"emailFields": {
+							"options": {
+								"email": {
+									"displayName": "Электронная почта",
+									"placeholder": "имя@email.com"
+								},
+								"category": {
+									"displayName": "Категория"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить адрес электронной почты",
+					"displayName": "Электронная почта",
+					"options": {
+						"emailFields": {
+							"displayName": "Поля электронной почты"
+						}
+					}
+				},
+				"customer_source_id": {
+					"displayName": "Идентификатор источника клиента",
+					"description": "Идентификатор основной компании, связанной с этой возможностью"
+				},
+				"primary_contact_id": {
+					"displayName": "Основной идентификатор контакта",
+					"description": "Идентификатор источника клиента, создавшего эту возможность."
+				},
+				"email_domain": {
+					"displayName": "Электронный домен"
+				},
+				"emails": {
+					"values": {
+						"emails": {
+							"displayName": "Электронная почта"
+						},
+						"emailFields": {
+							"options": {
+								"email": {
+									"displayName": "Электронная почта",
+									"placeholder": "имя@email.com"
+								},
+								"category": {
+									"displayName": "Категория"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить адрес электронной почты",
+					"displayName": "Электронная почта",
+					"options": {
+						"emailFields": {
+							"displayName": "Поля электронной почты"
+						}
+					}
+				},
+				"assignee_id": {
+					"displayName": "Идентификатор правопреемника",
+					"description": "Идентификатор пользователя, которому будет принадлежать задача"
+				},
+				"status": {
+					"displayName": "Статус",
+					"options": {
+						"Completed": {
+							"displayName": "Завершенный"
+						},
+						"Open": {
+							"displayName": "Открыть"
+						}
+					}
+				},
+				"priority": {
+					"displayName": "Приоритет",
+					"options": {
+						"High": {
+							"displayName": "Высокий"
+						},
+						"None": {
+							"displayName": "Никто"
+						}
+					}
+				}
+			}
+		},
+		"leadId": {
+			"displayName": "Идентификатор лида",
+			"description": "Идентификатор лида для обновления"
+		},
+		"customerSourceId": {
+			"displayName": "Идентификатор источника клиента",
+			"description": "Идентификатор источника клиента, создавшего эту возможность."
+		},
+		"primaryContactId": {
+			"displayName": "Основной идентификатор контакта",
+			"description": "Идентификатор основной компании, связанной с этой возможностью"
+		},
+		"opportunityId": {
+			"displayName": "Идентификатор возможности",
+			"description": "ID возможности обновления"
+		},
+		"personId": {
+			"displayName": "Идентификатор человека",
+			"description": "Идентификатор человека, которого необходимо обновить"
+		},
+		"projectId": {
+			"displayName": "Идентификатор проекта",
+			"description": "Идентификатор проекта для обновления"
+		},
+		"taskId": {
+			"displayName": "Идентификатор задачи",
+			"description": "Идентификатор задачи для обновления"
+		}
+	}
+}

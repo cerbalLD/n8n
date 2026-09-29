@@ -1,0 +1,97 @@
+{
+	"header": {
+		"displayName": "Сториблок",
+		"description": "Использование API Storyblok"
+	},
+	"nodeView": {
+		"source": {
+			"displayName": "Источник",
+			"description": "Выберите, откуда поступают ваши данные: контент или API управления.",
+			"options": {
+				"contentApi": {
+					"displayName": "API контента"
+				},
+				"managementApi": {
+					"displayName": "API управления"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"story": {
+					"displayName": "История"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить историю"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получите много историй"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить историю"
+				},
+				"publish": {
+					"displayName": "Публиковать",
+					"description": "Опубликовать историю"
+				},
+				"unpublish": {
+					"displayName": "Отменить публикацию",
+					"description": "Отменить публикацию истории"
+				}
+			}
+		},
+		"identifier": {
+			"displayName": "Идентификатор",
+			"description": "Идентификатор или фрагмент истории, которую нужно получить."
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"starts_with": {
+					"displayName": "Начинается с",
+					"description": "Фильтровать по слизню"
+				}
+			}
+		},
+		"space": {
+			"displayName": "Имя или идентификатор пространства",
+			"description": "Название пространства. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"storyId": {
+			"displayName": "Идентификатор истории",
+			"description": "Числовой идентификатор истории"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"releaseId": {
+					"displayName": "Идентификатор выпуска",
+					"description": "Числовой идентификатор выпуска"
+				},
+				"language": {
+					"displayName": "Язык",
+					"description": "Код языка для индивидуальной публикации истории (необходимо включить в настройках пространства)"
+				}
+			}
+		}
+	}
+}

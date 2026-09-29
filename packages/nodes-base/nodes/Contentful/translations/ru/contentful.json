@@ -1,0 +1,125 @@
+{
+	"header": {
+		"displayName": "Содержательный",
+		"description": "Используйте контентный API"
+	},
+	"nodeView": {
+		"source": {
+			"displayName": "Источник",
+			"description": "Выберите, откуда поступают ваши данные, API доставки или предварительного просмотра.",
+			"options": {
+				"deliveryApi": {
+					"displayName": "API доставки"
+				},
+				"previewApi": {
+					"displayName": "Предварительный просмотр API"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"asset": {
+					"displayName": "Объект"
+				},
+				"contentType": {
+					"displayName": "Тип контента"
+				},
+				"entry": {
+					"displayName": "Вход"
+				},
+				"locale": {
+					"displayName": "Языковой стандарт"
+				},
+				"space": {
+					"displayName": "Космос"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"get": {
+					"displayName": "Получать"
+				},
+				"getAll": {
+					"displayName": "Получить много"
+				}
+			}
+		},
+		"environmentId": {
+			"displayName": "Идентификатор среды",
+			"description": "Идентификатор среды с контентом (например, мастер, промежуточный и т. д.). В зависимости от вашего плана у вас может не быть сред. В этом случае используйте «мастер»."
+		},
+		"contentTypeId": {
+			"displayName": "Идентификатор типа контента"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"rawData": {
+					"displayName": "Необработанные данные",
+					"description": "Должны ли данные быть возвращены в формате RAW вместо анализа"
+				},
+				"content_type": {
+					"displayName": "Идентификатор типа контента",
+					"description": "Для поиска записей с определенным типом контента"
+				},
+				"equal": {
+					"displayName": "Равный",
+					"description": "Найдите все данные, соответствующие условию: {attribute}={value}. Атрибут может использовать точечную запись.",
+					"placeholder": "поля.title=n8n"
+				},
+				"exclude": {
+					"displayName": "Исключать",
+					"description": "Найдите все данные, соответствующие условию: {attribute}[nin]={value}. Атрибут может использовать точечную запись.",
+					"placeholder": "field.tags[nin]=аксессуары,цветы"
+				},
+				"exist": {
+					"displayName": "Существовать",
+					"description": "Найдите все данные, соответствующие условию: {attribute}[exists]={value}. Атрибут может использовать точечную запись.",
+					"placeholder": "поля.теги[существует]=истина"
+				},
+				"select": {
+					"displayName": "Поля",
+					"description": "Оператор выбора позволяет вам выбрать, какие поля возвращать из сущности. Вы можете выбрать несколько значений, комбинируя операторы, разделенные запятыми.",
+					"placeholder": "поля.название"
+				},
+				"include": {
+					"displayName": "Включать",
+					"description": "Найдите все данные, соответствующие условию: {attribute}[in]={value}. Атрибут может использовать точечную запись.",
+					"placeholder": "field.tags[in]=аксессуары,цветы"
+				},
+				"notEqual": {
+					"displayName": "Не равно",
+					"description": "Найдите все данные, соответствующие условию: {attribute}[ne]={value}. Атрибут может использовать точечную запись.",
+					"placeholder": "поля.title[ne]=n8n"
+				},
+				"order": {
+					"displayName": "Заказ",
+					"description": "Упорядочить товары в ответе можно, указав параметр поиска заказа. Для упорядочивания можно использовать свойства sys (например, sys.createdAt) или значения полей (например,fields.myCustomDateField).",
+					"placeholder": "sys.createdAt"
+				},
+				"query": {
+					"displayName": "Запрос",
+					"description": "Полнотекстовый поиск нечувствителен к регистру и может вернуть больше результатов, чем ожидалось. Запрос будет принимать только значения, содержащие более 1 символа."
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"entryId": {
+			"displayName": "Идентификатор записи"
+		},
+		"assetId": {
+			"displayName": "Идентификатор актива"
+		}
+	}
+}

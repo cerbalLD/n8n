@@ -1,0 +1,752 @@
+{
+	"header": {
+		"displayName": "Зендеск",
+		"description": "Использование Zendesk API"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"apiToken": {
+					"displayName": "API-токен"
+				},
+				"oAuth2": {
+					"displayName": "ОАут2"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"ticket": {
+					"displayName": "Билет",
+					"description": "Билеты — это средство, с помощью которого ваши конечные пользователи (клиенты) общаются с агентами в Zendesk Support."
+				},
+				"ticketField": {
+					"displayName": "Поле билета",
+					"description": "Управление системой и настраиваемыми полями заявки"
+				},
+				"user": {
+					"displayName": "Пользователь",
+					"description": "Управление пользователями"
+				},
+				"organization": {
+					"displayName": "Организация",
+					"description": "Управление организациями"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать организацию"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить организацию"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить организацию"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить много организаций"
+				},
+				"recover": {
+					"displayName": "Восстанавливаться",
+					"description": "Восстановить приостановленный билет"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить организацию"
+				},
+				"getOrganizations": {
+					"displayName": "Получить организации",
+					"description": "Получить организации пользователя"
+				},
+				"getRelatedData": {
+					"displayName": "Получить связанные данные",
+					"description": "Получить данные, относящиеся к организации"
+				},
+				"search": {
+					"displayName": "Поиск",
+					"description": "Поиск пользователей"
+				},
+				"count": {
+					"displayName": "Считать",
+					"description": "Подсчет организаций"
+				}
+			}
+		},
+		"description": {
+			"displayName": "Описание",
+			"description": "Первый комментарий к билету"
+		},
+		"jsonParameters": {
+			"displayName": "Параметры JSON"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"customFieldsUi": {
+					"values": {
+						"customFieldsUi": {
+							"displayName": "Пользовательские поля"
+						},
+						"customFieldsValues": {
+							"options": {
+								"id": {
+									"displayName": "Имя или идентификатор",
+									"description": "Идентификатор настраиваемого поля. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Значение настраиваемого поля"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить настраиваемое поле",
+					"displayName": "Пользовательские поля",
+					"options": {
+						"customFieldsValues": {
+							"displayName": "Пользовательское поле"
+						}
+					}
+				},
+				"externalId": {
+					"displayName": "Внешний идентификатор",
+					"description": "Идентификатор, который можно использовать для привязки заявок Zendesk Support к локальным записям."
+				},
+				"group": {
+					"displayName": "Имя или идентификатор группы",
+					"description": "Группа, которой назначен этот билет. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"recipient": {
+					"displayName": "Получатель",
+					"description": "Исходный адрес электронной почты получателя билета"
+				},
+				"status": {
+					"displayName": "Статус",
+					"description": "Состояние билета",
+					"options": {
+						"closed": {
+							"displayName": "Закрыто"
+						},
+						"new": {
+							"displayName": "Новый"
+						},
+						"hold": {
+							"displayName": "На удерживании"
+						},
+						"open": {
+							"displayName": "Открыть"
+						},
+						"pending": {
+							"displayName": "В ожидании"
+						},
+						"solved": {
+							"displayName": "Решено"
+						}
+					}
+				},
+				"subject": {
+					"displayName": "Предмет",
+					"description": "Значение поля темы для этой заявки"
+				},
+				"tags": {
+					"displayName": "Имена или идентификаторы тегов",
+					"description": "Идентификаторы тегов, примененных к этой организации. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"type": {
+					"displayName": "Тип",
+					"description": "Тип этого билета",
+					"options": {
+						"question": {
+							"displayName": "Вопрос"
+						},
+						"incident": {
+							"displayName": "Инцидент"
+						},
+						"problem": {
+							"displayName": "Проблема"
+						},
+						"task": {
+							"displayName": "Задача"
+						}
+					}
+				},
+				"alias": {
+					"displayName": "Псевдоним",
+					"description": "Псевдоним, отображаемый конечным пользователям"
+				},
+				"custom_role_id": {
+					"displayName": "Пользовательский идентификатор роли",
+					"description": "Пользовательская роль, если пользователь является агентом в плане Enterprise."
+				},
+				"details": {
+					"displayName": "Подробности",
+					"description": "Подробная информация об организации, например адрес"
+				},
+				"email": {
+					"displayName": "Электронная почта",
+					"description": "Основной адрес электронной почты пользователя",
+					"placeholder": "имя@email.com"
+				},
+				"external_id": {
+					"displayName": "Внешний идентификатор",
+					"description": "Уникальный идентификатор из другой системы"
+				},
+				"locale": {
+					"displayName": "Языковой стандарт",
+					"description": "Язык пользователя. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"moderator": {
+					"displayName": "Модератор",
+					"description": "Есть ли у пользователя возможности модерации форума"
+				},
+				"notes": {
+					"displayName": "Примечания",
+					"description": "Любые заметки о пользователе, которые вы хотите сохранить."
+				},
+				"only_private_comments": {
+					"displayName": "Только частные комментарии",
+					"description": "Может ли пользователь создавать только частные комментарии"
+				},
+				"organization_id": {
+					"displayName": "Название или идентификатор организации",
+					"description": "Идентификатор организации пользователя. Если у пользователя есть членство в нескольких организациях, идентификатор организации пользователя по умолчанию. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"phone": {
+					"displayName": "Телефон",
+					"description": "Основной номер телефона пользователя"
+				},
+				"report_csv": {
+					"displayName": "Отчет в формате CSV",
+					"description": "Может ли пользователь получить доступ к отчету CSV на вкладке «Поиск» на странице «Отчеты» в интерфейсе администратора службы поддержки."
+				},
+				"restricted_agent": {
+					"displayName": "Ограниченный агент",
+					"description": "Есть ли у агента какие-либо ограничения; false для администраторов и неограниченных агентов, true для других агентов"
+				},
+				"role": {
+					"displayName": "Роль",
+					"description": "Роль пользователя",
+					"options": {
+						"end-user": {
+							"displayName": "Конечный пользователь"
+						},
+						"agent": {
+							"displayName": "Агент"
+						},
+						"admin": {
+							"displayName": "Админ"
+						}
+					}
+				},
+				"signature": {
+					"displayName": "Подпись",
+					"description": "Подпись пользователя. Подписи могут иметь только агенты и администраторы."
+				},
+				"suspended": {
+					"displayName": "Приостановленный",
+					"description": "Приостановлен ли агент. Заявки от заблокированных пользователей также приостанавливаются, и эти пользователи не могут войти на портал конечных пользователей."
+				},
+				"ticket_restriction": {
+					"displayName": "Ограничение билетов",
+					"description": "Указывает, к каким билетам у пользователя есть доступ.",
+					"options": {
+						"organization": {
+							"displayName": "Организация"
+						},
+						"groups": {
+							"displayName": "Группы"
+						},
+						"assigned": {
+							"displayName": "Назначенный"
+						},
+						"requested": {
+							"displayName": "Запрошено"
+						}
+					}
+				},
+				"time_zone": {
+					"displayName": "Часовой пояс",
+					"description": "Часовой пояс пользователя"
+				},
+				"userFieldsUi": {
+					"values": {
+						"userFieldsUi": {
+							"displayName": "Пользовательские поля",
+							"description": "Значения произвольных полей в профиле пользователя"
+						},
+						"userFieldValues": {
+							"options": {
+								"field": {
+									"displayName": "Имя поля или идентификатор",
+									"description": "Имя поля для сортировки. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Значение поля"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить пользовательское поле",
+					"displayName": "Пользовательские поля",
+					"description": "Значения произвольных полей в профиле пользователя",
+					"options": {
+						"userFieldValues": {
+							"displayName": "Поле"
+						}
+					}
+				},
+				"verified": {
+					"displayName": "Проверено",
+					"description": "Подтверждена ли основная личность пользователя или нет."
+				},
+				"domain_names": {
+					"displayName": "Доменные имена",
+					"description": "Доменные имена, разделенные запятыми, связанные с этой организацией"
+				},
+				"organizationFieldsUi": {
+					"values": {
+						"organizationFieldsUi": {
+							"displayName": "Поля организации",
+							"description": "Значения произвольных полей в профиле организации"
+						},
+						"organizationFieldValues": {
+							"options": {
+								"field": {
+									"displayName": "Имя поля или идентификатор",
+									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+								},
+								"value": {
+									"displayName": "Ценить"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить поле организации",
+					"displayName": "Поля организации",
+					"description": "Значения произвольных полей в профиле организации",
+					"options": {
+						"organizationFieldValues": {
+							"displayName": "Поле"
+						}
+					}
+				}
+			}
+		},
+		"additionalFieldsJson": {
+			"displayName": "Дополнительные поля",
+			"description": "Объект значений для установки, как описано <a href=\"https://developer.zendesk.com/rest_api/docs/support/tickets\">здесь</a>"
+		},
+		"id": {
+			"displayName": "Идентификатор организации",
+			"description": "Идентификатор билета"
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"assigneeEmail": {
+					"displayName": "Адрес электронной почты правопреемника",
+					"description": "Адрес электронной почты правопреемника"
+				},
+				"customFieldsUi": {
+					"values": {
+						"customFieldsUi": {
+							"displayName": "Пользовательские поля"
+						},
+						"customFieldsValues": {
+							"options": {
+								"id": {
+									"displayName": "Имя или идентификатор",
+									"description": "Идентификатор настраиваемого поля. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Значение настраиваемого поля"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить настраиваемое поле",
+					"displayName": "Пользовательские поля",
+					"options": {
+						"customFieldsValues": {
+							"displayName": "Пользовательское поле"
+						}
+					}
+				},
+				"externalId": {
+					"displayName": "Внешний идентификатор",
+					"description": "Идентификатор, который можно использовать для привязки заявок Zendesk Support к локальным записям."
+				},
+				"group": {
+					"displayName": "Имя или идентификатор группы",
+					"description": "Группа, которой назначен этот билет. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"internalNote": {
+					"displayName": "Внутреннее примечание",
+					"description": "Внутреннее примечание к билету (принимает HTML)"
+				},
+				"publicReply": {
+					"displayName": "Публичный ответ",
+					"description": "Публичный ответ на заявку"
+				},
+				"recipient": {
+					"displayName": "Получатель",
+					"description": "Исходный адрес электронной почты получателя билета"
+				},
+				"status": {
+					"displayName": "Статус",
+					"description": "Состояние билета",
+					"options": {
+						"closed": {
+							"displayName": "Закрыто"
+						},
+						"new": {
+							"displayName": "Новый"
+						},
+						"hold": {
+							"displayName": "На удерживании"
+						},
+						"open": {
+							"displayName": "Открыть"
+						},
+						"pending": {
+							"displayName": "В ожидании"
+						},
+						"solved": {
+							"displayName": "Решено"
+						}
+					}
+				},
+				"subject": {
+					"displayName": "Предмет",
+					"description": "Значение поля темы для этой заявки"
+				},
+				"tags": {
+					"displayName": "Имена или идентификаторы тегов",
+					"description": "Идентификаторы тегов, примененных к этой организации. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"type": {
+					"displayName": "Тип",
+					"description": "Тип этого билета",
+					"options": {
+						"question": {
+							"displayName": "Вопрос"
+						},
+						"incident": {
+							"displayName": "Инцидент"
+						},
+						"problem": {
+							"displayName": "Проблема"
+						},
+						"task": {
+							"displayName": "Задача"
+						}
+					}
+				},
+				"alias": {
+					"displayName": "Псевдоним",
+					"description": "Псевдоним, отображаемый конечным пользователям"
+				},
+				"custom_role_id": {
+					"displayName": "Пользовательский идентификатор роли",
+					"description": "Пользовательская роль, если пользователь является агентом в плане Enterprise."
+				},
+				"details": {
+					"displayName": "Подробности",
+					"description": "Подробная информация об организации, например адрес"
+				},
+				"email": {
+					"displayName": "Электронная почта",
+					"description": "Основной адрес электронной почты пользователя",
+					"placeholder": "имя@email.com"
+				},
+				"external_id": {
+					"displayName": "Внешний идентификатор",
+					"description": "Уникальный идентификатор из другой системы"
+				},
+				"locale": {
+					"displayName": "Языковой стандарт",
+					"description": "Язык пользователя. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"moderator": {
+					"displayName": "Модератор",
+					"description": "Есть ли у пользователя возможности модерации форума"
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Имя пользователя"
+				},
+				"notes": {
+					"displayName": "Примечания",
+					"description": "Любые заметки о пользователе, которые вы хотите сохранить."
+				},
+				"only_private_comments": {
+					"displayName": "Только частные комментарии",
+					"description": "Может ли пользователь создавать только частные комментарии"
+				},
+				"organization_id": {
+					"displayName": "Название или идентификатор организации",
+					"description": "Идентификатор организации пользователя. Если у пользователя есть членство в нескольких организациях, идентификатор организации пользователя по умолчанию. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"phone": {
+					"displayName": "Телефон",
+					"description": "Основной номер телефона пользователя"
+				},
+				"report_csv": {
+					"displayName": "Отчет в формате CSV",
+					"description": "Может ли пользователь получить доступ к отчету CSV на вкладке «Поиск» на странице «Отчеты» в интерфейсе администратора службы поддержки."
+				},
+				"restricted_agent": {
+					"displayName": "Ограниченный агент",
+					"description": "Есть ли у агента какие-либо ограничения; false для администраторов и неограниченных агентов, true для других агентов"
+				},
+				"role": {
+					"displayName": "Роль",
+					"description": "Роль пользователя",
+					"options": {
+						"end-user": {
+							"displayName": "Конечный пользователь"
+						},
+						"agent": {
+							"displayName": "Агент"
+						},
+						"admin": {
+							"displayName": "Админ"
+						}
+					}
+				},
+				"signature": {
+					"displayName": "Подпись",
+					"description": "Подпись пользователя. Подписи могут иметь только агенты и администраторы."
+				},
+				"suspended": {
+					"displayName": "Приостановленный",
+					"description": "Приостановлен ли агент. Заявки от заблокированных пользователей также приостанавливаются, и эти пользователи не могут войти на портал конечных пользователей."
+				},
+				"ticket_restriction": {
+					"displayName": "Ограничение билетов",
+					"description": "Указывает, к каким билетам у пользователя есть доступ.",
+					"options": {
+						"organization": {
+							"displayName": "Организация"
+						},
+						"groups": {
+							"displayName": "Группы"
+						},
+						"assigned": {
+							"displayName": "Назначенный"
+						},
+						"requested": {
+							"displayName": "Запрошено"
+						}
+					}
+				},
+				"time_zone": {
+					"displayName": "Часовой пояс",
+					"description": "Часовой пояс пользователя"
+				},
+				"userFieldsUi": {
+					"values": {
+						"userFieldsUi": {
+							"displayName": "Пользовательские поля",
+							"description": "Значения произвольных полей в профиле пользователя"
+						},
+						"userFieldValues": {
+							"options": {
+								"field": {
+									"displayName": "Имя поля или идентификатор",
+									"description": "Имя поля для сортировки. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Значение поля"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить пользовательское поле",
+					"displayName": "Пользовательские поля",
+					"description": "Значения произвольных полей в профиле пользователя",
+					"options": {
+						"userFieldValues": {
+							"displayName": "Поле"
+						}
+					}
+				},
+				"verified": {
+					"displayName": "Проверено",
+					"description": "Подтверждена ли основная личность пользователя или нет."
+				},
+				"domain_names": {
+					"displayName": "Доменные имена",
+					"description": "Доменные имена, разделенные запятыми, связанные с этой организацией"
+				},
+				"organizationFieldsUi": {
+					"values": {
+						"organizationFieldsUi": {
+							"displayName": "Поля организации",
+							"description": "Значения произвольных полей в профиле организации"
+						},
+						"organizationFieldValues": {
+							"options": {
+								"field": {
+									"displayName": "Имя поля или идентификатор",
+									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+								},
+								"value": {
+									"displayName": "Ценить"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить поле организации",
+					"displayName": "Поля организации",
+					"description": "Значения произвольных полей в профиле организации",
+					"options": {
+						"organizationFieldValues": {
+							"displayName": "Поле"
+						}
+					}
+				}
+			}
+		},
+		"updateFieldsJson": {
+			"displayName": "Обновить поля",
+			"description": "Объект значений для обновления, как описано <a href=\"https://developer.zendesk.com/rest_api/docs/support/tickets\">здесь</a>"
+		},
+		"ticketType": {
+			"displayName": "Тип билета",
+			"options": {
+				"regular": {
+					"displayName": "Обычный"
+				},
+				"suspended": {
+					"displayName": "Приостановленный"
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"group": {
+					"displayName": "Имя или идентификатор группы",
+					"description": "Группа для поиска. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"query": {
+					"displayName": "Запрос",
+					"description": "<a href=\"https://developer.zendesk.com/api-reference/ticketing/ticket-management/search/#syntax-examples\">Синтаксис запроса</a> для поиска билетов"
+				},
+				"sortBy": {
+					"displayName": "Сортировать по",
+					"description": "По умолчанию используется сортировка по релевантности.",
+					"options": {
+						"created_at": {
+							"displayName": "Создано в"
+						},
+						"priority": {
+							"displayName": "Приоритет"
+						},
+						"status": {
+							"displayName": "Статус"
+						},
+						"ticket_type": {
+							"displayName": "Тип билета"
+						},
+						"updated_at": {
+							"displayName": "Обновлено в"
+						}
+					}
+				},
+				"sortOrder": {
+					"displayName": "Порядок сортировки",
+					"options": {
+						"asc": {
+							"displayName": "восходящий"
+						},
+						"desc": {
+							"displayName": "По убыванию"
+						}
+					}
+				},
+				"status": {
+					"displayName": "Статус",
+					"description": "Состояние билета",
+					"options": {
+						"closed": {
+							"displayName": "Закрыто"
+						},
+						"new": {
+							"displayName": "Новый"
+						},
+						"hold": {
+							"displayName": "На удерживании"
+						},
+						"open": {
+							"displayName": "Открыть"
+						},
+						"pending": {
+							"displayName": "В ожидании"
+						},
+						"solved": {
+							"displayName": "Решено"
+						}
+					}
+				}
+			}
+		},
+		"ticketFieldId": {
+			"displayName": "Идентификатор поля заявки"
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Имя пользователя"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"role": {
+					"displayName": "Роли",
+					"options": {
+						"end-user": {
+							"displayName": "Конечный пользователь"
+						},
+						"agent": {
+							"displayName": "Агент"
+						},
+						"admin": {
+							"displayName": "Админ"
+						}
+					}
+				},
+				"query": {
+					"displayName": "Запрос"
+				},
+				"external_id": {
+					"displayName": "Внешний идентификатор"
+				}
+			}
+		}
+	}
+}

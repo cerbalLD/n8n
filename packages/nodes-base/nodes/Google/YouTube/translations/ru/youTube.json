@@ -1,0 +1,568 @@
+{
+	"header": {
+		"displayName": "Ютуб",
+		"description": "Использование API YouTube"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"channel": {
+					"displayName": "Канал"
+				},
+				"playlist": {
+					"displayName": "Плейлист"
+				},
+				"playlistItem": {
+					"displayName": "Элемент плейлиста"
+				},
+				"video": {
+					"displayName": "Видео"
+				},
+				"videoCategory": {
+					"displayName": "Категория видео"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить видео"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить множество категорий видео"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить видео"
+				},
+				"uploadBanner": {
+					"displayName": "Загрузить баннер",
+					"description": "Загрузите баннер канала"
+				},
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать плейлист"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить видео"
+				},
+				"add": {
+					"displayName": "Добавлять",
+					"description": "Добавить объект в плейлист"
+				},
+				"rate": {
+					"displayName": "Ставка",
+					"description": "Оценить видео"
+				},
+				"upload": {
+					"displayName": "Загрузить",
+					"description": "Загрузить видео"
+				}
+			}
+		},
+		"part": {
+			"displayName": "Поля",
+			"description": "Параметр полей указывает разделенный запятыми список одного или нескольких свойств видеоресурса, которые будут включены в ответ API.",
+			"options": {
+				"*": {
+					"displayName": "*"
+				},
+				"brandingSettings": {
+					"displayName": "Настройки брендинга"
+				},
+				"contentDetails": {
+					"displayName": "Подробности содержания"
+				},
+				"contentOwnerDetails": {
+					"displayName": "Сведения о владельце контента"
+				},
+				"id": {
+					"displayName": "ID"
+				},
+				"localizations": {
+					"displayName": "Локализации"
+				},
+				"snippet": {
+					"displayName": "Фрагмент"
+				},
+				"statistics": {
+					"displayName": "Статистика"
+				},
+				"status": {
+					"displayName": "Статус"
+				},
+				"topicDetails": {
+					"displayName": "Подробности темы"
+				},
+				"player": {
+					"displayName": "Игрок"
+				},
+				"liveStreamingDetails": {
+					"displayName": "Подробности прямой трансляции"
+				},
+				"recordingDetails": {
+					"displayName": "Детали записи"
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"categoryId": {
+					"displayName": "Идентификатор категории",
+					"description": "Параметр CategoryId указывает категорию руководства YouTube, тем самым запрашивая каналы YouTube, связанные с этой категорией."
+				},
+				"forUsername": {
+					"displayName": "Для имени пользователя",
+					"description": "Параметр forUsername указывает имя пользователя YouTube, тем самым запрашивая канал, связанный с этим именем пользователя."
+				},
+				"id": {
+					"displayName": "ID",
+					"description": "Параметр ID указывает разделенный запятыми список идентификаторов плейлистов YouTube для извлекаемых ресурсов. В ресурсе списка воспроизведения свойство ID указывает идентификатор списка воспроизведения YouTube."
+				},
+				"managedByMe": {
+					"displayName": "Управляемый мной",
+					"description": "Следует ли указать API, чтобы он возвращал только каналы, управляемые владельцем контента, которые указаны в параметре onBehalfOfContentOwner."
+				},
+				"channelId": {
+					"displayName": "Идентификатор канала",
+					"description": "Параметр ChannelId указывает, что ответ API должен содержать только ресурсы, созданные каналом."
+				},
+				"forDeveloper": {
+					"displayName": "Для разработчика",
+					"description": "Ограничить ли поиск только поиском видео, загруженных через приложение или веб-сайт разработчика."
+				},
+				"publishedAfter": {
+					"displayName": "Опубликовано после",
+					"description": "ПараметрPublishAfter указывает, что ответ API должен содержать только ресурсы, созданные в указанное время или после него."
+				},
+				"publishedBefore": {
+					"displayName": "Опубликовано ранее",
+					"description": "ПараметрPublishBefore указывает, что ответ API должен содержать только ресурсы, созданные до или в указанное время."
+				},
+				"q": {
+					"displayName": "Запрос",
+					"description": "Параметр q указывает термин запроса для поиска."
+				},
+				"regionCode": {
+					"displayName": "Код региона",
+					"description": "Параметр RegionCode указывает API выбрать видеодиаграмму, доступную в указанном регионе. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"relatedToVideoId": {
+					"displayName": "Связано с идентификатором видео",
+					"description": "Параметр linkedToVideoId извлекает список видео, связанных с видео, которое идентифицирует значение параметра."
+				},
+				"videoCategoryId": {
+					"displayName": "Идентификатор категории видео",
+					"description": "Параметр videoCategoryId определяет категорию видео, для которой необходимо получить диаграмму."
+				},
+				"videoSyndicated": {
+					"displayName": "Видео синдицированное",
+					"description": "Ограничить ли поиск только видео, которые можно воспроизводить за пределами youtube.com"
+				},
+				"videoType": {
+					"displayName": "Тип видео",
+					"description": "Параметр videoType позволяет ограничить поиск определенным типом видео.",
+					"options": {
+						"any": {
+							"displayName": "Любой"
+						},
+						"episode": {
+							"displayName": "Эпизод"
+						},
+						"movie": {
+							"displayName": "Фильм"
+						}
+					}
+				}
+			}
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"h1": {
+					"displayName": "Код языка",
+					"description": "Параметр hl указывает API получить метаданные локализованного ресурса для определенного языка приложения, который поддерживает веб-сайт YouTube. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"onBehalfOfContentOwner": {
+					"displayName": "От имени владельца контента",
+					"description": "Параметр onBehalfOfContentOwner указывает, что учетные данные авторизации запроса идентифицируют пользователя YouTube CMS, который действует от имени владельца контента, указанного в значении параметра."
+				},
+				"description": {
+					"displayName": "Описание",
+					"description": "Описание плейлиста"
+				},
+				"privacyStatus": {
+					"displayName": "Статус конфиденциальности",
+					"description": "Статус конфиденциальности плейлиста",
+					"options": {
+						"private": {
+							"displayName": "Частный"
+						},
+						"public": {
+							"displayName": "Общественный"
+						},
+						"unlisted": {
+							"displayName": "Нет в списке"
+						}
+					}
+				},
+				"tags": {
+					"displayName": "Теги",
+					"description": "Теги ключевых слов, связанные со списком воспроизведения. Mullie можно определить через запятую."
+				},
+				"defaultLanguage": {
+					"displayName": "Имя или идентификатор языка по умолчанию",
+					"description": "Язык текста в свойствах заголовка и описания ресурса плейлиста. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"onBehalfOfContentOwnerChannel": {
+					"displayName": "От имени владельца канала",
+					"description": "Параметр onBehalfOfContentOwnerChannel указывает идентификатор канала YouTube, на который добавляется видео. Этот параметр является обязательным, если в запросе указано значение параметра onBehalfOfContentOwner, и его можно использовать только вместе с этим параметром."
+				},
+				"endAt": {
+					"displayName": "Конец в",
+					"description": "Время, измеряемое в секундах от начала видео, после которого воспроизведение видео должно прекратиться."
+				},
+				"note": {
+					"displayName": "Примечание",
+					"description": "Созданная пользователем заметка для этого элемента. Значение свойства имеет максимальную длину 280 символов."
+				},
+				"position": {
+					"displayName": "Позиция",
+					"description": "Порядок, в котором элемент появляется в списке воспроизведения. Значение использует индекс, отсчитываемый от нуля, поэтому первый элемент имеет позицию 0, второй элемент имеет позицию 1 и т. д."
+				},
+				"startAt": {
+					"displayName": "Начать с",
+					"description": "Время, измеряемое в секундах от начала видео, когда видео должно начать воспроизводиться."
+				},
+				"embeddable": {
+					"displayName": "Встраиваемый",
+					"description": "Можно ли встроить видео на другой сайт"
+				},
+				"license": {
+					"displayName": "Лицензия",
+					"description": "Лицензия на видео",
+					"options": {
+						"creativeCommon": {
+							"displayName": "Творческий общий"
+						},
+						"youtube": {
+							"displayName": "Ютуб"
+						}
+					}
+				},
+				"notifySubscribers": {
+					"displayName": "Уведомить подписчиков",
+					"description": "Должен ли YouTube отправлять уведомление о новом видео пользователям, которые подписались на канал этого видео?"
+				},
+				"publicStatsViewable": {
+					"displayName": "Публичная статистика доступна для просмотра",
+					"description": "Доступна ли расширенная статистика видео на странице просмотра видео для публичного просмотра."
+				},
+				"publishAt": {
+					"displayName": "Опубликовать на",
+					"description": "Если вы установили значение для этого свойства, вам также необходимо установить для свойства status.privacyStatus значение Private."
+				},
+				"recordingDate": {
+					"displayName": "Дата записи",
+					"description": "Дата и время записи видео"
+				},
+				"selfDeclaredMadeForKids": {
+					"displayName": "Самопровозглашенный «Сделано для детей»",
+					"description": "Является ли видео предназначенным для детей и содержит ли оно текущий статус видео «сделано для детей»."
+				},
+				"order": {
+					"displayName": "Заказ",
+					"options": {
+						"date": {
+							"displayName": "Дата"
+						},
+						"relevance": {
+							"displayName": "Актуальность"
+						}
+					}
+				},
+				"safeSearch": {
+					"displayName": "Безопасный поиск",
+					"options": {
+						"moderate": {
+							"displayName": "Умеренный",
+							"description": "YouTube будет фильтровать некоторый контент из результатов поиска и, по крайней мере, будет фильтровать контент, запрещенный в вашем регионе."
+						},
+						"none": {
+							"displayName": "Никто",
+							"description": "YouTube не будет фильтровать набор результатов поиска."
+						},
+						"strict": {
+							"displayName": "Строгий",
+							"description": "YouTube попытается исключить весь ограниченный контент из набора результатов поиска."
+						}
+					}
+				}
+			}
+		},
+		"channelId": {
+			"displayName": "Идентификатор канала",
+			"description": "Идентификатор канала"
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"brandingSettingsUi": {
+					"values": {
+						"brandingSettingsUi": {
+							"displayName": "Настройки брендинга",
+							"description": "Инкапсулирует информацию о брендинге канала."
+						},
+						"channelSettingsValues": {
+							"options": {
+								"channel": {
+									"values": {
+										"channel": {
+											"displayName": "Канал"
+										},
+										"country": {
+											"displayName": "Страна",
+											"description": "Страна, с которой связан канал. Обновите это свойство, чтобы установить значение свойства snippet.country."
+										},
+										"description": {
+											"displayName": "Описание",
+											"description": "Описание канала, которое отображается в окне информации о канале на странице вашего канала. Значение свойства имеет максимальную длину 1000 символов."
+										},
+										"defaultLanguage": {
+											"displayName": "Язык по умолчанию",
+											"description": "Вкладка с контентом, которую пользователи должны отображать по умолчанию, когда зрители заходят на страницу вашего канала."
+										},
+										"defaultTab": {
+											"displayName": "Вкладка «По умолчанию»"
+										},
+										"featuredChannelsTitle": {
+											"displayName": "Название избранных каналов",
+											"description": "Заголовок, который отображается над модулем избранных каналов. Заголовок имеет максимальную длину 30 символов."
+										},
+										"featuredChannelsUrls": {
+											"displayName": "URL избранных каналов",
+											"description": "Список до 100 каналов, на которые вы хотите связать ссылку из модуля избранных каналов. Значение свойства представляет собой список значений идентификаторов каналов YouTube, каждое из которых уникально идентифицирует канал."
+										},
+										"keywords": {
+											"displayName": "Ключевые слова",
+											"description": "Ключевые слова, связанные с вашим каналом. Значение представляет собой список строк, разделенных пробелами.",
+											"placeholder": "технологии, новости"
+										},
+										"moderateComments": {
+											"displayName": "Модерировать комментарии",
+											"description": "Должны ли комментарии, оставленные пользователями на странице канала, быть одобрены владельцем канала, чтобы они были общедоступными."
+										},
+										"profileColor": {
+											"displayName": "Цвет профиля",
+											"description": "Яркий цвет, дополняющий контент канала."
+										},
+										"showRelatedChannels": {
+											"displayName": "Показать похожие каналы",
+											"description": "Должен ли YouTube отображать на странице вашего канала алгоритмически созданный список связанных каналов?"
+										},
+										"showBrowseView": {
+											"displayName": "Показать просмотр просмотра",
+											"description": "Должна ли страница канала отображать контент в режиме просмотра или ленты."
+										},
+										"trackingAnalyticsAccountId": {
+											"displayName": "Идентификатор учетной записи аналитики отслеживания",
+											"description": "Идентификатор учетной записи Google Analytics, которую вы хотите использовать для отслеживания и измерения трафика на ваш канал."
+										},
+										"unsubscribedTrailer": {
+											"displayName": "Отписавшийся трейлер",
+											"description": "Видео, которое должно воспроизводиться в модуле избранных видео в режиме просмотра страницы канала для зрителей, отписавшихся от подписки."
+										}
+									},
+									"placeholder": "Добавить настройки канала",
+									"displayName": "Канал"
+								}
+							}
+						},
+						"imageSettingsValues": {
+							"options": {
+								"image": {
+									"values": {
+										"image": {
+											"displayName": "Изображение",
+											"description": "Объект изображения инкапсулирует информацию об изображениях, которые отображаются на странице канала канала или страницах просмотра видео."
+										},
+										"bannerExternalUrl": {
+											"displayName": "Внешний URL-адрес баннера"
+										},
+										"trackingImageUrl": {
+											"displayName": "URL-адрес изображения для отслеживания"
+										},
+										"watchIconImageUrl": {
+											"displayName": "URL-адрес изображения значка просмотра"
+										}
+									},
+									"placeholder": "Добавить настройки канала",
+									"displayName": "Изображение",
+									"description": "Объект изображения инкапсулирует информацию об изображениях, которые отображаются на странице канала канала или страницах просмотра видео."
+								}
+							}
+						},
+						"statusValue": {
+							"options": {
+								"status": {
+									"values": {
+										"status": {
+											"displayName": "Статус"
+										},
+										"selfDeclaredMadeForKids": {
+											"displayName": "Самопровозглашенный «Сделано для детей»"
+										}
+									},
+									"placeholder": "Добавить статус",
+									"displayName": "Статус"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить настройки брендинга",
+					"displayName": "Настройки брендинга",
+					"description": "Инкапсулирует информацию о брендинге канала.",
+					"options": {
+						"channelSettingsValues": {
+							"displayName": "Настройки канала"
+						},
+						"imageSettingsValues": {
+							"displayName": "Настройки изображения"
+						},
+						"statusValue": {
+							"displayName": "Статус"
+						}
+					}
+				},
+				"onBehalfOfContentOwner": {
+					"displayName": "От имени владельца контента",
+					"description": "Параметр onBehalfOfContentOwner указывает, что учетные данные авторизации запроса идентифицируют пользователя YouTube CMS, который действует от имени владельца контента, указанного в значении параметра."
+				},
+				"defaultLanguage": {
+					"displayName": "Имя или идентификатор языка по умолчанию",
+					"description": "Язык текста в свойствах заголовка и описания ресурса плейлиста. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"description": {
+					"displayName": "Описание",
+					"description": "Описание плейлиста"
+				},
+				"privacyStatus": {
+					"displayName": "Статус конфиденциальности",
+					"description": "Статус конфиденциальности плейлиста",
+					"options": {
+						"private": {
+							"displayName": "Частный"
+						},
+						"public": {
+							"displayName": "Общественный"
+						},
+						"unlisted": {
+							"displayName": "Нет в списке"
+						}
+					}
+				},
+				"tags": {
+					"displayName": "Теги",
+					"description": "Теги ключевых слов, связанные со списком воспроизведения. Mullie можно определить через запятую."
+				},
+				"embeddable": {
+					"displayName": "Встраиваемый",
+					"description": "Можно ли встроить видео на другой сайт"
+				},
+				"license": {
+					"displayName": "Лицензия",
+					"description": "Лицензия на видео",
+					"options": {
+						"creativeCommon": {
+							"displayName": "Творческий общий"
+						},
+						"youtube": {
+							"displayName": "Ютуб"
+						}
+					}
+				},
+				"notifySubscribers": {
+					"displayName": "Уведомить подписчиков",
+					"description": "Должен ли YouTube отправлять уведомление о новом видео пользователям, которые подписались на канал этого видео?"
+				},
+				"publicStatsViewable": {
+					"displayName": "Публичная статистика доступна для просмотра",
+					"description": "Доступна ли расширенная статистика видео на странице просмотра видео для публичного просмотра."
+				},
+				"publishAt": {
+					"displayName": "Опубликовать на",
+					"description": "Если вы установили значение для этого свойства, вам также необходимо установить для свойства status.privacyStatus значение Private."
+				},
+				"recordingDate": {
+					"displayName": "Дата записи",
+					"description": "Дата и время записи видео"
+				},
+				"selfDeclaredMadeForKids": {
+					"displayName": "Самопровозглашенный «Сделано для детей»",
+					"description": "Является ли видео предназначенным для детей и содержит ли оно текущий статус видео «сделано для детей»."
+				}
+			}
+		},
+		"binaryProperty": {
+			"displayName": "Входное двоичное поле",
+			"hint": "Имя входного двоичного поля, содержащего файл для загрузки."
+		},
+		"title": {
+			"displayName": "Заголовок",
+			"description": "Название плейлиста"
+		},
+		"playlistId": {
+			"displayName": "Название или идентификатор плейлиста",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"videoId": {
+			"displayName": "Идентификатор видео",
+			"description": "идентификатор видео"
+		},
+		"playlistItemId": {
+			"displayName": "Идентификатор элемента плейлиста"
+		},
+		"regionCode": {
+			"displayName": "Код региона",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"categoryId": {
+			"displayName": "Название или идентификатор категории",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"rating": {
+			"displayName": "Рейтинг",
+			"options": {
+				"dislike": {
+					"displayName": "Не нравится",
+					"description": "Записывает, что аутентифицированному пользователю видео не понравилось."
+				},
+				"like": {
+					"displayName": "Нравиться",
+					"description": "Записывает, что аутентифицированному пользователю понравилось видео"
+				},
+				"none": {
+					"displayName": "Никто",
+					"description": "Удаляет все оценки, которые авторизованный пользователь ранее установил для видео."
+				}
+			}
+		}
+	}
+}

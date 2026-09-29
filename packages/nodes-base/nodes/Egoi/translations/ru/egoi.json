@@ -1,0 +1,221 @@
+{
+	"header": {
+		"displayName": "Э-гой",
+		"description": "Использование API E-goi"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"contact": {
+					"displayName": "Контакт"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать участника"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить члена"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить много участников"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить участника"
+				}
+			}
+		},
+		"list": {
+			"displayName": "Имя списка или идентификатор",
+			"description": "Идентификатор списка для работы. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"description": "Адрес электронной почты для подписчика",
+			"placeholder": "имя@email.com"
+		},
+		"contactId": {
+			"displayName": "Идентификатор контакта",
+			"description": "Контактный идентификатор абонента"
+		},
+		"resolveData": {
+			"displayName": "Разрешение данных",
+			"description": "По умолчанию ответ включает только идентификатор контакта. Если эта опция активирована, она автоматически разрешит данные."
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"birth_date": {
+					"displayName": "Дата рождения",
+					"description": "Дата рождения подписчика"
+				},
+				"cellphone": {
+					"displayName": "Сотовый телефон",
+					"description": "Мобильный телефон абонента"
+				},
+				"extraFieldsUi": {
+					"values": {
+						"extraFieldsUi": {
+							"displayName": "Дополнительные поля"
+						},
+						"extraFieldValues": {
+							"options": {
+								"field_id": {
+									"displayName": "Имя поля или идентификатор",
+									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+								},
+								"value": {
+									"displayName": "Ценить"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить поле",
+					"displayName": "Дополнительные поля",
+					"options": {
+						"extraFieldValues": {
+							"displayName": "Дополнительное поле"
+						}
+					}
+				},
+				"first_name": {
+					"displayName": "Имя",
+					"description": "Имя подписчика"
+				},
+				"last_name": {
+					"displayName": "Фамилия",
+					"description": "Имя подписчика"
+				},
+				"status": {
+					"displayName": "Статус",
+					"description": "Текущий статус абонента",
+					"options": {
+						"unconfirmed": {
+							"displayName": "Неподтвержденный"
+						},
+						"active": {
+							"displayName": "Активный"
+						},
+						"inactive": {
+							"displayName": "Неактивный"
+						},
+						"removed": {
+							"displayName": "Удаленный"
+						}
+					}
+				},
+				"tagIds": {
+					"displayName": "Имена или идентификаторы тегов",
+					"description": "Список идентификаторов тегов, которые необходимо добавить. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				}
+			}
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"birth_date": {
+					"displayName": "Дата рождения",
+					"description": "Дата рождения подписчика"
+				},
+				"cellphone": {
+					"displayName": "Сотовый телефон",
+					"description": "Мобильный телефон абонента"
+				},
+				"email": {
+					"displayName": "Электронная почта",
+					"description": "Адрес электронной почты для подписчика",
+					"placeholder": "имя@email.com"
+				},
+				"extraFieldsUi": {
+					"values": {
+						"extraFieldsUi": {
+							"displayName": "Дополнительные поля"
+						},
+						"extraFieldValues": {
+							"options": {
+								"field_id": {
+									"displayName": "Имя поля или идентификатор",
+									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+								},
+								"value": {
+									"displayName": "Ценить"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить поле",
+					"displayName": "Дополнительные поля",
+					"options": {
+						"extraFieldValues": {
+							"displayName": "Дополнительное поле"
+						}
+					}
+				},
+				"first_name": {
+					"displayName": "Имя",
+					"description": "Имя подписчика"
+				},
+				"last_name": {
+					"displayName": "Фамилия",
+					"description": "Имя подписчика"
+				},
+				"status": {
+					"displayName": "Статус",
+					"description": "Текущий статус абонента",
+					"options": {
+						"unconfirmed": {
+							"displayName": "Неподтвержденный"
+						},
+						"active": {
+							"displayName": "Активный"
+						},
+						"inactive": {
+							"displayName": "Неактивный"
+						},
+						"removed": {
+							"displayName": "Удаленный"
+						}
+					}
+				},
+				"tagIds": {
+					"displayName": "Имена или идентификаторы тегов",
+					"description": "Список идентификаторов тегов, которые необходимо добавить. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				}
+			}
+		},
+		"by": {
+			"displayName": "К",
+			"description": "Поиск по",
+			"options": {
+				"id": {
+					"displayName": "Идентификатор контакта"
+				},
+				"email": {
+					"displayName": "Электронная почта"
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"simple": {
+			"displayName": "Упрощать",
+			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+		}
+	}
+}

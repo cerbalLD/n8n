@@ -1,0 +1,355 @@
+{
+	"header": {
+		"displayName": "Эластичный поиск",
+		"description": "Используйте Elasticsearch API"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"document": {
+					"displayName": "Документ"
+				},
+				"index": {
+					"displayName": "Индекс"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать документ"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить документ"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить документ"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получите много документов"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить документ"
+				}
+			}
+		},
+		"indexId": {
+			"displayName": "Идентификатор индекса",
+			"description": "Идентификатор индекса для получения"
+		},
+		"documentId": {
+			"displayName": "Идентификатор документа",
+			"description": "Идентификатор документа для обновления"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"bulkOperation": {
+					"displayName": "Массовое обновление",
+					"description": "Использовать ли массовую операцию для обновления документа(ов)"
+				},
+				"_source_excludes": {
+					"displayName": "Источник исключает",
+					"description": "Список полей источника, разделенных запятыми, которые следует исключить из ответа."
+				},
+				"_source_includes": {
+					"displayName": "Источник включает в себя",
+					"description": "Список полей источника, разделенных запятыми, которые нужно включить в ответ."
+				},
+				"stored_fields": {
+					"displayName": "Сохраненные поля",
+					"description": "Следует ли извлекать поля документа, хранящиеся в индексе, а не в документе <code>_source</code>. По умолчанию ложь."
+				},
+				"allow_no_indices": {
+					"displayName": "Разрешить отсутствие индексов",
+					"description": "Если значение равно false, вернуть ошибку, если какой-либо из следующих целевых индексов отсутствует/закрыт: выражение подстановочного знака, псевдоним индекса или значение <code>_all</code>. По умолчанию истинно."
+				},
+				"allow_partial_search_results": {
+					"displayName": "Разрешить частичные результаты поиска",
+					"description": "<p>Если true, вернуть частичные результаты, если есть тайм-ауты запроса сегмента или сбои сегмента.</p><p>Если false, возвращает ошибку без частичных результатов. По умолчанию true.</p>."
+				},
+				"batched_reduce_size": {
+					"displayName": "Пакетное уменьшение размера",
+					"description": "Количество результатов шардирования, которые необходимо сократить сразу на координирующем узле. По умолчанию 512."
+				},
+				"ccs_minimize_roundtrips": {
+					"displayName": "CCS Минимизация двусторонних обходов",
+					"description": "Минимизированы ли сетевые соединения между координирующим узлом и удаленными кластерами при выполнении запросов межкластерного поиска (CCS). По умолчанию истинно."
+				},
+				"docvalue_fields": {
+					"displayName": "Поля значений документа",
+					"description": "Список полей, разделенных запятыми, которые возвращаются в виде представления значения документа поля для каждого обращения."
+				},
+				"expand_wildcards": {
+					"displayName": "Развернуть подстановочные знаки",
+					"description": "Тип индекса, которому могут соответствовать выражения с подстановочными знаками. По умолчанию <code>open</code>",
+					"options": {
+						"all": {
+							"displayName": "Все"
+						},
+						"closed": {
+							"displayName": "Закрыто"
+						},
+						"hidden": {
+							"displayName": "Скрытый"
+						},
+						"none": {
+							"displayName": "Никто"
+						},
+						"open": {
+							"displayName": "Открыть"
+						}
+					}
+				},
+				"explain": {
+					"displayName": "Объяснять",
+					"description": "Возвращать ли подробную информацию о вычислении очков как часть попадания. По умолчанию ложь."
+				},
+				"ignore_throttled": {
+					"displayName": "Игнорировать регулирование",
+					"description": "Игнорируются ли конкретные, расширенные или псевдонимы индексов при замораживании. По умолчанию истинно."
+				},
+				"ignore_unavailable": {
+					"displayName": "Игнорировать недоступно",
+					"description": "В ответ не включаются отсутствующие или закрытые индексы. По умолчанию ложь."
+				},
+				"max_concurrent_shard_requests": {
+					"displayName": "Максимальное количество одновременных запросов на сегменты",
+					"description": "Определите количество запросов сегментов на узел, который этот поиск выполняет одновременно. По умолчанию 5."
+				},
+				"pre_filter_shard_size": {
+					"displayName": "Размер фрагмента предварительного фильтра",
+					"description": "Определите порог, который обеспечивает двусторонний обход предварительной фильтрации для предварительной фильтрации сегментов поиска на основе переписывания запроса. Используется только в том случае, если количество сегментов, на которые расширяется поисковый запрос, превышает пороговое значение."
+				},
+				"query": {
+					"displayName": "Запрос",
+					"description": "Запрос в <a href=\"https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html\">Elasticsearch Query DSL</a>",
+					"placeholder": "{\n  \"запрос\": {\n    \"термин\": {\n      \"user.id\": \"Джон\"\n    }\n  }\n}"
+				},
+				"request_cache": {
+					"displayName": "Запросить кеш",
+					"description": "Включено ли кэширование результатов поиска для запросов, размер которых равен 0. См. <a href=\"https://www.elastic.co/guide/en/elasticsearch/reference/current/shard-request-cache.html\">Настройки кэша запросов сегмента Elasticsearch</a>."
+				},
+				"routing": {
+					"displayName": "Маршрутизация",
+					"description": "Нацельтесь на этот основной осколок"
+				},
+				"search_type": {
+					"displayName": "Тип поиска",
+					"description": "Как рассчитываются распределенные частоты терминов для оценки релевантности. По умолчанию используется запрос, а затем выборка.",
+					"options": {
+						"dfs_query_then_fetch": {
+							"displayName": "Запрос DFS, затем выборка"
+						},
+						"query_then_fetch": {
+							"displayName": "Запросить, затем получить"
+						}
+					}
+				},
+				"seq_no_primary_term": {
+					"displayName": "Порядковый номер и основной термин",
+					"description": "Возвращать ли порядковый номер и основной термин последней модификации каждого попадания. См. <a href=\"https://www.elastic.co/guide/en/elasticsearch/reference/current/optimistic-concurrency-control.html\">Оптимистическое управление параллелизмом</a>."
+				},
+				"sort": {
+					"displayName": "Сортировать",
+					"description": "Список пар <code>field:direction</code>, разделенных запятыми."
+				},
+				"stats": {
+					"displayName": "Статистика",
+					"description": "Тег запроса для логирования и статистических целей"
+				},
+				"terminate_after": {
+					"displayName": "Прекратить после",
+					"description": "Максимальное количество документов, которые необходимо собрать для каждого шарда"
+				},
+				"timeout": {
+					"displayName": "Тайм-аут",
+					"description": "Период ожидания активных осколков. По умолчанию <code>1m</code> (одна минута). См. <a href=\"https://www.elastic.co/guide/en/elasticsearch/reference/current/common-options.html#time-units\">Справочник по единицам времени Elasticsearch</a>."
+				},
+				"track_scores": {
+					"displayName": "Отслеживать результаты",
+					"description": "Следует ли рассчитывать и возвращать оценки документа, даже если оценки не используются для сортировки. По умолчанию ложь."
+				},
+				"track_total_hits": {
+					"displayName": "Отслеживать общее количество обращений",
+					"description": "Для точного подсчета количества обращений, соответствующих запросу. По умолчанию 10000."
+				},
+				"version": {
+					"displayName": "Версия",
+					"description": "Возвращать ли версию документа как часть обращения. По умолчанию ложь."
+				},
+				"pipeline": {
+					"displayName": "Идентификатор конвейера",
+					"description": "Идентификатор конвейера, который будет использоваться для предварительной обработки входящих документов."
+				},
+				"refresh": {
+					"displayName": "Обновить",
+					"description": "Если true, Elasticsearch обновляет затронутые фрагменты, чтобы сделать эту операцию видимой для поиска, если wait_for, то дождитесь обновления, чтобы эта операция стала видимой для поиска, если false, ничего не делайте с обновлениями.",
+					"options": {
+						"true": {
+							"displayName": "Истинный",
+							"description": "Обновляет затронутые фрагменты, чтобы сделать эту операцию видимой для поиска."
+						},
+						"wait_for": {
+							"displayName": "Подождите",
+							"description": "Подождите обновления, чтобы эта операция стала видимой."
+						},
+						"false": {
+							"displayName": "ЛОЖЬ",
+							"description": "Ничего не делать с обновлениями"
+						}
+					}
+				}
+			}
+		},
+		"simple": {
+			"displayName": "Упрощать",
+			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"paginateNotice": {
+			"displayName": "По умолчанию вы не можете просмотреть более 10 000 обращений. Чтобы просмотреть больше обращений, добавьте «Сортировать» в настройках."
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"dataToSend": {
+			"displayName": "Данные для отправки",
+			"description": "Вставлять ли входные данные, которые получает этот узел, в новую строку",
+			"options": {
+				"defineBelow": {
+					"displayName": "Определите ниже для каждого столбца",
+					"description": "Установите значение для каждого столбца назначения"
+				},
+				"autoMapInputData": {
+					"displayName": "Автоматическое сопоставление входных данных с столбцами",
+					"description": "Используйте, когда входные свойства узла соответствуют именам столбцов назначения."
+				}
+			}
+		},
+		"inputsToIgnore": {
+			"displayName": "Входные данные, которые следует игнорировать",
+			"description": "Список входных свойств, которые следует избегать при отправке, разделенных запятыми. Оставьте пустым, чтобы отправить все свойства.",
+			"placeholder": "Введите свойства..."
+		},
+		"fieldsUi": {
+			"options": {
+				"fieldsUi": {
+					"displayName": "Поля для отправки"
+				},
+				"fieldValues": {
+					"displayName": "Поле",
+					"values": {
+						"fieldId": {
+							"displayName": "Имя поля"
+						},
+						"fieldValue": {
+							"displayName": "Значение поля"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить поле",
+			"displayName": "Поля для отправки",
+			"multipleValueButtonText": "Добавить поле для отправки"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"documentId": {
+					"displayName": "Идентификатор документа",
+					"description": "Идентификатор документа, который нужно создать и добавить в индекс"
+				},
+				"routing": {
+					"displayName": "Маршрутизация",
+					"description": "Нацельтесь на этот основной осколок"
+				},
+				"timeout": {
+					"displayName": "Тайм-аут",
+					"description": "Срок ожидания ответа. Если ответ не получен до истечения тайм-аута, запрос завершается неудачей и возвращает ошибку. По умолчанию <code>30s</code>. См. <a href=\"https://www.elastic.co/guide/en/elasticsearch/reference/current/common-options.html#time-units\">Справочник по единицам времени Elasticsearch</a>."
+				},
+				"aliases": {
+					"displayName": "Псевдонимы",
+					"description": "Псевдонимы индекса, которые включают индекс в виде объекта <a href=\"https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-aliases.html\">alias</a>",
+					"placeholder": "{\n  \"псевдонимы\": {\n    \"alias_1\": {},\n    \"псевдоним_2\": {\n      \"фильтр\": {\n        \"term\": { \"user.id\": \"кимчи\" }\n      },\n      \"маршрутизация\": \"осколок-1\"\n    }\n  }\n}"
+				},
+				"include_type_name": {
+					"displayName": "Включить имя типа",
+					"description": "Ожидается ли тип сопоставления в теле сопоставлений. По умолчанию ложь."
+				},
+				"mappings": {
+					"displayName": "Сопоставления",
+					"description": "Сопоставление полей в индексе как <a href=\"https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping.html\">объект сопоставления</a>",
+					"placeholder": "{\n  \"сопоставления\": {\n    \"свойства\": {\n      \"field1\": { \"type\": \"text\" }\n    }\n  }\n}"
+				},
+				"master_timeout": {
+					"displayName": "Главный тайм-аут",
+					"description": "Период ожидания соединения с главным узлом. Если ответ не получен до истечения тайм-аута, запрос завершается неудачей и возвращает ошибку. По умолчанию <code>1m</code>. См. <a href=\"https://www.elastic.co/guide/en/elasticsearch/reference/current/common-options.html#time-units\">Справочник по единицам времени Elasticsearch</a>."
+				},
+				"settings": {
+					"displayName": "Настройки",
+					"description": "Параметры конфигурации индекса, как объекта настроек индекса <a href=\"https://www.elastic.co/guide/en/elasticsearch/reference/current/index-modules.html#index-modules-settings\"></a>",
+					"placeholder": "{\n  \"настройки\": {\n    \"индекс\": {\n      «количество_осколков»: 3,\n      \"number_of_replicas\": 2\n    }\n  }\n}"
+				},
+				"wait_for_active_shards": {
+					"displayName": "Ждите активных осколков",
+					"description": "Количество копий осколков, которые должны быть активны, прежде чем продолжить операцию. Установите значение <code>all</code> или любое положительное целое число до общего количества сегментов в индексе. По умолчанию: 1, основной осколок"
+				},
+				"allow_no_indices": {
+					"displayName": "Разрешить отсутствие индексов",
+					"description": "Если значение равно false, вернуть ошибку, если какой-либо из следующих целевых индексов отсутствует/закрыт: выражение подстановочного знака, псевдоним индекса или значение <code>_all</code>. По умолчанию истинно."
+				},
+				"expand_wildcards": {
+					"displayName": "Развернуть подстановочные знаки",
+					"description": "Тип индекса, которому могут соответствовать выражения с подстановочными знаками. По умолчанию <code>open</code>",
+					"options": {
+						"all": {
+							"displayName": "Все"
+						},
+						"closed": {
+							"displayName": "Закрыто"
+						},
+						"hidden": {
+							"displayName": "Скрытый"
+						},
+						"none": {
+							"displayName": "Никто"
+						},
+						"open": {
+							"displayName": "Открыть"
+						}
+					}
+				},
+				"flat_settings": {
+					"displayName": "Плоские настройки",
+					"description": "Возвращать ли настройки в плоском формате. По умолчанию ложь."
+				},
+				"ignore_unavailable": {
+					"displayName": "Игнорировать недоступно",
+					"description": "Запрашивать ли эту цель, отсутствующий индекс возвращает ошибку. По умолчанию ложь."
+				},
+				"include_defaults": {
+					"displayName": "Включить значения по умолчанию",
+					"description": "Возвращать ли в ответе все настройки по умолчанию. По умолчанию ложь."
+				},
+				"local": {
+					"displayName": "Местный",
+					"description": "Получать ли информацию только из локального узла. По умолчанию ложь."
+				}
+			}
+		}
+	}
+}

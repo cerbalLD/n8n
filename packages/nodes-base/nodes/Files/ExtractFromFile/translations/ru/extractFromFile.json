@@ -1,0 +1,507 @@
+{
+	"header": {
+		"displayName": "Извлечь из файла",
+		"description": "Преобразование двоичных данных в JSON"
+	},
+	"nodeView": {
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"csv": {
+					"displayName": "Извлечь из CSV",
+					"description": "Преобразование файла CSV в выходные элементы"
+				},
+				"html": {
+					"displayName": "Извлечь из HTML",
+					"description": "Преобразование таблицы в файле HTML в выходные элементы"
+				},
+				"fromIcs": {
+					"displayName": "Выдержка из ICS",
+					"description": "Преобразование файла ICS в выходные элементы"
+				},
+				"fromJson": {
+					"displayName": "Извлечение из JSON",
+					"description": "Преобразование файла JSON в элементы вывода"
+				},
+				"ods": {
+					"displayName": "Извлечение из ODS",
+					"description": "Преобразование файла ODS в выходные элементы"
+				},
+				"pdf": {
+					"displayName": "Извлечь из PDF",
+					"description": "Извлекает содержимое и метаданные из файла PDF."
+				},
+				"rtf": {
+					"displayName": "Выдержка из RTF",
+					"description": "Преобразование таблицы в файле RTF в выходные элементы"
+				},
+				"text": {
+					"displayName": "Извлечь из текстового файла",
+					"description": "Извлекает содержимое текстового файла"
+				},
+				"xml": {
+					"displayName": "Извлечь из XML",
+					"description": "Извлекает содержимое XML-файла"
+				},
+				"xls": {
+					"displayName": "Выдержка из XLS",
+					"description": "Преобразование файла Excel в выходные элементы"
+				},
+				"xlsx": {
+					"displayName": "Выдержка из XLSX",
+					"description": "Преобразование файла Excel в выходные элементы"
+				},
+				"binaryToPropery": {
+					"displayName": "Переместить файл в строку Base64",
+					"description": "Преобразование файла в строку в кодировке Base64."
+				}
+			}
+		},
+		"binaryPropertyName": {
+			"displayName": "Входное двоичное поле",
+			"hint": "Имя входного двоичного поля, содержащего извлекаемый файл.",
+			"placeholder": "например данные"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"delimiter": {
+					"displayName": "Разделитель",
+					"description": "Установите разделитель полей, обычно запятую.",
+					"placeholder": "например ,"
+				},
+				"encoding": {
+					"displayName": "Кодирование файлов",
+					"options": {
+						"ascii": {
+							"displayName": "ascii"
+						},
+						"latin1": {
+							"displayName": "латынь1"
+						},
+						"ucs-2": {
+							"displayName": "UCS-2"
+						},
+						"ucs2": {
+							"displayName": "ucs2"
+						},
+						"utf-8": {
+							"displayName": "UTF-8"
+						},
+						"utf16le": {
+							"displayName": "UTF16LE"
+						},
+						"utf8": {
+							"displayName": "utf8"
+						},
+						"armscii8": {
+							"displayName": "Armscii8"
+						},
+						"base64": {
+							"displayName": "база64"
+						},
+						"big5hkscs": {
+							"displayName": "big5hkscs"
+						},
+						"binary": {
+							"displayName": "двоичный"
+						},
+						"cesu8": {
+							"displayName": "цесу8"
+						},
+						"cp1046": {
+							"displayName": "cp1046"
+						},
+						"cp1124": {
+							"displayName": "cp1124"
+						},
+						"cp1125": {
+							"displayName": "cp1125"
+						},
+						"cp1129": {
+							"displayName": "cp1129"
+						},
+						"cp1133": {
+							"displayName": "cp1133"
+						},
+						"cp1161": {
+							"displayName": "cp1161"
+						},
+						"cp1162": {
+							"displayName": "cp1162"
+						},
+						"cp1163": {
+							"displayName": "cp1163"
+						},
+						"cp437": {
+							"displayName": "cp437"
+						},
+						"cp720": {
+							"displayName": "cp720"
+						},
+						"cp737": {
+							"displayName": "cp737"
+						},
+						"cp775": {
+							"displayName": "cp775"
+						},
+						"cp808": {
+							"displayName": "cp808"
+						},
+						"cp850": {
+							"displayName": "cp850"
+						},
+						"cp852": {
+							"displayName": "cp852"
+						},
+						"cp855": {
+							"displayName": "cp855"
+						},
+						"cp856": {
+							"displayName": "cp856"
+						},
+						"cp857": {
+							"displayName": "cp857"
+						},
+						"cp858": {
+							"displayName": "cp858"
+						},
+						"cp860": {
+							"displayName": "cp860"
+						},
+						"cp861": {
+							"displayName": "cp861"
+						},
+						"cp862": {
+							"displayName": "cp862"
+						},
+						"cp863": {
+							"displayName": "cp863"
+						},
+						"cp864": {
+							"displayName": "cp864"
+						},
+						"cp865": {
+							"displayName": "cp865"
+						},
+						"cp866": {
+							"displayName": "cp866"
+						},
+						"cp869": {
+							"displayName": "cp869"
+						},
+						"cp922": {
+							"displayName": "cp922"
+						},
+						"cp936": {
+							"displayName": "cp936"
+						},
+						"cp949": {
+							"displayName": "cp949"
+						},
+						"cp950": {
+							"displayName": "cp950"
+						},
+						"eucjp": {
+							"displayName": "eucjp"
+						},
+						"gb18030": {
+							"displayName": "GB18030"
+						},
+						"gbk": {
+							"displayName": "ГБК"
+						},
+						"georgianacademy": {
+							"displayName": "Грузинская академия"
+						},
+						"georgianps": {
+							"displayName": "грузины"
+						},
+						"hex": {
+							"displayName": "шестигранник"
+						},
+						"hproman8": {
+							"displayName": "hproman8"
+						},
+						"iso646cn": {
+							"displayName": "iso646cn"
+						},
+						"iso646jp": {
+							"displayName": "iso646jp"
+						},
+						"iso88591": {
+							"displayName": "iso88591"
+						},
+						"iso885910": {
+							"displayName": "iso885910"
+						},
+						"iso885911": {
+							"displayName": "iso885911"
+						},
+						"iso885913": {
+							"displayName": "iso885913"
+						},
+						"iso885914": {
+							"displayName": "iso885914"
+						},
+						"iso885915": {
+							"displayName": "iso885915"
+						},
+						"iso885916": {
+							"displayName": "iso885916"
+						},
+						"iso88592": {
+							"displayName": "iso88592"
+						},
+						"iso88593": {
+							"displayName": "iso88593"
+						},
+						"iso88594": {
+							"displayName": "iso88594"
+						},
+						"iso88595": {
+							"displayName": "iso88595"
+						},
+						"iso88596": {
+							"displayName": "iso88596"
+						},
+						"iso88597": {
+							"displayName": "iso88597"
+						},
+						"iso88598": {
+							"displayName": "iso88598"
+						},
+						"iso88599": {
+							"displayName": "iso88599"
+						},
+						"koi8r": {
+							"displayName": "кои8р"
+						},
+						"koi8ru": {
+							"displayName": "кои8ру"
+						},
+						"koi8t": {
+							"displayName": "кои8т"
+						},
+						"koi8u": {
+							"displayName": "кои8у"
+						},
+						"maccenteuro": {
+							"displayName": "maccenteuro"
+						},
+						"maccroatian": {
+							"displayName": "макроатийский"
+						},
+						"maccyrillic": {
+							"displayName": "маккирилический"
+						},
+						"macgreek": {
+							"displayName": "Макгрек"
+						},
+						"maciceland": {
+							"displayName": "Мейсиленд"
+						},
+						"macintosh": {
+							"displayName": "Макинтош"
+						},
+						"macroman": {
+							"displayName": "макромен"
+						},
+						"macromania": {
+							"displayName": "макромания"
+						},
+						"macthai": {
+							"displayName": "Мактай"
+						},
+						"macturkish": {
+							"displayName": "Мактурецкий"
+						},
+						"macukraine": {
+							"displayName": "Макукраина"
+						},
+						"mik": {
+							"displayName": "Мик"
+						},
+						"pt154": {
+							"displayName": "пт154"
+						},
+						"rk1048": {
+							"displayName": "rk1048"
+						},
+						"shiftjis": {
+							"displayName": "Шифтджис"
+						},
+						"tcvn": {
+							"displayName": "ТКВН"
+						},
+						"tis620": {
+							"displayName": "тис620"
+						},
+						"utf16": {
+							"displayName": "utf16"
+						},
+						"utf16be": {
+							"displayName": "utf16be"
+						},
+						"utf32": {
+							"displayName": "utf32"
+						},
+						"utf32be": {
+							"displayName": "utf32be"
+						},
+						"utf32le": {
+							"displayName": "utf32le"
+						},
+						"utf7": {
+							"displayName": "utf7"
+						},
+						"utf7imap": {
+							"displayName": "utf7imap"
+						},
+						"viscii": {
+							"displayName": "внутренние органы"
+						},
+						"windows1250": {
+							"displayName": "windows1250"
+						},
+						"windows1251": {
+							"displayName": "windows1251"
+						},
+						"windows1252": {
+							"displayName": "windows1252"
+						},
+						"windows1253": {
+							"displayName": "windows1253"
+						},
+						"windows1254": {
+							"displayName": "windows1254"
+						},
+						"windows1255": {
+							"displayName": "windows1255"
+						},
+						"windows1256": {
+							"displayName": "windows1256"
+						},
+						"windows1257": {
+							"displayName": "windows1257"
+						},
+						"windows1258": {
+							"displayName": "windows1258"
+						},
+						"windows874": {
+							"displayName": "windows874"
+						}
+					},
+					"description": "Укажите кодировку файла, по умолчанию UTF-8."
+				},
+				"enableBOM": {
+					"displayName": "Исключить метку порядка байтов (BOM)",
+					"description": "Следует ли обнаруживать и исключать метку порядка байтов из входных данных CSV, если она присутствует."
+				},
+				"relaxQuotes": {
+					"displayName": "Сохранить цитаты",
+					"description": "Следует ли обрабатывать незакрытые кавычки в полях CSV как часть содержимого поля вместо выдачи ошибки синтаксического анализа."
+				},
+				"headerRow": {
+					"displayName": "Заголовок строки",
+					"description": "Содержит ли первая строка файла имена заголовков"
+				},
+				"includeEmptyCells": {
+					"displayName": "Включить пустые ячейки",
+					"description": "Включать ли пустые ячейки при чтении из файла. Они будут заполнены пустой строкой."
+				},
+				"maxRowCount": {
+					"displayName": "Максимальное количество строк для загрузки",
+					"description": "Прекратите обработку записей после того, как будет прочитано запрошенное количество строк. Используйте -1, если вы хотите загрузить все строки.",
+					"placeholder": "например 10"
+				},
+				"range": {
+					"displayName": "Диапазон",
+					"description": "Диапазон чтения из таблицы. Если установлено число, это будет начальная строка. Если установлено значение string, оно будет использоваться как диапазон обозначений в стиле A1."
+				},
+				"rawData": {
+					"displayName": "Необработанные данные",
+					"description": "Возвращать ли данные RAW вместо их анализа"
+				},
+				"readAsString": {
+					"displayName": "Читать как строку",
+					"description": "В некоторых случаях и форматах файлов необходимо читать как строку, чтобы обеспечить правильную интерпретацию специальных символов."
+				},
+				"sheetName": {
+					"displayName": "Имя листа",
+					"description": "Имя листа для чтения в электронной таблице",
+					"placeholder": "например мой лист"
+				},
+				"fromLine": {
+					"displayName": "Стартовая линия",
+					"description": "Начать обработку записей с запрошенного номера строки. Начинается с 0.",
+					"placeholder": "например 0"
+				},
+				"skipRecordsWithErrors": {
+					"values": {
+						"skipRecordsWithErrors": {
+							"displayName": "Пропускать записи с ошибками"
+						},
+						"value": {
+							"options": {
+								"enabled": {
+									"displayName": "Включено",
+									"description": "Пропускать ли записи с ошибками при чтении из файла"
+								},
+								"maxSkippedRecords": {
+									"displayName": "Макс пропущенные записи",
+									"description": "Максимальное количество записей, которое можно пропустить, при превышении выдаст ошибку. Установите значение -1, чтобы удалить ограничение."
+								}
+							}
+						}
+					},
+					"displayName": "Пропускать записи с ошибками",
+					"options": {
+						"value": {
+							"displayName": "Ценить"
+						}
+					}
+				},
+				"stripBOM": {
+					"displayName": "Полоса спецификации",
+					"description": "Следует ли удалять спецификацию (метку порядка байтов) из файла. Это может помочь в среде, где наличие спецификации вызывает проблемы или несоответствия."
+				},
+				"keepSource": {
+					"displayName": "Сохранить исходный код",
+					"options": {
+						"json": {
+							"displayName": "JSON",
+							"description": "Включить данные JSON входного элемента"
+						},
+						"binary": {
+							"displayName": "Двоичный",
+							"description": "Включить двоичные данные входного элемента"
+						},
+						"both": {
+							"displayName": "Оба",
+							"description": "Включите как JSON, так и двоичные данные входного элемента."
+						}
+					}
+				},
+				"joinPages": {
+					"displayName": "Присоединяйтесь к страницам",
+					"description": "Следует ли объединять текст со всех страниц или возвращать массив текста с каждой страницы."
+				},
+				"maxPages": {
+					"displayName": "Макс. страниц",
+					"description": "Максимальное количество страниц для включения"
+				},
+				"password": {
+					"displayName": "Пароль",
+					"description": "Укажите пароль, если PDF-файл зашифрован."
+				}
+			}
+		},
+		"destinationKey": {
+			"displayName": "Поле вывода назначения",
+			"description": "Имя выходного поля, которое будет содержать извлеченные данные.",
+			"placeholder": "например данные"
+		}
+	}
+}

@@ -1,0 +1,228 @@
+{
+	"header": {
+		"displayName": "АВС СЭС",
+		"description": "Отправляет данные в AWS SES."
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"iam": {
+					"displayName": "АВС (ИАМ)"
+				},
+				"assumeRole": {
+					"displayName": "AWS (принятие роли)"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"customVerificationEmail": {
+					"displayName": "Персонализированное электронное письмо с подтверждением"
+				},
+				"email": {
+					"displayName": "Электронная почта"
+				},
+				"template": {
+					"displayName": "Шаблон"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать шаблон"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удаление шаблона"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить шаблон"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получите множество шаблонов"
+				},
+				"send": {
+					"displayName": "Отправлять",
+					"description": "Добавить адрес электронной почты в список личностей"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить шаблон"
+				},
+				"sendTemplate": {
+					"displayName": "Отправить шаблон"
+				}
+			}
+		},
+		"fromEmailAddress": {
+			"displayName": "Из электронной почты",
+			"description": "Адрес электронной почты, с которого отправляется письмо с персонализированным подтверждением."
+		},
+		"templateName": {
+			"displayName": "Имя шаблона",
+			"description": "Название шаблона"
+		},
+		"templateContent": {
+			"displayName": "Содержимое шаблона",
+			"description": "Содержимое специального письма с подтверждением. Общий размер письма не должен превышать 10 МБ. Тело сообщения может содержать HTML."
+		},
+		"templateSubject": {
+			"displayName": "Тема шаблона",
+			"description": "Тема письма с персонализированным подтверждением."
+		},
+		"successRedirectionURL": {
+			"displayName": "URL-адрес успешного перенаправления",
+			"description": "URL-адрес, на который будет отправлено получателю электронное письмо с подтверждением, если его адрес успешно подтвержден."
+		},
+		"failureRedirectionURL": {
+			"displayName": "URL-адрес перенаправления при ошибке",
+			"description": "URL-адрес, на который будет отправлен получатель электронного письма с подтверждением, если его адрес не был успешно подтвержден."
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"description": "Адрес электронной почты для подтверждения",
+			"placeholder": "имя@email.com"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"configurationSetName": {
+					"displayName": "Имя набора конфигурации",
+					"description": "Имя набора конфигурации, который будет использоваться при отправке электронного письма с помощью функции send."
+				},
+				"bccAddresses": {
+					"displayName": "Скрытые адреса",
+					"description": "Скрытая копия Получатели электронного письма"
+				},
+				"ccAddresses": {
+					"displayName": "Адреса копий",
+					"description": "Копия получателей электронного письма"
+				},
+				"replyToAddresses": {
+					"displayName": "Ответ на адреса",
+					"description": "Адрес(а) электронной почты для ответа на сообщение",
+					"placeholder": "Добавить адрес для ответа"
+				},
+				"returnPath": {
+					"displayName": "Обратный путь",
+					"description": "Адрес электронной почты, который не возвращается, и жалобы будут перенаправлены, если включена пересылка отзывов."
+				},
+				"returnPathArn": {
+					"displayName": "Обратный путь ARN",
+					"description": "Этот параметр используется только для отправки авторизации"
+				},
+				"sourceArn": {
+					"displayName": "Источник АРН",
+					"description": "Этот параметр используется только для отправки авторизации"
+				},
+				"textPart": {
+					"displayName": "Текстовая часть",
+					"description": "Тело электронного письма, которое будет видно получателям, чьи почтовые клиенты не отображают HTML."
+				}
+			}
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"failureRedirectionURL": {
+					"displayName": "URL-адрес перенаправления при ошибке",
+					"description": "URL-адрес, на который будет отправлен получатель электронного письма с подтверждением, если его адрес не был успешно подтвержден."
+				},
+				"fromEmailAddress": {
+					"displayName": "Из электронной почты",
+					"description": "Адрес электронной почты, с которого отправляется письмо с персонализированным подтверждением."
+				},
+				"successRedirectionURL": {
+					"displayName": "URL-адрес успешного перенаправления",
+					"description": "URL-адрес, на который будет отправлено получателю электронное письмо с подтверждением, если его адрес успешно подтвержден."
+				},
+				"templateContent": {
+					"displayName": "Содержимое шаблона",
+					"description": "Содержимое специального письма с подтверждением. Общий размер письма не должен превышать 10 МБ. Тело сообщения может содержать HTML."
+				},
+				"templateSubject": {
+					"displayName": "Тема шаблона",
+					"description": "Тема письма с персонализированным подтверждением."
+				},
+				"textPart": {
+					"displayName": "Текстовая часть",
+					"description": "Тело электронного письма, которое будет видно получателям, чьи почтовые клиенты не отображают HTML."
+				},
+				"subjectPart": {
+					"displayName": "Тематическая часть",
+					"description": "Тема письма"
+				},
+				"htmlPart": {
+					"displayName": "HTML-часть",
+					"description": "HTML-тело письма"
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"isBodyHtml": {
+			"displayName": "Является ли тело HTML",
+			"description": "Является ли тело HTML или простым текстом"
+		},
+		"subject": {
+			"displayName": "Предмет"
+		},
+		"body": {
+			"displayName": "Тело",
+			"description": "Сообщение для отправки"
+		},
+		"fromEmail": {
+			"displayName": "Из электронной почты",
+			"description": "Адрес электронной почты отправителя",
+			"placeholder": "admin@example.com"
+		},
+		"toAddresses": {
+			"displayName": "По адресам",
+			"description": "Адреса электронной почты получателей",
+			"placeholder": "info@example.com"
+		},
+		"templateDataUi": {
+			"options": {
+				"templateDataUi": {
+					"displayName": "Данные шаблона"
+				},
+				"templateDataValues": {
+					"displayName": "Данные",
+					"values": {
+						"key": {
+							"displayName": "Ключ"
+						},
+						"value": {
+							"displayName": "Ценить"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить данные",
+			"displayName": "Данные шаблона"
+		},
+		"subjectPart": {
+			"displayName": "Тематическая часть",
+			"description": "Тема письма"
+		},
+		"htmlPart": {
+			"displayName": "HTML-часть",
+			"description": "HTML-тело письма"
+		}
+	}
+}

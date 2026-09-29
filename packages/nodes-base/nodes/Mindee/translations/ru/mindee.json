@@ -1,0 +1,50 @@
+{
+	"header": {
+		"displayName": "Минди",
+		"description": "Использование API Минди"
+	},
+	"nodeView": {
+		"apiVersion": {
+			"displayName": "Версия API",
+			"description": "Какую версию Mindee API использовать",
+			"options": {
+				"1": {
+					"displayName": "1"
+				},
+				"3": {
+					"displayName": "3"
+				},
+				"4": {
+					"displayName": "4"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"invoice": {
+					"displayName": "Счет"
+				},
+				"receipt": {
+					"displayName": "Квитанция"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"predict": {
+					"displayName": "Предсказывать"
+				}
+			}
+		},
+		"binaryPropertyName": {
+			"displayName": "Входное двоичное поле",
+			"hint": "Имя входного двоичного поля, содержащего файл для загрузки."
+		},
+		"rawData": {
+			"displayName": "Необработанные данные",
+			"description": "Возвращать ли данные именно в том виде, в каком они были получены от API"
+		}
+	}
+}

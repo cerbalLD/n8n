@@ -1,0 +1,288 @@
+{
+	"header": {
+		"displayName": "Уценка",
+		"description": "Преобразование данных между Markdown и HTML"
+	},
+	"nodeView": {
+		"mode": {
+			"displayName": "Режим",
+			"options": {
+				"markdownToHtml": {
+					"displayName": "Разметка в HTML",
+					"description": "Конвертируйте данные из Markdown в HTML"
+				},
+				"htmlToMarkdown": {
+					"displayName": "HTML в Markdown",
+					"description": "Конвертируйте данные из HTML в Markdown"
+				}
+			}
+		},
+		"html": {
+			"displayName": "HTML",
+			"description": "HTML, который нужно преобразовать в уценку"
+		},
+		"markdown": {
+			"displayName": "Уценка",
+			"description": "Markdown, который нужно преобразовать в html"
+		},
+		"destinationKey": {
+			"displayName": "Ключ назначения",
+			"description": "Поле, в которое нужно поместить выходные данные. Укажите вложенные поля с помощью точек, например «level1.level2.newKey»."
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"bulletMarker": {
+					"displayName": "Маркер пули",
+					"description": "Укажите маркер маркера, по умолчанию *"
+				},
+				"codeFence": {
+					"displayName": "Кодовый блок ограждения",
+					"description": "Укажите ограждение блока кода, по умолчанию ```"
+				},
+				"emDelimiter": {
+					"displayName": "Разделитель акцента",
+					"description": "Укажите разделитель акцентов, по умолчанию _"
+				},
+				"globalEscape": {
+					"values": {
+						"globalEscape": {
+							"displayName": "Глобальный шаблон побега",
+							"description": "Установка этого параметра переопределит настройки escape по умолчанию, вместо этого вы можете использовать опцию textReplace."
+						},
+						"value": {
+							"options": {
+								"pattern": {
+									"displayName": "Шаблон",
+									"description": "RegEx для шаблона"
+								},
+								"replacement": {
+									"displayName": "Замена",
+									"description": "Замена строки"
+								}
+							}
+						}
+					},
+					"displayName": "Глобальный шаблон побега",
+					"description": "Установка этого параметра переопределит настройки escape по умолчанию, вместо этого вы можете использовать опцию textReplace.",
+					"options": {
+						"value": {
+							"displayName": "Ценить"
+						}
+					}
+				},
+				"ignore": {
+					"displayName": "Игнорируемые элементы",
+					"description": "Предоставленные элементы будут игнорироваться (игнорируется внутренний текст, не анализируются дочерние элементы)",
+					"hint": "Элементы, разделенные запятыми",
+					"placeholder": "например х1, п..."
+				},
+				"keepDataImages": {
+					"displayName": "Храните изображения с данными",
+					"description": "Сохранять ли изображения с данными: URI (Примечание: каждый из них может иметь размер до 1 МБ), например <img src=\"data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSK......0o/\">"
+				},
+				"lineStartEscape": {
+					"values": {
+						"lineStartEscape": {
+							"displayName": "Шаблон перехода начала линии",
+							"description": "Установка этого параметра переопределит настройки escape по умолчанию, вместо этого вы можете использовать опцию textReplace."
+						},
+						"value": {
+							"options": {
+								"pattern": {
+									"displayName": "Шаблон",
+									"description": "RegEx для шаблона"
+								},
+								"replacement": {
+									"displayName": "Замена",
+									"description": "Замена строки"
+								}
+							}
+						}
+					},
+					"displayName": "Шаблон перехода начала линии",
+					"description": "Установка этого параметра переопределит настройки escape по умолчанию, вместо этого вы можете использовать опцию textReplace.",
+					"options": {
+						"value": {
+							"displayName": "Ценить"
+						}
+					}
+				},
+				"maxConsecutiveNewlines": {
+					"displayName": "Макс. последовательные новые строки",
+					"description": "Укажите максимально допустимое количество последовательных новых строк"
+				},
+				"useLinkReferenceDefinitions": {
+					"displayName": "Размещайте URL-адреса внизу",
+					"description": "Размещать ли URL-адреса внизу и форматировать ссылки, используя определения ссылок на ссылки."
+				},
+				"strongDelimiter": {
+					"displayName": "Сильный разделитель",
+					"description": "Укажите строгий разделитель, по умолчанию **"
+				},
+				"codeBlockStyle": {
+					"displayName": "Стиль для блока кода",
+					"description": "Укажите стиль для блока кода, «забор» по умолчанию.",
+					"options": {
+						"fence": {
+							"displayName": "Изгородь"
+						},
+						"indented": {
+							"displayName": "С отступом"
+						}
+					}
+				},
+				"textReplace": {
+					"values": {
+						"textReplace": {
+							"displayName": "Шаблон замены текста",
+							"description": "Пользовательский шаблон замены текста (заменяет совпадающий текст, полученный из узлов)"
+						},
+						"values": {
+							"options": {
+								"pattern": {
+									"displayName": "Шаблон",
+									"description": "RegEx для шаблона"
+								},
+								"replacement": {
+									"displayName": "Замена",
+									"description": "Замена строки"
+								}
+							}
+						}
+					},
+					"displayName": "Шаблон замены текста",
+					"description": "Пользовательский шаблон замены текста (заменяет совпадающий текст, полученный из узлов)",
+					"options": {
+						"values": {
+							"displayName": "Ценности"
+						}
+					}
+				},
+				"blockElements": {
+					"displayName": "Рассматривать как блоки",
+					"description": "Предоставленные элементы будут рассматриваться как блоки (окруженные пустыми строками).",
+					"hint": "Элементы, разделенные запятыми",
+					"placeholder": "например п, дел, ..."
+				},
+				"openLinksInNewWindow": {
+					"displayName": "Добавить пустые ссылки",
+					"description": "Открывать ли все ссылки в новых окнах (путем добавления атрибута target=\"_blank\" к тегам <a>)"
+				},
+				"simplifiedAutoLink": {
+					"displayName": "Автоматическое связывание с URL-адресами",
+					"description": "Включить ли автоматическое связывание с URL-адресами"
+				},
+				"backslashEscapesHTMLTags": {
+					"displayName": "Обратная косая черта экранирует HTML-теги",
+					"description": "Поддерживать ли экранирование HTML-тегов, например: <div>foo</div>"
+				},
+				"completeHTMLDocument": {
+					"displayName": "Полный HTML-документ",
+					"description": "Выводить ли полный HTML-документ, включая теги <html>, <head> и <body>, вместо HTML-фрагмента."
+				},
+				"customizedHeaderId": {
+					"displayName": "Индивидуальный идентификатор заголовка",
+					"description": "Использовать ли текст в фигурных скобках в качестве идентификатора заголовка"
+				},
+				"emoji": {
+					"displayName": "Поддержка эмодзи",
+					"description": "Включить ли поддержку эмодзи. Пример: это смайлик :smile: Дополнительную информацию о доступных смайлах см. на https://github.com/showdownjs/showdown/wiki/Emojis."
+				},
+				"encodeEmails": {
+					"displayName": "Кодировать электронные письма",
+					"description": "Включить ли кодирование адресов электронной почты с помощью символьных объектов, преобразуя адреса электронной почты ASCII в эквивалентные десятичные объекты."
+				},
+				"excludeTrailingPunctuationFromURLs": {
+					"displayName": "Исключить конечные знаки препинания из URL-адресов",
+					"description": "Исключить ли конечные знаки препинания из URL-адресов автоссылки. Пунктуация исключена: . ! ? ( ). Применяется только в том случае, если для параметра упрощенного AutoLink установлено значение true."
+				},
+				"ghCodeBlocks": {
+					"displayName": "Блоки кода GitHub",
+					"description": "Включить ли поддержку стиля блока кода GFM"
+				},
+				"ghCompatibleHeaderId": {
+					"displayName": "Идентификаторы заголовков, совместимые с GitHub",
+					"description": "Генерировать ли идентификаторы заголовков, совместимые со стилем github (пробелы заменяются тире и удаляется множество небуквенно-цифровых символов)"
+				},
+				"ghMentionsLink": {
+					"displayName": "Ссылка на упоминание GitHub",
+					"description": "Следует ли изменить ссылку, созданную @mentions. Showdown заменит {u} на имя пользователя. Применяется только в том случае, если включена опция ghMentions."
+				},
+				"ghMentions": {
+					"displayName": "Упоминания на GitHub",
+					"description": "Включить ли github @mentions, который ссылается на упомянутое имя пользователя"
+				},
+				"tasklists": {
+					"displayName": "Списки задач GitHub",
+					"description": "Включить ли поддержку списков задач GFM"
+				},
+				"headerLevelStart": {
+					"displayName": "Начало уровня заголовка",
+					"description": "Устанавливать ли начальный уровень заголовка"
+				},
+				"requireSpaceBeforeHeadingText": {
+					"displayName": "Обязательное пространство перед заголовком",
+					"description": "Следует ли делать обязательным добавление пробела между # и текстом заголовка."
+				},
+				"literalMidWordAsterisks": {
+					"displayName": "Звездочки среднего слова",
+					"description": "Следует ли прекратить Showdown интерпретировать звездочки в середине слов как <em> и <strong> и вместо этого рассматривать их как буквальные звездочки"
+				},
+				"literalMidWordUnderscores": {
+					"displayName": "Подчеркивание среднего слова",
+					"description": "Следует ли запретить Showdown интерпретировать подчеркивания в середине слов как <em> и <strong> и вместо этого рассматривать их как буквальные подчеркивания."
+				},
+				"noHeaderId": {
+					"displayName": "Нет идентификатора заголовка",
+					"description": "Отключить ли автоматическое создание идентификаторов заголовков"
+				},
+				"parseImgDimensions": {
+					"displayName": "Анализ размеров изображения",
+					"description": "Включить ли поддержку установки размеров изображения из синтаксиса уценки"
+				},
+				"prefixHeaderId": {
+					"displayName": "Идентификатор заголовка префикса",
+					"description": "Добавьте префикс к сгенерированным идентификаторам заголовков."
+				},
+				"rawHeaderId": {
+					"displayName": "Необработанный идентификатор заголовка",
+					"description": "Удалять ли из сгенерированных идентификаторов заголовков (включая префиксы) только пробелы ' и ', заменяя их тире (-)"
+				},
+				"rawPrefixHeaderId": {
+					"displayName": "Идентификатор заголовка необработанного префикса",
+					"description": "Следует ли запретить вскрытием модифицировать префикс"
+				},
+				"simpleLineBreaks": {
+					"displayName": "Простые разрывы строк",
+					"description": "Следует ли анализировать разрывы строк как <br>, как это делает GitHub, без необходимости использования двух пробелов в конце строки."
+				},
+				"smartIndentationFix": {
+					"displayName": "Умное исправление отступов",
+					"description": "Стоит ли пытаться разумно исправить проблемы с отступами, связанные со строками шаблона es6, посреди кода с отступами."
+				},
+				"disableForced4SpacesIndentedSublists": {
+					"displayName": "Подсписки с отступом пробелов",
+					"description": "Отключить ли требование отступа подсписков на 4 пробела для их вложенности, фактически возвращаясь к старому поведению, когда 2 или 3 пробела было достаточно"
+				},
+				"splitAdjacentBlockquotes": {
+					"displayName": "Разделение соседних блоковых кавычек",
+					"description": "Разделять ли соседние блоки цитат"
+				},
+				"strikethrough": {
+					"displayName": "Зачеркивание",
+					"description": "Включить ли поддержку зачеркнутого синтаксиса"
+				},
+				"tablesHeaderId": {
+					"displayName": "Идентификатор заголовка таблицы",
+					"description": "Добавлять ли свойство ID в теги заголовков таблиц"
+				},
+				"tables": {
+					"displayName": "Поддержка таблиц",
+					"description": "Включить ли поддержку синтаксиса таблиц"
+				}
+			}
+		}
+	}
+}

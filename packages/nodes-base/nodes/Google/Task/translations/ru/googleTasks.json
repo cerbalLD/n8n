@@ -1,0 +1,176 @@
+{
+	"header": {
+		"displayName": "Google Задачи",
+		"description": "Использование API задач Google"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"task": {
+					"displayName": "Задача"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Добавить задачу в список задач"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить задачу"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить задачу"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Извлечение множества задач из списка задач"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить задачу"
+				}
+			}
+		},
+		"task": {
+			"displayName": "Имя или идентификатор списка задач",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"title": {
+			"displayName": "Заголовок",
+			"description": "Название задачи"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"completed": {
+					"displayName": "Дата завершения",
+					"description": "Дата завершения задачи (как временная метка RFC 3339). Это поле опускается, если задача не выполнена."
+				},
+				"deleted": {
+					"displayName": "Удалено",
+					"description": "Была ли задача удалена"
+				},
+				"dueDate": {
+					"displayName": "Срок оплаты",
+					"description": "Срок выполнения задачи"
+				},
+				"notes": {
+					"displayName": "Примечания",
+					"description": "Дополнительные примечания"
+				},
+				"parent": {
+					"displayName": "Родитель",
+					"description": "Идентификатор родительской задачи. Если задача создается на верхнем уровне, этот параметр опускается."
+				},
+				"previous": {
+					"displayName": "Предыдущий",
+					"description": "Идентификатор предыдущей родственной задачи. Если задача создается на первой позиции среди своих одноуровневых задач, этот параметр опускается."
+				},
+				"status": {
+					"displayName": "Статус",
+					"description": "Текущий статус задачи",
+					"options": {
+						"needsAction": {
+							"displayName": "Требует действий"
+						},
+						"completed": {
+							"displayName": "Завершенный"
+						}
+					}
+				},
+				"completedMax": {
+					"displayName": "Завершенный Макс",
+					"description": "Верхняя граница даты завершения задачи (в виде временной метки RFC 3339) для фильтрации по"
+				},
+				"completedMin": {
+					"displayName": "Завершено мин.",
+					"description": "Нижняя граница даты завершения задачи (в виде временной метки RFC 3339) для фильтрации по"
+				},
+				"dueMin": {
+					"displayName": "Дуэ Мин",
+					"description": "Нижняя граница срока выполнения задачи (в виде временной метки RFC 3339) для фильтрации по"
+				},
+				"dueMax": {
+					"displayName": "Дуэ Макс",
+					"description": "Верхняя граница срока выполнения задачи (в виде временной метки RFC 3339) для фильтрации по"
+				},
+				"showCompleted": {
+					"displayName": "Показать завершено",
+					"description": "Возвращаются ли в результате выполненные задачи. <strong>Show Hidden</strong> также должно иметь значение True, чтобы отображать задачи, выполненные в собственных клиентах, таких как веб-интерфейс или мобильные приложения Google."
+				},
+				"showDeleted": {
+					"displayName": "Показать удаленные",
+					"description": "Возвращаются ли удаленные задачи в результате"
+				},
+				"showHidden": {
+					"displayName": "Показать скрытое",
+					"description": "Возвращаются ли в результате скрытые задачи"
+				},
+				"updatedMin": {
+					"displayName": "Обновленный минимум",
+					"description": "Нижняя граница времени последней модификации задачи (в виде временной метки RFC 3339) для фильтрации по"
+				}
+			}
+		},
+		"taskId": {
+			"displayName": "Идентификатор задачи"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Обновить поле",
+			"options": {
+				"completed": {
+					"displayName": "Дата завершения",
+					"description": "Дата завершения задачи (как временная метка RFC 3339). Это поле опускается, если задача не выполнена."
+				},
+				"deleted": {
+					"displayName": "Удалено",
+					"description": "Была ли задача удалена"
+				},
+				"dueDate": {
+					"displayName": "Срок оплаты",
+					"description": "Срок выполнения задачи"
+				},
+				"notes": {
+					"displayName": "Примечания",
+					"description": "Дополнительные примечания"
+				},
+				"previous": {
+					"displayName": "Предыдущий",
+					"description": "Идентификатор предыдущей родственной задачи. Если задача создается на первой позиции среди своих одноуровневых задач, этот параметр опускается."
+				},
+				"status": {
+					"displayName": "Статус",
+					"description": "Текущий статус задачи",
+					"options": {
+						"needsAction": {
+							"displayName": "Требуется обновление"
+						},
+						"completed": {
+							"displayName": "Завершенный"
+						}
+					}
+				},
+				"title": {
+					"displayName": "Заголовок",
+					"description": "Название задачи"
+				}
+			}
+		}
+	}
+}

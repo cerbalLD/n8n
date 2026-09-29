@@ -1,0 +1,50 @@
+{
+	"header": {
+		"displayName": "Uplead",
+		"description": "Использование API Uplead"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"company": {
+					"displayName": "Компания",
+					"description": "API компании позволяет искать данные компании по доменному имени или названию компании."
+				},
+				"person": {
+					"displayName": "Человек",
+					"description": "Person API позволяет искать человека по адресу электронной почты ИЛИ по доменному имени + имени + фамилии."
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"enrich": {
+					"displayName": "Обогащать"
+				}
+			}
+		},
+		"company": {
+			"displayName": "Компания",
+			"description": "Название компании (например, Amazon)"
+		},
+		"domain": {
+			"displayName": "Домен",
+			"description": "Доменное имя (например, salesforce.com)"
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"description": "Адрес электронной почты (например, mbenioff@salesforce.com)",
+			"placeholder": "имя@email.com"
+		},
+		"firstname": {
+			"displayName": "Имя",
+			"description": "Имя человека (например, Марк)"
+		},
+		"lastname": {
+			"displayName": "Фамилия",
+			"description": "Фамилия человека (например, Бениофф)"
+		}
+	}
+}

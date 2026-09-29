@@ -1,0 +1,6 @@
+{
+	"header": {
+		"displayName": "АВС С3",
+		"description": "Отправляет данные в AWS S3"
+	}
+}

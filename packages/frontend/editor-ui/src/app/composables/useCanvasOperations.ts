@@ -1397,11 +1397,13 @@ export function useCanvasOperations() {
 			const nodeVersions = Array.isArray(nodeTypeDescription.version)
 				? nodeTypeDescription.version
 				: [nodeTypeDescription.version];
+			const matchedNode = nodes.find(
+				(n) => n.type === nodeTypeDescription.name && nodeVersions.includes(n.typeVersion),
+			);
 			if (
-				!!nodes.find(
-					(n) => n.type === nodeTypeDescription.name && nodeVersions.includes(n.typeVersion),
-				) &&
-				!nodeTypeDescription.hasOwnProperty('properties')
+				!!matchedNode &&
+				(!nodeTypeDescription.hasOwnProperty('properties') ||
+					nodeTypesStore.needsTranslatedFetch(nodeTypeDescription.name, matchedNode.typeVersion))
 			) {
 				nodesToBeFetched.push({
 					name: nodeTypeDescription.name,
@@ -1413,7 +1415,8 @@ export function useCanvasOperations() {
 		});
 
 		if (nodesToBeFetched.length > 0) {
-			// Only call API if node information is actually missing
+			// Only call API if node information is actually missing, or (for non-English
+			// locales) hasn't been fetched with translated parameter labels yet
 			await nodeTypesStore.getNodesInformation(nodesToBeFetched);
 		}
 	}
@@ -2666,6 +2669,13 @@ export function useCanvasOperations() {
 
 		initializedDocumentStore.setNodes(nodes);
 		initializedDocumentStore.setConnections(connections);
+
+		// Unlike addNodes()/addImportedNodesToWorkflow(), opening a saved workflow sets its
+		// nodes directly without going through loadNodeTypesProperties(), so for non-English
+		// locales their parameter labels never get a translated re-fetch. Trigger it here too.
+		await nodeHelpers.loadNodesProperties(
+			nodes.map((node) => ({ name: node.type, version: node.typeVersion })),
+		);
 
 		return { workflowDocumentStore: initializedDocumentStore };
 	}

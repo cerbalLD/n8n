@@ -1,0 +1,343 @@
+{
+	"header": {
+		"displayName": "Списки предметов",
+		"description": "Помощник для работы со списками элементов и преобразования массивов"
+	},
+	"nodeView": {
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"concatenateItems": {
+					"displayName": "Объединение элементов",
+					"description": "Объедините поля в список в одном новом элементе"
+				},
+				"limit": {
+					"displayName": "Лимит",
+					"description": "Удалить элементы, если их слишком много"
+				},
+				"removeDuplicates": {
+					"displayName": "Удалить дубликаты",
+					"description": "Удалите лишние похожие элементы"
+				},
+				"sort": {
+					"displayName": "Сортировать",
+					"description": "Изменить порядок элементов"
+				},
+				"splitOutItems": {
+					"displayName": "Разделить элементы",
+					"description": "Превратите список или значения свойств объекта внутри элемента(ов) в отдельные элементы."
+				},
+				"summarize": {
+					"displayName": "Подвести итог",
+					"description": "Объединить элементы вместе (сводная таблица)"
+				}
+			}
+		},
+		"aggregate": {
+			"displayName": "Совокупный",
+			"options": {
+				"aggregateIndividualFields": {
+					"displayName": "Отдельные поля"
+				},
+				"aggregateAllItemData": {
+					"displayName": "Все данные элемента (в едином списке)"
+				}
+			}
+		},
+		"fieldsToAggregate": {
+			"options": {
+				"fieldsToAggregate": {
+					"displayName": "Поля для агрегирования"
+				},
+				"fieldToAggregate": {
+					"values": {
+						"fieldToAggregate": {
+							"displayName": "Имя поля ввода",
+							"description": "Имя поля во входных элементах для агрегирования.",
+							"hint": "Введите имя поля в виде текста",
+							"placeholder": "например идентификатор"
+						},
+						"renameField": {
+							"displayName": "Переименовать поле",
+							"description": "Следует ли давать полю другое имя в выходных данных"
+						},
+						"outputFieldName": {
+							"displayName": "Имя выходного поля",
+							"description": "Имя поля, в которое будут помещены агрегированные данные. Оставьте пустым, чтобы использовать имя поля ввода."
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить поле в агрегирование",
+			"displayName": "Поля для агрегирования"
+		},
+		"destinationFieldName": {
+			"displayName": "Поместите вывод в поле",
+			"description": "Имя выходного поля, в которое помещаются данные."
+		},
+		"include": {
+			"displayName": "Включать",
+			"options": {
+				"allFields": {
+					"displayName": "Все поля"
+				},
+				"specifiedFields": {
+					"displayName": "Указанные поля"
+				},
+				"allFieldsExcept": {
+					"displayName": "Все поля, кроме"
+				},
+				"noOtherFields": {
+					"displayName": "Никаких других полей"
+				},
+				"allOtherFields": {
+					"displayName": "Все остальные поля"
+				},
+				"selectedOtherFields": {
+					"displayName": "Выбранные другие поля"
+				}
+			},
+			"description": "Копировать ли какие-либо другие поля в новые элементы"
+		},
+		"fieldsToExclude": {
+			"displayName": "Поля для исключения",
+			"placeholder": "например электронная почта, имя",
+			"description": "Поля входных данных, которые нужно исключить из сравнения"
+		},
+		"fieldsToInclude": {
+			"displayName": "Поля для включения",
+			"placeholder": "например электронная почта, имя",
+			"description": "Поля во входных элементах для агрегирования"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"disableDotNotation": {
+					"displayName": "Отключить точечную нотацию",
+					"description": "Запретить ли ссылаться на дочерние поля, используя `parent.child` в имени поля."
+				},
+				"mergeLists": {
+					"displayName": "Объединить списки",
+					"description": "Следует ли объединять выходные данные в один плоский список (а не в список списков), если поле для агрегирования представляет собой список."
+				},
+				"includeBinaries": {
+					"displayName": "Включить двоичные файлы",
+					"description": "Включать ли двоичные данные в новый элемент"
+				},
+				"keepOnlyUnique": {
+					"displayName": "Сохраняйте только уникальные двоичные файлы",
+					"description": "Сохранять ли только уникальные двоичные файлы путем сравнения типов mime, типов файлов, размеров файлов и расширений файлов."
+				},
+				"keepMissing": {
+					"displayName": "Продолжайте отсутствовать и иметь нулевые значения",
+					"description": "Добавлять ли нулевую запись в агрегированный список при наличии отсутствующего или нулевого значения."
+				},
+				"removeOtherFields": {
+					"displayName": "Удалить другие поля",
+					"description": "Удалять ли поля, которые не сравниваются. Если отключено, будут сохранены значения из первого дубликата."
+				},
+				"destinationFieldName": {
+					"displayName": "Имя поля назначения",
+					"description": "Поле в выводе, под которое помещается содержимое разделенного поля."
+				},
+				"includeBinary": {
+					"displayName": "Включить двоичный файл",
+					"description": "Включать ли двоичные данные в новые элементы"
+				},
+				"outputFormat": {
+					"displayName": "Формат вывода",
+					"options": {
+						"separateItems": {
+							"displayName": "Каждое разделение в отдельном элементе"
+						},
+						"singleItem": {
+							"displayName": "Все разделения в одном элементе"
+						}
+					}
+				},
+				"skipEmptySplitFields": {
+					"displayName": "Игнорировать элементы без допустимых полей для группировки"
+				}
+			}
+		},
+		"maxItems": {
+			"displayName": "Макс. предметы",
+			"description": "Если элементов больше, чем это число, некоторые из них удаляются."
+		},
+		"keep": {
+			"displayName": "Держать",
+			"description": "При удалении элементов следует ли сохранять те, которые находятся в начале или в конце.",
+			"options": {
+				"firstItems": {
+					"displayName": "Первые предметы"
+				},
+				"lastItems": {
+					"displayName": "Последние предметы"
+				}
+			}
+		},
+		"compare": {
+			"displayName": "Сравнивать",
+			"description": "Поля входных элементов для сравнения, чтобы убедиться, что они одинаковы.",
+			"options": {
+				"allFields": {
+					"displayName": "Все поля"
+				},
+				"allFieldsExcept": {
+					"displayName": "Все поля, кроме"
+				},
+				"selectedFields": {
+					"displayName": "Выбранные поля"
+				}
+			}
+		},
+		"fieldsToCompare": {
+			"displayName": "Поля для сравнения",
+			"description": "Поля во входных данных для добавления к сравнению",
+			"placeholder": "например электронная почта, имя"
+		},
+		"type": {
+			"displayName": "Тип",
+			"description": "Поля входных элементов для сравнения, чтобы убедиться, что они одинаковы.",
+			"options": {
+				"simple": {
+					"displayName": "Простой"
+				},
+				"random": {
+					"displayName": "Случайный"
+				},
+				"code": {
+					"displayName": "Код"
+				}
+			}
+		},
+		"sortFieldsUi": {
+			"options": {
+				"sortFieldsUi": {
+					"displayName": "Поля для сортировки",
+					"description": "Поля входных элементов для сравнения, чтобы убедиться, что они одинаковы."
+				},
+				"sortField": {
+					"values": {
+						"fieldName": {
+							"displayName": "Имя поля",
+							"description": "Поле для сортировки",
+							"hint": "Введите имя поля в виде текста",
+							"placeholder": "например идентификатор"
+						},
+						"order": {
+							"displayName": "Заказ",
+							"description": "Порядок сортировки по",
+							"options": {
+								"ascending": {
+									"displayName": "восходящий"
+								},
+								"descending": {
+									"displayName": "По убыванию"
+								}
+							}
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить поле для сортировки",
+			"displayName": "Поля для сортировки",
+			"description": "Поля входных элементов для сравнения, чтобы убедиться, что они одинаковы."
+		},
+		"code": {
+			"displayName": "Код",
+			"description": "Код Javascript для определения порядка любых двух элементов"
+		},
+		"fieldToSplitOut": {
+			"displayName": "Поля для разделения",
+			"description": "Имя полей ввода, которые нужно разбить на отдельные элементы. Разделяйте несколько имен полей запятыми. Для двоичных данных используйте $binary..",
+			"placeholder": "Перетащите поля слева или введите их имена."
+		},
+		"fieldsToSummarize": {
+			"options": {
+				"fieldsToSummarize": {
+					"displayName": "Поля для суммирования"
+				},
+				"values": {
+					"values": {
+						"aggregation": {
+							"displayName": "Агрегация",
+							"description": "Как объединить значения поля, которое вы хотите суммировать",
+							"options": {
+								"append": {
+									"displayName": "Добавить"
+								},
+								"average": {
+									"displayName": "Средний"
+								},
+								"concatenate": {
+									"displayName": "Объединить"
+								},
+								"count": {
+									"displayName": "Считать"
+								},
+								"countUnique": {
+									"displayName": "Считать уникальными"
+								},
+								"max": {
+									"displayName": "Макс"
+								},
+								"min": {
+									"displayName": "Мин"
+								},
+								"sum": {
+									"displayName": "Сумма"
+								}
+							}
+						},
+						"field": {
+							"displayName": "Поле",
+							"description": "Имя поля ввода, по которому вы хотите суммировать; нулевые, неопределенные, пустые строки будут игнорироваться",
+							"hint": "Введите имя поля в виде текста",
+							"placeholder": "например расходы"
+						},
+						"includeEmpty": {
+							"displayName": "Включить пустые значения"
+						},
+						"separateBy": {
+							"displayName": "Сепаратор",
+							"hint": "Что вставлять между значениями",
+							"options": {
+								",": {
+									"displayName": "Запятая"
+								},
+								", ": {
+									"displayName": "Запятая и пробел"
+								},
+								"\n": {
+									"displayName": "Новая линия"
+								},
+								"": {
+									"displayName": "Никто"
+								},
+								" ": {
+									"displayName": "Космос"
+								},
+								"other": {
+									"displayName": "Другой"
+								}
+							}
+						},
+						"customSeparator": {
+							"displayName": "Пользовательский разделитель"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить поле",
+			"displayName": "Поля для суммирования"
+		},
+		"fieldsToSplitBy": {
+			"displayName": "Поля для группировки",
+			"description": "Имя полей ввода, по которым вы хотите разделить сводку.",
+			"hint": "Введите названия полей в виде текста (через запятую).",
+			"placeholder": "например страна, город"
+		}
+	}
+}

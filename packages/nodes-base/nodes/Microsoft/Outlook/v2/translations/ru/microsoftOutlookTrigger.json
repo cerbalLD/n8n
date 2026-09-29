@@ -1,0 +1,194 @@
+{
+	"header": {
+		"displayName": "Триггер Microsoft Outlook",
+		"description": "Получает электронные письма из Microsoft Outlook и запускает рабочий процесс через указанные интервалы опроса."
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"microsoftOutlookOAuth2Api": {
+					"displayName": "Outlook OAuth2"
+				},
+				"microsoftOAuth2Api": {
+					"displayName": "Microsoft OAuth2 (график)"
+				},
+				"microsoftEntraServicePrincipalApi": {
+					"displayName": "Руководитель службы Microsoft Entra (только для приложения)",
+					"description": "Доступ только через приложение через регистрацию приложения Microsoft Entra. Выберите, с каким почтовым ящиком действовать, в разделе «Почтовый ящик»."
+				}
+			}
+		},
+		"mailbox": {
+			"displayName": "Почтовый ящик",
+			"description": "Почтовый ящик, с которым должен действовать субъект службы. В узле действия это оценивается для каждого элемента ввода (выражение может быть нацелено на другой почтовый ящик для каждого элемента); триггер разрешает его один раз."
+		},
+		"servicePrincipalNotice": {
+			"displayName": "Если это не ограничено политикой доступа к приложению (Exchange Online New-ApplicationAccessPolicy), разрешение приложения Mail.Read позволяет этому приложению читать любой почтовый ящик в клиенте."
+		},
+		"event": {
+			"displayName": "Триггер включен",
+			"options": {
+				"messageReceived": {
+					"displayName": "Сообщение получено"
+				}
+			}
+		},
+		"output": {
+			"displayName": "Выход",
+			"options": {
+				"simple": {
+					"displayName": "Упрощенный"
+				},
+				"raw": {
+					"displayName": "Сырой"
+				},
+				"fields": {
+					"displayName": "Выберите включенные поля"
+				}
+			}
+		},
+		"fields": {
+			"displayName": "Поля",
+			"description": "Поля, которые нужно добавить в выходные данные",
+			"options": {
+				"bccRecipients": {
+					"displayName": "bccRecipients"
+				},
+				"body": {
+					"displayName": "тело"
+				},
+				"bodyPreview": {
+					"displayName": "телоПредварительный просмотр"
+				},
+				"categories": {
+					"displayName": "категории"
+				},
+				"ccRecipients": {
+					"displayName": "ccRecipients"
+				},
+				"changeKey": {
+					"displayName": "изменитьКлюч"
+				},
+				"conversationId": {
+					"displayName": "идентификатор разговора"
+				},
+				"createdDateTime": {
+					"displayName": "созданоДатаВремя"
+				},
+				"flag": {
+					"displayName": "флаг"
+				},
+				"from": {
+					"displayName": "от"
+				},
+				"hasAttachments": {
+					"displayName": "имеет вложения"
+				},
+				"importance": {
+					"displayName": "важность"
+				},
+				"inferenceClassification": {
+					"displayName": "выводКлассификация"
+				},
+				"internetMessageId": {
+					"displayName": "InternetMessageId"
+				},
+				"isDeliveryReceiptRequested": {
+					"displayName": "isDeliveryReceiptRequested"
+				},
+				"isDraft": {
+					"displayName": "isDraft"
+				},
+				"isRead": {
+					"displayName": "isRead"
+				},
+				"isReadReceiptRequested": {
+					"displayName": "isReadReceiptRequested"
+				},
+				"lastModifiedDateTime": {
+					"displayName": "последниймодифицированныйдатевремя"
+				},
+				"parentFolderId": {
+					"displayName": "родительская папкаид"
+				},
+				"receivedDateTime": {
+					"displayName": "полученоДатаВремя"
+				},
+				"replyTo": {
+					"displayName": "ОтветитьКому"
+				},
+				"sender": {
+					"displayName": "отправитель"
+				},
+				"sentDateTime": {
+					"displayName": "отправленоДатаВремя"
+				},
+				"subject": {
+					"displayName": "предмет"
+				},
+				"toRecipients": {
+					"displayName": "получателям"
+				},
+				"webLink": {
+					"displayName": "вебссылка"
+				}
+			}
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"custom": {
+					"displayName": "Фильтровать запрос",
+					"hint": "Поисковый запрос для фильтрации сообщений. <a href=\"https://learn.microsoft.com/en-us/graph/filter-query-parameter\">Подробнее</a>.",
+					"placeholder": "например isRead eq false"
+				},
+				"hasAttachments": {
+					"displayName": "Имеет вложения"
+				},
+				"foldersToExclude": {
+					"displayName": "Папки, которые нужно исключить",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"foldersToInclude": {
+					"displayName": "Папки для включения",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"readStatus": {
+					"displayName": "Чтение статуса",
+					"hint": "Фильтровать сообщения по тому, были ли они прочитаны или нет.",
+					"options": {
+						"both": {
+							"displayName": "Непрочитанные и прочитанные сообщения"
+						},
+						"unread": {
+							"displayName": "Только непрочитанные сообщения"
+						},
+						"read": {
+							"displayName": "Только читать сообщения"
+						}
+					}
+				},
+				"sender": {
+					"displayName": "Отправитель",
+					"description": "Имя отправителя или адрес электронной почты для фильтрации"
+				}
+			}
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"attachmentsPrefix": {
+					"displayName": "Префикс вложений",
+					"description": "Префикс имени выходных полей для помещения данных в двоичные файлы. Будет добавлен индекс, начинающийся с 0. Таким образом, если имя «attachment_», первое вложение сохраняется в «attachment_0»."
+				},
+				"downloadAttachments": {
+					"displayName": "Загрузить вложения",
+					"description": "Будут ли вложения к сообщению загружены и включены в выходные данные."
+				}
+			}
+		}
+	}
+}

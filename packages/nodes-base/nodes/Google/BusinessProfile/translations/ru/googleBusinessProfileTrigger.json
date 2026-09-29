@@ -1,0 +1,24 @@
+{
+	"header": {
+		"displayName": "Триггер профиля компании Google",
+		"description": "Получает отзывы из профиля компании в Google и запускает рабочий процесс через заданные интервалы опроса."
+	},
+	"nodeView": {
+		"event": {
+			"displayName": "Событие",
+			"options": {
+				"reviewAdded": {
+					"displayName": "Отзыв добавлен"
+				}
+			}
+		},
+		"account": {
+			"displayName": "Счет",
+			"description": "Аккаунт профиля компании в Google"
+		},
+		"location": {
+			"displayName": "Расположение",
+			"description": "Конкретное местоположение или компания, связанная с учетной записью."
+		}
+	}
+}

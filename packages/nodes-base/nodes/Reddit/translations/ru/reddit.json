@@ -1,0 +1,260 @@
+{
+	"header": {
+		"displayName": "Реддит",
+		"description": "Используйте API Reddit"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"post": {
+					"displayName": "Почта"
+				},
+				"postComment": {
+					"displayName": "Опубликовать комментарий"
+				},
+				"profile": {
+					"displayName": "Профиль"
+				},
+				"subreddit": {
+					"displayName": "Сабреддит"
+				},
+				"user": {
+					"displayName": "Пользователь"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Отправьте публикацию в сабреддит"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получайте много публикаций из субреддита"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить публикацию из сабреддита"
+				},
+				"reply": {
+					"displayName": "Отвечать",
+					"description": "Напишите ответ на комментарий в публикации"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить публикацию из сабреддита"
+				},
+				"search": {
+					"displayName": "Поиск",
+					"description": "Искать сообщения в субреддите или во всем Reddit."
+				}
+			}
+		},
+		"postId": {
+			"displayName": "Идентификатор сообщения",
+			"description": "Идентификатор сообщения, которое нужно получить. Найдено в URL публикации: <code>/r/[subreddit_name]/comments/[post_id]/[post_title]</code>",
+			"placeholder": "l0me7x"
+		},
+		"commentText": {
+			"displayName": "Текст комментария",
+			"description": "Текст комментария. Маркдаун поддерживается."
+		},
+		"subreddit": {
+			"displayName": "Сабреддит",
+			"description": "Название субреддита для поиска"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"commentId": {
+			"displayName": "Идентификатор комментария",
+			"description": "Идентификатор комментария, на который нужно ответить. Его можно найти в URL-адресе комментария: <code>www.reddit.com/r/[subreddit_name]/comments/[post_id]/[post_title]/[comment_id]</code>.",
+			"placeholder": "gl9iroa"
+		},
+		"replyText": {
+			"displayName": "Текст ответа",
+			"description": "Текст ответа. Маркдаун поддерживается."
+		},
+		"details": {
+			"displayName": "Подробности",
+			"description": "Подробная информация о пользователе для получения",
+			"options": {
+				"blockedUsers": {
+					"displayName": "Заблокированные пользователи",
+					"description": "Вернуть заблокированных пользователей вошедшего в систему пользователя"
+				},
+				"friends": {
+					"displayName": "Друзья",
+					"description": "Вернуть друзей вошедшего пользователя"
+				},
+				"identity": {
+					"displayName": "Личность",
+					"description": "Возвращает личность вошедшего в систему пользователя"
+				},
+				"karma": {
+					"displayName": "Карма",
+					"description": "Вернуть карму субреддита для вошедшего в систему пользователя"
+				},
+				"prefs": {
+					"displayName": "Предпочтения",
+					"description": "Вернуть настройки вошедшего в систему пользователя"
+				},
+				"saved": {
+					"displayName": "Сохранено",
+					"description": "Вернуть сохраненные сообщения для пользователя"
+				},
+				"trophies": {
+					"displayName": "Трофеи",
+					"description": "Вернуть трофеи авторизованному пользователю"
+				},
+				"about": {
+					"displayName": "О"
+				},
+				"comments": {
+					"displayName": "Комментарии"
+				},
+				"gilded": {
+					"displayName": "Позолоченный"
+				},
+				"overview": {
+					"displayName": "Обзор"
+				},
+				"submitted": {
+					"displayName": "Поданный"
+				}
+			}
+		},
+		"content": {
+			"displayName": "Содержание",
+			"description": "Содержимое субреддита для получения",
+			"options": {
+				"about": {
+					"displayName": "О"
+				},
+				"rules": {
+					"displayName": "Правила"
+				}
+			}
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"keyword": {
+					"displayName": "Ключевое слово",
+					"description": "Ключевое слово для поиска на сабреддите"
+				},
+				"trending": {
+					"displayName": "Тенденции",
+					"description": "Следует ли получать популярные в настоящее время субреддиты на всем Reddit."
+				},
+				"category": {
+					"displayName": "Категория",
+					"description": "Категория сообщений для получения",
+					"options": {
+						"top": {
+							"displayName": "Популярные сообщения"
+						},
+						"hot": {
+							"displayName": "Горячие посты"
+						},
+						"new": {
+							"displayName": "Новые сообщения"
+						},
+						"rising": {
+							"displayName": "Восходящие посты"
+						}
+					}
+				}
+			}
+		},
+		"kind": {
+			"displayName": "Добрый",
+			"description": "Тип публикации, которую нужно создать",
+			"options": {
+				"self": {
+					"displayName": "Текстовое сообщение"
+				},
+				"link": {
+					"displayName": "Ссылка на публикацию"
+				},
+				"image": {
+					"displayName": "Сообщение с изображением"
+				}
+			}
+		},
+		"title": {
+			"displayName": "Заголовок",
+			"description": "Название поста длиной до 300 символов."
+		},
+		"url": {
+			"displayName": "URL",
+			"description": "URL-адрес публикации"
+		},
+		"text": {
+			"displayName": "Текст",
+			"description": "Текст поста. Маркдаун поддерживается."
+		},
+		"resubmit": {
+			"displayName": "Отправить повторно",
+			"description": "Будет ли URL-адрес опубликован, даже если он уже был опубликован в субреддите ранее. В противном случае повторная публикация вызовет ошибку."
+		},
+		"location": {
+			"displayName": "Расположение",
+			"description": "Место, где искать сообщения",
+			"options": {
+				"allReddit": {
+					"displayName": "Весь Реддит",
+					"description": "Искать сообщения по всему Reddit"
+				},
+				"subreddit": {
+					"displayName": "Сабреддит",
+					"description": "Поиск сообщений в определенном сабреддите"
+				}
+			}
+		},
+		"keyword": {
+			"displayName": "Ключевое слово",
+			"description": "Ключевое слово для поиска"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"sort": {
+					"displayName": "Сортировать",
+					"description": "Категория для сортировки результатов.",
+					"options": {
+						"comments": {
+							"displayName": "Комментарии"
+						},
+						"hot": {
+							"displayName": "Горячий"
+						},
+						"new": {
+							"displayName": "Новый"
+						},
+						"relevance": {
+							"displayName": "Актуальность"
+						},
+						"top": {
+							"displayName": "Вершина"
+						}
+					}
+				}
+			}
+		},
+		"username": {
+			"displayName": "Имя пользователя",
+			"description": "Reddit ID пользователя, которого нужно получить"
+		}
+	}
+}

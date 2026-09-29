@@ -1,0 +1,174 @@
+{
+	"header": {
+		"displayName": "Фантомбастер",
+		"description": "Использовать API Фантомбастера"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"agent": {
+					"displayName": "Агент"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удаление агента по идентификатору"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить агента по ID"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить множество агентов организации текущего пользователя."
+				},
+				"getOutput": {
+					"displayName": "Получить вывод",
+					"description": "Получите выходные данные самого последнего контейнера агента."
+				},
+				"launch": {
+					"displayName": "Запуск",
+					"description": "Добавить агента в очередь запуска"
+				},
+				"launchSync": {
+					"displayName": "Запустить синхронизацию",
+					"description": "Запустите агент и транслируйте результаты"
+				}
+			}
+		},
+		"agentId": {
+			"displayName": "Имя или идентификатор агента",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"resolveData": {
+			"displayName": "Разрешение данных",
+			"description": "По умолчанию при запуске указывается только идентификатор контейнера. Если эта опция активирована, она автоматически разрешит данные."
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"prevContainerId": {
+					"displayName": "Предыдущий идентификатор контейнера",
+					"description": "Если установлено, выходные данные будут получены из контейнера после указанного предыдущего идентификатора контейнера."
+				},
+				"prevStatus": {
+					"displayName": "Предыдущий статус",
+					"description": "Если установлено, позволяет определить, какой статус был ранее получен на стороне пользователя.",
+					"options": {
+						"finished": {
+							"displayName": "Законченный"
+						},
+						"lauch error": {
+							"displayName": "Ошибка запуска"
+						},
+						"never launched": {
+							"displayName": "Никогда не запускался"
+						},
+						"running": {
+							"displayName": "Бег"
+						},
+						"starting": {
+							"displayName": "Начало"
+						},
+						"unknown": {
+							"displayName": "Неизвестный"
+						}
+					}
+				},
+				"prevRuntimeEventIndex": {
+					"displayName": "Индекс событий перед выполнением",
+					"description": "Если установлено, события времени выполнения контейнера будут возвращены в ответе, начиная с предоставленного предыдущего индекса событий времени выполнения."
+				},
+				"argumentsJson": {
+					"displayName": "Аргументы (JSON)",
+					"description": "Аргумент агента. Может быть строкой JSON или простым объектом. Аргумент можно получить с помощью buster.argument в скрипте агента."
+				},
+				"argumentsUi": {
+					"values": {
+						"argumentsUi": {
+							"displayName": "Аргументы"
+						},
+						"argumentValues": {
+							"options": {
+								"key": {
+									"displayName": "Ключ",
+									"description": "Имя добавляемого ключа аргумента"
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Значение, которое нужно установить для ключа аргумента"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить аргумент",
+					"displayName": "Аргументы",
+					"options": {
+						"argumentValues": {
+							"displayName": "Аргумент"
+						}
+					}
+				},
+				"bonusArgumentUi": {
+					"values": {
+						"bonusArgumentUi": {
+							"displayName": "Бонусный аргумент"
+						},
+						"bonusArgumentValue": {
+							"options": {
+								"key": {
+									"displayName": "Ключ",
+									"description": "Имя добавляемого ключа аргумента"
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Значение, которое нужно установить для ключа аргумента"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить бонусный аргумент",
+					"displayName": "Бонусный аргумент",
+					"options": {
+						"bonusArgumentValue": {
+							"displayName": "Бонусный аргумент"
+						}
+					}
+				},
+				"bonusArgumentJson": {
+					"displayName": "Бонусный аргумент (JSON)",
+					"description": "Аргумент агентского бонуса. Может быть строкой JSON или простым объектом. Этот бонусный аргумент является одноразовым и будет использоваться только для текущего запуска. Если он присутствует, он будет объединен с исходным аргументом, в результате чего получится эффективный аргумент, который можно получить с помощью buster.argument в сценарии агента."
+				},
+				"manualLaunch": {
+					"displayName": "Ручной запуск",
+					"description": "Будет ли агент считаться «запущенным вручную»"
+				},
+				"maxInstanceCount": {
+					"displayName": "Максимальное количество экземпляров",
+					"description": "Если установлено, агент будет запущен только в том случае, если количество уже запущенных экземпляров меньше указанного числа."
+				},
+				"saveArgument": {
+					"displayName": "Сохранить аргумент",
+					"description": "Если true, аргумент будет сохранен как параметры запуска агента по умолчанию."
+				}
+			}
+		},
+		"jsonParameters": {
+			"displayName": "Параметры JSON"
+		}
+	}
+}

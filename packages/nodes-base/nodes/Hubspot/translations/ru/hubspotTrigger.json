@@ -1,0 +1,6 @@
+{
+	"header": {
+		"displayName": "Триггер HubSpot",
+		"description": "Запускает рабочий процесс при возникновении событий HubSpot."
+	}
+}

@@ -1,0 +1,101 @@
+{
+	"header": {
+		"displayName": "Google Cloud Firestore",
+		"description": "Взаимодействие с Google Firebase – API Cloud Firestore"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"googleFirebaseCloudFirestoreOAuth2Api": {
+					"displayName": "OAuth2 (рекомендуется)"
+				},
+				"serviceAccount": {
+					"displayName": "Сервисный аккаунт"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"document": {
+					"displayName": "Документ"
+				},
+				"collection": {
+					"displayName": "Коллекция"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать документ"
+				},
+				"upsert": {
+					"displayName": "Создать или обновить",
+					"description": "Создайте новый документ или обновите текущий, если он уже существует (upsert)"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить документ"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить документ"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получите много корневых коллекций"
+				},
+				"query": {
+					"displayName": "Запрос",
+					"description": "Выполняет запрос к вашим документам"
+				}
+			}
+		},
+		"projectId": {
+			"displayName": "Название или идентификатор проекта",
+			"description": "Как показано в URL-адресе консоли Firebase. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"database": {
+			"displayName": "База данных",
+			"description": "Обычно указанное значение по умолчанию будет работать."
+		},
+		"collection": {
+			"displayName": "Коллекция",
+			"description": "Название коллекции"
+		},
+		"documentId": {
+			"displayName": "Идентификатор документа"
+		},
+		"columns": {
+			"displayName": "Столбцы/Атрибуты",
+			"description": "Столбцы для вставки",
+			"placeholder": "возраст, город, местонахождение"
+		},
+		"simple": {
+			"displayName": "Упрощать",
+			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"updateKey": {
+			"displayName": "Обновить ключ",
+			"description": "Имя поля во входном элементе, которое содержит идентификатор документа",
+			"placeholder": "идентификатор документа"
+		},
+		"query": {
+			"displayName": "Запрос JSON",
+			"description": "JSON-запрос для выполнения",
+			"placeholder": "{\"structuredQuery\": {\"where\": {\"fieldFilter\": {\"field\": {\"fieldPath\": \"age\"}, \"op\": \"EQUAL\", \"value\": {\"integerValue\": 28}}}, \"from\": [{\"collectionId\": \"users-collection\"}]}}"
+		}
+	}
+}

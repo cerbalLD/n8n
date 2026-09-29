@@ -1,0 +1,70 @@
+{
+	"header": {
+		"displayName": "Сортировать",
+		"description": "Изменить порядок элементов"
+	},
+	"nodeView": {
+		"type": {
+			"displayName": "Тип",
+			"description": "Тип выполняемой сортировки",
+			"options": {
+				"simple": {
+					"displayName": "Простой"
+				},
+				"random": {
+					"displayName": "Случайный"
+				},
+				"code": {
+					"displayName": "Код"
+				}
+			}
+		},
+		"sortFieldsUi": {
+			"options": {
+				"sortFieldsUi": {
+					"displayName": "Поля для сортировки",
+					"description": "Поля входных элементов для сортировки"
+				},
+				"sortField": {
+					"values": {
+						"fieldName": {
+							"displayName": "Имя поля",
+							"description": "Поле для сортировки",
+							"hint": "Введите имя поля в виде текста",
+							"placeholder": "например идентификатор"
+						},
+						"order": {
+							"displayName": "Заказ",
+							"description": "Порядок сортировки по",
+							"options": {
+								"ascending": {
+									"displayName": "восходящий"
+								},
+								"descending": {
+									"displayName": "По убыванию"
+								}
+							}
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить поле для сортировки",
+			"displayName": "Поля для сортировки",
+			"description": "Поля входных элементов для сортировки"
+		},
+		"code": {
+			"displayName": "Код",
+			"description": "Код Javascript для определения порядка любых двух элементов"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"disableDotNotation": {
+					"displayName": "Отключить точечную нотацию",
+					"description": "Запретить ли ссылаться на дочерние поля, используя `parent.child` в имени поля."
+				}
+			}
+		}
+	}
+}

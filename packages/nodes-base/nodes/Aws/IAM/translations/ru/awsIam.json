@@ -1,0 +1,140 @@
+{
+	"header": {
+		"displayName": "АВС ИАМ",
+		"description": "Взаимодействует с Amazon IAM"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"iam": {
+					"displayName": "АВС (ИАМ)"
+				},
+				"assumeRole": {
+					"displayName": "AWS (принятие роли)"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"user": {
+					"displayName": "Пользователь"
+				},
+				"group": {
+					"displayName": "Группа"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"addToGroup": {
+					"displayName": "Добавить в группу",
+					"description": "Добавить существующего пользователя в группу"
+				},
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать новую группу"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить существующую группу"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить сведения о существующей группе"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить список групп"
+				},
+				"removeFromGroup": {
+					"displayName": "Удалить из группы",
+					"description": "Удаление пользователя из группы"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить существующую группу"
+				}
+			}
+		},
+		"user": {
+			"displayName": "Пользователь",
+			"description": "Выберите пользователя, которого хотите удалить из группы"
+		},
+		"group": {
+			"displayName": "Группа",
+			"description": "Выберите группу, которую хотите обновить."
+		},
+		"userName": {
+			"displayName": "Имя пользователя",
+			"description": "Новое имя пользователя",
+			"placeholder": "например ДжонСмит"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"path": {
+					"displayName": "Путь",
+					"description": "Новый путь к группе, если он не включен, по умолчанию используется косая черта (/).",
+					"placeholder": "например /division_abc/инжиниринг/"
+				},
+				"permissionsBoundary": {
+					"displayName": "Граница разрешений",
+					"description": "ARN управляемой политики, которая используется для установки границ разрешений для пользователя.",
+					"placeholder": "например arn:aws:iam::123456789012:policy/ExampleBoundaryPolicy"
+				},
+				"tags": {
+					"values": {
+						"tags": {
+							"displayName": "Теги",
+							"description": "Список тегов, которые вы хотите прикрепить к новому пользователю",
+							"options": {
+								"key": {
+									"displayName": "Ключ",
+									"placeholder": "например, Отдел"
+								},
+								"value": {
+									"displayName": "Ценить",
+									"placeholder": "например, Инженерное дело"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить тег",
+					"displayName": "Теги",
+					"description": "Список тегов, которые вы хотите прикрепить к новому пользователю",
+					"options": {
+						"tags": {
+							"displayName": "Ярлык"
+						}
+					}
+				},
+				"pathPrefix": {
+					"displayName": "Префикс пути",
+					"description": "Префикс пути для фильтрации результатов",
+					"placeholder": "например /division_abc/subdivision_xyz/"
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"groupName": {
+			"displayName": "Имя группы",
+			"description": "Новое название группы",
+			"placeholder": "например Имя группы"
+		},
+		"includeUsers": {
+			"displayName": "Включить пользователей",
+			"description": "Включать ли список пользователей в группу"
+		}
+	}
+}

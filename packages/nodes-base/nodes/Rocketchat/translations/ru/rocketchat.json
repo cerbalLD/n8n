@@ -1,0 +1,187 @@
+{
+	"header": {
+		"displayName": "RocketChat",
+		"description": "Использование API RocketChat"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"chat": {
+					"displayName": "Чат"
+				},
+				"subscriptions": {
+					"displayName": "Подписка"
+				},
+				"dm": {
+					"displayName": "Прямое сообщение"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"postMessage": {
+					"displayName": "Опубликовать сообщение",
+					"description": "Опубликовать сообщение в канале или прямом сообщении"
+				},
+				"get": {
+					"displayName": "Получить много",
+					"description": "Получить список подписок"
+				},
+				"read": {
+					"displayName": "Отметить как прочитанное",
+					"description": "Отметить подписку как прочитанную"
+				},
+				"messages": {
+					"displayName": "Получать сообщения",
+					"description": "Получить список сообщений"
+				}
+			}
+		},
+		"roomId": {
+			"displayName": "Идентификатор комнаты",
+			"description": "Идентификатор комнаты"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"channel": {
+			"displayName": "Канал",
+			"description": "Название канала с префиксом перед ним"
+		},
+		"text": {
+			"displayName": "Текст",
+			"description": "Текст сообщения для отправки не является обязательным из-за вложений."
+		},
+		"jsonParameters": {
+			"displayName": "Параметры JSON"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"alias": {
+					"displayName": "Псевдоним",
+					"description": "Это приведет к тому, что имя сообщения будет отображаться как заданный псевдоним, но ваше имя пользователя все равно будет отображаться."
+				},
+				"avatar": {
+					"displayName": "Аватар",
+					"description": "Если это предусмотрено, аватар будет использовать предоставленный URL-адрес изображения."
+				},
+				"emoji": {
+					"displayName": "Эмодзи",
+					"description": "Это приведет к тому, что имя сообщения будет отображаться как заданный псевдоним, но ваше имя пользователя все равно будет отображаться."
+				}
+			}
+		},
+		"attachments": {
+			"displayName": "Вложения",
+			"placeholder": "Добавить элемент вложения",
+			"multipleValueButtonText": "Добавить вложение",
+			"options": {
+				"color": {
+					"displayName": "Цвет",
+					"description": "Цвет, который вы хотите, чтобы порядок слева был, любое значение, которое поддерживает фоновый CSS."
+				},
+				"text": {
+					"displayName": "Текст",
+					"description": "Текст, отображаемый для этого вложения, отличается от текста сообщения."
+				},
+				"ts": {
+					"displayName": "Временная метка",
+					"description": "Отображает время рядом с текстовой частью"
+				},
+				"thumbUrl": {
+					"displayName": "URL-адрес большого пальца",
+					"description": "Изображение, отображаемое слева от текста, выглядит лучше, если оно относительно маленькое."
+				},
+				"messageLink": {
+					"displayName": "Ссылка на сообщение",
+					"description": "Применимо только в том случае, если указана временная метка, поскольку она делает время кликабельным по этой ссылке."
+				},
+				"collapsed": {
+					"displayName": "Свернутый",
+					"description": "Заставляет скрываться разделы изображения, аудио и видео, если для параметра «Свернуть» установлено значение true."
+				},
+				"authorName": {
+					"displayName": "Имя автора",
+					"description": "Имя автора"
+				},
+				"authorLink": {
+					"displayName": "Ссылка автора",
+					"description": "При этом имя автора становится кликабельным и указывает на эту ссылку."
+				},
+				"authorIcon": {
+					"displayName": "Значок автора",
+					"description": "Отображает крошечный значок слева от имени автора.",
+					"placeholder": "https://site.com/img.png"
+				},
+				"title": {
+					"displayName": "Заголовок",
+					"description": "Название, отображаемое для этого вложения, отображается под автором"
+				},
+				"titleLink": {
+					"displayName": "Название Ссылка",
+					"description": "При этом заголовок становится кликабельным, указывая на эту ссылку."
+				},
+				"titleLinkDownload": {
+					"displayName": "Название Ссылка Скачать",
+					"description": "Если это так, появится значок загрузки, и щелчок по нему сохранит ссылку на файл."
+				},
+				"imageUrl": {
+					"displayName": "URL-адрес изображения",
+					"description": "Изображение для отображения будет «большим» и его будет легко увидеть."
+				},
+				"audioUrl": {
+					"displayName": "URL-адрес аудио",
+					"description": "Аудиофайл для воспроизведения, поддерживает только то, что делает html audio.",
+					"placeholder": "https://site.com/aud.mp3"
+				},
+				"videoUrl": {
+					"displayName": "URL-адрес видео",
+					"description": "Видеофайл для воспроизведения, поддерживает только то, что делает html-видео.",
+					"placeholder": "https://site.com/vid.mp4"
+				},
+				"fields": {
+					"values": {
+						"fields": {
+							"displayName": "Поля"
+						},
+						"fieldsValues": {
+							"options": {
+								"short": {
+									"displayName": "Короткий",
+									"description": "Должно ли это поле быть коротким?"
+								},
+								"title": {
+									"displayName": "Заголовок",
+									"description": "Название этого поля"
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Значение этого поля, отображаемое под значением заголовка."
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить элемент поля",
+					"displayName": "Поля",
+					"options": {
+						"fieldsValues": {
+							"displayName": "Поля"
+						}
+					}
+				}
+			}
+		},
+		"attachmentsJson": {
+			"displayName": "Вложения"
+		}
+	}
+}

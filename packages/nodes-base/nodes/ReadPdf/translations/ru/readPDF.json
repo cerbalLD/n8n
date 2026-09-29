@@ -1,0 +1,19 @@
+{
+	"header": {
+		"displayName": "Читать PDF",
+		"description": "Читает PDF-файл и извлекает его содержимое"
+	},
+	"nodeView": {
+		"binaryPropertyName": {
+			"displayName": "Входное двоичное поле",
+			"description": "Имя двоичного свойства, из которого можно прочитать PDF-файл."
+		},
+		"encrypted": {
+			"displayName": "Зашифрованный"
+		},
+		"password": {
+			"displayName": "Пароль",
+			"description": "Пароль для расшифровки PDF-файла"
+		}
+	}
+}

@@ -1,0 +1,6 @@
+{
+	"header": {
+		"displayName": "Триггер SeaTable",
+		"description": "Запускает рабочий процесс при возникновении событий SeaTable."
+	}
+}

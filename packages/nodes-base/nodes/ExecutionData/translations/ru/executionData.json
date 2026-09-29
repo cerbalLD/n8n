@@ -1,0 +1,42 @@
+{
+	"header": {
+		"displayName": "Данные выполнения",
+		"description": "Добавить данные выполнения для поиска"
+	},
+	"nodeView": {
+		"notice": {
+			"displayName": "Сохраните важные данные, используя этот узел. Он будет отображаться при каждом выполнении для удобства использования, и вы можете фильтровать по нему.<br />Фильтрация доступна в планах Pro и Enterprise. <a href='http://localhost/pricing/' target='_blank'>Подробнее</a>"
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"save": {
+					"displayName": "Сохранить выделенные данные (для поиска/просмотра)"
+				}
+			}
+		},
+		"dataToSave": {
+			"options": {
+				"dataToSave": {
+					"displayName": "Данные для сохранения"
+				},
+				"values": {
+					"displayName": "Ценности",
+					"values": {
+						"key": {
+							"displayName": "Ключ",
+							"placeholder": "например мойКей"
+						},
+						"value": {
+							"displayName": "Ценить",
+							"placeholder": "например мое значение"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить сохраненное поле",
+			"displayName": "Данные для сохранения",
+			"multipleValueButtonText": "Добавить сохраненное поле"
+		}
+	}
+}

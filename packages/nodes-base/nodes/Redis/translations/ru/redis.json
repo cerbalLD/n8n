@@ -1,0 +1,137 @@
+{
+	"header": {
+		"displayName": "Редис",
+		"description": "Получайте, отправляйте и обновляйте данные в Redis"
+	},
+	"nodeView": {
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить ключ из Redis"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить значение ключа из Redis"
+				},
+				"incr": {
+					"displayName": "Приращение",
+					"description": "Атомарно увеличивает ключ на 1. Создает ключ, если он не существует."
+				},
+				"info": {
+					"displayName": "Информация",
+					"description": "Возвращает общую информацию об экземпляре Redis."
+				},
+				"keys": {
+					"displayName": "Ключи",
+					"description": "Возвращает все ключи, соответствующие шаблону"
+				},
+				"llen": {
+					"displayName": "Длина списка",
+					"description": "Возвращает длину списка"
+				},
+				"pop": {
+					"displayName": "Поп",
+					"description": "Извлечь данные из списка Redis"
+				},
+				"publish": {
+					"displayName": "Публиковать",
+					"description": "Опубликовать сообщение на канале Redis"
+				},
+				"push": {
+					"displayName": "Толкать",
+					"description": "Отправить данные в список Redis"
+				},
+				"set": {
+					"displayName": "Набор",
+					"description": "Установите значение ключа в Redis"
+				}
+			}
+		},
+		"key": {
+			"displayName": "Ключ",
+			"description": "Имя ключа, который нужно установить в Redis"
+		},
+		"propertyName": {
+			"displayName": "Имя",
+			"description": "Необязательное имя свойства, в которое будут записываться полученные данные. Поддерживает точечную запись. Пример: «data.person[0].name»."
+		},
+		"keyType": {
+			"displayName": "Тип ключа",
+			"description": "Тип ключа, который нужно установить",
+			"options": {
+				"automatic": {
+					"displayName": "Автоматический",
+					"description": "Пытается автоматически определить тип в зависимости от данных"
+				},
+				"hash": {
+					"displayName": "Хэш",
+					"description": "Данные в ключе имеют тип «хеш»."
+				},
+				"list": {
+					"displayName": "Список",
+					"description": "Данные в ключе имеют тип «списки»."
+				},
+				"sets": {
+					"displayName": "Наборы",
+					"description": "Данные в ключе имеют тип «наборы»."
+				},
+				"string": {
+					"displayName": "Нить",
+					"description": "Данные в ключе имеют тип «строка»."
+				}
+			}
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"dotNotation": {
+					"displayName": "Точечная запись",
+					"description": "<p>По умолчанию в именах свойств используется точечная нотация. Это означает, что \"a.b\" установит свойство \"b\" под \"a\", поэтому { \"a\": { \"b\": value} }.<p></p>Если это не предусмотрено, это можно деактивировать, вместо этого будет установлено { \"a.b\": значение }.</p>."
+				}
+			}
+		},
+		"expire": {
+			"displayName": "Срок действия истекает",
+			"description": "Устанавливать ли тайм-аут для клавиши"
+		},
+		"ttl": {
+			"displayName": "TTL",
+			"description": "Количество секунд до истечения срока действия ключа"
+		},
+		"keyPattern": {
+			"displayName": "Ключевой шаблон",
+			"description": "Схема ключа для возврата ключей"
+		},
+		"getValues": {
+			"displayName": "Получить значения",
+			"description": "Получать ли значение совпадающих ключей"
+		},
+		"list": {
+			"displayName": "Список",
+			"description": "Имя списка в Redis"
+		},
+		"value": {
+			"displayName": "Ценить",
+			"description": "Значение для записи в Redis"
+		},
+		"valueIsJSON": {
+			"displayName": "Значение — JSON",
+			"description": "Является ли значение JSON или парой значений ключа"
+		},
+		"channel": {
+			"displayName": "Канал",
+			"description": "Название канала"
+		},
+		"messageData": {
+			"displayName": "Данные",
+			"description": "Данные для отправки"
+		},
+		"tail": {
+			"displayName": "Хвост",
+			"description": "Следует ли выталкивать или извлекать данные из конца списка"
+		}
+	}
+}

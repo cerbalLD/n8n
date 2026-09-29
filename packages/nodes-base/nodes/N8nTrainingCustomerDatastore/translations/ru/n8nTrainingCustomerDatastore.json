@@ -1,0 +1,27 @@
+{
+	"header": {
+		"displayName": "Хранилище данных клиентов (обучение n8n)",
+		"description": "Фиктивный узел, используемый для обучения n8n"
+	},
+	"nodeView": {
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"getOnePerson": {
+					"displayName": "Получить одного человека"
+				},
+				"getAllPeople": {
+					"displayName": "Получить всех людей"
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		}
+	}
+}

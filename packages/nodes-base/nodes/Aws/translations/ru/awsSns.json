@@ -1,0 +1,64 @@
+{
+	"header": {
+		"displayName": "АВС СНС",
+		"description": "Отправляет данные в AWS SNS."
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"iam": {
+					"displayName": "АВС (ИАМ)"
+				},
+				"assumeRole": {
+					"displayName": "AWS (принятие роли)"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать тему"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить тему"
+				},
+				"publish": {
+					"displayName": "Публиковать",
+					"description": "Опубликовать сообщение в теме"
+				}
+			}
+		},
+		"name": {
+			"displayName": "Имя"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"displayName": {
+					"displayName": "Отображаемое имя",
+					"description": "Отображаемое имя, которое будет использоваться для темы с подписками на SMS."
+				},
+				"fifoTopic": {
+					"displayName": "Фифо-тема",
+					"description": "Является ли тема, которую вы хотите создать, темой FIFO (первым пришел — первым обслужен)"
+				}
+			}
+		},
+		"topic": {
+			"displayName": "Тема"
+		},
+		"subject": {
+			"displayName": "Предмет",
+			"description": "Тема, когда сообщение доставляется на конечные точки электронной почты."
+		},
+		"message": {
+			"displayName": "Сообщение",
+			"description": "Сообщение, которое вы хотите отправить"
+		}
+	}
+}

@@ -1,0 +1,140 @@
+{
+	"header": {
+		"displayName": "Ответить на вебхук",
+		"description": "Возвращает данные для Webhook"
+	},
+	"nodeView": {
+		"enableResponseOutput": {
+			"displayName": "Включить ветвь вывода ответа",
+			"description": "Предоставлять ли дополнительную выходную ветвь с ответом, отправленным на веб-перехватчик"
+		},
+		"generalNotice": {
+			"displayName": "Убедитесь, что для параметра «Ответить» узла «Вебхук» установлено значение «Использование ответа на узел вебхука». <a href=\"https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.respondtowebhook/\" target=\"_blank\">Подробнее"
+		},
+		"respondWith": {
+			"displayName": "Ответить с",
+			"description": "Данные, которые должны быть возвращены",
+			"options": {
+				"allIncomingItems": {
+					"displayName": "Все входящие товары",
+					"description": "Отвечайте со всеми входными элементами JSON."
+				},
+				"binary": {
+					"displayName": "Двоичный файл",
+					"description": "Ответить входящими двоичными данными файла"
+				},
+				"firstIncomingItem": {
+					"displayName": "Первый входящий товар",
+					"description": "Ответьте первым входным элементом JSON."
+				},
+				"json": {
+					"displayName": "JSON",
+					"description": "Ответьте с помощью специального тела JSON."
+				},
+				"jwt": {
+					"displayName": "JWT-токен",
+					"description": "Ответить токеном JWT"
+				},
+				"noData": {
+					"displayName": "Нет данных",
+					"description": "Ответить пустым телом"
+				},
+				"redirect": {
+					"displayName": "Перенаправление",
+					"description": "Ответьте перенаправлением на заданный URL-адрес."
+				},
+				"text": {
+					"displayName": "Текст",
+					"description": "Ответьте простым текстовым сообщением."
+				}
+			}
+		},
+		"credentials": {
+			"displayName": "Реквизиты для входа"
+		},
+		"webhookNotice": {
+			"displayName": "При использовании выражений обратите внимание, что этот узел будет работать только для первого элемента входных данных."
+		},
+		"redirectURL": {
+			"displayName": "URL-адрес перенаправления",
+			"description": "URL-адрес для перенаправления",
+			"placeholder": "например http://www.n8n.io"
+		},
+		"responseBody": {
+			"displayName": "Тело ответа",
+			"description": "Текстовые данные ответа HTTP",
+			"placeholder": "например Рабочий процесс завершен"
+		},
+		"payload": {
+			"displayName": "Полезная нагрузка",
+			"description": "Полезная нагрузка, включаемая в токен JWT"
+		},
+		"responseDataSource": {
+			"displayName": "Источник данных ответа",
+			"options": {
+				"automatically": {
+					"displayName": "Выбирать автоматически из ввода",
+					"description": "Используйте, если входные данные будут содержать один фрагмент двоичных данных."
+				},
+				"set": {
+					"displayName": "Укажите себя",
+					"description": "Введите имя поля ввода, в котором будут находиться двоичные данные."
+				}
+			}
+		},
+		"inputFieldName": {
+			"displayName": "Имя поля ввода",
+			"description": "Имя поля ввода узла с двоичными данными"
+		},
+		"contentTypeNotice": {
+			"displayName": "Чтобы избежать неожиданного поведения, добавьте заголовок ответа «Content-Type» с соответствующим значением."
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"responseCode": {
+					"displayName": "Код ответа",
+					"description": "Возвращаемый код HTTP-ответа. По умолчанию 200."
+				},
+				"responseHeaders": {
+					"values": {
+						"responseHeaders": {
+							"displayName": "Заголовки ответов",
+							"description": "Добавьте заголовки в ответ вебхука"
+						},
+						"entries": {
+							"options": {
+								"name": {
+									"displayName": "Имя",
+									"description": "Название заголовка"
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Значение заголовка"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить заголовок ответа",
+					"displayName": "Заголовки ответов",
+					"description": "Добавьте заголовки в ответ вебхука",
+					"options": {
+						"entries": {
+							"displayName": "Записи"
+						}
+					}
+				},
+				"responseKey": {
+					"displayName": "Поместите ответ в поле",
+					"description": "Имя поля ответа, в которое нужно поместить все элементы.",
+					"placeholder": "например данные"
+				},
+				"enableStreaming": {
+					"displayName": "Включить потоковую передачу",
+					"description": "Включить ли потоковую передачу ответа"
+				}
+			}
+		}
+	}
+}

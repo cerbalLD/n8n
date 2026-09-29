@@ -1,0 +1,67 @@
+{
+	"header": {
+		"displayName": "AMQP-триггер",
+		"description": "Прослушивает сообщения AMQP 1.0."
+	},
+	"nodeView": {
+		"sink": {
+			"displayName": "Очередь/Тема",
+			"description": "Название очереди или темы для прослушивания",
+			"placeholder": "тема://имя_источника.что-то"
+		},
+		"clientname": {
+			"displayName": "Имя клиента",
+			"description": "Оставьте пустым для непостоянных подписок на темы или очередей.",
+			"hint": "Для постоянных/постоянных подписок на темы",
+			"placeholder": "например н8н"
+		},
+		"subscription": {
+			"displayName": "Подписка",
+			"description": "Оставьте пустым для непостоянных подписок на темы или очередей.",
+			"hint": "Для постоянных/постоянных подписок на темы",
+			"placeholder": "например заказник"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"containerId": {
+					"displayName": "Идентификатор контейнера",
+					"description": "Будет передано в серверную часть RHEA какContainer_id."
+				},
+				"jsonConvertByteArrayToString": {
+					"displayName": "Преобразовать тело в строку",
+					"description": "Преобразовывать ли содержимое тела JSON ([\"body\"][\"content\"]) из массива байтов в строку. Требуется для служебной шины Azure."
+				},
+				"jsonParseBody": {
+					"displayName": "Тело синтаксического анализа JSON",
+					"description": "Следует ли анализировать тело на объект"
+				},
+				"pullMessagesNumber": {
+					"displayName": "Сообщений за цикл",
+					"description": "Количество сообщений, извлекаемых из шины за каждый цикл"
+				},
+				"onlyBody": {
+					"displayName": "Только тело",
+					"description": "Возвращать ли только свойство body"
+				},
+				"parallelProcessing": {
+					"displayName": "Параллельная обработка",
+					"description": "Следует ли обрабатывать сообщения параллельно"
+				},
+				"reconnect": {
+					"displayName": "Восстановить соединение",
+					"description": "Следует ли автоматически переподключаться в случае отключения"
+				},
+				"reconnectLimit": {
+					"displayName": "Лимит повторного подключения",
+					"description": "Максимальное количество попыток переподключения"
+				},
+				"sleepTime": {
+					"displayName": "Время сна",
+					"description": "Миллисекунды на сон после каждого цикла"
+				}
+			}
+		}
+	}
+}

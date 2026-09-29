@@ -1,0 +1,667 @@
+{
+	"header": {
+		"displayName": "КликАп",
+		"description": "Использование ClickUp API (бета-версия)"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"accessToken": {
+					"displayName": "Токен доступа"
+				},
+				"oAuth2": {
+					"displayName": "ОАут2"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"checklist": {
+					"displayName": "Контрольный список"
+				},
+				"checklistItem": {
+					"displayName": "Пункт контрольного списка"
+				},
+				"comment": {
+					"displayName": "Комментарий"
+				},
+				"folder": {
+					"displayName": "Папка"
+				},
+				"goal": {
+					"displayName": "Цель"
+				},
+				"goalKeyResult": {
+					"displayName": "Цель Ключ Результат"
+				},
+				"list": {
+					"displayName": "Список"
+				},
+				"spaceTag": {
+					"displayName": "Космическая метка"
+				},
+				"task": {
+					"displayName": "Задача"
+				},
+				"taskDependency": {
+					"displayName": "Зависимость задачи"
+				},
+				"taskList": {
+					"displayName": "Список задач"
+				},
+				"taskTag": {
+					"displayName": "Тег задачи"
+				},
+				"timeEntry": {
+					"displayName": "Ввод времени"
+				},
+				"timeEntryTag": {
+					"displayName": "Тег ввода времени"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать список"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить список"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить список"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить много списков"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить список"
+				},
+				"add": {
+					"displayName": "Добавлять",
+					"description": "Добавить тег к записи времени"
+				},
+				"remove": {
+					"displayName": "Удалять",
+					"description": "Удалить тег из записи времени"
+				},
+				"member": {
+					"displayName": "Член",
+					"description": "Получить участников списка"
+				},
+				"setCustomField": {
+					"displayName": "Установить настраиваемое поле",
+					"description": "Установить произвольное поле"
+				},
+				"start": {
+					"displayName": "Начинать",
+					"description": "Начать ввод времени"
+				},
+				"stop": {
+					"displayName": "Останавливаться",
+					"description": "Остановить текущий таймер"
+				},
+				"customFields": {
+					"displayName": "Пользовательские поля",
+					"description": "Получить настраиваемые поля списка"
+				}
+			}
+		},
+		"task": {
+			"displayName": "Идентификатор задачи",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Имя в задании"
+		},
+		"checklist": {
+			"displayName": "Идентификатор контрольного списка"
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"name": {
+					"displayName": "Имя"
+				},
+				"position": {
+					"displayName": "Позиция"
+				},
+				"assignee": {
+					"displayName": "Имя или идентификатор правопреемника",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"parent": {
+					"displayName": "Идентификатор элемента родительского контрольного списка",
+					"description": "Элемент контрольного списка, под которым вы хотите вложить целевой элемент контрольного списка."
+				},
+				"resolved": {
+					"displayName": "Решено"
+				},
+				"commentText": {
+					"displayName": "Текст комментария"
+				},
+				"addOwners": {
+					"displayName": "Добавить владельцев"
+				},
+				"color": {
+					"displayName": "Цвет"
+				},
+				"description": {
+					"displayName": "Описание",
+					"description": "Описание записи времени"
+				},
+				"dueDate": {
+					"displayName": "Срок оплаты"
+				},
+				"removeOwners": {
+					"displayName": "Удалить владельцев"
+				},
+				"note": {
+					"displayName": "Примечание"
+				},
+				"stepsCurrent": {
+					"displayName": "Шаги Текущие"
+				},
+				"stepsEnd": {
+					"displayName": "Шаги Конец"
+				},
+				"stepsStart": {
+					"displayName": "Шаги Начало"
+				},
+				"unit": {
+					"displayName": "Единица",
+					"description": "Имеет значение только для типа «Число» и «Валюта». В качестве единицы измерения валюты должен быть действительный код валюты."
+				},
+				"addAssignees": {
+					"displayName": "Добавить правопреемников",
+					"description": "Идентификаторы правопреемников. Несколько можно добавить через запятую."
+				},
+				"content": {
+					"displayName": "Содержание"
+				},
+				"dueDateTime": {
+					"displayName": "Срок выполнения Время"
+				},
+				"markdownContent": {
+					"displayName": "Содержимое Markdown"
+				},
+				"notifyAll": {
+					"displayName": "Уведомить всех"
+				},
+				"parentId": {
+					"displayName": "Идентификатор родителя"
+				},
+				"priority": {
+					"displayName": "Приоритет",
+					"description": "Целочисленное сопоставление: 1: срочно, 2: высокий, 3: нормальный, 4: низкий."
+				},
+				"removeAssignees": {
+					"displayName": "Удалить правопреемников",
+					"description": "Идентификаторы правопреемников. Несколько можно добавить через запятую."
+				},
+				"status": {
+					"displayName": "Статус"
+				},
+				"startDate": {
+					"displayName": "Дата начала"
+				},
+				"startDateTime": {
+					"displayName": "Дата начала Время"
+				},
+				"timeEstimate": {
+					"displayName": "Оценка времени",
+					"description": "Оценка времени в минутах"
+				},
+				"billable": {
+					"displayName": "подлежащий оплате"
+				},
+				"duration": {
+					"displayName": "Продолжительность (минуты)",
+					"description": "Продолжительность в минутах"
+				},
+				"start": {
+					"displayName": "Начинать"
+				},
+				"tags": {
+					"displayName": "Имена или идентификаторы тегов",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"task": {
+					"displayName": "Имя или идентификатор задачи",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"unsetStatus": {
+					"displayName": "Сбросить статус"
+				}
+			}
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"assignee": {
+					"displayName": "Правопреемник",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"notifyAll": {
+					"displayName": "Уведомить всех",
+					"description": "Будут ли уведомления о создании отправлены всем, включая автора комментария."
+				},
+				"color": {
+					"displayName": "Цвет"
+				},
+				"description": {
+					"displayName": "Описание",
+					"description": "Описание записи времени"
+				},
+				"dueDate": {
+					"displayName": "Срок оплаты"
+				},
+				"multipleOwners": {
+					"displayName": "Несколько владельцев"
+				},
+				"owners": {
+					"displayName": "Владельцы"
+				},
+				"listIds": {
+					"displayName": "Список идентификаторов"
+				},
+				"stepsStart": {
+					"displayName": "Шаги Начало",
+					"description": "Требуется для процентов, автоматического, числа и валюты"
+				},
+				"stepsEnd": {
+					"displayName": "Шаги Конец",
+					"description": "Требуется для процентов, автоматического, числа и валюты"
+				},
+				"taskIds": {
+					"displayName": "Идентификаторы задач"
+				},
+				"unit": {
+					"displayName": "Единица",
+					"description": "Имеет значение только для типа «Число» и «Валюта». В качестве единицы измерения валюты должен быть действительный код валюты."
+				},
+				"custom_task_ids": {
+					"displayName": "Идентификаторы пользовательских задач",
+					"description": "Ссылаться ли на задачу по ее идентификатору настраиваемой задачи"
+				},
+				"team_id": {
+					"displayName": "Название или идентификатор команды",
+					"description": "Используется только в том случае, если для параметра установлено значение custom_task_ids=true. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"assignees": {
+					"displayName": "Имена или идентификаторы правопреемников",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"customFieldsJson": {
+					"displayName": "Пользовательские поля JSON",
+					"description": "Пользовательские поля для установки в формате JSON в формате: <code>[ {\"id\": \"\", \"value\": \"\"} ]</code>"
+				},
+				"content": {
+					"displayName": "Содержание"
+				},
+				"dueDateTime": {
+					"displayName": "Срок выполнения Время"
+				},
+				"markdownContent": {
+					"displayName": "Содержимое Markdown"
+				},
+				"parentId": {
+					"displayName": "Идентификатор родителя"
+				},
+				"priority": {
+					"displayName": "Приоритет",
+					"description": "Целочисленное сопоставление: 1: срочно, 2: высокий, 3: нормальный, 4: низкий."
+				},
+				"startDate": {
+					"displayName": "Дата начала"
+				},
+				"startDateTime": {
+					"displayName": "Дата начала Время"
+				},
+				"status": {
+					"displayName": "Имя или идентификатор статуса",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"tags": {
+					"displayName": "Имена или идентификаторы тегов",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"timeEstimate": {
+					"displayName": "Оценка времени",
+					"description": "Оценка времени в минутах"
+				},
+				"billable": {
+					"displayName": "подлежащий оплате"
+				}
+			}
+		},
+		"checklistItem": {
+			"displayName": "Идентификатор элемента контрольного списка"
+		},
+		"commentOn": {
+			"displayName": "Комментировать",
+			"options": {
+				"list": {
+					"displayName": "Список"
+				},
+				"task": {
+					"displayName": "Задача"
+				},
+				"view": {
+					"displayName": "Вид"
+				}
+			}
+		},
+		"id": {
+			"displayName": "Идентификатор списка",
+			"description": "Идентификатор задачи"
+		},
+		"commentText": {
+			"displayName": "Текст комментария"
+		},
+		"comment": {
+			"displayName": "Идентификатор комментария"
+		},
+		"commentsOn": {
+			"displayName": "Комментарии к",
+			"options": {
+				"list": {
+					"displayName": "Список"
+				},
+				"task": {
+					"displayName": "Задача"
+				},
+				"view": {
+					"displayName": "Вид"
+				}
+			}
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"team": {
+			"displayName": "Название или идентификатор команды",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"space": {
+			"displayName": "Имя или идентификатор пространства",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"folder": {
+			"displayName": "Имя или идентификатор папки",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"archived": {
+					"displayName": "В архиве"
+				},
+				"assignees": {
+					"displayName": "Имена или идентификаторы правопреемников",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"customFieldsUi": {
+					"values": {
+						"customFieldsUi": {
+							"displayName": "Пользовательские поля",
+							"description": "Фильтровать по настраиваемым полям"
+						},
+						"customFieldsValues": {
+							"options": {
+								"fieldId": {
+									"displayName": "Имя поля или идентификатор",
+									"description": "Идентификатор поля, к которому нужно добавить настраиваемое поле. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								},
+								"operator": {
+									"displayName": "Оператор",
+									"description": "Значение, которое нужно установить в настраиваемом поле",
+									"options": {
+										"!=": {
+											"displayName": "!="
+										},
+										"<": {
+											"displayName": "<"
+										},
+										"<=": {
+											"displayName": "<="
+										},
+										">": {
+											"displayName": ">"
+										},
+										">=": {
+											"displayName": ">="
+										},
+										"equal": {
+											"displayName": "Равный"
+										},
+										"IS NOT NULL": {
+											"displayName": "Не является нулевым"
+										},
+										"IS NULL": {
+											"displayName": "Нулевой"
+										}
+									}
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Значение, которое нужно установить в настраиваемом поле"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить настраиваемое поле",
+					"displayName": "Пользовательские поля",
+					"description": "Фильтровать по настраиваемым полям",
+					"options": {
+						"customFieldsValues": {
+							"displayName": "Пользовательское поле"
+						}
+					}
+				},
+				"dateCreatedGt": {
+					"displayName": "Дата создания больше, чем",
+					"description": "Дата создания фильтра больше"
+				},
+				"dateCreatedLt": {
+					"displayName": "Дата создания менее",
+					"description": "Дата создания фильтра меньше posix-времени"
+				},
+				"dateUpdatedGt": {
+					"displayName": "Дата обновления больше, чем",
+					"description": "Дата обновления фильтра превышает"
+				},
+				"dateUpdatedLt": {
+					"displayName": "Дата обновления меньше чем",
+					"description": "Дата фильтра обновлена ​​менее чем"
+				},
+				"dueDateGt": {
+					"displayName": "Срок сдачи больше, чем",
+					"description": "Срок выполнения фильтра превышает"
+				},
+				"dueDateLt": {
+					"displayName": "Срок сдачи меньше",
+					"description": "Срок выполнения фильтра меньше"
+				},
+				"includeClosed": {
+					"displayName": "Включить закрытые",
+					"description": "По умолчанию ответ не включает закрытые задачи. Установите для этого параметра значение true и не отправляйте фильтр состояния для включения закрытых задач."
+				},
+				"orderBy": {
+					"displayName": "Заказать по",
+					"options": {
+						"id": {
+							"displayName": "ID"
+						},
+						"created": {
+							"displayName": "Созданный"
+						},
+						"updated": {
+							"displayName": "Обновлено"
+						},
+						"dueDate": {
+							"displayName": "Срок оплаты"
+						}
+					}
+				},
+				"statuses": {
+					"displayName": "Имена или идентификаторы статусов",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"subtasks": {
+					"displayName": "Подзадачи",
+					"description": "Включать ли подзадачи, по умолчанию false"
+				},
+				"tags": {
+					"displayName": "Имена или идентификаторы тегов",
+					"description": "Массив тегов, примененных к этой задаче. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"end_date": {
+					"displayName": "Дата окончания"
+				},
+				"start_date": {
+					"displayName": "Дата начала"
+				}
+			}
+		},
+		"goal": {
+			"displayName": "Идентификатор цели"
+		},
+		"type": {
+			"displayName": "Тип",
+			"options": {
+				"automatic": {
+					"displayName": "Автоматический"
+				},
+				"boolean": {
+					"displayName": "логическое значение"
+				},
+				"currency": {
+					"displayName": "Валюта"
+				},
+				"number": {
+					"displayName": "Число"
+				},
+				"percentage": {
+					"displayName": "Процент"
+				}
+			}
+		},
+		"keyResult": {
+			"displayName": "Идентификатор ключевого результата"
+		},
+		"taskId": {
+			"displayName": "Идентификатор задачи"
+		},
+		"tagName": {
+			"displayName": "Имя тега"
+		},
+		"listId": {
+			"displayName": "Идентификатор списка"
+		},
+		"newName": {
+			"displayName": "Новое имя",
+			"description": "Новое имя для тега"
+		},
+		"foregroundColor": {
+			"displayName": "Цвет переднего плана"
+		},
+		"backgroundColor": {
+			"displayName": "Цвет фона"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"folderless": {
+			"displayName": "Список без папок"
+		},
+		"list": {
+			"displayName": "Идентификатор списка",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"includeSubtasks": {
+			"displayName": "Включить подзадачи",
+			"description": "Следует ли также получать и включать подзадачи для этой задачи"
+		},
+		"includeMarkdownDescription": {
+			"displayName": "Включить описание Markdown",
+			"description": "Включать ли поле markdown_description в ответ. Это важно для сохранения ссылок в описании."
+		},
+		"field": {
+			"displayName": "Идентификатор поля",
+			"description": "Идентификатор поля, в которое нужно добавить настраиваемое поле."
+		},
+		"jsonParse": {
+			"displayName": "Значение — JSON",
+			"description": "Значением является JSON, и оно будет анализироваться как таковое. Требуется, например, для меток, которые ожидают, что значение будет массивом."
+		},
+		"value": {
+			"displayName": "Ценить",
+			"description": "Значение, которое нужно установить в настраиваемом поле"
+		},
+		"dependsOnTask": {
+			"displayName": "Зависит от идентификатора задачи"
+		},
+		"running": {
+			"displayName": "Бег",
+			"description": "Возвращать ли только текущую запись времени выполнения"
+		},
+		"timeEntry": {
+			"displayName": "Идентификатор записи времени"
+		},
+		"start": {
+			"displayName": "Начинать"
+		},
+		"duration": {
+			"displayName": "Продолжительность (минуты)",
+			"description": "Продолжительность в минутах"
+		},
+		"archived": {
+			"displayName": "В архиве"
+		},
+		"timeEntryIds": {
+			"displayName": "Идентификаторы записи времени"
+		},
+		"tagsUi": {
+			"options": {
+				"tagsUi": {
+					"displayName": "Теги"
+				},
+				"tagsValues": {
+					"displayName": "Ярлык",
+					"values": {
+						"name": {
+							"displayName": "Имя"
+						},
+						"tag_bg": {
+							"displayName": "Цвет фона"
+						},
+						"tag_fg": {
+							"displayName": "Цвет переднего плана"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить тег",
+			"displayName": "Теги"
+		},
+		"tagNames": {
+			"displayName": "Имена или идентификаторы тегов",
+			"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		}
+	}
+}

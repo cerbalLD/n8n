@@ -1,0 +1,346 @@
+{
+	"header": {
+		"displayName": "Спланк",
+		"description": "Используйте Splunk Enterprise API"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"alert": {
+					"displayName": "Тревога"
+				},
+				"report": {
+					"displayName": "Отчет"
+				},
+				"search": {
+					"displayName": "Поиск"
+				},
+				"user": {
+					"displayName": "Пользователь"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"getReport": {
+					"displayName": "Получайте оповещения об увольнении",
+					"description": "Получение отчета об активированных оповещениях"
+				},
+				"getMetrics": {
+					"displayName": "Получить метрики",
+					"description": "Получение показателей"
+				},
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать пользователя"
+				},
+				"deleteReport": {
+					"displayName": "Удалить",
+					"description": "Удаление отчета о поиске"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить пользователя"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить много пользователей"
+				},
+				"deleteJob": {
+					"displayName": "Удалить",
+					"description": "Удаление задания на поиск"
+				},
+				"getResult": {
+					"displayName": "Получить результат",
+					"description": "Получите результат поиска работы"
+				},
+				"deleteUser": {
+					"displayName": "Удалить",
+					"description": "Удаление пользователя"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить пользователя"
+				}
+			}
+		},
+		"searchJobId": {
+			"displayName": "Поиск работы"
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Имя пользователя для входа"
+		},
+		"reportId": {
+			"displayName": "Отчет"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"add_orphan_field": {
+					"displayName": "Добавить потерянное поле",
+					"description": "Включать ли логическое значение для каждого сохраненного поиска, чтобы показать, является ли поиск потерянным, то есть у него нет действительного владельца."
+				},
+				"listDefaultActionArgs": {
+					"displayName": "Список действий по умолчанию"
+				},
+				"add_summary_to_metadata": {
+					"displayName": "Добавить сводку в метаданные",
+					"description": "Включать ли сводную статистику по полям в ответ"
+				}
+			}
+		},
+		"search": {
+			"displayName": "Запрос",
+			"description": "Строка языка поиска для выполнения в Splunk <a href=\"https://docs.splunk.com/Documentation/Splunk/latest/SearchReference/WhatsInThisManual\">Search Processing Language</a>",
+			"placeholder": "например индекс поиска=_internal | статистика по источникам"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"adhoc_search_level": {
+					"displayName": "Специальный уровень поиска",
+					"options": {
+						"fast": {
+							"displayName": "Быстрый"
+						},
+						"smart": {
+							"displayName": "Умный"
+						},
+						"verbose": {
+							"displayName": "Многословный"
+						}
+					}
+				},
+				"auto_cancel": {
+					"displayName": "Автоматическая отмена через (секунды)",
+					"description": "Секунды, после которых задание поиска автоматически отменяется"
+				},
+				"auto_finalize_ec": {
+					"displayName": "Автоматическое завершение после (количество событий)",
+					"description": "Автоматически завершать поиск после обработки хотя бы указанного количества событий."
+				},
+				"auto_pause": {
+					"displayName": "Автоматическая пауза через (секунды)",
+					"description": "Секунды бездействия, после которых поисковое задание автоматически приостанавливается"
+				},
+				"index_earliest": {
+					"displayName": "Самый ранний индекс",
+					"description": "Самое раннее время индексации для поиска (включительно)"
+				},
+				"earliest_time": {
+					"displayName": "Самое раннее время",
+					"description": "Самый ранний срок окончания поиска (включительно)"
+				},
+				"exec_mode": {
+					"displayName": "Исполнительный режим",
+					"options": {
+						"blocking": {
+							"displayName": "Блокировка"
+						},
+						"normal": {
+							"displayName": "Нормальный"
+						},
+						"oneshot": {
+							"displayName": "Один выстрел"
+						}
+					}
+				},
+				"indexedRealtimeOffset": {
+					"displayName": "Индексированное смещение в реальном времени",
+					"description": "Задержка синхронизации диска в секундах для индексированного поиска в реальном времени"
+				},
+				"index_latest": {
+					"displayName": "Последний индекс",
+					"description": "Последнее время индексации для поиска (включительно)"
+				},
+				"latest_time": {
+					"displayName": "Последнее время",
+					"description": "Последняя отсечка для поиска (включительно)"
+				},
+				"max_time": {
+					"displayName": "Максимальное время",
+					"description": "Количество секунд для запуска этого поиска перед завершением. Введите <code>0</code>, чтобы никогда не завершать операцию."
+				},
+				"namespace": {
+					"displayName": "Пространство имен",
+					"description": "Пространство имен приложения, в котором можно ограничить поиск."
+				},
+				"reduce_freq": {
+					"displayName": "Уменьшите частоту",
+					"description": "Как часто запускать фазу сокращения MapReduce для накопленных значений карты"
+				},
+				"remote_server_list": {
+					"displayName": "Список удаленных серверов",
+					"description": "Список серверов, разделенных запятыми (возможно, с подстановочными знаками), с которых следует получать необработанные события. Этот же список серверов будет использоваться в подпоисках."
+				},
+				"reuse_max_seconds_ago": {
+					"displayName": "Предел повторного использования (секунды)",
+					"description": "Количество секунд назад, чтобы проверить, когда начинается идентичный поиск, и вернуть идентификатор поиска задания вместо запуска нового задания."
+				},
+				"rf": {
+					"displayName": "Обязательное поле",
+					"description": "Имя обязательного поля для добавления в поиск. Даже если на него нет ссылки или оно не используется напрямую при поиске, обязательное поле все равно включается в события и конечные точки сводки."
+				},
+				"search_mode": {
+					"displayName": "Режим поиска",
+					"options": {
+						"normal": {
+							"displayName": "Нормальный"
+						},
+						"realtime": {
+							"displayName": "Реальное время"
+						}
+					}
+				},
+				"status_buckets": {
+					"displayName": "Статусные сегменты",
+					"description": "Максимальное количество сегментов статуса, которые нужно создать. Установите <code>0</code> не генерировать информацию о временной шкале."
+				},
+				"timeout": {
+					"displayName": "Тайм-аут",
+					"description": "Количество секунд, в течение которых будет сохраняться этот поиск после остановки обработки."
+				},
+				"workload_pool": {
+					"displayName": "Пул рабочей нагрузки",
+					"description": "Новый пул рабочей нагрузки, в который следует поместить существующий выполняемый поиск."
+				},
+				"email": {
+					"displayName": "Электронная почта",
+					"placeholder": "имя@email.com"
+				},
+				"realname": {
+					"displayName": "Полное имя",
+					"description": "Полное имя пользователя"
+				}
+			}
+		},
+		"sort": {
+			"options": {
+				"sort": {
+					"displayName": "Сортировать"
+				},
+				"values": {
+					"displayName": "Ценности",
+					"values": {
+						"sort_dir": {
+							"displayName": "Направление сортировки",
+							"options": {
+								"asc": {
+									"displayName": "восходящий"
+								},
+								"desc": {
+									"displayName": "По убыванию"
+								}
+							}
+						},
+						"sort_key": {
+							"displayName": "Сортировать ключ",
+							"description": "Имя ключа, используемое для сортировки",
+							"placeholder": "например использование диска"
+						},
+						"sort_mode": {
+							"displayName": "Режим сортировки",
+							"options": {
+								"auto": {
+									"displayName": "Автоматический",
+									"description": "Если все значения полей числовые, сопоставьте их численно. В противном случае сопоставьте по алфавиту."
+								},
+								"alpha": {
+									"displayName": "алфавитный",
+									"description": "Сортировка по алфавиту, без учета регистра"
+								},
+								"alpha_case": {
+									"displayName": "Алфавитный и чувствительный к регистру",
+									"description": "Сортировать по алфавиту, с учетом регистра"
+								},
+								"num": {
+									"displayName": "Числовой",
+									"description": "Сопоставить числовые значения"
+								}
+							}
+						}
+					}
+				}
+			},
+			"displayName": "Сортировать"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"keyValueMatch": {
+					"values": {
+						"keyValueMatch": {
+							"displayName": "Соответствие ключа и значения",
+							"description": "Пара ключ-значение для сопоставления. Пример: если для параметра «Ключ» установлено значение <code>user</code>, а для параметра «Поле» установлено значение <code>john</code>, будут показаны только результаты, в которых <code>user</code> <code>john</code> будет возвращен."
+						},
+						"keyValuePair": {
+							"options": {
+								"key": {
+									"displayName": "Ключ",
+									"description": "Ключ к матчу против"
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Значение для сопоставления"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить пару ключ-значение",
+					"displayName": "Соответствие ключа и значения",
+					"description": "Пара ключ-значение для сопоставления. Пример: если для параметра «Ключ» установлено значение <code>user</code>, а для параметра «Поле» установлено значение <code>john</code>, будут показаны только результаты, в которых <code>user</code> <code>john</code> будет возвращен.",
+					"options": {
+						"keyValuePair": {
+							"displayName": "Пара ключ-значение"
+						}
+					}
+				}
+			}
+		},
+		"roles": {
+			"displayName": "Роли",
+			"description": "Список ролей, разделенных запятыми, которые можно назначить пользователю. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"password": {
+			"displayName": "Пароль"
+		},
+		"userId": {
+			"displayName": "Пользователь"
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"email": {
+					"displayName": "Электронная почта",
+					"placeholder": "имя@email.com"
+				},
+				"realname": {
+					"displayName": "Полное имя",
+					"description": "Полное имя пользователя"
+				},
+				"password": {
+					"displayName": "Пароль"
+				},
+				"roles": {
+					"displayName": "Имена или идентификаторы ролей",
+					"description": "Список ролей, разделенных запятыми, которые можно назначить пользователю. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				}
+			}
+		}
+	}
+}

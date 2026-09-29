@@ -1,0 +1,420 @@
+{
+	"header": {
+		"displayName": "MISP",
+		"description": "Используйте API MISP"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"attribute": {
+					"displayName": "Атрибут"
+				},
+				"event": {
+					"displayName": "Событие"
+				},
+				"eventTag": {
+					"displayName": "Тег события"
+				},
+				"feed": {
+					"displayName": "Кормить"
+				},
+				"galaxy": {
+					"displayName": "Галактика"
+				},
+				"noticelist": {
+					"displayName": "Список уведомлений"
+				},
+				"object": {
+					"displayName": "Объект"
+				},
+				"organisation": {
+					"displayName": "Организация"
+				},
+				"tag": {
+					"displayName": "Ярлык"
+				},
+				"user": {
+					"displayName": "Пользователь"
+				},
+				"warninglist": {
+					"displayName": "Список предупреждений"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать"
+				},
+				"delete": {
+					"displayName": "Удалить"
+				},
+				"get": {
+					"displayName": "Получать"
+				},
+				"getAll": {
+					"displayName": "Получить много"
+				},
+				"search": {
+					"displayName": "Поиск"
+				},
+				"update": {
+					"displayName": "Обновлять"
+				},
+				"publish": {
+					"displayName": "Публиковать"
+				},
+				"unpublish": {
+					"displayName": "Отменить публикацию"
+				},
+				"add": {
+					"displayName": "Добавлять"
+				},
+				"remove": {
+					"displayName": "Удалять"
+				},
+				"disable": {
+					"displayName": "Запрещать"
+				},
+				"enable": {
+					"displayName": "Давать возможность"
+				}
+			}
+		},
+		"eventId": {
+			"displayName": "Идентификатор события",
+			"description": "UUID или числовой идентификатор события"
+		},
+		"type": {
+			"displayName": "Тип",
+			"options": {
+				"text": {
+					"displayName": "Текст"
+				},
+				"url": {
+					"displayName": "URL"
+				},
+				"comment": {
+					"displayName": "Комментарий"
+				}
+			}
+		},
+		"value": {
+			"displayName": "Ценить",
+			"placeholder": "например 127.0.0.1"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"distribution": {
+					"displayName": "Распределение",
+					"description": "Кто сможет увидеть это мероприятие после публикации",
+					"options": {
+						"0": {
+							"displayName": "Только ваша организация"
+						},
+						"1": {
+							"displayName": "Только это сообщество"
+						},
+						"2": {
+							"displayName": "Связанные сообщества"
+						},
+						"3": {
+							"displayName": "Все сообщества"
+						},
+						"4": {
+							"displayName": "Группа общего доступа"
+						},
+						"5": {
+							"displayName": "Наследовать событие"
+						}
+					}
+				},
+				"sharing_group_id": {
+					"displayName": "Имя или идентификатор группы общего доступа",
+					"description": "Используйте только в том случае, если <code>Sharing Group</code> выбрана в <code>Distribution</code>. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"category": {
+					"displayName": "Категория",
+					"placeholder": "например Внутренняя ссылка"
+				},
+				"deleted": {
+					"displayName": "Удалено"
+				},
+				"searchall": {
+					"displayName": "Искать все",
+					"description": "Поиск по именам тегов, описаниям событий, значениям атрибутов или комментариям к атрибутам."
+				},
+				"tags": {
+					"displayName": "Теги",
+					"hint": "Список тегов, разделенный запятыми",
+					"placeholder": "например тег1, тег2"
+				},
+				"type": {
+					"displayName": "Тип",
+					"placeholder": "например текст"
+				},
+				"published": {
+					"displayName": "Опубликовано"
+				},
+				"analysis": {
+					"displayName": "Анализ",
+					"description": "Анализ уровня зрелости мероприятия",
+					"options": {
+						"0": {
+							"displayName": "Исходный"
+						},
+						"1": {
+							"displayName": "Непрерывный"
+						},
+						"2": {
+							"displayName": "Полный"
+						}
+					}
+				},
+				"threat_level_id": {
+					"displayName": "Идентификатор уровня угрозы",
+					"options": {
+						"1": {
+							"displayName": "Высокий"
+						},
+						"2": {
+							"displayName": "Середина"
+						},
+						"3": {
+							"displayName": "Низкий"
+						},
+						"4": {
+							"displayName": "Неопределенный"
+						}
+					}
+				},
+				"json": {
+					"displayName": "Правила",
+					"description": "Правила фильтрации для фида"
+				},
+				"created_by_email": {
+					"displayName": "Создано по электронной почте"
+				},
+				"description": {
+					"displayName": "Описание"
+				},
+				"nationality": {
+					"displayName": "Национальность"
+				},
+				"sector": {
+					"displayName": "Сектор"
+				},
+				"usercount": {
+					"displayName": "Количество пользователей"
+				},
+				"colour": {
+					"displayName": "Цвет",
+					"description": "Шестнадцатеричный цветовой код тега"
+				},
+				"gpgkey": {
+					"displayName": "GPG-ключ"
+				},
+				"invited_by": {
+					"displayName": "Адрес электронной почты или идентификатор приглашающего",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"org_id": {
+					"displayName": "Название или идентификатор организации",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				}
+			}
+		},
+		"attributeId": {
+			"displayName": "Идентификатор атрибута",
+			"description": "Идентификатор атрибута для обновления"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"useJson": {
+			"displayName": "Используйте JSON для указания полей",
+			"description": "Использовать ли JSON для указания полей поискового запроса"
+		},
+		"jsonOutput": {
+			"displayName": "JSON",
+			"description": "Дополнительную информацию можно получить по адресу {YOUR_BASE_URL_SPECIFIED_IN_CREDENTIALS}/api/openapi#operation/restSearchAttributes."
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"distribution": {
+					"displayName": "Распределение",
+					"description": "Кто сможет увидеть это мероприятие после публикации",
+					"options": {
+						"0": {
+							"displayName": "Только ваша организация"
+						},
+						"1": {
+							"displayName": "Только это сообщество"
+						},
+						"2": {
+							"displayName": "Связанные сообщества"
+						},
+						"3": {
+							"displayName": "Все сообщества"
+						},
+						"4": {
+							"displayName": "Группа общего доступа"
+						},
+						"5": {
+							"displayName": "Наследовать событие"
+						}
+					}
+				},
+				"sharing_group_id": {
+					"displayName": "Имя или идентификатор группы общего доступа",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>. Используйте только в том случае, если <code>Sharing Group</code> выбрана в <code>Distribution</code>."
+				},
+				"analysis": {
+					"displayName": "Анализ",
+					"description": "Анализ уровня зрелости мероприятия",
+					"options": {
+						"0": {
+							"displayName": "Исходный"
+						},
+						"1": {
+							"displayName": "Непрерывный"
+						},
+						"2": {
+							"displayName": "Полный"
+						}
+					}
+				},
+				"information": {
+					"displayName": "Информация",
+					"description": "Информация о мероприятии – максимум 65535 символов."
+				},
+				"threat_level_id": {
+					"displayName": "Идентификатор уровня угрозы",
+					"options": {
+						"1": {
+							"displayName": "Высокий"
+						},
+						"2": {
+							"displayName": "Середина"
+						},
+						"3": {
+							"displayName": "Низкий"
+						},
+						"4": {
+							"displayName": "Неопределенный"
+						}
+					}
+				},
+				"name": {
+					"displayName": "Имя"
+				},
+				"provider": {
+					"displayName": "Поставщик"
+				},
+				"rules": {
+					"displayName": "Правила",
+					"description": "Правила фильтрации для фида"
+				},
+				"url": {
+					"displayName": "URL"
+				},
+				"description": {
+					"displayName": "Описание"
+				},
+				"nationality": {
+					"displayName": "Национальность"
+				},
+				"sector": {
+					"displayName": "Сектор"
+				},
+				"type": {
+					"displayName": "Тип"
+				},
+				"colour": {
+					"displayName": "Цвет",
+					"description": "Шестнадцатеричный цветовой код тега"
+				},
+				"email": {
+					"displayName": "Электронная почта",
+					"placeholder": "имя@email.com"
+				},
+				"gpgkey": {
+					"displayName": "GPG-ключ"
+				},
+				"invited_by": {
+					"displayName": "Имя или идентификатор приглашающего",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"org_id": {
+					"displayName": "Название или идентификатор организации",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				}
+			}
+		},
+		"org_id": {
+			"displayName": "Название или идентификатор организации",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"information": {
+			"displayName": "Информация",
+			"description": "Информация о мероприятии – максимум 65535 символов."
+		},
+		"tagId": {
+			"displayName": "Идентификатор тега",
+			"description": "Идентификатор тега для обновления"
+		},
+		"name": {
+			"displayName": "Имя"
+		},
+		"provider": {
+			"displayName": "Поставщик"
+		},
+		"url": {
+			"displayName": "URL",
+			"placeholder": "https://example.com"
+		},
+		"feedId": {
+			"displayName": "Идентификатор фида",
+			"description": "Идентификатор фида, который необходимо обновить"
+		},
+		"galaxyId": {
+			"displayName": "идентификатор галактики",
+			"description": "UUID или числовой идентификатор галактики"
+		},
+		"noticelistId": {
+			"displayName": "Идентификатор списка уведомлений",
+			"description": "Числовой идентификатор списка уведомлений"
+		},
+		"organisationId": {
+			"displayName": "Идентификатор организации",
+			"description": "Идентификатор организации для обновления"
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"placeholder": "имя@email.com"
+		},
+		"role_id": {
+			"displayName": "Идентификатор роли",
+			"description": "Идентификаторы ролей доступны на информационной панели MISP по адресу /roles/index."
+		},
+		"userId": {
+			"displayName": "ID пользователя",
+			"description": "Идентификатор пользователя для обновления"
+		},
+		"warninglistId": {
+			"displayName": "Идентификатор списка предупреждений",
+			"description": "Числовой идентификатор списка предупреждений"
+		}
+	}
+}

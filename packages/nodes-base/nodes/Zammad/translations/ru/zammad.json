@@ -1,0 +1,516 @@
+{
+	"header": {
+		"displayName": "Заммад",
+		"description": "Используйте API Zammad"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"basicAuth": {
+					"displayName": "Базовая аутентификация"
+				},
+				"tokenAuth": {
+					"displayName": "Токен аутентификации"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"group": {
+					"displayName": "Группа"
+				},
+				"organization": {
+					"displayName": "Организация"
+				},
+				"ticket": {
+					"displayName": "Билет"
+				},
+				"user": {
+					"displayName": "Пользователь"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать пользователя"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удаление пользователя"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить пользователя"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить много пользователей"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить пользователя"
+				},
+				"getSelf": {
+					"displayName": "Получить себя",
+					"description": "Получить текущего пользователя, вошедшего в систему"
+				}
+			}
+		},
+		"name": {
+			"displayName": "Название организации"
+		},
+		"id": {
+			"displayName": "ID пользователя",
+			"description": "Пользователь для получения. Укажите идентификатор, используя выражение <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"active": {
+					"displayName": "Активный",
+					"description": "Действует ли организация"
+				},
+				"customFieldsUi": {
+					"values": {
+						"customFieldsUi": {
+							"displayName": "Пользовательские поля"
+						},
+						"customFieldPairs": {
+							"options": {
+								"name": {
+									"displayName": "Имя поля или идентификатор",
+									"description": "Имя настраиваемого поля, которое нужно установить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								},
+								"value": {
+									"displayName": "Значение поля",
+									"description": "Значение для установки в настраиваемом поле"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить настраиваемое поле",
+					"displayName": "Пользовательские поля",
+					"options": {
+						"customFieldPairs": {
+							"displayName": "Пользовательское поле"
+						}
+					}
+				},
+				"note": {
+					"displayName": "Примечания",
+					"description": "Примечание об организации"
+				},
+				"shared": {
+					"displayName": "Общий",
+					"description": "Доступен ли доступ к организации другим экземплярам"
+				},
+				"domain": {
+					"displayName": "Домен",
+					"description": "Домен, связанный с организацией"
+				},
+				"domain_assignment": {
+					"displayName": "Назначение домена",
+					"description": "Следует ли назначать пользователей на основе их домена электронной почты"
+				},
+				"vip": {
+					"displayName": "VIP",
+					"description": "Является ли пользователь очень важным человеком"
+				},
+				"addressUi": {
+					"values": {
+						"addressUi": {
+							"displayName": "Адрес"
+						},
+						"addressDetails": {
+							"options": {
+								"city": {
+									"displayName": "Город",
+									"placeholder": "Берлин"
+								},
+								"country": {
+									"displayName": "Страна",
+									"placeholder": "Германия"
+								},
+								"address": {
+									"displayName": "Улица и номер",
+									"placeholder": "Борзигстр. 27"
+								},
+								"zip": {
+									"displayName": "Почтовый индекс",
+									"placeholder": "10115"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить адрес",
+					"displayName": "Адрес",
+					"options": {
+						"addressDetails": {
+							"displayName": "Детали адреса"
+						}
+					}
+				},
+				"department": {
+					"displayName": "Отделение",
+					"placeholder": "Финансы"
+				},
+				"email": {
+					"displayName": "Адрес электронной почты",
+					"placeholder": "имя@email.com"
+				},
+				"fax": {
+					"displayName": "Факс",
+					"placeholder": "+49 30 901820"
+				},
+				"organization": {
+					"displayName": "Название или идентификатор организации",
+					"description": "Название организации, которую нужно назначить пользователю. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"phone": {
+					"displayName": "Телефон (стационарный)",
+					"placeholder": "+49 30 901820"
+				},
+				"mobile": {
+					"displayName": "Телефон (мобильный)",
+					"placeholder": "+49 1522 3433333"
+				},
+				"verified": {
+					"displayName": "Проверено",
+					"description": "Был ли пользователь проверен"
+				},
+				"web": {
+					"displayName": "Веб-сайт",
+					"placeholder": "http://localhost"
+				}
+			}
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"active": {
+					"displayName": "Активный",
+					"description": "Действует ли организация"
+				},
+				"customFieldsUi": {
+					"values": {
+						"customFieldsUi": {
+							"displayName": "Пользовательские поля"
+						},
+						"customFieldPairs": {
+							"options": {
+								"name": {
+									"displayName": "Имя поля или идентификатор",
+									"description": "Имя настраиваемого поля, которое нужно установить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								},
+								"value": {
+									"displayName": "Значение поля",
+									"description": "Значение для установки в настраиваемом поле"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить настраиваемое поле",
+					"displayName": "Пользовательские поля",
+					"options": {
+						"customFieldPairs": {
+							"displayName": "Пользовательское поле"
+						}
+					}
+				},
+				"name": {
+					"displayName": "Имя группы"
+				},
+				"note": {
+					"displayName": "Примечания",
+					"description": "Внутреннее примечание к билету"
+				},
+				"shared": {
+					"displayName": "Общий",
+					"description": "Доступен ли доступ к организации другим экземплярам"
+				},
+				"domain": {
+					"displayName": "Домен",
+					"description": "Домен, связанный с организацией"
+				},
+				"domain_assignment": {
+					"displayName": "Назначение домена",
+					"description": "Следует ли назначать пользователей на основе их домена электронной почты"
+				},
+				"vip": {
+					"displayName": "VIP",
+					"description": "Является ли пользователь очень важным человеком"
+				},
+				"title": {
+					"displayName": "Заголовок",
+					"description": "Название билета"
+				},
+				"group": {
+					"displayName": "Группа",
+					"description": "Группа, которой будет принадлежать билет. Выберите из списка или укажите имя с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"state_id": {
+					"displayName": "Состояние",
+					"description": "Состояние билета. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"pending_time": {
+					"displayName": "Время ожидания",
+					"description": "Дата и время, когда ожидающий билет должен быть активирован (требуется для состояний ожидания напоминания, ожидания закрытия и повтора)"
+				},
+				"priority_id": {
+					"displayName": "Приоритет",
+					"description": "Приоритет билета. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"owner_id": {
+					"displayName": "Владелец",
+					"description": "Агент, ответственный за билет. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"customer_id": {
+					"displayName": "Клиент",
+					"description": "Клиент, связанный с билетом. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"addressUi": {
+					"values": {
+						"addressUi": {
+							"displayName": "Адрес"
+						},
+						"addressDetails": {
+							"options": {
+								"city": {
+									"displayName": "Город",
+									"placeholder": "Берлин"
+								},
+								"country": {
+									"displayName": "Страна",
+									"placeholder": "Германия"
+								},
+								"address": {
+									"displayName": "Улица и номер",
+									"placeholder": "Борзигстр. 27"
+								},
+								"zip": {
+									"displayName": "Почтовый индекс",
+									"placeholder": "10115"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить адрес",
+					"displayName": "Адрес",
+					"options": {
+						"addressDetails": {
+							"displayName": "Детали адреса"
+						}
+					}
+				},
+				"department": {
+					"displayName": "Отделение",
+					"placeholder": "Финансы"
+				},
+				"email": {
+					"displayName": "Адрес электронной почты",
+					"placeholder": "привет@n8n.io"
+				},
+				"fax": {
+					"displayName": "Факс",
+					"placeholder": "+49 30 901820"
+				},
+				"firstname": {
+					"displayName": "Имя",
+					"placeholder": "Джон"
+				},
+				"lastname": {
+					"displayName": "Фамилия",
+					"placeholder": "Смит"
+				},
+				"organization": {
+					"displayName": "Название или идентификатор организации",
+					"description": "Название организации, которую нужно назначить пользователю. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"phone": {
+					"displayName": "Телефон (стационарный)",
+					"placeholder": "+49 30 901820"
+				},
+				"mobile": {
+					"displayName": "Телефон (мобильный)",
+					"placeholder": "+49 1522 3433333"
+				},
+				"verified": {
+					"displayName": "Проверено",
+					"description": "Был ли пользователь проверен"
+				},
+				"web": {
+					"displayName": "Веб-сайт",
+					"placeholder": "http://localhost"
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"title": {
+			"displayName": "Заголовок",
+			"description": "Название заявки для создания"
+		},
+		"group": {
+			"displayName": "Имя или идентификатор группы",
+			"description": "Группа, которой будет принадлежать создаваемый билет. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>.",
+			"placeholder": "Служба поддержки первого уровня"
+		},
+		"customer": {
+			"displayName": "Имя или идентификатор электронной почты клиента",
+			"description": "Адрес электронной почты клиента, указанного в создаваемой заявке. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>.",
+			"placeholder": "привет@n8n.io"
+		},
+		"article": {
+			"options": {
+				"article": {
+					"displayName": "Статья"
+				},
+				"articleDetails": {
+					"displayName": "Подробности о статье",
+					"values": {
+						"subject": {
+							"displayName": "Предмет"
+						},
+						"body": {
+							"displayName": "Тело"
+						},
+						"visibility": {
+							"displayName": "Видимость",
+							"options": {
+								"external": {
+									"displayName": "Внешний",
+									"description": "Видно клиентам"
+								},
+								"internal": {
+									"displayName": "Внутренний",
+									"description": "Видно в справочной службе"
+								}
+							}
+						},
+						"sender": {
+							"displayName": "Отправитель",
+							"options": {
+								"Agent": {
+									"displayName": "Агент"
+								},
+								"Customer": {
+									"displayName": "Клиент"
+								},
+								"System": {
+									"displayName": "Система",
+									"description": "В Zammad будет отображаться только тема"
+								}
+							}
+						},
+						"type": {
+							"displayName": "Тип статьи",
+							"options": {
+								"chat": {
+									"displayName": "Чат"
+								},
+								"email": {
+									"displayName": "Электронная почта"
+								},
+								"fax": {
+									"displayName": "Факс"
+								},
+								"note": {
+									"displayName": "Примечание"
+								},
+								"phone": {
+									"displayName": "Телефон"
+								},
+								"sms": {
+									"displayName": "SMS"
+								}
+							}
+						},
+						"to": {
+							"displayName": "К",
+							"description": "Адрес электронной почты получателя",
+							"placeholder": "имя@email.com"
+						},
+						"cc": {
+							"displayName": "CC",
+							"description": "Адреса электронной почты получателя копии, разделенные запятыми",
+							"placeholder": "имя@email.com"
+						},
+						"reply_to": {
+							"displayName": "Отвечать на"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить статью",
+			"displayName": "Статья"
+		},
+		"firstname": {
+			"displayName": "Имя",
+			"placeholder": "Джон"
+		},
+		"lastname": {
+			"displayName": "Фамилия",
+			"placeholder": "Смит"
+		},
+		"query": {
+			"displayName": "Запрос"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"query": {
+					"displayName": "Запрос",
+					"description": "Запрос для фильтрации результатов по",
+					"placeholder": "пользователь.имя:Джон"
+				},
+				"sortUi": {
+					"values": {
+						"sortUi": {
+							"displayName": "Сортировать"
+						},
+						"sortDetails": {
+							"options": {
+								"sort_by": {
+									"displayName": "Имя или идентификатор ключа сортировки",
+									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+								},
+								"order_by": {
+									"displayName": "Порядок сортировки",
+									"options": {
+										"asc": {
+											"displayName": "восходящий"
+										},
+										"desc": {
+											"displayName": "По убыванию"
+										}
+									}
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить параметры сортировки",
+					"displayName": "Сортировать",
+					"options": {
+						"sortDetails": {
+							"displayName": "Параметры сортировки"
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -96,3 +96,8 @@ stryker.log
 /.pnpm-store/v11/index.db
 /.pnpm-store/v11/index.db-shm
 /.pnpm-store/v11/index.db-wal
+
+# i18n translation scratch state (scripts + final translations/ru/*.json are tracked, this isn't)
+/packages/cli/scripts/.translate-i18n-ru-cache.json
+/packages/cli/scripts/.dynamic-i18n-skeleton.json
+/packages/cli/scripts/.dynamic-i18n-skeleton.translated.json

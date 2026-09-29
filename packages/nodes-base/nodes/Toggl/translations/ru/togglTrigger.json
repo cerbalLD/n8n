@@ -1,0 +1,16 @@
+{
+	"header": {
+		"displayName": "Переключить триггер",
+		"description": "Запускает рабочий процесс при возникновении событий Toggl."
+	},
+	"nodeView": {
+		"event": {
+			"displayName": "Событие",
+			"options": {
+				"newTimeEntry": {
+					"displayName": "Новое время"
+				}
+			}
+		}
+	}
+}

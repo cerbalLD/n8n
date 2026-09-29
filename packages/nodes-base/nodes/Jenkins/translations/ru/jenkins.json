@@ -1,0 +1,128 @@
+{
+	"header": {
+		"displayName": "Дженкинс",
+		"description": "Использование API Дженкинса"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"build": {
+					"displayName": "Строить"
+				},
+				"instance": {
+					"displayName": "Пример"
+				},
+				"job": {
+					"displayName": "Работа"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"description": "Операции экземпляра Jenkins",
+			"options": {
+				"copy": {
+					"displayName": "Копировать",
+					"description": "Копирование конкретного задания"
+				},
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать новую работу"
+				},
+				"trigger": {
+					"displayName": "Курок",
+					"description": "Запустить конкретную работу"
+				},
+				"triggerParams": {
+					"displayName": "Триггер с параметрами",
+					"description": "Запустить конкретную работу"
+				},
+				"cancelQuietDown": {
+					"displayName": "Отменить режим «тихо»",
+					"description": "Отменить режим тишины"
+				},
+				"quietDown": {
+					"displayName": "Тихо",
+					"description": "Переведите Jenkins в тихий режим, сборка не может быть запущена, Jenkins готов к выключению"
+				},
+				"restart": {
+					"displayName": "Перезапуск",
+					"description": "Немедленно перезапустите Jenkins в тех средах, где это возможно."
+				},
+				"safeRestart": {
+					"displayName": "Безопасный перезапуск",
+					"description": "Перезапустите Jenkins, если в средах, где это возможно, не выполняются задания."
+				},
+				"safeExit": {
+					"displayName": "Безопасное завершение работы",
+					"description": "Выключение, если ни одно задание не выполняется"
+				},
+				"exit": {
+					"displayName": "Неисправность",
+					"description": "Немедленно выключите Дженкинса"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получение списка сборок"
+				}
+			}
+		},
+		"triggerParamsNotice": {
+			"displayName": "Убедитесь, что задание настроено на поддержку запуска с параметрами. <a href=\"https://wiki.jenkins.io/display/JENKINS/Parameterized+Build\" target=\"_blank\">Подробнее</a>"
+		},
+		"job": {
+			"displayName": "Имя или идентификатор вакансии",
+			"description": "Название работы. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"param": {
+			"options": {
+				"param": {
+					"displayName": "Параметры",
+					"description": "Параметры задания Дженкинса"
+				},
+				"params": {
+					"displayName": "Параметры",
+					"values": {
+						"name": {
+							"displayName": "Имя или идентификатор",
+							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+						},
+						"value": {
+							"displayName": "Ценить"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить параметр",
+			"displayName": "Параметры",
+			"description": "Параметры задания Дженкинса"
+		},
+		"newJob": {
+			"displayName": "Новое имя вакансии",
+			"description": "Название новой должности Дженкинса"
+		},
+		"xml": {
+			"displayName": "XML",
+			"description": "XML конфигурации Дженкинса"
+		},
+		"createNotice": {
+			"displayName": "Чтобы получить XML существующего задания, добавьте «config.xml» в конец URL-адреса задания."
+		},
+		"reason": {
+			"displayName": "Причина",
+			"description": "Причина в произвольной форме для режима тишины"
+		},
+		"instanceNotice": {
+			"displayName": "Операция с экземпляром может завершить работу экземпляра Jenkins и сделать его не отвечающим. Некоторые команды могут быть недоступны в зависимости от реализации экземпляра."
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		}
+	}
+}

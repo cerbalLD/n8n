@@ -1,0 +1,63 @@
+{
+	"header": {
+		"displayName": "Триггер ConvertKit",
+		"description": "Обработка событий ConvertKit через веб-перехватчики"
+	},
+	"nodeView": {
+		"event": {
+			"displayName": "Событие",
+			"description": "События, которые могут активировать вебхук, и включены ли они.",
+			"options": {
+				"formSubscribe": {
+					"displayName": "Форма подписки"
+				},
+				"linkClick": {
+					"displayName": "Ссылка Нажмите"
+				},
+				"productPurchase": {
+					"displayName": "Покупка продукта"
+				},
+				"purchaseCreate": {
+					"displayName": "Покупка создана"
+				},
+				"courseComplete": {
+					"displayName": "Последовательность завершена"
+				},
+				"courseSubscribe": {
+					"displayName": "Последовательность Подписаться"
+				},
+				"subscriberActivate": {
+					"displayName": "Подписчик активирован"
+				},
+				"subscriberUnsubscribe": {
+					"displayName": "Подписчик Отписаться"
+				},
+				"tagAdd": {
+					"displayName": "Добавить тег"
+				},
+				"tagRemove": {
+					"displayName": "Удалить тег"
+				}
+			}
+		},
+		"formId": {
+			"displayName": "Имя или идентификатор формы",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"courseId": {
+			"displayName": "Имя или идентификатор последовательности",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"link": {
+			"displayName": "Инициирующая ссылка",
+			"description": "URL-адрес исходной ссылки"
+		},
+		"productId": {
+			"displayName": "Идентификатор продукта"
+		},
+		"tagId": {
+			"displayName": "Имя или идентификатор тега",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		}
+	}
+}

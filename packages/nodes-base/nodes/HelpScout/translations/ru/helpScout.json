@@ -1,0 +1,710 @@
+{
+	"header": {
+		"displayName": "Помощь Скауту",
+		"description": "Использование API Help Scout"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"conversation": {
+					"displayName": "Беседа"
+				},
+				"customer": {
+					"displayName": "Клиент"
+				},
+				"mailbox": {
+					"displayName": "Почтовый ящик"
+				},
+				"thread": {
+					"displayName": "Нить"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать новую ветку чата"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить разговор"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить данные почтового ящика"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получите много тем чата"
+				},
+				"properties": {
+					"displayName": "Характеристики",
+					"description": "Получить определения свойств клиентов"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить клиента"
+				}
+			}
+		},
+		"mailboxId": {
+			"displayName": "Идентификатор почтового ящика",
+			"description": "Идентификатор почтового ящика, в котором создается беседа. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"status": {
+			"displayName": "Статус",
+			"description": "Статус разговора",
+			"options": {
+				"active": {
+					"displayName": "Активный"
+				},
+				"closed": {
+					"displayName": "Закрыто"
+				},
+				"pending": {
+					"displayName": "В ожидании"
+				}
+			}
+		},
+		"subject": {
+			"displayName": "Предмет",
+			"description": "Тема разговора"
+		},
+		"type": {
+			"displayName": "Тип",
+			"description": "Тип разговора",
+			"options": {
+				"chat": {
+					"displayName": "Чат"
+				},
+				"email": {
+					"displayName": "Электронная почта"
+				},
+				"phone": {
+					"displayName": "Телефон"
+				},
+				"customer": {
+					"displayName": "Клиент"
+				},
+				"note": {
+					"displayName": "Примечание"
+				},
+				"reply": {
+					"displayName": "Отвечать"
+				}
+			}
+		},
+		"resolveData": {
+			"displayName": "Разрешение данных",
+			"description": "По умолчанию ответ содержит только идентификатор ресурса. Если эта опция активирована, она автоматически разрешит данные."
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"assignTo": {
+					"displayName": "Назначить кому",
+					"description": "Пользователь Help Scout, назначенный для беседы"
+				},
+				"autoReply": {
+					"displayName": "Автоответ",
+					"description": "Если установлено значение true, автоматический ответ будет отправлен, если в разговоре есть хотя бы одна цепочка клиентов."
+				},
+				"closedAt": {
+					"displayName": "Закрыто в",
+					"description": "Когда беседа была закрыта, применимо только для импортированных бесед."
+				},
+				"createdAt": {
+					"displayName": "Создано в",
+					"description": "Когда был создан этот разговор — дата и время ISO 8601."
+				},
+				"customerEmail": {
+					"displayName": "Электронная почта клиента"
+				},
+				"customerId": {
+					"displayName": "Идентификатор клиента"
+				},
+				"imported": {
+					"displayName": "Импортировано",
+					"description": "Будут ли генерироваться исходящие электронные письма или уведомления"
+				},
+				"tags": {
+					"displayName": "Имена или идентификаторы тегов",
+					"description": "Список тегов, которые будут добавлены в беседу. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"user": {
+					"displayName": "ID пользователя",
+					"description": "Идентификатор пользователя, добавляющего беседу и темы"
+				},
+				"age": {
+					"displayName": "Возраст",
+					"description": "Возраст клиента"
+				},
+				"firstName": {
+					"displayName": "Имя",
+					"description": "Имя клиента. Если оно определено, оно должно содержать от 1 до 40 символов."
+				},
+				"gender": {
+					"displayName": "Пол",
+					"description": "Пол этого клиента",
+					"options": {
+						"female": {
+							"displayName": "Женский"
+						},
+						"male": {
+							"displayName": "Мужской"
+						},
+						"unknown": {
+							"displayName": "Неизвестный"
+						}
+					}
+				},
+				"jobTitle": {
+					"displayName": "Должность",
+					"description": "Должность. Максимальная длина 60 символов."
+				},
+				"lastName": {
+					"displayName": "Фамилия",
+					"description": "Фамилия клиента"
+				},
+				"location": {
+					"displayName": "Расположение",
+					"description": "Местоположение клиента"
+				},
+				"background": {
+					"displayName": "Примечания"
+				},
+				"organization": {
+					"displayName": "Организация"
+				},
+				"photoUrl": {
+					"displayName": "URL-адрес фотографии",
+					"description": "URL фотографии клиента"
+				},
+				"draft": {
+					"displayName": "Черновик",
+					"description": "Создается ли черновик ответа"
+				}
+			}
+		},
+		"threadsUi": {
+			"options": {
+				"threadsUi": {
+					"displayName": "Темы"
+				},
+				"threadsValues": {
+					"displayName": "Нить",
+					"values": {
+						"type": {
+							"displayName": "Тип",
+							"options": {
+								"chat": {
+									"displayName": "Чат"
+								},
+								"customer": {
+									"displayName": "Клиент"
+								},
+								"note": {
+									"displayName": "Примечание"
+								},
+								"phone": {
+									"displayName": "Телефон"
+								},
+								"reply": {
+									"displayName": "Отвечать"
+								}
+							}
+						},
+						"text": {
+							"displayName": "Текст",
+							"description": "Текст сообщения"
+						},
+						"bcc": {
+							"displayName": "СК",
+							"description": "Адреса электронной почты"
+						},
+						"cc": {
+							"displayName": "Копия",
+							"description": "Адреса электронной почты"
+						},
+						"draft": {
+							"displayName": "Черновик",
+							"description": "Если это правда, создается черновик ответа."
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить тему",
+			"displayName": "Темы"
+		},
+		"conversationId": {
+			"displayName": "Идентификатор беседы"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"assignTo": {
+					"displayName": "Назначить кому",
+					"description": "Фильтрует разговоры по идентификатору ответственного"
+				},
+				"embed": {
+					"displayName": "Встроить",
+					"description": "Позволяет встраивать/загружать подобъекты",
+					"options": {
+						"threads": {
+							"displayName": "Темы"
+						}
+					}
+				},
+				"folder": {
+					"displayName": "Идентификатор папки",
+					"description": "Фильтрует разговоры из определенного идентификатора папки."
+				},
+				"mailbox": {
+					"displayName": "Идентификатор почтового ящика",
+					"description": "Фильтрует клиентов из определенного почтового ящика"
+				},
+				"modifiedSince": {
+					"displayName": "Изменено с момента",
+					"description": "Возвращает только клиентов, которые были изменены после этой даты."
+				},
+				"number": {
+					"displayName": "Число",
+					"description": "Ищет разговор по номеру разговора"
+				},
+				"query": {
+					"displayName": "Запрос",
+					"description": "Расширенный поиск <a href=\"https://developer.helpscout.com/mailbox-api/endpoints/customers/list/#query\">Примеры</a>"
+				},
+				"sortField": {
+					"displayName": "Сортировать поле",
+					"description": "Сортирует результат по указанному полю",
+					"options": {
+						"createdAt": {
+							"displayName": "Создано в"
+						},
+						"customerEmail": {
+							"displayName": "Электронная почта клиента"
+						},
+						"customerName": {
+							"displayName": "Имя клиента"
+						},
+						"mailboxid": {
+							"displayName": "Идентификатор почтового ящика"
+						},
+						"modifiedAt": {
+							"displayName": "Изменено в"
+						},
+						"number": {
+							"displayName": "Число"
+						},
+						"score": {
+							"displayName": "Счет"
+						},
+						"status": {
+							"displayName": "Статус"
+						},
+						"subject": {
+							"displayName": "Предмет"
+						},
+						"firstName": {
+							"displayName": "Имя"
+						},
+						"lastName": {
+							"displayName": "Фамилия"
+						}
+					}
+				},
+				"sortOrder": {
+					"displayName": "Порядок сортировки",
+					"options": {
+						"asc": {
+							"displayName": "ASC"
+						},
+						"desc": {
+							"displayName": "DESC"
+						}
+					}
+				},
+				"status": {
+					"displayName": "Статус",
+					"description": "Фильтровать разговор по статусу",
+					"options": {
+						"active": {
+							"displayName": "Активный"
+						},
+						"all": {
+							"displayName": "Все"
+						},
+						"closed": {
+							"displayName": "Закрыто"
+						},
+						"open": {
+							"displayName": "Открыть"
+						},
+						"pending": {
+							"displayName": "В ожидании"
+						},
+						"spam": {
+							"displayName": "Спам"
+						}
+					}
+				},
+				"tags": {
+					"displayName": "Имена или идентификаторы тегов",
+					"description": "Фильтрация разговоров по тегам. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"firstName": {
+					"displayName": "Имя",
+					"description": "Фильтрует клиентов по имени"
+				},
+				"lastName": {
+					"displayName": "Фамилия",
+					"description": "Фильтрует клиентов по фамилии"
+				}
+			}
+		},
+		"addressUi": {
+			"options": {
+				"addressUi": {
+					"displayName": "Адрес"
+				},
+				"addressValue": {
+					"displayName": "Адрес",
+					"values": {
+						"line1": {
+							"displayName": "Линия 1"
+						},
+						"line2": {
+							"displayName": "Линия 2"
+						},
+						"city": {
+							"displayName": "Город"
+						},
+						"state": {
+							"displayName": "Состояние"
+						},
+						"country": {
+							"displayName": "Название или идентификатор страны",
+							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+						},
+						"postalCode": {
+							"displayName": "Почтовый индекс"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить адрес",
+			"displayName": "Адрес"
+		},
+		"chatsUi": {
+			"options": {
+				"chatsUi": {
+					"displayName": "Ручки чата"
+				},
+				"chatsValues": {
+					"displayName": "Ручка чата",
+					"values": {
+						"type": {
+							"displayName": "Тип",
+							"description": "Тип чата",
+							"options": {
+								"aim": {
+									"displayName": "AIM"
+								},
+								"gtalk": {
+									"displayName": "Google Talk"
+								},
+								"icq": {
+									"displayName": "ICQ"
+								},
+								"msn": {
+									"displayName": "MSN"
+								},
+								"other": {
+									"displayName": "Другой"
+								},
+								"qq": {
+									"displayName": "QQ"
+								},
+								"skype": {
+									"displayName": "Скайп"
+								},
+								"xmpp": {
+									"displayName": "XMPP"
+								},
+								"yahoo": {
+									"displayName": "Yahoo"
+								}
+							}
+						},
+						"value": {
+							"displayName": "Ценить",
+							"description": "Ручка чата"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить дескриптор чата",
+			"displayName": "Ручки чата"
+		},
+		"emailsUi": {
+			"options": {
+				"emailsUi": {
+					"displayName": "Электронная почта"
+				},
+				"emailsValues": {
+					"displayName": "Электронная почта",
+					"values": {
+						"type": {
+							"displayName": "Тип",
+							"description": "Местоположение этого адреса электронной почты",
+							"options": {
+								"home": {
+									"displayName": "Дом"
+								},
+								"other": {
+									"displayName": "Другой"
+								},
+								"work": {
+									"displayName": "Работа"
+								}
+							}
+						},
+						"value": {
+							"displayName": "Ценить",
+							"description": "Электронная почта"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить адрес электронной почты",
+			"displayName": "Электронная почта"
+		},
+		"phonesUi": {
+			"options": {
+				"phonesUi": {
+					"displayName": "Телефоны"
+				},
+				"phonesValues": {
+					"displayName": "Электронная почта",
+					"values": {
+						"type": {
+							"displayName": "Тип",
+							"description": "Местоположение этого телефона",
+							"options": {
+								"fax": {
+									"displayName": "Факс"
+								},
+								"home": {
+									"displayName": "Дом"
+								},
+								"other": {
+									"displayName": "Другой"
+								},
+								"pager": {
+									"displayName": "Пейджер"
+								},
+								"work": {
+									"displayName": "Работа"
+								}
+							}
+						},
+						"value": {
+							"displayName": "Ценить",
+							"description": "Телефон"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить телефон",
+			"displayName": "Телефоны"
+		},
+		"socialProfilesUi": {
+			"options": {
+				"socialProfilesUi": {
+					"displayName": "Социальные профили"
+				},
+				"socialProfilesValues": {
+					"displayName": "Социальный профиль",
+					"values": {
+						"type": {
+							"displayName": "Тип",
+							"description": "Тип социального профиля",
+							"options": {
+								"aboutMe": {
+									"displayName": "Обо мне"
+								},
+								"facebook": {
+									"displayName": "Фейсбук"
+								},
+								"flickr": {
+									"displayName": "Фликр"
+								},
+								"forsquare": {
+									"displayName": "Форсквер"
+								},
+								"google": {
+									"displayName": "Google"
+								},
+								"googleplus": {
+									"displayName": "Гугл Плюс"
+								},
+								"linkedin": {
+									"displayName": "Линкедин"
+								},
+								"other": {
+									"displayName": "Другой"
+								},
+								"quora": {
+									"displayName": "Кора"
+								},
+								"tungleme": {
+									"displayName": "Тунглеме"
+								},
+								"twitter": {
+									"displayName": "Твиттер"
+								},
+								"youtube": {
+									"displayName": "Ютуб"
+								}
+							}
+						},
+						"value": {
+							"displayName": "Ценить",
+							"description": "Дескриптор социального профиля (например, URL-адрес)"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить социальный профиль",
+			"displayName": "Социальные профили"
+		},
+		"websitesUi": {
+			"options": {
+				"websitesUi": {
+					"displayName": "Веб-сайты"
+				},
+				"websitesValues": {
+					"displayName": "Веб-сайт",
+					"values": {
+						"value": {
+							"displayName": "Ценить",
+							"description": "URL-адрес веб-сайта"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить веб-сайт",
+			"displayName": "Веб-сайты"
+		},
+		"customerId": {
+			"displayName": "Идентификатор клиента"
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"age": {
+					"displayName": "Возраст",
+					"description": "Возраст клиента"
+				},
+				"firstName": {
+					"displayName": "Имя",
+					"description": "Имя клиента. Если оно определено, оно должно содержать от 1 до 40 символов."
+				},
+				"gender": {
+					"displayName": "Пол",
+					"description": "Пол этого клиента",
+					"options": {
+						"female": {
+							"displayName": "Женский"
+						},
+						"male": {
+							"displayName": "Мужской"
+						},
+						"unknown": {
+							"displayName": "Неизвестный"
+						}
+					}
+				},
+				"jobTitle": {
+					"displayName": "Должность",
+					"description": "Должность. Максимальная длина 60 символов."
+				},
+				"lastName": {
+					"displayName": "Фамилия",
+					"description": "Фамилия клиента"
+				},
+				"location": {
+					"displayName": "Расположение",
+					"description": "Местоположение клиента"
+				},
+				"background": {
+					"displayName": "Примечания"
+				},
+				"organization": {
+					"displayName": "Организация"
+				},
+				"photoUrl": {
+					"displayName": "URL-адрес фотографии",
+					"description": "URL фотографии клиента"
+				}
+			}
+		},
+		"text": {
+			"displayName": "Текст",
+			"description": "Текст чата"
+		},
+		"attachmentsUi": {
+			"options": {
+				"attachmentsUi": {
+					"displayName": "Вложения",
+					"description": "Массив поддерживаемых вложений для добавления к сообщению"
+				},
+				"attachmentsValues": {
+					"displayName": "Значения вложений",
+					"values": {
+						"fileName": {
+							"displayName": "Имя файла",
+							"description": "Имя файла вложения"
+						},
+						"mimeType": {
+							"displayName": "Тип пантомимы",
+							"description": "MIME-тип вложения"
+						},
+						"data": {
+							"displayName": "Данные",
+							"description": "Поток данных в кодировке Base64",
+							"placeholder": "ZXhhbXBsZSBmaWxl"
+						}
+					}
+				},
+				"attachmentsBinary": {
+					"displayName": "Вложения Бинарный",
+					"values": {
+						"property": {
+							"displayName": "Свойство",
+							"description": "Имя двоичных свойств, содержащих данные, которые следует добавить в электронное письмо во вложении."
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить вложения",
+			"displayName": "Вложения",
+			"description": "Массив поддерживаемых вложений для добавления к сообщению"
+		}
+	}
+}

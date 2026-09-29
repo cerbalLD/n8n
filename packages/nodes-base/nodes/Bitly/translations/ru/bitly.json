@@ -1,0 +1,121 @@
+{
+	"header": {
+		"displayName": "Битли",
+		"description": "Использование Bitly API"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"accessToken": {
+					"displayName": "Токен доступа"
+				},
+				"oAuth2": {
+					"displayName": "ОАут2"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"link": {
+					"displayName": "Связь"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать ссылку"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить ссылку"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить ссылку"
+				}
+			}
+		},
+		"longUrl": {
+			"displayName": "Длинный URL-адрес",
+			"placeholder": "https://example.com"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"domain": {
+					"displayName": "Домен"
+				},
+				"group": {
+					"displayName": "Имя или идентификатор группы",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"tags": {
+					"displayName": "Имена или идентификаторы тегов",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"title": {
+					"displayName": "Заголовок"
+				}
+			}
+		},
+		"deeplink": {
+			"options": {
+				"deeplink": {
+					"displayName": "Глубокие ссылки"
+				},
+				"deeplinkUi": {
+					"displayName": "Глубокая ссылка",
+					"values": {
+						"appId": {
+							"displayName": "Идентификатор приложения"
+						},
+						"appUriPath": {
+							"displayName": "Путь URI приложения"
+						},
+						"installType": {
+							"displayName": "Тип установки"
+						},
+						"installUrl": {
+							"displayName": "Установить URL"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить глубокую ссылку",
+			"displayName": "Глубокие ссылки"
+		},
+		"id": {
+			"displayName": "Битлинк",
+			"placeholder": "bit.ly/22u3ypK"
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"archived": {
+					"displayName": "В архиве"
+				},
+				"group": {
+					"displayName": "Имя или идентификатор группы",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"longUrl": {
+					"displayName": "Длинный URL-адрес"
+				},
+				"tags": {
+					"displayName": "Имена или идентификаторы тегов",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"title": {
+					"displayName": "Заголовок"
+				}
+			}
+		}
+	}
+}

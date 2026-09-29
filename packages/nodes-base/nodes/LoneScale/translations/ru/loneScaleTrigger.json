@@ -1,0 +1,12 @@
+{
+	"header": {
+		"displayName": "Триггер LoneScale",
+		"description": "Запуск рабочего процесса LoneScale"
+	},
+	"nodeView": {
+		"workflow": {
+			"displayName": "Имя рабочего процесса",
+			"description": "Выберите один рабочий процесс. Выберите из списка"
+		}
+	}
+}

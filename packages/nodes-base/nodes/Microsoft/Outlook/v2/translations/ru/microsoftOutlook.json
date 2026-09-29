@@ -1,0 +1,3438 @@
+{
+	"header": {
+		"displayName": "Microsoft Outlook",
+		"description": "Использование API Microsoft Outlook"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"microsoftOutlookOAuth2Api": {
+					"displayName": "Outlook OAuth2"
+				},
+				"microsoftOAuth2Api": {
+					"displayName": "Microsoft OAuth2 (график)"
+				},
+				"microsoftEntraServicePrincipalApi": {
+					"displayName": "Руководитель службы Microsoft Entra (только для приложения)",
+					"description": "Доступ только через приложение через регистрацию приложения Microsoft Entra. Выберите, с каким почтовым ящиком действовать, в разделе «Почтовый ящик»."
+				}
+			}
+		},
+		"mailbox": {
+			"displayName": "Почтовый ящик",
+			"description": "Почтовый ящик, с которым должен действовать субъект службы. В узле действия это оценивается для каждого элемента ввода (выражение может быть нацелено на другой почтовый ящик для каждого элемента); триггер разрешает его один раз."
+		},
+		"servicePrincipalNotice": {
+			"displayName": "Если это не ограничено политикой доступа к приложению (Exchange Online New-ApplicationAccessPolicy), разрешение приложения Mail.Send позволяет этому приложению отправлять сообщения как любой почтовый ящик в клиенте."
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"calendar": {
+					"displayName": "Календарь"
+				},
+				"contact": {
+					"displayName": "Контакт"
+				},
+				"draft": {
+					"displayName": "Черновик"
+				},
+				"event": {
+					"displayName": "Событие"
+				},
+				"folder": {
+					"displayName": "Папка"
+				},
+				"folderMessage": {
+					"displayName": "Папка Сообщение"
+				},
+				"message": {
+					"displayName": "Сообщение"
+				},
+				"messageAttachment": {
+					"displayName": "Вложение сообщения"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создайте почтовую папку в корневой папке почтового ящика пользователя."
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить сообщение"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить информацию о вложении сообщения"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить информацию о вложениях сообщения"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить сообщение"
+				},
+				"send": {
+					"displayName": "Отправлять",
+					"description": "Отправить сообщение"
+				},
+				"move": {
+					"displayName": "Двигаться",
+					"description": "Переместить сообщение в папку"
+				},
+				"reply": {
+					"displayName": "Отвечать",
+					"description": "Создать ответ на сообщение"
+				},
+				"sendAndWait": {
+					"displayName": "Отправить и дождаться ответа",
+					"description": "Отправьте сообщение и дождитесь ответа"
+				},
+				"add": {
+					"displayName": "Добавлять",
+					"description": "Добавить вложение к сообщению"
+				},
+				"download": {
+					"displayName": "Скачать",
+					"description": "Загрузить вложение из сообщения"
+				}
+			}
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Название календаря, который нужно создать",
+			"placeholder": "например Мой календарь"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"calendarGroup": {
+					"displayName": "Группа календарей",
+					"description": "Если установлено, календарь будет создан в указанной группе календарей. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"color": {
+					"displayName": "Цвет",
+					"description": "Укажите цвет, чтобы отличать календарь от других",
+					"options": {
+						"lightBlue": {
+							"displayName": "Светло-голубой"
+						},
+						"lightBrown": {
+							"displayName": "Светло-коричневый"
+						},
+						"lightGray": {
+							"displayName": "Светло-серый"
+						},
+						"lightGreen": {
+							"displayName": "Светло-зеленый"
+						},
+						"lightOrange": {
+							"displayName": "Светло-оранжевый"
+						},
+						"lightPink": {
+							"displayName": "Светло-розовый"
+						},
+						"lightRed": {
+							"displayName": "Светло-красный"
+						},
+						"lightTeal": {
+							"displayName": "Светло-бирюзовый"
+						},
+						"lightYellow": {
+							"displayName": "Светло-желтый"
+						}
+					}
+				},
+				"assistantName": {
+					"displayName": "Имя помощника",
+					"description": "Имя помощника контакта"
+				},
+				"birthday": {
+					"displayName": "День рождения"
+				},
+				"businessAddress": {
+					"values": {
+						"businessAddress": {
+							"displayName": "Бизнес-адрес"
+						},
+						"values": {
+							"options": {
+								"city": {
+									"displayName": "Город"
+								},
+								"countryOrRegion": {
+									"displayName": "Страна/регион"
+								},
+								"postalCode": {
+									"displayName": "Почтовый индекс"
+								},
+								"state": {
+									"displayName": "Состояние"
+								},
+								"street": {
+									"displayName": "Улица"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить адрес",
+					"displayName": "Бизнес-адрес",
+					"options": {
+						"values": {
+							"displayName": "Адрес"
+						}
+					}
+				},
+				"businessHomePage": {
+					"displayName": "Домашняя страница бизнеса"
+				},
+				"businessPhones": {
+					"displayName": "Бизнес-телефоны",
+					"description": "Список служебных номеров телефонов, разделенных запятыми"
+				},
+				"categories": {
+					"displayName": "Названия или идентификаторы категорий",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"children": {
+					"displayName": "Дети",
+					"description": "Список имен детей контакта, разделенный запятыми."
+				},
+				"companyName": {
+					"displayName": "Название компании"
+				},
+				"department": {
+					"displayName": "Отделение"
+				},
+				"displayName": {
+					"displayName": "Отображаемое имя"
+				},
+				"emailAddresses": {
+					"values": {
+						"emailAddresses": {
+							"displayName": "Адрес электронной почты"
+						},
+						"values": {
+							"options": {
+								"name": {
+									"displayName": "Имя"
+								},
+								"address": {
+									"displayName": "Адрес"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить адрес электронной почты",
+					"displayName": "Адрес электронной почты",
+					"options": {
+						"values": {
+							"displayName": "Электронная почта"
+						}
+					}
+				},
+				"fileAs": {
+					"displayName": "Файл как",
+					"description": "Имя, под которым зарегистрирован контакт"
+				},
+				"homeAddress": {
+					"values": {
+						"homeAddress": {
+							"displayName": "Домашний адрес"
+						},
+						"values": {
+							"options": {
+								"city": {
+									"displayName": "Город"
+								},
+								"countryOrRegion": {
+									"displayName": "Страна/регион"
+								},
+								"postalCode": {
+									"displayName": "Почтовый индекс"
+								},
+								"state": {
+									"displayName": "Состояние"
+								},
+								"street": {
+									"displayName": "Улица"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить адрес",
+					"displayName": "Домашний адрес",
+					"options": {
+						"values": {
+							"displayName": "Адрес"
+						}
+					}
+				},
+				"homePhones": {
+					"displayName": "Домашние телефоны",
+					"hint": "Можно добавить несколько телефонов, разделенных ,"
+				},
+				"imAddresses": {
+					"displayName": "Адреса мгновенных сообщений",
+					"description": "Адреса обмена мгновенными сообщениями (IM) контакта",
+					"hint": "Можно добавить несколько адресов, разделенных ,"
+				},
+				"initials": {
+					"displayName": "Инициалы"
+				},
+				"jobTitle": {
+					"displayName": "Должность"
+				},
+				"manager": {
+					"displayName": "Менеджер",
+					"description": "Имя менеджера контакта"
+				},
+				"middleName": {
+					"displayName": "Второе имя"
+				},
+				"mobilePhone": {
+					"displayName": "Мобильный телефон"
+				},
+				"givenName": {
+					"displayName": "Имя"
+				},
+				"nickName": {
+					"displayName": "Псевдоним"
+				},
+				"officeLocation": {
+					"displayName": "Расположение офиса"
+				},
+				"otherAddress": {
+					"values": {
+						"otherAddress": {
+							"displayName": "Другой адрес"
+						},
+						"values": {
+							"options": {
+								"city": {
+									"displayName": "Город"
+								},
+								"countryOrRegion": {
+									"displayName": "Страна/регион"
+								},
+								"postalCode": {
+									"displayName": "Почтовый индекс"
+								},
+								"state": {
+									"displayName": "Состояние"
+								},
+								"street": {
+									"displayName": "Улица"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить адрес",
+					"displayName": "Другой адрес",
+					"options": {
+						"values": {
+							"displayName": "Адрес"
+						}
+					}
+				},
+				"personalNotes": {
+					"displayName": "Личные заметки"
+				},
+				"profession": {
+					"displayName": "Профессия"
+				},
+				"spouseName": {
+					"displayName": "Имя супруга"
+				},
+				"surname": {
+					"displayName": "Фамилия"
+				},
+				"title": {
+					"displayName": "Заголовок"
+				},
+				"attachments": {
+					"values": {
+						"attachments": {
+							"displayName": "Вложения",
+							"options": {
+								"binaryPropertyName": {
+									"displayName": "Имя поля входных данных",
+									"hint": "Имя поля ввода, содержащего данные двоичного файла, которые необходимо прикрепить.",
+									"placeholder": "например данные"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить вложение",
+					"displayName": "Вложения",
+					"options": {
+						"attachments": {
+							"displayName": "Вложение"
+						}
+					}
+				},
+				"bccRecipients": {
+					"displayName": "Получатели BCC",
+					"description": "Список адресов электронной почты получателей BCC, разделенный запятыми.",
+					"placeholder": "например john@example.com"
+				},
+				"ccRecipients": {
+					"displayName": "Получатели CC",
+					"description": "Список адресов электронной почты получателей CC, разделенный запятыми.",
+					"placeholder": "например john@example.com"
+				},
+				"internetMessageHeaders": {
+					"values": {
+						"internetMessageHeaders": {
+							"displayName": "Пользовательские заголовки"
+						},
+						"headers": {
+							"options": {
+								"name": {
+									"displayName": "Имя",
+									"description": "Название заголовка"
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Значение, которое нужно установить для заголовка"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить заголовок",
+					"displayName": "Пользовательские заголовки",
+					"options": {
+						"headers": {
+							"displayName": "Заголовок"
+						}
+					}
+				},
+				"from": {
+					"displayName": "От",
+					"description": "Владелец почтового ящика, из которого отправлено сообщение. Должен соответствовать фактическому используемому почтовому ящику.",
+					"placeholder": "например john@example.com"
+				},
+				"importance": {
+					"displayName": "Важность",
+					"description": "Важность сообщения",
+					"options": {
+						"Low": {
+							"displayName": "Низкий"
+						},
+						"Normal": {
+							"displayName": "Нормальный"
+						},
+						"High": {
+							"displayName": "Высокий"
+						},
+						"low": {
+							"displayName": "Низкий"
+						},
+						"normal": {
+							"displayName": "Нормальный"
+						},
+						"high": {
+							"displayName": "Высокий"
+						}
+					}
+				},
+				"bodyContentType": {
+					"displayName": "Тип сообщения",
+					"description": "Тип содержимого тела сообщения",
+					"options": {
+						"html": {
+							"displayName": "HTML"
+						},
+						"Text": {
+							"displayName": "Текст"
+						}
+					}
+				},
+				"isReadReceiptRequested": {
+					"displayName": "Запрошена квитанция о прочтении",
+					"description": "Запрашивается ли уведомление о прочтении сообщения"
+				},
+				"replyTo": {
+					"displayName": "Отвечать на",
+					"description": "Адрес электронной почты, который будет использоваться при ответе",
+					"placeholder": "например ответ на@example.com"
+				},
+				"toRecipients": {
+					"displayName": "К",
+					"description": "Список адресов электронной почты получателей, разделенный запятыми.",
+					"placeholder": "например john@example.com"
+				},
+				"attendees": {
+					"values": {
+						"attendees": {
+							"displayName": "Участники",
+							"description": "Настройка участников при обновлении заменяет весь список участников."
+						},
+						"values": {
+							"options": {
+								"email": {
+									"displayName": "Электронная почта",
+									"placeholder": "имя@email.com"
+								},
+								"name": {
+									"displayName": "Имя"
+								},
+								"type": {
+									"displayName": "Тип",
+									"options": {
+										"optional": {
+											"displayName": "Необязательный"
+										},
+										"required": {
+											"displayName": "Необходимый"
+										},
+										"resource": {
+											"displayName": "Ресурс"
+										}
+									}
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить участника",
+					"displayName": "Участники",
+					"options": {
+						"values": {
+							"displayName": "Посетитель"
+						}
+					},
+					"description": "Настройка участников при обновлении заменяет весь список участников."
+				},
+				"body": {
+					"displayName": "Описание"
+				},
+				"bodyPreview": {
+					"displayName": "Описание Предварительный просмотр"
+				},
+				"hideAttendees": {
+					"displayName": "Скрыть участников",
+					"description": "Разрешить ли каждому участнику видеть только себя в приглашении на собрание и списке отслеживания собрания"
+				},
+				"isAllDay": {
+					"displayName": "Весь день"
+				},
+				"isCancelled": {
+					"displayName": "Отменено"
+				},
+				"isDraft": {
+					"displayName": "Черновик"
+				},
+				"isOnlineMeeting": {
+					"displayName": "Онлайн-встреча"
+				},
+				"location": {
+					"displayName": "Расположение",
+					"description": "Место проведения мероприятия (например, название конференц-зала, адрес или ссылка на собрание)."
+				},
+				"sensitivity": {
+					"displayName": "Чувствительность",
+					"options": {
+						"normal": {
+							"displayName": "Нормальный"
+						},
+						"personal": {
+							"displayName": "Персональный"
+						},
+						"private": {
+							"displayName": "Частный"
+						},
+						"confidential": {
+							"displayName": "Конфиденциально"
+						}
+					}
+				},
+				"showAs": {
+					"displayName": "Показать как",
+					"options": {
+						"busy": {
+							"displayName": "Занятый"
+						},
+						"free": {
+							"displayName": "Бесплатно"
+						},
+						"oof": {
+							"displayName": "уф"
+						},
+						"tentative": {
+							"displayName": "Пробный"
+						},
+						"workingElsewhere": {
+							"displayName": "Работа в другом месте"
+						}
+					}
+				},
+				"timeZone": {
+					"displayName": "Часовой пояс",
+					"options": {
+						"Africa/Abidjan": {
+							"displayName": "Африка/Абиджан"
+						},
+						"Africa/Accra": {
+							"displayName": "Африка/Аккра"
+						},
+						"Africa/Addis_Ababa": {
+							"displayName": "Африка/Аддис_Абеба"
+						},
+						"Africa/Algiers": {
+							"displayName": "Африка/Алжир"
+						},
+						"Africa/Asmara": {
+							"displayName": "Африка/Асмэра"
+						},
+						"Africa/Asmera": {
+							"displayName": "Африка/Асмера"
+						},
+						"Africa/Bamako": {
+							"displayName": "Африка/Бамако"
+						},
+						"Africa/Bangui": {
+							"displayName": "Африка/Банги"
+						},
+						"Africa/Banjul": {
+							"displayName": "Африка/Банжул"
+						},
+						"Africa/Bissau": {
+							"displayName": "Африка/Бисау"
+						},
+						"Africa/Blantyre": {
+							"displayName": "Африка/Блантайр"
+						},
+						"Africa/Brazzaville": {
+							"displayName": "Африка/Браззавиль"
+						},
+						"Africa/Bujumbura": {
+							"displayName": "Африка/Бужумбура"
+						},
+						"Africa/Cairo": {
+							"displayName": "Африка/Каир"
+						},
+						"Africa/Casablanca": {
+							"displayName": "Африка/Касабланка"
+						},
+						"Africa/Ceuta": {
+							"displayName": "Африка/Сеута"
+						},
+						"Africa/Conakry": {
+							"displayName": "Африка/Конакри"
+						},
+						"Africa/Dakar": {
+							"displayName": "Африка/Дакар"
+						},
+						"Africa/Dar_es_Salaam": {
+							"displayName": "Африка/Дар_эс_Салам"
+						},
+						"Africa/Djibouti": {
+							"displayName": "Африка/Джибути"
+						},
+						"Africa/Douala": {
+							"displayName": "Африка/Дуала"
+						},
+						"Africa/El_Aaiun": {
+							"displayName": "Африка/Эль_Аюн"
+						},
+						"Africa/Freetown": {
+							"displayName": "Африка/Фритаун"
+						},
+						"Africa/Gaborone": {
+							"displayName": "Африка/Габороне"
+						},
+						"Africa/Harare": {
+							"displayName": "Африка/Хараре"
+						},
+						"Africa/Johannesburg": {
+							"displayName": "Африка/Йоханнесбург"
+						},
+						"Africa/Juba": {
+							"displayName": "Африка/Джуба"
+						},
+						"Africa/Kampala": {
+							"displayName": "Африка/Кампала"
+						},
+						"Africa/Khartoum": {
+							"displayName": "Африка/Хартум"
+						},
+						"Africa/Kigali": {
+							"displayName": "Африка/Кигали"
+						},
+						"Africa/Kinshasa": {
+							"displayName": "Африка/Киншаса"
+						},
+						"Africa/Lagos": {
+							"displayName": "Африка/Лагос"
+						},
+						"Africa/Libreville": {
+							"displayName": "Африка/Либревиль"
+						},
+						"Africa/Lome": {
+							"displayName": "Африка/Ломе"
+						},
+						"Africa/Luanda": {
+							"displayName": "Африка/Луанда"
+						},
+						"Africa/Lubumbashi": {
+							"displayName": "Африка/Лубумбаши"
+						},
+						"Africa/Lusaka": {
+							"displayName": "Африка/Лусака"
+						},
+						"Africa/Malabo": {
+							"displayName": "Африка/Малабо"
+						},
+						"Africa/Maputo": {
+							"displayName": "Африка/Мапуту"
+						},
+						"Africa/Maseru": {
+							"displayName": "Африка/Масеру"
+						},
+						"Africa/Mbabane": {
+							"displayName": "Африка/Мбабане"
+						},
+						"Africa/Mogadishu": {
+							"displayName": "Африка/Могадишо"
+						},
+						"Africa/Monrovia": {
+							"displayName": "Африка/Монровия"
+						},
+						"Africa/Nairobi": {
+							"displayName": "Африка/Найроби"
+						},
+						"Africa/Ndjamena": {
+							"displayName": "Африка/Нджамена"
+						},
+						"Africa/Niamey": {
+							"displayName": "Африка/Ниамей"
+						},
+						"Africa/Nouakchott": {
+							"displayName": "Африка/Нуакшот"
+						},
+						"Africa/Ouagadougou": {
+							"displayName": "Африка/Уагадугу"
+						},
+						"Africa/Porto-Novo": {
+							"displayName": "Африка/Порто-Ново"
+						},
+						"Africa/Sao_Tome": {
+							"displayName": "Африка/Сан_Томе"
+						},
+						"Africa/Timbuktu": {
+							"displayName": "Африка/Тимбукту"
+						},
+						"Africa/Tripoli": {
+							"displayName": "Африка/Триполи"
+						},
+						"Africa/Tunis": {
+							"displayName": "Африка/Тунис"
+						},
+						"Africa/Windhoek": {
+							"displayName": "Африка/Виндхук"
+						},
+						"America/Adak": {
+							"displayName": "Америка/Адак"
+						},
+						"America/Anchorage": {
+							"displayName": "Америка/Анкоридж"
+						},
+						"America/Anguilla": {
+							"displayName": "Америка/Ангилья"
+						},
+						"America/Antigua": {
+							"displayName": "Америка/Антигуа"
+						},
+						"America/Araguaina": {
+							"displayName": "Америка/Арагуайна"
+						},
+						"America/Argentina/Buenos_Aires": {
+							"displayName": "Америка/Аргентина/Буэнос-Айрес"
+						},
+						"America/Argentina/Catamarca": {
+							"displayName": "Америка/Аргентина/Катамарка"
+						},
+						"America/Argentina/ComodRivadavia": {
+							"displayName": "Америка/Аргентина/ComodRivadavia"
+						},
+						"America/Argentina/Cordoba": {
+							"displayName": "Америка/Аргентина/Кордова"
+						},
+						"America/Argentina/Jujuy": {
+							"displayName": "Америка/Аргентина/Жужуй"
+						},
+						"America/Argentina/La_Rioja": {
+							"displayName": "Америка/Аргентина/La_Rioja"
+						},
+						"America/Argentina/Mendoza": {
+							"displayName": "Америка/Аргентина/Мендоса"
+						},
+						"America/Argentina/Rio_Gallegos": {
+							"displayName": "Америка/Аргентина/Rio_Gallegos"
+						},
+						"America/Argentina/Salta": {
+							"displayName": "Америка/Аргентина/Сальта"
+						},
+						"America/Argentina/San_Juan": {
+							"displayName": "Америка/Аргентина/Сан_Хуан"
+						},
+						"America/Argentina/San_Luis": {
+							"displayName": "Америка/Аргентина/Сан_Луис"
+						},
+						"America/Argentina/Tucuman": {
+							"displayName": "Америка/Аргентина/Тукуман"
+						},
+						"America/Argentina/Ushuaia": {
+							"displayName": "Америка/Аргентина/Ушуайя"
+						},
+						"America/Aruba": {
+							"displayName": "Америка/Аруба"
+						},
+						"America/Asuncion": {
+							"displayName": "Америка/Асунсьон"
+						},
+						"America/Atikokan": {
+							"displayName": "Америка/Атикокан"
+						},
+						"America/Atka": {
+							"displayName": "Америка/Атка"
+						},
+						"America/Bahia": {
+							"displayName": "Америка/Баия"
+						},
+						"America/Bahia_Banderas": {
+							"displayName": "Америка/Баия_Бандерас"
+						},
+						"America/Barbados": {
+							"displayName": "Америка/Барбадос"
+						},
+						"America/Belem": {
+							"displayName": "Америка/Белем"
+						},
+						"America/Belize": {
+							"displayName": "Америка/Белиз"
+						},
+						"America/Blanc-Sablon": {
+							"displayName": "Америка/Блан-Саблон"
+						},
+						"America/Boa_Vista": {
+							"displayName": "Америка/Boa_Vista"
+						},
+						"America/Bogota": {
+							"displayName": "Америка/Богота"
+						},
+						"America/Boise": {
+							"displayName": "Америка/Бойсе"
+						},
+						"America/Buenos_Aires": {
+							"displayName": "Америка/Буэнос-Айрес"
+						},
+						"America/Cambridge_Bay": {
+							"displayName": "Америка/Кембридж_Бэй"
+						},
+						"America/Campo_Grande": {
+							"displayName": "Америка/Кампо_Гранде"
+						},
+						"America/Cancun": {
+							"displayName": "Америка/Канкун"
+						},
+						"America/Caracas": {
+							"displayName": "Америка/Каракас"
+						},
+						"America/Catamarca": {
+							"displayName": "Америка/Катамарка"
+						},
+						"America/Cayenne": {
+							"displayName": "Америка/Кайенна"
+						},
+						"America/Cayman": {
+							"displayName": "Америка/Кайманы"
+						},
+						"America/Chicago": {
+							"displayName": "Америка/Чикаго"
+						},
+						"America/Chihuahua": {
+							"displayName": "Америка/Чиуауа"
+						},
+						"America/Ciudad_Juarez": {
+							"displayName": "Америка/Сьюдад_Хуарес"
+						},
+						"America/Coral_Harbour": {
+							"displayName": "Америка/Coral_Harbour"
+						},
+						"America/Cordoba": {
+							"displayName": "Америка/Кордова"
+						},
+						"America/Costa_Rica": {
+							"displayName": "Америка/Коста_Рика"
+						},
+						"America/Coyhaique": {
+							"displayName": "Америка/Койайке"
+						},
+						"America/Creston": {
+							"displayName": "Америка/Крестон"
+						},
+						"America/Cuiaba": {
+							"displayName": "Америка/Куяба"
+						},
+						"America/Curacao": {
+							"displayName": "Америка/Кюрасао"
+						},
+						"America/Danmarkshavn": {
+							"displayName": "Америка/Данмарксхавн"
+						},
+						"America/Dawson": {
+							"displayName": "Америка/Доусон"
+						},
+						"America/Dawson_Creek": {
+							"displayName": "Америка/Доусон_Крик"
+						},
+						"America/Denver": {
+							"displayName": "Америка/Денвер"
+						},
+						"America/Detroit": {
+							"displayName": "Америка/Детройт"
+						},
+						"America/Dominica": {
+							"displayName": "Америка/Доминика"
+						},
+						"America/Edmonton": {
+							"displayName": "Америка/Эдмонтон"
+						},
+						"America/Eirunepe": {
+							"displayName": "Америка/Эйрунепе"
+						},
+						"America/El_Salvador": {
+							"displayName": "Америка/Эль_Сальвадор"
+						},
+						"America/Ensenada": {
+							"displayName": "Америка/Энсенада"
+						},
+						"America/Fort_Nelson": {
+							"displayName": "Америка/Форт_Нельсон"
+						},
+						"America/Fort_Wayne": {
+							"displayName": "Америка/Форт_Уэйн"
+						},
+						"America/Fortaleza": {
+							"displayName": "Америка/Форталеза"
+						},
+						"America/Glace_Bay": {
+							"displayName": "Америка/Glase_Bay"
+						},
+						"America/Godthab": {
+							"displayName": "Америка/Годтаб"
+						},
+						"America/Goose_Bay": {
+							"displayName": "Америка/Гусиная бухта"
+						},
+						"America/Grand_Turk": {
+							"displayName": "Америка/Grand_Turk"
+						},
+						"America/Grenada": {
+							"displayName": "Америка/Гренада"
+						},
+						"America/Guadeloupe": {
+							"displayName": "Америка/Гваделупа"
+						},
+						"America/Guatemala": {
+							"displayName": "Америка/Гватемала"
+						},
+						"America/Guayaquil": {
+							"displayName": "Америка/Гуаякиль"
+						},
+						"America/Guyana": {
+							"displayName": "Америка/Гайана"
+						},
+						"America/Halifax": {
+							"displayName": "Америка/Галифакс"
+						},
+						"America/Havana": {
+							"displayName": "Америка/Гавана"
+						},
+						"America/Hermosillo": {
+							"displayName": "Америка/Эрмосильо"
+						},
+						"America/Indiana/Indianapolis": {
+							"displayName": "Америка/Индиана/Индианаполис"
+						},
+						"America/Indiana/Knox": {
+							"displayName": "Америка/Индиана/Нокс"
+						},
+						"America/Indiana/Marengo": {
+							"displayName": "Америка/Индиана/Маренго"
+						},
+						"America/Indiana/Petersburg": {
+							"displayName": "Америка/Индиана/Петербург"
+						},
+						"America/Indiana/Tell_City": {
+							"displayName": "Америка/Индиана/Tell_City"
+						},
+						"America/Indiana/Vevay": {
+							"displayName": "Америка/Индиана/Вевей"
+						},
+						"America/Indiana/Vincennes": {
+							"displayName": "Америка/Индиана/Винсеннес"
+						},
+						"America/Indiana/Winamac": {
+							"displayName": "Америка/Индиана/Винамак"
+						},
+						"America/Indianapolis": {
+							"displayName": "Америка/Индианаполис"
+						},
+						"America/Inuvik": {
+							"displayName": "Америка/Инувик"
+						},
+						"America/Iqaluit": {
+							"displayName": "Америка/Икалуит"
+						},
+						"America/Jamaica": {
+							"displayName": "Америка/Ямайка"
+						},
+						"America/Jujuy": {
+							"displayName": "Америка/Жужуй"
+						},
+						"America/Juneau": {
+							"displayName": "Америка/Джуно"
+						},
+						"America/Kentucky/Louisville": {
+							"displayName": "Америка/Кентукки/Луисвилл"
+						},
+						"America/Kentucky/Monticello": {
+							"displayName": "Америка/Кентукки/Монтичелло"
+						},
+						"America/Knox_IN": {
+							"displayName": "Америка/Knox_IN"
+						},
+						"America/Kralendijk": {
+							"displayName": "Америка/Кралендейк"
+						},
+						"America/La_Paz": {
+							"displayName": "Америка/Ла_Пас"
+						},
+						"America/Lima": {
+							"displayName": "Америка/Лима"
+						},
+						"America/Los_Angeles": {
+							"displayName": "Америка/Лос-Анджелес"
+						},
+						"America/Louisville": {
+							"displayName": "Америка/Луисвилл"
+						},
+						"America/Lower_Princes": {
+							"displayName": "Америка/Нижние_Принцы"
+						},
+						"America/Maceio": {
+							"displayName": "Америка/Масейо"
+						},
+						"America/Managua": {
+							"displayName": "Америка/Манагуа"
+						},
+						"America/Manaus": {
+							"displayName": "Америка/Манаус"
+						},
+						"America/Marigot": {
+							"displayName": "Америка/Мариго"
+						},
+						"America/Martinique": {
+							"displayName": "Америка/Мартиника"
+						},
+						"America/Matamoros": {
+							"displayName": "Америка/Матаморос"
+						},
+						"America/Mazatlan": {
+							"displayName": "Америка/Мазатлан"
+						},
+						"America/Mendoza": {
+							"displayName": "Америка/Мендоса"
+						},
+						"America/Menominee": {
+							"displayName": "Америка/Меномини"
+						},
+						"America/Merida": {
+							"displayName": "Америка/Мерида"
+						},
+						"America/Metlakatla": {
+							"displayName": "Америка/Метлакатла"
+						},
+						"America/Mexico_City": {
+							"displayName": "Америка/Мехико_Сити"
+						},
+						"America/Miquelon": {
+							"displayName": "Америка/Микелон"
+						},
+						"America/Moncton": {
+							"displayName": "Америка/Монктон"
+						},
+						"America/Monterrey": {
+							"displayName": "Америка/Монтеррей"
+						},
+						"America/Montevideo": {
+							"displayName": "Америка/Монтевидео"
+						},
+						"America/Montreal": {
+							"displayName": "Америка/Монреаль"
+						},
+						"America/Montserrat": {
+							"displayName": "Америка/Монтсеррат"
+						},
+						"America/Nassau": {
+							"displayName": "Америка/Нассау"
+						},
+						"America/New_York": {
+							"displayName": "Америка/Нью_Йорк"
+						},
+						"America/Nipigon": {
+							"displayName": "Америка/Нипигон"
+						},
+						"America/Nome": {
+							"displayName": "Америка/Ном"
+						},
+						"America/Noronha": {
+							"displayName": "Америка/Норонья"
+						},
+						"America/North_Dakota/Beulah": {
+							"displayName": "Америка/Северная Дакота/Бьюла"
+						},
+						"America/North_Dakota/Center": {
+							"displayName": "Америка/Северная Дакота/Центр"
+						},
+						"America/North_Dakota/New_Salem": {
+							"displayName": "Америка/Северная Дакота/Нью-Салем"
+						},
+						"America/Nuuk": {
+							"displayName": "Америка/Нуук"
+						},
+						"America/Ojinaga": {
+							"displayName": "Америка/Охинага"
+						},
+						"America/Panama": {
+							"displayName": "Америка/Панама"
+						},
+						"America/Pangnirtung": {
+							"displayName": "Америка/Пангниртунг"
+						},
+						"America/Paramaribo": {
+							"displayName": "Америка/Парамарибо"
+						},
+						"America/Phoenix": {
+							"displayName": "Америка/Феникс"
+						},
+						"America/Port-au-Prince": {
+							"displayName": "Америка/Порт-о-Пренс"
+						},
+						"America/Port_of_Spain": {
+							"displayName": "Америка/Порт_Испании"
+						},
+						"America/Porto_Acre": {
+							"displayName": "Америка/Порто_Акр"
+						},
+						"America/Porto_Velho": {
+							"displayName": "Америка/Порту_Велью"
+						},
+						"America/Puerto_Rico": {
+							"displayName": "Америка/Пуэрто_Рико"
+						},
+						"America/Punta_Arenas": {
+							"displayName": "Америка/Пунта_Аренас"
+						},
+						"America/Rainy_River": {
+							"displayName": "Америка/Rainy_River"
+						},
+						"America/Rankin_Inlet": {
+							"displayName": "Америка/Рэнкин_Инлет"
+						},
+						"America/Recife": {
+							"displayName": "Америка/Ресифи"
+						},
+						"America/Regina": {
+							"displayName": "Америка/Регина"
+						},
+						"America/Resolute": {
+							"displayName": "Америка/Решительный"
+						},
+						"America/Rio_Branco": {
+							"displayName": "Америка/Рио_Бранко"
+						},
+						"America/Rosario": {
+							"displayName": "Америка/Росарио"
+						},
+						"America/Santa_Isabel": {
+							"displayName": "Америка/Санта_Изабель"
+						},
+						"America/Santarem": {
+							"displayName": "Америка/Сантарем"
+						},
+						"America/Santiago": {
+							"displayName": "Америка/Сантьяго"
+						},
+						"America/Santo_Domingo": {
+							"displayName": "Америка/Санто_Доминго"
+						},
+						"America/Sao_Paulo": {
+							"displayName": "Америка/Сан-Паулу"
+						},
+						"America/Scoresbysund": {
+							"displayName": "Америка/Скорсбисунд"
+						},
+						"America/Shiprock": {
+							"displayName": "Америка/Шипрок"
+						},
+						"America/Sitka": {
+							"displayName": "Америка/Ситка"
+						},
+						"America/St_Barthelemy": {
+							"displayName": "Америка/Сент_Бартелеми"
+						},
+						"America/St_Johns": {
+							"displayName": "Америка/Сент_Джонс"
+						},
+						"America/St_Kitts": {
+							"displayName": "Америка/Сент-Китс"
+						},
+						"America/St_Lucia": {
+							"displayName": "Америка/Сент-Люсия"
+						},
+						"America/St_Thomas": {
+							"displayName": "Америка/Сент_Томас"
+						},
+						"America/St_Vincent": {
+							"displayName": "Америка/Сент_Винсент"
+						},
+						"America/Swift_Current": {
+							"displayName": "Америка/Swift_Current"
+						},
+						"America/Tegucigalpa": {
+							"displayName": "Америка/Тегусигальпа"
+						},
+						"America/Thule": {
+							"displayName": "Америка/Туле"
+						},
+						"America/Thunder_Bay": {
+							"displayName": "Америка/Thunder_Bay"
+						},
+						"America/Tijuana": {
+							"displayName": "Америка/Тихуана"
+						},
+						"America/Toronto": {
+							"displayName": "Америка/Торонто"
+						},
+						"America/Tortola": {
+							"displayName": "Америка/Тортола"
+						},
+						"America/Vancouver": {
+							"displayName": "Америка/Ванкувер"
+						},
+						"America/Virgin": {
+							"displayName": "Америка/Девственница"
+						},
+						"America/Whitehorse": {
+							"displayName": "Америка/Уайтхорс"
+						},
+						"America/Winnipeg": {
+							"displayName": "Америка/Виннипег"
+						},
+						"America/Yakutat": {
+							"displayName": "Америка/Якутат"
+						},
+						"America/Yellowknife": {
+							"displayName": "Америка/Йеллоунайф"
+						},
+						"Antarctica/Casey": {
+							"displayName": "Антарктида/Кейси"
+						},
+						"Antarctica/Davis": {
+							"displayName": "Антарктида/Дэвис"
+						},
+						"Antarctica/DumontDUrville": {
+							"displayName": "Антарктида/Дюмон-Дюрвиль"
+						},
+						"Antarctica/Macquarie": {
+							"displayName": "Антарктида/Маккуори"
+						},
+						"Antarctica/Mawson": {
+							"displayName": "Антарктида/Моусон"
+						},
+						"Antarctica/McMurdo": {
+							"displayName": "Антарктида/МакМердо"
+						},
+						"Antarctica/Palmer": {
+							"displayName": "Антарктида/Палмер"
+						},
+						"Antarctica/Rothera": {
+							"displayName": "Антарктида/Ротера"
+						},
+						"Antarctica/South_Pole": {
+							"displayName": "Антарктида/Южный_Полюс"
+						},
+						"Antarctica/Syowa": {
+							"displayName": "Антарктида/Сёва"
+						},
+						"Antarctica/Troll": {
+							"displayName": "Антарктида/Тролль"
+						},
+						"Antarctica/Vostok": {
+							"displayName": "Антарктида/Восток"
+						},
+						"Arctic/Longyearbyen": {
+							"displayName": "Арктика/Лонгйирбиен"
+						},
+						"Asia/Aden": {
+							"displayName": "Азия/Аден"
+						},
+						"Asia/Almaty": {
+							"displayName": "Азия/Алматы"
+						},
+						"Asia/Amman": {
+							"displayName": "Азия/Амман"
+						},
+						"Asia/Anadyr": {
+							"displayName": "Азия/Анадырь"
+						},
+						"Asia/Aqtau": {
+							"displayName": "Азия/Актау"
+						},
+						"Asia/Aqtobe": {
+							"displayName": "Азия/Актобе"
+						},
+						"Asia/Ashgabat": {
+							"displayName": "Азия/Ашхабад"
+						},
+						"Asia/Ashkhabad": {
+							"displayName": "Азия/Ашхабад"
+						},
+						"Asia/Atyrau": {
+							"displayName": "Азия/Атырау"
+						},
+						"Asia/Baghdad": {
+							"displayName": "Азия/Багдад"
+						},
+						"Asia/Bahrain": {
+							"displayName": "Азия/Бахрейн"
+						},
+						"Asia/Baku": {
+							"displayName": "Азия/Баку"
+						},
+						"Asia/Bangkok": {
+							"displayName": "Азия/Бангкок"
+						},
+						"Asia/Barnaul": {
+							"displayName": "Азия/Барнаул"
+						},
+						"Asia/Beirut": {
+							"displayName": "Азия/Бейрут"
+						},
+						"Asia/Bishkek": {
+							"displayName": "Азия/Бишкек"
+						},
+						"Asia/Brunei": {
+							"displayName": "Азия/Бруней"
+						},
+						"Asia/Calcutta": {
+							"displayName": "Азия/Калькутта"
+						},
+						"Asia/Chita": {
+							"displayName": "Азия/Чита"
+						},
+						"Asia/Choibalsan": {
+							"displayName": "Азия/Чойбалсан"
+						},
+						"Asia/Chongqing": {
+							"displayName": "Азия/Чунцин"
+						},
+						"Asia/Chungking": {
+							"displayName": "Азия/Чунгкинг"
+						},
+						"Asia/Colombo": {
+							"displayName": "Азия/Коломбо"
+						},
+						"Asia/Dacca": {
+							"displayName": "Азия/Дакка"
+						},
+						"Asia/Damascus": {
+							"displayName": "Азия/Дамаск"
+						},
+						"Asia/Dhaka": {
+							"displayName": "Азия/Дакка"
+						},
+						"Asia/Dili": {
+							"displayName": "Азия/Дили"
+						},
+						"Asia/Dubai": {
+							"displayName": "Азия/Дубай"
+						},
+						"Asia/Dushanbe": {
+							"displayName": "Азия/Душанбе"
+						},
+						"Asia/Famagusta": {
+							"displayName": "Азия/Фамагуста"
+						},
+						"Asia/Gaza": {
+							"displayName": "Азия/Газа"
+						},
+						"Asia/Harbin": {
+							"displayName": "Азия/Харбин"
+						},
+						"Asia/Hebron": {
+							"displayName": "Азия/Хеврон"
+						},
+						"Asia/Ho_Chi_Minh": {
+							"displayName": "Азия/Хо_Чи_Мин"
+						},
+						"Asia/Hong_Kong": {
+							"displayName": "Азия/Гонконг"
+						},
+						"Asia/Hovd": {
+							"displayName": "Азия/Ховд"
+						},
+						"Asia/Irkutsk": {
+							"displayName": "Азия/Иркутск"
+						},
+						"Asia/Istanbul": {
+							"displayName": "Азия/Стамбул"
+						},
+						"Asia/Jakarta": {
+							"displayName": "Азия/Джакарта"
+						},
+						"Asia/Jayapura": {
+							"displayName": "Азия/Джаяпура"
+						},
+						"Asia/Jerusalem": {
+							"displayName": "Азия/Иерусалим"
+						},
+						"Asia/Kabul": {
+							"displayName": "Азия/Кабул"
+						},
+						"Asia/Kamchatka": {
+							"displayName": "Азия/Камчатка"
+						},
+						"Asia/Karachi": {
+							"displayName": "Азия/Карачи"
+						},
+						"Asia/Kashgar": {
+							"displayName": "Азия/Кашгар"
+						},
+						"Asia/Kathmandu": {
+							"displayName": "Азия/Катманду"
+						},
+						"Asia/Katmandu": {
+							"displayName": "Азия/Катманду"
+						},
+						"Asia/Khandyga": {
+							"displayName": "Азия/Хандыга"
+						},
+						"Asia/Kolkata": {
+							"displayName": "Азия/Калькутта"
+						},
+						"Asia/Krasnoyarsk": {
+							"displayName": "Азия/Красноярск"
+						},
+						"Asia/Kuala_Lumpur": {
+							"displayName": "Азия/Куала-Лумпур"
+						},
+						"Asia/Kuching": {
+							"displayName": "Азия/Кучинг"
+						},
+						"Asia/Kuwait": {
+							"displayName": "Азия/Кувейт"
+						},
+						"Asia/Macao": {
+							"displayName": "Азия/Макао"
+						},
+						"Asia/Macau": {
+							"displayName": "Азия/Макао"
+						},
+						"Asia/Magadan": {
+							"displayName": "Азия/Магадан"
+						},
+						"Asia/Makassar": {
+							"displayName": "Азия/Макассар"
+						},
+						"Asia/Manila": {
+							"displayName": "Азия/Манила"
+						},
+						"Asia/Muscat": {
+							"displayName": "Азия/Маскат"
+						},
+						"Asia/Nicosia": {
+							"displayName": "Азия/Никосия"
+						},
+						"Asia/Novokuznetsk": {
+							"displayName": "Азия/Новокузнецк"
+						},
+						"Asia/Novosibirsk": {
+							"displayName": "Азия/Новосибирск"
+						},
+						"Asia/Omsk": {
+							"displayName": "Азия/Омск"
+						},
+						"Asia/Oral": {
+							"displayName": "Азия/Устный"
+						},
+						"Asia/Phnom_Penh": {
+							"displayName": "Азия/Пномпень"
+						},
+						"Asia/Pontianak": {
+							"displayName": "Азия/Понтианак"
+						},
+						"Asia/Pyongyang": {
+							"displayName": "Азия/Пхеньян"
+						},
+						"Asia/Qatar": {
+							"displayName": "Азия/Катар"
+						},
+						"Asia/Qostanay": {
+							"displayName": "Азия/Костанай"
+						},
+						"Asia/Qyzylorda": {
+							"displayName": "Азия/Кызылорда"
+						},
+						"Asia/Rangoon": {
+							"displayName": "Азия/Рангун"
+						},
+						"Asia/Riyadh": {
+							"displayName": "Азия/Эр-Рияд"
+						},
+						"Asia/Saigon": {
+							"displayName": "Азия/Сайгон"
+						},
+						"Asia/Sakhalin": {
+							"displayName": "Азия/Сахалин"
+						},
+						"Asia/Samarkand": {
+							"displayName": "Азия/Самарканд"
+						},
+						"Asia/Seoul": {
+							"displayName": "Азия/Сеул"
+						},
+						"Asia/Shanghai": {
+							"displayName": "Азия/Шанхай"
+						},
+						"Asia/Singapore": {
+							"displayName": "Азия/Сингапур"
+						},
+						"Asia/Srednekolymsk": {
+							"displayName": "Азия/Среднеколымск"
+						},
+						"Asia/Taipei": {
+							"displayName": "Азия/Тайбэй"
+						},
+						"Asia/Tashkent": {
+							"displayName": "Азия/Ташкент"
+						},
+						"Asia/Tbilisi": {
+							"displayName": "Азия/Тбилиси"
+						},
+						"Asia/Tehran": {
+							"displayName": "Азия/Тегеран"
+						},
+						"Asia/Tel_Aviv": {
+							"displayName": "Азия/Тель-Авив"
+						},
+						"Asia/Thimbu": {
+							"displayName": "Азия/Тимбу"
+						},
+						"Asia/Thimphu": {
+							"displayName": "Азия/Тхимпху"
+						},
+						"Asia/Tokyo": {
+							"displayName": "Азия/Токио"
+						},
+						"Asia/Tomsk": {
+							"displayName": "Азия/Томск"
+						},
+						"Asia/Ujung_Pandang": {
+							"displayName": "Азия/Уджунг_Панданг"
+						},
+						"Asia/Ulaanbaatar": {
+							"displayName": "Азия/Улан-Батор"
+						},
+						"Asia/Ulan_Bator": {
+							"displayName": "Азия/Улан_Батор"
+						},
+						"Asia/Urumqi": {
+							"displayName": "Азия/Урумчи"
+						},
+						"Asia/Ust-Nera": {
+							"displayName": "Азия/Усть-Нера"
+						},
+						"Asia/Vientiane": {
+							"displayName": "Азия/Вьентьян"
+						},
+						"Asia/Vladivostok": {
+							"displayName": "Азия/Владивосток"
+						},
+						"Asia/Yakutsk": {
+							"displayName": "Азия/Якутск"
+						},
+						"Asia/Yangon": {
+							"displayName": "Азия/Янгон"
+						},
+						"Asia/Yekaterinburg": {
+							"displayName": "Азия/Екатеринбург"
+						},
+						"Asia/Yerevan": {
+							"displayName": "Азия/Ереван"
+						},
+						"Atlantic/Azores": {
+							"displayName": "Атлантика/Азорские острова"
+						},
+						"Atlantic/Bermuda": {
+							"displayName": "Атлантика/Бермудские острова"
+						},
+						"Atlantic/Canary": {
+							"displayName": "Атлантический/Канарский"
+						},
+						"Atlantic/Cape_Verde": {
+							"displayName": "Атлантический океан/Кабо-Верде"
+						},
+						"Atlantic/Faeroe": {
+							"displayName": "Атлантика/Фарерские острова"
+						},
+						"Atlantic/Faroe": {
+							"displayName": "Атлантика/Фарерские острова"
+						},
+						"Atlantic/Jan_Mayen": {
+							"displayName": "Атлантика/январь-майен"
+						},
+						"Atlantic/Madeira": {
+							"displayName": "Атлантика/Мадейра"
+						},
+						"Atlantic/Reykjavik": {
+							"displayName": "Атлантик/Рейкьявик"
+						},
+						"Atlantic/South_Georgia": {
+							"displayName": "Атлантика/Южная Грузия"
+						},
+						"Atlantic/St_Helena": {
+							"displayName": "Атлантика/Св. Елены"
+						},
+						"Atlantic/Stanley": {
+							"displayName": "Атлантик/Стэнли"
+						},
+						"Australia/ACT": {
+							"displayName": "Австралия/ACT"
+						},
+						"Australia/Adelaide": {
+							"displayName": "Австралия/Аделаида"
+						},
+						"Australia/Brisbane": {
+							"displayName": "Австралия/Брисбен"
+						},
+						"Australia/Broken_Hill": {
+							"displayName": "Австралия/Broken_Hill"
+						},
+						"Australia/Canberra": {
+							"displayName": "Австралия/Канберра"
+						},
+						"Australia/Currie": {
+							"displayName": "Австралия/Карри"
+						},
+						"Australia/Darwin": {
+							"displayName": "Австралия/Дарвин"
+						},
+						"Australia/Eucla": {
+							"displayName": "Австралия/Юкла"
+						},
+						"Australia/Hobart": {
+							"displayName": "Австралия/Хобарт"
+						},
+						"Australia/LHI": {
+							"displayName": "Австралия/LHI"
+						},
+						"Australia/Lindeman": {
+							"displayName": "Австралия/Линдеман"
+						},
+						"Australia/Lord_Howe": {
+							"displayName": "Австралия/Lord_Howe"
+						},
+						"Australia/Melbourne": {
+							"displayName": "Австралия/Мельбурн"
+						},
+						"Australia/NSW": {
+							"displayName": "Австралия/Новый Южный Уэльс"
+						},
+						"Australia/North": {
+							"displayName": "Австралия/Север"
+						},
+						"Australia/Perth": {
+							"displayName": "Австралия/Перт"
+						},
+						"Australia/Queensland": {
+							"displayName": "Австралия/Квинсленд"
+						},
+						"Australia/South": {
+							"displayName": "Австралия/Юг"
+						},
+						"Australia/Sydney": {
+							"displayName": "Австралия/Сидней"
+						},
+						"Australia/Tasmania": {
+							"displayName": "Австралия/Тасмания"
+						},
+						"Australia/Victoria": {
+							"displayName": "Австралия/Виктория"
+						},
+						"Australia/West": {
+							"displayName": "Австралия/Запад"
+						},
+						"Australia/Yancowinna": {
+							"displayName": "Австралия/Янковинна"
+						},
+						"Brazil/Acre": {
+							"displayName": "Бразилия/Акко"
+						},
+						"Brazil/DeNoronha": {
+							"displayName": "Бразилия/Деноронья"
+						},
+						"Brazil/East": {
+							"displayName": "Бразилия/Восток"
+						},
+						"Brazil/West": {
+							"displayName": "Бразилия/Запад"
+						},
+						"CET": {
+							"displayName": "CET"
+						},
+						"CST6CDT": {
+							"displayName": "CST6CDT"
+						},
+						"Canada/Atlantic": {
+							"displayName": "Канада/Атлантика"
+						},
+						"Canada/Central": {
+							"displayName": "Канада/Центральный"
+						},
+						"Canada/Eastern": {
+							"displayName": "Канада/Восточная"
+						},
+						"Canada/Mountain": {
+							"displayName": "Канада/Горы"
+						},
+						"Canada/Newfoundland": {
+							"displayName": "Канада/Ньюфаундленд"
+						},
+						"Canada/Pacific": {
+							"displayName": "Канада/Тихоокеанский регион"
+						},
+						"Canada/Saskatchewan": {
+							"displayName": "Канада/Саскачеван"
+						},
+						"Canada/Yukon": {
+							"displayName": "Канада/Юкон"
+						},
+						"Chile/Continental": {
+							"displayName": "Чили/Континентальный"
+						},
+						"Chile/EasterIsland": {
+							"displayName": "Чили/Остров Пасхи"
+						},
+						"Cuba": {
+							"displayName": "Куба"
+						},
+						"EET": {
+							"displayName": "EET"
+						},
+						"EST": {
+							"displayName": "EST"
+						},
+						"EST5EDT": {
+							"displayName": "EST5EDT"
+						},
+						"Egypt": {
+							"displayName": "Египет"
+						},
+						"Eire": {
+							"displayName": "Эйре"
+						},
+						"Etc/GMT": {
+							"displayName": "И т.д./GMT"
+						},
+						"Etc/GMT+0": {
+							"displayName": "И т.д./GMT+0"
+						},
+						"Etc/GMT+1": {
+							"displayName": "И т.д./GMT+1"
+						},
+						"Etc/GMT+10": {
+							"displayName": "И т.д./GMT+10"
+						},
+						"Etc/GMT+11": {
+							"displayName": "И т.д./GMT+11"
+						},
+						"Etc/GMT+12": {
+							"displayName": "И т.д./GMT+12"
+						},
+						"Etc/GMT+2": {
+							"displayName": "И т.д./GMT+2"
+						},
+						"Etc/GMT+3": {
+							"displayName": "И т.д./GMT+3"
+						},
+						"Etc/GMT+4": {
+							"displayName": "И т.д./GMT+4"
+						},
+						"Etc/GMT+5": {
+							"displayName": "И т.д./GMT+5"
+						},
+						"Etc/GMT+6": {
+							"displayName": "И т.д./GMT+6"
+						},
+						"Etc/GMT+7": {
+							"displayName": "И т.д./GMT+7"
+						},
+						"Etc/GMT+8": {
+							"displayName": "И т.д./GMT+8"
+						},
+						"Etc/GMT+9": {
+							"displayName": "И т.д./GMT+9"
+						},
+						"Etc/GMT-0": {
+							"displayName": "И т.д./GMT-0"
+						},
+						"Etc/GMT-1": {
+							"displayName": "И т.д./GMT-1"
+						},
+						"Etc/GMT-10": {
+							"displayName": "И т.д./GMT-10"
+						},
+						"Etc/GMT-11": {
+							"displayName": "И т.д./GMT-11"
+						},
+						"Etc/GMT-12": {
+							"displayName": "И т.д./GMT-12"
+						},
+						"Etc/GMT-13": {
+							"displayName": "И т.д./GMT-13"
+						},
+						"Etc/GMT-14": {
+							"displayName": "И т.д./GMT-14"
+						},
+						"Etc/GMT-2": {
+							"displayName": "И т.д./GMT-2"
+						},
+						"Etc/GMT-3": {
+							"displayName": "И т.д./GMT-3"
+						},
+						"Etc/GMT-4": {
+							"displayName": "И т.д./GMT-4"
+						},
+						"Etc/GMT-5": {
+							"displayName": "И т.д./GMT-5"
+						},
+						"Etc/GMT-6": {
+							"displayName": "И т.д./GMT-6"
+						},
+						"Etc/GMT-7": {
+							"displayName": "И т.д./GMT-7"
+						},
+						"Etc/GMT-8": {
+							"displayName": "И т.д./GMT-8"
+						},
+						"Etc/GMT-9": {
+							"displayName": "И т.д./GMT-9"
+						},
+						"Etc/GMT0": {
+							"displayName": "И т.д./GMT0"
+						},
+						"Etc/Greenwich": {
+							"displayName": "И т.д./Гринвич"
+						},
+						"Etc/UCT": {
+							"displayName": "И т.д./UCT"
+						},
+						"Etc/UTC": {
+							"displayName": "И т.д./UTC"
+						},
+						"Etc/Universal": {
+							"displayName": "И т.д./Универсальный"
+						},
+						"Etc/Zulu": {
+							"displayName": "И т.д./Зулу"
+						},
+						"Europe/Amsterdam": {
+							"displayName": "Европа/Амстердам"
+						},
+						"Europe/Andorra": {
+							"displayName": "Европа/Андорра"
+						},
+						"Europe/Astrakhan": {
+							"displayName": "Европа/Астрахань"
+						},
+						"Europe/Athens": {
+							"displayName": "Европа/Афины"
+						},
+						"Europe/Belfast": {
+							"displayName": "Европа/Белфаст"
+						},
+						"Europe/Belgrade": {
+							"displayName": "Европа/Белград"
+						},
+						"Europe/Berlin": {
+							"displayName": "Европа/Берлин"
+						},
+						"Europe/Bratislava": {
+							"displayName": "Европа/Братислава"
+						},
+						"Europe/Brussels": {
+							"displayName": "Европа/Брюссель"
+						},
+						"Europe/Bucharest": {
+							"displayName": "Европа/Бухарест"
+						},
+						"Europe/Budapest": {
+							"displayName": "Европа/Будапешт"
+						},
+						"Europe/Busingen": {
+							"displayName": "Европа/Бюзинген"
+						},
+						"Europe/Chisinau": {
+							"displayName": "Европа/Кишинёв"
+						},
+						"Europe/Copenhagen": {
+							"displayName": "Европа/Копенгаген"
+						},
+						"Europe/Dublin": {
+							"displayName": "Европа/Дублин"
+						},
+						"Europe/Gibraltar": {
+							"displayName": "Европа/Гибралтар"
+						},
+						"Europe/Guernsey": {
+							"displayName": "Европа/Гернси"
+						},
+						"Europe/Helsinki": {
+							"displayName": "Европа/Хельсинки"
+						},
+						"Europe/Isle_of_Man": {
+							"displayName": "Европа/Остров_Мэн"
+						},
+						"Europe/Istanbul": {
+							"displayName": "Европа/Стамбул"
+						},
+						"Europe/Jersey": {
+							"displayName": "Европа/Джерси"
+						},
+						"Europe/Kaliningrad": {
+							"displayName": "Европа/Калининград"
+						},
+						"Europe/Kiev": {
+							"displayName": "Европа/Киев"
+						},
+						"Europe/Kirov": {
+							"displayName": "Европа/Киров"
+						},
+						"Europe/Kyiv": {
+							"displayName": "Европа/Киев"
+						},
+						"Europe/Lisbon": {
+							"displayName": "Европа/Лиссабон"
+						},
+						"Europe/Ljubljana": {
+							"displayName": "Европа/Любляна"
+						},
+						"Europe/London": {
+							"displayName": "Европа/Лондон"
+						},
+						"Europe/Luxembourg": {
+							"displayName": "Европа/Люксембург"
+						},
+						"Europe/Madrid": {
+							"displayName": "Европа/Мадрид"
+						},
+						"Europe/Malta": {
+							"displayName": "Европа/Мальта"
+						},
+						"Europe/Mariehamn": {
+							"displayName": "Европа/Мариехамн"
+						},
+						"Europe/Minsk": {
+							"displayName": "Европа/Минск"
+						},
+						"Europe/Monaco": {
+							"displayName": "Европа/Монако"
+						},
+						"Europe/Moscow": {
+							"displayName": "Европа/Москва"
+						},
+						"Europe/Nicosia": {
+							"displayName": "Европа/Никосия"
+						},
+						"Europe/Oslo": {
+							"displayName": "Европа/Осло"
+						},
+						"Europe/Paris": {
+							"displayName": "Европа/Париж"
+						},
+						"Europe/Podgorica": {
+							"displayName": "Европа/Подгорица"
+						},
+						"Europe/Prague": {
+							"displayName": "Европа/Прага"
+						},
+						"Europe/Riga": {
+							"displayName": "Европа/Рига"
+						},
+						"Europe/Rome": {
+							"displayName": "Европа/Рим"
+						},
+						"Europe/Samara": {
+							"displayName": "Европа/Самара"
+						},
+						"Europe/San_Marino": {
+							"displayName": "Европа/Сан_Марино"
+						},
+						"Europe/Sarajevo": {
+							"displayName": "Европа/Сараево"
+						},
+						"Europe/Saratov": {
+							"displayName": "Европа/Саратов"
+						},
+						"Europe/Simferopol": {
+							"displayName": "Европа/Симферополь"
+						},
+						"Europe/Skopje": {
+							"displayName": "Европа/Скопье"
+						},
+						"Europe/Sofia": {
+							"displayName": "Европа/София"
+						},
+						"Europe/Stockholm": {
+							"displayName": "Европа/Стокгольм"
+						},
+						"Europe/Tallinn": {
+							"displayName": "Европа/Таллинн"
+						},
+						"Europe/Tirane": {
+							"displayName": "Европа/Тиран"
+						},
+						"Europe/Tiraspol": {
+							"displayName": "Европа/Тирасполь"
+						},
+						"Europe/Ulyanovsk": {
+							"displayName": "Европа/Ульяновск"
+						},
+						"Europe/Uzhgorod": {
+							"displayName": "Европа/Ужгород"
+						},
+						"Europe/Vaduz": {
+							"displayName": "Европа/Вадуц"
+						},
+						"Europe/Vatican": {
+							"displayName": "Европа/Ватикан"
+						},
+						"Europe/Vienna": {
+							"displayName": "Европа/Вена"
+						},
+						"Europe/Vilnius": {
+							"displayName": "Европа/Вильнюс"
+						},
+						"Europe/Volgograd": {
+							"displayName": "Европа/Волгоград"
+						},
+						"Europe/Warsaw": {
+							"displayName": "Европа/Варшава"
+						},
+						"Europe/Zagreb": {
+							"displayName": "Европа/Загреб"
+						},
+						"Europe/Zaporozhye": {
+							"displayName": "Европа/Запорожье"
+						},
+						"Europe/Zurich": {
+							"displayName": "Европа/Цюрих"
+						},
+						"GB": {
+							"displayName": "GB"
+						},
+						"GB-Eire": {
+							"displayName": "Великобритания-Ирландия"
+						},
+						"GMT": {
+							"displayName": "GMT"
+						},
+						"GMT+0": {
+							"displayName": "Время по Гринвичу+0"
+						},
+						"GMT-0": {
+							"displayName": "GMT-0"
+						},
+						"GMT0": {
+							"displayName": "GMT0"
+						},
+						"Greenwich": {
+							"displayName": "Гринвич"
+						},
+						"HST": {
+							"displayName": "HST"
+						},
+						"Hongkong": {
+							"displayName": "Гонконг"
+						},
+						"Iceland": {
+							"displayName": "Исландия"
+						},
+						"Indian/Antananarivo": {
+							"displayName": "Индия/Антананариву"
+						},
+						"Indian/Chagos": {
+							"displayName": "Индийский/Чагос"
+						},
+						"Indian/Christmas": {
+							"displayName": "Индийский/Рождество"
+						},
+						"Indian/Cocos": {
+							"displayName": "Индия/Кокосовые острова"
+						},
+						"Indian/Comoro": {
+							"displayName": "Индийский/Коморский"
+						},
+						"Indian/Kerguelen": {
+							"displayName": "Индийский/Кергелен"
+						},
+						"Indian/Mahe": {
+							"displayName": "Индийский/Маэ"
+						},
+						"Indian/Maldives": {
+							"displayName": "Индия/Мальдивы"
+						},
+						"Indian/Mauritius": {
+							"displayName": "Индия/Маврикий"
+						},
+						"Indian/Mayotte": {
+							"displayName": "Индийский/Майотта"
+						},
+						"Indian/Reunion": {
+							"displayName": "Индийский/Реюньон"
+						},
+						"Iran": {
+							"displayName": "Иран"
+						},
+						"Israel": {
+							"displayName": "Израиль"
+						},
+						"Jamaica": {
+							"displayName": "Ямайка"
+						},
+						"Japan": {
+							"displayName": "Япония"
+						},
+						"Kwajalein": {
+							"displayName": "Кваджалейн"
+						},
+						"Libya": {
+							"displayName": "Ливия"
+						},
+						"MET": {
+							"displayName": "MET"
+						},
+						"MST": {
+							"displayName": "MST"
+						},
+						"MST7MDT": {
+							"displayName": "MST7MDT"
+						},
+						"Mexico/BajaNorte": {
+							"displayName": "Мексика/Баха-Норте"
+						},
+						"Mexico/BajaSur": {
+							"displayName": "Мексика/Баха-Сур"
+						},
+						"Mexico/General": {
+							"displayName": "Мексика/Общий"
+						},
+						"NZ": {
+							"displayName": "NZ"
+						},
+						"NZ-CHAT": {
+							"displayName": "NZ-CHAT"
+						},
+						"Navajo": {
+							"displayName": "Навахо"
+						},
+						"PRC": {
+							"displayName": "PRC"
+						},
+						"PST8PDT": {
+							"displayName": "PST8PDT"
+						},
+						"Pacific/Apia": {
+							"displayName": "Тихий океан/Апиа"
+						},
+						"Pacific/Auckland": {
+							"displayName": "Тихий океан/Окленд"
+						},
+						"Pacific/Bougainville": {
+							"displayName": "Тихий океан/Бугенвиль"
+						},
+						"Pacific/Chatham": {
+							"displayName": "Тихий океан/Чатем"
+						},
+						"Pacific/Chuuk": {
+							"displayName": "Тихий океан/Чуук"
+						},
+						"Pacific/Easter": {
+							"displayName": "Тихий океан/Пасха"
+						},
+						"Pacific/Efate": {
+							"displayName": "Тихий океан/Эфате"
+						},
+						"Pacific/Enderbury": {
+							"displayName": "Тихий океан/Эндербери"
+						},
+						"Pacific/Fakaofo": {
+							"displayName": "Тихий океан/Факаофо"
+						},
+						"Pacific/Fiji": {
+							"displayName": "Тихий океан/Фиджи"
+						},
+						"Pacific/Funafuti": {
+							"displayName": "Тихий океан/Фунафути"
+						},
+						"Pacific/Galapagos": {
+							"displayName": "Тихий океан/Галапагосские острова"
+						},
+						"Pacific/Gambier": {
+							"displayName": "Тихий океан/Гамбье"
+						},
+						"Pacific/Guadalcanal": {
+							"displayName": "Тихий океан/Гуадалканал"
+						},
+						"Pacific/Guam": {
+							"displayName": "Тихий океан/Гуам"
+						},
+						"Pacific/Honolulu": {
+							"displayName": "Тихий океан/Гонолулу"
+						},
+						"Pacific/Johnston": {
+							"displayName": "Тихий океан/Джонстон"
+						},
+						"Pacific/Kanton": {
+							"displayName": "Тихий океан/Кантон"
+						},
+						"Pacific/Kiritimati": {
+							"displayName": "Тихий океан/Киритимати"
+						},
+						"Pacific/Kosrae": {
+							"displayName": "Тихий океан/Косраэ"
+						},
+						"Pacific/Kwajalein": {
+							"displayName": "Тихий океан/Кваджалейн"
+						},
+						"Pacific/Majuro": {
+							"displayName": "Тихий океан/Маджуро"
+						},
+						"Pacific/Marquesas": {
+							"displayName": "Тихий океан/Маркизские острова"
+						},
+						"Pacific/Midway": {
+							"displayName": "Тихий океан/Мидуэй"
+						},
+						"Pacific/Nauru": {
+							"displayName": "Тихий океан/Науру"
+						},
+						"Pacific/Niue": {
+							"displayName": "Тихий океан/Ниуэ"
+						},
+						"Pacific/Norfolk": {
+							"displayName": "Тихий океан/Норфолк"
+						},
+						"Pacific/Noumea": {
+							"displayName": "Тихий океан/Нумеа"
+						},
+						"Pacific/Pago_Pago": {
+							"displayName": "Тихий океан/Паго_Паго"
+						},
+						"Pacific/Palau": {
+							"displayName": "Тихий океан/Палау"
+						},
+						"Pacific/Pitcairn": {
+							"displayName": "Тихий океан/Питкэрн"
+						},
+						"Pacific/Pohnpei": {
+							"displayName": "Тихий океан/Понпеи"
+						},
+						"Pacific/Ponape": {
+							"displayName": "Тихий океан/Понапе"
+						},
+						"Pacific/Port_Moresby": {
+							"displayName": "Тихий океан/Порт_Морсби"
+						},
+						"Pacific/Rarotonga": {
+							"displayName": "Тихий океан/Раротонга"
+						},
+						"Pacific/Saipan": {
+							"displayName": "Тихий океан/Сайпан"
+						},
+						"Pacific/Samoa": {
+							"displayName": "Тихий океан/Самоа"
+						},
+						"Pacific/Tahiti": {
+							"displayName": "Тихий океан/Таити"
+						},
+						"Pacific/Tarawa": {
+							"displayName": "Тихий океан/Тарава"
+						},
+						"Pacific/Tongatapu": {
+							"displayName": "Тихий океан/Тонгатапу"
+						},
+						"Pacific/Truk": {
+							"displayName": "Тихий океан/Трук"
+						},
+						"Pacific/Wake": {
+							"displayName": "Тихий океан/Уэйк"
+						},
+						"Pacific/Wallis": {
+							"displayName": "Пасифик/Уоллис"
+						},
+						"Pacific/Yap": {
+							"displayName": "Тихий океан/Яп"
+						},
+						"Poland": {
+							"displayName": "Польша"
+						},
+						"Portugal": {
+							"displayName": "Португалия"
+						},
+						"ROC": {
+							"displayName": "ROC"
+						},
+						"ROK": {
+							"displayName": "ROK"
+						},
+						"Singapore": {
+							"displayName": "Сингапур"
+						},
+						"Turkey": {
+							"displayName": "Турция"
+						},
+						"UCT": {
+							"displayName": "UCT"
+						},
+						"US/Alaska": {
+							"displayName": "США/Аляска"
+						},
+						"US/Aleutian": {
+							"displayName": "США/Алеутский"
+						},
+						"US/Arizona": {
+							"displayName": "США/Аризона"
+						},
+						"US/Central": {
+							"displayName": "США/Центральный"
+						},
+						"US/East-Indiana": {
+							"displayName": "США/Восточная Индиана"
+						},
+						"US/Eastern": {
+							"displayName": "США/Восточная Европа"
+						},
+						"US/Hawaii": {
+							"displayName": "США/Гавайи"
+						},
+						"US/Indiana-Starke": {
+							"displayName": "США/Индиана-Старк"
+						},
+						"US/Michigan": {
+							"displayName": "США/Мичиган"
+						},
+						"US/Mountain": {
+							"displayName": "США/Горы"
+						},
+						"US/Pacific": {
+							"displayName": "США/Тихоокеанский регион"
+						},
+						"US/Samoa": {
+							"displayName": "США/Самоа"
+						},
+						"UTC": {
+							"displayName": "UTC"
+						},
+						"Universal": {
+							"displayName": "Универсальный"
+						},
+						"W-SU": {
+							"displayName": "W-SU"
+						},
+						"WET": {
+							"displayName": "WET"
+						},
+						"Zulu": {
+							"displayName": "Зулу"
+						}
+					}
+				},
+				"type": {
+					"displayName": "Тип",
+					"options": {
+						"singleInstance": {
+							"displayName": "Один экземпляр"
+						},
+						"occurrence": {
+							"displayName": "возникновение"
+						},
+						"exception": {
+							"displayName": "Исключение"
+						},
+						"seriesMaster": {
+							"displayName": "Серия Мастер"
+						}
+					}
+				},
+				"end": {
+					"displayName": "Конец"
+				},
+				"start": {
+					"displayName": "Начинать"
+				},
+				"subject": {
+					"displayName": "Предмет",
+					"description": "Тема сообщения"
+				},
+				"saveToSentItems": {
+					"displayName": "Сохранить в отправленные",
+					"description": "Сохранять ли сообщение в Отправленных"
+				}
+			}
+		},
+		"calendarId": {
+			"displayName": "Календарь"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"custom": {
+					"displayName": "Фильтровать запрос",
+					"hint": "Поисковый запрос для фильтрации событий. <a href=\"https://learn.microsoft.com/en-us/graph/filter-query-parameter\">Подробнее</a>.",
+					"placeholder": "например содержит (тема, «Привет»)"
+				},
+				"emailAddress": {
+					"displayName": "Адрес электронной почты",
+					"description": "Если контакты, которые вы хотите получить, имеют несколько адресов электронной почты, вы можете ввести их через запятую."
+				},
+				"filter": {
+					"displayName": "Фильтровать запрос",
+					"hint": "Поисковый запрос для фильтрации папок. <a href=\"https://docs.microsoft.com/en-us/graph/query-parameters#filter-parameter\">Подробнее</a>.",
+					"placeholder": "например displayName eq «Моя папка»"
+				}
+			}
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"color": {
+					"displayName": "Цвет",
+					"description": "Укажите цвет, чтобы отличать календарь от других",
+					"options": {
+						"lightBlue": {
+							"displayName": "Светло-голубой"
+						},
+						"lightBrown": {
+							"displayName": "Светло-коричневый"
+						},
+						"lightGray": {
+							"displayName": "Светло-серый"
+						},
+						"lightGreen": {
+							"displayName": "Светло-зеленый"
+						},
+						"lightOrange": {
+							"displayName": "Светло-оранжевый"
+						},
+						"lightPink": {
+							"displayName": "Светло-розовый"
+						},
+						"lightRed": {
+							"displayName": "Светло-красный"
+						},
+						"lightTeal": {
+							"displayName": "Светло-бирюзовый"
+						},
+						"lightYellow": {
+							"displayName": "Светло-желтый"
+						}
+					}
+				},
+				"isDefaultCalendar": {
+					"displayName": "Календарь по умолчанию"
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Название календаря",
+					"placeholder": "например Мой календарь"
+				},
+				"bccRecipients": {
+					"displayName": "Получатели BCC",
+					"description": "Список адресов электронной почты получателей BCC, разделенный запятыми.",
+					"placeholder": "например john@example.com"
+				},
+				"categories": {
+					"displayName": "Названия или идентификаторы категорий",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"ccRecipients": {
+					"displayName": "Получатели CC",
+					"description": "Список адресов электронной почты получателей CC, разделенный запятыми.",
+					"placeholder": "например john@example.com"
+				},
+				"internetMessageHeaders": {
+					"values": {
+						"internetMessageHeaders": {
+							"displayName": "Пользовательские заголовки"
+						},
+						"headers": {
+							"options": {
+								"name": {
+									"displayName": "Имя",
+									"description": "Название заголовка"
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Значение, которое нужно установить для заголовка"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить заголовок",
+					"displayName": "Пользовательские заголовки",
+					"options": {
+						"headers": {
+							"displayName": "Заголовок"
+						}
+					}
+				},
+				"from": {
+					"displayName": "От",
+					"description": "Владелец почтового ящика, из которого отправлено сообщение. Должен соответствовать фактическому используемому почтовому ящику.",
+					"placeholder": "например john@example.com"
+				},
+				"importance": {
+					"displayName": "Важность",
+					"description": "Важность сообщения",
+					"options": {
+						"Low": {
+							"displayName": "Низкий"
+						},
+						"Normal": {
+							"displayName": "Нормальный"
+						},
+						"High": {
+							"displayName": "Высокий"
+						}
+					}
+				},
+				"isRead": {
+					"displayName": "Читается",
+					"description": "Должно ли сообщение быть помечено как прочитанное"
+				},
+				"bodyContent": {
+					"displayName": "Сообщение",
+					"description": "Содержимое тела сообщения"
+				},
+				"bodyContentType": {
+					"displayName": "Тип сообщения",
+					"description": "Тип содержимого тела сообщения",
+					"options": {
+						"html": {
+							"displayName": "HTML"
+						},
+						"Text": {
+							"displayName": "Текст"
+						}
+					}
+				},
+				"isReadReceiptRequested": {
+					"displayName": "Запрошена квитанция о прочтении",
+					"description": "Запрашивается ли уведомление о прочтении сообщения"
+				},
+				"replyTo": {
+					"displayName": "Отвечать на",
+					"description": "Адрес электронной почты, который будет использоваться при ответе",
+					"placeholder": "например ответ на@example.com"
+				},
+				"subject": {
+					"displayName": "Предмет",
+					"description": "Тема сообщения"
+				},
+				"toRecipients": {
+					"displayName": "К",
+					"description": "Список адресов электронной почты получателей, разделенный запятыми.",
+					"placeholder": "например john@example.com"
+				},
+				"folderId": {
+					"displayName": "Папка"
+				}
+			}
+		},
+		"givenName": {
+			"displayName": "Имя"
+		},
+		"surname": {
+			"displayName": "Фамилия"
+		},
+		"contactId": {
+			"displayName": "Контакт"
+		},
+		"output": {
+			"displayName": "Выход",
+			"options": {
+				"simple": {
+					"displayName": "Упрощенный"
+				},
+				"raw": {
+					"displayName": "Сырой"
+				},
+				"fields": {
+					"displayName": "Выберите включенные поля"
+				}
+			}
+		},
+		"fields": {
+			"displayName": "Поля",
+			"description": "Поля, которые нужно добавить в выходные данные",
+			"options": {
+				"createdDateTime": {
+					"displayName": "созданоДатаВремя"
+				},
+				"lastModifiedDateTime": {
+					"displayName": "последниймодифицированныйдатевремя"
+				},
+				"changeKey": {
+					"displayName": "изменитьКлюч"
+				},
+				"categories": {
+					"displayName": "категории"
+				},
+				"parentFolderId": {
+					"displayName": "родительская папкаид"
+				},
+				"birthday": {
+					"displayName": "день рождения"
+				},
+				"fileAs": {
+					"displayName": "файлКак"
+				},
+				"displayName": {
+					"displayName": "отображаемое имя"
+				},
+				"givenName": {
+					"displayName": "собственное имя"
+				},
+				"initials": {
+					"displayName": "инициалы"
+				},
+				"middleName": {
+					"displayName": "второе имя"
+				},
+				"nickName": {
+					"displayName": "никнейм"
+				},
+				"surname": {
+					"displayName": "фамилия"
+				},
+				"title": {
+					"displayName": "заголовок"
+				},
+				"yomiGivenName": {
+					"displayName": "йомигивеннам"
+				},
+				"yomiSurname": {
+					"displayName": "yomiФамилия"
+				},
+				"yomiCompanyName": {
+					"displayName": "yomiНазвание компании"
+				},
+				"generation": {
+					"displayName": "поколение"
+				},
+				"imAddresses": {
+					"displayName": "imАдреса"
+				},
+				"jobTitle": {
+					"displayName": "должность"
+				},
+				"companyName": {
+					"displayName": "Название компании"
+				},
+				"department": {
+					"displayName": "отделение"
+				},
+				"officeLocation": {
+					"displayName": "офисМестоположение"
+				},
+				"profession": {
+					"displayName": "профессия"
+				},
+				"businessHomePage": {
+					"displayName": "бизнесГлавнаяСтраница"
+				},
+				"assistantName": {
+					"displayName": "имя помощника"
+				},
+				"manager": {
+					"displayName": "менеджер"
+				},
+				"homePhones": {
+					"displayName": "ГлавнаяТелефоны"
+				},
+				"mobilePhone": {
+					"displayName": "мобильный телефон"
+				},
+				"businessPhones": {
+					"displayName": "БизнесТелефоны"
+				},
+				"spouseName": {
+					"displayName": "имя супруга"
+				},
+				"personalNotes": {
+					"displayName": "личные заметки"
+				},
+				"children": {
+					"displayName": "дети"
+				},
+				"emailAddresses": {
+					"displayName": "электронная почтаАдреса"
+				},
+				"homeAddress": {
+					"displayName": "ГлавнаяАдрес"
+				},
+				"businessAddress": {
+					"displayName": "БизнесАдрес"
+				},
+				"otherAddress": {
+					"displayName": "другойАдрес"
+				},
+				"bccRecipients": {
+					"displayName": "bccRecipients"
+				},
+				"body": {
+					"displayName": "тело"
+				},
+				"bodyPreview": {
+					"displayName": "телоПредварительный просмотр"
+				},
+				"ccRecipients": {
+					"displayName": "ccRecipients"
+				},
+				"conversationId": {
+					"displayName": "идентификатор разговора"
+				},
+				"flag": {
+					"displayName": "флаг"
+				},
+				"from": {
+					"displayName": "от"
+				},
+				"hasAttachments": {
+					"displayName": "имеет вложения"
+				},
+				"importance": {
+					"displayName": "важность"
+				},
+				"inferenceClassification": {
+					"displayName": "выводКлассификация"
+				},
+				"internetMessageId": {
+					"displayName": "InternetMessageId"
+				},
+				"isDeliveryReceiptRequested": {
+					"displayName": "isDeliveryReceiptRequested"
+				},
+				"isDraft": {
+					"displayName": "isDraft"
+				},
+				"isRead": {
+					"displayName": "isRead"
+				},
+				"isReadReceiptRequested": {
+					"displayName": "isReadReceiptRequested"
+				},
+				"receivedDateTime": {
+					"displayName": "полученоДатаВремя"
+				},
+				"replyTo": {
+					"displayName": "ОтветитьКому"
+				},
+				"sender": {
+					"displayName": "отправитель"
+				},
+				"sentDateTime": {
+					"displayName": "отправленоДатаВремя"
+				},
+				"subject": {
+					"displayName": "предмет"
+				},
+				"toRecipients": {
+					"displayName": "получателям"
+				},
+				"webLink": {
+					"displayName": "вебссылка"
+				},
+				"allowNewTimeProposals": {
+					"displayName": "РазрешитьNewTimeProposals"
+				},
+				"attendees": {
+					"displayName": "участники"
+				},
+				"end": {
+					"displayName": "конец"
+				},
+				"hideAttendees": {
+					"displayName": "скрытьПосетители"
+				},
+				"iCalUId": {
+					"displayName": "iCalUId"
+				},
+				"isAllDay": {
+					"displayName": "isAllDay"
+				},
+				"isCancelled": {
+					"displayName": "isCancelled"
+				},
+				"isOnlineMeeting": {
+					"displayName": "isOnlineMeeting"
+				},
+				"isOrganizer": {
+					"displayName": "isOrganizer"
+				},
+				"isReminderOn": {
+					"displayName": "isReminderOn"
+				},
+				"location": {
+					"displayName": "расположение"
+				},
+				"locations": {
+					"displayName": "локации"
+				},
+				"onlineMeeting": {
+					"displayName": "онлайнВстреча"
+				},
+				"onlineMeetingProvider": {
+					"displayName": "onlineMeetingProvider"
+				},
+				"onlineMeetingUrl": {
+					"displayName": "OnlineMeetingUrl"
+				},
+				"organizer": {
+					"displayName": "организатор"
+				},
+				"originalEndTimeZone": {
+					"displayName": "исходныйEndTimeZone"
+				},
+				"originalStartTimeZone": {
+					"displayName": "исходныйStartTimeZone"
+				},
+				"recurrence": {
+					"displayName": "рецидив"
+				},
+				"reminderMinutesBeforeStart": {
+					"displayName": "напоминаниеМинуты перед началом"
+				},
+				"responseRequested": {
+					"displayName": "ответзапрошен"
+				},
+				"responseStatus": {
+					"displayName": "Статус ответа"
+				},
+				"sensitivity": {
+					"displayName": "чувствительность"
+				},
+				"seriesMasterId": {
+					"displayName": "seriesMasterId"
+				},
+				"showAs": {
+					"displayName": "показатьКак"
+				},
+				"start": {
+					"displayName": "начинать"
+				},
+				"transactionId": {
+					"displayName": "идентификатор транзакции"
+				},
+				"type": {
+					"displayName": "тип"
+				}
+			}
+		},
+		"subject": {
+			"displayName": "Предмет",
+			"description": "Тема сообщения",
+			"placeholder": "например Требуется одобрение"
+		},
+		"bodyContent": {
+			"displayName": "Сообщение",
+			"description": "Содержимое тела сообщения"
+		},
+		"draftId": {
+			"displayName": "Черновик"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"attachmentsPrefix": {
+					"displayName": "Префикс вложений",
+					"description": "Префикс имени выходных полей для помещения данных в двоичные файлы. Будет добавлен индекс, начинающийся с 0. Таким образом, если имя «attachment_», первое вложение сохраняется в «attachment_0»."
+				},
+				"downloadAttachments": {
+					"displayName": "Загрузить вложения",
+					"description": "Будут ли вложения к сообщению загружены и включены в выходные данные."
+				},
+				"folderId": {
+					"displayName": "Родительская папка",
+					"description": "Папка, в которой вы хотите выполнить поиск"
+				},
+				"fields": {
+					"displayName": "Поля",
+					"description": "Поля, которые нужно добавить в выходные данные",
+					"options": {
+						"childFolderCount": {
+							"displayName": "Количество дочерних папок"
+						},
+						"displayName": {
+							"displayName": "Отображаемое имя"
+						},
+						"isHidden": {
+							"displayName": "Скрыт"
+						},
+						"parentFolderId": {
+							"displayName": "Идентификатор родительской папки"
+						},
+						"totalItemCount": {
+							"displayName": "Общее количество предметов"
+						},
+						"unreadItemCount": {
+							"displayName": "Количество непрочитанных элементов"
+						},
+						"contentType": {
+							"displayName": "тип контента"
+						},
+						"isInline": {
+							"displayName": "isInline"
+						},
+						"lastModifiedDateTime": {
+							"displayName": "последниймодифицированныйдатевремя"
+						},
+						"name": {
+							"displayName": "имя"
+						},
+						"size": {
+							"displayName": "размер"
+						}
+					}
+				},
+				"includeChildFolders": {
+					"displayName": "Включить дочерние папки",
+					"description": "Включать ли дочерние папки в ответ"
+				},
+				"getMimeContent": {
+					"values": {
+						"getMimeContent": {
+							"displayName": "Получить MIME-контент"
+						},
+						"values": {
+							"options": {
+								"binaryPropertyName": {
+									"displayName": "Поместите вывод в поле",
+									"hint": "Имя выходного поля для помещения данных двоичного файла."
+								},
+								"outputFileName": {
+									"displayName": "Имя файла",
+									"description": "Необязательное имя выходного файла, если не установлен, используется идентификатор сообщения.",
+									"placeholder": "сообщение"
+								}
+							}
+						}
+					},
+					"displayName": "Получить MIME-контент",
+					"options": {
+						"values": {
+							"displayName": "Ценности"
+						}
+					}
+				},
+				"saveAsDraft": {
+					"displayName": "Сохранить как черновик",
+					"description": "Сохранять ли сообщение как черновик. Если false, сообщение отправляется немедленно."
+				},
+				"limitWaitTime": {
+					"values": {
+						"limitWaitTime": {
+							"displayName": "Ограничить время ожидания",
+							"description": "Ограничить ли время, в течение которого этот узел должен ждать ответа пользователя, прежде чем возобновится выполнение."
+						},
+						"values": {
+							"options": {
+								"limitType": {
+									"displayName": "Тип лимита",
+									"description": "Устанавливает условие возобновления выполнения. Может быть указанная дата или через некоторое время.",
+									"options": {
+										"afterTimeInterval": {
+											"displayName": "После временного интервала",
+											"description": "Ждет определенное время"
+										},
+										"atSpecifiedTime": {
+											"displayName": "В указанное время",
+											"description": "Ожидает установленной даты и времени, чтобы продолжить"
+										}
+									}
+								},
+								"resumeAmount": {
+									"displayName": "Количество",
+									"description": "Время ждать"
+								},
+								"resumeUnit": {
+									"displayName": "Единица",
+									"description": "Единица значения интервала",
+									"options": {
+										"minutes": {
+											"displayName": "Минуты"
+										},
+										"hours": {
+											"displayName": "Часы"
+										},
+										"days": {
+											"displayName": "Дни"
+										}
+									}
+								},
+								"maxDateAndTime": {
+									"displayName": "Максимальная дата и время",
+									"description": "Продолжить выполнение после указанной даты и времени"
+								}
+							}
+						}
+					},
+					"displayName": "Ограничить время ожидания",
+					"description": "Ограничить ли время, в течение которого этот узел должен ждать ответа пользователя, прежде чем возобновится выполнение.",
+					"options": {
+						"values": {
+							"displayName": "Ценности"
+						}
+					}
+				},
+				"appendAttribution": {
+					"displayName": "Добавить авторство n8n",
+					"description": "Включить ли в конец сообщения фразу «Это сообщение было отправлено автоматически с помощью n8n»"
+				},
+				"messageButtonLabel": {
+					"displayName": "Метка кнопки сообщения"
+				},
+				"responseFormTitle": {
+					"displayName": "Название формы ответа",
+					"description": "Название формы, к которой пользователь может получить доступ для ответа"
+				},
+				"responseFormDescription": {
+					"displayName": "Форма ответа Описание",
+					"description": "Описание формы, к которой пользователь может получить доступ для ответа."
+				},
+				"responseFormButtonLabel": {
+					"displayName": "Метка кнопки формы ответа"
+				},
+				"responseFormCustomCss": {
+					"displayName": "Пользовательский стиль формы ответа",
+					"description": "Переопределить стиль формы ответа по умолчанию с помощью CSS"
+				},
+				"fileName": {
+					"displayName": "Имя файла",
+					"description": "Имя файла вложения. Если не установлено, будет использоваться имя файла двоичного свойства, если оно существует."
+				}
+			}
+		},
+		"to": {
+			"displayName": "К",
+			"description": "Список адресов электронной почты получателей, разделенный запятыми."
+		},
+		"startDateTime": {
+			"displayName": "Дата начала",
+			"description": "Начало диапазона дат, для которого нужно получить экземпляры событий."
+		},
+		"endDateTime": {
+			"displayName": "Дата окончания",
+			"description": "Конец диапазона дат, для которого нужно получить экземпляры событий."
+		},
+		"eventId": {
+			"displayName": "Событие"
+		},
+		"fromAllCalendars": {
+			"displayName": "Из всех календарей"
+		},
+		"includeRecurringInstances": {
+			"displayName": "Включить повторяющиеся экземпляры событий",
+			"description": "Следует ли развертывать повторяющиеся события в отдельные экземпляры в пределах указанного диапазона дат. Если этот параметр отключен, повторяющиеся события возвращаются как одно главное событие серии."
+		},
+		"displayName": {
+			"displayName": "Имя",
+			"description": "Имя папки",
+			"placeholder": "например Моя папка"
+		},
+		"folderId": {
+			"displayName": "Родительская папка"
+		},
+		"filtersNotice": {
+			"displayName": "Получение большого количества сообщений может занять много времени. Рассмотрите возможность использования фильтров для ускорения процесса."
+		},
+		"filtersUI": {
+			"options": {
+				"filtersUI": {
+					"displayName": "Фильтры"
+				},
+				"values": {
+					"displayName": "Ценности",
+					"values": {
+						"filterBy": {
+							"displayName": "Фильтровать по",
+							"options": {
+								"filters": {
+									"displayName": "Фильтры"
+								},
+								"search": {
+									"displayName": "Поиск"
+								}
+							}
+						},
+						"search": {
+							"displayName": "Поиск",
+							"description": "Возвращайте только сообщения, содержащие поисковый запрос. Без определенных свойств сообщения поиск осуществляется по свойствам поиска по умолчанию: «От», «Тема» и «Тело». <a href=\"https://docs.microsoft.com/en-us/graph/query-parameters#search-parameter target=\"_blank\">Подробнее</a>.",
+							"placeholder": "например автоматизация"
+						},
+						"filters": {
+							"options": {
+								"filters": {
+									"displayName": "Фильтры"
+								},
+								"custom": {
+									"displayName": "Фильтровать запрос",
+									"hint": "Поисковый запрос для фильтрации сообщений. <a href=\"https://learn.microsoft.com/en-us/graph/filter-query-parameter\">Подробнее</a>.",
+									"placeholder": "например isRead eq false"
+								},
+								"hasAttachments": {
+									"displayName": "Имеет вложения"
+								},
+								"readStatus": {
+									"displayName": "Чтение статуса",
+									"hint": "Фильтровать сообщения по тому, были ли они прочитаны или нет.",
+									"options": {
+										"both": {
+											"displayName": "Непрочитанные и прочитанные сообщения"
+										},
+										"unread": {
+											"displayName": "Только непрочитанные сообщения"
+										},
+										"read": {
+											"displayName": "Только читать сообщения"
+										}
+									}
+								},
+								"receivedAfter": {
+									"displayName": "Получено после",
+									"description": "Получить все сообщения, полученные после указанной даты. В выражении вы можете установить дату, используя строку в формате ISO или метку времени в миллисекундах."
+								},
+								"receivedBefore": {
+									"displayName": "Получено раньше",
+									"description": "Получить все сообщения, полученные до указанной даты. В выражении вы можете установить дату, используя строку в формате ISO или метку времени в миллисекундах."
+								},
+								"sender": {
+									"displayName": "Отправитель",
+									"description": "Имя отправителя или адрес электронной почты для фильтрации"
+								},
+								"foldersToExclude": {
+									"displayName": "Папки, которые нужно исключить",
+									"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+								},
+								"foldersToInclude": {
+									"displayName": "Папки для включения",
+									"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+								}
+							},
+							"placeholder": "Добавить фильтр",
+							"displayName": "Фильтры"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить фильтры",
+			"displayName": "Фильтры"
+		},
+		"messageId": {
+			"displayName": "Сообщение"
+		},
+		"replyToSenderOnly": {
+			"displayName": "Ответить только отправителю",
+			"description": "Отвечать только отправителю или всему списку получателей?"
+		},
+		"message": {
+			"displayName": "Сообщение",
+			"description": "Содержимое тела сообщения"
+		},
+		"toRecipients": {
+			"displayName": "К",
+			"description": "Список адресов электронной почты получателей, разделенный запятыми."
+		},
+		"responseType": {
+			"displayName": "Тип ответа",
+			"options": {
+				"approval": {
+					"displayName": "Одобрение",
+					"description": "Пользователь может одобрить/отклонить сообщение прямо в сообщении."
+				},
+				"freeText": {
+					"displayName": "Свободный текст",
+					"description": "Пользователь может отправить ответ через форму"
+				},
+				"customForm": {
+					"displayName": "Пользовательская форма",
+					"description": "Пользователь может отправить ответ через специальную форму"
+				}
+			}
+		},
+		"defineForm": {
+			"displayName": "Определить форму",
+			"options": {
+				"fields": {
+					"displayName": "Использование полей ниже"
+				},
+				"json": {
+					"displayName": "Использование JSON"
+				}
+			}
+		},
+		"jsonOutput": {
+			"displayName": "Поля формы",
+			"hint": "<a href=\"https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.form/\" target=\"_blank\">См. в документации </a> синтаксис полей."
+		},
+		"formFields": {
+			"options": {
+				"formFields": {
+					"displayName": "Элементы формы"
+				},
+				"values": {
+					"displayName": "Ценности",
+					"values": {
+						"fieldName": {
+							"displayName": "Имя настраиваемого поля",
+							"description": "Имя поля, используемое во входных атрибутах и ​​на которое ссылается рабочий процесс."
+						},
+						"fieldLabel": {
+							"displayName": "Имя поля",
+							"description": "Метка, которая появляется над полем ввода",
+							"placeholder": "например Как вас зовут?"
+						},
+						"fieldType": {
+							"displayName": "Тип элемента",
+							"description": "Тип поля, добавляемого в форму",
+							"options": {
+								"checkbox": {
+									"displayName": "Флажки"
+								},
+								"html": {
+									"displayName": "Пользовательский HTML"
+								},
+								"date": {
+									"displayName": "Дата"
+								},
+								"dropdown": {
+									"displayName": "Падать"
+								},
+								"email": {
+									"displayName": "Электронная почта"
+								},
+								"file": {
+									"displayName": "Файл"
+								},
+								"hiddenField": {
+									"displayName": "Скрытое поле"
+								},
+								"number": {
+									"displayName": "Число"
+								},
+								"password": {
+									"displayName": "Пароль"
+								},
+								"radio": {
+									"displayName": "Радиокнопки"
+								},
+								"text": {
+									"displayName": "Ввод текста"
+								},
+								"textarea": {
+									"displayName": "Текстовая область"
+								}
+							}
+						},
+						"elementName": {
+							"displayName": "Имя элемента",
+							"description": "Необязательное поле. Его можно использовать для включения HTML в выходные данные.",
+							"placeholder": "например раздел контента"
+						},
+						"placeholder": {
+							"displayName": "Заполнитель",
+							"description": "Пример текста для отображения внутри поля"
+						},
+						"defaultValue": {
+							"displayName": "Значение по умолчанию",
+							"description": "Значения по умолчанию, которые будут выбраны заранее. Должно соответствовать одному или нескольким меткам опций. Разделите несколько предварительно выбранных опций запятой."
+						},
+						"fieldValue": {
+							"displayName": "Значение поля",
+							"description": "Входное значение можно установить здесь или оно будет передано в качестве параметра запроса через имя поля, если значение не установлено."
+						},
+						"fieldOptions": {
+							"options": {
+								"fieldOptions": {
+									"displayName": "Радиокнопки",
+									"description": "Список опций, которые можно выбрать из раскрывающегося списка"
+								},
+								"values": {
+									"displayName": "Ценности",
+									"values": {
+										"option": {
+											"displayName": "Метка радиокнопки"
+										}
+									}
+								}
+							},
+							"placeholder": "Добавить переключатель",
+							"displayName": "Радиокнопки",
+							"description": "Список опций, которые можно выбрать из раскрывающегося списка"
+						},
+						"multiselectLegacyNotice": {
+							"displayName": "Множественный выбор является устаревшим вариантом, вместо этого используйте тип поля «Флажки» или «Переключатели»."
+						},
+						"multiselect": {
+							"displayName": "Множественный выбор",
+							"description": "Разрешить ли пользователю выбирать несколько вариантов из раскрывающегося списка"
+						},
+						"limitSelection": {
+							"displayName": "Ограничить выбор",
+							"options": {
+								"exact": {
+									"displayName": "Точный номер"
+								},
+								"range": {
+									"displayName": "Диапазон"
+								},
+								"unlimited": {
+									"displayName": "Безлимитный"
+								}
+							}
+						},
+						"numberOfSelections": {
+							"displayName": "Количество вариантов выбора"
+						},
+						"minSelections": {
+							"displayName": "Минимальный выбор"
+						},
+						"maxSelections": {
+							"displayName": "Максимальный выбор"
+						},
+						"html": {
+							"displayName": "HTML",
+							"description": "HTML-элементы для отображения на странице формы",
+							"hint": "Не принимает теги <code><script></code>, <code><style></code> или <code><input></code>."
+						},
+						"multipleFiles": {
+							"displayName": "Несколько файлов",
+							"description": "Разрешить ли пользователю выбирать несколько файлов из входного файла или только один"
+						},
+						"acceptFileTypes": {
+							"displayName": "Допустимые типы файлов",
+							"description": "Список разрешенных расширений файлов, разделенный запятыми",
+							"hint": "Оставьте пустым, чтобы разрешить все типы файлов.",
+							"placeholder": "например .jpg, .png"
+						},
+						"formatDate": {
+							"displayName": "Отображаемая дата форматируется на основе языкового стандарта браузера пользователя."
+						},
+						"requiredField": {
+							"displayName": "Обязательное поле",
+							"description": "Требовать ли от пользователя ввода значения в это поле перед отправкой формы"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить элемент формы",
+			"displayName": "Элементы формы",
+			"addOptionalFieldButtonText": "Добавить атрибуты"
+		},
+		"approvalOptions": {
+			"options": {
+				"approvalOptions": {
+					"displayName": "Варианты утверждения"
+				},
+				"values": {
+					"displayName": "Ценности",
+					"values": {
+						"approvalType": {
+							"displayName": "Тип одобрения",
+							"placeholder": "Добавить вариант",
+							"options": {
+								"single": {
+									"displayName": "Только утвердить"
+								},
+								"double": {
+									"displayName": "Одобрить и не одобрить"
+								}
+							}
+						},
+						"approveLabel": {
+							"displayName": "Метка кнопки «Утвердить»"
+						},
+						"buttonApprovalStyle": {
+							"displayName": "Утвердить стиль кнопки",
+							"options": {
+								"primary": {
+									"displayName": "Начальный"
+								},
+								"secondary": {
+									"displayName": "вторичный"
+								}
+							}
+						},
+						"disapproveLabel": {
+							"displayName": "Ярлык кнопки «Отклонить»"
+						},
+						"buttonDisapprovalStyle": {
+							"displayName": "Стиль кнопки «Отклонить»",
+							"options": {
+								"primary": {
+									"displayName": "Начальный"
+								},
+								"secondary": {
+									"displayName": "вторичный"
+								}
+							}
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить вариант",
+			"displayName": "Варианты утверждения"
+		},
+		"binaryPropertyName": {
+			"displayName": "Поместите вывод в поле",
+			"hint": "Имя выходного поля для помещения данных двоичного файла.",
+			"placeholder": "например данные"
+		},
+		"attachmentId": {
+			"displayName": "Вложение"
+		}
+	}
+}

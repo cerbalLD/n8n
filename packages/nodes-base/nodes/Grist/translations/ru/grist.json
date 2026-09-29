@@ -1,0 +1,158 @@
+{
+	"header": {
+		"displayName": "Засыпь",
+		"description": "Используйте Grist API"
+	},
+	"nodeView": {
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создать строку",
+					"description": "Создание строк в таблице"
+				},
+				"delete": {
+					"displayName": "Удалить строку",
+					"description": "Удалить строки из таблицы"
+				},
+				"getAll": {
+					"displayName": "Получить много строк",
+					"description": "Чтение строк из таблицы"
+				},
+				"update": {
+					"displayName": "Обновить строку",
+					"description": "Обновить строки в таблице"
+				}
+			}
+		},
+		"docId": {
+			"displayName": "Идентификатор документа",
+			"description": "В документе щелкните значок своего профиля, затем «Настройки документа», затем скопируйте значение в разделе «Идентификатор этого документа»."
+		},
+		"tableId": {
+			"displayName": "Идентификатор таблицы",
+			"description": "Идентификатор таблицы, над которой нужно работать. Если вы не уверены, посмотрите представление кода."
+		},
+		"rowId": {
+			"displayName": "Идентификатор строки",
+			"description": "Идентификатор строки для обновления"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"additionalOptions": {
+			"displayName": "Дополнительные опции",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"filter": {
+					"values": {
+						"filter": {
+							"displayName": "Фильтр",
+							"description": "Возвращайте только строки, соответствующие всем заданным фильтрам. Для сложных фильтров создайте столбец формулы и отфильтруйте значение «истина»."
+						},
+						"filterProperties": {
+							"options": {
+								"field": {
+									"displayName": "Имя или идентификатор столбца",
+									"description": "Столбец, к которому нужно применить фильтр. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								},
+								"values": {
+									"displayName": "Ценности",
+									"description": "Список значений, разделенных запятыми, для поиска в отфильтрованном столбце"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить фильтр",
+					"displayName": "Фильтр",
+					"description": "Возвращайте только строки, соответствующие всем заданным фильтрам. Для сложных фильтров создайте столбец формулы и отфильтруйте значение «истина».",
+					"options": {
+						"filterProperties": {
+							"displayName": "Свойства фильтра"
+						}
+					}
+				},
+				"sort": {
+					"values": {
+						"sort": {
+							"displayName": "Порядок сортировки"
+						},
+						"sortProperties": {
+							"options": {
+								"field": {
+									"displayName": "Имя или идентификатор столбца",
+									"description": "Столбец для сортировки. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								},
+								"direction": {
+									"displayName": "Направление",
+									"description": "Направление сортировки",
+									"options": {
+										"asc": {
+											"displayName": "восходящий"
+										},
+										"desc": {
+											"displayName": "По убыванию"
+										}
+									}
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить поле",
+					"displayName": "Порядок сортировки",
+					"options": {
+						"sortProperties": {
+							"displayName": "Сортировать свойства"
+						}
+					}
+				}
+			}
+		},
+		"dataToSend": {
+			"displayName": "Данные для отправки",
+			"description": "Вставлять ли входные данные, которые получает этот узел, в новую строку",
+			"options": {
+				"autoMapInputs": {
+					"displayName": "Автоматическое сопоставление входных данных с столбцами",
+					"description": "Используйте, когда входные свойства узла соответствуют именам столбцов назначения."
+				},
+				"defineInNode": {
+					"displayName": "Определите ниже для каждого столбца",
+					"description": "Установите значение для каждого столбца назначения"
+				}
+			}
+		},
+		"inputsToIgnore": {
+			"displayName": "Входные данные, которые следует игнорировать",
+			"description": "Список входных свойств, которые следует избегать при отправке, разделенных запятыми. Оставьте пустым, чтобы отправить все свойства.",
+			"placeholder": "Введите свойства..."
+		},
+		"fieldsToSend": {
+			"options": {
+				"fieldsToSend": {
+					"displayName": "Поля для отправки"
+				},
+				"properties": {
+					"displayName": "Характеристики",
+					"values": {
+						"fieldId": {
+							"displayName": "Имя или идентификатор столбца",
+							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+						},
+						"fieldValue": {
+							"displayName": "Значение поля"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить поле",
+			"displayName": "Поля для отправки",
+			"multipleValueButtonText": "Добавить поле для отправки"
+		}
+	}
+}

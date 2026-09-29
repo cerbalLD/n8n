@@ -1,0 +1,488 @@
+{
+	"header": {
+		"displayName": "Асана",
+		"description": "Использование REST API Asana"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"accessToken": {
+					"displayName": "Токен доступа"
+				},
+				"oAuth2": {
+					"displayName": "ОАут2"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"project": {
+					"displayName": "Проект"
+				},
+				"subtask": {
+					"displayName": "Подзадача"
+				},
+				"task": {
+					"displayName": "Задача"
+				},
+				"taskComment": {
+					"displayName": "Комментарий к задаче"
+				},
+				"taskProject": {
+					"displayName": "Задача Проект"
+				},
+				"taskTag": {
+					"displayName": "Тег задачи"
+				},
+				"user": {
+					"displayName": "Пользователь"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать новый проект"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получите много проектов"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить проект"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить проект"
+				},
+				"move": {
+					"displayName": "Двигаться",
+					"description": "Переместить задачу"
+				},
+				"search": {
+					"displayName": "Поиск",
+					"description": "Поиск задач"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить проект"
+				},
+				"add": {
+					"displayName": "Добавлять",
+					"description": "Добавить тег к задаче"
+				},
+				"remove": {
+					"displayName": "Удалять",
+					"description": "Удаление тега из задачи"
+				}
+			}
+		},
+		"taskId": {
+			"displayName": "Идентификатор родительской задачи",
+			"description": "Задача, над которой нужно работать"
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Название проекта, который нужно создать"
+		},
+		"otherProperties": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"assignee": {
+					"displayName": "Имя или идентификатор правопреемника",
+					"description": "Назначьте исполнителя задачи. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"assignee_status": {
+					"displayName": "Статус правопреемника",
+					"description": "Установите статус «Исполнитель» для задачи (требуется «Исполнитель»)",
+					"options": {
+						"inbox": {
+							"displayName": "Входящие"
+						},
+						"today": {
+							"displayName": "Сегодня"
+						},
+						"upcoming": {
+							"displayName": "Предстоящие"
+						},
+						"later": {
+							"displayName": "Позже"
+						}
+					}
+				},
+				"completed": {
+					"displayName": "Завершенный",
+					"description": "Следует ли пометить задачу как выполненную"
+				},
+				"due_on": {
+					"displayName": "Срок оплаты",
+					"description": "Дата, до которой истекает срок"
+				},
+				"liked": {
+					"displayName": "Понравилось",
+					"description": "Понравилась ли задача авторизованному пользователю"
+				},
+				"notes": {
+					"displayName": "Примечания",
+					"description": "Примечания к задаче"
+				},
+				"workspace": {
+					"displayName": "Имя или идентификатор рабочей области",
+					"description": "Рабочая область, в которой будет создана подзадача. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Новое название задачи"
+				},
+				"projects": {
+					"displayName": "Названия или идентификаторы проектов",
+					"description": "Проект для фильтрации задач. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"opt_fields": {
+					"displayName": "Имена полей или идентификаторы",
+					"description": "Определяет поля для возврата. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"opt_pretty": {
+					"displayName": "Симпатичный",
+					"description": "Обеспечивать ли «красивый» результат"
+				}
+			}
+		},
+		"workspace": {
+			"displayName": "Имя или идентификатор рабочей области",
+			"description": "Рабочая область, в которую можно получить пользователей. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"id": {
+			"displayName": "Идентификатор проекта",
+			"description": "Идентификатор проекта для обновления данных"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"description": "Свойства для поиска",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"assignee": {
+					"displayName": "Имя или идентификатор правопреемника",
+					"description": "Ответственный, по которому нужно фильтровать задачи. Примечание. Если вы укажете правопреемника, вы также должны указать рабочую область для фильтрации. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"opt_fields": {
+					"displayName": "Имена полей или идентификаторы",
+					"description": "Определяет поля для возврата. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"opt_pretty": {
+					"displayName": "Симпатичный",
+					"description": "Обеспечивать ли «красивый» результат"
+				},
+				"project": {
+					"displayName": "Название или идентификатор проекта",
+					"description": "Проект для фильтрации задач. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"section": {
+					"displayName": "Название или идентификатор раздела",
+					"description": "Раздел для фильтрации задач. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"workspace": {
+					"displayName": "Имя или идентификатор рабочей области",
+					"description": "Рабочая область для фильтрации задач. Примечание. Если вы указываете рабочую область, вы также должны указать правопреемника для фильтрации. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"completed_since": {
+					"displayName": "Завершено с",
+					"description": "Возвращайте только задачи, которые либо не завершены, либо были завершены с этого момента."
+				},
+				"modified_since": {
+					"displayName": "Изменено с момента",
+					"description": "Возвращать только задачи, которые были изменены с указанного времени."
+				}
+			}
+		},
+		"projectId": {
+			"displayName": "Название или идентификатор проекта",
+			"description": "Проект для показа разделов. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"section": {
+			"displayName": "Название или идентификатор раздела",
+			"description": "Раздел, в который нужно переместить задачу. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"searchTaskProperties": {
+			"displayName": "Фильтры",
+			"description": "Свойства для поиска",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"completed": {
+					"displayName": "Завершенный",
+					"description": "Помечена ли задача как выполненная"
+				},
+				"text": {
+					"displayName": "Текст",
+					"description": "Текст для поиска по имени или заметкам"
+				}
+			}
+		},
+		"isTextHtml": {
+			"displayName": "Текстовый HTML",
+			"description": "Является ли тело HTML или простым текстом"
+		},
+		"text": {
+			"displayName": "HTML-текст",
+			"description": "Комментарий в виде строки HTML. Не используйте вместе с обычным текстом."
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"description": "Другие свойства для установки",
+			"placeholder": "Добавить недвижимость",
+			"options": {
+				"is_pinned": {
+					"displayName": "Закреплено",
+					"description": "Закрепить ли комментарий"
+				},
+				"insert_after": {
+					"displayName": "Вставить после",
+					"description": "Задача в проекте, после которой нужно вставить задачу, или значение null, чтобы вставить в начало списка."
+				},
+				"insert_before": {
+					"displayName": "Вставить перед",
+					"description": "Задача в проекте, чтобы вставить задачу перед ней, или значение null, чтобы вставить ее в конец списка."
+				},
+				"section": {
+					"displayName": "Раздел",
+					"description": "Раздел проекта, в который нужно вставить задачу. Задача будет вставлена ​​внизу раздела."
+				},
+				"color": {
+					"displayName": "Цвет",
+					"description": "Цвет проекта",
+					"options": {
+						"dark-blue": {
+							"displayName": "темно-синий"
+						},
+						"dark-brown": {
+							"displayName": "темно-коричневый"
+						},
+						"dark-green": {
+							"displayName": "темно-зеленый"
+						},
+						"dark-orange": {
+							"displayName": "темно-оранжевый"
+						},
+						"dark-pink": {
+							"displayName": "темно-розовый"
+						},
+						"dark-purple": {
+							"displayName": "темно-фиолетовый"
+						},
+						"dark-red": {
+							"displayName": "темно-красный"
+						},
+						"dark-teal": {
+							"displayName": "темно-бирюзовый"
+						},
+						"dark-warm-gray": {
+							"displayName": "темно-тепло-серый"
+						},
+						"light-blue": {
+							"displayName": "светло-голубой"
+						},
+						"light-green": {
+							"displayName": "светло-зеленый"
+						},
+						"light-orange": {
+							"displayName": "светло-оранжевый"
+						},
+						"light-pink": {
+							"displayName": "светло-розовый"
+						},
+						"light-purple": {
+							"displayName": "светло-фиолетовый"
+						},
+						"light-red": {
+							"displayName": "светло-красный"
+						},
+						"light-teal": {
+							"displayName": "светло-бирюзовый"
+						},
+						"light-warm-gray": {
+							"displayName": "светло-тепло-серый"
+						},
+						"light-yellow": {
+							"displayName": "светло-желтый"
+						},
+						"none": {
+							"displayName": "никто"
+						}
+					}
+				},
+				"due_on": {
+					"displayName": "Срок оплаты",
+					"description": "День сдачи этого проекта. Для этого требуется дата в формате ГГГГ-ММ-ДД."
+				},
+				"notes": {
+					"displayName": "Примечания",
+					"description": "Основное описание или примечания к проекту"
+				},
+				"privacy_setting": {
+					"displayName": "Настройка конфиденциальности",
+					"description": "Настройки конфиденциальности проекта",
+					"options": {
+						"private": {
+							"displayName": "Частный"
+						},
+						"private_to_team": {
+							"displayName": "Частное для команды"
+						},
+						"public_to_workspace": {
+							"displayName": "Общедоступно для рабочей области"
+						}
+					}
+				},
+				"archived": {
+					"displayName": "В архиве",
+					"description": "Возвращать ли только те проекты, архивное поле которых принимает значение этого параметра"
+				},
+				"team": {
+					"displayName": "Имя или идентификатор команды",
+					"description": "Новое имя задачи. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				}
+			}
+		},
+		"project": {
+			"displayName": "Название или идентификатор проекта",
+			"description": "Проект, из которого будет удалена задача. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"tag": {
+			"displayName": "Имя или идентификатор тега",
+			"description": "Тег, который следует добавить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"userId": {
+			"displayName": "ID пользователя",
+			"description": "Идентификатор пользователя, данные о котором нужно получить. Это может быть адрес электронной почты, глобальный уникальный идентификатор пользователя или ключевое слово me, обозначающее текущего пользователя, отправляющего запрос."
+		},
+		"team": {
+			"displayName": "Название или идентификатор команды",
+			"description": "Команда, которой будет назначен этот проект. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"description": "Другие свойства для установки",
+			"placeholder": "Добавить недвижимость",
+			"options": {
+				"color": {
+					"displayName": "Цвет",
+					"description": "Цвет проекта",
+					"options": {
+						"dark-blue": {
+							"displayName": "темно-синий"
+						},
+						"dark-brown": {
+							"displayName": "темно-коричневый"
+						},
+						"dark-green": {
+							"displayName": "темно-зеленый"
+						},
+						"dark-orange": {
+							"displayName": "темно-оранжевый"
+						},
+						"dark-pink": {
+							"displayName": "темно-розовый"
+						},
+						"dark-purple": {
+							"displayName": "темно-фиолетовый"
+						},
+						"dark-red": {
+							"displayName": "темно-красный"
+						},
+						"dark-teal": {
+							"displayName": "темно-бирюзовый"
+						},
+						"dark-warm-gray": {
+							"displayName": "темно-тепло-серый"
+						},
+						"light-blue": {
+							"displayName": "светло-голубой"
+						},
+						"light-green": {
+							"displayName": "светло-зеленый"
+						},
+						"light-orange": {
+							"displayName": "светло-оранжевый"
+						},
+						"light-pink": {
+							"displayName": "светло-розовый"
+						},
+						"light-purple": {
+							"displayName": "светло-фиолетовый"
+						},
+						"light-red": {
+							"displayName": "светло-красный"
+						},
+						"light-teal": {
+							"displayName": "светло-бирюзовый"
+						},
+						"light-warm-gray": {
+							"displayName": "светло-тепло-серый"
+						},
+						"light-yellow": {
+							"displayName": "светло-желтый"
+						},
+						"none": {
+							"displayName": "никто"
+						}
+					}
+				},
+				"due_on": {
+					"displayName": "Срок оплаты",
+					"description": "День сдачи этого проекта. Для этого требуется дата в формате ГГГГ-ММ-ДД."
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Название проекта"
+				},
+				"notes": {
+					"displayName": "Примечания",
+					"description": "Основное описание или примечания к проекту"
+				},
+				"owner": {
+					"displayName": "Владелец",
+					"description": "Новый правопреемник/кардинал этого проекта"
+				},
+				"privacy_setting": {
+					"displayName": "Настройка конфиденциальности",
+					"description": "Настройки конфиденциальности проекта",
+					"options": {
+						"private": {
+							"displayName": "Частный"
+						},
+						"private_to_team": {
+							"displayName": "Частное для команды"
+						},
+						"public_to_workspace": {
+							"displayName": "Общедоступно для рабочей области"
+						}
+					}
+				},
+				"team": {
+					"displayName": "Название или идентификатор команды",
+					"description": "Команда, которой будет назначен этот проект. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				}
+			}
+		}
+	}
+}

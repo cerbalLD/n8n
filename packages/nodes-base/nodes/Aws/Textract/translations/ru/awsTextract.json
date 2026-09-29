@@ -1,0 +1,35 @@
+{
+	"header": {
+		"displayName": "AWS Тексттракт",
+		"description": "Отправляет данные в Amazon Textract."
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"iam": {
+					"displayName": "АВС (ИАМ)"
+				},
+				"assumeRole": {
+					"displayName": "AWS (принятие роли)"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"analyzeExpense": {
+					"displayName": "Анализ квитанции или счета-фактуры"
+				}
+			}
+		},
+		"binaryPropertyName": {
+			"displayName": "Имя поля входных данных",
+			"description": "Имя поля ввода, содержащего данные двоичного файла, которые необходимо загрузить. Поддерживаемые типы файлов: PNG, JPEG."
+		},
+		"simple": {
+			"displayName": "Упрощать",
+			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+		}
+	}
+}

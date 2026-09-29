@@ -1,0 +1,742 @@
+{
+	"header": {
+		"displayName": "Вордпресс",
+		"description": "Использование API Wordpress"
+	},
+	"nodeView": {
+		"authType": {
+			"displayName": "Аутентификация",
+			"description": "Используемый метод аутентификации",
+			"options": {
+				"basicAuth": {
+					"displayName": "Базовая аутентификация"
+				},
+				"oAuth2": {
+					"displayName": "OAuth2 (WordPress.com)"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"post": {
+					"displayName": "Почта"
+				},
+				"page": {
+					"displayName": "Страница"
+				},
+				"user": {
+					"displayName": "Пользователь"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать пользователя"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить пользователя"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить много пользователей"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить пользователя"
+				}
+			}
+		},
+		"title": {
+			"displayName": "Заголовок",
+			"description": "Заголовок страницы"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"authorId": {
+					"displayName": "Имя или идентификатор автора",
+					"description": "Идентификатор автора объекта. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"content": {
+					"displayName": "Содержание",
+					"description": "Контент для страницы"
+				},
+				"slug": {
+					"displayName": "Слизень",
+					"description": "Буквенно-цифровой идентификатор пользователя."
+				},
+				"password": {
+					"displayName": "Пароль",
+					"description": "Пароль для защиты доступа к контенту и отрывкам"
+				},
+				"status": {
+					"displayName": "Статус",
+					"description": "Именованный статус страницы.",
+					"options": {
+						"draft": {
+							"displayName": "Черновик"
+						},
+						"future": {
+							"displayName": "Будущее"
+						},
+						"pending": {
+							"displayName": "В ожидании"
+						},
+						"private": {
+							"displayName": "Частный"
+						},
+						"publish": {
+							"displayName": "Публиковать"
+						}
+					}
+				},
+				"date": {
+					"displayName": "Дата",
+					"description": "Дата публикации сообщения в часовом поясе сайта."
+				},
+				"commentStatus": {
+					"displayName": "Статус комментария",
+					"description": "Открыты ли комментарии на странице",
+					"options": {
+						"open": {
+							"displayName": "Открыть"
+						},
+						"closed": {
+							"displayName": "Закрывать"
+						}
+					}
+				},
+				"pingStatus": {
+					"displayName": "Статус пинга",
+					"description": "Если необходимо отправить сообщение для анонса страницы",
+					"options": {
+						"open": {
+							"displayName": "Открыть"
+						},
+						"closed": {
+							"displayName": "Закрывать"
+						}
+					}
+				},
+				"format": {
+					"displayName": "Формат",
+					"description": "Открыты ли комментарии к публикации",
+					"options": {
+						"aside": {
+							"displayName": "В сторону"
+						},
+						"audio": {
+							"displayName": "Аудио"
+						},
+						"chat": {
+							"displayName": "Чат"
+						},
+						"gallery": {
+							"displayName": "Галерея"
+						},
+						"image": {
+							"displayName": "Изображение"
+						},
+						"link": {
+							"displayName": "Связь"
+						},
+						"quote": {
+							"displayName": "Цитировать"
+						},
+						"standard": {
+							"displayName": "Стандартный"
+						},
+						"status": {
+							"displayName": "Статус"
+						},
+						"video": {
+							"displayName": "Видео"
+						}
+					}
+				},
+				"sticky": {
+					"displayName": "Липкий",
+					"description": "Следует ли считать объект липким"
+				},
+				"categories": {
+					"displayName": "Названия или идентификаторы категорий",
+					"description": "Термины, присвоенные объекту в таксономии категории. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"tags": {
+					"displayName": "Имена или идентификаторы тегов",
+					"description": "Термины, присвоенные объекту в таксономии post_tag. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"postTemplate": {
+					"values": {
+						"postTemplate": {
+							"displayName": "Шаблон"
+						},
+						"values": {
+							"options": {
+								"elementor": {
+									"displayName": "Шаблон Элементора",
+									"description": "Использует ли сайт конструктор страниц Elementor"
+								},
+								"template": {
+									"displayName": "Шаблон",
+									"description": "Шаблон Elementor для использования",
+									"options": {
+										"": {
+											"displayName": "Стандартный"
+										},
+										"elementor_canvas": {
+											"displayName": "Элементор Холст"
+										},
+										"elementor_header_footer": {
+											"displayName": "Нижний колонтитул Elementor"
+										},
+										"elementor_theme": {
+											"displayName": "Элементор Тема"
+										}
+									}
+								}
+							}
+						}
+					},
+					"displayName": "Шаблон",
+					"options": {
+						"values": {
+							"displayName": "Ценности"
+						}
+					}
+				},
+				"parent": {
+					"displayName": "Идентификатор родителя",
+					"description": "Идентификатор родителя публикации"
+				},
+				"pageTemplate": {
+					"values": {
+						"pageTemplate": {
+							"displayName": "Шаблон"
+						},
+						"values": {
+							"options": {
+								"elementor": {
+									"displayName": "Шаблон Элементора",
+									"description": "Использует ли сайт конструктор страниц Elementor"
+								},
+								"template": {
+									"displayName": "Шаблон",
+									"description": "Шаблон Elementor для использования",
+									"options": {
+										"": {
+											"displayName": "Стандартный"
+										},
+										"elementor_canvas": {
+											"displayName": "Элементор Холст"
+										},
+										"elementor_header_footer": {
+											"displayName": "Нижний колонтитул Elementor"
+										},
+										"elementor_theme": {
+											"displayName": "Элементор Тема"
+										}
+									}
+								}
+							}
+						}
+					},
+					"displayName": "Шаблон",
+					"options": {
+						"values": {
+							"displayName": "Ценности"
+						}
+					}
+				},
+				"menuOrder": {
+					"displayName": "Порядок меню",
+					"description": "Порядок страницы относительно других страниц."
+				},
+				"featuredMediaId": {
+					"displayName": "Идентификатор избранного медиа",
+					"description": "Идентификатор избранного медиа для страницы."
+				},
+				"url": {
+					"displayName": "URL",
+					"description": "URL-адрес пользователя"
+				},
+				"description": {
+					"displayName": "Описание",
+					"description": "Описание пользователя"
+				},
+				"nickname": {
+					"displayName": "Псевдоним",
+					"description": "Никнейм для пользователя"
+				}
+			}
+		},
+		"postId": {
+			"displayName": "Идентификатор сообщения",
+			"description": "Уникальный идентификатор объекта"
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"authorId": {
+					"displayName": "Имя или идентификатор автора",
+					"description": "Идентификатор автора объекта. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"title": {
+					"displayName": "Заголовок",
+					"description": "Заголовок страницы"
+				},
+				"content": {
+					"displayName": "Содержание",
+					"description": "Контент для страницы"
+				},
+				"slug": {
+					"displayName": "Слизень",
+					"description": "Буквенно-цифровой идентификатор пользователя."
+				},
+				"password": {
+					"displayName": "Пароль",
+					"description": "Пароль для пользователя (никогда не включен)"
+				},
+				"status": {
+					"displayName": "Статус",
+					"description": "Именованный статус страницы.",
+					"options": {
+						"draft": {
+							"displayName": "Черновик"
+						},
+						"future": {
+							"displayName": "Будущее"
+						},
+						"pending": {
+							"displayName": "В ожидании"
+						},
+						"private": {
+							"displayName": "Частный"
+						},
+						"publish": {
+							"displayName": "Публиковать"
+						}
+					}
+				},
+				"date": {
+					"displayName": "Дата",
+					"description": "Дата публикации сообщения в часовом поясе сайта."
+				},
+				"commentStatus": {
+					"displayName": "Статус комментария",
+					"description": "Открыты ли комментарии на странице",
+					"options": {
+						"open": {
+							"displayName": "Открыть"
+						},
+						"closed": {
+							"displayName": "Закрыто"
+						}
+					}
+				},
+				"pingStatus": {
+					"displayName": "Статус пинга",
+					"description": "Открыты ли комментарии на странице",
+					"options": {
+						"open": {
+							"displayName": "Открыть"
+						},
+						"closed": {
+							"displayName": "Закрывать"
+						}
+					}
+				},
+				"format": {
+					"displayName": "Формат",
+					"description": "Формат сообщения",
+					"options": {
+						"aside": {
+							"displayName": "В сторону"
+						},
+						"audio": {
+							"displayName": "Аудио"
+						},
+						"chat": {
+							"displayName": "Чат"
+						},
+						"gallery": {
+							"displayName": "Галерея"
+						},
+						"image": {
+							"displayName": "Изображение"
+						},
+						"link": {
+							"displayName": "Связь"
+						},
+						"quote": {
+							"displayName": "Цитировать"
+						},
+						"standard": {
+							"displayName": "Стандартный"
+						},
+						"status": {
+							"displayName": "Статус"
+						},
+						"video": {
+							"displayName": "Видео"
+						}
+					}
+				},
+				"sticky": {
+					"displayName": "Липкий",
+					"description": "Следует ли считать объект липким"
+				},
+				"categories": {
+					"displayName": "Названия или идентификаторы категорий",
+					"description": "Термины, присвоенные объекту в таксономии категории. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"tags": {
+					"displayName": "Имена или идентификаторы тегов",
+					"description": "Термины, присвоенные объекту в таксономии post_tag. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"postTemplate": {
+					"values": {
+						"postTemplate": {
+							"displayName": "Шаблон"
+						},
+						"values": {
+							"options": {
+								"elementor": {
+									"displayName": "Шаблон Элементора",
+									"description": "Использует ли сайт конструктор страниц Elementor"
+								},
+								"template": {
+									"displayName": "Шаблон",
+									"description": "Шаблон Elementor для использования",
+									"options": {
+										"": {
+											"displayName": "Стандартный"
+										},
+										"elementor_canvas": {
+											"displayName": "Элементор Холст"
+										},
+										"elementor_header_footer": {
+											"displayName": "Нижний колонтитул Elementor"
+										},
+										"elementor_theme": {
+											"displayName": "Элементор Тема"
+										}
+									}
+								}
+							}
+						}
+					},
+					"displayName": "Шаблон",
+					"options": {
+						"values": {
+							"displayName": "Ценности"
+						}
+					}
+				},
+				"parent": {
+					"displayName": "Идентификатор родителя",
+					"description": "Идентификатор родителя публикации"
+				},
+				"pageTemplate": {
+					"values": {
+						"pageTemplate": {
+							"displayName": "Шаблон"
+						},
+						"values": {
+							"options": {
+								"elementor": {
+									"displayName": "Шаблон Элементора",
+									"description": "Использует ли сайт конструктор страниц Elementor"
+								},
+								"template": {
+									"displayName": "Шаблон",
+									"description": "Шаблон Elementor для использования",
+									"options": {
+										"": {
+											"displayName": "Стандартный"
+										},
+										"elementor_canvas": {
+											"displayName": "Элементор Холст"
+										},
+										"elementor_header_footer": {
+											"displayName": "Нижний колонтитул Elementor"
+										},
+										"elementor_theme": {
+											"displayName": "Элементор Тема"
+										}
+									}
+								}
+							}
+						}
+					},
+					"displayName": "Шаблон",
+					"options": {
+						"values": {
+							"displayName": "Ценности"
+						}
+					}
+				},
+				"menuOrder": {
+					"displayName": "Порядок меню",
+					"description": "Порядок страницы относительно других страниц."
+				},
+				"featuredMediaId": {
+					"displayName": "Идентификатор избранного медиа",
+					"description": "Идентификатор избранного медиа для страницы."
+				},
+				"username": {
+					"displayName": "Имя пользователя",
+					"description": "Имя для входа пользователя"
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Отображаемое имя пользователя"
+				},
+				"firstName": {
+					"displayName": "Имя",
+					"description": "Имя пользователя"
+				},
+				"lastName": {
+					"displayName": "Фамилия",
+					"description": "Фамилия пользователя"
+				},
+				"email": {
+					"displayName": "Электронная почта",
+					"description": "Адрес электронной почты пользователя",
+					"placeholder": "имя@email.com"
+				},
+				"url": {
+					"displayName": "URL",
+					"description": "URL-адрес пользователя"
+				},
+				"description": {
+					"displayName": "Описание",
+					"description": "Описание пользователя"
+				},
+				"nickname": {
+					"displayName": "Псевдоним",
+					"description": "Никнейм для пользователя"
+				}
+			}
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"password": {
+					"displayName": "Пароль",
+					"description": "Пароль на страницу, если она защищена паролем."
+				},
+				"context": {
+					"displayName": "Контекст",
+					"description": "Область действия запроса; определяет поля, присутствующие в ответе",
+					"options": {
+						"view": {
+							"displayName": "Вид"
+						},
+						"embed": {
+							"displayName": "Встроить"
+						},
+						"edit": {
+							"displayName": "Редактировать"
+						}
+					}
+				},
+				"after": {
+					"displayName": "После",
+					"description": "Ограничить ответ на страницы, опубликованные после определенной даты, соответствующей стандарту ISO8601."
+				},
+				"author": {
+					"displayName": "Имена или идентификаторы авторов",
+					"description": "Ограничьте набор результатов страницами, назначенными конкретным авторам. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"before": {
+					"displayName": "До",
+					"description": "Ограничить ответ на страницы, опубликованные до указанной даты, соответствующей стандарту ISO8601."
+				},
+				"categories": {
+					"displayName": "Названия или идентификаторы категорий",
+					"description": "Ограничьте набор результатов всеми элементами, которым указанный термин назначен в таксономии категорий. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"excludedCategories": {
+					"displayName": "Исключить категории",
+					"description": "Ограничьте набор результатов всеми элементами, кроме тех, которым указанный термин назначен в таксономии категорий. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"excludedTags": {
+					"displayName": "Исключить теги",
+					"description": "Ограничьте набор результатов всеми элементами, кроме тех, которым указанный термин назначен в таксономии тегов. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"order": {
+					"displayName": "Заказ",
+					"description": "Атрибут сортировки порядка по возрастанию или убыванию",
+					"options": {
+						"asc": {
+							"displayName": "ASC"
+						},
+						"desc": {
+							"displayName": "DESC"
+						}
+					}
+				},
+				"orderBy": {
+					"displayName": "Заказать по",
+					"description": "Сортировка коллекции по атрибуту объекта",
+					"options": {
+						"author": {
+							"displayName": "Автор"
+						},
+						"date": {
+							"displayName": "Дата"
+						},
+						"id": {
+							"displayName": "ID"
+						},
+						"include": {
+							"displayName": "Включать"
+						},
+						"include_slugs": {
+							"displayName": "Включить слизни"
+						},
+						"modified": {
+							"displayName": "Модифицированный"
+						},
+						"parent": {
+							"displayName": "Родитель"
+						},
+						"relevance": {
+							"displayName": "Актуальность"
+						},
+						"slug": {
+							"displayName": "Слизень"
+						},
+						"title": {
+							"displayName": "Заголовок"
+						},
+						"email": {
+							"displayName": "Электронная почта"
+						},
+						"name": {
+							"displayName": "Имя"
+						},
+						"registered_date": {
+							"displayName": "Дата регистрации"
+						},
+						"url": {
+							"displayName": "URL"
+						}
+					}
+				},
+				"search": {
+					"displayName": "Поиск",
+					"description": "Ограничить результаты теми, которые соответствуют строке"
+				},
+				"status": {
+					"displayName": "Статус",
+					"description": "Статус страницы",
+					"options": {
+						"draft": {
+							"displayName": "Черновик"
+						},
+						"future": {
+							"displayName": "Будущее"
+						},
+						"pending": {
+							"displayName": "В ожидании"
+						},
+						"private": {
+							"displayName": "Частный"
+						},
+						"publish": {
+							"displayName": "Публиковать"
+						}
+					}
+				},
+				"sticky": {
+					"displayName": "Липкий",
+					"description": "Ограничить ли набор результатов липкими элементами"
+				},
+				"tags": {
+					"displayName": "Имена или идентификаторы тегов",
+					"description": "Ограничьте набор результатов всеми элементами, которым указанный термин назначен в таксономии тегов. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"force": {
+					"displayName": "Сила",
+					"description": "Следует ли обойти мусор и принудительно удалить"
+				},
+				"menuOrder": {
+					"displayName": "Порядок меню",
+					"description": "Ограничить набор результатов элементами с определенным значением порядка меню"
+				},
+				"page": {
+					"displayName": "Страница",
+					"description": "Текущая страница коллекции"
+				},
+				"parent": {
+					"displayName": "Идентификатор родительской страницы",
+					"description": "Ограничить набор результатов элементами с определенным идентификатором родительской страницы."
+				},
+				"who": {
+					"displayName": "ВОЗ",
+					"description": "Ограничить набор результатов пользователями, которые считаются авторами",
+					"options": {
+						"authors": {
+							"displayName": "Авторы"
+						}
+					}
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"pageId": {
+			"displayName": "Идентификатор страницы",
+			"description": "Уникальный идентификатор объекта"
+		},
+		"username": {
+			"displayName": "Имя пользователя",
+			"description": "Имя для входа пользователя"
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Отображаемое имя пользователя"
+		},
+		"firstName": {
+			"displayName": "Имя",
+			"description": "Имя пользователя"
+		},
+		"lastName": {
+			"displayName": "Фамилия",
+			"description": "Фамилия пользователя"
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"description": "Адрес электронной почты пользователя",
+			"placeholder": "имя@email.com"
+		},
+		"password": {
+			"displayName": "Пароль",
+			"description": "Пароль для пользователя (никогда не включен)"
+		},
+		"userId": {
+			"displayName": "ID пользователя",
+			"description": "Уникальный идентификатор пользователя"
+		},
+		"reassign": {
+			"displayName": "Переназначить",
+			"description": "Переназначить сообщения и ссылки удаленного пользователя этому идентификатору пользователя."
+		}
+	}
+}

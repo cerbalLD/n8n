@@ -1,0 +1,65 @@
+{
+	"header": {
+		"displayName": "Нпм",
+		"description": "Использование API реестра NPM"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"package": {
+					"displayName": "Упаковка"
+				},
+				"distTag": {
+					"displayName": "Тег распространения"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"getMetadata": {
+					"displayName": "Получить метаданные",
+					"description": "Возвращает все метаданные пакета определенной версии."
+				},
+				"getVersions": {
+					"displayName": "Получить версии",
+					"description": "Возвращает все версии пакета"
+				},
+				"search": {
+					"displayName": "Поиск",
+					"description": "Поиск пакетов"
+				},
+				"getMany": {
+					"displayName": "Получить все",
+					"description": "Возвращает все дистрибутивные теги пакета."
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновите dist-теги для пакета."
+				}
+			}
+		},
+		"packageName": {
+			"displayName": "Имя пакета"
+		},
+		"packageVersion": {
+			"displayName": "Версия пакета"
+		},
+		"query": {
+			"displayName": "Запрос",
+			"description": "Текст запроса, используемый для поиска пакетов"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"offset": {
+			"displayName": "Компенсировать",
+			"description": "Смещение для возврата результатов из"
+		},
+		"distTagName": {
+			"displayName": "Имя тега распространения"
+		}
+	}
+}

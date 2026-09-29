@@ -1,0 +1,181 @@
+{
+	"header": {
+		"displayName": "Google BigQuery",
+		"description": "Использование API Google BigQuery"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"oAuth2": {
+					"displayName": "OAuth2 (рекомендуется)"
+				},
+				"serviceAccount": {
+					"displayName": "Сервисный аккаунт"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"executeQuery": {
+					"displayName": "Выполнить запрос",
+					"description": "Выполнить SQL-запрос"
+				},
+				"insert": {
+					"displayName": "Вставлять",
+					"description": "Вставка строк в таблицу"
+				}
+			}
+		},
+		"projectId": {
+			"displayName": "Проект",
+			"description": "Проекты, в которых вам предоставлена ​​любая роль проекта"
+		},
+		"datasetId": {
+			"displayName": "Набор данных"
+		},
+		"tableId": {
+			"displayName": "Стол"
+		},
+		"sqlQuery": {
+			"displayName": "SQL-запрос",
+			"description": "SQL-запрос для выполнения. Дополнительную информацию о синтаксисе устаревшего SQL можно найти <a href=\"https://cloud.google.com/bigquery/docs/reference/standard-sql/query-syntax\" target=\"_blank\">здесь</a>.",
+			"placeholder": "SELECT * FROM [project:dataset.table] LIMIT 100;",
+			"hint": "Устаревший синтаксис SQL"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"defaultDataset": {
+					"displayName": "Имя или идентификатор набора данных по умолчанию",
+					"description": "Если этот параметр не установлен, все имена таблиц в строке запроса должны быть указаны в формате «datasetId.tableId». Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"dryRun": {
+					"displayName": "Пробный прогон",
+					"description": "Если установлено значение true, BigQuery не запускает задание. Вместо этого, если запрос действителен, BigQuery возвращает статистику о задании, например, сколько байтов будет обработано. Если запрос недействителен, возвращается ошибка."
+				},
+				"includeSchema": {
+					"displayName": "Включить схему в вывод",
+					"description": "Включать ли схему в выходные данные. Если установлено значение true, выходные данные будут содержать ключ «_schema» со схемой таблицы."
+				},
+				"location": {
+					"displayName": "Местоположение (регион)",
+					"description": "Местоположение или регион, где данные будут храниться и обрабатываться. Стоимость хранения и анализа также определяется местоположением данных и резервированием, подробнее <a href=\"https://cloud.google.com/bigquery/docs/locations\" target=\"_blank\">здесь</a>.",
+					"placeholder": "например Европа-Запад3"
+				},
+				"maximumBytesBilled": {
+					"displayName": "Максимальное количество оплачиваемых байтов",
+					"description": "Ограничивает количество байтов, оплачиваемых за этот запрос. Запросы с байтами, стоимость которых превышает этот лимит, не будут выполнены (без взимания платы). Строка в формате <a href=\"https://developers.google.com/discovery/v1/type-format?utm_source=cloud.google.com&utm_medium=referral\" target=\"_blank\">Int64Value</a>."
+				},
+				"maxResults": {
+					"displayName": "Максимальное количество результатов на странице",
+					"description": "Максимальное количество возвращаемых результатов на страницу результатов. Это особенно полезно при работе с большими наборами данных. Это не повлияет на общее количество возвращаемых результатов, например. строки в таблице. Вы можете использовать LIMIT в своем SQL-запросе, чтобы ограничить количество возвращаемых строк."
+				},
+				"timeoutMs": {
+					"displayName": "Тайм-аут",
+					"description": "Указывает максимальное время в миллисекундах, в течение которого клиент готов ожидать завершения запроса. Имейте в виду, что вызову не гарантировано ожидание указанного времени ожидания; обычно он возвращается примерно через 200 секунд (200 000 миллисекунд), даже если запрос не завершен.",
+					"hint": "Как долго ждать завершения запроса, в миллисекундах"
+				},
+				"rawOutput": {
+					"displayName": "Необработанный вывод"
+				},
+				"useLegacySql": {
+					"displayName": "Используйте устаревший SQL",
+					"description": "Использовать ли для этого запроса устаревший диалект SQL BigQuery. Если установлено значение false, запрос будет использовать стандартный SQL BigQuery."
+				},
+				"returnAsNumbers": {
+					"displayName": "Возврат целых чисел как чисел",
+					"description": "Будут ли возвращены все целочисленные значения в виде чисел. Если установлено значение false, все целочисленные значения будут возвращены в виде строк."
+				},
+				"queryParameters": {
+					"values": {
+						"queryParameters": {
+							"displayName": "Параметры запроса (именные)",
+							"description": "Используйте <a href=\"https://cloud.google.com/bigquery/docs/parameterized-queries#using_structs_in_parameterized_queries\" target=\"_blank\">параметризованные запросы</a> для предотвращения SQL-инъекций. Позиционные аргументы на данный момент не поддерживаются. Эта функция не будет доступна при использовании устаревшего SQL."
+						},
+						"namedParameters": {
+							"options": {
+								"name": {
+									"displayName": "Имя",
+									"description": "Имя параметра"
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Замещающая стоимость. Это должна быть строка. Массивы, даты и типы структур, упомянутые в <a href=\"https://cloud.google.com/bigquery/docs/parameterized-queries#using_structs_in_parameterized_queries\" target=\"_blank\">официальной документации</a>, пока не поддерживаются."
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить параметр",
+					"displayName": "Параметры запроса (именные)",
+					"description": "Используйте <a href=\"https://cloud.google.com/bigquery/docs/parameterized-queries#using_structs_in_parameterized_queries\" target=\"_blank\">параметризованные запросы</a> для предотвращения SQL-инъекций. Позиционные аргументы на данный момент не поддерживаются. Эта функция не будет доступна при использовании устаревшего SQL.",
+					"options": {
+						"namedParameters": {
+							"displayName": "Именованный параметр"
+						}
+					}
+				},
+				"batchSize": {
+					"displayName": "Размер партии"
+				},
+				"ignoreUnknownValues": {
+					"displayName": "Игнорировать неизвестные значения",
+					"description": "Игнорировать ли значения строк, которые не соответствуют схеме"
+				},
+				"skipInvalidRows": {
+					"displayName": "Пропустить недопустимые строки",
+					"description": "Пропускать ли строки со значениями, не соответствующими схеме"
+				},
+				"templateSuffix": {
+					"displayName": "Суффикс шаблона",
+					"description": "Создайте новую таблицу на основе целевой таблицы и вставьте строки в новую таблицу. Новая таблица будет называться <code>{destinationTable}{templateSuffix}</code>."
+				},
+				"traceId": {
+					"displayName": "Идентификатор трассировки",
+					"description": "Уникальный идентификатор запроса, только для отладки. Он чувствителен к регистру и ограничен до 36 символов ASCII. Рекомендуется использовать UUID."
+				}
+			}
+		},
+		"dataMode": {
+			"displayName": "Режим данных",
+			"description": "Вставлять ли входные данные, которые получает этот узел, в новую строку",
+			"options": {
+				"autoMap": {
+					"displayName": "Входные данные автоматического сопоставления",
+					"description": "Используйте, когда входные свойства узла соответствуют именам полей назначения."
+				},
+				"define": {
+					"displayName": "Сопоставьте каждое поле ниже",
+					"description": "Установите значение для каждого поля назначения"
+				}
+			}
+		},
+		"info": {
+			"displayName": "В этом режиме убедитесь, что поля входящих данных имеют те же имена, что и столбцы в BigQuery. (Используйте узел «Редактировать поля» перед этим узлом, чтобы изменить их, если необходимо.)"
+		},
+		"fieldsUi": {
+			"options": {
+				"fieldsUi": {
+					"displayName": "Поля для отправки"
+				},
+				"values": {
+					"displayName": "Поле",
+					"values": {
+						"fieldId": {
+							"displayName": "Имя поля или идентификатор",
+							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+						},
+						"fieldValue": {
+							"displayName": "Значение поля"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить поле",
+			"displayName": "Поля для отправки",
+			"multipleValueButtonText": "Добавить поле"
+		}
+	}
+}

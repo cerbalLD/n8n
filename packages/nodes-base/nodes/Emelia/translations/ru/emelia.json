@@ -1,0 +1,156 @@
+{
+	"header": {
+		"displayName": "Емелия",
+		"description": "Используйте API Emelia"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"campaign": {
+					"displayName": "Кампания"
+				},
+				"contactList": {
+					"displayName": "Список контактов"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"addContact": {
+					"displayName": "Добавить контакт"
+				},
+				"create": {
+					"displayName": "Создавать"
+				},
+				"duplicate": {
+					"displayName": "Дублировать"
+				},
+				"get": {
+					"displayName": "Получать"
+				},
+				"getAll": {
+					"displayName": "Получить много"
+				},
+				"pause": {
+					"displayName": "Пауза"
+				},
+				"start": {
+					"displayName": "Начинать"
+				},
+				"add": {
+					"displayName": "Добавлять"
+				}
+			}
+		},
+		"campaignId": {
+			"displayName": "Название или идентификатор кампании",
+			"description": "Идентификатор кампании, которую требуется дублировать. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"contactEmail": {
+			"displayName": "Контактный адрес электронной почты",
+			"description": "Электронная почта контакта, которого нужно добавить в список контактов"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"customFieldsUi": {
+					"values": {
+						"customFieldsUi": {
+							"displayName": "Пользовательские поля",
+							"description": "Фильтровать по настраиваемым полям"
+						},
+						"customFieldsValues": {
+							"options": {
+								"fieldName": {
+									"displayName": "Имя поля",
+									"description": "Имя поля, в которое нужно добавить настраиваемое поле."
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Значение, которое нужно установить в настраиваемом поле"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить настраиваемое поле",
+					"displayName": "Пользовательские поля",
+					"description": "Фильтровать по настраиваемым полям",
+					"options": {
+						"customFieldsValues": {
+							"displayName": "Пользовательское поле"
+						}
+					}
+				},
+				"firstName": {
+					"displayName": "Имя",
+					"description": "Имя контакта, который нужно добавить"
+				},
+				"lastContacted": {
+					"displayName": "Последний контакт",
+					"description": "Дата последнего контакта с контактом, которого нужно добавить"
+				},
+				"lastName": {
+					"displayName": "Фамилия",
+					"description": "Фамилия контакта, который нужно добавить"
+				},
+				"lastOpen": {
+					"displayName": "Последнее открытие",
+					"description": "Дата последнего открытия контакта, который нужно добавить"
+				},
+				"lastReplied": {
+					"displayName": "Последний ответ",
+					"description": "Дата последнего ответа контакта, которого нужно добавить"
+				},
+				"mailsSent": {
+					"displayName": "Письма отправлены",
+					"description": "Количество электронных писем, отправленных контакту для добавления"
+				},
+				"phoneNumber": {
+					"displayName": "Номер телефона",
+					"description": "Номер телефона контакта, который нужно добавить"
+				}
+			}
+		},
+		"campaignName": {
+			"displayName": "Новое название кампании",
+			"description": "Название новой кампании, которую нужно создать"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"copyContacts": {
+					"displayName": "Копировать контакты",
+					"description": "Копировать ли все контакты из исходной кампании"
+				},
+				"copyProvider": {
+					"displayName": "Копировать поставщика электронной почты",
+					"description": "Следует ли устанавливать того же поставщика электронной почты, что и в исходной кампании."
+				},
+				"copyMails": {
+					"displayName": "Копировать последовательность писем",
+					"description": "Копировать ли все этапы последовательности электронных писем из исходной кампании."
+				},
+				"copySettings": {
+					"displayName": "Копировать глобальные настройки",
+					"description": "Копировать ли все общие настройки из исходной кампании"
+				}
+			}
+		},
+		"contactListId": {
+			"displayName": "Имя или идентификатор списка контактов",
+			"description": "Идентификатор списка контактов, в который нужно добавить контакт. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		}
+	}
+}

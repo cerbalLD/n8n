@@ -1,0 +1,301 @@
+{
+	"header": {
+		"displayName": "Призрак",
+		"description": "Использовать Ghost API"
+	},
+	"nodeView": {
+		"source": {
+			"displayName": "Источник",
+			"description": "Выберите, откуда поступают ваши данные: контент или API администратора.",
+			"options": {
+				"adminApi": {
+					"displayName": "API администратора"
+				},
+				"contentApi": {
+					"displayName": "API контента"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"post": {
+					"displayName": "Почта"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить публикацию"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить много сообщений"
+				},
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать публикацию"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить сообщение"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить публикацию"
+				}
+			}
+		},
+		"title": {
+			"displayName": "Заголовок",
+			"description": "Название сообщения"
+		},
+		"contentFormat": {
+			"displayName": "Формат контента",
+			"description": "Формат сообщения",
+			"options": {
+				"html": {
+					"displayName": "HTML"
+				},
+				"mobileDoc": {
+					"displayName": "Мобильный документ"
+				},
+				"lexical": {
+					"displayName": "Лексический"
+				}
+			}
+		},
+		"content": {
+			"displayName": "Контент (JSON)",
+			"description": "Лексический — это формат JSON, возвращаемый редактором Ghost Default."
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"authors": {
+					"displayName": "Имена или идентификаторы авторов",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"canonical_url": {
+					"displayName": "Канонический URL"
+				},
+				"codeinjection_foot": {
+					"displayName": "Ножка для впрыска кода",
+					"description": "Внедрение кода позволяет вам внедрить небольшой фрагмент на ваш сайт Ghost."
+				},
+				"codeinjection_head": {
+					"displayName": "Головка для ввода кода",
+					"description": "Внедрение кода позволяет вам внедрить небольшой фрагмент на ваш сайт Ghost."
+				},
+				"featured": {
+					"displayName": "Рекомендуемые"
+				},
+				"meta_description": {
+					"displayName": "Мета-описание"
+				},
+				"meta_title": {
+					"displayName": "Мета-заголовок"
+				},
+				"og_description": {
+					"displayName": "Открыть описание графика"
+				},
+				"og_image": {
+					"displayName": "Открыть изображение графика",
+					"description": "URL-адрес изображения"
+				},
+				"og_title": {
+					"displayName": "Открыть заголовок графика"
+				},
+				"published_at": {
+					"displayName": "Опубликовано на"
+				},
+				"slug": {
+					"displayName": "Слизень"
+				},
+				"status": {
+					"displayName": "Статус",
+					"options": {
+						"draft": {
+							"displayName": "Черновик"
+						},
+						"published": {
+							"displayName": "Опубликовано"
+						},
+						"scheduled": {
+							"displayName": "Запланировано"
+						}
+					}
+				},
+				"tags": {
+					"displayName": "Имена или идентификаторы тегов",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"twitter_description": {
+					"displayName": "Описание Твиттера"
+				},
+				"twitter_image": {
+					"displayName": "Изображение в Твиттере",
+					"description": "URL-адрес изображения"
+				},
+				"twitter_title": {
+					"displayName": "Твиттер Название"
+				}
+			}
+		},
+		"postId": {
+			"displayName": "Идентификатор сообщения",
+			"description": "Идентификатор публикации, которую необходимо обновить."
+		},
+		"by": {
+			"displayName": "К",
+			"description": "Получите сообщение по слагу или идентификатору.",
+			"options": {
+				"id": {
+					"displayName": "ID"
+				},
+				"slug": {
+					"displayName": "Слизень"
+				}
+			}
+		},
+		"identifier": {
+			"displayName": "Идентификатор",
+			"description": "Идентификатор или фрагмент сообщения, которое нужно получить."
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"fields": {
+					"displayName": "Поля",
+					"description": "Ограничьте поля, возвращаемые в объекте ответа. Например. для полей сообщений = заголовок, URL."
+				},
+				"formats": {
+					"displayName": "Форматы",
+					"options": {
+						"html": {
+							"displayName": "HTML"
+						},
+						"mobiledoc": {
+							"displayName": "Мобильный документ"
+						},
+						"lexical": {
+							"displayName": "Лексический"
+						},
+						"plaintext": {
+							"displayName": "Открытый текст"
+						}
+					},
+					"description": "По умолчанию возвращается только HTML, однако каждое сообщение и страница в Ghost имеют два доступных формата: HTML и открытый текст."
+				},
+				"include": {
+					"displayName": "Включать",
+					"description": "Сообщает API о необходимости вернуть дополнительные данные, относящиеся к запрошенному вами ресурсу.",
+					"options": {
+						"authors": {
+							"displayName": "Авторы"
+						},
+						"tags": {
+							"displayName": "Теги"
+						}
+					}
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"authors": {
+					"displayName": "Имена или идентификаторы авторов",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"canonical_url": {
+					"displayName": "Канонический URL"
+				},
+				"codeinjection_foot": {
+					"displayName": "Ножка для впрыска кода"
+				},
+				"codeinjection_head": {
+					"displayName": "Головка для ввода кода"
+				},
+				"content": {
+					"displayName": "Содержание"
+				},
+				"contentJson": {
+					"displayName": "Контент (JSON)",
+					"description": "Лексический — это формат JSON, возвращаемый редактором Ghost Default."
+				},
+				"featured": {
+					"displayName": "Рекомендуемые"
+				},
+				"meta_description": {
+					"displayName": "Мета-описание"
+				},
+				"meta_title": {
+					"displayName": "Мета-заголовок"
+				},
+				"og_description": {
+					"displayName": "Открыть описание графика"
+				},
+				"og_image": {
+					"displayName": "Открыть изображение графика",
+					"description": "URL-адрес изображения"
+				},
+				"og_title": {
+					"displayName": "Открыть заголовок графика"
+				},
+				"published_at": {
+					"displayName": "Опубликовано на"
+				},
+				"slug": {
+					"displayName": "Слизень"
+				},
+				"status": {
+					"displayName": "Статус",
+					"options": {
+						"draft": {
+							"displayName": "Черновик"
+						},
+						"published": {
+							"displayName": "Опубликовано"
+						},
+						"scheduled": {
+							"displayName": "Запланировано"
+						}
+					}
+				},
+				"tags": {
+					"displayName": "Имена или идентификаторы тегов",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"title": {
+					"displayName": "Заголовок",
+					"description": "Название сообщения"
+				},
+				"twitter_description": {
+					"displayName": "Описание Твиттера"
+				},
+				"twitter_image": {
+					"displayName": "Изображение в Твиттере",
+					"description": "URL-адрес изображения"
+				},
+				"twitter_title": {
+					"displayName": "Твиттер Название"
+				}
+			}
+		}
+	}
+}

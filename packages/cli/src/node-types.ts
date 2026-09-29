@@ -48,7 +48,16 @@ export class NodeTypes implements INodeTypes {
 		const nodeType = this.loadNodesAndCredentials.getNode(nodeTypeName);
 		const { description } = NodeHelpers.getVersionedNodeType(nodeType.type, version);
 
-		return { description: { ...description }, sourcePath: nodeType.sourcePath };
+		// `nodeType.sourcePath` (from the directory loader's own node cache) is left
+		// unresolved (relative to the package dir) due to a variable-shadowing bug in
+		// DirectoryLoader.loadNodeFromFile(). `knownNodes[...].sourcePath` is a separate
+		// copy that the loader aggregator resolves to an absolute path on registration
+		// (see LoadNodesAndCredentials's loader-postprocessing step), so prefer that one
+		// for locating translation files; fall back to the raw path if it's missing.
+		const sourcePath =
+			this.loadNodesAndCredentials.knownNodes[nodeTypeName]?.sourcePath ?? nodeType.sourcePath;
+
+		return { description: { ...description }, sourcePath };
 	}
 
 	/**
@@ -62,18 +71,18 @@ export class NodeTypes implements INodeTypes {
 		const { description, sourcePath } = this.getWithSourcePath(nodeTypeName, version);
 
 		if (locale !== 'en') {
-			const translationPath = await this.getNodeTranslationPath({
-				nodeSourcePath: sourcePath,
-				longNodeType: description.name,
-				locale,
-			});
-
 			try {
+				const translationPath = await this.getNodeTranslationPath({
+					nodeSourcePath: sourcePath,
+					longNodeType: description.name,
+					locale,
+				});
+
 				const translation = await readFile(translationPath, 'utf8');
 				// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
 				description.translation = JSON.parse(translation);
 			} catch {
-				// ignore - no translation exists at path
+				// ignore - no translation exists, or its path could not be resolved
 			}
 		}
 

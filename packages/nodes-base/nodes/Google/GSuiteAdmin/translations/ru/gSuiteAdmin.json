@@ -1,0 +1,818 @@
+{
+	"header": {
+		"displayName": "Администратор Google Workspace",
+		"description": "Использование API администратора Google Workspace"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"device": {
+					"displayName": "Устройство ChromeOS"
+				},
+				"group": {
+					"displayName": "Группа"
+				},
+				"user": {
+					"displayName": "Пользователь"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить пользователя"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить много пользователей"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить пользователя"
+				},
+				"changeStatus": {
+					"displayName": "Изменить статус",
+					"description": "Изменение статуса устройства ChromeOS"
+				},
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать пользователя"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удаление пользователя"
+				},
+				"addToGroup": {
+					"displayName": "Добавить в группу",
+					"description": "Добавить существующего пользователя в группу"
+				},
+				"removeFromGroup": {
+					"displayName": "Удалить из группы",
+					"description": "Удаление пользователя из группы"
+				}
+			}
+		},
+		"deviceId": {
+			"displayName": "Устройство",
+			"description": "Выберите устройство, которое вы хотите получить"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"projection": {
+			"displayName": "Пользовательские поля",
+			"description": "Какое подмножество полей получить для этого пользователя",
+			"options": {
+				"basic": {
+					"displayName": "Не включать",
+					"description": "Не включайте никаких настраиваемых полей для пользователя."
+				},
+				"full": {
+					"displayName": "Включить все",
+					"description": "Включить все поля, связанные с этим пользователем"
+				},
+				"custom": {
+					"displayName": "Обычай",
+					"description": "Включение настраиваемых полей из схем, запрошенных в именах или идентификаторах настраиваемых схем."
+				}
+			}
+		},
+		"includeChildOrgunits": {
+			"displayName": "Включить детей",
+			"description": "Включать ли устройства из организационных подразделений, находящихся ниже указанного организационного подразделения."
+		},
+		"filter": {
+			"displayName": "Фильтр",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"orgUnitPath": {
+					"displayName": "Название или идентификатор организационного подразделения",
+					"description": "Укажите название или идентификатор организационного подразделения. Выберите из списка или используйте выражение. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"query": {
+					"displayName": "Запрос",
+					"description": "Строка запроса для фильтрации результатов. Следуйте документации Google Admin SDK. <a href=\"https://developers.google.com/admin-sdk/directory/v1/guides/search-users#examples\" target=\"_blank\">Подробнее</a>.",
+					"placeholder": "например имя:контакт* электронная почта:контакт*"
+				},
+				"customer": {
+					"displayName": "Клиент",
+					"description": "Уникальный идентификатор аккаунта Google Workspace клиента."
+				},
+				"domain": {
+					"displayName": "Домен",
+					"description": "Доменное имя. Используйте это поле, чтобы получить группы из определенного домена."
+				},
+				"userId": {
+					"displayName": "ID пользователя",
+					"description": "Адрес электронной почты или неизменяемый идентификатор пользователя для отображения групп, в которых он состоит."
+				},
+				"showDeleted": {
+					"displayName": "Показать удаленные",
+					"description": "Получить ли список удаленных пользователей"
+				}
+			}
+		},
+		"sort": {
+			"options": {
+				"sort": {
+					"displayName": "Сортировать",
+					"description": "Определите правила сортировки результатов"
+				},
+				"sortRules": {
+					"displayName": "Правила сортировки",
+					"values": {
+						"orderBy": {
+							"displayName": "Заказать по",
+							"description": "Поле для сортировки результатов",
+							"options": {
+								"annotatedLocation": {
+									"displayName": "Аннотированное местоположение"
+								},
+								"annotatedUser": {
+									"displayName": "Аннотированный пользователь"
+								},
+								"lastSync": {
+									"displayName": "Последняя синхронизация"
+								},
+								"notes": {
+									"displayName": "Примечания"
+								},
+								"serialNumber": {
+									"displayName": "Серийный номер"
+								},
+								"status": {
+									"displayName": "Статус"
+								},
+								"email": {
+									"displayName": "Электронная почта"
+								},
+								"familyName": {
+									"displayName": "Фамилия"
+								},
+								"givenName": {
+									"displayName": "Собственное имя"
+								}
+							}
+						},
+						"sortBy": {
+							"displayName": "Порядок сортировки",
+							"description": "Направление сортировки",
+							"options": {
+								"ascending": {
+									"displayName": "восходящий"
+								},
+								"descending": {
+									"displayName": "По убыванию"
+								}
+							}
+						},
+						"sortOrder": {
+							"displayName": "Порядок сортировки",
+							"description": "Направление сортировки",
+							"options": {
+								"ASCENDING": {
+									"displayName": "восходящий"
+								},
+								"DESCENDING": {
+									"displayName": "По убыванию"
+								}
+							}
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить правило сортировки",
+			"displayName": "Сортировать",
+			"description": "Определите правила сортировки результатов"
+		},
+		"updateOptions": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"orgUnitPath": {
+					"displayName": "Перейти к названию или идентификатору организационного подразделения",
+					"description": "Полный путь к организационному подразделению. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"annotatedUser": {
+					"displayName": "Аннотированный пользователь",
+					"description": "Аннотированный пользователь устройства",
+					"placeholder": "например справочная служба"
+				},
+				"annotatedLocation": {
+					"displayName": "Аннотированное местоположение",
+					"description": "Аннотированное расположение устройства",
+					"placeholder": "например Служба поддержки Chromebook в Маунтин-Вью"
+				},
+				"annotatedAssetId": {
+					"displayName": "Аннотированный идентификатор актива",
+					"description": "Аннотированный идентификатор актива устройства.",
+					"placeholder": "например 1234567890"
+				},
+				"notes": {
+					"displayName": "Примечания",
+					"description": "Добавление заметок на устройство",
+					"placeholder": "например Взят взаймы у поддержки"
+				}
+			}
+		},
+		"action": {
+			"displayName": "Статус",
+			"description": "Установить статус устройства",
+			"options": {
+				"reenable": {
+					"displayName": "Включено",
+					"description": "Повторно включить отключенный Chromebook"
+				},
+				"disable": {
+					"displayName": "Неполноценный",
+					"description": "Отключить хромбук"
+				}
+			}
+		},
+		"groupId": {
+			"displayName": "Группа",
+			"description": "Выберите группу, над которой необходимо выполнить операцию."
+		},
+		"name": {
+			"displayName": "Имя группы",
+			"description": "Отображаемое имя группы",
+			"placeholder": "например Продажи"
+		},
+		"email": {
+			"displayName": "Групповая электронная почта",
+			"description": "Адрес электронной почты группы. Если ваша учетная запись имеет несколько доменов, выберите соответствующий домен для адреса электронной почты. Электронная почта должна быть уникальной",
+			"placeholder": "например sales@example.com"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"description": {
+					"displayName": "Описание",
+					"description": "Расширенное описание, помогающее пользователям определить цель группы. Например, вы можете включить информацию о том, кто должен присоединиться к группе, типы сообщений, которые следует отправлять в группу, ссылки на часто задаваемые вопросы о группе или связанных группах."
+				},
+				"changePasswordAtNextLogin": {
+					"displayName": "Изменить пароль при следующем входе в систему",
+					"description": "Будет ли пользователь вынужден менять свой пароль при следующем входе в систему"
+				},
+				"phoneUi": {
+					"values": {
+						"phoneUi": {
+							"displayName": "Телефоны"
+						},
+						"phoneValues": {
+							"options": {
+								"type": {
+									"displayName": "Тип",
+									"description": "Тип номера телефона",
+									"options": {
+										"assistant": {
+											"displayName": "Ассистент"
+										},
+										"callback": {
+											"displayName": "Перезвонить"
+										},
+										"car": {
+											"displayName": "Машина"
+										},
+										"company_main": {
+											"displayName": "Компания Главная"
+										},
+										"custom": {
+											"displayName": "Обычай"
+										},
+										"grand_central": {
+											"displayName": "Гранд Сентрал"
+										},
+										"home": {
+											"displayName": "Дом"
+										},
+										"home_fax": {
+											"displayName": "Домашний факс"
+										},
+										"isdn": {
+											"displayName": "ISDN"
+										},
+										"main": {
+											"displayName": "Основной"
+										},
+										"mobile": {
+											"displayName": "мобильный"
+										},
+										"other": {
+											"displayName": "Другой"
+										},
+										"other_fax": {
+											"displayName": "Другой факс"
+										},
+										"pager": {
+											"displayName": "Пейджер"
+										},
+										"radio": {
+											"displayName": "Радио"
+										},
+										"telex": {
+											"displayName": "Телекс"
+										},
+										"tty_tdd": {
+											"displayName": "телетайп TDD"
+										},
+										"work": {
+											"displayName": "Работа"
+										},
+										"work_fax": {
+											"displayName": "Рабочий факс"
+										},
+										"work_mobile": {
+											"displayName": "Работайте мобильно"
+										},
+										"work_pager": {
+											"displayName": "Рабочий пейджер"
+										}
+									}
+								},
+								"value": {
+									"displayName": "Номер телефона"
+								},
+								"primary": {
+									"displayName": "Начальный",
+									"description": "Является ли это основным номером телефона пользователя"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить телефон",
+					"displayName": "Телефоны",
+					"options": {
+						"phoneValues": {
+							"displayName": "Телефон"
+						}
+					}
+				},
+				"emailUi": {
+					"values": {
+						"emailUi": {
+							"displayName": "Вторичные электронные письма"
+						},
+						"emailValues": {
+							"options": {
+								"type": {
+									"displayName": "Тип",
+									"description": "Тип учетной записи электронной почты",
+									"options": {
+										"home": {
+											"displayName": "Дом"
+										},
+										"work": {
+											"displayName": "Работа"
+										},
+										"other": {
+											"displayName": "Другой"
+										}
+									}
+								},
+								"address": {
+									"displayName": "Электронная почта"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить адрес электронной почты",
+					"displayName": "Вторичные электронные письма",
+					"options": {
+						"emailValues": {
+							"displayName": "Электронная почта"
+						}
+					}
+				},
+				"roles": {
+					"displayName": "Роли",
+					"description": "Выберите роли, которые вы хотите назначить пользователю.",
+					"options": {
+						"directorySyncAdmin": {
+							"displayName": "Администратор синхронизации каталогов",
+							"description": "Назначать ли роль администратора синхронизации каталогов"
+						},
+						"groupsAdmin": {
+							"displayName": "Администратор групп",
+							"description": "Назначать ли роль администратора групп"
+						},
+						"groupsEditor": {
+							"displayName": "Редактор групп",
+							"description": "Назначать ли роль редактора групп"
+						},
+						"groupsReader": {
+							"displayName": "Читатель групп",
+							"description": "Назначать ли роль читателя групп"
+						},
+						"helpDeskAdmin": {
+							"displayName": "Администратор службы поддержки",
+							"description": "Назначать ли роль администратора службы поддержки"
+						},
+						"inventoryReportingAdmin": {
+							"displayName": "Администратор отчетов по инвентаризации",
+							"description": "Назначать ли роль администратора отчетов по инвентаризации"
+						},
+						"mobileAdmin": {
+							"displayName": "Мобильный администратор",
+							"description": "Назначать ли роль мобильного администратора"
+						},
+						"servicesAdmin": {
+							"displayName": "Администратор служб",
+							"description": "Назначать ли роль администратора служб"
+						},
+						"storageAdmin": {
+							"displayName": "Администратор хранилища",
+							"description": "Назначать ли роль администратора хранилища"
+						},
+						"superAdmin": {
+							"displayName": "Суперадминистратор",
+							"description": "Назначать ли роль суперадминистратора"
+						},
+						"userManagement": {
+							"displayName": "Управление пользователями",
+							"description": "Назначать ли роль управления пользователями"
+						}
+					}
+				},
+				"customFields": {
+					"values": {
+						"customFields": {
+							"displayName": "Пользовательские поля",
+							"description": "Позволяет редактировать и добавлять настраиваемые поля."
+						},
+						"fieldValues": {
+							"options": {
+								"schemaName": {
+									"displayName": "Имя или идентификатор схемы",
+									"description": "Выберите схему, которая будет использоваться для настраиваемых полей. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								},
+								"fieldName": {
+									"displayName": "Имя поля или идентификатор",
+									"description": "Введите имя поля из выбранной схемы."
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Укажите значение для выбранного поля"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить или изменить настраиваемые поля",
+					"displayName": "Пользовательские поля",
+					"description": "Позволяет редактировать и добавлять настраиваемые поля.",
+					"options": {
+						"fieldValues": {
+							"displayName": "Поле"
+						}
+					}
+				}
+			}
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"description": {
+					"displayName": "Описание",
+					"description": "Расширенное описание, помогающее пользователям определить цель группы. Например, вы можете включить информацию о том, кто должен присоединиться к группе, типы сообщений, которые следует отправлять в группу, ссылки на часто задаваемые вопросы о группе или связанных группах."
+				},
+				"email": {
+					"displayName": "Электронная почта",
+					"description": "Адрес электронной почты группы. Если ваша учетная запись имеет несколько доменов, выберите соответствующий домен для адреса электронной почты. Электронная почта должна быть уникальной.",
+					"placeholder": "например sales@example.com"
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Отображаемое имя группы",
+					"placeholder": "например Продажи"
+				},
+				"archived": {
+					"displayName": "В архиве",
+					"description": "Заархивирован ли пользователь"
+				},
+				"suspendUi": {
+					"displayName": "Приостановить",
+					"description": "Устанавливать ли пользователя как приостановленного. Если установлено значение OFF, пользователь будет повторно активирован. Если не добавить, статус останется неизменным."
+				},
+				"changePasswordAtNextLogin": {
+					"displayName": "Изменить пароль при следующем входе в систему",
+					"description": "Будет ли пользователь вынужден менять свой пароль при следующем входе в систему"
+				},
+				"firstName": {
+					"displayName": "Имя",
+					"placeholder": "например Джон"
+				},
+				"lastName": {
+					"displayName": "Фамилия",
+					"placeholder": "например Доу"
+				},
+				"password": {
+					"displayName": "Пароль",
+					"description": "Сохраняет пароль для учетной записи пользователя. Требуется минимум 8 символов. Максимальная длина — 100 символов.",
+					"placeholder": "например MyStrongP@ssword123"
+				},
+				"phoneUi": {
+					"values": {
+						"phoneUi": {
+							"displayName": "Телефоны"
+						},
+						"phoneValues": {
+							"options": {
+								"type": {
+									"displayName": "Тип",
+									"description": "Тип номера телефона",
+									"options": {
+										"assistant": {
+											"displayName": "Ассистент"
+										},
+										"callback": {
+											"displayName": "Перезвонить"
+										},
+										"car": {
+											"displayName": "Машина"
+										},
+										"company_main": {
+											"displayName": "Компания Главная"
+										},
+										"custom": {
+											"displayName": "Обычай"
+										},
+										"grand_central": {
+											"displayName": "Гранд Сентрал"
+										},
+										"home": {
+											"displayName": "Дом"
+										},
+										"home_fax": {
+											"displayName": "Домашний факс"
+										},
+										"isdn": {
+											"displayName": "ISDN"
+										},
+										"main": {
+											"displayName": "Основной"
+										},
+										"mobile": {
+											"displayName": "мобильный"
+										},
+										"other": {
+											"displayName": "Другой"
+										},
+										"other_fax": {
+											"displayName": "Другой факс"
+										},
+										"pager": {
+											"displayName": "Пейджер"
+										},
+										"radio": {
+											"displayName": "Радио"
+										},
+										"telex": {
+											"displayName": "Телекс"
+										},
+										"tty_tdd": {
+											"displayName": "телетайп TDD"
+										},
+										"work": {
+											"displayName": "Работа"
+										},
+										"work_fax": {
+											"displayName": "Рабочий факс"
+										},
+										"work_mobile": {
+											"displayName": "Работайте мобильно"
+										},
+										"work_pager": {
+											"displayName": "Рабочий пейджер"
+										}
+									}
+								},
+								"value": {
+									"displayName": "Номер телефона",
+									"placeholder": "например +1234567890"
+								},
+								"primary": {
+									"displayName": "Начальный",
+									"description": "Является ли это основным номером телефона пользователя. У пользователя может быть только один основной номер телефона."
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить телефон",
+					"displayName": "Телефоны",
+					"options": {
+						"phoneValues": {
+							"displayName": "Телефон"
+						}
+					}
+				},
+				"primaryEmail": {
+					"displayName": "Основной адрес электронной почты",
+					"description": "Основной адрес электронной почты пользователя. Это свойство необходимо в запросе на создание учетной записи пользователя. PrimaryEmail должен быть уникальным и не может быть псевдонимом другого пользователя.",
+					"placeholder": "например john.doe@example.com"
+				},
+				"emailUi": {
+					"values": {
+						"emailUi": {
+							"displayName": "Вторичные электронные письма"
+						},
+						"emailValues": {
+							"options": {
+								"type": {
+									"displayName": "Тип",
+									"description": "Тип учетной записи электронной почты",
+									"options": {
+										"home": {
+											"displayName": "Дом"
+										},
+										"work": {
+											"displayName": "Работа"
+										},
+										"other": {
+											"displayName": "Другой"
+										}
+									}
+								},
+								"address": {
+									"displayName": "Электронная почта",
+									"placeholder": "например john.doe.work@example.com"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить адрес электронной почты",
+					"displayName": "Вторичные электронные письма",
+					"options": {
+						"emailValues": {
+							"displayName": "Электронная почта"
+						}
+					}
+				},
+				"roles": {
+					"displayName": "Роли",
+					"description": "Выберите роли, которые вы хотите назначить пользователю.",
+					"options": {
+						"directorySyncAdmin": {
+							"displayName": "Администратор синхронизации каталогов",
+							"description": "Назначать ли роль администратора синхронизации каталогов"
+						},
+						"groupsAdmin": {
+							"displayName": "Администратор групп",
+							"description": "Назначать ли роль администратора групп"
+						},
+						"groupsEditor": {
+							"displayName": "Редактор групп",
+							"description": "Назначать ли роль редактора групп"
+						},
+						"groupsReader": {
+							"displayName": "Читатель групп",
+							"description": "Назначать ли роль читателя групп"
+						},
+						"helpDeskAdmin": {
+							"displayName": "Администратор службы поддержки",
+							"description": "Назначать ли роль администратора службы поддержки"
+						},
+						"inventoryReportingAdmin": {
+							"displayName": "Администратор отчетов по инвентаризации",
+							"description": "Назначать ли роль администратора отчетов по инвентаризации"
+						},
+						"mobileAdmin": {
+							"displayName": "Мобильный администратор",
+							"description": "Назначать ли роль мобильного администратора"
+						},
+						"servicesAdmin": {
+							"displayName": "Администратор служб",
+							"description": "Назначать ли роль администратора служб"
+						},
+						"storageAdmin": {
+							"displayName": "Администратор хранилища",
+							"description": "Назначать ли роль администратора хранилища"
+						},
+						"superAdmin": {
+							"displayName": "Суперадминистратор",
+							"description": "Назначать ли роль суперадминистратора"
+						},
+						"userManagement": {
+							"displayName": "Управление пользователями",
+							"description": "Назначать ли роль управления пользователями"
+						}
+					}
+				},
+				"customFields": {
+					"values": {
+						"customFields": {
+							"displayName": "Пользовательские поля",
+							"description": "Позволяет редактировать и добавлять настраиваемые поля."
+						},
+						"fieldValues": {
+							"options": {
+								"schemaName": {
+									"displayName": "Имя или идентификатор схемы",
+									"description": "Выберите схему, которая будет использоваться для настраиваемых полей. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								},
+								"fieldName": {
+									"displayName": "Имя поля или идентификатор",
+									"description": "Введите имя поля из выбранной схемы."
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Укажите значение для выбранного поля"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить или изменить настраиваемые поля",
+					"displayName": "Пользовательские поля",
+					"description": "Позволяет редактировать и добавлять настраиваемые поля.",
+					"options": {
+						"fieldValues": {
+							"displayName": "Поле"
+						}
+					}
+				}
+			}
+		},
+		"userId": {
+			"displayName": "Пользователь",
+			"description": "Выберите пользователя, над которым будет выполнена операция."
+		},
+		"firstName": {
+			"displayName": "Имя",
+			"placeholder": "например Натан"
+		},
+		"lastName": {
+			"displayName": "Фамилия",
+			"placeholder": "например Смит"
+		},
+		"password": {
+			"displayName": "Пароль",
+			"description": "Сохраняет пароль для учетной записи пользователя. Требуется минимум 8 символов. Максимальная длина — 100 символов."
+		},
+		"username": {
+			"displayName": "Имя пользователя",
+			"description": "Имя пользователя, которое будет присвоено пользователю. Пример. Если ваш домен — example.com и вы установили имя пользователя n.smith, то конечный адрес электронной почты пользователя будет n.smith@example.com.",
+			"placeholder": "например Н.Смит"
+		},
+		"domain": {
+			"displayName": "Доменное имя или идентификатор",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"output": {
+			"displayName": "Выход",
+			"options": {
+				"simplified": {
+					"displayName": "Упрощенный",
+					"description": "Возвращайте только определенные поля: вид, идентификатор, основной адрес электронной почты, имя (с подполями), isAdmin, LastLoginTime, CreationTime и приостановлено."
+				},
+				"raw": {
+					"displayName": "Сырой",
+					"description": "Вернуть все поля из ответа API"
+				},
+				"select": {
+					"displayName": "Выберите включенные поля",
+					"description": "Выберите конкретные поля для включения"
+				}
+			}
+		},
+		"fields": {
+			"displayName": "Поля",
+			"description": "Поля, которые нужно включить в ответ, если выбран вариант «Выбрать включенные поля»",
+			"options": {
+				"creationTime": {
+					"displayName": "Время создания"
+				},
+				"isAdmin": {
+					"displayName": "Администратор"
+				},
+				"kind": {
+					"displayName": "Добрый"
+				},
+				"lastLoginTime": {
+					"displayName": "Время последнего входа в систему"
+				},
+				"name": {
+					"displayName": "Имя"
+				},
+				"primaryEmail": {
+					"displayName": "Основной адрес электронной почты"
+				},
+				"suspended": {
+					"displayName": "Приостановленный"
+				}
+			}
+		},
+		"customFieldMask": {
+			"displayName": "Имена или идентификаторы пользовательских схем",
+			"description": "Список имен схем, разделенных запятыми. Все поля из этих схем извлекаются. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		}
+	}
+}

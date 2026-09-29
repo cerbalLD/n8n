@@ -1,0 +1,139 @@
+{
+	"header": {
+		"displayName": "Метабаза",
+		"description": "Используйте API метабазы"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"alerts": {
+					"displayName": "Тревога"
+				},
+				"databases": {
+					"displayName": "База данных"
+				},
+				"metrics": {
+					"displayName": "Метрика"
+				},
+				"questions": {
+					"displayName": "Вопрос"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить конкретное оповещение"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получайте много оповещений"
+				},
+				"resultData": {
+					"displayName": "Данные результата",
+					"description": "Вернуть результат вопроса в определенный формат файла"
+				},
+				"addNewDatasource": {
+					"displayName": "Добавлять",
+					"description": "Добавьте новый источник данных в экземпляр метабазы."
+				},
+				"getFields": {
+					"displayName": "Получить поля",
+					"description": "Получить поля из базы данных"
+				}
+			}
+		},
+		"questionId": {
+			"displayName": "Идентификатор вопроса",
+			"placeholder": "0"
+		},
+		"format": {
+			"displayName": "Формат",
+			"options": {
+				"csv": {
+					"displayName": "CSV"
+				},
+				"json": {
+					"displayName": "JSON"
+				},
+				"xlsx": {
+					"displayName": "XLSX"
+				}
+			}
+		},
+		"metricId": {
+			"displayName": "Идентификатор показателя",
+			"placeholder": "0"
+		},
+		"databaseId": {
+			"displayName": "Идентификатор базы данных",
+			"placeholder": "0"
+		},
+		"engine": {
+			"displayName": "Двигатель",
+			"placeholder": "PostgreSQL",
+			"options": {
+				"h2": {
+					"displayName": "H2"
+				},
+				"mongo": {
+					"displayName": "МонгоБД"
+				},
+				"mysql": {
+					"displayName": "MySQL"
+				},
+				"postgres": {
+					"displayName": "PostgreSQL"
+				},
+				"redshift": {
+					"displayName": "Красное смещение"
+				},
+				"sqlite": {
+					"displayName": "Склайт"
+				}
+			}
+		},
+		"host": {
+			"displayName": "Хозяин",
+			"placeholder": "локальный хост: 5432"
+		},
+		"name": {
+			"displayName": "Имя",
+			"placeholder": "База данных 1"
+		},
+		"port": {
+			"displayName": "Порт",
+			"placeholder": "5432"
+		},
+		"user": {
+			"displayName": "Пользователь",
+			"placeholder": "Админ"
+		},
+		"password": {
+			"displayName": "Пароль",
+			"placeholder": "пароль"
+		},
+		"dbName": {
+			"displayName": "Имя базы данных",
+			"placeholder": "Пользователи"
+		},
+		"filePath": {
+			"displayName": "Путь к файлу",
+			"placeholder": "файл:/Users/admin/Desktop/Users"
+		},
+		"fullSync": {
+			"displayName": "Полная синхронизация"
+		},
+		"simple": {
+			"displayName": "Упрощать",
+			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+		},
+		"alertId": {
+			"displayName": "Идентификатор оповещения",
+			"placeholder": "0"
+		}
+	}
+}

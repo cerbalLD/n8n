@@ -1,0 +1,406 @@
+{
+	"header": {
+		"displayName": "AWS Когнито",
+		"description": "Отправляет данные в AWS Cognito"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"iam": {
+					"displayName": "АВС (ИАМ)"
+				},
+				"assumeRole": {
+					"displayName": "AWS (принятие роли)"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"group": {
+					"displayName": "Группа"
+				},
+				"user": {
+					"displayName": "Пользователь"
+				},
+				"userPool": {
+					"displayName": "Пул пользователей"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать нового пользователя"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удаление пользователя"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить информацию о существующем пользователе"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить список пользователей"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить существующего пользователя"
+				},
+				"addToGroup": {
+					"displayName": "Добавить в группу",
+					"description": "Добавить существующего пользователя в группу"
+				},
+				"removeFromGroup": {
+					"displayName": "Удалить из группы",
+					"description": "Удаление пользователя из группы"
+				}
+			}
+		},
+		"userPool": {
+			"displayName": "Пул пользователей",
+			"description": "Выберите пул пользователей для получения"
+		},
+		"newGroupName": {
+			"displayName": "Имя группы",
+			"description": "Имя новой группы, которую нужно создать",
+			"placeholder": "например МояНоваяГруппа"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"description": {
+					"displayName": "Описание",
+					"description": "Новое описание группы.",
+					"placeholder": "например Обновлено описание группы"
+				},
+				"precedence": {
+					"displayName": "Приоритет",
+					"description": "Новое значение приоритета для группы. Более низкие значения указывают на более высокий приоритет.",
+					"placeholder": "например 10"
+				},
+				"arn": {
+					"displayName": "Роль АРН",
+					"description": "Новая роль Имя ресурса Amazon (ARN) для группы. Используется для установки утверждений в токенах.",
+					"placeholder": "например arn:aws:iam::123456789012:role/GroupRole"
+				},
+				"messageAction": {
+					"displayName": "Сообщение Действие",
+					"options": {
+						"RESEND": {
+							"displayName": "Отправить повторно",
+							"description": "Повторно отправьте приглашение уже существующему пользователю и сбросьте срок действия учетной записи пользователя."
+						},
+						"SUPPRESS": {
+							"displayName": "Подавить",
+							"description": "Подавить отправку сообщения"
+						}
+					}
+				},
+				"forceAliasCreation": {
+					"displayName": "Принудительное создание псевдонима",
+					"description": "Используется ли этот параметр, только если для атрибута phone_number_verified или email_verified установлено значение true. В противном случае оно игнорируется. Если установлено значение true, а номер телефона или адрес электронной почты, указанный в параметре UserAttributes, уже существует в качестве псевдонима другого пользователя, псевдоним будет перенесен. Если установлено значение false, выдается ошибка AliasExistsException, если псевдоним уже существует."
+				},
+				"userAttributes": {
+					"values": {
+						"userAttributes": {
+							"displayName": "Атрибуты пользователя",
+							"description": "Атрибуты для обновления для пользователя"
+						},
+						"attributes": {
+							"options": {
+								"attributeType": {
+									"displayName": "Тип атрибута",
+									"options": {
+										"standard": {
+											"displayName": "Стандартный атрибут"
+										},
+										"custom": {
+											"displayName": "Пользовательский атрибут"
+										}
+									}
+								},
+								"standardName": {
+									"displayName": "Стандартный атрибут",
+									"options": {
+										"address": {
+											"displayName": "Адрес"
+										},
+										"birthdate": {
+											"displayName": "Дата рождения"
+										},
+										"email": {
+											"displayName": "Электронная почта"
+										},
+										"email_verified": {
+											"displayName": "Электронная почта проверена"
+										},
+										"family_name": {
+											"displayName": "Фамилия"
+										},
+										"gender": {
+											"displayName": "Пол"
+										},
+										"given_name": {
+											"displayName": "Собственное имя"
+										},
+										"locale": {
+											"displayName": "Языковой стандарт"
+										},
+										"middle_name": {
+											"displayName": "Второе имя"
+										},
+										"name": {
+											"displayName": "Имя"
+										},
+										"nickname": {
+											"displayName": "Псевдоним"
+										},
+										"phone_number": {
+											"displayName": "Номер телефона"
+										},
+										"phone_number_verified": {
+											"displayName": "Номер телефона проверен"
+										},
+										"preferred_username": {
+											"displayName": "Предпочитаемое имя пользователя"
+										},
+										"profilepicture": {
+											"displayName": "Изображение профиля"
+										},
+										"updated_at": {
+											"displayName": "Обновлено в"
+										},
+										"sub": {
+											"displayName": "Подписной пользователь"
+										},
+										"website": {
+											"displayName": "Веб-сайт"
+										},
+										"zoneinfo": {
+											"displayName": "Информация о зоне"
+										}
+									}
+								},
+								"customName": {
+									"displayName": "Имя пользовательского атрибута",
+									"description": "Имя пользовательского атрибута (должно начинаться с «custom:»)",
+									"placeholder": "Custom:myAttribute"
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Значение атрибута"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить атрибут",
+					"displayName": "Атрибуты пользователя",
+					"description": "Атрибуты для обновления для пользователя",
+					"options": {
+						"attributes": {
+							"displayName": "Атрибуты"
+						}
+					}
+				},
+				"desiredDeliveryMediums": {
+					"displayName": "Желаемые средства доставки",
+					"description": "Укажите, как отправить приветственное сообщение",
+					"options": {
+						"SMS": {
+							"displayName": "SMS"
+						},
+						"EMAIL": {
+							"displayName": "Электронная почта"
+						}
+					}
+				},
+				"temporaryPasswordOptions": {
+					"displayName": "Временный пароль",
+					"description": "Временный пароль пользователя, который будет действителен только один раз. Если этот параметр не установлен, Amazon Cognito автоматически сгенерирует его для вас."
+				}
+			}
+		},
+		"group": {
+			"displayName": "Группа",
+			"description": "Выберите группу, из которой вы хотите удалить пользователя"
+		},
+		"includeUsers": {
+			"displayName": "Включить пользователей",
+			"description": "Включать ли список пользователей в группу"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"newUserName": {
+			"displayName": "Имя пользователя",
+			"description": "В зависимости от настроек пула пользователей для этого параметра требуется имя пользователя, адрес электронной почты или номер телефона. Пробелы не допускаются.",
+			"placeholder": "например ДжонСмит"
+		},
+		"user": {
+			"displayName": "Пользователь",
+			"description": "Выберите пользователя, которого хотите удалить из группы"
+		},
+		"simple": {
+			"displayName": "Упрощать",
+			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+		},
+		"filters": {
+			"options": {
+				"filters": {
+					"displayName": "Фильтры"
+				},
+				"filter": {
+					"displayName": "Фильтр",
+					"values": {
+						"attribute": {
+							"displayName": "Атрибут",
+							"description": "Атрибут для поиска",
+							"options": {
+								"cognito:user_status": {
+									"displayName": "Статус пользователя Cognito"
+								},
+								"email": {
+									"displayName": "Электронная почта"
+								},
+								"family_name": {
+									"displayName": "Фамилия"
+								},
+								"given_name": {
+									"displayName": "Собственное имя"
+								},
+								"name": {
+									"displayName": "Имя"
+								},
+								"phone_number": {
+									"displayName": "Номер телефона"
+								},
+								"preferred_username": {
+									"displayName": "Предпочитаемое имя пользователя"
+								},
+								"status": {
+									"displayName": "Статус (включено)"
+								},
+								"sub": {
+									"displayName": "Саб"
+								},
+								"username": {
+									"displayName": "Имя пользователя"
+								}
+							}
+						},
+						"value": {
+							"displayName": "Ценить",
+							"description": "Значение атрибута для поиска"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить фильтр",
+			"displayName": "Фильтры"
+		},
+		"userAttributes": {
+			"options": {
+				"userAttributes": {
+					"displayName": "Атрибуты пользователя",
+					"description": "Атрибуты для обновления для пользователя"
+				},
+				"attributes": {
+					"displayName": "Атрибуты",
+					"values": {
+						"attributeType": {
+							"displayName": "Тип атрибута",
+							"options": {
+								"standard": {
+									"displayName": "Стандартный атрибут"
+								},
+								"custom": {
+									"displayName": "Пользовательский атрибут"
+								}
+							}
+						},
+						"standardName": {
+							"displayName": "Стандартный атрибут",
+							"options": {
+								"address": {
+									"displayName": "Адрес"
+								},
+								"birthdate": {
+									"displayName": "Дата рождения"
+								},
+								"email": {
+									"displayName": "Электронная почта"
+								},
+								"family_name": {
+									"displayName": "Фамилия"
+								},
+								"gender": {
+									"displayName": "Пол"
+								},
+								"given_name": {
+									"displayName": "Собственное имя"
+								},
+								"locale": {
+									"displayName": "Языковой стандарт"
+								},
+								"middle_name": {
+									"displayName": "Второе имя"
+								},
+								"name": {
+									"displayName": "Имя"
+								},
+								"nickname": {
+									"displayName": "Псевдоним"
+								},
+								"phone_number": {
+									"displayName": "Номер телефона"
+								},
+								"preferred_username": {
+									"displayName": "Предпочитаемое имя пользователя"
+								},
+								"profilepicture": {
+									"displayName": "Изображение профиля"
+								},
+								"updated_at": {
+									"displayName": "Обновлено в"
+								},
+								"sub": {
+									"displayName": "Подписной пользователь"
+								},
+								"website": {
+									"displayName": "Веб-сайт"
+								},
+								"zoneinfo": {
+									"displayName": "Информация о зоне"
+								}
+							}
+						},
+						"customName": {
+							"displayName": "Имя пользовательского атрибута",
+							"description": "Имя пользовательского атрибута (должно начинаться с «custom:»)",
+							"placeholder": "Custom:myAttribute"
+						},
+						"value": {
+							"displayName": "Ценить",
+							"description": "Значение атрибута"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить атрибут",
+			"displayName": "Атрибуты пользователя",
+			"description": "Атрибуты для обновления для пользователя"
+		}
+	}
+}

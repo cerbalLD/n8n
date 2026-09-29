@@ -1,0 +1,318 @@
+{
+	"header": {
+		"displayName": "ПейджерДьюти",
+		"description": "Использование PagerDuty API"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"apiToken": {
+					"displayName": "API-токен"
+				},
+				"oAuth2": {
+					"displayName": "ОАут2"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"incident": {
+					"displayName": "Инцидент"
+				},
+				"incidentNote": {
+					"displayName": "Примечание об инциденте"
+				},
+				"logEntry": {
+					"displayName": "Запись в журнале"
+				},
+				"user": {
+					"displayName": "Пользователь"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать заметку об инциденте"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить пользователя"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить много записей журнала"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить инцидент"
+				}
+			}
+		},
+		"title": {
+			"displayName": "Заголовок",
+			"description": "Краткое описание характера, симптомов, причины или следствия инцидента."
+		},
+		"serviceId": {
+			"displayName": "Имя или идентификатор службы",
+			"description": "Инцидент будет создан на этом сервисе. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"description": "Адрес электронной почты действующего пользователя, связанного с учетной записью, отправляющей запрос.",
+			"placeholder": "имя@email.com"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"escalationPolicyId": {
+					"displayName": "Имя или идентификатор политики эскалации",
+					"description": "Делегируйте этот инцидент указанной политике эскалации. Невозможно указать, если указан правопреемник. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"details": {
+					"displayName": "Подробности инцидента",
+					"description": "Дополнительные подробности об инциденте, который будет идти в теле"
+				},
+				"incidentKey": {
+					"displayName": "Ключ инцидента",
+					"description": "Отправка последующих запросов, ссылающихся на ту же услугу и с тем же ключом_инцидента, приведет к отклонению этих запросов, если открытый инцидент соответствует этому ключу_инцидента."
+				},
+				"priorityId": {
+					"displayName": "Имя или идентификатор приоритета",
+					"description": "Инцидент будет создан на этом сервисе. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"urgency": {
+					"displayName": "срочность",
+					"description": "Актуальность происшествия",
+					"options": {
+						"high": {
+							"displayName": "Высота"
+						},
+						"low": {
+							"displayName": "Низкий"
+						}
+					}
+				}
+			}
+		},
+		"conferenceBridgeUi": {
+			"options": {
+				"conferenceBridgeUi": {
+					"displayName": "Конференц-мост"
+				},
+				"conferenceBridgeValues": {
+					"displayName": "Конференц-мост",
+					"values": {
+						"conferenceNumber": {
+							"displayName": "Номер конференции",
+							"description": "Номера телефонов должны быть отформатированы следующим образом: +1 415-555-1212,,,,1234#, где запятая (,) означает ожидание в одну секунду, а решетка (#) завершает ввод кода доступа."
+						},
+						"conferenceUrl": {
+							"displayName": "URL конференции",
+							"description": "URL-адрес моста конференции. Это может быть ссылка на веб-конференцию или канал Slack."
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить конференц-мост",
+			"displayName": "Конференц-мост"
+		},
+		"incidentId": {
+			"displayName": "Идентификатор инцидента",
+			"description": "Уникальный идентификатор инцидента"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"dateRange": {
+					"displayName": "Диапазон дат",
+					"description": "Если установлено значение all, параметры с и до, а также значения по умолчанию игнорируются.",
+					"options": {
+						"all": {
+							"displayName": "Все"
+						}
+					}
+				},
+				"incidentKey": {
+					"displayName": "Ключ инцидента",
+					"description": "Ключ дедупликации инцидентов. Инциденты с дочерними оповещениями не имеют ключа инцидента; запрос по ключу инцидента вернет инциденты, чьи оповещения имеют alert_key, соответствующий данному ключу инцидента."
+				},
+				"include": {
+					"displayName": "Включать",
+					"description": "Дополнительные сведения, которые следует включить",
+					"options": {
+						"acknowledgers": {
+							"displayName": "Благодарности"
+						},
+						"assignees": {
+							"displayName": "Правопреемники"
+						},
+						"conferenceBridge": {
+							"displayName": "Конференц-мост"
+						},
+						"escalationPolicies": {
+							"displayName": "Политика эскалации"
+						},
+						"firstTriggerLogEntries": {
+							"displayName": "Записи журнала первых триггеров"
+						},
+						"priorities": {
+							"displayName": "Приоритеты"
+						},
+						"services": {
+							"displayName": "Услуги"
+						},
+						"teams": {
+							"displayName": "Команды"
+						},
+						"users": {
+							"displayName": "Пользователи"
+						},
+						"channels": {
+							"displayName": "Каналы"
+						},
+						"incidents": {
+							"displayName": "Инциденты"
+						}
+					}
+				},
+				"serviceIds": {
+					"displayName": "Имена или идентификаторы служб",
+					"description": "Возвращает только инциденты, связанные с переданными службами. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"since": {
+					"displayName": "С",
+					"description": "Начало диапазона дат, в котором вы хотите выполнить поиск. (ограничение на диапазон дат — 6 месяцев)."
+				},
+				"sortBy": {
+					"displayName": "Сортировать по",
+					"description": "Используется для указания поля, по которому вы хотите отсортировать результаты (incident_number/created_at/resolved_at/urgency), а также направления (по возрастанию/убыванию) результатов. Поле sort_by и направление должны быть разделены двоеточием. Можно включить максимум два поля, разделенных запятой.",
+					"placeholder": "созданный_at: по возрастанию, разрешенный_ по убыванию"
+				},
+				"statuses": {
+					"displayName": "Статусы",
+					"description": "Возвращает только инциденты, связанные с переданными услугами.",
+					"options": {
+						"acknowledged": {
+							"displayName": "Признано"
+						},
+						"resolved": {
+							"displayName": "Решено"
+						},
+						"triggered": {
+							"displayName": "Сработало"
+						}
+					}
+				},
+				"teamIds": {
+					"displayName": "Идентификаторы команд",
+					"description": "Идентификаторы команд. Будут возвращены только результаты, относящиеся к этим командам. Учетная запись должна иметь возможность команд использовать этот параметр. (можно добавить несколько идентификаторов через запятую)"
+				},
+				"timeZone": {
+					"displayName": "Имя или идентификатор часового пояса",
+					"description": "Часовой пояс, в котором будут отображаться даты в результате. Если даты не установлены, будет возвращено время UTC. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"until": {
+					"displayName": "До",
+					"description": "Конец диапазона дат, в котором вы хотите выполнить поиск. (ограничение на диапазон дат — 6 месяцев)."
+				},
+				"urgencies": {
+					"displayName": "Срочные дела",
+					"description": "Срочность инцидентов, подлежащих возврату. По умолчанию для всех срочных задач. У аккаунта должна быть возможность срочно сделать это.",
+					"options": {
+						"high": {
+							"displayName": "Высокий"
+						},
+						"low": {
+							"displayName": "Низкий"
+						}
+					}
+				},
+				"userIds": {
+					"displayName": "Идентификаторы пользователей",
+					"description": "Возвращает только инциденты, назначенные в данный момент переданным пользователям. Ожидается один или несколько идентификаторов пользователей (можно добавить несколько идентификаторов, разделенных запятой)."
+				},
+				"isOverview": {
+					"displayName": "Обзор",
+					"description": "Возвращать ли подмножество записей журнала, показывающих только самые важные изменения в инциденте"
+				}
+			}
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"escalationLevel": {
+					"displayName": "Уровень эскалации",
+					"description": "Эскалируйте инцидент до этого уровня в политике эскалации."
+				},
+				"escalationPolicyId": {
+					"displayName": "Имя или идентификатор политики эскалации",
+					"description": "Делегируйте этот инцидент указанной политике эскалации. Невозможно указать, если указан правопреемник. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"priorityId": {
+					"displayName": "Имя или идентификатор приоритета",
+					"description": "Инцидент будет создан на этом сервисе. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"resolution": {
+					"displayName": "Разрешение",
+					"description": "Разрешение этого инцидента, если для статуса установлено значение «Разрешено»."
+				},
+				"status": {
+					"displayName": "Статус",
+					"description": "Новый статус происшествия",
+					"options": {
+						"acknowledged": {
+							"displayName": "Признано"
+						},
+						"resolved": {
+							"displayName": "Решено"
+						}
+					}
+				},
+				"title": {
+					"displayName": "Заголовок",
+					"description": "Краткое описание характера, симптомов, причины или следствия инцидента."
+				},
+				"urgency": {
+					"displayName": "срочность",
+					"description": "Актуальность происшествия",
+					"options": {
+						"high": {
+							"displayName": "Высокий"
+						},
+						"low": {
+							"displayName": "Низкий"
+						}
+					}
+				}
+			}
+		},
+		"content": {
+			"displayName": "Содержание",
+			"description": "Содержание заметки"
+		},
+		"logEntryId": {
+			"displayName": "Идентификатор записи журнала",
+			"description": "Уникальный идентификатор записи журнала"
+		},
+		"userId": {
+			"displayName": "ID пользователя",
+			"description": "Уникальный идентификатор пользователя"
+		}
+	}
+}

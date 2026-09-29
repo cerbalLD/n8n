@@ -1,0 +1,29 @@
+{
+	"header": {
+		"displayName": "DHL",
+		"description": "Использовать API DHL"
+	},
+	"nodeView": {
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"get": {
+					"displayName": "Получить детали отслеживания"
+				}
+			}
+		},
+		"trackingNumber": {
+			"displayName": "Идентификационный номер"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"recipientPostalCode": {
+					"displayName": "Почтовый индекс получателя",
+					"description": "DHL вернет более подробную информацию об отправлении, когда вы предоставите почтовый индекс получателя — это служит этапом проверки."
+				}
+			}
+		}
+	}
+}

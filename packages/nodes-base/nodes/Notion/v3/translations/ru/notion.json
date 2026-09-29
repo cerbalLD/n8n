@@ -1,0 +1,767 @@
+{
+	"header": {
+		"displayName": "Понятие",
+		"description": "API-интерфейс потребления"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"apiKey": {
+					"displayName": "API-ключ"
+				},
+				"oAuth2": {
+					"displayName": "ОАут2"
+				}
+			}
+		},
+		"notionNotice": {
+			"displayName": "В Notion обязательно <a href=\"https://www.notion.com/help/add-and-manage-connections-with-the-api\" target=\"_blank\">добавьте свое соединение</a> на страницы, к которым вы хотите получить доступ."
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"block": {
+					"displayName": "Блокировать"
+				},
+				"dataSource": {
+					"displayName": "Источник данных"
+				},
+				"database": {
+					"displayName": "База данных"
+				},
+				"databasePage": {
+					"displayName": "Страница базы данных"
+				},
+				"page": {
+					"displayName": "Страница"
+				},
+				"user": {
+					"displayName": "Пользователь"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"append": {
+					"displayName": "Добавить после",
+					"description": "Добавить блок"
+				},
+				"getMarkdown": {
+					"displayName": "Получить уценку",
+					"description": "Получить уценку страницы"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить много пользователей"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить пользователя"
+				},
+				"search": {
+					"displayName": "Поиск",
+					"description": "Страницы поиска"
+				},
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать страницу"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить страницу"
+				},
+				"archive": {
+					"displayName": "Архив",
+					"description": "Архивировать страницу"
+				},
+				"updateMarkdown": {
+					"displayName": "Обновить уценку",
+					"description": "Обновить разметку страницы"
+				}
+			}
+		},
+		"blockId": {
+			"displayName": "Блокировать",
+			"description": "Блок Notion для получения уценки"
+		},
+		"afterBlockId": {
+			"displayName": "Вставить после блока",
+			"description": "Идентификатор блока, после которого необходимо вставить новые блоки. Оставьте пустым, чтобы добавить в конце."
+		},
+		"blockUi": {
+			"options": {
+				"blockUi": {
+					"displayName": "Блоки"
+				},
+				"blockValues": {
+					"displayName": "Блокировать",
+					"values": {
+						"type": {
+							"displayName": "Введите имя или идентификатор",
+							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+						},
+						"richText": {
+							"displayName": "Форматированный текст"
+						},
+						"textContent": {
+							"displayName": "Текст"
+						},
+						"text": {
+							"options": {
+								"text": {
+									"displayName": "Текст",
+									"description": "Форматированный текст в блоке",
+									"values": {
+										"textType": {
+											"displayName": "Тип",
+											"options": {
+												"equation": {
+													"displayName": "Уравнение"
+												},
+												"mention": {
+													"displayName": "Упомянуть"
+												},
+												"text": {
+													"displayName": "Текст"
+												}
+											}
+										},
+										"text": {
+											"displayName": "Текст",
+											"description": "Текстовый контент. Это поле содержит фактическое содержимое вашего текста и, вероятно, это поле, которое вы будете использовать чаще всего."
+										},
+										"isLink": {
+											"displayName": "Это ссылка"
+										},
+										"textLink": {
+											"displayName": "Текстовая ссылка",
+											"description": "URL-адрес, на который указывает эта ссылка"
+										},
+										"mentionType": {
+											"displayName": "Тип",
+											"description": "Встроенное упоминание пользователя, страницы, базы данных или даты. В приложении они создаются путем ввода @, за которым следует имя пользователя, страницы, базы данных или даты.",
+											"options": {
+												"database": {
+													"displayName": "База данных"
+												},
+												"date": {
+													"displayName": "Дата"
+												},
+												"page": {
+													"displayName": "Страница"
+												},
+												"user": {
+													"displayName": "Пользователь"
+												}
+											}
+										},
+										"user": {
+											"displayName": "Имя пользователя или идентификатор",
+											"description": "Идентификатор упоминаемого пользователя. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+										},
+										"page": {
+											"displayName": "Идентификатор страницы",
+											"description": "ID упоминаемой страницы"
+										},
+										"database": {
+											"displayName": "База данных",
+											"description": "Упоминается база данных Notion"
+										},
+										"range": {
+											"displayName": "Диапазон",
+											"description": "Хотите ли вы определить диапазон дат"
+										},
+										"date": {
+											"displayName": "Дата",
+											"description": "Дата в формате ISO 8601 с дополнительным временем."
+										},
+										"dateStart": {
+											"displayName": "Дата начала",
+											"description": "Дата в формате ISO 8601 с дополнительным временем."
+										},
+										"dateEnd": {
+											"displayName": "Дата окончания",
+											"description": "Дата в формате ISO 8601 с необязательным временем. Представляет конец диапазона дат."
+										},
+										"expression": {
+											"displayName": "Выражение"
+										},
+										"annotationUi": {
+											"options": {
+												"annotationUi": {
+													"displayName": "Аннотации",
+													"description": "Все аннотации, применимые к этому форматированному тексту"
+												},
+												"bold": {
+													"displayName": "Смелый",
+													"description": "Выделен ли текст жирным шрифтом"
+												},
+												"italic": {
+													"displayName": "Курсив",
+													"description": "Выделен ли текст курсивом"
+												},
+												"strikethrough": {
+													"displayName": "Зачеркивание",
+													"description": "Зачеркнут ли текст"
+												},
+												"underline": {
+													"displayName": "Подчеркнуть",
+													"description": "Подчеркнут ли текст"
+												},
+												"code": {
+													"displayName": "Код",
+													"description": "Является ли текст стилем кода"
+												},
+												"color": {
+													"displayName": "Цвет",
+													"description": "Цвет текста",
+													"options": {
+														"default": {
+															"displayName": "По умолчанию"
+														},
+														"gray": {
+															"displayName": "Серый"
+														},
+														"brown": {
+															"displayName": "Коричневый"
+														},
+														"orange": {
+															"displayName": "Апельсин"
+														},
+														"yellow": {
+															"displayName": "Желтый"
+														},
+														"green": {
+															"displayName": "Зеленый"
+														},
+														"blue": {
+															"displayName": "Синий"
+														},
+														"purple": {
+															"displayName": "Фиолетовый"
+														},
+														"pink": {
+															"displayName": "Розовый"
+														},
+														"red": {
+															"displayName": "Красный"
+														},
+														"gray_background": {
+															"displayName": "Серый фон"
+														},
+														"brown_background": {
+															"displayName": "Коричневый фон"
+														},
+														"orange_background": {
+															"displayName": "Оранжевый фон"
+														},
+														"yellow_background": {
+															"displayName": "Желтый фон"
+														},
+														"green_background": {
+															"displayName": "Зеленый фон"
+														},
+														"blue_background": {
+															"displayName": "Синий фон"
+														},
+														"purple_background": {
+															"displayName": "Фиолетовый фон"
+														},
+														"pink_background": {
+															"displayName": "Розовый фон"
+														},
+														"red_background": {
+															"displayName": "Красный фон"
+														}
+													}
+												}
+											},
+											"placeholder": "Добавить аннотацию",
+											"displayName": "Аннотации",
+											"description": "Все аннотации, применимые к этому форматированному тексту"
+										}
+									}
+								}
+							},
+							"placeholder": "Добавить текст",
+							"displayName": "Текст",
+							"description": "Форматированный текст в блоке"
+						},
+						"checked": {
+							"displayName": "Проверено",
+							"description": "Проверен ли to_do или нет"
+						},
+						"title": {
+							"displayName": "Заголовок",
+							"description": "Простой текст заголовка страницы"
+						},
+						"url": {
+							"displayName": "URL-адрес изображения",
+							"description": "Ссылка на файл изображения"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить блок",
+			"displayName": "Блоки"
+		},
+		"includeTranscript": {
+			"displayName": "Включить стенограмму"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"fetchNestedBlocks": {
+			"displayName": "Получить вложенные блоки"
+		},
+		"simplifyOutput": {
+			"displayName": "Упростите вывод"
+		},
+		"dataSourceId": {
+			"displayName": "Источник данных",
+			"description": "Источник данных Notion для работы"
+		},
+		"text": {
+			"displayName": "Поиск текста",
+			"description": "Текст для поиска в базах данных/источниках данных"
+		},
+		"simple": {
+			"displayName": "Упрощать",
+			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"sort": {
+					"values": {
+						"sort": {
+							"displayName": "Сортировать"
+						},
+						"sortValue": {
+							"options": {
+								"direction": {
+									"displayName": "Направление",
+									"description": "Направление сортировки",
+									"options": {
+										"ascending": {
+											"displayName": "восходящий"
+										},
+										"descending": {
+											"displayName": "По убыванию"
+										}
+									}
+								},
+								"timestamp": {
+									"displayName": "Временная метка",
+									"description": "Имя временной метки для сортировки",
+									"options": {
+										"last_edited_time": {
+											"displayName": "Время последнего редактирования"
+										}
+									}
+								},
+								"key": {
+									"displayName": "Имя свойства",
+									"description": "Имя свойства для фильтрации.",
+									"options": {
+										"created_time": {
+											"displayName": "Время создания"
+										},
+										"last_edited_time": {
+											"displayName": "Время последнего редактирования"
+										}
+									}
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить сортировку",
+					"displayName": "Сортировать",
+					"options": {
+						"sortValue": {
+							"displayName": "Сортировать"
+						}
+					}
+				},
+				"icon": {
+					"displayName": "Икона",
+					"description": "Эмодзи или URL-адрес файла для использования в качестве значка"
+				},
+				"downloadFiles": {
+					"displayName": "Скачать файлы",
+					"description": "Загружать ли файл, если он содержится в свойстве страницы"
+				}
+			}
+		},
+		"databaseId": {
+			"displayName": "База данных",
+			"description": "База данных Notion, которую необходимо получить. Используйте операции с источником данных для поиска, запроса или создания страниц базы данных."
+		},
+		"pageId": {
+			"displayName": "Страница"
+		},
+		"title": {
+			"displayName": "Заголовок",
+			"description": "Название страницы"
+		},
+		"propertiesUi": {
+			"options": {
+				"propertiesUi": {
+					"displayName": "Характеристики"
+				},
+				"propertyValues": {
+					"displayName": "Свойство",
+					"values": {
+						"key": {
+							"displayName": "Имя ключа или идентификатор",
+							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>. Используйте формат <code>Имя свойства|тип_свойства</code>, например <code>Срок выполнения|дата</code>."
+						},
+						"title": {
+							"displayName": "Заголовок"
+						},
+						"textContent": {
+							"displayName": "Текст"
+						},
+						"numberValue": {
+							"displayName": "Число"
+						},
+						"checkboxValue": {
+							"displayName": "Флажок"
+						},
+						"selectValue": {
+							"displayName": "Выберите имя или идентификатор",
+							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+						},
+						"statusValue": {
+							"displayName": "Имя или идентификатор статуса",
+							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+						},
+						"multiSelectValue": {
+							"displayName": "Мультивыбор"
+						},
+						"urlValue": {
+							"displayName": "URL"
+						},
+						"ignoreIfEmpty": {
+							"displayName": "Игнорировать, если пусто"
+						},
+						"emailValue": {
+							"displayName": "Электронная почта"
+						},
+						"phoneValue": {
+							"displayName": "Телефон"
+						},
+						"peopleValue": {
+							"displayName": "Имена пользователей или идентификаторы",
+							"description": "Список пользователей. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+						},
+						"relationValue": {
+							"displayName": "Идентификаторы отношений",
+							"description": "Список идентификаторов связанных страниц"
+						},
+						"range": {
+							"displayName": "Диапазон",
+							"description": "Определять ли диапазон дат"
+						},
+						"includeTime": {
+							"displayName": "Включить время",
+							"description": "Включать ли время в дату"
+						},
+						"date": {
+							"displayName": "Дата",
+							"description": "Дата в формате ISO 8601 с дополнительным временем."
+						},
+						"dateStart": {
+							"displayName": "Дата начала",
+							"description": "Дата в формате ISO 8601 с дополнительным временем."
+						},
+						"dateEnd": {
+							"displayName": "Дата окончания",
+							"description": "Дата в формате ISO 8601 с необязательным временем. Представляет конец диапазона дат."
+						},
+						"timezone": {
+							"displayName": "Имя или идентификатор часового пояса",
+							"description": "Часовой пояс, который нужно использовать. По умолчанию используется часовой пояс n8n. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+						},
+						"fileUrls": {
+							"options": {
+								"fileUrls": {
+									"displayName": "URL-адреса файлов"
+								},
+								"fileUrl": {
+									"displayName": "Файл",
+									"values": {
+										"name": {
+											"displayName": "Имя"
+										},
+										"url": {
+											"displayName": "URL-адрес файла",
+											"description": "Ссылка на внешний файл"
+										}
+									}
+								}
+							},
+							"placeholder": "Добавить файл",
+							"displayName": "URL-адреса файлов"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить недвижимость",
+			"displayName": "Характеристики"
+		},
+		"contentType": {
+			"displayName": "Тип контента",
+			"options": {
+				"blockUi": {
+					"displayName": "Строитель блоков"
+				},
+				"json": {
+					"displayName": "Блоки JSON"
+				},
+				"markdown": {
+					"displayName": "Уценка"
+				}
+			}
+		},
+		"blocksJson": {
+			"displayName": "Блоки (JSON)"
+		},
+		"markdown": {
+			"displayName": "Уценка"
+		},
+		"filterType": {
+			"displayName": "Фильтр",
+			"options": {
+				"none": {
+					"displayName": "Никто"
+				},
+				"manual": {
+					"displayName": "Сборка вручную"
+				},
+				"json": {
+					"displayName": "JSON"
+				}
+			}
+		},
+		"matchType": {
+			"displayName": "Должен совпадать",
+			"options": {
+				"anyFilter": {
+					"displayName": "Любой фильтр"
+				},
+				"allFilters": {
+					"displayName": "Все фильтры"
+				}
+			}
+		},
+		"filters": {
+			"options": {
+				"filters": {
+					"displayName": "Фильтры"
+				},
+				"conditions": {
+					"displayName": "Условия",
+					"values": {
+						"key": {
+							"displayName": "Имя или идентификатор объекта недвижимости",
+							"description": "Имя свойства для фильтрации. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+						},
+						"condition": {
+							"displayName": "Состояние",
+							"description": "Условие для фильтрации",
+							"options": {
+								"equals": {
+									"displayName": "Равно"
+								},
+								"does_not_equal": {
+									"displayName": "Не равно"
+								},
+								"contains": {
+									"displayName": "Содержит"
+								},
+								"does_not_contain": {
+									"displayName": "Не содержит"
+								},
+								"is_empty": {
+									"displayName": "Пусто"
+								},
+								"is_not_empty": {
+									"displayName": "не пусто"
+								},
+								"before": {
+									"displayName": "До"
+								},
+								"after": {
+									"displayName": "После"
+								},
+								"on_or_before": {
+									"displayName": "или раньше"
+								},
+								"on_or_after": {
+									"displayName": "В или после"
+								},
+								"next_month": {
+									"displayName": "В следующем месяце"
+								},
+								"next_week": {
+									"displayName": "На следующей неделе"
+								},
+								"next_year": {
+									"displayName": "В следующем году"
+								},
+								"past_month": {
+									"displayName": "Прошлый месяц"
+								},
+								"past_week": {
+									"displayName": "Прошедшая неделя"
+								},
+								"past_year": {
+									"displayName": "Прошлый год"
+								},
+								"this_week": {
+									"displayName": "На этой неделе"
+								},
+								"starts_with": {
+									"displayName": "Начинается с"
+								},
+								"ends_with": {
+									"displayName": "Заканчивается на"
+								},
+								"greater_than": {
+									"displayName": "Больше, чем"
+								},
+								"less_than": {
+									"displayName": "Меньше, чем"
+								},
+								"greater_than_or_equal_to": {
+									"displayName": "Больше или равно"
+								},
+								"less_than_or_equal_to": {
+									"displayName": "Меньше или равно"
+								},
+								"status": {
+									"displayName": "Статус"
+								}
+							}
+						},
+						"returnType": {
+							"displayName": "Тип возвращаемого значения формулы",
+							"options": {
+								"checkbox": {
+									"displayName": "Флажок"
+								},
+								"date": {
+									"displayName": "Дата"
+								},
+								"number": {
+									"displayName": "Число"
+								},
+								"string": {
+									"displayName": "Нить"
+								}
+							}
+						},
+						"rollupJson": {
+							"displayName": "Сводный фильтр (JSON)",
+							"description": "Укажите значение для объекта сводного фильтра Notion, например {\"number\":{\"greater_than\":10}} или {\"any\":{\"rich_text\":{\"contains\":\"Task\"}}}."
+						},
+						"richTextValue": {
+							"displayName": "Текст"
+						},
+						"numberValue": {
+							"displayName": "Число"
+						},
+						"checkboxValue": {
+							"displayName": "Проверено"
+						},
+						"dateValue": {
+							"displayName": "Дата",
+							"description": "Дата ISO 8601 или относительное значение даты Notion, например сегодня, завтра, вчера, one_week_ago или one_month_from_now."
+						},
+						"optionValue": {
+							"displayName": "Название(а) опции",
+							"description": "Название опции. Для фильтров выбора, статуса и множественного выбора, поддерживающих несколько значений, разделяйте имена запятыми."
+						},
+						"peopleValue": {
+							"displayName": "Идентификатор пользователя или я"
+						},
+						"relationValue": {
+							"displayName": "Идентификатор страницы связи"
+						},
+						"verificationStatus": {
+							"displayName": "Статус проверки",
+							"options": {
+								"verified": {
+									"displayName": "Проверено"
+								},
+								"expired": {
+									"displayName": "Истекший"
+								},
+								"none": {
+									"displayName": "Никто"
+								}
+							}
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить условие",
+			"displayName": "Фильтры"
+		},
+		"jsonNotice": {
+			"displayName": "См. <a href=\"https://developers.notion.com/reference/filter-data-source-entries\" target=\"_blank\">Справочник</a> по созданию фильтров источников данных."
+		},
+		"filterJson": {
+			"displayName": "Фильтры (JSON)"
+		},
+		"markdownUpdateType": {
+			"displayName": "Тип обновления",
+			"options": {
+				"replace_content": {
+					"displayName": "Заменить контент"
+				},
+				"update_content": {
+					"displayName": "Обновить контент"
+				}
+			}
+		},
+		"contentUpdates": {
+			"options": {
+				"contentUpdates": {
+					"displayName": "Обновления контента"
+				},
+				"updates": {
+					"displayName": "Обновлять",
+					"values": {
+						"oldString": {
+							"displayName": "Старая строка",
+							"description": "Существующий контент с уценкой, который нужно найти"
+						},
+						"newString": {
+							"displayName": "Новая строка",
+							"description": "Замена содержимого уценки"
+						},
+						"replaceAllMatches": {
+							"displayName": "Заменить все совпадения",
+							"description": "Заменять ли все совпадения, если старая строка появляется несколько раз"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить обновление",
+			"displayName": "Обновления контента"
+		},
+		"userId": {
+			"displayName": "ID пользователя"
+		}
+	}
+}

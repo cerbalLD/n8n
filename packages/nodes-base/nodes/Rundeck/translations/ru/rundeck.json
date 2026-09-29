@@ -1,0 +1,56 @@
+{
+	"header": {
+		"displayName": "Рундек",
+		"description": "Управление API Rundeck"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"job": {
+					"displayName": "Работа"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"execute": {
+					"displayName": "Выполнять",
+					"description": "Выполнить задание"
+				},
+				"getMetadata": {
+					"displayName": "Получить метаданные",
+					"description": "Получить метаданные вакансии"
+				}
+			}
+		},
+		"jobid": {
+			"displayName": "Идентификатор вакансии",
+			"description": "Идентификатор задания, для которого необходимо отключить метаданные",
+			"placeholder": "Идентификатор задания Rundeck"
+		},
+		"arguments": {
+			"options": {
+				"arguments": {
+					"displayName": "Аргументы",
+					"values": {
+						"name": {
+							"displayName": "Имя"
+						},
+						"value": {
+							"displayName": "Ценить"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить аргумент",
+			"displayName": "Аргументы"
+		},
+		"filter": {
+			"displayName": "Фильтр",
+			"description": "Фильтрация узлов Rundeck по имени",
+			"placeholder": "Добавить фильтры"
+		}
+	}
+}

@@ -1,0 +1,96 @@
+{
+	"header": {
+		"displayName": "urlscan.io",
+		"description": "Предоставляет различные утилиты для мониторинга веб-сайтов, такие как проверки работоспособности или снимки экрана."
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"scan": {
+					"displayName": "Сканировать"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"get": {
+					"displayName": "Получать"
+				},
+				"getAll": {
+					"displayName": "Получить много"
+				},
+				"perform": {
+					"displayName": "Выполнять"
+				}
+			}
+		},
+		"scanId": {
+			"displayName": "Сканировать идентификатор",
+			"description": "Идентификатор сканирования для получения"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"query": {
+					"displayName": "Запрос",
+					"description": "Запрос с использованием синтаксиса строки <a href=\"https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html#query-dsl-query-string-query\">Elastic Search Query</a>. См. <a href=\"https://urlscan.io/docs/search/\">поддерживаемые поля</a> в документации.",
+					"placeholder": "Домен: n8n.io"
+				}
+			}
+		},
+		"url": {
+			"displayName": "URL",
+			"description": "URL-адрес для сканирования",
+			"placeholder": "http://localhost"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"customAgent": {
+					"displayName": "Пользовательский агент",
+					"description": "<code>User-Agent</code> заголовок, который нужно установить для этого сканирования. По умолчанию используется стандартный исходящий пользовательский агент n8n."
+				},
+				"overrideSafety": {
+					"displayName": "Отменить безопасность",
+					"description": "Отключить реклассификацию URL-адресов с потенциальной информацией, позволяющей идентифицировать личность."
+				},
+				"referer": {
+					"displayName": "Реферер",
+					"description": "HTTP-референт, который нужно установить для этого сканирования",
+					"placeholder": "http://localhost"
+				},
+				"tags": {
+					"displayName": "Теги",
+					"description": "Список пользовательских тегов, разделенных запятыми, которые можно добавить к этому сканированию. Ограничено 10 тегами.",
+					"placeholder": "фишинг, вредоносный"
+				},
+				"visibility": {
+					"displayName": "Видимость",
+					"options": {
+						"private": {
+							"displayName": "Частный"
+						},
+						"public": {
+							"displayName": "Общественный"
+						},
+						"unlisted": {
+							"displayName": "Нет в списке"
+						}
+					}
+				}
+			}
+		}
+	}
+}

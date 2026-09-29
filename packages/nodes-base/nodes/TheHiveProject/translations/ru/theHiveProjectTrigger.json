@@ -1,0 +1,152 @@
+{
+	"header": {
+		"displayName": "TheHive 5 Триггер",
+		"description": "Запускает рабочий процесс при возникновении событий TheHive."
+	},
+	"nodeView": {
+		"notice": {
+			"displayName": "Необходимо настроить вебхук в TheHive — инструкция <a href=\"https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.thehive5trigger/#configure-a-webhook-in-thehive\" target=\"_blank\">здесь</a>"
+		},
+		"events": {
+			"displayName": "События",
+			"description": "Типы событий",
+			"options": {
+				"*": {
+					"displayName": "*",
+					"description": "Каждый раз, когда запускается какое-либо событие (событие с подстановочным знаком)"
+				},
+				"alert_create": {
+					"displayName": "Оповещение создано",
+					"description": "Срабатывает при создании оповещения"
+				},
+				"alert_delete": {
+					"displayName": "Оповещение удалено",
+					"description": "Срабатывает при удалении оповещения"
+				},
+				"alert_update": {
+					"displayName": "Оповещение обновлено",
+					"description": "Срабатывает при обновлении оповещения"
+				},
+				"case_create": {
+					"displayName": "Дело создано",
+					"description": "Запускается при создании обращения"
+				},
+				"case_delete": {
+					"displayName": "Дело удалено",
+					"description": "Срабатывает при удалении обращения"
+				},
+				"case_update": {
+					"displayName": "Дело обновлено",
+					"description": "Активируется при обновлении обращения"
+				},
+				"comment_create": {
+					"displayName": "Комментарий создан",
+					"description": "Срабатывает при создании комментария"
+				},
+				"comment_delete": {
+					"displayName": "Комментарий удален",
+					"description": "Срабатывает при удалении комментария"
+				},
+				"comment_update": {
+					"displayName": "Комментарий обновлен",
+					"description": "Срабатывает при обновлении комментария"
+				},
+				"observable_create": {
+					"displayName": "Наблюдаемый создан",
+					"description": "Запускается при создании наблюдаемого"
+				},
+				"observable_delete": {
+					"displayName": "Наблюдаемый удален",
+					"description": "Срабатывает, когда наблюдаемый объект удаляется"
+				},
+				"observable_update": {
+					"displayName": "Наблюдаемое обновление",
+					"description": "Срабатывает при обновлении наблюдаемого"
+				},
+				"page_create": {
+					"displayName": "Страница создана",
+					"description": "Запускается при создании страницы"
+				},
+				"page_delete": {
+					"displayName": "Страница удалена",
+					"description": "Срабатывает при удалении страницы"
+				},
+				"page_update": {
+					"displayName": "Страница обновлена",
+					"description": "Срабатывает при обновлении страницы"
+				},
+				"task_create": {
+					"displayName": "Задача создана",
+					"description": "Срабатывает при создании задачи"
+				},
+				"task_update": {
+					"displayName": "Задача обновлена",
+					"description": "Срабатывает при обновлении задачи"
+				},
+				"log_create": {
+					"displayName": "Журнал задач создан",
+					"description": "Срабатывает при создании журнала задач"
+				},
+				"log_delete": {
+					"displayName": "Журнал задач удален",
+					"description": "Срабатывает при удалении журнала задач"
+				},
+				"log_update": {
+					"displayName": "Журнал задач обновлен",
+					"description": "Срабатывает при обновлении журнала задач"
+				}
+			}
+		},
+		"filters": {
+			"options": {
+				"filters": {
+					"displayName": "Фильтры",
+					"description": "Фильтруйте любые входящие события по их полям"
+				},
+				"values": {
+					"displayName": "Ценности",
+					"values": {
+						"field": {
+							"displayName": "Поле",
+							"hint": "Поле для фильтрации, поддерживает точечную запись.",
+							"placeholder": "например context.severity"
+						},
+						"operator": {
+							"displayName": "Оператор",
+							"options": {
+								"equal": {
+									"displayName": "Равный",
+									"description": "Поле равно значению"
+								},
+								"notEqual": {
+									"displayName": "Не равно",
+									"description": "Поле не равно значению"
+								},
+								"includes": {
+									"displayName": "Включает",
+									"description": "Поле содержит значение"
+								}
+							}
+						},
+						"value": {
+							"displayName": "Ценить"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить фильтр",
+			"displayName": "Фильтры",
+			"description": "Фильтруйте любые входящие события по их полям"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"outputOnlyData": {
+					"displayName": "Выводить только данные",
+					"description": "Выводить ли данные с дополнительной информацией и опускать заголовки"
+				}
+			}
+		}
+	}
+}

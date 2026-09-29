@@ -1,0 +1,179 @@
+{
+	"header": {
+		"displayName": "Лдап",
+		"description": "Взаимодействие с серверами LDAP"
+	},
+	"nodeView": {
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"compare": {
+					"displayName": "Сравнивать",
+					"description": "Сравнить атрибут"
+				},
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать новую запись"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить запись"
+				},
+				"rename": {
+					"displayName": "Переименовать",
+					"description": "Переименуйте DN существующей записи"
+				},
+				"search": {
+					"displayName": "Поиск",
+					"description": "Поиск по LDAP"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить атрибуты"
+				}
+			}
+		},
+		"nodeDebug": {
+			"displayName": "Отлаживать"
+		},
+		"dn": {
+			"displayName": "DN",
+			"description": "Отличительное имя записи, которую нужно обновить.",
+			"placeholder": "например ou=пользователи,dc=n8n,dc=io"
+		},
+		"id": {
+			"displayName": "Идентификатор атрибута",
+			"description": "Идентификатор атрибута для сравнения"
+		},
+		"value": {
+			"displayName": "Ценить",
+			"description": "Значение для сравнения"
+		},
+		"targetDn": {
+			"displayName": "Новый DN",
+			"description": "Новое отличительное имя записи.",
+			"placeholder": "например cn=Натан,ou=пользователи,dc=n8n,dc=io"
+		},
+		"attributes": {
+			"options": {
+				"attributes": {
+					"displayName": "Обновить атрибуты",
+					"description": "Обновить атрибуты записи"
+				},
+				"attribute": {
+					"displayName": "Атрибут",
+					"values": {
+						"id": {
+							"displayName": "Идентификатор атрибута",
+							"description": "Идентификатор добавляемого атрибута"
+						},
+						"value": {
+							"displayName": "Ценить",
+							"description": "Значение атрибута для установки"
+						}
+					}
+				},
+				"add": {
+					"displayName": "Добавлять",
+					"values": {
+						"id": {
+							"displayName": "Идентификатор атрибута",
+							"description": "Идентификатор добавляемого атрибута"
+						},
+						"value": {
+							"displayName": "Ценить",
+							"description": "Значение атрибута для установки"
+						}
+					}
+				},
+				"replace": {
+					"displayName": "Заменять",
+					"values": {
+						"id": {
+							"displayName": "Идентификатор атрибута",
+							"description": "Идентификатор атрибута, который необходимо заменить."
+						},
+						"value": {
+							"displayName": "Ценить",
+							"description": "Значение атрибута для замены"
+						}
+					}
+				},
+				"delete": {
+					"displayName": "Удалять",
+					"values": {
+						"id": {
+							"displayName": "Идентификатор атрибута",
+							"description": "Идентификатор атрибута, который нужно удалить."
+						},
+						"value": {
+							"displayName": "Ценить",
+							"description": "Значение атрибута, который нужно удалить"
+						}
+					}
+				}
+			},
+			"placeholder": "Обновить атрибуты",
+			"displayName": "Обновить атрибуты",
+			"description": "Обновить атрибуты записи"
+		},
+		"baseDN": {
+			"displayName": "Базовый DN",
+			"description": "Отличительное имя поддерева для поиска.",
+			"placeholder": "например ou=пользователи, dc=n8n, dc=io"
+		},
+		"searchFor": {
+			"displayName": "Искать",
+			"description": "Класс объекта каталога для поиска"
+		},
+		"customFilter": {
+			"displayName": "Пользовательский фильтр",
+			"description": "Пользовательский фильтр LDAP. Экранируйте эти символы * ( ) \\ обратной косой чертой «\\»."
+		},
+		"attribute": {
+			"displayName": "Атрибут",
+			"description": "Атрибут для поиска"
+		},
+		"searchText": {
+			"displayName": "Поиск текста",
+			"description": "Текст для поиска. Используйте * в качестве подстановочного знака."
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"attributes": {
+					"displayName": "Имена или идентификаторы атрибутов",
+					"description": "Список возвращаемых атрибутов, разделенный запятыми. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"pageSize": {
+					"displayName": "Размер страницы",
+					"description": "Максимальное количество результатов, которые можно запросить одновременно. Установите значение 0, чтобы отключить пейджинг."
+				},
+				"scope": {
+					"displayName": "Объем",
+					"description": "Набор записей с BaseDN или ниже, которые можно считать потенциальными совпадениями.",
+					"options": {
+						"base": {
+							"displayName": "Базовый объект"
+						},
+						"one": {
+							"displayName": "Одноуровневый"
+						},
+						"sub": {
+							"displayName": "Целое поддерево"
+						}
+					}
+				}
+			}
+		}
+	}
+}

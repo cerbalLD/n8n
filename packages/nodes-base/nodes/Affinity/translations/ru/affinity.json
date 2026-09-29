@@ -1,0 +1,161 @@
+{
+	"header": {
+		"displayName": "Близость",
+		"description": "Использование Affinity API"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"list": {
+					"displayName": "Список"
+				},
+				"listEntry": {
+					"displayName": "Запись в списке"
+				},
+				"organization": {
+					"displayName": "Организация"
+				},
+				"person": {
+					"displayName": "Человек"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить человека"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить много людей"
+				},
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать человека"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить человека"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить человека"
+				}
+			}
+		},
+		"listId": {
+			"displayName": "Имя списка или идентификатор",
+			"description": "Уникальный идентификатор списка, содержащего указанный list_entry_id. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"entityId": {
+			"displayName": "Идентификатор объекта",
+			"description": "Уникальный идентификатор сущности (человека, организации или возможности), которую нужно добавить в этот список."
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"creator_id": {
+					"displayName": "Идентификатор создателя",
+					"description": "Идентификатор ресурса Person, который должен быть записан как добавляющий запись в список. Должен быть человек, имеющий доступ к Affinity. Если этот параметр не указан, создателем по умолчанию является владелец ключа API."
+				},
+				"persons": {
+					"displayName": "Имена или идентификаторы людей",
+					"description": "Лица, с которыми будет связана новая организация. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"organizations": {
+					"displayName": "Названия или идентификаторы организаций",
+					"description": "Организации, с которыми связан человек. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				}
+			}
+		},
+		"listEntryId": {
+			"displayName": "Идентификатор записи списка",
+			"description": "Уникальный идентификатор объекта записи списка, который необходимо удалить."
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Название организации"
+		},
+		"domain": {
+			"displayName": "Домен",
+			"description": "Доменное имя организации"
+		},
+		"organizationId": {
+			"displayName": "Идентификатор организации",
+			"description": "Уникальный идентификатор организации"
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"domain": {
+					"displayName": "Домен",
+					"description": "Доменное имя организации"
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Название организации"
+				},
+				"persons": {
+					"displayName": "Имена или идентификаторы людей",
+					"description": "Лица, с которыми будет связана новая организация. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"firstName": {
+					"displayName": "Имя",
+					"description": "Имя человека"
+				},
+				"lastName": {
+					"displayName": "Фамилия",
+					"description": "Фамилия человека"
+				},
+				"organizations": {
+					"displayName": "Названия или идентификаторы организаций",
+					"description": "Организации, с которыми связан человек. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				}
+			}
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"withInteractionDates": {
+					"displayName": "С датами взаимодействия",
+					"description": "Будут ли присутствовать даты взаимодействия на возвращаемых ресурсах"
+				},
+				"term": {
+					"displayName": "Срок",
+					"description": "Строка, используемая для поиска всех людей в адресной книге вашей команды. Это может быть адрес электронной почты, имя или фамилия."
+				}
+			}
+		},
+		"firstName": {
+			"displayName": "Имя",
+			"description": "Имя человека"
+		},
+		"lastName": {
+			"displayName": "Фамилия",
+			"description": "Фамилия человека"
+		},
+		"emails": {
+			"displayName": "Электронная почта",
+			"description": "Адреса электронной почты человека",
+			"placeholder": "info@example.com"
+		},
+		"personId": {
+			"displayName": "Идентификатор человека",
+			"description": "Уникальный идентификатор человека"
+		}
+	}
+}

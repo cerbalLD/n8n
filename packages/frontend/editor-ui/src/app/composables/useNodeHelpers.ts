@@ -894,9 +894,13 @@ export function useNodeHelpers() {
 		const nodesToBeFetched: INodeTypeNameVersion[] = [];
 		allNodes.forEach((node) => {
 			const nodeVersions = Array.isArray(node.version) ? node.version : [node.version];
+			const matchedNodeInfo = nodeInfos.find(
+				(n) => n.name === node.name && nodeVersions.includes(n.version),
+			);
 			if (
-				!!nodeInfos.find((n) => n.name === node.name && nodeVersions.includes(n.version)) &&
-				!node.hasOwnProperty('properties')
+				!!matchedNodeInfo &&
+				(!node.hasOwnProperty('properties') ||
+					nodeTypesStore.needsTranslatedFetch(node.name, matchedNodeInfo.version))
 			) {
 				nodesToBeFetched.push({
 					name: node.name,
@@ -906,7 +910,8 @@ export function useNodeHelpers() {
 		});
 
 		if (nodesToBeFetched.length > 0) {
-			// Only call API if node information is actually missing
+			// Only call API if node information is actually missing, or (for non-English
+			// locales) hasn't been fetched with translated parameter labels yet
 			canvasStore.startLoading();
 			await nodeTypesStore.getNodesInformation(nodesToBeFetched);
 			canvasStore.stopLoading();

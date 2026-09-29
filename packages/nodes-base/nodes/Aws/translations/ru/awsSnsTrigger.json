@@ -1,0 +1,22 @@
+{
+	"header": {
+		"displayName": "Триггер AWS SNS",
+		"description": "Обработка событий AWS SNS с помощью веб-перехватчиков"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"iam": {
+					"displayName": "АВС (ИАМ)"
+				},
+				"assumeRole": {
+					"displayName": "AWS (принятие роли)"
+				}
+			}
+		},
+		"topic": {
+			"displayName": "Тема"
+		}
+	}
+}

@@ -1,0 +1,86 @@
+{
+	"header": {
+		"displayName": "OpenWeatherКарта",
+		"description": "Получает текущую и будущую информацию о погоде"
+	},
+	"nodeView": {
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"currentWeather": {
+					"displayName": "Текущая погода",
+					"description": "Возвращает текущие данные о погоде"
+				},
+				"5DayForecast": {
+					"displayName": "Прогноз на 5 дней",
+					"description": "Возвращает данные о погоде на следующие 5 дней."
+				}
+			}
+		},
+		"format": {
+			"displayName": "Формат",
+			"description": "Формат, в каком формате должны быть возвращены данные",
+			"options": {
+				"imperial": {
+					"displayName": "Империал",
+					"description": "Фаренгейт | миль/час"
+				},
+				"metric": {
+					"displayName": "Метрика",
+					"description": "Цельсия | метр/сек"
+				},
+				"standard": {
+					"displayName": "Научный",
+					"description": "Кельвин | метр/сек"
+				}
+			}
+		},
+		"locationSelection": {
+			"displayName": "Выбор места",
+			"description": "Как определить локацию, для которой возвращать погоду",
+			"options": {
+				"cityName": {
+					"displayName": "Название города"
+				},
+				"cityId": {
+					"displayName": "Идентификатор города"
+				},
+				"coordinates": {
+					"displayName": "Координаты"
+				},
+				"zipCode": {
+					"displayName": "Почтовый индекс"
+				}
+			}
+		},
+		"cityName": {
+			"displayName": "Город",
+			"description": "Название города для возврата погоды",
+			"placeholder": "Берлин, де"
+		},
+		"cityId": {
+			"displayName": "Идентификатор города",
+			"description": "Идентификатор города, погоду в котором нужно вернуть. Список можно скачать здесь: http://bulk.openweathermap.org/sample/."
+		},
+		"latitude": {
+			"displayName": "Широта",
+			"description": "Широта места, где будет отображаться погода",
+			"placeholder": "13.39"
+		},
+		"longitude": {
+			"displayName": "Долгота",
+			"description": "Долгота места, где будет отображаться погода",
+			"placeholder": "52.52"
+		},
+		"zipCode": {
+			"displayName": "Почтовый индекс",
+			"description": "Идентификатор города, погоду в котором нужно вернуть. Список можно скачать здесь: http://bulk.openweathermap.org/sample/.",
+			"placeholder": "10115, де"
+		},
+		"language": {
+			"displayName": "Язык",
+			"description": "Двухбуквенный код языка, в котором будет выводиться результат (например, en, de, ...).",
+			"placeholder": "ru"
+		}
+	}
+}

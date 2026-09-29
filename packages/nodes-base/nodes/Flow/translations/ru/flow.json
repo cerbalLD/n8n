@@ -1,0 +1,300 @@
+{
+	"header": {
+		"displayName": "Поток",
+		"description": "API потребления потока"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"task": {
+					"displayName": "Задача",
+					"description": "Задачи — это единицы работы, которые могут быть частными или помещены в список. Через эту конечную точку вы можете манипулировать своими задачами в Flow, в том числе создавать новые."
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать новую задачу"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить задачу"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить задачу"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получите много задач"
+				}
+			}
+		},
+		"workspaceId": {
+			"displayName": "Идентификатор рабочей области",
+			"description": "Создание ресурсов в заданной рабочей области"
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Название задачи"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"ownerid": {
+					"displayName": "Идентификатор владельца",
+					"description": "Идентификатор аккаунта, которому будет назначена эта задача"
+				},
+				"listID": {
+					"displayName": "Идентификатор списка",
+					"description": "Поместите новую задачу в список («проект»). Опустите этот параметр, чтобы сделать задачу частной."
+				},
+				"startsOn": {
+					"displayName": "Начинается",
+					"description": "Дата, когда задача должна начаться"
+				},
+				"dueOn": {
+					"displayName": "Срок оплаты",
+					"description": "Дата, до которой задача должна быть выполнена"
+				},
+				"mirrorParentSubscribers": {
+					"displayName": "Зеркальные родительские подписчики",
+					"description": "Будет ли эта задача подзадачой, и это правда, подписчики родительской задачи будут зеркально отражены на этой задаче."
+				},
+				"mirrorParentTags": {
+					"displayName": "Зеркальные родительские теги",
+					"description": "Будет ли эта задача подзадачой, и это правда, теги родительских задач будут зеркально отражены на этой задаче."
+				},
+				"noteContent": {
+					"displayName": "Примечание Содержание",
+					"description": "Предоставьте содержание заметки к задаче"
+				},
+				"noteMimeType": {
+					"displayName": "Примечание. Тип пантомимы",
+					"description": "Определите, какой язык разметки используется для форматирования данной заметки.",
+					"options": {
+						"text/plain": {
+							"displayName": "текстовый/обычный"
+						},
+						"text/x-markdown": {
+							"displayName": "текст/x-уценка"
+						},
+						"text/html": {
+							"displayName": "текст/html"
+						}
+					}
+				},
+				"parentId": {
+					"displayName": "Идентификатор родителя",
+					"description": "Если указано, эта задача станет подзадачей данной задачи."
+				},
+				"positionList": {
+					"displayName": "Список позиций",
+					"description": "Определяет порядок сортировки при отображении задач в списке или их группировке."
+				},
+				"positionUpcoming": {
+					"displayName": "Позиция",
+					"description": "Определяет порядок сортировки при отображении задач, сгруппированных по дате выполнения."
+				},
+				"position": {
+					"displayName": "Позиция",
+					"description": "Определяет порядок сортировки задач"
+				},
+				"sectionId": {
+					"displayName": "Идентификатор раздела",
+					"description": "Укажите, в каком разделе создавать эту задачу"
+				},
+				"tags": {
+					"displayName": "Теги",
+					"description": "Список имен тегов, которые нужно применить к новой задаче, разделенных запятой (,)"
+				}
+			}
+		},
+		"taskId": {
+			"displayName": "Идентификатор задачи"
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле обновления",
+			"options": {
+				"name": {
+					"displayName": "Имя",
+					"description": "Название задачи"
+				},
+				"completed": {
+					"displayName": "Завершенный",
+					"description": "Выполнять ли задачу"
+				},
+				"ownerid": {
+					"displayName": "Идентификатор владельца",
+					"description": "Идентификатор аккаунта, которому будет назначена эта задача"
+				},
+				"listID": {
+					"displayName": "Идентификатор списка",
+					"description": "Поместите новую задачу в список («проект»). Опустите этот параметр, чтобы сделать задачу частной."
+				},
+				"startsOn": {
+					"displayName": "Начинается",
+					"description": "Дата, когда задача должна начаться"
+				},
+				"dueOn": {
+					"displayName": "Срок оплаты",
+					"description": "Дата, до которой задача должна быть выполнена"
+				},
+				"mirrorParentSubscribers": {
+					"displayName": "Зеркальные родительские подписчики",
+					"description": "Будет ли эта задача подзадачой, и это правда, подписчики родительской задачи будут зеркально отражены на этой задаче."
+				},
+				"mirrorParentTags": {
+					"displayName": "Зеркальные родительские теги",
+					"description": "Будет ли эта задача подзадачой, и это правда, теги родительских задач будут зеркально отражены на этой задаче."
+				},
+				"noteContent": {
+					"displayName": "Примечание Содержание",
+					"description": "Предоставьте содержание заметки к задаче"
+				},
+				"noteMimeType": {
+					"displayName": "Примечание. Тип пантомимы",
+					"description": "Определите, какой язык разметки используется для форматирования данной заметки.",
+					"options": {
+						"text/plain": {
+							"displayName": "Текст/обычный"
+						},
+						"text/x-markdown": {
+							"displayName": "текст/x-уценка"
+						},
+						"text/html": {
+							"displayName": "Текст/html"
+						}
+					}
+				},
+				"parentId": {
+					"displayName": "Идентификатор родителя",
+					"description": "Если указано, эта задача станет подзадачей данной задачи."
+				},
+				"positionList": {
+					"displayName": "Список позиций",
+					"description": "Определяет порядок сортировки при отображении задач в списке или их группировке."
+				},
+				"positionUpcoming": {
+					"displayName": "Позиция",
+					"description": "Определяет порядок сортировки при отображении задач, сгруппированных по дате выполнения."
+				},
+				"position": {
+					"displayName": "Позиция",
+					"description": "Определяет порядок сортировки задач"
+				},
+				"sectionId": {
+					"displayName": "Идентификатор раздела",
+					"description": "Укажите, в каком разделе создавать эту задачу"
+				},
+				"tags": {
+					"displayName": "Теги",
+					"description": "Список имен тегов, которые нужно применить к новой задаче, разделенных запятой (,)"
+				}
+			}
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"include": {
+					"displayName": "Включать",
+					"options": {
+						"schedule": {
+							"displayName": "Расписание"
+						},
+						"files": {
+							"displayName": "Файлы"
+						},
+						"file_associations": {
+							"displayName": "Файловые ассоциации"
+						},
+						"parent": {
+							"displayName": "Родитель"
+						}
+					}
+				},
+				"order": {
+					"displayName": "Заказ",
+					"options": {
+						"account_id": {
+							"displayName": "Идентификатор аккаунта"
+						},
+						"completed_at": {
+							"displayName": "Завершено в"
+						},
+						"created_at": {
+							"displayName": "Создано в"
+						},
+						"due_on": {
+							"displayName": "Срок оплаты"
+						},
+						"list_id": {
+							"displayName": "Идентификатор списка"
+						},
+						"name": {
+							"displayName": "Имя"
+						},
+						"owner_id": {
+							"displayName": "Идентификатор владельца"
+						},
+						"position": {
+							"displayName": "Позиция"
+						},
+						"section_id": {
+							"displayName": "Идентификатор раздела"
+						},
+						"starts_on": {
+							"displayName": "Начинается"
+						},
+						"updated_at": {
+							"displayName": "Обновлено в"
+						}
+					}
+				},
+				"workspaceId": {
+					"displayName": "Идентификатор рабочей области",
+					"description": "Создание ресурсов в заданной рабочей области"
+				},
+				"createdBefore": {
+					"displayName": "Создано раньше",
+					"description": "Выберите ресурсы, созданные до определенного времени"
+				},
+				"createdAfter": {
+					"displayName": "Создано после",
+					"description": "Выберите ресурсы, созданные через определенное время"
+				},
+				"updateBefore": {
+					"displayName": "Обновить раньше",
+					"description": "Выберите ресурсы, обновленные до определенного времени"
+				},
+				"updateAfter": {
+					"displayName": "Обновить после",
+					"description": "Выберите ресурсы, обновленные через определенное время"
+				},
+				"deleted": {
+					"displayName": "Удалено",
+					"description": "Следует ли выбирать удаленные ресурсы"
+				},
+				"cleared": {
+					"displayName": "Очищено",
+					"description": "Следует ли выбирать очищенные ресурсы"
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		}
+	}
+}

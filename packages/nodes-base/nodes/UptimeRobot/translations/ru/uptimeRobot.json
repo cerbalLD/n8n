@@ -1,0 +1,449 @@
+{
+	"header": {
+		"displayName": "UptimeРобот",
+		"description": "Использование API UptimeRobot"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"account": {
+					"displayName": "Счет"
+				},
+				"alertContact": {
+					"displayName": "Контакт для оповещения"
+				},
+				"maintenanceWindow": {
+					"displayName": "Окно обслуживания"
+				},
+				"monitor": {
+					"displayName": "Монитор"
+				},
+				"publicStatusPage": {
+					"displayName": "Страница публичного статуса"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить общедоступную страницу статуса"
+				},
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создайте общедоступную страницу статуса"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удаление общедоступной страницы статуса"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получите множество общедоступных страниц статуса"
+				},
+				"reset": {
+					"displayName": "Перезагрузить",
+					"description": "Сброс монитора"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить период обслуживания"
+				}
+			}
+		},
+		"friendlyName": {
+			"displayName": "Понятное имя",
+			"description": "Понятное имя страницы статуса."
+		},
+		"type": {
+			"displayName": "Тип",
+			"description": "Тип окна обслуживания",
+			"options": {
+				"1": {
+					"displayName": "Один раз"
+				},
+				"2": {
+					"displayName": "Ежедневно"
+				},
+				"3": {
+					"displayName": "Еженедельно"
+				},
+				"4": {
+					"displayName": "Ежемесячно"
+				},
+				"5": {
+					"displayName": "Вебхук"
+				},
+				"6": {
+					"displayName": "Пушбуллет"
+				},
+				"9": {
+					"displayName": "Пушовер"
+				}
+			}
+		},
+		"url": {
+			"displayName": "URL",
+			"description": "URL/IP монитора"
+		},
+		"id": {
+			"displayName": "ID",
+			"description": "Идентификатор общедоступной страницы статуса"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"alert_contacts": {
+					"displayName": "Идентификаторы контактов для оповещений",
+					"description": "Идентификаторы контактов для оповещений, разделенные тире, например. 236-1782-4790"
+				},
+				"logs": {
+					"displayName": "Журналы",
+					"description": "Будут ли возвращены журналы каждого монитора"
+				},
+				"mwindow": {
+					"displayName": "Идентификаторы окна обслуживания",
+					"description": "Идентификаторы окон обслуживания, разделенные тире, например. 236-1782-4790"
+				},
+				"monitors": {
+					"displayName": "Идентификаторы мониторов",
+					"description": "Идентификаторы мониторов, разделенные тире, например. 15830-32696-83920"
+				},
+				"response_times": {
+					"displayName": "Время ответа",
+					"description": "Будут ли возвращены данные о времени отклика каждого монитора"
+				},
+				"search": {
+					"displayName": "Поиск",
+					"description": "Ключевое слово, которое будет сопоставляться с URL-адресом и понятным именем."
+				},
+				"statuses": {
+					"displayName": "Статусы",
+					"options": {
+						"0": {
+							"displayName": "Приостановлено"
+						},
+						"1": {
+							"displayName": "Еще не проверено"
+						},
+						"2": {
+							"displayName": "Вверх"
+						},
+						"8": {
+							"displayName": "Кажется, вниз"
+						},
+						"9": {
+							"displayName": "Вниз"
+						}
+					}
+				},
+				"types": {
+					"displayName": "Типы",
+					"description": "Выберите типы мониторов",
+					"options": {
+						"1": {
+							"displayName": "HTTP(S)"
+						},
+						"2": {
+							"displayName": "Ключевое слово"
+						},
+						"3": {
+							"displayName": "Пинг"
+						},
+						"4": {
+							"displayName": "Порт"
+						},
+						"5": {
+							"displayName": "Сердцебиение"
+						}
+					}
+				},
+				"psps": {
+					"displayName": "Идентификаторы общедоступных страниц статуса",
+					"description": "Идентификаторы общедоступных страниц статуса, разделенные тире, например. 236-1782-4790"
+				}
+			}
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"friendly_name": {
+					"displayName": "Понятное имя",
+					"description": "Понятное имя страницы статуса."
+				},
+				"http_auth_type": {
+					"displayName": "Тип HTTP-аутентификации",
+					"description": "Тип аутентификации для веб-страниц, защищенных паролем.",
+					"options": {
+						"1": {
+							"displayName": "HTTP базовый"
+						},
+						"2": {
+							"displayName": "Дайджест"
+						}
+					}
+				},
+				"http_method": {
+					"displayName": "HTTP-метод",
+					"description": "Используемый метод HTTP",
+					"options": {
+						"1": {
+							"displayName": "HEAD"
+						},
+						"2": {
+							"displayName": "GET"
+						},
+						"3": {
+							"displayName": "POST"
+						},
+						"4": {
+							"displayName": "PUT"
+						},
+						"5": {
+							"displayName": "PATCH"
+						},
+						"6": {
+							"displayName": "DELETE"
+						},
+						"7": {
+							"displayName": "OPTIONS"
+						}
+					}
+				},
+				"http_password": {
+					"displayName": "HTTP-пароль",
+					"description": "Пароль, используемый для веб-страниц, защищенных паролем."
+				},
+				"http_username": {
+					"displayName": "Имя пользователя HTTP",
+					"description": "Имя пользователя, используемое для веб-страниц, защищенных паролем."
+				},
+				"interval": {
+					"displayName": "Интервал",
+					"description": "Интервал контрольной проверки"
+				},
+				"port": {
+					"displayName": "Порт",
+					"description": "Контролируемый порт"
+				},
+				"status": {
+					"displayName": "Статус",
+					"description": "Выбор статусов монитора",
+					"options": {
+						"0": {
+							"displayName": "Пауза"
+						},
+						"1": {
+							"displayName": "Резюме"
+						}
+					}
+				},
+				"sub_type": {
+					"displayName": "Подтип",
+					"description": "Укажите, какой предварительно определенный порт/сервис или пользовательский порт контролируется",
+					"options": {
+						"1": {
+							"displayName": "HTTP (80)"
+						},
+						"2": {
+							"displayName": "HTTPS (443)"
+						},
+						"3": {
+							"displayName": "FTP (21)"
+						},
+						"4": {
+							"displayName": "SMTP (25)"
+						},
+						"5": {
+							"displayName": "POP3 (110)"
+						},
+						"6": {
+							"displayName": "IMAP (143)"
+						},
+						"99": {
+							"displayName": "Пользовательский порт"
+						}
+					}
+				},
+				"url": {
+					"displayName": "URL",
+					"description": "URL/IP монитора"
+				},
+				"value": {
+					"displayName": "Ценить",
+					"description": "Соответствующее значение для типа контакта для оповещения (можно использовать только в том случае, если это контакт для оповещения Webhook)."
+				},
+				"start_time": {
+					"displayName": "Время начала",
+					"description": "Дата и время начала окна обслуживания"
+				},
+				"type": {
+					"displayName": "Тип",
+					"description": "Тип окна обслуживания",
+					"options": {
+						"1": {
+							"displayName": "Один раз"
+						},
+						"2": {
+							"displayName": "Ежедневно"
+						},
+						"3": {
+							"displayName": "Еженедельно"
+						},
+						"4": {
+							"displayName": "Ежемесячно"
+						}
+					}
+				},
+				"weekDay": {
+					"displayName": "День недели",
+					"options": {
+						"1": {
+							"displayName": "Понедельник"
+						},
+						"2": {
+							"displayName": "Вторник"
+						},
+						"3": {
+							"displayName": "Среда"
+						},
+						"4": {
+							"displayName": "Четверг"
+						},
+						"5": {
+							"displayName": "Пятница"
+						},
+						"6": {
+							"displayName": "Суббота"
+						},
+						"7": {
+							"displayName": "Воскресенье"
+						}
+					}
+				},
+				"monthDay": {
+					"displayName": "Месяц День"
+				},
+				"custom_domain": {
+					"displayName": "Пользовательский домен",
+					"description": "Домен или субдомен, на котором будет работать страница состояния."
+				},
+				"monitors": {
+					"displayName": "Идентификаторы мониторов",
+					"description": "Идентификаторы мониторов, которые будут отображаться на странице состояния (значения разделяются тире (-) или 0 для всех мониторов)"
+				},
+				"password": {
+					"displayName": "Пароль",
+					"description": "Пароль для страницы статуса"
+				},
+				"sort": {
+					"displayName": "Сортировать",
+					"description": "Сортировка страницы статуса",
+					"options": {
+						"1": {
+							"displayName": "Понятное имя (A-Z)"
+						},
+						"2": {
+							"displayName": "Понятное имя (Z-A)"
+						},
+						"3": {
+							"displayName": "Статус (вверх-вниз-пауза)"
+						},
+						"4": {
+							"displayName": "Статус (Вниз-Вверх-Пауза)"
+						}
+					}
+				}
+			}
+		},
+		"value": {
+			"displayName": "Ценить",
+			"description": "Соответствующее значение для типа контакта для оповещения."
+		},
+		"duration": {
+			"displayName": "Продолжительность (минуты)",
+			"description": "Период активации окна обслуживания (минуты)"
+		},
+		"weekDay": {
+			"displayName": "День недели",
+			"options": {
+				"1": {
+					"displayName": "Понедельник"
+				},
+				"2": {
+					"displayName": "Вторник"
+				},
+				"3": {
+					"displayName": "Среда"
+				},
+				"4": {
+					"displayName": "Четверг"
+				},
+				"5": {
+					"displayName": "Пятница"
+				},
+				"6": {
+					"displayName": "Суббота"
+				},
+				"7": {
+					"displayName": "Воскресенье"
+				}
+			}
+		},
+		"monthDay": {
+			"displayName": "Месяц День"
+		},
+		"start_time": {
+			"displayName": "Время начала",
+			"description": "Дата и время начала окна обслуживания"
+		},
+		"monitors": {
+			"displayName": "Идентификаторы мониторов",
+			"description": "Идентификаторы мониторов, которые будут отображаться на странице состояния (значения разделяются тире (-) или 0 для всех мониторов)"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"custom_domain": {
+					"displayName": "Пользовательский домен",
+					"description": "Домен или субдомен, на котором будет работать страница состояния."
+				},
+				"password": {
+					"displayName": "Пароль",
+					"description": "Пароль для страницы статуса"
+				},
+				"sort": {
+					"displayName": "Сортировать",
+					"description": "Сортировка страницы статуса",
+					"options": {
+						"1": {
+							"displayName": "Понятное имя (A-Z)"
+						},
+						"2": {
+							"displayName": "Понятное имя (Z-A)"
+						},
+						"3": {
+							"displayName": "Статус (вверх-вниз-пауза)"
+						},
+						"4": {
+							"displayName": "Статус (Вниз-Вверх-Пауза)"
+						}
+					}
+				}
+			}
+		}
+	}
+}

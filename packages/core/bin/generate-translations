@@ -34,7 +34,7 @@ function getNodeTranslationPaths() {
 function getHeaders(nodeTranslationPaths) {
 	return nodeTranslationPaths.reduce((acc, cur) => {
 		const { header } = require(cur);
-		const nodeType = cur.split('/').pop().replace('.json', '');
+		const nodeType = path.basename(cur).replace('.json', '');
 
 		if (isValidHeader(header, ALLOWED_HEADER_KEYS)) {
 			acc[nodeType] = header;

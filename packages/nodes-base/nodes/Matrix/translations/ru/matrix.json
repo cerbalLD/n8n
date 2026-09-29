@@ -1,0 +1,280 @@
+{
+	"header": {
+		"displayName": "Матрица",
+		"description": "API потребления матрицы"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"account": {
+					"displayName": "Счет"
+				},
+				"event": {
+					"displayName": "Событие"
+				},
+				"media": {
+					"displayName": "СМИ"
+				},
+				"message": {
+					"displayName": "Сообщение"
+				},
+				"room": {
+					"displayName": "Комната"
+				},
+				"roomMember": {
+					"displayName": "Член комнаты"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"me": {
+					"displayName": "Мне",
+					"description": "Получить информацию об учетной записи текущего пользователя"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить одно событие по идентификатору"
+				},
+				"upload": {
+					"displayName": "Загрузить",
+					"description": "Отправьте медиа в чат"
+				},
+				"create": {
+					"displayName": "Создавать",
+					"description": "Новый чат с определенными настройками"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить много участников"
+				},
+				"invite": {
+					"displayName": "Приглашать",
+					"description": "Пригласить пользователя в комнату"
+				},
+				"join": {
+					"displayName": "Присоединиться",
+					"description": "Присоединяйтесь к новой комнате"
+				},
+				"kick": {
+					"displayName": "Пинать",
+					"description": "Выгнать пользователя из комнаты"
+				},
+				"leave": {
+					"displayName": "Оставлять",
+					"description": "Покинуть комнату"
+				}
+			}
+		},
+		"roomId": {
+			"displayName": "Название или идентификатор комнаты",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>",
+			"placeholder": "!123abc:matrix.org"
+		},
+		"eventId": {
+			"displayName": "Идентификатор события",
+			"description": "Комната, связанная с мероприятием",
+			"placeholder": "$1234abcd:matrix.org"
+		},
+		"binaryPropertyName": {
+			"displayName": "Входное двоичное поле",
+			"hint": "Имя входного двоичного поля, содержащего файл для загрузки."
+		},
+		"mediaType": {
+			"displayName": "Тип носителя",
+			"description": "Тип загружаемого файла",
+			"placeholder": "mxc://matrix.org/uploaded-media-uri",
+			"options": {
+				"file": {
+					"displayName": "Файл",
+					"description": "Общий файл"
+				},
+				"image": {
+					"displayName": "Изображение",
+					"description": "Тип носителя изображения"
+				},
+				"audio": {
+					"displayName": "Аудио",
+					"description": "Тип аудионосителя"
+				},
+				"video": {
+					"displayName": "Видео",
+					"description": "Тип видеоматериала"
+				}
+			}
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"fileName": {
+					"displayName": "Имя файла",
+					"description": "Имя загружаемого файла"
+				}
+			}
+		},
+		"text": {
+			"displayName": "Текст",
+			"description": "Текст для отправки",
+			"placeholder": "Привет от n8n!"
+		},
+		"messageType": {
+			"displayName": "Тип сообщения",
+			"description": "Тип сообщения для отправки",
+			"options": {
+				"m": {
+					"emote": {
+						"displayName": "Эмоция",
+						"description": "Выполнить действие (аналогично /me в IRC)."
+					},
+					"notice": {
+						"displayName": "Уведомление",
+						"description": "Отправить уведомление"
+					},
+					"text": {
+						"displayName": "Текст",
+						"description": "Отправить текстовое сообщение"
+					}
+				}
+			}
+		},
+		"messageFormat": {
+			"displayName": "Формат сообщения",
+			"description": "Формат тела сообщения",
+			"options": {
+				"plain": {
+					"displayName": "Обычный текст",
+					"description": "Только текст"
+				},
+				"org": {
+					"matrix": {
+						"custom": {
+							"html": {
+								"displayName": "HTML",
+								"description": "Текст в формате HTML"
+							}
+						}
+					}
+				}
+			}
+		},
+		"fallbackText": {
+			"displayName": "Резервный текст",
+			"description": "Простое текстовое сообщение, отображаемое в случае, если HTML-код не может быть отображен клиентом Matrix."
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"otherOptions": {
+			"displayName": "Другие варианты",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"filter": {
+					"displayName": "Фильтр",
+					"description": "JSON RoomEventFilter для фильтрации возвращаемых событий. Более подробную информацию можно найти на этой <a href=\"https://matrix.org/docs/spec/client_server/r0.6.0\">странице</a>.",
+					"placeholder": "{\"contains_url\":true,\"types\":[\"m.room.message\", \"m.sticker\"]}"
+				}
+			}
+		},
+		"roomName": {
+			"displayName": "Название комнаты",
+			"placeholder": "Моя новая комната"
+		},
+		"preset": {
+			"displayName": "Предустановка",
+			"placeholder": "Моя новая комната",
+			"options": {
+				"private_chat": {
+					"displayName": "Приватный чат"
+				},
+				"public_chat": {
+					"displayName": "Публичный чат",
+					"description": "Открытый и публичный чат"
+				}
+			}
+		},
+		"roomAlias": {
+			"displayName": "Псевдоним комнаты",
+			"placeholder": "самая крутая комната"
+		},
+		"roomIdOrAlias": {
+			"displayName": "Идентификатор комнаты или псевдоним"
+		},
+		"userId": {
+			"displayName": "ID пользователя",
+			"description": "Полный идентификатор пользователя",
+			"placeholder": "@cheeky_monkey:matrix.org"
+		},
+		"reason": {
+			"displayName": "Причина",
+			"description": "Причина для удара",
+			"placeholder": "Рассказываю несмешные анекдоты"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"description": "Параметры фильтрации",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"notMembership": {
+					"displayName": "Исключить членство",
+					"description": "Исключает участников, чье членство отличается от выбранного (используется фильтр ИЛИ с членством)",
+					"options": {
+						"": {
+							"displayName": "Любой",
+							"description": "Любое членство пользователя"
+						},
+						"ban": {
+							"displayName": "Запретить",
+							"description": "Пользователи удалены из комнаты"
+						},
+						"invite": {
+							"displayName": "Приглашать",
+							"description": "Пользователи приглашены присоединиться"
+						},
+						"join": {
+							"displayName": "Присоединиться",
+							"description": "Пользователи, находящиеся сейчас в комнате"
+						},
+						"leave": {
+							"displayName": "Оставлять",
+							"description": "Пользователи, которые ушли"
+						}
+					}
+				},
+				"membership": {
+					"displayName": "Членство",
+					"description": "Получать только пользователей с выбранным статусом членства (используется фильтр ИЛИ с исключением членства)",
+					"options": {
+						"": {
+							"displayName": "Любой",
+							"description": "Любое членство пользователя"
+						},
+						"ban": {
+							"displayName": "Запретить",
+							"description": "Пользователи удалены из комнаты"
+						},
+						"invite": {
+							"displayName": "Приглашать",
+							"description": "Пользователи приглашены присоединиться"
+						},
+						"join": {
+							"displayName": "Присоединиться",
+							"description": "Пользователи, находящиеся сейчас в комнате"
+						},
+						"leave": {
+							"displayName": "Оставлять",
+							"description": "Пользователи, которые ушли"
+						}
+					}
+				}
+			}
+		}
+	}
+}

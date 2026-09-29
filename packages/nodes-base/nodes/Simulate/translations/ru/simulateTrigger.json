@@ -1,0 +1,23 @@
+{
+	"header": {
+		"displayName": "Имитировать триггер",
+		"description": "Имитировать триггерный узел"
+	},
+	"nodeView": {
+		"icon": {
+			"displayName": "Значок для отображения на холсте",
+			"description": "Выберите тип узла, чтобы отобразить соответствующий значок."
+		},
+		"subtitle": {
+			"displayName": "Субтитры",
+			"placeholder": "например 'запись: прочитать'"
+		},
+		"jsonOutput": {
+			"displayName": "Выходные данные (JSON)"
+		},
+		"executionDuration": {
+			"displayName": "Продолжительность выполнения (мс)",
+			"description": "Длительность выполнения в миллисекундах"
+		}
+	}
+}

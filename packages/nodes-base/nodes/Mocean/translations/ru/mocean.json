@@ -1,0 +1,71 @@
+{
+	"header": {
+		"displayName": "Мокеан",
+		"description": "Отправляйте SMS и голосовые сообщения через Mocean"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"sms": {
+					"displayName": "SMS"
+				},
+				"voice": {
+					"displayName": "Голос"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"send": {
+					"displayName": "Отправлять",
+					"description": "Отправить SMS/голосовое сообщение"
+				}
+			}
+		},
+		"from": {
+			"displayName": "От",
+			"description": "Номер, на который отправить сообщение",
+			"placeholder": "Номер отправителя"
+		},
+		"to": {
+			"displayName": "К",
+			"description": "Номер, с которого отправить сообщение",
+			"placeholder": "Номер получателя"
+		},
+		"language": {
+			"displayName": "Язык",
+			"options": {
+				"cmn-CN": {
+					"displayName": "Китайский мандарин (Китай)"
+				},
+				"en-GB": {
+					"displayName": "Английский (Великобритания)"
+				},
+				"en-US": {
+					"displayName": "Английский (США)"
+				},
+				"ja-JP": {
+					"displayName": "Японский (Япония)"
+				},
+				"ko-KR": {
+					"displayName": "Корейский (Корея)"
+				}
+			}
+		},
+		"message": {
+			"displayName": "Сообщение",
+			"description": "Сообщение для отправки"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"dlrUrl": {
+					"displayName": "URL-адрес отчета о доставке"
+				}
+			}
+		}
+	}
+}

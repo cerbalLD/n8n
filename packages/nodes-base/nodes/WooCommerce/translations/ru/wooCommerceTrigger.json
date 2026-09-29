@@ -1,0 +1,58 @@
+{
+	"header": {
+		"displayName": "Триггер WooCommerce",
+		"description": "Обработка событий WooCommerce через веб-перехватчики"
+	},
+	"nodeView": {
+		"event": {
+			"displayName": "Событие",
+			"description": "Определяет, для каких событий ресурса срабатывает вебхук.",
+			"options": {
+				"coupon": {
+					"created": {
+						"displayName": "купон.создан"
+					},
+					"deleted": {
+						"displayName": "купон.удален"
+					},
+					"updated": {
+						"displayName": "купон.обновлено"
+					}
+				},
+				"customer": {
+					"created": {
+						"displayName": "клиент.создал"
+					},
+					"deleted": {
+						"displayName": "клиент.удален"
+					},
+					"updated": {
+						"displayName": "клиент.обновлено"
+					}
+				},
+				"order": {
+					"created": {
+						"displayName": "заказ.создан"
+					},
+					"deleted": {
+						"displayName": "заказ.удален"
+					},
+					"updated": {
+						"displayName": "заказ.обновлено"
+					}
+				},
+				"product": {
+					"created": {
+						"displayName": "продукт.создан"
+					},
+					"deleted": {
+						"displayName": "продукт.удален"
+					},
+					"updated": {
+						"displayName": "продукт.обновлено"
+					}
+				}
+			}
+		}
+	}
+}

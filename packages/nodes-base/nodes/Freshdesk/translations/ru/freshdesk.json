@@ -1,0 +1,593 @@
+{
+	"header": {
+		"displayName": "Фрешдеск",
+		"description": "Использование Freshdesk API"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"contact": {
+					"displayName": "Контакт"
+				},
+				"ticket": {
+					"displayName": "Билет"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать новый контакт"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удаление контакта"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить контакт"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить много контактов"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить контакт"
+				}
+			}
+		},
+		"requester": {
+			"displayName": "Идентификация запрашивающего",
+			"options": {
+				"email": {
+					"displayName": "Электронная почта",
+					"description": "Адрес электронной почты запрашивающего. Если в Freshdesk нет контакта с этим адресом электронной почты, он будет добавлен как новый контакт."
+				},
+				"facebookId": {
+					"displayName": "Идентификатор Facebook",
+					"description": "Идентификатор Facebook отправителя запроса. Если контакта с этим facebook_id не существует, будет создан новый контакт."
+				},
+				"phone": {
+					"displayName": "Телефон",
+					"description": "Телефон заявителя. Если в Freshdesk нет контакта с этим номером телефона, он будет добавлен как новый контакт. Если номер телефона указан, а адрес электронной почты — нет, атрибут имени является обязательным."
+				},
+				"requesterId": {
+					"displayName": "Идентификатор запрашивающего",
+					"description": "Идентификатор пользователя отправителя запроса. Для существующих контактов вместо адреса электронной почты запрашивающего можно передать requester_id."
+				},
+				"twitterId": {
+					"displayName": "Идентификатор Твиттера",
+					"description": "Дескриптор Twitter отправителя запроса. Если в Freshdesk контакта с этим дескриптором не существует, он будет добавлен как новый контакт."
+				},
+				"uniqueExternalId": {
+					"displayName": "Уникальный внешний идентификатор",
+					"description": "Внешний идентификатор запрашивающего. Если в Freshdesk не существует контакта с этим внешним идентификатором, он будет добавлен как новый контакт."
+				}
+			}
+		},
+		"requesterIdentificationValue": {
+			"displayName": "Ценить",
+			"description": "Значение выбранного идентификатора"
+		},
+		"status": {
+			"displayName": "Статус",
+			"options": {
+				"closed": {
+					"displayName": "Закрыто"
+				},
+				"open": {
+					"displayName": "Открыть"
+				},
+				"pending": {
+					"displayName": "В ожидании"
+				},
+				"resolved": {
+					"displayName": "Решено"
+				}
+			}
+		},
+		"priority": {
+			"displayName": "Приоритет",
+			"options": {
+				"low": {
+					"displayName": "Низкий"
+				},
+				"medium": {
+					"displayName": "Середина"
+				},
+				"high": {
+					"displayName": "Высокий"
+				},
+				"urgent": {
+					"displayName": "Срочный"
+				}
+			}
+		},
+		"source": {
+			"displayName": "Источник",
+			"description": "Канал, через который был создан билет",
+			"options": {
+				"chat": {
+					"displayName": "Чат"
+				},
+				"email": {
+					"displayName": "Электронная почта"
+				},
+				"feedbackWidget": {
+					"displayName": "Виджет обратной связи"
+				},
+				"mobileHelp": {
+					"displayName": "Мобихелп"
+				},
+				"OutboundEmail": {
+					"displayName": "Исходящая электронная почта"
+				},
+				"phone": {
+					"displayName": "Телефон"
+				},
+				"portal": {
+					"displayName": "Портал"
+				}
+			}
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"agent": {
+					"displayName": "Имя или идентификатор агента",
+					"description": "Идентификатор агента, которому назначен билет. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"ccEmails": {
+					"displayName": "Электронная почта CC",
+					"description": "Адреса электронной почты, разделенные запятой (,), добавленные в поле «Копия» входящего электронного письма с заявкой."
+				},
+				"company": {
+					"displayName": "Название компании или идентификатор",
+					"description": "Идентификатор компании запрашивающего. Этот атрибут можно установить только в том случае, если включена функция «Несколько компаний» (план Estate и выше). Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"description": {
+					"displayName": "Описание",
+					"description": "HTML-содержимое билета"
+				},
+				"dueBy": {
+					"displayName": "К оплате",
+					"description": "Временная метка, указывающая, когда заявка должна быть решена."
+				},
+				"emailConfigId": {
+					"displayName": "Идентификатор конфигурации электронной почты",
+					"description": "Идентификатор конфигурации электронной почты, которая используется для этого билета. (т. е. support@yourcompany.com/sales@yourcompany.com). Если Product_id указан, а email_config_id не указан, будет установлен основной email_config_id продукта."
+				},
+				"frDueBy": {
+					"displayName": "Срок оплаты во вторник",
+					"description": "Временная метка, указывающая, когда должен быть получен первый ответ."
+				},
+				"group": {
+					"displayName": "Имя или идентификатор группы",
+					"description": "Идентификатор группы, которой присвоен билет. Значением по умолчанию является идентификатор группы, связанной с данным email_config_id. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Имя запрашивающего"
+				},
+				"product": {
+					"displayName": "Название продукта или идентификатор",
+					"description": "Идентификатор продукта, к которому привязан билет. Он будет проигнорирован, если в запросе установлен атрибут email_config_id. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"subject": {
+					"displayName": "Предмет",
+					"description": "Тема билета"
+				},
+				"tags": {
+					"displayName": "Теги",
+					"description": "Разделенные запятой (,) теги, связанные с заявкой."
+				},
+				"type": {
+					"displayName": "Тип",
+					"description": "Помогает классифицировать заявку в соответствии с различными типами проблем, с которыми сталкивается ваша служба поддержки.",
+					"options": {
+						"Feature Request": {
+							"displayName": "Запрос функции"
+						},
+						"Incident": {
+							"displayName": "Инцидент"
+						},
+						"Problem": {
+							"displayName": "Проблема"
+						},
+						"Question": {
+							"displayName": "Вопрос"
+						},
+						"Refund": {
+							"displayName": "Возвращать деньги"
+						}
+					}
+				},
+				"companyId": {
+					"displayName": "Идентификатор компании"
+				},
+				"include": {
+					"displayName": "Включать",
+					"options": {
+						"company": {
+							"displayName": "Компания"
+						},
+						"description": {
+							"displayName": "Описание"
+						},
+						"requester": {
+							"displayName": "Запрашивающая сторона"
+						},
+						"stats": {
+							"displayName": "Статистика"
+						}
+					}
+				},
+				"order": {
+					"displayName": "Заказ",
+					"description": "Атрибут сортировки порядка по возрастанию или убыванию",
+					"options": {
+						"asc": {
+							"displayName": "ASC"
+						},
+						"desc": {
+							"displayName": "DESC"
+						}
+					}
+				},
+				"orderBy": {
+					"displayName": "Заказать по",
+					"description": "Сортировка коллекции по атрибуту объекта",
+					"options": {
+						"createdAt": {
+							"displayName": "Создано в"
+						},
+						"dueBy": {
+							"displayName": "К оплате"
+						},
+						"updatedAt": {
+							"displayName": "Обновлено в"
+						}
+					}
+				},
+				"requesterEmail": {
+					"displayName": "Электронная почта отправителя запроса"
+				},
+				"requesterId": {
+					"displayName": "Идентификатор запрашивающего"
+				},
+				"updatedSince": {
+					"displayName": "Обновлено с"
+				}
+			}
+		},
+		"ticketId": {
+			"displayName": "Идентификатор билета"
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"agent": {
+					"displayName": "Имя или идентификатор агента",
+					"description": "Идентификатор агента, которому назначен билет. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"ccEmails": {
+					"displayName": "Электронная почта CC",
+					"description": "Адреса электронной почты, разделенные запятой (,), добавленные в поле «Копия» входящего электронного письма с заявкой."
+				},
+				"company": {
+					"displayName": "Название компании или идентификатор",
+					"description": "Идентификатор компании запрашивающего. Этот атрибут можно установить только в том случае, если включена функция «Несколько компаний» (план Estate и выше). Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"dueBy": {
+					"displayName": "К оплате",
+					"description": "Временная метка, указывающая, когда заявка должна быть решена."
+				},
+				"emailConfigId": {
+					"displayName": "Идентификатор конфигурации электронной почты",
+					"description": "Идентификатор конфигурации электронной почты, которая используется для этого билета. (т. е. support@yourcompany.com/sales@yourcompany.com). Если Product_id указан, а email_config_id не указан, будет установлен основной email_config_id продукта."
+				},
+				"frDueBy": {
+					"displayName": "Срок оплаты во вторник",
+					"description": "Временная метка, указывающая, когда должен быть получен первый ответ."
+				},
+				"group": {
+					"displayName": "Имя или идентификатор группы",
+					"description": "Идентификатор группы, которой присвоен билет. Значением по умолчанию является идентификатор группы, связанной с данным email_config_id. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Имя запрашивающего"
+				},
+				"product": {
+					"displayName": "Название продукта или идентификатор",
+					"description": "Идентификатор продукта, к которому привязан билет. Он будет проигнорирован, если в запросе установлен атрибут email_config_id. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"priority": {
+					"displayName": "Приоритет",
+					"options": {
+						"low": {
+							"displayName": "Низкий"
+						},
+						"medium": {
+							"displayName": "Середина"
+						},
+						"high": {
+							"displayName": "Высокий"
+						},
+						"urgent": {
+							"displayName": "Срочный"
+						}
+					}
+				},
+				"requester": {
+					"displayName": "Идентификация запрашивающего",
+					"options": {
+						"email": {
+							"displayName": "Электронная почта",
+							"description": "Адрес электронной почты запрашивающего. Если в Freshdesk нет контакта с этим адресом электронной почты, он будет добавлен как новый контакт."
+						},
+						"facebookId": {
+							"displayName": "Идентификатор Facebook",
+							"description": "Идентификатор Facebook отправителя запроса. Если контакта с этим facebook_id не существует, будет создан новый контакт."
+						},
+						"phone": {
+							"displayName": "Телефон",
+							"description": "Телефон заявителя. Если в Freshdesk нет контакта с этим номером телефона, он будет добавлен как новый контакт. Если номер телефона указан, а адрес электронной почты — нет, атрибут имени является обязательным."
+						},
+						"requesterId": {
+							"displayName": "Идентификатор запрашивающего",
+							"description": "Идентификатор пользователя отправителя запроса. Для существующих контактов вместо адреса электронной почты запрашивающего можно передать requester_id."
+						},
+						"twitterId": {
+							"displayName": "Идентификатор Твиттера",
+							"description": "Дескриптор Twitter отправителя запроса. Если в Freshdesk контакта с этим дескриптором не существует, он будет добавлен как новый контакт."
+						},
+						"uniqueExternalId": {
+							"displayName": "Уникальный внешний идентификатор",
+							"description": "Внешний идентификатор запрашивающего. Если в Freshdesk не существует контакта с этим внешним идентификатором, он будет добавлен как новый контакт."
+						}
+					}
+				},
+				"requesterIdentificationValue": {
+					"displayName": "Значение запрашивающей стороны",
+					"description": "Значение выбранного идентификатора"
+				},
+				"status": {
+					"displayName": "Статус",
+					"options": {
+						"open": {
+							"displayName": "Открыть"
+						},
+						"pending": {
+							"displayName": "В ожидании"
+						},
+						"resolved": {
+							"displayName": "Решено"
+						},
+						"closed": {
+							"displayName": "Закрыто"
+						}
+					}
+				},
+				"source": {
+					"displayName": "Источник",
+					"description": "Канал, через который был создан билет",
+					"options": {
+						"chat": {
+							"displayName": "Чат"
+						},
+						"email": {
+							"displayName": "Электронная почта"
+						},
+						"feedbackWidget": {
+							"displayName": "Виджет обратной связи"
+						},
+						"mobileHelp": {
+							"displayName": "Мобихелп"
+						},
+						"OutboundEmail": {
+							"displayName": "Исходящая электронная почта"
+						},
+						"phone": {
+							"displayName": "Телефон"
+						},
+						"portal": {
+							"displayName": "Портал"
+						}
+					}
+				},
+				"tags": {
+					"displayName": "Теги",
+					"description": "Разделенные запятой (,) теги, связанные с заявкой."
+				},
+				"type": {
+					"displayName": "Тип",
+					"description": "Помогает классифицировать заявку в соответствии с различными типами проблем, с которыми сталкивается ваша служба поддержки.",
+					"options": {
+						"Feature Request": {
+							"displayName": "Запрос функции"
+						},
+						"Incident": {
+							"displayName": "Инцидент"
+						},
+						"Problem": {
+							"displayName": "Проблема"
+						},
+						"Question": {
+							"displayName": "Вопрос"
+						},
+						"Refund": {
+							"displayName": "Возвращать деньги"
+						}
+					}
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Имя контакта"
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"description": "Основной адрес электронной почты контактного лица. Если вы хотите связать с этим контактом дополнительные адреса электронной почты, используйте атрибутother_emails.",
+			"placeholder": "имя@email.com"
+		},
+		"contactId": {
+			"displayName": "Идентификатор контакта"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"address": {
+					"displayName": "Адрес",
+					"description": "Адрес контакта"
+				},
+				"company_id": {
+					"displayName": "Идентификатор компании",
+					"description": "Идентификатор основной компании, которой принадлежит этот контакт"
+				},
+				"customFields": {
+					"values": {
+						"customFields": {
+							"displayName": "Пользовательские поля",
+							"description": "Пары ключ-значение, содержащие имя и значение настраиваемого поля. В качестве входных данных для пользовательских полей даты принимаются только даты в формате ГГГГ-ММ-ДД."
+						},
+						"customField": {
+							"options": {
+								"name": {
+									"displayName": "Имя",
+									"description": "Имя настраиваемого поля"
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Значения настраиваемого поля"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить настраиваемое поле",
+					"displayName": "Пользовательские поля",
+					"description": "Пары ключ-значение, содержащие имя и значение настраиваемого поля. В качестве входных данных для пользовательских полей даты принимаются только даты в формате ГГГГ-ММ-ДД.",
+					"options": {
+						"customField": {
+							"displayName": "Пользовательское поле"
+						}
+					}
+				},
+				"description": {
+					"displayName": "Описание",
+					"description": "Небольшое описание контакта"
+				},
+				"email": {
+					"displayName": "Электронная почта",
+					"description": "Основной адрес электронной почты контактного лица. Если вы хотите связать с этим контактом дополнительные адреса электронной почты, используйте атрибутother_emails.",
+					"placeholder": "имя@email.com"
+				},
+				"job_title": {
+					"displayName": "Должность",
+					"description": "Должность контактного лица"
+				},
+				"language": {
+					"displayName": "Язык",
+					"description": "Язык общения. Язык по умолчанию — «en». Этот атрибут можно установить только в том случае, если включена функция нескольких языков (план Garden и выше)."
+				},
+				"mobile": {
+					"displayName": "мобильный",
+					"description": "Мобильный номер контакта"
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Имя контакта"
+				},
+				"other_companies": {
+					"displayName": "Другие компании",
+					"description": "Дополнительные компании, связанные с контактом. Этот атрибут можно установить только в том случае, если включена функция «Несколько компаний» (план Estate и выше).",
+					"placeholder": "Добавить компанию"
+				},
+				"other_emails": {
+					"displayName": "Другие электронные письма",
+					"description": "Дополнительные адреса электронной почты, связанные с контактом",
+					"placeholder": "Добавить адрес электронной почты"
+				},
+				"phone": {
+					"displayName": "Телефон",
+					"description": "Телефон контактного лица"
+				},
+				"tags": {
+					"displayName": "Теги",
+					"description": "Теги, связанные с этим контактом"
+				},
+				"time_zone": {
+					"displayName": "Часовой пояс",
+					"description": "Часовой пояс контакта. Значение по умолчанию — часовой пояс домена. Этот атрибут можно установить только в том случае, если включена функция «Несколько часовых поясов» (план «Сад» и выше)."
+				},
+				"twitter_id": {
+					"displayName": "Идентификатор Твиттера",
+					"description": "Твиттер-дескриптор контакта"
+				},
+				"unique_external_id": {
+					"displayName": "Уникальный внешний идентификатор",
+					"description": "Внешний идентификатор контакта"
+				},
+				"view_all_tickets": {
+					"displayName": "Посмотреть все билеты",
+					"description": "Может ли контакт видеть все заявки, связанные с компанией, которой они принадлежат."
+				}
+			}
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"company_id": {
+					"displayName": "Идентификатор компании"
+				},
+				"email": {
+					"displayName": "Электронная почта",
+					"placeholder": "имя@email.com"
+				},
+				"mobile": {
+					"displayName": "мобильный"
+				},
+				"phone": {
+					"displayName": "Телефон"
+				},
+				"state": {
+					"displayName": "Состояние",
+					"options": {
+						"blocked": {
+							"displayName": "Заблокировано"
+						},
+						"deleted": {
+							"displayName": "Удалено"
+						},
+						"unverified": {
+							"displayName": "Непроверенный"
+						},
+						"verified": {
+							"displayName": "Проверено"
+						}
+					}
+				},
+				"updated_since": {
+					"displayName": "Обновлено с"
+				}
+			}
+		}
+	}
+}

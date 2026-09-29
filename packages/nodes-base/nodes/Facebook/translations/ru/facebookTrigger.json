@@ -1,0 +1,91 @@
+{
+	"header": {
+		"displayName": "Триггер Facebook",
+		"description": "Запускает рабочий процесс при возникновении событий Facebook"
+	},
+	"nodeView": {
+		"authType": {
+			"displayName": "Аутентификация",
+			"description": "Используемый метод аутентификации",
+			"options": {
+				"accessToken": {
+					"displayName": "Токен доступа"
+				},
+				"oAuth2": {
+					"displayName": "ОАут2"
+				}
+			}
+		},
+		"appId": {
+			"displayName": "Идентификатор приложения",
+			"description": "Идентификатор приложения Facebook"
+		},
+		"whatsappBusinessAccountNotice": {
+			"displayName": "Для просмотра событий бизнес-аккаунта WhatsApp используйте узел триггера WhatsApp."
+		},
+		"object": {
+			"displayName": "Объект",
+			"description": "Объект, на который нужно подписаться",
+			"options": {
+				"adAccount": {
+					"displayName": "Рекламный аккаунт",
+					"description": "Получайте обновления о рекламном аккаунте"
+				},
+				"application": {
+					"displayName": "Приложение",
+					"description": "Получайте обновления о приложении"
+				},
+				"certificateTransparency": {
+					"displayName": "Прозрачность сертификата",
+					"description": "Получайте обновления о прозрачности сертификатов"
+				},
+				"group": {
+					"displayName": "Группа",
+					"description": "Получайте обновления об активности в группах и событиях в группах для Workplace."
+				},
+				"instagram": {
+					"displayName": "Инстаграм",
+					"description": "Получайте обновления о комментариях к вашим СМИ"
+				},
+				"link": {
+					"displayName": "Связь",
+					"description": "Получайте обновления о ссылках для расширенного предварительного просмотра от внешнего поставщика."
+				},
+				"page": {
+					"displayName": "Страница",
+					"description": "Обновления страницы"
+				},
+				"permissions": {
+					"displayName": "Разрешения",
+					"description": "Обновления, касающиеся предоставления или отзыва разрешений"
+				},
+				"user": {
+					"displayName": "Пользователь",
+					"description": "Обновления профиля пользователя"
+				},
+				"whatsappBusinessAccount": {
+					"displayName": "Бизнес-аккаунт WhatsApp",
+					"description": "Получайте обновления о бизнес-аккаунте WhatsApp"
+				},
+				"workplaceSecurity": {
+					"displayName": "Безопасность на рабочем месте",
+					"description": "Получайте обновления о безопасности на рабочем месте"
+				}
+			}
+		},
+		"fields": {
+			"displayName": "Имена полей или идентификаторы",
+			"description": "Набор полей в этом объекте, на которые подписаны. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"includeValues": {
+					"displayName": "Включить значения",
+					"description": "Должны ли уведомления об изменениях включать новые значения"
+				}
+			}
+		}
+	}
+}

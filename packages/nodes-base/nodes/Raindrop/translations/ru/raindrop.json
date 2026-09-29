@@ -1,0 +1,232 @@
+{
+	"header": {
+		"displayName": "Дождевая капля",
+		"description": "Используйте API Raindrop"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"bookmark": {
+					"displayName": "Закладка"
+				},
+				"collection": {
+					"displayName": "Коллекция"
+				},
+				"tag": {
+					"displayName": "Ярлык"
+				},
+				"user": {
+					"displayName": "Пользователь"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать"
+				},
+				"delete": {
+					"displayName": "Удалить"
+				},
+				"get": {
+					"displayName": "Получать"
+				},
+				"getAll": {
+					"displayName": "Получить много"
+				},
+				"update": {
+					"displayName": "Обновлять"
+				}
+			}
+		},
+		"collectionId": {
+			"displayName": "Идентификатор коллекции",
+			"description": "Идентификатор коллекции, которую необходимо обновить."
+		},
+		"link": {
+			"displayName": "Связь",
+			"description": "Ссылка на создаваемую закладку"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"important": {
+					"displayName": "Важный",
+					"description": "Помечена ли эта закладка как избранная"
+				},
+				"order": {
+					"displayName": "Заказ",
+					"description": "Порядок сортировки закладки. Например, чтобы переместить его на первое место, введите 0."
+				},
+				"pleaseParse": {
+					"displayName": "Анализ метаданных",
+					"description": "Должен ли Raindrop загружать обложку, описание и HTML для URL-адреса"
+				},
+				"tags": {
+					"displayName": "Теги",
+					"description": "Теги закладок. Можно указать несколько тегов, разделив их запятой."
+				},
+				"title": {
+					"displayName": "Заголовок",
+					"description": "Название закладки, которую нужно создать"
+				},
+				"cover": {
+					"displayName": "Крышка",
+					"description": "URL-адрес изображения, которое будет использоваться в качестве обложки коллекции."
+				},
+				"public": {
+					"displayName": "Общественный",
+					"description": "Будет ли коллекция доступна без аутентификации"
+				},
+				"parentId": {
+					"displayName": "Идентификатор родителя",
+					"description": "Идентификатор родительской коллекции этой коллекции, если это дочерняя коллекция."
+				},
+				"sort": {
+					"displayName": "Порядок сортировки",
+					"description": "Порядок сортировки по убыванию этой коллекции. Число — это позиция коллекции среди всех коллекций с одинаковым родительским идентификатором."
+				},
+				"view": {
+					"displayName": "Вид",
+					"description": "Посмотреть стиль этой коллекции",
+					"options": {
+						"list": {
+							"displayName": "Список"
+						},
+						"simple": {
+							"displayName": "Простой"
+						},
+						"grid": {
+							"displayName": "Сетка"
+						},
+						"Masonry": {
+							"displayName": "каменная кладка"
+						}
+					}
+				},
+				"collectionId": {
+					"displayName": "Название или идентификатор коллекции",
+					"description": "Можно ограничить действие удаления только одной коллекцией. Это необязательно. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				}
+			}
+		},
+		"bookmarkId": {
+			"displayName": "Идентификатор закладки",
+			"description": "Идентификатор закладки, которую необходимо обновить."
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"collectionId": {
+					"displayName": "Название или идентификатор коллекции",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"important": {
+					"displayName": "Важный",
+					"description": "Помечена ли эта закладка как избранная"
+				},
+				"order": {
+					"displayName": "Заказ",
+					"description": "Например, если вы хотите переместить закладку на первое место, установите в этом поле значение 0."
+				},
+				"pleaseParse": {
+					"displayName": "Анализ метаданных",
+					"description": "Должен ли Raindrop перезагрузить обложку, описание и HTML для URL-адреса"
+				},
+				"tags": {
+					"displayName": "Теги",
+					"description": "Теги закладок. Можно указать несколько тегов, разделив их запятой."
+				},
+				"title": {
+					"displayName": "Заголовок",
+					"description": "Название коллекции, которую нужно обновить"
+				},
+				"cover": {
+					"displayName": "Крышка",
+					"description": "Имя двоичного свойства, содержащего данные для изображения, которое нужно загрузить в качестве обложки."
+				},
+				"public": {
+					"displayName": "Общественный",
+					"description": "Будет ли коллекция доступна без аутентификации"
+				},
+				"parentId": {
+					"displayName": "Идентификатор родителя",
+					"description": "Идентификатор родительской коллекции этой коллекции, если это дочерняя коллекция."
+				},
+				"sort": {
+					"displayName": "Порядок сортировки",
+					"description": "Порядок сортировки по убыванию этой коллекции. Число — это позиция коллекции среди всех коллекций с одинаковым родительским идентификатором."
+				},
+				"view": {
+					"displayName": "Вид",
+					"description": "Посмотреть стиль этой коллекции",
+					"options": {
+						"list": {
+							"displayName": "Список"
+						},
+						"simple": {
+							"displayName": "Простой"
+						},
+						"grid": {
+							"displayName": "Сетка"
+						},
+						"Masonry": {
+							"displayName": "каменная кладка"
+						}
+					}
+				}
+			}
+		},
+		"title": {
+			"displayName": "Заголовок",
+			"description": "Название коллекции, которую нужно создать"
+		},
+		"type": {
+			"displayName": "Тип",
+			"options": {
+				"parent": {
+					"displayName": "Родитель",
+					"description": "Коллекции корневого уровня"
+				},
+				"children": {
+					"displayName": "Дети",
+					"description": "Вложенные коллекции"
+				}
+			}
+		},
+		"tags": {
+			"displayName": "Теги",
+			"description": "Один или несколько тегов для удаления. Введите значения, разделенные запятыми, чтобы удалить несколько тегов."
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"collectionId": {
+					"displayName": "Название или идентификатор коллекции",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				}
+			}
+		},
+		"self": {
+			"displayName": "Себя",
+			"description": "Возвращать ли информацию о вошедшем в систему пользователе"
+		},
+		"userId": {
+			"displayName": "ID пользователя",
+			"description": "Идентификатор пользователя для получения"
+		}
+	}
+}

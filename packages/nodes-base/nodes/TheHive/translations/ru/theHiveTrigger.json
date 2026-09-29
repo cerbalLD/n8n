@@ -1,0 +1,81 @@
+{
+	"header": {
+		"displayName": "Улей Триггер",
+		"description": "Запускает рабочий процесс при возникновении событий TheHive."
+	},
+	"nodeView": {
+		"notice": {
+			"displayName": "Необходимо настроить вебхук в TheHive — инструкция <a href=\"https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.thehivetrigger/#configure-a-webhook-in-thehive\" target=\"_blank\">здесь</a>"
+		},
+		"events": {
+			"displayName": "События",
+			"description": "Типы событий",
+			"options": {
+				"*": {
+					"displayName": "*",
+					"description": "Каждый раз, когда запускается какое-либо событие (событие с подстановочным знаком)"
+				},
+				"alert_create": {
+					"displayName": "Оповещение создано",
+					"description": "Срабатывает при создании оповещения"
+				},
+				"alert_delete": {
+					"displayName": "Оповещение удалено",
+					"description": "Срабатывает при удалении оповещения"
+				},
+				"alert_update": {
+					"displayName": "Оповещение обновлено",
+					"description": "Срабатывает при обновлении оповещения"
+				},
+				"case_create": {
+					"displayName": "Дело создано",
+					"description": "Запускается при создании обращения"
+				},
+				"case_delete": {
+					"displayName": "Дело удалено",
+					"description": "Срабатывает при удалении обращения"
+				},
+				"case_update": {
+					"displayName": "Дело обновлено",
+					"description": "Активируется при обновлении обращения"
+				},
+				"case_task_log_create": {
+					"displayName": "Журнал создан",
+					"description": "Срабатывает при создании журнала задач"
+				},
+				"case_task_log_delete": {
+					"displayName": "Журнал удален",
+					"description": "Срабатывает при удалении журнала задач"
+				},
+				"case_task_log_update": {
+					"displayName": "Журнал обновлен",
+					"description": "Срабатывает при обновлении журнала задач"
+				},
+				"case_artifact_create": {
+					"displayName": "Наблюдаемый создан",
+					"description": "Запускается при создании наблюдаемого"
+				},
+				"case_artifact_delete": {
+					"displayName": "Наблюдаемый удален",
+					"description": "Срабатывает, когда наблюдаемый объект удаляется"
+				},
+				"case_artifact_update": {
+					"displayName": "Наблюдаемое обновление",
+					"description": "Срабатывает при обновлении наблюдаемого"
+				},
+				"case_task_create": {
+					"displayName": "Задача создана",
+					"description": "Срабатывает при создании задачи"
+				},
+				"case_task_delete": {
+					"displayName": "Задача удалена",
+					"description": "Срабатывает при удалении задачи"
+				},
+				"case_task_update": {
+					"displayName": "Задача обновлена",
+					"description": "Срабатывает при обновлении задачи"
+				}
+			}
+		}
+	}
+}

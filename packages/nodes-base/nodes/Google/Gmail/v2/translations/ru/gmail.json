@@ -1,0 +1,630 @@
+{
+	"header": {
+		"displayName": "Gmail",
+		"description": "Используйте API Gmail"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"oAuth2": {
+					"displayName": "OAuth2 (рекомендуется)"
+				},
+				"serviceAccount": {
+					"displayName": "Сервисный аккаунт"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"message": {
+					"displayName": "Сообщение"
+				},
+				"label": {
+					"displayName": "Этикетка"
+				},
+				"draft": {
+					"displayName": "Черновик"
+				},
+				"thread": {
+					"displayName": "Нить"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать"
+				},
+				"delete": {
+					"displayName": "Удалить"
+				},
+				"get": {
+					"displayName": "Получать"
+				},
+				"getAll": {
+					"displayName": "Получить много"
+				},
+				"addLabels": {
+					"displayName": "Добавить ярлык"
+				},
+				"markAsRead": {
+					"displayName": "Отметить как прочитанное"
+				},
+				"markAsUnread": {
+					"displayName": "Отметить как непрочитанное"
+				},
+				"removeLabels": {
+					"displayName": "Удалить ярлык"
+				},
+				"reply": {
+					"displayName": "Отвечать"
+				},
+				"send": {
+					"displayName": "Отправлять"
+				},
+				"sendAndWait": {
+					"displayName": "Отправить и дождаться ответа"
+				},
+				"trash": {
+					"displayName": "Мусор"
+				},
+				"untrash": {
+					"displayName": "Удалить мусор"
+				}
+			}
+		},
+		"messageId": {
+			"displayName": "Фрагмент сообщения или идентификатор",
+			"placeholder": "172ce2c4a72cc243",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"subject": {
+			"displayName": "Предмет",
+			"placeholder": "например Требуется одобрение"
+		},
+		"threadNotice": {
+			"displayName": "Чтобы ответить на существующую тему, укажите идентификатор темы из вариантов ниже."
+		},
+		"emailType": {
+			"displayName": "Тип электронной почты",
+			"options": {
+				"html": {
+					"displayName": "HTML"
+				},
+				"text": {
+					"displayName": "Текст"
+				}
+			}
+		},
+		"message": {
+			"displayName": "Сообщение",
+			"hint": "Получите лучший опыт написания текста и выражений с помощью редактора выражений."
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"attachmentsUi": {
+					"values": {
+						"attachmentsUi": {
+							"displayName": "Вложения",
+							"description": "Массив поддерживаемых вложений для добавления к сообщению"
+						},
+						"attachmentsBinary": {
+							"options": {
+								"property": {
+									"displayName": "Имя поля вложения",
+									"description": "Добавьте имя поля из входного узла. Можно задать несколько свойств, разделив их запятой.",
+									"hint": "Имя поля с вложением во входных данных узла"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить вложение",
+					"displayName": "Вложения",
+					"description": "Массив поддерживаемых вложений для добавления к сообщению",
+					"options": {
+						"attachmentsBinary": {
+							"displayName": "Двоичный файл вложения"
+						}
+					}
+				},
+				"bccList": {
+					"displayName": "BCC",
+					"description": "Адреса электронной почты получателей скрытой копии. Несколько адресов могут быть разделены запятой. например jay@getsby.com, jon@smith.com.",
+					"placeholder": "info@example.com"
+				},
+				"ccList": {
+					"displayName": "CC",
+					"description": "Адреса электронной почты получателей копии. Несколько адресов могут быть разделены запятой. например jay@getsby.com, jon@smith.com.",
+					"placeholder": "info@example.com"
+				},
+				"fromAlias": {
+					"displayName": "От псевдонима или идентификатора",
+					"description": "Выберите псевдоним для отправки электронного письма. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"replyTo": {
+					"displayName": "Отправить ответы",
+					"description": "Адрес электронной почты, на который будет отправлено ответное сообщение",
+					"placeholder": "ответ@example.com"
+				},
+				"threadId": {
+					"displayName": "Идентификатор потока",
+					"description": "Идентификатор темы для прикрепления черновика",
+					"placeholder": "18cc573e2431878f"
+				},
+				"sendTo": {
+					"displayName": "Отправить по электронной почте",
+					"description": "Адреса электронной почты получателей. Несколько адресов могут быть разделены запятой. например jay@getsby.com, jon@smith.com.",
+					"placeholder": "info@example.com"
+				},
+				"dataPropertyAttachmentsPrefixName": {
+					"displayName": "Префикс вложения",
+					"description": "Префикс имени двоичного свойства, в которое необходимо записать вложение. Будет добавлен индекс, начинающийся с 0. Таким образом, если имя — «attachment_», первое вложение сохраняется в «attachment_0»."
+				},
+				"downloadAttachments": {
+					"displayName": "Загрузить вложения",
+					"description": "Будут ли вложения электронного письма загружены и включены в выходные данные."
+				},
+				"includeSpamTrash": {
+					"displayName": "Включить спам и мусор",
+					"description": "Включать ли в результаты сообщения из СПАМ и МУСОР"
+				},
+				"labelListVisibility": {
+					"displayName": "Видимость списка меток",
+					"description": "Видимость ярлыка в списке ярлыков веб-интерфейса Gmail.",
+					"options": {
+						"labelHide": {
+							"displayName": "Скрывать"
+						},
+						"labelShow": {
+							"displayName": "Показывать"
+						},
+						"labelShowIfUnread": {
+							"displayName": "Показать, если не прочитано"
+						}
+					}
+				},
+				"messageListVisibility": {
+					"displayName": "Видимость списка сообщений",
+					"description": "Видимость сообщений с этим ярлыком в списке сообщений веб-интерфейса Gmail.",
+					"options": {
+						"hide": {
+							"displayName": "Скрывать"
+						},
+						"show": {
+							"displayName": "Показывать"
+						}
+					}
+				},
+				"appendAttribution": {
+					"displayName": "Добавить авторство n8n",
+					"description": "Включить ли в конец сообщения фразу «Это сообщение было отправлено автоматически с помощью n8n»"
+				},
+				"senderName": {
+					"displayName": "Имя отправителя",
+					"description": "Имя, отображаемое в почтовых ящиках ваших контактов",
+					"placeholder": "например Натан"
+				},
+				"replyToSenderOnly": {
+					"displayName": "Ответить только отправителю",
+					"description": "Отвечать только отправителю или всему списку получателей?"
+				},
+				"limitWaitTime": {
+					"values": {
+						"limitWaitTime": {
+							"displayName": "Ограничить время ожидания",
+							"description": "Ограничить ли время, в течение которого этот узел должен ждать ответа пользователя, прежде чем возобновится выполнение."
+						},
+						"values": {
+							"options": {
+								"limitType": {
+									"displayName": "Тип лимита",
+									"description": "Устанавливает условие возобновления выполнения. Может быть указанная дата или через некоторое время.",
+									"options": {
+										"afterTimeInterval": {
+											"displayName": "После временного интервала",
+											"description": "Ждет определенное время"
+										},
+										"atSpecifiedTime": {
+											"displayName": "В указанное время",
+											"description": "Ожидает установленной даты и времени, чтобы продолжить"
+										}
+									}
+								},
+								"resumeAmount": {
+									"displayName": "Количество",
+									"description": "Время ждать"
+								},
+								"resumeUnit": {
+									"displayName": "Единица",
+									"description": "Единица значения интервала",
+									"options": {
+										"minutes": {
+											"displayName": "Минуты"
+										},
+										"hours": {
+											"displayName": "Часы"
+										},
+										"days": {
+											"displayName": "Дни"
+										}
+									}
+								},
+								"maxDateAndTime": {
+									"displayName": "Максимальная дата и время",
+									"description": "Продолжить выполнение после указанной даты и времени"
+								}
+							}
+						}
+					},
+					"displayName": "Ограничить время ожидания",
+					"description": "Ограничить ли время, в течение которого этот узел должен ждать ответа пользователя, прежде чем возобновится выполнение.",
+					"options": {
+						"values": {
+							"displayName": "Ценности"
+						}
+					}
+				},
+				"messageButtonLabel": {
+					"displayName": "Метка кнопки сообщения"
+				},
+				"responseFormTitle": {
+					"displayName": "Название формы ответа",
+					"description": "Название формы, к которой пользователь может получить доступ для ответа"
+				},
+				"responseFormDescription": {
+					"displayName": "Форма ответа Описание",
+					"description": "Описание формы, к которой пользователь может получить доступ для ответа."
+				},
+				"responseFormButtonLabel": {
+					"displayName": "Метка кнопки формы ответа"
+				},
+				"responseFormCustomCss": {
+					"displayName": "Пользовательский стиль формы ответа",
+					"description": "Переопределить стиль формы ответа по умолчанию с помощью CSS"
+				},
+				"replyToRecipientsOnly": {
+					"displayName": "Отвечать только получателям",
+					"description": "Исключить ли отправителя из ответа"
+				},
+				"returnOnlyMessages": {
+					"displayName": "Возвращать только сообщения",
+					"description": "Возвращать ли только сообщения потока"
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Название этикетки",
+			"placeholder": "счета-фактуры"
+		},
+		"labelId": {
+			"displayName": "Идентификатор этикетки",
+			"description": "Идентификатор метки"
+		},
+		"sendTo": {
+			"displayName": "К",
+			"description": "Адреса электронной почты получателей. Несколько адресов могут быть разделены запятой. например jay@getsby.com, jon@smith.com.",
+			"placeholder": "например info@example.com"
+		},
+		"simple": {
+			"displayName": "Упрощать",
+			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+		},
+		"simplifyMemoryNotice": {
+			"displayName": "Simplify уже возвращает ключевые поля, необходимые большинству рабочих процессов. Полный ответ намного больше и может вызвать ошибки нехватки памяти. Отключайте упрощение только в том случае, если вам нужно необработанное тело электронного письма, вложения или другие поля, недоступные в упрощенном ответе."
+		},
+		"filtersNotice": {
+			"displayName": "Получение большого количества сообщений может занять много времени. Рассмотрите возможность использования фильтров для ускорения процесса."
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"includeSpamTrash": {
+					"displayName": "Включить спам и мусор",
+					"description": "Включать ли в результаты темы из СПАМ и МУСОР"
+				},
+				"labelIds": {
+					"displayName": "Имена или идентификаторы этикеток",
+					"description": "Only return threads with labels that match all of the specified label IDs. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"q": {
+					"displayName": "Поиск",
+					"description": "Возвращать только сообщения, соответствующие указанному запросу",
+					"hint": "Используйте тот же формат, что и в поле поиска Gmail. <a href=\"https://support.google.com/mail/answer/7190?hl=en\">Подробнее</a>.",
+					"placeholder": "имеет: вложение"
+				},
+				"readStatus": {
+					"displayName": "Чтение статуса",
+					"hint": "Фильтруйте электронные письма по тому, были ли они прочитаны или нет.",
+					"options": {
+						"both": {
+							"displayName": "Непрочитанные и прочитанные электронные письма"
+						},
+						"unread": {
+							"displayName": "Только непрочитанные письма"
+						},
+						"read": {
+							"displayName": "Читать только электронные письма"
+						}
+					}
+				},
+				"receivedAfter": {
+					"displayName": "Получено после",
+					"description": "Получить все электронные письма, полученные после указанной даты. В выражении вы можете установить дату, используя строку в формате ISO или метку времени в миллисекундах."
+				},
+				"receivedBefore": {
+					"displayName": "Получено раньше",
+					"description": "Получить все электронные письма, полученные до указанной даты. В выражении вы можете установить дату, используя строку в формате ISO или метку времени в миллисекундах."
+				},
+				"sender": {
+					"displayName": "Отправитель",
+					"description": "Имя отправителя или адрес электронной почты для фильтрации",
+					"hint": "Введите адрес электронной почты или часть имени отправителя"
+				}
+			}
+		},
+		"labelIds": {
+			"displayName": "Имена или идентификаторы этикеток",
+			"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"responseType": {
+			"displayName": "Тип ответа",
+			"options": {
+				"approval": {
+					"displayName": "Одобрение",
+					"description": "Пользователь может одобрить/отклонить сообщение прямо в сообщении."
+				},
+				"freeText": {
+					"displayName": "Свободный текст",
+					"description": "Пользователь может отправить ответ через форму"
+				},
+				"customForm": {
+					"displayName": "Пользовательская форма",
+					"description": "Пользователь может отправить ответ через специальную форму"
+				}
+			}
+		},
+		"defineForm": {
+			"displayName": "Определить форму",
+			"options": {
+				"fields": {
+					"displayName": "Использование полей ниже"
+				},
+				"json": {
+					"displayName": "Использование JSON"
+				}
+			}
+		},
+		"jsonOutput": {
+			"displayName": "Поля формы",
+			"hint": "<a href=\"https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.form/\" target=\"_blank\">См. в документации </a> синтаксис полей."
+		},
+		"formFields": {
+			"options": {
+				"formFields": {
+					"displayName": "Элементы формы"
+				},
+				"values": {
+					"displayName": "Ценности",
+					"values": {
+						"fieldName": {
+							"displayName": "Имя настраиваемого поля",
+							"description": "Имя поля, используемое во входных атрибутах и ​​на которое ссылается рабочий процесс."
+						},
+						"fieldLabel": {
+							"displayName": "Имя поля",
+							"description": "Метка, которая появляется над полем ввода",
+							"placeholder": "например Как вас зовут?"
+						},
+						"fieldType": {
+							"displayName": "Тип элемента",
+							"description": "Тип поля, добавляемого в форму",
+							"options": {
+								"checkbox": {
+									"displayName": "Флажки"
+								},
+								"html": {
+									"displayName": "Пользовательский HTML"
+								},
+								"date": {
+									"displayName": "Дата"
+								},
+								"dropdown": {
+									"displayName": "Падать"
+								},
+								"email": {
+									"displayName": "Электронная почта"
+								},
+								"file": {
+									"displayName": "Файл"
+								},
+								"hiddenField": {
+									"displayName": "Скрытое поле"
+								},
+								"number": {
+									"displayName": "Число"
+								},
+								"password": {
+									"displayName": "Пароль"
+								},
+								"radio": {
+									"displayName": "Радиокнопки"
+								},
+								"text": {
+									"displayName": "Ввод текста"
+								},
+								"textarea": {
+									"displayName": "Текстовая область"
+								}
+							}
+						},
+						"elementName": {
+							"displayName": "Имя элемента",
+							"description": "Необязательное поле. Его можно использовать для включения HTML в выходные данные.",
+							"placeholder": "например раздел контента"
+						},
+						"placeholder": {
+							"displayName": "Заполнитель",
+							"description": "Пример текста для отображения внутри поля"
+						},
+						"defaultValue": {
+							"displayName": "Значение по умолчанию",
+							"description": "Значения по умолчанию, которые будут выбраны заранее. Должно соответствовать одному или нескольким меткам опций. Разделите несколько предварительно выбранных опций запятой."
+						},
+						"fieldValue": {
+							"displayName": "Значение поля",
+							"description": "Входное значение можно установить здесь или оно будет передано в качестве параметра запроса через имя поля, если значение не установлено."
+						},
+						"fieldOptions": {
+							"options": {
+								"fieldOptions": {
+									"displayName": "Радиокнопки",
+									"description": "Список опций, которые можно выбрать из раскрывающегося списка"
+								},
+								"values": {
+									"displayName": "Ценности",
+									"values": {
+										"option": {
+											"displayName": "Метка радиокнопки"
+										}
+									}
+								}
+							},
+							"placeholder": "Добавить переключатель",
+							"displayName": "Радиокнопки",
+							"description": "Список опций, которые можно выбрать из раскрывающегося списка"
+						},
+						"multiselectLegacyNotice": {
+							"displayName": "Множественный выбор является устаревшим вариантом, вместо этого используйте тип поля «Флажки» или «Переключатели»."
+						},
+						"multiselect": {
+							"displayName": "Множественный выбор",
+							"description": "Разрешить ли пользователю выбирать несколько вариантов из раскрывающегося списка"
+						},
+						"limitSelection": {
+							"displayName": "Ограничить выбор",
+							"options": {
+								"exact": {
+									"displayName": "Точный номер"
+								},
+								"range": {
+									"displayName": "Диапазон"
+								},
+								"unlimited": {
+									"displayName": "Безлимитный"
+								}
+							}
+						},
+						"numberOfSelections": {
+							"displayName": "Количество вариантов выбора"
+						},
+						"minSelections": {
+							"displayName": "Минимальный выбор"
+						},
+						"maxSelections": {
+							"displayName": "Максимальный выбор"
+						},
+						"html": {
+							"displayName": "HTML",
+							"description": "HTML-элементы для отображения на странице формы",
+							"hint": "Не принимает теги <code><script></code>, <code><style></code> или <code><input></code>."
+						},
+						"multipleFiles": {
+							"displayName": "Несколько файлов",
+							"description": "Разрешить ли пользователю выбирать несколько файлов из входного файла или только один"
+						},
+						"acceptFileTypes": {
+							"displayName": "Допустимые типы файлов",
+							"description": "Список разрешенных расширений файлов, разделенный запятыми",
+							"hint": "Оставьте пустым, чтобы разрешить все типы файлов.",
+							"placeholder": "например .jpg, .png"
+						},
+						"formatDate": {
+							"displayName": "Отображаемая дата форматируется на основе языкового стандарта браузера пользователя."
+						},
+						"requiredField": {
+							"displayName": "Обязательное поле",
+							"description": "Требовать ли от пользователя ввода значения в это поле перед отправкой формы"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить элемент формы",
+			"displayName": "Элементы формы",
+			"addOptionalFieldButtonText": "Добавить атрибуты"
+		},
+		"approvalOptions": {
+			"options": {
+				"approvalOptions": {
+					"displayName": "Варианты утверждения"
+				},
+				"values": {
+					"displayName": "Ценности",
+					"values": {
+						"approvalType": {
+							"displayName": "Тип одобрения",
+							"placeholder": "Добавить вариант",
+							"options": {
+								"single": {
+									"displayName": "Только утвердить"
+								},
+								"double": {
+									"displayName": "Одобрить и не одобрить"
+								}
+							}
+						},
+						"approveLabel": {
+							"displayName": "Метка кнопки «Утвердить»"
+						},
+						"buttonApprovalStyle": {
+							"displayName": "Утвердить стиль кнопки",
+							"options": {
+								"primary": {
+									"displayName": "Начальный"
+								},
+								"secondary": {
+									"displayName": "вторичный"
+								}
+							}
+						},
+						"disapproveLabel": {
+							"displayName": "Ярлык кнопки «Отклонить»"
+						},
+						"buttonDisapprovalStyle": {
+							"displayName": "Стиль кнопки «Отклонить»",
+							"options": {
+								"primary": {
+									"displayName": "Начальный"
+								},
+								"secondary": {
+									"displayName": "вторичный"
+								}
+							}
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить вариант",
+			"displayName": "Варианты утверждения"
+		},
+		"threadId": {
+			"displayName": "Идентификатор потока",
+			"description": "Идентификатор потока, над которым вы работаете.",
+			"placeholder": "172ce2c4a72cc243"
+		}
+	}
+}

@@ -1,0 +1,204 @@
+{
+	"header": {
+		"displayName": "Shopify Триггер",
+		"description": "Обработка событий Shopify через веб-перехватчики"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"accessToken": {
+					"displayName": "Токен доступа"
+				},
+				"oAuth2": {
+					"displayName": "ОАут2"
+				},
+				"apiKey": {
+					"displayName": "API-ключ"
+				}
+			}
+		},
+		"topic": {
+			"displayName": "Триггер включен",
+			"options": {
+				"app/uninstalled": {
+					"displayName": "Приложение удалено"
+				},
+				"carts/create": {
+					"displayName": "Корзина создана"
+				},
+				"carts/update": {
+					"displayName": "Корзина обновлена"
+				},
+				"checkouts/create": {
+					"displayName": "Оформление заказа создано"
+				},
+				"checkouts/delete": {
+					"displayName": "Оформить заказ Удалить"
+				},
+				"checkouts/update": {
+					"displayName": "Обновление оформления заказа"
+				},
+				"collections/create": {
+					"displayName": "Коллекция создана"
+				},
+				"collections/delete": {
+					"displayName": "Коллекция удалена"
+				},
+				"collection_listings/add": {
+					"displayName": "Добавлены списки коллекций"
+				},
+				"collection_listings/remove": {
+					"displayName": "Списки коллекций удалены"
+				},
+				"collection_listings/update": {
+					"displayName": "Списки коллекций обновлены"
+				},
+				"collections/update": {
+					"displayName": "Коллекция обновлена"
+				},
+				"customers/create": {
+					"displayName": "Клиент создан"
+				},
+				"customers/delete": {
+					"displayName": "Клиент удален"
+				},
+				"customers/disable": {
+					"displayName": "Клиент отключен"
+				},
+				"customers/enable": {
+					"displayName": "Клиент включен"
+				},
+				"customer_groups/create": {
+					"displayName": "Группы клиентов созданы"
+				},
+				"customer_groups/delete": {
+					"displayName": "Группы клиентов удалены"
+				},
+				"customer_groups/update": {
+					"displayName": "Группы клиентов обновлены"
+				},
+				"customers/update": {
+					"displayName": "Клиент обновлен"
+				},
+				"draft_orders/create": {
+					"displayName": "Проекты заказов созданы"
+				},
+				"draft_orders/delete": {
+					"displayName": "Черновики приказов удалены"
+				},
+				"draft_orders/update": {
+					"displayName": "Обновлены проекты приказов"
+				},
+				"fulfillments/create": {
+					"displayName": "Выполнение создано"
+				},
+				"fulfillment_events/create": {
+					"displayName": "Созданы события выполнения"
+				},
+				"fulfillment_events/delete": {
+					"displayName": "События выполнения удалены"
+				},
+				"fulfillments/update": {
+					"displayName": "Выполнение обновлено"
+				},
+				"inventory_items/create": {
+					"displayName": "Созданные предметы инвентаря"
+				},
+				"inventory_items/delete": {
+					"displayName": "Предметы инвентаря удалены"
+				},
+				"inventory_items/update": {
+					"displayName": "Обновлены предметы инвентаря"
+				},
+				"inventory_levels/connect": {
+					"displayName": "Уровни инвентаря подключены"
+				},
+				"inventory_levels/disconnect": {
+					"displayName": "Уровни инвентаря отключены"
+				},
+				"inventory_levels/update": {
+					"displayName": "Уровни инвентаря обновлены"
+				},
+				"locales/create": {
+					"displayName": "Локаль создана"
+				},
+				"locales/update": {
+					"displayName": "Языковой стандарт обновлен"
+				},
+				"locations/create": {
+					"displayName": "Местоположение создано"
+				},
+				"locations/delete": {
+					"displayName": "Местоположение удалено"
+				},
+				"locations/update": {
+					"displayName": "Местоположение обновлено"
+				},
+				"orders/cancelled": {
+					"displayName": "Заказ отменен"
+				},
+				"orders/create": {
+					"displayName": "Заказ создан"
+				},
+				"orders/fulfilled": {
+					"displayName": "Заказ выполнен"
+				},
+				"orders/paid": {
+					"displayName": "Заказ оплачен"
+				},
+				"orders/partially_fulfilled": {
+					"displayName": "Заказ частично выполнен"
+				},
+				"order_transactions/create": {
+					"displayName": "Созданы транзакции заказа"
+				},
+				"orders/updated": {
+					"displayName": "Заказ обновлен"
+				},
+				"orders/delete": {
+					"displayName": "Заказы удалены"
+				},
+				"products/create": {
+					"displayName": "Продукт создан"
+				},
+				"products/delete": {
+					"displayName": "Продукт удален"
+				},
+				"product_listings/add": {
+					"displayName": "Списки продуктов добавлены"
+				},
+				"product_listings/remove": {
+					"displayName": "Списки продуктов удалены"
+				},
+				"product_listings/update": {
+					"displayName": "Списки продуктов обновлены"
+				},
+				"products/update": {
+					"displayName": "Продукт обновлен"
+				},
+				"refunds/create": {
+					"displayName": "Возврат создан"
+				},
+				"shop/update": {
+					"displayName": "Магазин обновлен"
+				},
+				"tender_transactions/create": {
+					"displayName": "Тендерные сделки созданы"
+				},
+				"themes/create": {
+					"displayName": "Тема создана"
+				},
+				"themes/delete": {
+					"displayName": "Тема удалена"
+				},
+				"themes/publish": {
+					"displayName": "Тема опубликована"
+				},
+				"themes/update": {
+					"displayName": "Тема обновлена"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,74 @@
+{
+	"header": {
+		"displayName": "SSH",
+		"description": "Выполнение команд через SSH"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"password": {
+					"displayName": "Пароль"
+				},
+				"privateKey": {
+					"displayName": "Закрытый ключ"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"command": {
+					"displayName": "Команда"
+				},
+				"file": {
+					"displayName": "Файл"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"execute": {
+					"displayName": "Выполнять",
+					"description": "Выполнить команду"
+				},
+				"download": {
+					"displayName": "Скачать",
+					"description": "Скачать файл"
+				},
+				"upload": {
+					"displayName": "Загрузить",
+					"description": "Загрузить файл"
+				}
+			}
+		},
+		"command": {
+			"displayName": "Команда",
+			"description": "Команда, которую необходимо выполнить на удаленном устройстве"
+		},
+		"cwd": {
+			"displayName": "Рабочий каталог"
+		},
+		"binaryPropertyName": {
+			"displayName": "Свойство файла",
+			"hint": "Имя входного двоичного поля, содержащего файл для загрузки.",
+			"description": "Имя свойства объекта, которое содержит двоичные данные"
+		},
+		"path": {
+			"displayName": "Путь",
+			"description": "Путь к файлу для загрузки. Должен содержать полный путь, включая имя файла.",
+			"placeholder": "/home/user/invoice.txt"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"fileName": {
+					"displayName": "Имя файла",
+					"description": "Переопределяет имя файла двоичных данных"
+				}
+			}
+		}
+	}
+}

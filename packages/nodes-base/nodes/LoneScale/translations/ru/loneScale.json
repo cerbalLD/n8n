@@ -1,0 +1,327 @@
+{
+	"header": {
+		"displayName": "LoneScale",
+		"description": "Обогащайте и находите контакты, ищите компании и управляйте списками."
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"description": "Создать новый список",
+			"options": {
+				"company": {
+					"displayName": "Компания",
+					"description": "Поиск компании"
+				},
+				"contact": {
+					"displayName": "Контакт",
+					"description": "Обогащайте или получайте контакты"
+				},
+				"item": {
+					"displayName": "Элемент",
+					"description": "Манипулировать элементом"
+				},
+				"list": {
+					"displayName": "Список",
+					"description": "Управление списком"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать список"
+				},
+				"add": {
+					"displayName": "Создавать",
+					"description": "Создать элемент"
+				},
+				"enrich": {
+					"displayName": "Обогащать",
+					"description": "Дополните контакт данными электронной почты, телефона и/или профиля."
+				},
+				"source": {
+					"displayName": "Источник",
+					"description": "Источник контактов из компании, подходящей персоне"
+				},
+				"search": {
+					"displayName": "Поиск",
+					"description": "Найдите компанию по домену, Linkedin или названию."
+				}
+			}
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Название вашего списка",
+			"placeholder": "имя списка"
+		},
+		"type": {
+			"displayName": "Тип",
+			"description": "Тип вашего списка",
+			"options": {
+				"COMPANY": {
+					"displayName": "Компания",
+					"description": "Список компаний"
+				},
+				"PEOPLE": {
+					"displayName": "Контакт",
+					"description": "Список контактов"
+				}
+			}
+		},
+		"list": {
+			"displayName": "Имя списка или идентификатор",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"first_name": {
+			"displayName": "Имя",
+			"description": "Контактное имя"
+		},
+		"last_name": {
+			"displayName": "Фамилия",
+			"description": "Контактная фамилия"
+		},
+		"company_name": {
+			"displayName": "Название компании",
+			"description": "Контактное название компании"
+		},
+		"peopleAdditionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"full_name": {
+					"displayName": "Полное имя",
+					"description": "Контактное полное имя"
+				},
+				"email": {
+					"displayName": "Контактный адрес электронной почты",
+					"placeholder": "имя@email.com"
+				},
+				"company_name": {
+					"displayName": "Название компании",
+					"description": "Контактное название компании"
+				},
+				"current_position": {
+					"displayName": "Текущая позиция",
+					"description": "Текущая позиция контакта"
+				},
+				"domain": {
+					"displayName": "Домен компании",
+					"description": "Свяжитесь с доменом компании"
+				},
+				"linkedin_url": {
+					"displayName": "URL-адрес LinkedIn",
+					"description": "Контактный URL-адрес Linkedin"
+				},
+				"location": {
+					"displayName": "Контактное местоположение"
+				},
+				"contact_id": {
+					"displayName": "Идентификатор контакта",
+					"description": "Идентификатор контакта из вашего источника"
+				}
+			}
+		},
+		"companyAdditionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"linkedin_url": {
+					"displayName": "URL-адрес LinkedIn",
+					"description": "URL-адрес компании Linkedin"
+				},
+				"domain": {
+					"displayName": "Домен компании",
+					"description": "Домен компании"
+				},
+				"location": {
+					"displayName": "Контактное местоположение"
+				},
+				"contact_id": {
+					"displayName": "Идентификатор контакта",
+					"description": "Идентификатор контакта из вашего источника"
+				}
+			}
+		},
+		"enrichmentType": {
+			"displayName": "Тип обогащения",
+			"description": "Типы обогащения для выполнения",
+			"options": {
+				"email": {
+					"displayName": "Электронная почта"
+				},
+				"phone": {
+					"displayName": "Телефон"
+				},
+				"profile": {
+					"displayName": "Профиль"
+				}
+			}
+		},
+		"firstName": {
+			"displayName": "Имя",
+			"description": "Контактное имя"
+		},
+		"lastName": {
+			"displayName": "Фамилия",
+			"description": "Контактная фамилия"
+		},
+		"enrichCompanyName": {
+			"displayName": "Название компании",
+			"description": "Связаться с названием компании, повысить точность сопоставления"
+		},
+		"enrichCompanyDomain": {
+			"displayName": "Домен компании",
+			"description": "Свяжитесь с доменом компании, повышает точность сопоставления",
+			"placeholder": "acme.com"
+		},
+		"detectJobChange": {
+			"displayName": "Обнаружить смену работы",
+			"description": "Следует ли отмечать, если контакт сменил компанию с момента ввода данных. Действует только в том случае, если тип расширения включает профиль."
+		},
+		"enrichAdditionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"email": {
+					"displayName": "Контактный адрес электронной почты",
+					"description": "Известный контактный адрес электронной почты для улучшения соответствия",
+					"placeholder": "имя@email.com"
+				},
+				"contactId": {
+					"displayName": "Идентификатор контакта",
+					"description": "Идентификатор вашей записи CRM, отраженный в ответе"
+				},
+				"jobTitle": {
+					"displayName": "Должность",
+					"description": "Контактная должность"
+				},
+				"linkedinUrl": {
+					"displayName": "URL-адрес Linkedin",
+					"description": "Контактный URL-адрес Linkedin"
+				}
+			}
+		},
+		"sourceCompanyDomain": {
+			"displayName": "Домен компании",
+			"description": "Домен компании для получения контактов. Укажите хотя бы один домен, имя или URL-адрес Linkedin.",
+			"placeholder": "acme.com"
+		},
+		"sourceCompanyName": {
+			"displayName": "Название компании",
+			"description": "Название компании для получения контактов"
+		},
+		"sourceCompanyLinkedinUrl": {
+			"displayName": "URL-адрес компании Linkedin",
+			"description": "URL-адрес компании Linkedin увеличивает охват и точность на 25 %."
+		},
+		"personas": {
+			"options": {
+				"personas": {
+					"displayName": "Персоны"
+				},
+				"persona": {
+					"displayName": "Персона",
+					"values": {
+						"name": {
+							"displayName": "Имя",
+							"description": "Ярлык для этого персонажа"
+						},
+						"jobTitles": {
+							"displayName": "Должности",
+							"description": "Названия должностей, разделенные запятыми, для соответствия",
+							"placeholder": "Генеральный директор, руководитель отдела продаж, вице-президент по маркетингу"
+						},
+						"excludeJobTitles": {
+							"displayName": "Исключить названия должностей",
+							"description": "Названия должностей, разделенные запятыми, которые следует исключить",
+							"placeholder": "Ассистент, Стажер"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить Персону",
+			"displayName": "Персоны"
+		},
+		"sourceAdditionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"disableCompanyInfo": {
+					"displayName": "Отключить информацию о компании",
+					"description": "Пропускать ли пополнение информации о компании (отрасль, размер и т. д.) для каждого контакта"
+				},
+				"includedLocations": {
+					"displayName": "Включенные местоположения",
+					"description": "Разделенные запятыми коды стран ISO 3166-1 альфа-2 для включения",
+					"placeholder": "США, Франция, Великобритания"
+				},
+				"maxResults": {
+					"displayName": "Максимальные результаты",
+					"description": "Максимальное количество контактов для получения (не более 10)."
+				},
+				"seniorityLevels": {
+					"displayName": "Уровни старшинства",
+					"description": "Фильтровать контакты по уровню старшинства",
+					"options": {
+						"c-suite": {
+							"displayName": "Топ-менеджер"
+						},
+						"director": {
+							"displayName": "Директор"
+						},
+						"entry": {
+							"displayName": "Вход"
+						},
+						"founder": {
+							"displayName": "Основатель"
+						},
+						"head": {
+							"displayName": "Голова"
+						},
+						"intern": {
+							"displayName": "Стажер"
+						},
+						"manager": {
+							"displayName": "Менеджер"
+						},
+						"owner": {
+							"displayName": "Владелец"
+						},
+						"partner": {
+							"displayName": "Партнер"
+						},
+						"senior": {
+							"displayName": "Старший"
+						},
+						"vp": {
+							"displayName": "VP"
+						}
+					}
+				}
+			}
+		},
+		"searchDomain": {
+			"displayName": "Домен компании",
+			"description": "Домен компании для поиска. Укажите хотя бы одно из домена, идентификатора Linkedin, пула или имени.",
+			"placeholder": "полоса.com"
+		},
+		"searchLinkedinId": {
+			"displayName": "Идентификатор Linkedin",
+			"description": "Числовой идентификатор компании Linkedin (цифры в URL-адресе linkedin.com/company/)"
+		},
+		"searchSlug": {
+			"displayName": "Слизень",
+			"description": "Универсальное имя/ссылка Linkedin (конечный сегмент URL-адреса компании)"
+		},
+		"searchName": {
+			"displayName": "Название компании",
+			"description": "Название компании. Максимальное совпадение — выберите домен, Linkedin ID или пул для получения детерминированного результата."
+		},
+		"searchEnrich": {
+			"displayName": "Обогащать",
+			"description": "Следует ли вернуться к расширению по требованию, если совпадение в кэше не найдено, и приложить разбивку по численности персонала, если это возможно."
+		}
+	}
+}

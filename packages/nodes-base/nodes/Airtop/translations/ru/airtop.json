@@ -1,0 +1,1343 @@
+{
+	"header": {
+		"displayName": "Эйртоп",
+		"description": "Парсинг и контроль любого сайта с помощью Airtop"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"agent": {
+					"displayName": "Агент"
+				},
+				"extraction": {
+					"displayName": "Добыча"
+				},
+				"file": {
+					"displayName": "Файл"
+				},
+				"interaction": {
+					"displayName": "Взаимодействие"
+				},
+				"session": {
+					"displayName": "Сессия"
+				},
+				"window": {
+					"displayName": "Окно"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"run": {
+					"displayName": "Бегать",
+					"description": "Запустите агент Airtop"
+				},
+				"create": {
+					"displayName": "Создать новое окно браузера",
+					"description": "Создайте новое окно браузера внутри сеанса. Может загружать URL-адрес при создании."
+				},
+				"save": {
+					"displayName": "Сохранить профиль при прекращении действия",
+					"description": "Сохраняйте в профиле изменения, внесенные во время сеанса просмотра, такие как файлы cookie и локальное хранилище."
+				},
+				"terminate": {
+					"displayName": "Завершить сеанс",
+					"description": "Завершить сеанс"
+				},
+				"waitForDownload": {
+					"displayName": "Подождите загрузки",
+					"description": "Подождите, пока загрузка файла станет доступной."
+				},
+				"close": {
+					"displayName": "Закрыть окно",
+					"description": "Закрыть окно внутри сеанса"
+				},
+				"getLiveView": {
+					"displayName": "Получить просмотр в реальном времени",
+					"description": "Получите информацию об окне браузера, включая URL-адрес просмотра в реальном времени."
+				},
+				"list": {
+					"displayName": "Список окон",
+					"description": "Список всех окон браузера в сеансе"
+				},
+				"load": {
+					"displayName": "Нагрузка",
+					"description": "Загрузить файл в сеанс"
+				},
+				"takeScreenshot": {
+					"displayName": "Сделать снимок экрана",
+					"description": "Сделать снимок экрана текущего окна"
+				},
+				"deleteFile": {
+					"displayName": "Удалить",
+					"description": "Удалить загруженный файл"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить подробную информацию о загруженном файле"
+				},
+				"getMany": {
+					"displayName": "Получить много",
+					"description": "Получить подробную информацию о нескольких загруженных файлах"
+				},
+				"upload": {
+					"displayName": "Загрузить",
+					"description": "Загрузить файл в сессию"
+				},
+				"query": {
+					"displayName": "Страница запроса",
+					"description": "Запросите страницу для извлечения данных или задайте вопрос, учитывая данные на странице."
+				},
+				"getPaginated": {
+					"displayName": "Страница запроса с нумерацией страниц",
+					"description": "Извлекайте контент из страниц с разбивкой на страницы или динамически загружаемых страниц."
+				},
+				"scrape": {
+					"displayName": "Умная очистка",
+					"description": "Очистите страницу и верните данные в виде уценки"
+				},
+				"click": {
+					"displayName": "Щелкните элемент",
+					"description": "Выполнить щелчок по элементу с описанием"
+				},
+				"fill": {
+					"displayName": "Заполнить форму",
+					"description": "Заполните форму с предоставленной информацией"
+				},
+				"hover": {
+					"displayName": "Наведите указатель мыши на элемент",
+					"description": "Выполнить действие наведения на элемент с описанием."
+				},
+				"scroll": {
+					"displayName": "Прокрутка",
+					"description": "Выполнить действие прокрутки на странице"
+				},
+				"type": {
+					"displayName": "Тип",
+					"description": "Выполнить действие типа над элементом, имеющим описание."
+				}
+			}
+		},
+		"agentId": {
+			"displayName": "Агент",
+			"description": "Агент Airtop для запуска. Посетите <a href=\"https://portal.airtop.ai/agents\" target=\"_blank\">Airtop Agents</a> для получения дополнительной информации."
+		},
+		"agentParameters": {
+			"displayName": "Параметры агента"
+		},
+		"awaitExecution": {
+			"displayName": "Ожидайте агента",
+			"description": "Стоит ли ждать, пока агент завершит выполнение"
+		},
+		"timeout": {
+			"displayName": "Тайм-аут",
+			"description": "Таймаут в секундах для ожидания завершения работы агента"
+		},
+		"profileName": {
+			"displayName": "Имя профиля",
+			"description": "Имя профиля Airtop для загрузки или создания.",
+			"hint": "<a href=\"https://docs.airtop.ai/guides/how-to/saving-a-profile\" target=\"_blank\">Подробнее</a> о профилях Airtop",
+			"placeholder": "например мой-x-профиль"
+		},
+		"saveProfileOnTermination": {
+			"displayName": "Сохранить профиль",
+			"description": "Следует ли автоматически сохранять профиль <a href=\"https://docs.airtop.ai/guides/how-to/saving-a-profile\" target=\"_blank\">Airtop</a> для этого сеанса после завершения"
+		},
+		"record": {
+			"displayName": "Запись сеанса",
+			"description": "Записывать ли сеанс браузера. <a href=\"https://docs.airtop.ai/guides/how-to/recording-a-session\" target=\"_blank\">Подробнее</a>."
+		},
+		"timeoutMinutes": {
+			"displayName": "Тайм-аут простоя",
+			"description": "Минуты ожидания до завершения сеанса из-за неактивности"
+		},
+		"proxy": {
+			"displayName": "Прокси",
+			"description": "Выберите, как настроить прокси для этого сеанса.",
+			"options": {
+				"none": {
+					"displayName": "Никто",
+					"description": "Прокси не будет использоваться"
+				},
+				"integrated": {
+					"displayName": "Интегрированный",
+					"description": "Используйте прокси, предоставленный Airtop"
+				},
+				"proxyUrl": {
+					"displayName": "URL-адрес прокси-сервера",
+					"description": "Используйте URL-адрес прокси-сервера для настройки прокси-сервера"
+				}
+			}
+		},
+		"proxyConfig": {
+			"displayName": "Конфигурация прокси",
+			"description": "Конфигурация, предоставленная Airtop для использования в качестве прокси-сервера.",
+			"placeholder": "Добавить атрибут",
+			"options": {
+				"country": {
+					"displayName": "Страна",
+					"description": "Страна, которую следует использовать для прокси. Не все страны гарантированно предоставляют прокси. Узнайте больше <a href=\"https://docs.airtop.ai/api-reference/airtop-api/sessions/create#request.body.configuration.proxy.Proxy.Airtop-Proxy-Configuration.country\" target=\"_blank\">здесь</a>.",
+					"options": {
+						"AF": {
+							"displayName": "Афганистан"
+						},
+						"AX": {
+							"displayName": "Аландские острова"
+						},
+						"AL": {
+							"displayName": "Албания"
+						},
+						"DZ": {
+							"displayName": "Алжир"
+						},
+						"AS": {
+							"displayName": "Американское Самоа"
+						},
+						"AD": {
+							"displayName": "Андорра"
+						},
+						"AO": {
+							"displayName": "Ангола"
+						},
+						"AI": {
+							"displayName": "Ангилья"
+						},
+						"AQ": {
+							"displayName": "Антарктида"
+						},
+						"AG": {
+							"displayName": "Антигуа и Барбуда"
+						},
+						"AR": {
+							"displayName": "Аргентина"
+						},
+						"AM": {
+							"displayName": "Армения"
+						},
+						"AW": {
+							"displayName": "Аруба"
+						},
+						"AU": {
+							"displayName": "Австралия"
+						},
+						"AT": {
+							"displayName": "Австрия"
+						},
+						"AZ": {
+							"displayName": "Азербайджан"
+						},
+						"BS": {
+							"displayName": "Багамы"
+						},
+						"BH": {
+							"displayName": "Бахрейн"
+						},
+						"BD": {
+							"displayName": "Бангладеш"
+						},
+						"BB": {
+							"displayName": "Барбадос"
+						},
+						"BY": {
+							"displayName": "Беларусь"
+						},
+						"BE": {
+							"displayName": "Бельгия"
+						},
+						"BZ": {
+							"displayName": "Белиз"
+						},
+						"BJ": {
+							"displayName": "Бенин"
+						},
+						"BM": {
+							"displayName": "Бермуды"
+						},
+						"BT": {
+							"displayName": "Бутан"
+						},
+						"BO": {
+							"displayName": "Боливия, Многонациональное Государство"
+						},
+						"BQ": {
+							"displayName": "Бонэйр, Синт-Эстатиус и Саба"
+						},
+						"BA": {
+							"displayName": "Босния и Герцеговина"
+						},
+						"BW": {
+							"displayName": "Ботсвана"
+						},
+						"BV": {
+							"displayName": "Остров Буве"
+						},
+						"BR": {
+							"displayName": "Бразилия"
+						},
+						"IO": {
+							"displayName": "Британская территория в Индийском океане"
+						},
+						"BN": {
+							"displayName": "Бруней-Даруссалам"
+						},
+						"BG": {
+							"displayName": "Болгария"
+						},
+						"BF": {
+							"displayName": "Буркина-Фасо"
+						},
+						"BI": {
+							"displayName": "Бурунди"
+						},
+						"CV": {
+							"displayName": "Кабо-Верде"
+						},
+						"KH": {
+							"displayName": "Камбоджа"
+						},
+						"CM": {
+							"displayName": "Камерун"
+						},
+						"CA": {
+							"displayName": "Канада"
+						},
+						"KY": {
+							"displayName": "Каймановы острова"
+						},
+						"CF": {
+							"displayName": "Центральноафриканская Республика"
+						},
+						"TD": {
+							"displayName": "Чад"
+						},
+						"CL": {
+							"displayName": "Чили"
+						},
+						"CN": {
+							"displayName": "Китай"
+						},
+						"CX": {
+							"displayName": "Остров Рождества"
+						},
+						"CC": {
+							"displayName": "Кокосовые острова (Килинг)"
+						},
+						"CO": {
+							"displayName": "Колумбия"
+						},
+						"KM": {
+							"displayName": "Коморские острова"
+						},
+						"CG": {
+							"displayName": "Конго"
+						},
+						"CD": {
+							"displayName": "Конго, Демократическая Республика"
+						},
+						"CK": {
+							"displayName": "Острова Кука"
+						},
+						"CR": {
+							"displayName": "Коста-Рика"
+						},
+						"CI": {
+							"displayName": "Берег Слоновой Кости"
+						},
+						"HR": {
+							"displayName": "Хорватия"
+						},
+						"CU": {
+							"displayName": "Куба"
+						},
+						"CW": {
+							"displayName": "Кюрасао"
+						},
+						"CY": {
+							"displayName": "Кипр"
+						},
+						"CZ": {
+							"displayName": "Чехия"
+						},
+						"DK": {
+							"displayName": "Дания"
+						},
+						"DJ": {
+							"displayName": "Джибути"
+						},
+						"DM": {
+							"displayName": "Доминика"
+						},
+						"DO": {
+							"displayName": "Доминиканская Республика"
+						},
+						"EC": {
+							"displayName": "Эквадор"
+						},
+						"EG": {
+							"displayName": "Египет"
+						},
+						"SV": {
+							"displayName": "Сальвадор"
+						},
+						"GQ": {
+							"displayName": "Экваториальная Гвинея"
+						},
+						"ER": {
+							"displayName": "Эритрея"
+						},
+						"EE": {
+							"displayName": "Эстония"
+						},
+						"SZ": {
+							"displayName": "Эсватини"
+						},
+						"ET": {
+							"displayName": "Эфиопия"
+						},
+						"FK": {
+							"displayName": "Фолклендские острова (Мальвинские острова)"
+						},
+						"FO": {
+							"displayName": "Фарерские острова"
+						},
+						"FJ": {
+							"displayName": "Фиджи"
+						},
+						"FI": {
+							"displayName": "Финляндия"
+						},
+						"FR": {
+							"displayName": "Франция"
+						},
+						"GF": {
+							"displayName": "Французская Гвиана"
+						},
+						"PF": {
+							"displayName": "Французская Полинезия"
+						},
+						"TF": {
+							"displayName": "Южные территории Франции"
+						},
+						"GA": {
+							"displayName": "Габон"
+						},
+						"GM": {
+							"displayName": "Гамбия"
+						},
+						"GE": {
+							"displayName": "Грузия"
+						},
+						"DE": {
+							"displayName": "Германия"
+						},
+						"GH": {
+							"displayName": "Гана"
+						},
+						"GI": {
+							"displayName": "Гибралтар"
+						},
+						"GR": {
+							"displayName": "Греция"
+						},
+						"GL": {
+							"displayName": "Гренландия"
+						},
+						"GD": {
+							"displayName": "Гренада"
+						},
+						"GP": {
+							"displayName": "Гваделупа"
+						},
+						"GU": {
+							"displayName": "Гуам"
+						},
+						"GT": {
+							"displayName": "Гватемала"
+						},
+						"GG": {
+							"displayName": "Гернси"
+						},
+						"GN": {
+							"displayName": "Гвинея"
+						},
+						"GW": {
+							"displayName": "Гвинея-Бисау"
+						},
+						"GY": {
+							"displayName": "Гайана"
+						},
+						"HT": {
+							"displayName": "Гаити"
+						},
+						"HM": {
+							"displayName": "Остров Херд и острова Макдональда"
+						},
+						"VA": {
+							"displayName": "Святой Престол"
+						},
+						"HN": {
+							"displayName": "Гондурас"
+						},
+						"HK": {
+							"displayName": "Гонконг"
+						},
+						"HU": {
+							"displayName": "Венгрия"
+						},
+						"IS": {
+							"displayName": "Исландия"
+						},
+						"IN": {
+							"displayName": "Индия"
+						},
+						"ID": {
+							"displayName": "Индонезия"
+						},
+						"IR": {
+							"displayName": "Иран, Исламская Республика"
+						},
+						"IQ": {
+							"displayName": "Ирак"
+						},
+						"IE": {
+							"displayName": "Ирландия"
+						},
+						"IM": {
+							"displayName": "Остров Мэн"
+						},
+						"IL": {
+							"displayName": "Израиль"
+						},
+						"IT": {
+							"displayName": "Италия"
+						},
+						"JM": {
+							"displayName": "Ямайка"
+						},
+						"JP": {
+							"displayName": "Япония"
+						},
+						"JE": {
+							"displayName": "Джерси"
+						},
+						"JO": {
+							"displayName": "Иордания"
+						},
+						"KZ": {
+							"displayName": "Казахстан"
+						},
+						"KE": {
+							"displayName": "Кения"
+						},
+						"KI": {
+							"displayName": "Кирибати"
+						},
+						"KP": {
+							"displayName": "Корея, Народно-Демократическая Республика"
+						},
+						"KR": {
+							"displayName": "Корея, Республика"
+						},
+						"KW": {
+							"displayName": "Кувейт"
+						},
+						"KG": {
+							"displayName": "Кыргызстан"
+						},
+						"LA": {
+							"displayName": "Лаосская Народно-Демократическая Республика"
+						},
+						"LV": {
+							"displayName": "Латвия"
+						},
+						"LB": {
+							"displayName": "Ливан"
+						},
+						"LS": {
+							"displayName": "Лесото"
+						},
+						"LR": {
+							"displayName": "Либерия"
+						},
+						"LY": {
+							"displayName": "Ливия"
+						},
+						"LI": {
+							"displayName": "Лихтенштейн"
+						},
+						"LT": {
+							"displayName": "Литва"
+						},
+						"LU": {
+							"displayName": "Люксембург"
+						},
+						"MO": {
+							"displayName": "Макао"
+						},
+						"MG": {
+							"displayName": "Мадагаскар"
+						},
+						"MW": {
+							"displayName": "Малави"
+						},
+						"MY": {
+							"displayName": "Малайзия"
+						},
+						"MV": {
+							"displayName": "Мальдивы"
+						},
+						"ML": {
+							"displayName": "Мали"
+						},
+						"MT": {
+							"displayName": "Мальта"
+						},
+						"MH": {
+							"displayName": "Маршалловы острова"
+						},
+						"MQ": {
+							"displayName": "Мартиника"
+						},
+						"MR": {
+							"displayName": "Мавритания"
+						},
+						"MU": {
+							"displayName": "Маврикий"
+						},
+						"YT": {
+							"displayName": "Майотта"
+						},
+						"MX": {
+							"displayName": "Мексика"
+						},
+						"FM": {
+							"displayName": "Микронезия, Федеративные Штаты"
+						},
+						"MD": {
+							"displayName": "Молдова, Республика"
+						},
+						"MC": {
+							"displayName": "Монако"
+						},
+						"MN": {
+							"displayName": "Монголия"
+						},
+						"ME": {
+							"displayName": "Черногория"
+						},
+						"MS": {
+							"displayName": "Монтсеррат"
+						},
+						"MA": {
+							"displayName": "Марокко"
+						},
+						"MZ": {
+							"displayName": "Мозамбик"
+						},
+						"MM": {
+							"displayName": "Мьянма"
+						},
+						"NA": {
+							"displayName": "Намибия"
+						},
+						"NR": {
+							"displayName": "Науру"
+						},
+						"NP": {
+							"displayName": "Непал"
+						},
+						"NL": {
+							"displayName": "Нидерланды, Королевство"
+						},
+						"NC": {
+							"displayName": "Новая Каледония"
+						},
+						"NZ": {
+							"displayName": "Новая Зеландия"
+						},
+						"NI": {
+							"displayName": "Никарагуа"
+						},
+						"NE": {
+							"displayName": "Нигер"
+						},
+						"NG": {
+							"displayName": "Нигерия"
+						},
+						"NU": {
+							"displayName": "Ниуэ"
+						},
+						"NF": {
+							"displayName": "Остров Норфолк"
+						},
+						"MK": {
+							"displayName": "Северная Македония"
+						},
+						"MP": {
+							"displayName": "Северные Марианские острова"
+						},
+						"NO": {
+							"displayName": "Норвегия"
+						},
+						"OM": {
+							"displayName": "Оман"
+						},
+						"PK": {
+							"displayName": "Пакистан"
+						},
+						"PW": {
+							"displayName": "Палау"
+						},
+						"PS": {
+							"displayName": "Палестина, Государство"
+						},
+						"PA": {
+							"displayName": "Панама"
+						},
+						"PG": {
+							"displayName": "Папуа-Новая Гвинея"
+						},
+						"PY": {
+							"displayName": "Парагвай"
+						},
+						"PE": {
+							"displayName": "Перу"
+						},
+						"PH": {
+							"displayName": "Филиппины"
+						},
+						"PN": {
+							"displayName": "Питкэрн"
+						},
+						"PL": {
+							"displayName": "Польша"
+						},
+						"PT": {
+							"displayName": "Португалия"
+						},
+						"PR": {
+							"displayName": "Пуэрто-Рико"
+						},
+						"QA": {
+							"displayName": "Катар"
+						},
+						"RE": {
+							"displayName": "Реюньон"
+						},
+						"RO": {
+							"displayName": "Румыния"
+						},
+						"RU": {
+							"displayName": "Российская Федерация"
+						},
+						"RW": {
+							"displayName": "Руанда"
+						},
+						"BL": {
+							"displayName": "Сен-Бартелеми"
+						},
+						"SH": {
+							"displayName": "Остров Святой Елены, Вознесения и Тристан-да-Кунья"
+						},
+						"KN": {
+							"displayName": "Сент-Китс и Невис"
+						},
+						"LC": {
+							"displayName": "Сент-Люсия"
+						},
+						"MF": {
+							"displayName": "Сен-Мартен (французская часть)"
+						},
+						"PM": {
+							"displayName": "Сен-Пьер и Микелон"
+						},
+						"VC": {
+							"displayName": "Сент-Винсент и Гренадины"
+						},
+						"WS": {
+							"displayName": "Самоа"
+						},
+						"SM": {
+							"displayName": "Сан-Марино"
+						},
+						"ST": {
+							"displayName": "Сан-Томе и Принсипи"
+						},
+						"SA": {
+							"displayName": "Саудовская Аравия"
+						},
+						"SN": {
+							"displayName": "Сенегал"
+						},
+						"RS": {
+							"displayName": "Сербия"
+						},
+						"SC": {
+							"displayName": "Сейшельские острова"
+						},
+						"SL": {
+							"displayName": "Сьерра-Леоне"
+						},
+						"SG": {
+							"displayName": "Сингапур"
+						},
+						"SX": {
+							"displayName": "Синт-Мартен (голландская часть)"
+						},
+						"SK": {
+							"displayName": "Словакия"
+						},
+						"SI": {
+							"displayName": "Словения"
+						},
+						"SB": {
+							"displayName": "Соломоновы Острова"
+						},
+						"SO": {
+							"displayName": "Сомали"
+						},
+						"ZA": {
+							"displayName": "ЮАР"
+						},
+						"GS": {
+							"displayName": "Южная Георгия и Южные Сандвичевы острова"
+						},
+						"SS": {
+							"displayName": "Южный Судан"
+						},
+						"ES": {
+							"displayName": "Испания"
+						},
+						"LK": {
+							"displayName": "Шри-Ланка"
+						},
+						"SD": {
+							"displayName": "Судан"
+						},
+						"SR": {
+							"displayName": "Суринам"
+						},
+						"SJ": {
+							"displayName": "Шпицберген и Ян-Майен"
+						},
+						"SE": {
+							"displayName": "Швеция"
+						},
+						"CH": {
+							"displayName": "Швейцария"
+						},
+						"SY": {
+							"displayName": "Сирийская Арабская Республика"
+						},
+						"TW": {
+							"displayName": "Тайвань, провинция Китая"
+						},
+						"TJ": {
+							"displayName": "Таджикистан"
+						},
+						"TZ": {
+							"displayName": "Танзания, Объединенная Республика"
+						},
+						"TH": {
+							"displayName": "Таиланд"
+						},
+						"TL": {
+							"displayName": "Тимор-Лешти"
+						},
+						"TG": {
+							"displayName": "Того"
+						},
+						"TK": {
+							"displayName": "Токелау"
+						},
+						"TO": {
+							"displayName": "Тонга"
+						},
+						"TT": {
+							"displayName": "Тринидад и Тобаго"
+						},
+						"TN": {
+							"displayName": "Тунис"
+						},
+						"TR": {
+							"displayName": "Турция"
+						},
+						"TM": {
+							"displayName": "Туркменистан"
+						},
+						"TC": {
+							"displayName": "Острова Тёркс и Кайкос"
+						},
+						"TV": {
+							"displayName": "Тувалу"
+						},
+						"UG": {
+							"displayName": "Уганда"
+						},
+						"UA": {
+							"displayName": "Украина"
+						},
+						"AE": {
+							"displayName": "Объединенные Арабские Эмираты"
+						},
+						"GB": {
+							"displayName": "Соединенное Королевство Великобритании и Северной Ирландии"
+						},
+						"UM": {
+							"displayName": "Малые отдаленные острова США"
+						},
+						"US": {
+							"displayName": "Соединенные Штаты Америки"
+						},
+						"UY": {
+							"displayName": "Уругвай"
+						},
+						"UZ": {
+							"displayName": "Узбекистан"
+						},
+						"VU": {
+							"displayName": "Вануату"
+						},
+						"VE": {
+							"displayName": "Венесуэла, Боливарианская Республика"
+						},
+						"VN": {
+							"displayName": "Вьетнам"
+						},
+						"VG": {
+							"displayName": "Виргинские острова (Британские)"
+						},
+						"VI": {
+							"displayName": "Виргинские острова (США)"
+						},
+						"WF": {
+							"displayName": "Уоллис и Футуна"
+						},
+						"EH": {
+							"displayName": "Западная Сахара"
+						},
+						"YE": {
+							"displayName": "Йемен"
+						},
+						"ZM": {
+							"displayName": "Замбия"
+						},
+						"ZW": {
+							"displayName": "Зимбабве"
+						}
+					}
+				},
+				"sticky": {
+					"displayName": "Сохранить тот же IP",
+					"description": "Следует ли пытаться сохранить один и тот же IP-адрес на время сеанса. Airtop может гарантировать, что один и тот же IP-адрес будет доступен максимум в течение 30 минут."
+				}
+			}
+		},
+		"proxyUrl": {
+			"displayName": "URL-адрес прокси-сервера",
+			"description": "URL-адрес используемого прокси-сервера"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"solveCaptcha": {
+					"displayName": "Автоматическое решение капч",
+					"description": "Нужно ли автоматически решать задачи <a href=\"https://docs.airtop.ai/guides/how-to/solving-captchas\" target=\"_blank\">captcha</a>"
+				},
+				"extensionIds": {
+					"displayName": "Идентификаторы расширений",
+					"description": "Идентификаторы расширений, разделенные запятыми, из Интернет-магазина Google, которые необходимо загрузить в сеанс. Узнайте больше <a href=\"https://docs.airtop.ai/guides/how-to/using-chrome-extensions\" target=\"_blank\">здесь</a>.",
+					"placeholder": "например extId1, extId2, ..."
+				},
+				"timeout": {
+					"displayName": "Тайм-аут",
+					"description": "Время в секундах ожидания доступности загрузки"
+				},
+				"waitUntil": {
+					"displayName": "Подождите, пока",
+					"description": "Подождите, пока не произойдет указанное событие загрузки. По умолчанию установлено значение «Полная загрузка».",
+					"options": {
+						"load": {
+							"displayName": "Полностью загружен",
+							"description": "Подождите, пока загрузится страница и ее ресурсы."
+						},
+						"domContentLoaded": {
+							"displayName": "Загружен только DOM",
+							"description": "Подождите, пока дом загрузится"
+						},
+						"complete": {
+							"displayName": "Полный",
+							"description": "Подождите, пока страница и все ее iframe загрузят свой дом и ресурсы."
+						},
+						"noWait": {
+							"displayName": "Нет Подожди",
+							"description": "Не ждите события загрузки и немедленно вернитесь."
+						}
+					}
+				},
+				"includeNavigationBar": {
+					"displayName": "Включить панель навигации",
+					"description": "Включить ли панель навигации в просмотр в реальном времени. Если эта функция включена, панель навигации будет видна, что позволит вам перемещаться между страницами."
+				},
+				"screenResolution": {
+					"displayName": "Разрешение экрана",
+					"description": "Разрешение экрана Live View. Установка разрешения заставит окно открываться в этом конкретном размере.",
+					"placeholder": "например 1280x720"
+				},
+				"disableResize": {
+					"displayName": "Отключить изменение размера",
+					"description": "Следует ли отключить изменение размера окна в режиме просмотра в реальном времени."
+				},
+				"outputSchema": {
+					"displayName": "Схема вывода JSON",
+					"description": "Схема JSON, определяющая структуру вывода",
+					"hint": "Если вы хотите, чтобы выходные данные были в формате JSON, предоставьте действительную схему JSON, описывающую выходные данные. Вы можете создать его автоматически на <a href=\"https://portal.airtop.ai/\" target=\"_blank\">Airtop API Playground</a>."
+				},
+				"parseJsonOutput": {
+					"displayName": "Анализ вывода JSON",
+					"description": "Следует ли анализировать ответ модели на JSON в выходных данных. Требуется установить параметр «Схема вывода JSON»."
+				},
+				"interactionMode": {
+					"displayName": "Режим взаимодействия",
+					"description": "Стратегия взаимодействия со страницей",
+					"options": {
+						"auto": {
+							"displayName": "Авто",
+							"description": "Автоматически выбирать наиболее экономичный режим"
+						},
+						"accurate": {
+							"displayName": "Точный",
+							"description": "Отдавайте приоритет точности, а не стоимости"
+						},
+						"cost-efficient": {
+							"displayName": "Экономичность",
+							"description": "Минимизация затрат при сохранении эффективности"
+						}
+					}
+				},
+				"paginationMode": {
+					"displayName": "Режим нумерации страниц",
+					"description": "Подход к использованию пагинации",
+					"options": {
+						"auto": {
+							"displayName": "Авто",
+							"description": "Сначала найдите ссылки на страницы, а затем попробуйте бесконечную прокрутку."
+						},
+						"paginated": {
+							"displayName": "с разбивкой на страницы",
+							"description": "Используйте только ссылки на страницы"
+						},
+						"infinite-scroll": {
+							"displayName": "Бесконечная прокрутка",
+							"description": "Прокрутите страницу, чтобы загрузить больше контента"
+						}
+					}
+				},
+				"includeVisualAnalysis": {
+					"displayName": "Включить визуальный анализ",
+					"description": "Следует ли анализировать веб-страницу визуально при выполнении запроса"
+				},
+				"visualScope": {
+					"displayName": "Визуальный прицел",
+					"description": "Определяет стратегию визуального анализа текущего окна",
+					"options": {
+						"auto": {
+							"displayName": "Авто",
+							"description": "Обеспечивает простейший готовый интерфейс для большинства веб-страниц."
+						},
+						"viewport": {
+							"displayName": "Область просмотра",
+							"description": "Только для анализа текущего просмотра браузера"
+						},
+						"page": {
+							"displayName": "Страница",
+							"description": "Для анализа всей страницы"
+						},
+						"scan": {
+							"displayName": "Сканировать",
+							"description": "Для полного анализа страниц на сайтах, у которых есть проблемы совместимости с режимом «Страница»."
+						}
+					}
+				},
+				"waitForNavigation": {
+					"displayName": "Подождите, пока событие после навигации",
+					"description": "Условие ожидания завершения навигации после взаимодействия (щелчка, ввода или наведения). По умолчанию установлено значение «Полная загрузка».",
+					"options": {
+						"load": {
+							"displayName": "Полная загрузка (медленнее)"
+						},
+						"domcontentloaded": {
+							"displayName": "Загружается только DOM (быстрее)"
+						},
+						"networkidle0": {
+							"displayName": "Вся сетевая активность остановлена"
+						},
+						"networkidle2": {
+							"displayName": "Большая часть сетевой активности остановлена"
+						}
+					}
+				}
+			}
+		},
+		"notice": {
+			"displayName": "Примечание. Эта операция не требуется, если вы включили «Сохранить профиль» в операции «Создать сеанс»."
+		},
+		"sessionId": {
+			"displayName": "Идентификатор сеанса",
+			"description": "Идентификатор сеанса <a href=\"https://docs.airtop.ai/guides/how-to/creating-a-session\" target=\"_blank\">Session</a> для использования."
+		},
+		"windowId": {
+			"displayName": "Идентификатор окна",
+			"description": "Идентификатор <a href=\"https://docs.airtop.ai/guides/how-to/creating-a-session#windows\" target=\"_blank\">Window</a> для использования."
+		},
+		"url": {
+			"displayName": "URL",
+			"description": "URL для загрузки в окне",
+			"placeholder": "например https://google.com"
+		},
+		"getLiveView": {
+			"displayName": "Получить просмотр в реальном времени",
+			"description": "Получать ли URL-адрес окна <a href=\"https://docs.airtop.ai/guides/how-to/creating-a-live-view\" target=\"_blank\">Live View</a>"
+		},
+		"includeNavigationBar": {
+			"displayName": "Включить панель навигации",
+			"description": "Включить ли панель навигации в просмотр в реальном времени. Если эта функция включена, панель навигации будет видна, что позволит вам перемещаться между страницами."
+		},
+		"screenResolution": {
+			"displayName": "Разрешение экрана",
+			"description": "Разрешение экрана Live View. Установка разрешения заставит окно открываться в этом конкретном размере.",
+			"placeholder": "например 1280x720"
+		},
+		"disableResize": {
+			"displayName": "Отключить изменение размера",
+			"description": "Следует ли отключить изменение размера окна в режиме просмотра в реальном времени."
+		},
+		"outputImageAsBinary": {
+			"displayName": "Вывод двоичного изображения",
+			"description": "Следует ли выводить изображение в виде двоичного файла вместо строки в кодировке Base64."
+		},
+		"fileId": {
+			"displayName": "Идентификатор файла",
+			"description": "Идентификатор файла для загрузки в сеанс"
+		},
+		"outputBinaryFile": {
+			"displayName": "Выходной двоичный файл",
+			"description": "Выводить ли файл в двоичном формате, если файл готов к загрузке"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"sessionIds": {
+			"displayName": "Идентификаторы сеансов",
+			"description": "Список разделенных запятыми <a href=\"https://docs.airtop.ai/api-reference/airtop-api/sessions/create\" target=\"_blank\">идентификаторов сеансов</a> для фильтрации файлов. Если оно пусто, будут возвращены все файлы из всех сеансов.",
+			"placeholder": "например 6aac6f73-bd89-4a76-ab32-5a6c422e8b0b, a13c6f73-bd89-4a76-ab32-5a6c422e8224"
+		},
+		"outputSingleItem": {
+			"displayName": "Выходные файлы в одном элементе",
+			"description": "Выводить ли один элемент, содержащий все файлы, или выводить каждый файл как отдельный элемент"
+		},
+		"elementDescription": {
+			"displayName": "Описание элемента",
+			"description": "Конкретное описание элемента для выполнения взаимодействия.",
+			"placeholder": "например поле поиска вверху страницы"
+		},
+		"includeHiddenElements": {
+			"displayName": "Включить скрытые элементы",
+			"description": "Включать ли скрытые элементы во взаимодействие"
+		},
+		"fileName": {
+			"displayName": "Имя файла",
+			"description": "Имя файла для загрузки. Для сеанса все загруженные файлы должны иметь <b>уникальные имена</b>."
+		},
+		"fileType": {
+			"displayName": "Тип файла",
+			"description": "Выберите тип файла для загрузки. По умолчанию «Загрузка клиента».",
+			"options": {
+				"browser_download": {
+					"displayName": "Загрузка браузера"
+				},
+				"screenshot": {
+					"displayName": "Скриншот"
+				},
+				"video": {
+					"displayName": "Видео"
+				},
+				"customer_upload": {
+					"displayName": "Загрузка клиента"
+				}
+			}
+		},
+		"source": {
+			"displayName": "Источник",
+			"description": "Источник файла для загрузки",
+			"options": {
+				"url": {
+					"displayName": "URL"
+				},
+				"binary": {
+					"displayName": "Двоичный"
+				}
+			}
+		},
+		"binaryPropertyName": {
+			"displayName": "Бинарное свойство",
+			"description": "Имя двоичного свойства, содержащего данные файла"
+		},
+		"triggerFileInputParameter": {
+			"displayName": "Ввод триггерного файла",
+			"description": "Следует ли автоматически запускать диалог ввода файла в текущем окне. Если отключено, файл будет загружен только в сеанс без открытия диалогового окна ввода файла."
+		},
+		"sessionMode": {
+			"displayName": "Режим сеанса",
+			"description": "Выберите между созданием нового сеанса или использованием существующего.",
+			"options": {
+				"new": {
+					"displayName": "Автоматически создавать сеанс",
+					"description": "Автоматически создавать новый сеанс и окно для этой операции."
+				},
+				"existing": {
+					"displayName": "Использовать существующий сеанс",
+					"description": "Используйте существующий сеанс и окно для этой операции."
+				}
+			}
+		},
+		"autoTerminateSession": {
+			"displayName": "Автоматическое завершение сеанса",
+			"description": "Следует ли завершать сеанс после завершения операции. Если этот параметр отключен, вам придется вручную завершить сеанс. По умолчанию время простоя сеансов истекает через 10 минут."
+		},
+		"prompt": {
+			"displayName": "Быстрый",
+			"description": "Запрос на запрос содержимого страницы",
+			"placeholder": "например Есть ли на этой странице форма входа?"
+		},
+		"clickType": {
+			"displayName": "Нажмите Тип",
+			"description": "Тип клика для выполнения. По умолчанию — щелчок левой кнопкой мыши.",
+			"options": {
+				"click": {
+					"displayName": "Щелкните левой кнопкой мыши"
+				},
+				"doubleClick": {
+					"displayName": "Двойной щелчок"
+				},
+				"rightClick": {
+					"displayName": "Щелкните правой кнопкой мыши"
+				}
+			}
+		},
+		"formData": {
+			"displayName": "Данные формы",
+			"description": "Информация для заполнения формы написана на естественном языке.",
+			"placeholder": "например «Имя: Джон Доу, адрес электронной почты: john.doe@example.com»"
+		},
+		"scrollingMode": {
+			"displayName": "Режим прокрутки",
+			"description": "Выберите режим прокрутки",
+			"options": {
+				"automatic": {
+					"displayName": "Автоматический",
+					"description": "Опишите естественным языком элемент, до которого нужно прокрутить."
+				},
+				"manual": {
+					"displayName": "Руководство",
+					"description": "Определите направление и величину прокрутки"
+				}
+			}
+		},
+		"scrollToElement": {
+			"displayName": "Описание элемента",
+			"description": "Описание элемента на естественном языке для прокрутки.",
+			"placeholder": "например раздел страницы под названием «Свяжитесь с нами»"
+		},
+		"scrollToEdge": {
+			"options": {
+				"scrollToEdge": {
+					"displayName": "Прокрутить до края",
+					"description": "Направление прокрутки. Если задана опция «Прокрутка по», сначала будет выполнено действие «Прокрутка до края», а затем действие «Прокрутка по»."
+				},
+				"edgeValues": {
+					"displayName": "Края страницы",
+					"values": {
+						"yAxis": {
+							"displayName": "Вертикально",
+							"options": {
+								"": {
+									"displayName": "Пустой"
+								},
+								"top": {
+									"displayName": "Вершина"
+								},
+								"bottom": {
+									"displayName": "Нижний"
+								}
+							}
+						},
+						"xAxis": {
+							"displayName": "Горизонтально",
+							"options": {
+								"": {
+									"displayName": "Пустой"
+								},
+								"left": {
+									"displayName": "Левый"
+								},
+								"right": {
+									"displayName": "Верно"
+								}
+							}
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить направление края",
+			"displayName": "Прокрутить до края",
+			"description": "Направление прокрутки. Если задана опция «Прокрутка по», сначала будет выполнено действие «Прокрутка до края», а затем действие «Прокрутка по»."
+		},
+		"scrollBy": {
+			"options": {
+				"scrollBy": {
+					"displayName": "Прокрутить по",
+					"description": "Сумма для прокрутки. Если определено «Прокрутка до края», действие «Прокрутка по» будет выполняться после «Прокрутки до края»."
+				},
+				"scrollValues": {
+					"displayName": "Прокрутка значений",
+					"values": {
+						"yAxis": {
+							"displayName": "Вертикально",
+							"placeholder": "например 200 пикселей, 50%, -100 пикселей"
+						},
+						"xAxis": {
+							"displayName": "Горизонтально",
+							"placeholder": "например 50 пикселей, 10%, -200 пикселей"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить сумму прокрутки",
+			"displayName": "Прокрутить по",
+			"description": "Сумма для прокрутки. Если определено «Прокрутка до края», действие «Прокрутка по» будет выполняться после «Прокрутки до края»."
+		},
+		"scrollWithin": {
+			"displayName": "Прокручиваемая область",
+			"description": "Прокрутка внутри элемента на странице",
+			"placeholder": "например левая боковая панель"
+		},
+		"text": {
+			"displayName": "Текст",
+			"description": "Текст, который нужно ввести в окно браузера",
+			"placeholder": "например электронная почта@example.com"
+		},
+		"pressEnterKey": {
+			"displayName": "Нажмите клавишу ввода",
+			"description": "Нажимать ли клавишу Enter после ввода текста"
+		}
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"header": {
+		"displayName": "Netlify Триггер",
+		"description": "Обработка событий netlify через веб-перехватчики"
+	},
+	"nodeView": {
+		"siteId": {
+			"displayName": "Имя или идентификатор сайта",
+			"description": "Выберите идентификатор сайта. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"event": {
+			"displayName": "Событие",
+			"options": {
+				"deployBuilding": {
+					"displayName": "Развернуть здание"
+				},
+				"deployFailed": {
+					"displayName": "Развертывание не удалось"
+				},
+				"deployCreated": {
+					"displayName": "Развернуть создано"
+				},
+				"submissionCreated": {
+					"displayName": "Форма отправлена"
+				}
+			}
+		},
+		"formId": {
+			"displayName": "Имя или идентификатор формы",
+			"description": "Выберите форму. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"simple": {
+			"displayName": "Упрощать",
+			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+		}
+	}
+}

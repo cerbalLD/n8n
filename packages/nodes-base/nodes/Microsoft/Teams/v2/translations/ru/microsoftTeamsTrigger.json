@@ -1,0 +1,77 @@
+{
+	"header": {
+		"displayName": "Триггер Microsoft Teams",
+		"description": "Запускает рабочие процессы в n8n на основе событий Microsoft Teams, таких как новые сообщения или обновления команды, с использованием указанных конфигураций."
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"microsoftTeamsOAuth2Api": {
+					"displayName": "Команды OAuth2"
+				},
+				"microsoftOAuth2Api": {
+					"displayName": "Microsoft OAuth2 (график)",
+					"description": "Общие учетные данные Microsoft Graph. Добавьте области уведомлений об изменениях Teams (например, ChannelMessage.Read.All, Chat.Read, Subscription.Read.All) и предоставьте согласие администратора на учетные данные. Полную строку области видимости смотрите в документации."
+				},
+				"microsoftEntraServicePrincipalApi": {
+					"displayName": "Принципал службы (только для приложения)",
+					"description": "Доступ только через приложение через регистрацию приложения Microsoft Entra. Graph только для приложений не может подписаться на чаты вошедшего пользователя, поэтому триггеры чата недоступны. Предоставьте соответствующие разрешения приложения (например, ChannelMessage.Read.All) и согласие администратора на учетные данные."
+				}
+			}
+		},
+		"event": {
+			"displayName": "Триггер включен",
+			"description": "Выберите событие, чтобы запустить рабочий процесс",
+			"options": {
+				"newChannel": {
+					"displayName": "Новый канал",
+					"description": "Создан новый канал"
+				},
+				"newChannelMessage": {
+					"displayName": "Новое сообщение канала",
+					"description": "Сообщение публикуется на канале"
+				},
+				"newChat": {
+					"displayName": "Новый чат",
+					"description": "Создан новый чат"
+				},
+				"newChatMessage": {
+					"displayName": "Новое сообщение чата",
+					"description": "Сообщение публикуется в чате"
+				},
+				"newTeamMember": {
+					"displayName": "Новый член команды",
+					"description": "В команду добавляется новый участник"
+				}
+			}
+		},
+		"chatTriggerServicePrincipalNotice": {
+			"displayName": "Триггеры чата («Новый чат», «Новое сообщение чата») недоступны с учетными данными субъекта службы. Microsoft Graph только для приложений не может подписаться на чаты вошедшего пользователя; используйте учетные данные OAuth2 для триггеров чата."
+		},
+		"watchAllTeams": {
+			"displayName": "Смотреть все команды",
+			"description": "Следить ли за событием во всех доступных командах"
+		},
+		"teamId": {
+			"displayName": "Команда",
+			"description": "Выберите команду из списка, введите ID или URL"
+		},
+		"watchAllChannels": {
+			"displayName": "Смотреть все каналы",
+			"description": "Следить ли за событием на всех доступных каналах"
+		},
+		"channelId": {
+			"displayName": "Канал",
+			"description": "Выберите канал из списка, введите идентификатор или URL-адрес."
+		},
+		"watchAllChats": {
+			"displayName": "Смотреть все чаты",
+			"description": "Следить ли за событием во всех доступных чатах"
+		},
+		"chatId": {
+			"displayName": "Чат",
+			"description": "Выберите чат из списка, введите идентификатор или URL."
+		}
+	}
+}

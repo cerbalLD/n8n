@@ -47,6 +47,13 @@ export const useNodeTypesStore = defineStore(STORES.NODE_TYPES, () => {
 
 	const vettedCommunityNodeTypes = shallowRef<Map<string, CommunityNodeType>>(new Map());
 
+	// Node types loaded in bulk (e.g. from the static /types/nodes.json catalog or the local
+	// SQLite cache) already have `properties`, so callers normally skip re-fetching them. Those
+	// bulk sources are always English, so for non-English locales we still need one REST fetch
+	// per node type to pull in its translated parameter labels. This tracks which type@version
+	// pairs have already been fetched (translated or not) so we only ever fetch each one once.
+	const translatedNodeTypes = new Set<string>();
+
 	const rootStore = useRootStore();
 
 	const actionsGenerator = useActionsGenerator();
@@ -390,9 +397,17 @@ export const useNodeTypesStore = defineStore(STORES.NODE_TYPES, () => {
 				addNodeTranslation({ [nodeType]: nodeInformation.translation }, rootStore.defaultLocale);
 			}
 		});
+		nodeInfos.forEach(({ name, version }) => translatedNodeTypes.add(`${name}@${version}`));
 		if (replace) setNodeTypes(nodesInformation);
 
 		return nodesInformation;
+	};
+
+	// Whether `name`@`version` still needs a translated-properties fetch: true for any
+	// non-English locale until getNodesInformation() has fetched it at least once.
+	const needsTranslatedFetch = (name: string, version: number) => {
+		if (rootStore.defaultLocale === 'en') return false;
+		return !translatedNodeTypes.has(`${name}@${version}`);
 	};
 
 	const getFullNodesProperties = async (
@@ -575,6 +590,7 @@ export const useNodeTypesStore = defineStore(STORES.NODE_TYPES, () => {
 		getNodeParameterOptions,
 		getNodesInformation,
 		getFullNodesProperties,
+		needsTranslatedFetch,
 		getNodeTypes,
 		getAllNodeTypes,
 		loadNodeTypesIfNotLoaded,

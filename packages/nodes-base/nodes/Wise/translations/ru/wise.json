@@ -1,0 +1,307 @@
+{
+	"header": {
+		"displayName": "Мудрый",
+		"description": "Используйте Wise API"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"account": {
+					"displayName": "Счет"
+				},
+				"exchangeRate": {
+					"displayName": "Обменный курс"
+				},
+				"profile": {
+					"displayName": "Профиль"
+				},
+				"quote": {
+					"displayName": "Цитировать"
+				},
+				"recipient": {
+					"displayName": "Получатель"
+				},
+				"transfer": {
+					"displayName": "Передача"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"getBalances": {
+					"displayName": "Получить балансы",
+					"description": "Получить балансы для всех валют счета этого пользователя"
+				},
+				"getCurrencies": {
+					"displayName": "Получить валюту",
+					"description": "Получить валюты на безграничном счете этого пользователя"
+				},
+				"getStatement": {
+					"displayName": "Получить заявление",
+					"description": "Получить выписку для безрамочной учетной записи этого пользователя."
+				},
+				"get": {
+					"displayName": "Получать"
+				},
+				"getAll": {
+					"displayName": "Получить много"
+				},
+				"create": {
+					"displayName": "Создавать"
+				},
+				"delete": {
+					"displayName": "Удалить"
+				},
+				"execute": {
+					"displayName": "Выполнять"
+				}
+			}
+		},
+		"profileId": {
+			"displayName": "Имя или идентификатор профиля",
+			"description": "Идентификатор профиля пользователя, который требуется получить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"borderlessAccountId": {
+			"displayName": "Имя или идентификатор учетной записи без границ",
+			"description": "Идентификатор безграничной учетной записи, выписку из которой нужно получить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"currency": {
+			"displayName": "Валюта",
+			"description": "Код валюты безграничного счета для получения выписки"
+		},
+		"format": {
+			"displayName": "Формат",
+			"description": "Формат файла для получения оператора",
+			"options": {
+				"json": {
+					"displayName": "JSON"
+				},
+				"csv": {
+					"displayName": "CSV"
+				},
+				"pdf": {
+					"displayName": "PDF"
+				},
+				"xml": {
+					"displayName": "XML (CAMT.053)"
+				}
+			}
+		},
+		"binaryProperty": {
+			"displayName": "Поместите выходной файл в поле",
+			"hint": "Имя выходного двоичного поля, в которое помещается файл."
+		},
+		"fileName": {
+			"displayName": "Имя файла",
+			"description": "Имя файла, который будет загружен",
+			"placeholder": "данные.pdf"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"lineStyle": {
+					"displayName": "Стиль линии",
+					"description": "Стиль линии для получения оператора",
+					"options": {
+						"COMPACT": {
+							"displayName": "Компактный",
+							"description": "Одна строка на транзакцию"
+						},
+						"FLAT": {
+							"displayName": "Плоский",
+							"description": "Отдельные строки для комиссий за транзакции"
+						}
+					}
+				},
+				"range": {
+					"values": {
+						"range": {
+							"displayName": "Диапазон",
+							"description": "Диапазон времени для получения обменного курса для"
+						},
+						"rangeProperties": {
+							"options": {
+								"intervalStart": {
+									"displayName": "Начало диапазона"
+								},
+								"intervalEnd": {
+									"displayName": "Конец диапазона"
+								},
+								"from": {
+									"displayName": "Начало диапазона"
+								},
+								"to": {
+									"displayName": "Конец диапазона"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить диапазон",
+					"displayName": "Диапазон",
+					"options": {
+						"rangeProperties": {
+							"displayName": "Свойства диапазона"
+						}
+					},
+					"description": "Диапазон времени для получения обменного курса для"
+				},
+				"interval": {
+					"displayName": "Интервал",
+					"options": {
+						"day": {
+							"displayName": "День"
+						},
+						"hour": {
+							"displayName": "Час"
+						},
+						"minute": {
+							"displayName": "минута"
+						}
+					}
+				},
+				"time": {
+					"displayName": "Время",
+					"description": "Момент времени, чтобы получить обменный курс для"
+				},
+				"reference": {
+					"displayName": "Ссылка",
+					"description": "Справочный текст для отображения в выписке по счету получателя"
+				}
+			}
+		},
+		"source": {
+			"displayName": "Исходная валюта",
+			"description": "Код исходной валюты для получения обменного курса"
+		},
+		"target": {
+			"displayName": "Целевая валюта",
+			"description": "Код целевой валюты для получения обменного курса"
+		},
+		"targetAccountId": {
+			"displayName": "Имя или идентификатор целевой учетной записи",
+			"description": "Идентификатор счета, на который поступят средства. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"amountType": {
+			"displayName": "Тип суммы",
+			"description": "Будет ли сумма отправлена ​​или получена",
+			"options": {
+				"source": {
+					"displayName": "Источник"
+				},
+				"target": {
+					"displayName": "Цель"
+				}
+			}
+		},
+		"amount": {
+			"displayName": "Количество",
+			"description": "Сумма средств для создания котировки"
+		},
+		"sourceCurrency": {
+			"displayName": "Исходная валюта",
+			"description": "Код валюты для отправки котировки для создания"
+		},
+		"targetCurrency": {
+			"displayName": "Целевая валюта",
+			"description": "Код валюты, которую необходимо получить для создания котировки"
+		},
+		"quoteId": {
+			"displayName": "Идентификатор цитаты",
+			"description": "Идентификатор котировки, на основе которой создается перевод"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"transferId": {
+			"displayName": "Идентификатор перевода",
+			"description": "Идентификатор перевода для получения"
+		},
+		"downloadReceipt": {
+			"displayName": "Скачать квитанцию",
+			"description": "Загружать ли квитанцию ​​о переводе в виде PDF-файла. Только для выполненных переводов, имеющих статус «Исходящий платеж отправлен»."
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"range": {
+					"values": {
+						"range": {
+							"displayName": "Диапазон",
+							"description": "Диапазон времени для фильтрации переводов"
+						},
+						"rangeProperties": {
+							"options": {
+								"createdDateStart": {
+									"displayName": "Дата создания Начало"
+								},
+								"createdDateEnd": {
+									"displayName": "Дата создания Конец"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить диапазон",
+					"displayName": "Диапазон",
+					"description": "Диапазон времени для фильтрации переводов",
+					"options": {
+						"rangeProperties": {
+							"displayName": "Свойства диапазона"
+						}
+					}
+				},
+				"sourceCurrency": {
+					"displayName": "Исходная валюта",
+					"description": "Код исходной валюты для фильтрации переводов"
+				},
+				"status": {
+					"displayName": "Статус",
+					"options": {
+						"bounced_back": {
+							"displayName": "Пришёл в норму"
+						},
+						"cancelled": {
+							"displayName": "Отменено"
+						},
+						"charged_back": {
+							"displayName": "Возвращенный заряд"
+						},
+						"funds_converted": {
+							"displayName": "Средства конвертированы"
+						},
+						"funds_refunded": {
+							"displayName": "Возвращенные средства"
+						},
+						"incoming_payment_waiting": {
+							"displayName": "Ожидание входящего платежа"
+						},
+						"outgoing_payment_sent": {
+							"displayName": "Исходящий платеж отправлен"
+						},
+						"processing": {
+							"displayName": "Обработка"
+						},
+						"unknown": {
+							"displayName": "Неизвестный"
+						},
+						"waiting_recipient_input_to_proceed": {
+							"displayName": "Ожидание ввода данных получателя"
+						}
+					}
+				},
+				"targetCurrency": {
+					"displayName": "Целевая валюта",
+					"description": "Код целевой валюты для фильтрации переводов"
+				}
+			}
+		}
+	}
+}

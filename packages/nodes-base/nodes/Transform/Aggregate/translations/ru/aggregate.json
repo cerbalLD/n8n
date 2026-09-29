@@ -1,0 +1,98 @@
+{
+	"header": {
+		"displayName": "Совокупный",
+		"description": "Объединение поля из многих элементов в список в одном элементе"
+	},
+	"nodeView": {
+		"aggregate": {
+			"displayName": "Совокупный",
+			"options": {
+				"aggregateIndividualFields": {
+					"displayName": "Отдельные поля"
+				},
+				"aggregateAllItemData": {
+					"displayName": "Все данные элемента (в едином списке)"
+				}
+			}
+		},
+		"fieldsToAggregate": {
+			"options": {
+				"fieldsToAggregate": {
+					"displayName": "Поля для агрегирования"
+				},
+				"fieldToAggregate": {
+					"values": {
+						"fieldToAggregate": {
+							"displayName": "Имя поля ввода",
+							"description": "Имя поля во входных элементах для агрегирования.",
+							"hint": "Введите имя поля в виде текста",
+							"placeholder": "например идентификатор"
+						},
+						"renameField": {
+							"displayName": "Переименовать поле",
+							"description": "Следует ли давать полю другое имя в выходных данных"
+						},
+						"outputFieldName": {
+							"displayName": "Имя выходного поля",
+							"description": "Имя поля, в которое будут помещены агрегированные данные. Оставьте пустым, чтобы использовать имя поля ввода."
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить поле в агрегирование",
+			"displayName": "Поля для агрегирования"
+		},
+		"destinationFieldName": {
+			"displayName": "Поместите вывод в поле",
+			"description": "Имя выходного поля, в которое помещаются данные."
+		},
+		"include": {
+			"displayName": "Включать",
+			"options": {
+				"allFields": {
+					"displayName": "Все поля"
+				},
+				"specifiedFields": {
+					"displayName": "Указанные поля"
+				},
+				"allFieldsExcept": {
+					"displayName": "Все поля, кроме"
+				}
+			}
+		},
+		"fieldsToExclude": {
+			"displayName": "Поля для исключения",
+			"placeholder": "например электронная почта, имя"
+		},
+		"fieldsToInclude": {
+			"displayName": "Поля для включения",
+			"placeholder": "например электронная почта, имя"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"disableDotNotation": {
+					"displayName": "Отключить точечную нотацию",
+					"description": "Запретить ли ссылаться на дочерние поля, используя `parent.child` в имени поля."
+				},
+				"mergeLists": {
+					"displayName": "Объединить списки",
+					"description": "Следует ли объединять выходные данные в один плоский список (а не в список списков), если поле для агрегирования представляет собой список."
+				},
+				"includeBinaries": {
+					"displayName": "Включить двоичные файлы",
+					"description": "Включать ли двоичные данные в новый элемент"
+				},
+				"keepOnlyUnique": {
+					"displayName": "Сохраняйте только уникальные двоичные файлы",
+					"description": "Сохранять ли только уникальные двоичные файлы путем сравнения типов mime, типов файлов, размеров файлов и расширений файлов."
+				},
+				"keepMissing": {
+					"displayName": "Продолжайте отсутствовать и иметь нулевые значения",
+					"description": "Добавлять ли нулевую запись в агрегированный список при наличии отсутствующего или нулевого значения."
+				}
+			}
+		}
+	}
+}

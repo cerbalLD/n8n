@@ -1,0 +1,86 @@
+{
+	"header": {
+		"displayName": "КругCI",
+		"description": "Использование API CircleCI"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"pipeline": {
+					"displayName": "Трубопровод"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить трубопровод"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получите много конвейеров"
+				},
+				"trigger": {
+					"displayName": "Курок",
+					"description": "Запуск конвейера"
+				}
+			}
+		},
+		"vcs": {
+			"displayName": "Поставщик",
+			"description": "Система контроля версий",
+			"options": {
+				"bitbucket": {
+					"displayName": "Битбакет"
+				},
+				"github": {
+					"displayName": "GitHub"
+				}
+			}
+		},
+		"projectSlug": {
+			"displayName": "Проект Слизень",
+			"description": "Слаг проекта в форме имя-организации/имя-репозитория.",
+			"placeholder": "n8n-io/n8n"
+		},
+		"pipelineNumber": {
+			"displayName": "Номер трубопровода",
+			"description": "Номер трубопровода"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"branch": {
+					"displayName": "Ветвь",
+					"description": "Имя ветки vcs"
+				}
+			}
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"branch": {
+					"displayName": "Ветвь",
+					"description": "Ветка, по которой пролегал трубопровод. Для конвейера использовалась фиксация HEAD в этой ветке. Обратите внимание, что ветка и тег являются взаимоисключающими."
+				},
+				"tag": {
+					"displayName": "Ярлык",
+					"description": "Тег, используемый конвейером. Коммит, на который указывает этот тег, использовался для конвейера. Обратите внимание, что ветка и тег являются взаимоисключающими."
+				}
+			}
+		}
+	}
+}

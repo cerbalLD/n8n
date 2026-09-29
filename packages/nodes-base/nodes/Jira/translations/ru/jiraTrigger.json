@@ -1,0 +1,260 @@
+{
+	"header": {
+		"displayName": "Джира Триггер",
+		"description": "Запускает рабочий процесс при возникновении событий Jira."
+	},
+	"nodeView": {
+		"jiraVersion": {
+			"displayName": "Версия Джиры",
+			"options": {
+				"cloud": {
+					"displayName": "Облако"
+				},
+				"cloudOAuth2": {
+					"displayName": "Облако (OAuth2)"
+				},
+				"server": {
+					"displayName": "Сервер (самостоятельный хостинг)"
+				},
+				"serverPat": {
+					"displayName": "Сервер (Pat) (самостоятельный хостинг)"
+				}
+			}
+		},
+		"authenticateWebhook": {
+			"displayName": "Аутентификация входящего вебхука",
+			"description": "Следует ли активировать аутентификацию для входящих веб-перехватчиков (делает ее более безопасной)"
+		},
+		"incomingAuthentication": {
+			"displayName": "Аутентификация вебхука с помощью",
+			"description": "Должна ли быть активирована аутентификация для веб-перехватчика (делает его более безопасным)",
+			"options": {
+				"queryAuth": {
+					"displayName": "Запрос аутентификации"
+				},
+				"none": {
+					"displayName": "Никто"
+				}
+			}
+		},
+		"events": {
+			"displayName": "События",
+			"description": "События, которые стоит послушать",
+			"options": {
+				"*": {
+					"displayName": "*"
+				},
+				"board_configuration_changed": {
+					"displayName": "Конфигурация платы изменена"
+				},
+				"board_created": {
+					"displayName": "Доска создана"
+				},
+				"board_deleted": {
+					"displayName": "Доска удалена"
+				},
+				"board_updated": {
+					"displayName": "Доска обновлена"
+				},
+				"comment_created": {
+					"displayName": "Комментарий создан"
+				},
+				"comment_deleted": {
+					"displayName": "Комментарий удален"
+				},
+				"comment_updated": {
+					"displayName": "Комментарий обновлен"
+				},
+				"jira:issue_created": {
+					"displayName": "Проблема создана"
+				},
+				"jira:issue_deleted": {
+					"displayName": "Проблема удалена"
+				},
+				"issuelink_created": {
+					"displayName": "Ссылка на задачу создана"
+				},
+				"issuelink_deleted": {
+					"displayName": "Ссылка на задачу удалена"
+				},
+				"jira:issue_updated": {
+					"displayName": "Выпуск обновлен"
+				},
+				"option_attachments_changed": {
+					"displayName": "Дополнительные вложения изменены"
+				},
+				"option_issuelinks_changed": {
+					"displayName": "Ссылки на проблемы с опциями изменены"
+				},
+				"option_subtasks_changed": {
+					"displayName": "Опции подзадач изменены"
+				},
+				"option_timetracking_changed": {
+					"displayName": "Опция учета рабочего времени изменена"
+				},
+				"option_unassigned_issues_changed": {
+					"displayName": "Изменены неназначенные проблемы с опцией"
+				},
+				"option_voting_changed": {
+					"displayName": "Голосование по вариантам изменено"
+				},
+				"option_watching_changed": {
+					"displayName": "Наблюдение за опционами изменено"
+				},
+				"project_created": {
+					"displayName": "Проект создан"
+				},
+				"project_deleted": {
+					"displayName": "Проект удален"
+				},
+				"project_updated": {
+					"displayName": "Проект обновлен"
+				},
+				"sprint_closed": {
+					"displayName": "Спринт закрыт"
+				},
+				"sprint_created": {
+					"displayName": "Спринт создан"
+				},
+				"sprint_deleted": {
+					"displayName": "Спринт удален"
+				},
+				"sprint_started": {
+					"displayName": "Спринт начался"
+				},
+				"sprint_updated": {
+					"displayName": "Спринт обновлен"
+				},
+				"user_created": {
+					"displayName": "Создано пользователем"
+				},
+				"user_deleted": {
+					"displayName": "Пользователь удален"
+				},
+				"user_updated": {
+					"displayName": "Пользователь обновлен"
+				},
+				"jira:version_created": {
+					"displayName": "Версия создана"
+				},
+				"jira:version_deleted": {
+					"displayName": "Версия удалена"
+				},
+				"jira:version_moved": {
+					"displayName": "Версия перемещена"
+				},
+				"jira:version_released": {
+					"displayName": "Версия выпущена"
+				},
+				"jira:version_unreleased": {
+					"displayName": "Версия не выпущена"
+				},
+				"jira:version_updated": {
+					"displayName": "Версия обновлена"
+				},
+				"worklog_created": {
+					"displayName": "Рабочий журнал создан"
+				},
+				"worklog_deleted": {
+					"displayName": "Рабочий журнал удален"
+				},
+				"worklog_updated": {
+					"displayName": "Рабочий журнал обновлен"
+				},
+				"issue_property_deleted": {
+					"displayName": "Свойство проблемы удалено"
+				},
+				"issue_property_set": {
+					"displayName": "Набор свойств проблемы"
+				},
+				"jira:version_merged": {
+					"displayName": "Версия объединена"
+				}
+			}
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"excludeBody": {
+					"displayName": "Исключить тело",
+					"description": "Будет ли запрос с пустым телом отправлен на URL. Оставьте флажок неактивным, если хотите получать JSON."
+				},
+				"filter": {
+					"displayName": "Фильтр",
+					"description": "JQL-запрос для ограничения количества событий, вызывающих срабатывание. Для Cloud OAuth2 оставьте поле пустым, чтобы автоматически отслеживать все доступные проекты.",
+					"placeholder": "Проект = JRA И разрешение = Исправлено"
+				},
+				"includeFields": {
+					"displayName": "Включить поля",
+					"options": {
+						"attachment": {
+							"id": {
+								"displayName": "Идентификатор вложения"
+							}
+						},
+						"board": {
+							"id": {
+								"displayName": "Идентификатор доски"
+							}
+						},
+						"comment": {
+							"id": {
+								"displayName": "Идентификатор комментария"
+							}
+						},
+						"issue": {
+							"id": {
+								"displayName": "Идентификатор проблемы"
+							}
+						},
+						"mergeVersion": {
+							"id": {
+								"displayName": "Объединить идентификатор версии"
+							}
+						},
+						"modifiedUser": {
+							"accountId": {
+								"displayName": "Измененный идентификатор учетной записи пользователя"
+							},
+							"key": {
+								"displayName": "Измененный ключ пользователя"
+							},
+							"name": {
+								"displayName": "Измененное имя пользователя"
+							}
+						},
+						"project": {
+							"id": {
+								"displayName": "Идентификатор проекта"
+							},
+							"key": {
+								"displayName": "Ключ проекта"
+							}
+						},
+						"property": {
+							"key": {
+								"displayName": "Ключ собственности"
+							}
+						},
+						"sprint": {
+							"id": {
+								"displayName": "Идентификатор спринта"
+							}
+						},
+						"version": {
+							"id": {
+								"displayName": "Идентификатор версии"
+							}
+						},
+						"worklog": {
+							"id": {
+								"displayName": "Идентификатор рабочего журнала"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

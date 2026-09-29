@@ -1,0 +1,482 @@
+{
+	"header": {
+		"displayName": "Clockify",
+		"description": "Использование Clockify REST API"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"client": {
+					"displayName": "Клиент"
+				},
+				"project": {
+					"displayName": "Проект"
+				},
+				"tag": {
+					"displayName": "Ярлык"
+				},
+				"task": {
+					"displayName": "Задача"
+				},
+				"timeEntry": {
+					"displayName": "Ввод времени"
+				},
+				"user": {
+					"displayName": "Пользователь"
+				},
+				"workspace": {
+					"displayName": "Рабочая область"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать запись времени"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удаление записи времени"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить запись времени"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получите много рабочих мест"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить запись времени"
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"workspaceId": {
+			"displayName": "Имя или идентификатор рабочей области",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"name": {
+			"displayName": "Имя задачи",
+			"description": "Название задачи, которую нужно создать"
+		},
+		"clientId": {
+			"displayName": "Идентификатор клиента"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"archived": {
+					"displayName": "В архиве"
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Если это предусмотрено, вы получите отфильтрованный список пользователей, которые содержат указанную строку в своем имени."
+				},
+				"sort-order": {
+					"displayName": "Порядок сортировки",
+					"options": {
+						"ASCENDING": {
+							"displayName": "восходящий"
+						},
+						"DESCENDING": {
+							"displayName": "По убыванию"
+						}
+					}
+				},
+				"billable": {
+					"displayName": "подлежащий оплате"
+				},
+				"color": {
+					"displayName": "Цвет"
+				},
+				"clientId": {
+					"displayName": "Имя или идентификатор клиента",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"estimateUi": {
+					"values": {
+						"estimateUi": {
+							"displayName": "Оценивать"
+						},
+						"estimateValues": {
+							"options": {
+								"estimate": {
+									"displayName": "Оценивать"
+								},
+								"type": {
+									"displayName": "Тип",
+									"options": {
+										"AUTO": {
+											"displayName": "Авто"
+										},
+										"MANUAL": {
+											"displayName": "Руководство"
+										}
+									}
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить оценку",
+					"displayName": "Оценивать",
+					"options": {
+						"estimateValues": {
+							"displayName": "Оценивать"
+						}
+					}
+				},
+				"isPublic": {
+					"displayName": "Является общедоступным"
+				},
+				"note": {
+					"displayName": "Примечание",
+					"description": "Примечание о проекте"
+				},
+				"clients": {
+					"displayName": "Имена или идентификаторы клиентов",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"contains-client": {
+					"displayName": "Содержит клиент",
+					"description": "Возвращать ли только проекты, имеющие клиента"
+				},
+				"client-status": {
+					"displayName": "Статус клиента",
+					"description": "Если это предусмотрено, проекты будут фильтроваться по тому, есть ли у них клиент.",
+					"options": {
+						"ACTIVE": {
+							"displayName": "Активный"
+						},
+						"ARCHIVED": {
+							"displayName": "В архиве"
+						}
+					}
+				},
+				"contains-user": {
+					"displayName": "Содержит пользователя",
+					"description": "Возвращать ли только проекты, имеющие пользователей"
+				},
+				"is-template": {
+					"displayName": "Это шаблон",
+					"description": "Возвращать ли в качестве шаблонов только проекты"
+				},
+				"sort-column": {
+					"displayName": "Сортировать столбец",
+					"options": {
+						"NAME": {
+							"displayName": "Имя"
+						},
+						"CLIENT_NAME": {
+							"displayName": "Имя клиента"
+						},
+						"DURATION": {
+							"displayName": "Продолжительность"
+						},
+						"EMAIL": {
+							"displayName": "Электронная почта"
+						},
+						"HOURLYRATE": {
+							"displayName": "Почасовая ставка"
+						}
+					}
+				},
+				"users": {
+					"displayName": "Имя пользователя или идентификатор",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"user-status": {
+					"displayName": "Статус пользователя",
+					"description": "Если это предусмотрено, проекты будут фильтроваться по тому, есть ли у них клиент.",
+					"options": {
+						"ACTIVE": {
+							"displayName": "Активный"
+						},
+						"ARCHIVED": {
+							"displayName": "В архиве"
+						}
+					}
+				},
+				"assigneeIds": {
+					"displayName": "Имена или идентификаторы правопреемников",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"estimate": {
+					"displayName": "Оценивать",
+					"description": "Оцените время, которое займет выполнение задачи, например: 2:30 (2 часа 30 минут).",
+					"placeholder": "2:30"
+				},
+				"email": {
+					"displayName": "Электронная почта",
+					"description": "Если указано, вы получите отфильтрованный список пользователей, которые содержат указанную строку в своем адресе электронной почты.",
+					"placeholder": "имя@email.com"
+				},
+				"status": {
+					"displayName": "Статус",
+					"description": "Если это предусмотрено, вы получите отфильтрованный список пользователей с соответствующим статусом.",
+					"options": {
+						"ACTIVE": {
+							"displayName": "Активный"
+						},
+						"INACTIVE": {
+							"displayName": "Неактивный"
+						},
+						"PENDING": {
+							"displayName": "В ожидании"
+						},
+						"DECLINED": {
+							"displayName": "Отклоненный"
+						}
+					}
+				},
+				"customFieldsUi": {
+					"values": {
+						"customFieldsUi": {
+							"displayName": "Пользовательские поля",
+							"description": "Фильтровать по настраиваемым полям"
+						},
+						"customFieldsValues": {
+							"options": {
+								"customFieldId": {
+									"displayName": "Имя поля или идентификатор",
+									"description": "Идентификатор поля, к которому нужно добавить настраиваемое поле. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Значение, которое нужно установить в настраиваемом поле"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить настраиваемое поле",
+					"displayName": "Пользовательские поля",
+					"description": "Фильтровать по настраиваемым полям",
+					"options": {
+						"customFieldsValues": {
+							"displayName": "Пользовательское поле"
+						}
+					}
+				},
+				"description": {
+					"displayName": "Описание"
+				},
+				"end": {
+					"displayName": "Конец"
+				},
+				"projectId": {
+					"displayName": "Название или идентификатор проекта",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"tagIds": {
+					"displayName": "Имена или идентификаторы тегов",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"taskId": {
+					"displayName": "Идентификатор задачи"
+				},
+				"consider-duration-format": {
+					"displayName": "Учитывайте формат продолжительности",
+					"description": "Возвращать ли продолжительность записи времени, округленную до минут или секунд, в зависимости от формата продолжительности (чч:мм или чч:мм:сс) из настроек рабочей области."
+				},
+				"hydrated": {
+					"displayName": "Гидратированный",
+					"description": "Возвращать ли проект, задачу и теги записи времени полностью, а не только их идентификаторы."
+				}
+			}
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"address": {
+					"displayName": "Адрес",
+					"description": "Адрес создаваемого/обновляемого клиента"
+				},
+				"archived": {
+					"displayName": "В архиве"
+				},
+				"billable": {
+					"displayName": "подлежащий оплате"
+				},
+				"color": {
+					"displayName": "Цвет"
+				},
+				"clientId": {
+					"displayName": "Имя или идентификатор клиента",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"estimateUi": {
+					"values": {
+						"estimateUi": {
+							"displayName": "Оценивать"
+						},
+						"estimateValues": {
+							"options": {
+								"estimate": {
+									"displayName": "Оценивать"
+								},
+								"type": {
+									"displayName": "Тип",
+									"options": {
+										"AUTO": {
+											"displayName": "Авто"
+										},
+										"MANUAL": {
+											"displayName": "Руководство"
+										}
+									}
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить оценку",
+					"displayName": "Оценивать",
+					"options": {
+						"estimateValues": {
+							"displayName": "Оценивать"
+						}
+					}
+				},
+				"isPublic": {
+					"displayName": "Является общедоступным"
+				},
+				"name": {
+					"displayName": "Имя"
+				},
+				"note": {
+					"displayName": "Примечание",
+					"description": "Примечание о проекте"
+				},
+				"assigneeIds": {
+					"displayName": "Имена или идентификаторы правопреемников",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"estimate": {
+					"displayName": "Оценивать",
+					"description": "Оцените время, которое займет выполнение задачи, например: 2:30 (2 часа 30 минут).",
+					"placeholder": "2:30"
+				},
+				"status": {
+					"displayName": "Статус",
+					"options": {
+						"ACTIVE": {
+							"displayName": "Активный"
+						},
+						"DONE": {
+							"displayName": "Сделанный"
+						}
+					}
+				},
+				"customFieldsUi": {
+					"values": {
+						"customFieldsUi": {
+							"displayName": "Пользовательские поля",
+							"description": "Фильтровать по настраиваемым полям"
+						},
+						"customFieldsValues": {
+							"options": {
+								"customFieldId": {
+									"displayName": "Имя поля или идентификатор",
+									"description": "Идентификатор поля, к которому нужно добавить настраиваемое поле. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Значение, которое нужно установить в настраиваемом поле"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить настраиваемое поле",
+					"displayName": "Пользовательские поля",
+					"description": "Фильтровать по настраиваемым полям",
+					"options": {
+						"customFieldsValues": {
+							"displayName": "Пользовательское поле"
+						}
+					}
+				},
+				"description": {
+					"displayName": "Описание"
+				},
+				"end": {
+					"displayName": "Конец"
+				},
+				"projectId": {
+					"displayName": "Название или идентификатор проекта",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"start": {
+					"displayName": "Начинать"
+				},
+				"tagIds": {
+					"displayName": "Имена или идентификаторы тегов",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"taskId": {
+					"displayName": "Идентификатор задачи"
+				}
+			}
+		},
+		"projectId": {
+			"displayName": "Название или идентификатор проекта",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"tagId": {
+			"displayName": "Идентификатор тега"
+		},
+		"taskId": {
+			"displayName": "Идентификатор задачи",
+			"description": "Идентификатор задачи для обновления"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"is-active": {
+					"displayName": "Активен"
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Текст, соответствующий названию задачи"
+				},
+				"sort-column": {
+					"displayName": "Сортировать столбец",
+					"options": {
+						"NAME": {
+							"displayName": "Имя"
+						}
+					}
+				},
+				"sort-order": {
+					"displayName": "Порядок сортировки",
+					"options": {
+						"ASCENDING": {
+							"displayName": "восходящий"
+						},
+						"DESCENDING": {
+							"displayName": "По убыванию"
+						}
+					}
+				}
+			}
+		},
+		"start": {
+			"displayName": "Начинать"
+		},
+		"timeEntryId": {
+			"displayName": "Идентификатор записи времени"
+		}
+	}
+}

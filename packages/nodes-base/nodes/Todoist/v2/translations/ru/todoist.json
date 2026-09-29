@@ -1,0 +1,887 @@
+{
+	"header": {
+		"displayName": "Тодоист",
+		"description": "Использование Todoist API"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"apiKey": {
+					"displayName": "API-ключ"
+				},
+				"oAuth2": {
+					"displayName": "ОАут2"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"task": {
+					"displayName": "Задача",
+					"description": "Ресурс задачи"
+				},
+				"project": {
+					"displayName": "Проект",
+					"description": "Ресурс проекта"
+				},
+				"section": {
+					"displayName": "Раздел",
+					"description": "Ресурс раздела"
+				},
+				"comment": {
+					"displayName": "Комментарий",
+					"description": "Комментировать ресурс"
+				},
+				"label": {
+					"displayName": "Этикетка",
+					"description": "Ресурс ярлыка"
+				},
+				"reminder": {
+					"displayName": "Напоминание",
+					"description": "Ресурс напоминания"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"close": {
+					"displayName": "Закрывать",
+					"description": "Закрыть задачу"
+				},
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать новое напоминание"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить напоминание"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить ярлык"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получайте много напоминаний"
+				},
+				"move": {
+					"displayName": "Двигаться",
+					"description": "Переместить задачу"
+				},
+				"quickAdd": {
+					"displayName": "Быстрое добавление",
+					"description": "Быстрое добавление задачи, используя естественный язык"
+				},
+				"reopen": {
+					"displayName": "Открыть заново",
+					"description": "Повторно открыть задачу"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить напоминание"
+				},
+				"archive": {
+					"displayName": "Архив",
+					"description": "Архивировать проект"
+				},
+				"getCollaborators": {
+					"displayName": "Получить соавторов",
+					"description": "Пригласите соавторов проекта"
+				},
+				"unarchive": {
+					"displayName": "Разархивировать",
+					"description": "Разархивировать проект"
+				}
+			}
+		},
+		"taskId": {
+			"displayName": "Идентификатор задачи"
+		},
+		"project": {
+			"displayName": "Название или идентификатор проекта",
+			"description": "Проект назначения. Выберите из списка или укажите идентификатор."
+		},
+		"section": {
+			"displayName": "Название или идентификатор раздела",
+			"description": "Раздел, в который вы хотите переместить задачу. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"options": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"section": {
+					"displayName": "Название или идентификатор раздела",
+					"description": "Раздел, над которым вы хотите работать. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"parent": {
+					"displayName": "Имя или идентификатор родителя",
+					"description": "Родительская задача назначения. Задача становится последней дочерней задачей родительской задачи. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"note": {
+					"displayName": "Примечание",
+					"description": "Содержание заметки"
+				},
+				"reminder": {
+					"displayName": "Напоминание",
+					"description": "Дата напоминания, добавленная в произвольной форме."
+				},
+				"auto_reminder": {
+					"displayName": "Автоматическое напоминание",
+					"description": "Если эта опция включена, к новому элементу будет добавлено напоминание по умолчанию, если для него установлен срок выполнения с установленным временем."
+				},
+				"description": {
+					"displayName": "Описание",
+					"description": "Описание к задаче"
+				},
+				"dueDateTime": {
+					"displayName": "Срок выполнения Время",
+					"description": "Конкретная дата и время в формате RFC3339 в формате UTC."
+				},
+				"dueLang": {
+					"displayName": "Должная строка локали",
+					"description": "Двухбуквенный код, определяющий язык, если Due_string не написан на английском языке"
+				},
+				"dueString": {
+					"displayName": "Срок выполнения строки",
+					"description": "Срок выполнения задачи, определяемый человеком (например: «следующий понедельник», «Завтра»). Значение задается с использованием местного времени (не UTC)."
+				},
+				"parentId": {
+					"displayName": "Имя или идентификатор родителя",
+					"description": "Родительская задача, над которой вы хотите работать. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"priority": {
+					"displayName": "Приоритет",
+					"description": "Приоритет задачи от 1 (обычный) до 4 (срочный)."
+				},
+				"order": {
+					"displayName": "Заказ",
+					"description": "Ненулевое целое число, используемое для сортировки задач под одним родителем."
+				},
+				"dueDate": {
+					"displayName": "Срок оплаты",
+					"description": "Конкретная дата в формате ГГГГ-ММ-ДД.",
+					"placeholder": "YYYY-MM-DD"
+				},
+				"assigneeId": {
+					"displayName": "Идентификатор правопреемника",
+					"description": "Идентификатор ответственного пользователя (для общих задач)"
+				},
+				"duration": {
+					"displayName": "Продолжительность",
+					"description": "Положительное целое число для продолжительности задачи (необходимо использовать с единицей продолжительности)."
+				},
+				"durationUnit": {
+					"displayName": "Единица продолжительности",
+					"description": "Единица времени для продолжительности (необходимо использовать с продолжительностью)",
+					"options": {
+						"minute": {
+							"displayName": "минута"
+						},
+						"day": {
+							"displayName": "День"
+						}
+					}
+				},
+				"deadlineDate": {
+					"displayName": "Крайний срок",
+					"description": "Конкретная дата крайнего срока в формате ГГГГ-ММ-ДД.",
+					"placeholder": "YYYY-MM-DD"
+				}
+			}
+		},
+		"labels": {
+			"displayName": "Имена этикеток",
+			"description": "Необязательные метки, которые будут присвоены созданной задаче. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"content": {
+			"displayName": "Содержание",
+			"description": "Содержание задачи"
+		},
+		"text": {
+			"displayName": "Текст",
+			"description": "Текст на естественном языке для быстрого добавления задачи (например, «Купи молоко @Grocery #shopping завтра»). Он может включать дату выполнения в произвольной форме, имя проекта, начинающееся с символа «#» (без пробелов), метку, начинающуюся с символа «@», правопреемника, начинающегося с символа «+», приоритет (например, p1), крайний срок между «{}» (например, {через 3 дня}) или описание, начинающееся с «//» до конца текста."
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"filter": {
+					"displayName": "Фильтр",
+					"description": "Фильтровать по любому фильтру, поддерживаемому <a href=\"https://get.todoist.help/hc/en-us/articles/205248842\">.</a>"
+				},
+				"ids": {
+					"displayName": "идентификаторы",
+					"description": "Список идентификаторов задач для получения. Это должен быть список, разделенный запятыми."
+				},
+				"labelId": {
+					"displayName": "Имя или идентификатор этикетки",
+					"description": "Фильтруйте задачи по меткам. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"lang": {
+					"displayName": "Ланг",
+					"description": "Языковой тег IETF, определяющий, на каком языке написан фильтр, если он отличается от английского по умолчанию."
+				},
+				"parentId": {
+					"displayName": "Имя или идентификатор родителя",
+					"description": "Фильтруйте задачи по идентификатору родительской задачи. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"projectId": {
+					"displayName": "Название или идентификатор проекта",
+					"description": "Фильтруйте задачи по идентификатору проекта. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"sectionId": {
+					"displayName": "Название или идентификатор раздела",
+					"description": "Фильтруйте задачи по идентификатору раздела. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				}
+			}
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"content": {
+					"displayName": "Содержание",
+					"description": "Содержание задачи"
+				},
+				"description": {
+					"displayName": "Описание",
+					"description": "Описание к задаче"
+				},
+				"dueDateTime": {
+					"displayName": "Срок выполнения Время",
+					"description": "Конкретная дата и время в формате RFC3339 в формате UTC."
+				},
+				"dueLang": {
+					"displayName": "Должная строка локали",
+					"description": "Двухбуквенный код, определяющий язык, если Due_string не написан на английском языке"
+				},
+				"dueString": {
+					"displayName": "Срок выполнения строки",
+					"description": "Срок выполнения задачи, определяемый человеком (например: «следующий понедельник», «Завтра»). Значение задается с использованием местного времени (не UTC)."
+				},
+				"labels": {
+					"displayName": "Имена этикеток",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"priority": {
+					"displayName": "Приоритет",
+					"description": "Приоритет задачи от 1 (обычный) до 4 (срочный)."
+				},
+				"order": {
+					"displayName": "Заказ",
+					"description": "Ненулевое целое число, используемое для сортировки задач под одним родителем."
+				},
+				"dueDate": {
+					"displayName": "Срок оплаты",
+					"description": "Конкретная дата в формате ГГГГ-ММ-ДД.",
+					"placeholder": "YYYY-MM-DD"
+				},
+				"assigneeId": {
+					"displayName": "Идентификатор правопреемника",
+					"description": "Идентификатор ответственного пользователя (для общих задач)"
+				},
+				"duration": {
+					"displayName": "Продолжительность",
+					"description": "Положительное целое число для продолжительности задачи (необходимо использовать с единицей продолжительности)."
+				},
+				"durationUnit": {
+					"displayName": "Единица продолжительности",
+					"description": "Единица времени для продолжительности (необходимо использовать с продолжительностью)",
+					"options": {
+						"minute": {
+							"displayName": "минута"
+						},
+						"day": {
+							"displayName": "День"
+						}
+					}
+				},
+				"deadlineDate": {
+					"displayName": "Крайний срок",
+					"description": "Конкретная дата крайнего срока в формате ГГГГ-ММ-ДД.",
+					"placeholder": "YYYY-MM-DD"
+				}
+			}
+		},
+		"projectId": {
+			"displayName": "Идентификатор проекта",
+			"description": "Идентификатор проекта — может быть строкой или числом."
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Название проекта"
+		},
+		"projectOptions": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"color": {
+					"displayName": "Цвет",
+					"description": "Цвет проекта",
+					"options": {
+						"berry_red": {
+							"displayName": "Ягодно-красный"
+						},
+						"red": {
+							"displayName": "Красный"
+						},
+						"orange": {
+							"displayName": "Апельсин"
+						},
+						"yellow": {
+							"displayName": "Желтый"
+						},
+						"olive_green": {
+							"displayName": "Оливково-зеленый"
+						},
+						"lime_green": {
+							"displayName": "Лаймово-зеленый"
+						},
+						"green": {
+							"displayName": "Зеленый"
+						},
+						"mint_green": {
+							"displayName": "Мятно-зеленый"
+						},
+						"teal": {
+							"displayName": "Бирюзовый"
+						},
+						"sky_blue": {
+							"displayName": "Небесно-голубой"
+						},
+						"light_blue": {
+							"displayName": "Светло-голубой"
+						},
+						"blue": {
+							"displayName": "Синий"
+						},
+						"grape": {
+							"displayName": "Виноград"
+						},
+						"violet": {
+							"displayName": "Фиолетовый"
+						},
+						"lavender": {
+							"displayName": "Лаванда"
+						},
+						"magenta": {
+							"displayName": "Пурпурный"
+						},
+						"salmon": {
+							"displayName": "Лосось"
+						},
+						"charcoal": {
+							"displayName": "Древесный уголь"
+						},
+						"grey": {
+							"displayName": "Серый"
+						},
+						"taupe": {
+							"displayName": "Серо-коричневый"
+						}
+					}
+				},
+				"is_favorite": {
+					"displayName": "Любимый",
+					"description": "Является ли проект любимым"
+				},
+				"parent_id": {
+					"displayName": "Идентификатор родителя",
+					"description": "Идентификатор родительского проекта"
+				},
+				"view_style": {
+					"displayName": "Просмотр стиля",
+					"description": "Стиль просмотра проекта по умолчанию",
+					"options": {
+						"list": {
+							"displayName": "Список"
+						},
+						"board": {
+							"displayName": "Доска"
+						}
+					}
+				}
+			}
+		},
+		"projectUpdateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"name": {
+					"displayName": "Имя",
+					"description": "Название проекта"
+				},
+				"color": {
+					"displayName": "Цвет",
+					"description": "Цвет проекта",
+					"options": {
+						"berry_red": {
+							"displayName": "Ягодно-красный"
+						},
+						"red": {
+							"displayName": "Красный"
+						},
+						"orange": {
+							"displayName": "Апельсин"
+						},
+						"yellow": {
+							"displayName": "Желтый"
+						},
+						"olive_green": {
+							"displayName": "Оливково-зеленый"
+						},
+						"lime_green": {
+							"displayName": "Лаймово-зеленый"
+						},
+						"green": {
+							"displayName": "Зеленый"
+						},
+						"mint_green": {
+							"displayName": "Мятно-зеленый"
+						},
+						"teal": {
+							"displayName": "Бирюзовый"
+						},
+						"sky_blue": {
+							"displayName": "Небесно-голубой"
+						},
+						"light_blue": {
+							"displayName": "Светло-голубой"
+						},
+						"blue": {
+							"displayName": "Синий"
+						},
+						"grape": {
+							"displayName": "Виноград"
+						},
+						"violet": {
+							"displayName": "Фиолетовый"
+						},
+						"lavender": {
+							"displayName": "Лаванда"
+						},
+						"magenta": {
+							"displayName": "Пурпурный"
+						},
+						"salmon": {
+							"displayName": "Лосось"
+						},
+						"charcoal": {
+							"displayName": "Древесный уголь"
+						},
+						"grey": {
+							"displayName": "Серый"
+						},
+						"taupe": {
+							"displayName": "Серо-коричневый"
+						}
+					}
+				},
+				"is_favorite": {
+					"displayName": "Любимый",
+					"description": "Является ли проект любимым"
+				},
+				"view_style": {
+					"displayName": "Просмотр стиля",
+					"description": "Стиль просмотра проекта по умолчанию",
+					"options": {
+						"list": {
+							"displayName": "Список"
+						},
+						"board": {
+							"displayName": "Доска"
+						}
+					}
+				}
+			}
+		},
+		"sectionId": {
+			"displayName": "Идентификатор раздела"
+		},
+		"sectionProject": {
+			"displayName": "Название или идентификатор проекта",
+			"description": "Проект, в который нужно добавить раздел"
+		},
+		"sectionName": {
+			"displayName": "Имя",
+			"description": "Название раздела"
+		},
+		"sectionOptions": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"order": {
+					"displayName": "Заказ",
+					"description": "Порядок раздела"
+				}
+			}
+		},
+		"sectionUpdateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"name": {
+					"displayName": "Имя",
+					"description": "Название раздела"
+				}
+			}
+		},
+		"sectionFilters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"project_id": {
+					"displayName": "Название или идентификатор проекта",
+					"description": "Фильтруйте разделы по проектам. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				}
+			}
+		},
+		"commentId": {
+			"displayName": "Идентификатор комментария"
+		},
+		"commentTaskId": {
+			"displayName": "Идентификатор задачи",
+			"description": "Идентификатор задачи, которую нужно прокомментировать"
+		},
+		"commentContent": {
+			"displayName": "Содержание",
+			"description": "Содержание комментария"
+		},
+		"commentUpdateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"content": {
+					"displayName": "Содержание",
+					"description": "Содержание комментария"
+				}
+			}
+		},
+		"commentFilters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"task_id": {
+					"displayName": "Идентификатор задачи",
+					"description": "Фильтровать комментарии по идентификатору задачи"
+				},
+				"project_id": {
+					"displayName": "Идентификатор проекта",
+					"description": "Фильтровать комментарии по идентификатору проекта"
+				}
+			}
+		},
+		"labelId": {
+			"displayName": "Идентификатор этикетки"
+		},
+		"labelName": {
+			"displayName": "Имя",
+			"description": "Название этикетки"
+		},
+		"labelOptions": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"color": {
+					"displayName": "Цвет",
+					"description": "Цвет этикетки",
+					"options": {
+						"berry_red": {
+							"displayName": "Ягодно-красный"
+						},
+						"red": {
+							"displayName": "Красный"
+						},
+						"orange": {
+							"displayName": "Апельсин"
+						},
+						"yellow": {
+							"displayName": "Желтый"
+						},
+						"olive_green": {
+							"displayName": "Оливково-зеленый"
+						},
+						"lime_green": {
+							"displayName": "Лаймово-зеленый"
+						},
+						"green": {
+							"displayName": "Зеленый"
+						},
+						"mint_green": {
+							"displayName": "Мятно-зеленый"
+						},
+						"teal": {
+							"displayName": "Бирюзовый"
+						},
+						"sky_blue": {
+							"displayName": "Небесно-голубой"
+						},
+						"light_blue": {
+							"displayName": "Светло-голубой"
+						},
+						"blue": {
+							"displayName": "Синий"
+						},
+						"grape": {
+							"displayName": "Виноград"
+						},
+						"violet": {
+							"displayName": "Фиолетовый"
+						},
+						"lavender": {
+							"displayName": "Лаванда"
+						},
+						"magenta": {
+							"displayName": "Пурпурный"
+						},
+						"salmon": {
+							"displayName": "Лосось"
+						},
+						"charcoal": {
+							"displayName": "Древесный уголь"
+						},
+						"grey": {
+							"displayName": "Серый"
+						},
+						"taupe": {
+							"displayName": "Серо-коричневый"
+						}
+					}
+				},
+				"order": {
+					"displayName": "Заказ",
+					"description": "Порядок этикеток"
+				},
+				"is_favorite": {
+					"displayName": "Любимый",
+					"description": "Является ли лейбл фаворитом"
+				}
+			}
+		},
+		"labelUpdateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"name": {
+					"displayName": "Имя",
+					"description": "Название этикетки"
+				},
+				"color": {
+					"displayName": "Цвет",
+					"description": "Цвет этикетки",
+					"options": {
+						"berry_red": {
+							"displayName": "Ягодно-красный"
+						},
+						"red": {
+							"displayName": "Красный"
+						},
+						"orange": {
+							"displayName": "Апельсин"
+						},
+						"yellow": {
+							"displayName": "Желтый"
+						},
+						"olive_green": {
+							"displayName": "Оливково-зеленый"
+						},
+						"lime_green": {
+							"displayName": "Лаймово-зеленый"
+						},
+						"green": {
+							"displayName": "Зеленый"
+						},
+						"mint_green": {
+							"displayName": "Мятно-зеленый"
+						},
+						"teal": {
+							"displayName": "Бирюзовый"
+						},
+						"sky_blue": {
+							"displayName": "Небесно-голубой"
+						},
+						"light_blue": {
+							"displayName": "Светло-голубой"
+						},
+						"blue": {
+							"displayName": "Синий"
+						},
+						"grape": {
+							"displayName": "Виноград"
+						},
+						"violet": {
+							"displayName": "Фиолетовый"
+						},
+						"lavender": {
+							"displayName": "Лаванда"
+						},
+						"magenta": {
+							"displayName": "Пурпурный"
+						},
+						"salmon": {
+							"displayName": "Лосось"
+						},
+						"charcoal": {
+							"displayName": "Древесный уголь"
+						},
+						"grey": {
+							"displayName": "Серый"
+						},
+						"taupe": {
+							"displayName": "Серо-коричневый"
+						}
+					}
+				},
+				"order": {
+					"displayName": "Заказ",
+					"description": "Порядок этикеток"
+				},
+				"is_favorite": {
+					"displayName": "Любимый",
+					"description": "Является ли лейбл фаворитом"
+				}
+			}
+		},
+		"reminderId": {
+			"displayName": "Идентификатор напоминания"
+		},
+		"itemId": {
+			"displayName": "Идентификатор задачи",
+			"description": "Идентификатор задачи, к которой нужно прикрепить напоминание"
+		},
+		"dueDateType": {
+			"displayName": "Тип срока сдачи",
+			"description": "Как указать, когда должно сработать напоминание",
+			"options": {
+				"natural_language": {
+					"displayName": "Естественный язык",
+					"description": "Удобочитаемая дата и время (например, «завтра в 14:00»)"
+				},
+				"full_day": {
+					"displayName": "Дата на целый день",
+					"description": "Дата без указания времени (плавающая)"
+				},
+				"floating_time": {
+					"displayName": "Плавающая дата со временем",
+					"description": "Дата и время без часового пояса"
+				},
+				"fixed_timezone": {
+					"displayName": "Фиксированная дата часового пояса со временем",
+					"description": "Дата и время с определенным часовым поясом"
+				}
+			}
+		},
+		"natural_language_representation": {
+			"displayName": "Представление естественного языка",
+			"description": "Человекочитаемая дата и время",
+			"placeholder": "например, «завтра в 14:00», «понедельник в 10:45»"
+		},
+		"date": {
+			"displayName": "Дата",
+			"description": "Полная дата в формате ГГГГ-ММ-ДД.",
+			"placeholder": "YYYY-MM-DD"
+		},
+		"datetime": {
+			"displayName": "Дата Время",
+			"description": "Дата и время с часовым поясом"
+		},
+		"timezone": {
+			"displayName": "Часовой пояс",
+			"description": "Часовой пояс для фиксированной даты часового пояса",
+			"placeholder": "например, «Америка/Нью_Йорк»"
+		},
+		"reminderOptions": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"type": {
+					"displayName": "Тип",
+					"description": "Тип напоминания",
+					"options": {
+						"absolute": {
+							"displayName": "Абсолютный"
+						},
+						"relative": {
+							"displayName": "Родственник"
+						}
+					}
+				},
+				"minute_offset": {
+					"displayName": "Минутное смещение",
+					"description": "За несколько минут до даты выполнения задачи"
+				},
+				"notify_uid": {
+					"displayName": "Уведомить идентификатор пользователя",
+					"description": "Идентификатор пользователя для уведомления (для общих задач)"
+				}
+			}
+		},
+		"reminderUpdateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"due": {
+					"values": {
+						"due": {
+							"displayName": "Должный",
+							"description": "Когда должно сработать напоминание"
+						},
+						"string": {
+							"displayName": "Естественный язык",
+							"description": "Человекочитаемая дата и время",
+							"placeholder": "например, «завтра в 14:00», «понедельник в 10:45»"
+						},
+						"date": {
+							"displayName": "Дата",
+							"description": "Конкретная дата в формате ГГГГ-ММ-ДД.",
+							"placeholder": "YYYY-MM-DD"
+						},
+						"datetime": {
+							"displayName": "Дата Время",
+							"description": "Конкретная дата и время"
+						},
+						"timezone": {
+							"displayName": "Часовой пояс",
+							"description": "Часовой пояс для напоминания",
+							"placeholder": "например, «Америка/Нью_Йорк»"
+						}
+					},
+					"placeholder": "Добавить вариант даты сдачи",
+					"displayName": "Должный",
+					"description": "Когда должно сработать напоминание"
+				},
+				"type": {
+					"displayName": "Тип",
+					"description": "Тип напоминания",
+					"options": {
+						"absolute": {
+							"displayName": "Абсолютный"
+						},
+						"relative": {
+							"displayName": "Родственник"
+						}
+					}
+				},
+				"minute_offset": {
+					"displayName": "Минутное смещение",
+					"description": "За несколько минут до даты выполнения задачи"
+				},
+				"notify_uid": {
+					"displayName": "Уведомить идентификатор пользователя",
+					"description": "Идентификатор пользователя для уведомления (для общих задач)"
+				}
+			}
+		}
+	}
+}

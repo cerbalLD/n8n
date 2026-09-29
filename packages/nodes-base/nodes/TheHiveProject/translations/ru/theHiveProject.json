@@ -1,0 +1,611 @@
+{
+	"header": {
+		"displayName": "Улей 5",
+		"description": "Использование API TheHive 5"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"alert": {
+					"displayName": "Тревога"
+				},
+				"case": {
+					"displayName": "Случай"
+				},
+				"comment": {
+					"displayName": "Комментарий"
+				},
+				"observable": {
+					"displayName": "наблюдаемый"
+				},
+				"page": {
+					"displayName": "Страница"
+				},
+				"query": {
+					"displayName": "Запрос"
+				},
+				"task": {
+					"displayName": "Задача"
+				},
+				"log": {
+					"displayName": "Журнал задач"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать"
+				},
+				"deleteAlert": {
+					"displayName": "Удалить"
+				},
+				"executeResponder": {
+					"displayName": "Выполнить ответчика"
+				},
+				"get": {
+					"displayName": "Получать"
+				},
+				"merge": {
+					"displayName": "Объединить в дело"
+				},
+				"promote": {
+					"displayName": "Перейти в дело"
+				},
+				"search": {
+					"displayName": "Поиск"
+				},
+				"update": {
+					"displayName": "Обновлять"
+				},
+				"status": {
+					"displayName": "Обновить статус"
+				},
+				"addAttachment": {
+					"displayName": "Добавить вложение"
+				},
+				"deleteAttachment": {
+					"displayName": "Удалить вложение"
+				},
+				"deleteCase": {
+					"displayName": "Удалить обращение"
+				},
+				"getAttachment": {
+					"displayName": "Получить вложение"
+				},
+				"getTimeline": {
+					"displayName": "Получить график"
+				},
+				"add": {
+					"displayName": "Создавать"
+				},
+				"deleteComment": {
+					"displayName": "Удалить"
+				},
+				"deleteLog": {
+					"displayName": "Удалить"
+				},
+				"deleteObservable": {
+					"displayName": "Удалить"
+				},
+				"executeAnalyzer": {
+					"displayName": "Выполнить анализатор"
+				},
+				"deletePage": {
+					"displayName": "Удалить"
+				},
+				"executeQuery": {
+					"displayName": "Выполнить запрос"
+				},
+				"deleteTask": {
+					"displayName": "Удалить"
+				}
+			}
+		},
+		"alertFields": {
+			"displayName": "Поля"
+		},
+		"observableUi": {
+			"options": {
+				"observableUi": {
+					"displayName": "Наблюдаемые"
+				},
+				"values": {
+					"displayName": "Ценности",
+					"values": {
+						"dataType": {
+							"displayName": "Тип данных",
+							"description": "Тип наблюдаемого. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+						},
+						"data": {
+							"displayName": "Данные"
+						},
+						"binaryProperty": {
+							"displayName": "Входное двоичное поле",
+							"hint": "Имя входного двоичного поля, содержащего файл для записи."
+						},
+						"message": {
+							"displayName": "Сообщение"
+						},
+						"tags": {
+							"displayName": "Теги"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить наблюдаемое",
+			"displayName": "Наблюдаемые"
+		},
+		"alertId": {
+			"displayName": "Тревога"
+		},
+		"id": {
+			"displayName": "Задача"
+		},
+		"responder": {
+			"displayName": "Имя или идентификатор ответчика",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"includeSimilarAlerts": {
+					"displayName": "Включить похожие оповещения",
+					"description": "Включать ли аналогичные случаи"
+				},
+				"includeSimilarCases": {
+					"displayName": "Включить похожие случаи",
+					"description": "Включать ли аналогичные случаи"
+				},
+				"returnCount": {
+					"displayName": "Количество возвратов",
+					"description": "Возвращать ли только количество результатов"
+				},
+				"extraData": {
+					"displayName": "Дополнительные данные",
+					"description": "Дополнительные данные для включения в ответ",
+					"options": {
+						"isOwner": {
+							"displayName": "isOwner"
+						},
+						"links": {
+							"displayName": "ссылки"
+						},
+						"permissions": {
+							"displayName": "разрешения"
+						},
+						"seen": {
+							"displayName": "видимый"
+						},
+						"shareCount": {
+							"displayName": "ShareCount"
+						},
+						"shares": {
+							"displayName": "акции"
+						},
+						"actionRequired": {
+							"displayName": "требуется действие"
+						},
+						"actionRequiredMap": {
+							"displayName": "actionRequiredMap"
+						},
+						"case": {
+							"displayName": "случай"
+						},
+						"caseId": {
+							"displayName": "идентификатор дела"
+						},
+						"caseTemplate": {
+							"displayName": "чехолШаблон"
+						},
+						"caseTemplateId": {
+							"displayName": "CaseTemplateId"
+						},
+						"caseNumber": {
+							"displayName": "номер дела"
+						},
+						"importDate": {
+							"displayName": "импортдата"
+						},
+						"procedureCount": {
+							"displayName": "процедураCount"
+						},
+						"status": {
+							"displayName": "статус"
+						},
+						"alertCount": {
+							"displayName": "оповещениеCount"
+						},
+						"alerts": {
+							"displayName": "оповещения"
+						},
+						"attachmentCount": {
+							"displayName": "AttachmentCount"
+						},
+						"contributors": {
+							"displayName": "участники"
+						},
+						"computed": {
+							"handlingDuration": {
+								"displayName": "обработкаПродолжительность"
+							},
+							"handlingDurationInDays": {
+								"displayName": "обработкаDurationInDays"
+							},
+							"handlingDurationInHours": {
+								"displayName": "обработкаDurationInHours"
+							},
+							"handlingDurationInMinutes": {
+								"displayName": "обработкаDurationInMinutes"
+							},
+							"handlingDurationInSeconds": {
+								"displayName": "обработкаDurationInSeconds"
+							}
+						},
+						"observableStats": {
+							"displayName": "наблюдаемая статистика"
+						},
+						"similarAlerts": {
+							"displayName": "ПохожиеОповещения"
+						},
+						"taskStats": {
+							"displayName": "статистика задач"
+						},
+						"actionCount": {
+							"displayName": "ActionCount"
+						},
+						"task": {
+							"displayName": "задача"
+						},
+						"taskId": {
+							"displayName": "идентификатор задачи"
+						}
+					}
+				},
+				"caseTemplate": {
+					"displayName": "Имя или идентификатор шаблона обращения",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"canRename": {
+					"displayName": "Переименовать файлы",
+					"description": "Переименовывать ли файл, если файл с таким именем уже существует"
+				},
+				"fileName": {
+					"displayName": "Имя файла",
+					"description": "Переименуйте файл при загрузке"
+				},
+				"dataPropertyName": {
+					"displayName": "Имя свойства данных",
+					"description": "Имя бинарного свойства, в которое записываются данные вложения"
+				},
+				"category": {
+					"displayName": "Категория"
+				},
+				"title": {
+					"displayName": "Заголовок"
+				},
+				"order": {
+					"displayName": "Заказ"
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"filters": {
+			"options": {
+				"filters": {
+					"displayName": "Фильтры"
+				},
+				"values": {
+					"displayName": "Ценности",
+					"values": {
+						"field": {
+							"displayName": "Поле",
+							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>",
+							"options": {
+								"message": {
+									"displayName": "Сообщение"
+								},
+								"date": {
+									"displayName": "Дата"
+								},
+								"category": {
+									"displayName": "Категория"
+								},
+								"content": {
+									"displayName": "Содержание"
+								},
+								"title": {
+									"displayName": "Заголовок"
+								}
+							}
+						},
+						"operator": {
+							"displayName": "Оператор",
+							"options": {
+								"_between": {
+									"displayName": "Между",
+									"description": "Поле находится между двумя значениями («От» является включенным, «Кому» является исключительным)"
+								},
+								"_like": {
+									"displayName": "Содержит",
+									"description": "Поле содержит подстроку из значения"
+								},
+								"_endsWith": {
+									"displayName": "Заканчивается на",
+									"description": "Поле заканчивается значением"
+								},
+								"_eq": {
+									"displayName": "Равный",
+									"description": "Поле равно значению"
+								},
+								"_gt": {
+									"displayName": "Больше, чем",
+									"description": "Поле больше значения"
+								},
+								"_gte": {
+									"displayName": "Больше или равно",
+									"description": "Поле больше или равно значению"
+								},
+								"_in": {
+									"displayName": "В",
+									"description": "Поле — одно из значений"
+								},
+								"_lt": {
+									"displayName": "Меньше, чем",
+									"description": "Поле меньше значения"
+								},
+								"_lte": {
+									"displayName": "Меньше или равно",
+									"description": "Поле меньше или равно значению"
+								},
+								"_match": {
+									"displayName": "Сопоставить слово",
+									"description": "Поле содержит значение в виде слова"
+								},
+								"_ne": {
+									"displayName": "Не равно",
+									"description": "Поле не равно значению"
+								},
+								"_startsWith": {
+									"displayName": "Начинается с",
+									"description": "Поле начинается со значения"
+								}
+							}
+						},
+						"value": {
+							"displayName": "Ценить"
+						},
+						"values": {
+							"displayName": "Ценности",
+							"description": "Список значений, разделенных запятыми",
+							"placeholder": "например значение1, значение2"
+						},
+						"from": {
+							"displayName": "От"
+						},
+						"to": {
+							"displayName": "К"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить фильтр",
+			"displayName": "Фильтры"
+		},
+		"sort": {
+			"options": {
+				"sort": {
+					"displayName": "Сортировать"
+				},
+				"fields": {
+					"displayName": "Поля",
+					"values": {
+						"field": {
+							"displayName": "Поле",
+							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>",
+							"options": {
+								"message": {
+									"displayName": "Сообщение"
+								},
+								"date": {
+									"displayName": "Дата"
+								},
+								"category": {
+									"displayName": "Категория"
+								},
+								"content": {
+									"displayName": "Содержание"
+								},
+								"title": {
+									"displayName": "Заголовок"
+								}
+							}
+						},
+						"direction": {
+							"displayName": "Направление",
+							"options": {
+								"asc": {
+									"displayName": "восходящий"
+								},
+								"desc": {
+									"displayName": "По убыванию"
+								}
+							}
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить правило сортировки",
+			"displayName": "Сортировать"
+		},
+		"status": {
+			"displayName": "Имя или идентификатор статуса",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"caseId": {
+			"displayName": "Случай"
+		},
+		"alertUpdateFields": {
+			"displayName": "Поля"
+		},
+		"attachmentsUi": {
+			"options": {
+				"attachmentsUi": {
+					"displayName": "Вложения",
+					"description": "Массив поддерживаемых вложений для добавления к сообщению"
+				},
+				"values": {
+					"displayName": "Ценности",
+					"values": {
+						"field": {
+							"displayName": "Имя поля вложения",
+							"description": "Добавьте имя поля из входного узла",
+							"hint": "Имя поля с вложением во входных данных узла"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить вложение",
+			"displayName": "Вложения",
+			"description": "Массив поддерживаемых вложений для добавления к сообщению"
+		},
+		"caseFields": {
+			"displayName": "Поля"
+		},
+		"attachmentId": {
+			"displayName": "Имя или идентификатор вложения",
+			"description": "Идентификатор вложения. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"caseUpdateFields": {
+			"displayName": "Поля"
+		},
+		"addTo": {
+			"displayName": "добавить в",
+			"options": {
+				"alert": {
+					"displayName": "Тревога"
+				},
+				"case": {
+					"displayName": "Случай"
+				}
+			}
+		},
+		"message": {
+			"displayName": "Сообщение"
+		},
+		"commentId": {
+			"displayName": "Комментарий"
+		},
+		"searchIn": {
+			"displayName": "Искать в",
+			"description": "Следует ли искать наблюдаемые во всех оповещениях и случаях или в конкретном случае или оповещении",
+			"options": {
+				"all": {
+					"displayName": "Оповещения и случаи"
+				},
+				"alert": {
+					"displayName": "Тревога"
+				},
+				"case": {
+					"displayName": "Случай"
+				}
+			}
+		},
+		"logId": {
+			"displayName": "Журнал задач"
+		},
+		"taskId": {
+			"displayName": "Задача"
+		},
+		"logFields": {
+			"displayName": "Поля"
+		},
+		"allTasks": {
+			"displayName": "Искать во всех задачах",
+			"description": "Искать во всех задачах или только в выбранной задаче"
+		},
+		"createIn": {
+			"displayName": "Создать в",
+			"options": {
+				"case": {
+					"displayName": "Случай"
+				},
+				"alert": {
+					"displayName": "Тревога"
+				}
+			}
+		},
+		"dataType": {
+			"displayName": "Тип данных",
+			"description": "Тип наблюдаемого. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"data": {
+			"displayName": "Данные"
+		},
+		"observableFields": {
+			"displayName": "Поля"
+		},
+		"observableId": {
+			"displayName": "наблюдаемый"
+		},
+		"analyzers": {
+			"displayName": "Имена или идентификаторы анализаторов",
+			"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"observableUpdateFields": {
+			"displayName": "Поля"
+		},
+		"location": {
+			"displayName": "Обновление в",
+			"options": {
+				"case": {
+					"displayName": "Случай"
+				},
+				"knowledgeBase": {
+					"displayName": "База знаний"
+				}
+			}
+		},
+		"title": {
+			"displayName": "Заголовок"
+		},
+		"category": {
+			"displayName": "Категория"
+		},
+		"content": {
+			"displayName": "Содержание"
+		},
+		"pageId": {
+			"displayName": "Страница"
+		},
+		"searchInKnowledgeBase": {
+			"displayName": "Поиск в базе знаний",
+			"description": "Искать ли в базе знаний или только в выбранном случае"
+		},
+		"queryJson": {
+			"displayName": "Запрос",
+			"description": "Поиск объектов с возможностью фильтрации и сортировки",
+			"hint": "Запрос должен представлять собой массив операций с необходимой выборкой и опциональной фильтрацией, сортировкой и нумерацией страниц. Дополнительную информацию см. в разделе <a href=\"https://docs.strangebee.com/thehive/api-docs/#operation/Query%20API\" target=\"_blank\">Query API</a>."
+		},
+		"taskFields": {
+			"displayName": "Поля"
+		},
+		"allCases": {
+			"displayName": "Поиск во всех случаях",
+			"description": "Следует ли искать во всех случаях или только в выбранном случае"
+		},
+		"taskUpdateFields": {
+			"displayName": "Поля"
+		}
+	}
+}

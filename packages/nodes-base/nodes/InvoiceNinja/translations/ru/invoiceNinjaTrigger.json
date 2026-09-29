@@ -1,0 +1,39 @@
+{
+	"header": {
+		"displayName": "Счет-фактура ниндзя триггер",
+		"description": "Запускает рабочий процесс при возникновении событий Invoice Ninja."
+	},
+	"nodeView": {
+		"apiVersion": {
+			"displayName": "Версия API",
+			"options": {
+				"v4": {
+					"displayName": "Версия 4"
+				},
+				"v5": {
+					"displayName": "Версия 5"
+				}
+			}
+		},
+		"event": {
+			"displayName": "Событие",
+			"options": {
+				"create_client": {
+					"displayName": "Клиент создан"
+				},
+				"create_invoice": {
+					"displayName": "Счет создан"
+				},
+				"create_payment": {
+					"displayName": "Платеж создан"
+				},
+				"create_quote": {
+					"displayName": "Цитата создана"
+				},
+				"create_vendor": {
+					"displayName": "Поставщик создан"
+				}
+			}
+		}
+	}
+}

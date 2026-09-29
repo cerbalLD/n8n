@@ -1,0 +1,476 @@
+{
+	"header": {
+		"displayName": "Сентри.ио",
+		"description": "Использование API Sentry.io"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"accessToken": {
+					"displayName": "Токен доступа (облако)"
+				},
+				"oAuth2": {
+					"displayName": "OAuth2 (облако)"
+				},
+				"accessTokenServer": {
+					"displayName": "Токен доступа (самостоятельное размещение)"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"event": {
+					"displayName": "Событие"
+				},
+				"issue": {
+					"displayName": "Проблема"
+				},
+				"organization": {
+					"displayName": "Организация"
+				},
+				"project": {
+					"displayName": "Проект"
+				},
+				"release": {
+					"displayName": "Выпускать"
+				},
+				"team": {
+					"displayName": "Команда"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить команду по слизню"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить много команд"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить команду"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить команду"
+				},
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать новую команду"
+				}
+			}
+		},
+		"organizationSlug": {
+			"displayName": "Название или идентификатор организации",
+			"description": "Маркировка организации, которой принадлежит команда. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"projectSlug": {
+			"displayName": "Имя или идентификатор пула проекта",
+			"description": "Слаг проекта, который нужно удалить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"full": {
+			"displayName": "Полный",
+			"description": "Будет ли полезная нагрузка события включать в себя полное тело события, включая трассировку стека."
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"eventId": {
+			"displayName": "Идентификатор события",
+			"description": "Идентификатор события, которое нужно получить (числовой первичный ключ или шестнадцатеричный идентификатор, сообщаемый клиентом Raven)."
+		},
+		"issueId": {
+			"displayName": "Идентификатор проблемы",
+			"description": "Идентификатор проблемы, которую нужно получить",
+			"placeholder": "1234"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"query": {
+					"displayName": "Запрос",
+					"description": "Этот параметр можно использовать для создания фильтра «начинается с» для версии."
+				},
+				"statsPeriod": {
+					"displayName": "Период статистики",
+					"description": "Период статистики",
+					"options": {
+						"14d": {
+							"displayName": "14 дней"
+						},
+						"24h": {
+							"displayName": "24 часа"
+						}
+					}
+				},
+				"shortIdLookUp": {
+					"displayName": "Краткий поиск идентификатора",
+					"description": "Просматриваются ли этой функцией короткие идентификаторы. Это может привести к тому, что возвращаемое значение функции будет возвращать событие события другого проекта, поэтому это согласие."
+				},
+				"assignedTo": {
+					"displayName": "Назначено",
+					"description": "Идентификатор субъекта (или имя пользователя) пользователя или команды, которому следует назначить эту задачу."
+				},
+				"hasSeen": {
+					"displayName": "Видел",
+					"description": "Независимо от того, вызывается ли этот вызов API в контексте пользователя, это позволяет изменить флаг, указывающий, видел ли пользователь событие."
+				},
+				"isBookmarked": {
+					"displayName": "В закладках",
+					"description": "Независимо от того, вызывается ли этот вызов API с пользовательским контекстом, это позволяет изменить флаг закладки."
+				},
+				"isPublic": {
+					"displayName": "Является общедоступным",
+					"description": "Установить ли проблему как публичную или частную"
+				},
+				"isSubscribed": {
+					"displayName": "Подписан"
+				},
+				"status": {
+					"displayName": "Статус",
+					"description": "Новый статус проблемы",
+					"options": {
+						"ignored": {
+							"displayName": "игнорируется"
+						},
+						"resolved": {
+							"displayName": "Решено"
+						},
+						"resolvedInNextRelease": {
+							"displayName": "Решенный следующий выпуск"
+						},
+						"unresolved": {
+							"displayName": "нерешенный"
+						}
+					}
+				},
+				"member": {
+					"displayName": "Член",
+					"description": "Ограничить ли результаты результатами организаций, в которых вы состоите?"
+				},
+				"owner": {
+					"displayName": "Владелец",
+					"description": "Ограничить результаты только организациями, владельцем которых вы являетесь"
+				},
+				"slug": {
+					"displayName": "Слизень",
+					"description": "Необязательный слизень для этой команды. Если оно не указано, оно будет автоматически сгенерировано на основе имени."
+				},
+				"dateReleased": {
+					"displayName": "Дата выпуска",
+					"description": "Необязательная дата, указывающая, когда релиз вышел в свет. Если не указано, предполагается текущее время."
+				},
+				"commits": {
+					"values": {
+						"commits": {
+							"displayName": "фиксирует",
+							"description": "Необязательный список данных фиксации, которые будут связаны с выпуском."
+						},
+						"commitProperties": {
+							"options": {
+								"id": {
+									"displayName": "ID",
+									"description": "Ша коммита"
+								},
+								"authorEmail": {
+									"displayName": "Электронная почта автора",
+									"description": "Электронная почта авторов"
+								},
+								"authorName": {
+									"displayName": "Имя автора",
+									"description": "Имя автора"
+								},
+								"message": {
+									"displayName": "Сообщение",
+									"description": "Сообщение о фиксации"
+								},
+								"patchSet": {
+									"values": {
+										"patchSet": {
+											"displayName": "Набор патчей",
+											"description": "Список файлов, которые были изменены в коммите. Указание patch_set необходимо для включения подозрительных коммитов и предполагаемых правопреемников."
+										},
+										"patchSetProperties": {
+											"options": {
+												"path": {
+													"displayName": "Путь",
+													"description": "Путь к файлу. Поддерживаются как прямые, так и обратные косые черты."
+												},
+												"type": {
+													"displayName": "Тип",
+													"description": "Типы изменений, произошедших в этом коммите",
+													"options": {
+														"add": {
+															"displayName": "Добавлять"
+														},
+														"modify": {
+															"displayName": "Изменить"
+														},
+														"delete": {
+															"displayName": "Удалить"
+														}
+													}
+												}
+											}
+										}
+									},
+									"displayName": "Набор патчей",
+									"description": "Список файлов, которые были изменены в коммите. Указание patch_set необходимо для включения подозрительных коммитов и предполагаемых правопреемников.",
+									"options": {
+										"patchSetProperties": {
+											"displayName": "Свойства набора исправлений"
+										}
+									}
+								},
+								"repository": {
+									"displayName": "Репозиторий",
+									"description": "Имя репозитория"
+								},
+								"timestamp": {
+									"displayName": "Временная метка",
+									"description": "Временная метка фиксации"
+								}
+							}
+						}
+					},
+					"displayName": "фиксирует",
+					"description": "Необязательный список данных фиксации, которые будут связаны с выпуском.",
+					"options": {
+						"commitProperties": {
+							"displayName": "Зафиксировать свойства"
+						}
+					}
+				},
+				"refs": {
+					"values": {
+						"refs": {
+							"displayName": "Ссылки",
+							"description": "Дополнительный способ указать начальную и конечную фиксацию для каждого репозитория, включенного в выпуск."
+						},
+						"refProperties": {
+							"options": {
+								"commit": {
+									"displayName": "Совершить",
+									"description": "Глава коммита"
+								},
+								"repository": {
+									"displayName": "Репозиторий",
+									"description": "Имя репозитория"
+								},
+								"previousCommit": {
+									"displayName": "Предыдущий коммит",
+									"description": "Ша РУКОВОДИТЕЛЯ предыдущего выпуска"
+								}
+							}
+						}
+					},
+					"displayName": "Ссылки",
+					"description": "Дополнительный способ указать начальную и конечную фиксацию для каждого репозитория, включенного в выпуск.",
+					"options": {
+						"refProperties": {
+							"displayName": "Ссылочные свойства"
+						}
+					}
+				}
+			}
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Название команды"
+		},
+		"agreeTerms": {
+			"displayName": "Согласен с Условиями",
+			"description": "Согласны ли вы с применимыми условиями обслуживания и политикой конфиденциальности Sentry.io"
+		},
+		"organization_slug": {
+			"displayName": "Имя или идентификатор пули",
+			"description": "Ссылка организации для обновления. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"name": {
+					"displayName": "Имя",
+					"description": "Новое название команды"
+				},
+				"slug": {
+					"displayName": "Слизень",
+					"description": "Новый слизень команды. Должен быть уникальным и доступным."
+				},
+				"isBookmarked": {
+					"displayName": "В закладках",
+					"description": "Новая платформа для обновленного проекта"
+				},
+				"digestsMaxDelay": {
+					"displayName": "Дайджесты максимальной задержки",
+					"description": "Максимальный интервал для обработки оповещений"
+				},
+				"digestsMinDelay": {
+					"displayName": "Минимальная задержка дайджеста",
+					"description": "Минимальный интервал для обработки оповещений"
+				},
+				"team": {
+					"displayName": "Команда",
+					"description": "Новое название команды"
+				},
+				"platform": {
+					"displayName": "Платформа",
+					"description": "Новая платформа для обновленного проекта"
+				},
+				"commits": {
+					"values": {
+						"commits": {
+							"displayName": "фиксирует",
+							"description": "Необязательный список данных фиксации, которые будут связаны с выпуском."
+						},
+						"commitProperties": {
+							"options": {
+								"id": {
+									"displayName": "ID",
+									"description": "Ша коммита"
+								},
+								"authorEmail": {
+									"displayName": "Электронная почта автора",
+									"description": "Электронная почта авторов"
+								},
+								"authorName": {
+									"displayName": "Имя автора",
+									"description": "Имя автора"
+								},
+								"message": {
+									"displayName": "Сообщение",
+									"description": "Сообщение о фиксации"
+								},
+								"patchSet": {
+									"values": {
+										"patchSet": {
+											"displayName": "Набор патчей",
+											"description": "Список файлов, которые были изменены в коммите. Указание patch_set необходимо для включения подозрительных коммитов и предполагаемых правопреемников."
+										},
+										"patchSetProperties": {
+											"options": {
+												"path": {
+													"displayName": "Путь",
+													"description": "Путь к файлу. Поддерживаются как прямые, так и обратные косые черты."
+												},
+												"type": {
+													"displayName": "Тип",
+													"description": "Типы изменений, произошедших в этом коммите",
+													"options": {
+														"add": {
+															"displayName": "Добавлять"
+														},
+														"modify": {
+															"displayName": "Изменить"
+														},
+														"delete": {
+															"displayName": "Удалить"
+														}
+													}
+												}
+											}
+										}
+									},
+									"displayName": "Набор патчей",
+									"description": "Список файлов, которые были изменены в коммите. Указание patch_set необходимо для включения подозрительных коммитов и предполагаемых правопреемников.",
+									"options": {
+										"patchSetProperties": {
+											"displayName": "Свойства набора исправлений"
+										}
+									}
+								},
+								"repository": {
+									"displayName": "Репозиторий",
+									"description": "Имя репозитория"
+								},
+								"timestamp": {
+									"displayName": "Временная метка",
+									"description": "Временная метка фиксации"
+								}
+							}
+						}
+					},
+					"displayName": "фиксирует",
+					"description": "Необязательный список данных фиксации, которые будут связаны с выпуском.",
+					"options": {
+						"commitProperties": {
+							"displayName": "Зафиксировать свойства"
+						}
+					}
+				},
+				"dateReleased": {
+					"displayName": "Дата выпуска",
+					"description": "Необязательная дата, указывающая, когда релиз вышел в свет. Если не указано, предполагается текущее время."
+				},
+				"ref": {
+					"displayName": "Ссылка",
+					"description": "URL-адрес, указывающий на выпуск. Например, это может быть путь к онлайн-интерфейсу к исходному коду."
+				},
+				"refs": {
+					"values": {
+						"refs": {
+							"displayName": "Ссылки",
+							"description": "Дополнительный способ указать начальную и конечную фиксацию для каждого репозитория, включенного в выпуск."
+						},
+						"refProperties": {
+							"options": {
+								"commit": {
+									"displayName": "Совершить",
+									"description": "Глава коммита"
+								},
+								"repository": {
+									"displayName": "Репозиторий",
+									"description": "Имя репозитория"
+								},
+								"previousCommit": {
+									"displayName": "Предыдущий коммит",
+									"description": "Ша РУКОВОДИТЕЛЯ предыдущего выпуска"
+								}
+							}
+						}
+					},
+					"displayName": "Ссылки",
+					"description": "Дополнительный способ указать начальную и конечную фиксацию для каждого репозитория, включенного в выпуск.",
+					"options": {
+						"refProperties": {
+							"displayName": "Ссылочные свойства"
+						}
+					}
+				},
+				"url": {
+					"displayName": "URL",
+					"description": "URL-адрес, указывающий на выпуск. Например, это может быть путь к онлайн-интерфейсу к исходному коду."
+				}
+			}
+		},
+		"teamSlug": {
+			"displayName": "Имя или идентификатор командного слизняка",
+			"description": "Слизень команды для удаления. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"version": {
+			"displayName": "Версия",
+			"description": "Идентификатор версии для этого выпуска. Это может быть номер версии, хеш фиксации и т. д."
+		},
+		"url": {
+			"displayName": "URL",
+			"description": "URL-адрес, указывающий на выпуск. Например, это может быть путь к онлайн-интерфейсу к исходному коду."
+		},
+		"projects": {
+			"displayName": "Названия или идентификаторы проектов",
+			"description": "Список фрагментов проекта, участвующих в этом выпуске. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		}
+	}
+}

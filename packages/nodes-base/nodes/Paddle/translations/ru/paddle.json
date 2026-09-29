@@ -1,0 +1,432 @@
+{
+	"header": {
+		"displayName": "Весло",
+		"description": "Использование API-интерфейса Paddle"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"coupon": {
+					"displayName": "Купон"
+				},
+				"payment": {
+					"displayName": "Оплата"
+				},
+				"plan": {
+					"displayName": "План"
+				},
+				"product": {
+					"displayName": "Продукт"
+				},
+				"user": {
+					"displayName": "Пользователь"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать купон"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить много пользователей"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить купон"
+				},
+				"reschedule": {
+					"displayName": "Перенести",
+					"description": "Перенести платеж"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить план"
+				}
+			}
+		},
+		"couponType": {
+			"displayName": "Тип купона",
+			"description": "Либо продукт (действителен для определенных продуктов или планов подписки), либо оформление заказа (действительно для любого оформления заказа)",
+			"options": {
+				"checkout": {
+					"displayName": "Проверить"
+				},
+				"product": {
+					"displayName": "Продукт"
+				}
+			}
+		},
+		"productIds": {
+			"displayName": "Названия или идентификаторы продуктов",
+			"description": "Список идентификаторов продуктов, разделенных запятыми. Требуется, если тип купона — это продукт. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"discountType": {
+			"displayName": "Тип скидки",
+			"description": "Либо фиксированная, либо процентная",
+			"options": {
+				"flat": {
+					"displayName": "Плоский"
+				},
+				"percentage": {
+					"displayName": "Процент"
+				}
+			}
+		},
+		"discountAmount": {
+			"displayName": "Сумма скидки %",
+			"description": "Сумма скидки в процентах"
+		},
+		"currency": {
+			"displayName": "Валюта",
+			"description": "Валюта должна соответствовать валюте баланса, указанной в вашем аккаунте.",
+			"options": {
+				"ARS": {
+					"displayName": "ARS"
+				},
+				"AUD": {
+					"displayName": "AUD"
+				},
+				"BRL": {
+					"displayName": "BRL"
+				},
+				"CAD": {
+					"displayName": "CAD"
+				},
+				"CHF": {
+					"displayName": "CHF"
+				},
+				"CNY": {
+					"displayName": "CNY"
+				},
+				"CZK": {
+					"displayName": "CZK"
+				},
+				"DKK": {
+					"displayName": "DKK"
+				},
+				"EUR": {
+					"displayName": "EUR"
+				},
+				"GBP": {
+					"displayName": "GBP"
+				},
+				"HKD": {
+					"displayName": "HKD"
+				},
+				"HUF": {
+					"displayName": "HUF"
+				},
+				"INR": {
+					"displayName": "INR"
+				},
+				"JPY": {
+					"displayName": "JPY"
+				},
+				"KRW": {
+					"displayName": "KRW"
+				},
+				"MXN": {
+					"displayName": "MXN"
+				},
+				"NOK": {
+					"displayName": "NOK"
+				},
+				"NZD": {
+					"displayName": "NZD"
+				},
+				"PLN": {
+					"displayName": "PLN"
+				},
+				"RUB": {
+					"displayName": "RUB"
+				},
+				"SEK": {
+					"displayName": "SEK"
+				},
+				"SGD": {
+					"displayName": "SGD"
+				},
+				"THB": {
+					"displayName": "THB"
+				},
+				"TWD": {
+					"displayName": "TWD"
+				},
+				"USD": {
+					"displayName": "USD"
+				},
+				"ZAR": {
+					"displayName": "ZAR"
+				}
+			}
+		},
+		"jsonParameters": {
+			"displayName": "Параметры JSON"
+		},
+		"additionalFieldsJson": {
+			"displayName": "Дополнительные поля",
+			"description": "Атрибуты в форме JSON"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"allowedUses": {
+					"displayName": "Разрешенное использование",
+					"description": "Сколько раз купон можно использовать при оформлении заказа. По умолчанию будет установлено значение 999 999, если не указано иное."
+				},
+				"couponCode": {
+					"displayName": "Код купона",
+					"description": "Будет генерироваться случайным образом, если не указано иное."
+				},
+				"couponPrefix": {
+					"displayName": "Префикс купона",
+					"description": "Префикс для сгенерированных кодов. Недействительно, если указан код купона."
+				},
+				"description": {
+					"displayName": "Описание",
+					"description": "Описание купона. Это будет отображаться в Личном кабинете продавца."
+				},
+				"expires": {
+					"displayName": "Срок действия истекает",
+					"description": "Срок действия купона истекает в 00:00:00 UTC."
+				},
+				"group": {
+					"displayName": "Группа",
+					"description": "Название группы купонов, которой должен быть присвоен этот купон."
+				},
+				"numberOfCoupons": {
+					"displayName": "Количество купонов",
+					"description": "Количество купонов для генерации. Недействительно, если указан код купона."
+				},
+				"recurring": {
+					"displayName": "повторяющийся",
+					"description": "Если купон используется в продуктах по подписке, это указывает, должна ли скидка применяться к повторяющимся платежам после первоначальной покупки."
+				},
+				"discount": {
+					"values": {
+						"discount": {
+							"displayName": "Скидка"
+						},
+						"discountProperties": {
+							"options": {
+								"currency": {
+									"displayName": "Валюта",
+									"description": "Валюта должна соответствовать валюте баланса, указанной в вашем аккаунте.",
+									"options": {
+										"ARS": {
+											"displayName": "ARS"
+										},
+										"AUD": {
+											"displayName": "AUD"
+										},
+										"BRL": {
+											"displayName": "BRL"
+										},
+										"CAD": {
+											"displayName": "CAD"
+										},
+										"CHF": {
+											"displayName": "CHF"
+										},
+										"CNY": {
+											"displayName": "CNY"
+										},
+										"CZK": {
+											"displayName": "CZK"
+										},
+										"DKK": {
+											"displayName": "DKK"
+										},
+										"EUR": {
+											"displayName": "EUR"
+										},
+										"GBP": {
+											"displayName": "GBP"
+										},
+										"HKD": {
+											"displayName": "HKD"
+										},
+										"HUF": {
+											"displayName": "HUF"
+										},
+										"INR": {
+											"displayName": "INR"
+										},
+										"JPY": {
+											"displayName": "JPY"
+										},
+										"KRW": {
+											"displayName": "KRW"
+										},
+										"MXN": {
+											"displayName": "MXN"
+										},
+										"NOK": {
+											"displayName": "NOK"
+										},
+										"NZD": {
+											"displayName": "NZD"
+										},
+										"PLN": {
+											"displayName": "PLN"
+										},
+										"RUB": {
+											"displayName": "RUB"
+										},
+										"SEK": {
+											"displayName": "SEK"
+										},
+										"SGD": {
+											"displayName": "SGD"
+										},
+										"THB": {
+											"displayName": "THB"
+										},
+										"TWD": {
+											"displayName": "TWD"
+										},
+										"USD": {
+											"displayName": "USD"
+										},
+										"ZAR": {
+											"displayName": "ZAR"
+										}
+									}
+								},
+								"discountAmount": {
+									"displayName": "Сумма скидки Процент",
+									"description": "Сумма скидки"
+								},
+								"discountType": {
+									"displayName": "Тип скидки",
+									"description": "Либо фиксированная, либо процентная",
+									"options": {
+										"flat": {
+											"displayName": "Плоский"
+										},
+										"percentage": {
+											"displayName": "Процент"
+										}
+									}
+								}
+							}
+						}
+					},
+					"displayName": "Скидка",
+					"options": {
+						"discountProperties": {
+							"displayName": "Недвижимость со скидкой"
+						}
+					}
+				},
+				"newCouponCode": {
+					"displayName": "Новый код купона",
+					"description": "Новый код для переименования купона"
+				},
+				"newGroup": {
+					"displayName": "Новое имя группы",
+					"description": "Новое название группы, в которую нужно переместить купон"
+				},
+				"productIds": {
+					"displayName": "Идентификаторы продуктов",
+					"description": "Список продуктов, разделенный запятыми, например. 499531,1234,123546. Если пусто, удалите связанные продукты."
+				},
+				"from": {
+					"displayName": "Дата От",
+					"description": "Оплата начиная с даты"
+				},
+				"to": {
+					"displayName": "Дата до",
+					"description": "Оплата до даты"
+				},
+				"isPaid": {
+					"displayName": "Оплачивается",
+					"description": "Оплачена ли оплата"
+				},
+				"plan": {
+					"displayName": "Идентификатор плана",
+					"description": "Фильтр: идентификатор продукта/плана (одиночные значения или значения, разделенные запятыми)."
+				},
+				"subscriptionId": {
+					"displayName": "Идентификатор подписки",
+					"description": "Идентификатор подписки конкретного пользователя"
+				},
+				"state": {
+					"displayName": "Состояние",
+					"description": "Фильтр: Статус подписки пользователя. Возвращает все активные, просроченные, пробные и приостановленные планы подписки, если они не указаны.",
+					"options": {
+						"active": {
+							"displayName": "Активный"
+						},
+						"past_due": {
+							"displayName": "Просроченный платеж"
+						},
+						"paused": {
+							"displayName": "Приостановлено"
+						},
+						"trialing": {
+							"displayName": "испытание"
+						}
+					}
+				},
+				"isOneOffCharge": {
+					"displayName": "Однократная оплата"
+				},
+				"planId": {
+					"displayName": "Идентификатор плана",
+					"description": "Фильтр: идентификатор плана подписки."
+				}
+			}
+		},
+		"productId": {
+			"displayName": "Идентификатор продукта",
+			"description": "Идентификатор конкретного продукта/подписки."
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"updateBy": {
+			"displayName": "Обновить по",
+			"description": "Либо фиксированная, либо процентная",
+			"options": {
+				"couponCode": {
+					"displayName": "Код купона"
+				},
+				"group": {
+					"displayName": "Группа"
+				}
+			}
+		},
+		"couponCode": {
+			"displayName": "Код купона",
+			"description": "Определите купон для обновления"
+		},
+		"group": {
+			"displayName": "Группа",
+			"description": "Название группы купонов, которые вы хотите обновить."
+		},
+		"paymentId": {
+			"displayName": "Имя или идентификатор платежа",
+			"description": "Идентификатор предстоящего платежа по подписке. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"date": {
+			"displayName": "Дата",
+			"description": "Дата, на которую вы хотите перенести платеж"
+		},
+		"planId": {
+			"displayName": "Идентификатор плана",
+			"description": "Фильтр: идентификатор плана подписки."
+		}
+	}
+}

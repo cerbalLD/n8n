@@ -1,0 +1,119 @@
+{
+	"header": {
+		"displayName": "Триггер Microsoft OneDrive",
+		"description": "Триггер для API Microsoft OneDrive."
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"microsoftOneDriveOAuth2Api": {
+					"displayName": "OneDrive OAuth2"
+				},
+				"microsoftOAuth2Api": {
+					"displayName": "Microsoft OAuth2 (график)",
+					"description": "Общие учетные данные Microsoft Graph. Включите области, необходимые этому узлу (например, Files.ReadWrite.All) для учетных данных."
+				},
+				"microsoftEntraServicePrincipalApi": {
+					"displayName": "Руководитель службы Microsoft Entra (только для приложения)",
+					"description": "Доступ только через приложение через регистрацию приложения Microsoft Entra. Выберите пользователя или диск для просмотра в разделе «Доступ от имени»."
+				}
+			}
+		},
+		"resourceTarget": {
+			"displayName": "Доступ как",
+			"description": "На каком диске должен действовать субъект службы (только приложение не имеет личного диска)",
+			"options": {
+				"user": {
+					"displayName": "Пользователь",
+					"description": "Действуйте в OneDrive пользователя (по имени участника-пользователя или идентификатору пользователя)."
+				},
+				"drive": {
+					"displayName": "Водить машину",
+					"description": "Действуйте на конкретном диске (по идентификатору диска)"
+				}
+			}
+		},
+		"userTarget": {
+			"displayName": "Пользователь",
+			"description": "Пользователь, над OneDrive которого должен действовать субъект-служба. Решается один раз за опрос."
+		},
+		"driveTarget": {
+			"displayName": "Водить машину",
+			"description": "Диск, на котором должен действовать субъект службы. Решается один раз за опрос."
+		},
+		"event": {
+			"displayName": "Триггер включен",
+			"options": {
+				"fileCreated": {
+					"displayName": "Файл создан",
+					"description": "Когда создается новый файл"
+				},
+				"fileUpdated": {
+					"displayName": "Файл обновлен",
+					"description": "При изменении существующего файла"
+				},
+				"folderCreated": {
+					"displayName": "Папка создана",
+					"description": "Когда создается новая папка"
+				},
+				"folderUpdated": {
+					"displayName": "Папка обновлена",
+					"description": "Когда существующая папка изменена"
+				}
+			}
+		},
+		"simple": {
+			"displayName": "Упрощать",
+			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+		},
+		"watchFolder": {
+			"displayName": "Смотреть папку",
+			"description": "Следует ли отслеживать созданную папку в данной папке, а не во всем OneDrive."
+		},
+		"watch": {
+			"displayName": "Смотреть",
+			"description": "Как выбрать папку для просмотра",
+			"options": {
+				"anyFile": {
+					"displayName": "Любой файл",
+					"description": "Следите за обновлениями файлов во всем OneDrive."
+				},
+				"selectedFolder": {
+					"displayName": "Внутри папки",
+					"description": "Следите за обновлениями папок внутри выбранной папки."
+				},
+				"selectedFile": {
+					"displayName": "Выбранный файл",
+					"description": "Следите за обновлениями в конкретном файле"
+				},
+				"anyFolder": {
+					"displayName": "Любая папка",
+					"description": "Следите за обновлениями папок во всем OneDrive."
+				},
+				"oneSelectedFolder": {
+					"displayName": "Выбранная папка",
+					"description": "Следите за обновлениями в определенной папке"
+				}
+			}
+		},
+		"fileId": {
+			"displayName": "Файл",
+			"description": "Файл, над которым нужно работать. Параметр «По URL-адресу» принимает только URL-адреса, начинающиеся с «https://onedrive.live.com»."
+		},
+		"folderId": {
+			"displayName": "Папка",
+			"description": "Папка, над которой нужно работать. Параметр «По URL-адресу» принимает только URL-адреса, начинающиеся с «https://onedrive.live.com»."
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"folderChild": {
+					"displayName": "Смотреть вложенные папки",
+					"description": "Искать ли измененные файлы/папки во всех вложенных папках, а не только в прямых потомках"
+				}
+			}
+		}
+	}
+}

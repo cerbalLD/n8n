@@ -1,0 +1,356 @@
+{
+	"header": {
+		"displayName": "Орбита",
+		"description": "Использовать API Орбиты"
+	},
+	"nodeView": {
+		"deprecated": {
+			"displayName": "Orbit закрыта и больше не будет работать с 11 июля. Подробнее можно прочитать <a target=\"_blank\" href=\"https://orbit.love/blog/orbit-is-joining-postman\">здесь</a>."
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"activity": {
+					"displayName": "Активность"
+				},
+				"member": {
+					"displayName": "Член"
+				},
+				"note": {
+					"displayName": "Примечание"
+				},
+				"post": {
+					"displayName": "Почта"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать публикацию"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить много сообщений"
+				},
+				"upsert": {
+					"displayName": "Создать или обновить",
+					"description": "Создайте нового участника или обновите текущего, если он уже существует (upsert)."
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить сообщение"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить члена"
+				},
+				"lookup": {
+					"displayName": "Искать",
+					"description": "Поиск участника по личности"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить заметку"
+				}
+			}
+		},
+		"workspaceId": {
+			"displayName": "Имя или идентификатор рабочей области",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"memberId": {
+			"displayName": "Идентификатор участника"
+		},
+		"title": {
+			"displayName": "Заголовок"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"activityType": {
+					"displayName": "Имя или идентификатор типа действия",
+					"description": "Определяемый пользователем способ группировки действий одного и того же характера. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"description": {
+					"displayName": "Описание",
+					"description": "Описание деятельности; отображается на временной шкале"
+				},
+				"key": {
+					"displayName": "Ключ",
+					"description": "Укажите ключ, который должен быть уникальным, или оставьте пустым, чтобы он был сгенерирован."
+				},
+				"link": {
+					"displayName": "Связь",
+					"description": "URL-адрес действия; отображается на временной шкале"
+				},
+				"linkText": {
+					"displayName": "Текст ссылки",
+					"description": "Текст ссылки на временную шкалу"
+				},
+				"occurredAt": {
+					"displayName": "Произошло в",
+					"description": "Дата и время совершения действия; по умолчанию сейчас"
+				},
+				"bio": {
+					"displayName": "Био"
+				},
+				"birthday": {
+					"displayName": "День рождения"
+				},
+				"company": {
+					"displayName": "Компания"
+				},
+				"location": {
+					"displayName": "Расположение"
+				},
+				"name": {
+					"displayName": "Имя"
+				},
+				"pronouns": {
+					"displayName": "Местоимения"
+				},
+				"shippingAddress": {
+					"displayName": "Адрес доставки"
+				},
+				"slug": {
+					"displayName": "Слизень"
+				},
+				"tagsToAdd": {
+					"displayName": "Теги для добавления",
+					"description": "Добавляет теги участнику; строка или массив, разделенные запятыми"
+				},
+				"tagList": {
+					"displayName": "Список тегов",
+					"description": "Заменяет все теги участника; строка или массив, разделенные запятыми"
+				},
+				"tShirt": {
+					"displayName": "Футболка"
+				},
+				"teammate": {
+					"displayName": "Товарищ по команде"
+				},
+				"url": {
+					"displayName": "URL"
+				},
+				"publishedAt": {
+					"displayName": "Произошло в"
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"memberId": {
+					"displayName": "Идентификатор участника",
+					"description": "Если установлено, сообщение будет фильтроваться по идентификатору участника."
+				}
+			}
+		},
+		"resolveIdentities": {
+			"displayName": "Разрешение личности",
+			"description": "По умолчанию ответ включает только ссылку на удостоверение. Если установлено значение true, идентификаторы будут определены автоматически."
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"sort": {
+					"displayName": "Сортировать по",
+					"description": "Имя поля, по которому будет отсортирован ответ"
+				},
+				"direction": {
+					"displayName": "Направление сортировки",
+					"options": {
+						"ASC": {
+							"displayName": "ASC"
+						},
+						"DESC": {
+							"displayName": "DESC"
+						}
+					}
+				}
+			}
+		},
+		"source": {
+			"displayName": "Источник",
+			"description": "Установите github, twitter, электронную почту, обсуждение или источник любых личностей, созданных вами вручную.",
+			"options": {
+				"discourse": {
+					"displayName": "Дискурс"
+				},
+				"email": {
+					"displayName": "Электронная почта"
+				},
+				"github": {
+					"displayName": "GitHub"
+				},
+				"twitter": {
+					"displayName": "Твиттер"
+				}
+			}
+		},
+		"searchBy": {
+			"displayName": "Поиск по",
+			"options": {
+				"username": {
+					"displayName": "Имя пользователя"
+				},
+				"id": {
+					"displayName": "ID"
+				}
+			}
+		},
+		"id": {
+			"displayName": "ID",
+			"description": "Имя пользователя в источнике"
+		},
+		"username": {
+			"displayName": "Имя пользователя",
+			"description": "Имя пользователя в источнике"
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"description": "Адрес электронной почты",
+			"placeholder": "имя@email.com"
+		},
+		"host": {
+			"displayName": "Хозяин"
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"bio": {
+					"displayName": "Био"
+				},
+				"birthday": {
+					"displayName": "День рождения"
+				},
+				"company": {
+					"displayName": "Компания"
+				},
+				"location": {
+					"displayName": "Расположение"
+				},
+				"name": {
+					"displayName": "Имя"
+				},
+				"pronouns": {
+					"displayName": "Местоимения"
+				},
+				"shippingAddress": {
+					"displayName": "Адрес доставки"
+				},
+				"slug": {
+					"displayName": "Слизень"
+				},
+				"tagsToAdd": {
+					"displayName": "Теги для добавления",
+					"description": "Добавляет теги участнику; строка или массив, разделенные запятыми"
+				},
+				"tagList": {
+					"displayName": "Список тегов",
+					"description": "Заменяет все теги участника; строка или массив, разделенные запятыми"
+				},
+				"tShirt": {
+					"displayName": "Футболка"
+				},
+				"teammate": {
+					"displayName": "Товарищ по команде"
+				},
+				"url": {
+					"displayName": "URL"
+				}
+			}
+		},
+		"identityUi": {
+			"options": {
+				"identityUi": {
+					"displayName": "Личность",
+					"description": "Идентичность используется для поиска участника. Если ни один участник не существует, будет создан новый участник, связанный с предоставленным идентификатором."
+				},
+				"identityValue": {
+					"displayName": "Личность",
+					"values": {
+						"source": {
+							"displayName": "Источник",
+							"description": "Установите github, twitter, электронную почту, обсуждение или источник любых личностей, созданных вами вручную.",
+							"options": {
+								"discourse": {
+									"displayName": "Дискурс"
+								},
+								"email": {
+									"displayName": "Электронная почта"
+								},
+								"github": {
+									"displayName": "GitHub"
+								},
+								"twitter": {
+									"displayName": "Твиттер"
+								}
+							}
+						},
+						"searchBy": {
+							"displayName": "Поиск по",
+							"options": {
+								"username": {
+									"displayName": "Имя пользователя"
+								},
+								"id": {
+									"displayName": "ID"
+								}
+							}
+						},
+						"id": {
+							"displayName": "ID",
+							"description": "Имя пользователя в источнике"
+						},
+						"username": {
+							"displayName": "Имя пользователя",
+							"description": "Имя пользователя в источнике"
+						},
+						"email": {
+							"displayName": "Электронная почта",
+							"placeholder": "имя@email.com"
+						},
+						"host": {
+							"displayName": "Хозяин"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить личность",
+			"displayName": "Личность",
+			"description": "Идентичность используется для поиска участника. Если ни один участник не существует, будет создан новый участник, связанный с предоставленным идентификатором."
+		},
+		"note": {
+			"displayName": "Примечание"
+		},
+		"resolveMember": {
+			"displayName": "Решить участника"
+		},
+		"noteId": {
+			"displayName": "Идентификатор заметки"
+		},
+		"url": {
+			"displayName": "URL",
+			"description": "Укажите любой URL-адрес, и Orbit сделает все возможное, чтобы проанализировать заголовок, описание и изображение."
+		},
+		"postId": {
+			"displayName": "Идентификатор сообщения"
+		}
+	}
+}

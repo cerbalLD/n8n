@@ -1,0 +1,310 @@
+{
+	"header": {
+		"displayName": "Домофон",
+		"description": "Использование API внутренней связи"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"company": {
+					"displayName": "Компания",
+					"description": "Компании позволяют вам представлять коммерческие организации, использующие ваш продукт."
+				},
+				"lead": {
+					"displayName": "Вести",
+					"description": "Интересы полезны для представления пользователей, вышедших из вашего приложения."
+				},
+				"user": {
+					"displayName": "Пользователь",
+					"description": "Ресурс «Пользователи» — основной способ взаимодействия с Intercom."
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать новую компанию"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удаление пользователя"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить данные о компании"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получите данные многих компаний"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить компанию"
+				},
+				"users": {
+					"displayName": "Пользователи",
+					"description": "Список пользователей компании"
+				}
+			}
+		},
+		"id": {
+			"displayName": "ID",
+			"description": "Определенный Интеркомом идентификатор, представляющий Лида"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"company_id": {
+					"displayName": "Идентификатор компании",
+					"description": "Идентификатор компании, представляющий пользователя"
+				},
+				"email": {
+					"displayName": "Электронная почта",
+					"description": "Адрес электронной почты лида",
+					"placeholder": "имя@email.com"
+				},
+				"segment_id": {
+					"displayName": "Идентификатор сегмента",
+					"description": "Сегмент, представляющий Лида"
+				},
+				"tag_id": {
+					"displayName": "Идентификатор тега",
+					"description": "Тег, представляющий интерес"
+				},
+				"phone": {
+					"displayName": "Телефон",
+					"description": "Номер телефона лида"
+				}
+			}
+		},
+		"selectBy": {
+			"displayName": "Выбрать по",
+			"description": "Какое свойство использовать для запроса компании",
+			"options": {
+				"id": {
+					"displayName": "ID",
+					"description": "Интерком определил идентификатор, представляющий компанию"
+				},
+				"userId": {
+					"displayName": "ID пользователя",
+					"description": "Автоматически сгенерированный идентификатор Лида"
+				},
+				"email": {
+					"displayName": "Электронная почта",
+					"description": "Электронная почта, представляющая ведущего"
+				},
+				"phone": {
+					"displayName": "Телефон",
+					"description": "Телефон представителя Лида"
+				},
+				"companyId": {
+					"displayName": "Идентификатор компании",
+					"description": "Company_id, который вы дали компании"
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Название компании"
+				}
+			}
+		},
+		"value": {
+			"displayName": "Ценить",
+			"description": "Просмотр по значению"
+		},
+		"updateBy": {
+			"displayName": "Обновить по",
+			"description": "Свойство, через которое можно запросить интерес.",
+			"options": {
+				"id": {
+					"displayName": "ID",
+					"description": "Определенный Интеркомом идентификатор, представляющий Лида"
+				},
+				"email": {
+					"displayName": "Электронная почта",
+					"description": "Адрес электронной почты пользователя"
+				},
+				"userId": {
+					"displayName": "ID пользователя",
+					"description": "Автоматически сгенерированный идентификатор Лида"
+				}
+			}
+		},
+		"identifierType": {
+			"displayName": "Тип идентификатора",
+			"description": "Уникальный идентификатор строки",
+			"options": {
+				"userId": {
+					"displayName": "ID пользователя",
+					"description": "Уникальный строковый идентификатор пользователя. Это необходимо при создании, если адрес электронной почты не указан."
+				},
+				"email": {
+					"displayName": "Электронная почта",
+					"description": "Адрес электронной почты пользователя. Это необходимо при создании, если user_id не указан."
+				}
+			}
+		},
+		"idValue": {
+			"displayName": "Ценить",
+			"description": "Уникальное значение идентификатора строки"
+		},
+		"jsonParameters": {
+			"displayName": "Параметры JSON"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"avatar": {
+					"displayName": "Аватар",
+					"description": "URL-адрес изображения аватара. Примечание: URL-адрес изображения должен быть https."
+				},
+				"companies": {
+					"displayName": "Названия компаний или идентификаторы",
+					"description": "Определяет компании, которым принадлежит этот пользователь. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"email": {
+					"displayName": "Электронная почта",
+					"description": "Электронная почта пользователя",
+					"placeholder": "имя@email.com"
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Имя пользователя"
+				},
+				"phone": {
+					"displayName": "Телефон",
+					"description": "Номер телефона пользователя"
+				},
+				"sessionCount": {
+					"displayName": "Количество сеансов",
+					"description": "Сколько сеансов записал пользователь"
+				},
+				"userId": {
+					"displayName": "ID пользователя",
+					"description": "Электронная почта пользователя"
+				},
+				"unsubscribedFromEmails": {
+					"displayName": "Отказ от подписки на электронные письма",
+					"description": "Отписывается ли Лид от электронных писем"
+				},
+				"updateLastRequestAt": {
+					"displayName": "Обновить последний запрос в",
+					"description": "Следует ли поручить Intercom обновить значение пользователя Last_request_at до текущего времени обслуживания API в формате UTC. значение по умолчанию, если оно не отправлено, является ложным."
+				},
+				"utmCampaign": {
+					"displayName": "UTM-кампания",
+					"description": "Определяет конкретное продвижение продукта или стратегическую кампанию."
+				},
+				"utmContent": {
+					"displayName": "UTM-контент",
+					"description": "Определяет, что конкретно было нажато, чтобы привести пользователя на сайт."
+				},
+				"utmMedium": {
+					"displayName": "UTM средний",
+					"description": "Определяет, какой тип ссылки был использован."
+				},
+				"utmSource": {
+					"displayName": "UTM-источник",
+					"description": "URL-адрес изображения аватара. Примечание: URL-адрес изображения должен быть https."
+				},
+				"utmTerm": {
+					"displayName": "UTM-термин",
+					"description": "Определяет условия поиска"
+				},
+				"industry": {
+					"displayName": "Промышленность",
+					"description": "Отрасль, в которой работает данная компания"
+				},
+				"monthlySpend": {
+					"displayName": "Ежемесячные расходы",
+					"description": "Номер телефона пользователя"
+				},
+				"plan": {
+					"displayName": "План",
+					"description": "Название плана, который вы связали с компанией"
+				},
+				"size": {
+					"displayName": "Размер",
+					"description": "Количество сотрудников в этой компании"
+				},
+				"website": {
+					"displayName": "Веб-сайт",
+					"description": "URL-адрес веб-сайта этой компании. Обратите внимание, что указанное здесь значение не проверено. Принимает любую строку."
+				}
+			}
+		},
+		"customAttributesJson": {
+			"displayName": "Пользовательские атрибуты",
+			"description": "Хэш пар ключ/значение для представления пользовательских данных, которые вы хотите приписать пользователю."
+		},
+		"customAttributesUi": {
+			"options": {
+				"customAttributesUi": {
+					"displayName": "Пользовательские атрибуты",
+					"description": "Хэш пар ключ/значение для представления пользовательских данных, которые вы хотите приписать пользователю."
+				},
+				"customAttributesValues": {
+					"displayName": "Атрибуты",
+					"values": {
+						"name": {
+							"displayName": "Имя"
+						},
+						"value": {
+							"displayName": "Ценить"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить атрибут",
+			"displayName": "Пользовательские атрибуты",
+			"description": "Хэш пар ключ/значение для представления пользовательских данных, которые вы хотите приписать пользователю."
+		},
+		"deleteBy": {
+			"displayName": "Удалить по",
+			"options": {
+				"id": {
+					"displayName": "ID",
+					"description": "Определенный Интеркомом идентификатор, представляющий Лида"
+				},
+				"userId": {
+					"displayName": "ID пользователя",
+					"description": "Автоматически сгенерированный идентификатор Лида"
+				}
+			}
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"description": "Электронная почта пользователя",
+			"placeholder": "имя@email.com"
+		},
+		"listBy": {
+			"displayName": "Список по",
+			"options": {
+				"id": {
+					"displayName": "ID",
+					"description": "Интерком определил идентификатор, представляющий компанию"
+				},
+				"companyId": {
+					"displayName": "Идентификатор компании",
+					"description": "Company_id, который вы дали компании"
+				}
+			}
+		},
+		"companyId": {
+			"displayName": "Идентификатор компании",
+			"description": "Идентификатор компании, который вы определили для компании."
+		}
+	}
+}

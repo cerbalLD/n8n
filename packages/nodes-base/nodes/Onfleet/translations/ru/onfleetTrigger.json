@@ -1,0 +1,74 @@
+{
+	"header": {
+		"displayName": "Триггер на флоте",
+		"description": "Запускает рабочий процесс при возникновении событий Onfleet."
+	},
+	"nodeView": {
+		"triggerOn": {
+			"displayName": "Триггер включен",
+			"options": {
+				"SMSRecipientOptOut": {
+					"displayName": "Отказ получателя SMS"
+				},
+				"smsRecipientResponseMissed": {
+					"displayName": "Ответ получателя SMS пропущен"
+				},
+				"taskArrival": {
+					"displayName": "Прибытие задачи"
+				},
+				"taskAssigned": {
+					"displayName": "Задача назначена"
+				},
+				"taskCloned": {
+					"displayName": "Задача клонирована"
+				},
+				"taskCompleted": {
+					"displayName": "Задача выполнена"
+				},
+				"taskCreated": {
+					"displayName": "Задача создана"
+				},
+				"taskDelayed": {
+					"displayName": "Задача отложена"
+				},
+				"taskDeleted": {
+					"displayName": "Задача удалена"
+				},
+				"taskEta": {
+					"displayName": "Расчетное время выполнения задачи"
+				},
+				"taskFailed": {
+					"displayName": "Задача не выполнена"
+				},
+				"taskStarted": {
+					"displayName": "Задача запущена"
+				},
+				"taskUnassigned": {
+					"displayName": "Задача не назначена"
+				},
+				"taskUpdated": {
+					"displayName": "Задача обновлена"
+				},
+				"workerCreated": {
+					"displayName": "Работник создан"
+				},
+				"workerDeleted": {
+					"displayName": "Работник удален"
+				},
+				"workerDuty": {
+					"displayName": "Рабочий долг"
+				}
+			}
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"name": {
+					"displayName": "Имя",
+					"description": "Имя вебхука для идентификации."
+				}
+			}
+		}
+	}
+}

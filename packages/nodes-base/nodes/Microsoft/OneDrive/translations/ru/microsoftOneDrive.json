@@ -1,0 +1,250 @@
+{
+	"header": {
+		"displayName": "Microsoft OneDrive",
+		"description": "Использование API Microsoft OneDrive"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"microsoftOneDriveOAuth2Api": {
+					"displayName": "OneDrive OAuth2"
+				},
+				"microsoftOAuth2Api": {
+					"displayName": "Microsoft OAuth2 (график)",
+					"description": "Общие учетные данные Microsoft Graph. Включите области, необходимые этому узлу (например, Files.ReadWrite.All) для учетных данных."
+				},
+				"microsoftEntraServicePrincipalApi": {
+					"displayName": "Руководитель службы Microsoft Entra (только для приложения)",
+					"description": "Доступ только через приложение через регистрацию приложения Microsoft Entra. Выберите, с каким пользователем или диском действовать, в разделе «Доступ как»."
+				}
+			}
+		},
+		"resourceTarget": {
+			"displayName": "Доступ как",
+			"description": "На каком диске должен действовать субъект службы (только приложение не имеет личного диска)",
+			"options": {
+				"user": {
+					"displayName": "Пользователь",
+					"description": "Действуйте в OneDrive пользователя (по имени участника-пользователя или идентификатору пользователя)."
+				},
+				"drive": {
+					"displayName": "Водить машину",
+					"description": "Действуйте на конкретном диске (по идентификатору диска)"
+				}
+			}
+		},
+		"userTarget": {
+			"displayName": "Пользователь",
+			"description": "Пользователь, над OneDrive которого должен действовать субъект-служба. Оценивается для каждого элемента ввода, поэтому выражение может быть нацелено на разных пользователей для каждого элемента."
+		},
+		"driveTarget": {
+			"displayName": "Водить машину",
+			"description": "Диск, на котором должен действовать субъект службы. Оценивается для каждого входного элемента, поэтому выражение может быть нацелено на другой диск для каждого элемента."
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"file": {
+					"displayName": "Файл"
+				},
+				"folder": {
+					"displayName": "Папка"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"copy": {
+					"displayName": "Копировать",
+					"description": "Скопировать файл"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить папку"
+				},
+				"download": {
+					"displayName": "Скачать",
+					"description": "Скачать файл"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить файл"
+				},
+				"move": {
+					"displayName": "Двигаться",
+					"description": "Переместить папку"
+				},
+				"rename": {
+					"displayName": "Переименовать",
+					"description": "Переименование папки"
+				},
+				"search": {
+					"displayName": "Поиск",
+					"description": "Поиск в папке"
+				},
+				"share": {
+					"displayName": "Делиться",
+					"description": "Поделиться папкой"
+				},
+				"upload": {
+					"displayName": "Загрузить",
+					"description": "Загрузите файл размером до 4 МБ."
+				},
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать папку"
+				},
+				"getChildren": {
+					"displayName": "Получить детей",
+					"description": "Получить элементы внутри папки"
+				}
+			}
+		},
+		"fileId": {
+			"displayName": "Идентификатор файла",
+			"description": "Идентификатор файла для перемещения"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"name": {
+					"displayName": "Новое имя",
+					"description": "Новое имя папки. Если опущено, существующее имя сохраняется."
+				}
+			}
+		},
+		"parentReference": {
+			"displayName": "Родительская ссылка",
+			"description": "Ссылка на родительский элемент, копия которого будет создана в <a href=\"https://docs.microsoft.com/en-us/onedrive/developer/rest-api/resources/itemreference?view=odsp-graph-online\">. Подробности </a>.",
+			"placeholder": "Добавить родительскую ссылку",
+			"options": {
+				"driveId": {
+					"displayName": "Идентификатор диска",
+					"description": "Идентификатор экземпляра диска, содержащего элемент"
+				},
+				"driveType": {
+					"displayName": "Тип привода",
+					"description": "Определяет тип диска"
+				},
+				"id": {
+					"displayName": "ID",
+					"description": "Идентификатор объекта на диске"
+				},
+				"listId": {
+					"displayName": "Идентификатор списка",
+					"description": "Идентификатор списка"
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Имя элемента, на который имеется ссылка"
+				},
+				"path": {
+					"displayName": "Путь",
+					"description": "Путь, по которому можно перейти к элементу"
+				},
+				"shareId": {
+					"displayName": "Идентификатор общего доступа",
+					"description": "Идентификатор общего ресурса, доступ к которому можно получить через Shares API."
+				},
+				"siteId": {
+					"displayName": "Идентификатор сайта",
+					"description": "Идентификатор сайта"
+				}
+			}
+		},
+		"binaryPropertyName": {
+			"displayName": "Входное двоичное поле",
+			"hint": "Имя входного двоичного поля, содержащего файл для записи."
+		},
+		"destinationFolderId": {
+			"displayName": "Идентификатор папки назначения",
+			"description": "Идентификатор папки назначения, в которую необходимо переместить элемент. Используйте `root` для папки верхнего уровня диска.",
+			"placeholder": "корень"
+		},
+		"itemId": {
+			"displayName": "Идентификатор предмета",
+			"description": "идентификатор папки"
+		},
+		"newName": {
+			"displayName": "Новое имя",
+			"description": "Новое имя папки"
+		},
+		"searchUnsupportedNotice": {
+			"displayName": "Поиск недоступен с учетными данными участника службы. Microsoft Graph только для приложений не может выполнять поиск на диске — используйте «Папка: Получить дочерние элементы» или переключитесь на учетные данные OAuth2."
+		},
+		"query": {
+			"displayName": "Запрос",
+			"description": "Текст запроса, используемый для поиска элементов. Значения могут сопоставляться в нескольких полях, включая имя файла, метаданные и содержимое файла."
+		},
+		"shareServicePrincipalNotice": {
+			"displayName": "При использовании учетных данных субъекта-службы для создания ссылки общего доступа используются разрешения приложения, и для успеха может потребоваться дополнительная настройка клиента или администратора."
+		},
+		"type": {
+			"displayName": "Тип",
+			"description": "Тип создаваемой ссылки для общего доступа",
+			"options": {
+				"view": {
+					"displayName": "Вид"
+				},
+				"edit": {
+					"displayName": "Редактировать"
+				},
+				"embed": {
+					"displayName": "Встроить"
+				}
+			}
+		},
+		"scope": {
+			"displayName": "Объем",
+			"description": "Тип создаваемой ссылки для общего доступа",
+			"options": {
+				"anonymous": {
+					"displayName": "Анонимный"
+				},
+				"organization": {
+					"displayName": "Организация"
+				}
+			}
+		},
+		"fileName": {
+			"displayName": "Имя файла",
+			"description": "Имя, под которым должен быть сохранен файл"
+		},
+		"parentId": {
+			"displayName": "Идентификатор родителя",
+			"description": "Идентификатор родительской папки, в которой будет находиться файл. Используйте `root` для папки верхнего уровня диска.",
+			"placeholder": "корень"
+		},
+		"binaryData": {
+			"displayName": "Двоичный файл",
+			"description": "Следует ли брать данные для загрузки из двоичного поля"
+		},
+		"fileContent": {
+			"displayName": "Содержимое файла",
+			"description": "Текстовое содержимое файла"
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Имя или путь к папке",
+			"placeholder": "/Фото/2021"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"parentFolderId": {
+					"displayName": "Идентификатор родительской папки",
+					"description": "Идентификатор папки, в которой вы хотите создать новую папку"
+				}
+			}
+		},
+		"folderId": {
+			"displayName": "Идентификатор папки",
+			"description": "Идентификатор файла",
+			"hint": "Используйте `root` для папки верхнего уровня диска."
+		}
+	}
+}

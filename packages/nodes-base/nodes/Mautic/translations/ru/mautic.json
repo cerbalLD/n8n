@@ -1,0 +1,678 @@
+{
+	"header": {
+		"displayName": "Маутик",
+		"description": "Использование Mautic API"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"credentials": {
+					"displayName": "Реквизиты для входа"
+				},
+				"oAuth2": {
+					"displayName": "ОАут2"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"campaignContact": {
+					"displayName": "Контакты кампании",
+					"description": "Добавить/удалить контакты в/из кампании"
+				},
+				"company": {
+					"displayName": "Компания",
+					"description": "Создать или изменить компанию"
+				},
+				"companyContact": {
+					"displayName": "Контакты компании",
+					"description": "Добавить/удалить контакты в/из компании"
+				},
+				"contact": {
+					"displayName": "Контакт",
+					"description": "Создание и изменение контактов"
+				},
+				"contactSegment": {
+					"displayName": "Контактный сегмент",
+					"description": "Добавить/удалить контакты в/из сегмента"
+				},
+				"segmentEmail": {
+					"displayName": "Сегментировать электронную почту",
+					"description": "Отправить электронное письмо"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать новый контакт"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удаление контакта"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить данные контакта"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить данные многих контактов"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить контакт"
+				},
+				"editContactPoint": {
+					"displayName": "Изменить контактные данные",
+					"description": "Редактировать баллы контакта"
+				},
+				"editDoNotContactList": {
+					"displayName": "Редактировать список запрещенных контактов",
+					"description": "Добавлять/удалять контакты из/в список запрещенных контактов"
+				},
+				"sendEmail": {
+					"displayName": "Отправить электронное письмо",
+					"description": "Отправить электронное письмо для контакта"
+				},
+				"add": {
+					"displayName": "Добавлять",
+					"description": "Добавить контакт в компанию"
+				},
+				"remove": {
+					"displayName": "Удалять",
+					"description": "Удаление контакта из компании"
+				},
+				"send": {
+					"displayName": "Отправлять"
+				}
+			}
+		},
+		"name": {
+			"displayName": "Название компании",
+			"description": "Название компании, которую нужно создать"
+		},
+		"simple": {
+			"displayName": "Упрощать",
+			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"addressUi": {
+					"values": {
+						"addressUi": {
+							"displayName": "Адрес"
+						},
+						"addressValues": {
+							"options": {
+								"address1": {
+									"displayName": "Адресная строка 1"
+								},
+								"address2": {
+									"displayName": "Адресная строка 2"
+								},
+								"city": {
+									"displayName": "Город"
+								},
+								"state": {
+									"displayName": "Состояние"
+								},
+								"country": {
+									"displayName": "Страна"
+								},
+								"zipCode": {
+									"displayName": "Почтовый индекс"
+								}
+							}
+						}
+					},
+					"placeholder": "Адрес",
+					"displayName": "Адрес",
+					"options": {
+						"addressValues": {
+							"displayName": "Адрес"
+						}
+					}
+				},
+				"annualRevenue": {
+					"displayName": "Годовой доход"
+				},
+				"companyEmail": {
+					"displayName": "Электронная почта компании"
+				},
+				"customFieldsUi": {
+					"values": {
+						"customFieldsUi": {
+							"displayName": "Пользовательские поля",
+							"description": "Добавляет настраиваемые поля для установки значений, которые не были заданы заранее."
+						},
+						"customFieldValues": {
+							"options": {
+								"fieldId": {
+									"displayName": "Имя поля или идентификатор",
+									"description": "Идентификатор поля, которое необходимо установить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								},
+								"fieldValue": {
+									"displayName": "Значение поля",
+									"description": "Значение поля для установки"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить пользовательские поля",
+					"displayName": "Пользовательские поля",
+					"description": "Добавляет настраиваемые поля для установки значений, которые не были заданы заранее.",
+					"options": {
+						"customFieldValues": {
+							"displayName": "Поле"
+						}
+					}
+				},
+				"description": {
+					"displayName": "Описание"
+				},
+				"fax": {
+					"displayName": "Факс"
+				},
+				"industry": {
+					"displayName": "Название или идентификатор отрасли",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"isPublished": {
+					"displayName": "Опубликовано"
+				},
+				"numberOfEmpoyees": {
+					"displayName": "Количество сотрудников"
+				},
+				"overwriteWithBlank": {
+					"displayName": "Перезаписать пустым",
+					"description": "Устанавливаются ли в поля пустые значения. В противном случае пустые значения пропускаются."
+				},
+				"phone": {
+					"displayName": "Телефон"
+				},
+				"website": {
+					"displayName": "Веб-сайт"
+				},
+				"orderByDir": {
+					"displayName": "Направление заказа",
+					"description": "Направление сортировки: по возрастанию или по убыванию",
+					"options": {
+						"asc": {
+							"displayName": "ASC"
+						},
+						"desc": {
+							"displayName": "DESC"
+						}
+					}
+				},
+				"orderBy": {
+					"displayName": "Заказ по имени или идентификатору",
+					"description": "Столбец для сортировки. Можно использовать любой столбец, указанный в ответе. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"search": {
+					"displayName": "Поиск",
+					"description": "Строка или команда поиска для фильтрации объектов по"
+				},
+				"b2bOrb2c": {
+					"displayName": "B2B или B2C",
+					"options": {
+						"B2B": {
+							"displayName": "B2B"
+						},
+						"B2C": {
+							"displayName": "B2C"
+						}
+					}
+				},
+				"crmId": {
+					"displayName": "Идентификатор CRM"
+				},
+				"hasPurchased": {
+					"displayName": "Купил"
+				},
+				"ipAddress": {
+					"displayName": "IP-адрес",
+					"description": "IP-адрес для связи с контактом"
+				},
+				"lastActive": {
+					"displayName": "Последняя активность",
+					"description": "Дата/время в формате UTC;"
+				},
+				"mobile": {
+					"displayName": "мобильный"
+				},
+				"ownerId": {
+					"displayName": "Идентификатор владельца",
+					"description": "Идентификатор пользователя Mautic, которому можно назначить этот контакт"
+				},
+				"prospectOrCustomer": {
+					"displayName": "Потенциальный клиент или клиент",
+					"options": {
+						"Prospect": {
+							"displayName": "Перспектива"
+						},
+						"Customer": {
+							"displayName": "Клиент"
+						}
+					}
+				},
+				"sandbox": {
+					"displayName": "Песочница"
+				},
+				"stage": {
+					"displayName": "Сценическое имя или идентификатор",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"tags": {
+					"displayName": "Имена или идентификаторы тегов",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"socialMediaUi": {
+					"values": {
+						"socialMediaUi": {
+							"displayName": "Социальные сети"
+						},
+						"socialMediaValues": {
+							"options": {
+								"facebook": {
+									"displayName": "Фейсбук"
+								},
+								"foursquare": {
+									"displayName": "Форсквер"
+								},
+								"instagram": {
+									"displayName": "Инстаграм"
+								},
+								"linkedIn": {
+									"displayName": "LinkedIn"
+								},
+								"skype": {
+									"displayName": "Скайп"
+								},
+								"twitter": {
+									"displayName": "Твиттер"
+								}
+							}
+						}
+					},
+					"placeholder": "Социальные сети",
+					"displayName": "Социальные сети",
+					"options": {
+						"socialMediaValues": {
+							"displayName": "Социальные сети"
+						}
+					}
+				},
+				"reason": {
+					"displayName": "Причина не обращаться",
+					"options": {
+						"1": {
+							"displayName": "Отменил подписку"
+						},
+						"2": {
+							"displayName": "Отскочил"
+						},
+						"3": {
+							"displayName": "Руководство"
+						}
+					}
+				},
+				"comments": {
+					"displayName": "Комментарии",
+					"description": "Текст, описывающий детали записи «Не связываться»."
+				}
+			}
+		},
+		"companyId": {
+			"displayName": "Идентификатор компании",
+			"description": "Идентификатор компании"
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"addressUi": {
+					"values": {
+						"addressUi": {
+							"displayName": "Адрес"
+						},
+						"addressValues": {
+							"options": {
+								"address1": {
+									"displayName": "Адресная строка 1"
+								},
+								"address2": {
+									"displayName": "Адресная строка 2"
+								},
+								"city": {
+									"displayName": "Город"
+								},
+								"state": {
+									"displayName": "Состояние"
+								},
+								"country": {
+									"displayName": "Страна"
+								},
+								"zipCode": {
+									"displayName": "Почтовый индекс"
+								}
+							}
+						}
+					},
+					"placeholder": "Адрес",
+					"displayName": "Адрес",
+					"options": {
+						"addressValues": {
+							"displayName": "Адрес"
+						}
+					}
+				},
+				"annualRevenue": {
+					"displayName": "Годовой доход"
+				},
+				"companyEmail": {
+					"displayName": "Электронная почта компании"
+				},
+				"name": {
+					"displayName": "Название компании"
+				},
+				"customFieldsUi": {
+					"values": {
+						"customFieldsUi": {
+							"displayName": "Пользовательские поля",
+							"description": "Добавляет настраиваемые поля для установки значений, которые не были заданы заранее."
+						},
+						"customFieldValues": {
+							"options": {
+								"fieldId": {
+									"displayName": "Имя поля или идентификатор",
+									"description": "Идентификатор поля, которое необходимо установить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								},
+								"fieldValue": {
+									"displayName": "Значение поля",
+									"description": "Значение поля для установки"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить пользовательские поля",
+					"displayName": "Пользовательские поля",
+					"description": "Добавляет настраиваемые поля для установки значений, которые не были заданы заранее.",
+					"options": {
+						"customFieldValues": {
+							"displayName": "Поле"
+						}
+					}
+				},
+				"description": {
+					"displayName": "Описание"
+				},
+				"fax": {
+					"displayName": "Факс"
+				},
+				"industry": {
+					"displayName": "Название или идентификатор отрасли",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"isPublished": {
+					"displayName": "Опубликовано"
+				},
+				"numberOfEmpoyees": {
+					"displayName": "Количество сотрудников"
+				},
+				"overwriteWithBlank": {
+					"displayName": "Перезаписать пустым",
+					"description": "Устанавливаются ли в поля пустые значения. В противном случае пустые значения пропускаются."
+				},
+				"phone": {
+					"displayName": "Телефон"
+				},
+				"website": {
+					"displayName": "Веб-сайт"
+				},
+				"bodyJson": {
+					"displayName": "Тело",
+					"description": "Параметры контакта"
+				},
+				"b2bOrb2c": {
+					"displayName": "B2B или B2C",
+					"options": {
+						"B2B": {
+							"displayName": "B2B"
+						},
+						"B2C": {
+							"displayName": "B2C"
+						}
+					}
+				},
+				"crmId": {
+					"displayName": "Идентификатор CRM"
+				},
+				"email": {
+					"displayName": "Электронная почта",
+					"description": "Адрес электронной почты контактного лица",
+					"placeholder": "имя@email.com"
+				},
+				"firstName": {
+					"displayName": "Имя"
+				},
+				"hasPurchased": {
+					"displayName": "Купил"
+				},
+				"ipAddress": {
+					"displayName": "IP-адрес",
+					"description": "IP-адрес для связи с контактом"
+				},
+				"lastActive": {
+					"displayName": "Последняя активность",
+					"description": "Дата/время в формате UTC;"
+				},
+				"lastName": {
+					"displayName": "Фамилия",
+					"description": "Фамилия"
+				},
+				"mobile": {
+					"displayName": "мобильный"
+				},
+				"ownerId": {
+					"displayName": "Идентификатор владельца",
+					"description": "Идентификатор пользователя Mautic, которому можно назначить этот контакт"
+				},
+				"position": {
+					"displayName": "Позиция"
+				},
+				"company": {
+					"displayName": "Основное название или идентификатор компании",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"prospectOrCustomer": {
+					"displayName": "Потенциальный клиент или клиент",
+					"options": {
+						"Prospect": {
+							"displayName": "Перспектива"
+						},
+						"Customer": {
+							"displayName": "Клиент"
+						}
+					}
+				},
+				"sandbox": {
+					"displayName": "Песочница"
+				},
+				"stage": {
+					"displayName": "Сценическое имя или идентификатор",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"tags": {
+					"displayName": "Имена или идентификаторы тегов",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"title": {
+					"displayName": "Заголовок"
+				},
+				"socialMediaUi": {
+					"values": {
+						"socialMediaUi": {
+							"displayName": "Социальные сети"
+						},
+						"socialMediaValues": {
+							"options": {
+								"facebook": {
+									"displayName": "Фейсбук"
+								},
+								"foursquare": {
+									"displayName": "Форсквер"
+								},
+								"instagram": {
+									"displayName": "Инстаграм"
+								},
+								"linkedIn": {
+									"displayName": "LinkedIn"
+								},
+								"skype": {
+									"displayName": "Скайп"
+								},
+								"twitter": {
+									"displayName": "Твиттер"
+								}
+							}
+						}
+					},
+					"placeholder": "Социальные сети",
+					"displayName": "Социальные сети",
+					"options": {
+						"socialMediaValues": {
+							"displayName": "Социальные сети"
+						}
+					}
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"jsonParameters": {
+			"displayName": "Параметры JSON"
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"description": "Адрес электронной почты контактного лица",
+			"placeholder": "имя@email.com"
+		},
+		"firstName": {
+			"displayName": "Имя"
+		},
+		"lastName": {
+			"displayName": "Фамилия"
+		},
+		"company": {
+			"displayName": "Основное название или идентификатор компании",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"position": {
+			"displayName": "Позиция"
+		},
+		"title": {
+			"displayName": "Заголовок"
+		},
+		"bodyJson": {
+			"displayName": "Тело",
+			"description": "Параметры контакта"
+		},
+		"contactId": {
+			"displayName": "Идентификатор контакта",
+			"description": "Идентификатор контакта"
+		},
+		"action": {
+			"displayName": "Действие",
+			"options": {
+				"add": {
+					"displayName": "Добавлять"
+				},
+				"remove": {
+					"displayName": "Удалять"
+				}
+			}
+		},
+		"channel": {
+			"displayName": "Канал",
+			"options": {
+				"email": {
+					"displayName": "Электронная почта"
+				},
+				"sms": {
+					"displayName": "SMS"
+				}
+			}
+		},
+		"points": {
+			"displayName": "Очки"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"search": {
+					"displayName": "Поиск",
+					"description": "Строка или команда поиска для фильтрации объектов по"
+				},
+				"orderBy": {
+					"displayName": "Заказать по",
+					"description": "Столбец для сортировки. Можно использовать любой столбец, указанный в ответе."
+				},
+				"orderByDir": {
+					"displayName": "Заказ по директории",
+					"description": "Направление сортировки: ASC или DESC.",
+					"options": {
+						"asc": {
+							"displayName": "ASC"
+						},
+						"desc": {
+							"displayName": "DESC"
+						}
+					}
+				},
+				"publishedOnly": {
+					"displayName": "Только опубликовано",
+					"description": "Возвращать ли опубликованные в настоящее время объекты"
+				},
+				"minimal": {
+					"displayName": "Минимальный",
+					"description": "Возвращать ли массив сущностей без дополнительных списков в нем"
+				},
+				"rawData": {
+					"displayName": "Необработанные данные",
+					"description": "По умолчанию возвращаются только данные полей. Если этот параметр установлен, возвращается ответ RAW со всеми данными."
+				}
+			}
+		},
+		"campaignEmailId": {
+			"displayName": "Имя или идентификатор электронной почты кампании",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"segmentId": {
+			"displayName": "Имя или идентификатор сегмента",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"campaignId": {
+			"displayName": "Название или идентификатор кампании",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"segmentEmailId": {
+			"displayName": "Сегментировать имя или идентификатор электронной почты",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		}
+	}
+}

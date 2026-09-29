@@ -1,0 +1,109 @@
+{
+	"header": {
+		"displayName": "Триггер Google Диска",
+		"description": "Запускает рабочий процесс при возникновении событий на Google Диске."
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Тип учетных данных",
+			"options": {
+				"oAuth2": {
+					"displayName": "OAuth2 (рекомендуется)"
+				},
+				"serviceAccount": {
+					"displayName": "Сервисный аккаунт"
+				}
+			}
+		},
+		"triggerOn": {
+			"displayName": "Триггер включен",
+			"options": {
+				"specificFile": {
+					"displayName": "Изменения в конкретном файле"
+				},
+				"specificFolder": {
+					"displayName": "Изменения, связанные с определенной папкой"
+				}
+			}
+		},
+		"fileToWatch": {
+			"displayName": "Файл"
+		},
+		"event": {
+			"displayName": "Следите за",
+			"description": "Когда активировать этот узел",
+			"options": {
+				"fileUpdated": {
+					"displayName": "Файл обновлен",
+					"description": "При обновлении файла на наблюдаемом диске"
+				},
+				"fileCreated": {
+					"displayName": "Файл создан",
+					"description": "При создании файла на наблюдаемом диске"
+				},
+				"folderCreated": {
+					"displayName": "Папка создана",
+					"description": "При создании папки на наблюдаемом диске"
+				},
+				"folderUpdated": {
+					"displayName": "Папка обновлена",
+					"description": "При обновлении папки на наблюдаемом диске"
+				},
+				"watchFolderUpdated": {
+					"displayName": "Папка просмотра обновлена",
+					"description": "Когда изменяется сама просматриваемая папка"
+				}
+			}
+		},
+		"folderToWatch": {
+			"displayName": "Папка"
+		},
+		"asas": {
+			"displayName": "Изменения внутри подпапок не вызовут срабатывание этого узла."
+		},
+		"driveToWatch": {
+			"displayName": "Поездка на просмотр",
+			"description": "Диск для мониторинга. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"fileType": {
+					"displayName": "Тип файла",
+					"description": "Срабатывает только тогда, когда файл имеет этот тип",
+					"options": {
+						"all": {
+							"displayName": "[Все]"
+						},
+						"application/vnd": {
+							"google-apps": {
+								"audio": {
+									"displayName": "Аудио"
+								},
+								"document": {
+									"displayName": "Google Документы"
+								},
+								"drawing": {
+									"displayName": "Гугл рисунки"
+								},
+								"presentation": {
+									"displayName": "Google Презентации"
+								},
+								"spreadsheet": {
+									"displayName": "Таблицы Google"
+								},
+								"photo": {
+									"displayName": "Фотографии и изображения"
+								},
+								"video": {
+									"displayName": "Видео"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

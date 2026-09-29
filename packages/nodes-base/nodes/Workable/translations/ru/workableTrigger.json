@@ -1,0 +1,33 @@
+{
+	"header": {
+		"displayName": "Работоспособный триггер",
+		"description": "Запускает рабочий процесс при возникновении событий Workable."
+	},
+	"nodeView": {
+		"triggerOn": {
+			"displayName": "Триггер включен",
+			"options": {
+				"candidateCreated": {
+					"displayName": "Кандидат создан"
+				},
+				"candidateMoved": {
+					"displayName": "Кандидат переехал"
+				}
+			}
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"job": {
+					"displayName": "Имя или идентификатор вакансии",
+					"description": "Получайте уведомления только по одному заданию. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"stage": {
+					"displayName": "Сценическое имя или идентификатор",
+					"description": "Получайте уведомления об определенных этапах. например 'наемный'. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				}
+			}
+		}
+	}
+}

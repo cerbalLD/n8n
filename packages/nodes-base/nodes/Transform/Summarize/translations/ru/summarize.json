@@ -1,0 +1,121 @@
+{
+	"header": {
+		"displayName": "Подвести итог",
+		"description": "Сумма, количество, максимум и т. д. по элементам."
+	},
+	"nodeView": {
+		"fieldsToSummarize": {
+			"options": {
+				"fieldsToSummarize": {
+					"displayName": "Поля для суммирования"
+				},
+				"values": {
+					"values": {
+						"aggregation": {
+							"displayName": "Агрегация",
+							"description": "Как объединить значения поля, которое вы хотите суммировать",
+							"options": {
+								"append": {
+									"displayName": "Добавить"
+								},
+								"average": {
+									"displayName": "Средний"
+								},
+								"concatenate": {
+									"displayName": "Объединить"
+								},
+								"count": {
+									"displayName": "Считать"
+								},
+								"countUnique": {
+									"displayName": "Считать уникальными"
+								},
+								"max": {
+									"displayName": "Макс"
+								},
+								"min": {
+									"displayName": "Мин"
+								},
+								"sum": {
+									"displayName": "Сумма"
+								}
+							}
+						},
+						"field": {
+							"displayName": "Поле",
+							"description": "Имя поля ввода, по которому вы хотите суммировать; нулевые, неопределенные, пустые строки будут игнорироваться",
+							"hint": "Введите имя поля в виде текста",
+							"placeholder": "например расходы"
+						},
+						"includeEmpty": {
+							"displayName": "Включить пустые значения"
+						},
+						"separateBy": {
+							"displayName": "Сепаратор",
+							"hint": "Что вставлять между значениями",
+							"options": {
+								",": {
+									"displayName": "Запятая"
+								},
+								", ": {
+									"displayName": "Запятая и пробел"
+								},
+								"\n": {
+									"displayName": "Новая линия"
+								},
+								"": {
+									"displayName": "Никто"
+								},
+								" ": {
+									"displayName": "Космос"
+								},
+								"other": {
+									"displayName": "Другой"
+								}
+							}
+						},
+						"customSeparator": {
+							"displayName": "Пользовательский разделитель"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить поле",
+			"displayName": "Поля для суммирования"
+		},
+		"fieldsToSplitBy": {
+			"displayName": "Поля для группировки",
+			"description": "Имя полей ввода, по которым вы хотите разделить сводку.",
+			"hint": "Введите названия полей в виде текста (через запятую).",
+			"placeholder": "например страна, город"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"continueIfFieldNotFound": {
+					"displayName": "Продолжить, если поле не найдено",
+					"description": "Продолжать ли, если поле для суммирования не найдено ни в одном элементе и вернуть один пустой элемент, в противном случае будет выдана ошибка"
+				},
+				"disableDotNotation": {
+					"displayName": "Отключить точечную нотацию",
+					"description": "Запретить ли ссылаться на дочерние поля, используя `parent.child` в имени поля."
+				},
+				"outputFormat": {
+					"displayName": "Формат вывода",
+					"options": {
+						"separateItems": {
+							"displayName": "Каждое разделение в отдельном элементе"
+						},
+						"singleItem": {
+							"displayName": "Все разделения в одном элементе"
+						}
+					}
+				},
+				"skipEmptySplitFields": {
+					"displayName": "Игнорировать элементы без допустимых полей для группировки"
+				}
+			}
+		}
+	}
+}

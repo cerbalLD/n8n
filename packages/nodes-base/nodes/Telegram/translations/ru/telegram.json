@@ -1,0 +1,984 @@
+{
+	"header": {
+		"displayName": "Телеграмма",
+		"description": "Отправляет данные в Telegram"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"chat": {
+					"displayName": "Чат"
+				},
+				"callback": {
+					"displayName": "Перезвонить"
+				},
+				"file": {
+					"displayName": "Файл"
+				},
+				"message": {
+					"displayName": "Сообщение"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить файл"
+				},
+				"administrators": {
+					"displayName": "Получить администраторов",
+					"description": "Получить администраторов чата"
+				},
+				"member": {
+					"displayName": "Получить члена",
+					"description": "Получить участника чата"
+				},
+				"leave": {
+					"displayName": "Оставлять",
+					"description": "Покинуть группу, супергруппу или канал"
+				},
+				"setDescription": {
+					"displayName": "Установить описание",
+					"description": "Установить описание чата"
+				},
+				"setTitle": {
+					"displayName": "Установить заголовок",
+					"description": "Установите заголовок чата"
+				},
+				"answerQuery": {
+					"displayName": "Ответ на запрос",
+					"description": "Отправить ответ на запрос обратного вызова, отправленный со встроенной клавиатуры"
+				},
+				"answerInlineQuery": {
+					"displayName": "Ответить на встроенный запрос",
+					"description": "Отправить ответ на запрос обратного вызова, отправленный встроенным ботом"
+				},
+				"deleteMessage": {
+					"displayName": "Удалить сообщение чата",
+					"description": "Удаление сообщения в чате"
+				},
+				"editMessageText": {
+					"displayName": "Редактировать текст сообщения",
+					"description": "Редактировать текстовое сообщение"
+				},
+				"pinChatMessage": {
+					"displayName": "Закрепить сообщение в чате",
+					"description": "Закрепить сообщение чата"
+				},
+				"sendAnimation": {
+					"displayName": "Отправить анимацию",
+					"description": "Отправить анимированный файл"
+				},
+				"sendAudio": {
+					"displayName": "Отправить аудио",
+					"description": "Отправить аудиофайл"
+				},
+				"sendChatAction": {
+					"displayName": "Отправить действие в чате",
+					"description": "Отправить действие в чате"
+				},
+				"sendDocument": {
+					"displayName": "Отправить документ",
+					"description": "Отправить документ"
+				},
+				"sendLocation": {
+					"displayName": "Отправить местоположение",
+					"description": "Отправить местоположение"
+				},
+				"sendMediaGroup": {
+					"displayName": "Отправить медиа-группу",
+					"description": "Отправить группу фотографий или видео в альбом"
+				},
+				"sendMessage": {
+					"displayName": "Отправить сообщение",
+					"description": "Отправить текстовое сообщение"
+				},
+				"sendMessageDraft": {
+					"displayName": "Отправить черновик сообщения",
+					"description": "Потоковая передача частичного предварительного просмотра сообщения во время его создания"
+				},
+				"sendRichMessage": {
+					"displayName": "Отправить расширенное сообщение",
+					"description": "Отправьте сообщение с богатым форматированием с заголовками, списками, таблицами, медиафайлами и многим другим."
+				},
+				"sendRichMessageDraft": {
+					"displayName": "Отправить черновик расширенного сообщения",
+					"description": "Потоковая передача частичного предварительного просмотра расширенного сообщения во время его создания"
+				},
+				"sendAndWait": {
+					"displayName": "Отправить и дождаться ответа",
+					"description": "Отправьте сообщение и дождитесь ответа"
+				},
+				"sendPhoto": {
+					"displayName": "Отправить фото",
+					"description": "Отправить фото"
+				},
+				"sendSticker": {
+					"displayName": "Отправить стикер",
+					"description": "Отправить стикер"
+				},
+				"sendVideo": {
+					"displayName": "Отправить видео",
+					"description": "Отправить видео"
+				},
+				"unpinChatMessage": {
+					"displayName": "Открепить сообщение чата",
+					"description": "Открепить сообщение чата"
+				}
+			}
+		},
+		"chatId": {
+			"displayName": "Идентификатор чата",
+			"description": "Уникальный идентификатор целевого чата или имя пользователя целевого канала (в формате @channelusername). Чтобы узнать свой идентификатор чата, спросите @get_id_bot."
+		},
+		"messageId": {
+			"displayName": "Идентификатор сообщения",
+			"description": "Уникальный идентификатор сообщения для редактирования"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"disable_notification": {
+					"displayName": "Отключить уведомление",
+					"description": "Отправлять ли сообщение молча. Пользователи получат уведомление без звука."
+				},
+				"cache_time": {
+					"displayName": "Время кэширования",
+					"description": "Максимальное время в секундах, в течение которого результат запроса обратного вызова может кэшироваться на стороне клиента."
+				},
+				"show_alert": {
+					"displayName": "Показать оповещение",
+					"description": "Будет ли клиент показывать оповещение вместо уведомления в верхней части экрана чата"
+				},
+				"text": {
+					"displayName": "Текст",
+					"description": "Текст уведомления. Если не указано, пользователю ничего не будет показано, 0–200 символов."
+				},
+				"url": {
+					"displayName": "URL",
+					"description": "URL-адрес, который будет открыт клиентом пользователя"
+				},
+				"mimeType": {
+					"displayName": "MIME-тип",
+					"description": "MIME-тип файла. Если не указано, тип MIME будет определяться расширением файла.",
+					"placeholder": "изображение/JPEG"
+				},
+				"appendAttribution": {
+					"displayName": "Добавить авторство n8n",
+					"description": "Включить ли в конец сообщения фразу «Это сообщение было отправлено автоматически с помощью n8n»"
+				},
+				"caption": {
+					"displayName": "Подпись",
+					"description": "Текст подписи для установки, 0–1024 символа."
+				},
+				"disable_web_page_preview": {
+					"displayName": "Отключить предварительный просмотр веб-страницы",
+					"description": "Отключить ли предварительный просмотр ссылок в этом сообщении"
+				},
+				"duration": {
+					"displayName": "Продолжительность",
+					"description": "Длительность клипа в секундах"
+				},
+				"fileName": {
+					"displayName": "Имя файла",
+					"placeholder": "изображение.jpeg"
+				},
+				"height": {
+					"displayName": "Высота",
+					"description": "Высота видео"
+				},
+				"parse_mode": {
+					"displayName": "Режим анализа",
+					"description": "Как разобрать текст",
+					"options": {
+						"Markdown": {
+							"displayName": "Уценка (устаревшая версия)"
+						},
+						"MarkdownV2": {
+							"displayName": "МаркдаунV2"
+						},
+						"HTML": {
+							"displayName": "HTML"
+						}
+					}
+				},
+				"performer": {
+					"displayName": "Исполнитель",
+					"description": "Имя исполнителя"
+				},
+				"reply_to_message_id": {
+					"displayName": "Ответить на идентификатор сообщения",
+					"description": "Если сообщение является ответом, идентификатор исходного сообщения"
+				},
+				"message_thread_id": {
+					"displayName": "Идентификатор потока сообщений",
+					"description": "Уникальный идентификатор темы форума."
+				},
+				"title": {
+					"displayName": "Заголовок",
+					"description": "Название трека"
+				},
+				"thumb": {
+					"displayName": "Миниатюра",
+					"description": "Миниатюра отправленного файла; можно игнорировать, если создание миниатюр для файла поддерживается на стороне сервера. Миниатюра должна быть в формате JPEG и размером не более 200 КБ. Ширина и высота миниатюры не должны превышать 320."
+				},
+				"width": {
+					"displayName": "Ширина",
+					"description": "Ширина видео"
+				},
+				"message_effect_id": {
+					"displayName": "Идентификатор эффекта сообщения",
+					"description": "Уникальный идентификатор эффекта сообщения, который будет добавлен в сообщение; только для приватных чатов"
+				},
+				"protect_content": {
+					"displayName": "Защита контента",
+					"description": "Защищать ли содержимое отправленного сообщения от пересылки и сохранения"
+				},
+				"is_rtl": {
+					"displayName": "Справа налево",
+					"description": "Должно ли расширенное сообщение отображаться справа налево"
+				},
+				"skip_entity_detection": {
+					"displayName": "Пропустить обнаружение объекта",
+					"description": "Пропускать ли автоматическое обнаружение таких объектов, как URL-адреса, электронные письма, упоминания, хэштеги и номера телефонов."
+				}
+			}
+		},
+		"userId": {
+			"displayName": "ID пользователя",
+			"description": "Уникальный идентификатор целевого пользователя"
+		},
+		"description": {
+			"displayName": "Описание",
+			"description": "Новое описание чата, 0-255 символов."
+		},
+		"title": {
+			"displayName": "Заголовок",
+			"description": "Новый заголовок чата, 1–255 символов."
+		},
+		"queryId": {
+			"displayName": "Идентификатор запроса",
+			"description": "Уникальный идентификатор ответного запроса"
+		},
+		"results": {
+			"displayName": "Результаты",
+			"description": "Массив результатов встроенного запроса в формате JSON."
+		},
+		"fileId": {
+			"displayName": "Идентификатор файла",
+			"description": "Идентификатор файла"
+		},
+		"download": {
+			"displayName": "Скачать",
+			"description": "Загружать ли файл"
+		},
+		"messageType": {
+			"displayName": "Тип сообщения",
+			"description": "Тип сообщения для редактирования",
+			"options": {
+				"inlineMessage": {
+					"displayName": "Встроенное сообщение"
+				},
+				"message": {
+					"displayName": "Сообщение"
+				}
+			}
+		},
+		"binaryData": {
+			"displayName": "Двоичный файл",
+			"description": "Следует ли брать данные для загрузки из двоичного поля"
+		},
+		"binaryPropertyName": {
+			"displayName": "Входное двоичное поле",
+			"description": "Имя двоичного свойства, содержащего данные для загрузки.",
+			"hint": "Имя входного двоичного поля, содержащего файл для записи."
+		},
+		"inlineMessageId": {
+			"displayName": "Встроенный идентификатор сообщения",
+			"description": "Уникальный идентификатор встроенного сообщения для редактирования."
+		},
+		"replyMarkup": {
+			"displayName": "Разметка ответа",
+			"description": "Дополнительные возможности интерфейса",
+			"options": {
+				"none": {
+					"displayName": "Никто"
+				},
+				"inlineKeyboard": {
+					"displayName": "Встроенная клавиатура"
+				},
+				"forceReply": {
+					"displayName": "Принудительный ответ"
+				},
+				"replyKeyboard": {
+					"displayName": "Ответить на клавиатуру"
+				},
+				"replyKeyboardRemove": {
+					"displayName": "Ответить Клавиатура Удалить"
+				}
+			}
+		},
+		"file": {
+			"displayName": "Видео",
+			"description": "Видеофайл для отправки. Передайте file_id для отправки файла, который существует на серверах Telegram (рекомендуется), URL-адрес HTTP для Telegram, чтобы получить файл из Интернета."
+		},
+		"action": {
+			"displayName": "Действие",
+			"description": "Тип действия для трансляции. Выберите один, в зависимости от того, что пользователь собирается получить. Статус устанавливается на 5 секунд или меньше (при поступлении сообщения от вашего бота).",
+			"options": {
+				"find_location": {
+					"displayName": "Найти местоположение"
+				},
+				"record_audio": {
+					"displayName": "Запись аудио"
+				},
+				"record_video": {
+					"displayName": "Запись видео"
+				},
+				"record_video_note": {
+					"displayName": "Запись видео-заметки"
+				},
+				"typing": {
+					"displayName": "Ввод текста"
+				},
+				"upload_audio": {
+					"displayName": "Загрузить аудио"
+				},
+				"upload_document": {
+					"displayName": "Загрузить документ"
+				},
+				"upload_photo": {
+					"displayName": "Загрузить фото"
+				},
+				"upload_video": {
+					"displayName": "Загрузить видео"
+				},
+				"upload_video_note": {
+					"displayName": "Загрузить видеозаметку"
+				}
+			}
+		},
+		"latitude": {
+			"displayName": "Широта",
+			"description": "Широта местоположения"
+		},
+		"longitude": {
+			"displayName": "Долгота",
+			"description": "Долгота местоположения"
+		},
+		"media": {
+			"options": {
+				"media": {
+					"displayName": "СМИ",
+					"description": "СМИ, которые нужно добавить",
+					"values": {
+						"type": {
+							"displayName": "Тип",
+							"description": "Тип добавляемого носителя",
+							"options": {
+								"photo": {
+									"displayName": "Фото"
+								},
+								"video": {
+									"displayName": "Видео"
+								}
+							}
+						},
+						"media": {
+							"displayName": "Медиа-файл",
+							"description": "Медиа для отправки. Передайте file_id, чтобы отправить файл, который существует на серверах Telegram (рекомендуется), или передайте URL-адрес HTTP, чтобы Telegram мог получить файл из Интернета."
+						},
+						"additionalFields": {
+							"options": {
+								"additionalFields": {
+									"displayName": "Дополнительные поля"
+								},
+								"caption": {
+									"displayName": "Подпись",
+									"description": "Текст подписи для установки, 0–1024 символа."
+								},
+								"parse_mode": {
+									"displayName": "Режим анализа",
+									"description": "Как разобрать текст",
+									"options": {
+										"Markdown": {
+											"displayName": "Уценка (устаревшая версия)"
+										},
+										"MarkdownV2": {
+											"displayName": "МаркдаунV2"
+										},
+										"HTML": {
+											"displayName": "HTML"
+										}
+									}
+								}
+							},
+							"placeholder": "Добавить поле",
+							"displayName": "Дополнительные поля"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить медиа",
+			"displayName": "СМИ",
+			"description": "СМИ, которые нужно добавить"
+		},
+		"text": {
+			"displayName": "Текст",
+			"description": "Текст черновика сообщения, 0-4096 символов."
+		},
+		"richFormat": {
+			"displayName": "Формат",
+			"description": "Какой синтаксис форматирования использует расширенное содержимое сообщения",
+			"options": {
+				"markdown": {
+					"displayName": "Уценка"
+				},
+				"html": {
+					"displayName": "HTML"
+				}
+			}
+		},
+		"richMessageText": {
+			"displayName": "Богатое сообщение",
+			"description": "Содержимое расширенного сообщения, написанное с использованием выбранного синтаксиса Markdown или HTML. Поддерживает заголовки, списки, таблицы, блочные кавычки, медиа, складные блоки и многое другое.",
+			"hint": "Ограничения: до 32768 символов, 500 блоков и 50 медиа-вложений."
+		},
+		"forceReply": {
+			"displayName": "Принудительный ответ",
+			"placeholder": "Добавить поле",
+			"options": {
+				"force_reply": {
+					"displayName": "Принудительный ответ",
+					"description": "Показывать ли пользователю интерфейс ответа, как если бы он вручную выбрал сообщение бота и нажал «Ответить»"
+				},
+				"selective": {
+					"displayName": "Селективный",
+					"description": "Следует ли принудительно отвечать только от определенных пользователей"
+				}
+			}
+		},
+		"inlineKeyboard": {
+			"options": {
+				"inlineKeyboard": {
+					"displayName": "Встроенная клавиатура",
+					"description": "Добавляет встроенную клавиатуру, которая появляется рядом с сообщением, которому она принадлежит."
+				},
+				"rows": {
+					"displayName": "Строки",
+					"values": {
+						"row": {
+							"options": {
+								"row": {
+									"displayName": "Ряд",
+									"description": "Значение для установки"
+								},
+								"buttons": {
+									"displayName": "Кнопки",
+									"values": {
+										"text": {
+											"displayName": "Текст",
+											"description": "Текст метки на кнопке"
+										},
+										"additionalFields": {
+											"options": {
+												"additionalFields": {
+													"displayName": "Дополнительные поля"
+												},
+												"callback_data": {
+													"displayName": "Данные обратного вызова",
+													"description": "Данные, которые будут отправлены в обратном запросе боту при нажатии кнопки, 1–64 байта."
+												},
+												"pay": {
+													"displayName": "Платить",
+													"description": "Отправлять ли кнопку «Оплатить»"
+												},
+												"switch_inline_query_current_chat": {
+													"displayName": "Переключить встроенный запрос в текущий чат",
+													"description": "Если установлено, нажатие кнопки вставит имя пользователя бота и указанный встроенный запрос в поле ввода текущего чата. Может быть пустым, и в этом случае будет вставлено только имя пользователя бота."
+												},
+												"switch_inline_query": {
+													"displayName": "Переключить встроенный запрос",
+													"description": "Если установлено, нажатие кнопки предложит пользователю выбрать один из своих чатов, открыть этот чат и вставить имя пользователя бота и указанный встроенный запрос в поле ввода. Может быть пустым, в этом случае будет вставлено только имя пользователя бота."
+												},
+												"url": {
+													"displayName": "URL",
+													"description": "HTTP или tg:// URL-адрес, который будет открыт при нажатии кнопки"
+												},
+												"web_app": {
+													"values": {
+														"web_app": {
+															"displayName": "Веб-приложение",
+															"description": "Запустите веб-приложение Telegram"
+														},
+														"url": {
+															"displayName": "URL",
+															"description": "URL-адрес HTTPS веб-приложения, которое необходимо открыть."
+														}
+													},
+													"placeholder": "Установить URL-адрес веб-приложения Telegram",
+													"displayName": "Веб-приложение",
+													"description": "Запустите веб-приложение Telegram"
+												}
+											},
+											"placeholder": "Добавить поле",
+											"displayName": "Дополнительные поля"
+										}
+									}
+								}
+							},
+							"placeholder": "Добавить кнопку",
+							"displayName": "Ряд",
+							"description": "Значение для установки"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить строку клавиатуры",
+			"displayName": "Встроенная клавиатура",
+			"description": "Добавляет встроенную клавиатуру, которая появляется рядом с сообщением, которому она принадлежит."
+		},
+		"replyKeyboard": {
+			"options": {
+				"replyKeyboard": {
+					"displayName": "Ответить на клавиатуру",
+					"description": "Добавляет пользовательскую клавиатуру с опциями ответа."
+				},
+				"rows": {
+					"displayName": "Строки",
+					"values": {
+						"row": {
+							"options": {
+								"row": {
+									"displayName": "Ряд",
+									"description": "Значение для установки"
+								},
+								"buttons": {
+									"displayName": "Кнопки",
+									"values": {
+										"text": {
+											"displayName": "Текст",
+											"description": "Текст кнопки. Если ни одно из необязательных полей не используется, оно будет отправлено в виде сообщения при нажатии кнопки."
+										},
+										"additionalFields": {
+											"options": {
+												"additionalFields": {
+													"displayName": "Дополнительные поля"
+												},
+												"request_contact": {
+													"displayName": "Запросить контакт",
+													"description": "Будет ли номер телефона пользователя отправлен в контакт при нажатии кнопки. Доступно только в личных чатах."
+												},
+												"request_location": {
+													"displayName": "Запросить местоположение",
+													"description": "Является ли request_location пользователя"
+												},
+												"web_app": {
+													"values": {
+														"web_app": {
+															"displayName": "Веб-приложение",
+															"description": "Запустите веб-приложение Telegram"
+														},
+														"url": {
+															"displayName": "URL",
+															"description": "URL-адрес HTTPS веб-приложения, которое необходимо открыть."
+														}
+													},
+													"placeholder": "Установить URL-адрес веб-приложения Telegram",
+													"displayName": "Веб-приложение",
+													"description": "Запустите веб-приложение Telegram"
+												}
+											},
+											"placeholder": "Добавить поле",
+											"displayName": "Дополнительные поля"
+										}
+									}
+								}
+							},
+							"placeholder": "Добавить кнопку",
+							"displayName": "Ряд",
+							"description": "Значение для установки"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить строку ответа на клавиатуре",
+			"displayName": "Ответить на клавиатуру",
+			"description": "Добавляет пользовательскую клавиатуру с опциями ответа."
+		},
+		"replyKeyboardOptions": {
+			"displayName": "Параметры клавиатуры ответа",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"resize_keyboard": {
+					"displayName": "Изменение размера клавиатуры",
+					"description": "Просить ли клиентов изменить размер клавиатуры по вертикали для оптимального соответствия"
+				},
+				"one_time_keyboard": {
+					"displayName": "Одноразовая клавиатура",
+					"description": "Следует ли просить клиентов скрыть клавиатуру сразу после ее использования."
+				},
+				"selective": {
+					"displayName": "Селективный",
+					"description": "Показывать ли клавиатуру только определенным пользователям"
+				}
+			}
+		},
+		"replyKeyboardRemove": {
+			"displayName": "Ответить Клавиатура Удалить",
+			"placeholder": "Добавить поле",
+			"options": {
+				"remove_keyboard": {
+					"displayName": "Удалить клавиатуру",
+					"description": "Следует ли просить клиентов удалить пользовательскую клавиатуру"
+				},
+				"selective": {
+					"displayName": "Селективный",
+					"description": "Следует ли принудительно отвечать только от определенных пользователей"
+				}
+			}
+		},
+		"draftId": {
+			"displayName": "Идентификатор проекта",
+			"description": "Уникальный идентификатор черновика сообщения; должно быть ненулевым. Обновления, транслируемые с одним и тем же идентификатором черновика, анимируются."
+		},
+		"message": {
+			"displayName": "Сообщение"
+		},
+		"responseType": {
+			"displayName": "Тип ответа",
+			"options": {
+				"approval": {
+					"displayName": "Одобрение",
+					"description": "Пользователь может одобрить/отклонить сообщение прямо в сообщении."
+				},
+				"freeText": {
+					"displayName": "Свободный текст",
+					"description": "Пользователь может отправить ответ через форму"
+				},
+				"customForm": {
+					"displayName": "Пользовательская форма",
+					"description": "Пользователь может отправить ответ через специальную форму"
+				}
+			}
+		},
+		"defineForm": {
+			"displayName": "Определить форму",
+			"options": {
+				"fields": {
+					"displayName": "Использование полей ниже"
+				},
+				"json": {
+					"displayName": "Использование JSON"
+				}
+			}
+		},
+		"jsonOutput": {
+			"displayName": "Поля формы",
+			"hint": "<a href=\"https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.form/\" target=\"_blank\">См. в документации </a> синтаксис полей."
+		},
+		"formFields": {
+			"options": {
+				"formFields": {
+					"displayName": "Элементы формы"
+				},
+				"values": {
+					"displayName": "Ценности",
+					"values": {
+						"fieldName": {
+							"displayName": "Имя настраиваемого поля",
+							"description": "Имя поля, используемое во входных атрибутах и ​​на которое ссылается рабочий процесс."
+						},
+						"fieldLabel": {
+							"displayName": "Имя поля",
+							"description": "Метка, которая появляется над полем ввода",
+							"placeholder": "например Как вас зовут?"
+						},
+						"fieldType": {
+							"displayName": "Тип элемента",
+							"description": "Тип поля, добавляемого в форму",
+							"options": {
+								"checkbox": {
+									"displayName": "Флажки"
+								},
+								"html": {
+									"displayName": "Пользовательский HTML"
+								},
+								"date": {
+									"displayName": "Дата"
+								},
+								"dropdown": {
+									"displayName": "Падать"
+								},
+								"email": {
+									"displayName": "Электронная почта"
+								},
+								"file": {
+									"displayName": "Файл"
+								},
+								"hiddenField": {
+									"displayName": "Скрытое поле"
+								},
+								"number": {
+									"displayName": "Число"
+								},
+								"password": {
+									"displayName": "Пароль"
+								},
+								"radio": {
+									"displayName": "Радиокнопки"
+								},
+								"text": {
+									"displayName": "Ввод текста"
+								},
+								"textarea": {
+									"displayName": "Текстовая область"
+								}
+							}
+						},
+						"elementName": {
+							"displayName": "Имя элемента",
+							"description": "Необязательное поле. Его можно использовать для включения HTML в выходные данные.",
+							"placeholder": "например раздел контента"
+						},
+						"placeholder": {
+							"displayName": "Заполнитель",
+							"description": "Пример текста для отображения внутри поля"
+						},
+						"defaultValue": {
+							"displayName": "Значение по умолчанию",
+							"description": "Значения по умолчанию, которые будут выбраны заранее. Должно соответствовать одному или нескольким меткам опций. Разделите несколько предварительно выбранных опций запятой."
+						},
+						"fieldValue": {
+							"displayName": "Значение поля",
+							"description": "Входное значение можно установить здесь или оно будет передано в качестве параметра запроса через имя поля, если значение не установлено."
+						},
+						"fieldOptions": {
+							"options": {
+								"fieldOptions": {
+									"displayName": "Радиокнопки",
+									"description": "Список опций, которые можно выбрать из раскрывающегося списка"
+								},
+								"values": {
+									"displayName": "Ценности",
+									"values": {
+										"option": {
+											"displayName": "Метка радиокнопки"
+										}
+									}
+								}
+							},
+							"placeholder": "Добавить переключатель",
+							"displayName": "Радиокнопки",
+							"description": "Список опций, которые можно выбрать из раскрывающегося списка"
+						},
+						"multiselectLegacyNotice": {
+							"displayName": "Множественный выбор является устаревшим вариантом, вместо этого используйте тип поля «Флажки» или «Переключатели»."
+						},
+						"multiselect": {
+							"displayName": "Множественный выбор",
+							"description": "Разрешить ли пользователю выбирать несколько вариантов из раскрывающегося списка"
+						},
+						"limitSelection": {
+							"displayName": "Ограничить выбор",
+							"options": {
+								"exact": {
+									"displayName": "Точный номер"
+								},
+								"range": {
+									"displayName": "Диапазон"
+								},
+								"unlimited": {
+									"displayName": "Безлимитный"
+								}
+							}
+						},
+						"numberOfSelections": {
+							"displayName": "Количество вариантов выбора"
+						},
+						"minSelections": {
+							"displayName": "Минимальный выбор"
+						},
+						"maxSelections": {
+							"displayName": "Максимальный выбор"
+						},
+						"html": {
+							"displayName": "HTML",
+							"description": "HTML-элементы для отображения на странице формы",
+							"hint": "Не принимает теги <code><script></code>, <code><style></code> или <code><input></code>."
+						},
+						"multipleFiles": {
+							"displayName": "Несколько файлов",
+							"description": "Разрешить ли пользователю выбирать несколько файлов из входного файла или только один"
+						},
+						"acceptFileTypes": {
+							"displayName": "Допустимые типы файлов",
+							"description": "Список разрешенных расширений файлов, разделенный запятыми",
+							"hint": "Оставьте пустым, чтобы разрешить все типы файлов.",
+							"placeholder": "например .jpg, .png"
+						},
+						"formatDate": {
+							"displayName": "Отображаемая дата форматируется на основе языкового стандарта браузера пользователя."
+						},
+						"requiredField": {
+							"displayName": "Обязательное поле",
+							"description": "Требовать ли от пользователя ввода значения в это поле перед отправкой формы"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить элемент формы",
+			"displayName": "Элементы формы",
+			"addOptionalFieldButtonText": "Добавить атрибуты"
+		},
+		"approvalOptions": {
+			"options": {
+				"approvalOptions": {
+					"displayName": "Варианты утверждения"
+				},
+				"values": {
+					"displayName": "Ценности",
+					"values": {
+						"approvalType": {
+							"displayName": "Тип одобрения",
+							"placeholder": "Добавить вариант",
+							"options": {
+								"single": {
+									"displayName": "Только утвердить"
+								},
+								"double": {
+									"displayName": "Одобрить и не одобрить"
+								}
+							}
+						},
+						"approveLabel": {
+							"displayName": "Метка кнопки «Утвердить»"
+						},
+						"disapproveLabel": {
+							"displayName": "Ярлык кнопки «Отклонить»"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить вариант",
+			"displayName": "Варианты утверждения"
+		},
+		"advancedInteractivityNotice": {
+			"displayName": "Расширенная интерактивность"
+		},
+		"chatApproval": {
+			"displayName": "Утвердить в чате",
+			"description": "Будут ли утверждающие отвечать одним нажатием на кнопки внутри чата Telegram вместо открытия ссылки в браузере. Требуется, чтобы этот экземпляр n8n был доступен через общедоступный HTTPS."
+		},
+		"approverIds": {
+			"displayName": "Ограничить тех, кто может одобрить",
+			"description": "Идентификаторы пользователей позволяют утвердить или отклонить. Несколько можно определить через запятую. Если оно пусто, ответить может любой, кто видит сообщение."
+		},
+		"unauthorizedReplyText": {
+			"displayName": "Несанкционированный ответ",
+			"description": "Всплывающее окно, отображаемое (через оповещение Telegram) пользователям, которые нажимают кнопку, но не входят в список утверждающих."
+		},
+		"postDecisionBehavior": {
+			"displayName": "После решения",
+			"options": {
+				"showOutcome": {
+					"displayName": "Кнопки «Показать результат» и «Удалить»"
+				},
+				"removeButtons": {
+					"displayName": "Удалить только кнопки"
+				},
+				"keepMessage": {
+					"displayName": "Сохранить сообщение без изменений"
+				}
+			}
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"limitWaitTime": {
+					"values": {
+						"limitWaitTime": {
+							"displayName": "Ограничить время ожидания",
+							"description": "Ограничить ли время, в течение которого этот узел должен ждать ответа пользователя, прежде чем возобновится выполнение."
+						},
+						"values": {
+							"options": {
+								"limitType": {
+									"displayName": "Тип лимита",
+									"description": "Устанавливает условие возобновления выполнения. Может быть указанная дата или через некоторое время.",
+									"options": {
+										"afterTimeInterval": {
+											"displayName": "После временного интервала",
+											"description": "Ждет определенное время"
+										},
+										"atSpecifiedTime": {
+											"displayName": "В указанное время",
+											"description": "Ожидает установленной даты и времени, чтобы продолжить"
+										}
+									}
+								},
+								"resumeAmount": {
+									"displayName": "Количество",
+									"description": "Время ждать"
+								},
+								"resumeUnit": {
+									"displayName": "Единица",
+									"description": "Единица значения интервала",
+									"options": {
+										"minutes": {
+											"displayName": "Минуты"
+										},
+										"hours": {
+											"displayName": "Часы"
+										},
+										"days": {
+											"displayName": "Дни"
+										}
+									}
+								},
+								"maxDateAndTime": {
+									"displayName": "Максимальная дата и время",
+									"description": "Продолжить выполнение после указанной даты и времени"
+								}
+							}
+						}
+					},
+					"displayName": "Ограничить время ожидания",
+					"description": "Ограничить ли время, в течение которого этот узел должен ждать ответа пользователя, прежде чем возобновится выполнение.",
+					"options": {
+						"values": {
+							"displayName": "Ценности"
+						}
+					}
+				},
+				"appendAttribution": {
+					"displayName": "Добавить авторство n8n",
+					"description": "Включить ли в конец сообщения фразу «Это сообщение было отправлено автоматически с помощью n8n»"
+				},
+				"messageButtonLabel": {
+					"displayName": "Метка кнопки сообщения"
+				},
+				"responseFormTitle": {
+					"displayName": "Название формы ответа",
+					"description": "Название формы, к которой пользователь может получить доступ для ответа"
+				},
+				"responseFormDescription": {
+					"displayName": "Форма ответа Описание",
+					"description": "Описание формы, к которой пользователь может получить доступ для ответа."
+				},
+				"responseFormButtonLabel": {
+					"displayName": "Метка кнопки формы ответа"
+				},
+				"responseFormCustomCss": {
+					"displayName": "Пользовательский стиль формы ответа",
+					"description": "Переопределить стиль формы ответа по умолчанию с помощью CSS"
+				}
+			}
+		}
+	}
+}

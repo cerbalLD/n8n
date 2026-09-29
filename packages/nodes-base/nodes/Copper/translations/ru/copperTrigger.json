@@ -1,0 +1,50 @@
+{
+	"header": {
+		"displayName": "Медный триггер",
+		"description": "Обработка событий Copper через веб-перехватчики"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"description": "Ресурс, который будет запускать событие",
+			"options": {
+				"company": {
+					"displayName": "Компания"
+				},
+				"lead": {
+					"displayName": "Вести"
+				},
+				"opportunity": {
+					"displayName": "Возможность"
+				},
+				"person": {
+					"displayName": "Человек"
+				},
+				"project": {
+					"displayName": "Проект"
+				},
+				"task": {
+					"displayName": "Задача"
+				}
+			}
+		},
+		"event": {
+			"displayName": "Событие",
+			"description": "Событие, которое стоит послушать",
+			"options": {
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Существующая запись удалена"
+				},
+				"new": {
+					"displayName": "Новый",
+					"description": "Создается новая запись"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Любое поле в существующей записи объекта изменяется."
+				}
+			}
+		}
+	}
+}

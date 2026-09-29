@@ -1,0 +1,124 @@
+{
+	"header": {
+		"displayName": "Google Презентации",
+		"description": "Используйте API Google Slides"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"oAuth2": {
+					"displayName": "OAuth2 (рекомендуется)"
+				},
+				"serviceAccount": {
+					"displayName": "Сервисный аккаунт"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"page": {
+					"displayName": "Страница"
+				},
+				"presentation": {
+					"displayName": "Презентация"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать презентацию"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить страницу"
+				},
+				"getSlides": {
+					"displayName": "Получить слайды",
+					"description": "Получить слайды презентации"
+				},
+				"replaceText": {
+					"displayName": "Заменить текст",
+					"description": "Заменить текст в презентации"
+				},
+				"getThumbnail": {
+					"displayName": "Получить миниатюру",
+					"description": "Получить миниатюру"
+				}
+			}
+		},
+		"title": {
+			"displayName": "Заголовок",
+			"description": "Название презентации, которую нужно создать"
+		},
+		"presentationId": {
+			"displayName": "Идентификатор презентации",
+			"description": "Идентификатор презентации, которую нужно получить. Найдено в URL-адресе презентации: <code>https://docs.google.com/presentation/d/PRESENTATION_ID/edit</code>.",
+			"placeholder": "1wZtNFZ8MO-WKrxhYrOLMvyiqSgFwdSz5vn8_l_7eNqw"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"pageObjectId": {
+			"displayName": "Идентификатор объекта страницы",
+			"description": "Идентификатор объекта страницы для получения"
+		},
+		"textUi": {
+			"options": {
+				"textUi": {
+					"displayName": "Тексты для замены"
+				},
+				"textValues": {
+					"displayName": "Текст",
+					"values": {
+						"matchCase": {
+							"displayName": "Спичечный футляр",
+							"description": "Должен ли поиск учитывать регистр. True: поиск чувствителен к регистру. False: поиск нечувствителен к регистру."
+						},
+						"pageObjectIds": {
+							"displayName": "Названия или идентификаторы слайдов",
+							"description": "Если не пусто, ограничивает совпадения элементами слайда только на заданных слайдах. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+						},
+						"text": {
+							"displayName": "Искать",
+							"description": "Текст для поиска на слайде"
+						},
+						"replaceText": {
+							"displayName": "Заменить на",
+							"description": "Текст, который заменит совпадающий текст"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить текст",
+			"displayName": "Тексты для замены"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"revisionId": {
+					"displayName": "Идентификатор редакции",
+					"description": "Идентификатор версии презентации, необходимый для запроса на запись. Если указано и требуемыйRevisionId не совсем соответствует текущему идентификатору ревизии презентации, запрос не будет обработан и вернет ошибку 400 неверный запрос."
+				}
+			}
+		},
+		"download": {
+			"displayName": "Скачать",
+			"description": "Имя бинарного свойства, в которое записываются данные прочитанной страницы."
+		},
+		"binaryProperty": {
+			"displayName": "Поместите выходной файл в поле",
+			"hint": "Имя выходного двоичного поля, в которое помещается файл."
+		}
+	}
+}

@@ -1,0 +1,95 @@
+{
+	"header": {
+		"displayName": "Хакерские новости",
+		"description": "Используйте API хакерских новостей"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"all": {
+					"displayName": "Все"
+				},
+				"article": {
+					"displayName": "Статья"
+				},
+				"user": {
+					"displayName": "Пользователь"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получите много предметов"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить пользователя Hacker News"
+				}
+			}
+		},
+		"articleId": {
+			"displayName": "Идентификатор статьи",
+			"description": "Идентификатор возвращаемой статьи Hacker News"
+		},
+		"username": {
+			"displayName": "Имя пользователя",
+			"description": "Пользователя Hacker News вернут"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"includeComments": {
+					"displayName": "Включить комментарии",
+					"description": "Включать ли все комментарии в статью Hacker News"
+				},
+				"keyword": {
+					"displayName": "Ключевое слово",
+					"description": "Ключевое слово для фильтрации результатов запроса"
+				},
+				"tags": {
+					"displayName": "Теги",
+					"description": "Теги для фильтрации результатов запроса",
+					"options": {
+						"ask_hn": {
+							"displayName": "Спросите HN",
+							"description": "Возвращает результаты запроса, отфильтрованные по тегу Ask HN."
+						},
+						"comment": {
+							"displayName": "Комментарий",
+							"description": "Возвращает результаты запроса, отфильтрованные по тегу комментария."
+						},
+						"front_page": {
+							"displayName": "Первая страница",
+							"description": "Возвращает результаты запроса, отфильтрованные по тегу главной страницы."
+						},
+						"poll": {
+							"displayName": "Голосование",
+							"description": "Возвращает результаты запроса, отфильтрованные по тегу опроса."
+						},
+						"show_hn": {
+							"displayName": "Показать HN",
+							"description": "Возвращает результаты запроса, отфильтрованные по тегу Показать HN."
+						},
+						"story": {
+							"displayName": "История",
+							"description": "Возвращает результаты запроса, отфильтрованные по тегу истории."
+						}
+					}
+				}
+			}
+		}
+	}
+}

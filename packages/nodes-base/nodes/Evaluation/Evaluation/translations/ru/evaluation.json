@@ -1,0 +1,181 @@
+{
+	"header": {
+		"displayName": "Оценка",
+		"description": "Проводит оценку"
+	},
+	"nodeView": {
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"setInputs": {
+					"displayName": "Установить входы"
+				},
+				"setOutputs": {
+					"displayName": "Установить выходы"
+				},
+				"setMetrics": {
+					"displayName": "Установить метрики"
+				},
+				"checkIfEvaluating": {
+					"displayName": "Проверьте, оцениваете ли вы"
+				}
+			}
+		},
+		"source": {
+			"displayName": "Источник",
+			"description": "Откуда взять тестовый набор данных",
+			"options": {
+				"dataTable": {
+					"displayName": "Таблица данных",
+					"description": "Загрузите тестовый набор данных из локальной таблицы данных."
+				},
+				"googleSheets": {
+					"displayName": "Google Таблицы",
+					"description": "Загрузите тестовый набор данных из документа Google Sheets."
+				}
+			}
+		},
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"serviceAccount": {
+					"displayName": "Сервисный аккаунт"
+				},
+				"oAuth2": {
+					"displayName": "OAuth2 (рекомендуется)"
+				}
+			}
+		},
+		"setInputsNotice": {
+			"displayName": "Для добавления столбцов из вашего набора данных в результаты оценки. Все, что вы сюда добавите, будет отображаться на вкладке «Оценки», а не в Google Sheet или таблице данных."
+		},
+		"inputs": {
+			"options": {
+				"inputs": {
+					"displayName": "Входы"
+				},
+				"values": {
+					"displayName": "Фильтр",
+					"values": {
+						"inputName": {
+							"displayName": "Имя"
+						},
+						"inputValue": {
+							"displayName": "Ценить"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить ввод",
+			"displayName": "Входы",
+			"multipleValueButtonText": "Добавить ввод"
+		},
+		"credentials": {
+			"displayName": "Реквизиты для входа"
+		},
+		"documentId": {
+			"displayName": "Документ, содержащий набор данных"
+		},
+		"sheetName": {
+			"displayName": "Лист, содержащий набор данных"
+		},
+		"dataTableId": {
+			"displayName": "Таблица данных"
+		},
+		"outputs": {
+			"options": {
+				"outputs": {
+					"displayName": "Выходы"
+				},
+				"values": {
+					"displayName": "Фильтр",
+					"values": {
+						"outputName": {
+							"displayName": "Имя"
+						},
+						"outputValue": {
+							"displayName": "Ценить"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить вывод",
+			"displayName": "Выходы",
+			"multipleValueButtonText": "Добавить вывод"
+		},
+		"notice": {
+			"displayName": "Направляется к ветке «оценка», если выполнение началось с триггера оценки. В противном случае направляется к «обычной» ветке."
+		},
+		"metric": {
+			"displayName": "Метрика",
+			"options": {
+				"correctness": {
+					"displayName": "Корректность (на основе искусственного интеллекта)",
+					"description": "Соответствует ли значение ответа эталонному ответу. Использует шкалу от 1 (худший) до 5 (лучший)."
+				},
+				"helpfulness": {
+					"displayName": "Полезность (на основе искусственного интеллекта)",
+					"description": "Соответствует ли ответ запросу. Использует шкалу от 1 (худший) до 5 (лучший)."
+				},
+				"stringSimilarity": {
+					"displayName": "Сходство строк",
+					"description": "Насколько близок ответ к эталонному ответу, измеряется посимвольно (расстояние редактирования). Возвращает оценку от 0 до 1."
+				},
+				"categorization": {
+					"displayName": "Категоризация",
+					"description": "Точно ли ответ соответствует эталонному ответу. Возвращает 1 в этом случае и 0 в противном случае."
+				},
+				"toolsUsed": {
+					"displayName": "Используемые инструменты",
+					"description": "Использовались ли инструменты или нет. Возвращает оценку от 0 до 1."
+				},
+				"customMetrics": {
+					"displayName": "Пользовательские метрики",
+					"description": "Определите свои собственные показатели."
+				}
+			}
+		},
+		"expectedAnswer": {
+			"displayName": "Ожидаемый ответ",
+			"description": "Ожидаемый результат, определенный в вашем наборе оценочных данных и используемый в качестве базовой истины."
+		},
+		"actualAnswer": {
+			"displayName": "Ответ",
+			"description": "Ответ, генерируемый ИИ (например, агентом или LLM в рабочем процессе)"
+		},
+		"userQuery": {
+			"displayName": "Пользовательский запрос",
+			"description": "Исходный ввод или вопрос, отправленный пользователем"
+		},
+		"expectedTools": {
+			"displayName": "Ожидаемые инструменты",
+			"description": "Введите имя(а) инструмента(ов), который вы ожидаете вызвать от ИИ (через запятую).",
+			"placeholder": "Получение событий, отправка электронной почты, поиск в базе данных"
+		},
+		"intermediateSteps": {
+			"displayName": "Промежуточные шаги (агента)",
+			"hint": "Сопоставьте сюда поле <code>intermediateSteps</code>. Чтобы это увидеть, включите возврат промежуточных шагов в настройках агента."
+		},
+		"prompt": {
+			"displayName": "Быстрый",
+			"description": "Инструкция, используемая для управления моделью при оценке полезности фактического ответа по сравнению с ожидаемым ответом."
+		},
+		"metrics": {
+			"displayName": "Метрики для возврата"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"metricName": {
+					"displayName": "Имя метрики",
+					"description": "Установите этот параметр, если вы хотите присвоить метрике собственное имя."
+				},
+				"inputPrompt": {
+					"displayName": "Подсказка ввода",
+					"hint": "Требуются заполнители <code>{user_query}</code> и <code>{actual_answer}</code>."
+				}
+			}
+		}
+	}
+}

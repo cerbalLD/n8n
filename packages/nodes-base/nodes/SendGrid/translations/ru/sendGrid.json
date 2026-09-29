@@ -1,0 +1,345 @@
+{
+	"header": {
+		"displayName": "ОтправитьГрид",
+		"description": "Использование API SendGrid"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"contact": {
+					"displayName": "Контакт"
+				},
+				"list": {
+					"displayName": "Список"
+				},
+				"mail": {
+					"displayName": "Почта"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать список"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удаление контакта"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить контакт по ID"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить много контактов"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить список"
+				},
+				"upsert": {
+					"displayName": "Создать или обновить",
+					"description": "Создайте новый контакт или обновите текущий, если он уже существует (upsert)"
+				},
+				"send": {
+					"displayName": "Отправлять",
+					"description": "Отправить электронное письмо"
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Название списка"
+		},
+		"listId": {
+			"displayName": "Идентификатор списка",
+			"description": "Идентификатор списка"
+		},
+		"deleteContacts": {
+			"displayName": "Удалить контакты",
+			"description": "Удалить ли все контакты в списке"
+		},
+		"contactSample": {
+			"displayName": "Образец контакта",
+			"description": "Возвращать ли образец контакта"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"query": {
+					"displayName": "Запрос",
+					"description": "Поле запроса принимает действительный <a href=\"https://sendgrid.com/docs/for-developers/sending-email/segmentation-query-language/\">SGQL</a> для поиска контакта."
+				}
+			}
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"description": "Электронная почта контактного лица",
+			"placeholder": "имя@email.com"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"addressUi": {
+					"values": {
+						"addressUi": {
+							"displayName": "Адрес"
+						},
+						"addressValues": {
+							"options": {
+								"address1": {
+									"displayName": "Адресная строка 1"
+								},
+								"address2": {
+									"displayName": "Адресная строка 2"
+								}
+							}
+						}
+					},
+					"placeholder": "Адрес",
+					"displayName": "Адрес",
+					"options": {
+						"addressValues": {
+							"displayName": "Адрес"
+						}
+					}
+				},
+				"alternateEmails": {
+					"displayName": "Альтернативные адреса электронной почты"
+				},
+				"city": {
+					"displayName": "Город"
+				},
+				"country": {
+					"displayName": "Страна"
+				},
+				"firstName": {
+					"displayName": "Имя"
+				},
+				"lastName": {
+					"displayName": "Фамилия"
+				},
+				"postalCode": {
+					"displayName": "Почтовый индекс"
+				},
+				"stateProvinceRegion": {
+					"displayName": "Государство / Провинция / Регион"
+				},
+				"listIdsUi": {
+					"values": {
+						"listIdsUi": {
+							"displayName": "Список идентификаторов",
+							"description": "Добавляет настраиваемое поле для установки значений, которые не были заданы заранее."
+						},
+						"listIdValues": {
+							"options": {
+								"listIds": {
+									"displayName": "Список имен или идентификаторов",
+									"description": "Идентификатор поля, которое необходимо установить. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								}
+							}
+						}
+					},
+					"placeholder": "Список идентификаторов",
+					"displayName": "Список идентификаторов",
+					"description": "Добавляет настраиваемое поле для установки значений, которые не были заданы заранее.",
+					"options": {
+						"listIdValues": {
+							"displayName": "Список идентификаторов"
+						}
+					}
+				},
+				"customFieldsUi": {
+					"values": {
+						"customFieldsUi": {
+							"displayName": "Пользовательские поля",
+							"description": "Добавляет пользовательские поля"
+						},
+						"customFieldValues": {
+							"options": {
+								"fieldId": {
+									"displayName": "Имя поля или идентификатор",
+									"description": "Идентификатор поля. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+								},
+								"fieldValue": {
+									"displayName": "Значение поля",
+									"description": "Значение поля"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить пользовательские поля",
+					"displayName": "Пользовательские поля",
+					"description": "Добавляет пользовательские поля",
+					"options": {
+						"customFieldValues": {
+							"displayName": "Поле"
+						}
+					}
+				},
+				"attachments": {
+					"displayName": "Вложения",
+					"description": "Список двоичных свойств, разделенных запятыми."
+				},
+				"bccEmail": {
+					"displayName": "Электронная почта скрытой копии",
+					"description": "Список адресов электронной почты получателей слепой копии электронного письма, разделенный запятыми."
+				},
+				"categories": {
+					"displayName": "Категории",
+					"description": "Список категорий, разделенный запятыми. Название каждой категории не может превышать 255 символов."
+				},
+				"ccEmail": {
+					"displayName": "Электронная почта CC",
+					"description": "Разделенный запятыми список адресов электронной почты получателей точной копии электронного письма."
+				},
+				"enableSandbox": {
+					"displayName": "Включить песочницу",
+					"description": "Следует ли использовать песочницу для тестирования функций отправки электронной почты."
+				},
+				"ipPoolName": {
+					"displayName": "Имя IP-пула",
+					"description": "Пул IP-адресов, с которого вы хотите отправить это письмо."
+				},
+				"replyToEmail": {
+					"displayName": "Ответ на электронное письмо",
+					"description": "Список адресов электронной почты, разделенный запятыми, которые будут отображаться в поле ответа на электронное письмо.",
+					"placeholder": "ответ@домен.com"
+				},
+				"headers": {
+					"values": {
+						"headers": {
+							"displayName": "Заголовки"
+						},
+						"details": {
+							"options": {
+								"key": {
+									"displayName": "Ключ",
+									"description": "Ключ для установки в объекте заголовка"
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Значение для установки в объекте заголовка"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить заголовок",
+					"displayName": "Заголовки",
+					"options": {
+						"details": {
+							"displayName": "Подробности"
+						}
+					}
+				},
+				"sendAt": {
+					"displayName": "Отправить в",
+					"description": "Когда доставить письмо. Запрещено планирование более чем на 72 часа."
+				}
+			}
+		},
+		"ids": {
+			"displayName": "Идентификаторы контактов",
+			"description": "Идентификатор контакта. Можно добавить несколько значений через запятую."
+		},
+		"deleteAll": {
+			"displayName": "Удалить все",
+			"description": "Будут ли удалены все контакты"
+		},
+		"by": {
+			"displayName": "К",
+			"description": "Поиск пользователя по идентификатору или адресу электронной почты",
+			"options": {
+				"id": {
+					"displayName": "ID"
+				},
+				"email": {
+					"displayName": "Электронная почта"
+				}
+			}
+		},
+		"contactId": {
+			"displayName": "Идентификатор контакта",
+			"description": "Идентификатор контакта"
+		},
+		"fromEmail": {
+			"displayName": "Электронная почта отправителя",
+			"description": "Адрес электронной почты отправителя электронного письма",
+			"placeholder": "отправитель@домен.com"
+		},
+		"fromName": {
+			"displayName": "Имя отправителя",
+			"description": "Имя отправителя электронного письма",
+			"placeholder": "Джон Смит"
+		},
+		"toEmail": {
+			"displayName": "Электронная почта получателя",
+			"description": "Список адресов электронной почты получателей, разделенных запятыми.",
+			"placeholder": "получатель@домен.com"
+		},
+		"subject": {
+			"displayName": "Предмет",
+			"description": "Тема письма для отправки"
+		},
+		"dynamicTemplate": {
+			"displayName": "Динамический шаблон",
+			"description": "Будет ли это письмо содержать динамический шаблон"
+		},
+		"contentType": {
+			"displayName": "MIME-тип",
+			"description": "MIME-тип отправляемого письма",
+			"options": {
+				"text/plain": {
+					"displayName": "Обычный текст"
+				},
+				"text/html": {
+					"displayName": "HTML"
+				}
+			}
+		},
+		"contentValue": {
+			"displayName": "Тело сообщения",
+			"description": "Текст сообщения электронной почты для отправки"
+		},
+		"templateId": {
+			"displayName": "Имя или идентификатор шаблона",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"dynamicTemplateFields": {
+			"options": {
+				"dynamicTemplateFields": {
+					"displayName": "Динамические поля шаблона"
+				},
+				"fields": {
+					"displayName": "Поля",
+					"values": {
+						"key": {
+							"displayName": "Ключ",
+							"description": "Ключ поля динамического шаблона"
+						},
+						"value": {
+							"displayName": "Ценить",
+							"description": "Значение поля"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить динамические поля шаблона",
+			"displayName": "Динамические поля шаблона"
+		}
+	}
+}

@@ -1,0 +1,6 @@
+{
+	"header": {
+		"displayName": "Триггер Airtable",
+		"description": "Запускает рабочий процесс при возникновении событий Airtable."
+	}
+}

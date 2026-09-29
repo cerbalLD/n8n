@@ -1,0 +1,171 @@
+{
+	"header": {
+		"displayName": "Триггер лемлиста",
+		"description": "Обработка событий лемлиста через веб-перехватчики"
+	},
+	"nodeView": {
+		"event": {
+			"displayName": "Событие",
+			"options": {
+				"*": {
+					"displayName": "*"
+				},
+				"contacted": {
+					"displayName": "Связались"
+				},
+				"hooked": {
+					"displayName": "на крючке"
+				},
+				"attracted": {
+					"displayName": "Привлечённый"
+				},
+				"warmed": {
+					"displayName": "Утепленный"
+				},
+				"interested": {
+					"displayName": "Заинтересовано"
+				},
+				"skipped": {
+					"displayName": "Пропущено"
+				},
+				"notInterested": {
+					"displayName": "Не интересно"
+				},
+				"emailsSent": {
+					"displayName": "Письма отправлены"
+				},
+				"emailsOpened": {
+					"displayName": "Письма открыты"
+				},
+				"emailsClicked": {
+					"displayName": "Нажатые электронные письма"
+				},
+				"emailsReplied": {
+					"displayName": "Ответы на электронные письма"
+				},
+				"emailsBounced": {
+					"displayName": "Письма возвращены"
+				},
+				"emailsSendFailed": {
+					"displayName": "Отправка электронных писем не удалась"
+				},
+				"emailsFailed": {
+					"displayName": "Электронная почта не удалась"
+				},
+				"emailsUnsubscribed": {
+					"displayName": "Электронная почта отписана"
+				},
+				"emailsInterested": {
+					"displayName": "Электронная почта заинтересована"
+				},
+				"emailsNotInterested": {
+					"displayName": "Электронная почта не интересует"
+				},
+				"opportunitiesDone": {
+					"displayName": "Возможности реализованы"
+				},
+				"aircallCreated": {
+					"displayName": "Воздушный звонок создан"
+				},
+				"aircallEnded": {
+					"displayName": "Воздушный звонок завершен"
+				},
+				"aircallDone": {
+					"displayName": "Воздушный звонок завершен"
+				},
+				"aircallInterested": {
+					"displayName": "Заинтересованы в авиавызове"
+				},
+				"aircallNotInterested": {
+					"displayName": "Воздушный звонок не интересует"
+				},
+				"apiDone": {
+					"displayName": "API готово"
+				},
+				"apiInterested": {
+					"displayName": "API заинтересован"
+				},
+				"apiNotInterested": {
+					"displayName": "API не интересует"
+				},
+				"apiFailed": {
+					"displayName": "Ошибка API"
+				},
+				"linkedinVisitDone": {
+					"displayName": "Посещение LinkedIn завершено"
+				},
+				"linkedinVisitFailed": {
+					"displayName": "Не удалось посетить LinkedIn"
+				},
+				"linkedinInviteDone": {
+					"displayName": "Приглашение в LinkedIn готово"
+				},
+				"linkedinInviteFailed": {
+					"displayName": "Приглашение LinkedIn не удалось"
+				},
+				"linkedinInviteAccepted": {
+					"displayName": "Приглашение LinkedIn принято"
+				},
+				"linkedinReplied": {
+					"displayName": "LinkedIn ответил"
+				},
+				"linkedinSent": {
+					"displayName": "LinkedIn отправлено"
+				},
+				"linkedinVoiceNoteDone": {
+					"displayName": "Голосовая заметка LinkedIn завершена"
+				},
+				"linkedinVoiceNoteFailed": {
+					"displayName": "Голосовая заметка LinkedIn не удалась"
+				},
+				"linkedinInterested": {
+					"displayName": "LinkedIn заинтересован"
+				},
+				"linkedinNotInterested": {
+					"displayName": "LinkedIn не интересует"
+				},
+				"linkedinSendFailed": {
+					"displayName": "Ошибка отправки в LinkedIn"
+				},
+				"manualInterested": {
+					"displayName": "Руководство интересно"
+				},
+				"manualNotInterested": {
+					"displayName": "Руководство не интересует"
+				},
+				"paused": {
+					"displayName": "Приостановлено"
+				},
+				"resumed": {
+					"displayName": "Возобновлено"
+				},
+				"customDomainErrors": {
+					"displayName": "Ошибки пользовательского домена"
+				},
+				"connectionIssue": {
+					"displayName": "Проблема с подключением"
+				},
+				"sendLimitReached": {
+					"displayName": "Достигнут лимит отправки"
+				},
+				"lemwarmPaused": {
+					"displayName": "Лемварм приостановлен"
+				}
+			}
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"campaignId": {
+					"displayName": "Название или идентификатор кампании",
+					"description": "Мы будем вызывать этот хук только для этого идентификатора кампании. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"isFirst": {
+					"displayName": "первый",
+					"description": "Следует ли вызывать этот хук только в первый раз, когда это действие произошло."
+				}
+			}
+		}
+	}
+}

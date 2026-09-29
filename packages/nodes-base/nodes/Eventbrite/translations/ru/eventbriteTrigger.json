@@ -1,0 +1,94 @@
+{
+	"header": {
+		"displayName": "Eventbrite Триггер",
+		"description": "Обработка событий Eventbrite через веб-перехватчики"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"privateKey": {
+					"displayName": "Закрытый ключ"
+				},
+				"oAuth2": {
+					"displayName": "ОАут2"
+				}
+			}
+		},
+		"organization": {
+			"displayName": "Название или идентификатор организации",
+			"description": "Организация Eventbrite, над которой нужно работать. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"event": {
+			"displayName": "Название или идентификатор события",
+			"description": "Ограничьте триггеры этим событием. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"actions": {
+			"displayName": "Действия",
+			"description": "Одно или несколько действий, на которые можно подписаться",
+			"options": {
+				"attendee": {
+					"checked_in": {
+						"displayName": "посетитель.checked_in"
+					},
+					"checked_out": {
+						"displayName": "посетитель.checked_out"
+					},
+					"updated": {
+						"displayName": "посетитель.обновлено"
+					}
+				},
+				"event": {
+					"created": {
+						"displayName": "событие.создано"
+					},
+					"published": {
+						"displayName": "событие.опубликовано"
+					},
+					"unpublished": {
+						"displayName": "событие.неопубликовано"
+					},
+					"updated": {
+						"displayName": "событие.обновлено"
+					}
+				},
+				"order": {
+					"placed": {
+						"displayName": "заказ.размещен"
+					},
+					"refunded": {
+						"displayName": "заказ.возвращен"
+					},
+					"updated": {
+						"displayName": "заказ.обновлено"
+					}
+				},
+				"organizer": {
+					"updated": {
+						"displayName": "Организатор.обновлено"
+					}
+				},
+				"ticket_class": {
+					"created": {
+						"displayName": "Ticket_class.created"
+					},
+					"deleted": {
+						"displayName": "Ticket_class.deleted"
+					},
+					"updated": {
+						"displayName": "Ticket_class.updated"
+					}
+				},
+				"venue": {
+					"updated": {
+						"displayName": "место проведения.обновлено"
+					}
+				}
+			}
+		},
+		"resolveData": {
+			"displayName": "Разрешение данных",
+			"description": "По умолчанию данные веб-перехватчика содержат только URL-адрес для получения данных объекта вручную. Если эта опция активирована, она автоматически разрешит данные."
+		}
+	}
+}

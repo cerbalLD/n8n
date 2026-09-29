@@ -1,0 +1,467 @@
+{
+	"header": {
+		"displayName": "Microsoft Динамика CRM",
+		"description": "Использование API Microsoft Dynamics CRM"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"account": {
+					"displayName": "Счет"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать"
+				},
+				"delete": {
+					"displayName": "Удалить"
+				},
+				"get": {
+					"displayName": "Получать"
+				},
+				"getAll": {
+					"displayName": "Получить много"
+				},
+				"update": {
+					"displayName": "Обновлять"
+				}
+			}
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Название компании или компании"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"accountcategorycode": {
+					"displayName": "Название или идентификатор категории учетной записи",
+					"description": "Категория, указывающая, является ли учетная запись клиента стандартной или предпочтительной. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"accountratingcode": {
+					"displayName": "Имя или идентификатор аккаунта",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"addresses": {
+					"values": {
+						"addresses": {
+							"displayName": "Адрес"
+						},
+						"address": {
+							"options": {
+								"addresstypecode": {
+									"displayName": "Тип адреса Имя или идентификатор",
+									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+								},
+								"line1": {
+									"displayName": "Линия 1"
+								},
+								"line2": {
+									"displayName": "Линия 2"
+								},
+								"line3": {
+									"displayName": "Линия 3"
+								},
+								"city": {
+									"displayName": "Город"
+								},
+								"stateorprovince": {
+									"displayName": "Штат или провинция"
+								},
+								"country": {
+									"displayName": "Страна"
+								},
+								"name": {
+									"displayName": "Имя"
+								},
+								"postalcode": {
+									"displayName": "Почтовый индекс"
+								},
+								"primarycontactname": {
+									"displayName": "Имя основного контактного лица"
+								},
+								"telephone1": {
+									"displayName": "Телефон1"
+								},
+								"telephone2": {
+									"displayName": "Телефон2"
+								},
+								"fax": {
+									"displayName": "Факс"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить поле адреса",
+					"displayName": "Адрес",
+					"options": {
+						"address": {
+							"displayName": "Поля адреса"
+						}
+					}
+				},
+				"businesstypecode": {
+					"displayName": "Название или идентификатор типа бизнеса",
+					"description": "Юридическое назначение или другой вид деятельности счета для контрактов или целей отчетности. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"customersizecode": {
+					"displayName": "Имя или идентификатор размера клиента",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"customertypecode": {
+					"displayName": "Имя или идентификатор типа клиента",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"description": {
+					"displayName": "Описание",
+					"description": "Дополнительная информация для описания учетной записи, например выдержка с веб-сайта компании."
+				},
+				"emailaddress1": {
+					"displayName": "Адрес электронной почты 1",
+					"description": "Основной адрес электронной почты для учетной записи"
+				},
+				"emailaddress2": {
+					"displayName": "Адрес электронной почты 2",
+					"description": "Дополнительный адрес электронной почты для учетной записи"
+				},
+				"emailaddress3": {
+					"displayName": "Адрес электронной почты 3",
+					"description": "Альтернативный адрес электронной почты для учетной записи"
+				},
+				"fax": {
+					"displayName": "Факс"
+				},
+				"ftpsiteurl": {
+					"displayName": "URL-адрес FTP-сайта",
+					"description": "URL-адрес FTP-сайта учетной записи, позволяющий пользователям получать доступ к данным и обмениваться документами."
+				},
+				"industrycode": {
+					"displayName": "Название или идентификатор отрасли",
+					"description": "Основная отрасль аккаунта, используемая для маркетинговой сегментации и демографического анализа. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Компания или название компании"
+				},
+				"creditlimit": {
+					"displayName": "Кредитный лимит",
+					"description": "Кредитный лимит счета. Это полезный справочник при решении вопросов, связанных со счетами и бухгалтерским учетом, с клиентом."
+				},
+				"numberofemployees": {
+					"displayName": "Количество сотрудников",
+					"description": "Количество сотрудников, которые работают над аккаунтом для использования в маркетинговой сегментации и демографическом анализе."
+				},
+				"paymenttermscode": {
+					"displayName": "Условия оплаты Имя или идентификатор",
+					"description": "Условия оплаты, указывающие, когда клиенту необходимо оплатить полную сумму. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"preferredappointmentdaycode": {
+					"displayName": "Имя или идентификатор предпочтительного дня встречи",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"preferredappointmenttimecode": {
+					"displayName": "Предпочтительное время встречи, имя или идентификатор",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"preferredcontactmethodcode": {
+					"displayName": "Имя или идентификатор предпочтительного метода связи",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"primarysatoriid": {
+					"displayName": "Основной идентификатор Сатори"
+				},
+				"primarytwitterid": {
+					"displayName": "Основной идентификатор Twitter"
+				},
+				"revenue": {
+					"displayName": "Доход",
+					"description": "Годовой доход по счету, используемый в качестве показателя при анализе финансовых результатов."
+				},
+				"sharesoutstanding": {
+					"displayName": "Акции в обращении",
+					"description": "Количество акций, доступных общественности для учетной записи. Это число используется в качестве индикатора при анализе финансовых результатов."
+				},
+				"shippingmethodcode": {
+					"displayName": "Название или идентификатор способа доставки",
+					"description": "Способ доставки для поставок, отправляемых на адрес учетной записи, чтобы указать предпочтительного перевозчика или другой вариант доставки. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"sic": {
+					"displayName": "SIC",
+					"description": "Код стандартной отраслевой классификации (SIC), указывающий основную отрасль бизнеса аккаунта, для использования в маркетинговой сегментации и демографическом анализе."
+				},
+				"stageid": {
+					"displayName": "Идентификатор этапа"
+				},
+				"stockexchange": {
+					"displayName": "Фондовая биржа",
+					"description": "Фондовая биржа, на которой зарегистрирован счет для отслеживания акций и финансовых показателей компании."
+				},
+				"telephone1": {
+					"displayName": "Телефон 1",
+					"description": "Основной номер телефона для этого аккаунта"
+				},
+				"telephone2": {
+					"displayName": "Телефон 2",
+					"description": "Второй номер телефона для этого аккаунта"
+				},
+				"telephone3": {
+					"displayName": "Телефон 3",
+					"description": "Третий номер телефона для этого аккаунта"
+				},
+				"territorycode": {
+					"displayName": "Название или идентификатор территории",
+					"description": "Регион или территория аккаунта для использования при сегментации и анализе. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"tickersymbol": {
+					"displayName": "Тикерный символ",
+					"description": "Введите символ фондовой биржи для учетной записи, чтобы отслеживать финансовые показатели компании. Вы можете щелкнуть код, введенный в это поле, чтобы получить доступ к последней торговой информации из MSN Money."
+				},
+				"websiteurl": {
+					"displayName": "URL-адрес веб-сайта",
+					"description": "URL-адрес веб-сайта учетной записи, где можно получить краткую информацию о профиле компании."
+				},
+				"yominame": {
+					"displayName": "Имя Ёми",
+					"description": "Фонетическое написание названия компании, если указано на японском языке, чтобы имя правильно произносилось при телефонных звонках и других сообщениях."
+				}
+			}
+		},
+		"accountId": {
+			"displayName": "Идентификатор аккаунта"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"returnFields": {
+					"displayName": "Возврат имен или идентификаторов полей",
+					"description": "Поля, которые будет включать ответ. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"expandFields": {
+					"displayName": "Разверните имена полей или идентификаторы",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				}
+			}
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"query": {
+					"displayName": "Запрос",
+					"description": "Запрос для фильтрации результатов. Проверьте <a href=\"https://docs.microsoft.com/en-us/powerapps/developer/data-platform/webapi/query-data-web-api#filter-results\" target=\"_blank\">filters</a>."
+				}
+			}
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"accountcategorycode": {
+					"displayName": "Название или идентификатор категории учетной записи",
+					"description": "Категория, указывающая, является ли учетная запись клиента стандартной или предпочтительной. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"accountratingcode": {
+					"displayName": "Имя или идентификатор аккаунта",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"addresses": {
+					"values": {
+						"addresses": {
+							"displayName": "Адрес"
+						},
+						"address": {
+							"options": {
+								"addresstypecode": {
+									"displayName": "Тип адреса Имя или идентификатор",
+									"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+								},
+								"line1": {
+									"displayName": "Линия 1"
+								},
+								"line2": {
+									"displayName": "Линия 2"
+								},
+								"line3": {
+									"displayName": "Линия 3"
+								},
+								"city": {
+									"displayName": "Город"
+								},
+								"stateorprovince": {
+									"displayName": "Штат или провинция"
+								},
+								"country": {
+									"displayName": "Страна"
+								},
+								"name": {
+									"displayName": "Имя"
+								},
+								"postalcode": {
+									"displayName": "Почтовый индекс"
+								},
+								"primarycontactname": {
+									"displayName": "Имя основного контактного лица"
+								},
+								"telephone1": {
+									"displayName": "Телефон1"
+								},
+								"telephone2": {
+									"displayName": "Телефон2"
+								},
+								"fax": {
+									"displayName": "Факс"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить поле адреса",
+					"displayName": "Адрес",
+					"options": {
+						"address": {
+							"displayName": "Поля адреса"
+						}
+					}
+				},
+				"businesstypecode": {
+					"displayName": "Название или идентификатор типа бизнеса",
+					"description": "Юридическое назначение или другой вид деятельности счета для контрактов или целей отчетности. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"customersizecode": {
+					"displayName": "Имя или идентификатор размера клиента",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"customertypecode": {
+					"displayName": "Имя или идентификатор типа клиента",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"description": {
+					"displayName": "Описание",
+					"description": "Дополнительная информация для описания учетной записи, например выдержка с веб-сайта компании."
+				},
+				"emailaddress1": {
+					"displayName": "Адрес электронной почты 1",
+					"description": "Основной адрес электронной почты для учетной записи"
+				},
+				"emailaddress2": {
+					"displayName": "Адрес электронной почты 2",
+					"description": "Дополнительный адрес электронной почты для учетной записи"
+				},
+				"emailaddress3": {
+					"displayName": "Адрес электронной почты 3",
+					"description": "Альтернативный адрес электронной почты для учетной записи"
+				},
+				"fax": {
+					"displayName": "Факс"
+				},
+				"ftpsiteurl": {
+					"displayName": "URL-адрес FTP-сайта",
+					"description": "URL-адрес FTP-сайта учетной записи, позволяющий пользователям получать доступ к данным и обмениваться документами."
+				},
+				"industrycode": {
+					"displayName": "Название или идентификатор отрасли",
+					"description": "Основная отрасль аккаунта, используемая для маркетинговой сегментации и демографического анализа. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"name": {
+					"displayName": "Имя",
+					"description": "Компания или название компании"
+				},
+				"creditlimit": {
+					"displayName": "Кредитный лимит",
+					"description": "Кредитный лимит счета. Это полезный справочник при решении вопросов, связанных со счетами и бухгалтерским учетом, с клиентом."
+				},
+				"numberofemployees": {
+					"displayName": "Количество сотрудников",
+					"description": "Количество сотрудников, которые работают над аккаунтом для использования в маркетинговой сегментации и демографическом анализе."
+				},
+				"paymenttermscode": {
+					"displayName": "Условия оплаты Имя или идентификатор",
+					"description": "Условия оплаты, указывающие, когда клиенту необходимо оплатить полную сумму. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"preferredappointmentdaycode": {
+					"displayName": "Имя или идентификатор предпочтительного дня встречи",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"preferredappointmenttimecode": {
+					"displayName": "Предпочтительное время встречи, имя или идентификатор",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"preferredcontactmethodcode": {
+					"displayName": "Имя или идентификатор предпочтительного метода связи",
+					"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"primarysatoriid": {
+					"displayName": "Основной идентификатор Сатори"
+				},
+				"primarytwitterid": {
+					"displayName": "Основной идентификатор Twitter"
+				},
+				"revenue": {
+					"displayName": "Доход",
+					"description": "Годовой доход по счету, используемый в качестве показателя при анализе финансовых результатов."
+				},
+				"sharesoutstanding": {
+					"displayName": "Акции в обращении",
+					"description": "Количество акций, доступных общественности для учетной записи. Это число используется в качестве индикатора при анализе финансовых результатов."
+				},
+				"shippingmethodcode": {
+					"displayName": "Название или идентификатор способа доставки",
+					"description": "Способ доставки для поставок, отправляемых на адрес учетной записи, чтобы указать предпочтительного перевозчика или другой вариант доставки. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"sic": {
+					"displayName": "SIC",
+					"description": "Код стандартной отраслевой классификации (SIC), указывающий основную отрасль бизнеса аккаунта, для использования в маркетинговой сегментации и демографическом анализе."
+				},
+				"stageid": {
+					"displayName": "Идентификатор этапа"
+				},
+				"stockexchange": {
+					"displayName": "Фондовая биржа",
+					"description": "Фондовая биржа, на которой зарегистрирован счет для отслеживания акций и финансовых показателей компании."
+				},
+				"telephone1": {
+					"displayName": "Телефон 1",
+					"description": "Основной номер телефона для этого аккаунта"
+				},
+				"telephone2": {
+					"displayName": "Телефон 2",
+					"description": "Второй номер телефона для этого аккаунта"
+				},
+				"telephone3": {
+					"displayName": "Телефон 3",
+					"description": "Третий номер телефона для этого аккаунта"
+				},
+				"territorycode": {
+					"displayName": "Название или идентификатор территории",
+					"description": "Регион или территория аккаунта для использования при сегментации и анализе. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+				},
+				"tickersymbol": {
+					"displayName": "Тикерный символ",
+					"description": "Введите символ фондовой биржи для учетной записи, чтобы отслеживать финансовые показатели компании. Вы можете щелкнуть код, введенный в это поле, чтобы получить доступ к последней торговой информации из MSN Money."
+				},
+				"websiteurl": {
+					"displayName": "URL-адрес веб-сайта",
+					"description": "URL-адрес веб-сайта учетной записи, где можно получить краткую информацию о профиле компании."
+				},
+				"yominame": {
+					"displayName": "Имя Ёми",
+					"description": "Фонетическое написание названия компании, если указано на японском языке, чтобы имя правильно произносилось при телефонных звонках и других сообщениях."
+				}
+			}
+		}
+	}
+}

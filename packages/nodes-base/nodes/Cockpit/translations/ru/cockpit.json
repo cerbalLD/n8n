@@ -1,0 +1,138 @@
+{
+	"header": {
+		"displayName": "Кокпит",
+		"description": "Использование API кабины"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"collection": {
+					"displayName": "Коллекция"
+				},
+				"form": {
+					"displayName": "Форма"
+				},
+				"singleton": {
+					"displayName": "Синглтон"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создать запись",
+					"description": "Создать запись в коллекции"
+				},
+				"getAll": {
+					"displayName": "Получите много записей",
+					"description": "Получите много записей коллекции"
+				},
+				"update": {
+					"displayName": "Обновить запись",
+					"description": "Обновить запись коллекции"
+				},
+				"submit": {
+					"displayName": "Отправить форму",
+					"description": "Сохранение данных из отправки формы"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить синглтон"
+				}
+			}
+		},
+		"collection": {
+			"displayName": "Название или идентификатор коллекции",
+			"description": "Имя коллекции, над которой нужно работать. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"fields": {
+					"displayName": "Поля",
+					"description": "Список полей, разделенных запятыми, для получения",
+					"placeholder": "_id,имя"
+				},
+				"filter": {
+					"displayName": "Фильтровать запрос",
+					"description": "Фильтровать запрос в <a href=\"https://jeroen.github.io/mongolite/query-data.html\">монгольском формате</a>",
+					"placeholder": "{\"имя\": \"Джим\"}"
+				},
+				"language": {
+					"displayName": "Язык",
+					"description": "Вернуть нормализованные языковые поля"
+				},
+				"populate": {
+					"displayName": "Заселить",
+					"description": "Следует ли разрешать связанные элементы коллекции"
+				},
+				"rawData": {
+					"displayName": "Необработанные данные",
+					"description": "Возвращать ли данные именно в том виде, в каком они были получены от API"
+				},
+				"skip": {
+					"displayName": "Пропускать",
+					"description": "Пропустить количество записей"
+				},
+				"sort": {
+					"displayName": "Сортировать запрос",
+					"description": "Сортировать запрос в <a href=\"https://jeroen.github.io/mongolite/query-data.html\">монгольском формате</a>",
+					"placeholder": "{\"цена\": -1}"
+				}
+			}
+		},
+		"id": {
+			"displayName": "Идентификатор записи"
+		},
+		"jsonDataFields": {
+			"displayName": "Поля данных JSON",
+			"description": "Должны ли поля формы задаваться через пользовательский интерфейс пары «значение-ключ» или JSON."
+		},
+		"dataFieldsJson": {
+			"displayName": "Данные формы",
+			"description": "Данные формы для отправки в формате JSON"
+		},
+		"dataFieldsUi": {
+			"options": {
+				"dataFieldsUi": {
+					"displayName": "Данные формы",
+					"description": "Данные формы для отправки"
+				},
+				"field": {
+					"displayName": "Поле",
+					"values": {
+						"name": {
+							"displayName": "Имя",
+							"description": "Название поля"
+						},
+						"value": {
+							"displayName": "Ценить",
+							"description": "Значение поля"
+						}
+					}
+				}
+			},
+			"displayName": "Данные формы",
+			"description": "Данные формы для отправки"
+		},
+		"form": {
+			"displayName": "Форма",
+			"description": "Имя формы, над которой нужно работать"
+		},
+		"singleton": {
+			"displayName": "Имя или идентификатор синглтона",
+			"description": "Имя синглтона, над которым нужно работать. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		}
+	}
+}

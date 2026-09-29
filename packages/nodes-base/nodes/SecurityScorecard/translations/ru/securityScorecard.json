@@ -1,0 +1,366 @@
+{
+	"header": {
+		"displayName": "Система показателей безопасности",
+		"description": "Использование API SecurityScorecard"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"company": {
+					"displayName": "Компания"
+				},
+				"industry": {
+					"displayName": "Промышленность"
+				},
+				"invite": {
+					"displayName": "Приглашать"
+				},
+				"portfolio": {
+					"displayName": "Портфель"
+				},
+				"portfolioCompany": {
+					"displayName": "Портфельная компания"
+				},
+				"report": {
+					"displayName": "Отчет"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"getFactor": {
+					"displayName": "Получите баллы по факторам",
+					"description": "Получите оценки факторов компании и количество проблем"
+				},
+				"getFactorHistorical": {
+					"displayName": "Получите оценки исторических факторов",
+					"description": "Получите исторические оценки факторов компании"
+				},
+				"getHistoricalScore": {
+					"displayName": "Получите исторические результаты",
+					"description": "Получите исторические оценки компании"
+				},
+				"getScorecard": {
+					"displayName": "Получить информацию и систему показателей",
+					"description": "Получите информацию о компании и сводную информацию об их системе показателей."
+				},
+				"getScorePlan": {
+					"displayName": "Получить план оценки",
+					"description": "Получите план улучшения показателей компании"
+				},
+				"getScore": {
+					"displayName": "Получить оценку"
+				},
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать портфолио"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удалить портфолио"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить список недавно созданных отчетов"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить портфолио"
+				},
+				"add": {
+					"displayName": "Добавлять",
+					"description": "Добавить компанию в портфолио"
+				},
+				"remove": {
+					"displayName": "Удалять",
+					"description": "Удалить компанию из портфолио"
+				},
+				"download": {
+					"displayName": "Скачать",
+					"description": "Скачать созданный отчет"
+				},
+				"generate": {
+					"displayName": "Генерировать",
+					"description": "Создать отчет"
+				}
+			}
+		},
+		"scorecardIdentifier": {
+			"displayName": "Идентификатор системы показателей",
+			"description": "Основной идентификатор компании или системы показателей, т. е. домена."
+		},
+		"score": {
+			"displayName": "Счет",
+			"description": "Цель"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"simple": {
+			"displayName": "Упрощать",
+			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+		},
+		"filters": {
+			"displayName": "Фильтры",
+			"placeholder": "Добавить фильтр",
+			"options": {
+				"severity": {
+					"displayName": "Серьезность"
+				},
+				"severity_in": {
+					"displayName": "Серьезность в",
+					"description": "Фильтровать проблемы по списку серьезности, разделенному запятыми."
+				},
+				"grade": {
+					"displayName": "Оценка",
+					"description": "Фильтр оценок компании"
+				},
+				"industry": {
+					"displayName": "Промышленность",
+					"description": "Отраслевой фильтр"
+				},
+				"issueType": {
+					"displayName": "Тип проблемы",
+					"description": "Фильтр типа проблемы"
+				},
+				"status": {
+					"displayName": "Статус",
+					"options": {
+						"active": {
+							"displayName": "Активный"
+						},
+						"inactive": {
+							"displayName": "Неактивный"
+						}
+					}
+				},
+				"vulnerability": {
+					"displayName": "Уязвимость",
+					"description": "Фильтр уязвимостей CVE"
+				}
+			}
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить поле",
+			"options": {
+				"date_from": {
+					"displayName": "Дата От",
+					"description": "Дата начала истории"
+				},
+				"date_to": {
+					"displayName": "Дата до",
+					"description": "Дата окончания истории"
+				},
+				"timing": {
+					"displayName": "Тайминг",
+					"description": "Детализация даты",
+					"options": {
+						"daily": {
+							"displayName": "Ежедневно"
+						},
+						"weekly": {
+							"displayName": "Еженедельно"
+						},
+						"monthly": {
+							"displayName": "Ежемесячно"
+						}
+					}
+				},
+				"from": {
+					"displayName": "Дата От",
+					"description": "Дата начала истории"
+				},
+				"to": {
+					"displayName": "Дата до",
+					"description": "Дата окончания истории"
+				},
+				"format": {
+					"displayName": "Формат",
+					"options": {
+						"csv": {
+							"displayName": "CSV"
+						},
+						"pdf": {
+							"displayName": "PDF"
+						}
+					}
+				},
+				"countries": {
+					"displayName": "Страны"
+				},
+				"ips": {
+					"displayName": "IP-адреса"
+				},
+				"subdomains": {
+					"displayName": "Субдомены"
+				}
+			}
+		},
+		"industry": {
+			"displayName": "Промышленность",
+			"options": {
+				"food": {
+					"displayName": "Еда"
+				},
+				"healthcare": {
+					"displayName": "Здравоохранение"
+				},
+				"manofacturing": {
+					"displayName": "Производство"
+				},
+				"retail": {
+					"displayName": "Розничная торговля"
+				},
+				"technology": {
+					"displayName": "Технология"
+				}
+			}
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"placeholder": "имя@email.com"
+		},
+		"firstName": {
+			"displayName": "Имя"
+		},
+		"lastName": {
+			"displayName": "Фамилия"
+		},
+		"message": {
+			"displayName": "Сообщение",
+			"description": "Сообщение для приглашенного"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"days_to_resolve_issue": {
+					"displayName": "Дней на решение проблемы",
+					"description": "Минимальное количество дней для решения проблемы с системой показателей"
+				},
+				"domain": {
+					"displayName": "Домен",
+					"description": "Домен компании приглашенного"
+				},
+				"grade_to_maintain": {
+					"displayName": "Оценка для поддержания",
+					"description": "Попросите организацию приглашенного сохранить минимальную оценку."
+				},
+				"is_organization_point_of_contact": {
+					"displayName": "Является ли организация контактным лицом",
+					"description": "Является контактным лицом приглашаемой организации?"
+				},
+				"issue_desc": {
+					"displayName": "Описание проблемы"
+				},
+				"issue_title": {
+					"displayName": "Название проблемы"
+				},
+				"issue_type": {
+					"displayName": "Тип проблемы"
+				},
+				"sendme_copy": {
+					"displayName": "Отправьте мне копию",
+					"description": "Отправлять ли копию приглашения запрашивающему пользователю"
+				},
+				"target_url": {
+					"displayName": "Целевой URL",
+					"description": "Необязательный URL-адрес, по которому приглашенный может перейти на платформу."
+				}
+			}
+		},
+		"portfolioId": {
+			"displayName": "Идентификатор портфеля"
+		},
+		"name": {
+			"displayName": "Название портфолио",
+			"description": "Название портфолио"
+		},
+		"description": {
+			"displayName": "Описание"
+		},
+		"privacy": {
+			"displayName": "Конфиденциальность",
+			"options": {
+				"private": {
+					"displayName": "Частный",
+					"description": "Видно только вам"
+				},
+				"shared": {
+					"displayName": "Общий",
+					"description": "Видно всем в вашей компании"
+				},
+				"team": {
+					"displayName": "Команда",
+					"description": "Видно людям в вашей команде"
+				}
+			}
+		},
+		"domain": {
+			"displayName": "Домен",
+			"description": "Доменное имя компании"
+		},
+		"report": {
+			"displayName": "Отчет",
+			"options": {
+				"detailed": {
+					"displayName": "Подробная информация о компании"
+				},
+				"events-json": {
+					"displayName": "Мероприятия компании"
+				},
+				"issues": {
+					"displayName": "Проблемы компании"
+				},
+				"partnership": {
+					"displayName": "Партнерство компании"
+				},
+				"summary": {
+					"displayName": "Резюме компании"
+				},
+				"full-scorecard-json": {
+					"displayName": "Полная система показателей"
+				},
+				"portfolio": {
+					"displayName": "Портфель"
+				},
+				"scorecard-footprint": {
+					"displayName": "Отпечаток системы показателей"
+				}
+			}
+		},
+		"branding": {
+			"displayName": "Брендинг",
+			"options": {
+				"securityscorecard": {
+					"displayName": "Система показателей безопасности"
+				},
+				"company_and_securityscorecard": {
+					"displayName": "Компания и система показателей безопасности"
+				},
+				"company": {
+					"displayName": "Компания"
+				}
+			}
+		},
+		"date": {
+			"displayName": "Дата"
+		},
+		"url": {
+			"displayName": "URL отчета",
+			"description": "Путь к файлу отчета или URL-адрес загрузки HTTPS из API SecurityScorecard (api.securityscorecard.io)"
+		},
+		"binaryPropertyName": {
+			"displayName": "Поместите выходной файл в поле",
+			"hint": "Имя выходного двоичного поля, в которое помещается файл."
+		}
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"header": {
+		"displayName": "Триггер Form.io",
+		"description": "Обработка событий form.io через веб-перехватчики"
+	},
+	"nodeView": {
+		"projectId": {
+			"displayName": "Название или идентификатор проекта",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"formId": {
+			"displayName": "Имя или идентификатор формы",
+			"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+		},
+		"events": {
+			"displayName": "Триггерные события",
+			"options": {
+				"create": {
+					"displayName": "Представление создано"
+				},
+				"update": {
+					"displayName": "Представление обновлено"
+				}
+			}
+		},
+		"simple": {
+			"displayName": "Упрощать",
+			"description": "Возвращать ли упрощенную версию ответа вместо необработанных данных"
+		}
+	}
+}

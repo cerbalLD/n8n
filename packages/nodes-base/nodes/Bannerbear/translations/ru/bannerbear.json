@@ -1,0 +1,100 @@
+{
+	"header": {
+		"displayName": "Баннербер",
+		"description": "Использование API Bannerbear"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"image": {
+					"displayName": "Изображение"
+				},
+				"template": {
+					"displayName": "Шаблон"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать изображение"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить шаблон"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получите множество шаблонов"
+				}
+			}
+		},
+		"templateId": {
+			"displayName": "Идентификатор шаблона",
+			"description": "Уникальный идентификатор шаблона"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"metadata": {
+					"displayName": "Метаданные",
+					"description": "Метаданные, которые вам необходимо хранить, например. Идентификатор записи в вашей БД"
+				},
+				"waitForImage": {
+					"displayName": "Подождите изображения",
+					"description": "Стоит ли ждать обработки изображения перед возвратом. Если после трех попыток изображения не готовы, будет выдано сообщение об ошибке. Количество попыток можно увеличить, установив «Подождать максимальное количество попыток»."
+				},
+				"waitForImageMaxTries": {
+					"displayName": "Подожди, Макс пытается",
+					"description": "Как часто следует проверять доступность изображения, прежде чем произойдет сбой"
+				},
+				"webhookUrl": {
+					"displayName": "URL вебхука",
+					"description": "URL-адрес для отправки объекта изображения после завершения рендеринга."
+				}
+			}
+		},
+		"modificationsUi": {
+			"options": {
+				"modificationsUi": {
+					"displayName": "Модификации"
+				},
+				"modificationsValues": {
+					"displayName": "Модификация",
+					"values": {
+						"name": {
+							"displayName": "Имя или идентификатор",
+							"description": "Имя элемента, который вы хотите изменить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+						},
+						"text": {
+							"displayName": "Текст",
+							"description": "Текст замены, который вы хотите использовать"
+						},
+						"color": {
+							"displayName": "Цвет",
+							"description": "Цветной шестигранник объекта"
+						},
+						"background": {
+							"displayName": "Фон",
+							"description": "Цветной шестнадцатеричный фон текста"
+						},
+						"imageUrl": {
+							"displayName": "URL-адрес изображения",
+							"description": "URL-адрес заменяющего изображения, которое вы хотите использовать (должен быть общедоступным)"
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить модификацию",
+			"displayName": "Модификации"
+		},
+		"imageId": {
+			"displayName": "Идентификатор изображения",
+			"description": "Уникальный идентификатор изображения"
+		}
+	}
+}

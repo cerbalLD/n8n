@@ -1,0 +1,116 @@
+{
+	"header": {
+		"displayName": "LinkedIn",
+		"description": "Использование LinkedIn API"
+	},
+	"nodeView": {
+		"authentication": {
+			"displayName": "Аутентификация",
+			"options": {
+				"standard": {
+					"displayName": "Стандартный"
+				},
+				"communityManagement": {
+					"displayName": "Управление сообществом"
+				}
+			}
+		},
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"post": {
+					"displayName": "Почта"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать новый пост"
+				}
+			}
+		},
+		"postAs": {
+			"displayName": "Опубликовать как",
+			"description": "Если опубликовать от имени пользователя или организации",
+			"options": {
+				"person": {
+					"displayName": "Человек"
+				},
+				"organization": {
+					"displayName": "Организация"
+				}
+			}
+		},
+		"person": {
+			"displayName": "Имя или идентификатор человека",
+			"description": "Лицо, от имени которого должно быть опубликовано сообщение. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+		},
+		"organization": {
+			"displayName": "Организация УРН",
+			"description": "URN организации, под которой должно быть опубликовано сообщение:",
+			"placeholder": "1234567"
+		},
+		"text": {
+			"displayName": "Текст",
+			"description": "Основное содержание поста"
+		},
+		"shareMediaCategory": {
+			"displayName": "Категория СМИ",
+			"options": {
+				"NONE": {
+					"displayName": "Никто",
+					"description": "Пост не содержит никаких медиафайлов и будет состоять только из текста."
+				},
+				"ARTICLE": {
+					"displayName": "Статья",
+					"description": "Сообщение содержит URL статьи."
+				},
+				"IMAGE": {
+					"displayName": "Изображение",
+					"description": "Сообщение содержит изображение"
+				}
+			}
+		},
+		"binaryPropertyName": {
+			"displayName": "Входное двоичное поле",
+			"hint": "Имя входного двоичного поля, содержащего файл для записи."
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"description": {
+					"displayName": "Описание",
+					"description": "Укажите краткое описание вашего изображения или статьи."
+				},
+				"originalUrl": {
+					"displayName": "Исходный URL-адрес",
+					"description": "Укажите URL-адрес статьи, которой вы хотите поделиться здесь."
+				},
+				"thumbnailBinaryPropertyName": {
+					"displayName": "Входное двоичное поле",
+					"hint": "Имя входного двоичного поля, содержащего файл миниатюры статьи."
+				},
+				"title": {
+					"displayName": "Заголовок",
+					"description": "Настройте заголовок вашего изображения или статьи"
+				},
+				"visibility": {
+					"displayName": "Видимость",
+					"description": "Укажите, будет ли публикация видна широкой публике или только знакомым.",
+					"options": {
+						"CONNECTIONS": {
+							"displayName": "Соединения"
+						},
+						"PUBLIC": {
+							"displayName": "Общественный"
+						}
+					}
+				}
+			}
+		}
+	}
+}

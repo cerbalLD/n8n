@@ -1,0 +1,859 @@
+{
+	"header": {
+		"displayName": "Google Контакты",
+		"description": "Использование API контактов Google"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"contact": {
+					"displayName": "Контакт"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"create": {
+					"displayName": "Создавать",
+					"description": "Создать контакт"
+				},
+				"delete": {
+					"displayName": "Удалить",
+					"description": "Удаление контакта"
+				},
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить контакт"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Получить много контактов"
+				},
+				"update": {
+					"displayName": "Обновлять",
+					"description": "Обновить контакт"
+				}
+			}
+		},
+		"familyName": {
+			"displayName": "Фамилия"
+		},
+		"givenName": {
+			"displayName": "Собственное имя"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"addressesUi": {
+					"values": {
+						"addressesUi": {
+							"displayName": "Адреса"
+						},
+						"addressesValues": {
+							"options": {
+								"streetAddress": {
+									"displayName": "Адрес улицы"
+								},
+								"city": {
+									"displayName": "Город"
+								},
+								"region": {
+									"displayName": "Область"
+								},
+								"countryCode": {
+									"displayName": "Код страны"
+								},
+								"postalCode": {
+									"displayName": "Почтовый индекс"
+								},
+								"type": {
+									"displayName": "Тип",
+									"options": {
+										"home": {
+											"displayName": "Дом"
+										},
+										"work": {
+											"displayName": "Работа"
+										},
+										"other": {
+											"displayName": "Другой"
+										}
+									}
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить адрес",
+					"displayName": "Адреса",
+					"options": {
+						"addressesValues": {
+							"displayName": "Адрес"
+						}
+					}
+				},
+				"birthday": {
+					"displayName": "День рождения"
+				},
+				"companyUi": {
+					"values": {
+						"companyUi": {
+							"displayName": "Компания"
+						},
+						"companyValues": {
+							"options": {
+								"current": {
+									"displayName": "Текущий"
+								},
+								"domain": {
+									"displayName": "Домен"
+								},
+								"name": {
+									"displayName": "Имя"
+								},
+								"title": {
+									"displayName": "Заголовок"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить компанию",
+					"displayName": "Компания",
+					"options": {
+						"companyValues": {
+							"displayName": "Компания"
+						}
+					}
+				},
+				"customFieldsUi": {
+					"values": {
+						"customFieldsUi": {
+							"displayName": "Пользовательские поля"
+						},
+						"customFieldsValues": {
+							"options": {
+								"key": {
+									"displayName": "Ключ",
+									"description": "Указанный конечным пользователем ключ определяемых пользователем данных"
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Указанное конечным пользователем значение определяемых пользователем данных"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить настраиваемое поле",
+					"displayName": "Пользовательские поля",
+					"options": {
+						"customFieldsValues": {
+							"displayName": "Пользовательское поле"
+						}
+					}
+				},
+				"emailsUi": {
+					"values": {
+						"emailsUi": {
+							"displayName": "Электронная почта"
+						},
+						"emailsValues": {
+							"options": {
+								"type": {
+									"displayName": "Тип",
+									"description": "Тип адреса электронной почты. Тип может быть пользовательским или одним из этих предопределенных значений.",
+									"options": {
+										"home": {
+											"displayName": "Дом"
+										},
+										"work": {
+											"displayName": "Работа"
+										},
+										"other": {
+											"displayName": "Другой"
+										}
+									}
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Адрес электронной почты"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить адрес электронной почты",
+					"displayName": "Электронная почта",
+					"options": {
+						"emailsValues": {
+							"displayName": "Электронная почта"
+						}
+					}
+				},
+				"eventsUi": {
+					"values": {
+						"eventsUi": {
+							"displayName": "События",
+							"description": "Событие, связанное с человеком"
+						},
+						"eventsValues": {
+							"options": {
+								"date": {
+									"displayName": "Дата",
+									"description": "Дата мероприятия"
+								},
+								"type": {
+									"displayName": "Тип",
+									"description": "Тип мероприятия. Тип может быть пользовательским или одним из этих предопределенных значений.",
+									"options": {
+										"anniversary": {
+											"displayName": "Годовщина"
+										},
+										"other": {
+											"displayName": "Другой"
+										}
+									}
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить событие",
+					"displayName": "События",
+					"description": "Событие, связанное с человеком",
+					"options": {
+						"eventsValues": {
+							"displayName": "Событие"
+						}
+					}
+				},
+				"fileAs": {
+					"displayName": "Файл как",
+					"description": "Имя, которое следует использовать для сортировки людей в списке."
+				},
+				"group": {
+					"displayName": "Имена или идентификаторы групп",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"honorificPrefix": {
+					"displayName": "Почетный префикс"
+				},
+				"honorificSuffix": {
+					"displayName": "Почетный суффикс"
+				},
+				"middleName": {
+					"displayName": "Второе имя"
+				},
+				"biographies": {
+					"displayName": "Примечания"
+				},
+				"phoneUi": {
+					"values": {
+						"phoneUi": {
+							"displayName": "Телефон"
+						},
+						"phoneValues": {
+							"options": {
+								"type": {
+									"displayName": "Тип",
+									"options": {
+										"googleVoice": {
+											"displayName": "Google Голос"
+										},
+										"home": {
+											"displayName": "Дом"
+										},
+										"homeFax": {
+											"displayName": "Домашний факс"
+										},
+										"main": {
+											"displayName": "Основной"
+										},
+										"mobile": {
+											"displayName": "мобильный"
+										},
+										"other": {
+											"displayName": "Другой"
+										},
+										"otherFax": {
+											"displayName": "Другой факс"
+										},
+										"pager": {
+											"displayName": "Пейджер"
+										},
+										"work": {
+											"displayName": "Работа"
+										},
+										"workFax": {
+											"displayName": "Рабочий факс"
+										},
+										"workMobile": {
+											"displayName": "Работайте мобильно"
+										},
+										"workPager": {
+											"displayName": "Рабочий пейджер"
+										}
+									}
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Номер телефона"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить телефон",
+					"displayName": "Телефон",
+					"options": {
+						"phoneValues": {
+							"displayName": "Телефон"
+						}
+					}
+				},
+				"relationsUi": {
+					"values": {
+						"relationsUi": {
+							"displayName": "Отношения"
+						},
+						"relationsValues": {
+							"options": {
+								"person": {
+									"displayName": "Человек",
+									"description": "Имя другого человека, к которому относится это отношение"
+								},
+								"type": {
+									"displayName": "Тип",
+									"description": "Отношение человека к другому человеку. Тип может быть пользовательским или одним из этих предопределенных значений.",
+									"options": {
+										"assistant": {
+											"displayName": "Ассистент"
+										},
+										"brother": {
+											"displayName": "Брат"
+										},
+										"child": {
+											"displayName": "Ребенок"
+										},
+										"domesticPartner": {
+											"displayName": "Внутренний партнер"
+										},
+										"father": {
+											"displayName": "Отец"
+										},
+										"friend": {
+											"displayName": "Друг"
+										},
+										"manager": {
+											"displayName": "Менеджер"
+										},
+										"mother": {
+											"displayName": "Мать"
+										},
+										"parent": {
+											"displayName": "Родитель"
+										},
+										"referredBy": {
+											"displayName": "По рекомендации"
+										},
+										"relative": {
+											"displayName": "Родственник"
+										},
+										"sister": {
+											"displayName": "Сестра"
+										},
+										"spouse": {
+											"displayName": "Супруг"
+										}
+									}
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить отношение",
+					"displayName": "Отношения",
+					"options": {
+						"relationsValues": {
+							"displayName": "Связь"
+						}
+					}
+				}
+			}
+		},
+		"contactId": {
+			"displayName": "Идентификатор контакта"
+		},
+		"fields": {
+			"displayName": "Поля",
+			"description": "Маска поля, позволяющая ограничить возвращаемые поля для каждого человека. Можно указать несколько полей, разделив их запятыми.",
+			"options": {
+				"*": {
+					"displayName": "*"
+				},
+				"addresses": {
+					"displayName": "Адреса"
+				},
+				"biographies": {
+					"displayName": "Биографии"
+				},
+				"birthdays": {
+					"displayName": "Дни рождения"
+				},
+				"coverPhotos": {
+					"displayName": "Фотографии на обложке"
+				},
+				"emailAddresses": {
+					"displayName": "Адреса электронной почты"
+				},
+				"events": {
+					"displayName": "События"
+				},
+				"genders": {
+					"displayName": "Полы"
+				},
+				"imClients": {
+					"displayName": "IM-клиенты"
+				},
+				"interests": {
+					"displayName": "Интересы"
+				},
+				"locales": {
+					"displayName": "Места"
+				},
+				"memberships": {
+					"displayName": "Членство"
+				},
+				"metadata": {
+					"displayName": "Метаданные"
+				},
+				"names": {
+					"displayName": "Имена"
+				},
+				"nicknames": {
+					"displayName": "Прозвища"
+				},
+				"occupations": {
+					"displayName": "Занятия"
+				},
+				"organizations": {
+					"displayName": "Организации"
+				},
+				"phoneNumbers": {
+					"displayName": "Номера телефонов"
+				},
+				"photos": {
+					"displayName": "Фотографии"
+				},
+				"relations": {
+					"displayName": "Отношения"
+				},
+				"residences": {
+					"displayName": "Резиденции"
+				},
+				"sipAddresses": {
+					"displayName": "SIP-адреса"
+				},
+				"skills": {
+					"displayName": "Навыки"
+				},
+				"urls": {
+					"displayName": "URL-адреса"
+				},
+				"userDefined": {
+					"displayName": "Определяется пользователем"
+				}
+			}
+		},
+		"rawData": {
+			"displayName": "Необработанные данные",
+			"description": "Возвращать ли данные именно в том виде, в каком они были получены от API"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		},
+		"useQuery": {
+			"displayName": "Использовать запрос",
+			"description": "Следует ли использовать запрос для фильтрации результатов"
+		},
+		"query": {
+			"displayName": "Запрос",
+			"description": "Простой текстовый запрос для запроса. Запрос используется для сопоставления префиксных фраз полей, относящихся к человеку. Например, человек с именем «foo name» соответствует таким запросам, как «f», «fo», «foo», «foo n», «nam» и т. д., но не «oo n»."
+		},
+		"options": {
+			"displayName": "Параметры",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"sortOrder": {
+					"displayName": "Порядок сортировки",
+					"description": "Порядок контактов, возвращаемых в результате",
+					"options": {
+						"LAST_MODIFIED_ASCENDING": {
+							"displayName": "Последнее изменение по возрастанию",
+							"description": "Сортируйте людей по времени их изменения; сначала старые записи"
+						},
+						"LAST_MODIFIED_DESCENDING": {
+							"displayName": "Последнее изменение по убыванию",
+							"description": "Сортируйте людей по времени их изменения; сначала новые записи"
+						},
+						"FIRST_NAME_ASCENDING": {
+							"displayName": "Имя по возрастанию",
+							"description": "Сортировать людей по имени"
+						},
+						"LAST_NAME_ASCENDING": {
+							"displayName": "Фамилия по возрастанию",
+							"description": "Сортировать людей по фамилии"
+						}
+					}
+				}
+			}
+		},
+		"updateFields": {
+			"displayName": "Обновить поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"etag": {
+					"displayName": "Этаг",
+					"description": "Поле etag у человека добавлено, чтобы убедиться, что контакт не изменился с момента вашего последнего чтения."
+				},
+				"familyName": {
+					"displayName": "Фамилия"
+				},
+				"givenName": {
+					"displayName": "Собственное имя"
+				},
+				"addressesUi": {
+					"values": {
+						"addressesUi": {
+							"displayName": "Адреса"
+						},
+						"addressesValues": {
+							"options": {
+								"streetAddress": {
+									"displayName": "Адрес улицы"
+								},
+								"city": {
+									"displayName": "Город"
+								},
+								"region": {
+									"displayName": "Область"
+								},
+								"countryCode": {
+									"displayName": "Код страны"
+								},
+								"postalCode": {
+									"displayName": "Почтовый индекс"
+								},
+								"type": {
+									"displayName": "Тип",
+									"options": {
+										"home": {
+											"displayName": "Дом"
+										},
+										"work": {
+											"displayName": "Работа"
+										},
+										"other": {
+											"displayName": "Другой"
+										}
+									}
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить адрес",
+					"displayName": "Адреса",
+					"options": {
+						"addressesValues": {
+							"displayName": "Адрес"
+						}
+					}
+				},
+				"birthday": {
+					"displayName": "День рождения"
+				},
+				"companyUi": {
+					"values": {
+						"companyUi": {
+							"displayName": "Компания"
+						},
+						"companyValues": {
+							"options": {
+								"current": {
+									"displayName": "Текущий"
+								},
+								"domain": {
+									"displayName": "Домен"
+								},
+								"name": {
+									"displayName": "Имя"
+								},
+								"title": {
+									"displayName": "Заголовок"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить компанию",
+					"displayName": "Компания",
+					"options": {
+						"companyValues": {
+							"displayName": "Компания"
+						}
+					}
+				},
+				"customFieldsUi": {
+					"values": {
+						"customFieldsUi": {
+							"displayName": "Пользовательские поля"
+						},
+						"customFieldsValues": {
+							"options": {
+								"key": {
+									"displayName": "Ключ",
+									"description": "Указанный конечным пользователем ключ определяемых пользователем данных"
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Указанное конечным пользователем значение определяемых пользователем данных"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить настраиваемое поле",
+					"displayName": "Пользовательские поля",
+					"options": {
+						"customFieldsValues": {
+							"displayName": "Пользовательское поле"
+						}
+					}
+				},
+				"emailsUi": {
+					"values": {
+						"emailsUi": {
+							"displayName": "Электронная почта"
+						},
+						"emailsValues": {
+							"options": {
+								"type": {
+									"displayName": "Тип",
+									"description": "Тип адреса электронной почты. Тип может быть пользовательским или одним из этих предопределенных значений.",
+									"options": {
+										"home": {
+											"displayName": "Дом"
+										},
+										"work": {
+											"displayName": "Работа"
+										},
+										"other": {
+											"displayName": "Другой"
+										}
+									}
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Адрес электронной почты"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить адрес электронной почты",
+					"displayName": "Электронная почта",
+					"options": {
+						"emailsValues": {
+							"displayName": "Электронная почта"
+						}
+					}
+				},
+				"eventsUi": {
+					"values": {
+						"eventsUi": {
+							"displayName": "События",
+							"description": "Событие, связанное с человеком"
+						},
+						"eventsValues": {
+							"options": {
+								"date": {
+									"displayName": "Дата",
+									"description": "Дата мероприятия"
+								},
+								"type": {
+									"displayName": "Тип",
+									"description": "Тип мероприятия. Тип может быть пользовательским или одним из этих предопределенных значений.",
+									"options": {
+										"anniversary": {
+											"displayName": "Годовщина"
+										},
+										"other": {
+											"displayName": "Другой"
+										}
+									}
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить событие",
+					"displayName": "События",
+					"description": "Событие, связанное с человеком",
+					"options": {
+						"eventsValues": {
+							"displayName": "Событие"
+						}
+					}
+				},
+				"fileAs": {
+					"displayName": "Файл как",
+					"description": "Имя, которое следует использовать для сортировки людей в списке."
+				},
+				"group": {
+					"displayName": "Имена или идентификаторы групп",
+					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+				},
+				"honorificPrefix": {
+					"displayName": "Почетный префикс"
+				},
+				"honorificSuffix": {
+					"displayName": "Почетный суффикс"
+				},
+				"middleName": {
+					"displayName": "Второе имя"
+				},
+				"biographies": {
+					"displayName": "Примечания"
+				},
+				"phoneUi": {
+					"values": {
+						"phoneUi": {
+							"displayName": "Телефон"
+						},
+						"phoneValues": {
+							"options": {
+								"type": {
+									"displayName": "Тип",
+									"options": {
+										"googleVoice": {
+											"displayName": "Google Голос"
+										},
+										"home": {
+											"displayName": "Дом"
+										},
+										"homeFax": {
+											"displayName": "Домашний факс"
+										},
+										"main": {
+											"displayName": "Основной"
+										},
+										"mobile": {
+											"displayName": "мобильный"
+										},
+										"other": {
+											"displayName": "Другой"
+										},
+										"otherFax": {
+											"displayName": "Другой факс"
+										},
+										"pager": {
+											"displayName": "Пейджер"
+										},
+										"work": {
+											"displayName": "Работа"
+										},
+										"workFax": {
+											"displayName": "Рабочий факс"
+										},
+										"workMobile": {
+											"displayName": "Работайте мобильно"
+										},
+										"workPager": {
+											"displayName": "Рабочий пейджер"
+										}
+									}
+								},
+								"value": {
+									"displayName": "Ценить",
+									"description": "Номер телефона"
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить телефон",
+					"displayName": "Телефон",
+					"options": {
+						"phoneValues": {
+							"displayName": "Телефон"
+						}
+					}
+				},
+				"relationsUi": {
+					"values": {
+						"relationsUi": {
+							"displayName": "Отношения"
+						},
+						"relationsValues": {
+							"options": {
+								"person": {
+									"displayName": "Человек",
+									"description": "Имя другого человека, к которому относится это отношение"
+								},
+								"type": {
+									"displayName": "Тип",
+									"description": "Отношение человека к другому человеку. Тип может быть пользовательским или одним из этих предопределенных значений.",
+									"options": {
+										"assistant": {
+											"displayName": "Ассистент"
+										},
+										"brother": {
+											"displayName": "Брат"
+										},
+										"child": {
+											"displayName": "Ребенок"
+										},
+										"domesticPartner": {
+											"displayName": "Внутренний партнер"
+										},
+										"father": {
+											"displayName": "Отец"
+										},
+										"friend": {
+											"displayName": "Друг"
+										},
+										"manager": {
+											"displayName": "Менеджер"
+										},
+										"mother": {
+											"displayName": "Мать"
+										},
+										"parent": {
+											"displayName": "Родитель"
+										},
+										"referredBy": {
+											"displayName": "По рекомендации"
+										},
+										"relative": {
+											"displayName": "Родственник"
+										},
+										"sister": {
+											"displayName": "Сестра"
+										},
+										"spouse": {
+											"displayName": "Супруг"
+										}
+									}
+								}
+							}
+						}
+					},
+					"placeholder": "Добавить отношение",
+					"displayName": "Отношения",
+					"options": {
+						"relationsValues": {
+							"displayName": "Связь"
+						}
+					}
+				}
+			}
+		}
+	}
+}

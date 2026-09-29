@@ -1,0 +1,3904 @@
+{
+	"header": {
+		"displayName": "uProc",
+		"description": "Использование uProc API"
+	},
+	"nodeView": {
+		"group": {
+			"displayName": "Ресурс",
+			"options": {
+				"audio": {
+					"displayName": "Аудио",
+					"description": "Аудиоресурс позволяет получить инструменты с этого ресурса."
+				},
+				"communication": {
+					"displayName": "Коммуникация",
+					"description": "Ресурс «Коммуникация» позволяет получить инструменты с этого ресурса."
+				},
+				"company": {
+					"displayName": "Компания",
+					"description": "Ресурс компании позволяет получить инструменты с этого ресурса"
+				},
+				"finance": {
+					"displayName": "Финансы",
+					"description": "Ресурс «Финансы» позволяет получить инструменты с этого ресурса."
+				},
+				"geographic": {
+					"displayName": "Географический",
+					"description": "Географический ресурс позволяет получить инструменты с этого ресурса."
+				},
+				"image": {
+					"displayName": "Изображение",
+					"description": "Ресурс изображения позволяет получить инструменты с этого ресурса."
+				},
+				"internet": {
+					"displayName": "Интернет",
+					"description": "Интернет-ресурс позволяет получить инструменты с данного ресурса."
+				},
+				"personal": {
+					"displayName": "Персональный",
+					"description": "Персональный Ресурс позволяет получить инструменты с этого ресурса."
+				},
+				"product": {
+					"displayName": "Продукт",
+					"description": "Ресурс продукта позволяет получить инструменты с этого ресурса."
+				},
+				"security": {
+					"displayName": "Безопасность",
+					"description": "Ресурс безопасности позволяет получить инструменты с этого ресурса."
+				},
+				"text": {
+					"displayName": "Текст",
+					"description": "Текстовый ресурс позволяет получить инструменты с этого ресурса."
+				}
+			}
+		},
+		"tool": {
+			"displayName": "Операция",
+			"description": "Операция по потреблению",
+			"options": {
+				"getAudioAdvancedSpeechByText": {
+					"displayName": "Получите расширенную речь по тексту",
+					"description": "Получите расширенный аудиофайл человека по предоставленному тексту и языку <a href=\"https://app.uproc.io/#/tools/processor/get/audio/advanced-speech-by-text\" target='_blank'>Info</a>"
+				},
+				"getAudioSpeechByText": {
+					"displayName": "Получить речь по тексту",
+					"description": "Получить аудиофайл по предоставленному тексту и языку <a href=\"https://app.uproc.io/#/tools/processor/get/audio/speech-by-text\" target='_blank'>Info</a>"
+				},
+				"checkSocialDomainExist": {
+					"displayName": "Проверьте, есть ли у домена социальная активность",
+					"description": "Узнайте, присутствует ли домен в социальных сетях <a href=\"https://app.uproc.io/#/tools/processor/check/social/domain-exist\" target='_blank'>Info</a>"
+				},
+				"checkDomainCatchall": {
+					"displayName": "Проверьте домен электронной почты, является ли он Catchall",
+					"description": "Проверьте, принимает ли домен все электронные письма, существующие или нет <a href=\"https://app.uproc.io/#/tools/processor/check/domain/catchall\" target='_blank'>Info</a>"
+				},
+				"checkDomainFree": {
+					"displayName": "Проверьте, что домен электронной почты бесплатен",
+					"description": "Проверьте, является ли домен поставщиком бесплатных услуг <a href=\"https://app.uproc.io/#/tools/processor/check/domain/free\" target='_blank'>Info</a>"
+				},
+				"checkDomainDisposable": {
+					"displayName": "Проверьте, что домен электронной почты является временным",
+					"description": "Проверьте, является ли домен временным или нет <a href=\"https://app.uproc.io/#/tools/processor/check/domain/disposable\" target='_blank'>Info</a>"
+				},
+				"checkEmailExistsExtended": {
+					"displayName": "Проверка существования электронной почты (расширенная)",
+					"description": "Узнайте, является ли электронное письмо действительным, жестким, мягким, спам-ловушкой, бесплатным, временным и существует ли получатель.<br><br>Существуют общие (например, Yahoo) или временные домены, которые не возвращают фактическое существование электронного письма <a href=\"https://app.uproc.io/#/tools/processor/check/email/exists-extended\" target='_blank'>Info</a>"
+				},
+				"checkEmailExists": {
+					"displayName": "Проверить существование электронной почты (простой)",
+					"description": "Узнайте, существует ли получатель электронного письма, вернув статус электронного письма <a href=\"https://app.uproc.io/#/tools/processor/check/email/exists\" target='_blank'>Info</a>"
+				},
+				"checkEmailSmtp": {
+					"displayName": "Проверьте электронную почту, имеющую SMTP-сервер",
+					"description": "Проверьте, есть ли в домене электронной почты SMTP-сервер для получения писем <a href=\"https://app.uproc.io/#/tools/processor/check/email/smtp\" target='_blank'>Info</a>"
+				},
+				"checkSocialEmailExist": {
+					"displayName": "Проверьте электронную почту на наличие социальной активности",
+					"description": "Узнайте, присутствует ли электронное письмо в социальных сетях <a href=\"https://app.uproc.io/#/tools/processor/check/social/email-exist\" target='_blank'>Info</a>"
+				},
+				"checkEmailFormat": {
+					"displayName": "Проверьте, что электронное письмо имеет действительный формат",
+					"description": "Проверьте, имеет ли электронное письмо действительный формат <a href=\"https://app.uproc.io/#/tools/processor/check/email/format\" target='_blank'>Info</a>"
+				},
+				"checkEmailCatchall": {
+					"displayName": "Проверьте, что электронная почта является общей",
+					"description": "Проверьте, принадлежит ли электронное письмо универсальному почтовому серверу <a href=\"https://app.uproc.io/#/tools/processor/check/email/catchall\" target='_blank'>Info</a>"
+				},
+				"checkEmailDisposable": {
+					"displayName": "Проверьте, является ли электронная почта одноразовым доменом",
+					"description": "Проверьте, принадлежит ли домен электронной почты одноразовой почтовой службе <a href=\"https://app.uproc.io/#/tools/processor/check/email/disposable\" target='_blank'>Info</a>"
+				},
+				"checkEmailFree": {
+					"displayName": "Проверьте, что электронная почта бесплатна",
+					"description": "Проверьте, принадлежит ли электронная почта поставщику бесплатных услуг, например Gmail, Hotmail, ... <a href=\"https://app.uproc.io/#/tools/processor/check/email/free\" target='_blank'>Info</a>"
+				},
+				"checkRobinsonEmailExist": {
+					"displayName": "Проверьте электронную почту — это Робинсон (ES)",
+					"description": "Узнайте, существует ли адрес электронной почты в списке Робинсона (только Испания) <a href=\"https://app.uproc.io/#/tools/processor/check/robinson/email-exist\" target='_blank'>Info</a>"
+				},
+				"checkEmailRole": {
+					"displayName": "Проверьте электронную почту на основе ролей",
+					"description": "Проверьте, принадлежит ли электронная почта системной или ролевой учетной записи <a href=\"https://app.uproc.io/#/tools/processor/check/email/role\" target='_blank'>Info</a>"
+				},
+				"checkEmailSpamtrap": {
+					"displayName": "Проверьте электронную почту — это спам-ловушка",
+					"description": "Проверьте, не является ли электронная почта ловушкой для спама <a href=\"https://app.uproc.io/#/tools/processor/check/email/spamtrap\" target='_blank'>Info</a>"
+				},
+				"checkMobileImei": {
+					"displayName": "Проверьте, что Imei действителен",
+					"description": "Узнайте, имеет ли номер Imei действительный формат <a href=\"https://app.uproc.io/#/tools/processor/check/mobile/imei\" target='_blank'>Info</a>"
+				},
+				"checkLinkedinProfileIsContact": {
+					"displayName": "Проверьте профиль LinkedIn, является ли он контактным лицом",
+					"description": "Проверьте, является ли профиль LinkedIn (допустимый формат URL: https://linkedin.com/in/USERNAME) контактом первого уровня <a href=\"https://app.uproc.io/#/tools/processor/check/linkedin/profile-is-contact\" target='_blank'>Info</a>"
+				},
+				"checkMobileExist": {
+					"displayName": "Проверить существование мобильного устройства",
+					"description": "Узнайте, существует ли номер мобильного телефона у оператора сети с всемирным покрытием. <br>Получите расширенные ключевые показатели эффективности мобильной связи с помощью инструмента <a href='/app/catalog/processor/get/mobile/lookup'> «Поиск мобильных устройств» </a>. <a href=\"https://app.uproc.io/#/tools/processor/check/mobile/exist\" target='_blank'>Информация</a>"
+				},
+				"checkSocialMobileExist": {
+					"displayName": "Проверьте, есть ли на мобильном телефоне социальная активность",
+					"description": "Узнайте, присутствует ли на мобильном телефоне социальная сеть <a href=\"https://app.uproc.io/#/tools/processor/check/social/mobile-exist\" target='_blank'>Info</a>"
+				},
+				"checkMobileFormat": {
+					"displayName": "Проверьте, что мобильный телефон имеет действительный формат",
+					"description": "Узнайте, имеет ли номер мобильного телефона действительный формат и покрытие по всему миру <a href=\"https://app.uproc.io/#/tools/processor/check/mobile/format\" target='_blank'>Info</a>"
+				},
+				"checkMobileFormatEs": {
+					"displayName": "Проверьте, что мобильный телефон имеет действительный формат (ES)",
+					"description": "Узнайте, имеет ли номер мобильного телефона действительный формат (только Испания) <a href=\"https://app.uproc.io/#/tools/processor/check/mobile/format-es\" target='_blank'>Info</a>"
+				},
+				"checkMobileValidPrefix": {
+					"displayName": "Проверьте, что у мобильного телефона действительный префикс",
+					"description": "Узнайте, имеет ли номер мобильного телефона действительный префикс с покрытием по всему миру <a href=\"https://app.uproc.io/#/tools/processor/check/mobile/valid-prefix\" target='_blank'>Info</a>"
+				},
+				"checkMobileValidPrefixEs": {
+					"displayName": "Проверьте, имеет ли мобильный телефон действительный префикс (ES)",
+					"description": "Узнайте, имеет ли испанский номер мобильного телефона действительный префикс <a href=\"https://app.uproc.io/#/tools/processor/check/mobile/valid-prefix-es\" target='_blank'>Info</a>"
+				},
+				"checkMobileAlive": {
+					"displayName": "Проверить, что мобильный телефон жив",
+					"description": "Узнайте, включен ли номер мобильного телефона, чтобы позвонить на него позже, с покрытием по всему миру.<br>Некоторые операторы связи не возвращаются, если мобильный телефон активен (например, Vodafone) <a href=\"https://app.uproc.io/#/tools/processor/check/mobile/alive\" target='_blank'>Info</a>"
+				},
+				"checkMobileSms": {
+					"displayName": "Проверка мобильного телефона поддерживает SMS",
+					"description": "Узнайте, может ли мобильный номер получать SMS с покрытием по всему миру <a href=\"https://app.uproc.io/#/tools/processor/check/mobile/sms\" target='_blank'>Info</a>"
+				},
+				"checkRobinsonPhoneExist": {
+					"displayName": "Проверить, что телефон Робинсон (ES)",
+					"description": "Узнайте, существует ли телефон (стационарный или мобильный) в списке Робинсона (только Испания) <a href=\"https://app.uproc.io/#/tools/processor/check/robinson/phone-exist\" target='_blank'>Info</a>"
+				},
+				"checkPhoneOrMobileValid": {
+					"displayName": "Проверьте телефон или мобильный телефон действителен",
+					"description": "Узнайте, имеет ли номер стационарного или мобильного телефона действительный префикс <a href=\"https://app.uproc.io/#/tools/processor/check/phone/or-mobile-valid\" target='_blank'>Info</a>"
+				},
+				"checkPhoneFormatEs": {
+					"displayName": "Проверьте действительный формат телефона (ES)",
+					"description": "Узнайте, действителен ли номер стационарного телефона с покрытием Испании <a href=\"https://app.uproc.io/#/tools/processor/check/phone/format-es\" target='_blank'>Info</a>"
+				},
+				"checkPhoneFormat": {
+					"displayName": "Проверьте действительный формат телефона по стране",
+					"description": "Разрешить узнать, имеет ли номер стационарного телефона хороший международный формат, в зависимости от страны <a href=\"https://app.uproc.io/#/tools/processor/check/phone/format\" target='_blank'>Info</a>"
+				},
+				"checkPhoneValidPrefix": {
+					"displayName": "Проверьте действительный префикс телефона",
+					"description": "Узнайте, существует ли префикс стационарного номера телефона с покрытием по всему миру <a href=\"https://app.uproc.io/#/tools/processor/check/phone/valid-prefix\" target='_blank'>Info</a>"
+				},
+				"getPhoneNormalized": {
+					"displayName": "Почистите телефон",
+					"description": "Очистите телефон, удалив недопустимые символы <a href=\"https://app.uproc.io/#/tools/processor/get/phone/normalized\" target='_blank'>Info</a>"
+				},
+				"getMobileCountryCode": {
+					"displayName": "Получить ISO-код страны с помощью мобильного телефона",
+					"description": "Разрешить получение кода страны (два символа) номера мобильного телефона в международном формате <a href=\"https://app.uproc.io/#/tools/processor/get/mobile/country-code\" target='_blank'>Info</a>"
+				},
+				"getEmailDomain": {
+					"displayName": "Получить домен по электронной почте",
+					"description": "Получите часть домена по электронной почте <a href=\"https://app.uproc.io/#/tools/processor/get/email/domain\" target='_blank'>Info</a>"
+				},
+				"getEmailRecipientByCompanyFirstnameAndLastname": {
+					"displayName": "Получайте электронную почту по имени, фамилии и компании",
+					"description": "Найдите электронное письмо по названию компании, имени и фамилии потенциального клиента.<br><br>Если выбран метод проверки, инструмент проверяет несколько вариантов электронной почты в режиме реального времени и возвращает результат в зависимости от ответа сервера электронной почты <a href=\"https://app.uproc.io/#/tools/processor/get/email/recipient-by-company-firstname-and-lastname\" target='_blank'>Info</a>"
+				},
+				"getEmailRecipientByCompanyAndFullname": {
+					"displayName": "Получить электронную почту по полному имени и компании",
+					"description": "Найдите электронное письмо по названию компании и полному имени потенциального клиента.<br><br>Если выбран метод «проверки», инструмент проверяет несколько вариантов электронной почты в режиме реального времени и возвращает результат в зависимости от ответа сервера электронной почты <a href=\"https://app.uproc.io/#/tools/processor/get/email/recipient-by-company-and-fullname\" target='_blank'>Info</a>"
+				},
+				"getEmailRecipientByDomainAndFullname": {
+					"displayName": "Получить электронную почту по полному имени и домену",
+					"description": "Найдите электронное письмо по веб-сайту или домену компании и полное имя потенциального клиента.<br><br>Если выбран метод «проверки», инструмент проверяет несколько вариантов электронной почты в режиме реального времени и возвращает результат в зависимости от ответа сервера электронной почты <a href=\"https://app.uproc.io/#/tools/processor/get/email/recipient-by-domain-and-fullname\" target='_blank'>Info</a>"
+				},
+				"getEmailRecipient": {
+					"displayName": "Получайте электронную почту по имени, фамилии и домену",
+					"description": "Найдите электронное письмо по веб-сайту или домену компании, а также имя и фамилию потенциального клиента.<br><br>Если выбран метод «проверки», инструмент проверяет несколько вариантов электронной почты в режиме реального времени и возвращает результат в зависимости от ответа сервера электронной почты <a href=\"https://app.uproc.io/#/tools/processor/get/email/recipient\" target='_blank'>Info</a>"
+				},
+				"getEmailRecipientByProfile": {
+					"displayName": "Получить электронную почту по профилю в социальной сети",
+					"description": "Найдите электронное письмо по URI профиля LinkedIn контакта <a href=\"https://app.uproc.io/#/tools/processor/get/email/recipient-by-profile\" target='_blank'>Info</a>"
+				},
+				"getEmailType": {
+					"displayName": "Получить тип электронной почты",
+					"description": "Получить письмо типа <a href=\"https://app.uproc.io/#/tools/processor/get/email/type\" target='_blank'>Info</a>"
+				},
+				"getEmailListByDomain": {
+					"displayName": "Получайте электронные письма по домену",
+					"description": "Получить список адресов электронной почты, найденный в Интернете, по домену или URI (аналогично Hunter.io) <a href=\"https://app.uproc.io/#/tools/processor/get/email/list-by-domain\" target='_blank'>Info</a>"
+				},
+				"getEmailListByEmail": {
+					"displayName": "Получайте электронные письма по электронной почте",
+					"description": "Получить список адресов электронной почты, найденный в Интернете по платной электронной почте (аналогично Hunter.io) <a href=\"https://app.uproc.io/#/tools/processor/get/email/list-by-email\" target='_blank'>Info</a>"
+				},
+				"getEmailFirstReferences": {
+					"displayName": "Получите первые веб-ссылки на электронное письмо",
+					"description": "Получите три первые ссылки на электронное письмо, опубликованное в Интернете <a href=\"https://app.uproc.io/#/tools/processor/get/email/first-references\" target='_blank'>Info</a>"
+				},
+				"getEmailFix": {
+					"displayName": "Получите электронную почту с фиксированным доменом",
+					"description": "Исправьте домен электронной почты для этих писем с ошибками (поддерживает все домены) <a href=\"https://app.uproc.io/#/tools/processor/get/email/fix\" target='_blank'>Info</a>"
+				},
+				"getPhoneFixed": {
+					"displayName": "Получите фиксированный телефон",
+					"description": "Исправление международного префикса телефона на основе ISO-кода страны <a href=\"https://app.uproc.io/#/tools/processor/get/phone/fixed\" target='_blank'>Info</a>"
+				},
+				"getMobileFormatted": {
+					"displayName": "Получить отформатированный мобильный телефон",
+					"description": "Отформатируйте международный номер мобильного телефона по коду ISO страны (2 буквы). <a href=\"https://app.uproc.io/#/tools/processor/get/mobile/formatted\" target='_blank'>Информация</a>"
+				},
+				"getEmailGdprListByDomain": {
+					"displayName": "Получайте электронные письма GDPR по домену",
+					"description": "Получите список адресов электронной почты, соответствующих требованиям GDPR, по доменам для ваших маркетинговых кампаний по электронной почте в Европе. <a href=\"https://app.uproc.io/#/tools/processor/get/email/gdpr-list-by-domain\" target='_blank'>Информация</a>"
+				},
+				"getMobileHlrLookup": {
+					"displayName": "Получите мобильный поиск HLR",
+					"description": "Узнайте, существуют ли мобильные устройства, с помощью запроса в режиме реального времени [HLR](https://en.wikipedia.org/wiki/Home_location_register) <a href=\"https://app.uproc.io/#/tools/processor/get/mobile/hlr-lookup\" target='_blank'>Info</a>"
+				},
+				"getMobileOrPhoneMnpEs": {
+					"displayName": "Получите поиск по портативности стационарных/мобильных телефонов (ES)",
+					"description": "Получите данные о переносимости стационарного или мобильного номера, только для Испании <a href=\"https://app.uproc.io/#/tools/processor/get/mobile/or-phone-mnp-es\" target='_blank'>Info</a>"
+				},
+				"getLinkedinProfilesByCompany": {
+					"displayName": "Получите сотрудников компании LinkedIn",
+					"description": "Извлечение результатов поиска в LinkedIn (принимаемый формат URL: https://linkedin.com/search/results/people/) <a href=\"https://app.uproc.io/#/tools/processor/get/linkedin/profiles-by-company\" target='_blank'>Info</a>"
+				},
+				"getLinkedinGroupMembers": {
+					"displayName": "Получить участников группы LinkedIn",
+					"description": "Пригласите участников в группу LinkedIn <a href=\"https://app.uproc.io/#/tools/processor/get/linkedin/group-members\" target='_blank'>Info</a>"
+				},
+				"getLinkedinConnections": {
+					"displayName": "Получить последние полученные соединения LinkedIn",
+					"description": "Извлеките последние <a href='https://www.linkedin.com/mynetwork/invite-connect/connections/' target='_blank'>80 подключений</a> из вашего профиля LinkedIn <a href=\"https://app.uproc.io/#/tools/processor/get/linkedin/connections\" target='_blank'>Info</a>"
+				},
+				"getLinkedinInvitations": {
+					"displayName": "Получить последние отправленные приглашения LinkedIn",
+					"description": "Извлеките последние <a href='https://www.linkedin.com/mynetwork/invitation-manager/sent/' target='_blank'>80 приглашений</a>, отправленных из вашего LinkedIn <a href=\"https://app.uproc.io/#/tools/processor/get/linkedin/invitations\" target='_blank'>Info</a>"
+				},
+				"getLinkedinPostComments": {
+					"displayName": "Получите комментарии к публикациям в LinkedIn",
+					"description": "Получить пользователей, которые комментируют публикацию в LinkedIn <a href=\"https://app.uproc.io/#/tools/processor/get/linkedin/post-comments\" target='_blank'>Info</a>"
+				},
+				"getLinkedinPostLikes": {
+					"displayName": "Получите лайки в публикациях LinkedIn",
+					"description": "Получите пользователей, которым понравилась публикация в LinkedIn <a href=\"https://app.uproc.io/#/tools/processor/get/linkedin/post-likes\" target='_blank'>Info</a>"
+				},
+				"getLinkedinProfile": {
+					"displayName": "Получить профиль LinkedIn",
+					"description": "Извлеките профиль LinkedIn (принимаемый формат URL: https://linkedin.com/in/USERNAME) <a href=\"https://app.uproc.io/#/tools/processor/get/linkedin/profile\" target='_blank'>Info</a>"
+				},
+				"getLinkedinProfiles": {
+					"displayName": "Получить профили LinkedIn",
+					"description": "Извлечение результатов поиска в LinkedIn (принимаемый формат URL: https://linkedin.com/search/results/people/) <a href=\"https://app.uproc.io/#/tools/processor/get/linkedin/profiles\" target='_blank'>Info</a>"
+				},
+				"getLinkedinProfilesByContent": {
+					"displayName": "Получите профили LinkedIn по контенту",
+					"description": "Быстро извлекайте последние профили, которые опубликовали контент в LinkedIn по определенным ключевым словам <a href=\"https://app.uproc.io/#/tools/processor/get/linkedin/profiles-by-content\" target='_blank'>Info</a>"
+				},
+				"getMobileLookup": {
+					"displayName": "Получить мобильный поиск",
+					"description": "Узнайте, существуют ли мобильные устройства, с помощью запроса в режиме реального времени [HLR](https://en.wikipedia.org/wiki/Home_location_register), а также данных о переносимости и роуминге <a href=\"https://app.uproc.io/#/tools/processor/get/mobile/lookup\" target='_blank'>Info</a>"
+				},
+				"getMobileMnpLookup": {
+					"displayName": "Получить поиск по портативности мобильных устройств",
+					"description": "Узнайте о существовании, портативности и роуминге мобильного телефона с помощью запроса [MNP](https://en.wikipedia.org/wiki/Mobile_number_portability) <a href=\"https://app.uproc.io/#/tools/processor/get/mobile/mnp-lookup\" target='_blank'>Info</a>"
+				},
+				"getMobileOrPhoneLookupEs": {
+					"displayName": "Получите поиск мобильных/стационарных телефонов (Испания)",
+					"description": "Узнайте, существует ли префикс мобильного или стационарного телефона в Испании. <a href=\"https://app.uproc.io/#/tools/processor/get/mobile/or-phone-lookup-es\" target='_blank'>Информация</a>"
+				},
+				"getEmailNormalized": {
+					"displayName": "Получить нормализованную электронную почту",
+					"description": "Нормализовать адрес электронной почты, удалив недопустимые символы <a href=\"https://app.uproc.io/#/tools/processor/get/email/normalized\" target='_blank'>Info</a>"
+				},
+				"getMobileNormalized": {
+					"displayName": "Получите нормализованный мобильный телефон",
+					"description": "Разрешить нормализовать мобильный телефон, удалив неразрешенные символы <a href=\"https://app.uproc.io/#/tools/processor/get/mobile/normalized\" target='_blank'>Info</a>"
+				},
+				"getPhoneParsed": {
+					"displayName": "Получите разобранный и проверенный телефон",
+					"description": "Анализ номеров телефонов в нескольких полях и проверка формата и правильности префикса <a href=\"https://app.uproc.io/#/tools/processor/get/phone/parsed\" target='_blank'>Info</a>"
+				},
+				"getEmailPersonalRecipientByProfile": {
+					"displayName": "Получите личную электронную почту по профилю в социальной сети",
+					"description": "Откройте для себя все личные электронные письма в социальном профиле <a href=\"https://app.uproc.io/#/tools/processor/get/email/personal-recipient-by-profile\" target='_blank'>Info</a>"
+				},
+				"getMobileCountryPrefix": {
+					"displayName": "Получить префикс телефона по ISO-коду страны",
+					"description": "Разрешить получение префикса страны по коду страны (2 символа) <a href=\"https://app.uproc.io/#/tools/processor/get/mobile/country-prefix\" target='_blank'>Info</a>"
+				},
+				"getLinkedinPublicProfileBySalesProfile": {
+					"displayName": "Получить общедоступный профиль по профилю продаж",
+					"description": "Преобразовать профиль продаж LinkedIn (/sales/people/) в общедоступный профиль LinkedIn (/in/) <a href=\"https://app.uproc.io/#/tools/processor/get/linkedin/public-profile-by-sales-profile\" target='_blank'>Info</a>"
+				},
+				"getLinkedinSearchContactsUrl": {
+					"displayName": "Получить URL-адрес контактов LinkedIn для поиска",
+					"description": "Создайте URL-адрес поисковых контактов LinkedIn с учетом предоставленных ключевых слов <a href=\"https://app.uproc.io/#/tools/processor/get/linkedin/search-contacts-url\" target='_blank'>Info</a>"
+				},
+				"getSocialUriParsed": {
+					"displayName": "Получить активность в социальных сетях",
+					"description": "Этот инструмент анализирует социальный URI-адрес и извлекает все доступные индикаторы <a href=\"https://app.uproc.io/#/tools/processor/get/social/uri-parsed\" target='_blank'>Info</a>"
+				},
+				"getSocialDomainParsed": {
+					"displayName": "Получить активность в социальных сетях по домену",
+					"description": "Искать все социальные сети по домену, анализировать все найденные URL-адреса и возвращать kpis социальных сетей (при наличии данных) <a href=\"https://app.uproc.io/#/tools/processor/get/social/domain-parsed\" target='_blank'>Info</a>"
+				},
+				"getSocialDomainLookup": {
+					"displayName": "Получить социальные сети по домену",
+					"description": "Узнайте, имеет ли домен или веб-сайт социальную активность, и возвратите все найденные профили социальных сетей <a href=\"https://app.uproc.io/#/tools/processor/get/social/domain-lookup\" target='_blank'>Info</a>"
+				},
+				"getSocialEmailLookup": {
+					"displayName": "Получите социальные сети по электронной почте",
+					"description": "Узнайте, есть ли в электронном письме социальная активность, и найдите все профили социальных сетей <a href=\"https://app.uproc.io/#/tools/processor/get/social/email-lookup\" target='_blank'>Info</a>"
+				},
+				"getSocialMobileLookup": {
+					"displayName": "Получите социальные сети с помощью мобильного телефона",
+					"description": "Узнайте, ведет ли мобильный телефон социальную активность, и найдите все профили в социальных сетях <a href=\"https://app.uproc.io/#/tools/processor/get/social/mobile-lookup\" target='_blank'>Info</a>"
+				},
+				"getEmailReferences": {
+					"displayName": "Получить веб-ссылки на электронное письмо",
+					"description": "Получить веб-ссылки на электронное письмо, опубликованное в Интернете <a href=\"https://app.uproc.io/#/tools/processor/get/email/references\" target='_blank'>Info</a>"
+				},
+				"sendLinkedinInvitation": {
+					"displayName": "Отправить запрос на подключение в профиль Linkedin",
+					"description": "Отправьте приглашение в специальном сообщении в неподключенный профиль Linkedin (поддерживаемые URI: https://www.linkedin.com/in/USERID) <a href=\"https://app.uproc.io/#/tools/processor/send/linkedin/invitation\" target='_blank'>Info</a>"
+				},
+				"sendEmailCustom": {
+					"displayName": "Отправить персонализированное электронное письмо",
+					"description": "Отправьте собственное электронное письмо (поддерживается HTML) получателю <a href=\"https://app.uproc.io/#/tools/processor/send/email/custom\" target='_blank'>Info</a>"
+				},
+				"sendMobileSms": {
+					"displayName": "Отправить индивидуальное смс",
+					"description": "Отправьте индивидуальное SMS получателю с покрытием по всему миру <a href=\"https://app.uproc.io/#/tools/processor/send/mobile/sms\" target='_blank'>Info</a>"
+				},
+				"sendLinkedinInvitationOrMessage": {
+					"displayName": "Отправьте приглашение или сообщение в профиль Linkedin",
+					"description": "Отправьте пользовательское сообщение-приглашение (параметр message1), если профиль подключен, или пользовательское сообщение (параметр message2), в противном случае (поддерживаемые uris: https://www.linkedin.com/in/USERID) <a href=\"https://app.uproc.io/#/tools/processor/send/linkedin/invitation-or-message\" target='_blank'>Info</a>"
+				},
+				"sendLinkedinVisit": {
+					"displayName": "Отправить посещение профиля LinkedIn",
+					"description": "Посещает профиль, чтобы проявить интерес и получить просмотры профиля в ответ от контактов, расширяя вашу сеть LinkedIn <a href=\"https://app.uproc.io/#/tools/processor/send/linkedin/visit\" target='_blank'>Info</a>"
+				},
+				"sendLinkedinMessage": {
+					"displayName": "Отправить сообщение в профиль Linkedin",
+					"description": "Отправьте личное сообщение в подключенный профиль Linkedin (поддерживаемый код: https://www.linkedin.com/in/USERID) <a href=\"https://app.uproc.io/#/tools/processor/send/linkedin/message\" target='_blank'>Info</a>"
+				},
+				"checkCifValid": {
+					"displayName": "Убедитесь, что CIF действителен (ES)",
+					"description": "Узнайте, действителен ли номер карты cif <a href=\"https://app.uproc.io/#/tools/processor/check/cif/valid\" target='_blank'>Info</a>"
+				},
+				"checkCompanyDebtorByTaxid": {
+					"displayName": "Проверить компанию-должника по TaxId (ES)",
+					"description": "Проверьте, является ли компания должником по TaxId <a href=\"https://app.uproc.io/#/tools/processor/check/company/debtor-by-taxid\" target='_blank'>Info</a>"
+				},
+				"checkNumberIsin": {
+					"displayName": "Проверьте действительный код ISIN",
+					"description": "Проверьте, действителен ли номер ISIN <a href=\"https://app.uproc.io/#/tools/processor/check/number/isin\" target='_blank'>Info</a>"
+				},
+				"checkNumberSsEs": {
+					"displayName": "Проверьте, действителен ли номер социального страхования (ES)",
+					"description": "Проверьте, действителен ли номер SS, только для Испании <a href=\"https://app.uproc.io/#/tools/processor/check/number/ss-es\" target='_blank'>Info</a>"
+				},
+				"getRoleClassified": {
+					"displayName": "Получить секретную роль",
+					"description": "Определите и классифицируйте роль потенциального клиента, определив правильную область и стаж для последующей фильтрации <a href=\"https://app.uproc.io/#/tools/processor/get/role/classified\" target='_blank'>Info</a>"
+				},
+				"getCompanyByCif": {
+					"displayName": "Получить компанию по CIF (ES)",
+					"description": "Получить данные компании по CIF <a href=\"https://app.uproc.io/#/tools/processor/get/company/by-cif\" target='_blank'>Info</a>"
+				},
+				"getCompanyByDuns": {
+					"displayName": "Получить компанию от DUNS (ES)",
+					"description": "Получить данные компании по DUNS <a href=\"https://app.uproc.io/#/tools/processor/get/company/by-duns\" target='_blank'>Info</a>"
+				},
+				"getCompanyByDomain": {
+					"displayName": "Получить компанию по домену",
+					"description": "Получить данные компании по домену <a href=\"https://app.uproc.io/#/tools/processor/get/company/by-domain\" target='_blank'>Info</a>"
+				},
+				"getCompanyByEmail": {
+					"displayName": "Получить компанию по электронной почте",
+					"description": "Получите данные компании по электронной почте <a href=\"https://app.uproc.io/#/tools/processor/get/company/by-email\" target='_blank'>Info</a>"
+				},
+				"getCompanyByIp": {
+					"displayName": "Получить компанию по IP",
+					"description": "Получить данные компании по IP-адресу <a href=\"https://app.uproc.io/#/tools/processor/get/company/by-ip\" target='_blank'>Info</a>"
+				},
+				"getCompanyByName": {
+					"displayName": "Получить компанию по названию",
+					"description": "Получает данные компании по ее названию <a href=\"https://app.uproc.io/#/tools/processor/get/company/by-name\" target='_blank'>Info</a>"
+				},
+				"getCompanyByPhone": {
+					"displayName": "Получить компанию по телефону",
+					"description": "Получить данные компании по номеру телефона <a href=\"https://app.uproc.io/#/tools/processor/get/company/by-phone\" target='_blank'>Info</a>"
+				},
+				"getCompanyByProfile": {
+					"displayName": "Получить компанию по социальному профилю",
+					"description": "Получить данные компании по uri социальной сети.<br>Инструменты поддерживают следующие социальные сети: Facebook, GitHub, Instagram, LinkedIn (/company/), Pinterest, Slack, TikTok, Twitch, Twitter <a href=\"https://app.uproc.io/#/tools/processor/get/company/by-profile\" target='_blank'>Info</a>"
+				},
+				"getCompanyNameByDomain": {
+					"displayName": "Получить название компании по домену",
+					"description": "Получить название компании по домену компании <a href=\"https://app.uproc.io/#/tools/processor/get/company/name-by-domain\" target='_blank'>Info</a>"
+				},
+				"getPersonDecisionMaker": {
+					"displayName": "Получить средство принятия решений",
+					"description": "Получите профессиональные данные лица, принимающего решения, по названию компании/домену и региону <a href=\"https://app.uproc.io/#/tools/processor/get/person/decision-maker\" target='_blank'>Info</a>"
+				},
+				"getPersonDecisionMakerBySearch": {
+					"displayName": "Получить лицо, принимающее решения, через поисковую систему",
+					"description": "Найдите более подходящего лица, принимающего решения, с помощью поисковых систем (Bing) по названию компании и региону (необязательно) <a href=\"https://app.uproc.io/#/tools/processor/get/person/decision-maker-by-search\" target='_blank'>Info</a>"
+				},
+				"getPersonEmailsByDomainAndArea": {
+					"displayName": "Получайте электронные письма от лиц, принимающих решения, по домену и региону",
+					"description": "Получайте профессиональные электронные письма от лиц, принимающих решения (по приоритету: руководитель, менеджер и директора) по домену и региону компании <a href=\"https://app.uproc.io/#/tools/processor/get/person/emails-by-domain-and-area\" target='_blank'>Info</a>"
+				},
+				"getPersonMultipleDecisionMakerBySearch": {
+					"displayName": "Получите лиц, принимающих решения, с помощью поисковой системы",
+					"description": "Найдите до десяти лиц, принимающих решения, с помощью поисковых систем (Bing) по названию компании и региону (необязательно) <a href=\"https://app.uproc.io/#/tools/processor/get/person/multiple-decision-maker-by-search\" target='_blank'>Info</a>"
+				},
+				"getCompanyDomainByName": {
+					"displayName": "Получить домен по названию компании",
+					"description": "Получить домен компании по названию компании <a href=\"https://app.uproc.io/#/tools/processor/get/company/domain-by-name\" target='_blank'>Info</a>"
+				},
+				"getPersonListByParams": {
+					"displayName": "Получить сотрудников по параметрам",
+					"description": "Получите сотрудников по названию компании или домену, региону, стажу и стране <a href=\"https://app.uproc.io/#/tools/processor/get/person/list-by-params\" target='_blank'>Info</a>"
+				},
+				"getProfileFacebookByCompany": {
+					"displayName": "Получить URI Facebook по компании",
+					"description": "Получите профиль компании Facebook по названию без ручного поиска в Google или Facebook.<br><br>Этот инструмент использует поисковые системы (Bing и Google) через прокси <a href=\"https://app.uproc.io/#/tools/processor/get/profile/facebook-by-company\" target='_blank'>Info</a>"
+				},
+				"getProfileFacebookByCompanyDomain": {
+					"displayName": "Получить URI Facebook по домену компании",
+					"description": "Получите профиль компании Facebook по домену без ручного поиска в Google или LinkedIn.<br><br>Этот инструмент использует наши внутренние базы данных. <a href=\"https://app.uproc.io/#/tools/processor/get/profile/facebook-by-company-domain\" target='_blank'>Информация</a>"
+				},
+				"getCompanyGeocodedByIp": {
+					"displayName": "Получить геокодированную компанию по IP",
+					"description": "Получить геокодированные данные компании по IP-адресу <a href=\"https://app.uproc.io/#/tools/processor/get/company/geocoded-by-ip\" target='_blank'>Info</a>"
+				},
+				"getProfileGithubByCompanyDomain": {
+					"displayName": "Получить URI GitHub по домену компании",
+					"description": "Получите профиль компании GitHub по домену без ручного поиска в Google или LinkedIn.<br><br>Этот инструмент использует наши внутренние базы данных. <a href=\"https://app.uproc.io/#/tools/processor/get/profile/github-by-company-domain\" target='_blank'>Информация</a>"
+				},
+				"getProfileInstagramByCompanyDomain": {
+					"displayName": "Получить URI Instagram по домену компании",
+					"description": "Получите профиль компании Instagram по домену без ручного поиска в Google или LinkedIn.<br><br>Этот инструмент использует наши внутренние базы данных. <a href=\"https://app.uproc.io/#/tools/processor/get/profile/instagram-by-company-domain\" target='_blank'>Информация</a>"
+				},
+				"getProfileLinkedinByCompany": {
+					"displayName": "Получить LinkedIn URI по компании",
+					"description": "Получите профиль компании LinkedIn по названию без ручного поиска в Google или LinkedIn.<br><br>Этот инструмент использует поисковые системы (Bing и Google) через прокси <a href=\"https://app.uproc.io/#/tools/processor/get/profile/linkedin-by-company\" target='_blank'>Info</a>"
+				},
+				"getProfileLinkedinByCompanyDomain": {
+					"displayName": "Получить LinkedIn URI по домену компании",
+					"description": "Получите профиль компании LinkedIn по домену без ручного поиска в Google или LinkedIn.<br><br>Этот инструмент использует наши внутренние базы данных. <a href=\"https://app.uproc.io/#/tools/processor/get/profile/linkedin-by-company-domain\" target='_blank'>Информация</a>"
+				},
+				"getCifNormalized": {
+					"displayName": "Получить нормализованный CIF",
+					"description": "Разрешить нормализацию номера CIF, удалив недопустимые символы <a href=\"https://app.uproc.io/#/tools/processor/get/cif/normalized\" target='_blank'>Info</a>"
+				},
+				"getCompanyPhoneByDomain": {
+					"displayName": "Получить телефон по домену компании",
+					"description": "Получить телефон компании по домену компании <a href=\"https://app.uproc.io/#/tools/processor/get/company/phone-by-domain\" target='_blank'>Info</a>"
+				},
+				"getCompanyPhoneByName": {
+					"displayName": "Получить телефон по названию компании",
+					"description": "Получить телефон компании по названию компании <a href=\"https://app.uproc.io/#/tools/processor/get/company/phone-by-name\" target='_blank'>Info</a>"
+				},
+				"getProfilePinterestByCompanyDomain": {
+					"displayName": "Получить URI Pinterest по домену компании",
+					"description": "Получите профиль компании Pinterest по домену без ручного поиска в Google или LinkedIn.<br><br>Этот инструмент использует наши внутренние базы данных. <a href=\"https://app.uproc.io/#/tools/processor/get/profile/pinterest-by-company-domain\" target='_blank'>Информация</a>"
+				},
+				"getCompanyFinancialByDuns": {
+					"displayName": "Получите данные о продажах по DUNS компании",
+					"description": "Получите данные о продажах компании по номеру DUNS компании.<br><br>Поддерживаются следующие страны: Испания <a href=\"https://app.uproc.io/#/tools/processor/get/company/financial-by-duns\" target='_blank'>Info</a>"
+				},
+				"getCompanyFinancialByDomain": {
+					"displayName": "Получите данные о продажах по домену компании",
+					"description": "Получите данные о продажах компании по доменному имени компании с мировым покрытием <a href=\"https://app.uproc.io/#/tools/processor/get/company/financial-by-domain\" target='_blank'>Info</a>"
+				},
+				"getCompanyFinancialByName": {
+					"displayName": "Получить данные о продажах по названию компании",
+					"description": "Получите данные о продажах компании по названию компании.<br><br>Поддерживаются следующие страны: Испания <a href=\"https://app.uproc.io/#/tools/processor/get/company/financial-by-name\" target='_blank'>Info</a>"
+				},
+				"getCompanyFinancialByTaxid": {
+					"displayName": "Получите данные о продажах по Taxid компании",
+					"description": "Получите данные о продажах компании по таксису компании (CIF).<br><br>Поддерживаются следующие страны: Испания <a href=\"https://app.uproc.io/#/tools/processor/get/company/financial-by-taxid\" target='_blank'>Info</a>"
+				},
+				"getProfileTwitterByCompany": {
+					"displayName": "Получить URI Twitter по компании",
+					"description": "Получите профиль компании Twitter по названию без ручного поиска в Google или Twitter.<br><br>Этот инструмент использует поисковые системы (Bing и Google) через прокси <a href=\"https://app.uproc.io/#/tools/processor/get/profile/twitter-by-company\" target='_blank'>Info</a>"
+				},
+				"getProfileTwitterByCompanyDomain": {
+					"displayName": "Получить URI Twitter по домену компании",
+					"description": "Получите профиль компании Twitter по домену без ручного поиска в Google или LinkedIn.<br><br>Этот инструмент использует наши внутренние базы данных. <a href=\"https://app.uproc.io/#/tools/processor/get/profile/twitter-by-company-domain\" target='_blank'>Информация</a>"
+				},
+				"getProfileYoutubeByCompanyDomain": {
+					"displayName": "Получить URI YouTube по домену компании",
+					"description": "Получите профиль компании YouTube по домену без ручного поиска в Google или LinkedIn.<br><br>Этот инструмент использует наши внутренние базы данных. <a href=\"https://app.uproc.io/#/tools/processor/get/profile/youtube-by-company-domain\" target='_blank'>Информация</a>"
+				},
+				"checkBankBicValid": {
+					"displayName": "Проверьте, действителен ли БИК",
+					"description": "Узнайте, имеет ли номер BIC действительный формат <a href=\"https://app.uproc.io/#/tools/processor/check/bank/bic-valid\" target='_blank'>Info</a>"
+				},
+				"checkBankAccountValidEs": {
+					"displayName": "Проверьте, действителен ли банковский счет (ES)",
+					"description": "Узнайте, имеет ли номер счета действительный формат <a href=\"https://app.uproc.io/#/tools/processor/check/bank/account-valid-es\" target='_blank'>Info</a>"
+				},
+				"checkCreditcardChecksum": {
+					"displayName": "Проверьте, что номер карты имеет действительный формат",
+					"description": "Проверьте, действительна ли контрольная сумма номера кредитной карты (Visa, Mastercard, Diners Club, Carte Blanche, American Express, Discover, JCB, enRoute, Solo, Switch, Maestro, LaserCard, ChinaUnionPay, BankCard, Voyager) <a href=\"https://app.uproc.io/#/tools/processor/check/creditcard/checksum\" target='_blank'>Info</a>"
+				},
+				"checkCryptoWalletAddressValid": {
+					"displayName": "Проверьте, действителен ли криптокошелек",
+					"description": "Проверьте, имеет ли крипто-адрес кошелька допустимый формат в зависимости от выбранной монеты.<br><strong>ВАЖНО</strong>: Вам необходимо убедиться, что кошелек принимает криптовалюту для отправки.<br><br>Поддерживаются следующие монеты:<br>0x, Aave Coin, Algorand, Aragon, Augur, AugurV2, AuroraCoin, Bancor, Bankex, Basic Attention Token, BeaverCoin, BioCoin, Биткойн, Bitcoin SV, BitcoinCash, BitcoinGold, BitcoinPrivate, BitcoinZ, BlockTrade, Протокол BTU, Callisto, Cardano, Chainlink, Civic, Compound, Cred, Crypto.com Coin, CUSD, Dash, Decentraland, Decred, DigiByte, District0x, DogeCoin, Enjin Coin, EOS, Ethereum, EthereumClassic, EtherZero, Expanse, FirmaChain, FreiCoin, GameCredits, GarliCoin, Gnosis, Golem, Golem (GNT), HedgeTrade, Hush, HyperSpace, iExec RLC, Komodo, LBRY Credits, Lisk, LiteCoin, loki, Loom Network, Maker, Matchpool, Matic, MegaCoin, Melon, Metal, MonaCoin, Monero, DAI с несколькими залогами, NameCoin, Nano, Nem, Neo, NeoGas, Numeraire, Ocean Protocol, Odyssey, OmiseGO, Paxos, PeerCoin, PIVX, Polkadot, Polymath, PrimeCoin, ProtoShares, Qtum, Quant, Quantum Resistant Ledger, RaiBlocks, Ripio Кредитная сеть, Ripple, Salt, Serve, Siacoin, SnowGem, SolarCoin, SOLVE, Spendcoin, Status, Stellar, Storj, Storm, StormX, Swarm City, Synthetix Network, Tap, TEMCO, TenX, Tether, Tezos, Tron, TrueUSD, Uniswap Coin, USD Coin, VeChain, VertCoin, Viberate, VoteCoin, Waves, Крылья, ZCash, ZClassic, ZenCash <a href=\"https://app.uproc.io/#/tools/processor/check/crypto/wallet-address-valid\" target='_blank'>Информация</a>"
+				},
+				"checkBankIbanValid": {
+					"displayName": "Проверьте, действителен ли номер IBAN",
+					"description": "Узнайте, имеет ли номер счета IBAN действительный формат <a href=\"https://app.uproc.io/#/tools/processor/check/bank/iban-valid\" target='_blank'>Info</a>"
+				},
+				"checkCurrencyValidIso": {
+					"displayName": "Убедитесь, что код валюты ISO действителен",
+					"description": "Узнайте, действителен ли код валюты ISO <a href=\"https://app.uproc.io/#/tools/processor/check/currency/valid-iso\" target='_blank'>Info</a>"
+				},
+				"checkVatExist": {
+					"displayName": "Проверка существования ИНН (VIES)",
+					"description": "Проверьте, существует ли номер ИНН в Европе <a href=\"https://app.uproc.io/#/tools/processor/check/vat/exist\" target='_blank'>Info</a>"
+				},
+				"getCurrencyConvertedBetweenIsocodeDate": {
+					"displayName": "Получите конверсию по валютам и дате",
+					"description": "Конвертировать сумму между поддерживаемыми валютами и датой обмена <a href=\"https://app.uproc.io/#/tools/processor/get/currency/converted-between-isocode-date\" target='_blank'>Info</a>"
+				},
+				"getCreditcardType": {
+					"displayName": "Получить тип кредитной карты по номеру",
+					"description": "Получить тип кредитной карты (Visa, Mastercard, Diners Club, Carte Blanche, American Express, Discover, JCB, enRoute, Solo, Switch, Maestro, LaserCard, ChinaUnionPay, BankCard, Voyager) <a href=\"https://app.uproc.io/#/tools/processor/get/creditcard/type\" target='_blank'>Info</a>"
+				},
+				"getCurrencyListByCountry": {
+					"displayName": "Получить валюту по стране",
+					"description": "Получите несколько кодов валют ISO по названию страны <a href=\"https://app.uproc.io/#/tools/processor/get/currency/list-by-country\" target='_blank'>Info</a>"
+				},
+				"getCurrencyListByIp": {
+					"displayName": "Получайте валюту по IP",
+					"description": "Получите все коды валют ISO по IP-адресу <a href=\"https://app.uproc.io/#/tools/processor/get/currency/list-by-ip\" target='_blank'>Info</a>"
+				},
+				"getCurrencyListByIsocode": {
+					"displayName": "Получить валюту по коду ISO",
+					"description": "Получите несколько кодов валют ISO по коду ISO страны <a href=\"https://app.uproc.io/#/tools/processor/get/currency/list-by-isocode\" target='_blank'>Info</a>"
+				},
+				"getCurrencyByIp": {
+					"displayName": "Получить валюту по IP",
+					"description": "Получите код валюты ISO по IP-адресу <a href=\"https://app.uproc.io/#/tools/processor/get/currency/by-ip\" target='_blank'>Info</a>"
+				},
+				"getCurrencyByIsocode": {
+					"displayName": "Получить валюту по коду валюты ISO",
+					"description": "Получите код валюты ISO по коду ISO валюты <a href=\"https://app.uproc.io/#/tools/processor/get/currency/by-isocode\" target='_blank'>Info</a>"
+				},
+				"getCurrencyByCountryIsocode": {
+					"displayName": "Получить код валюты по коду страны",
+					"description": "Получите код валюты ISO по коду страны ISO <a href=\"https://app.uproc.io/#/tools/processor/get/currency/by-country-isocode\" target='_blank'>Info</a>"
+				},
+				"getCurrencyByCountry": {
+					"displayName": "Получить код валюты по названию страны",
+					"description": "Получить код валюты ISO по названию страны <a href=\"https://app.uproc.io/#/tools/processor/get/currency/by-country\" target='_blank'>Info</a>"
+				},
+				"getVatByNumber": {
+					"displayName": "Получить данные по ИНН (VIES)",
+					"description": "Получить соответствующий европейский номер TIN в Европе <a href=\"https://app.uproc.io/#/tools/processor/get/vat/by-number\" target='_blank'>Info</a>"
+				},
+				"getBankIbanByAccount": {
+					"displayName": "Получить IBAN по счету",
+					"description": "Получить номер IBAN по номеру счета страны <a href=\"https://app.uproc.io/#/tools/processor/get/bank/iban-by-account\" target='_blank'>Info</a>"
+				},
+				"getBankIbanLookup": {
+					"displayName": "Получить поиск IBAN",
+					"description": "Получите возможность поиска информации банка данных по номеру счета IBAN <a href=\"https://app.uproc.io/#/tools/processor/get/bank/iban-lookup\" target='_blank'>Info</a>"
+				},
+				"getSwiftLookup": {
+					"displayName": "Получить поиск Swift-кода",
+					"description": "Получите финансовые данные по коду Swift <a href=\"https://app.uproc.io/#/tools/processor/get/swift/lookup\" target='_blank'>Info</a>"
+				},
+				"getVatByAddress": {
+					"displayName": "Получите % НДС по адресу",
+					"description": "Получите НДС страны по адресу <a href=\"https://app.uproc.io/#/tools/processor/get/vat/by-address\" target='_blank'>Info</a>"
+				},
+				"getVatByCoordinates": {
+					"displayName": "Получите % НДС по координатам",
+					"description": "Получить НДС страны по координатам <a href=\"https://app.uproc.io/#/tools/processor/get/vat/by-coordinates\" target='_blank'>Info</a>"
+				},
+				"getVatByIp": {
+					"displayName": "Получите % НДС по IP",
+					"description": "Получайте НДС по IP-адресу <a href=\"https://app.uproc.io/#/tools/processor/get/vat/by-ip\" target='_blank'>Info</a>"
+				},
+				"getVatByIsocode": {
+					"displayName": "Получите% НДС по коду ISO",
+					"description": "Получите значение НДС по коду ISO страны <a href=\"https://app.uproc.io/#/tools/processor/get/vat/by-isocode\" target='_blank'>Info</a>"
+				},
+				"getVatByPhone": {
+					"displayName": "Получите % НДС по телефону",
+					"description": "Получите НДС по номеру телефона с покрытием по всему миру <a href=\"https://app.uproc.io/#/tools/processor/get/vat/by-phone\" target='_blank'>Info</a>"
+				},
+				"getVatByZipcode": {
+					"displayName": "Получите% НДС по почтовому индексу",
+					"description": "Получите НДС по почтовому индексу <a href=\"https://app.uproc.io/#/tools/processor/get/vat/by-zipcode\" target='_blank'>Info</a>"
+				},
+				"checkCountryValidIso": {
+					"displayName": "Проверьте наличие кода страны",
+					"description": "Проверьте, существует ли ISO-код страны <a href=\"https://app.uproc.io/#/tools/processor/check/country/valid-iso\" target='_blank'>Info</a>"
+				},
+				"checkDistanceEq": {
+					"displayName": "Проверьте, что расстояние равно",
+					"description": "Узнайте, равно ли расстояние между двумя координатами другому <a href=\"https://app.uproc.io/#/tools/processor/check/distance/eq\" target='_blank'>Info</a>"
+				},
+				"checkDistanceGt": {
+					"displayName": "Проверьте расстояние больше",
+					"description": "Узнайте, больше ли расстояние в километрах между двумя координатами другого <a href=\"https://app.uproc.io/#/tools/processor/check/distance/gt\" target='_blank'>Info</a>"
+				},
+				"checkDistanceGe": {
+					"displayName": "Проверьте, что расстояние больше или равно",
+					"description": "Узнайте, больше или равно ли расстояние в километрах между двумя координатами другому <a href=\"https://app.uproc.io/#/tools/processor/check/distance/ge\" target='_blank'>Info</a>"
+				},
+				"checkDistanceLt": {
+					"displayName": "Проверьте, что расстояние меньше",
+					"description": "Узнайте, меньше ли расстояние в километрах между двумя координатами, чем другое <a href=\"https://app.uproc.io/#/tools/processor/check/distance/lt\" target='_blank'>Info</a>"
+				},
+				"checkDistanceLe": {
+					"displayName": "Проверьте, что расстояние меньше или равно",
+					"description": "Узнайте, меньше ли расстояние в километрах между двумя координатами или равно другому <a href=\"https://app.uproc.io/#/tools/processor/check/distance/le\" target='_blank'>Info</a>"
+				},
+				"checkAddressExist": {
+					"displayName": "Проверить существование точного адреса",
+					"description": "Проверьте, существует ли точный адрес, с помощью частичного поиска адреса <a href=\"https://app.uproc.io/#/tools/processor/check/address/exist\" target='_blank'>Info</a>"
+				},
+				"checkAddressNumberExist": {
+					"displayName": "Проверить наличие номера улицы",
+					"description": "Проверьте, существует ли номер дома, с помощью частичного поиска адреса <a href=\"https://app.uproc.io/#/tools/processor/check/address/number-exist\" target='_blank'>Info</a>"
+				},
+				"checkCoordinateValid": {
+					"displayName": "Проверьте действительные координаты",
+					"description": "Проверьте, имеют ли координаты допустимый формат <a href=\"https://app.uproc.io/#/tools/processor/check/coordinate/valid\" target='_blank'>Info</a>"
+				},
+				"checkZipcodeExist": {
+					"displayName": "Проверить почтовый индекс по префиксу (ES)",
+					"description": "Узнайте, существует ли префикс почтового индекса, только для Испании <a href=\"https://app.uproc.io/#/tools/processor/check/zipcode/exist\" target='_blank'>Info</a>"
+				},
+				"checkZipcodeFormat": {
+					"displayName": "Проверьте, имеет ли почтовый индекс действительный формат (ES)",
+					"description": "Узнайте, имеет ли почтовый индекс действительный формат, только для Испании <a href=\"https://app.uproc.io/#/tools/processor/check/zipcode/format\" target='_blank'>Info</a>"
+				},
+				"getCoordinateCartesian": {
+					"displayName": "Получить декартовы координаты",
+					"description": "Получить декартовы координаты (X,Y,Z/WGS84) по широте и долготе <a href=\"https://app.uproc.io/#/tools/processor/get/coordinate/cartesian\" target='_blank'>Info</a>"
+				},
+				"getCityListByPhone": {
+					"displayName": "Получить города по телефону (ES)",
+					"description": "Получить несколько городов по префиксу телефона (только Испания) <a href=\"https://app.uproc.io/#/tools/processor/get/city/list-by-phone\" target='_blank'>Info</a>"
+				},
+				"getCityListByName": {
+					"displayName": "Получить города по префиксу (ES)",
+					"description": "Получить несколько городов по частичному исходному тексту (только Испания) <a href=\"https://app.uproc.io/#/tools/processor/get/city/list-by-name\" target='_blank'>Info</a>"
+				},
+				"getCityListByZipcode": {
+					"displayName": "Получить города по почтовому индексу (ES)",
+					"description": "Получить несколько городов по префиксу почтового индекса (только Испания) <a href=\"https://app.uproc.io/#/tools/processor/get/city/list-by-zipcode\" target='_blank'>Info</a>"
+				},
+				"getCityByIp": {
+					"displayName": "Получить город по IP",
+					"description": "Получить город с ip <a href=\"https://app.uproc.io/#/tools/processor/get/city/by-ip\" target='_blank'>Info</a>"
+				},
+				"getCityByName": {
+					"displayName": "Получить город по названию (ES)",
+					"description": "Поиск города по части названия (только Испания) <a href=\"https://app.uproc.io/#/tools/processor/get/city/by-name\" target='_blank'>Info</a>"
+				},
+				"getCityByPhone": {
+					"displayName": "Получить город по телефону (ES)",
+					"description": "Узнайте название города по местному номеру телефона (только Испания) <a href=\"https://app.uproc.io/#/tools/processor/get/city/by-phone\" target='_blank'>Info</a>"
+				},
+				"getCityByZipcode": {
+					"displayName": "Получить город по почтовому индексу (ES)",
+					"description": "Узнайте название города по почтовому индексу (только Испания) <a href=\"https://app.uproc.io/#/tools/processor/get/city/by-zipcode\" target='_blank'>Info</a>"
+				},
+				"getCommunityByZipcode": {
+					"displayName": "Получить сообщество по почтовому индексу (ES)",
+					"description": "Узнайте название сообщества по почтовому индексу (только Испания) <a href=\"https://app.uproc.io/#/tools/processor/get/community/by-zipcode\" target='_blank'>Info</a>"
+				},
+				"getCoordinateByIp": {
+					"displayName": "Получить координаты по IP",
+					"description": "Узнайте координаты широты и долготы IP-адреса <a href=\"https://app.uproc.io/#/tools/processor/get/coordinate/by-ip\" target='_blank'>Info</a>"
+				},
+				"getCoordinateBySearch": {
+					"displayName": "Получить координаты по поиску",
+					"description": "Узнайте координаты широты и долготы почтового адреса <a href=\"https://app.uproc.io/#/tools/processor/get/coordinate/by-search\" target='_blank'>Info</a>"
+				},
+				"getCountryListByCurrencyCode": {
+					"displayName": "Получить страны по валюте",
+					"description": "Получите несколько названий стран по коду ISO валюты <a href=\"https://app.uproc.io/#/tools/processor/get/country/list-by-currency-code\" target='_blank'>Info</a>"
+				},
+				"getCountryListByCode": {
+					"displayName": "Получить страны по коду ISO",
+					"description": "Получить несколько стран по коду ISO <a href=\"https://app.uproc.io/#/tools/processor/get/country/list-by-code\" target='_blank'>Info</a>"
+				},
+				"getCountryListByName": {
+					"displayName": "Получить страны по префиксу",
+					"description": "Получить несколько названий стран по начальному имени <a href=\"https://app.uproc.io/#/tools/processor/get/country/list-by-name\" target='_blank'>Info</a>"
+				},
+				"getCountryByCurrencyCode": {
+					"displayName": "Получить страну по валюте",
+					"description": "Получить название страны по коду ISO валюты <a href=\"https://app.uproc.io/#/tools/processor/get/country/by-currency-code\" target='_blank'>Info</a>"
+				},
+				"getCountryByIp": {
+					"displayName": "Получить страну по IP",
+					"description": "Получить название страны по IP-адресу <a href=\"https://app.uproc.io/#/tools/processor/get/country/by-ip\" target='_blank'>Info</a>"
+				},
+				"getCountryByCode": {
+					"displayName": "Получить страну по коду ISO",
+					"description": "Получите название страны по ее коду ISO <a href=\"https://app.uproc.io/#/tools/processor/get/country/by-code\" target='_blank'>Info</a>"
+				},
+				"getCountryByName": {
+					"displayName": "Получить страну по названию",
+					"description": "Получить страну по префиксу <a href=\"https://app.uproc.io/#/tools/processor/get/country/by-name\" target='_blank'>Info</a>"
+				},
+				"getCountryByPhone": {
+					"displayName": "Узнать страну по телефону",
+					"description": "Получить название страны по номеру телефона с покрытием по всему миру <a href=\"https://app.uproc.io/#/tools/processor/get/country/by-phone\" target='_blank'>Info</a>"
+				},
+				"getCountryCodeByName": {
+					"displayName": "Получить код страны по имени",
+					"description": "Получите код Alpha2 по префиксу страны или имени <a href=\"https://app.uproc.io/#/tools/processor/get/country/code-by-name\" target='_blank'>Info</a>"
+				},
+				"getCoordinateDecimal": {
+					"displayName": "Получить десятичные координаты",
+					"description": "Получить десятичные координаты (градусы, минуты и секунды) по широте и долготе <a href=\"https://app.uproc.io/#/tools/processor/get/coordinate/decimal\" target='_blank'>Info</a>"
+				},
+				"getDistanceByAddresses": {
+					"displayName": "Получить расстояние между адресами",
+					"description": "Возвращает расстояние по прямой в километрах между двумя адресами <a href=\"https://app.uproc.io/#/tools/processor/get/distance/by-addresses\" target='_blank'>Info</a>"
+				},
+				"getDistanceByCoordinates": {
+					"displayName": "Получить расстояние между координатами",
+					"description": "Возвращает расстояние по прямой в километрах между двумя координатами GPS (широтой и долготой) <a href=\"https://app.uproc.io/#/tools/processor/get/distance/by-coordinates\" target='_blank'>Info</a>"
+				},
+				"getDistanceByIps": {
+					"displayName": "Получить расстояние между IP-адресами",
+					"description": "Возвращает расстояние по прямой в километрах между двумя IP-адресами <a href=\"https://app.uproc.io/#/tools/processor/get/distance/by-ips\" target='_blank'>Info</a>"
+				},
+				"getDistanceByPhones": {
+					"displayName": "Получить расстояние между телефонами",
+					"description": "Возвращает расстояние по прямой линии в километрах между двумя стационарными телефонами, используя город и провинцию каждого телефона <a href=\"https://app.uproc.io/#/tools/processor/get/distance/by-phones\" target='_blank'>Info</a>"
+				},
+				"getDistanceByZipcodes": {
+					"displayName": "Получить расстояние между почтовыми индексами",
+					"description": "Возвращает расстояние по прямой в километрах между двумя почтовыми индексами, используя город и провинцию каждого почтового индекса <a href=\"https://app.uproc.io/#/tools/processor/get/distance/by-zipcodes\" target='_blank'>Info</a>"
+				},
+				"getAddressBySearch": {
+					"displayName": "Получите точный адрес с помощью поиска",
+					"description": "Получите точный адрес (название улицы, номер, город, почтовый индекс, провинция, регион, страна, широта и долгота) с помощью частичного поиска адреса <a href=\"https://app.uproc.io/#/tools/processor/get/address/by-search\" target='_blank'>Info</a>"
+				},
+				"getLocationExtendedByIp": {
+					"displayName": "Получить расширенное местоположение по IP",
+					"description": "Откройте для себя данные о географическом положении, компании, часовом поясе и репутации по IPv4-адресу <a href=\"https://app.uproc.io/#/tools/processor/get/location/extended-by-ip\" target='_blank'>Info</a>"
+				},
+				"getLocationGeocodedByIp": {
+					"displayName": "Получить геокодированное местоположение по IP",
+					"description": "Узнайте название города, почтовый индекс, провинцию, страну, широту и долготу по адресу ipv4 или ipv6 и геокодируйте его <a href=\"https://app.uproc.io/#/tools/processor/get/location/geocoded-by-ip\" target='_blank'>Info</a>"
+				},
+				"getAddressSplittedBest": {
+					"displayName": "Получите улучшенный анализируемый адрес",
+					"description": "Разобрать почтовый адрес на отдельные поля, получив улучшенное разрешение <a href=\"https://app.uproc.io/#/tools/processor/get/address/splitted-best\" target='_blank'>Info</a>"
+				},
+				"getLocaleByIp": {
+					"displayName": "Получить данные локали по IP",
+					"description": "Узнайте данные локали (валюта, язык) по адресу ipv4 или ipv6. <a href=\"https://app.uproc.io/#/tools/processor/get/locale/by-ip\" target='_blank'>Информация</a>"
+				},
+				"getLocationByCoordinates": {
+					"displayName": "Получить местоположение по координатам",
+					"description": "Узнайте название города, почтовый индекс, провинцию или страну по широте и долготе <a href=\"https://app.uproc.io/#/tools/processor/get/location/by-coordinates\" target='_blank'>Info</a>"
+				},
+				"getLocationByIp": {
+					"displayName": "Получить местоположение по IP",
+					"description": "Узнайте название города, почтовый индекс, провинцию, страну, широту и долготу по адресу ipv4 или ipv6 <a href=\"https://app.uproc.io/#/tools/processor/get/location/by-ip\" target='_blank'>Info</a>"
+				},
+				"getLocationByPhone": {
+					"displayName": "Узнать местоположение по стационарному телефону (ES)",
+					"description": "Откройте для себя город и провинцию по стационарному номеру телефона (только Испания) <a href=\"https://app.uproc.io/#/tools/processor/get/location/by-phone\" target='_blank'>Info</a>"
+				},
+				"getLocationByName": {
+					"displayName": "Получить местоположение по имени",
+					"description": "Откройте данные о местоположении по имени <a href=\"https://app.uproc.io/#/tools/processor/get/location/by-name\" target='_blank'>Info</a>"
+				},
+				"getLocationByParams": {
+					"displayName": "Получить местоположение по параметрам",
+					"description": "Получите ближайшие местоположения по названию, категории, местоположению и радиусу <a href=\"https://app.uproc.io/#/tools/processor/get/location/by-params\" target='_blank'>Info</a>"
+				},
+				"getLocationByZipcode": {
+					"displayName": "Получить местоположение по почтовому индексу (ES)",
+					"description": "Откройте для себя город и провинцию по почтовому индексу (только Испания) <a href=\"https://app.uproc.io/#/tools/processor/get/location/by-zipcode\" target='_blank'>Info</a>"
+				},
+				"getLocationListByName": {
+					"displayName": "Получить местоположения по имени",
+					"description": "Получите наиболее релевантные местоположения по названию (типичный поиск на Картах Google) <a href=\"https://app.uproc.io/#/tools/processor/get/location/list-by-name\" target='_blank'>Info</a>"
+				},
+				"getLocationListByParams": {
+					"displayName": "Получить местоположения по параметрам",
+					"description": "Получите наиболее подходящие местоположения по названию, категории, местоположению и радиусу <a href=\"https://app.uproc.io/#/tools/processor/get/location/list-by-params\" target='_blank'>Info</a>"
+				},
+				"getNameListByPrefix": {
+					"displayName": "Получить имена по префиксу",
+					"description": "Получить несколько личных имен по префиксу <a href=\"https://app.uproc.io/#/tools/processor/get/name/list-by-prefix\" target='_blank'>Info</a>"
+				},
+				"getNetByIp": {
+					"displayName": "Получить сеть по IP",
+					"description": "Обнаружение сетевых данных по адресу ipv4 или ipv6 <a href=\"https://app.uproc.io/#/tools/processor/get/net/by-ip\" target='_blank'>Info</a>"
+				},
+				"getAddressNormalized": {
+					"displayName": "Получить нормализованный адрес",
+					"description": "Разрешить нормализовать адрес, удалив недопустимые символы <a href=\"https://app.uproc.io/#/tools/processor/get/address/normalized\" target='_blank'>Info</a>"
+				},
+				"getCityNormalized": {
+					"displayName": "Получить нормализованный город",
+					"description": "Разрешить нормализовать город, удалив недопустимые символы <a href=\"https://app.uproc.io/#/tools/processor/get/city/normalized\" target='_blank'>Info</a>"
+				},
+				"getCountryNormalized": {
+					"displayName": "Получить нормализованную страну",
+					"description": "Позволяет нормализовать название страны, обнаружить коды ISO (два или три символа) или название страны с ошибкой и преобразовать его в выбранный язык (по умолчанию английский) <a href=\"https://app.uproc.io/#/tools/processor/get/country/normalized\" target='_blank'>Info</a>"
+				},
+				"getProvinceNormalized": {
+					"displayName": "Получить нормализованную провинцию",
+					"description": "Разрешить нормализовать провинцию, удалив недопустимые символы <a href=\"https://app.uproc.io/#/tools/processor/get/province/normalized\" target='_blank'>Info</a>"
+				},
+				"getZipcodeNormalized": {
+					"displayName": "Получить нормализованный почтовый индекс",
+					"description": "Разрешить нормализовать почтовый индекс, удалив недопустимые символы <a href=\"https://app.uproc.io/#/tools/processor/get/zipcode/normalized\" target='_blank'>Info</a>"
+				},
+				"getAddressSplitted": {
+					"displayName": "Получить проанализированный адрес",
+					"description": "Разберите почтовый адрес на отдельные поля, получив базовое разрешение <a href=\"https://app.uproc.io/#/tools/processor/get/address/splitted\" target='_blank'>Info</a>"
+				},
+				"getProvinceByIp": {
+					"displayName": "Получить провинцию по IP",
+					"description": "Узнайте название провинции по IP-адресу <a href=\"https://app.uproc.io/#/tools/processor/get/province/by-ip\" target='_blank'>Info</a>"
+				},
+				"getProvinceByName": {
+					"displayName": "Получить провинцию по названию (ES)",
+					"description": "Вы можете получить первую провинцию по префиксу имени (только Испания) <a href=\"https://app.uproc.io/#/tools/processor/get/province/by-name\" target='_blank'>Info</a>"
+				},
+				"getProvinceByPhone": {
+					"displayName": "Получить провинцию по телефону (ES)",
+					"description": "Узнайте название провинции по номеру стационарного телефона (только Испания) <a href=\"https://app.uproc.io/#/tools/processor/get/province/by-phone\" target='_blank'>Info</a>"
+				},
+				"getProvinceByZipcode": {
+					"displayName": "Получить провинцию по почтовому индексу (ES)",
+					"description": "Узнайте название провинции по почтовому индексу (только Испания) <a href=\"https://app.uproc.io/#/tools/processor/get/province/by-zipcode\" target='_blank'>Info</a>"
+				},
+				"getProvinceListByName": {
+					"displayName": "Получить провинции по названию (ES)",
+					"description": "Получить список провинций можно по префиксу имени (только Испания) <a href=\"https://app.uproc.io/#/tools/processor/get/province/list-by-name\" target='_blank'>Info</a>"
+				},
+				"getProvinceListByPhone": {
+					"displayName": "Получить провинции по телефону (ES)",
+					"description": "Список провинций можно получить по префиксу телефона (только Испания) <a href=\"https://app.uproc.io/#/tools/processor/get/province/list-by-phone\" target='_blank'>Info</a>"
+				},
+				"getProvinceListByZipcode": {
+					"displayName": "Получить провинции по почтовому индексу (ES)",
+					"description": "Вы можете получить список провинций по префиксу почтового индекса, только для Испании <a href=\"https://app.uproc.io/#/tools/processor/get/province/list-by-zipcode\" target='_blank'>Info</a>"
+				},
+				"getReputationByIp": {
+					"displayName": "Получить репутацию по IP",
+					"description": "Узнайте репутацию по адресу ipv4 или ipv6 <a href=\"https://app.uproc.io/#/tools/processor/get/reputation/by-ip\" target='_blank'>Info</a>"
+				},
+				"getRouteByAddresses": {
+					"displayName": "Получить маршрут между адресами",
+					"description": "Возвращает время поездки, расстояние, расход топлива и стоимость между двумя адресами <a href=\"https://app.uproc.io/#/tools/processor/get/route/by-addresses\" target='_blank'>Info</a>"
+				},
+				"getRouteByCoordinates": {
+					"displayName": "Получить маршрут между координатами",
+					"description": "Возвращает время поездки, расстояние, расход топлива и стоимость между двумя координатами GPS (широтой и долготой) <a href=\"https://app.uproc.io/#/tools/processor/get/route/by-coordinates\" target='_blank'>Info</a>"
+				},
+				"getRouteByIps": {
+					"displayName": "Получить маршрут между IP-адресами",
+					"description": "Возвращает время маршрутизации, расстояние, расход топлива и стоимость между двумя IP-адресами <a href=\"https://app.uproc.io/#/tools/processor/get/route/by-ips\" target='_blank'>Info</a>"
+				},
+				"getRouteByPhones": {
+					"displayName": "Получить маршрут между телефонами",
+					"description": "Возвращает время поездки, расстояние, расход топлива и стоимость между двумя стационарными телефонами, используя город и провинцию каждого телефона (только Испания) <a href=\"https://app.uproc.io/#/tools/processor/get/route/by-phones\" target='_blank'>Info</a>"
+				},
+				"getRouteByZipcodes": {
+					"displayName": "Получить маршрут между почтовыми индексами",
+					"description": "Возвращает время поездки, расстояние, расход топлива и стоимость между двумя почтовыми индексами, используя город и провинцию каждого почтового индекса <a href=\"https://app.uproc.io/#/tools/processor/get/route/by-zipcodes\" target='_blank'>Info</a>"
+				},
+				"getTimeByCoordinates": {
+					"displayName": "Получить данные времени по координатам",
+					"description": "Найдите данные даты и времени по координатам (широта и долгота) <a href=\"https://app.uproc.io/#/tools/processor/get/time/by-coordinates\" target='_blank'>Info</a>"
+				},
+				"getTimeByIp": {
+					"displayName": "Получить данные о времени по IP",
+					"description": "Обнаружение данных даты и времени по адресу IPv4 или IPv6 <a href=\"https://app.uproc.io/#/tools/processor/get/time/by-ip\" target='_blank'>Info</a>"
+				},
+				"getTimeByAddress": {
+					"displayName": "Получить данные о времени по почтовому адресу",
+					"description": "Откройте данные DateTime по почтовому адресу <a href=\"https://app.uproc.io/#/tools/processor/get/time/by-address\" target='_blank'>Info</a>"
+				},
+				"getCoordinateUsng": {
+					"displayName": "Получить координаты USNG",
+					"description": "Получить координаты USNG по широте и долготе <a href=\"https://app.uproc.io/#/tools/processor/get/coordinate/usng\" target='_blank'>Info</a>"
+				},
+				"getCoordinateUtm": {
+					"displayName": "Получить координаты UTM",
+					"description": "Получить координаты UTM по широте и долготе <a href=\"https://app.uproc.io/#/tools/processor/get/coordinate/utm\" target='_blank'>Info</a>"
+				},
+				"getZipcodeByIp": {
+					"displayName": "Получить почтовый индекс по IP",
+					"description": "Узнайте почтовый индекс, если у вас есть IP-адрес <a href=\"https://app.uproc.io/#/tools/processor/get/zipcode/by-ip\" target='_blank'>Info</a>"
+				},
+				"getZipcodeByPrefix": {
+					"displayName": "Получить почтовый индекс по префиксу (ES)",
+					"description": "Получить первый почтовый индекс по префиксу, только для Испании <a href=\"https://app.uproc.io/#/tools/processor/get/zipcode/by-prefix\" target='_blank'>Info</a>"
+				},
+				"getZipcodeListByPrefix": {
+					"displayName": "Получить почтовые индексы по префиксу (ES)",
+					"description": "Получите несколько почтовых индексов по префиксу с покрытием по всему миру <a href=\"https://app.uproc.io/#/tools/processor/get/zipcode/list-by-prefix\" target='_blank'>Info</a>"
+				},
+				"getQrDecoded": {
+					"displayName": "Получить расшифрованный QR-код",
+					"description": "Получите декодированный контент QR-кода по URL-адресу изображения <a href=\"https://app.uproc.io/#/tools/processor/get/qr/decoded\" target='_blank'>Info</a>"
+				},
+				"getImageExif": {
+					"displayName": "Получить метаданные EXIF ​​из изображения",
+					"description": "Это позволяет обнаружить все географические и технические метаданные EXIF, присутствующие в фотографическом изображении JPEG. <a href=\"https://app.uproc.io/#/tools/processor/get/image/exif\" target='_blank'>Информация</a>"
+				},
+				"getBarcodeEncoded": {
+					"displayName": "Получить закодированный штрих-код",
+					"description": "Получите закодированный штрих-код по номеру и необходимому стандарту <a href=\"https://app.uproc.io/#/tools/processor/get/barcode/encoded\" target='_blank'>Info</a>"
+				},
+				"getQrEncoded": {
+					"displayName": "Получить закодированный QR-код",
+					"description": "Получите QR-код, закодированный текстом <a href=\"https://app.uproc.io/#/tools/processor/get/qr/encoded\" target='_blank'>Info</a>"
+				},
+				"getImageWithText": {
+					"displayName": "Получить изображение с текстом",
+					"description": "Создайте новое изображение по URL-адресу и тексту <a href=\"https://app.uproc.io/#/tools/processor/get/image/with-text\" target='_blank'>Info</a>."
+				},
+				"getDomainLogo": {
+					"displayName": "Получить логотип по домену",
+					"description": "Откройте для себя логотип (favicon), используемый в домене <a href=\"https://app.uproc.io/#/tools/processor/get/domain/logo\" target='_blank'>Info</a>"
+				},
+				"getImageOcr": {
+					"displayName": "Получить текст OCR из изображения",
+					"description": "Извлекает текст OCR из изображения <a href=\"https://app.uproc.io/#/tools/processor/get/image/ocr\" target='_blank'>Info</a>"
+				},
+				"getUrlScreenshot": {
+					"displayName": "Получить снимок экрана по URL",
+					"description": "Создать снимок экрана по предоставленному URL-адресу с помощью браузера Chrome <a href=\"https://app.uproc.io/#/tools/processor/get/url/screenshot\" target='_blank'>Info</a>"
+				},
+				"checkDomainExist": {
+					"displayName": "Проверить существование домена",
+					"description": "Проверьте, существует ли домен <a href=\"https://app.uproc.io/#/tools/processor/check/domain/exist\" target='_blank'>Info</a>"
+				},
+				"checkDomainRecord": {
+					"displayName": "Проверьте, есть ли у домена DNS-запись",
+					"description": "Проверьте, есть ли в домене запись типа <a href=\"https://app.uproc.io/#/tools/processor/check/domain/record\" target='_blank'>Info</a>"
+				},
+				"checkDomainReverse": {
+					"displayName": "Проверить домен имеет IP",
+					"description": "Проверьте, назначил ли домен IP-адрес, определенный <a href=\"https://app.uproc.io/#/tools/processor/check/domain/reverse\" target='_blank'>Info</a>"
+				},
+				"checkDomainMx": {
+					"displayName": "Проверьте, есть ли в домене запись MX",
+					"description": "Проверьте, есть ли у домена запись MX <a href=\"https://app.uproc.io/#/tools/processor/check/domain/mx\" target='_blank'>Info</a>"
+				},
+				"checkDomainCertificate": {
+					"displayName": "Проверьте, имеет ли домен действительный сертификат",
+					"description": "Проверьте, имеет ли домен действительный сертификат SSL <a href=\"https://app.uproc.io/#/tools/processor/check/domain/certificate\" target='_blank'>Info</a>"
+				},
+				"checkDomainFormat": {
+					"displayName": "Проверьте, что домен имеет действительный формат",
+					"description": "Проверьте, имеет ли домен действительный формат <a href=\"https://app.uproc.io/#/tools/processor/check/domain/format\" target='_blank'>Info</a>"
+				},
+				"checkNetHostAlive": {
+					"displayName": "Проверьте хост",
+					"description": "Узнайте, включен ли компьютер <a href=\"https://app.uproc.io/#/tools/processor/check/net/host-alive\" target='_blank'>Info</a>"
+				},
+				"checkNetServiceUp": {
+					"displayName": "Проверьте, работает ли служба",
+					"description": "Узнайте, доступна ли служба в порту <a href=\"https://app.uproc.io/#/tools/processor/check/net/service-up\" target='_blank'>Info</a>"
+				},
+				"checkUrlContains": {
+					"displayName": "Проверить URL-адрес содержит",
+					"description": "Проверьте, содержит ли URL-адрес строку или регулярное выражение (без учета регистра) <a href=\"https://app.uproc.io/#/tools/processor/check/url/contains\" target='_blank'>Info</a>"
+				},
+				"checkUrlExist": {
+					"displayName": "Проверить URL-адрес существует",
+					"description": "Проверьте, существует ли URL-адрес <a href=\"https://app.uproc.io/#/tools/processor/check/url/exist\" target='_blank'>Info</a>"
+				},
+				"checkUrlValid": {
+					"displayName": "Проверьте URL-адрес действителен",
+					"description": "Убедитесь, что URL-адрес имеет допустимый формат <a href=\"https://app.uproc.io/#/tools/processor/check/url/valid\" target='_blank'>Info</a>"
+				},
+				"getDomainCertificate": {
+					"displayName": "Получить сертификат по домену",
+					"description": "Получите полные данные сертификата SSL по домену (или веб-сайту) и отслеживайте состояние вашего сертификата.<br><br>Если в домене открыт порт 443, будет возвращен ответ. <a href=\"https://app.uproc.io/#/tools/processor/get/domain/certificate\" target='_blank'>Информация</a>"
+				},
+				"getUrlContents": {
+					"displayName": "Получить содержимое по URL",
+					"description": "Получайте текстовые данные из Интернета, PDF-файлов или изображений (png, jpg, gif), что позволяет фильтровать некоторые элементы по регулярным выражениям или именам полей (электронная почта, телефон, почтовый индекс).<br><br>Узнайте о регулярных выражениях в [Википедии](https://en.wikipedia.org/wiki/Regular_expression) <a href=\"https://app.uproc.io/#/tools/processor/get/url/contents\" target='_blank'>Информация</a>"
+				},
+				"getUrlDecode": {
+					"displayName": "Получить декодированный URL-адрес",
+					"description": "Декодируйте URL-адрес, чтобы восстановить исходный <a href=\"https://app.uproc.io/#/tools/processor/get/url/decode\" target='_blank'>Info</a>"
+				},
+				"getUrlByDomain": {
+					"displayName": "Получить URL-адрес по умолчанию по домену",
+					"description": "Получите действительный, существующий URL-адрес по умолчанию при доступе к домену с помощью веб-браузера. <a href=\"https://app.uproc.io/#/tools/processor/get/url/by-domain\" target='_blank'>Информация</a>"
+				},
+				"getDeviceByUa": {
+					"displayName": "Получить устройство по пользовательскому агенту",
+					"description": "Откройте для себя функции устройства с помощью пользовательского агента <a href=\"https://app.uproc.io/#/tools/processor/get/device/by-ua\" target='_blank'>Info</a>"
+				},
+				"getDomainByIp": {
+					"displayName": "Получить домен по IP",
+					"description": "Получите доменное имя, связанное с IP-адресом <a href=\"https://app.uproc.io/#/tools/processor/get/domain/by-ip\" target='_blank'>Info</a>."
+				},
+				"getDomainRecords": {
+					"displayName": "Получить DNS-записи домена",
+					"description": "Получить все записи DNS домена <a href=\"https://app.uproc.io/#/tools/processor/get/domain/records\" target='_blank'>Info</a>"
+				},
+				"getDomainRecord": {
+					"displayName": "Получить запись домена по типу DNS",
+					"description": "Получить запись домена по ее типу <a href=\"https://app.uproc.io/#/tools/processor/get/domain/record\" target='_blank'>Info</a>"
+				},
+				"getUrlEncode": {
+					"displayName": "Получить закодированный URL-адрес",
+					"description": "Зашифруйте URL-адрес, чтобы избежать проблем <a href=\"https://app.uproc.io/#/tools/processor/get/url/encode\" target='_blank'>Info</a>"
+				},
+				"getFeedEntriesByDomain": {
+					"displayName": "Получить записи фида по домену",
+					"description": "Получить записи фида домена <a href=\"https://app.uproc.io/#/tools/processor/get/feed/entries-by-domain\" target='_blank'>Info</a>"
+				},
+				"getFileCopiedBetweenUrls": {
+					"displayName": "Получить файл, скопированный между URL-адресами",
+					"description": "Скопировать файл с одного URL-адреса на другой URL-адрес <a href=\"https://app.uproc.io/#/tools/processor/get/file/copied-between-urls\" target='_blank'>Info</a>"
+				},
+				"getNetFixip": {
+					"displayName": "Получите фиксированный IP",
+					"description": "Исправьте IP-адрес в правильном формате <a href=\"https://app.uproc.io/#/tools/processor/get/net/fixip\" target='_blank'>Info</a>"
+				},
+				"getDomainReverseIp": {
+					"displayName": "Получить IP по домену",
+					"description": "Получите адрес IPv4, связанный с доменом <a href=\"https://app.uproc.io/#/tools/processor/get/domain/reverse-ip\" target='_blank'>Info</a>"
+				},
+				"getNetNtoa": {
+					"displayName": "Получить IP по номеру",
+					"description": "Преобразовать число в IP-адрес <a href=\"https://app.uproc.io/#/tools/processor/get/net/ntoa\" target='_blank'>Info</a>"
+				},
+				"getDomainIsp": {
+					"displayName": "Получить интернет-провайдера по домену",
+					"description": "Получить известное имя интернет-провайдера или доменное имя электронной почты (hotmail, Yahoo, Gmail, mailgun, zoho, другое) <a href=\"https://app.uproc.io/#/tools/processor/get/domain/isp\" target='_blank'>Info</a>"
+				},
+				"getFeedLastEntryByDomain": {
+					"displayName": "Получить последнюю запись фида по домену",
+					"description": "Получите самую последнюю запись фида домена <a href=\"https://app.uproc.io/#/tools/processor/get/feed/last-entry-by-domain\" target='_blank'>Info</a>."
+				},
+				"getUrlUnshortened": {
+					"displayName": "Получить длинную версию сокращенного URL-адреса",
+					"description": "Найдите URL-адрес за сокращенным URL-адресом (bit.ly, linked.in, rb.gy и т. д.) или первое перенаправление любого существующего URL-адреса <a href=\"https://app.uproc.io/#/tools/processor/get/url/unshortened\" target='_blank'>Info</a>"
+				},
+				"getNetAton": {
+					"displayName": "Получить номер по IP",
+					"description": "Преобразование IP-адреса в числовое представление <a href=\"https://app.uproc.io/#/tools/processor/get/net/aton\" target='_blank'>Info</a>"
+				},
+				"getNetScan": {
+					"displayName": "Получить открытые порты на хосте",
+					"description": "Сканирует хост и возвращает наиболее распространенные открытые порты: 21, 22, 23, 25, 53, 80, 110, 143, 443, 3306, 27017 <a href=\"https://app.uproc.io/#/tools/processor/get/net/scan\" target='_blank'>Info</a>"
+				},
+				"getUrlListContentsParsed": {
+					"displayName": "Получить проанализированное содержимое из URL-адреса результатов",
+					"description": "Получает список с несколькими результатами с веб-сайта в структурированном виде в формате JSON, чтобы иметь возможность сохранить его где угодно <a href=\"https://app.uproc.io/#/tools/processor/get/url/list-contents-parsed\" target='_blank'>Info</a>"
+				},
+				"getUrlContentsParsed": {
+					"displayName": "Получить проанализированное содержимое по URL-адресу",
+					"description": "Получает веб-контент в структурированном виде в формате JSON, чтобы иметь возможность сохранить его где угодно <a href=\"https://app.uproc.io/#/tools/processor/get/url/contents-parsed\" target='_blank'>Info</a>"
+				},
+				"getUrlParsed": {
+					"displayName": "Получить проанализированный URL-адрес",
+					"description": "Раскодировать URL-адрес в несколько полей <a href=\"https://app.uproc.io/#/tools/processor/get/url/parsed\" target='_blank'>Info</a>"
+				},
+				"getUrlPdf": {
+					"displayName": "Получить PDF по URL",
+					"description": "Создать PDF-файл по URL-адресу, предоставленному с помощью браузера Chrome <a href=\"https://app.uproc.io/#/tools/processor/get/url/pdf\" target='_blank'>Info</a>"
+				},
+				"getDomainByUrl": {
+					"displayName": "Получить корневой домен по веб-адресу",
+					"description": "Получите корневой домен любого веб-адреса, удалив ненужные символы. <a href=\"https://app.uproc.io/#/tools/processor/get/domain/by-url\" target='_blank'>Информация</a>"
+				},
+				"getUrlShareableLinks": {
+					"displayName": "Получите общие ссылки",
+					"description": "Создает общие URI для использования в социальных сетях и электронной почте, используя URI контента и текст. <a href=\"https://app.uproc.io/#/tools/processor/get/url/shareable-links\" target='_blank'>Информация</a>"
+				},
+				"getUrlTables": {
+					"displayName": "Получить таблицу по URL",
+					"description": "Получить данные из существующей таблицы на странице HTML (по номеру таблицы) или в файле PDF (по номеру столбца таблицы) в формате CSV (столбцы разделяются ;) <a href=\"https://app.uproc.io/#/tools/processor/get/url/tables\" target='_blank'>Info</a>"
+				},
+				"getDomainTechnologies": {
+					"displayName": "Получите технологии по доменам",
+					"description": "Откройте для себя клиентские и серверные технологии, используемые в домене <a href=\"https://app.uproc.io/#/tools/processor/get/domain/technologies\" target='_blank'>Info</a>"
+				},
+				"getUrlTechnologies": {
+					"displayName": "Получить технологии по URL",
+					"description": "Откройте для себя клиентские и серверные технологии, используемые на веб-странице <a href=\"https://app.uproc.io/#/tools/processor/get/url/technologies\" target='_blank'>Info</a>."
+				},
+				"getUrlAnalysis": {
+					"displayName": "Получить анализ URL-адресов",
+					"description": "Анализируйте состояние URL-адреса на предмет SSL, неработающих ссылок, конфликтующих HTTP-ссылок с SSL и т. д. <a href=\"https://app.uproc.io/#/tools/processor/get/url/analysis\" target='_blank'>Информация</a>"
+				},
+				"getDomainVisits": {
+					"displayName": "Получайте посещения по домену",
+					"description": "Получите количество посещений веб-сайта и рейтинг любого домена <a href=\"https://app.uproc.io/#/tools/processor/get/domain/visits\" target='_blank'>Info</a>"
+				},
+				"getDomainWhois": {
+					"displayName": "Получить Whois по домену",
+					"description": "Получить данные whois домена по полям <a href=\"https://app.uproc.io/#/tools/processor/get/domain/whois\" target='_blank'>Info</a>"
+				},
+				"getIpWhois": {
+					"displayName": "Получить Whois по IP-адресу",
+					"description": "Получите поля данных Whois по предоставленному IP-адресу. <a href=\"https://app.uproc.io/#/tools/processor/get/ip/whois\" target='_blank'>Информация</a>"
+				},
+				"checkAgeBetw": {
+					"displayName": "Проверьте возраст между",
+					"description": "Проверьте, находится ли возраст между двумя числами <a href=\"https://app.uproc.io/#/tools/processor/check/age/betw\" target='_blank'>Info</a>"
+				},
+				"checkAgeIsTwenties": {
+					"displayName": "Проверьте возраст от 20 до 29 лет",
+					"description": "Проверьте, возвращает ли date возраст от 20 до 29 лет <a href=\"https://app.uproc.io/#/tools/processor/check/age/is-twenties\" target='_blank'>Info</a>"
+				},
+				"checkAgeIsForties": {
+					"displayName": "Проверьте возраст от 40 до 49 лет",
+					"description": "Проверьте, возвращает ли date возраст от 40 до 49 лет <a href=\"https://app.uproc.io/#/tools/processor/check/age/is-forties\" target='_blank'>Info</a>"
+				},
+				"checkAgeGt": {
+					"displayName": "Проверьте, что возраст больше",
+					"description": "Проверьте, больше ли возраст другого <a href=\"https://app.uproc.io/#/tools/processor/check/age/gt\" target='_blank'>Info</a>"
+				},
+				"checkAgeGe": {
+					"displayName": "Проверьте, что возраст больше или равен",
+					"description": "Проверьте, больше ли возраст или равен другому <a href=\"https://app.uproc.io/#/tools/processor/check/age/ge\" target='_blank'>Info</a>"
+				},
+				"checkAgeIsRetired": {
+					"displayName": "Проверьте возраст старше 64 лет",
+					"description": "Проверьте, возвращает ли дата рождения возраст старше 64 лет <a href=\"https://app.uproc.io/#/tools/processor/check/age/is-retired\" target='_blank'>Info</a>"
+				},
+				"checkAgeIsAdult": {
+					"displayName": "Проверьте, что возраст больше или равен 18 годам",
+					"description": "Проверьте, принадлежит ли дата рождения взрослому: 18 лет (Испания) <a href=\"https://app.uproc.io/#/tools/processor/check/age/is-adult\" target='_blank'>Info</a>"
+				},
+				"checkAgeLt": {
+					"displayName": "Проверьте, что возраст ниже",
+					"description": "Проверьте, если возраст меньше другого <a href=\"https://app.uproc.io/#/tools/processor/check/age/lt\" target='_blank'>Info</a>"
+				},
+				"checkAgeLe": {
+					"displayName": "Проверьте, что возраст меньше или равен",
+					"description": "Проверьте, меньше ли возраст другого <a href=\"https://app.uproc.io/#/tools/processor/check/age/le\" target='_blank'>Info</a> или равен ему."
+				},
+				"checkAgeEq": {
+					"displayName": "Проверить, что возрасты равны",
+					"description": "Проверьте, равны ли возрасты <a href=\"https://app.uproc.io/#/tools/processor/check/age/eq\" target='_blank'>Info</a>"
+				},
+				"checkDateBetw": {
+					"displayName": "Дата проверки находится между датами",
+					"description": "Узнайте, находится ли дата (дата1) между двумя датами (дата2, дата3). <a href=\"https://app.uproc.io/#/tools/processor/check/date/betw\" target='_blank'>Info</a>"
+				},
+				"checkDateGt": {
+					"displayName": "Дата проверки более поздняя",
+					"description": "Узнайте, больше ли дата <a href=\"https://app.uproc.io/#/tools/processor/check/date/gt\" target='_blank'>Info</a>"
+				},
+				"checkDateGe": {
+					"displayName": "Дата проверки больше или равна",
+					"description": "Узнайте, больше или равна дата <a href=\"https://app.uproc.io/#/tools/processor/check/date/ge\" target='_blank'>Info</a>"
+				},
+				"checkDateLeap": {
+					"displayName": "Дата проверки — високосный год",
+					"description": "Узнайте, принадлежит ли дата високосному году <a href=\"https://app.uproc.io/#/tools/processor/check/date/leap\" target='_blank'>Info</a>"
+				},
+				"checkDateLt": {
+					"displayName": "Дата проверки ниже",
+					"description": "Узнайте, является ли дата более ранней <a href=\"https://app.uproc.io/#/tools/processor/check/date/lt\" target='_blank'>Info</a>"
+				},
+				"checkDateLe": {
+					"displayName": "Дата проверки меньше или равна",
+					"description": "Узнайте, меньше ли дата или равна <a href=\"https://app.uproc.io/#/tools/processor/check/date/le\" target='_blank'>Info</a>"
+				},
+				"checkDateValid": {
+					"displayName": "Дата проверки действительна",
+					"description": "Узнайте, имеет ли дата допустимый формат <a href=\"https://app.uproc.io/#/tools/processor/check/date/valid\" target='_blank'>Info</a>"
+				},
+				"checkDateEq": {
+					"displayName": "Даты проверки равны",
+					"description": "Узнайте, равны ли две даты <a href=\"https://app.uproc.io/#/tools/processor/check/date/eq\" target='_blank'>Info</a>"
+				},
+				"checkGenderValid": {
+					"displayName": "Проверьте, указан ли пол",
+					"description": "Узнайте, действительно ли значение пола (многоязычное) <a href=\"https://app.uproc.io/#/tools/processor/check/gender/valid\" target='_blank'>Info</a>"
+				},
+				"checkNieValid": {
+					"displayName": "Проверьте, что NIE действителен (ES)",
+					"description": "Узнайте, действителен ли номер карты NIE <a href=\"https://app.uproc.io/#/tools/processor/check/nie/valid\" target='_blank'>Info</a>"
+				},
+				"checkNifValid": {
+					"displayName": "Проверьте, что NIF действителен (ES)",
+					"description": "Узнайте, действителен ли номер карты NIF <a href=\"https://app.uproc.io/#/tools/processor/check/nif/valid\" target='_blank'>Info</a>"
+				},
+				"checkNameExist": {
+					"displayName": "Проверить существование имени (ES)",
+					"description": "Проверьте, существует ли личное имя в источнике данных INE (только Испания) <a href=\"https://app.uproc.io/#/tools/processor/check/name/exist\" target='_blank'>Info</a>"
+				},
+				"checkNameValid": {
+					"displayName": "Проверьте, что имя имеет действительный формат",
+					"description": "Проверьте, содержит ли имя допустимые символы <a href=\"https://app.uproc.io/#/tools/processor/check/name/valid\" target='_blank'>Info</a>"
+				},
+				"checkRobinsonNifExist": {
+					"displayName": "Проверьте номер Nif — Робинсон (ES)",
+					"description": "Узнайте, существует ли nif в списке Робинсона (только Испания) <a href=\"https://app.uproc.io/#/tools/processor/check/robinson/nif-exist\" target='_blank'>Info</a>"
+				},
+				"checkSurnameValid": {
+					"displayName": "Проверьте, что фамилия имеет действительный формат",
+					"description": "Проверьте, содержит ли фамилия допустимые символы <a href=\"https://app.uproc.io/#/tools/processor/check/surname/valid\" target='_blank'>Info</a>"
+				},
+				"checkSurnameExist": {
+					"displayName": "Проверьте, что фамилия действительна (ES)",
+					"description": "Проверьте, отображается ли личная фамилия в источнике данных INE (только Испания) <a href=\"https://app.uproc.io/#/tools/processor/check/surname/exist\" target='_blank'>Info</a>"
+				},
+				"checkDniValid": {
+					"displayName": "Проверьте действительный день рождения (ES)",
+					"description": "Узнайте, действителен ли номер карты dni <a href=\"https://app.uproc.io/#/tools/processor/check/dni/valid\" target='_blank'>Info</a>"
+				},
+				"getAgeByDate": {
+					"displayName": "Получить возраст по дате",
+					"description": "Узнайте возраст даты рождения (допускается несколько форматов) <a href=\"https://app.uproc.io/#/tools/processor/get/age/by-date\" target='_blank'>Info</a>"
+				},
+				"getAgeRange": {
+					"displayName": "Получить возрастной диапазон по дате",
+					"description": "Узнайте возрастной диапазон человека по дате рождения <a href=\"https://app.uproc.io/#/tools/processor/get/age/range\" target='_blank'>Info</a>"
+				},
+				"getDateDifference": {
+					"displayName": "Получить разницу между датами",
+					"description": "Возвращает разницу между двумя датами (начало и конец) в секундах, минутах, часах или днях <a href=\"https://app.uproc.io/#/tools/processor/get/date/difference\" target='_blank'>Info</a>"
+				},
+				"getGenderByEmail": {
+					"displayName": "Получить пол по электронной почте",
+					"description": "Узнайте пол человека по электронной почте, если имя человека указано в электронном письме <a href=\"https://app.uproc.io/#/tools/processor/get/gender/by-email\" target='_blank'>Info</a>"
+				},
+				"getGenderByPersonalName": {
+					"displayName": "Получить пол по имени",
+					"description": "Узнайте пол человека или компании по имени <a href=\"https://app.uproc.io/#/tools/processor/get/gender/by-personal-name\" target='_blank'>Info</a>"
+				},
+				"getProfileLinkedinByEmail": {
+					"displayName": "Получить URI LinkedIn по электронной почте",
+					"description": "Получите URI профиля сотрудника LinkedIn по электронной почте <strong>business</strong> или <strong>personal</strong>.<br><br>Этот инструмент использует поисковые системы (Bing и Google) через прокси-серверы. <a href=\"https://app.uproc.io/#/tools/processor/get/profile/linkedin-by-email\" target='_blank'>Информация</a>"
+				},
+				"getProfileByEmployeeData": {
+					"displayName": "Получите URI LinkedIn по первому, последнему и компании",
+					"description": "Получите URI профиля сотрудника LinkedIn по имени, фамилии и компании без ручного поиска в Google или LinkedIn.<br><br>Этот инструмент использует поисковые системы (Bing и Google) через прокси <a href=\"https://app.uproc.io/#/tools/processor/get/profile/by-employee-data\" target='_blank'>Info</a>"
+				},
+				"getProfileLinkedinByPhone": {
+					"displayName": "Получить URI LinkedIn по телефону",
+					"description": "Получите URI профиля сотрудника LinkedIn по <strong>landline</strong> или <strong>mobile</strong> телефону.<br><br>Этот инструмент использует поисковые системы (Bing и Google) через прокси-серверы. <a href=\"https://app.uproc.io/#/tools/processor/get/profile/linkedin-by-phone\" target='_blank'>Информация</a>"
+				},
+				"getNifByDni": {
+					"displayName": "Получить NIF от DNI (ES)",
+					"description": "Откройте для себя букву номера карты dni <a href=\"https://app.uproc.io/#/tools/processor/get/nif/by-dni\" target='_blank'>Info</a>"
+				},
+				"getNameByPrefix": {
+					"displayName": "Получить имя по префиксу (ES)",
+					"description": "Получите первое совпадение личного имени по префиксу и полу из источника данных INE (только Испания) <a href=\"https://app.uproc.io/#/tools/processor/get/name/by-prefix\" target='_blank'>Info</a>"
+				},
+				"getDniNormalized": {
+					"displayName": "Получить нормализованный DNI (ES)",
+					"description": "Разрешить нормализацию номера DNI, удалив недопустимые символы <a href=\"https://app.uproc.io/#/tools/processor/get/dni/normalized\" target='_blank'>Info</a>"
+				},
+				"getDateNormalized": {
+					"displayName": "Получить нормализованную дату",
+					"description": "Разрешить нормализовать дату, удалив недопустимые символы <a href=\"https://app.uproc.io/#/tools/processor/get/date/normalized\" target='_blank'>Info</a>"
+				},
+				"getNieNormalized": {
+					"displayName": "Получить нормализованный NIE (ES)",
+					"description": "Разрешить нормализовать номер NIE, удалив недопустимые символы <a href=\"https://app.uproc.io/#/tools/processor/get/nie/normalized\" target='_blank'>Info</a>"
+				},
+				"getNifNormalized": {
+					"displayName": "Получить нормализованный NIF (ES)",
+					"description": "Разрешить нормализовать номер NIF, удалив недопустимые символы <a href=\"https://app.uproc.io/#/tools/processor/get/nif/normalized\" target='_blank'>Info</a>"
+				},
+				"getNameNormalized": {
+					"displayName": "Получить нормализованное имя",
+					"description": "Нормализовать имя, удалив недопустимые символы <a href=\"https://app.uproc.io/#/tools/processor/get/name/normalized\" target='_blank'>Info</a>"
+				},
+				"getSurnameNormalized": {
+					"displayName": "Получить нормализованную фамилию",
+					"description": "Нормализовать фамилию <a href=\"https://app.uproc.io/#/tools/processor/get/surname/normalized\" target='_blank'>Info</a>"
+				},
+				"getDateParsed": {
+					"displayName": "Получить анализируемую дату и время",
+					"description": "Разобрать дату и время без зависимости от формата на несколько полей <a href=\"https://app.uproc.io/#/tools/processor/get/date/parsed\" target='_blank'>Info</a>"
+				},
+				"getFullnameParsed": {
+					"displayName": "Получить проанализированное полное имя",
+					"description": "Нормализация полного имени, исправление сокращений, сортировка при необходимости и возврат имени, фамилии и пола <a href=\"https://app.uproc.io/#/tools/processor/get/fullname/parsed\" target='_blank'>Info</a>"
+				},
+				"getPersonExtendedByEmail": {
+					"displayName": "Получить человека (расширенный) по электронной почте",
+					"description": "Получите контактные данные потенциального клиента, а также местоположение компании и социальные данные по электронной почте <a href=\"https://app.uproc.io/#/tools/processor/get/person/extended-by-email\" target='_blank'>Info</a>"
+				},
+				"getPersonExtendedByEmailAndCompany": {
+					"displayName": "Получить человека (расширенный) по электронной почте и компании",
+					"description": "Получите контактные данные, местоположение и социальные данные по электронной почте, а также название и местоположение компании <a href=\"https://app.uproc.io/#/tools/processor/get/person/extended-by-email-and-company\" target='_blank'>Info</a>."
+				},
+				"getPersonExtendedByProfile": {
+					"displayName": "Получить человека (расширенный) по профилю",
+					"description": "Получите личные и социальные данные по социальному профилю <a href=\"https://app.uproc.io/#/tools/processor/get/person/extended-by-profile\" target='_blank'>Info</a>"
+				},
+				"getPersonByEmail": {
+					"displayName": "Получить человека по электронной почте",
+					"description": "Получить персональные данные на электронную почту <a href=\"https://app.uproc.io/#/tools/processor/get/person/by-email\" target='_blank'>Info</a>"
+				},
+				"getPersonByFirstnameLastnameCompanyLocation": {
+					"displayName": "Получить человека по имени, фамилии, компании и местоположению",
+					"description": "Получить персональные данные по имени, фамилии, компании и местоположению <a href=\"https://app.uproc.io/#/tools/processor/get/person/by-firstname-lastname-company-location\" target='_blank'>Info</a>"
+				},
+				"getPersonByMobile": {
+					"displayName": "Получить человека по мобильному телефону",
+					"description": "Получить персональные данные по мобильному <a href=\"https://app.uproc.io/#/tools/processor/get/person/by-mobile\" target='_blank'>Info</a>"
+				},
+				"getPersonByProfile": {
+					"displayName": "Получить человека по социальному профилю",
+					"description": "Получить персональные данные по профилю социальной сети <a href=\"https://app.uproc.io/#/tools/processor/get/person/by-profile\" target='_blank'>Info</a>"
+				},
+				"getPersonFakedData": {
+					"displayName": "Получить случайные данные о людях",
+					"description": "Генерирует случайные поддельные данные <a href=\"https://app.uproc.io/#/tools/processor/get/person/faked-data\" target='_blank'>Info</a>"
+				},
+				"getSurnameByPrefix": {
+					"displayName": "Получить фамилию по префиксу (ES)",
+					"description": "Получить первое совпадение личной фамилии по префиксу из источника данных INE (только Испания) <a href=\"https://app.uproc.io/#/tools/processor/get/surname/by-prefix\" target='_blank'>Info</a>"
+				},
+				"getSurnameListByPrefix": {
+					"displayName": "Получить фамилии по префиксу (ES)",
+					"description": "Получить личные фамилии, соответствующие префиксу, из источника данных INE (только Испания) <a href=\"https://app.uproc.io/#/tools/processor/get/surname/list-by-prefix\" target='_blank'>Info</a>"
+				},
+				"getProfileXingByEmployeeData": {
+					"displayName": "Получить Xing URI по первому, последнему и компании",
+					"description": "Получите профиль Xing по имени, фамилии и компании без ручного поиска в Google или Xing.<br><br>Этот инструмент использует поисковые системы (Bing и Google) через прокси <a href=\"https://app.uproc.io/#/tools/processor/get/profile/xing-by-employee-data\" target='_blank'>Info</a>"
+				},
+				"sendPersonEmailToList": {
+					"displayName": "Отправить контакт электронной почты в список",
+					"description": "Добавить контактный адрес электронной почты в список людей <a href=\"https://app.uproc.io/#/tools/processor/send/person/email-to-list\" target='_blank'>Info</a>"
+				},
+				"sendPersonProfileToList": {
+					"displayName": "Отправить контакт LinkedIn в список",
+					"description": "Добавить профиль контакта LinkedIn в список людей <a href=\"https://app.uproc.io/#/tools/processor/send/person/profile-to-list\" target='_blank'>Info</a>"
+				},
+				"checkAsinExist": {
+					"displayName": "Проверить существование ASIN",
+					"description": "Проверьте, существует ли код ASIN на торговой площадке Amazon <a href=\"https://app.uproc.io/#/tools/processor/check/asin/exist\" target='_blank'>Info</a>"
+				},
+				"checkAsinValid": {
+					"displayName": "Проверьте действительный ASIN",
+					"description": "Проверьте, имеет ли код ASIN действительный формат <a href=\"https://app.uproc.io/#/tools/processor/check/asin/valid\" target='_blank'>Info</a>"
+				},
+				"checkEanExist": {
+					"displayName": "Проверить существование EAN",
+					"description": "Проверьте, существует ли код EAN на Amazon Marketplace (поддерживается .com) <a href=\"https://app.uproc.io/#/tools/processor/check/ean/exist\" target='_blank'>Info</a>"
+				},
+				"checkEanValid": {
+					"displayName": "Проверьте, что EAN действителен",
+					"description": "Проверьте, имеет ли штрих-код EAN (8 или 13 цифр) действительный формат <a href=\"https://app.uproc.io/#/tools/processor/check/ean/valid\" target='_blank'>Info</a>"
+				},
+				"checkEan13Valid": {
+					"displayName": "Проверьте, что EAN13 действителен",
+					"description": "Проверьте, имеет ли 13-значный штрих-код EAN действительный формат <a href=\"https://app.uproc.io/#/tools/processor/check/ean13/valid\" target='_blank'>Info</a>"
+				},
+				"checkEan14Valid": {
+					"displayName": "Проверьте, что EAN14 действителен",
+					"description": "Проверьте, имеет ли 14-значный штрих-код EAN действительный формат <a href=\"https://app.uproc.io/#/tools/processor/check/ean14/valid\" target='_blank'>Info</a>"
+				},
+				"checkEan18Valid": {
+					"displayName": "Проверьте, что EAN18 действителен",
+					"description": "Проверьте, имеет ли 18-значный штрих-код EAN действительный формат <a href=\"https://app.uproc.io/#/tools/processor/check/ean18/valid\" target='_blank'>Info</a>"
+				},
+				"checkEan8Valid": {
+					"displayName": "Проверьте, что EAN8 действителен",
+					"description": "Проверьте, имеет ли 8-значный штрих-код EAN действительный формат <a href=\"https://app.uproc.io/#/tools/processor/check/ean8/valid\" target='_blank'>Info</a>"
+				},
+				"checkGtinValid": {
+					"displayName": "Проверьте, действителен ли GTIN",
+					"description": "Проверьте, имеет ли штрих-код GTIN (8 или 13 цифр) действительный формат <a href=\"https://app.uproc.io/#/tools/processor/check/gtin/valid\" target='_blank'>Info</a>"
+				},
+				"checkGtin13Valid": {
+					"displayName": "Проверьте, что GTIN13 действителен",
+					"description": "Проверьте, имеет ли 13-значный штрих-код GTIN действительный формат <a href=\"https://app.uproc.io/#/tools/processor/check/gtin13/valid\" target='_blank'>Info</a>"
+				},
+				"checkGtin14Valid": {
+					"displayName": "Проверьте, что GTIN14 действителен",
+					"description": "Проверьте, имеет ли 14-значный штрих-код GTIN действительный формат <a href=\"https://app.uproc.io/#/tools/processor/check/gtin14/valid\" target='_blank'>Info</a>"
+				},
+				"checkGtin8Valid": {
+					"displayName": "Проверьте, что GTIN8 действителен",
+					"description": "Проверьте, имеет ли 8-значный штрих-код GTIN действительный формат <a href=\"https://app.uproc.io/#/tools/processor/check/gtin8/valid\" target='_blank'>Info</a>"
+				},
+				"checkBookIsbnExist": {
+					"displayName": "Проверьте существование кода ISBN",
+					"description": "Разрешить проверку существования книги с ISBN <a href=\"https://app.uproc.io/#/tools/processor/check/book/isbn-exist\" target='_blank'>Info</a>"
+				},
+				"checkBookIsbn": {
+					"displayName": "Проверьте, действителен ли код ISBN",
+					"description": "Разрешить проверку правильности формата кода ISBN10/13 <a href=\"https://app.uproc.io/#/tools/processor/check/book/isbn\" target='_blank'>Info</a>"
+				},
+				"checkBookIsbn10": {
+					"displayName": "Убедитесь, что код ISBN10 действителен",
+					"description": "Разрешить проверку правильности формата кода ISBN10 <a href=\"https://app.uproc.io/#/tools/processor/check/book/isbn10\" target='_blank'>Info</a>"
+				},
+				"checkBookIsbn13": {
+					"displayName": "Убедитесь, что код ISBN13 действителен",
+					"description": "Разрешить проверку правильности формата кода ISBN13 <a href=\"https://app.uproc.io/#/tools/processor/check/book/isbn13\" target='_blank'>Info</a>"
+				},
+				"checkUpcExist": {
+					"displayName": "Проверить существование UPC",
+					"description": "Проверьте, существует ли код UPC <a href=\"https://app.uproc.io/#/tools/processor/check/upc/exist\" target='_blank'>Info</a>"
+				},
+				"checkUpcFormat": {
+					"displayName": "Проверьте, что UPC имеет действительный формат",
+					"description": "Проверьте, имеет ли код UPC действительный формат <a href=\"https://app.uproc.io/#/tools/processor/check/upc/format\" target='_blank'>Info</a>"
+				},
+				"checkVinFormat": {
+					"displayName": "Убедитесь, что VIN-номер действителен",
+					"description": "Проверьте, имеет ли номер VIN действительный формат <a href=\"https://app.uproc.io/#/tools/processor/check/vin/format\" target='_blank'>Info</a>"
+				},
+				"getAsinByEan": {
+					"displayName": "Получить ASIN по EAN",
+					"description": "Получите код ASIN с помощью запроса кода EAN в Интернете. <a href=\"https://app.uproc.io/#/tools/processor/get/asin/by-ean\" target='_blank'>Информация</a>"
+				},
+				"getBookAuthorLookup": {
+					"displayName": "Получить книгу автора",
+					"description": "Получить книгу по фамилии автора <a href=\"https://app.uproc.io/#/tools/processor/get/book/author-lookup\" target='_blank'>Info</a>"
+				},
+				"getBookCategoryLookup": {
+					"displayName": "Получить книгу по категории",
+					"description": "Получить все публикации по категории <a href=\"https://app.uproc.io/#/tools/processor/get/book/category-lookup\" target='_blank'>Info</a>"
+				},
+				"getBookPublisherLookup": {
+					"displayName": "Получить книгу от редактора",
+					"description": "Получить данные книги по имени редактора <a href=\"https://app.uproc.io/#/tools/processor/get/book/publisher-lookup\" target='_blank'>Info</a>"
+				},
+				"getBookIsbnLookup": {
+					"displayName": "Получить книгу по ISBN",
+					"description": "Получите данные книги или публикации по 10- или 13-значному коду ISBN <a href=\"https://app.uproc.io/#/tools/processor/get/book/isbn-lookup\" target='_blank'>Info</a>"
+				},
+				"getBookTitleLookup": {
+					"displayName": "Получить книгу по названию",
+					"description": "Получить данные книги по названию <a href=\"https://app.uproc.io/#/tools/processor/get/book/title-lookup\" target='_blank'>Info</a>"
+				},
+				"getBookListAuthorLookup": {
+					"displayName": "Получить книги по автору",
+					"description": "Получить книги по фамилии автора <a href=\"https://app.uproc.io/#/tools/processor/get/book/list-author-lookup\" target='_blank'>Info</a>"
+				},
+				"getBookListCategoryLookup": {
+					"displayName": "Получите книги по категориям",
+					"description": "Получить все книги по категории <a href=\"https://app.uproc.io/#/tools/processor/get/book/list-category-lookup\" target='_blank'>Info</a>"
+				},
+				"getBookListPublisherLookup": {
+					"displayName": "Получить книги от редактора",
+					"description": "Получить все книги редактора <a href=\"https://app.uproc.io/#/tools/processor/get/book/list-publisher-lookup\" target='_blank'>Info</a>"
+				},
+				"getBookListTitleLookup": {
+					"displayName": "Получить книги по названию",
+					"description": "Получить все книги по названию <a href=\"https://app.uproc.io/#/tools/processor/get/book/list-title-lookup\" target='_blank'>Info</a>"
+				},
+				"getVinLookup": {
+					"displayName": "Получить данные по номеру VIN",
+					"description": "Получить соответствующие данные по VIN (идентификационному номеру автомобиля) <a href=\"https://app.uproc.io/#/tools/processor/get/vin/lookup\" target='_blank'>Info</a>"
+				},
+				"getEanByAsin": {
+					"displayName": "Получить EAN по ASIN",
+					"description": "Получите код EAN с помощью запроса кода ASIN в Интернете. <a href=\"https://app.uproc.io/#/tools/processor/get/ean/by-asin\" target='_blank'>Информация</a>"
+				},
+				"getBookIsbn13ToIsbn10": {
+					"displayName": "Получить код ISBN10 по коду ISBN13",
+					"description": "Преобразуйте действительный код ISBN из 13 цифр в 10 цифр. <a href=\"https://app.uproc.io/#/tools/processor/get/book/isbn13-to-isbn10\" target='_blank'>Информация</a>"
+				},
+				"getBookIsbn10ToIsbn13": {
+					"displayName": "Получить код ISBN13 по коду ISBN10",
+					"description": "Преобразуйте действительный код ISBN из 10 цифр в 13 цифр. <a href=\"https://app.uproc.io/#/tools/processor/get/book/isbn10-to-isbn13\" target='_blank'>Информация</a>"
+				},
+				"getUpcLookup": {
+					"displayName": "Получите продукт от UPC",
+					"description": "Получите данные о продукте с кодом UPC на Amazon Marketplace (поддерживается .com) <a href=\"https://app.uproc.io/#/tools/processor/get/upc/lookup\" target='_blank'>Info</a>"
+				},
+				"checkNumberLuhn": {
+					"displayName": "Проверьте, что номер Луна действителен",
+					"description": "Проверьте, является ли это действительным номером Луна <a href=\"https://app.uproc.io/#/tools/processor/check/number/luhn\" target='_blank'>Info</a>"
+				},
+				"checkPasswordStrong": {
+					"displayName": "Проверьте надежность пароля",
+					"description": "Убедитесь, что пароль надежен и содержит строчные и прописные буквы, цифры, специальные символы и имеет минимальную длину в четыре символа <a href=\"https://app.uproc.io/#/tools/processor/check/password/strong\" target='_blank'>Info</a>"
+				},
+				"checkNumberUuid": {
+					"displayName": "Проверьте, что номер UUID действителен",
+					"description": "Проверьте, является ли это действительным номером UUID <a href=\"https://app.uproc.io/#/tools/processor/check/number/uuid\" target='_blank'>Info</a>"
+				},
+				"getDomainBlacklists": {
+					"displayName": "Получить черные списки доменов",
+					"description": "Получить все черные списки, в которых фигурирует домен <a href=\"https://app.uproc.io/#/tools/processor/get/domain/blacklists\" target='_blank'>Info</a>"
+				},
+				"getIpBlacklists": {
+					"displayName": "Получить черные списки IP-адресов",
+					"description": "Получить все черные списки, в которых указан IP-адрес <a href=\"https://app.uproc.io/#/tools/processor/get/ip/blacklists\" target='_blank'>Info</a>"
+				},
+				"checkStringAlpha": {
+					"displayName": "Проверьте правильность алфавитной строки",
+					"description": "Проверьте, содержит ли длина строки только буквы <a href=\"https://app.uproc.io/#/tools/processor/check/string/alpha\" target='_blank'>Info</a>"
+				},
+				"checkStringAlphanumeric": {
+					"displayName": "Проверьте правильность буквенно-цифровой строки",
+					"description": "Проверьте, содержит ли длина строки только цифры и буквы <a href=\"https://app.uproc.io/#/tools/processor/check/string/alphanumeric\" target='_blank'>Info</a>"
+				},
+				"checkStringBoolean": {
+					"displayName": "Проверьте, что логическая строка действительна",
+					"description": "Проверьте, является ли строка истинной или ложной <a href=\"https://app.uproc.io/#/tools/processor/check/string/boolean\" target='_blank'>Info</a>"
+				},
+				"checkNumberDecimal": {
+					"displayName": "Проверьте правильность десятичного числа",
+					"description": "Проверьте, является ли значение десятичным числом <a href=\"https://app.uproc.io/#/tools/processor/check/number/decimal\" target='_blank'>Info</a>"
+				},
+				"checkNumberEven": {
+					"displayName": "Проверьте, что четное число действительно",
+					"description": "Проверьте, четное ли число <a href=\"https://app.uproc.io/#/tools/processor/check/number/even\" target='_blank'>Info</a>"
+				},
+				"checkListMax": {
+					"displayName": "Проверьте Большой Элемент",
+					"description": "Проверяет, соответствует ли самый большой элемент в списке предоставленному элементу <a href=\"https://app.uproc.io/#/tools/processor/check/list/max\" target='_blank'>Info</a>"
+				},
+				"checkStringIp": {
+					"displayName": "Проверьте, что IP имеет действительный формат",
+					"description": "Проверьте, имеет ли адрес IPv4 или IPv6 допустимый формат <a href=\"https://app.uproc.io/#/tools/processor/check/string/ip\" target='_blank'>Info</a>"
+				},
+				"checkStringIp4": {
+					"displayName": "Проверьте, что IPv4 имеет действительный формат",
+					"description": "Проверьте, имеет ли адрес IPv4 допустимый формат <a href=\"https://app.uproc.io/#/tools/processor/check/string/ip4\" target='_blank'>Info</a>"
+				},
+				"checkStringIp6": {
+					"displayName": "Проверьте, что IPv6 имеет действительный формат",
+					"description": "Проверьте, имеет ли адрес IPv6 допустимый формат <a href=\"https://app.uproc.io/#/tools/processor/check/string/ip6\" target='_blank'>Info</a>"
+				},
+				"checkListLengthBetw": {
+					"displayName": "Проверить список длин между",
+					"description": "Проверьте, находится ли длина списка между двумя величинами <a href=\"https://app.uproc.io/#/tools/processor/check/list/length-betw\" target='_blank'>Info</a>"
+				},
+				"checkListLengthEq": {
+					"displayName": "Проверить, что список длин равен",
+					"description": "Проверяет, равна ли длина списка указанному количеству <a href=\"https://app.uproc.io/#/tools/processor/check/list/length-eq\" target='_blank'>Info</a>"
+				},
+				"checkListLengthGt": {
+					"displayName": "Проверить список длин больше",
+					"description": "Проверьте, превышает ли длина списка определенную сумму <a href=\"https://app.uproc.io/#/tools/processor/check/list/length-gt\" target='_blank'>Info</a>"
+				},
+				"checkListLengthGe": {
+					"displayName": "Проверить список длин больше или равно",
+					"description": "Проверьте, превышает ли длина списка определенную сумму или равна ей <a href=\"https://app.uproc.io/#/tools/processor/check/list/length-ge\" target='_blank'>Info</a>"
+				},
+				"checkListLengthLt": {
+					"displayName": "Проверить список длин ниже",
+					"description": "<a href=\"https://app.uproc.io/#/tools/processor/check/list/length-lt\" target='_blank'>Информация</a>"
+				},
+				"checkListLengthLe": {
+					"displayName": "Проверить список длин меньше или равно",
+					"description": "Проверьте, меньше ли длина списка определенной суммы или равна ей <a href=\"https://app.uproc.io/#/tools/processor/check/list/length-le\" target='_blank'>Info</a>"
+				},
+				"checkListContains": {
+					"displayName": "Контрольный список содержит",
+					"description": "Проверьте, есть ли в списке конкретный элемент <a href=\"https://app.uproc.io/#/tools/processor/check/list/contains\" target='_blank'>Info</a>"
+				},
+				"checkListEnds": {
+					"displayName": "Контрольный список заканчивается на",
+					"description": "Проверьте, заканчивается ли список определенным элементом <a href=\"https://app.uproc.io/#/tools/processor/check/list/ends\" target='_blank'>Info</a>"
+				},
+				"checkListSorted": {
+					"displayName": "Контрольный список отсортирован",
+					"description": "Проверьте, отсортирован ли список по возрастанию <a href=\"https://app.uproc.io/#/tools/processor/check/list/sorted\" target='_blank'>Info</a>"
+				},
+				"checkListStarts": {
+					"displayName": "Контрольный список начинается с",
+					"description": "Проверьте, начинается ли список с определенного элемента <a href=\"https://app.uproc.io/#/tools/processor/check/list/starts\" target='_blank'>Info</a>"
+				},
+				"checkListMin": {
+					"displayName": "Проверьте нижний элемент",
+					"description": "Проверяет, соответствует ли наименьший элемент в списке предоставленному элементу <a href=\"https://app.uproc.io/#/tools/processor/check/list/min\" target='_blank'>Info</a>"
+				},
+				"checkNumberMod": {
+					"displayName": "Проверьте, что модуль равен",
+					"description": "Проверьте, равен ли модуль между двумя числами значению <a href=\"https://app.uproc.io/#/tools/processor/check/number/mod\" target='_blank'>Info</a>"
+				},
+				"checkNumberNatural": {
+					"displayName": "Проверьте, что натуральное число действительно",
+					"description": "Проверьте, является ли значение натуральным числом <a href=\"https://app.uproc.io/#/tools/processor/check/number/natural\" target='_blank'>Info</a>"
+				},
+				"checkNumberBetw": {
+					"displayName": "Номер чека находится между",
+					"description": "Проверьте, находится ли число между двумя значениями <a href=\"https://app.uproc.io/#/tools/processor/check/number/betw\" target='_blank'>Info</a>"
+				},
+				"checkNumberEq": {
+					"displayName": "Номер чека равен",
+					"description": "Проверьте, равен ли номер другому <a href=\"https://app.uproc.io/#/tools/processor/check/number/eq\" target='_blank'>Info</a>"
+				},
+				"checkNumberGt": {
+					"displayName": "Номер чека больше",
+					"description": "Проверьте, больше ли число другого <a href=\"https://app.uproc.io/#/tools/processor/check/number/gt\" target='_blank'>Info</a>"
+				},
+				"checkNumberGe": {
+					"displayName": "Номер чека больше или равен",
+					"description": "Проверьте, больше ли число или равно другому <a href=\"https://app.uproc.io/#/tools/processor/check/number/ge\" target='_blank'>Info</a>"
+				},
+				"checkNumberLt": {
+					"displayName": "Номер чека меньше",
+					"description": "Проверьте, меньше ли номер другого <a href=\"https://app.uproc.io/#/tools/processor/check/number/lt\" target='_blank'>Info</a>"
+				},
+				"checkNumberLe": {
+					"displayName": "Номер проверки меньше или равен",
+					"description": "Проверьте, меньше ли число или равно другому <a href=\"https://app.uproc.io/#/tools/processor/check/number/le\" target='_blank'>Info</a>"
+				},
+				"checkStringNumeric": {
+					"displayName": "Проверьте допустимость числовой строки",
+					"description": "Проверьте, содержит ли длина строки только цифры <a href=\"https://app.uproc.io/#/tools/processor/check/string/numeric\" target='_blank'>Info</a>"
+				},
+				"checkNumberOdd": {
+					"displayName": "Проверьте, что нечетное число действительно",
+					"description": "Проверьте, является ли число нечетным <a href=\"https://app.uproc.io/#/tools/processor/check/number/odd\" target='_blank'>Info</a>"
+				},
+				"checkNumberPrime": {
+					"displayName": "Проверьте, что простой номер действителен",
+					"description": "Проверьте, является ли число простым <a href=\"https://app.uproc.io/#/tools/processor/check/number/prime\" target='_blank'>Info</a>"
+				},
+				"checkStringContains": {
+					"displayName": "Проверить строку, содержащую символ",
+					"description": "Проверьте, содержит ли строка символ <a href=\"https://app.uproc.io/#/tools/processor/check/string/contains\" target='_blank'>Info</a>"
+				},
+				"checkStringEnds": {
+					"displayName": "Проверить, что строка заканчивается на",
+					"description": "Проверьте, заканчивается ли строка символом <a href=\"https://app.uproc.io/#/tools/processor/check/string/ends\" target='_blank'>Info</a>"
+				},
+				"checkStringBlank": {
+					"displayName": "Проверьте, что строка пуста",
+					"description": "Проверьте, нет ли в строке содержимого <a href=\"https://app.uproc.io/#/tools/processor/check/string/blank\" target='_blank'>Info</a>"
+				},
+				"checkStringRandom": {
+					"displayName": "Проверить, что строка случайна",
+					"description": "Проверить, содержит ли строка случайные символы без смысла <a href=\"https://app.uproc.io/#/tools/processor/check/string/random\" target='_blank'>Info</a>"
+				},
+				"checkStringRegex": {
+					"displayName": "Проверьте, что строка действительна по шаблону",
+					"description": "Проверьте, содержит ли строка значение, соответствующее регулярному выражению <a href=\"https://app.uproc.io/#/tools/processor/check/string/regex\" target='_blank'>Info</a>"
+				},
+				"checkStringLengthBetw": {
+					"displayName": "Проверьте длину строки между",
+					"description": "Проверьте, находится ли длина строки между двумя числами <a href=\"https://app.uproc.io/#/tools/processor/check/string/length-betw\" target='_blank'>Info</a>"
+				},
+				"checkStringLengthEq": {
+					"displayName": "Проверить, что длина строки равна",
+					"description": "Проверьте, равна ли длина строки числу <a href=\"https://app.uproc.io/#/tools/processor/check/string/length-eq\" target='_blank'>Info</a>"
+				},
+				"checkStringLengthGt": {
+					"displayName": "Проверьте, что длина строки больше",
+					"description": "Проверьте, превышает ли длина строки число <a href=\"https://app.uproc.io/#/tools/processor/check/string/length-gt\" target='_blank'>Info</a>"
+				},
+				"checkStringLengthGe": {
+					"displayName": "Проверьте, что длина строки больше или равна",
+					"description": "Проверьте, больше ли длина строки или равна числу <a href=\"https://app.uproc.io/#/tools/processor/check/string/length-ge\" target='_blank'>Info</a>"
+				},
+				"checkStringLengthLt": {
+					"displayName": "Проверьте, что длина строки меньше",
+					"description": "Проверьте, меньше ли длина строки числа <a href=\"https://app.uproc.io/#/tools/processor/check/string/length-lt\" target='_blank'>Info</a>."
+				},
+				"checkStringLengthLe": {
+					"displayName": "Проверьте, что длина строки меньше или равна",
+					"description": "Проверьте, меньше ли длина строки или равна числу <a href=\"https://app.uproc.io/#/tools/processor/check/string/length-le\" target='_blank'>Info</a>"
+				},
+				"checkStringStarts": {
+					"displayName": "Проверьте строку, начинающуюся с",
+					"description": "Проверьте, начинается ли строка с символа <a href=\"https://app.uproc.io/#/tools/processor/check/string/starts\" target='_blank'>Info</a>"
+				},
+				"checkStringLowercase": {
+					"displayName": "Проверьте, чтобы текст был в нижнем регистре",
+					"description": "Проверьте, содержит ли строка только символы нижнего регистра <a href=\"https://app.uproc.io/#/tools/processor/check/string/lowercase\" target='_blank'>Info</a>"
+				},
+				"checkStringUppercase": {
+					"displayName": "Проверьте, что текст написан заглавными буквами",
+					"description": "Проверьте, содержит ли строка только символы верхнего регистра <a href=\"https://app.uproc.io/#/tools/processor/check/string/uppercase\" target='_blank'>Info</a>"
+				},
+				"checkListUnique": {
+					"displayName": "Проверьте уникальный список Es",
+					"description": "Проверить, состоит ли список из уникальных элементов <a href=\"https://app.uproc.io/#/tools/processor/check/list/unique\" target='_blank'>Info</a>"
+				},
+				"checkListValid": {
+					"displayName": "Проверьте действительный список",
+					"description": "Проверьте, образуют ли предоставленные значения действительный список элементов <a href=\"https://app.uproc.io/#/tools/processor/check/list/valid\" target='_blank'>Info</a>"
+				},
+				"checkWordCountBetw": {
+					"displayName": "Проверьте количество слов между",
+					"description": "Проверить, находится ли количество слов в предложении между двумя определенными величинами <a href=\"https://app.uproc.io/#/tools/processor/check/word/count-betw\" target='_blank'>Info</a>"
+				},
+				"checkWordCountEq": {
+					"displayName": "Проверьте количество слов, равное",
+					"description": "Проверить, равно ли количество слов в предложении определенной сумме <a href=\"https://app.uproc.io/#/tools/processor/check/word/count-eq\" target='_blank'>Info</a>"
+				},
+				"checkWordCountGt": {
+					"displayName": "Проверьте количество слов больше",
+					"description": "Проверить, превышает ли количество слов в предложении определенную сумму <a href=\"https://app.uproc.io/#/tools/processor/check/word/count-gt\" target='_blank'>Info</a>"
+				},
+				"checkWordCountGe": {
+					"displayName": "Проверьте количество слов больше или равно",
+					"description": "Проверьте, больше ли количество слов в предложении или равно определенной сумме <a href=\"https://app.uproc.io/#/tools/processor/check/word/count-ge\" target='_blank'>Info</a>"
+				},
+				"checkWordCountLt": {
+					"displayName": "Проверьте количество слов меньше",
+					"description": "<a href=\"https://app.uproc.io/#/tools/processor/check/word/count-lt\" target='_blank'>Информация</a>"
+				},
+				"checkWordCountLe": {
+					"displayName": "Проверьте количество слов меньше или равно",
+					"description": "Проверьте, меньше ли количество слов в предложении или равно величине <a href=\"https://app.uproc.io/#/tools/processor/check/word/count-le\" target='_blank'>Info</a>"
+				},
+				"getStringBase64": {
+					"displayName": "Получить значение BASE64",
+					"description": "Преобразование строки в значение в кодировке BASE64 <a href=\"https://app.uproc.io/#/tools/processor/get/string/base64\" target='_blank'>Info</a>"
+				},
+				"getWordBanned": {
+					"displayName": "Получить запрещенные слова",
+					"description": "Найдите запрещенные английские слова в теле или теме электронного письма <a href=\"https://app.uproc.io/#/tools/processor/get/word/banned\" target='_blank'>Info</a>"
+				},
+				"getStringFieldName": {
+					"displayName": "Получить тип поля по значению",
+					"description": "Получить имя поля, проанализировав предоставленное значение поля.<br><br>Поддерживаемые значения: электронная почта, домен, Isbn, Ean, Upc, Dni, Nie, Cif, дата, пол (мужской, женский), стационарный телефон, мобильный телефон, почтовый индекс, веб-адрес <a href=\"https://app.uproc.io/#/tools/processor/get/string/field-name\" target='_blank'>Info</a>"
+				},
+				"getStringByFormat": {
+					"displayName": "Получить отформатированную строку по шаблону",
+					"description": "Он позволяет форматировать строку, используя шаблон формата <a href=\"https://app.uproc.io/#/tools/processor/get/string/by-format\" target='_blank'>Info</a>."
+				},
+				"getStringByRegex": {
+					"displayName": "Получить сгенерированный текст по шаблону",
+					"description": "Сгенерировать случайную строку, используя регулярное выражение в качестве шаблона <a href=\"https://app.uproc.io/#/tools/processor/get/string/by-regex\" target='_blank'>Info</a>"
+				},
+				"getListMax": {
+					"displayName": "Получите больший элемент",
+					"description": "Возвращает самый большой элемент в списке <a href=\"https://app.uproc.io/#/tools/processor/get/list/max\" target='_blank'>Info</a>"
+				},
+				"getStringHtmlByMarkdown": {
+					"displayName": "Получить HTML-код из Markdown",
+					"description": "Преобразование кода Markdown в HTML-код <a href=\"https://app.uproc.io/#/tools/processor/get/string/html-by-markdown\" target='_blank'>Info</a>"
+				},
+				"getListMin": {
+					"displayName": "Получить нижний элемент",
+					"description": "Возвращает самый маленький элемент в списке <a href=\"https://app.uproc.io/#/tools/processor/get/list/min\" target='_blank'>Info</a>"
+				},
+				"getStringLowercase": {
+					"displayName": "Получить текст в нижнем регистре",
+					"description": "Преобразовать все буквы, найденные в строке, в нижний регистр <a href=\"https://app.uproc.io/#/tools/processor/get/string/lowercase\" target='_blank'>Info</a>"
+				},
+				"getStringMd5": {
+					"displayName": "Получить строку MD5",
+					"description": "Преобразование строки в значение, закодированное MD5 <a href=\"https://app.uproc.io/#/tools/processor/get/string/md5\" target='_blank'>Info</a>"
+				},
+				"getStringMarkdownByHtml": {
+					"displayName": "Получить текст Markdown из HTML",
+					"description": "Преобразование HTML-кода в код Markdown <a href=\"https://app.uproc.io/#/tools/processor/get/string/markdown-by-html\" target='_blank'>Info</a>"
+				},
+				"getStringJoin": {
+					"displayName": "Получить объединенные значения по тексту",
+					"description": "Соединение символа или строки для объединения двух значений <a href=\"https://app.uproc.io/#/tools/processor/get/string/join\" target='_blank'>Info</a>"
+				},
+				"getStringNormalized": {
+					"displayName": "Получить нормализованную строку по полю",
+					"description": "Нормализовать строку в зависимости от имени поля <a href=\"https://app.uproc.io/#/tools/processor/get/string/normalized\" target='_blank'>Info</a>"
+				},
+				"getStringParsed": {
+					"displayName": "Получить проанализированный текст",
+					"description": "Проанализировать строку и вернуть все обнаруженные электронные письма, телефоны, почтовые индексы и ссылки <a href=\"https://app.uproc.io/#/tools/processor/get/string/parsed\" target='_blank'>Info</a>"
+				},
+				"getStringSha": {
+					"displayName": "Получить строку SHA",
+					"description": "Преобразование строки в значение, закодированное SHA <a href=\"https://app.uproc.io/#/tools/processor/get/string/sha\" target='_blank'>Info</a>"
+				},
+				"getSentimentByText": {
+					"displayName": "Получите настроение из текста",
+					"description": "Это позволяет анализировать текст на английском языке с помощью Emojis и определять тональность <a href=\"https://app.uproc.io/#/tools/processor/get/sentiment/by-text\" target='_blank'>Info</a>"
+				},
+				"getListSort": {
+					"displayName": "Получить отсортированный список",
+					"description": "Возвращает отсортированный по возрастанию список <a href=\"https://app.uproc.io/#/tools/processor/get/list/sort\" target='_blank'>Info</a>"
+				},
+				"getStringSpin": {
+					"displayName": "Получить спин-строку",
+					"description": "Генерирует спин-строку <a href=\"https://app.uproc.io/#/tools/processor/get/string/spin\" target='_blank'>Info</a>"
+				},
+				"getStringSplitAndJoin": {
+					"displayName": "Получить разделенные и объединенные значения по разделителю",
+					"description": "Разделите значение на две части и соедините их, используя разделитель, присутствующий в исходной строке <a href=\"https://app.uproc.io/#/tools/processor/get/string/split-and-join\" target='_blank'>Info</a>."
+				},
+				"getStringSplit": {
+					"displayName": "Получить разделенные значения по разделителю",
+					"description": "Разделите значение на две части, используя разделитель, присутствующий в исходной строке <a href=\"https://app.uproc.io/#/tools/processor/get/string/split\" target='_blank'>Info</a>."
+				},
+				"getStringLength": {
+					"displayName": "Получить длину строки",
+					"description": "Получить длину строки <a href=\"https://app.uproc.io/#/tools/processor/get/string/length\" target='_blank'>Info</a>"
+				},
+				"getStringVlookup": {
+					"displayName": "Получить строку VLookup",
+					"description": "Строка поиска между несколькими значениями с помощью нечеткой логики и шаблонов регулярных выражений <a href=\"https://app.uproc.io/#/tools/processor/get/string/vlookup\" target='_blank'>Info</a>"
+				},
+				"getWordCleanAbuse": {
+					"displayName": "Очистите текст без ругательств",
+					"description": "Очистить оскорбительные слова из строки <a href=\"https://app.uproc.io/#/tools/processor/get/word/clean-abuse\" target='_blank'>Info</a>"
+				},
+				"getStringReplaceFirst": {
+					"displayName": "Получить текст, замененный строкой",
+					"description": "Заменить первое значение, найденное в строке, на другое <a href=\"https://app.uproc.io/#/tools/processor/get/string/replace-first\" target='_blank'>Info</a>."
+				},
+				"getStringWithoutHtml": {
+					"displayName": "Получить текст без HTML",
+					"description": "Извлечение текста из HTML, удаление html-тегов и замена специальных тегов <a href=\"https://app.uproc.io/#/tools/processor/get/string/without-html\" target='_blank'>Info</a>"
+				},
+				"getStringReplaceAll": {
+					"displayName": "Получить тексты, замененные строкой",
+					"description": "Заменить все значения, найденные в строке, на другие <a href=\"https://app.uproc.io/#/tools/processor/get/string/replace-all\" target='_blank'>Info</a>."
+				},
+				"getStringTranslated": {
+					"displayName": "Получить переведенный текст",
+					"description": "Позволяет перевести текст на любой язык <a href=\"https://app.uproc.io/#/tools/processor/get/string/translated\" target='_blank'>Info</a>"
+				},
+				"getListUnique": {
+					"displayName": "Получить уникальный список",
+					"description": "Возвращает один список без повторяющихся элементов <a href=\"https://app.uproc.io/#/tools/processor/get/list/unique\" target='_blank'>Info</a>"
+				},
+				"getStringUppercase": {
+					"displayName": "Получить текст в верхнем регистре",
+					"description": "Преобразовать все буквы, найденные в строке, в верхний регистр <a href=\"https://app.uproc.io/#/tools/processor/get/string/uppercase\" target='_blank'>Info</a>"
+				},
+				"getWordCount": {
+					"displayName": "Получить количество слов",
+					"description": "Подсчитать общее количество слов в тексте <a href=\"https://app.uproc.io/#/tools/processor/get/word/count\" target='_blank'>Info</a>"
+				}
+			}
+		},
+		"credit_card": {
+			"displayName": "Кредитная карта",
+			"description": "Значение «Кредитная карта», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "4024007151839544"
+		},
+		"address": {
+			"displayName": "Адрес",
+			"description": "Значение «Адрес», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "Compte Mallorca, 120, Барселона, Испания"
+		},
+		"country": {
+			"displayName": "Страна",
+			"description": "Значение «Страна», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "ES"
+		},
+		"coordinates": {
+			"displayName": "Координаты",
+			"description": "Значение «Координаты», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "41.2522,-12.30"
+		},
+		"date": {
+			"displayName": "Дата",
+			"description": "Значение «Дата», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "1975-05-20"
+		},
+		"years1": {
+			"displayName": "Годы1",
+			"description": "Значение «Год1», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "35"
+		},
+		"years2": {
+			"displayName": "Годы2",
+			"description": "Значение «Год2», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "50"
+		},
+		"years": {
+			"displayName": "Годы",
+			"description": "Значение «Годы», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "46"
+		},
+		"ean": {
+			"displayName": "Иэн",
+			"description": "Значение «Ean», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "0635753490879"
+		},
+		"asin": {
+			"displayName": "Асин",
+			"description": "Значение «Asin», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "B00005N5PF"
+		},
+		"text": {
+			"displayName": "Текст",
+			"description": "Значение «Текст», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "Привет! Меня зовут Микель. Я прочитаю любой текст, который вы наберете здесь."
+		},
+		"gender": {
+			"displayName": "Пол",
+			"description": "Значение «Пол», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "мужской",
+			"options": {
+				"female": {
+					"displayName": "Женский"
+				},
+				"male": {
+					"displayName": "Мужской"
+				}
+			}
+		},
+		"language": {
+			"displayName": "Язык",
+			"description": "Значение «Язык», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "американский",
+			"options": {
+				"american": {
+					"displayName": "Американский"
+				},
+				"arabic": {
+					"displayName": "арабский"
+				},
+				"bengali": {
+					"displayName": "Бенгальский"
+				},
+				"british": {
+					"displayName": "Британский"
+				},
+				"czech": {
+					"displayName": "чешский"
+				},
+				"danish": {
+					"displayName": "датский"
+				},
+				"dutch": {
+					"displayName": "Голландский"
+				},
+				"filipino": {
+					"displayName": "Филиппинский"
+				},
+				"finnish": {
+					"displayName": "финский"
+				},
+				"french": {
+					"displayName": "Французский"
+				},
+				"german": {
+					"displayName": "немецкий"
+				},
+				"greek": {
+					"displayName": "Греческий"
+				},
+				"gujurati": {
+					"displayName": "Гуджурати"
+				},
+				"hindi": {
+					"displayName": "хинди"
+				},
+				"hungarian": {
+					"displayName": "венгерский"
+				},
+				"indonesian": {
+					"displayName": "индонезийский"
+				},
+				"italian": {
+					"displayName": "итальянский"
+				},
+				"japanese": {
+					"displayName": "японский"
+				},
+				"kannada": {
+					"displayName": "Каннада"
+				},
+				"korean": {
+					"displayName": "корейский"
+				},
+				"malayalam": {
+					"displayName": "малаялам"
+				},
+				"mandarin": {
+					"displayName": "Мандарин"
+				},
+				"norwegian": {
+					"displayName": "норвежский"
+				},
+				"polish": {
+					"displayName": "Польский"
+				},
+				"portuguese": {
+					"displayName": "португальский"
+				},
+				"russian": {
+					"displayName": "Русский"
+				},
+				"slovak": {
+					"displayName": "словацкий"
+				},
+				"spanish": {
+					"displayName": "испанский"
+				},
+				"tamil": {
+					"displayName": "тамильский"
+				},
+				"telugu": {
+					"displayName": "телугу"
+				},
+				"thai": {
+					"displayName": "тайский"
+				},
+				"turkish": {
+					"displayName": "турецкий"
+				},
+				"ukranian": {
+					"displayName": "украинский"
+				},
+				"vietnamese": {
+					"displayName": "вьетнамский"
+				}
+			}
+		},
+		"account": {
+			"displayName": "Счет",
+			"description": "Значение «Счет», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "14650120311716144388"
+		},
+		"bic": {
+			"displayName": "Бик",
+			"description": "Значение «Bic», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "DABAIE2D"
+		},
+		"isocode": {
+			"displayName": "изокод",
+			"description": "Значение «Isocode», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "ES"
+		},
+		"iban": {
+			"displayName": "Ибан",
+			"description": "Значение «Ибан», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "NL91ABNA0417164300"
+		},
+		"swift": {
+			"displayName": "Быстрый",
+			"description": "Значение «Swift», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "INGDESMMXXX"
+		},
+		"bcid": {
+			"displayName": "Бцид",
+			"description": "Значение «Bcid», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "ean13",
+			"options": {
+				"auspost": {
+					"displayName": "Аупост"
+				},
+				"azteccode": {
+					"displayName": "Ацтекский код"
+				},
+				"azteccodecompact": {
+					"displayName": "Azteccodeкомпактный"
+				},
+				"aztecrune": {
+					"displayName": "Ацтекрун"
+				},
+				"bc412": {
+					"displayName": "Bc412"
+				},
+				"channelcode": {
+					"displayName": "Код канала"
+				},
+				"codablockf": {
+					"displayName": "Кодаблокф"
+				},
+				"code11": {
+					"displayName": "Код11"
+				},
+				"code128": {
+					"displayName": "Код128"
+				},
+				"code16k": {
+					"displayName": "Код16k"
+				},
+				"code2of5": {
+					"displayName": "Код2of5"
+				},
+				"code32": {
+					"displayName": "Код32"
+				},
+				"code39": {
+					"displayName": "Код39"
+				},
+				"code39ext": {
+					"displayName": "Код39ext"
+				},
+				"code49": {
+					"displayName": "Код49"
+				},
+				"code93": {
+					"displayName": "Код93"
+				},
+				"code93ext": {
+					"displayName": "Код93ext"
+				},
+				"codeone": {
+					"displayName": "Кодеон"
+				},
+				"coop2of5": {
+					"displayName": "Куп2оф5"
+				},
+				"daft": {
+					"displayName": "глупо"
+				},
+				"databarexpanded": {
+					"displayName": "Панель данныхразвернута"
+				},
+				"databarexpandedcomposite": {
+					"displayName": "Панель данныхрасширенный композит"
+				},
+				"databarexpandedstacked": {
+					"displayName": "Панель данныхразвернута, сложена"
+				},
+				"databarexpandedstackedcomposite": {
+					"displayName": "Панель данныхexpandedstackedcomposite"
+				},
+				"databarlimited": {
+					"displayName": "Датабарлимитед"
+				},
+				"databarlimitedcomposite": {
+					"displayName": "Databarlimitedcomposite"
+				},
+				"databaromni": {
+					"displayName": "Датабаромни"
+				},
+				"databaromnicomposite": {
+					"displayName": "Датабаромникомпозит"
+				},
+				"databarstacked": {
+					"displayName": "Данные"
+				},
+				"databarstackedcomposite": {
+					"displayName": "Databarstackedcomposite"
+				},
+				"databarstackedomni": {
+					"displayName": "Databarstackedomni"
+				},
+				"databarstackedomnicomposite": {
+					"displayName": "Databarstackedomnicomposite"
+				},
+				"databartruncated": {
+					"displayName": "Данныебарусечены"
+				},
+				"databartruncatedcomposite": {
+					"displayName": "Databartruncatedcomposite"
+				},
+				"datalogic2of5": {
+					"displayName": "Даталогик2оф5"
+				},
+				"datamatrix": {
+					"displayName": "Датаматрица"
+				},
+				"datamatrixrectangular": {
+					"displayName": "Datamatrixпрямоугольный"
+				},
+				"dotcode": {
+					"displayName": "Доткод"
+				},
+				"ean13": {
+					"displayName": "Ean13"
+				},
+				"ean13composite": {
+					"displayName": "Ean13композитный"
+				},
+				"ean14": {
+					"displayName": "Ean14"
+				},
+				"ean2": {
+					"displayName": "Еан2"
+				},
+				"ean5": {
+					"displayName": "Еан5"
+				},
+				"ean8": {
+					"displayName": "Ean8"
+				},
+				"ean8composite": {
+					"displayName": "Ean8composite"
+				},
+				"flattermarken": {
+					"displayName": "Флаттермаркен"
+				},
+				"gs1-128": {
+					"displayName": "Гс1-128"
+				},
+				"gs1-128composite": {
+					"displayName": "Гс1-128композитный"
+				},
+				"gs1-cc": {
+					"displayName": "Gs1-cc"
+				},
+				"gs1datamatrix": {
+					"displayName": "Gs1матрица данных"
+				},
+				"gs1datamatrixrectangular": {
+					"displayName": "Gs1матрица данныхпрямоугольная"
+				},
+				"gs1northamericancoupon": {
+					"displayName": "Gs1northamericanкупон"
+				},
+				"hanxin": {
+					"displayName": "Ханьсинь"
+				},
+				"hibcazteccode": {
+					"displayName": "Хибказтеккод"
+				},
+				"hibccodablockf": {
+					"displayName": "Гибккодаблокф"
+				},
+				"hibccode128": {
+					"displayName": "Гибккод128"
+				},
+				"hibccode39": {
+					"displayName": "Гибккод39"
+				},
+				"hibcdatamatrix": {
+					"displayName": "Hibcdatamatrix"
+				},
+				"hibcdatamatrixrectangular": {
+					"displayName": "Hibcdatamatrixпрямоугольный"
+				},
+				"hibcmicropdf417": {
+					"displayName": "Hibcmicropdf417"
+				},
+				"hibcpdf417": {
+					"displayName": "Hibcpdf417"
+				},
+				"iata2of5": {
+					"displayName": "Иата2оф5"
+				},
+				"identcode": {
+					"displayName": "Идентификационный код"
+				},
+				"industrial2of5": {
+					"displayName": "Индустриал2из5"
+				},
+				"interleaved2of5": {
+					"displayName": "Чередованный2из5"
+				},
+				"isbn": {
+					"displayName": "Исбн"
+				},
+				"ismn": {
+					"displayName": "Исмн"
+				},
+				"issn": {
+					"displayName": "Иссн"
+				},
+				"itf14": {
+					"displayName": "Itf14"
+				},
+				"japanpost": {
+					"displayName": "Почта Японии"
+				},
+				"kix": {
+					"displayName": "Кикс"
+				},
+				"leitcode": {
+					"displayName": "Лейткод"
+				},
+				"matrix2of5": {
+					"displayName": "Матрица2из5"
+				},
+				"maxicode": {
+					"displayName": "Максикод"
+				},
+				"micropdf417": {
+					"displayName": "Микроpdf417"
+				},
+				"msi": {
+					"displayName": "Мси"
+				},
+				"onecode": {
+					"displayName": "Одинкод"
+				},
+				"pdf417": {
+					"displayName": "PDF417"
+				},
+				"pdf417compact": {
+					"displayName": "PDF417компактный"
+				},
+				"pharmacode": {
+					"displayName": "Фармакод"
+				},
+				"pharmacode2": {
+					"displayName": "Фармакод2"
+				},
+				"planet": {
+					"displayName": "Планета"
+				},
+				"plessey": {
+					"displayName": "Плесси"
+				},
+				"posicode": {
+					"displayName": "Позикод"
+				},
+				"postnet": {
+					"displayName": "Постнет"
+				},
+				"pzn": {
+					"displayName": "Пзн"
+				},
+				"rationalizedCodabar": {
+					"displayName": "РационализированныйCodabar"
+				},
+				"raw": {
+					"displayName": "Сырой"
+				},
+				"royalmail": {
+					"displayName": "Королевская почта"
+				},
+				"sscc18": {
+					"displayName": "Sscc18"
+				},
+				"symbol": {
+					"displayName": "Символ"
+				},
+				"telepen": {
+					"displayName": "Телепен"
+				},
+				"telepennumeric": {
+					"displayName": "телепеннумерический"
+				},
+				"ultracode": {
+					"displayName": "Ультракод"
+				},
+				"upca": {
+					"displayName": "Упка"
+				},
+				"upcacomposite": {
+					"displayName": "Упкакомпозит"
+				},
+				"upce": {
+					"displayName": "Упце"
+				},
+				"upcecomposite": {
+					"displayName": "Упсекомпозит"
+				}
+			}
+		},
+		"author": {
+			"displayName": "Автор",
+			"description": "Значение «Автор», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "Альберт Эйнштейн"
+		},
+		"category": {
+			"displayName": "Категория",
+			"description": "Значение «Категория», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "наука"
+		},
+		"isbn": {
+			"displayName": "Исбн",
+			"description": "Значение Isbn, которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "0306406152"
+		},
+		"publisher": {
+			"displayName": "Издатель",
+			"description": "Значение «Издатель», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "Группа РБА"
+		},
+		"title": {
+			"displayName": "Заголовок",
+			"description": "Значение «Название», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "Наука"
+		},
+		"dni": {
+			"displayName": "Дни",
+			"description": "Значение «Dni», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "44016116"
+		},
+		"cif": {
+			"displayName": "Сиф",
+			"description": "Значение «Cif», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "Б 62084 959"
+		},
+		"nie": {
+			"displayName": "Не",
+			"description": "Значение «Nie», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "X402001 122г"
+		},
+		"nif": {
+			"displayName": "Ниф",
+			"description": "Значение «Nif», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "402001 122г"
+		},
+		"ip": {
+			"displayName": "IP",
+			"description": "Значение «Ip», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "95.23.100.79"
+		},
+		"city": {
+			"displayName": "Город",
+			"description": "Значение «Город», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "Бар"
+		},
+		"phone": {
+			"displayName": "Телефон",
+			"description": "Значение «Телефон», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "932187670"
+		},
+		"zipcode": {
+			"displayName": "Почтовый индекс",
+			"description": "Значение «Почтовый индекс», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "08012"
+		},
+		"upc": {
+			"displayName": "УПК",
+			"description": "Значение «Upc», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "635753490879"
+		},
+		"isin": {
+			"displayName": "Исин",
+			"description": "Значение Isin, которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "US0378331005"
+		},
+		"number": {
+			"displayName": "Число",
+			"description": "Значение «Число», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "998239812282"
+		},
+		"uuid": {
+			"displayName": "Ууид",
+			"description": "Значение «Uuid», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "550e8400-e29b-41d4-a716-446655440000"
+		},
+		"domain": {
+			"displayName": "Домен",
+			"description": "Значение «Домен», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "killia.com"
+		},
+		"duns": {
+			"displayName": "Дунс",
+			"description": "Значение «Duns», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "464016690"
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"description": "Значение «Электронная почта», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "привет@killia.com"
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Значение «Имя», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "Киберклик С.Л."
+		},
+		"url": {
+			"displayName": "URL",
+			"description": "Значение URL, которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "https://www.facebook.com/cyberclicknet"
+		},
+		"profile": {
+			"displayName": "Профиль",
+			"description": "Значение «Профиль», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "https://www.linkedin.com/in/miquelcolomersalas"
+		},
+		"role": {
+			"displayName": "Роль",
+			"description": "Значение «Роль», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "Руководитель проекта"
+		},
+		"taxid": {
+			"displayName": "Таксид",
+			"description": "Значение Taxid, которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "B04363115"
+		},
+		"company": {
+			"displayName": "Компания",
+			"description": "Значение «Компания», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "uproc.io"
+		},
+		"area": {
+			"displayName": "Область",
+			"description": "Значение «Площадь», которое будет использоваться в качестве параметра для этой операции.",
+			"options": {
+				"Communications": {
+					"displayName": "Коммуникации"
+				},
+				"Consulting": {
+					"displayName": "Консалтинг"
+				},
+				"Customer service": {
+					"displayName": "Обслуживание клиентов"
+				},
+				"Education": {
+					"displayName": "Образование"
+				},
+				"Engineering": {
+					"displayName": "Инженерное дело"
+				},
+				"Finance": {
+					"displayName": "Финансы"
+				},
+				"Health professional": {
+					"displayName": "Медицинский работник"
+				},
+				"Human resources": {
+					"displayName": "Человеческие ресурсы"
+				},
+				"Information technology": {
+					"displayName": "Информационные технологии"
+				},
+				"Legal": {
+					"displayName": "Юридический"
+				},
+				"Marketing": {
+					"displayName": "Маркетинг"
+				},
+				"Operations": {
+					"displayName": "Операции"
+				},
+				"Owner": {
+					"displayName": "Владелец"
+				},
+				"President": {
+					"displayName": "Президент"
+				},
+				"Product": {
+					"displayName": "Продукт"
+				},
+				"Public relations": {
+					"displayName": "Связи с общественностью"
+				},
+				"Real estate": {
+					"displayName": "Недвижимость"
+				},
+				"Recruiting": {
+					"displayName": "Рекрутинг"
+				},
+				"Research": {
+					"displayName": "Исследовать"
+				},
+				"Sales": {
+					"displayName": "Продажи"
+				}
+			}
+		},
+		"clevel": {
+			"displayName": "Клевель",
+			"description": "Значение «Clevel», которое будет использоваться в качестве параметра для этой операции.",
+			"options": {
+				"No": {
+					"displayName": "Нет"
+				},
+				"Yes": {
+					"displayName": "Да"
+				}
+			}
+		},
+		"location": {
+			"displayName": "Расположение",
+			"description": "Значение «Местоположение», которое будет использоваться в качестве параметра для этой операции."
+		},
+		"keyword": {
+			"displayName": "Ключевое слово",
+			"description": "Значение «Ключевое слово», которое будет использоваться в качестве параметра для этой операции."
+		},
+		"message": {
+			"displayName": "Сообщение",
+			"description": "Значение «Сообщение», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "Привет, {{first}}, хочешь стать частью моей сети! Спасибо"
+		},
+		"message1": {
+			"displayName": "Сообщение1",
+			"description": "Значение «Message1», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "Привет, {{first}}, хочешь стать частью моей сети? Спасибо"
+		},
+		"message2": {
+			"displayName": "Сообщение2",
+			"description": "Значение «Сообщение2», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "Привет, {{first}}, спасибо, что принял мое приглашение!"
+		},
+		"seniority": {
+			"displayName": "Старшинство",
+			"description": "Значение «Старшинство», которое будет использоваться в качестве параметра для этой операции.",
+			"options": {
+				"Apprentice": {
+					"displayName": "Ученик"
+				},
+				"Director": {
+					"displayName": "Директор"
+				},
+				"Executive": {
+					"displayName": "Исполнительный"
+				},
+				"Intermediate": {
+					"displayName": "Средний"
+				},
+				"Manager": {
+					"displayName": "Менеджер"
+				}
+			}
+		},
+		"address1": {
+			"displayName": "Адрес1",
+			"description": "Значение «Адрес1», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "Майорка 120, 08036, Барселона"
+		},
+		"address2": {
+			"displayName": "Адрес2",
+			"description": "Значение «Адрес2», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "Майорка 70, 08036, Барселона"
+		},
+		"fuel_consumption": {
+			"displayName": "Расход топлива",
+			"description": "Значение «Расход топлива», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "5"
+		},
+		"price_liter": {
+			"displayName": "Цена литра",
+			"description": "Значение «Цена литр», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "1.2"
+		},
+		"coordinates1": {
+			"displayName": "Координаты1",
+			"description": "Значение «Координаты1», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "41.2522,-12.10"
+		},
+		"coordinates2": {
+			"displayName": "Координаты2",
+			"description": "Значение «Координаты2», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "41.2522,-12.30"
+		},
+		"ip1": {
+			"displayName": "IP1",
+			"description": "Значение «Ip1», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "95.23.100.79"
+		},
+		"ip2": {
+			"displayName": "IP2",
+			"description": "Значение «Ip2», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "88.190.16.36"
+		},
+		"phone1": {
+			"displayName": "Телефон1",
+			"description": "Значение «Phone1», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "932187670"
+		},
+		"phone2": {
+			"displayName": "Телефон2",
+			"description": "Значение «Phone2», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "91213111111"
+		},
+		"zipcode1": {
+			"displayName": "Почтовый индекс1",
+			"description": "Значение «Zipcode1», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "08012"
+		},
+		"zipcode2": {
+			"displayName": "Почтовый индекс2",
+			"description": "Значение «Zipcode2», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "28080"
+		},
+		"distance": {
+			"displayName": "Расстояние",
+			"description": "Значение «Расстояние», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "33.44"
+		},
+		"coin": {
+			"displayName": "Монета",
+			"description": "Значение «Монета», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "Биткойн",
+			"options": {
+				"0x": {
+					"displayName": "0x"
+				},
+				"Aave Coin": {
+					"displayName": "Ааве монета"
+				},
+				"Algorand": {
+					"displayName": "Альгоранд"
+				},
+				"Aragon": {
+					"displayName": "Арагон"
+				},
+				"Augur": {
+					"displayName": "Авгур"
+				},
+				"AugurV2": {
+					"displayName": "АвгурV2"
+				},
+				"AuroraCoin": {
+					"displayName": "АврораКоин"
+				},
+				"BTU Protocol": {
+					"displayName": "Протокол БТЕ"
+				},
+				"Bancor": {
+					"displayName": "Банкор"
+				},
+				"Bankex": {
+					"displayName": "Банкекс"
+				},
+				"Basic Attention Token": {
+					"displayName": "Жетон основного внимания"
+				},
+				"BeaverCoin": {
+					"displayName": "БиверКоин"
+				},
+				"BioCoin": {
+					"displayName": "Биокоин"
+				},
+				"Bitcoin": {
+					"displayName": "Биткойн"
+				},
+				"Bitcoin SV": {
+					"displayName": "Биткойн СВ"
+				},
+				"BitcoinCash": {
+					"displayName": "БиткойнКэш"
+				},
+				"BitcoinGold": {
+					"displayName": "БиткойнЗолото"
+				},
+				"BitcoinPrivate": {
+					"displayName": "BitcoinЧастный"
+				},
+				"BitcoinZ": {
+					"displayName": "БиткойнZ"
+				},
+				"BlockTrade": {
+					"displayName": "БлокТрейд"
+				},
+				"CUSD": {
+					"displayName": "CUSD"
+				},
+				"Callisto": {
+					"displayName": "Каллисто"
+				},
+				"Cardano": {
+					"displayName": "Кардано"
+				},
+				"Chainlink": {
+					"displayName": "Звено цепи"
+				},
+				"Civic": {
+					"displayName": "Гражданский"
+				},
+				"Compound": {
+					"displayName": "Сложный"
+				},
+				"Cred": {
+					"displayName": "Кред"
+				},
+				"Crypto": {
+					"com Coin": {
+						"displayName": "Crypto.com монета"
+					}
+				},
+				"Dash": {
+					"displayName": "Бросаться"
+				},
+				"Decentraland": {
+					"displayName": "Децентралэнд"
+				},
+				"Decred": {
+					"displayName": "Декред"
+				},
+				"DigiByte": {
+					"displayName": "Дигибайт"
+				},
+				"District0x": {
+					"displayName": "Район0x"
+				},
+				"DogeCoin": {
+					"displayName": "ДожКоин"
+				},
+				"EOS": {
+					"displayName": "EOS"
+				},
+				"Enjin Coin": {
+					"displayName": "Энджин Монета"
+				},
+				"EtherZero": {
+					"displayName": "ЭфирЗеро"
+				},
+				"Ethereum": {
+					"displayName": "Эфириум"
+				},
+				"EthereumClassic": {
+					"displayName": "ЭфириумКлассический"
+				},
+				"Expanse": {
+					"displayName": "Простор"
+				},
+				"FirmaChain": {
+					"displayName": "ФирмаЧейн"
+				},
+				"FreiCoin": {
+					"displayName": "ФрейКоин"
+				},
+				"GameCredits": {
+					"displayName": "Игровые кредиты"
+				},
+				"GarliCoin": {
+					"displayName": "ГарлиКоин"
+				},
+				"Gnosis": {
+					"displayName": "Гнозис"
+				},
+				"Golem": {
+					"displayName": "Голем"
+				},
+				"Golem (GNT)": {
+					"displayName": "Голем (GNT)"
+				},
+				"HedgeTrade": {
+					"displayName": "ХеджТрейд"
+				},
+				"Hush": {
+					"displayName": "Тише"
+				},
+				"HyperSpace": {
+					"displayName": "Гиперпространство"
+				},
+				"Komodo": {
+					"displayName": "Комодо"
+				},
+				"LBRY Credits": {
+					"displayName": "Кредиты LBRY"
+				},
+				"Lisk": {
+					"displayName": "Лиск"
+				},
+				"LiteCoin": {
+					"displayName": "ЛайтКоин"
+				},
+				"Loom Network": {
+					"displayName": "Ткацкая сеть"
+				},
+				"Maker": {
+					"displayName": "Создатель"
+				},
+				"Matchpool": {
+					"displayName": "Матчпул"
+				},
+				"Matic": {
+					"displayName": "Матич"
+				},
+				"MegaCoin": {
+					"displayName": "МегаКоин"
+				},
+				"Melon": {
+					"displayName": "Дыня"
+				},
+				"Metal": {
+					"displayName": "Металл"
+				},
+				"MonaCoin": {
+					"displayName": "МонаКоин"
+				},
+				"Monero": {
+					"displayName": "Монеро"
+				},
+				"Multi-collateral DAI": {
+					"displayName": "Многосторонний DAI"
+				},
+				"NameCoin": {
+					"displayName": "ИмяCoin"
+				},
+				"Nano": {
+					"displayName": "Нано"
+				},
+				"Nem": {
+					"displayName": "Нэм"
+				},
+				"Neo": {
+					"displayName": "Нео"
+				},
+				"NeoGas": {
+					"displayName": "НеоГаз"
+				},
+				"Numeraire": {
+					"displayName": "Счетчик"
+				},
+				"Ocean Protocol": {
+					"displayName": "Океанский протокол"
+				},
+				"Odyssey": {
+					"displayName": "Одиссея"
+				},
+				"OmiseGO": {
+					"displayName": "ОмисеГО"
+				},
+				"PIVX": {
+					"displayName": "PIVX"
+				},
+				"Paxos": {
+					"displayName": "Паксос"
+				},
+				"PeerCoin": {
+					"displayName": "ПирКоин"
+				},
+				"Polkadot": {
+					"displayName": "В горошек"
+				},
+				"Polymath": {
+					"displayName": "Полимат"
+				},
+				"PrimeCoin": {
+					"displayName": "ПраймКоин"
+				},
+				"ProtoShares": {
+					"displayName": "Протоакции"
+				},
+				"Qtum": {
+					"displayName": "Ктум"
+				},
+				"Quant": {
+					"displayName": "Квант"
+				},
+				"Quantum Resistant Ledger": {
+					"displayName": "Квантово-устойчивая книга"
+				},
+				"RaiBlocks": {
+					"displayName": "РайБлокс"
+				},
+				"Ripio Credit Network": {
+					"displayName": "Кредитная сеть Рипио"
+				},
+				"Ripple": {
+					"displayName": "Пульсация"
+				},
+				"SOLVE": {
+					"displayName": "SOLVE"
+				},
+				"Salt": {
+					"displayName": "Соль"
+				},
+				"Serve": {
+					"displayName": "Служить"
+				},
+				"Siacoin": {
+					"displayName": "Сиакоин"
+				},
+				"SnowGem": {
+					"displayName": "Снежный камень"
+				},
+				"SolarCoin": {
+					"displayName": "СоларКоин"
+				},
+				"Spendcoin": {
+					"displayName": "Спендикоин"
+				},
+				"Status": {
+					"displayName": "Статус"
+				},
+				"Stellar": {
+					"displayName": "Звездный"
+				},
+				"Storj": {
+					"displayName": "Сторж"
+				},
+				"Storm": {
+					"displayName": "Шторм"
+				},
+				"StormX": {
+					"displayName": "ШтормX"
+				},
+				"Swarm City": {
+					"displayName": "Рой-Сити"
+				},
+				"Synthetix Network": {
+					"displayName": "Сеть Синтетикс"
+				},
+				"TEMCO": {
+					"displayName": "TEMCO"
+				},
+				"Tap": {
+					"displayName": "Кран"
+				},
+				"TenX": {
+					"displayName": "ТенХ"
+				},
+				"Tether": {
+					"displayName": "Тетер"
+				},
+				"Tezos": {
+					"displayName": "Тезос"
+				},
+				"Tron": {
+					"displayName": "Трон"
+				},
+				"TrueUSD": {
+					"displayName": "TrueUSD"
+				},
+				"USD Coin": {
+					"displayName": "Монета доллара США"
+				},
+				"Uniswap Coin": {
+					"displayName": "Монета Uniswap"
+				},
+				"VeChain": {
+					"displayName": "Вечейн"
+				},
+				"VertCoin": {
+					"displayName": "ВертКоин"
+				},
+				"Viberate": {
+					"displayName": "Виберейт"
+				},
+				"VoteCoin": {
+					"displayName": "ГолосоватьCoin"
+				},
+				"Waves": {
+					"displayName": "Волны"
+				},
+				"Wings": {
+					"displayName": "Крылья"
+				},
+				"ZCash": {
+					"displayName": "ZCash"
+				},
+				"ZClassic": {
+					"displayName": "ZКлассик"
+				},
+				"ZenCash": {
+					"displayName": "ДзенКэш"
+				},
+				"iExec RLC": {
+					"displayName": "IExec RLC"
+				},
+				"loki": {
+					"displayName": "Локи"
+				}
+			}
+		},
+		"country_code": {
+			"displayName": "Код страны",
+			"description": "Значение «Код страны», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "ES"
+		},
+		"amount": {
+			"displayName": "Количество",
+			"description": "Значение «Сумма», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "10"
+		},
+		"isocode1": {
+			"displayName": "Изокод1",
+			"description": "Значение «Isocode1», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "EUR",
+			"options": {
+				"AUD": {
+					"displayName": "AUD"
+				},
+				"BGN": {
+					"displayName": "BGN"
+				},
+				"BRL": {
+					"displayName": "BRL"
+				},
+				"CAD": {
+					"displayName": "CAD"
+				},
+				"CHF": {
+					"displayName": "CHF"
+				},
+				"CNY": {
+					"displayName": "CNY"
+				},
+				"CZK": {
+					"displayName": "CZK"
+				},
+				"DKK": {
+					"displayName": "DKK"
+				},
+				"EUR": {
+					"displayName": "EUR"
+				},
+				"GBP": {
+					"displayName": "GBP"
+				},
+				"HKD": {
+					"displayName": "HKD"
+				},
+				"HRK": {
+					"displayName": "HRK"
+				},
+				"HUF": {
+					"displayName": "HUF"
+				},
+				"IDR": {
+					"displayName": "IDR"
+				},
+				"ILS": {
+					"displayName": "ILS"
+				},
+				"INR": {
+					"displayName": "INR"
+				},
+				"ISK": {
+					"displayName": "ISK"
+				},
+				"JPY": {
+					"displayName": "JPY"
+				},
+				"KRW": {
+					"displayName": "KRW"
+				},
+				"MXN": {
+					"displayName": "MXN"
+				},
+				"MYR": {
+					"displayName": "MYR"
+				},
+				"NOK": {
+					"displayName": "NOK"
+				},
+				"NZD": {
+					"displayName": "NZD"
+				},
+				"PHP": {
+					"displayName": "PHP"
+				},
+				"PLN": {
+					"displayName": "PLN"
+				},
+				"RON": {
+					"displayName": "RON"
+				},
+				"RUB": {
+					"displayName": "RUB"
+				},
+				"SEK": {
+					"displayName": "SEK"
+				},
+				"SGD": {
+					"displayName": "SGD"
+				},
+				"THB": {
+					"displayName": "THB"
+				},
+				"TRY": {
+					"displayName": "TRY"
+				},
+				"USD": {
+					"displayName": "USD"
+				},
+				"ZAR": {
+					"displayName": "ZAR"
+				}
+			}
+		},
+		"isocode2": {
+			"displayName": "Изокод2",
+			"description": "Значение «Isocode2», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "USD",
+			"options": {
+				"AUD": {
+					"displayName": "AUD"
+				},
+				"BGN": {
+					"displayName": "BGN"
+				},
+				"BRL": {
+					"displayName": "BRL"
+				},
+				"CAD": {
+					"displayName": "CAD"
+				},
+				"CHF": {
+					"displayName": "CHF"
+				},
+				"CNY": {
+					"displayName": "CNY"
+				},
+				"CZK": {
+					"displayName": "CZK"
+				},
+				"DKK": {
+					"displayName": "DKK"
+				},
+				"EUR": {
+					"displayName": "EUR"
+				},
+				"GBP": {
+					"displayName": "GBP"
+				},
+				"HKD": {
+					"displayName": "HKD"
+				},
+				"HRK": {
+					"displayName": "HRK"
+				},
+				"HUF": {
+					"displayName": "HUF"
+				},
+				"IDR": {
+					"displayName": "IDR"
+				},
+				"ILS": {
+					"displayName": "ILS"
+				},
+				"INR": {
+					"displayName": "INR"
+				},
+				"ISK": {
+					"displayName": "ISK"
+				},
+				"JPY": {
+					"displayName": "JPY"
+				},
+				"KRW": {
+					"displayName": "KRW"
+				},
+				"MXN": {
+					"displayName": "MXN"
+				},
+				"MYR": {
+					"displayName": "MYR"
+				},
+				"NOK": {
+					"displayName": "NOK"
+				},
+				"NZD": {
+					"displayName": "NZD"
+				},
+				"PHP": {
+					"displayName": "PHP"
+				},
+				"PLN": {
+					"displayName": "PLN"
+				},
+				"RON": {
+					"displayName": "RON"
+				},
+				"RUB": {
+					"displayName": "RUB"
+				},
+				"SEK": {
+					"displayName": "SEK"
+				},
+				"SGD": {
+					"displayName": "SGD"
+				},
+				"THB": {
+					"displayName": "THB"
+				},
+				"TRY": {
+					"displayName": "TRY"
+				},
+				"USD": {
+					"displayName": "USD"
+				},
+				"ZAR": {
+					"displayName": "ZAR"
+				}
+			}
+		},
+		"date1": {
+			"displayName": "Дата1",
+			"description": "Значение «Date1», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "1975-05-20"
+		},
+		"date2": {
+			"displayName": "Дата2",
+			"description": "Значение «Date2», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "1975-05-19"
+		},
+		"date3": {
+			"displayName": "Дата3",
+			"description": "Значение «Date3», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "1975-05-22"
+		},
+		"period": {
+			"displayName": "Период",
+			"description": "Значение «Период», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "секунды",
+			"options": {
+				"days": {
+					"displayName": "Дни"
+				},
+				"hours": {
+					"displayName": "Часы"
+				},
+				"minutes": {
+					"displayName": "Минуты"
+				},
+				"seconds": {
+					"displayName": "Секунды"
+				}
+			}
+		},
+		"useragent": {
+			"displayName": "Пользовательский агент",
+			"description": "Значение «Useragent», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "AppleTV5,3/9.1.1"
+		},
+		"type": {
+			"displayName": "Тип",
+			"description": "Значение «Тип», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "A",
+			"options": {
+				"A": {
+					"displayName": "A"
+				},
+				"AAAA": {
+					"displayName": "AAAA"
+				},
+				"CNAME": {
+					"displayName": "CNAME"
+				},
+				"MX": {
+					"displayName": "MX"
+				},
+				"NS": {
+					"displayName": "NS"
+				},
+				"TXT": {
+					"displayName": "TXT"
+				}
+			}
+		},
+		"width": {
+			"displayName": "Ширина",
+			"description": "Значение «Ширина», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "640",
+			"options": {
+				"160": {
+					"displayName": "160"
+				},
+				"320": {
+					"displayName": "320"
+				},
+				"640": {
+					"displayName": "640"
+				},
+				"800": {
+					"displayName": "800"
+				},
+				"1024": {
+					"displayName": "1024"
+				}
+			}
+		},
+		"fullpage": {
+			"displayName": "Полная страница",
+			"description": "Значение «Полная страница», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "нет",
+			"options": {
+				"no": {
+					"displayName": "Нет"
+				},
+				"yes": {
+					"displayName": "Да"
+				}
+			}
+		},
+		"selector": {
+			"displayName": "Селектор",
+			"description": "Значение «Селектор», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "h1.mt-4"
+		},
+		"delay": {
+			"displayName": "Задерживать",
+			"description": "Значение «Задержка», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "1000"
+		},
+		"viewport": {
+			"displayName": "Область просмотра",
+			"description": "Значение «Viewport», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "1440x900"
+		},
+		"email_from": {
+			"displayName": "Электронная почта от",
+			"description": "Значение «Электронная почта от», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "mcolomer@killia.com"
+		},
+		"email_to": {
+			"displayName": "Отправьте электронное письмо по адресу",
+			"description": "Значение «Электронная почта», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "mcolomer@gmail.com"
+		},
+		"subject": {
+			"displayName": "Предмет",
+			"description": "Значение «Тема», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "Приветственное письмо"
+		},
+		"body": {
+			"displayName": "Тело",
+			"description": "Значение «Body», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "Привет!<br><br>Добро пожаловать в uProc и начните <b>улучшать</b> свои бизнес-процессы!"
+		},
+		"page": {
+			"displayName": "Страница",
+			"description": "Значение «Страница», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "1"
+		},
+		"firstname": {
+			"displayName": "Имя",
+			"description": "Значение «Имя», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "Микель"
+		},
+		"lastname": {
+			"displayName": "Фамилия",
+			"description": "Значение «Фамилия», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "Коломер"
+		},
+		"mode": {
+			"displayName": "Режим",
+			"description": "Значение «Режим», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "проверять",
+			"options": {
+				"guess": {
+					"displayName": "Предполагать"
+				},
+				"only_verify": {
+					"displayName": "Only_verify"
+				},
+				"verify": {
+					"displayName": "Проверять"
+				}
+			}
+		},
+		"fullname": {
+			"displayName": "Полное имя",
+			"description": "Значение «Полное имя», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "Микель Коломер"
+		},
+		"mobile": {
+			"displayName": "мобильный",
+			"description": "Значение «Мобильный», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "34605281220"
+		},
+		"url_dlr": {
+			"displayName": "URL-адрес длр",
+			"description": "Значение «Url dlr», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "https://sms-dlr.free.beeceptor.com"
+		},
+		"source": {
+			"displayName": "Источник",
+			"description": "Значение «Источник», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "https://habilon.com/wp-content/uploads/2019/09/11b07c01.pdf"
+		},
+		"destination": {
+			"displayName": "Место назначения",
+			"description": "Значение «Назначение», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "s3://ACCESSKEY:SECRETKEY@s3.amazon.com/BUCKET_NAME/sample.pdf"
+		},
+		"size": {
+			"displayName": "Размер",
+			"description": "Значение «Размер», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "80"
+		},
+		"list": {
+			"displayName": "Список",
+			"description": "Значение «Список», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "последние соединения"
+		},
+		"keywords": {
+			"displayName": "Ключевые слова",
+			"description": "Значение «Ключевые слова», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "Рост"
+		},
+		"current_company": {
+			"displayName": "Текущая компания",
+			"description": "Значение «Текущая компания», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "Яблоко"
+		},
+		"current_title": {
+			"displayName": "Текущее название",
+			"description": "Значение «Текущий заголовок», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "Инженер-программист"
+		},
+		"included_companies": {
+			"displayName": "Включенные компании",
+			"description": "Значение «Включенные компании», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "Сони, IBM"
+		},
+		"excluded_companies": {
+			"displayName": "Исключенные компании",
+			"description": "Значение «Исключенные компании», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "Яблоко, БП"
+		},
+		"included_titles": {
+			"displayName": "Включенные названия",
+			"description": "Значение «Включенные заголовки», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "DevOps-инженер,Системный инженер"
+		},
+		"excluded_titles": {
+			"displayName": "Исключенные названия",
+			"description": "Значение «Исключенные заголовки», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "Большие данные, инспектор"
+		},
+		"included_keywords": {
+			"displayName": "Включенные ключевые слова",
+			"description": "Значение «Включенные ключевые слова», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "ключевое слово_to_include"
+		},
+		"excluded_keywords": {
+			"displayName": "Исключенные ключевые слова",
+			"description": "Значение «Исключенные ключевые слова», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "ключевое слово_to_exclude"
+		},
+		"length1": {
+			"displayName": "Длина1",
+			"description": "Значение «Длина1», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "3"
+		},
+		"length2": {
+			"displayName": "Длина2",
+			"description": "Значение «Длина2», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "4"
+		},
+		"length": {
+			"displayName": "Длина",
+			"description": "Значение «Длина», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "3"
+		},
+		"separator": {
+			"displayName": "Сепаратор",
+			"description": "Значение «Разделитель», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": ","
+		},
+		"latitude": {
+			"displayName": "Широта",
+			"description": "Значение «Широта», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "40.4379331"
+		},
+		"longitude": {
+			"displayName": "Долгота",
+			"description": "Значение «Долгота», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "-3.7497476"
+		},
+		"radius": {
+			"displayName": "Радиус",
+			"description": "Значение «Радиус», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "250"
+		},
+		"imei": {
+			"displayName": "Имей",
+			"description": "Значение «Imei», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "490154203237518"
+		},
+		"regex": {
+			"displayName": "регулярное выражение",
+			"description": "Значение «Регулярное выражение», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "uProc"
+		},
+		"host": {
+			"displayName": "Хозяин",
+			"description": "Значение «Хост», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "www.google.es"
+		},
+		"port": {
+			"displayName": "Порт",
+			"description": "Значение «Порт», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "80"
+		},
+		"table": {
+			"displayName": "Стол",
+			"description": "Значение «Таблица», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "3"
+		},
+		"number1": {
+			"displayName": "Номер1",
+			"description": "Значение «Номер1», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "23"
+		},
+		"number2": {
+			"displayName": "Номер2",
+			"description": "Значение «Номер2», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "21"
+		},
+		"number3": {
+			"displayName": "Номер3",
+			"description": "Значение «Номер3», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "24"
+		},
+		"luhn": {
+			"displayName": "Лун",
+			"description": "Значение «Лун», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "79927398713"
+		},
+		"mod": {
+			"displayName": "Мод",
+			"description": "Значение «Mod», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "2"
+		},
+		"rest": {
+			"displayName": "Отдых",
+			"description": "Значение «Rest», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "0"
+		},
+		"password": {
+			"displayName": "Пароль",
+			"description": "Значение «Пароль», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "1agdA*$#"
+		},
+		"locality": {
+			"displayName": "Местность",
+			"description": "Значение «Locality», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "Английский",
+			"options": {
+				"Australia (English)": {
+					"displayName": "Австралия (английский)"
+				},
+				"Australia Ocker (English)": {
+					"displayName": "Австралия Окер (английский)"
+				},
+				"Azerbaijani": {
+					"displayName": "азербайджанский"
+				},
+				"Bork (English)": {
+					"displayName": "Борк (английский)"
+				},
+				"Canada (English)": {
+					"displayName": "Канада (английский)"
+				},
+				"Canada (French)": {
+					"displayName": "Канада (французский)"
+				},
+				"Chinese": {
+					"displayName": "китайский"
+				},
+				"Chinese (Taiwan)": {
+					"displayName": "Китайский (Тайвань)"
+				},
+				"Czech": {
+					"displayName": "чешский"
+				},
+				"Dutch": {
+					"displayName": "Голландский"
+				},
+				"English": {
+					"displayName": "Английский"
+				},
+				"Farsi": {
+					"displayName": "фарси"
+				},
+				"French": {
+					"displayName": "Французский"
+				},
+				"Georgian": {
+					"displayName": "грузинский"
+				},
+				"German": {
+					"displayName": "немецкий"
+				},
+				"German (Austria)": {
+					"displayName": "Немецкий (Австрия)"
+				},
+				"German (Switzerland)": {
+					"displayName": "Немецкий (Швейцария)"
+				},
+				"Great Britain (English)": {
+					"displayName": "Великобритания (английский)"
+				},
+				"India (English)": {
+					"displayName": "Индия (английский)"
+				},
+				"Indonesia": {
+					"displayName": "Индонезия"
+				},
+				"Ireland (English)": {
+					"displayName": "Ирландия (английский)"
+				},
+				"Italian": {
+					"displayName": "итальянский"
+				},
+				"Japanese": {
+					"displayName": "японский"
+				},
+				"Korean": {
+					"displayName": "корейский"
+				},
+				"Nepalese": {
+					"displayName": "непальский"
+				},
+				"Norwegian": {
+					"displayName": "норвежский"
+				},
+				"Polish": {
+					"displayName": "Польский"
+				},
+				"Portuguese (Brazil)": {
+					"displayName": "Португальский (Бразилия)"
+				},
+				"Russian": {
+					"displayName": "Русский"
+				},
+				"Slovakian": {
+					"displayName": "Словацкий"
+				},
+				"Spanish": {
+					"displayName": "испанский"
+				},
+				"Spanish Mexico": {
+					"displayName": "Испанская Мексика"
+				},
+				"Swedish": {
+					"displayName": "Шведский"
+				},
+				"Turkish": {
+					"displayName": "турецкий"
+				},
+				"Ukrainian": {
+					"displayName": "Украинский"
+				},
+				"United States (English)": {
+					"displayName": "США (английский)"
+				},
+				"Vietnamese": {
+					"displayName": "вьетнамский"
+				}
+			}
+		},
+		"surname": {
+			"displayName": "Фамилия",
+			"description": "Значение «Фамилия», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "Кол"
+		},
+		"province": {
+			"displayName": "Провинция",
+			"description": "Значение «Провинция», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "B"
+		},
+		"format": {
+			"displayName": "Формат",
+			"description": "Значение «Формат», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "%09d"
+		},
+		"text1": {
+			"displayName": "Текст 1",
+			"description": "Значение «Text1», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "тест"
+		},
+		"text2": {
+			"displayName": "Текст2",
+			"description": "Значение «Text2», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "т"
+		},
+		"glue": {
+			"displayName": "Клей",
+			"description": "Значение «Клей», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": ","
+		},
+		"field": {
+			"displayName": "Поле",
+			"description": "Значение «Поле», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "имя",
+			"options": {
+				"alphabetic": {
+					"displayName": "алфавитный"
+				},
+				"alphanumeric": {
+					"displayName": "Буквенно-цифровой"
+				},
+				"cif": {
+					"displayName": "Сиф"
+				},
+				"city": {
+					"displayName": "Город"
+				},
+				"country": {
+					"displayName": "Страна"
+				},
+				"date": {
+					"displayName": "Дата"
+				},
+				"decimal": {
+					"displayName": "Десятичный"
+				},
+				"dni": {
+					"displayName": "Дни"
+				},
+				"domain": {
+					"displayName": "Домен"
+				},
+				"email": {
+					"displayName": "Электронная почта"
+				},
+				"gender": {
+					"displayName": "Пол"
+				},
+				"integer": {
+					"displayName": "Целое число"
+				},
+				"ip": {
+					"displayName": "IP"
+				},
+				"mobile": {
+					"displayName": "мобильный"
+				},
+				"name": {
+					"displayName": "Имя"
+				},
+				"nie": {
+					"displayName": "Не"
+				},
+				"nif": {
+					"displayName": "Ниф"
+				},
+				"phone": {
+					"displayName": "Телефон"
+				},
+				"province": {
+					"displayName": "Провинция"
+				},
+				"zipcode": {
+					"displayName": "Почтовый индекс"
+				}
+			}
+		},
+		"find": {
+			"displayName": "Находить",
+			"description": "Значение «Найти», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "о"
+		},
+		"replace": {
+			"displayName": "Заменять",
+			"description": "Значение «Заменить», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "ты"
+		},
+		"texts": {
+			"displayName": "Тексты",
+			"description": "Значение «Тексты», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "образец, образцы"
+		},
+		"html": {
+			"displayName": "HTML",
+			"description": "Значение «Html», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "<div>Это <strong>фантастически!</strong></div>"
+		},
+		"tin": {
+			"displayName": "Олово",
+			"description": "Значение «Tin», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "44016116G"
+		},
+		"vin": {
+			"displayName": "Вин",
+			"description": "Значение «Vin», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "JF2AC53B3GE202643"
+		},
+		"count1": {
+			"displayName": "Количество1",
+			"description": "Значение «Count1», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "1"
+		},
+		"count2": {
+			"displayName": "Количество2",
+			"description": "Значение «Count2», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "2"
+		},
+		"count": {
+			"displayName": "Считать",
+			"description": "Значение «Count», которое будет использоваться в качестве параметра для этой операции.",
+			"placeholder": "2"
+		},
+		"additionalOptions": {
+			"displayName": "Дополнительные опции",
+			"placeholder": "Добавить вариант",
+			"options": {
+				"dataWebhook": {
+					"displayName": "Вебхук данных",
+					"description": "URL-адрес для отправки ответа инструмента, когда инструмент обработает ваш запрос"
+				}
+			}
+		}
+	}
+}

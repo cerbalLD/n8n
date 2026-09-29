@@ -1,0 +1,166 @@
+{
+	"header": {
+		"displayName": "NASA",
+		"description": "Получить данные из API НАСА"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"asteroidNeoBrowse": {
+					"displayName": "Астероид Нео-Обзор"
+				},
+				"asteroidNeoFeed": {
+					"displayName": "Нео-канал об астероиде"
+				},
+				"asteroidNeoLookup": {
+					"displayName": "Нео-поиск астероидов"
+				},
+				"astronomyPictureOfTheDay": {
+					"displayName": "Астрономическая картина дня"
+				},
+				"donkiCoronalMassEjection": {
+					"displayName": "Корональный выброс массы DONKI"
+				},
+				"donkiHighSpeedStream": {
+					"displayName": "DONKI Высокоскоростной поток"
+				},
+				"donkiInterplanetaryShock": {
+					"displayName": "Донки Межпланетный удар"
+				},
+				"donkiMagnetopauseCrossing": {
+					"displayName": "DONKI Пересечение магнитопаузы"
+				},
+				"donkiNotifications": {
+					"displayName": "Уведомление Донки"
+				},
+				"donkiRadiationBeltEnhancement": {
+					"displayName": "Улучшение радиационного пояса DONKI"
+				},
+				"donkiSolarEnergeticParticle": {
+					"displayName": "Солнечная энергетическая частица DONKI"
+				},
+				"donkiSolarFlare": {
+					"displayName": "Солнечная вспышка DONKI"
+				},
+				"donkiWsaEnlilSimulation": {
+					"displayName": "DONKI WSA+EnlilСимуляторы"
+				},
+				"earthAssets": {
+					"displayName": "Земляной актив"
+				},
+				"earthImagery": {
+					"displayName": "Изображения Земли"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"get": {
+					"displayName": "Получать",
+					"description": "Получить данные двухстрочного набора элементов"
+				},
+				"getAll": {
+					"displayName": "Получить много",
+					"description": "Просмотрите общий набор данных об астероидах"
+				}
+			}
+		},
+		"asteroidId": {
+			"displayName": "Идентификатор астероида",
+			"description": "Идентификатор астероида, который необходимо вернуть",
+			"placeholder": "3542519"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"includeCloseApproachData": {
+					"displayName": "Включить данные близкого подхода",
+					"description": "Включать ли все данные о близком сближении в поиск астероидов"
+				},
+				"date": {
+					"displayName": "Дата",
+					"placeholder": "YYYY-MM-DD",
+					"description": "Дата изображения"
+				},
+				"startDate": {
+					"displayName": "Дата начала",
+					"placeholder": "YYYY-MM-DD"
+				},
+				"endDate": {
+					"displayName": "Дата окончания",
+					"placeholder": "YYYY-MM-DD"
+				},
+				"location": {
+					"displayName": "Расположение",
+					"description": "Местоположение геомагнитной бури",
+					"options": {
+						"ALL": {
+							"displayName": "Все"
+						},
+						"earth": {
+							"displayName": "Земля"
+						},
+						"MESSENGER": {
+							"displayName": "Мессенджер"
+						},
+						"STEREO A": {
+							"displayName": "Стерео А"
+						},
+						"STEREO B": {
+							"displayName": "Стерео Б"
+						}
+					}
+				},
+				"catalog": {
+					"displayName": "Каталог",
+					"description": "Каталог геомагнитной бури",
+					"options": {
+						"ALL": {
+							"displayName": "Все"
+						},
+						"SWRC_CATALOG": {
+							"displayName": "Каталог SWRC"
+						},
+						"WINSLOW_MESSENGER_ICME_CATALOG": {
+							"displayName": "Каталог ICME Winslow Messenger"
+						}
+					}
+				},
+				"dim": {
+					"displayName": "Степени",
+					"description": "Ширина и высота изображения в градусах",
+					"placeholder": "0.025"
+				}
+			}
+		},
+		"download": {
+			"displayName": "Загрузить изображение",
+			"description": "По умолчанию возвращается только URL-адрес изображения. Если установлено значение true, изображение будет загружено."
+		},
+		"binaryPropertyName": {
+			"displayName": "Поместите выходной файл в поле",
+			"hint": "Имя выходного двоичного поля, в которое помещается файл."
+		},
+		"lat": {
+			"displayName": "Широта",
+			"description": "Широта расположения изображения",
+			"placeholder": "47.751076"
+		},
+		"lon": {
+			"displayName": "Долгота",
+			"description": "Долгота местоположения изображения",
+			"placeholder": "-120.740135"
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		}
+	}
+}

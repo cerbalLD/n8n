@@ -1,0 +1,183 @@
+{
+	"header": {
+		"displayName": "Дискус",
+		"description": "Доступ к данным на Disqus"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"forum": {
+					"displayName": "Форум"
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"get": {
+					"displayName": "Получать",
+					"description": "Вернуть информацию о форуме"
+				},
+				"getCategories": {
+					"displayName": "Получить все категории",
+					"description": "Вернуть список категорий на форуме"
+				},
+				"getThreads": {
+					"displayName": "Получить все темы",
+					"description": "Вернуть список тем на форуме"
+				},
+				"getPosts": {
+					"displayName": "Получить все сообщения",
+					"description": "Вернуть список сообщений на форуме"
+				}
+			}
+		},
+		"id": {
+			"displayName": "Название форума",
+			"description": "Короткое имя (также известное как идентификатор) форума для получения тем."
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"attach": {
+					"displayName": "Прикреплять",
+					"options": {
+						"counters": {
+							"displayName": "Счетчики"
+						},
+						"followsForum": {
+							"displayName": "следует за форумом"
+						},
+						"forumCanDisableAds": {
+							"displayName": "форумCanDisableAds"
+						},
+						"forumDaysAlive": {
+							"displayName": "форумDaysAlive"
+						},
+						"forumFeatures": {
+							"displayName": "Возможности форума"
+						},
+						"forumForumCategory": {
+							"displayName": "форумФорумКатегория"
+						},
+						"forumIntegration": {
+							"displayName": "форумИнтеграция"
+						},
+						"forumNewPolicy": {
+							"displayName": "форумНоваяПолитика"
+						},
+						"forumPermissions": {
+							"displayName": "Разрешения форума"
+						}
+					}
+				},
+				"related": {
+					"displayName": "Связанный",
+					"description": "Вы можете указать отношения, которые будут включены в ваш ответ.",
+					"options": {
+						"author": {
+							"displayName": "автор"
+						},
+						"thread": {
+							"displayName": "Нить"
+						},
+						"forum": {
+							"displayName": "Форум"
+						}
+					}
+				},
+				"filters": {
+					"displayName": "Фильтры",
+					"description": "Вы можете указать фильтры для вашего ответа",
+					"options": {
+						"Has_Bad_Word": {
+							"displayName": "Has_Bad_Word"
+						},
+						"Has_Link": {
+							"displayName": "Has_Link"
+						},
+						"Has_Low_Rep_Author": {
+							"displayName": "Has_Low_Rep_Author"
+						},
+						"Has_Media": {
+							"displayName": "Has_Media"
+						},
+						"Is_Anonymous": {
+							"displayName": "Is_Anonymous"
+						},
+						"Is_At_Flag_Limit": {
+							"displayName": "Is_At_Flag_Limit"
+						},
+						"Is_Flagged": {
+							"displayName": "Is_Flagged"
+						},
+						"Is_Toxic": {
+							"displayName": "Is_Toxic"
+						},
+						"Modified_By_Rule": {
+							"displayName": "Изменено_по_правилу"
+						},
+						"No_Issue": {
+							"displayName": "No_Issue"
+						},
+						"Shadow_Banned": {
+							"displayName": "Shadow_Banned"
+						}
+					}
+				},
+				"include": {
+					"displayName": "Включать",
+					"description": "Вы можете указать отношения, которые будут включены в ваш ответ.",
+					"options": {
+						"approved": {
+							"displayName": "Одобренный"
+						},
+						"closed": {
+							"displayName": "Закрыто"
+						},
+						"open": {
+							"displayName": "Открыть"
+						},
+						"killed": {
+							"displayName": "Убит"
+						}
+					}
+				},
+				"order": {
+					"displayName": "Заказ",
+					"description": "Вы можете указать порядок сортировки вашего ответа",
+					"options": {
+						"asc": {
+							"displayName": "ASC"
+						},
+						"desc": {
+							"displayName": "DESC"
+						}
+					}
+				},
+				"query": {
+					"displayName": "Запрос",
+					"description": "Вы можете указать запрос для выбора: по возрастанию, по убыванию вашего ответа."
+				},
+				"since": {
+					"displayName": "С",
+					"description": "Временная метка Unix (или стандарт даты и времени ISO)"
+				},
+				"thread": {
+					"displayName": "Нить",
+					"description": "Ищет тему по ID. Вы можете передать нам тип запроса «ident» вместо идентификатора, включив «forum». Вы можете передать нам тип запроса «ссылка» для фильтрации по URL-адресу. Вы должны пройти «форум», если у вас нет дополнения Pro API Access."
+				}
+			}
+		},
+		"returnAll": {
+			"displayName": "Вернуть все",
+			"description": "Возвращать ли все результаты или только до заданного предела"
+		},
+		"limit": {
+			"displayName": "Лимит",
+			"description": "Максимальное количество возвращаемых результатов"
+		}
+	}
+}

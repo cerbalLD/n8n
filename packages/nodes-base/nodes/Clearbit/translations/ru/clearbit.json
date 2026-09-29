@@ -1,0 +1,97 @@
+{
+	"header": {
+		"displayName": "Клирбит",
+		"description": "Использование Clearbit API"
+	},
+	"nodeView": {
+		"resource": {
+			"displayName": "Ресурс",
+			"options": {
+				"company": {
+					"displayName": "Компания",
+					"description": "API компании позволяет искать компанию по ее домену."
+				},
+				"person": {
+					"displayName": "Человек",
+					"description": "API Person позволяет получать социальную информацию, связанную с адресом электронной почты, например имя человека, местоположение и дескриптор Twitter."
+				}
+			}
+		},
+		"operation": {
+			"displayName": "Операция",
+			"options": {
+				"autocomplete": {
+					"displayName": "Автозаполнение",
+					"description": "Автоматически заполняйте названия компаний и получайте логотип и домен"
+				},
+				"enrich": {
+					"displayName": "Обогащать",
+					"description": "Поиск данных о человеке и компании по адресу электронной почты или домену."
+				}
+			}
+		},
+		"domain": {
+			"displayName": "Домен",
+			"description": "Домен для поиска"
+		},
+		"additionalFields": {
+			"displayName": "Дополнительные поля",
+			"placeholder": "Добавить поле",
+			"options": {
+				"companyName": {
+					"displayName": "Название компании",
+					"description": "Название компании"
+				},
+				"facebook": {
+					"displayName": "Фейсбук",
+					"description": "URL-адрес Facebook для этого человека"
+				},
+				"linkedin": {
+					"displayName": "Линкедин",
+					"description": "URL-адрес LinkedIn для компании"
+				},
+				"twitter": {
+					"displayName": "Твиттер",
+					"description": "Дескриптор Twitter для человека"
+				},
+				"company": {
+					"displayName": "Компания",
+					"description": "Имя работодателя человека"
+				},
+				"companyDomain": {
+					"displayName": "Домен компании",
+					"description": "Домен работодателя человека"
+				},
+				"familyName": {
+					"displayName": "Фамилия",
+					"description": "Фамилия человека. Если оно у вас есть, настоятельно рекомендуется пройти его, чтобы улучшить коэффициент совпадения."
+				},
+				"givenName": {
+					"displayName": "Собственное имя",
+					"description": "Имя человека"
+				},
+				"ipAddress": {
+					"displayName": "IP-адрес",
+					"description": "IP-адрес человека. Если оно у вас есть, настоятельно рекомендуется пройти его, чтобы улучшить коэффициент совпадения."
+				},
+				"location": {
+					"displayName": "Расположение",
+					"description": "Город или страна, где проживает человек"
+				},
+				"linkedIn": {
+					"displayName": "LinkedIn",
+					"description": "URL-адрес LinkedIn для этого человека"
+				}
+			}
+		},
+		"name": {
+			"displayName": "Имя",
+			"description": "Название — это частичное название компании."
+		},
+		"email": {
+			"displayName": "Электронная почта",
+			"description": "Адрес электронной почты для поиска",
+			"placeholder": "имя@email.com"
+		}
+	}
+}

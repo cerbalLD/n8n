@@ -1,0 +1,115 @@
+{
+	"header": {
+		"displayName": "Крон",
+		"description": "Запускает рабочий процесс в определенное время"
+	},
+	"nodeView": {
+		"notice": {
+			"displayName": "Этот рабочий процесс будет выполняться по расписанию, которое вы определите здесь, после его публикации. Для тестирования вы также можете запустить его вручную: вернувшись на холст и нажав «Выполнить рабочий процесс»."
+		},
+		"triggerTimes": {
+			"options": {
+				"triggerTimes": {
+					"displayName": "Время срабатывания",
+					"description": "Триггеры для рабочего процесса"
+				},
+				"item": {
+					"displayName": "Элемент",
+					"values": {
+						"mode": {
+							"displayName": "Режим",
+							"description": "Как часто срабатывать.",
+							"options": {
+								"everyMinute": {
+									"displayName": "Каждую минуту"
+								},
+								"everyHour": {
+									"displayName": "Каждый час"
+								},
+								"everyDay": {
+									"displayName": "Каждый день"
+								},
+								"everyWeek": {
+									"displayName": "Каждую неделю"
+								},
+								"everyMonth": {
+									"displayName": "Каждый месяц"
+								},
+								"everyX": {
+									"displayName": "Каждый Х"
+								},
+								"custom": {
+									"displayName": "Обычай"
+								}
+							}
+						},
+						"hour": {
+							"displayName": "Час",
+							"description": "Час дня для запуска (24-часовой формат)"
+						},
+						"minute": {
+							"displayName": "минута",
+							"description": "Минута после часа для срабатывания (0-59)"
+						},
+						"dayOfMonth": {
+							"displayName": "День месяца",
+							"description": "День месяца, в который происходит срабатывание"
+						},
+						"weekday": {
+							"displayName": "Будний день",
+							"description": "День недели для запуска",
+							"options": {
+								"0": {
+									"displayName": "Воскресенье"
+								},
+								"1": {
+									"displayName": "Понедельник"
+								},
+								"2": {
+									"displayName": "Вторник"
+								},
+								"3": {
+									"displayName": "Среда"
+								},
+								"4": {
+									"displayName": "Четверг"
+								},
+								"5": {
+									"displayName": "Пятница"
+								},
+								"6": {
+									"displayName": "Суббота"
+								}
+							}
+						},
+						"cronExpression": {
+							"displayName": "Выражение Крон",
+							"description": "Используйте собственное выражение cron. Значения и диапазоны следующие:<ul><li>Секунды: 0–59</li><li>Минуты: 0 – 59</li><li>Часы: 0 – 23</li><li>День месяца: 1 – 31</li><li>Месяцы: 0–11 (январь – декабрь)</li><li>День недели: 0 – 6 (Вс – Сб)</li></ul>"
+						},
+						"value": {
+							"displayName": "Ценить",
+							"description": "Сколько X минут/часов оно должно сработать"
+						},
+						"unit": {
+							"displayName": "Единица",
+							"description": "Если это должно вызвать все X минут или часов",
+							"options": {
+								"minutes": {
+									"displayName": "Минуты"
+								},
+								"hours": {
+									"displayName": "Часы"
+								}
+							}
+						}
+					}
+				}
+			},
+			"placeholder": "Добавить время Крон",
+			"displayName": "Время срабатывания",
+			"description": "Триггеры для рабочего процесса",
+			"multipleValueButtonText": "Добавить время"
+		},
+		"activationMessage": "Ваш триггер cron теперь будет запускать выполнение по заданному вами расписанию."
+	}
+}
