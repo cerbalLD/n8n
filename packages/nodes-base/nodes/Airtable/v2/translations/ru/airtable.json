@@ -11,7 +11,7 @@
 					"displayName": "Токен доступа"
 				},
 				"airtableOAuth2Api": {
-					"displayName": "ОАут2"
+					"displayName": "OAuth2"
 				}
 			}
 		},
@@ -42,7 +42,7 @@
 					"description": "Удалить запись из таблицы"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить запись из таблицы"
 				},
 				"search": {
@@ -54,7 +54,7 @@
 					"description": "Обновить запись в таблице"
 				},
 				"getMany": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Список всех баз"
 				},
 				"getSchema": {
@@ -114,7 +114,7 @@
 							"displayName": "Редактировать"
 						},
 						"none": {
-							"displayName": "Никто"
+							"displayName": "Нет"
 						},
 						"read": {
 							"displayName": "Чтение"

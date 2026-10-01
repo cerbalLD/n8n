@@ -1,7 +1,7 @@
 {
 	"header": {
 		"displayName": "urlscan.io",
-		"description": "Предоставляет различные утилиты для мониторинга веб-сайтов, такие как проверки работоспособности или снимки экрана."
+		"description": "Предоставляет различные утилиты для мониторинга веб-сайтов, такие как проверки работоспособности или снимки экрана"
 	},
 	"nodeView": {
 		"resource": {
@@ -16,18 +16,18 @@
 			"displayName": "Операция",
 			"options": {
 				"get": {
-					"displayName": "Получать"
+					"displayName": "Получить"
 				},
 				"getAll": {
-					"displayName": "Получить много"
+					"displayName": "Получить множество"
 				},
 				"perform": {
-					"displayName": "Выполнять"
+					"displayName": "Выполнить"
 				}
 			}
 		},
 		"scanId": {
-			"displayName": "Сканировать идентификатор",
+			"displayName": "Идентификатор сканирования",
 			"description": "Идентификатор сканирования для получения"
 		},
 		"returnAll": {
@@ -44,8 +44,8 @@
 			"options": {
 				"query": {
 					"displayName": "Запрос",
-					"description": "Запрос с использованием синтаксиса строки <a href=\"https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html#query-dsl-query-string-query\">Elastic Search Query</a>. См. <a href=\"https://urlscan.io/docs/search/\">поддерживаемые поля</a> в документации.",
-					"placeholder": "Домен: n8n.io"
+					"description": "Запрос с использованием синтаксиса <a href=\"https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html#query-dsl-query-string-query\">строки запроса Elasticsearch</a>. См. <a href=\"https://urlscan.io/docs/search/\">поддерживаемые поля</a> в документации.",
+					"placeholder": "домен:n8n.io"
 				}
 			}
 		},
@@ -60,30 +60,30 @@
 			"options": {
 				"customAgent": {
 					"displayName": "Пользовательский агент",
-					"description": "<code>User-Agent</code> заголовок, который нужно установить для этого сканирования. По умолчанию используется стандартный исходящий пользовательский агент n8n."
+					"description": "Заголовок <code>User-Agent</code> для установки в этом сканировании. По умолчанию используется стандартный исходящий User-Agent n8n."
 				},
 				"overrideSafety": {
-					"displayName": "Отменить безопасность",
-					"description": "Отключить реклассификацию URL-адресов с потенциальной информацией, позволяющей идентифицировать личность."
+					"displayName": "Переопределить безопасность",
+					"description": "Отключить переклассификацию URL-адресов с потенциальной информацией, позволяющей идентифицировать личность"
 				},
 				"referer": {
-					"displayName": "Реферер",
-					"description": "HTTP-референт, который нужно установить для этого сканирования",
+					"displayName": "Источник запроса",
+					"description": "HTTP-источник запроса для установки в этом сканировании",
 					"placeholder": "http://localhost"
 				},
 				"tags": {
 					"displayName": "Теги",
-					"description": "Список пользовательских тегов, разделенных запятыми, которые можно добавить к этому сканированию. Ограничено 10 тегами.",
+					"description": "Разделённый запятыми список пользовательских тегов для добавления к этому сканированию. Максимум 10 тегов.",
 					"placeholder": "фишинг, вредоносный"
 				},
 				"visibility": {
 					"displayName": "Видимость",
 					"options": {
 						"private": {
-							"displayName": "Частный"
+							"displayName": "Приватный"
 						},
 						"public": {
-							"displayName": "Общественный"
+							"displayName": "Публичный"
 						},
 						"unlisted": {
 							"displayName": "Нет в списке"

@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Клирбит",
-		"description": "Использование Clearbit API"
+		"displayName": "Clearbit",
+		"description": "Использование API Clearbit"
 	},
 	"nodeView": {
 		"resource": {
@@ -9,7 +9,7 @@
 			"options": {
 				"company": {
 					"displayName": "Компания",
-					"description": "API компании позволяет искать компанию по ее домену."
+					"description": "API компании позволяет искать компанию по её домену"
 				},
 				"person": {
 					"displayName": "Человек",
@@ -22,11 +22,11 @@
 			"options": {
 				"autocomplete": {
 					"displayName": "Автозаполнение",
-					"description": "Автоматически заполняйте названия компаний и получайте логотип и домен"
+					"description": "Автоматическое заполнение названий компаний и получение логотипа и домена"
 				},
 				"enrich": {
-					"displayName": "Обогащать",
-					"description": "Поиск данных о человеке и компании по адресу электронной почты или домену."
+					"displayName": "Обогащение",
+					"description": "Поиск данных человека и компании по адресу электронной почты или домену"
 				}
 			}
 		},
@@ -44,11 +44,11 @@
 				},
 				"facebook": {
 					"displayName": "Facebook",
-					"description": "URL-адрес Facebook для этого человека"
+					"description": "URL Facebook для этого человека"
 				},
 				"linkedin": {
-					"displayName": "Линкедин",
-					"description": "URL-адрес LinkedIn для компании"
+					"displayName": "LinkedIn",
+					"description": "URL LinkedIn для компании"
 				},
 				"twitter": {
 					"displayName": "Twitter",
@@ -64,7 +64,7 @@
 				},
 				"familyName": {
 					"displayName": "Фамилия",
-					"description": "Фамилия человека. Если оно у вас есть, настоятельно рекомендуется пройти его, чтобы улучшить коэффициент совпадения."
+					"description": "Фамилия человека. Если она у вас есть, настоятельно рекомендуется передать её для улучшения показателя совпадений."
 				},
 				"givenName": {
 					"displayName": "Имя",
@@ -72,7 +72,7 @@
 				},
 				"ipAddress": {
 					"displayName": "IP-адрес",
-					"description": "IP-адрес человека. Если оно у вас есть, настоятельно рекомендуется пройти его, чтобы улучшить коэффициент совпадения."
+					"description": "IP-адрес человека. Если он у вас есть, настоятельно рекомендуется передать его для улучшения показателя совпадений."
 				},
 				"location": {
 					"displayName": "Расположение",
@@ -80,13 +80,13 @@
 				},
 				"linkedIn": {
 					"displayName": "LinkedIn",
-					"description": "URL-адрес LinkedIn для этого человека"
+					"description": "URL LinkedIn для человека"
 				}
 			}
 		},
 		"name": {
 			"displayName": "Имя",
-			"description": "Название — это частичное название компании."
+			"description": "Название — это частичное название компании"
 		},
 		"email": {
 			"displayName": "Электронная почта",

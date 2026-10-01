@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "веб-поток",
-		"description": "Используйте API Webflow"
+		"displayName": "Webflow",
+		"description": "Использовать API Webflow"
 	},
 	"nodeView": {
 		"resource": {
@@ -22,10 +22,10 @@
 					"displayName": "Удалить"
 				},
 				"get": {
-					"displayName": "Получать"
+					"displayName": "Получить"
 				},
 				"getAll": {
-					"displayName": "Получить много"
+					"displayName": "Получить множество"
 				},
 				"update": {
 					"displayName": "Обновить"
@@ -34,11 +34,11 @@
 		},
 		"siteId": {
 			"displayName": "Имя или идентификатор сайта",
-			"description": "Идентификатор сайта, содержащего коллекцию, элементы которой нужно добавить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"description": "Идентификатор сайта, содержащего коллекцию, элементы которой нужно добавить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"collectionId": {
 			"displayName": "Название или идентификатор коллекции",
-			"description": "Идентификатор коллекции, в которую нужно добавить элемент. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"description": "Идентификатор коллекции, в которую нужно добавить элемент. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"live": {
 			"displayName": "Опубликовано",
@@ -54,7 +54,7 @@
 					"values": {
 						"fieldId": {
 							"displayName": "Имя поля или ID",
-							"description": "Поле для установки создаваемого элемента. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+							"description": "Поле, которое нужно установить для создаваемого элемента. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 						},
 						"fieldValue": {
 							"displayName": "Значение поля",

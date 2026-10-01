@@ -31,13 +31,13 @@
 			"displayName": "Операция",
 			"options": {
 				"getAll": {
-					"displayName": "Получить много"
+					"displayName": "Получить множество"
 				},
 				"getStats": {
 					"displayName": "Получить статистику"
 				},
 				"get": {
-					"displayName": "Получать"
+					"displayName": "Получить"
 				},
 				"enrichLead": {
 					"displayName": "Обогатить лидерство"
@@ -288,7 +288,7 @@
 					"description": "Фамилия лида, которого нужно создать"
 				},
 				"linkedinUrl": {
-					"displayName": "URL-адрес LinkedIn",
+					"displayName": "URL LinkedIn",
 					"description": "LinkedIn URL-адрес потенциального клиента, которого необходимо создать"
 				},
 				"companyName": {

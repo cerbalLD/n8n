@@ -24,11 +24,11 @@
 					"description": "Удалить существующего пользователя"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить информацию о пользователе"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить нескольких пользователей"
 				},
 				"update": {
@@ -88,13 +88,13 @@
 					"displayName": "номер сотрудника"
 				},
 				"honorificPrefix": {
-					"displayName": "Почетный префикс"
+					"displayName": "Почётный префикс"
 				},
 				"honorificSuffix": {
-					"displayName": "Почетный суффикс"
+					"displayName": "Почётный суффикс"
 				},
 				"locale": {
-					"displayName": "Языковой стандарт"
+					"displayName": "Локаль"
 				},
 				"manager": {
 					"displayName": "Менеджер"
@@ -103,7 +103,7 @@
 					"displayName": "ManagerId"
 				},
 				"middleName": {
-					"displayName": "Второе имя"
+					"displayName": "Отчество"
 				},
 				"mobilePhone": {
 					"displayName": "Мобильный телефон"
@@ -142,7 +142,7 @@
 					"displayName": "область"
 				},
 				"streetAddress": {
-					"displayName": "Адрес улицы"
+					"displayName": "Улица"
 				},
 				"timezone": {
 					"displayName": "Часовой пояс"
@@ -192,17 +192,17 @@
 					"placeholder": "например Nathan"
 				},
 				"honorificPrefix": {
-					"displayName": "Почетный префикс"
+					"displayName": "Почётный префикс"
 				},
 				"honorificSuffix": {
-					"displayName": "Почетный суффикс"
+					"displayName": "Почётный суффикс"
 				},
 				"lastName": {
 					"displayName": "Фамилия",
 					"placeholder": "например Smith"
 				},
 				"locale": {
-					"displayName": "Языковой стандарт"
+					"displayName": "Локаль"
 				},
 				"manager": {
 					"displayName": "Менеджер"
@@ -211,7 +211,7 @@
 					"displayName": "ManagerId"
 				},
 				"middleName": {
-					"displayName": "Второе имя"
+					"displayName": "Отчество"
 				},
 				"mobilePhone": {
 					"displayName": "Мобильный телефон"
@@ -250,7 +250,7 @@
 					"displayName": "область"
 				},
 				"streetAddress": {
-					"displayName": "Адрес улицы"
+					"displayName": "Улица"
 				},
 				"timezone": {
 					"displayName": "Часовой пояс"
@@ -289,7 +289,7 @@
 			"description": "Возвращать ли упрощённую версию ответа вместо необработанных данных"
 		},
 		"sendEmail": {
-			"displayName": "Отправить электронное письмо",
+			"displayName": "Отправить письмо",
 			"description": "Отправлять ли письмо об отключении администратору"
 		}
 	}

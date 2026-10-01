@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "СинкроМСП",
+		"displayName": "SyncroMSP",
 		"description": "Получает данные из SyncroMSP"
 	},
 	"nodeView": {
@@ -17,7 +17,7 @@
 					"displayName": "RMM"
 				},
 				"ticket": {
-					"displayName": "Билет"
+					"displayName": "Заявка"
 				}
 			}
 		},
@@ -33,19 +33,19 @@
 					"description": "Удалить оповещение RMM"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить оповещение RMM"
 				},
 				"getAll": {
-					"displayName": "Получить много",
-					"description": "Получайте множество оповещений RMM"
+					"displayName": "Получить множество",
+					"description": "Получить множество оповещений RMM"
 				},
 				"update": {
 					"displayName": "Обновить",
 					"description": "Обновить контакт"
 				},
 				"mute": {
-					"displayName": "Немой",
+					"displayName": "Отключить",
 					"description": "Отключить оповещение RMM"
 				}
 			}
@@ -80,13 +80,13 @@
 				},
 				"query": {
 					"displayName": "Поисковый запрос",
-					"description": "Поисковый запрос, это может быть что угодно, связанное с данными билета, например, пользователь и т. д.",
+					"description": "Поисковый запрос, может быть связан с данными билета, например пользователь и т.д.",
 					"placeholder": "Иван Иванов"
 				},
 				"sort": {
 					"displayName": "Сортировка",
-					"description": "Поле клиента для заказа, например: «имя ASC», «город DESC» и т. д.",
-					"placeholder": "имя ASC"
+					"description": "Поле клиента для сортировки, например: \"firstname ASC\", \"city DESC\" и т.д.",
+					"placeholder": "firstname ASC"
 				},
 				"status": {
 					"displayName": "Статус",
@@ -101,13 +101,13 @@
 							"displayName": "Создать"
 						},
 						"Resolved": {
-							"displayName": "Решено"
+							"displayName": "Разрешено"
 						},
 						"Scheduled": {
 							"displayName": "Запланировано"
 						},
 						"Waiting for Parts": {
-							"displayName": "В ожидании запчастей"
+							"displayName": "Ожидание деталей"
 						},
 						"Waiting on Customer": {
 							"displayName": "Ожидание клиента"
@@ -119,7 +119,7 @@
 							"displayName": "Все"
 						},
 						"resolved": {
-							"displayName": "Решено"
+							"displayName": "Разрешено"
 						}
 					}
 				}
@@ -127,7 +127,7 @@
 		},
 		"customerId": {
 			"displayName": "ID клиента",
-			"description": "Удаление конкретного клиента по идентификатору"
+			"description": "Удалить конкретного клиента по идентификатору"
 		},
 		"email": {
 			"displayName": "Электронная почта",
@@ -177,10 +177,10 @@
 					"displayName": "Имя"
 				},
 				"getSms": {
-					"displayName": "Получить СМС"
+					"displayName": "Получить SMS"
 				},
 				"invoiceCcEmails": {
-					"displayName": "Электронные письма со счетами"
+					"displayName": "Письма со счётами"
 				},
 				"lastname": {
 					"displayName": "Фамилия"
@@ -192,21 +192,21 @@
 					"displayName": "Примечания"
 				},
 				"notificationEmail": {
-					"displayName": "Уведомление по электронной почте"
+					"displayName": "Письмо уведомления"
 				},
 				"phone": {
 					"displayName": "Телефон"
 				},
 				"referredBy": {
-					"displayName": "По рекомендации",
-					"description": "Источник, из которого клиент перенаправляется на платформу, например Linkedin, Google, имя клиента и т. д."
+					"displayName": "Рекомендовано",
+					"description": "Источник, из которого клиент направлен на платформу, например LinkedIn, Google, имя клиента и т.д."
 				},
 				"assetId": {
 					"displayName": "Идентификатор актива"
 				},
 				"contactId": {
 					"displayName": "Назначить контакту",
-					"description": "Идентификатор контакта, которому вы хотите назначить заявку."
+					"description": "Идентификатор контакта, которому вы хотите назначить билет"
 				},
 				"issueType": {
 					"displayName": "Тип задачи",
@@ -221,16 +221,16 @@
 							"displayName": "Другое"
 						},
 						"Regular Maintenance": {
-							"displayName": "Регулярное техническое обслуживание"
+							"displayName": "Регулярное обслуживание"
 						},
 						"Remote Support": {
-							"displayName": "Удаленная поддержка"
+							"displayName": "Удалённая поддержка"
 						}
 					}
 				},
 				"status": {
 					"displayName": "Статус",
-					"description": "Если используется вместе с параметром «Поисковой запрос», будет применен только поисковый запрос.",
+					"description": "Если используется с параметром «Поисковый запрос», будет применён только поисковый запрос",
 					"options": {
 						"Customer Reply": {
 							"displayName": "Ответ клиента"
@@ -242,13 +242,13 @@
 							"displayName": "Создать"
 						},
 						"Resolved": {
-							"displayName": "Решено"
+							"displayName": "Разрешено"
 						},
 						"Scheduled": {
 							"displayName": "Запланировано"
 						},
 						"Waiting for Parts": {
-							"displayName": "В ожидании запчастей"
+							"displayName": "Ожидание деталей"
 						},
 						"Waiting on Customer": {
 							"displayName": "Ожидание клиента"
@@ -259,7 +259,7 @@
 					"displayName": "Имя"
 				},
 				"resolved": {
-					"displayName": "Решено"
+					"displayName": "Разрешено"
 				}
 			}
 		},
@@ -311,10 +311,10 @@
 					"displayName": "Имя"
 				},
 				"getSms": {
-					"displayName": "Получить СМС"
+					"displayName": "Получить SMS"
 				},
 				"invoiceCcEmails": {
-					"displayName": "Электронные письма со счетами"
+					"displayName": "Письма со счётами"
 				},
 				"lastName": {
 					"displayName": "Фамилия"
@@ -326,27 +326,27 @@
 					"displayName": "Примечания"
 				},
 				"notificationEmail": {
-					"displayName": "Уведомление по электронной почте"
+					"displayName": "Письмо уведомления"
 				},
 				"phone": {
 					"displayName": "Телефон"
 				},
 				"referredBy": {
-					"displayName": "По рекомендации",
-					"description": "Источник, из которого клиент перенаправляется на платформу, например Linkedin, Google, имя клиента и т. д."
+					"displayName": "Рекомендовано",
+					"description": "Источник, из которого клиент направлен на платформу, например LinkedIn, Google, имя клиента и т.д."
 				},
 				"assetId": {
 					"displayName": "Идентификатор актива"
 				},
 				"contactId": {
 					"displayName": "Назначить контакту",
-					"description": "Идентификатор контакта, которому вы хотите назначить заявку."
+					"description": "Идентификатор контакта, которому вы хотите назначить билет"
 				},
 				"customerId": {
 					"displayName": "ID клиента"
 				},
 				"dueDate": {
-					"displayName": "Срок оплаты"
+					"displayName": "Срок выполнения"
 				},
 				"issueType": {
 					"displayName": "Тип задачи",
@@ -361,10 +361,10 @@
 							"displayName": "Другое"
 						},
 						"Regular Maintenance": {
-							"displayName": "Регулярное техническое обслуживание"
+							"displayName": "Регулярное обслуживание"
 						},
 						"Remote Support": {
-							"displayName": "Удаленная поддержка"
+							"displayName": "Удалённая поддержка"
 						}
 					}
 				},
@@ -381,13 +381,13 @@
 							"displayName": "Создать"
 						},
 						"Resolved": {
-							"displayName": "Решено"
+							"displayName": "Разрешено"
 						},
 						"Scheduled": {
 							"displayName": "Запланировано"
 						},
 						"Waiting for Parts": {
-							"displayName": "В ожидании запчастей"
+							"displayName": "Ожидание деталей"
 						},
 						"Waiting on Customer": {
 							"displayName": "Ожидание клиента"
@@ -395,7 +395,7 @@
 					}
 				},
 				"subject": {
-					"displayName": "Предмет"
+					"displayName": "Тема"
 				},
 				"name": {
 					"displayName": "Имя"
@@ -403,15 +403,15 @@
 			}
 		},
 		"subject": {
-			"displayName": "Предмет"
+			"displayName": "Тема"
 		},
 		"ticketId": {
 			"displayName": "Идентификатор билета",
-			"description": "Удаление конкретного клиента по идентификатору"
+			"description": "Удалить конкретного клиента по идентификатору"
 		},
 		"contactId": {
 			"displayName": "ID контакта",
-			"description": "Удаление определенного контакта по идентификатору"
+			"description": "Удалить конкретный контакт по идентификатору"
 		},
 		"alertId": {
 			"displayName": "Идентификатор оповещения RMM",
@@ -424,8 +424,8 @@
 			"displayName": "Описание"
 		},
 		"muteFor": {
-			"displayName": "Период отключения звука",
-			"description": "Время отключения оповещения",
+			"displayName": "Период отключения",
+			"description": "Длительность отключения оповещения",
 			"options": {
 				"1-hour": {
 					"displayName": "1 час"

@@ -16,7 +16,7 @@
 			"displayName": "Операция",
 			"options": {
 				"enrich": {
-					"displayName": "Обогащать",
+					"displayName": "Обогащение",
 					"description": "Поиск B2B email и обогащение контакта по имени и веб-сайту"
 				},
 				"fetchRequest": {

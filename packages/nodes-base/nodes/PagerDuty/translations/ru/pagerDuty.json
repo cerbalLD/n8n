@@ -11,7 +11,7 @@
 					"displayName": "API-токен"
 				},
 				"oAuth2": {
-					"displayName": "ОАут2"
+					"displayName": "OAuth2"
 				}
 			}
 		},
@@ -40,11 +40,11 @@
 					"description": "Создание примечания об инциденте"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить пользователя"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получение нескольких записей журнала"
 				},
 				"update": {
@@ -211,7 +211,7 @@
 							"displayName": "Подтверждено"
 						},
 						"resolved": {
-							"displayName": "Решено"
+							"displayName": "Разрешено"
 						},
 						"triggered": {
 							"displayName": "Сработало"
@@ -227,7 +227,7 @@
 					"description": "Часовой пояс для отображения дат в результате. Если не установлен, даты будут возвращены в UTC. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"until": {
-					"displayName": "До",
+					"displayName": "По",
 					"description": "Конец диапазона дат для поиска. (максимальный диапазон — 6 месяцев)."
 				},
 				"urgencies": {
@@ -280,7 +280,7 @@
 							"displayName": "Подтверждено"
 						},
 						"resolved": {
-							"displayName": "Решено"
+							"displayName": "Разрешено"
 						}
 					}
 				},

@@ -25,11 +25,11 @@
 			"displayName": "Операция",
 			"options": {
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить конкретное оповещение"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить несколько оповещений"
 				},
 				"resultData": {

@@ -12,7 +12,7 @@
 					"displayName": "Токен доступа"
 				},
 				"oAuth2": {
-					"displayName": "ОАут2"
+					"displayName": "OAuth2"
 				}
 			}
 		},
@@ -74,7 +74,7 @@
 			}
 		},
 		"fields": {
-			"displayName": "Имена полей или идентификаторы",
+			"displayName": "Имена или идентификаторы полей",
 			"description": "Набор полей этого объекта, на которые вы подписаны. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"options": {

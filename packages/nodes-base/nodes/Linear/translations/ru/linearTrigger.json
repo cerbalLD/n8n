@@ -11,7 +11,7 @@
 					"displayName": "API-токен"
 				},
 				"oAuth2": {
-					"displayName": "ОАут2"
+					"displayName": "OAuth2"
 				}
 			}
 		},
@@ -19,7 +19,7 @@
 			"displayName": "Убедитесь, что ваши учетные данные имеют область действия «Администратор» для создания веб-перехватчиков."
 		},
 		"teamId": {
-			"displayName": "Название или идентификатор команды",
+			"displayName": "Имя или идентификатор команды",
 			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"resources": {

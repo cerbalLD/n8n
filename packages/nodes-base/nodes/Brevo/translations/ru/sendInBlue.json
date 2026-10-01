@@ -34,13 +34,13 @@
 					"displayName": "Удалить"
 				},
 				"getAll": {
-					"displayName": "Получить много"
+					"displayName": "Получить множество"
 				},
 				"upsert": {
 					"displayName": "Создать или обновить"
 				},
 				"get": {
-					"displayName": "Получать"
+					"displayName": "Получить"
 				},
 				"send": {
 					"displayName": "Отправить"
@@ -280,7 +280,7 @@
 			"placeholder": "Добавить фильтр",
 			"options": {
 				"modifiedSince": {
-					"displayName": "Изменено с момента",
+					"displayName": "Изменено с",
 					"description": "Фильтровать контакты (в кодировке URL), измененные после указанной даты-времени UTC (YYYY-MM-DDTHH:mm:ss.SSSZ)"
 				}
 			}
@@ -337,7 +337,7 @@
 			"displayName": "Отправить HTML"
 		},
 		"subject": {
-			"displayName": "Предмет",
+			"displayName": "Тема",
 			"description": "Тема письма"
 		},
 		"textContent": {
@@ -368,7 +368,7 @@
 							"options": {
 								"binaryPropertyName": {
 									"displayName": "Имя поля входных данных",
-									"description": "Имя входящего поля, содержащего данные двоичного файла, подлежащие обработке."
+									"description": "Имя входящего поля, содержащего двоичные данные файла для обработки"
 								}
 							}
 						}

@@ -1,16 +1,16 @@
 {
 	"header": {
-		"displayName": "Супабаза",
-		"description": "Добавлять, получать, удалять и обновлять данные в таблице"
+		"displayName": "Supabase",
+		"description": "Добавление, получение, удаление и обновление данных в таблице"
 	},
 	"nodeView": {
 		"useCustomSchema": {
 			"displayName": "Использовать пользовательскую схему",
-			"description": "Использовать ли схему базы данных, отличную от «общедоступной» схемы по умолчанию (требуется раскрытие схемы в <a href=\"https://supabase.com/docs/guides/api/using-custom-schemas?queryGroups=language&language=curl#exposing-custom-schemas\">Supabase API</a>)"
+			"description": "Использовать ли схему базы данных, отличную от схемы \"public\" по умолчанию (требуется раскрытие схемы в <a href=\"https://supabase.com/docs/guides/api/using-custom-schemas?queryGroups=language&language=curl#exposing-custom-schemas\">Supabase API</a>)"
 		},
 		"schema": {
 			"displayName": "Схема",
-			"description": "Имя схемы базы данных, которая будет использоваться для таблицы"
+			"description": "Имя схемы базы данных для использования в таблице"
 		},
 		"resource": {
 			"displayName": "Ресурс",
@@ -32,11 +32,11 @@
 					"description": "Удалить строку"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить строку"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить много строк"
 				},
 				"update": {
@@ -59,7 +59,7 @@
 					"displayName": "Текст"
 				},
 				"none": {
-					"displayName": "Никто"
+					"displayName": "Нет"
 				}
 			}
 		},
@@ -78,7 +78,7 @@
 			"options": {
 				"filters": {
 					"displayName": "Фильтры",
-					"description": "Фильтруйте, чтобы решить, какие строки будут извлечены."
+					"description": "Фильтр для выбора получаемых строк"
 				},
 				"conditions": {
 					"displayName": "Условия",
@@ -103,12 +103,12 @@
 									"displayName": "Больше или равно"
 								},
 								"ilike": {
-									"displayName": "оператор ILIKE",
-									"description": "Используйте * вместо %"
+									"displayName": "Оператор ILIKE",
+									"description": "Использовать * вместо %"
 								},
 								"is": {
 									"displayName": "Равно",
-									"description": "Проверка точного равенства (ноль, истина, ложь, неизвестно)"
+									"description": "Проверка точного равенства (null, true, false, unknown)"
 								},
 								"lt": {
 									"displayName": "Меньше чем"
@@ -117,8 +117,8 @@
 									"displayName": "Меньше или равно"
 								},
 								"like": {
-									"displayName": "НРАВИТСЯ оператор",
-									"description": "Используйте * вместо %"
+									"displayName": "Оператор LIKE",
+									"description": "Использовать * вместо %"
 								},
 								"neq": {
 									"displayName": "Не Равно"
@@ -132,10 +132,10 @@
 									"displayName": "to_tsquery"
 								},
 								"plfts": {
-									"displayName": "Plainto_tsquery"
+									"displayName": "plainto_tsquery"
 								},
 								"phfts": {
-									"displayName": "фразаto_tsquery"
+									"displayName": "phraseto_tsquery"
 								},
 								"wfts": {
 									"displayName": "websearch_to_tsquery"
@@ -150,10 +150,10 @@
 			},
 			"placeholder": "Добавить условие",
 			"displayName": "Фильтры",
-			"description": "Фильтруйте, чтобы решить, какие строки будут извлечены."
+			"description": "Фильтр для выбора получаемых строк"
 		},
 		"jsonNotice": {
-			"displayName": "См. руководство <a href=\"https://postgrest.org/en/stable/references/api/tables_views.html#horizontal-filtering\" target=\"_blank\">PostgREST</a> по созданию фильтров."
+			"displayName": "Смотрите <a href=\"https://postgrest.org/en/stable/references/api/tables_views.html#horizontal-filtering\" target=\"_blank\">руководство PostgREST</a> по созданию фильтров"
 		},
 		"filterString": {
 			"displayName": "Фильтры (строка)",
@@ -209,8 +209,8 @@
 		},
 		"orderBy": {
 			"displayName": "Сортировать по",
-			"description": "Столбец(и) для упорядочивания результатов, например. <code>ID</code> или <code>created_at.desc</code>. Рекомендуется при использовании «Вернуть все» или «Ограничить ≥ 1000», чтобы избежать дублирования или отсутствия записей.",
-			"placeholder": "например ID или созданный_at.desc"
+			"description": "Столбец(ы) для сортировки результатов, например <code>ID</code> или <code>created_at.desc</code>. Рекомендуется при использовании «Вернуть всё» или «Лимит ≥ 1000», чтобы избежать дубликатов или пропущенных записей.",
+			"placeholder": "например ID или created_at.desc"
 		}
 	}
 }

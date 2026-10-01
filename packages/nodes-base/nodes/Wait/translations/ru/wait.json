@@ -1,12 +1,12 @@
 {
 	"header": {
 		"displayName": "Ждать",
-		"description": "Подождите, прежде чем продолжить выполнение"
+		"description": "Ждать перед продолжением выполнения"
 	},
 	"nodeView": {
 		"resume": {
 			"displayName": "Возобновить",
-			"description": "Определяет режим ожидания, который следует использовать перед продолжением рабочего процесса.",
+			"description": "Определяет режим ожидания перед продолжением рабочего процесса",
 			"options": {
 				"timeInterval": {
 					"displayName": "После интервала времени",
@@ -14,47 +14,47 @@
 				},
 				"specificTime": {
 					"displayName": "В указанное время",
-					"description": "Ожидает определенной даты и времени, чтобы продолжить"
+					"description": "Ожидает определённой даты и времени перед продолжением"
 				},
 				"webhook": {
-					"displayName": "При вызове через вебхук",
-					"description": "Прежде чем продолжить, ожидает вызова веб-перехватчика."
+					"displayName": "При вызове вебхука",
+					"description": "Ожидает вызова вебхука перед продолжением"
 				},
 				"form": {
 					"displayName": "При отправке формы",
-					"description": "Прежде чем продолжить, ожидает отправки формы."
+					"description": "Ожидает отправки формы перед продолжением"
 				}
 			}
 		},
 		"incomingAuthentication": {
 			"displayName": "Аутентификация",
-			"description": "Если и каким образом входящие запросы резюме-вебхука к $execution.resumeUrl должны аутентифицироваться для дополнительной безопасности",
+			"description": "Если и каким образом входящие запросы возобновления вебхука на $execution.resumeUrl должны аутентифицироваться для дополнительной безопасности",
 			"options": {
 				"basicAuth": {
 					"displayName": "Базовая аутентификация"
 				},
 				"none": {
-					"displayName": "Никто"
+					"displayName": "Нет"
 				},
 				"headerAuth": {
 					"displayName": "Аутентификация заголовка"
 				},
 				"jwtAuth": {
-					"displayName": "JWT-аутентификация"
+					"displayName": "Аутентификация JWT"
 				}
 			}
 		},
 		"dateTime": {
 			"displayName": "Дата и время",
-			"description": "Дата и время ожидания, прежде чем продолжить"
+			"description": "Дата и время ожидания перед продолжением"
 		},
 		"amount": {
-			"displayName": "Сумма ожидания",
+			"displayName": "Время ожидания",
 			"description": "Время ожидания"
 		},
 		"unit": {
-			"displayName": "Подождите",
-			"description": "Единица времени значения суммы ожидания.",
+			"displayName": "Единица времени ожидания",
+			"description": "Единица времени для значения времени ожидания",
 			"options": {
 				"seconds": {
 					"displayName": "Секунды"
@@ -71,13 +71,13 @@
 			}
 		},
 		"webhookNotice": {
-			"displayName": "URL-адрес веб-перехватчика будет создан во время выполнения. На него можно ссылаться с помощью переменной <strong>$execution.resumeUrl__N8N_TOKEN_1__. Отправьте его куда-нибудь, прежде чем добраться до этого узла. <a href=\"https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.wait/?utm_source=n8n_app&utm_medium=node_settings_modal-credential_link&utm_campaign=n8n-nodes-base.wait\" target=\"_blank\">Подробнее</a>"
+			"displayName": "URL вебхука будет создан во время выполнения. На него можно ссылаться с помощью переменной <strong>$execution.resumeUrl</strong>. Отправьте его куда-нибудь перед тем, как перейти к этому узлу. <a href=\"https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.wait/?utm_source=n8n_app&utm_medium=node_settings_modal-credential_link&utm_campaign=n8n-nodes-base.wait\" target=\"_blank\">Подробнее</a>"
 		},
 		"formNotice": {
-			"displayName": "URL-адрес формы будет сгенерирован во время выполнения. На него можно ссылаться с помощью переменной <strong>$execution.resumeFormUrl__N8N_TOKEN_1__. Отправьте его куда-нибудь, прежде чем добраться до этого узла. <a href=\"https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.wait/?utm_source=n8n_app&utm_medium=node_settings_modal-credential_link&utm_campaign=n8n-nodes-base.wait\" target=\"_blank\">Подробнее</a>"
+			"displayName": "URL формы будет создан во время выполнения. На него можно ссылаться с помощью переменной <strong>$execution.resumeFormUrl</strong>. Отправьте его куда-нибудь перед тем, как перейти к этому узлу. <a href=\"https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.wait/?utm_source=n8n_app&utm_medium=node_settings_modal-credential_link&utm_campaign=n8n-nodes-base.wait\" target=\"_blank\">Подробнее</a>"
 		},
 		"formTitle": {
-			"displayName": "Название формы",
+			"displayName": "Заголовок формы",
 			"description": "Отображается вверху формы",
 			"placeholder": "например Связаться с нами"
 		},
@@ -92,7 +92,7 @@
 					"displayName": "Элементы формы"
 				},
 				"values": {
-					"displayName": "Ценности",
+					"displayName": "Значения",
 					"values": {
 						"fieldName": {
 							"displayName": "Имя пользовательского поля",
@@ -169,7 +169,7 @@
 									"description": "Список опций, которые можно выбрать из раскрывающегося списка"
 								},
 								"values": {
-									"displayName": "Ценности",
+									"displayName": "Значения",
 									"values": {
 										"option": {
 											"displayName": "Метка переключателя"
@@ -240,26 +240,26 @@
 			"displayName": "Элементы формы"
 		},
 		"responseMode": {
-			"displayName": "Отвечать",
-			"description": "Когда и как реагировать на вебхук",
+			"displayName": "Ответить",
+			"description": "Когда и как ответить на вебхук",
 			"options": {
 				"onReceived": {
 					"displayName": "Немедленно",
-					"description": "Как только этот узел выполнится"
+					"description": "Как только узел выполнится"
 				},
 				"lastNode": {
-					"displayName": "Когда завершается последний узел",
+					"displayName": "Когда завершится последний узел",
 					"description": "Возвращает данные последнего выполненного узла"
 				},
 				"responseNode": {
 					"displayName": "Использование узла «Ответить на веб-перехватчик»",
-					"description": "Ответ определен в этом узле"
+					"description": "Ответ, определённый в этом узле"
 				}
 			}
 		},
 		"httpMethod": {
 			"displayName": "HTTP-метод",
-			"description": "HTTP-метод вызова Webhook",
+			"description": "HTTP-метод вызова вебхука",
 			"options": {
 				"DELETE": {
 					"displayName": "DELETE"
@@ -282,12 +282,12 @@
 			}
 		},
 		"responseCode": {
-			"displayName": "Код ответа",
-			"description": "Код HTTP-ответа для возврата"
+			"displayName": "РљРѕРґ РѕС‚РІРµС‚Р°",
+			"description": "HTTP-код ответа для возврата"
 		},
 		"responseData": {
 			"displayName": "Данные ответа",
-			"description": "Какие данные следует вернуть. Если он должен возвращать все элементы в виде массива или только первый элемент в качестве объекта.",
+			"description": "Какие данные следует вернуть. Все элементы как массив или только первый элемент как объект.",
 			"options": {
 				"allEntries": {
 					"displayName": "Все записи",
@@ -295,28 +295,28 @@
 				},
 				"firstEntryJson": {
 					"displayName": "Первая запись JSON",
-					"description": "Возвращает данные JSON первой записи последнего узла. Всегда возвращает объект JSON."
+					"description": "Возвращает JSON-данные первой записи последнего узла. Всегда возвращает JSON-объект."
 				},
 				"firstEntryBinary": {
-					"displayName": "Первая запись двоичного файла",
+					"displayName": "Первая двоичная запись",
 					"description": "Возвращает двоичные данные первой записи последнего узла. Всегда возвращает двоичный файл."
 				},
 				"noData": {
 					"displayName": "Нет тела ответа",
-					"description": "Возвращается без тела"
+					"description": "Возвращает ответ без тела"
 				}
 			}
 		},
 		"responseBinaryPropertyName": {
 			"displayName": "Имя свойства",
-			"description": "Имя возвращаемого двоичного свойства"
+			"description": "Имя двоичного свойства для возврата"
 		},
 		"limitWaitTime": {
 			"displayName": "Ограничить время ожидания",
-			"description": "Ограничить ли время, в течение которого этот узел должен ждать ответа пользователя, прежде чем возобновится выполнение."
+			"description": "Ограничивать ли время ожидания ответа пользователя перед возобновлением выполнения"
 		},
 		"limitType": {
-			"displayName": "Тип лимита",
+			"displayName": "Тип ограничения",
 			"description": "Устанавливает условие для возобновления выполнения. Может быть указанной датой или через определённый промежуток времени.",
 			"options": {
 				"afterTimeInterval": {
@@ -365,8 +365,8 @@
 				},
 				"binaryPropertyName": {
 					"displayName": "Имя поля для двоичных данных",
-					"description": "Имя выходного поля для помещения любых данных двоичного файла. Актуально только в том случае, если получены двоичные данные.",
-					"hint": "Имя выходного двоичного поля, в которое помещается файл."
+					"description": "Имя выходного поля для двоичных данных файла. Актуально только при получении двоичных данных.",
+					"hint": "Имя выходного двоичного поля для сохранения файла"
 				},
 				"ignoreBots": {
 					"displayName": "Игнорировать ботов",
@@ -374,7 +374,7 @@
 				},
 				"onlyRunIf": {
 					"displayName": "Запускать только если",
-					"description": "Выражение оценивается по входящему запросу. Рабочий процесс будет запущен только в том случае, если выражение возвращает true. <code>$json__N8N_TOKEN_1__ предоставляет запрос как <code>{ тело, заголовки, параметры, запрос }</code>. Запросы, которые не совпадают, получают ответ 200 без создания выполнения. Если выражение не может быть вычислено, запрос разрешается и ошибка регистрируется."
+					"description": "Выражение, вычисляемое для входящего запроса. Рабочий процесс выполнится только если выражение вернёт true. <code>$json</code> предоставляет запрос как <code>{ body, headers, params, query }</code>. Запросы, не совпадающие с условием, получают ответ 200 без создания выполнения. Если выражение не вычисляется, запрос пропускается и ошибка регистрируется."
 				},
 				"ipWhitelist": {
 					"displayName": "Белый список IP-адресов",
@@ -383,10 +383,10 @@
 				},
 				"noResponseBody": {
 					"displayName": "Нет тела ответа",
-					"description": "Отправлять ли какое-либо тело в ответе"
+					"description": "Отправлять ли тело в ответе"
 				},
 				"rawBody": {
-					"displayName": "сырое тело",
+					"displayName": "Сырое тело",
 					"description": "Возвращать ли сырое тело"
 				},
 				"responseData": {
@@ -395,15 +395,15 @@
 					"placeholder": "успех"
 				},
 				"responseContentType": {
-					"displayName": "Тип контента ответа",
-					"description": "Установите пользовательский тип контента, который будет возвращаться, если должен быть возвращен другой, например «application/json».",
-					"placeholder": "приложение/xml"
+					"displayName": "Content-Type ответа",
+					"description": "Установите пользовательский тип контента вместо, например, «application/json»",
+					"placeholder": "application/xml"
 				},
 				"responseHeaders": {
 					"values": {
 						"responseHeaders": {
-							"displayName": "Заголовки ответов",
-							"description": "Добавьте заголовки в ответ вебхука"
+							"displayName": "Р—Р°РіРѕР»РѕРІРєРё РѕС‚РІРµС‚РѕРІ",
+							"description": "Р”РѕР±Р°РІСЊС‚Рµ Р·Р°РіРѕР»РѕРІРєРё РІ РѕС‚РІРµС‚ РІРµР±С…СѓРєР°"
 						},
 						"entries": {
 							"options": {
@@ -413,27 +413,27 @@
 								},
 								"value": {
 									"displayName": "Значение",
-									"description": "Значение заголовка"
+									"description": "Р—РЅР°С‡РµРЅРёРµ Р·Р°РіРѕР»РѕРІРєР°"
 								}
 							}
 						}
 					},
-					"placeholder": "Добавить заголовок ответа",
-					"displayName": "Заголовки ответов",
-					"description": "Добавьте заголовки в ответ вебхука",
+					"placeholder": "Р”РѕР±Р°РІРёС‚СЊ Р·Р°РіРѕР»РѕРІРѕРє РѕС‚РІРµС‚Р°",
+					"displayName": "Р—Р°РіРѕР»РѕРІРєРё РѕС‚РІРµС‚РѕРІ",
+					"description": "Р”РѕР±Р°РІСЊС‚Рµ Р·Р°РіРѕР»РѕРІРєРё РІ РѕС‚РІРµС‚ РІРµР±С…СѓРєР°",
 					"options": {
 						"entries": {
-							"displayName": "Записи"
+							"displayName": "Р—Р°РїРёСЃРё"
 						}
 					}
 				},
 				"responsePropertyName": {
 					"displayName": "Имя свойства",
-					"description": "Имя свойства, данные которого возвращаются вместо всего JSON."
+					"description": "Имя свойства для возврата его данных вместо всего JSON"
 				},
 				"webhookSuffix": {
 					"displayName": "Суффикс вебхука",
-					"description": "Этот суффиксный путь будет добавлен к URL-адресу перезапуска. Полезно при использовании нескольких узлов ожидания.",
+					"description": "Этот суффикс будет добавлен к URL перезапуска. Полезно при использовании нескольких узлов ожидания.",
 					"placeholder": "вебхук"
 				},
 				"appendAttribution": {
@@ -476,7 +476,7 @@
 					"displayName": "Форма ответа",
 					"options": {
 						"values": {
-							"displayName": "Ценности"
+							"displayName": "Значения"
 						}
 					}
 				}

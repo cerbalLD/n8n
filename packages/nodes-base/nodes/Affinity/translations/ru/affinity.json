@@ -25,11 +25,11 @@
 			"displayName": "Операция",
 			"options": {
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить человека"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить несколько человек"
 				},
 				"create": {

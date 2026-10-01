@@ -1,7 +1,7 @@
 {
 	"header": {
 		"displayName": "APITemplate.io",
-		"description": "Используйте API APITemplate.io."
+		"description": "Используйте API APITemplate.io"
 	},
 	"nodeView": {
 		"resource": {
@@ -25,36 +25,36 @@
 					"displayName": "Создать"
 				},
 				"get": {
-					"displayName": "Получать"
+					"displayName": "Получить"
 				}
 			}
 		},
 		"imageTemplateId": {
 			"displayName": "Имя или идентификатор шаблона",
-			"description": "Идентификатор шаблона изображения, который будет использоваться. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"description": "Идентификатор используемого шаблона изображения. Выберите из списка или укажите идентификатор, используя <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 		},
 		"pdfTemplateId": {
 			"displayName": "Имя или идентификатор шаблона",
-			"description": "Идентификатор используемого шаблона PDF. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"description": "Идентификатор используемого шаблона PDF. Выберите из списка или укажите идентификатор, используя <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 		},
 		"jsonParameters": {
 			"displayName": "Параметры JSON"
 		},
 		"download": {
 			"displayName": "Скачать",
-			"description": "Имя двоичного свойства, в которое записываются данные считанного файла."
+			"description": "Имя двоичного свойства для записи данных прочитанного файла"
 		},
 		"binaryProperty": {
-			"displayName": "Поместите выходной файл в поле",
-			"hint": "Имя выходного двоичного поля, в которое помещается файл."
+			"displayName": "Поместить выходной файл в поле",
+			"hint": "Имя выходного двоичного поля для сохранения файла"
 		},
 		"overridesJson": {
 			"displayName": "Переопределения (JSON)",
-			"placeholder": "[ {\"name\": \"text_1\", \"text\": \"hello world\", \"textBackgroundColor\": \"rgba(246, 243, 243, 0)\" } ]"
+			"placeholder": "[ {\\\"name\\\": \\\"text_1\\\", \\\"text\\\": \\\"hello world\\\", \\\"textBackgroundColor\\\": \\\"rgba(246, 243, 243, 0)\\\" } ]"
 		},
 		"propertiesJson": {
 			"displayName": "Свойства (JSON)",
-			"placeholder": "{ \"имя\": \"text_1\" }"
+			"placeholder": "{ \\\"name\\\": \\\"text_1\\\" }"
 		},
 		"overridesUi": {
 			"options": {
@@ -62,7 +62,7 @@
 					"displayName": "Переопределения"
 				},
 				"overrideValues": {
-					"displayName": "Переопределить",
+					"displayName": "Переопределение",
 					"values": {
 						"propertiesUi": {
 							"options": {
@@ -74,16 +74,16 @@
 									"values": {
 										"key": {
 											"displayName": "Ключ",
-											"description": "Название объекта размещения"
+											"description": "Имя свойства"
 										},
 										"value": {
 											"displayName": "Значение",
-											"description": "Стоимость недвижимости"
+											"description": "Значение свойства"
 										}
 									}
 								}
 							},
-							"placeholder": "Добавить недвижимость",
+							"placeholder": "Добавить свойство",
 							"displayName": "Характеристики"
 						}
 					}
@@ -102,16 +102,16 @@
 					"values": {
 						"key": {
 							"displayName": "Ключ",
-							"description": "Название объекта размещения"
+							"description": "Имя свойства"
 						},
 						"value": {
 							"displayName": "Значение",
-							"description": "Стоимость недвижимости"
+							"description": "Значение свойства"
 						}
 					}
 				}
 			},
-			"placeholder": "Добавить недвижимость",
+			"placeholder": "Добавить свойство",
 			"displayName": "Характеристики"
 		},
 		"options": {
@@ -120,7 +120,7 @@
 			"options": {
 				"fileName": {
 					"displayName": "Имя файла",
-					"description": "Имя загруженного изображения/pdf. Он должен включать расширение. Например: отчет.pdf"
+					"description": "Имя загруженного изображения/PDF. Должно включать расширение. Например: report.pdf"
 				}
 			}
 		}

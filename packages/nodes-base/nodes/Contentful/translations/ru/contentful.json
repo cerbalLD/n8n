@@ -23,13 +23,13 @@
 					"displayName": "Актив"
 				},
 				"contentType": {
-					"displayName": "Тип контента"
+					"displayName": "Тип содержимого"
 				},
 				"entry": {
 					"displayName": "Запись"
 				},
 				"locale": {
-					"displayName": "Языковой стандарт"
+					"displayName": "Локаль"
 				},
 				"space": {
 					"displayName": "Пространство"
@@ -40,10 +40,10 @@
 			"displayName": "Операция",
 			"options": {
 				"get": {
-					"displayName": "Получать"
+					"displayName": "Получить"
 				},
 				"getAll": {
-					"displayName": "Получить много"
+					"displayName": "Получить множество"
 				}
 			}
 		},
@@ -77,7 +77,7 @@
 					"placeholder": "fields.tags[nin]=accessories,flowers"
 				},
 				"exist": {
-					"displayName": "Существовать",
+					"displayName": "Проверить наличие",
 					"description": "Найти все данные, соответствующие условию: {attribute}[exists]={value}. Атрибут может использовать точечную нотацию.",
 					"placeholder": "fields.tags[exists]=true"
 				},

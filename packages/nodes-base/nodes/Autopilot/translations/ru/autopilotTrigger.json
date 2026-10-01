@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Триггер автопилота",
-		"description": "Обработка событий автопилота с помощью веб-перехватчиков"
+		"displayName": "Триггер Autopilot",
+		"description": "Обработка событий Autopilot через вебхуки"
 	},
 	"nodeView": {
 		"event": {
@@ -14,19 +14,19 @@
 					"displayName": "Контакт добавлен в список"
 				},
 				"contactEnteredSegment": {
-					"displayName": "Контакт вошел в сегмент"
+					"displayName": "Контакт вошёл в сегмент"
 				},
 				"contactLeftSegment": {
-					"displayName": "Контактный левый сегмент"
+					"displayName": "Контакт покинул сегмент"
 				},
 				"contactRemovedFromList": {
 					"displayName": "Контакт удален из списка"
 				},
 				"contactUnsubscribed": {
-					"displayName": "Контакт Отписан от подписки"
+					"displayName": "Контакт отписался"
 				},
 				"contactUpdated": {
-					"displayName": "Контакт обновлен"
+					"displayName": "Контакт обновлён"
 				}
 			}
 		}

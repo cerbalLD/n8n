@@ -1,17 +1,17 @@
 {
 	"header": {
-		"displayName": "АВС СНС",
-		"description": "Отправляет данные в AWS SNS."
+		"displayName": "AWS SNS",
+		"description": "Отправляет данные в AWS SNS"
 	},
 	"nodeView": {
 		"authentication": {
 			"displayName": "Аутентификация",
 			"options": {
 				"iam": {
-					"displayName": "АВС (ИАМ)"
+					"displayName": "AWS (IAM)"
 				},
 				"assumeRole": {
-					"displayName": "AWS (принятие роли)"
+					"displayName": "AWS (Assume Role)"
 				}
 			}
 		},
@@ -41,11 +41,11 @@
 			"options": {
 				"displayName": {
 					"displayName": "Отображаемое имя",
-					"description": "Отображаемое имя, которое будет использоваться для темы с подписками на SMS."
+					"description": "Отображаемое имя для темы с подписками SMS"
 				},
 				"fifoTopic": {
-					"displayName": "Фифо-тема",
-					"description": "Является ли тема, которую вы хотите создать, темой FIFO (первым пришел — первым обслужен)"
+					"displayName": "FIFO-тема",
+					"description": "Является ли создаваемая тема FIFO (первый вошёл — первый вышел)"
 				}
 			}
 		},
@@ -53,12 +53,12 @@
 			"displayName": "Тема"
 		},
 		"subject": {
-			"displayName": "Предмет",
-			"description": "Тема, когда сообщение доставляется на конечные точки электронной почты."
+			"displayName": "Тема",
+			"description": "Тема письма при доставке на почтовые конечные точки"
 		},
 		"message": {
 			"displayName": "Сообщение",
-			"description": "Сообщение, которое вы хотите отправить"
+			"description": "Сообщение для отправки"
 		}
 	}
 }

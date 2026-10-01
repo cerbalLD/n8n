@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "Тапфилиат",
+		"displayName": "Tapfiliate",
 		"description": "Использование API Tapfiliate"
 	},
 	"nodeView": {
@@ -8,13 +8,13 @@
 			"displayName": "Ресурс",
 			"options": {
 				"affiliate": {
-					"displayName": "Партнер"
+					"displayName": "Партнёр"
 				},
 				"affiliateMetadata": {
-					"displayName": "Партнерские метаданные"
+					"displayName": "Метаданные партнёра"
 				},
 				"programAffiliate": {
-					"displayName": "Партнерская программа"
+					"displayName": "Партнер программы"
 				}
 			}
 		},
@@ -23,39 +23,39 @@
 			"options": {
 				"create": {
 					"displayName": "Создать",
-					"description": "Создать партнерку"
+					"description": "Создать партнёра"
 				},
 				"delete": {
 					"displayName": "Удалить",
-					"description": "Удалить партнера"
+					"description": "Удалить партнёра"
 				},
 				"get": {
-					"displayName": "Получать",
-					"description": "Получить партнерку в программе"
+					"displayName": "Получить",
+					"description": "Получить партнёра в программе"
 				},
 				"getAll": {
-					"displayName": "Получить много",
-					"description": "Получите много партнеров в программе"
+					"displayName": "Получить множество",
+					"description": "Получить много партнёров в программе"
 				},
 				"add": {
 					"displayName": "Добавить",
-					"description": "Добавить партнера в программу"
+					"description": "Добавить партнёра в программу"
 				},
 				"remove": {
 					"displayName": "Удалять",
-					"description": "Удалить метаданные партнера"
+					"description": "Удалить метаданные партнёра"
 				},
 				"update": {
 					"displayName": "Обновить",
-					"description": "Обновить метаданные партнера"
+					"description": "Обновить метаданные партнёра"
 				},
 				"approve": {
 					"displayName": "Одобрить",
-					"description": "Утвердить партнера для программы"
+					"description": "Утвердить партнёра для программы"
 				},
 				"disapprove": {
-					"displayName": "Не одобрять",
-					"description": "Отклонить партнерство"
+					"displayName": "Отклонить",
+					"description": "Отклонить партнёра"
 				}
 			}
 		},
@@ -119,17 +119,17 @@
 				},
 				"approved": {
 					"displayName": "Одобренный",
-					"description": "Необязательный статус утверждения"
+					"description": "Необязательный статус одобрения"
 				},
 				"coupon": {
 					"displayName": "Купон",
-					"description": "Дополнительный купон для этого партнера"
+					"description": "Необязательный купон для этого партнёра"
 				}
 			}
 		},
 		"affiliateId": {
-			"displayName": "Идентификатор партнера",
-			"description": "Идентификатор партнера"
+			"displayName": "Идентификатор партнёра",
+			"description": "Идентификатор партнёра"
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",

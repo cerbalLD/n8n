@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Заммад",
-		"description": "Используйте API Zammad"
+		"displayName": "Zammad",
+		"description": "Использование API Zammad"
 	},
 	"nodeView": {
 		"authentication": {
@@ -11,7 +11,7 @@
 					"displayName": "Базовая аутентификация"
 				},
 				"tokenAuth": {
-					"displayName": "Токен аутентификации"
+					"displayName": "Токен для аутентификации"
 				}
 			}
 		},
@@ -25,7 +25,7 @@
 					"displayName": "Организация"
 				},
 				"ticket": {
-					"displayName": "Билет"
+					"displayName": "Заявка"
 				},
 				"user": {
 					"displayName": "Пользователь"
@@ -41,14 +41,14 @@
 				},
 				"delete": {
 					"displayName": "Удалить",
-					"description": "Удаление пользователя"
+					"description": "Удалить пользователя"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить пользователя"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить много пользователей"
 				},
 				"update": {
@@ -56,8 +56,8 @@
 					"description": "Обновить пользователя"
 				},
 				"getSelf": {
-					"displayName": "Получить себя",
-					"description": "Получить текущего пользователя, вошедшего в систему"
+					"displayName": "Получить текущего пользователя",
+					"description": "Получить текущего авторизованного пользователя"
 				}
 			}
 		},
@@ -66,7 +66,7 @@
 		},
 		"id": {
 			"displayName": "ID пользователя",
-			"description": "Пользователь для получения. Укажите идентификатор, используя выражение <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"description": "Пользователь для получения. Укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"additionalFields": {
 			"displayName": "Дополнительные поля",
@@ -74,7 +74,7 @@
 			"options": {
 				"active": {
 					"displayName": "Активный",
-					"description": "Действует ли организация"
+					"description": "Активна ли организация"
 				},
 				"customFieldsUi": {
 					"values": {
@@ -85,16 +85,16 @@
 							"options": {
 								"name": {
 									"displayName": "Имя поля или ID",
-									"description": "Имя настраиваемого поля, которое нужно установить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+									"description": "Имя пользовательского поля для установки. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 								},
 								"value": {
 									"displayName": "Значение поля",
-									"description": "Значение для установки в настраиваемом поле"
+									"description": "Значение для установки в пользовательском поле"
 								}
 							}
 						}
 					},
-					"placeholder": "Добавить настраиваемое поле",
+					"placeholder": "Добавить пользовательское поле",
 					"displayName": "Пользовательские поля",
 					"options": {
 						"customFieldPairs": {
@@ -108,7 +108,7 @@
 				},
 				"shared": {
 					"displayName": "Общий",
-					"description": "Доступен ли доступ к организации другим экземплярам"
+					"description": "Доступна ли организация для других экземпляров"
 				},
 				"domain": {
 					"displayName": "Домен",
@@ -116,7 +116,7 @@
 				},
 				"domain_assignment": {
 					"displayName": "Назначение домена",
-					"description": "Следует ли назначать пользователей на основе их домена электронной почты"
+					"description": "Назначать ли пользователей на основе их домена электронной почты"
 				},
 				"vip": {
 					"displayName": "VIP",
@@ -139,7 +139,7 @@
 								},
 								"address": {
 									"displayName": "Улица и номер",
-									"placeholder": "Борзигстр. 27"
+									"placeholder": "Borsigstr. 27"
 								},
 								"zip": {
 									"displayName": "Почтовый индекс",
@@ -170,7 +170,7 @@
 				},
 				"organization": {
 					"displayName": "Название или ID организации",
-					"description": "Название организации, которую нужно назначить пользователю. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"description": "Название организации, которую назначить пользователю. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"phone": {
 					"displayName": "Телефон (стационарный)",
@@ -196,7 +196,7 @@
 			"options": {
 				"active": {
 					"displayName": "Активный",
-					"description": "Действует ли организация"
+					"description": "Активна ли организация"
 				},
 				"customFieldsUi": {
 					"values": {
@@ -207,16 +207,16 @@
 							"options": {
 								"name": {
 									"displayName": "Имя поля или ID",
-									"description": "Имя настраиваемого поля, которое нужно установить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+									"description": "Имя пользовательского поля для установки. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 								},
 								"value": {
 									"displayName": "Значение поля",
-									"description": "Значение для установки в настраиваемом поле"
+									"description": "Значение для установки в пользовательском поле"
 								}
 							}
 						}
 					},
-					"placeholder": "Добавить настраиваемое поле",
+					"placeholder": "Добавить пользовательское поле",
 					"displayName": "Пользовательские поля",
 					"options": {
 						"customFieldPairs": {
@@ -233,7 +233,7 @@
 				},
 				"shared": {
 					"displayName": "Общий",
-					"description": "Доступен ли доступ к организации другим экземплярам"
+					"description": "Доступна ли организация для других экземпляров"
 				},
 				"domain": {
 					"displayName": "Домен",
@@ -241,7 +241,7 @@
 				},
 				"domain_assignment": {
 					"displayName": "Назначение домена",
-					"description": "Следует ли назначать пользователей на основе их домена электронной почты"
+					"description": "Назначать ли пользователей на основе их домена электронной почты"
 				},
 				"vip": {
 					"displayName": "VIP",
@@ -253,27 +253,27 @@
 				},
 				"group": {
 					"displayName": "Группа",
-					"description": "Группа, которой будет принадлежать билет. Выберите из списка или укажите имя с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"description": "Группа, которой будет принадлежать билет. Выберите из списка или укажите имя с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"state_id": {
 					"displayName": "область",
-					"description": "Состояние билета. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"description": "Состояние билета. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"pending_time": {
 					"displayName": "Время ожидания",
-					"description": "Дата и время, когда ожидающий билет должен быть активирован (требуется для состояний ожидания напоминания, ожидания закрытия и повтора)"
+					"description": "Дата и время активации билета со статусом «Ожидание» (требуется для статусов напоминания, отложено и дремота)"
 				},
 				"priority_id": {
 					"displayName": "Приоритет",
-					"description": "Приоритет билета. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"description": "Приоритет билета. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"owner_id": {
 					"displayName": "Владелец",
-					"description": "Агент, ответственный за билет. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"description": "Агент, ответственный за билет. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"customer_id": {
 					"displayName": "Клиент",
-					"description": "Клиент, связанный с билетом. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"description": "Клиент, связанный с билетом. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"addressUi": {
 					"values": {
@@ -292,7 +292,7 @@
 								},
 								"address": {
 									"displayName": "Улица и номер",
-									"placeholder": "Борзигстр. 27"
+									"placeholder": "Borsigstr. 27"
 								},
 								"zip": {
 									"displayName": "Почтовый индекс",
@@ -315,7 +315,7 @@
 				},
 				"email": {
 					"displayName": "Адрес электронной почты",
-					"placeholder": "привет@n8n.io"
+					"placeholder": "hello@n8n.io"
 				},
 				"fax": {
 					"displayName": "Факс",
@@ -323,15 +323,15 @@
 				},
 				"firstname": {
 					"displayName": "Имя",
-					"placeholder": "Джон"
+					"placeholder": "John"
 				},
 				"lastname": {
 					"displayName": "Фамилия",
-					"placeholder": "Смит"
+					"placeholder": "Smith"
 				},
 				"organization": {
 					"displayName": "Название или ID организации",
-					"description": "Название организации, которую нужно назначить пользователю. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"description": "Название организации, которую назначить пользователю. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"phone": {
 					"displayName": "Телефон (стационарный)",
@@ -361,17 +361,17 @@
 		},
 		"title": {
 			"displayName": "Название",
-			"description": "Название заявки для создания"
+			"description": "Название билета для создания"
 		},
 		"group": {
 			"displayName": "Имя или ID группы",
-			"description": "Группа, которой будет принадлежать создаваемый билет. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>.",
+			"description": "Группа, которой будет принадлежать создаваемый билет. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>.",
 			"placeholder": "Служба поддержки первого уровня"
 		},
 		"customer": {
 			"displayName": "Имя или идентификатор электронной почты клиента",
-			"description": "Адрес электронной почты клиента, указанного в создаваемой заявке. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>.",
-			"placeholder": "привет@n8n.io"
+			"description": "Адрес электронной почты клиента в создаваемом билете. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>.",
+			"placeholder": "hello@n8n.io"
 		},
 		"article": {
 			"options": {
@@ -379,13 +379,13 @@
 					"displayName": "Статья"
 				},
 				"articleDetails": {
-					"displayName": "Подробности о статье",
+					"displayName": "Подробности статьи",
 					"values": {
 						"subject": {
-							"displayName": "Предмет"
+							"displayName": "Тема"
 						},
 						"body": {
-							"displayName": "Тело"
+							"displayName": "Тело запроса"
 						},
 						"visibility": {
 							"displayName": "Видимость",
@@ -396,7 +396,7 @@
 								},
 								"internal": {
 									"displayName": "Внутренний",
-									"description": "Видно в справочной службе"
+									"description": "Видно справочной службе"
 								}
 							}
 						},
@@ -445,7 +445,7 @@
 						},
 						"cc": {
 							"displayName": "CC",
-							"description": "Адреса электронной почты получателя копии, разделенные запятыми",
+							"description": "Адреса электронной почты получателей копии, разделённые запятыми",
 							"placeholder": "имя@email.com"
 						},
 						"reply_to": {
@@ -459,11 +459,11 @@
 		},
 		"firstname": {
 			"displayName": "Имя",
-			"placeholder": "Джон"
+			"placeholder": "John"
 		},
 		"lastname": {
 			"displayName": "Фамилия",
-			"placeholder": "Смит"
+			"placeholder": "Smith"
 		},
 		"query": {
 			"displayName": "Запрос"
@@ -474,8 +474,8 @@
 			"options": {
 				"query": {
 					"displayName": "Запрос",
-					"description": "Запрос для фильтрации результатов по",
-					"placeholder": "пользователь.имя:Джон"
+					"description": "Запрос для фильтрации результатов",
+					"placeholder": "user.firstname:john"
 				},
 				"sortUi": {
 					"values": {

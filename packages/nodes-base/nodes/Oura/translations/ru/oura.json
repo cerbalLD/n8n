@@ -19,7 +19,7 @@
 			"displayName": "Операция",
 			"options": {
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получение личной информации пользователя"
 				},
 				"getActivity": {

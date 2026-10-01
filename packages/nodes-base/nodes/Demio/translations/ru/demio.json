@@ -19,11 +19,11 @@
 			"displayName": "Операция",
 			"options": {
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить отчёт о мероприятии"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить много событий"
 				},
 				"register": {
@@ -114,7 +114,7 @@
 								},
 								"value": {
 									"displayName": "Значение",
-									"description": "Значение, которое нужно установить в настраиваемом поле"
+									"description": "Значение для установки в пользовательском поле"
 								}
 							}
 						}

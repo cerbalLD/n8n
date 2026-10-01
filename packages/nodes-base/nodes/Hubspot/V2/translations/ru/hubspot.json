@@ -14,7 +14,7 @@
 					"displayName": "Сервисный ключ"
 				},
 				"oAuth2": {
-					"displayName": "ОАут2"
+					"displayName": "OAuth2"
 				}
 			}
 		},
@@ -37,7 +37,7 @@
 					"displayName": "Вовлечённость"
 				},
 				"ticket": {
-					"displayName": "Билет"
+					"displayName": "Заявка"
 				}
 			}
 		},
@@ -46,18 +46,18 @@
 			"options": {
 				"upsert": {
 					"displayName": "Создать или обновить",
-					"description": "Создайте новый контакт или обновите текущий, если он уже существует (upsert)"
+					"description": "Создайте новый контакт или обновите существующий (upsert)"
 				},
 				"delete": {
 					"displayName": "Удалить",
 					"description": "Удалить билет"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить билет"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить много билетов"
 				},
 				"getRecentlyCreatedUpdated": {
@@ -74,7 +74,7 @@
 				},
 				"remove": {
 					"displayName": "Удалять",
-					"description": "Удаление контакта из списка"
+					"description": "Удалить контакт из списка"
 				},
 				"create": {
 					"displayName": "Создать",
@@ -783,7 +783,7 @@
 							"displayName": "амхарский"
 						},
 						"ar": {
-							"displayName": "арабский"
+							"displayName": "Арабский"
 						},
 						"an": {
 							"displayName": "арагонский"
@@ -855,7 +855,7 @@
 							"displayName": "чичева; чева; ньянджа"
 						},
 						"zh": {
-							"displayName": "китайский"
+							"displayName": "Китайский"
 						},
 						"cu": {
 							"displayName": "церковнославянский; старославянский; церковнославянский; старобългарский; старославянский"
@@ -954,7 +954,7 @@
 							"displayName": "гереро"
 						},
 						"hi": {
-							"displayName": "хинди"
+							"displayName": "Хинди"
 						},
 						"ho": {
 							"displayName": "хири моту"
@@ -990,7 +990,7 @@
 							"displayName": "ирландский"
 						},
 						"it": {
-							"displayName": "итальянский"
+							"displayName": "Итальянский"
 						},
 						"ja": {
 							"displayName": "японский"
@@ -1029,7 +1029,7 @@
 							"displayName": "конго"
 						},
 						"ko": {
-							"displayName": "корейский"
+							"displayName": "Корейский"
 						},
 						"kj": {
 							"displayName": "куаньяма; кваньяма"
@@ -1146,7 +1146,7 @@
 							"displayName": "Польский"
 						},
 						"pt": {
-							"displayName": "португальский"
+							"displayName": "Португальский"
 						},
 						"ps": {
 							"displayName": "пушту; пушту"
@@ -1377,7 +1377,7 @@
 					"description": "Квалификация контактов по готовности к продажам. Может быть задана при импорте, в формах, рабочих процессах и вручную для каждого контакта. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"linkedinUrl": {
-					"displayName": "URL-адрес LinkedIn",
+					"displayName": "URL LinkedIn",
 					"description": "URL страницы контакта на LinkedIn"
 				},
 				"maritalStatus": {
@@ -1464,11 +1464,11 @@
 					"description": "код штата или региона контакта"
 				},
 				"status": {
-					"displayName": "Имя или идентификатор статуса",
+					"displayName": "Имя или ID статуса",
 					"description": "Статус членства контакта в контенте. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"streetAddress": {
-					"displayName": "Адрес улицы",
+					"displayName": "Улица",
 					"description": "Адрес компании или организации с номером подразделения. На основе HubSpot Insights."
 				},
 				"timeZone": {
@@ -3076,7 +3076,7 @@
 							"displayName": "Все"
 						},
 						"none": {
-							"displayName": "Никто"
+							"displayName": "Нет"
 						},
 						"newest": {
 							"displayName": "Самые новые"
@@ -3173,7 +3173,7 @@
 					"description": "URL страницы Google+ компании или организации."
 				},
 				"isPublic": {
-					"displayName": "Является общедоступным",
+					"displayName": "Общедоступный",
 					"description": "Является ли компания публичной."
 				},
 				"lifecycleStatus": {
@@ -3568,7 +3568,7 @@
 					"description": "Тип деятельности компании. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"isPublic": {
-					"displayName": "Является общедоступным",
+					"displayName": "Общедоступный",
 					"description": "Является ли компания публичной."
 				},
 				"leadStatus": {
@@ -3611,7 +3611,7 @@
 					"description": "Штат или регион, в котором расположена компания или организация. На основе HubSpot Insights."
 				},
 				"streetAddress": {
-					"displayName": "Адрес улицы",
+					"displayName": "Улица",
 					"description": "Адрес компании или организации с номером подразделения. На основе HubSpot Insights."
 				},
 				"streetAddress2": {
@@ -3677,7 +3677,7 @@
 					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"pipeline": {
-					"displayName": "Трубопровод"
+					"displayName": "Конвейер"
 				},
 				"associatedCompanyIds": {
 					"displayName": "Имена или идентификаторы компаний",
@@ -3814,7 +3814,7 @@
 			}
 		},
 		"dueDate": {
-			"displayName": "Срок оплаты",
+			"displayName": "Срок выполнения",
 			"description": "Срок выполнения задачи."
 		},
 		"metadata": {
@@ -3822,7 +3822,7 @@
 			"placeholder": "Добавить поле",
 			"options": {
 				"body": {
-					"displayName": "Тело"
+					"displayName": "Тело запроса"
 				},
 				"forObjectType": {
 					"displayName": "Для типа объекта",
@@ -3880,7 +3880,7 @@
 					}
 				},
 				"subject": {
-					"displayName": "Предмет"
+					"displayName": "Тема"
 				},
 				"bcc": {
 					"displayName": "BCC"

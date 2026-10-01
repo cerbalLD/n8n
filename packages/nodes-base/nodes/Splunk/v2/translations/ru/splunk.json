@@ -41,11 +41,11 @@
 					"description": "Удалить отчёт поиска"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить пользователя"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить много пользователей"
 				},
 				"deleteJob": {
@@ -233,7 +233,7 @@
 					"displayName": "Сортировка"
 				},
 				"values": {
-					"displayName": "Ценности",
+					"displayName": "Значения",
 					"values": {
 						"sort_dir": {
 							"displayName": "Направление сортировки",

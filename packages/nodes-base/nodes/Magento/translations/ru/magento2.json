@@ -33,11 +33,11 @@
 					"description": "Удалить продукт"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить продукт"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получите много продуктов"
 				},
 				"update": {
@@ -107,7 +107,7 @@
 									"displayName": "Фамилия"
 								},
 								"middlename": {
-									"displayName": "Второе имя"
+									"displayName": "Отчество"
 								},
 								"prefix": {
 									"displayName": "Префикс"
@@ -199,7 +199,7 @@
 					"displayName": "Подписан"
 				},
 				"middlename": {
-					"displayName": "Второе имя"
+					"displayName": "Отчество"
 				},
 				"password": {
 					"displayName": "Пароль"
@@ -325,7 +325,7 @@
 									"displayName": "Фамилия"
 								},
 								"middlename": {
-									"displayName": "Второе имя"
+									"displayName": "Отчество"
 								},
 								"prefix": {
 									"displayName": "Префикс"
@@ -417,7 +417,7 @@
 					"displayName": "Подписан"
 				},
 				"middlename": {
-					"displayName": "Второе имя"
+					"displayName": "Отчество"
 				},
 				"password": {
 					"displayName": "Пароль"
@@ -501,7 +501,7 @@
 			"displayName": "Фильтр",
 			"options": {
 				"none": {
-					"displayName": "Никто"
+					"displayName": "Нет"
 				},
 				"manual": {
 					"displayName": "Построить вручную"

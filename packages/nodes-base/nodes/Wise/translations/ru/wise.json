@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Мудрый",
-		"description": "Используйте Wise API"
+		"displayName": "Wise",
+		"description": "Использование API Wise"
 	},
 	"nodeView": {
 		"resource": {
@@ -31,22 +31,22 @@
 			"displayName": "Операция",
 			"options": {
 				"getBalances": {
-					"displayName": "Получить балансы",
-					"description": "Получить балансы для всех валют счета этого пользователя"
+					"displayName": "Получить остатки",
+					"description": "Получить остатки для всех валют аккаунта пользователя"
 				},
 				"getCurrencies": {
-					"displayName": "Получить валюту",
-					"description": "Получить валюты на безграничном счете этого пользователя"
+					"displayName": "Получить валюты",
+					"description": "Получить валюты в глобальном аккаунте пользователя"
 				},
 				"getStatement": {
-					"displayName": "Получить заявление",
-					"description": "Получить выписку для безрамочной учетной записи этого пользователя."
+					"displayName": "Получить выписку",
+					"description": "Получить выписку по глобальному аккаунту пользователя"
 				},
 				"get": {
-					"displayName": "Получать"
+					"displayName": "Получить"
 				},
 				"getAll": {
-					"displayName": "Получить много"
+					"displayName": "Получить множество"
 				},
 				"create": {
 					"displayName": "Создать"
@@ -60,20 +60,20 @@
 			}
 		},
 		"profileId": {
-			"displayName": "Имя или идентификатор профиля",
-			"description": "Идентификатор профиля пользователя, который требуется получить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"displayName": "Имя профиля или идентификатор",
+			"description": "Идентификатор профиля пользователя для получения. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"borderlessAccountId": {
-			"displayName": "Имя или идентификатор учетной записи без границ",
-			"description": "Идентификатор безграничной учетной записи, выписку из которой нужно получить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"displayName": "Имя глобального аккаунта или идентификатор",
+			"description": "Идентификатор глобального аккаунта для получения выписки. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"currency": {
 			"displayName": "валюта",
-			"description": "Код валюты безграничного счета для получения выписки"
+			"description": "Код валюты глобального аккаунта для получения выписки"
 		},
 		"format": {
 			"displayName": "Формат",
-			"description": "Формат файла для получения оператора",
+			"description": "Формат файла для получения выписки",
 			"options": {
 				"json": {
 					"displayName": "JSON"
@@ -90,8 +90,8 @@
 			}
 		},
 		"binaryProperty": {
-			"displayName": "Поместите выходной файл в поле",
-			"hint": "Имя выходного двоичного поля, в которое помещается файл."
+			"displayName": "Поместить выходной файл в поле",
+			"hint": "Имя выходного двоичного поля для сохранения файла"
 		},
 		"fileName": {
 			"displayName": "Имя файла",
@@ -103,16 +103,16 @@
 			"placeholder": "Добавить поле",
 			"options": {
 				"lineStyle": {
-					"displayName": "Стиль линии",
-					"description": "Стиль линии для получения оператора",
+					"displayName": "Стиль строки",
+					"description": "Стиль строки для получения выписки",
 					"options": {
 						"COMPACT": {
 							"displayName": "Компактный",
-							"description": "Одна строка на транзакцию"
+							"description": "Одна строка на операцию"
 						},
 						"FLAT": {
 							"displayName": "Фиксированная",
-							"description": "Отдельные строки для комиссий за транзакции"
+							"description": "Отдельные строки для комиссий"
 						}
 					}
 				},
@@ -120,7 +120,7 @@
 					"values": {
 						"range": {
 							"displayName": "Диапазон",
-							"description": "Диапазон времени для получения обменного курса для"
+							"description": "Диапазон времени для получения курса обмена"
 						},
 						"rangeProperties": {
 							"options": {
@@ -146,7 +146,7 @@
 							"displayName": "Свойства диапазона"
 						}
 					},
-					"description": "Диапазон времени для получения обменного курса для"
+					"description": "Диапазон времени для получения курса обмена"
 				},
 				"interval": {
 					"displayName": "Интервал",
@@ -164,29 +164,29 @@
 				},
 				"time": {
 					"displayName": "Время",
-					"description": "Момент времени, чтобы получить обменный курс для"
+					"description": "Конкретное время для получения курса обмена"
 				},
 				"reference": {
 					"displayName": "Ссылка",
-					"description": "Справочный текст для отображения в выписке по счету получателя"
+					"description": "Справочный текст для отображения в выписке по счёту получателя"
 				}
 			}
 		},
 		"source": {
 			"displayName": "Исходная валюта",
-			"description": "Код исходной валюты для получения обменного курса"
+			"description": "Код исходной валюты для получения курса обмена"
 		},
 		"target": {
 			"displayName": "Целевая валюта",
-			"description": "Код целевой валюты для получения обменного курса"
+			"description": "Код целевой валюты для получения курса обмена"
 		},
 		"targetAccountId": {
 			"displayName": "Имя или идентификатор целевого аккаунта",
-			"description": "Идентификатор счета, на который поступят средства. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"description": "Идентификатор счёта для получения средств. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"amountType": {
 			"displayName": "Тип суммы",
-			"description": "Будет ли сумма отправлена ​​или получена",
+			"description": "Отправляется или получается сумма",
 			"options": {
 				"source": {
 					"displayName": "Источник"
@@ -202,15 +202,15 @@
 		},
 		"sourceCurrency": {
 			"displayName": "Исходная валюта",
-			"description": "Код валюты для отправки котировки для создания"
+			"description": "Код валюты для отправки в котировке"
 		},
 		"targetCurrency": {
 			"displayName": "Целевая валюта",
-			"description": "Код валюты, которую необходимо получить для создания котировки"
+			"description": "Код валюты для получения в котировке"
 		},
 		"quoteId": {
 			"displayName": "Идентификатор предложения",
-			"description": "Идентификатор котировки, на основе которой создается перевод"
+			"description": "Идентификатор котировки для создания перевода"
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",
@@ -225,8 +225,8 @@
 			"description": "Идентификатор перевода для получения"
 		},
 		"downloadReceipt": {
-			"displayName": "Скачать квитанцию",
-			"description": "Загружать ли квитанцию ​​о переводе в виде PDF-файла. Только для выполненных переводов, имеющих статус «Исходящий платеж отправлен»."
+			"displayName": "Загрузить квитанцию",
+			"description": "Загружать ли квитанцию о переводе в формате PDF. Только для выполненных переводов со статусом 'Исходящий платёж отправлен'."
 		},
 		"filters": {
 			"displayName": "Фильтры",
@@ -241,10 +241,10 @@
 						"rangeProperties": {
 							"options": {
 								"createdDateStart": {
-									"displayName": "Дата создания Начало"
+									"displayName": "Дата создания: начало"
 								},
 								"createdDateEnd": {
-									"displayName": "Дата создания Конец"
+									"displayName": "Дата создания: конец"
 								}
 							}
 						}
@@ -266,25 +266,25 @@
 					"displayName": "Статус",
 					"options": {
 						"bounced_back": {
-							"displayName": "Пришёл в норму"
+							"displayName": "Возвращено"
 						},
 						"cancelled": {
 							"displayName": "Отменено"
 						},
 						"charged_back": {
-							"displayName": "Возвращенный заряд"
+							"displayName": "Возврат средств"
 						},
 						"funds_converted": {
 							"displayName": "Средства конвертированы"
 						},
 						"funds_refunded": {
-							"displayName": "Возвращенные средства"
+							"displayName": "Возвращённые средства"
 						},
 						"incoming_payment_waiting": {
 							"displayName": "Ожидание входящего платежа"
 						},
 						"outgoing_payment_sent": {
-							"displayName": "Исходящий платеж отправлен"
+							"displayName": "Исходящий платёж отправлен"
 						},
 						"processing": {
 							"displayName": "Обработка"
@@ -293,7 +293,7 @@
 							"displayName": "Неизвестный"
 						},
 						"waiting_recipient_input_to_proceed": {
-							"displayName": "Ожидание ввода данных получателя"
+							"displayName": "Ожидание данных получателя для продолжения"
 						}
 					}
 				},

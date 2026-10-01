@@ -46,11 +46,11 @@
 					"description": "Удалить возможность"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить возможность"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить несколько возможностей"
 				},
 				"update": {
@@ -84,7 +84,7 @@
 			"options": {
 				"fieldsList": {
 					"displayName": "Поля для включения",
-					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>",
+					"description": "Выберите из списка или укажите идентификаторы через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>",
 					"placeholder": "например name,email,phone"
 				}
 			}

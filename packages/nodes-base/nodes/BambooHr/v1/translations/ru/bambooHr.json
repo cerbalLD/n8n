@@ -29,11 +29,11 @@
 					"description": "Создать сотрудника"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить отчёт компании"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить файлы компании"
 				},
 				"update": {
@@ -455,7 +455,7 @@
 			"placeholder": "Добавить поле",
 			"options": {
 				"fields": {
-					"displayName": "Имена полей или идентификаторы",
+					"displayName": "Имена или идентификаторы полей",
 					"description": "набор полей для получения из данных сотрудника. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"share": {

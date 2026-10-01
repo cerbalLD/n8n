@@ -70,7 +70,7 @@
 					"description": "Если не установлено, будут выбраны все строки"
 				},
 				"values": {
-					"displayName": "Ценности",
+					"displayName": "Значения",
 					"values": {
 						"column": {
 							"displayName": "Столбец",
@@ -103,10 +103,10 @@
 									"displayName": "Меньше или равно"
 								},
 								"IS NULL": {
-									"displayName": "Нулевой"
+									"displayName": "Пусто"
 								},
 								"IS NOT NULL": {
-									"displayName": "Не является нулевым"
+									"displayName": "Не пусто"
 								}
 							}
 						},
@@ -234,7 +234,7 @@
 					"displayName": "Значения для отправки"
 				},
 				"values": {
-					"displayName": "Ценности",
+					"displayName": "Значения",
 					"values": {
 						"column": {
 							"displayName": "Столбец",
@@ -267,7 +267,7 @@
 					"displayName": "Сортировка"
 				},
 				"values": {
-					"displayName": "Ценности",
+					"displayName": "Значения",
 					"values": {
 						"column": {
 							"displayName": "Столбец",

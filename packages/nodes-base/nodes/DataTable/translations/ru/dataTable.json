@@ -23,7 +23,7 @@
 					"description": "Удалить строку(и)"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить строку(и)"
 				},
 				"rowExists": {

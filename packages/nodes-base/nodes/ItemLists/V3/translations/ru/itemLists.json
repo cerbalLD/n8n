@@ -72,7 +72,7 @@
 			"displayName": "Поля для агрегирования"
 		},
 		"destinationFieldName": {
-			"displayName": "Поместите вывод в поле",
+			"displayName": "Поместить результат в поле",
 			"description": "Имя выходного поля для помещения данных"
 		},
 		"include": {
@@ -275,7 +275,7 @@
 									"displayName": "Объединить"
 								},
 								"count": {
-									"displayName": "Считать"
+									"displayName": "Количество"
 								},
 								"countUnique": {
 									"displayName": "Количество уникальных"
@@ -301,7 +301,7 @@
 							"displayName": "Включить пустые значения"
 						},
 						"separateBy": {
-							"displayName": "Сепаратор",
+							"displayName": "Разделитель",
 							"hint": "Что вставлять между значениями",
 							"options": {
 								",": {
@@ -314,7 +314,7 @@
 									"displayName": "Новая строка"
 								},
 								"": {
-									"displayName": "Никто"
+									"displayName": "Нет"
 								},
 								" ": {
 									"displayName": "Пространство"

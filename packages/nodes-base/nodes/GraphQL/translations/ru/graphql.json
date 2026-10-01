@@ -21,13 +21,13 @@
 					"displayName": "Аутентификация заголовка"
 				},
 				"none": {
-					"displayName": "Никто"
+					"displayName": "Нет"
 				},
 				"oAuth1": {
 					"displayName": "ОАут1"
 				},
 				"oAuth2": {
-					"displayName": "ОАут2"
+					"displayName": "OAuth2"
 				},
 				"queryAuth": {
 					"displayName": "Запрос аутентификации"
@@ -52,8 +52,8 @@
 			"placeholder": "http://example.com/graphql"
 		},
 		"allowUnauthorizedCerts": {
-			"displayName": "Игнорировать проблемы с SSL (небезопасно)",
-			"description": "Загружать ли ответ, даже если проверка сертификата SSL невозможна"
+			"displayName": "Игнорировать проблемы SSL (небезопасно)",
+			"description": "Загружать ответ, даже если проверка сертификата SSL невозможна"
 		},
 		"requestFormat": {
 			"displayName": "Формат запроса",
@@ -83,7 +83,7 @@
 		},
 		"responseFormat": {
 			"displayName": "Формат ответа",
-			"description": "Формат, в котором данные возвращаются с URL-адреса.",
+			"description": "Формат, в котором данные возвращаются с URL-адреса",
 			"options": {
 				"json": {
 					"displayName": "JSON"

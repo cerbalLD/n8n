@@ -30,12 +30,12 @@
 					"description": "Удалить заказ"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить заказ"
 				},
 				"getAll": {
-					"displayName": "Получить много",
-					"description": "Получайте много заказов"
+					"displayName": "Получить множество",
+					"description": "Получить несколько заказов"
 				},
 				"update": {
 					"displayName": "Обновить",
@@ -174,8 +174,8 @@
 					"displayName": "Имя пользователя"
 				},
 				"backorders": {
-					"displayName": "Отложенные заказы",
-					"description": "При управлении запасами этот параметр определяет, разрешены ли отложенные заказы.",
+					"displayName": "Предварительные заказы",
+					"description": "При управлении товаром контролирует разрешение предварительных заказов",
 					"options": {
 						"no": {
 							"displayName": "Нет"
@@ -190,10 +190,10 @@
 				},
 				"buttonText": {
 					"displayName": "Текст кнопки",
-					"description": "Текст внешней кнопки продукта. Только для внешних продуктов."
+					"description": "Текст внешней кнопки товара. Только для внешних товаров."
 				},
 				"catalogVisibility": {
-					"displayName": "Видимость каталога",
+					"displayName": "Видимость в каталоге",
 					"options": {
 						"catalog": {
 							"displayName": "Каталог"
@@ -211,71 +211,71 @@
 				},
 				"categories": {
 					"displayName": "Названия или идентификаторы категорий",
-					"description": "Список категорий. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"description": "Список категорий. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"crossSellIds": {
-					"displayName": "Идентификаторы перекрестных продаж",
-					"description": "Список идентификаторов продуктов перекрестных продаж. Можно добавить несколько значений, разделив их ,."
+					"displayName": "Идентификаторы перекрёстных продаж",
+					"description": "Список идентификаторов товаров для перекрёстных продаж. Несколько можно добавить через запятую."
 				},
 				"dateOnSaleFrom": {
-					"displayName": "Дата поступления в продажу с",
-					"description": "Дата начала продажной цены в часовом поясе сайта."
+					"displayName": "Дата начала продажи",
+					"description": "Дата начала цены продажи в часовом поясе сайта"
 				},
 				"dateOnSaleTo": {
-					"displayName": "Дата продажи до",
-					"description": "Дата окончания продажи по часовому поясу сайта."
+					"displayName": "Дата окончания продажи",
+					"description": "Дата окончания цены продажи в часовом поясе сайта"
 				},
 				"description": {
 					"displayName": "Описание",
-					"description": "Описание продукта"
+					"description": "Описание товара"
 				},
 				"downloadable": {
 					"displayName": "Загружаемый",
-					"description": "Можно ли загрузить продукт"
+					"description": "Можно ли загрузить товар"
 				},
 				"externalUrl": {
-					"displayName": "Внешний URL-адрес",
-					"description": "Внешний URL-адрес продукта. Только для внешних продуктов."
+					"displayName": "Внешний URL",
+					"description": "Внешний URL товара. Только для внешних товаров."
 				},
 				"featured": {
 					"displayName": "Рекомендуемо",
-					"description": "Представлен ли продукт"
+					"description": "Рекомендуемый товар"
 				},
 				"manageStock": {
-					"displayName": "Управление запасами",
-					"description": "Управление запасами на уровне продукта"
+					"displayName": "Управление товаром",
+					"description": "Управление товаром на уровне товара"
 				},
 				"menuOrder": {
 					"displayName": "Порядок меню",
-					"description": "Порядок меню, используемый для индивидуальной сортировки продуктов."
+					"description": "Порядок меню для пользовательской сортировки товаров"
 				},
 				"parentId": {
 					"displayName": "ID родительской папки",
 					"description": "Идентификатор родительского заказа"
 				},
 				"purchaseNote": {
-					"displayName": "Примечание о покупке",
+					"displayName": "Примечание покупателя",
 					"description": "Необязательное примечание для отправки покупателю после покупки"
 				},
 				"regularPrice": {
 					"displayName": "Обычная цена",
-					"description": "Обычная цена продукта"
+					"description": "Обычная цена товара"
 				},
 				"reviewsAllowed": {
-					"displayName": "Отзывы разрешены",
-					"description": "Разрешить ли обзоры"
+					"displayName": "Разрешены отзывы",
+					"description": "Разрешить отзывы"
 				},
 				"salePrice": {
 					"displayName": "Цена продажи",
-					"description": "Цена продажи продукта"
+					"description": "Цена продажи товара"
 				},
 				"shippingClass": {
 					"displayName": "Класс доставки",
-					"description": "Ссылка класса доставки"
+					"description": "Идентификатор класса доставки"
 				},
 				"shortDescription": {
 					"displayName": "Краткое описание",
-					"description": "Краткое описание продукта"
+					"description": "Краткое описание товара"
 				},
 				"sku": {
 					"displayName": "SKU",
@@ -283,11 +283,11 @@
 				},
 				"slug": {
 					"displayName": "URL-слаг",
-					"description": "Ссылка на продукт"
+					"description": "Идентификатор товара"
 				},
 				"soldIndividually": {
-					"displayName": "Продается индивидуально",
-					"description": "Разрешить ли покупку одного товара в одном заказе"
+					"displayName": "Продаётся отдельно",
+					"description": "Разрешить покупку только одного товара в заказе"
 				},
 				"status": {
 					"displayName": "Статус",
@@ -300,7 +300,7 @@
 							"displayName": "В ожидании"
 						},
 						"private": {
-							"displayName": "Частный"
+							"displayName": "Приватный"
 						},
 						"publish": {
 							"displayName": "Публикация"
@@ -315,7 +315,7 @@
 							"displayName": "Не выполнено"
 						},
 						"on-hold": {
-							"displayName": "на удерживании"
+							"displayName": "в ожидании"
 						},
 						"processing": {
 							"displayName": "Обработка"
@@ -329,26 +329,26 @@
 					}
 				},
 				"stockQuantity": {
-					"displayName": "Количество на складе"
+					"displayName": "Количество в наличии"
 				},
 				"stockStatus": {
-					"displayName": "Статус запасов",
-					"description": "Контролирует наличие товара на складе",
+					"displayName": "Статус товара",
+					"description": "Контролирует статус товара",
 					"options": {
 						"instock": {
 							"displayName": "В наличии"
 						},
 						"outofstock": {
-							"displayName": "Распродано"
+							"displayName": "Нет в наличии"
 						},
 						"onbackorder": {
-							"displayName": "При предварительном заказе"
+							"displayName": "Предварительный заказ"
 						}
 					}
 				},
 				"tags": {
 					"displayName": "Имена или ID тегов",
-					"description": "Список тегов. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"description": "Список тегов. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"taxClass": {
 					"displayName": "Налоговый класс"
@@ -363,19 +363,19 @@
 							"displayName": "Доставка"
 						},
 						"none": {
-							"displayName": "Никто"
+							"displayName": "Нет"
 						}
 					}
 				},
 				"type": {
 					"displayName": "Тип",
-					"description": "Тип продукта",
+					"description": "Тип товара",
 					"options": {
 						"simple": {
 							"displayName": "Простой"
 						},
 						"grouped": {
-							"displayName": "Сгруппировано"
+							"displayName": "Сгруппированный"
 						},
 						"external": {
 							"displayName": "Внешний"
@@ -386,28 +386,28 @@
 					}
 				},
 				"upsellIds": {
-					"displayName": "Идентификаторы дополнительных продаж",
-					"description": "Список идентификаторов продуктов для дополнительной продажи. Можно добавить несколько значений, разделив их ,."
+					"displayName": "Идентификаторы товаров для увеличения продаж",
+					"description": "Список идентификаторов товаров для увеличения продаж. Несколько можно добавить через запятую."
 				},
 				"virtual": {
 					"displayName": "Виртуальный",
-					"description": "Является ли продукт виртуальным"
+					"description": "Виртуальный товар"
 				},
 				"weight": {
-					"displayName": "Масса",
-					"description": "Вес продукта"
+					"displayName": "Толщина",
+					"description": "Вес товара"
 				},
 				"currency": {
 					"displayName": "валюта",
-					"description": "Валюта, в которой был создан заказ"
+					"description": "Валюта заказа"
 				},
 				"customerId": {
 					"displayName": "ID клиента",
-					"description": "Идентификатор пользователя, которому принадлежит заказ. 0 для гостей."
+					"description": "Идентификатор пользователя, владельца заказа. 0 для гостей."
 				},
 				"customerNote": {
 					"displayName": "Примечание клиента",
-					"description": "Примечание, оставленное клиентом при оформлении заказа"
+					"description": "Примечание клиента при оформлении заказа"
 				},
 				"paymentMethodId": {
 					"displayName": "Идентификатор способа оплаты"
@@ -416,12 +416,12 @@
 					"displayName": "Название способа оплаты"
 				},
 				"setPaid": {
-					"displayName": "Установить платный",
-					"description": "Оплачен ли заказ. Это установит статус обработки и уменьшит количество товаров на складе."
+					"displayName": "Отметить как оплачено",
+					"description": "Отмечает заказ как оплаченный. Устанавливает статус 'обработка' и уменьшает количество товара на складе."
 				},
 				"transactionID": {
-					"displayName": "Идентификатор транзакции",
-					"description": "Уникальный идентификатор транзакции"
+					"displayName": "Идентификатор операции",
+					"description": "Уникальный идентификатор операции"
 				}
 			}
 		},
@@ -443,12 +443,12 @@
 			"options": {
 				"email": {
 					"displayName": "Электронная почта",
-					"description": "Адрес электронной почты для фильтрации клиентов по",
+					"description": "Адрес электронной почты для фильтрации клиентов",
 					"placeholder": "имя@email.com"
 				},
 				"order": {
 					"displayName": "Порядок сортировки",
-					"description": "Заказ на сортировку клиентов",
+					"description": "Порядок сортировки клиентов",
 					"options": {
 						"asc": {
 							"displayName": "По возрастанию"
@@ -460,7 +460,7 @@
 				},
 				"orderby": {
 					"displayName": "Сортировать по",
-					"description": "Поле для сортировки клиентов по",
+					"description": "Поле для сортировки клиентов",
 					"options": {
 						"id": {
 							"displayName": "ID"
@@ -602,8 +602,8 @@
 					"displayName": "Адрес доставки"
 				},
 				"backorders": {
-					"displayName": "Отложенные заказы",
-					"description": "При управлении запасами этот параметр определяет, разрешены ли отложенные заказы.",
+					"displayName": "Предварительные заказы",
+					"description": "При управлении товаром контролирует разрешение предварительных заказов",
 					"options": {
 						"no": {
 							"displayName": "Нет"
@@ -618,10 +618,10 @@
 				},
 				"buttonText": {
 					"displayName": "Текст кнопки",
-					"description": "Текст внешней кнопки продукта. Только для внешних продуктов."
+					"description": "Текст внешней кнопки товара. Только для внешних товаров."
 				},
 				"catalogVisibility": {
-					"displayName": "Видимость каталога",
+					"displayName": "Видимость в каталоге",
 					"options": {
 						"visible": {
 							"displayName": "Видимый"
@@ -639,75 +639,75 @@
 				},
 				"categories": {
 					"displayName": "Названия или идентификаторы категорий",
-					"description": "Список категорий. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"description": "Список категорий. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"crossSellIds": {
-					"displayName": "Идентификаторы перекрестных продаж",
-					"description": "Список идентификаторов продуктов перекрестных продаж. Можно добавить несколько значений, разделив их ,."
+					"displayName": "Идентификаторы перекрёстных продаж",
+					"description": "Список идентификаторов товаров для перекрёстных продаж. Несколько можно добавить через запятую."
 				},
 				"dateOnSaleFrom": {
-					"displayName": "Дата поступления в продажу с",
-					"description": "Дата начала продажной цены в часовом поясе сайта."
+					"displayName": "Дата начала продажи",
+					"description": "Дата начала цены продажи в часовом поясе сайта"
 				},
 				"dateOnSaleTo": {
-					"displayName": "Дата продажи до",
-					"description": "Дата окончания продажи по часовому поясу сайта."
+					"displayName": "Дата окончания продажи",
+					"description": "Дата окончания цены продажи в часовом поясе сайта"
 				},
 				"description": {
 					"displayName": "Описание",
-					"description": "Описание продукта"
+					"description": "Описание товара"
 				},
 				"downloadable": {
 					"displayName": "Загружаемый",
-					"description": "Можно ли загрузить продукт"
+					"description": "Можно ли загрузить товар"
 				},
 				"externalUrl": {
-					"displayName": "Внешний URL-адрес",
-					"description": "Внешний URL-адрес продукта. Только для внешних продуктов."
+					"displayName": "Внешний URL",
+					"description": "Внешний URL товара. Только для внешних товаров."
 				},
 				"featured": {
 					"displayName": "Рекомендуемо",
-					"description": "Представлен ли продукт"
+					"description": "Рекомендуемый товар"
 				},
 				"manageStock": {
-					"displayName": "Управление запасами",
-					"description": "Управление запасами на уровне продукта"
+					"displayName": "Управление товаром",
+					"description": "Управление товаром на уровне товара"
 				},
 				"menuOrder": {
 					"displayName": "Порядок меню",
-					"description": "Порядок меню, используемый для индивидуальной сортировки продуктов."
+					"description": "Порядок меню для пользовательской сортировки товаров"
 				},
 				"name": {
 					"displayName": "Имя",
-					"description": "Название продукта"
+					"description": "Название товара"
 				},
 				"parentId": {
 					"displayName": "ID родительской папки",
 					"description": "Идентификатор родительского заказа"
 				},
 				"purchaseNote": {
-					"displayName": "Примечание о покупке",
+					"displayName": "Примечание покупателя",
 					"description": "Необязательное примечание для отправки покупателю после покупки"
 				},
 				"regularPrice": {
 					"displayName": "Обычная цена",
-					"description": "Обычная цена продукта"
+					"description": "Обычная цена товара"
 				},
 				"reviewsAllowed": {
-					"displayName": "Отзывы разрешены",
-					"description": "Разрешить ли обзоры"
+					"displayName": "Разрешены отзывы",
+					"description": "Разрешить отзывы"
 				},
 				"salePrice": {
 					"displayName": "Цена продажи",
-					"description": "Цена продажи продукта"
+					"description": "Цена продажи товара"
 				},
 				"shippingClass": {
 					"displayName": "Класс доставки",
-					"description": "Ссылка класса доставки"
+					"description": "Идентификатор класса доставки"
 				},
 				"shortDescription": {
 					"displayName": "Краткое описание",
-					"description": "Краткое описание продукта"
+					"description": "Краткое описание товара"
 				},
 				"sku": {
 					"displayName": "SKU",
@@ -715,11 +715,11 @@
 				},
 				"slug": {
 					"displayName": "URL-слаг",
-					"description": "Ссылка на продукт"
+					"description": "Идентификатор товара"
 				},
 				"soldIndividually": {
-					"displayName": "Продается индивидуально",
-					"description": "Разрешить ли покупку одного товара в одном заказе"
+					"displayName": "Продаётся отдельно",
+					"description": "Разрешить покупку только одного товара в заказе"
 				},
 				"status": {
 					"displayName": "Статус",
@@ -732,7 +732,7 @@
 							"displayName": "В ожидании"
 						},
 						"private": {
-							"displayName": "Частный"
+							"displayName": "Приватный"
 						},
 						"publish": {
 							"displayName": "Публикация"
@@ -747,7 +747,7 @@
 							"displayName": "Не выполнено"
 						},
 						"on-hold": {
-							"displayName": "на удерживании"
+							"displayName": "в ожидании"
 						},
 						"processing": {
 							"displayName": "Обработка"
@@ -761,26 +761,26 @@
 					}
 				},
 				"stockQuantity": {
-					"displayName": "Количество на складе"
+					"displayName": "Количество в наличии"
 				},
 				"stockStatus": {
-					"displayName": "Статус запасов",
-					"description": "Контролирует наличие товара на складе",
+					"displayName": "Статус товара",
+					"description": "Контролирует статус товара",
 					"options": {
 						"instock": {
 							"displayName": "В наличии"
 						},
 						"outofstock": {
-							"displayName": "Распродано"
+							"displayName": "Нет в наличии"
 						},
 						"onbackorder": {
-							"displayName": "При предварительном заказе"
+							"displayName": "Предварительный заказ"
 						}
 					}
 				},
 				"tags": {
 					"displayName": "Имена или ID тегов",
-					"description": "Список тегов. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"description": "Список тегов. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"taxClass": {
 					"displayName": "Налоговый класс"
@@ -795,19 +795,19 @@
 							"displayName": "Доставка"
 						},
 						"none": {
-							"displayName": "Никто"
+							"displayName": "Нет"
 						}
 					}
 				},
 				"type": {
 					"displayName": "Тип",
-					"description": "Тип продукта",
+					"description": "Тип товара",
 					"options": {
 						"simple": {
 							"displayName": "Простой"
 						},
 						"grouped": {
-							"displayName": "Сгруппировано"
+							"displayName": "Сгруппированный"
 						},
 						"external": {
 							"displayName": "Внешний"
@@ -818,28 +818,28 @@
 					}
 				},
 				"upsellIds": {
-					"displayName": "Идентификаторы дополнительных продаж",
-					"description": "Список идентификаторов продуктов для дополнительной продажи. Можно добавить несколько значений, разделив их ,."
+					"displayName": "Идентификаторы товаров для увеличения продаж",
+					"description": "Список идентификаторов товаров для увеличения продаж. Несколько можно добавить через запятую."
 				},
 				"virtual": {
 					"displayName": "Виртуальный",
-					"description": "Является ли продукт виртуальным"
+					"description": "Виртуальный товар"
 				},
 				"weight": {
-					"displayName": "Масса",
-					"description": "Вес продукта"
+					"displayName": "Толщина",
+					"description": "Вес товара"
 				},
 				"currency": {
 					"displayName": "валюта",
-					"description": "Валюта, в которой был создан заказ"
+					"description": "Валюта заказа"
 				},
 				"customerId": {
 					"displayName": "ID клиента",
-					"description": "Идентификатор пользователя, которому принадлежит заказ. 0 для гостей."
+					"description": "Идентификатор пользователя, владельца заказа. 0 для гостей."
 				},
 				"customerNote": {
 					"displayName": "Примечание клиента",
-					"description": "Примечание, оставленное клиентом при оформлении заказа"
+					"description": "Примечание клиента при оформлении заказа"
 				},
 				"paymentMethodId": {
 					"displayName": "Идентификатор способа оплаты"
@@ -848,48 +848,48 @@
 					"displayName": "Название способа оплаты"
 				},
 				"transactionID": {
-					"displayName": "Идентификатор транзакции",
-					"description": "Уникальный идентификатор транзакции"
+					"displayName": "Идентификатор операции",
+					"description": "Уникальный идентификатор операции"
 				}
 			}
 		},
 		"name": {
 			"displayName": "Имя",
-			"description": "Название продукта"
+			"description": "Название товара"
 		},
 		"dimensionsUi": {
 			"options": {
 				"dimensionsUi": {
 					"displayName": "Измерения",
-					"description": "Размеры продукта"
+					"description": "Размеры товара"
 				},
 				"dimensionsValues": {
 					"displayName": "Измерение",
 					"values": {
 						"height": {
 							"displayName": "Высота",
-							"description": "Высота продукта"
+							"description": "Высота товара"
 						},
 						"length": {
 							"displayName": "Длина",
-							"description": "Длина изделия"
+							"description": "Длина товара"
 						},
 						"width": {
 							"displayName": "Ширина",
-							"description": "Ширина продукта"
+							"description": "Ширина товара"
 						}
 					}
 				}
 			},
 			"placeholder": "Добавить измерение",
 			"displayName": "Измерения",
-			"description": "Размеры продукта"
+			"description": "Размеры товара"
 		},
 		"imagesUi": {
 			"options": {
 				"imagesUi": {
 					"displayName": "Изображения",
-					"description": "Изображение продукта"
+					"description": "Изображение товара"
 				},
 				"imagesValues": {
 					"displayName": "Изображение",
@@ -911,7 +911,7 @@
 			},
 			"placeholder": "Добавить изображение",
 			"displayName": "Изображения",
-			"description": "Изображение продукта"
+			"description": "Изображение товара"
 		},
 		"metadataUi": {
 			"options": {
@@ -946,19 +946,19 @@
 			"options": {
 				"after": {
 					"displayName": "После",
-					"description": "Ограничить ответ на ресурсы, опубликованные после определенной даты, соответствующей стандарту ISO8601."
+					"description": "Ограничить ответ ресурсами, опубликованными после указанной даты в формате ISO8601"
 				},
 				"before": {
 					"displayName": "До",
-					"description": "Ограничить ответ на ресурсы, опубликованные до указанной даты, соответствующей стандарту ISO8601."
+					"description": "Ограничить ответ ресурсами, опубликованными до указанной даты в формате ISO8601"
 				},
 				"category": {
 					"displayName": "имя или идентификатор категории",
-					"description": "Ограничьте набор результатов продуктами, которым присвоен определенный идентификатор категории. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"description": "Ограничить набор результатов товарами определённой категории. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"context": {
 					"displayName": "Контекст",
-					"description": "Область действия запроса; определяет поля, присутствующие в ответе",
+					"description": "Область запроса; определяет поля в ответе",
 					"options": {
 						"view": {
 							"displayName": "Просмотр"
@@ -973,15 +973,15 @@
 				},
 				"featured": {
 					"displayName": "Рекомендуемо",
-					"description": "Ограничить ли набор результатов рекомендуемыми продуктами"
+					"description": "Ограничить результаты рекомендуемыми товарами"
 				},
 				"maxPrice": {
 					"displayName": "Максимальная цена",
-					"description": "Ограничить набор результатов продуктами, основанными на максимальной цене."
+					"description": "Ограничить набор результатов товарами по максимальной цене"
 				},
 				"minPrice": {
 					"displayName": "Минимальная цена",
-					"description": "Ограничить набор результатов продуктами на основе минимальной цены."
+					"description": "Ограничить набор результатов товарами по минимальной цене"
 				},
 				"order": {
 					"displayName": "Порядок",
@@ -1018,19 +1018,19 @@
 				},
 				"search": {
 					"displayName": "Поиск",
-					"description": "Ограничить результаты теми, которые соответствуют строке"
+					"description": "Ограничить результаты соответствующими строке"
 				},
 				"sku": {
 					"displayName": "SKU",
-					"description": "Ограничить набор результатов продуктами с определенным SKU"
+					"description": "Ограничить набор результатов товарами определённого SKU"
 				},
 				"slug": {
 					"displayName": "URL-слаг",
-					"description": "Ограничить набор результатов продуктами с определенным ярлыком"
+					"description": "Ограничить набор результатов товарами определённого идентификатора"
 				},
 				"status": {
 					"displayName": "Статус",
-					"description": "Ограничить набор результатов заказами, которым присвоен определенный статус",
+					"description": "Ограничить набор результатов заказами определённого статуса",
 					"options": {
 						"any": {
 							"displayName": "Любой"
@@ -1042,7 +1042,7 @@
 							"displayName": "В ожидании"
 						},
 						"private": {
-							"displayName": "Частный"
+							"displayName": "Приватный"
 						},
 						"publish": {
 							"displayName": "Публикация"
@@ -1057,7 +1057,7 @@
 							"displayName": "Не выполнено"
 						},
 						"on-hold": {
-							"displayName": "На удерживании"
+							"displayName": "В ожидании"
 						},
 						"processing": {
 							"displayName": "Обработка"
@@ -1071,33 +1071,33 @@
 					}
 				},
 				"stockStatus": {
-					"displayName": "Статус запасов",
-					"description": "Контролирует наличие товара на складе",
+					"displayName": "Статус товара",
+					"description": "Контролирует статус товара",
 					"options": {
 						"instock": {
 							"displayName": "В наличии"
 						},
 						"outofstock": {
-							"displayName": "Распродано"
+							"displayName": "Нет в наличии"
 						},
 						"onbackorder": {
-							"displayName": "При предварительном заказе"
+							"displayName": "Предварительный заказ"
 						}
 					}
 				},
 				"tag": {
 					"displayName": "Название или ID тега",
-					"description": "Ограничьте набор результатов продуктами, которым присвоен определенный идентификатор тега. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"description": "Ограничить набор результатов товарами определённого тега. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"taxClass": {
 					"displayName": "Налоговый класс",
-					"description": "Ограничить набор результатов продуктами с определенным налоговым классом",
+					"description": "Ограничить набор результатов товарами определённого налогового класса",
 					"options": {
 						"standard": {
-							"displayName": "Стандарт"
+							"displayName": "Стандартный"
 						},
 						"reduced-rate": {
-							"displayName": "Сниженная ставка"
+							"displayName": "Пониженная ставка"
 						},
 						"zero-rate": {
 							"": {
@@ -1108,13 +1108,13 @@
 				},
 				"type": {
 					"displayName": "Тип",
-					"description": "Тип продукта",
+					"description": "Тип товара",
 					"options": {
 						"simple": {
 							"displayName": "Простой"
 						},
 						"grouped": {
-							"displayName": "Сгруппировано"
+							"displayName": "Сгруппированный"
 						},
 						"external": {
 							"displayName": "Внешний"
@@ -1126,15 +1126,15 @@
 				},
 				"customer": {
 					"displayName": "Клиент",
-					"description": "Ограничить набор результатов заказами, назначенными конкретному клиенту"
+					"description": "Ограничить набор результатов заказами определённого клиента"
 				},
 				"decimalPoints": {
-					"displayName": "Десятичные точки",
-					"description": "Количество десятичных знаков для использования в каждом ресурсе"
+					"displayName": "Десятичные знаки",
+					"description": "Количество десятичных знаков в каждом ресурсе"
 				},
 				"product": {
 					"displayName": "Продукт",
-					"description": "Ограничить набор результатов заказами, которым присвоен определенный продукт"
+					"description": "Ограничить набор результатов заказами определённого товара"
 				}
 			}
 		},
@@ -1142,7 +1142,7 @@
 			"options": {
 				"billingUi": {
 					"displayName": "Биллинг",
-					"description": "Адрес для выставления счета"
+					"description": "Адрес для выставления счёта"
 				},
 				"billingValues": {
 					"displayName": "Адрес",
@@ -1185,18 +1185,18 @@
 					}
 				}
 			},
-			"placeholder": "Добавить биллинг",
+			"placeholder": "Добавить адрес для выставления счёта",
 			"displayName": "Биллинг",
-			"description": "Адрес для выставления счета"
+			"description": "Адрес для выставления счёта"
 		},
 		"couponLinesUi": {
 			"options": {
 				"couponLinesUi": {
-					"displayName": "Купонные линии",
-					"description": "Данные строки купонов"
+					"displayName": "Строки купонов",
+					"description": "Данные строк купонов"
 				},
 				"couponLinesValues": {
-					"displayName": "Купонная линия",
+					"displayName": "Строка купона",
 					"values": {
 						"code": {
 							"displayName": "Код",
@@ -1230,17 +1230,17 @@
 				}
 			},
 			"placeholder": "Добавить строку купона",
-			"displayName": "Купонные линии",
-			"description": "Данные строки купонов"
+			"displayName": "Строки купонов",
+			"description": "Данные строк купонов"
 		},
 		"feeLinesUi": {
 			"options": {
 				"feeLinesUi": {
-					"displayName": "Платные линии",
-					"description": "Данные о тарифной линии"
+					"displayName": "Строки комиссий",
+					"description": "Данные строк комиссий"
 				},
 				"feeLinesValues": {
-					"displayName": "Платная линия",
+					"displayName": "Строка комиссии",
 					"values": {
 						"name": {
 							"displayName": "Имя",
@@ -1248,22 +1248,22 @@
 						},
 						"taxClass": {
 							"displayName": "Налоговый класс",
-							"description": "Налоговый класс сбора"
+							"description": "Налоговый класс комиссии"
 						},
 						"taxStatus": {
 							"displayName": "Налоговый статус",
-							"description": "Налоговый класс сбора",
+							"description": "Налоговый класс комиссии",
 							"options": {
 								"taxable": {
 									"displayName": "Облагаемый налогом"
 								},
 								"none": {
-									"displayName": "Никто"
+									"displayName": "Нет"
 								}
 							}
 						},
 						"total": {
-							"displayName": "Общий",
+							"displayName": "Итого",
 							"description": "Итого по строке (после скидок)"
 						},
 						"metadataUi": {
@@ -1294,8 +1294,8 @@
 				}
 			},
 			"placeholder": "Добавить строку комиссии",
-			"displayName": "Платные линии",
-			"description": "Данные о тарифной линии"
+			"displayName": "Строки комиссий",
+			"description": "Данные строк комиссий"
 		},
 		"lineItemsUi": {
 			"options": {
@@ -1308,7 +1308,7 @@
 					"values": {
 						"name": {
 							"displayName": "Имя",
-							"description": "Название продукта"
+							"description": "Название товара"
 						},
 						"productId": {
 							"displayName": "ID товара"
@@ -1323,14 +1323,14 @@
 						},
 						"taxClass": {
 							"displayName": "Налоговый класс",
-							"description": "Маркировка налогового класса товара"
+							"description": "Идентификатор налогового класса товара"
 						},
 						"subtotal": {
-							"displayName": "Итого",
+							"displayName": "Промежуточный итог",
 							"description": "Промежуточный итог строки (до скидок)"
 						},
 						"total": {
-							"displayName": "Общий",
+							"displayName": "Итого",
 							"description": "Итого по строке (после скидок)"
 						},
 						"metadataUi": {
@@ -1411,11 +1411,11 @@
 		"shippingLinesUi": {
 			"options": {
 				"shippingLinesUi": {
-					"displayName": "Судоходные линии",
-					"description": "Данные линии доставки"
+					"displayName": "Строки доставки",
+					"description": "Данные строк доставки"
 				},
 				"shippingLinesValues": {
-					"displayName": "Платная линия",
+					"displayName": "Строка комиссии",
 					"values": {
 						"methodTitle": {
 							"displayName": "Название метода",
@@ -1426,7 +1426,7 @@
 							"description": "Идентификатор способа доставки"
 						},
 						"total": {
-							"displayName": "Общий",
+							"displayName": "Итого",
 							"description": "Итого по строке (после скидок)"
 						},
 						"metadataUi": {
@@ -1456,9 +1456,9 @@
 					}
 				}
 			},
-			"placeholder": "Добавить линию доставки",
-			"displayName": "Судоходные линии",
-			"description": "Данные линии доставки"
+			"placeholder": "Добавить строку доставки",
+			"displayName": "Строки доставки",
+			"description": "Данные строк доставки"
 		},
 		"orderId": {
 			"displayName": "ID заказа"

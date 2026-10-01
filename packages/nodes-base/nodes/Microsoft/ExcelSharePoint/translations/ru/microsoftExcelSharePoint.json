@@ -51,7 +51,7 @@
 					"description": "Удалить лист"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить список книг библиотеки документов"
 				},
 				"readRows": {

@@ -11,7 +11,7 @@
 					"displayName": "Токен доступа"
 				},
 				"oAuth2": {
-					"displayName": "ОАут2"
+					"displayName": "OAuth2"
 				}
 			}
 		},
@@ -58,7 +58,7 @@
 					"description": "Срабатывает при создании нового merge request, обновлении, слиянии, закрытии существующего merge request или добавлении коммита в исходную ветку"
 				},
 				"pipeline": {
-					"displayName": "Трубопровод",
+					"displayName": "Конвейер",
 					"description": "Срабатывает при изменении статуса Pipeline"
 				},
 				"push": {

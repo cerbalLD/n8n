@@ -11,7 +11,7 @@
 					"displayName": "Учётные данные"
 				},
 				"oAuth2": {
-					"displayName": "ОАут2"
+					"displayName": "OAuth2"
 				}
 			}
 		},
@@ -49,18 +49,18 @@
 			"options": {
 				"create": {
 					"displayName": "Создать",
-					"description": "Создать новый контакт"
+					"description": "Создать контакт"
 				},
 				"delete": {
 					"displayName": "Удалить",
-					"description": "Удаление контакта"
+					"description": "Удалить контакт"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить данные контакта"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить данные нескольких контактов"
 				},
 				"update": {
@@ -76,7 +76,7 @@
 					"description": "Добавлять или удалять контакты из списка «Не связываться»"
 				},
 				"sendEmail": {
-					"displayName": "Отправить электронное письмо",
+					"displayName": "Отправить письмо",
 					"description": "Отправить письмо контакту"
 				},
 				"add": {
@@ -156,7 +156,7 @@
 							"options": {
 								"fieldId": {
 									"displayName": "Имя поля или ID",
-									"description": "Идентификатор поля, которое необходимо установить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+									"description": "Идентификатор поля для установки. Выберите из списка или укажите идентификатор через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 								},
 								"fieldValue": {
 									"displayName": "Значение поля",
@@ -201,7 +201,7 @@
 					"displayName": "Веб-сайт"
 				},
 				"orderByDir": {
-					"displayName": "Направление заказа",
+					"displayName": "Направление сортировки",
 					"description": "Направление сортировки: возрастание или убывание",
 					"options": {
 						"asc": {
@@ -272,7 +272,7 @@
 				},
 				"tags": {
 					"displayName": "Имена или ID тегов",
-					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите идентификаторы через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>"
 				},
 				"socialMediaUi": {
 					"values": {
@@ -393,7 +393,7 @@
 							"options": {
 								"fieldId": {
 									"displayName": "Имя поля или ID",
-									"description": "Идентификатор поля, которое необходимо установить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+									"description": "Идентификатор поля для установки. Выберите из списка или укажите идентификатор через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 								},
 								"fieldValue": {
 									"displayName": "Значение поля",
@@ -438,7 +438,7 @@
 					"displayName": "Веб-сайт"
 				},
 				"bodyJson": {
-					"displayName": "Тело",
+					"displayName": "Тело запроса",
 					"description": "Параметры контакта"
 				},
 				"b2bOrb2c": {
@@ -457,7 +457,7 @@
 				},
 				"email": {
 					"displayName": "Электронная почта",
-					"description": "Адрес электронной почты контактного лица",
+					"description": "Адрес электронной почты контакта",
 					"placeholder": "имя@email.com"
 				},
 				"firstName": {
@@ -512,7 +512,7 @@
 				},
 				"tags": {
 					"displayName": "Имена или ID тегов",
-					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите идентификаторы через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>"
 				},
 				"title": {
 					"displayName": "Название"
@@ -568,7 +568,7 @@
 		},
 		"email": {
 			"displayName": "Электронная почта",
-			"description": "Адрес электронной почты контактного лица",
+			"description": "Адрес электронной почты контакта",
 			"placeholder": "имя@email.com"
 		},
 		"firstName": {
@@ -588,7 +588,7 @@
 			"displayName": "Название"
 		},
 		"bodyJson": {
-			"displayName": "Тело",
+			"displayName": "Тело запроса",
 			"description": "Параметры контакта"
 		},
 		"contactId": {

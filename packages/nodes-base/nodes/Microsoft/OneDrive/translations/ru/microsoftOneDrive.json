@@ -69,7 +69,7 @@
 					"description": "Скачать файл"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить файл"
 				},
 				"move": {

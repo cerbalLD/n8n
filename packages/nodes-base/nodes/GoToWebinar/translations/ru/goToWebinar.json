@@ -31,10 +31,10 @@
 			"displayName": "Операция",
 			"options": {
 				"get": {
-					"displayName": "Получать"
+					"displayName": "Получить"
 				},
 				"getAll": {
-					"displayName": "Получить много"
+					"displayName": "Получить множество"
 				},
 				"getDetails": {
 					"displayName": "Получить подробности"
@@ -176,7 +176,7 @@
 					}
 				},
 				"industry": {
-					"displayName": "Промышленность",
+					"displayName": "Индустрия",
 					"description": "Тип отрасли, к которой принадлежит организация регистранта"
 				},
 				"jobTitle": {
@@ -348,7 +348,7 @@
 			}
 		},
 		"subject": {
-			"displayName": "Предмет"
+			"displayName": "Тема"
 		},
 		"times": {
 			"options": {
@@ -426,7 +426,7 @@
 					}
 				},
 				"subject": {
-					"displayName": "Предмет",
+					"displayName": "Тема",
 					"description": "Название или тема вебинара"
 				},
 				"timezone": {

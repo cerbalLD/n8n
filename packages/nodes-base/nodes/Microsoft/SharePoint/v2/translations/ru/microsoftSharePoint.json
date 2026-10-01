@@ -46,11 +46,11 @@
 					"description": "Удалить элемент из списка"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить подробную информацию об одном списке"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить список списков"
 				}
 			}
@@ -125,7 +125,7 @@
 					"description": "Поля, которые вы хотите включить в выходные данные",
 					"options": {
 						"contentType": {
-							"displayName": "Тип контента"
+							"displayName": "Тип содержимого"
 						},
 						"createdDateTime": {
 							"displayName": "Создано"

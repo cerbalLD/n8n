@@ -27,11 +27,11 @@
 					"description": "Удалить ответ на отзыв"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить информацию об отзыве"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить несколько отзывов"
 				},
 				"update": {

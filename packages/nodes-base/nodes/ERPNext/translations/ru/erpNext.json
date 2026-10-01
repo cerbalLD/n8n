@@ -24,11 +24,11 @@
 					"description": "Удалить документ"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить документ"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить множество документов"
 				},
 				"update": {
@@ -55,7 +55,7 @@
 			"placeholder": "Добавить поле",
 			"options": {
 				"fields": {
-					"displayName": "Имена полей или идентификаторы",
+					"displayName": "Имена или идентификаторы полей",
 					"description": "Список полей для возврата (через запятую). Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>.",
 					"placeholder": "name,country"
 				},
@@ -131,7 +131,7 @@
 					}
 				}
 			},
-			"placeholder": "Добавить недвижимость",
+			"placeholder": "Добавить свойство",
 			"displayName": "Характеристики",
 			"description": "Свойства тела запроса"
 		},

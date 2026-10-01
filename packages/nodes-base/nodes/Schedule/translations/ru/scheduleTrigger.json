@@ -105,7 +105,7 @@
 							"description": "Час дня для срабатывания",
 							"options": {
 								"0": {
-									"displayName": "Полночь"
+									"displayName": "полночь"
 								},
 								"1": {
 									"displayName": "1 утра"
@@ -141,7 +141,7 @@
 									"displayName": "11 утра"
 								},
 								"12": {
-									"displayName": "Полдень"
+									"displayName": "полдень"
 								},
 								"13": {
 									"displayName": "13:00"

@@ -66,7 +66,7 @@
 					"description": "Если не установлено, будут выбраны все строки"
 				},
 				"values": {
-					"displayName": "Ценности",
+					"displayName": "Значения",
 					"values": {
 						"column": {
 							"displayName": "Столбец",
@@ -99,10 +99,10 @@
 									"displayName": "Меньше или равно"
 								},
 								"IS NULL": {
-									"displayName": "Нулевой"
+									"displayName": "Пусто"
 								},
 								"IS NOT NULL": {
-									"displayName": "Не является нулевым"
+									"displayName": "Не пусто"
 								}
 							}
 						},
@@ -237,7 +237,7 @@
 											"placeholder": "[0, 2, 5]"
 										},
 										"values": {
-											"displayName": "Ценности",
+											"displayName": "Значения",
 											"description": "Массив JSON значений, соответствующих индексам",
 											"placeholder": "[1.2, 3.4, 5.6]"
 										}
@@ -264,7 +264,7 @@
 					"description": "Введите значения параметров привязки, используемых в операторе",
 					"options": {
 						"values": {
-							"displayName": "Ценности"
+							"displayName": "Значения"
 						}
 					}
 				},
@@ -338,7 +338,7 @@
 					"displayName": "Сортировка"
 				},
 				"values": {
-					"displayName": "Ценности",
+					"displayName": "Значения",
 					"values": {
 						"column": {
 							"displayName": "Столбец",

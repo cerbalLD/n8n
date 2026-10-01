@@ -8,10 +8,10 @@
 			"displayName": "Аутентификация",
 			"options": {
 				"iam": {
-					"displayName": "АВС (ИАМ)"
+					"displayName": "AWS (IAM)"
 				},
 				"assumeRole": {
-					"displayName": "AWS (принятие роли)"
+					"displayName": "AWS (Assume Role)"
 				}
 			}
 		},
@@ -41,7 +41,7 @@
 					"description": "Удалить файл"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить файлы"
 				},
 				"search": {
@@ -78,7 +78,7 @@
 							"displayName": "Аутентифицированное чтение"
 						},
 						"Private": {
-							"displayName": "Частный"
+							"displayName": "Приватный"
 						},
 						"publicRead": {
 							"displayName": "Публичное чтение"
@@ -96,7 +96,7 @@
 							"displayName": "Владелец хранилища может читать"
 						},
 						"private": {
-							"displayName": "Частный"
+							"displayName": "Приватный"
 						}
 					}
 				},
@@ -279,7 +279,7 @@
 			"description": "Максимальное количество результатов для возврата"
 		},
 		"bucketName": {
-			"displayName": "Имя сегмента"
+			"displayName": "Имя бакета"
 		},
 		"folderName": {
 			"displayName": "Имя папки"
@@ -327,8 +327,8 @@
 			"description": "Текстовое содержимое файла для загрузки"
 		},
 		"binaryPropertyName": {
-			"displayName": "Поместите выходной файл в поле",
-			"hint": "Имя выходного двоичного поля, в которое помещается файл."
+			"displayName": "Поместить выходной файл в поле",
+			"hint": "Имя выходного двоичного поля для сохранения файла"
 		},
 		"tagsUi": {
 			"options": {

@@ -57,11 +57,11 @@
 					"description": "Удалить задачу"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить задачу"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить множество задач"
 				},
 				"update": {
@@ -249,7 +249,7 @@
 					"description": "Название записи задачи — максимум 250 символов."
 				},
 				"body": {
-					"displayName": "Тело",
+					"displayName": "Тело запроса",
 					"description": "Текст заметки — максимум 100 000 символов."
 				},
 				"is_favorited": {
@@ -395,7 +395,7 @@
 			"description": "ID записи журнала для обновления"
 		},
 		"body": {
-			"displayName": "Тело",
+			"displayName": "Тело запроса",
 			"description": "Текст заметки — максимум 100 000 символов."
 		},
 		"noteId": {

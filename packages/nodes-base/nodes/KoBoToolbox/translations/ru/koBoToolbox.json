@@ -14,7 +14,7 @@
 					"displayName": "Форма"
 				},
 				"hook": {
-					"displayName": "Крюк"
+					"displayName": "Вебхук"
 				},
 				"submission": {
 					"displayName": "Подчинение"
@@ -25,15 +25,15 @@
 			"displayName": "Операция",
 			"options": {
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить содержимое файла"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить файлы"
 				},
 				"redeploy": {
-					"displayName": "Перераспределить",
+					"displayName": "Повторное развёртывание",
 					"description": "Повторное развертывание текущей версии формы"
 				},
 				"getLogs": {
@@ -248,7 +248,7 @@
 			"displayName": "Фильтр",
 			"options": {
 				"none": {
-					"displayName": "Никто"
+					"displayName": "Нет"
 				},
 				"json": {
 					"displayName": "JSON"

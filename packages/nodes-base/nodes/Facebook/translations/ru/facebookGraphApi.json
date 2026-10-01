@@ -12,7 +12,7 @@
 					"displayName": "Токен доступа"
 				},
 				"oAuth2": {
-					"displayName": "ОАут2"
+					"displayName": "OAuth2"
 				}
 			}
 		},
@@ -195,7 +195,7 @@
 			"placeholder": "videos"
 		},
 		"allowUnauthorizedCerts": {
-			"displayName": "Игнорировать проблемы с SSL (небезопасно)",
+			"displayName": "Игнорировать проблемы SSL (небезопасно)",
 			"description": "Подключаться ли даже если проверка сертификата SSL невозможна"
 		},
 		"sendBinaryData": {

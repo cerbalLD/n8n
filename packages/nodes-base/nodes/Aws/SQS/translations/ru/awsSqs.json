@@ -8,10 +8,10 @@
 			"displayName": "Аутентификация",
 			"options": {
 				"iam": {
-					"displayName": "АВС (ИАМ)"
+					"displayName": "AWS (IAM)"
 				},
 				"assumeRole": {
-					"displayName": "AWS (принятие роли)"
+					"displayName": "AWS (Assume Role)"
 				}
 			}
 		},

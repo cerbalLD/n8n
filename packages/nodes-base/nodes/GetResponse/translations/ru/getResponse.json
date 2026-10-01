@@ -11,7 +11,7 @@
 					"displayName": "API-ключ"
 				},
 				"oAuth2": {
-					"displayName": "ОАут2"
+					"displayName": "OAuth2"
 				}
 			}
 		},
@@ -28,19 +28,19 @@
 			"options": {
 				"create": {
 					"displayName": "Создать",
-					"description": "Создать новый контакт"
+					"description": "Создать контакт"
 				},
 				"delete": {
 					"displayName": "Удалить",
-					"description": "Удаление контакта"
+					"description": "Удалить контакт"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить контакт"
 				},
 				"getAll": {
-					"displayName": "Получить много",
-					"description": "Получить много контактов"
+					"displayName": "Получить множество",
+					"description": "Получить контакты"
 				},
 				"update": {
 					"displayName": "Обновить",
@@ -78,7 +78,7 @@
 							}
 						}
 					},
-					"placeholder": "Добавить настраиваемое поле",
+					"placeholder": "Добавить пользовательское поле",
 					"displayName": "Пользовательские поля",
 					"options": {
 						"customFieldValues": {
@@ -106,7 +106,7 @@
 				},
 				"tags": {
 					"displayName": "Имена или ID тегов",
-					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите идентификаторы через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>"
 				}
 			}
 		},
@@ -267,7 +267,7 @@
 							}
 						}
 					},
-					"placeholder": "Добавить настраиваемое поле",
+					"placeholder": "Добавить пользовательское поле",
 					"displayName": "Пользовательские поля",
 					"options": {
 						"customFieldValues": {
@@ -299,7 +299,7 @@
 				},
 				"tags": {
 					"displayName": "Имена или ID тегов",
-					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите идентификаторы через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>"
 				}
 			}
 		}

@@ -57,11 +57,11 @@
 					"description": "Нажимает кнопку"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить представление"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить много представлений"
 				},
 				"deleteViewRow": {

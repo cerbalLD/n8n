@@ -11,7 +11,7 @@
 					"displayName": "API-ключ"
 				},
 				"oAuth2": {
-					"displayName": "ОАут2"
+					"displayName": "OAuth2"
 				}
 			}
 		},
@@ -44,11 +44,11 @@
 					"description": "Удалить кампанию"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить кампанию"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получите много кампаний"
 				},
 				"update": {
@@ -136,7 +136,7 @@
 				},
 				"tags": {
 					"displayName": "Теги",
-					"description": "Теги, связанные с элементом, разделенные ,"
+					"description": "Теги участника, разделённые запятой."
 				},
 				"vip": {
 					"displayName": "VIP",
@@ -147,7 +147,7 @@
 					"description": "Дата и время подтверждения подписчиком согласия в формате ISO 8601"
 				},
 				"fields": {
-					"displayName": "Имена полей или идентификаторы",
+					"displayName": "Имена или идентификаторы полей",
 					"description": "Список полей для возврата, разделённый запятыми. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"excludeFields": {

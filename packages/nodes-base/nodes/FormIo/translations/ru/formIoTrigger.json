@@ -5,7 +5,7 @@
 	},
 	"nodeView": {
 		"projectId": {
-			"displayName": "Название или идентификатор проекта",
+			"displayName": "Имя или идентификатор проекта",
 			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"formId": {

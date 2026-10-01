@@ -11,7 +11,7 @@
 					"displayName": "API-токен"
 				},
 				"oAuth2": {
-					"displayName": "ОАут2"
+					"displayName": "OAuth2"
 				}
 			}
 		},
@@ -59,11 +59,11 @@
 					"description": "Удалить продукт"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить продукт"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получите много продуктов"
 				},
 				"update": {
@@ -93,7 +93,7 @@
 			}
 		},
 		"subject": {
-			"displayName": "Предмет",
+			"displayName": "Тема",
 			"description": "Тема действия для создания"
 		},
 		"done": {
@@ -114,7 +114,7 @@
 					"description": "Идентификатор сделки для связи"
 				},
 				"due_date": {
-					"displayName": "Срок оплаты",
+					"displayName": "Срок выполнения",
 					"description": "Срок выполнения (ГГГГ-ММ-ДД)"
 				},
 				"note": {
@@ -151,7 +151,7 @@
 							}
 						}
 					},
-					"placeholder": "Добавить настраиваемое поле",
+					"placeholder": "Добавить пользовательское поле",
 					"displayName": "Пользовательские поля",
 					"options": {
 						"property": {
@@ -169,7 +169,7 @@
 				},
 				"label_ids": {
 					"displayName": "Имена или идентификаторы меток",
-					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите идентификаторы через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>"
 				},
 				"lost_reason": {
 					"displayName": "Причина потери",
@@ -896,7 +896,7 @@
 					"description": "Выполнено ли действие"
 				},
 				"due_date": {
-					"displayName": "Срок оплаты",
+					"displayName": "Срок выполнения",
 					"description": "Срок выполнения (ГГГГ-ММ-ДД)"
 				},
 				"note": {
@@ -916,7 +916,7 @@
 					"description": "Дополнительные сведения, которые синхронизируются с внешним календарём"
 				},
 				"subject": {
-					"displayName": "Предмет",
+					"displayName": "Тема",
 					"description": "Тема действия"
 				},
 				"type": {
@@ -946,7 +946,7 @@
 							}
 						}
 					},
-					"placeholder": "Добавить настраиваемое поле",
+					"placeholder": "Добавить пользовательское поле",
 					"displayName": "Пользовательские поля",
 					"options": {
 						"property": {
@@ -964,7 +964,7 @@
 				},
 				"label_ids": {
 					"displayName": "Имена или идентификаторы меток",
-					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите идентификаторы через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>"
 				},
 				"lost_reason": {
 					"displayName": "Причина потери",
@@ -1549,8 +1549,8 @@
 			"description": "Идентификатор связи продукта со сделкой (не самого продукта)"
 		},
 		"binaryPropertyName": {
-			"displayName": "Поместите выходной файл в поле",
-			"hint": "Имя выходного двоичного поля, в которое помещается файл."
+			"displayName": "Поместить выходной файл в поле",
+			"hint": "Имя выходного двоичного поля для сохранения файла"
 		},
 		"fileId": {
 			"displayName": "ID файла",

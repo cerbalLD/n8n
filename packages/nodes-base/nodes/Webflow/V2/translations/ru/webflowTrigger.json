@@ -1,12 +1,12 @@
 {
 	"header": {
-		"displayName": "Триггер веб-потока",
-		"description": "Обработка событий Webflow с помощью веб-перехватчиков"
+		"displayName": "Триггер Webflow",
+		"description": "Обрабатывать события Webflow через вебхуки"
 	},
 	"nodeView": {
 		"site": {
 			"displayName": "Имя или идентификатор сайта",
-			"description": "Сайт, который будет запускать события. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"description": "Сайт, который будет запускать события. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"event": {
 			"displayName": "Событие",
@@ -15,25 +15,25 @@
 					"displayName": "Элемент коллекции создан"
 				},
 				"collection_item_deleted": {
-					"displayName": "Элемент коллекции удален."
+					"displayName": "Элемент коллекции удалён"
 				},
 				"collection_item_changed": {
-					"displayName": "Предмет коллекции обновлен"
+					"displayName": "Элемент коллекции обновлён"
 				},
 				"ecomm_inventory_changed": {
-					"displayName": "Инвентарь Ecomm изменен"
+					"displayName": "Инвентарь изменён"
 				},
 				"ecomm_new_order": {
-					"displayName": "Экомм новый заказ"
+					"displayName": "Новый заказ"
 				},
 				"ecomm_order_changed": {
-					"displayName": "Порядок ЭКОММ изменен"
+					"displayName": "Заказ изменён"
 				},
 				"form_submission": {
 					"displayName": "Отправка формы"
 				},
 				"site_publish": {
-					"displayName": "Публикация на сайте"
+					"displayName": "Публикация сайта"
 				}
 			}
 		}

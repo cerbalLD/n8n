@@ -63,7 +63,7 @@
 					"description": "Немедленно выключить Jenkins"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Список сборок"
 				}
 			}

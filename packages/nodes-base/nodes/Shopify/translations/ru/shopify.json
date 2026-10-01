@@ -14,7 +14,7 @@
 					"displayName": "Токен доступа"
 				},
 				"oAuth2": {
-					"displayName": "ОАут2"
+					"displayName": "OAuth2"
 				},
 				"apiKey": {
 					"displayName": "API-ключ"
@@ -44,11 +44,11 @@
 					"description": "Удалить продукт"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить продукт"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получите много продуктов"
 				},
 				"update": {

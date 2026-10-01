@@ -41,19 +41,19 @@
 					"description": "Создать товар электронной торговли"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить много файлов"
 				},
 				"upsert": {
 					"displayName": "Создать или обновить",
-					"description": "Создайте новый контакт или обновите текущий, если он уже существует (upsert)"
+					"description": "Создайте новый контакт или обновите существующий (upsert)"
 				},
 				"delete": {
 					"displayName": "Удалить",
 					"description": "Удалить файл"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить товар электронной торговли"
 				},
 				"update": {
@@ -66,7 +66,7 @@
 				},
 				"send": {
 					"displayName": "Отправить",
-					"description": "Отправить электронное письмо"
+					"description": "Отправить письмо"
 				},
 				"upload": {
 					"displayName": "Загрузить",
@@ -119,7 +119,7 @@
 					"displayName": "Идентификатор источника потенциального клиента"
 				},
 				"middleName": {
-					"displayName": "Второе имя"
+					"displayName": "Отчество"
 				},
 				"ownerId": {
 					"displayName": "Имя или идентификатор владельца",
@@ -163,7 +163,7 @@
 					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"body": {
-					"displayName": "Тело"
+					"displayName": "Тело запроса"
 				},
 				"title": {
 					"displayName": "Название"
@@ -284,7 +284,7 @@
 					"displayName": "Отправлено на адреса Cc"
 				},
 				"subject": {
-					"displayName": "Предмет"
+					"displayName": "Тема"
 				},
 				"addressField": {
 					"displayName": "Поле адреса",
@@ -434,7 +434,7 @@
 				},
 				"order": {
 					"displayName": "Порядок",
-					"description": "Атрибут для упорядочения элементов по",
+					"description": "Атрибут для сортировки элементов",
 					"options": {
 						"datecreated": {
 							"displayName": "Дата создания"
@@ -454,7 +454,7 @@
 					}
 				},
 				"orderDirection": {
-					"displayName": "Направление заказа",
+					"displayName": "Направление сортировки",
 					"options": {
 						"ascending": {
 							"displayName": "ASC"
@@ -483,7 +483,7 @@
 					"description": "Дата, с которой начать поиск"
 				},
 				"until": {
-					"displayName": "До",
+					"displayName": "По",
 					"description": "Дата для поиска"
 				},
 				"paid": {
@@ -498,14 +498,14 @@
 			}
 		},
 		"duplicateOption": {
-			"displayName": "Дублирующийся вариант",
+			"displayName": "Проверка дубликатов",
 			"description": "Выполняет проверку дубликатов с помощью одного из следующих параметров: Email, EmailAndName. Если совпадение найдено с помощью предоставленной опции, существующий контакт будет обновлен.",
 			"options": {
 				"email": {
 					"displayName": "Электронная почта"
 				},
 				"emailAndName": {
-					"displayName": "Электронная почта и имя"
+					"displayName": "Почта и имя"
 				}
 			}
 		},
@@ -521,13 +521,13 @@
 							"displayName": "Поле",
 							"options": {
 								"EMAIL1": {
-									"displayName": "Электронная почта 1"
+									"displayName": "Почта 1"
 								},
 								"EMAIL2": {
-									"displayName": "Электронная почта 2"
+									"displayName": "Почта 2"
 								},
 								"EMAIL3": {
-									"displayName": "Электронная почта 3"
+									"displayName": "Почта 3"
 								}
 							}
 						},
@@ -672,7 +672,7 @@
 							"displayName": "Миниатюра шаблона"
 						},
 						"ticket": {
-							"displayName": "Билет"
+							"displayName": "Заявка"
 						},
 						"webform": {
 							"displayName": "Веб-форма"
@@ -684,10 +684,10 @@
 					"description": "Включите в ответ общедоступные или частные файлы",
 					"options": {
 						"public": {
-							"displayName": "Общественный"
+							"displayName": "Публичный"
 						},
 						"private": {
-							"displayName": "Частный"
+							"displayName": "Приватный"
 						},
 						"both": {
 							"displayName": "Оба формата"
@@ -698,7 +698,7 @@
 		},
 		"tagIds": {
 			"displayName": "Идентификаторы тегов",
-			"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите идентификаторы через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>"
 		},
 		"orderDate": {
 			"displayName": "Дата заказа"
@@ -736,7 +736,7 @@
 							"displayName": "Имя"
 						},
 						"middleName": {
-							"displayName": "Второе имя"
+							"displayName": "Отчество"
 						},
 						"lastName": {
 							"displayName": "Фамилия"
@@ -815,7 +815,7 @@
 			"description": "Идентификаторы контактов для получения электронной почты. Несколько можно добавить через запятую."
 		},
 		"subject": {
-			"displayName": "Предмет",
+			"displayName": "Тема",
 			"description": "Тема письма"
 		},
 		"attachmentsUi": {
@@ -882,7 +882,7 @@
 			"description": "Содержимое вложения, закодированное в Base64."
 		},
 		"isPublic": {
-			"displayName": "Является общедоступным"
+			"displayName": "Общедоступный"
 		},
 		"fileId": {
 			"displayName": "ID файла"

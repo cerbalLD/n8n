@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Фрешдеск",
-		"description": "Использование Freshdesk API"
+		"displayName": "Freshdesk",
+		"description": "Использовать API Freshdesk"
 	},
 	"nodeView": {
 		"resource": {
@@ -11,7 +11,7 @@
 					"displayName": "Контакт"
 				},
 				"ticket": {
-					"displayName": "Билет"
+					"displayName": "Заявка"
 				}
 			}
 		},
@@ -20,19 +20,19 @@
 			"options": {
 				"create": {
 					"displayName": "Создать",
-					"description": "Создать новый контакт"
+					"description": "Создать контакт"
 				},
 				"delete": {
 					"displayName": "Удалить",
-					"description": "Удаление контакта"
+					"description": "Удалить контакт"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить контакт"
 				},
 				"getAll": {
-					"displayName": "Получить много",
-					"description": "Получить много контактов"
+					"displayName": "Получить множество",
+					"description": "Получить контакты"
 				},
 				"update": {
 					"displayName": "Обновить",
@@ -86,7 +86,7 @@
 					"displayName": "В ожидании"
 				},
 				"resolved": {
-					"displayName": "Решено"
+					"displayName": "Разрешено"
 				}
 			}
 		},
@@ -179,7 +179,7 @@
 					"description": "Идентификатор продукта, к которому привязан билет. Он будет проигнорирован, если в запросе установлен атрибут email_config_id. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 				},
 				"subject": {
-					"displayName": "Предмет",
+					"displayName": "Тема",
 					"description": "Тема билета"
 				},
 				"tags": {
@@ -368,7 +368,7 @@
 							"displayName": "В ожидании"
 						},
 						"resolved": {
-							"displayName": "Решено"
+							"displayName": "Разрешено"
 						},
 						"closed": {
 							"displayName": "Закрыто"
@@ -480,7 +480,7 @@
 							}
 						}
 					},
-					"placeholder": "Добавить настраиваемое поле",
+					"placeholder": "Добавить пользовательское поле",
 					"displayName": "Пользовательские поля",
 					"description": "Пары ключ-значение, содержащие имя и значение настраиваемого поля. В качестве входных данных для пользовательских полей даты принимаются только даты в формате ГГГГ-ММ-ДД.",
 					"options": {

@@ -11,7 +11,7 @@
 					"displayName": "Токен доступа"
 				},
 				"oAuth2": {
-					"displayName": "ОАут2"
+					"displayName": "OAuth2"
 				}
 			}
 		},
@@ -31,7 +31,7 @@
 					"description": "Создать ссылку"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить ссылку"
 				},
 				"update": {
@@ -57,7 +57,7 @@
 				},
 				"tags": {
 					"displayName": "Имена или ID тегов",
-					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите идентификаторы через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>"
 				},
 				"title": {
 					"displayName": "Название"
@@ -110,7 +110,7 @@
 				},
 				"tags": {
 					"displayName": "Имена или ID тегов",
-					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите идентификаторы через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>"
 				},
 				"title": {
 					"displayName": "Название"

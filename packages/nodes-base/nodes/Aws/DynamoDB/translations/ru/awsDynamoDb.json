@@ -1,17 +1,17 @@
 {
 	"header": {
-		"displayName": "AWS ДинамоБД",
-		"description": "Используйте API AWS DynamoDB."
+		"displayName": "AWS DynamoDB",
+		"description": "Используйте API AWS DynamoDB"
 	},
 	"nodeView": {
 		"authentication": {
 			"displayName": "Аутентификация",
 			"options": {
 				"iam": {
-					"displayName": "АВС (ИАМ)"
+					"displayName": "AWS (IAM)"
 				},
 				"assumeRole": {
-					"displayName": "AWS (принятие роли)"
+					"displayName": "AWS (Assume Role)"
 				}
 			}
 		},
@@ -35,18 +35,18 @@
 					"description": "Удалить элемент"
 				},
 				"get": {
-					"displayName": "Получать",
-					"description": "Получить предмет"
+					"displayName": "Получить",
+					"description": "Получить элемент"
 				},
 				"getAll": {
-					"displayName": "Получить много",
-					"description": "Получите много предметов"
+					"displayName": "Получить множество",
+					"description": "Получить несколько элементов"
 				}
 			}
 		},
 		"tableName": {
 			"displayName": "Имя или идентификатор таблицы",
-			"description": "Таблица, над которой можно работать. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"description": "Таблица для работы. Выберите из списка или укажите идентификатор, используя <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 		},
 		"dataToSend": {
 			"displayName": "Данные для отправки",
@@ -63,8 +63,8 @@
 			}
 		},
 		"autoParseNumbers": {
-			"displayName": "Автоматический анализ чисел",
-			"description": "Преобразовывать ли строковые значения числового вида в номер DynamoDB (N). Отключите, чтобы строки сохранялись как строки (S)."
+			"displayName": "Автоматически анализировать числа",
+			"description": "Преобразовывать ли похожие на числа строковые значения в DynamoDB Number (N). Отключите, чтобы сохранить строки как String (S)."
 		},
 		"inputsToIgnore": {
 			"displayName": "Входные данные для игнорирования",
@@ -100,7 +100,7 @@
 					"values": {
 						"eavUi": {
 							"displayName": "Значения атрибутов выражения",
-							"description": "Токены подстановки для имен атрибутов в выражении. Требуется только тогда, когда установлен параметр «выражение условия»."
+							"description": "Токены подстановки для имён атрибутов в выражении. Требуется только когда установлен параметр \\\"condition expression\\\"."
 						},
 						"eavValues": {
 							"options": {
@@ -126,7 +126,7 @@
 					},
 					"placeholder": "Добавить значение атрибута",
 					"displayName": "Значения атрибутов выражения",
-					"description": "Токены подстановки для имен атрибутов в выражении. Требуется только тогда, когда установлен параметр «выражение условия».",
+					"description": "Токены подстановки для имён атрибутов в выражении. Требуется только когда установлен параметр \\\"condition expression\\\".",
 					"options": {
 						"eavValues": {
 							"displayName": "Значение атрибута выражения"
@@ -135,13 +135,13 @@
 				},
 				"conditionExpression": {
 					"displayName": "Выражение условия",
-					"description": "Условие, которое должно быть удовлетворено для успешного условного удаления."
+					"description": "Условие, которое должно быть выполнено для успешного условного удаления"
 				},
 				"eanUi": {
 					"values": {
 						"eanUi": {
-							"displayName": "Имена атрибутов выражений",
-							"description": "Один или несколько токенов замены для имен атрибутов в выражении. <a href=\"https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_PutItem.html\">Подробнее</a>."
+							"displayName": "Имена атрибутов выражения",
+							"description": "Один или несколько токенов подстановки для имён атрибутов в выражении. <a href=\"https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_PutItem.html\">Подробнее</a>."
 						},
 						"eanValues": {
 							"options": {
@@ -155,8 +155,8 @@
 						}
 					},
 					"placeholder": "Добавить выражение",
-					"displayName": "Имена атрибутов выражений",
-					"description": "Один или несколько токенов замены для имен атрибутов в выражении. <a href=\"https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_PutItem.html\">Подробнее</a>.",
+					"displayName": "Имена атрибутов выражения",
+					"description": "Один или несколько токенов подстановки для имён атрибутов в выражении. <a href=\"https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_PutItem.html\">Подробнее</a>.",
 					"options": {
 						"eanValues": {
 							"displayName": "Выражение"
@@ -167,7 +167,7 @@
 					"values": {
 						"expressionAttributeUi": {
 							"displayName": "Значения атрибутов выражения",
-							"description": "Токены подстановки для имен атрибутов в выражении. Требуется только тогда, когда установлен параметр «выражение условия»."
+							"description": "Токены подстановки для имён атрибутов в выражении. Требуется только когда установлен параметр \\\"condition expression\\\"."
 						},
 						"expressionAttributeValues": {
 							"options": {
@@ -193,7 +193,7 @@
 					},
 					"placeholder": "Добавить значение атрибута",
 					"displayName": "Значения атрибутов выражения",
-					"description": "Токены подстановки для имен атрибутов в выражении. Требуется только тогда, когда установлен параметр «выражение условия».",
+					"description": "Токены подстановки для имён атрибутов в выражении. Требуется только когда установлен параметр \\\"condition expression\\\".",
 					"options": {
 						"expressionAttributeValues": {
 							"displayName": "Значение атрибута выражения"
@@ -202,29 +202,29 @@
 				},
 				"projectionExpression": {
 					"displayName": "Атрибуты для выбора",
-					"placeholder": "идентификатор, имя"
+					"placeholder": "id, name"
 				},
 				"readType": {
 					"displayName": "Тип чтения",
-					"description": "Тип чтения, выполняемого в таблице. <a href=\"https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ReadConsistency.html\">Подробнее</a>.",
+					"description": "Тип чтения для таблицы. <a href=\"https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ReadConsistency.html\">Подробнее</a>.",
 					"options": {
 						"stronglyConsistentRead": {
-							"displayName": "Очень последовательное чтение"
+							"displayName": "Сильно согласованное чтение"
 						},
 						"eventuallyConsistentRead": {
-							"displayName": "В конечном итоге последовательное чтение"
+							"displayName": "Конечно согласованное чтение"
 						}
 					}
 				}
 			}
 		},
 		"returnValues": {
-			"displayName": "Возвращаться",
-			"description": "Используйте ReturnValues, если вы хотите получить атрибуты элемента в том виде, в каком они были до удаления.",
+			"displayName": "Возврат",
+			"description": "Используйте ReturnValues, если вы хотите получить атрибуты элемента до удаления",
 			"options": {
 				"ALL_OLD": {
 					"displayName": "Значения атрибутов",
-					"description": "Содержимое старого элемента возвращается."
+					"description": "Возвращается содержимое старого элемента"
 				},
 				"NONE": {
 					"displayName": "Ничего",
@@ -236,7 +236,7 @@
 			"options": {
 				"keysUi": {
 					"displayName": "Ключи",
-					"description": "Первичный ключ элемента. Например, при использовании простого первичного ключа вам нужно указать только значение ключа раздела. Для составного первичного ключа необходимо указать значения как для ключа секции, так и для ключа сортировки."
+					"description": "Первичный ключ элемента. Например, для простого первичного ключа нужно только значение ключа раздела. Для составного первичного ключа нужны значения ключа раздела и ключа сортировки."
 				},
 				"keyValues": {
 					"displayName": "Ключ",
@@ -266,7 +266,7 @@
 			},
 			"placeholder": "Добавить ключ",
 			"displayName": "Ключи",
-			"description": "Первичный ключ элемента. Например, при использовании простого первичного ключа вам нужно указать только значение ключа раздела. Для составного первичного ключа необходимо указать значения как для ключа секции, так и для ключа сортировки."
+			"description": "Первичный ключ элемента. Например, для простого первичного ключа нужно только значение ключа раздела. Для составного первичного ключа нужны значения ключа раздела и ключа сортировки."
 		},
 		"simple": {
 			"displayName": "Упростить",
@@ -279,35 +279,35 @@
 					"displayName": "Все атрибуты"
 				},
 				"ALL_PROJECTED_ATTRIBUTES": {
-					"displayName": "Все прогнозируемые атрибуты"
+					"displayName": "Все спроецированные атрибуты"
 				},
 				"SPECIFIC_ATTRIBUTES": {
 					"displayName": "Конкретные атрибуты",
-					"description": "Выберите их в разделе «Атрибуты для выбора» в разделе «Дополнительные поля»."
+					"description": "Выберите их в разделе Атрибуты для выбора в разделе Дополнительные поля"
 				},
 				"COUNT": {
-					"displayName": "Считать"
+					"displayName": "Количество"
 				}
 			}
 		},
 		"scan": {
 			"displayName": "Сканирование",
-			"description": "Следует ли выполнять сканирование или запрос. Проверьте <a href=\"https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-query-scan.html\" >различия</a>."
+			"description": "Выполнять сканирование или запрос. Проверьте <a href=\"https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-query-scan.html\" >различия</a>."
 		},
 		"filterExpression": {
 			"displayName": "Выражение фильтра",
-			"description": "Выражение фильтра определяет, какие элементы результатов сканирования должны быть возвращены вам. Все остальные результаты отбрасываются. Пустое значение вернет все результаты сканирования."
+			"description": "Выражение фильтра определяет какие элементы результатов сканирования должны быть возвращены. Все остальные результаты отбрасываются. Пустое значение вернёт все результаты сканирования."
 		},
 		"keyConditionExpression": {
-			"displayName": "Выражение ключевого условия",
-			"description": "Условие для определения элементов, которые необходимо получить. Условие должно выполнять проверку на равенство для одного значения ключа раздела в следующем формате: <code>partitionKeyName = :partitionkeyval</code>",
-			"placeholder": "идентификатор = :id"
+			"displayName": "Выражение условия ключа",
+			"description": "Условие для определения получаемых элементов. Должно проверять равенство одного значения ключа раздела в формате: <code>partitionKeyName = :partitionkeyval</code>",
+			"placeholder": "id = :id"
 		},
 		"eavUi": {
 			"options": {
 				"eavUi": {
 					"displayName": "Значения атрибутов выражения",
-					"description": "Токены подстановки для имен атрибутов в выражении"
+					"description": "Токены подстановки для имён атрибутов в выражении"
 				},
 				"eavValues": {
 					"displayName": "Значение атрибута выражения",
@@ -334,7 +334,7 @@
 			},
 			"placeholder": "Добавить значение атрибута",
 			"displayName": "Значения атрибутов выражения",
-			"description": "Токены подстановки для имен атрибутов в выражении"
+			"description": "Токены подстановки для имён атрибутов в выражении"
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",
@@ -350,21 +350,21 @@
 			"options": {
 				"indexName": {
 					"displayName": "Имя индекса",
-					"description": "Имя индекса для запроса. Это может быть любой вторичный локальный или глобальный индекс таблицы."
+					"description": "Имя индекса для запроса. Может быть любым вторичным локальным или глобальным индексом таблицы."
 				},
 				"projectionExpression": {
 					"displayName": "Атрибуты для выбора",
-					"description": "Текст, идентифицирующий один или несколько атрибутов, которые необходимо получить из таблицы. Эти атрибуты могут включать скаляры, наборы или элементы документа JSON. Атрибуты в выражении должны быть разделены запятыми."
+					"description": "Текст, определяющий один или несколько атрибутов для получения из таблицы. Это могут быть скаляры, наборы или элементы документа JSON. Атрибуты должны разделяться запятыми."
 				},
 				"filterExpression": {
 					"displayName": "Выражение фильтра",
-					"description": "Текст, содержащий условия, которые DynamoDB применяет после операции запроса, но до возврата данных. Элементы, не удовлетворяющие критериям FilterExpression, не возвращаются."
+					"description": "Текст с условиями, которые DynamoDB применяет после операции Query, но до возврата данных. Элементы, не удовлетворяющие условиям FilterExpression, не возвращаются."
 				},
 				"eanUi": {
 					"values": {
 						"eanUi": {
-							"displayName": "Имена атрибутов выражений",
-							"description": "Один или несколько токенов замены для имен атрибутов в выражении. Проверьте <a href=\"https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_PutItem.html\">Информацию</a>."
+							"displayName": "Имена атрибутов выражения",
+							"description": "Один или несколько токенов подстановки для имён атрибутов в выражении. Проверьте <a href=\"https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_PutItem.html\">информацию</a>."
 						},
 						"eanValues": {
 							"options": {
@@ -378,8 +378,8 @@
 						}
 					},
 					"placeholder": "Добавить выражение",
-					"displayName": "Имена атрибутов выражений",
-					"description": "Один или несколько токенов замены для имен атрибутов в выражении. Проверьте <a href=\"https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_PutItem.html\">Информацию</a>.",
+					"displayName": "Имена атрибутов выражения",
+					"description": "Один или несколько токенов подстановки для имён атрибутов в выражении. Проверьте <a href=\"https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_PutItem.html\">информацию</a>.",
 					"options": {
 						"eanValues": {
 							"displayName": "Выражение"

@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Рундек",
-		"description": "Управление API Rundeck"
+		"displayName": "Р СѓРЅРґРµРє",
+		"description": "РЈРїСЂР°РІР»РµРЅРёРµ API Rundeck"
 	},
 	"nodeView": {
 		"resource": {
@@ -17,18 +17,18 @@
 			"options": {
 				"execute": {
 					"displayName": "Выполнение",
-					"description": "Выполнить задание"
+					"description": "Р’С‹РїРѕР»РЅРёС‚СЊ Р·Р°РґР°РЅРёРµ"
 				},
 				"getMetadata": {
 					"displayName": "Получить метаданные",
-					"description": "Получить метаданные вакансии"
+					"description": "РџРѕР»СѓС‡РёС‚СЊ РјРµС‚Р°РґР°РЅРЅС‹Рµ РІР°РєР°РЅСЃРёРё"
 				}
 			}
 		},
 		"jobid": {
 			"displayName": "Идентификатор задания",
-			"description": "Идентификатор задания, для которого необходимо отключить метаданные",
-			"placeholder": "Идентификатор задания Rundeck"
+			"description": "РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ Р·Р°РґР°РЅРёСЏ, РґР»СЏ РєРѕС‚РѕСЂРѕРіРѕ РЅРµРѕР±С…РѕРґРёРјРѕ РѕС‚РєР»СЋС‡РёС‚СЊ РјРµС‚Р°РґР°РЅРЅС‹Рµ",
+			"placeholder": "РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ Р·Р°РґР°РЅРёСЏ Rundeck"
 		},
 		"arguments": {
 			"options": {
@@ -49,7 +49,7 @@
 		},
 		"filter": {
 			"displayName": "Фильтр",
-			"description": "Фильтрация узлов Rundeck по имени",
+			"description": "Р¤РёР»СЊС‚СЂР°С†РёСЏ СѓР·Р»РѕРІ Rundeck РїРѕ РёРјРµРЅРё",
 			"placeholder": "Добавить фильтры"
 		}
 	}

@@ -22,7 +22,7 @@
 					"displayName": "Удалить"
 				},
 				"getAll": {
-					"displayName": "Получить много"
+					"displayName": "Получить множество"
 				}
 			}
 		},
@@ -49,7 +49,7 @@
 			"placeholder": "Добавить вариант",
 			"options": {
 				"contentType": {
-					"displayName": "Тип контента",
+					"displayName": "Тип содержимого",
 					"description": "Тип содержимого сообщения",
 					"options": {
 						"text/plain": {

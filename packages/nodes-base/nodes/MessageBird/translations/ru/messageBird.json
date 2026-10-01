@@ -23,7 +23,7 @@
 					"description": "Отправить текстовые сообщения (SMS)"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить баланс"
 				}
 			}

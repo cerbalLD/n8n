@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Облачное сияние",
-		"description": "Использование Cloudflare API"
+		"displayName": "Cloudflare",
+		"description": "Использование API Cloudflare"
 	},
 	"nodeView": {
 		"resource": {
@@ -20,12 +20,12 @@
 					"description": "Удалить сертификат"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить сертификат"
 				},
 				"getMany": {
-					"displayName": "Получить много",
-					"description": "Получите много сертификатов"
+					"displayName": "Получить множество",
+					"description": "Получить несколько сертификатов"
 				},
 				"upload": {
 					"displayName": "Загрузить",
@@ -34,11 +34,11 @@
 			}
 		},
 		"zoneId": {
-			"displayName": "Имя или идентификатор зоны",
+			"displayName": "Имя или ID зоны",
 			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"certificate": {
-			"displayName": "Содержание сертификата",
+			"displayName": "Содержимое сертификата",
 			"description": "Листовой сертификат зоны"
 		},
 		"privateKey": {
@@ -64,7 +64,7 @@
 							"displayName": "Активный"
 						},
 						"expired": {
-							"displayName": "Истекший"
+							"displayName": "Истёкший"
 						},
 						"deleted": {
 							"displayName": "Удалено"

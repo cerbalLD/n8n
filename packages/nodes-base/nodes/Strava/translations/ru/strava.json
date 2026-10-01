@@ -20,7 +20,7 @@
 					"description": "Создать новое занятие"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить занятие"
 				},
 				"getComments": {
@@ -36,7 +36,7 @@
 					"description": "Получить все круги занятия"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить несколько занятий"
 				},
 				"getStreams": {

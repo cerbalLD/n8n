@@ -1,14 +1,14 @@
 {
 	"header": {
-		"displayName": "X (ранее Твиттер)",
-		"description": "Публикуйте, ставьте лайки и ищите твиты, отправляйте сообщения, ищите пользователей и добавляйте пользователей в списки."
+		"displayName": "X (ранее Twitter)",
+		"description": "Публикация, лайки, поиск твитов, отправка сообщений, поиск пользователей и добавление в списки"
 	},
 	"nodeView": {
 		"resource": {
 			"displayName": "Ресурс",
 			"options": {
 				"directMessage": {
-					"displayName": "Прямое сообщение",
+					"displayName": "РџСЂСЏРјРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ",
 					"description": "Отправить прямое сообщение пользователю"
 				},
 				"list": {
@@ -16,12 +16,12 @@
 					"description": "Добавить пользователя в список"
 				},
 				"tweet": {
-					"displayName": "Твитнуть",
-					"description": "Создать, поставить лайк, найти или удалить твит"
+					"displayName": "Твит",
+					"description": "Создание, лайк, поиск или удаление твита"
 				},
 				"user": {
 					"displayName": "Пользователь",
-					"description": "Поиск пользователей по имени пользователя"
+					"description": "Поиск пользователей по имени"
 				}
 			}
 		},
@@ -30,7 +30,7 @@
 			"options": {
 				"create": {
 					"displayName": "Создать",
-					"description": "Создать, процитировать или ответить на твит"
+					"description": "Создание, цитирование или ответ на твит"
 				},
 				"add": {
 					"displayName": "Добавить участника",
@@ -42,37 +42,37 @@
 				},
 				"like": {
 					"displayName": "Нравиться",
-					"description": "Как твит"
+					"description": "Лайк твита"
 				},
 				"retweet": {
-					"displayName": "Ретвитнуть",
+					"displayName": "Ретвит",
 					"description": "Ретвитнуть твит"
 				},
 				"search": {
 					"displayName": "Поиск",
-					"description": "Поиск твитов за последние семь дней"
+					"description": "Поиск твитов за последние 7 дней"
 				},
 				"searchUser": {
-					"displayName": "Получать",
-					"description": "Получить пользователя по имени пользователя"
+					"displayName": "Получить",
+					"description": "Получить пользователя по имени"
 				}
 			}
 		},
 		"user": {
 			"displayName": "Пользователь",
-			"description": "Пользователь, которого вы хотите найти"
+			"description": "Пользователь для поиска"
 		},
 		"text": {
 			"displayName": "Текст",
-			"description": "Текст обновления статуса. URL-адреса должны быть закодированы. Ссылки, обернутые сокращателем t.co, будут влиять на количество символов."
+			"description": "Текст твита. URL должны быть закодированы. Сокращённые ссылки влияют на подсчёт символов"
 		},
 		"additionalFields": {
 			"displayName": "Параметры",
 			"placeholder": "Добавить поле",
 			"options": {
 				"attachments": {
-					"displayName": "Идентификатор носителя",
-					"description": "Идентификатор вложения, который нужно связать с сообщением.",
+					"displayName": "ID медиа",
+					"description": "ID вложения для связи с сообщением",
 					"placeholder": "1664279886239010824"
 				},
 				"location": {
@@ -86,37 +86,37 @@
 				},
 				"inReplyToStatusId": {
 					"displayName": "Ответ на твит",
-					"description": "Твит, на который ответили"
+					"description": "Твит, на который даётся ответ"
 				},
 				"sortOrder": {
 					"displayName": "Порядок сортировки",
-					"description": "Порядок возврата результатов",
+					"description": "Порядок результатов",
 					"options": {
 						"recency": {
 							"displayName": "Недавние"
 						},
 						"relevancy": {
-							"displayName": "Соответствующий"
+							"displayName": "По релевантности"
 						}
 					}
 				},
 				"startTime": {
 					"displayName": "После",
-					"description": "Твиты до этой даты не будут возвращены. Эта дата должна быть в пределах последних 7 дней, если у вас нет доступа к академическим исследованиям."
+					"description": "Твиты до этой даты не будут возвращены. Дата должна быть в пределах 7 дней без доступа к Academic Research"
 				},
 				"endTime": {
 					"displayName": "До",
-					"description": "Твиты после этой даты не будут возвращены. Эта дата должна быть в пределах последних 7 дней, если у вас нет доступа к академическим исследованиям."
+					"description": "Твиты после этой даты не будут возвращены. Дата должна быть в пределах 7 дней без доступа к Academic Research"
 				},
 				"tweetFieldsObject": {
-					"displayName": "Поля для твитов",
-					"description": "Поля, добавляемые к каждому возвращаемому объекту твита. Поля по умолчанию: ID, текст, edit_history_tweet_ids.",
+					"displayName": "Поля твита",
+					"description": "Поля для добавления к твиту. По умолчанию: ID, text, edit_history_tweet_ids",
 					"options": {
 						"attachments": {
 							"displayName": "Вложения"
 						},
 						"author_id": {
-							"displayName": "Идентификатор автора"
+							"displayName": "ID автора"
 						},
 						"context_annotations": {
 							"displayName": "Контекстные аннотации"
@@ -128,43 +128,43 @@
 							"displayName": "Создано"
 						},
 						"edit_controls": {
-							"displayName": "Редактировать элементы управления"
+							"displayName": "Элементы управления редактированием"
 						},
 						"entities": {
 							"displayName": "Сущности"
 						},
 						"geo": {
-							"displayName": "Гео"
+							"displayName": "Геолокация"
 						},
 						"id": {
 							"displayName": "ID"
 						},
 						"in_reply_to_user_id": {
-							"displayName": "В ответ на идентификатор пользователя"
+							"displayName": "ID пользователя (в ответ на)"
 						},
 						"lang": {
-							"displayName": "Ланг"
+							"displayName": "Язык"
 						},
 						"non_public_metrics": {
-							"displayName": "Непубличные показатели"
+							"displayName": "Скрытые метрики"
 						},
 						"public_metrics": {
-							"displayName": "Публичные показатели"
+							"displayName": "Публичные метрики"
 						},
 						"organic_metrics": {
-							"displayName": "Органические показатели"
+							"displayName": "Органические метрики"
 						},
 						"promoted_metrics": {
 							"displayName": "Продвигаемые метрики"
 						},
 						"possibly_sensitive": {
-							"displayName": "Возможно чувствительный"
+							"displayName": "Возможно чувствительный контент"
 						},
 						"referenced_tweets": {
-							"displayName": "Ссылки на твиты"
+							"displayName": "Упоминаемые твиты"
 						},
 						"reply_settings": {
-							"displayName": "Настройки ответа"
+							"displayName": "Настройки ответов"
 						},
 						"source": {
 							"displayName": "Источник"
@@ -173,7 +173,7 @@
 							"displayName": "Текст"
 						},
 						"withheld": {
-							"displayName": "Удержано"
+							"displayName": "Заблокировано"
 						}
 					}
 				}
@@ -181,25 +181,25 @@
 		},
 		"list": {
 			"displayName": "Список",
-			"description": "Список, в который вы хотите добавить пользователя"
+			"description": "Список для добавления пользователя"
 		},
 		"noticeLocation": {
-			"displayName": "Местоположение не поддерживается из-за ограничений API Twitter V2."
+			"displayName": "Геолокация не поддерживается из-за ограничений API Twitter V2"
 		},
 		"noticeAttachments": {
-			"displayName": "Вложения не поддерживаются из-за ограничений API Twitter V2."
+			"displayName": "Вложения не поддерживаются из-за ограничений API Twitter V2"
 		},
 		"tweetDeleteId": {
-			"displayName": "Твитнуть",
-			"description": "Твит, который нужно удалить"
+			"displayName": "Твит",
+			"description": "Твит для удаления"
 		},
 		"tweetId": {
-			"displayName": "Твитнуть",
-			"description": "Твит, который нужно ретвитнуть"
+			"displayName": "Твит",
+			"description": "Твит для ретвита"
 		},
 		"searchText": {
 			"displayName": "Поисковый запрос",
-			"description": "Поисковый запрос в кодировке URL-адреса UTF-8 длиной не более 500 символов, включая операторы. Запросы могут быть дополнительно ограничены по сложности. Ознакомьтесь с примерами поиска <a href=\"https://developer.twitter.com/en/docs/tweets/search/guides/standard-operators\">здесь</a>.",
+			"description": "Поисковый запрос в кодировке URL (макс. 500 символов, включая операторы). Сложные запросы могут быть ограничены. Примеры <a href=\"https://developer.twitter.com/en/docs/tweets/search/guides/standard-operators\">здесь</a>",
 			"placeholder": "например автоматизация"
 		},
 		"returnAll": {
@@ -212,7 +212,7 @@
 		},
 		"me": {
 			"displayName": "Мне",
-			"description": "Хотите ли вы выполнить поиск аутентифицированного пользователя"
+			"description": "Искать в твитах аутентифицированного пользователя"
 		}
 	}
 }

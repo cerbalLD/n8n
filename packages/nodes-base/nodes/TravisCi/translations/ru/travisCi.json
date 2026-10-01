@@ -20,11 +20,11 @@
 					"description": "Отменить сборку"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить сборку"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получите много сборок"
 				},
 				"restart": {

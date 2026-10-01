@@ -24,11 +24,11 @@
 					"description": "Удалить строку"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить строку"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить несколько строк"
 				},
 				"update": {

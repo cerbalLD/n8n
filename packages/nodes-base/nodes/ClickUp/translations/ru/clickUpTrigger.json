@@ -1,7 +1,7 @@
 {
 	"header": {
 		"displayName": "Триггер ClickUp",
-		"description": "Обработка событий ClickUp с помощью веб-перехватчиков (бета-версия)"
+		"description": "Обработка событий ClickUp через вебхуки (бета)"
 	},
 	"nodeView": {
 		"authentication": {
@@ -11,12 +11,12 @@
 					"displayName": "Токен доступа"
 				},
 				"oAuth2": {
-					"displayName": "ОАут2"
+					"displayName": "OAuth2"
 				}
 			}
 		},
 		"team": {
-			"displayName": "Название или идентификатор команды",
+			"displayName": "Имя или идентификатор команды",
 			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"events": {
@@ -32,25 +32,25 @@
 					"displayName": "папка.удалена"
 				},
 				"folderUpdated": {
-					"displayName": "папка.обновлено"
+					"displayName": "папка.обновлена"
 				},
 				"goalCreated": {
-					"displayName": "цель.создано"
+					"displayName": "цель.создана"
 				},
 				"goalDeleted": {
 					"displayName": "цель.удалена"
 				},
 				"goalUpdated": {
-					"displayName": "цель.обновлено"
+					"displayName": "цель.обновлена"
 				},
 				"keyResultCreated": {
-					"displayName": "keyResult.created"
+					"displayName": "ключевойРезультат.создан"
 				},
 				"keyResultDelete": {
-					"displayName": "keyResult.deleted"
+					"displayName": "ключевойРезультат.удалён"
 				},
 				"keyResultUpdated": {
-					"displayName": "keyResult.updated"
+					"displayName": "ключевойРезультат.обновлён"
 				},
 				"listCreated": {
 					"displayName": "list.created"
@@ -71,7 +71,7 @@
 					"displayName": "пространство.обновлено"
 				},
 				"taskAssigneeUpdated": {
-					"displayName": "задача.назначенный.обновлено"
+					"displayName": "задача.ответственный.обновлено"
 				},
 				"taskCommentPosted": {
 					"displayName": "задача.комментарий.опубликовано"
@@ -80,31 +80,31 @@
 					"displayName": "задача.комментарий.обновлено"
 				},
 				"taskCreated": {
-					"displayName": "задача.создано"
+					"displayName": "задача.создана"
 				},
 				"taskDeleted": {
 					"displayName": "задача.удалена"
 				},
 				"taskDueDateUpdated": {
-					"displayName": "Task.dueDate.updated"
+					"displayName": "задача.срокВыполнения.обновлено"
 				},
 				"taskMoved": {
-					"displayName": "задача.перемещено"
+					"displayName": "задача.перемещена"
 				},
 				"taskStatusUpdated": {
 					"displayName": "задача.статус.обновлено"
 				},
 				"taskTagUpdated": {
-					"displayName": "Task.tag.updated"
+					"displayName": "задача.тег.обновлено"
 				},
 				"taskTimeEstimateUpdated": {
-					"displayName": "Task.timeEstimate.updated"
+					"displayName": "задача.оценкаВремени.обновлена"
 				},
 				"taskTimeTrackedUpdated": {
-					"displayName": "Task.timeTracked.updated"
+					"displayName": "задача.отслеживаемоеВремя.обновлено"
 				},
 				"taskUpdated": {
-					"displayName": "задача.обновлено"
+					"displayName": "задача.обновлена"
 				}
 			}
 		},

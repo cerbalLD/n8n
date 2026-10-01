@@ -56,12 +56,12 @@
 					"description": "Удалить ярлык"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить данные списка"
 				},
 				"getAll": {
-					"displayName": "Получить много",
-					"description": "Получить много списков"
+					"displayName": "Получить множество",
+					"description": "Получить несколько списков"
 				},
 				"update": {
 					"displayName": "Обновить",
@@ -175,7 +175,7 @@
 							"displayName": "Организация"
 						},
 						"public": {
-							"displayName": "Общественный"
+							"displayName": "Публичный"
 						}
 					}
 				},
@@ -219,10 +219,10 @@
 							"displayName": "Организация"
 						},
 						"private": {
-							"displayName": "Частный"
+							"displayName": "Приватный"
 						},
 						"public": {
-							"displayName": "Общественный"
+							"displayName": "Публичный"
 						}
 					}
 				},
@@ -272,7 +272,7 @@
 							"displayName": "Организация"
 						},
 						"public": {
-							"displayName": "Общественный"
+							"displayName": "Публичный"
 						}
 					}
 				},
@@ -307,7 +307,7 @@
 					"description": "Полное имя пользователя, которого нужно добавить в качестве члена форума. Должен иметь длину не менее 1 и не может начинаться и заканчиваться пробелом."
 				},
 				"due": {
-					"displayName": "Срок оплаты",
+					"displayName": "Срок выполнения",
 					"description": "Срок оформления карты"
 				},
 				"dueComplete": {
@@ -437,7 +437,7 @@
 					"description": "ID доски, на которую следует переместить список"
 				},
 				"due": {
-					"displayName": "Срок оплаты",
+					"displayName": "Срок выполнения",
 					"description": "Срок оформления карты"
 				},
 				"dueComplete": {

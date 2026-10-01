@@ -75,11 +75,11 @@
 					"description": "Удалить загруженный файл"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить сведения о загруженном файле"
 				},
 				"getMany": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить сведения о нескольких загруженных файлах"
 				},
 				"upload": {
@@ -158,7 +158,7 @@
 			"description": "Выберите, как настроить прокси-сервер для этого сеанса",
 			"options": {
 				"none": {
-					"displayName": "Никто",
+					"displayName": "Нет",
 					"description": "Прокси не будет использоваться"
 				},
 				"integrated": {
@@ -1019,7 +1019,7 @@
 					}
 				},
 				"paginationMode": {
-					"displayName": "Режим нумерации страниц",
+					"displayName": "Режим пагинации",
 					"description": "Подход к пагинации для использования",
 					"options": {
 						"auto": {
@@ -1332,11 +1332,11 @@
 		},
 		"text": {
 			"displayName": "Текст",
-			"description": "Текст, который нужно ввести в окно браузера",
-			"placeholder": "например электронная почта@example.com"
+			"description": "Текст для ввода в окно браузера",
+			"placeholder": "например email@example.com"
 		},
 		"pressEnterKey": {
-			"displayName": "Нажмите клавишу ввода",
+			"displayName": "Нажмите Enter",
 			"description": "Нажимать ли клавишу Enter после ввода текста"
 		}
 	}

@@ -6,7 +6,7 @@
 	"nodeView": {
 		"type": {
 			"displayName": "Тип",
-			"description": "Тип выполняемой сортировки",
+			"description": "Тип сортировки",
 			"options": {
 				"simple": {
 					"displayName": "Простой"
@@ -23,7 +23,7 @@
 			"options": {
 				"sortFieldsUi": {
 					"displayName": "Поля для сортировки",
-					"description": "Поля входных элементов для сортировки"
+					"description": "Поля для сортировки"
 				},
 				"sortField": {
 					"values": {
@@ -50,7 +50,7 @@
 			},
 			"placeholder": "Добавить поле для сортировки",
 			"displayName": "Поля для сортировки",
-			"description": "Поля входных элементов для сортировки"
+			"description": "Поля для сортировки"
 		},
 		"code": {
 			"displayName": "Код",

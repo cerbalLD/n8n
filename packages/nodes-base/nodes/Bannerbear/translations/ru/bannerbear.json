@@ -23,11 +23,11 @@
 					"description": "создать изображение"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить шаблон"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить шаблоны"
 				}
 			}

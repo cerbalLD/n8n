@@ -11,7 +11,7 @@
 					"displayName": "API-ключ"
 				},
 				"oAuth2": {
-					"displayName": "ОАут2"
+					"displayName": "OAuth2"
 				}
 			}
 		},
@@ -53,11 +53,11 @@
 					"description": "Получить Markdown страницы"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить нескольких пользователей"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить пользователя"
 				},
 				"search": {
@@ -421,7 +421,7 @@
 					"displayName": "Свойство",
 					"values": {
 						"key": {
-							"displayName": "Имя ключа или идентификатор",
+							"displayName": "Имя или идентификатор ключа",
 							"description": "Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>. Используйте формат <code>Название свойства|тип_свойства</code>, например <code>Срок выполнения|date</code>."
 						},
 						"title": {
@@ -441,7 +441,7 @@
 							"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 						},
 						"statusValue": {
-							"displayName": "Имя или идентификатор статуса",
+							"displayName": "Имя или ID статуса",
 							"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 						},
 						"multiSelectValue": {
@@ -460,7 +460,7 @@
 							"displayName": "Телефон"
 						},
 						"peopleValue": {
-							"displayName": "Имена пользователей или идентификаторы",
+							"displayName": "Имена или идентификаторы пользователей",
 							"description": "Список пользователей. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 						},
 						"relationValue": {
@@ -515,11 +515,11 @@
 					}
 				}
 			},
-			"placeholder": "Добавить недвижимость",
+			"placeholder": "Добавить свойство",
 			"displayName": "Характеристики"
 		},
 		"contentType": {
-			"displayName": "Тип контента",
+			"displayName": "Тип содержимого",
 			"options": {
 				"blockUi": {
 					"displayName": "Конструктор блоков"
@@ -542,7 +542,7 @@
 			"displayName": "Фильтр",
 			"options": {
 				"none": {
-					"displayName": "Никто"
+					"displayName": "Нет"
 				},
 				"manual": {
 					"displayName": "Построить вручную"
@@ -704,10 +704,10 @@
 									"displayName": "Проверено"
 								},
 								"expired": {
-									"displayName": "Истекший"
+									"displayName": "Истёкший"
 								},
 								"none": {
-									"displayName": "Никто"
+									"displayName": "Нет"
 								}
 							}
 						}

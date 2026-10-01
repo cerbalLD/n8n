@@ -1,25 +1,25 @@
 {
 	"header": {
 		"displayName": "AMQP-триггер",
-		"description": "Прослушивает сообщения AMQP 1.0."
+		"description": "Прослушивает сообщения AMQP 1.0"
 	},
 	"nodeView": {
 		"sink": {
 			"displayName": "Очередь/Тема",
 			"description": "Название очереди или темы для прослушивания",
-			"placeholder": "тема://имя_источника.что-то"
+			"placeholder": "topic://sourcename.something"
 		},
 		"clientname": {
 			"displayName": "Имя клиента",
-			"description": "Оставьте пустым для непостоянных подписок на темы или очередей.",
-			"hint": "Для постоянных/постоянных подписок на темы",
-			"placeholder": "например н8н"
+			"description": "Оставьте пустым для непостоянных подписок на темы или очередей",
+			"hint": "Для постоянных подписок на темы",
+			"placeholder": "например n8n"
 		},
 		"subscription": {
 			"displayName": "Подписка",
-			"description": "Оставьте пустым для непостоянных подписок на темы или очередей.",
-			"hint": "Для постоянных/постоянных подписок на темы",
-			"placeholder": "например заказник"
+			"description": "Оставьте пустым для непостоянных подписок на темы или очередей",
+			"hint": "Для постоянных подписок на темы",
+			"placeholder": "например order-worker"
 		},
 		"options": {
 			"displayName": "Параметры",
@@ -27,19 +27,19 @@
 			"options": {
 				"containerId": {
 					"displayName": "Идентификатор контейнера",
-					"description": "Будет передано в серверную часть RHEA какContainer_id."
+					"description": "Будет передано в серверную часть RHEA как container_id"
 				},
 				"jsonConvertByteArrayToString": {
 					"displayName": "Преобразовать тело в строку",
-					"description": "Преобразовывать ли содержимое тела JSON ([\"body\"][\"content\"]) из массива байтов в строку. Требуется для служебной шины Azure."
+					"description": "Преобразовывать ли содержимое JSON ([\\\"body\\\"][\\\"content\\\"]) из массива байтов в строку. Требуется для Azure Service Bus."
 				},
 				"jsonParseBody": {
-					"displayName": "Тело синтаксического анализа JSON",
-					"description": "Следует ли анализировать тело на объект"
+					"displayName": "Анализировать тело как JSON",
+					"description": "Анализировать ли тело как объект"
 				},
 				"pullMessagesNumber": {
 					"displayName": "Сообщений за цикл",
-					"description": "Количество сообщений, извлекаемых из шины за каждый цикл"
+					"description": "Количество сообщений для извлечения из шины за каждый цикл"
 				},
 				"onlyBody": {
 					"displayName": "Только тело",
@@ -47,19 +47,19 @@
 				},
 				"parallelProcessing": {
 					"displayName": "Параллельная обработка",
-					"description": "Следует ли обрабатывать сообщения параллельно"
+					"description": "Обрабатывать ли сообщения параллельно"
 				},
 				"reconnect": {
 					"displayName": "Восстановить соединение",
-					"description": "Следует ли автоматически переподключаться в случае отключения"
+					"description": "Автоматически переподключаться при разрыве соединения"
 				},
 				"reconnectLimit": {
-					"displayName": "Лимит повторного подключения",
+					"displayName": "Лимит переподключений",
 					"description": "Максимальное количество попыток переподключения"
 				},
 				"sleepTime": {
-					"displayName": "Время сна",
-					"description": "Миллисекунды на сон после каждого цикла"
+					"displayName": "Время ожидания",
+					"description": "Миллисекунды ожидания после каждого цикла"
 				}
 			}
 		}

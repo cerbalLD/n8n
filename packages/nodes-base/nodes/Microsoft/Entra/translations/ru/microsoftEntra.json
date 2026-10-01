@@ -24,14 +24,14 @@
 				},
 				"delete": {
 					"displayName": "Удалить",
-					"description": "Удаление пользователя"
+					"description": "Удалить пользователя"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить данные для конкретного пользователя"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить список пользователей"
 				},
 				"update": {
@@ -132,10 +132,10 @@
 					"description": "Определяет видимость группы",
 					"options": {
 						"Private": {
-							"displayName": "Частный"
+							"displayName": "Приватный"
 						},
 						"Public": {
-							"displayName": "Общественный"
+							"displayName": "Публичный"
 						}
 					}
 				},
@@ -339,7 +339,7 @@
 					"description": "Штат или провинция адреса пользователя"
 				},
 				"streetAddress": {
-					"displayName": "Адрес улицы",
+					"displayName": "Улица",
 					"description": "Рабочий адрес пользователя"
 				},
 				"usageLocation": {
@@ -464,10 +464,10 @@
 					"description": "Определяет видимость группы",
 					"options": {
 						"Private": {
-							"displayName": "Частный"
+							"displayName": "Приватный"
 						},
 						"Public": {
-							"displayName": "Общественный"
+							"displayName": "Публичный"
 						}
 					}
 				},
@@ -679,7 +679,7 @@
 					"description": "Штат или провинция адреса пользователя"
 				},
 				"streetAddress": {
-					"displayName": "Адрес улицы",
+					"displayName": "Улица",
 					"description": "Рабочий адрес пользователя"
 				},
 				"usageLocation": {

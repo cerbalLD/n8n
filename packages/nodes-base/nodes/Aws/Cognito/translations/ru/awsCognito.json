@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "AWS Когнито",
+		"displayName": "AWS Cognito",
 		"description": "Отправляет данные в AWS Cognito"
 	},
 	"nodeView": {
@@ -8,10 +8,10 @@
 			"displayName": "Аутентификация",
 			"options": {
 				"iam": {
-					"displayName": "АВС (ИАМ)"
+					"displayName": "AWS (IAM)"
 				},
 				"assumeRole": {
-					"displayName": "AWS (принятие роли)"
+					"displayName": "AWS (Assume Role)"
 				}
 			}
 		},
@@ -38,14 +38,14 @@
 				},
 				"delete": {
 					"displayName": "Удалить",
-					"description": "Удаление пользователя"
+					"description": "Удалить пользователя"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить информацию о существующем пользователе"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить список пользователей"
 				},
 				"update": {
@@ -58,7 +58,7 @@
 				},
 				"removeFromGroup": {
 					"displayName": "Удалить из группы",
-					"description": "Удаление пользователя из группы"
+					"description": "Удалить пользователя из группы"
 				}
 			}
 		},
@@ -68,8 +68,8 @@
 		},
 		"newGroupName": {
 			"displayName": "Имя группы",
-			"description": "Имя новой группы, которую нужно создать",
-			"placeholder": "например МояНоваяГруппа"
+			"description": "Имя создаваемой новой группы",
+			"placeholder": "например MyNewGroup"
 		},
 		"additionalFields": {
 			"displayName": "Дополнительные поля",
@@ -77,25 +77,25 @@
 			"options": {
 				"description": {
 					"displayName": "Описание",
-					"description": "Новое описание группы.",
-					"placeholder": "например Обновлено описание группы"
+					"description": "Новое описание группы",
+					"placeholder": "например Updated group description"
 				},
 				"precedence": {
 					"displayName": "Приоритет",
-					"description": "Новое значение приоритета для группы. Более низкие значения указывают на более высокий приоритет.",
+					"description": "Новое значение приоритета группы. Меньшие значения означают более высокий приоритет.",
 					"placeholder": "например 10"
 				},
 				"arn": {
-					"displayName": "Роль АРН",
-					"description": "Новая роль Имя ресурса Amazon (ARN) для группы. Используется для установки утверждений в токенах.",
+					"displayName": "ARN роли",
+					"description": "Новое имя ресурса Amazon (ARN) роли для группы. Используется для установки утверждений в токенах.",
 					"placeholder": "например arn:aws:iam::123456789012:role/GroupRole"
 				},
 				"messageAction": {
-					"displayName": "Сообщение Действие",
+					"displayName": "Действие сообщения",
 					"options": {
 						"RESEND": {
 							"displayName": "Отправить повторно",
-							"description": "Повторно отправьте приглашение уже существующему пользователю и сбросьте срок действия учетной записи пользователя."
+							"description": "Повторно отправьте приглашение существующему пользователю и сбросьте срок действия учётной записи"
 						},
 						"SUPPRESS": {
 							"displayName": "Подавить",
@@ -105,13 +105,13 @@
 				},
 				"forceAliasCreation": {
 					"displayName": "Принудительное создание псевдонима",
-					"description": "Используется ли этот параметр, только если для атрибута phone_number_verified или email_verified установлено значение true. В противном случае оно игнорируется. Если установлено значение true, а номер телефона или адрес электронной почты, указанный в параметре UserAttributes, уже существует в качестве псевдонима другого пользователя, псевдоним будет перенесен. Если установлено значение false, выдается ошибка AliasExistsException, если псевдоним уже существует."
+					"description": "Этот параметр используется только если атрибут phone_number_verified или email_verified установлен в true. Иначе он игнорируется. Если установлено true, а номер телефона или адрес электронной почты из параметра UserAttributes уже существует как псевдоним другого пользователя, псевдоним будет перенесён. Если установлено false, будет выброшена ошибка AliasExistsException."
 				},
 				"userAttributes": {
 					"values": {
 						"userAttributes": {
 							"displayName": "Атрибуты пользователя",
-							"description": "Атрибуты для обновления для пользователя"
+							"description": "Атрибуты для обновления пользователя"
 						},
 						"attributes": {
 							"options": {
@@ -139,7 +139,7 @@
 											"displayName": "Электронная почта"
 										},
 										"email_verified": {
-											"displayName": "Электронная почта проверена"
+											"displayName": "Адрес электронной почты подтверждён"
 										},
 										"family_name": {
 											"displayName": "Фамилия"
@@ -151,10 +151,10 @@
 											"displayName": "Имя"
 										},
 										"locale": {
-											"displayName": "Языковой стандарт"
+											"displayName": "Локаль"
 										},
 										"middle_name": {
-											"displayName": "Второе имя"
+											"displayName": "Отчество"
 										},
 										"name": {
 											"displayName": "Имя"
@@ -166,7 +166,7 @@
 											"displayName": "Номер телефона"
 										},
 										"phone_number_verified": {
-											"displayName": "Номер телефона проверен"
+											"displayName": "Номер телефона подтверждён"
 										},
 										"preferred_username": {
 											"displayName": "Предпочитаемое имя пользователя"
@@ -178,20 +178,20 @@
 											"displayName": "Обновлено в"
 										},
 										"sub": {
-											"displayName": "Подписной пользователь"
+											"displayName": "ID пользователя"
 										},
 										"website": {
 											"displayName": "Веб-сайт"
 										},
 										"zoneinfo": {
-											"displayName": "Информация о зоне"
+											"displayName": "Информация о временной зоне"
 										}
 									}
 								},
 								"customName": {
 									"displayName": "Имя пользовательского атрибута",
-									"description": "Имя пользовательского атрибута (должно начинаться с «custom:»)",
-									"placeholder": "Custom:myAttribute"
+									"description": "Имя пользовательского атрибута (должно начинаться с \\\"custom:\\\")",
+									"placeholder": "custom:myAttribute"
 								},
 								"value": {
 									"displayName": "Значение",
@@ -202,7 +202,7 @@
 					},
 					"placeholder": "Добавить атрибут",
 					"displayName": "Атрибуты пользователя",
-					"description": "Атрибуты для обновления для пользователя",
+					"description": "Атрибуты для обновления пользователя",
 					"options": {
 						"attributes": {
 							"displayName": "Атрибуты"
@@ -210,7 +210,7 @@
 					}
 				},
 				"desiredDeliveryMediums": {
-					"displayName": "Желаемые средства доставки",
+					"displayName": "Желаемые способы доставки",
 					"description": "Укажите, как отправить приветственное сообщение",
 					"options": {
 						"SMS": {
@@ -223,17 +223,17 @@
 				},
 				"temporaryPasswordOptions": {
 					"displayName": "Временный пароль",
-					"description": "Временный пароль пользователя, который будет действителен только один раз. Если этот параметр не установлен, Amazon Cognito автоматически сгенерирует его для вас."
+					"description": "Временный пароль пользователя, действительный только один раз. Если не установлен, Amazon Cognito автоматически сгенерирует его."
 				}
 			}
 		},
 		"group": {
 			"displayName": "Группа",
-			"description": "Выберите группу, из которой вы хотите удалить пользователя"
+			"description": "Выберите группу, из которой удалить пользователя"
 		},
 		"includeUsers": {
 			"displayName": "Включить пользователей",
-			"description": "Включать ли список пользователей в группу"
+			"description": "Включать ли список пользователей в группе"
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",
@@ -245,12 +245,12 @@
 		},
 		"newUserName": {
 			"displayName": "Имя пользователя",
-			"description": "В зависимости от настроек пула пользователей для этого параметра требуется имя пользователя, адрес электронной почты или номер телефона. Пробелы не допускаются.",
-			"placeholder": "например ДжонСмит"
+			"description": "В зависимости от настроек пула пользователей требуется имя пользователя, адрес электронной почты или номер телефона. Пробелы недопустимы.",
+			"placeholder": "например JohnSmith"
 		},
 		"user": {
 			"displayName": "Пользователь",
-			"description": "Выберите пользователя, которого хотите удалить из группы"
+			"description": "Выберите пользователя для удаления из группы"
 		},
 		"simple": {
 			"displayName": "Упростить",
@@ -290,10 +290,10 @@
 									"displayName": "Предпочитаемое имя пользователя"
 								},
 								"status": {
-									"displayName": "Статус (включено)"
+									"displayName": "Статус (включен)"
 								},
 								"sub": {
-									"displayName": "Саб"
+									"displayName": "Sub"
 								},
 								"username": {
 									"displayName": "Имя пользователя"
@@ -314,7 +314,7 @@
 			"options": {
 				"userAttributes": {
 					"displayName": "Атрибуты пользователя",
-					"description": "Атрибуты для обновления для пользователя"
+					"description": "Атрибуты для обновления пользователя"
 				},
 				"attributes": {
 					"displayName": "Атрибуты",
@@ -352,10 +352,10 @@
 									"displayName": "Имя"
 								},
 								"locale": {
-									"displayName": "Языковой стандарт"
+									"displayName": "Локаль"
 								},
 								"middle_name": {
-									"displayName": "Второе имя"
+									"displayName": "Отчество"
 								},
 								"name": {
 									"displayName": "Имя"
@@ -376,20 +376,20 @@
 									"displayName": "Обновлено в"
 								},
 								"sub": {
-									"displayName": "Подписной пользователь"
+									"displayName": "ID пользователя"
 								},
 								"website": {
 									"displayName": "Веб-сайт"
 								},
 								"zoneinfo": {
-									"displayName": "Информация о зоне"
+									"displayName": "Информация о временной зоне"
 								}
 							}
 						},
 						"customName": {
 							"displayName": "Имя пользовательского атрибута",
-							"description": "Имя пользовательского атрибута (должно начинаться с «custom:»)",
-							"placeholder": "Custom:myAttribute"
+							"description": "Имя пользовательского атрибута (должно начинаться с \\\"custom:\\\")",
+							"placeholder": "custom:myAttribute"
 						},
 						"value": {
 							"displayName": "Значение",
@@ -400,7 +400,7 @@
 			},
 			"placeholder": "Добавить атрибут",
 			"displayName": "Атрибуты пользователя",
-			"description": "Атрибуты для обновления для пользователя"
+			"description": "Атрибуты для обновления пользователя"
 		}
 	}
 }

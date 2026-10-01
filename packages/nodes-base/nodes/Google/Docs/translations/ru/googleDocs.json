@@ -1,7 +1,7 @@
 {
 	"header": {
 		"displayName": "Google Docs",
-		"description": "Используйте API Документов Google."
+		"description": "Использование API Google Документов."
 	},
 	"nodeView": {
 		"authentication": {
@@ -30,7 +30,7 @@
 					"displayName": "Создать"
 				},
 				"get": {
-					"displayName": "Получать"
+					"displayName": "Получить"
 				},
 				"update": {
 					"displayName": "Обновить"
@@ -38,19 +38,19 @@
 			}
 		},
 		"driveId": {
-			"displayName": "Имя или идентификатор диска",
+			"displayName": "Имя или ID диска",
 			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"folderId": {
-			"displayName": "Имя или идентификатор папки",
+			"displayName": "Имя или ID папки",
 			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"title": {
 			"displayName": "Название"
 		},
 		"documentURL": {
-			"displayName": "Идентификатор документа или URL-адрес",
-			"description": "Идентификатор в URL-адресе документа (или просто вставьте URL-адрес целиком)"
+			"displayName": "ID документа или URL",
+			"description": "ID из URL документа (или просто вставьте полный URL)"
 		},
 		"simple": {
 			"displayName": "Упростить",
@@ -60,7 +60,7 @@
 			"options": {
 				"actionsUi": {
 					"displayName": "Действия",
-					"description": "Действия, примененные для обновления документа"
+					"description": "Действия, применённые для обновления документа"
 				},
 				"actionFields": {
 					"displayName": "Поля действий",
@@ -85,7 +85,7 @@
 									"displayName": "Маркеры абзацев"
 								},
 								"positionedObject": {
-									"displayName": "Размещенный объект"
+									"displayName": "Размещённый объект"
 								},
 								"table": {
 									"displayName": "Таблица"
@@ -121,13 +121,13 @@
 						},
 						"insertSegment": {
 							"displayName": "Вставить сегмент",
-							"description": "Место, где создать объект",
+							"description": "Место, где нужно создать объект",
 							"options": {
 								"header": {
 									"displayName": "Заголовок"
 								},
 								"body": {
-									"displayName": "Тело"
+									"displayName": "Тело запроса"
 								},
 								"footer": {
 									"displayName": "Нижний колонтитул"
@@ -136,11 +136,11 @@
 						},
 						"segmentId": {
 							"displayName": "ID сегмента",
-							"description": "Идентификатор верхнего, нижнего колонтитула или сноски. Операция <code>Document → Get</code> перечисляет все идентификаторы сегментов (убедитесь, что переключатель <code>simple</code> отключен)."
+							"description": "ID верхнего или нижнего колонтитула или сноски. Операция <code>Document → Get</code> выводит все ID сегментов (убедитесь, что отключен переключатель <code>simple</code>)."
 						},
 						"index": {
 							"displayName": "Индекс",
-							"description": "Индекс, отсчитываемый от нуля, относительно начала указанного сегмента (используйте индекс + 1 для ссылки на таблицу)."
+							"description": "Нулевой индекс относительно начала указанного сегмента (используйте индекс + 1 для ссылки на таблицу)"
 						},
 						"name": {
 							"displayName": "Имя",
@@ -148,41 +148,41 @@
 						},
 						"startIndex": {
 							"displayName": "Начальный индекс",
-							"description": "Начальный индекс этого диапазона, отсчитываемый от нуля."
+							"description": "Нулевой начальный индекс этого диапазона"
 						},
 						"endIndex": {
 							"displayName": "Конечный индекс",
-							"description": "Конечный индекс этого диапазона, отсчитываемый от нуля."
+							"description": "Нулевой конечный индекс этого диапазона"
 						},
 						"bulletPreset": {
 							"displayName": "Стиль",
-							"description": "Предустановленный шаблон глифов маркеров для списка",
+							"description": "Предустановленный шаблон маркеров для списка",
 							"options": {
 								"BULLET_DISC_CIRCLE_SQUARE": {
 									"displayName": "Маркированный список",
-									"description": "Маркированный список с символом маркера <code>DISC</code>, <code>CIRCLE</code> и <code>SQUARE</code> для первых трех уровней вложенности списка."
+									"description": "Маркированный список с символами <code>DISC</code>, <code>CIRCLE</code> и <code>SQUARE</code> для первых трёх уровней вложенности"
 								},
 								"BULLET_CHECKBOX": {
-									"displayName": "Список флажков",
-									"description": "Маркированный список с маркерами CHECKBOX для всех уровней вложенности списка."
+									"displayName": "Список с флажками",
+									"description": "Маркированный список с символами CHECKBOX для всех уровней вложенности"
 								},
 								"NUMBERED_DECIMAL_NESTED": {
 									"displayName": "Нумерованный список",
-									"description": "Нумерованный список с <code>DECIMAL</code> числовыми глифами, разделенными точками, где каждый уровень вложенности использует глиф предыдущего уровня вложенности в качестве префикса. Например: 1., 1.1., 2., 2.2 ."
+									"description": "Нумерованный список с <code>DECIMAL</code> символами, разделёнными точками, где каждый уровень вложенности использует символ предыдущего уровня как префикс. Например: 1., 1.1., 2., 2.2."
 								}
 							}
 						},
 						"footerId": {
-							"displayName": "Идентификатор нижнего колонтитула",
-							"description": "Идентификатор нижнего колонтитула, который нужно удалить. Чтобы получить его, используйте <code>get document</code>, который вы можете найти в атрибуте <code>footers</code>."
+							"displayName": "ID нижнего колонтитула",
+							"description": "ID нижнего колонтитула для удаления. Для его получения используйте операцию <code>get document</code>, где вы найдёте атрибут <code>footers</code>."
 						},
 						"headerId": {
-							"displayName": "Идентификатор заголовка",
-							"description": "Идентификатор заголовка, который необходимо удалить. Чтобы получить его, используйте <code>get document</code>, который вы можете найти в атрибуте <code>headers</code>."
+							"displayName": "ID верхнего колонтитула",
+							"description": "ID верхнего колонтитула для удаления. Для его получения используйте операцию <code>get document</code>, где вы найдёте атрибут <code>headers</code>."
 						},
 						"namedRangeReference": {
 							"displayName": "Укажите диапазон по",
-							"description": "Значение определяет, какой диапазон или диапазоны удалить.",
+							"description": "Значение определяет, какой диапазон или диапазоны удалить",
 							"options": {
 								"namedRangeId": {
 									"displayName": "ID"
@@ -198,15 +198,15 @@
 						},
 						"objectId": {
 							"displayName": "ID объекта",
-							"description": "Идентификатор позиционируемого объекта, который нужно удалить (объект, привязанный к абзацу и расположенный относительно его начала). См. Google <a href=\"https://developers.google.com/docs/api/reference/rest/v1/documents#positionedobject\" target=\"_blank\">документацию</a>."
+							"description": "ID размещённого объекта для удаления (объект, привязанный к абзацу и расположенный относительно его начала). См. Google <a href=\"https://developers.google.com/docs/api/reference/rest/v1/documents#positionedobject\" target=\"_blank\">документацию</a>."
 						},
 						"locationChoice": {
-							"displayName": "Вставить местоположение",
-							"description": "Место, куда будет вставлен текст",
+							"displayName": "Место вставки",
+							"description": "Место, где будет вставлен текст",
 							"options": {
 								"endOfSegmentLocation": {
 									"displayName": "В конце конкретной позиции",
-									"description": "Вставляет текст в конец верхнего, нижнего колонтитула, сноски или тела документа."
+									"description": "Вставляет текст в конец верхнего/нижнего колонтитула, сноски или тела документа"
 								},
 								"location": {
 									"displayName": "По индексу"
@@ -227,14 +227,14 @@
 						},
 						"replaceText": {
 							"displayName": "Новый текст",
-							"description": "Текст, который заменит совпадающий текст"
+							"description": "Текст для замены найденного текста"
 						},
 						"matchCase": {
-							"displayName": "Спичечный футляр",
-							"description": "Должен ли поиск учитывать чувствительность к регистру"
+							"displayName": "Учитывать регистр",
+							"description": "Учитывать ли регистр при поиске"
 						},
 						"insertPosition": {
-							"displayName": "Вставить позицию",
+							"displayName": "Позиция вставки",
 							"options": {
 								"false": {
 									"displayName": "До содержимого в индексе"
@@ -246,18 +246,18 @@
 						},
 						"rowIndex": {
 							"displayName": "Индекс строки",
-							"description": "Индекс строки, отсчитываемый от нуля"
+							"description": "Нулевой индекс строки"
 						},
 						"columnIndex": {
 							"displayName": "Индекс столбца",
-							"description": "Индекс столбца, отсчитываемый от нуля"
+							"description": "Нулевой индекс столбца"
 						}
 					}
 				}
 			},
 			"placeholder": "Добавить действие",
 			"displayName": "Действия",
-			"description": "Действия, примененные для обновления документа"
+			"description": "Действия, применённые для обновления документа"
 		},
 		"updateFields": {
 			"options": {
@@ -265,24 +265,24 @@
 					"displayName": "Обновить поля"
 				},
 				"writeControlObject": {
-					"displayName": "Запись объекта управления",
+					"displayName": "Объект контроля записи",
 					"values": {
 						"control": {
 							"displayName": "Режим редакции",
-							"description": "Определяет, как изменения применяются к версии.",
+							"description": "Определяет, как изменения применяются к редакции",
 							"options": {
 								"targetRevisionId": {
 									"displayName": "Цель",
-									"description": "Примените изменения к последней версии. В противном случае изменения не будут обработаны."
+									"description": "Применить изменения к последней редакции. Иначе изменения не будут обработаны."
 								},
 								"requiredRevisionId": {
-									"displayName": "Необходимый",
-									"description": "Примените изменения к предоставленной версии, включив в нее изменения других соавторов. Этот режим используется для последней версии. В противном случае изменения не будут обработаны."
+									"displayName": "Обязательно",
+									"description": "Применить изменения к предоставленной редакции, включив изменения других соавторов. Этот режим используется для последней редакции. Иначе изменения не будут обработаны."
 								}
 							}
 						},
 						"value": {
-							"displayName": "Идентификатор редакции"
+							"displayName": "ID редакции"
 						}
 					}
 				}

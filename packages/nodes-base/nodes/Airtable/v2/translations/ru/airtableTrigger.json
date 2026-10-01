@@ -14,7 +14,7 @@
 					"displayName": "Токен доступа"
 				},
 				"airtableOAuth2Api": {
-					"displayName": "ОАут2"
+					"displayName": "OAuth2"
 				}
 			}
 		},

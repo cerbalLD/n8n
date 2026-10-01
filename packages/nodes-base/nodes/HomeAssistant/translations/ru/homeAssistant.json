@@ -38,7 +38,7 @@
 					"description": "Получить скриншот с камеры"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить состояние конкретной сущности"
 				},
 				"check": {
@@ -50,7 +50,7 @@
 					"description": "Создать шаблон"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить много состояний"
 				},
 				"getErroLogs": {
@@ -76,8 +76,8 @@
 			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"binaryPropertyName": {
-			"displayName": "Поместите выходной файл в поле",
-			"hint": "Имя выходного двоичного поля, в которое помещается файл."
+			"displayName": "Поместить выходной файл в поле",
+			"hint": "Имя выходного двоичного поля для сохранения файла"
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",

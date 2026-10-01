@@ -12,7 +12,7 @@
 					"displayName": "Базовая аутентификация"
 				},
 				"oAuth2": {
-					"displayName": "ОАут2"
+					"displayName": "OAuth2"
 				}
 			}
 		},
@@ -63,11 +63,11 @@
 					"description": "Удалить вложение"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить вложение"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить множество вложений из таблицы"
 				},
 				"create": {
@@ -109,7 +109,7 @@
 					"description": "Исключать ли ссылки Table API для ссылочных полей"
 				},
 				"sysparm_fields": {
-					"displayName": "Имена полей или идентификаторы",
+					"displayName": "Имена или идентификаторы полей",
 					"description": "Список полей для возврата. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>.",
 					"hint": "Строка значений, разделённых запятыми, или массив строк могут быть установлены в выражении"
 				},
@@ -162,7 +162,7 @@
 			"placeholder": "Добавить поле",
 			"options": {
 				"assigned_to": {
-					"displayName": "Имя или идентификатор правопреемника",
+					"displayName": "Имя или идентификатор исполнителя",
 					"description": "Какому пользователю назначен инцидент. Требуется выбор группы назначения. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"assignment_group": {
@@ -290,7 +290,7 @@
 					"description": "Пол пользователя"
 				},
 				"home_phone": {
-					"displayName": "Домашний телефон",
+					"displayName": "Р”РѕРјР°С€РЅРёР№ С‚РµР»РµС„РѕРЅ",
 					"description": "Домашний телефон пользователя"
 				},
 				"last_name": {
@@ -306,7 +306,7 @@
 					"description": "Руководитель пользователя"
 				},
 				"middle_name": {
-					"displayName": "Второе имя",
+					"displayName": "Отчество",
 					"description": "Отчество пользователя"
 				},
 				"mobile_phone": {
@@ -487,7 +487,7 @@
 					"description": "Пол пользователя"
 				},
 				"home_phone": {
-					"displayName": "Домашний телефон",
+					"displayName": "Р”РѕРјР°С€РЅРёР№ С‚РµР»РµС„РѕРЅ",
 					"description": "Домашний телефон пользователя"
 				},
 				"last_name": {
@@ -503,7 +503,7 @@
 					"description": "Руководитель пользователя"
 				},
 				"middle_name": {
-					"displayName": "Второе имя",
+					"displayName": "Отчество",
 					"description": "Отчество пользователя"
 				},
 				"mobile_phone": {

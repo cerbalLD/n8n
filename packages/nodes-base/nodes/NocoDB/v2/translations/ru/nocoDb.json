@@ -49,7 +49,7 @@
 					"description": "Удалить строку из таблицы"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить одну базу данных"
 				},
 				"search": {
@@ -57,7 +57,7 @@
 					"description": "Найти определённые записи или список все"
 				},
 				"count": {
-					"displayName": "Считать",
+					"displayName": "Количество",
 					"description": "Подсчитать записи в таблице"
 				},
 				"upload": {
@@ -65,7 +65,7 @@
 					"description": "Загрузить вложение(я) в существующую ячейку"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Список всех баз"
 				},
 				"list": {
@@ -246,7 +246,7 @@
 			"placeholder": "file.jpg"
 		},
 		"contentType": {
-			"displayName": "Тип контента",
+			"displayName": "Тип содержимого",
 			"description": "Тип содержимого файла",
 			"placeholder": "image/jpeg"
 		},

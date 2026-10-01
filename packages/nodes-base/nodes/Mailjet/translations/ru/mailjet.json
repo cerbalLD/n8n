@@ -39,7 +39,7 @@
 			"placeholder": "info@example.com"
 		},
 		"subject": {
-			"displayName": "Предмет",
+			"displayName": "Тема",
 			"description": "Тема письма",
 			"placeholder": "Тема письма"
 		},
@@ -126,7 +126,7 @@
 					"description": "Получатели Cc, разделённые запятой"
 				},
 				"subject": {
-					"displayName": "Предмет"
+					"displayName": "Тема"
 				}
 			}
 		},

@@ -61,7 +61,7 @@
 			"displayName": "Категория СМИ",
 			"options": {
 				"NONE": {
-					"displayName": "Никто",
+					"displayName": "Нет",
 					"description": "Пост не содержит никаких медиафайлов и будет состоять только из текста."
 				},
 				"ARTICLE": {
@@ -106,7 +106,7 @@
 							"displayName": "Подключения"
 						},
 						"PUBLIC": {
-							"displayName": "Общественный"
+							"displayName": "Публичный"
 						}
 					}
 				}

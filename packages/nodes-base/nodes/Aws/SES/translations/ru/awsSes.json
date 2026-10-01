@@ -8,10 +8,10 @@
 			"displayName": "Аутентификация",
 			"options": {
 				"iam": {
-					"displayName": "АВС (ИАМ)"
+					"displayName": "AWS (IAM)"
 				},
 				"assumeRole": {
-					"displayName": "AWS (принятие роли)"
+					"displayName": "AWS (Assume Role)"
 				}
 			}
 		},
@@ -41,11 +41,11 @@
 					"description": "Удалить шаблон"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить шаблон"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить шаблоны"
 				},
 				"send": {
@@ -180,10 +180,10 @@
 			"description": "Является ли тело HTML или простым текстом"
 		},
 		"subject": {
-			"displayName": "Предмет"
+			"displayName": "Тема"
 		},
 		"body": {
-			"displayName": "Тело",
+			"displayName": "Тело запроса",
 			"description": "Сообщение для отправки"
 		},
 		"fromEmail": {

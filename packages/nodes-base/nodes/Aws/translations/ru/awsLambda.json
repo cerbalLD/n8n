@@ -1,17 +1,17 @@
 {
 	"header": {
-		"displayName": "AWS Лямбда",
-		"description": "Вызов функций в AWS Lambda"
+		"displayName": "AWS Lambda",
+		"description": "Вызовите функции на AWS Lambda"
 	},
 	"nodeView": {
 		"authentication": {
 			"displayName": "Аутентификация",
 			"options": {
 				"iam": {
-					"displayName": "АВС (ИАМ)"
+					"displayName": "AWS (IAM)"
 				},
 				"assumeRole": {
-					"displayName": "AWS (принятие роли)"
+					"displayName": "AWS (Assume Role)"
 				}
 			}
 		},
@@ -20,35 +20,35 @@
 			"options": {
 				"invoke": {
 					"displayName": "Вызов",
-					"description": "Вызов функции"
+					"description": "Вызовите функцию"
 				}
 			}
 		},
 		"function": {
 			"displayName": "Имя или идентификатор функции",
-			"description": "Функция, которую вы хотите вызвать. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"description": "Функция для вызова. Выберите из списка или укажите идентификатор, используя <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 		},
 		"qualifier": {
-			"displayName": "отборочный турнир",
-			"description": "Укажите версию или псевдоним для вызова опубликованной версии функции."
+			"displayName": "Квалификатор",
+			"description": "Укажите версию или псевдоним для вызова опубликованной версии функции"
 		},
 		"invocationType": {
 			"displayName": "Тип вызова",
-			"description": "Укажите, должен ли рабочий процесс ждать, пока функция вернет результаты.",
+			"description": "Укажите, должен ли рабочий процесс ждать результаты функции",
 			"options": {
 				"RequestResponse": {
-					"displayName": "Ждите результатов",
+					"displayName": "Ждать результатов",
 					"description": "Вызовите функцию синхронно и дождитесь ответа"
 				},
 				"Event": {
 					"displayName": "Продолжить рабочий процесс",
-					"description": "Вызовите функцию и немедленно продолжите рабочий процесс."
+					"description": "Вызовите функцию и немедленно продолжите рабочий процесс"
 				}
 			}
 		},
 		"payload": {
 			"displayName": "JSON-ввод",
-			"description": "JSON, который вы хотите предоставить вашей функции Lambda в качестве входных данных."
+			"description": "JSON для передачи вашей функции Lambda в качестве входа"
 		}
 	}
 }

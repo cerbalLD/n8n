@@ -30,11 +30,11 @@
 					"description": "Удалить сделку"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить сделку"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить несколько сделок"
 				},
 				"update": {
@@ -59,7 +59,7 @@
 			"displayName": "Фильтр",
 			"options": {
 				"none": {
-					"displayName": "Никто"
+					"displayName": "Нет"
 				},
 				"manual": {
 					"displayName": "Построить вручную"

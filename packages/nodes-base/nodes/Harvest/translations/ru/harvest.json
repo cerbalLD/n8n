@@ -11,7 +11,7 @@
 					"displayName": "Токен доступа"
 				},
 				"oAuth2": {
-					"displayName": "ОАут2"
+					"displayName": "OAuth2"
 				}
 			}
 		},
@@ -43,7 +43,7 @@
 					"displayName": "Задача"
 				},
 				"timeEntry": {
-					"displayName": "Ввод времени"
+					"displayName": "Запись времени"
 				},
 				"user": {
 					"displayName": "Пользователь"
@@ -59,14 +59,14 @@
 				},
 				"delete": {
 					"displayName": "Удалить",
-					"description": "Удаление пользователя"
+					"description": "Удалить пользователя"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить данные пользователя"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получите данные многих пользователей"
 				},
 				"update": {
@@ -245,7 +245,7 @@
 					"description": "Номер заказа на поставку"
 				},
 				"subject": {
-					"displayName": "Предмет",
+					"displayName": "Тема",
 					"description": "Предмет счета-фактуры"
 				},
 				"tax": {
@@ -257,7 +257,7 @@
 					"description": "Этот процент применяется к промежуточному итогу, включая позиции и скидки. Пример: используйте 10,0 для 10,0%."
 				},
 				"billable": {
-					"displayName": "подлежащий оплате",
+					"displayName": "Подлежит оплате",
 					"description": "Независимо от того, подлежат ли эти расходы оплате или нет. По умолчанию истинно."
 				},
 				"total_cost": {
@@ -474,7 +474,7 @@
 					"description": "Номер заказа на поставку"
 				},
 				"subject": {
-					"displayName": "Предмет",
+					"displayName": "Тема",
 					"description": "Предмет счета-фактуры"
 				},
 				"tax": {
@@ -486,7 +486,7 @@
 					"description": "Этот процент применяется к промежуточному итогу, включая позиции и скидки. Пример: используйте 10,0 для 10,0%."
 				},
 				"billable": {
-					"displayName": "подлежащий оплате",
+					"displayName": "Подлежит оплате",
 					"description": "Независимо от того, подлежат ли эти расходы оплате или нет. По умолчанию истинно."
 				},
 				"expense_category_id": {
@@ -534,7 +534,7 @@
 					"description": "Метод выставления счетов за проект",
 					"options": {
 						"none": {
-							"displayName": "Никто"
+							"displayName": "Нет"
 						},
 						"People": {
 							"displayName": "Люди"
@@ -696,7 +696,7 @@
 			"description": "Метод выставления счетов за проект",
 			"options": {
 				"none": {
-					"displayName": "Никто"
+					"displayName": "Нет"
 				},
 				"People": {
 					"displayName": "Люди"

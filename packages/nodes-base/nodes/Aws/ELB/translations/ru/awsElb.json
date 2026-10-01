@@ -1,17 +1,17 @@
 {
 	"header": {
-		"displayName": "АВС ЭЛБ",
-		"description": "Отправляет данные в API AWS ELB."
+		"displayName": "AWS ELB",
+		"description": "Отправляет данные в API AWS ELB"
 	},
 	"nodeView": {
 		"authentication": {
 			"displayName": "Аутентификация",
 			"options": {
 				"iam": {
-					"displayName": "АВС (ИАМ)"
+					"displayName": "AWS (IAM)"
 				},
 				"assumeRole": {
-					"displayName": "AWS (принятие роли)"
+					"displayName": "AWS (Assume Role)"
 				}
 			}
 		},
@@ -31,45 +31,45 @@
 			"options": {
 				"create": {
 					"displayName": "Создать",
-					"description": "Создайте балансировщик нагрузки"
+					"description": "Создать балансировщик нагрузки"
 				},
 				"delete": {
 					"displayName": "Удалить",
-					"description": "Удаление балансировщика нагрузки"
+					"description": "Удалить балансировщик нагрузки"
 				},
 				"get": {
-					"displayName": "Получать",
-					"description": "Приобретите балансировщик нагрузки"
+					"displayName": "Получить",
+					"description": "Получить балансировщик нагрузки"
 				},
 				"getMany": {
-					"displayName": "Получить много",
-					"description": "Получите множество сертификатов слушателей"
+					"displayName": "Получить множество",
+					"description": "Получить несколько сертификатов слушателей"
 				},
 				"add": {
 					"displayName": "Добавить",
-					"description": "Добавьте указанный сертификат сервера SSL в список сертификатов для указанного прослушивателя HTTPS или TLS."
+					"description": "Добавьте указанный сертификат сервера SSL в список сертификатов для указанного слушателя HTTPS или TLS"
 				},
 				"remove": {
 					"displayName": "Удалять",
-					"description": "Удалить указанный сертификат из списка сертификатов для указанного прослушивателя HTTPS или TLS."
+					"description": "Удалите указанный сертификат из списка сертификатов для указанного слушателя HTTPS или TLS"
 				}
 			}
 		},
 		"ipAddressType": {
 			"displayName": "Тип IP-адреса",
-			"description": "Тип IP-адресов, используемых подсетями для вашего балансировщика нагрузки.",
+			"description": "Тип IP-адресов, используемых подсетями для вашего балансировщика нагрузки",
 			"options": {
 				"ipv4": {
 					"displayName": "IPv4"
 				},
 				"dualstack": {
-					"displayName": "Двойной стек"
+					"displayName": "Dual Stack"
 				}
 			}
 		},
 		"name": {
 			"displayName": "Имя",
-			"description": "Это имя должно быть уникальным для каждого региона и каждой учетной записи и может содержать не более 32 символов."
+			"description": "Имя должно быть уникальным для каждого региона и учётной записи, максимум 32 символа"
 		},
 		"schema": {
 			"displayName": "Схема",
@@ -94,8 +94,8 @@
 			}
 		},
 		"subnets": {
-			"displayName": "Идентификатор подсети Имена или идентификаторы",
-			"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"displayName": "Имена или идентификаторы подсетей",
+			"description": "Выберите из списка или укажите идентификаторы через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>"
 		},
 		"additionalFields": {
 			"displayName": "Дополнительные поля",
@@ -103,7 +103,7 @@
 			"options": {
 				"securityGroups": {
 					"displayName": "Идентификаторы групп безопасности",
-					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите идентификаторы через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>"
 				},
 				"tagsUi": {
 					"values": {
@@ -135,7 +135,7 @@
 		},
 		"loadBalancerId": {
 			"displayName": "Имя или идентификатор ARN балансировщика нагрузки",
-			"description": "Уникальный идентификатор конкретного loadBalancer. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"description": "Уникальный идентификатор балансировщика нагрузки. Выберите из списка или укажите идентификатор, используя <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",
@@ -151,17 +151,17 @@
 			"options": {
 				"names": {
 					"displayName": "Имена",
-					"description": "Имена балансировщиков нагрузки. Множественные числа могут быть определены через запятую."
+					"description": "Имена балансировщиков нагрузки. Несколько значений разделяются запятой."
 				}
 			}
 		},
 		"listenerId": {
-			"displayName": "Имя или идентификатор ARN прослушивателя",
-			"description": "Уникальный идентификатор конкретного loadBalancer. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"displayName": "Имя или идентификатор ARN слушателя",
+			"description": "Уникальный идентификатор балансировщика нагрузки. Выберите из списка или укажите идентификатор, используя <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 		},
 		"certificateId": {
-			"displayName": "Сертификат АРН",
-			"description": "Уникальный идентификатор конкретного loadBalancer"
+			"displayName": "ARN сертификата",
+			"description": "Уникальный идентификатор балансировщика нагрузки"
 		}
 	}
 }

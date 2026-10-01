@@ -30,11 +30,11 @@
 					"description": "Удалить сделку"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить сделку"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить несколько сделок"
 				},
 				"update": {
@@ -65,7 +65,7 @@
 					"displayName": "Телефон"
 				},
 				"otherPhone": {
-					"displayName": "Другой телефон"
+					"displayName": "Р”СЂСѓРіРѕР№ С‚РµР»РµС„РѕРЅ"
 				},
 				"facebookHandle": {
 					"displayName": "Фейсбук-дескриптор"
@@ -92,13 +92,13 @@
 					"displayName": "Строка платежного адреса 2"
 				},
 				"billingCity": {
-					"displayName": "Биллинг-Сити"
+					"displayName": "Р‘РёР»Р»РёРЅРі-РЎРёС‚Рё"
 				},
 				"billingZipCode": {
 					"displayName": "Почтовый индекс для выставления счетов"
 				},
 				"billingState": {
-					"displayName": "Страна выставления счета"
+					"displayName": "РЎС‚СЂР°РЅР° РІС‹СЃС‚Р°РІР»РµРЅРёСЏ СЃС‡РµС‚Р°"
 				},
 				"description": {
 					"displayName": "Описание",
@@ -109,7 +109,7 @@
 					"description": "Это поле содержит теги, связанные со сделкой."
 				},
 				"dueDate": {
-					"displayName": "Срок оплаты",
+					"displayName": "Срок выполнения",
 					"description": "Дата окончания действия"
 				},
 				"duration": {
@@ -189,7 +189,7 @@
 					"displayName": "Телефон"
 				},
 				"otherPhone": {
-					"displayName": "Другой телефон"
+					"displayName": "Р”СЂСѓРіРѕР№ С‚РµР»РµС„РѕРЅ"
 				},
 				"facebookHandle": {
 					"displayName": "Фейсбук-дескриптор"
@@ -216,13 +216,13 @@
 					"displayName": "Строка платежного адреса 2"
 				},
 				"billingCity": {
-					"displayName": "Биллинг-Сити"
+					"displayName": "Р‘РёР»Р»РёРЅРі-РЎРёС‚Рё"
 				},
 				"billingZipCode": {
 					"displayName": "Почтовый индекс для выставления счетов"
 				},
 				"billingState": {
-					"displayName": "Страна выставления счета"
+					"displayName": "РЎС‚СЂР°РЅР° РІС‹СЃС‚Р°РІР»РµРЅРёСЏ СЃС‡РµС‚Р°"
 				},
 				"description": {
 					"displayName": "Описание",
@@ -239,7 +239,7 @@
 					"displayName": "Тип"
 				},
 				"dueDate": {
-					"displayName": "Срок оплаты",
+					"displayName": "Срок выполнения",
 					"description": "Дата окончания действия"
 				},
 				"duration": {
@@ -259,7 +259,7 @@
 					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"pipeline": {
-					"displayName": "Трубопровод",
+					"displayName": "Конвейер",
 					"options": {
 						"Sales": {
 							"displayName": "Продажи"
@@ -489,7 +489,7 @@
 			"description": "Основное контактное лицо по сделке. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 		},
 		"pipeline": {
-			"displayName": "Трубопровод",
+			"displayName": "Конвейер",
 			"options": {
 				"Sales": {
 					"displayName": "Продажи"

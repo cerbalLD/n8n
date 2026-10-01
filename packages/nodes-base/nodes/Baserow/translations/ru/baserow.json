@@ -47,11 +47,11 @@
 					"description": "Удалить строку"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить строку"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить несколько строк"
 				},
 				"update": {
@@ -66,7 +66,7 @@
 		},
 		"tableId": {
 			"displayName": "Имя или идентификатор таблицы",
-			"description": "Таблица, над которой можно работать. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"description": "Таблица для работы. Выберите из списка или укажите идентификатор, используя <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 		},
 		"rowId": {
 			"displayName": "ID строки",

@@ -11,7 +11,7 @@
 					"displayName": "Базовая аутентификация"
 				},
 				"none": {
-					"displayName": "Никто"
+					"displayName": "Нет"
 				},
 				"n8nUserAuth": {
 					"displayName": "n8n Аутентификация пользователя",
@@ -29,7 +29,7 @@
 			"placeholder": "вебхук"
 		},
 		"formTitle": {
-			"displayName": "Название формы",
+			"displayName": "Заголовок формы",
 			"description": "Отображается вверху формы",
 			"placeholder": "например Связаться с нами"
 		},
@@ -44,7 +44,7 @@
 					"displayName": "Элементы формы"
 				},
 				"values": {
-					"displayName": "Ценности",
+					"displayName": "Значения",
 					"values": {
 						"fieldName": {
 							"displayName": "Имя пользовательского поля",
@@ -121,7 +121,7 @@
 									"description": "Список опций, которые можно выбрать из раскрывающегося списка"
 								},
 								"values": {
-									"displayName": "Ценности",
+									"displayName": "Значения",
 									"values": {
 										"option": {
 											"displayName": "Метка переключателя"
@@ -274,7 +274,7 @@
 					"displayName": "Форма ответа",
 					"options": {
 						"values": {
-							"displayName": "Ценности"
+							"displayName": "Значения"
 						}
 					}
 				},

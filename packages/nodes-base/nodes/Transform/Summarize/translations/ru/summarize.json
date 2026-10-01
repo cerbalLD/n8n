@@ -1,7 +1,7 @@
 {
 	"header": {
 		"displayName": "Суммировать",
-		"description": "Сумма, количество, максимум и т. д. по элементам."
+		"description": "Сумма, количество, максимум и т. д. по элементам"
 	},
 	"nodeView": {
 		"fieldsToSummarize": {
@@ -25,7 +25,7 @@
 									"displayName": "Объединить"
 								},
 								"count": {
-									"displayName": "Считать"
+									"displayName": "Количество"
 								},
 								"countUnique": {
 									"displayName": "Количество уникальных"
@@ -51,7 +51,7 @@
 							"displayName": "Включить пустые значения"
 						},
 						"separateBy": {
-							"displayName": "Сепаратор",
+							"displayName": "Разделитель",
 							"hint": "Что вставлять между значениями",
 							"options": {
 								",": {
@@ -64,7 +64,7 @@
 									"displayName": "Новая строка"
 								},
 								"": {
-									"displayName": "Никто"
+									"displayName": "Нет"
 								},
 								" ": {
 									"displayName": "Пространство"
@@ -95,7 +95,7 @@
 			"options": {
 				"continueIfFieldNotFound": {
 					"displayName": "Продолжить, если поле не найдено",
-					"description": "Продолжать ли, если поле для суммирования не найдено ни в одном элементе и вернуть один пустой элемент, в противном случае будет выдана ошибка"
+					"description": "Продолжить, если поле не найдено (вернет пустой элемент вместо ошибки)"
 				},
 				"disableDotNotation": {
 					"displayName": "Отключить точечную нотацию",

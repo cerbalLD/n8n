@@ -11,13 +11,13 @@
 					"displayName": "Учётные данные"
 				},
 				"oAuth2": {
-					"displayName": "ОАут2"
+					"displayName": "OAuth2"
 				}
 			}
 		},
 		"events": {
 			"displayName": "Названия или ID событий",
-			"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите идентификаторы через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>"
 		},
 		"eventsOrder": {
 			"displayName": "Порядок событий",

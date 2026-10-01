@@ -67,11 +67,11 @@
 					"description": "Удалить сообщение"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить информацию о вложении сообщения"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить информацию о вложениях сообщения"
 				},
 				"update": {
@@ -91,7 +91,7 @@
 					"description": "Создать ответ на сообщение"
 				},
 				"sendAndWait": {
-					"displayName": "Отправить и дождаться ответа",
+					"displayName": "Отправить и ждать ответа",
 					"description": "Отправить сообщение и дождаться ответа"
 				},
 				"add": {
@@ -199,7 +199,7 @@
 				},
 				"categories": {
 					"displayName": "Названия или идентификаторы категорий",
-					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите идентификаторы через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>"
 				},
 				"children": {
 					"displayName": "Дети",
@@ -239,7 +239,7 @@
 					}
 				},
 				"fileAs": {
-					"displayName": "Файл как",
+					"displayName": "Сортировать как",
 					"description": "Имя, под которым файлируется контакт"
 				},
 				"homeAddress": {
@@ -295,7 +295,7 @@
 					"description": "Имя менеджера контакта"
 				},
 				"middleName": {
-					"displayName": "Второе имя"
+					"displayName": "Отчество"
 				},
 				"mobilePhone": {
 					"displayName": "Мобильный телефон"
@@ -491,7 +491,7 @@
 											"displayName": "Необязательно"
 										},
 										"required": {
-											"displayName": "Необходимый"
+											"displayName": "Обязательно"
 										},
 										"resource": {
 											"displayName": "Ресурс"
@@ -546,7 +546,7 @@
 							"displayName": "Персональный"
 						},
 						"private": {
-							"displayName": "Частный"
+							"displayName": "Приватный"
 						},
 						"confidential": {
 							"displayName": "Приватное"
@@ -2393,7 +2393,7 @@
 					"displayName": "Начать"
 				},
 				"subject": {
-					"displayName": "Предмет",
+					"displayName": "Тема",
 					"description": "Тема сообщения"
 				},
 				"saveToSentItems": {
@@ -2485,7 +2485,7 @@
 				},
 				"categories": {
 					"displayName": "Названия или идентификаторы категорий",
-					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите идентификаторы через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>"
 				},
 				"ccRecipients": {
 					"displayName": "Получатели CC",
@@ -2568,7 +2568,7 @@
 					"placeholder": "например replyto@example.com"
 				},
 				"subject": {
-					"displayName": "Предмет",
+					"displayName": "Тема",
 					"description": "Тема сообщения"
 				},
 				"toRecipients": {
@@ -2872,7 +2872,7 @@
 			}
 		},
 		"subject": {
-			"displayName": "Предмет",
+			"displayName": "Тема",
 			"description": "Тема сообщения",
 			"placeholder": "например Требуется одобрение"
 		},
@@ -2950,7 +2950,7 @@
 						"values": {
 							"options": {
 								"binaryPropertyName": {
-									"displayName": "Поместите вывод в поле",
+									"displayName": "Поместить результат в поле",
 									"hint": "имя выходного поля для помещения данных двоичного файла"
 								},
 								"outputFileName": {
@@ -2964,7 +2964,7 @@
 					"displayName": "Получить MIME-содержимое",
 					"options": {
 						"values": {
-							"displayName": "Ценности"
+							"displayName": "Значения"
 						}
 					}
 				},
@@ -2976,12 +2976,12 @@
 					"values": {
 						"limitWaitTime": {
 							"displayName": "Ограничить время ожидания",
-							"description": "Ограничить ли время, в течение которого этот узел должен ждать ответа пользователя, прежде чем возобновится выполнение."
+							"description": "Ограничивать ли время ожидания ответа пользователя перед возобновлением выполнения"
 						},
 						"values": {
 							"options": {
 								"limitType": {
-									"displayName": "Тип лимита",
+									"displayName": "Тип ограничения",
 									"description": "Устанавливает условие для возобновления выполнения. Может быть указанной датой или через определённый промежуток времени.",
 									"options": {
 										"afterTimeInterval": {
@@ -3021,10 +3021,10 @@
 						}
 					},
 					"displayName": "Ограничить время ожидания",
-					"description": "Ограничить ли время, в течение которого этот узел должен ждать ответа пользователя, прежде чем возобновится выполнение.",
+					"description": "Ограничивать ли время ожидания ответа пользователя перед возобновлением выполнения",
 					"options": {
 						"values": {
-							"displayName": "Ценности"
+							"displayName": "Значения"
 						}
 					}
 				},
@@ -3095,7 +3095,7 @@
 					"displayName": "Фильтры"
 				},
 				"values": {
-					"displayName": "Ценности",
+					"displayName": "Значения",
 					"values": {
 						"filterBy": {
 							"displayName": "Фильтр",
@@ -3155,11 +3155,11 @@
 								},
 								"foldersToExclude": {
 									"displayName": "Папки для исключения",
-									"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+									"description": "Выберите из списка или укажите идентификаторы через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>"
 								},
 								"foldersToInclude": {
 									"displayName": "Папки для включения",
-									"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+									"description": "Выберите из списка или укажите идентификаторы через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>"
 								}
 							},
 							"placeholder": "Добавить фильтр",
@@ -3224,7 +3224,7 @@
 					"displayName": "Элементы формы"
 				},
 				"values": {
-					"displayName": "Ценности",
+					"displayName": "Значения",
 					"values": {
 						"fieldName": {
 							"displayName": "Имя пользовательского поля",
@@ -3301,7 +3301,7 @@
 									"description": "Список опций, которые можно выбрать из раскрывающегося списка"
 								},
 								"values": {
-									"displayName": "Ценности",
+									"displayName": "Значения",
 									"values": {
 										"option": {
 											"displayName": "Метка переключателя"
@@ -3378,7 +3378,7 @@
 					"displayName": "Параметры одобрения"
 				},
 				"values": {
-					"displayName": "Ценности",
+					"displayName": "Значения",
 					"values": {
 						"approvalType": {
 							"displayName": "Тип одобрения",
@@ -3427,7 +3427,7 @@
 			"displayName": "Параметры одобрения"
 		},
 		"binaryPropertyName": {
-			"displayName": "Поместите вывод в поле",
+			"displayName": "Поместить результат в поле",
 			"hint": "имя выходного поля для помещения данных двоичного файла",
 			"placeholder": "например data"
 		},

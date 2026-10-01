@@ -11,7 +11,7 @@
 					"displayName": "Токен доступа"
 				},
 				"oAuth2": {
-					"displayName": "ОАут2"
+					"displayName": "OAuth2"
 				}
 			}
 		},
@@ -34,7 +34,7 @@
 					"description": "Создать публикацию"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить несколько публикаций"
 				}
 			}
@@ -119,7 +119,7 @@
 					"description": "Статус поста",
 					"options": {
 						"public": {
-							"displayName": "Общественный"
+							"displayName": "Публичный"
 						},
 						"draft": {
 							"displayName": "Черновик"

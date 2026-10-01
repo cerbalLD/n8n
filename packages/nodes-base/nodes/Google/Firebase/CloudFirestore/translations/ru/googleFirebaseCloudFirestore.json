@@ -42,11 +42,11 @@
 					"description": "Удалить документ"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить документ"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получите много корневых коллекций"
 				},
 				"query": {
@@ -56,7 +56,7 @@
 			}
 		},
 		"projectId": {
-			"displayName": "Название или идентификатор проекта",
+			"displayName": "Имя или идентификатор проекта",
 			"description": "Как показано в URL-адресе консоли Firebase. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 		},
 		"database": {

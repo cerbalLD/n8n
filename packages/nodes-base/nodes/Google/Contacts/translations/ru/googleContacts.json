@@ -1,7 +1,7 @@
 {
 	"header": {
 		"displayName": "Google Контакты",
-		"description": "Использование API контактов Google"
+		"description": "Использование API Google Контактов"
 	},
 	"nodeView": {
 		"resource": {
@@ -21,15 +21,15 @@
 				},
 				"delete": {
 					"displayName": "Удалить",
-					"description": "Удаление контакта"
+					"description": "Удалить контакт"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить контакт"
 				},
 				"getAll": {
-					"displayName": "Получить много",
-					"description": "Получить много контактов"
+					"displayName": "Получить множество",
+					"description": "Получить множество контактов"
 				},
 				"update": {
 					"displayName": "Обновить",
@@ -55,7 +55,7 @@
 						"addressesValues": {
 							"options": {
 								"streetAddress": {
-									"displayName": "Адрес улицы"
+									"displayName": "Улица"
 								},
 								"city": {
 									"displayName": "город"
@@ -136,7 +136,7 @@
 							"options": {
 								"key": {
 									"displayName": "Ключ",
-									"description": "Указанный конечным пользователем ключ определяемых пользователем данных"
+									"description": "Ключ определяемых пользователем данных, указанный конечным пользователем"
 								},
 								"value": {
 									"displayName": "Значение",
@@ -145,7 +145,7 @@
 							}
 						}
 					},
-					"placeholder": "Добавить настраиваемое поле",
+					"placeholder": "Добавить пользовательское поле",
 					"displayName": "Пользовательские поля",
 					"options": {
 						"customFieldsValues": {
@@ -162,7 +162,7 @@
 							"options": {
 								"type": {
 									"displayName": "Тип",
-									"description": "Тип адреса электронной почты. Тип может быть пользовательским или одним из этих предопределенных значений.",
+									"description": "Тип адреса электронной почты. Может быть пользовательским или одним из предопределённых значений.",
 									"options": {
 										"home": {
 											"displayName": "Дом"
@@ -200,11 +200,11 @@
 							"options": {
 								"date": {
 									"displayName": "Дата",
-									"description": "Дата мероприятия"
+									"description": "Дата события"
 								},
 								"type": {
 									"displayName": "Тип",
-									"description": "Тип мероприятия. Тип может быть пользовательским или одним из этих предопределенных значений.",
+									"description": "Тип события. Может быть пользовательским или одним из предопределённых значений.",
 									"options": {
 										"anniversary": {
 											"displayName": "Годовщина"
@@ -227,21 +227,21 @@
 					}
 				},
 				"fileAs": {
-					"displayName": "Файл как",
-					"description": "Имя, которое следует использовать для сортировки людей в списке."
+					"displayName": "Сортировать как",
+					"description": "Имя, используемое для сортировки человека в списке"
 				},
 				"group": {
 					"displayName": "Имена или ID групп",
-					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите идентификаторы через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>"
 				},
 				"honorificPrefix": {
-					"displayName": "Почетный префикс"
+					"displayName": "Почётный префикс"
 				},
 				"honorificSuffix": {
-					"displayName": "Почетный суффикс"
+					"displayName": "Почётный суффикс"
 				},
 				"middleName": {
-					"displayName": "Второе имя"
+					"displayName": "Отчество"
 				},
 				"biographies": {
 					"displayName": "Примечания"
@@ -257,7 +257,7 @@
 									"displayName": "Тип",
 									"options": {
 										"googleVoice": {
-											"displayName": "Google Голос"
+											"displayName": "Google Voice"
 										},
 										"home": {
 											"displayName": "Дом"
@@ -287,7 +287,7 @@
 											"displayName": "Рабочий факс"
 										},
 										"workMobile": {
-											"displayName": "Работайте мобильно"
+											"displayName": "Рабочий мобильный"
 										},
 										"workPager": {
 											"displayName": "Рабочий пейджер"
@@ -318,11 +318,11 @@
 							"options": {
 								"person": {
 									"displayName": "Человек",
-									"description": "Имя другого человека, к которому относится это отношение"
+									"description": "Имя другого человека, на которого ссылается это отношение"
 								},
 								"type": {
 									"displayName": "Тип",
-									"description": "Отношение человека к другому человеку. Тип может быть пользовательским или одним из этих предопределенных значений.",
+									"description": "Отношение человека к другому человеку. Может быть пользовательским или одним из предопределённых значений.",
 									"options": {
 										"assistant": {
 											"displayName": "Помощник"
@@ -331,10 +331,10 @@
 											"displayName": "Брат"
 										},
 										"child": {
-											"displayName": "Ребенок"
+											"displayName": "Ребёнок"
 										},
 										"domesticPartner": {
-											"displayName": "Внутренний партнер"
+											"displayName": "Домашний партнер"
 										},
 										"father": {
 											"displayName": "Отец"
@@ -352,7 +352,7 @@
 											"displayName": "Родитель"
 										},
 										"referredBy": {
-											"displayName": "По рекомендации"
+											"displayName": "Рекомендовано"
 										},
 										"relative": {
 											"displayName": "Родственник"
@@ -361,7 +361,7 @@
 											"displayName": "Сестра"
 										},
 										"spouse": {
-											"displayName": "Супруг"
+											"displayName": "Супруг(а)"
 										}
 									}
 								}
@@ -372,7 +372,7 @@
 					"displayName": "Отношения",
 					"options": {
 						"relationsValues": {
-							"displayName": "Связь"
+							"displayName": "Отношение"
 						}
 					}
 				}
@@ -383,7 +383,7 @@
 		},
 		"fields": {
 			"displayName": "Поля",
-			"description": "Маска поля, позволяющая ограничить возвращаемые поля для каждого человека. Можно указать несколько полей, разделив их запятыми.",
+			"description": "Маска поля для ограничения возвращаемых полей каждого контакта. Несколько полей можно указать, разделив их запятыми.",
 			"options": {
 				"*": {
 					"displayName": "*"
@@ -398,7 +398,7 @@
 					"displayName": "Дни рождения"
 				},
 				"coverPhotos": {
-					"displayName": "Фотографии на обложке"
+					"displayName": "Фото обложек"
 				},
 				"emailAddresses": {
 					"displayName": "Адреса электронной почты"
@@ -410,13 +410,13 @@
 					"displayName": "Полы"
 				},
 				"imClients": {
-					"displayName": "IM-клиенты"
+					"displayName": "Клиенты обмена сообщениями"
 				},
 				"interests": {
 					"displayName": "Интересы"
 				},
 				"locales": {
-					"displayName": "Места"
+					"displayName": "Локали"
 				},
 				"memberships": {
 					"displayName": "Членство"
@@ -431,7 +431,7 @@
 					"displayName": "Прозвища"
 				},
 				"occupations": {
-					"displayName": "Занятия"
+					"displayName": "Профессии"
 				},
 				"organizations": {
 					"displayName": "Организации"
@@ -446,7 +446,7 @@
 					"displayName": "Отношения"
 				},
 				"residences": {
-					"displayName": "Резиденции"
+					"displayName": "Места проживания"
 				},
 				"sipAddresses": {
 					"displayName": "SIP-адреса"
@@ -476,11 +476,11 @@
 		},
 		"useQuery": {
 			"displayName": "Использовать запрос",
-			"description": "Следует ли использовать запрос для фильтрации результатов"
+			"description": "Использовать ли запрос для фильтрации результатов"
 		},
 		"query": {
 			"displayName": "Запрос",
-			"description": "Простой текстовый запрос для запроса. Запрос используется для сопоставления префиксных фраз полей, относящихся к человеку. Например, человек с именем «foo name» соответствует таким запросам, как «f», «fo», «foo», «foo n», «nam» и т. д., но не «oo n»."
+			"description": "Простой текстовый запрос. Используется для сопоставления префиксных фраз полей контакта. Например, контакт с именем «foo name» совпадает с запросами «f», «fo», «foo», «foo n», «nam» и т. д., но не с «oo n»."
 		},
 		"options": {
 			"displayName": "Параметры",
@@ -488,23 +488,23 @@
 			"options": {
 				"sortOrder": {
 					"displayName": "Порядок сортировки",
-					"description": "Порядок контактов, возвращаемых в результате",
+					"description": "Порядок контактов в результате",
 					"options": {
 						"LAST_MODIFIED_ASCENDING": {
-							"displayName": "Последнее изменение по возрастанию",
-							"description": "Сортируйте людей по времени их изменения; сначала старые записи"
+							"displayName": "Последнее изменение (возрастающий порядок)",
+							"description": "Сортировать контакты по дате изменения; сначала старые"
 						},
 						"LAST_MODIFIED_DESCENDING": {
-							"displayName": "Последнее изменение по убыванию",
-							"description": "Сортируйте людей по времени их изменения; сначала новые записи"
+							"displayName": "Последнее изменение (убывающий порядок)",
+							"description": "Сортировать контакты по дате изменения; сначала новые"
 						},
 						"FIRST_NAME_ASCENDING": {
-							"displayName": "Имя по возрастанию",
-							"description": "Сортировать людей по имени"
+							"displayName": "Имя (возрастающий порядок)",
+							"description": "Сортировать контакты по имени"
 						},
 						"LAST_NAME_ASCENDING": {
-							"displayName": "Фамилия по возрастанию",
-							"description": "Сортировать людей по фамилии"
+							"displayName": "Фамилия (возрастающий порядок)",
+							"description": "Сортировать контакты по фамилии"
 						}
 					}
 				}
@@ -515,8 +515,8 @@
 			"placeholder": "Добавить поле",
 			"options": {
 				"etag": {
-					"displayName": "Этаг",
-					"description": "Поле etag у человека добавлено, чтобы убедиться, что контакт не изменился с момента вашего последнего чтения."
+					"displayName": "Etag",
+					"description": "Поле Etag нужно для убеждения, что контакт не изменился с момента последнего чтения"
 				},
 				"familyName": {
 					"displayName": "Фамилия"
@@ -532,7 +532,7 @@
 						"addressesValues": {
 							"options": {
 								"streetAddress": {
-									"displayName": "Адрес улицы"
+									"displayName": "Улица"
 								},
 								"city": {
 									"displayName": "город"
@@ -613,7 +613,7 @@
 							"options": {
 								"key": {
 									"displayName": "Ключ",
-									"description": "Указанный конечным пользователем ключ определяемых пользователем данных"
+									"description": "Ключ определяемых пользователем данных, указанный конечным пользователем"
 								},
 								"value": {
 									"displayName": "Значение",
@@ -622,7 +622,7 @@
 							}
 						}
 					},
-					"placeholder": "Добавить настраиваемое поле",
+					"placeholder": "Добавить пользовательское поле",
 					"displayName": "Пользовательские поля",
 					"options": {
 						"customFieldsValues": {
@@ -639,7 +639,7 @@
 							"options": {
 								"type": {
 									"displayName": "Тип",
-									"description": "Тип адреса электронной почты. Тип может быть пользовательским или одним из этих предопределенных значений.",
+									"description": "Тип адреса электронной почты. Может быть пользовательским или одним из предопределённых значений.",
 									"options": {
 										"home": {
 											"displayName": "Дом"
@@ -677,11 +677,11 @@
 							"options": {
 								"date": {
 									"displayName": "Дата",
-									"description": "Дата мероприятия"
+									"description": "Дата события"
 								},
 								"type": {
 									"displayName": "Тип",
-									"description": "Тип мероприятия. Тип может быть пользовательским или одним из этих предопределенных значений.",
+									"description": "Тип события. Может быть пользовательским или одним из предопределённых значений.",
 									"options": {
 										"anniversary": {
 											"displayName": "Годовщина"
@@ -704,21 +704,21 @@
 					}
 				},
 				"fileAs": {
-					"displayName": "Файл как",
-					"description": "Имя, которое следует использовать для сортировки людей в списке."
+					"displayName": "Сортировать как",
+					"description": "Имя, используемое для сортировки человека в списке"
 				},
 				"group": {
 					"displayName": "Имена или ID групп",
-					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите идентификаторы через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>"
 				},
 				"honorificPrefix": {
-					"displayName": "Почетный префикс"
+					"displayName": "Почётный префикс"
 				},
 				"honorificSuffix": {
-					"displayName": "Почетный суффикс"
+					"displayName": "Почётный суффикс"
 				},
 				"middleName": {
-					"displayName": "Второе имя"
+					"displayName": "Отчество"
 				},
 				"biographies": {
 					"displayName": "Примечания"
@@ -734,7 +734,7 @@
 									"displayName": "Тип",
 									"options": {
 										"googleVoice": {
-											"displayName": "Google Голос"
+											"displayName": "Google Voice"
 										},
 										"home": {
 											"displayName": "Дом"
@@ -764,7 +764,7 @@
 											"displayName": "Рабочий факс"
 										},
 										"workMobile": {
-											"displayName": "Работайте мобильно"
+											"displayName": "Рабочий мобильный"
 										},
 										"workPager": {
 											"displayName": "Рабочий пейджер"
@@ -795,11 +795,11 @@
 							"options": {
 								"person": {
 									"displayName": "Человек",
-									"description": "Имя другого человека, к которому относится это отношение"
+									"description": "Имя другого человека, на которого ссылается это отношение"
 								},
 								"type": {
 									"displayName": "Тип",
-									"description": "Отношение человека к другому человеку. Тип может быть пользовательским или одним из этих предопределенных значений.",
+									"description": "Отношение человека к другому человеку. Может быть пользовательским или одним из предопределённых значений.",
 									"options": {
 										"assistant": {
 											"displayName": "Помощник"
@@ -808,10 +808,10 @@
 											"displayName": "Брат"
 										},
 										"child": {
-											"displayName": "Ребенок"
+											"displayName": "Ребёнок"
 										},
 										"domesticPartner": {
-											"displayName": "Внутренний партнер"
+											"displayName": "Домашний партнер"
 										},
 										"father": {
 											"displayName": "Отец"
@@ -829,7 +829,7 @@
 											"displayName": "Родитель"
 										},
 										"referredBy": {
-											"displayName": "По рекомендации"
+											"displayName": "Рекомендовано"
 										},
 										"relative": {
 											"displayName": "Родственник"
@@ -838,7 +838,7 @@
 											"displayName": "Сестра"
 										},
 										"spouse": {
-											"displayName": "Супруг"
+											"displayName": "Супруг(а)"
 										}
 									}
 								}
@@ -849,7 +849,7 @@
 					"displayName": "Отношения",
 					"options": {
 						"relationsValues": {
-							"displayName": "Связь"
+							"displayName": "Отношение"
 						}
 					}
 				}

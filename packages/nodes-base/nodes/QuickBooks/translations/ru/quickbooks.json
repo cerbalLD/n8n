@@ -49,10 +49,10 @@
 					"displayName": "Удалить"
 				},
 				"get": {
-					"displayName": "Получать"
+					"displayName": "Получить"
 				},
 				"getAll": {
-					"displayName": "Получить много"
+					"displayName": "Получить множество"
 				},
 				"update": {
 					"displayName": "Обновить"
@@ -155,7 +155,7 @@
 					"description": "Баланс, отражающий произведённые платежи"
 				},
 				"DueDate": {
-					"displayName": "Срок оплаты",
+					"displayName": "Срок выполнения",
 					"description": "Дата наступления срока платежа"
 				},
 				"SalesTermRef": {
@@ -262,7 +262,7 @@
 							"displayName": "Электронная почта"
 						},
 						"None": {
-							"displayName": "Никто"
+							"displayName": "Нет"
 						}
 					}
 				},
@@ -305,7 +305,7 @@
 							"options": {
 								"DefinitionId": {
 									"displayName": "Имя или идентификатор определения поля",
-									"description": "Идентификатор поля, которое необходимо установить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+									"description": "Идентификатор поля для установки. Выберите из списка или укажите идентификатор через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 								},
 								"StringValue": {
 									"displayName": "Значение поля",
@@ -493,7 +493,7 @@
 							"displayName": "Имя отдела"
 						},
 						"due_date": {
-							"displayName": "Срок оплаты"
+							"displayName": "Срок выполнения"
 						},
 						"doc_num": {
 							"displayName": "Номер документа"
@@ -993,7 +993,7 @@
 							"displayName": "Имя"
 						},
 						"None": {
-							"displayName": "Никто"
+							"displayName": "Нет"
 						},
 						"Payment Method": {
 							"displayName": "Способ оплаты"
@@ -1030,7 +1030,7 @@
 							"displayName": "Наличные"
 						},
 						"Check": {
-							"displayName": "Проверять"
+							"displayName": "Проверка"
 						},
 						"Dinners Club": {
 							"displayName": "Diners Club"
@@ -1082,7 +1082,7 @@
 							"displayName": "Имя отдела"
 						},
 						"due_date": {
-							"displayName": "Срок оплаты"
+							"displayName": "Срок выполнения"
 						},
 						"doc_num": {
 							"displayName": "Номер документа"
@@ -1236,7 +1236,7 @@
 							"displayName": "Взимать"
 						},
 						"Check": {
-							"displayName": "Проверять"
+							"displayName": "Проверка"
 						},
 						"Credit": {
 							"displayName": "Кредит"
@@ -1349,7 +1349,7 @@
 					}
 				},
 				"DueDate": {
-					"displayName": "Срок оплаты",
+					"displayName": "Срок выполнения",
 					"description": "Дата наступления срока платежа"
 				},
 				"SalesTermRef": {
@@ -1456,7 +1456,7 @@
 							"displayName": "Электронная почта"
 						},
 						"None": {
-							"displayName": "Никто"
+							"displayName": "Нет"
 						}
 					}
 				},
@@ -1499,7 +1499,7 @@
 							"options": {
 								"DefinitionId": {
 									"displayName": "Имя или идентификатор определения поля",
-									"description": "Идентификатор поля, которое необходимо установить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+									"description": "Идентификатор поля для установки. Выберите из списка или укажите идентификатор через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 								},
 								"StringValue": {
 									"displayName": "Значение поля",
@@ -1628,8 +1628,8 @@
 			"description": "Загружать ли смету в виде PDF-файла"
 		},
 		"binaryProperty": {
-			"displayName": "Поместите выходной файл в поле",
-			"hint": "Имя выходного двоичного поля, в которое помещается файл."
+			"displayName": "Поместить выходной файл в поле",
+			"hint": "Имя выходного двоичного поля для сохранения файла"
 		},
 		"fileName": {
 			"displayName": "Имя файла",

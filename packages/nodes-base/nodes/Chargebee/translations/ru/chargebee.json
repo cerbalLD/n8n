@@ -46,7 +46,7 @@
 		"properties": {
 			"displayName": "Характеристики",
 			"description": "Свойства нового пользователя",
-			"placeholder": "Добавить недвижимость",
+			"placeholder": "Добавить свойство",
 			"options": {
 				"id": {
 					"displayName": "ID пользователя",

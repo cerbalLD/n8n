@@ -176,7 +176,7 @@
 					"displayName": "Расположение данных на листе",
 					"options": {
 						"values": {
-							"displayName": "Ценности"
+							"displayName": "Значения"
 						}
 					}
 				},
@@ -281,7 +281,7 @@
 					"displayName": "Расположение данных на листе",
 					"options": {
 						"values": {
-							"displayName": "Ценности"
+							"displayName": "Значения"
 						}
 					}
 				},
@@ -329,7 +329,7 @@
 					"displayName": "Форматирование вывода",
 					"options": {
 						"values": {
-							"displayName": "Ценности"
+							"displayName": "Значения"
 						}
 					}
 				},
@@ -352,7 +352,7 @@
 					}
 				},
 				"locale": {
-					"displayName": "Языковой стандарт",
+					"displayName": "Локаль",
 					"description": "Язык таблицы в одном из форматов:\n\t\t\t\t<ul>\n\t\t\t\t\t<li>ru (639-1)</li>\n\t\t\t\t\t<li>fil (639-2, если 639-1 недоступен)</li>\n\t\t\t\t\t<li>ru_RU (комбинация языка и страны)</li>\n\t\t\t\t<ul>",
 					"placeholder": "ru_RU"
 				},

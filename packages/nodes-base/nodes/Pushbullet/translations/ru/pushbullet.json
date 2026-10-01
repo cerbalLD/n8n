@@ -24,7 +24,7 @@
 					"description": "Удалить push-уведомление"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить несколько push-уведомлений"
 				},
 				"update": {
@@ -52,7 +52,7 @@
 			"description": "Заголовок push-уведомления"
 		},
 		"body": {
-			"displayName": "Тело",
+			"displayName": "Тело запроса",
 			"description": "Текст push-уведомления"
 		},
 		"url": {

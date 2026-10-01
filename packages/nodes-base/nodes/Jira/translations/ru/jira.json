@@ -55,14 +55,14 @@
 				},
 				"delete": {
 					"displayName": "Удалить",
-					"description": "Удаление пользователя"
+					"description": "Удалить пользователя"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить пользователя"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить много комментариев"
 				},
 				"notify": {
@@ -101,14 +101,14 @@
 			"placeholder": "Добавить поле",
 			"options": {
 				"assignee": {
-					"displayName": "Правопреемник"
+					"displayName": "Ответственный"
 				},
 				"description": {
 					"displayName": "Описание"
 				},
 				"componentIds": {
 					"displayName": "Имена или идентификаторы компонентов",
-					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите идентификаторы через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>"
 				},
 				"customFieldsUi": {
 					"values": {
@@ -127,7 +127,7 @@
 							}
 						}
 					},
-					"placeholder": "Добавить настраиваемое поле",
+					"placeholder": "Добавить пользовательское поле",
 					"displayName": "Пользовательские поля",
 					"options": {
 						"customFieldsValues": {
@@ -137,7 +137,7 @@
 				},
 				"labels": {
 					"displayName": "Имена или идентификаторы меток",
-					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите идентификаторы через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>"
 				},
 				"serverLabels": {
 					"displayName": "Метки"
@@ -156,7 +156,7 @@
 					"description": "Добавляется ли проект в список недавно просмотренных проектов пользователя в Jira. Это также заполняет поле lastViewed в поиске JQL."
 				},
 				"expand": {
-					"displayName": "Расширять",
+					"displayName": "Развернуть",
 					"description": "Включить дополнительную информацию о пользователе",
 					"options": {
 						"groups": {
@@ -186,7 +186,7 @@
 					"description": "HTML-содержимое email-уведомления о задаче"
 				},
 				"subject": {
-					"displayName": "Предмет",
+					"displayName": "Тема",
 					"description": "Тема email-уведомления о задаче. Если не указана, используется ключ и краткое описание задачи."
 				},
 				"textBody": {
@@ -220,7 +220,7 @@
 			"placeholder": "Добавить поле",
 			"options": {
 				"assignee": {
-					"displayName": "Правопреемник"
+					"displayName": "Ответственный"
 				},
 				"description": {
 					"displayName": "Описание"
@@ -242,7 +242,7 @@
 							}
 						}
 					},
-					"placeholder": "Добавить настраиваемое поле",
+					"placeholder": "Добавить пользовательское поле",
 					"displayName": "Пользовательские поля",
 					"options": {
 						"customFieldsValues": {
@@ -256,7 +256,7 @@
 				},
 				"labels": {
 					"displayName": "Имена или идентификаторы меток",
-					"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+					"description": "Выберите из списка или укажите идентификаторы через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>"
 				},
 				"serverLabels": {
 					"displayName": "Метки"
@@ -298,7 +298,7 @@
 			"placeholder": "Добавить вариант",
 			"options": {
 				"expand": {
-					"displayName": "Расширять",
+					"displayName": "Развернуть",
 					"description": "Используйте expand для включения дополнительной информации о комментариях. Параметр принимает Rendered Body, который возвращает содержимое комментария в HTML.",
 					"options": {
 						"changelog": {
@@ -385,7 +385,7 @@
 							"description": "Отправлять ли уведомление автору задачи"
 						},
 						"assignee": {
-							"displayName": "Правопреемник",
+							"displayName": "Ответственный",
 							"description": "Отправлять ли уведомление исполнителям задачи"
 						},
 						"watchers": {
@@ -397,7 +397,7 @@
 							"description": "Отправлять ли уведомление голосующим по задаче"
 						},
 						"users": {
-							"displayName": "Имена пользователей или идентификаторы",
+							"displayName": "Имена или идентификаторы пользователей",
 							"description": "Список пользователей для получения уведомления. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 						},
 						"groups": {
@@ -425,7 +425,7 @@
 					"displayName": "Ограничения получателей",
 					"values": {
 						"users": {
-							"displayName": "Имена пользователей или идентификаторы",
+							"displayName": "Имена или идентификаторы пользователей",
 							"description": "Список пользователей для получения уведомления. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 						},
 						"groups": {
@@ -455,8 +455,8 @@
 			"displayName": "Скачать"
 		},
 		"binaryProperty": {
-			"displayName": "Поместите выходной файл в поле",
-			"hint": "Имя выходного двоичного поля, в которое помещается файл."
+			"displayName": "Поместить выходной файл в поле",
+			"hint": "Имя выходного двоичного поля для сохранения файла"
 		},
 		"comment": {
 			"displayName": "Комментарий",

@@ -51,7 +51,7 @@
 					"description": "Время, до которого JWT не должен приниматься в обработку"
 				},
 				"subject": {
-					"displayName": "Предмет",
+					"displayName": "Тема",
 					"description": "Идентифицирует субъект JWT"
 				}
 			}

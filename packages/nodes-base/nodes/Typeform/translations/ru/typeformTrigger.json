@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Типоформа Триггер",
-		"description": "Запускает рабочий процесс при отправке формы Typeform."
+		"displayName": "Триггер Typeform",
+		"description": "Запускает рабочий процесс при отправке формы Typeform"
 	},
 	"nodeView": {
 		"authentication": {
@@ -11,17 +11,17 @@
 					"displayName": "Токен доступа"
 				},
 				"oAuth2": {
-					"displayName": "ОАут2"
+					"displayName": "OAuth2"
 				}
 			}
 		},
 		"formId": {
 			"displayName": "Название или идентификатор формы",
-			"description": "Форма, которая должна запускать рабочий процесс при отправке. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"description": "Форма для запуска рабочего процесса. Выберите из списка или укажите ID через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 		},
 		"simplifyAnswers": {
-			"displayName": "Упрощайте ответы",
-			"description": "Преобразовывать ли ответы в пару ключ:значение (\"FIELD_TITLE\":\"USER_ANSER\"), чтобы их можно было легко обрабатывать."
+			"displayName": "Упростить ответы",
+			"description": "Преобразовать ответы в пары ключ:значение для лёгкой обработки"
 		},
 		"onlyAnswers": {
 			"displayName": "Только ответы",

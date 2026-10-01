@@ -30,14 +30,14 @@
 				},
 				"delete": {
 					"displayName": "Удалить",
-					"description": "Удаление пользователя"
+					"description": "Удалить пользователя"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить данные компании"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить данные нескольких компаний"
 				},
 				"update": {
@@ -224,7 +224,7 @@
 					"description": "Определяет ключевые слова поиска."
 				},
 				"industry": {
-					"displayName": "Промышленность",
+					"displayName": "Индустрия",
 					"description": "Отрасль, в которой работает компания."
 				},
 				"monthlySpend": {

@@ -23,7 +23,7 @@
 					"description": "Создать корзину"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить запрос"
 				},
 				"delete": {

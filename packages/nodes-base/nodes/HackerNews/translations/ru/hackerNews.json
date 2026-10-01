@@ -22,11 +22,11 @@
 			"displayName": "Операция",
 			"options": {
 				"getAll": {
-					"displayName": "Получить много",
-					"description": "Получите много предметов"
+					"displayName": "Получить множество",
+					"description": "Получить несколько элементов"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить пользователя Hacker News"
 				}
 			}

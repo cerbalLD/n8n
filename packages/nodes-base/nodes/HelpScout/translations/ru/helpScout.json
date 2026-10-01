@@ -33,11 +33,11 @@
 					"description": "Удалить разговор"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить данные почтового ящика"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получите много тем чата"
 				},
 				"properties": {
@@ -70,7 +70,7 @@
 			}
 		},
 		"subject": {
-			"displayName": "Предмет",
+			"displayName": "Тема",
 			"description": "Тема разговора"
 		},
 		"type": {
@@ -277,7 +277,7 @@
 					"description": "Фильтрует клиентов из определённого почтового ящика"
 				},
 				"modifiedSince": {
-					"displayName": "Изменено с момента",
+					"displayName": "Изменено с",
 					"description": "Возвращает только клиентов, изменённых после этой даты"
 				},
 				"number": {
@@ -317,7 +317,7 @@
 							"displayName": "Статус"
 						},
 						"subject": {
-							"displayName": "Предмет"
+							"displayName": "Тема"
 						},
 						"firstName": {
 							"displayName": "Имя"
@@ -563,7 +563,7 @@
 									"displayName": "Google Plus"
 								},
 								"linkedin": {
-									"displayName": "Линкедин"
+									"displayName": "LinkedIn"
 								},
 								"other": {
 									"displayName": "Другое"

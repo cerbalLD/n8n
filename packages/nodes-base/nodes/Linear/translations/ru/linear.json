@@ -11,7 +11,7 @@
 					"displayName": "API-токен"
 				},
 				"oAuth2": {
-					"displayName": "ОАут2"
+					"displayName": "OAuth2"
 				}
 			}
 		},
@@ -46,11 +46,11 @@
 					"description": "Удалить проблему"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить проблему"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получите много проблем"
 				},
 				"update": {
@@ -74,7 +74,7 @@
 					"description": "Идентификатор родительского комментария, если это ответ"
 				},
 				"assigneeId": {
-					"displayName": "Имя или идентификатор правопреемника",
+					"displayName": "Имя или идентификатор исполнителя",
 					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"description": {
@@ -107,7 +107,7 @@
 			}
 		},
 		"teamId": {
-			"displayName": "Название или идентификатор команды",
+			"displayName": "Имя или идентификатор команды",
 			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"title": {
@@ -126,7 +126,7 @@
 			"placeholder": "Добавить поле",
 			"options": {
 				"assigneeId": {
-					"displayName": "Имя или идентификатор правопреемника",
+					"displayName": "Имя или идентификатор исполнителя",
 					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"description": {
@@ -157,7 +157,7 @@
 					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"teamId": {
-					"displayName": "Название или идентификатор команды",
+					"displayName": "Имя или идентификатор команды",
 					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"title": {

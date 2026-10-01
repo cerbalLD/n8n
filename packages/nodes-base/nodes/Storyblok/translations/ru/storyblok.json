@@ -28,11 +28,11 @@
 			"displayName": "Операция",
 			"options": {
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить историю"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить несколько историй"
 				},
 				"delete": {
@@ -72,7 +72,7 @@
 			}
 		},
 		"space": {
-			"displayName": "Имя или идентификатор пространства",
+			"displayName": "Имя или ID пространства",
 			"description": "Имя пространства. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"storyId": {

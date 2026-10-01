@@ -57,11 +57,11 @@
 					"description": "Удалить клиента электронной коммерции"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить данные клиента электронной коммерции"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить данные о множестве товаров заказа"
 				},
 				"update": {
@@ -134,7 +134,7 @@
 							"options": {
 								"customFieldId": {
 									"displayName": "Имя поля или ID",
-									"description": "Идентификатор поля, которое необходимо установить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+									"description": "Идентификатор поля для установки. Выберите из списка или укажите идентификатор через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 								},
 								"fieldValue": {
 									"displayName": "Значение поля",
@@ -166,7 +166,7 @@
 							"options": {
 								"field": {
 									"displayName": "Имя поля или ID",
-									"description": "Идентификатор поля, которое необходимо установить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+									"description": "Идентификатор поля для установки. Выберите из списка или укажите идентификатор через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 								},
 								"value": {
 									"displayName": "Значение поля",
@@ -368,7 +368,7 @@
 							"options": {
 								"customFieldId": {
 									"displayName": "Имя поля или ID",
-									"description": "Идентификатор поля, которое необходимо установить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+									"description": "Идентификатор поля для установки. Выберите из списка или укажите идентификатор через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 								},
 								"fieldValue": {
 									"displayName": "Значение поля",
@@ -400,7 +400,7 @@
 							"options": {
 								"field": {
 									"displayName": "Имя поля или ID",
-									"description": "Идентификатор поля, которое необходимо установить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+									"description": "Идентификатор поля для установки. Выберите из списка или укажите идентификатор через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 								},
 								"value": {
 									"displayName": "Значение поля",

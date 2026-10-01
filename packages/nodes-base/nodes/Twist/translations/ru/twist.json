@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Крутить",
-		"description": "Использовать Twist API"
+		"displayName": "Twist",
+		"description": "Использование Twist API"
 	},
 	"nodeView": {
 		"resource": {
@@ -14,7 +14,7 @@
 					"displayName": "Комментарий"
 				},
 				"messageConversation": {
-					"displayName": "Сообщение Разговор"
+					"displayName": "Сообщение и беседа"
 				},
 				"thread": {
 					"displayName": "Тема"
@@ -37,12 +37,12 @@
 					"description": "Удалить тему"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить информацию о теме"
 				},
 				"getAll": {
-					"displayName": "Получить много",
-					"description": "Получить много тем"
+					"displayName": "Получить множество",
+					"description": "Получить несколько тем"
 				},
 				"unarchive": {
 					"displayName": "Восстановить из архива",
@@ -56,7 +56,7 @@
 		},
 		"workspaceId": {
 			"displayName": "Имя или идентификатор рабочей области",
-			"description": "Идентификатор рабочей области. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"description": "ID рабочей области. Выберите из списка или укажите ID через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 		},
 		"name": {
 			"displayName": "Имя",
@@ -80,7 +80,7 @@
 							"displayName": "Бирюзовый"
 						},
 						"3": {
-							"displayName": "Бирюзовый Синий"
+							"displayName": "Сине-зелёный"
 						},
 						"4": {
 							"displayName": "Зелёный"
@@ -113,16 +113,16 @@
 					"description": "Описание канала"
 				},
 				"public": {
-					"displayName": "Общественный",
-					"description": "Будет ли канал помечен как общедоступный"
+					"displayName": "Публичный",
+					"description": "Будет ли канал отмечен как общедоступный"
 				},
 				"temp_id": {
-					"displayName": "Временный идентификатор",
-					"description": "Временный идентификатор потока"
+					"displayName": "Временный ID",
+					"description": "Временный ID темы"
 				},
 				"user_ids": {
-					"displayName": "Имена пользователей или идентификаторы",
-					"description": "Пользователи, которые будут участвовать в канале. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Имена или идентификаторы пользователей",
+					"description": "Пользователи канала. Выберите из списка или укажите IDs через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 				},
 				"actionsUi": {
 					"values": {
@@ -139,7 +139,7 @@
 											"displayName": "Открыть URL"
 										},
 										"prefill_message": {
-											"displayName": "Предварительное сообщение"
+											"displayName": "Предзаполненное сообщение"
 										},
 										"send_reply": {
 											"displayName": "Отправить ответ"
@@ -156,7 +156,7 @@
 								},
 								"type": {
 									"displayName": "Тип",
-									"description": "Тип кнопки. (В настоящее время доступно только <code>action</code>).",
+									"description": "Тип кнопки. (Доступен только <code>action</code>).",
 									"options": {
 										"action": {
 											"displayName": "Действие"
@@ -180,27 +180,27 @@
 				},
 				"binaryProperties": {
 					"displayName": "Вложения",
-					"description": "Имя свойства, содержащего двоичные данные. Несколько можно определить через запятую."
+					"description": "Имя поля с двоичными данными. Несколько значений разделяются запятой."
 				},
 				"direct_mentions": {
-					"displayName": "Имена или идентификаторы с прямым упоминанием",
-					"description": "Пользователи, которые упоминаются напрямую. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Имена или IDs для прямого упоминания",
+					"description": "Упомянутые пользователи. Выберите из списка или укажите IDs через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 				},
 				"mark_thread_position": {
-					"displayName": "Отметить положение резьбы",
-					"description": "Отмечено ли положение резьбы"
+					"displayName": "Отметить позицию темы",
+					"description": "Отмечена ли позиция темы"
 				},
 				"recipients": {
-					"displayName": "Имена или идентификаторы получателей",
-					"description": "Пользователи, которые будут прикреплены к теме. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Имена или IDs получателей",
+					"description": "Пользователи темы. Выберите из списка или укажите IDs через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 				},
 				"send_as_integration": {
 					"displayName": "Отправить как интеграцию",
-					"description": "Отображать ли интеграцию в качестве создателя потока"
+					"description": "Отображать ли интеграцию как создателя темы"
 				},
 				"to_obj_index": {
 					"displayName": "Конечный индекс объекта",
-					"description": "Ограничить сообщения, заканчивающиеся указанным индексом объекта"
+					"description": "Ограничить сообщения, заканчивающиеся указанным индексом"
 				},
 				"limit": {
 					"displayName": "Лимит",
@@ -208,7 +208,7 @@
 				},
 				"order_by": {
 					"displayName": "Сортировать по",
-					"description": "Возвращен порядок разговоров - один из DESC или ASC.",
+					"description": "Порядок возврата бесед (DESC или ASC)",
 					"options": {
 						"ASC": {
 							"displayName": "ASC"
@@ -220,14 +220,14 @@
 				},
 				"from_obj_index": {
 					"displayName": "Начальный индекс объекта",
-					"description": "Ограничить сообщения, начиная с указанного индекса объекта"
+					"description": "Ограничить сообщения, начиная с указанного индекса"
 				}
 			},
 			"description": "Другие параметры"
 		},
 		"channelId": {
 			"displayName": "Идентификатор канала",
-			"description": "Идентификатор канала"
+			"description": "ID канала"
 		},
 		"returnAll": {
 			"displayName": "Вернуть все",
@@ -243,27 +243,27 @@
 			"options": {
 				"archived": {
 					"displayName": "В архиве",
-					"description": "Возвращаются ли только заархивированные разговоры"
+					"description": "Возвращать ли только архивированные беседы"
 				},
 				"as_ids": {
-					"displayName": "Как идентификаторы",
-					"description": "Возвращаются ли только идентификаторы потоков"
+					"displayName": "Только IDs",
+					"description": "Возвращать ли только IDs тем"
 				},
 				"to_obj_index": {
 					"displayName": "Конечный индекс объекта",
-					"description": "Ограничить комментарии, заканчивающиеся указанным индексом объекта"
+					"description": "Ограничить комментарии, заканчивающиеся указанным индексом"
 				},
 				"newer_than_ts": {
 					"displayName": "Новее чем",
-					"description": "Ограничивает потоки более новыми потоками в указанное время Unix."
+					"description": "Ограничить темы более новыми чем указанное время Unix"
 				},
 				"older_than_ts": {
 					"displayName": "Старше чем",
-					"description": "Ограничивает потоки старше указанного времени Unix."
+					"description": "Ограничить темы старше указанного времени Unix"
 				},
 				"order_by": {
 					"displayName": "Сортировать по",
-					"description": "Порядок возвращаемых комментариев – DESC или ASC.",
+					"description": "Порядок возврата комментариев (DESC или ASC)",
 					"options": {
 						"ASC": {
 							"displayName": "ASC"
@@ -275,14 +275,14 @@
 				},
 				"from_obj_index": {
 					"displayName": "Начальный индекс объекта",
-					"description": "Ограничить комментарии, начиная с указанного индекса объекта."
+					"description": "Ограничить комментарии, начиная с указанного индекса"
 				},
 				"filter_by": {
 					"displayName": "Фильтр",
-					"description": "Фильтром может быть один из <code>attached_to_me</code>, <code>everyone</code> и <code>is_starred</code>.",
+					"description": "Фильтр: <code>attached_to_me</code>, <code>everyone</code> или <code>is_starred</code>",
 					"options": {
 						"attached_to_me": {
-							"displayName": "Привязан ко мне"
+							"displayName": "Привязано ко мне"
 						},
 						"everyone": {
 							"displayName": "Каждый"
@@ -312,7 +312,7 @@
 							"displayName": "Бирюзовый"
 						},
 						"3": {
-							"displayName": "Бирюзовый Синий"
+							"displayName": "Сине-зелёный"
 						},
 						"4": {
 							"displayName": "Зелёный"
@@ -349,8 +349,8 @@
 					"description": "Имя канала"
 				},
 				"public": {
-					"displayName": "Общественный",
-					"description": "Будет ли канал помечен как общедоступный"
+					"displayName": "Публичный",
+					"description": "Будет ли канал отмечен как общедоступный"
 				},
 				"actionsUi": {
 					"values": {
@@ -367,7 +367,7 @@
 											"displayName": "Открыть URL"
 										},
 										"prefill_message": {
-											"displayName": "Предварительное сообщение"
+											"displayName": "Предзаполненное сообщение"
 										},
 										"send_reply": {
 											"displayName": "Отправить ответ"
@@ -384,7 +384,7 @@
 								},
 								"type": {
 									"displayName": "Тип",
-									"description": "Тип кнопки. (В настоящее время доступно только <code>action</code>).",
+									"description": "Тип кнопки. (Доступен только <code>action</code>).",
 									"options": {
 										"action": {
 											"displayName": "Действие"
@@ -408,15 +408,15 @@
 				},
 				"binaryProperties": {
 					"displayName": "Вложения",
-					"description": "Имя свойства, содержащего двоичные данные. Несколько можно определить через запятую."
+					"description": "Имя поля с двоичными данными. Несколько значений разделяются запятой."
 				},
 				"content": {
 					"displayName": "Содержание",
 					"description": "Содержание темы"
 				},
 				"direct_mentions": {
-					"displayName": "Имена или идентификаторы с прямым упоминанием",
-					"description": "Пользователи, которые упоминаются напрямую. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Имена или IDs для прямого упоминания",
+					"description": "Упомянутые пользователи. Выберите из списка или укажите IDs через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 				},
 				"title": {
 					"displayName": "Название",
@@ -427,7 +427,7 @@
 		},
 		"threadId": {
 			"displayName": "Идентификатор потока",
-			"description": "Идентификатор потока"
+			"description": "ID темы"
 		},
 		"content": {
 			"displayName": "Содержание",
@@ -438,12 +438,12 @@
 			"description": "Идентификатор комментария"
 		},
 		"conversationId": {
-			"displayName": "Имя или идентификатор беседы",
-			"description": "Идентификатор разговора. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"displayName": "Имя или ID беседы",
+			"description": "ID беседы. Выберите из списка или укажите ID через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 		},
 		"id": {
-			"displayName": "Идентификатор сообщения беседы",
-			"description": "Идентификатор сообщения беседы"
+			"displayName": "ID сообщения беседы",
+			"description": "ID сообщения беседы"
 		},
 		"title": {
 			"displayName": "Название",

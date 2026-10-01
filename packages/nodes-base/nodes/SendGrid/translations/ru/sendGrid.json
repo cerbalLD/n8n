@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "ОтправитьГрид",
+		"displayName": "SendGrid",
 		"description": "Использование API SendGrid"
 	},
 	"nodeView": {
@@ -27,15 +27,15 @@
 				},
 				"delete": {
 					"displayName": "Удалить",
-					"description": "Удаление контакта"
+					"description": "Удалить контакт"
 				},
 				"get": {
-					"displayName": "Получать",
-					"description": "Получить контакт по ID"
+					"displayName": "Получить",
+					"description": "Получить контакт по идентификатору"
 				},
 				"getAll": {
-					"displayName": "Получить много",
-					"description": "Получить много контактов"
+					"displayName": "Получить множество",
+					"description": "Получить контакты"
 				},
 				"update": {
 					"displayName": "Обновить",
@@ -43,7 +43,7 @@
 				},
 				"upsert": {
 					"displayName": "Создать или обновить",
-					"description": "Создайте новый контакт или обновите текущий, если он уже существует (upsert)"
+					"description": "Создайте новый контакт или обновите существующий (upsert)"
 				},
 				"send": {
 					"displayName": "Отправить",
@@ -81,7 +81,7 @@
 			"options": {
 				"query": {
 					"displayName": "Запрос",
-					"description": "Поле запроса принимает действительный <a href=\"https://sendgrid.com/docs/for-developers/sending-email/segmentation-query-language/\">SGQL</a> для поиска контакта."
+					"description": "Поле запроса принимает действительный <a href=\"https://sendgrid.com/docs/for-developers/sending-email/segmentation-query-language/\">SGQL</a> для поиска контакта"
 				}
 			}
 		},
@@ -137,29 +137,29 @@
 					"displayName": "Почтовый индекс"
 				},
 				"stateProvinceRegion": {
-					"displayName": "Государство / Провинция / Регион"
+					"displayName": "Государство/Провинция/Область"
 				},
 				"listIdsUi": {
 					"values": {
 						"listIdsUi": {
-							"displayName": "Список идентификаторов",
-							"description": "Добавляет настраиваемое поле для установки значений, которые не были заданы заранее."
+							"displayName": "Идентификаторы списков",
+							"description": "Добавляет настраиваемое поле для установки значений, которые не были определены заранее"
 						},
 						"listIdValues": {
 							"options": {
 								"listIds": {
 									"displayName": "Названия или ID списков",
-									"description": "Идентификатор поля, которое необходимо установить. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+									"description": "Идентификатор поля для установки. Выберите из списка или укажите идентификаторы, используя <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 								}
 							}
 						}
 					},
-					"placeholder": "Список идентификаторов",
-					"displayName": "Список идентификаторов",
-					"description": "Добавляет настраиваемое поле для установки значений, которые не были заданы заранее.",
+					"placeholder": "Идентификаторы списков",
+					"displayName": "Идентификаторы списков",
+					"description": "Добавляет настраиваемое поле для установки значений, которые не были определены заранее",
 					"options": {
 						"listIdValues": {
-							"displayName": "Список идентификаторов"
+							"displayName": "Идентификаторы списков"
 						}
 					}
 				},
@@ -167,13 +167,13 @@
 					"values": {
 						"customFieldsUi": {
 							"displayName": "Пользовательские поля",
-							"description": "Добавляет пользовательские поля"
+							"description": "Добавляет настраиваемые поля"
 						},
 						"customFieldValues": {
 							"options": {
 								"fieldId": {
 									"displayName": "Имя поля или ID",
-									"description": "Идентификатор поля. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+									"description": "Идентификатор поля. Выберите из списка или укажите идентификатор, используя <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 								},
 								"fieldValue": {
 									"displayName": "Значение поля",
@@ -184,7 +184,7 @@
 					},
 					"placeholder": "Добавить пользовательские поля",
 					"displayName": "Пользовательские поля",
-					"description": "Добавляет пользовательские поля",
+					"description": "Добавляет настраиваемые поля",
 					"options": {
 						"customFieldValues": {
 							"displayName": "Поле"
@@ -193,32 +193,32 @@
 				},
 				"attachments": {
 					"displayName": "Вложения",
-					"description": "Список двоичных свойств, разделенных запятыми."
+					"description": "Список двоичных свойств, разделённый запятыми"
 				},
 				"bccEmail": {
 					"displayName": "BCC (электронная почта)",
-					"description": "Список адресов электронной почты получателей слепой копии электронного письма, разделенный запятыми."
+					"description": "Список адресов электронной почты получателей скрытой копии, разделённый запятыми"
 				},
 				"categories": {
 					"displayName": "Категории",
-					"description": "Список категорий, разделенный запятыми. Название каждой категории не может превышать 255 символов."
+					"description": "Список категорий, разделённый запятыми. Названия категорий не должны превышать 255 символов."
 				},
 				"ccEmail": {
 					"displayName": "CC (электронная почта)",
-					"description": "Разделенный запятыми список адресов электронной почты получателей точной копии электронного письма."
+					"description": "Список адресов электронной почты получателей копии письма, разделённый запятыми"
 				},
 				"enableSandbox": {
 					"displayName": "Включить песочницу",
-					"description": "Следует ли использовать песочницу для тестирования функций отправки электронной почты."
+					"description": "Использовать ли песочницу для тестирования функций отправки писем"
 				},
 				"ipPoolName": {
-					"displayName": "Имя IP-пула",
-					"description": "Пул IP-адресов, с которого вы хотите отправить это письмо."
+					"displayName": "Название пула IP-адресов",
+					"description": "Пул IP-адресов, с которого вы хотите отправить это письмо"
 				},
 				"replyToEmail": {
-					"displayName": "Ответ на электронное письмо",
-					"description": "Список адресов электронной почты, разделенный запятыми, которые будут отображаться в поле ответа на электронное письмо.",
-					"placeholder": "ответ@домен.com"
+					"displayName": "Адрес для ответа",
+					"description": "Список адресов электронной почты, разделённый запятыми, которые будут отображаться в поле ответа",
+					"placeholder": "reply@domain.com"
 				},
 				"headers": {
 					"values": {
@@ -229,11 +229,11 @@
 							"options": {
 								"key": {
 									"displayName": "Ключ",
-									"description": "Ключ для установки в объекте заголовка"
+									"description": "Ключ для установки в объект заголовка"
 								},
 								"value": {
 									"displayName": "Значение",
-									"description": "Значение для установки в объекте заголовка"
+									"description": "Значение для установки в объект заголовка"
 								}
 							}
 						}
@@ -248,16 +248,16 @@
 				},
 				"sendAt": {
 					"displayName": "Отправить в",
-					"description": "Когда доставить письмо. Запрещено планирование более чем на 72 часа."
+					"description": "Когда доставить письмо. Запрещено планирование более чем на 72 часа заранее."
 				}
 			}
 		},
 		"ids": {
 			"displayName": "ID контактов",
-			"description": "Идентификатор контакта. Можно добавить несколько значений через запятую."
+			"description": "Идентификатор контакта. Можно добавить несколько, разделяя запятыми."
 		},
 		"deleteAll": {
-			"displayName": "Удалить все",
+			"displayName": "Удалить всё",
 			"description": "Будут ли удалены все контакты"
 		},
 		"by": {
@@ -277,22 +277,22 @@
 			"description": "Идентификатор контакта"
 		},
 		"fromEmail": {
-			"displayName": "Электронная почта отправителя",
-			"description": "Адрес электронной почты отправителя электронного письма",
-			"placeholder": "отправитель@домен.com"
+			"displayName": "Адрес электронной почты отправителя",
+			"description": "Адрес электронной почты отправителя письма",
+			"placeholder": "sender@domain.com"
 		},
 		"fromName": {
 			"displayName": "Имя отправителя",
-			"description": "Имя отправителя электронного письма",
-			"placeholder": "Джон Смит"
+			"description": "Имя отправителя письма",
+			"placeholder": "John Smith"
 		},
 		"toEmail": {
-			"displayName": "Электронная почта получателя",
-			"description": "Список адресов электронной почты получателей, разделенных запятыми.",
-			"placeholder": "получатель@домен.com"
+			"displayName": "Адрес электронной почты получателя",
+			"description": "Список адресов электронной почты получателей, разделённый запятыми",
+			"placeholder": "recipient@domain.com"
 		},
 		"subject": {
-			"displayName": "Предмет",
+			"displayName": "Тема",
 			"description": "Тема письма для отправки"
 		},
 		"dynamicTemplate": {
@@ -301,7 +301,7 @@
 		},
 		"contentType": {
 			"displayName": "Тип MIME",
-			"description": "MIME-тип отправляемого письма",
+			"description": "Тип MIME письма для отправки",
 			"options": {
 				"text/plain": {
 					"displayName": "Обычный текст"
@@ -312,8 +312,8 @@
 			}
 		},
 		"contentValue": {
-			"displayName": "Тело сообщения",
-			"description": "Текст сообщения электронной почты для отправки"
+			"displayName": "Текст сообщения",
+			"description": "Текст письма для отправки"
 		},
 		"templateId": {
 			"displayName": "Имя или идентификатор шаблона",
@@ -322,7 +322,7 @@
 		"dynamicTemplateFields": {
 			"options": {
 				"dynamicTemplateFields": {
-					"displayName": "Динамические поля шаблона"
+					"displayName": "Поля динамического шаблона"
 				},
 				"fields": {
 					"displayName": "Поля",
@@ -338,8 +338,8 @@
 					}
 				}
 			},
-			"placeholder": "Добавить динамические поля шаблона",
-			"displayName": "Динамические поля шаблона"
+			"placeholder": "Добавить поля динамического шаблона",
+			"displayName": "Поля динамического шаблона"
 		}
 	}
 }

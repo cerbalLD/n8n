@@ -34,28 +34,28 @@
 		},
 		"to": {
 			"displayName": "До",
-			"description": "Номер, на который отправить сообщение",
+			"description": "Номер получателя сообщения",
 			"placeholder": "+14155238886"
 		},
 		"toWhatsapp": {
 			"displayName": "В WhatsApp",
-			"description": "Следует ли отправлять сообщение в WhatsApp"
+			"description": "Отправлять ли сообщение в WhatsApp"
 		},
 		"message": {
 			"displayName": "Сообщение",
 			"description": "Сообщение для отправки"
 		},
 		"twiml": {
-			"displayName": "Используйте ТвиМЛ",
-			"description": "Использовать ли в сообщении <a href=\"https://www.twilio.com/docs/voice/twiml\">Twilio Markup Language</a>"
+			"displayName": "Использовать TwiML",
+			"description": "Использовать ли <a href=\"https://www.twilio.com/docs/voice/twiml\">язык разметки Twilio</a> в сообщении"
 		},
 		"options": {
 			"displayName": "Параметры",
 			"placeholder": "Добавить поле",
 			"options": {
 				"statusCallback": {
-					"displayName": "Статус обратного вызова",
-					"description": "Обратные вызовы состояния позволяют получать события, связанные с ресурсами REST, управляемыми Twilio: помещениями, записями и композициями."
+					"displayName": "Обратный вызов статуса",
+					"description": "Обратные вызовы статуса позволяют получать события от ресурсов REST, управляемых Twilio: комнаты, записи и композиции"
 				}
 			}
 		}

@@ -11,7 +11,7 @@
 					"displayName": "API-токен"
 				},
 				"oAuth2": {
-					"displayName": "ОАут2"
+					"displayName": "OAuth2"
 				}
 			}
 		},
@@ -23,7 +23,7 @@
 					"displayName": "Базовая аутентификация"
 				},
 				"none": {
-					"displayName": "Никто"
+					"displayName": "Нет"
 				}
 			}
 		},
@@ -94,7 +94,7 @@
 					"displayName": "Человек"
 				},
 				"pipeline": {
-					"displayName": "Трубопровод"
+					"displayName": "Конвейер"
 				},
 				"product": {
 					"displayName": "Продукт"
@@ -136,7 +136,7 @@
 					"displayName": "Человек"
 				},
 				"pipeline": {
-					"displayName": "Трубопровод"
+					"displayName": "Конвейер"
 				},
 				"product": {
 					"displayName": "Продукт"

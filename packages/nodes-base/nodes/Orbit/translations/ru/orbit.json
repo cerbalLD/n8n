@@ -32,7 +32,7 @@
 					"description": "Создать публикацию"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить несколько публикаций"
 				},
 				"upsert": {
@@ -44,7 +44,7 @@
 					"description": "Удалить публикацию"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить участника"
 				},
 				"lookup": {

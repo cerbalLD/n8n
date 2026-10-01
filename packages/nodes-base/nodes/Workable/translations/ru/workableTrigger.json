@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Работоспособный триггер",
-		"description": "Запускает рабочий процесс при возникновении событий Workable."
+		"displayName": "Триггер Workable",
+		"description": "Запускает рабочий процесс при возникновении событий Workable"
 	},
 	"nodeView": {
 		"triggerOn": {
@@ -11,7 +11,7 @@
 					"displayName": "Кандидат создан"
 				},
 				"candidateMoved": {
-					"displayName": "Кандидат переехал"
+					"displayName": "Кандидат переведён"
 				}
 			}
 		},
@@ -21,11 +21,11 @@
 			"options": {
 				"job": {
 					"displayName": "Имя или идентификатор задания",
-					"description": "Получайте уведомления только по одному заданию. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"description": "Получать уведомления только по одной вакансии. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				},
 				"stage": {
 					"displayName": "Название этапа или идентификатор",
-					"description": "Получайте уведомления об определенных этапах. например 'наемный'. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"description": "Получать уведомления об определённых этапах, например 'нанята'. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				}
 			}
 		}

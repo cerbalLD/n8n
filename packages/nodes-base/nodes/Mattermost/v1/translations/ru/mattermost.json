@@ -61,7 +61,7 @@
 					"description": "Опубликовать эфемерное сообщение в канале"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить много пользователей"
 				},
 				"deactive": {
@@ -83,7 +83,7 @@
 			}
 		},
 		"teamId": {
-			"displayName": "Название или идентификатор команды",
+			"displayName": "Имя или идентификатор команды",
 			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"displayName": {
@@ -101,15 +101,15 @@
 			"description": "Тип канала для создания",
 			"options": {
 				"private": {
-					"displayName": "Частный"
+					"displayName": "Приватный"
 				},
 				"public": {
-					"displayName": "Общественный"
+					"displayName": "Публичный"
 				}
 			}
 		},
 		"channelId": {
-			"displayName": "Название или идентификатор канала",
+			"displayName": "Имя или идентификатор канала",
 			"description": "ID канала для эфемерного сообщения. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"resolveData": {
@@ -429,7 +429,7 @@
 					"displayName": "Фамилия"
 				},
 				"locale": {
-					"displayName": "Языковой стандарт"
+					"displayName": "Локаль"
 				},
 				"nickname": {
 					"displayName": "Псевдоним"
@@ -457,7 +457,7 @@
 											"description": "Только упоминания и прямые сообщения"
 										},
 										"none": {
-											"displayName": "Никто",
+											"displayName": "Нет",
 											"description": "Только упоминания и прямые сообщения"
 										}
 									}
@@ -490,7 +490,7 @@
 											"description": "Только упоминания и прямые сообщения"
 										},
 										"none": {
-											"displayName": "Никто",
+											"displayName": "Нет",
 											"description": "Только упоминания и прямые сообщения"
 										}
 									}

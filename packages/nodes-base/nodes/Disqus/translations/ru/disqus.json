@@ -16,7 +16,7 @@
 			"displayName": "Операция",
 			"options": {
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить информацию о форуме"
 				},
 				"getCategories": {

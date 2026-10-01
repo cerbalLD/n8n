@@ -45,11 +45,11 @@
 					"description": "Удалить задачу"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить задачу"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить множество задач"
 				},
 				"update": {
@@ -4196,7 +4196,7 @@
 					"description": "Время начала деятельности по продажам"
 				},
 				"dueDate": {
-					"displayName": "Срок оплаты",
+					"displayName": "Срок выполнения",
 					"description": "Срок выполнения задачи"
 				},
 				"task_type_id": {
@@ -4445,7 +4445,7 @@
 			}
 		},
 		"dueDate": {
-			"displayName": "Срок оплаты",
+			"displayName": "Срок выполнения",
 			"description": "Срок выполнения задачи"
 		},
 		"taskId": {

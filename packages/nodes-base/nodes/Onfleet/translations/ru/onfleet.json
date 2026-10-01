@@ -49,7 +49,7 @@
 					"description": "Удалить работника Onfleet"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить рабочих Onfleet"
 				},
 				"update": {
@@ -61,7 +61,7 @@
 					"description": "Добавить задачу по индексу (или в конец)"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить конкретного работника Onfleet"
 				},
 				"updateTask": {

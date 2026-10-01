@@ -1,7 +1,7 @@
 {
 	"header": {
 		"displayName": "TimescaleDB",
-		"description": "Добавляйте и обновляйте данные в TimescaleDB."
+		"description": "Добавление и обновление данных в TimescaleDB"
 	},
 	"nodeView": {
 		"operation": {
@@ -53,7 +53,7 @@
 			"options": {
 				"mode": {
 					"displayName": "Режим",
-					"description": "Способ отправки запросов в базу данных. Может использоваться вместе с <b>Продолжить при сбое </b>. Дополнительные примеры см. в <a href=\"https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.timescaledb/\">документации</a>.",
+					"description": "Способ отправки запросов в базу данных. Может использоваться вместе с <b>Продолжить при сбое</b>. Дополнительные примеры см. в <a href=\"https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.timescaledb/\">документации</a>.",
 					"options": {
 						"independently": {
 							"displayName": "Независимо",

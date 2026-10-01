@@ -8,30 +8,30 @@
 			"displayName": "Событие",
 			"options": {
 				"newRow": {
-					"displayName": "Новый ряд",
-					"description": "Запуск по вновь созданным строкам"
+					"displayName": "Новая строка",
+					"description": "Триггер при создании новых строк"
 				},
 				"updatedRow": {
-					"displayName": "Новая или обновленная строка",
-					"description": "Триггер недавно создал или изменил строки"
+					"displayName": "Новая или обновлённая строка",
+					"description": "Триггер срабатывает при недавнем создании или изменении строк"
 				},
 				"newAsset": {
 					"displayName": "Новая подпись",
-					"description": "Запуск по новым подписям"
+					"description": "Триггер при появлении новых подписей"
 				}
 			}
 		},
 		"tableName": {
 			"displayName": "Название таблицы",
-			"description": "Имя таблицы SeaTable, к которой осуществляется доступ. Выберите из списка или укажите имя с помощью <a href=\"https://docs.n8n.io/code-examples/expressions/\">expression</a>."
+			"description": "Имя таблицы SeaTable для доступа. Выберите из списка или укажите имя, используя <a href=\"https://docs.n8n.io/code-examples/expressions/\">выражение</a>."
 		},
 		"viewName": {
 			"displayName": "Посмотреть имя",
-			"description": "Имя представления SeaTable для доступа. Выберите из списка или укажите имя с помощью <a href=\"https://docs.n8n.io/code-examples/expressions/\">expression</a>."
+			"description": "Имя представления SeaTable для доступа. Выберите из списка или укажите имя, используя <a href=\"https://docs.n8n.io/code-examples/expressions/\">выражение</a>."
 		},
 		"assetColumn": {
-			"displayName": "Столбец подписи",
-			"description": "Выберите столбец цифровой подписи, который необходимо отслеживать. Выберите из списка или укажите имя с помощью <a href=\"https://docs.n8n.io/code-examples/expressions/\">expression</a>."
+			"displayName": "Столбец подписей",
+			"description": "Выберите столбец с цифровыми подписями для отслеживания. Выберите из списка или укажите имя, используя <a href=\"https://docs.n8n.io/code-examples/expressions/\">выражение</a>."
 		},
 		"options": {
 			"displayName": "Параметры",
@@ -48,7 +48,7 @@
 			}
 		},
 		"notice": {
-			"displayName": "«Извлечение тестового события» возвращает макс. три предмета за последний час."
+			"displayName": "«Получить тестовое событие» возвращает максимум три элемента за последний час."
 		}
 	}
 }

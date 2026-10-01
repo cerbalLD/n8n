@@ -20,11 +20,11 @@
 					"description": "Создать нового подписчика"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить подписчика"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить много подписчиков"
 				},
 				"update": {
@@ -50,24 +50,24 @@
 					"values": {
 						"customFieldsUi": {
 							"displayName": "Пользовательские поля",
-							"description": "Фильтровать по настраиваемым полям"
+							"description": "Фильтровать по пользовательским полям"
 						},
 						"customFieldsValues": {
 							"options": {
 								"fieldId": {
 									"displayName": "Имя поля или ID",
-									"description": "Идентификатор поля, к которому нужно добавить настраиваемое поле. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+									"description": "Идентификатор поля для добавления пользовательского поля. Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 								},
 								"value": {
 									"displayName": "Значение",
-									"description": "Значение, которое нужно установить в настраиваемом поле"
+									"description": "Значение для установки в пользовательском поле"
 								}
 							}
 						}
 					},
-					"placeholder": "Добавить настраиваемое поле",
+					"placeholder": "Добавить пользовательское поле",
 					"displayName": "Пользовательские поля",
-					"description": "Фильтровать по настраиваемым полям",
+					"description": "Фильтровать по пользовательским полям",
 					"options": {
 						"customFieldsValues": {
 							"displayName": "Пользовательское поле"

@@ -20,7 +20,7 @@
 					"description": "Создать профиль"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить профиль"
 				},
 				"update": {

@@ -27,11 +27,11 @@
 					"description": "Удалить существующий элемент"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить элемент"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить список элементов"
 				},
 				"query": {

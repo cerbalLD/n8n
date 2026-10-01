@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Улей Триггер",
-		"description": "Запускает рабочий процесс при возникновении событий TheHive."
+		"displayName": "Триггер TheHive",
+		"description": "Запускает рабочий процесс при возникновении событий TheHive"
 	},
 	"nodeView": {
 		"notice": {
@@ -29,38 +29,38 @@
 				},
 				"case_create": {
 					"displayName": "Дело создано",
-					"description": "Запускается при создании обращения"
+					"description": "Срабатывает при создании случая"
 				},
 				"case_delete": {
-					"displayName": "Дело удалено",
-					"description": "Срабатывает при удалении обращения"
+					"displayName": "Случай удалён",
+					"description": "Срабатывает при удалении случая"
 				},
 				"case_update": {
 					"displayName": "Дело обновлено",
-					"description": "Активируется при обновлении обращения"
+					"description": "Срабатывает при обновлении случая"
 				},
 				"case_task_log_create": {
 					"displayName": "Журнал создан",
 					"description": "Срабатывает при создании журнала задач"
 				},
 				"case_task_log_delete": {
-					"displayName": "Журнал удален",
+					"displayName": "Журнал удалён",
 					"description": "Срабатывает при удалении журнала задач"
 				},
 				"case_task_log_update": {
-					"displayName": "Журнал обновлен",
+					"displayName": "Журнал обновлён",
 					"description": "Срабатывает при обновлении журнала задач"
 				},
 				"case_artifact_create": {
-					"displayName": "Наблюдаемый создан",
-					"description": "Запускается при создании наблюдаемого"
+					"displayName": "Наблюдаемое создано",
+					"description": "Срабатывает при создании наблюдаемого"
 				},
 				"case_artifact_delete": {
-					"displayName": "Наблюдаемый удален",
-					"description": "Срабатывает, когда наблюдаемый объект удаляется"
+					"displayName": "Наблюдаемое удалено",
+					"description": "Срабатывает при удалении наблюдаемого"
 				},
 				"case_artifact_update": {
-					"displayName": "Наблюдаемое обновление",
+					"displayName": "Наблюдаемое обновлено",
 					"description": "Срабатывает при обновлении наблюдаемого"
 				},
 				"case_task_create": {

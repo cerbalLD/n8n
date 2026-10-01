@@ -46,7 +46,7 @@
 					"displayName": "Выполнить ответчика"
 				},
 				"get": {
-					"displayName": "Получать"
+					"displayName": "Получить"
 				},
 				"merge": {
 					"displayName": "Объединить в дело"
@@ -113,7 +113,7 @@
 					"displayName": "Наблюдаемые"
 				},
 				"values": {
-					"displayName": "Ценности",
+					"displayName": "Значения",
 					"values": {
 						"dataType": {
 							"displayName": "Тип данных",
@@ -154,14 +154,14 @@
 			"options": {
 				"includeSimilarAlerts": {
 					"displayName": "Включить похожие оповещения",
-					"description": "Включать ли аналогичные случаи"
+					"description": "Включать ли похожие случаи"
 				},
 				"includeSimilarCases": {
 					"displayName": "Включить похожие случаи",
-					"description": "Включать ли аналогичные случаи"
+					"description": "Включать ли похожие случаи"
 				},
 				"returnCount": {
-					"displayName": "Количество возвратов",
+					"displayName": "Вернуть количество",
 					"description": "Возвращать ли только количество результатов"
 				},
 				"extraData": {
@@ -178,13 +178,13 @@
 							"displayName": "разрешения"
 						},
 						"seen": {
-							"displayName": "видимый"
+							"displayName": "просмотрено"
 						},
 						"shareCount": {
-							"displayName": "ShareCount"
+							"displayName": "shareCount"
 						},
 						"shares": {
-							"displayName": "акции"
+							"displayName": "совместные доступы"
 						},
 						"actionRequired": {
 							"displayName": "требуется действие"
@@ -196,19 +196,19 @@
 							"displayName": "случай"
 						},
 						"caseId": {
-							"displayName": "идентификатор дела"
+							"displayName": "идентификатор случая"
 						},
 						"caseTemplate": {
-							"displayName": "чехолШаблон"
+							"displayName": "шаблон случая"
 						},
 						"caseTemplateId": {
-							"displayName": "CaseTemplateId"
+							"displayName": "caseTemplateId"
 						},
 						"caseNumber": {
-							"displayName": "номер дела"
+							"displayName": "номер случая"
 						},
 						"importDate": {
-							"displayName": "импортдата"
+							"displayName": "дата импорта"
 						},
 						"procedureCount": {
 							"displayName": "процедураCount"
@@ -246,10 +246,10 @@
 							}
 						},
 						"observableStats": {
-							"displayName": "наблюдаемая статистика"
+							"displayName": "статистика наблюдаемых"
 						},
 						"similarAlerts": {
-							"displayName": "ПохожиеОповещения"
+							"displayName": "похожие оповещения"
 						},
 						"taskStats": {
 							"displayName": "статистика задач"
@@ -266,20 +266,20 @@
 					}
 				},
 				"caseTemplate": {
-					"displayName": "Имя или идентификатор шаблона обращения",
+					"displayName": "Имя или идентификатор шаблона случая",
 					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"canRename": {
 					"displayName": "Переименовать файлы",
-					"description": "Переименовывать ли файл, если файл с таким именем уже существует"
+					"description": "Переименовать ли файл, если файл с таким именем уже существует"
 				},
 				"fileName": {
 					"displayName": "Имя файла",
-					"description": "Переименуйте файл при загрузке"
+					"description": "Переименовать файл при загрузке"
 				},
 				"dataPropertyName": {
 					"displayName": "Имя свойства данных",
-					"description": "Имя бинарного свойства, в которое записываются данные вложения"
+					"description": "Имя двоичного свойства, в которое записываются данные вложения"
 				},
 				"category": {
 					"displayName": "Категория"
@@ -306,7 +306,7 @@
 					"displayName": "Фильтры"
 				},
 				"values": {
-					"displayName": "Ценности",
+					"displayName": "Значения",
 					"values": {
 						"field": {
 							"displayName": "Поле",
@@ -334,7 +334,7 @@
 							"options": {
 								"_between": {
 									"displayName": "Между",
-									"description": "Поле находится между двумя значениями («От» является включенным, «Кому» является исключительным)"
+									"description": "Поле находится между двумя значениями (от включительно, до исключительно)"
 								},
 								"_like": {
 									"displayName": "содержит",
@@ -369,8 +369,8 @@
 									"description": "Поле меньше или равно значению"
 								},
 								"_match": {
-									"displayName": "Сопоставить слово",
-									"description": "Поле содержит значение в виде слова"
+									"displayName": "Совпадение слова",
+									"description": "Поле содержит значение как слово"
 								},
 								"_ne": {
 									"displayName": "Не равно",
@@ -386,9 +386,9 @@
 							"displayName": "Значение"
 						},
 						"values": {
-							"displayName": "Ценности",
-							"description": "Список значений, разделенных запятыми",
-							"placeholder": "например значение1, значение2"
+							"displayName": "Значения",
+							"description": "Список значений, разделённых запятыми",
+							"placeholder": "например значение1,значение2"
 						},
 						"from": {
 							"displayName": "От"
@@ -449,7 +449,7 @@
 			"displayName": "Сортировка"
 		},
 		"status": {
-			"displayName": "Имя или идентификатор статуса",
+			"displayName": "Имя или ID статуса",
 			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"caseId": {
@@ -465,11 +465,11 @@
 					"description": "Массив поддерживаемых вложений для добавления к сообщению"
 				},
 				"values": {
-					"displayName": "Ценности",
+					"displayName": "Значения",
 					"values": {
 						"field": {
 							"displayName": "Имя поля вложения",
-							"description": "Добавьте имя поля из входного узла",
+							"description": "Добавить имя поля из входного узла",
 							"hint": "Имя поля с вложением во входных данных узла"
 						}
 					}
@@ -484,13 +484,13 @@
 		},
 		"attachmentId": {
 			"displayName": "Имя или идентификатор вложения",
-			"description": "Идентификатор вложения. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"description": "Идентификатор вложения. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"caseUpdateFields": {
 			"displayName": "Поля"
 		},
 		"addTo": {
-			"displayName": "добавить в",
+			"displayName": "Добавить в",
 			"options": {
 				"alert": {
 					"displayName": "Оповещение"
@@ -508,7 +508,7 @@
 		},
 		"searchIn": {
 			"displayName": "Искать в",
-			"description": "Следует ли искать наблюдаемые во всех оповещениях и случаях или в конкретном случае или оповещении",
+			"description": "Искать ли наблюдаемые во всех оповещениях и случаях или в конкретном случае или оповещении",
 			"options": {
 				"all": {
 					"displayName": "Оповещения и случаи"
@@ -532,7 +532,7 @@
 		},
 		"allTasks": {
 			"displayName": "Искать во всех задачах",
-			"description": "Искать во всех задачах или только в выбранной задаче"
+			"description": "Искать ли во всех задачах или только в выбранной задаче"
 		},
 		"createIn": {
 			"displayName": "Создать в",
@@ -560,13 +560,13 @@
 		},
 		"analyzers": {
 			"displayName": "Имена или идентификаторы анализаторов",
-			"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите идентификаторы через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>"
 		},
 		"observableUpdateFields": {
 			"displayName": "Поля"
 		},
 		"location": {
-			"displayName": "Обновление в",
+			"displayName": "Обновить в",
 			"options": {
 				"case": {
 					"displayName": "Случай"
@@ -595,14 +595,14 @@
 		"queryJson": {
 			"displayName": "Запрос",
 			"description": "Поиск объектов с возможностью фильтрации и сортировки",
-			"hint": "Запрос должен представлять собой массив операций с необходимой выборкой и опциональной фильтрацией, сортировкой и нумерацией страниц. Дополнительную информацию см. в разделе <a href=\"https://docs.strangebee.com/thehive/api-docs/#operation/Query%20API\" target=\"_blank\">Query API</a>."
+			"hint": "Запрос должен представлять собой массив операций с необходимой выборкой и опциональной фильтрацией, сортировкой и разбиением на страницы. Дополнительную информацию см. в разделе <a href=\"https://docs.strangebee.com/thehive/api-docs/#operation/Query%20API\" target=\"_blank\">Query API</a>."
 		},
 		"taskFields": {
 			"displayName": "Поля"
 		},
 		"allCases": {
-			"displayName": "Поиск во всех случаях",
-			"description": "Следует ли искать во всех случаях или только в выбранном случае"
+			"displayName": "Искать во всех случаях",
+			"description": "Искать ли во всех случаях или только в выбранном случае"
 		},
 		"taskUpdateFields": {
 			"displayName": "Поля"

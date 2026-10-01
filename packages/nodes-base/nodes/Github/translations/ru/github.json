@@ -11,7 +11,7 @@
 					"displayName": "Токен доступа"
 				},
 				"oAuth2": {
-					"displayName": "ОАут2"
+					"displayName": "OAuth2"
 				},
 				"githubAppApi": {
 					"displayName": "Приложение GitHub"
@@ -78,7 +78,7 @@
 					"description": "Повторно открыть запрос на включение"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить рабочий процесс"
 				},
 				"createComment": {
@@ -150,7 +150,7 @@
 					"description": "Приглашает пользователя в организацию"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить несколько рецензий запроса на включение"
 				},
 				"disable": {
@@ -190,7 +190,7 @@
 			"description": "Заголовок задачи"
 		},
 		"body": {
-			"displayName": "Тело",
+			"displayName": "Тело запроса",
 			"description": "Текст рецензии"
 		},
 		"draft": {
@@ -210,7 +210,7 @@
 					"description": "Заголовок задачи"
 				},
 				"body": {
-					"displayName": "Тело",
+					"displayName": "Тело запроса",
 					"description": "Текст задачи"
 				},
 				"state": {
@@ -340,8 +340,8 @@
 			"description": "Текстовое содержимое файла"
 		},
 		"binaryPropertyName": {
-			"displayName": "Поместите выходной файл в поле",
-			"hint": "Имя выходного двоичного поля, в которое помещается файл."
+			"displayName": "Поместить выходной файл в поле",
+			"hint": "Имя выходного двоичного поля для сохранения файла"
 		},
 		"additionalParameters": {
 			"options": {
@@ -415,7 +415,7 @@
 			"multipleValueButtonText": "Добавить исполнителя",
 			"options": {
 				"assignee": {
-					"displayName": "Правопреемник",
+					"displayName": "Ответственный",
 					"description": "Пользователь для назначения на задачу"
 				}
 			}
@@ -437,7 +437,7 @@
 					"description": "Обсуждение слишком горячее"
 				},
 				"resolved": {
-					"displayName": "Решено",
+					"displayName": "Разрешено",
 					"description": "Задача решена"
 				},
 				"spam": {
@@ -459,7 +459,7 @@
 					"description": "Имя релиза"
 				},
 				"body": {
-					"displayName": "Тело",
+					"displayName": "Тело запроса",
 					"description": "Описание релиза"
 				},
 				"draft": {
@@ -501,7 +501,7 @@
 			"multipleValueButtonText": "Добавить фильтр",
 			"options": {
 				"assignee": {
-					"displayName": "Правопреемник",
+					"displayName": "Ответственный",
 					"description": "Возвращать только задачи, назначенные конкретному пользователю"
 				},
 				"creator": {

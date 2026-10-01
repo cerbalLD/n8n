@@ -23,7 +23,7 @@
 			}
 		},
 		"channelId": {
-			"displayName": "Название или идентификатор канала",
+			"displayName": "Имя или идентификатор канала",
 			"description": "Идентификатор канала. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
 		},
 		"content": {

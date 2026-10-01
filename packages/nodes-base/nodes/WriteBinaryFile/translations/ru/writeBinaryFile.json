@@ -6,8 +6,8 @@
 	"nodeView": {
 		"fileName": {
 			"displayName": "Имя файла",
-			"description": "Путь, в который должен быть записан файл",
-			"placeholder": "/данные/пример.jpg"
+			"description": "Путь, куда должен быть записан файл",
+			"placeholder": "/РґР°РЅРЅС‹Рµ/РїСЂРёРјРµСЂ.jpg"
 		},
 		"dataPropertyName": {
 			"displayName": "Имя свойства",
@@ -19,7 +19,7 @@
 			"options": {
 				"append": {
 					"displayName": "Добавить",
-					"description": "Добавлять ли к существующему файлу"
+					"description": "Добавлять содержимое в существующий файл"
 				}
 			}
 		}

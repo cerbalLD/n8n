@@ -25,10 +25,10 @@
 			"displayName": "Операция",
 			"options": {
 				"get": {
-					"displayName": "Получать"
+					"displayName": "Получить"
 				},
 				"getAll": {
-					"displayName": "Получить много"
+					"displayName": "Получить множество"
 				},
 				"getMetrics": {
 					"displayName": "Получить метрики"
@@ -104,7 +104,7 @@
 							"displayName": "Отправка"
 						},
 						"slack": {
-							"displayName": "Слабый"
+							"displayName": "Slack"
 						},
 						"twilio": {
 							"displayName": "Twilio"

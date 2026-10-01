@@ -14,7 +14,7 @@
 					"displayName": "Токен доступа"
 				},
 				"oAuth2": {
-					"displayName": "ОАут2"
+					"displayName": "OAuth2"
 				},
 				"githubAppApi": {
 					"displayName": "Приложение GitHub"
@@ -144,7 +144,7 @@
 					"description": "Срабатывает при создании, обновлении или перемещении столбца проекта"
 				},
 				"public": {
-					"displayName": "Общественный",
+					"displayName": "Публичный",
 					"description": "Срабатывает при открытии исходного кода приватного репозитория"
 				},
 				"pull_request": {

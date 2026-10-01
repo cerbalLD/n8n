@@ -31,10 +31,10 @@
 					"displayName": "Удалить"
 				},
 				"get": {
-					"displayName": "Получать"
+					"displayName": "Получить"
 				},
 				"getAll": {
-					"displayName": "Получить много"
+					"displayName": "Получить множество"
 				},
 				"update": {
 					"displayName": "Обновить"
@@ -150,7 +150,7 @@
 					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"body": {
-					"displayName": "Тело"
+					"displayName": "Тело запроса"
 				},
 				"endTime": {
 					"displayName": "Конец Времени",
@@ -334,10 +334,10 @@
 					"displayName": "Завершено"
 				},
 				"body": {
-					"displayName": "Тело"
+					"displayName": "Тело запроса"
 				},
 				"dueDate": {
-					"displayName": "Срок оплаты"
+					"displayName": "Срок выполнения"
 				},
 				"title": {
 					"displayName": "Название"
@@ -461,7 +461,7 @@
 			"displayName": "Название"
 		},
 		"dueDate": {
-			"displayName": "Срок оплаты"
+			"displayName": "Срок выполнения"
 		},
 		"completed": {
 			"displayName": "Завершено"

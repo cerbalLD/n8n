@@ -48,10 +48,10 @@
 					"displayName": "Удалить"
 				},
 				"get": {
-					"displayName": "Получать"
+					"displayName": "Получить"
 				},
 				"getAll": {
-					"displayName": "Получить много"
+					"displayName": "Получить множество"
 				},
 				"update": {
 					"displayName": "Обновить"
@@ -171,7 +171,7 @@
 					"description": "Содержимое задачи"
 				},
 				"dueDateTime": {
-					"displayName": "Срок выполнения Время",
+					"displayName": "Дата и время выполнения",
 					"description": "Дата в указанном часовом поясе, когда задача должна быть завершена."
 				},
 				"reminderDateTime": {
@@ -215,13 +215,13 @@
 					}
 				},
 				"title": {
-					"displayName": "Предмет",
+					"displayName": "Тема",
 					"description": "Краткое описание задачи"
 				}
 			}
 		},
 		"title": {
-			"displayName": "Предмет",
+			"displayName": "Тема",
 			"description": "Краткое описание задачи"
 		},
 		"listId": {

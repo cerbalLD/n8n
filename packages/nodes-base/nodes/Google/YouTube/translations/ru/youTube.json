@@ -28,11 +28,11 @@
 			"displayName": "Операция",
 			"options": {
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить видео"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить несколько категорий видео"
 				},
 				"update": {
@@ -212,10 +212,10 @@
 					"description": "Статус конфиденциальности плейлиста",
 					"options": {
 						"private": {
-							"displayName": "Частный"
+							"displayName": "Приватный"
 						},
 						"public": {
-							"displayName": "Общественный"
+							"displayName": "Публичный"
 						},
 						"unlisted": {
 							"displayName": "Нет в списке"
@@ -305,7 +305,7 @@
 							"description": "YouTube будет фильтровать некоторый контент из результатов поиска и, по крайней мере, будет фильтровать контент, запрещенный в вашем регионе."
 						},
 						"none": {
-							"displayName": "Никто",
+							"displayName": "Нет",
 							"description": "YouTube не будет фильтровать набор результатов поиска."
 						},
 						"strict": {
@@ -468,10 +468,10 @@
 					"description": "Статус конфиденциальности плейлиста",
 					"options": {
 						"private": {
-							"displayName": "Частный"
+							"displayName": "Приватный"
 						},
 						"public": {
-							"displayName": "Общественный"
+							"displayName": "Публичный"
 						},
 						"unlisted": {
 							"displayName": "Нет в списке"
@@ -559,7 +559,7 @@
 					"description": "Записывает, что аутентифицированному пользователю понравилось видео"
 				},
 				"none": {
-					"displayName": "Никто",
+					"displayName": "Нет",
 					"description": "Удаляет все оценки, которые авторизованный пользователь ранее установил для видео."
 				}
 			}

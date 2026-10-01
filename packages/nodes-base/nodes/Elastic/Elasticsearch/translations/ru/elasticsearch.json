@@ -27,11 +27,11 @@
 					"description": "Удалить документ"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить документ"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить множество документов"
 				},
 				"update": {
@@ -102,7 +102,7 @@
 							"displayName": "Скрытый"
 						},
 						"none": {
-							"displayName": "Никто"
+							"displayName": "Нет"
 						},
 						"open": {
 							"displayName": "Открыть"
@@ -326,7 +326,7 @@
 							"displayName": "Скрытый"
 						},
 						"none": {
-							"displayName": "Никто"
+							"displayName": "Нет"
 						},
 						"open": {
 							"displayName": "Открыть"

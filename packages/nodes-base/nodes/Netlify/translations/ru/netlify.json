@@ -27,11 +27,11 @@
 					"description": "Создать новое развертывание"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить сайт"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить несколько сайтов"
 				},
 				"delete": {

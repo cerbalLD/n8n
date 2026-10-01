@@ -53,11 +53,11 @@
 					"description": "Удалить банковскую транзакцию"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить данные банковской транзакции"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить данные нескольких банковских транзакций"
 				},
 				"email": {
@@ -93,7 +93,7 @@
 					"displayName": "Веб-сайт"
 				},
 				"client": {
-					"displayName": "Имя или идентификатор клиента",
+					"displayName": "Имя или ID клиента",
 					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"autoBill": {
@@ -109,7 +109,7 @@
 					"displayName": "Скидка"
 				},
 				"dueDate": {
-					"displayName": "Срок оплаты"
+					"displayName": "Срок выполнения"
 				},
 				"email": {
 					"displayName": "Электронная почта",
@@ -172,7 +172,7 @@
 					"displayName": "Описание"
 				},
 				"project": {
-					"displayName": "Название или идентификатор проекта",
+					"displayName": "Имя или идентификатор проекта",
 					"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 				},
 				"paymentType": {
@@ -221,7 +221,7 @@
 							"displayName": "PayPal"
 						},
 						"15": {
-							"displayName": "Проверять"
+							"displayName": "Проверка"
 						},
 						"16": {
 							"displayName": "Carte Blanche"
@@ -343,7 +343,7 @@
 					"displayName": "Количество"
 				},
 				"billable": {
-					"displayName": "подлежащий оплате"
+					"displayName": "Подлежит оплате"
 				},
 				"category": {
 					"displayName": "имя или идентификатор категории",
@@ -415,7 +415,7 @@
 					"displayName": "Адрес для выставления счёта",
 					"values": {
 						"streetAddress": {
-							"displayName": "Адрес улицы"
+							"displayName": "Улица"
 						},
 						"aptSuite": {
 							"displayName": "Кв./люкс"
@@ -475,7 +475,7 @@
 					"displayName": "Адрес доставки",
 					"values": {
 						"streetAddress": {
-							"displayName": "Адрес улицы"
+							"displayName": "Улица"
 						},
 						"aptSuite": {
 							"displayName": "Кв./люкс"

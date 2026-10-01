@@ -50,7 +50,7 @@
 					"displayName": "Программное обеспечение"
 				},
 				"ticket": {
-					"displayName": "Билет"
+					"displayName": "Заявка"
 				}
 			}
 		},
@@ -66,11 +66,11 @@
 					"description": "Удалить билет"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить билет"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить много билетов"
 				},
 				"update": {
@@ -82,7 +82,7 @@
 		"email": {
 			"displayName": "Электронная почта",
 			"placeholder": "имя@email.com",
-			"description": "Адрес электронной почты автора заявки"
+			"description": "Email автора заявки"
 		},
 		"firstName": {
 			"displayName": "Имя"
@@ -186,7 +186,7 @@
 							"displayName": "английский"
 						},
 						"ar": {
-							"displayName": "арабский"
+							"displayName": "Арабский"
 						},
 						"ca": {
 							"displayName": "каталонский"
@@ -228,13 +228,13 @@
 							"displayName": "индонезийский"
 						},
 						"it": {
-							"displayName": "итальянский"
+							"displayName": "Итальянский"
 						},
 						"ja-JP": {
 							"displayName": "японский"
 						},
 						"ko": {
-							"displayName": "корейский"
+							"displayName": "Корейский"
 						},
 						"LV": {
 							"displayName": "латышский"
@@ -249,7 +249,7 @@
 							"displayName": "Польский"
 						},
 						"pt": {
-							"displayName": "португальский"
+							"displayName": "Португальский"
 						},
 						"pt-BR": {
 							"displayName": "Португальский (Бразилия)"
@@ -536,7 +536,7 @@
 					}
 				},
 				"subject": {
-					"displayName": "Предмет"
+					"displayName": "Тема"
 				},
 				"domains": {
 					"displayName": "Домены",
@@ -617,7 +617,7 @@
 							"displayName": "английский"
 						},
 						"ar": {
-							"displayName": "арабский"
+							"displayName": "Арабский"
 						},
 						"ca": {
 							"displayName": "каталонский"
@@ -659,13 +659,13 @@
 							"displayName": "индонезийский"
 						},
 						"it": {
-							"displayName": "итальянский"
+							"displayName": "Итальянский"
 						},
 						"ja-JP": {
 							"displayName": "японский"
 						},
 						"ko": {
-							"displayName": "корейский"
+							"displayName": "Корейский"
 						},
 						"LV": {
 							"displayName": "латышский"
@@ -680,7 +680,7 @@
 							"displayName": "Польский"
 						},
 						"pt": {
-							"displayName": "португальский"
+							"displayName": "Португальский"
 						},
 						"pt-BR": {
 							"displayName": "Португальский (Бразилия)"
@@ -826,7 +826,7 @@
 							"displayName": "В ожидании"
 						},
 						"4": {
-							"displayName": "Решено"
+							"displayName": "Разрешено"
 						},
 						"5": {
 							"displayName": "Закрыто"
@@ -893,7 +893,7 @@
 				"email": {
 					"displayName": "Электронная почта",
 					"placeholder": "имя@email.com",
-					"description": "Адрес электронной почты автора заявки"
+					"description": "Email автора заявки"
 				},
 				"first_name": {
 					"displayName": "Имя"
@@ -908,7 +908,7 @@
 							"displayName": "английский"
 						},
 						"ar": {
-							"displayName": "арабский"
+							"displayName": "Арабский"
 						},
 						"ca": {
 							"displayName": "каталонский"
@@ -950,13 +950,13 @@
 							"displayName": "индонезийский"
 						},
 						"it": {
-							"displayName": "итальянский"
+							"displayName": "Итальянский"
 						},
 						"ja-JP": {
 							"displayName": "японский"
 						},
 						"ko": {
-							"displayName": "корейский"
+							"displayName": "Корейский"
 						},
 						"LV": {
 							"displayName": "латышский"
@@ -971,7 +971,7 @@
 							"displayName": "Польский"
 						},
 						"pt": {
-							"displayName": "португальский"
+							"displayName": "Португальский"
 						},
 						"pt-BR": {
 							"displayName": "Португальский (Бразилия)"
@@ -1125,7 +1125,7 @@
 					"description": "Дополнительные адреса электронной почты, разделенные запятыми, на которые необходимо отправить объявление."
 				},
 				"body_html": {
-					"displayName": "Тело",
+					"displayName": "Тело запроса",
 					"description": "HTML поддерживается"
 				},
 				"departments": {
@@ -1245,7 +1245,7 @@
 							"displayName": "В ожидании"
 						},
 						"4": {
-							"displayName": "Решено"
+							"displayName": "Разрешено"
 						},
 						"5": {
 							"displayName": "Закрыто"
@@ -1277,7 +1277,7 @@
 					}
 				},
 				"subject": {
-					"displayName": "Предмет"
+					"displayName": "Тема"
 				},
 				"domains": {
 					"displayName": "Домены",
@@ -1371,7 +1371,7 @@
 			"displayName": "Название"
 		},
 		"bodyHtml": {
-			"displayName": "Тело",
+			"displayName": "Тело запроса",
 			"description": "HTML поддерживается"
 		},
 		"visibility": {
@@ -1405,7 +1405,7 @@
 			"description": "Идентификатор запрашивающей стороны для обновления"
 		},
 		"subject": {
-			"displayName": "Предмет"
+			"displayName": "Тема"
 		},
 		"plannedStartDate": {
 			"displayName": "Планируемая дата начала"
@@ -1484,7 +1484,7 @@
 					"displayName": "В ожидании"
 				},
 				"4": {
-					"displayName": "Решено"
+					"displayName": "Разрешено"
 				},
 				"5": {
 					"displayName": "Закрыто"

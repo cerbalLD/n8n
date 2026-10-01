@@ -66,7 +66,7 @@
 							}
 						}
 					},
-					"placeholder": "Добавить недвижимость",
+					"placeholder": "Добавить свойство",
 					"displayName": "Контекст",
 					"options": {
 						"contextValues": {
@@ -94,7 +94,7 @@
 							}
 						}
 					},
-					"placeholder": "Добавить недвижимость",
+					"placeholder": "Добавить свойство",
 					"displayName": "Характеристики",
 					"options": {
 						"propertyValues": {

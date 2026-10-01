@@ -28,10 +28,10 @@
 					"displayName": "Дублировать"
 				},
 				"get": {
-					"displayName": "Получать"
+					"displayName": "Получить"
 				},
 				"getAll": {
-					"displayName": "Получить много"
+					"displayName": "Получить множество"
 				},
 				"pause": {
 					"displayName": "Пауза"
@@ -60,7 +60,7 @@
 					"values": {
 						"customFieldsUi": {
 							"displayName": "Пользовательские поля",
-							"description": "Фильтровать по настраиваемым полям"
+							"description": "Фильтровать по пользовательским полям"
 						},
 						"customFieldsValues": {
 							"options": {
@@ -70,14 +70,14 @@
 								},
 								"value": {
 									"displayName": "Значение",
-									"description": "Значение, которое нужно установить в настраиваемом поле"
+									"description": "Значение для установки в пользовательском поле"
 								}
 							}
 						}
 					},
-					"placeholder": "Добавить настраиваемое поле",
+					"placeholder": "Добавить пользовательское поле",
 					"displayName": "Пользовательские поля",
-					"description": "Фильтровать по настраиваемым полям",
+					"description": "Фильтровать по пользовательским полям",
 					"options": {
 						"customFieldsValues": {
 							"displayName": "Пользовательское поле"

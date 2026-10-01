@@ -11,7 +11,7 @@
 					"displayName": "Токен доступа"
 				},
 				"oAuth2": {
-					"displayName": "ОАут2"
+					"displayName": "OAuth2"
 				}
 			}
 		},
@@ -51,7 +51,7 @@
 					"description": "Редактировать файл в репозитории"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить данные одного файла"
 				},
 				"lock": {
@@ -71,7 +71,7 @@
 					"description": "Удалить файл в репозитории"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить множество релизов"
 				},
 				"update": {
@@ -91,7 +91,7 @@
 		},
 		"repository": {
 			"displayName": "Имя проекта",
-			"description": "Название проекта",
+			"description": "Имя проекта",
 			"placeholder": "n8n"
 		},
 		"title": {
@@ -99,11 +99,11 @@
 			"description": "Заголовок задачи"
 		},
 		"body": {
-			"displayName": "Тело",
+			"displayName": "Тело запроса",
 			"description": "Текст комментария"
 		},
 		"due_date": {
-			"displayName": "Срок оплаты",
+			"displayName": "Срок выполнения",
 			"description": "Срок выполнения задачи"
 		},
 		"labels": {
@@ -121,7 +121,7 @@
 			"multipleValueButtonText": "Добавить исполнителя",
 			"options": {
 				"assignee": {
-					"displayName": "Правопреемник",
+					"displayName": "Ответственный",
 					"description": "ID пользователя для назначения задачи"
 				}
 			}
@@ -139,7 +139,7 @@
 					"description": "Заголовок задачи"
 				},
 				"description": {
-					"displayName": "Тело",
+					"displayName": "Тело запроса",
 					"description": "Текст задачи"
 				},
 				"state": {
@@ -181,7 +181,7 @@
 					"displayName": "Исполнители"
 				},
 				"due_date": {
-					"displayName": "Срок оплаты",
+					"displayName": "Срок выполнения",
 					"description": "Срок выполнения задачи"
 				}
 			}
@@ -199,7 +199,7 @@
 					"description": "Обсуждение слишком горячее"
 				},
 				"resolved": {
-					"displayName": "Решено",
+					"displayName": "Разрешено",
 					"description": "Задача решена"
 				},
 				"spam": {
@@ -283,7 +283,7 @@
 			"multipleValueButtonText": "Добавить фильтр",
 			"options": {
 				"assignee_username": {
-					"displayName": "Правопреемник",
+					"displayName": "Ответственный",
 					"description": "Возвращать только задачи, назначенные конкретному пользователю"
 				},
 				"author_username": {

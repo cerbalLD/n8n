@@ -24,11 +24,11 @@
 					"description": "Удалить задачу"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить задачу"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить несколько задач из списка"
 				},
 				"update": {
@@ -58,7 +58,7 @@
 					"description": "Удалена ли задача"
 				},
 				"dueDate": {
-					"displayName": "Срок оплаты",
+					"displayName": "Срок выполнения",
 					"description": "Срок задачи"
 				},
 				"notes": {
@@ -143,7 +143,7 @@
 					"description": "Удалена ли задача"
 				},
 				"dueDate": {
-					"displayName": "Срок оплаты",
+					"displayName": "Срок выполнения",
 					"description": "Срок задачи"
 				},
 				"notes": {

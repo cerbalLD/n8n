@@ -13,7 +13,7 @@
 			"placeholder": "Добавить вариант",
 			"options": {
 				"jsonParseBody": {
-					"displayName": "Тело синтаксического анализа JSON",
+					"displayName": "Анализировать тело как JSON",
 					"description": "Попытаться ли разобрать сообщение в объект"
 				},
 				"onlyMessage": {

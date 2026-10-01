@@ -61,7 +61,7 @@
 					"description": "Тип кодировки для расчёта смещений предложений",
 					"options": {
 						"NONE": {
-							"displayName": "Никто"
+							"displayName": "Нет"
 						},
 						"UTF8": {
 							"displayName": "UTF-8"
@@ -79,7 +79,7 @@
 					"description": "Язык документа (автоматическое определение, если не указано). Поддерживаются коды ISO и BCP-47.",
 					"options": {
 						"ar": {
-							"displayName": "арабский"
+							"displayName": "Арабский"
 						},
 						"zh": {
 							"displayName": "Китайский (упрощенный)"
@@ -103,13 +103,13 @@
 							"displayName": "индонезийский"
 						},
 						"it": {
-							"displayName": "итальянский"
+							"displayName": "Итальянский"
 						},
 						"ja": {
 							"displayName": "японский"
 						},
 						"ko": {
-							"displayName": "корейский"
+							"displayName": "Корейский"
 						},
 						"pt": {
 							"displayName": "Португальский (Бразилия и Европа)"

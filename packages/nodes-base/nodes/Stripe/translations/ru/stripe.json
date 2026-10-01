@@ -37,7 +37,7 @@
 			"displayName": "Операция",
 			"options": {
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить источник"
 				},
 				"add": {
@@ -53,7 +53,7 @@
 					"description": "Создать токен"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить нескольких клиентов"
 				},
 				"update": {

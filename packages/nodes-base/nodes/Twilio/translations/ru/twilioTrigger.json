@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "Твилио триггер",
-		"description": "Запускает рабочий процесс при обновлении Twilio."
+		"displayName": "Триггер Twilio",
+		"description": "Запускает рабочий процесс при обновлении Twilio"
 	},
 	"nodeView": {
 		"updates": {
@@ -12,8 +12,8 @@
 						"messaging": {
 							"inbound-message": {
 								"received": {
-									"displayName": "Новые СМС",
-									"description": "При получении SMS-сообщения"
+									"displayName": "Новое СМС",
+									"description": "При получении СМС"
 								}
 							}
 						},
@@ -21,8 +21,8 @@
 							"insights": {
 								"call-summary": {
 									"complete": {
-										"displayName": "Новый вызов",
-										"description": "Когда поступает звонок"
+										"displayName": "Новый звонок",
+										"description": "При поступлении звонка"
 									}
 								}
 							}
@@ -32,7 +32,7 @@
 			}
 		},
 		"callTriggerNotice": {
-			"displayName": "Запуск события «Новый звонок» может занять до тридцати минут."
+			"displayName": "Триггер события «Новый звонок» может срабатывать до 30 минут"
 		}
 	}
 }

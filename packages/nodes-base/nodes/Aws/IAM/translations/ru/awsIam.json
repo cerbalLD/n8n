@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "АВС ИАМ",
+		"displayName": "AWS IAM",
 		"description": "Взаимодействует с Amazon IAM"
 	},
 	"nodeView": {
@@ -8,10 +8,10 @@
 			"displayName": "Аутентификация",
 			"options": {
 				"iam": {
-					"displayName": "АВС (ИАМ)"
+					"displayName": "AWS (IAM)"
 				},
 				"assumeRole": {
-					"displayName": "AWS (принятие роли)"
+					"displayName": "AWS (Assume Role)"
 				}
 			}
 		},
@@ -42,16 +42,16 @@
 					"description": "Удалить существующую группу"
 				},
 				"get": {
-					"displayName": "Получать",
-					"description": "Получить сведения о существующей группе"
+					"displayName": "Получить",
+					"description": "Получить информацию о существующей группе"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить список групп"
 				},
 				"removeFromGroup": {
 					"displayName": "Удалить из группы",
-					"description": "Удаление пользователя из группы"
+					"description": "Удалить пользователя из группы"
 				},
 				"update": {
 					"displayName": "Обновить",
@@ -61,16 +61,16 @@
 		},
 		"user": {
 			"displayName": "Пользователь",
-			"description": "Выберите пользователя, которого хотите удалить из группы"
+			"description": "Выберите пользователя для удаления из группы"
 		},
 		"group": {
 			"displayName": "Группа",
-			"description": "Выберите группу, которую хотите обновить."
+			"description": "Выберите группу для обновления"
 		},
 		"userName": {
 			"displayName": "Имя пользователя",
 			"description": "Новое имя пользователя",
-			"placeholder": "например ДжонСмит"
+			"placeholder": "например JohnSmith"
 		},
 		"additionalFields": {
 			"displayName": "Дополнительные поля",
@@ -78,19 +78,19 @@
 			"options": {
 				"path": {
 					"displayName": "Путь",
-					"description": "Новый путь к группе, если он не включен, по умолчанию используется косая черта (/).",
-					"placeholder": "например /division_abc/инжиниринг/"
+					"description": "Новый путь группы. Если не указан, по умолчанию используется слэш (/)",
+					"placeholder": "например /division_abc/engineering/"
 				},
 				"permissionsBoundary": {
 					"displayName": "Граница разрешений",
-					"description": "ARN управляемой политики, которая используется для установки границ разрешений для пользователя.",
+					"description": "ARN управляемой политики для установления границ разрешений пользователя",
 					"placeholder": "например arn:aws:iam::123456789012:policy/ExampleBoundaryPolicy"
 				},
 				"tags": {
 					"values": {
 						"tags": {
 							"displayName": "Теги",
-							"description": "Список тегов, которые вы хотите прикрепить к новому пользователю",
+							"description": "Список тегов для прикрепления к новому пользователю",
 							"options": {
 								"key": {
 									"displayName": "Ключ",
@@ -105,7 +105,7 @@
 					},
 					"placeholder": "Добавить тег",
 					"displayName": "Теги",
-					"description": "Список тегов, которые вы хотите прикрепить к новому пользователю",
+					"description": "Список тегов для прикрепления к новому пользователю",
 					"options": {
 						"tags": {
 							"displayName": "Тег"
@@ -134,7 +134,7 @@
 		},
 		"includeUsers": {
 			"displayName": "Включить пользователей",
-			"description": "Включать ли список пользователей в группу"
+			"description": "Включать ли список пользователей в группе"
 		}
 	}
 }

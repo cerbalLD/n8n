@@ -1,12 +1,12 @@
 {
 	"header": {
-		"displayName": "Вуфу триггер",
-		"description": "Обработка событий Wufoo с помощью веб-перехватчиков"
+		"displayName": "Триггер Wufoo",
+		"description": "Обработка событий Wufoo через вебхуки"
 	},
 	"nodeView": {
 		"form": {
 			"displayName": "Имя или идентификатор формы",
-			"description": "Форма, в которой будет активироваться этот узел при создании новой записи. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+			"description": "Форма, которая запустит этот узел при создании новой записи. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 		},
 		"onlyAnswers": {
 			"displayName": "Только ответы",

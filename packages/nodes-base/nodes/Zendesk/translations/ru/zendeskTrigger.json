@@ -1,7 +1,7 @@
 {
 	"header": {
 		"displayName": "Триггер Zendesk",
-		"description": "Обработка событий Zendesk с помощью веб-перехватчиков"
+		"description": "Обработка событий Zendesk через вебхуки"
 	},
 	"nodeView": {
 		"authentication": {
@@ -11,7 +11,7 @@
 					"displayName": "API-токен"
 				},
 				"oAuth2": {
-					"displayName": "ОАут2"
+					"displayName": "OAuth2"
 				}
 			}
 		},
@@ -28,8 +28,8 @@
 			"placeholder": "Добавить вариант",
 			"options": {
 				"fields": {
-					"displayName": "Имена полей или идентификаторы",
-					"description": "Поля, значения которых возвращаются. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+					"displayName": "Имена или идентификаторы полей",
+					"description": "Поля, значения которых вернуть. Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>."
 				}
 			}
 		},
@@ -46,7 +46,7 @@
 							"displayName": "Ресурс",
 							"options": {
 								"ticket": {
-									"displayName": "Билет"
+									"displayName": "Заявка"
 								}
 							}
 						},
@@ -54,7 +54,7 @@
 							"displayName": "Поле",
 							"options": {
 								"assignee": {
-									"displayName": "Правопреемник"
+									"displayName": "Ответственный"
 								},
 								"group": {
 									"displayName": "Группа"
@@ -74,7 +74,7 @@
 							"displayName": "Операция",
 							"options": {
 								"changed": {
-									"displayName": "Измененный"
+									"displayName": "Изменено"
 								},
 								"value_previous": {
 									"displayName": "Изменено с"
@@ -95,7 +95,7 @@
 									"displayName": "Меньше чем"
 								},
 								"not_changed": {
-									"displayName": "Не Изменено"
+									"displayName": "Не изменено"
 								},
 								"not_value_previous": {
 									"displayName": "Не изменено с"
@@ -159,7 +159,7 @@
 							"displayName": "Ресурс",
 							"options": {
 								"ticket": {
-									"displayName": "Билет"
+									"displayName": "Заявка"
 								}
 							}
 						},
@@ -167,7 +167,7 @@
 							"displayName": "Поле",
 							"options": {
 								"assignee": {
-									"displayName": "Правопреемник"
+									"displayName": "Ответственный"
 								},
 								"group": {
 									"displayName": "Группа"
@@ -187,7 +187,7 @@
 							"displayName": "Операция",
 							"options": {
 								"changed": {
-									"displayName": "Измененный"
+									"displayName": "Изменено"
 								},
 								"value_previous": {
 									"displayName": "Изменено с"
@@ -208,7 +208,7 @@
 									"displayName": "Меньше чем"
 								},
 								"not_changed": {
-									"displayName": "Не Изменено"
+									"displayName": "Не изменено"
 								},
 								"not_value_previous": {
 									"displayName": "Не изменено с"

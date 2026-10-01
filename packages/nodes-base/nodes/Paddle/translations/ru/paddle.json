@@ -32,7 +32,7 @@
 					"description": "Создание купона"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить нескольких пользователей"
 				},
 				"update": {
@@ -44,7 +44,7 @@
 					"description": "Перенос платежа"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить план"
 				}
 			}

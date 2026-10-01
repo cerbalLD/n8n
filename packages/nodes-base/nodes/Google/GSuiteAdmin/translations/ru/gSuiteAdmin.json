@@ -22,11 +22,11 @@
 			"displayName": "Операция",
 			"options": {
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить пользователя"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить нескольких пользователей"
 				},
 				"update": {
@@ -43,7 +43,7 @@
 				},
 				"delete": {
 					"displayName": "Удалить",
-					"description": "Удаление пользователя"
+					"description": "Удалить пользователя"
 				},
 				"addToGroup": {
 					"displayName": "Добавить в группу",
@@ -51,7 +51,7 @@
 				},
 				"removeFromGroup": {
 					"displayName": "Удалить из группы",
-					"description": "Удаление пользователя из группы"
+					"description": "Удалить пользователя из группы"
 				}
 			}
 		},
@@ -332,7 +332,7 @@
 											"displayName": "Рабочий факс"
 										},
 										"work_mobile": {
-											"displayName": "Работайте мобильно"
+											"displayName": "Рабочий мобильный"
 										},
 										"work_pager": {
 											"displayName": "Рабочий пейджер"
@@ -589,7 +589,7 @@
 											"displayName": "Рабочий факс"
 										},
 										"work_mobile": {
-											"displayName": "Работайте мобильно"
+											"displayName": "Рабочий мобильный"
 										},
 										"work_pager": {
 											"displayName": "Рабочий пейджер"

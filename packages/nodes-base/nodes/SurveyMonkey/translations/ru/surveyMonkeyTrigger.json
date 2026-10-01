@@ -1,7 +1,7 @@
 {
 	"header": {
 		"displayName": "Триггер SurveyMonkey",
-		"description": "Запускает рабочий процесс при возникновении событий Survey Monkey."
+		"description": "Запускает рабочий процесс при возникновении событий Survey Monkey"
 	},
 	"nodeView": {
 		"authentication": {
@@ -11,7 +11,7 @@
 					"displayName": "Токен доступа"
 				},
 				"oAuth2": {
-					"displayName": "ОАут2"
+					"displayName": "OAuth2"
 				}
 			}
 		},
@@ -19,7 +19,7 @@
 			"displayName": "Тип",
 			"options": {
 				"collector": {
-					"displayName": "Коллекционер"
+					"displayName": "Сборщик"
 				},
 				"survey": {
 					"displayName": "Опрос"
@@ -30,70 +30,70 @@
 			"displayName": "Событие",
 			"options": {
 				"collector_created": {
-					"displayName": "Коллекционер создан",
-					"description": "Коллектор создан."
+					"displayName": "Сборщик создан",
+					"description": "Сборщик создан"
 				},
 				"collector_deleted": {
-					"displayName": "Коллекционер удален",
-					"description": "Коллектор удален."
+					"displayName": "Сборщик удалён",
+					"description": "Сборщик удалён"
 				},
 				"collector_updated": {
-					"displayName": "Коллекционер обновлен",
-					"description": "Коллектор обновлен"
+					"displayName": "Сборщик обновлён",
+					"description": "Сборщик обновлён"
 				},
 				"response_completed": {
-					"displayName": "Ответ завершен",
-					"description": "Ответ на опрос завершен"
+					"displayName": "Ответ завершён",
+					"description": "Ответ опроса завершён"
 				},
 				"response_created": {
 					"displayName": "Ответ создан",
 					"description": "Респондент начинает опрос"
 				},
 				"response_deleted": {
-					"displayName": "Ответ удален",
-					"description": "Ответ удален."
+					"displayName": "Ответ удалён",
+					"description": "Ответ удалён"
 				},
 				"response_disqualified": {
 					"displayName": "Ответ дисквалифицирован",
-					"description": "Ответ на опрос дисквалифицируется"
+					"description": "Ответ опроса дисквалифицирован"
 				},
 				"response_overquota": {
-					"displayName": "Превышение квоты на ответ",
+					"displayName": "Ответ превышает квоту",
 					"description": "Ответ превышает квоту опроса"
 				},
 				"response_updated": {
-					"displayName": "Ответ обновлен",
-					"description": "Ответ на опрос обновлен."
+					"displayName": "Ответ обновлён",
+					"description": "Ответ опроса обновлён"
 				},
 				"survey_created": {
 					"displayName": "Опрос создан",
-					"description": "Опрос создан."
+					"description": "Опрос создан"
 				},
 				"survey_deleted": {
-					"displayName": "Опрос удален",
-					"description": "Опрос удален"
+					"displayName": "Опрос удалён",
+					"description": "Опрос удалён"
 				},
 				"survey_updated": {
-					"displayName": "Опрос обновлен",
-					"description": "Опрос обновлен"
+					"displayName": "Опрос обновлён",
+					"description": "Опрос обновлён"
 				}
 			}
 		},
 		"surveyIds": {
 			"displayName": "Названия или идентификаторы опросов",
-			"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"description": "Выберите из списка или укажите идентификаторы через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>"
 		},
 		"surveyId": {
 			"displayName": "Название или идентификатор опроса",
 			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"collectorIds": {
-			"displayName": "Имена или идентификаторы коллекционеров",
-			"description": "Выберите из списка или укажите идентификаторы с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>"
+			"displayName": "Названия или идентификаторы сборщиков",
+			"description": "Выберите из списка или укажите идентификаторы через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>"
 		},
 		"resolveData": {
 			"displayName": "Разрешить данные",
-			"description": "По умолчанию данные веб-перехватчика содержат только идентификаторы. Если эта опция активирована, она автоматически разрешит данные."
+			"description": "По умолчанию данные вебхука содержат только идентификаторы. Если эта опция активирована, данные будут разрешены автоматически."
 		},
 		"onlyAnswers": {
 			"displayName": "Только ответы",

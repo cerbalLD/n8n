@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "AWS понимает",
+		"displayName": "AWS Comprehend",
 		"description": "Отправляет данные в Amazon Comprehend"
 	},
 	"nodeView": {
@@ -8,10 +8,10 @@
 			"displayName": "Аутентификация",
 			"options": {
 				"iam": {
-					"displayName": "АВС (ИАМ)"
+					"displayName": "AWS (IAM)"
 				},
 				"assumeRole": {
-					"displayName": "AWS (принятие роли)"
+					"displayName": "AWS (Assume Role)"
 				}
 			}
 		},
@@ -28,16 +28,16 @@
 			"displayName": "Операция",
 			"options": {
 				"detectDominantLanguage": {
-					"displayName": "Обнаружение доминирующего языка",
-					"description": "Определите доминирующий язык"
+					"displayName": "Определить преобладающий язык",
+					"description": "Определите преобладающий язык"
 				},
 				"detectEntities": {
-					"displayName": "Обнаружение сущностей",
-					"description": "Проверяет текст на наличие именованных сущностей и возвращает информацию о них."
+					"displayName": "Обнаружить объекты",
+					"description": "Проверяет текст на наличие именованных объектов и возвращает информацию о них"
 				},
 				"detectSentiment": {
-					"displayName": "Обнаружение настроений",
-					"description": "Проанализируйте настроение текста."
+					"displayName": "Определить настроение",
+					"description": "Анализируйте настроение текста"
 				}
 			}
 		},
@@ -46,13 +46,13 @@
 			"description": "Код языка для текста",
 			"options": {
 				"ar": {
-					"displayName": "арабский"
+					"displayName": "Арабский"
 				},
 				"zh": {
-					"displayName": "китайский"
+					"displayName": "Китайский"
 				},
 				"zh-TW": {
-					"displayName": "Китайский (Т)"
+					"displayName": "Китайский (традиционный)"
 				},
 				"en": {
 					"displayName": "английский"
@@ -64,19 +64,19 @@
 					"displayName": "немецкий"
 				},
 				"hi": {
-					"displayName": "хинди"
+					"displayName": "Хинди"
 				},
 				"it": {
-					"displayName": "итальянский"
+					"displayName": "Итальянский"
 				},
 				"ja": {
 					"displayName": "японский"
 				},
 				"ko": {
-					"displayName": "корейский"
+					"displayName": "Корейский"
 				},
 				"pt": {
-					"displayName": "португальский"
+					"displayName": "Португальский"
 				},
 				"es": {
 					"displayName": "испанский"
@@ -96,8 +96,8 @@
 			"placeholder": "Добавить поле",
 			"options": {
 				"endpointArn": {
-					"displayName": "Конечная точка Арн",
-					"description": "Имя ресурса Amazon конечной точки, связанной с пользовательской моделью распознавания объектов."
+					"displayName": "ARN конечной точки",
+					"description": "Имя ресурса Amazon конечной точки, связанной с пользовательской моделью распознавания объектов"
 				}
 			}
 		}

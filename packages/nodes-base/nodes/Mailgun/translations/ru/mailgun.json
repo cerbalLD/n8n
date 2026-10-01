@@ -58,7 +58,7 @@
 			"placeholder": "тег1, тег2"
 		},
 		"subject": {
-			"displayName": "Предмет",
+			"displayName": "Тема",
 			"description": "Тема письма",
 			"placeholder": "Тема письма"
 		},

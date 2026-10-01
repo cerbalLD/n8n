@@ -89,7 +89,7 @@
 					"values": {
 						"arguments": {
 							"displayName": "Аргументы",
-							"description": "Аргументы для добавления. Допустимые параметры см. в <a href=\"https://amqp-node.github.io/amqplib/channel_api.html#channel_publish\" target=\"_blank\">здесь</a>."
+							"description": "РђСЂРіСѓРјРµРЅС‚С‹ РґР»СЏ РґРѕР±Р°РІР»РµРЅРёСЏ. Р”РѕРїСѓСЃС‚РёРјС‹Рµ РїР°СЂР°РјРµС‚СЂС‹ СЃРј. РІ <a href=\"https://amqp-node.github.io/amqplib/channel_api.html#channel_publish\" target=\"_blank\">Р·РґРµСЃСЊ</a>."
 						},
 						"argument": {
 							"options": {
@@ -104,7 +104,7 @@
 					},
 					"placeholder": "Добавить аргумент",
 					"displayName": "Аргументы",
-					"description": "Аргументы для добавления. Допустимые параметры см. в <a href=\"https://amqp-node.github.io/amqplib/channel_api.html#channel_publish\" target=\"_blank\">здесь</a>.",
+					"description": "РђСЂРіСѓРјРµРЅС‚С‹ РґР»СЏ РґРѕР±Р°РІР»РµРЅРёСЏ. Р”РѕРїСѓСЃС‚РёРјС‹Рµ РїР°СЂР°РјРµС‚СЂС‹ СЃРј. РІ <a href=\"https://amqp-node.github.io/amqplib/channel_api.html#channel_publish\" target=\"_blank\">Р·РґРµСЃСЊ</a>.",
 					"options": {
 						"argument": {
 							"displayName": "Аргумент"
@@ -112,22 +112,22 @@
 					}
 				},
 				"autoDelete": {
-					"displayName": "Автоматическое удаление очереди",
-					"description": "Будет ли очередь удалена, когда количество потребителей упадет до нуля"
+					"displayName": "РђРІС‚РѕРјР°С‚РёС‡РµСЃРєРѕРµ СѓРґР°Р»РµРЅРёРµ РѕС‡РµСЂРµРґРё",
+					"description": "Р‘СѓРґРµС‚ Р»Рё РѕС‡РµСЂРµРґСЊ СѓРґР°Р»РµРЅР°, РєРѕРіРґР° РєРѕР»РёС‡РµСЃС‚РІРѕ РїРѕС‚СЂРµР±РёС‚РµР»РµР№ СѓРїР°РґРµС‚ РґРѕ РЅСѓР»СЏ"
 				},
 				"durable": {
-					"displayName": "Прочный",
-					"description": "Выдержит ли очередь перезапуск брокера"
+					"displayName": "РџСЂРѕС‡РЅС‹Р№",
+					"description": "Р’С‹РґРµСЂР¶РёС‚ Р»Рё РѕС‡РµСЂРµРґСЊ РїРµСЂРµР·Р°РїСѓСЃРє Р±СЂРѕРєРµСЂР°"
 				},
 				"exclusive": {
-					"displayName": "Эксклюзивный",
-					"description": "Следует ли ограничивать очередь соединением"
+					"displayName": "Р­РєСЃРєР»СЋР·РёРІРЅС‹Р№",
+					"description": "РЎР»РµРґСѓРµС‚ Р»Рё РѕРіСЂР°РЅРёС‡РёРІР°С‚СЊ РѕС‡РµСЂРµРґСЊ СЃРѕРµРґРёРЅРµРЅРёРµРј"
 				},
 				"headers": {
 					"values": {
 						"headers": {
 							"displayName": "Заголовки",
-							"description": "Заголовки, которые нужно добавить"
+							"description": "Р—Р°РіРѕР»РѕРІРєРё, РєРѕС‚РѕСЂС‹Рµ РЅСѓР¶РЅРѕ РґРѕР±Р°РІРёС‚СЊ"
 						},
 						"header": {
 							"options": {
@@ -142,7 +142,7 @@
 					},
 					"placeholder": "Добавить заголовок",
 					"displayName": "Заголовки",
-					"description": "Заголовки, которые нужно добавить",
+					"description": "Р—Р°РіРѕР»РѕРІРєРё, РєРѕС‚РѕСЂС‹Рµ РЅСѓР¶РЅРѕ РґРѕР±Р°РІРёС‚СЊ",
 					"options": {
 						"header": {
 							"displayName": "Заголовок"

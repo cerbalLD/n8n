@@ -1,7 +1,7 @@
 {
 	"header": {
 		"displayName": "Лимит",
-		"description": "Ограничить количество предметов"
+		"description": "Ограничить количество элементов"
 	},
 	"nodeView": {
 		"maxItems": {

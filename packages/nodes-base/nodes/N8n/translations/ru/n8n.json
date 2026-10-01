@@ -38,10 +38,10 @@
 					"displayName": "Получить схему"
 				},
 				"get": {
-					"displayName": "Получать"
+					"displayName": "Получить"
 				},
 				"getAll": {
-					"displayName": "Получить много"
+					"displayName": "Получить множество"
 				},
 				"activate": {
 					"displayName": "Публикация"
@@ -94,7 +94,7 @@
 			"placeholder": "например учётная запись n8n"
 		},
 		"credentialTypeName": {
-			"displayName": "Тип учетных данных",
+			"displayName": "Тип учётных данных",
 			"description": "Доступные типы зависят от установленных узлов. Встроенные типы: githubApi, notionApi, slackApi.",
 			"placeholder": "например n8nApi"
 		},

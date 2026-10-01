@@ -1,16 +1,16 @@
 {
 	"header": {
-		"displayName": "Тайга Триггер",
+		"displayName": "Триггер Taiga",
 		"description": "Обработка событий Taiga через вебхук"
 	},
 	"nodeView": {
 		"projectId": {
-			"displayName": "Название или идентификатор проекта",
+			"displayName": "Имя или идентификатор проекта",
 			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"resources": {
 			"displayName": "Ресурсы",
-			"description": "Ресурсы, которые стоит послушать",
+			"description": "Ресурсы для прослушивания",
 			"options": {
 				"all": {
 					"displayName": "Все"
@@ -19,7 +19,7 @@
 					"displayName": "Задача"
 				},
 				"milestone": {
-					"displayName": "Веха (Спринт)"
+					"displayName": "Этап (спринт)"
 				},
 				"task": {
 					"displayName": "Задача"
@@ -28,13 +28,13 @@
 					"displayName": "История пользователя"
 				},
 				"wikipage": {
-					"displayName": "Викистраница"
+					"displayName": "Страница вики"
 				}
 			}
 		},
 		"operations": {
 			"displayName": "Операции",
-			"description": "Операции, которые нужно прослушать",
+			"description": "Операции для прослушивания",
 			"options": {
 				"all": {
 					"displayName": "Все"

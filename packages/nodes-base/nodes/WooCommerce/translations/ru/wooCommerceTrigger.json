@@ -1,7 +1,7 @@
 {
 	"header": {
 		"displayName": "Триггер WooCommerce",
-		"description": "Обработка событий WooCommerce через веб-перехватчики"
+		"description": "Обработка событий WooCommerce через вебхуки"
 	},
 	"nodeView": {
 		"event": {
@@ -13,29 +13,29 @@
 						"displayName": "купон.создан"
 					},
 					"deleted": {
-						"displayName": "купон.удален"
+						"displayName": "купон.удалён"
 					},
 					"updated": {
-						"displayName": "купон.обновлено"
+						"displayName": "купон.обновлен"
 					}
 				},
 				"customer": {
 					"created": {
-						"displayName": "клиент.создал"
+						"displayName": "клиент.создан"
 					},
 					"deleted": {
-						"displayName": "клиент.удален"
+						"displayName": "Клиент удалён"
 					},
 					"updated": {
-						"displayName": "клиент.обновлено"
+						"displayName": "Клиент обновлён"
 					}
 				},
 				"order": {
 					"created": {
-						"displayName": "заказ.создан"
+						"displayName": "Заказ создан"
 					},
 					"deleted": {
-						"displayName": "заказ.удален"
+						"displayName": "Заказ удалён"
 					},
 					"updated": {
 						"displayName": "order.updated"
@@ -43,13 +43,13 @@
 				},
 				"product": {
 					"created": {
-						"displayName": "продукт.создан"
+						"displayName": "Продукт создан"
 					},
 					"deleted": {
-						"displayName": "продукт.удален"
+						"displayName": "Продукт удалён"
 					},
 					"updated": {
-						"displayName": "продукт.обновлено"
+						"displayName": "Продукт обновлён"
 					}
 				}
 			}

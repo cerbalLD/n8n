@@ -35,7 +35,7 @@
 					"description": "Получить информацию об учётной записи текущего пользователя"
 				},
 				"get": {
-					"displayName": "Получать",
+					"displayName": "Получить",
 					"description": "Получить событие по идентификатору"
 				},
 				"upload": {
@@ -47,7 +47,7 @@
 					"description": "Создать чат с настройками"
 				},
 				"getAll": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить множество участников"
 				},
 				"invite": {
@@ -59,17 +59,17 @@
 					"description": "Присоединиться к комнате"
 				},
 				"kick": {
-					"displayName": "Пинать",
+					"displayName": "Исключить",
 					"description": "Удалить пользователя из комнаты"
 				},
 				"leave": {
-					"displayName": "Оставлять",
+					"displayName": "Покинуть",
 					"description": "Покинуть комнату"
 				}
 			}
 		},
 		"roomId": {
-			"displayName": "Название или идентификатор комнаты",
+			"displayName": "Имя или ID комнаты",
 			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>",
 			"placeholder": "!123abc:matrix.org"
 		},
@@ -243,7 +243,7 @@
 							"description": "Пользователи в комнате"
 						},
 						"leave": {
-							"displayName": "Оставлять",
+							"displayName": "Покинуть",
 							"description": "Вышедшие пользователи"
 						}
 					}
@@ -269,7 +269,7 @@
 							"description": "Пользователи в комнате"
 						},
 						"leave": {
-							"displayName": "Оставлять",
+							"displayName": "Покинуть",
 							"description": "Вышедшие пользователи"
 						}
 					}

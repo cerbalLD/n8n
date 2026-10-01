@@ -28,10 +28,10 @@
 					"displayName": "Удалить"
 				},
 				"get": {
-					"displayName": "Получать"
+					"displayName": "Получить"
 				},
 				"getAll": {
-					"displayName": "Получить много"
+					"displayName": "Получить множество"
 				},
 				"update": {
 					"displayName": "Обновить"

@@ -5,7 +5,7 @@
 	},
 	"nodeView": {
 		"authentication": {
-			"displayName": "Тип учетных данных",
+			"displayName": "Тип учётных данных",
 			"options": {
 				"oAuth2": {
 					"displayName": "OAuth2 (рекомендуется)"

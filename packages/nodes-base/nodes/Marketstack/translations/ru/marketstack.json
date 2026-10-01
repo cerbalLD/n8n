@@ -25,10 +25,10 @@
 			"displayName": "Операция",
 			"options": {
 				"getAll": {
-					"displayName": "Получить много"
+					"displayName": "Получить множество"
 				},
 				"get": {
-					"displayName": "Получать"
+					"displayName": "Получить"
 				}
 			}
 		},

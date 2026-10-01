@@ -1,7 +1,7 @@
 {
 	"header": {
 		"displayName": "HTTP запрос",
-		"description": "Делает HTTP-запрос и возвращает данные ответа."
+		"description": "Отправляет HTTP-запрос и возвращает данные ответа"
 	},
 	"nodeView": {
 		"method": {
@@ -33,30 +33,30 @@
 		},
 		"url": {
 			"displayName": "URL",
-			"description": "URL-адрес для отправки запроса",
+			"description": "URL для отправки запроса",
 			"placeholder": "http://example.com/index.html"
 		},
 		"authentication": {
 			"displayName": "Аутентификация",
 			"options": {
 				"none": {
-					"displayName": "Никто"
+					"displayName": "Нет"
 				},
 				"predefinedCredentialType": {
-					"displayName": "Предопределенный тип учетных данных",
-					"description": "Мы уже реализовали авторизацию для многих сервисов, поэтому вам не придется настраивать ее вручную."
+					"displayName": "Предопределённый тип учётных данных",
+					"description": "Мы уже реализовали аутентификацию для многих сервисов, чтобы вам не пришлось настраивать её вручную"
 				},
 				"genericCredentialType": {
-					"displayName": "Общий тип учетных данных",
-					"description": "Полностью настраиваемый. Выбирайте между базовым, заголовком, OAuth2 и т. д."
+					"displayName": "Общий тип учётных данных",
+					"description": "Полностью настраиваемый. Выбирайте между базовым, заголовком, OAuth2 и т. д."
 				}
 			}
 		},
 		"nodeCredentialType": {
-			"displayName": "Тип учетных данных"
+			"displayName": "Тип учётных данных"
 		},
 		"googleApiWarning": {
-			"displayName": "Убедитесь, что вы указали области действия учетной записи службы в учетных данных."
+			"displayName": "Убедитесь, что вы указали область(и) действия учётной записи сервиса в учётных данных"
 		},
 		"genericAuthType": {
 			"displayName": "Общий тип аутентификации"
@@ -65,14 +65,14 @@
 			"displayName": "SSL-сертификаты"
 		},
 		"provideSslCertificatesNotice": {
-			"displayName": "Предоставьте сертификаты в параметре узла «Учетные данные для сертификатов SSL»."
+			"displayName": "Предоставьте сертификаты в параметре узла «Учётные данные для SSL-сертификатов»"
 		},
 		"sslCertificate": {
 			"displayName": "SSL-сертификат"
 		},
 		"sendQuery": {
 			"displayName": "Отправить параметры запроса",
-			"description": "Имеет ли запрос параметры запроса или нет"
+			"description": "Имеет ли запрос параметры запроса"
 		},
 		"specifyQuery": {
 			"displayName": "Укажите параметры запроса",
@@ -110,7 +110,7 @@
 		},
 		"sendHeaders": {
 			"displayName": "Отправить заголовки",
-			"description": "Имеет ли запрос заголовки или нет"
+			"description": "Должен ли запрос содержать заголовки"
 		},
 		"specifyHeaders": {
 			"displayName": "Укажите заголовки",
@@ -147,18 +147,18 @@
 			"displayName": "JSON"
 		},
 		"sendBody": {
-			"displayName": "Отправить тело",
-			"description": "Имеет ли запрос тело или нет"
+			"displayName": "Отправить тело запроса",
+			"description": "Должен ли запрос содержать тело"
 		},
 		"contentType": {
 			"displayName": "Тип содержимого тела",
-			"description": "Content-Type, используемый для отправки параметров тела",
+			"description": "Content-Type для отправки параметров тела",
 			"options": {
 				"form-urlencoded": {
-					"displayName": "URL-адрес формы закодирован"
+					"displayName": "URL-кодированная форма"
 				},
 				"multipart-form-data": {
-					"displayName": "Форма-Данные"
+					"displayName": "Данные формы"
 				},
 				"json": {
 					"displayName": "JSON"
@@ -172,8 +172,8 @@
 			}
 		},
 		"specifyBody": {
-			"displayName": "Укажите тело",
-			"description": "Тело можно указать с помощью явных полей (<code>keypair</code>) или с помощью объекта JavaScript (<code>json</code>).",
+			"displayName": "Укажите тело запроса",
+			"description": "Тело можно указать с помощью явных полей (<code>keypair</code>) или объекта JavaScript (<code>json</code>)",
 			"options": {
 				"keypair": {
 					"displayName": "Использование полей ниже"
@@ -196,7 +196,7 @@
 					"values": {
 						"name": {
 							"displayName": "Имя",
-							"description": "Идентификатор поля, которое необходимо установить. Выберите из списка или укажите идентификатор с помощью <a href=\"https://docs.n8n.io/code/expressions/\">expression</a>."
+							"description": "Идентификатор поля для установки. Выберите из списка или укажите идентификатор через <a href=\"https://docs.n8n.io/code/expressions/\">выражение</a>."
 						},
 						"value": {
 							"displayName": "Значение",
@@ -215,7 +215,7 @@
 						},
 						"inputDataFieldName": {
 							"displayName": "Имя поля входных данных",
-							"description": "Имя входящего поля, содержащего данные двоичного файла, подлежащие обработке."
+							"description": "Имя входящего поля, содержащего двоичные данные файла для обработки"
 						}
 					}
 				}
@@ -227,15 +227,15 @@
 			"displayName": "JSON"
 		},
 		"body": {
-			"displayName": "Тело",
+			"displayName": "Тело запроса",
 			"placeholder": "поле1=значение1&поле2=значение2"
 		},
 		"inputDataFieldName": {
 			"displayName": "Имя поля входных данных",
-			"description": "Имя входящего поля, содержащего данные двоичного файла, подлежащие обработке."
+			"description": "Имя входящего поля, содержащего двоичные данные файла для обработки"
 		},
 		"rawContentType": {
-			"displayName": "Тип контента",
+			"displayName": "Тип содержимого",
 			"placeholder": "текст/html"
 		},
 		"options": {
@@ -250,17 +250,17 @@
 						"batch": {
 							"options": {
 								"batchSize": {
-									"displayName": "Товаров в партии",
-									"description": "Ввод будет разделен на пакеты для регулирования запросов. -1 для инвалидов. 0 будет рассматриваться как 1."
+									"displayName": "Элементов в пакете",
+									"description": "Входные данные будут разделены на пакеты для регулирования запросов. -1 — отключено, 0 рассматривается как 1"
 								},
 								"batchInterval": {
-									"displayName": "Пакетный интервал (мс)",
-									"description": "Время (в миллисекундах) между каждым пакетом запросов. 0 для инвалидов."
+									"displayName": "Интервал между пакетами (мс)",
+									"description": "Время (в миллисекундах) между пакетами запросов. 0 — отключено"
 								}
 							}
 						}
 					},
-					"placeholder": "Добавить пакетную обработку",
+					"placeholder": "Добавить пакетирование",
 					"displayName": "Пакетирование",
 					"options": {
 						"batch": {
@@ -269,29 +269,29 @@
 					}
 				},
 				"allowUnauthorizedCerts": {
-					"displayName": "Игнорировать проблемы с SSL (небезопасно)",
-					"description": "Загружать ли ответ, даже если проверка сертификата SSL невозможна"
+					"displayName": "Игнорировать проблемы SSL (небезопасно)",
+					"description": "Загружать ответ, даже если проверка сертификата SSL невозможна"
 				},
 				"queryParameterArrays": {
 					"displayName": "Формат массива в параметрах запроса",
 					"options": {
 						"repeat": {
 							"displayName": "Без скобок",
-							"description": "например foo=bar&foo=qux"
+							"description": "напр. foo=bar&foo=qux"
 						},
 						"brackets": {
 							"displayName": "Только скобки",
-							"description": "например foo[]=bar&foo[]=qux"
+							"description": "напр. foo[]=bar&foo[]=qux"
 						},
 						"indices": {
 							"displayName": "Скобки с индексами",
-							"description": "например foo[0]=bar&foo[1]=qux"
+							"description": "напр. foo[0]=bar&foo[1]=qux"
 						}
 					}
 				},
 				"lowercaseHeaders": {
 					"displayName": "Заголовки в нижнем регистре",
-					"description": "Следует ли писать имена заголовков строчными буквами"
+					"description": "Писать ли имена заголовков строчными буквами"
 				},
 				"redirect": {
 					"values": {
@@ -299,12 +299,12 @@
 							"displayName": "Перенаправления",
 							"options": {
 								"followRedirects": {
-									"displayName": "Следуйте перенаправлениям",
-									"description": "Следует ли следовать всем перенаправлениям"
+									"displayName": "Следовать перенаправлениям",
+									"description": "Следовать ли всем перенаправлениям"
 								},
 								"maxRedirects": {
-									"displayName": "Макс. перенаправления",
-									"description": "Максимальное количество перенаправлений для отслеживания"
+									"displayName": "Макс. перенаправлений",
+									"description": "Максимальное число перенаправлений"
 								}
 							}
 						}
@@ -323,16 +323,16 @@
 							"displayName": "Ответ",
 							"options": {
 								"fullResponse": {
-									"displayName": "Включите заголовки ответов и статус",
-									"description": "Возвращать ли полные данные ответа (заголовки и код состояния ответа), а не только тело"
+									"displayName": "Включить заголовки ответа и статус",
+									"description": "Возвращать ли полные данные ответа (заголовки и код состояния) вместо только тела"
 								},
 								"neverError": {
-									"displayName": "Никогда не ошибайтесь",
-									"description": "Будет ли успешным, если код состояния не 2xx"
+									"displayName": "Никогда не ошибаться",
+									"description": "Считать успешным даже если код состояния не 2xx"
 								},
 								"responseFormat": {
 									"displayName": "Формат ответа",
-									"description": "Формат, в котором данные возвращаются с URL-адреса.",
+									"description": "Формат, в котором данные возвращаются с URL-адреса",
 									"options": {
 										"autodetect": {
 											"displayName": "Автоопределение"
@@ -349,8 +349,8 @@
 									}
 								},
 								"outputPropertyName": {
-									"displayName": "Поместите вывод в поле",
-									"description": "Имя двоичного свойства, в которое записываются данные считанного файла."
+									"displayName": "Поместить результат в поле",
+									"description": "Имя двоичного свойства для записи данных прочитанного файла"
 								}
 							}
 						}
@@ -369,8 +369,8 @@
 							"displayName": "Пагинация",
 							"options": {
 								"paginationMode": {
-									"displayName": "Режим нумерации страниц",
-									"description": "Если следует использовать нумерацию страниц",
+									"displayName": "Режим пагинации",
+									"description": "Использовать ли пагинацию",
 									"options": {
 										"off": {
 											"displayName": "Выключено"
@@ -379,16 +379,16 @@
 											"displayName": "Обновить параметр в каждом запросе"
 										},
 										"responseContainsNextURL": {
-											"displayName": "Ответ содержит следующий URL"
+											"displayName": "Ответ содержит URL следующей страницы"
 										}
 									}
 								},
 								"webhookNotice": {
-									"displayName": "Используйте переменные $response для доступа к данным предыдущего ответа. Дополнительную информацию о нумерации страниц см. в <a href=\"https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.httprequest/#pagination/?utm_source=n8n_app&utm_medium=node_settings_modal-credential_link&utm_campaign=n8n-nodes-base.httprequest\" target=\"_blank\">docs</a>."
+									"displayName": "Используйте переменные $response для доступа к данным предыдущего ответа. Подробнее о пагинации см. в <a href=\"https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.httprequest/#pagination/?utm_source=n8n_app&utm_medium=node_settings_modal-credential_link&utm_campaign=n8n-nodes-base.httprequest\" target=\"_blank\">документации</a>."
 								},
 								"nextURL": {
-									"displayName": "Следующий URL",
-									"description": "Следует оценить URL-адрес следующей страницы. <a href=\"https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.httprequest/#pagination\" target=\"_blank\">Подробнее</a>."
+									"displayName": "URL следующей страницы",
+									"description": "Должно вычисляться как URL следующей страницы. <a href=\"https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.httprequest/#pagination\" target=\"_blank\">Подробнее</a>."
 								},
 								"parameters": {
 									"values": {
@@ -400,7 +400,7 @@
 													"description": "Где должен быть установлен параметр",
 													"options": {
 														"body": {
-															"displayName": "Тело"
+															"displayName": "Тело запроса"
 														},
 														"headers": {
 															"displayName": "Заголовок"
@@ -412,11 +412,11 @@
 												},
 												"name": {
 													"displayName": "Имя",
-													"placeholder": "например страница"
+													"placeholder": "напр. page"
 												},
 												"value": {
 													"displayName": "Значение",
-													"hint": "Используйте режим выражения и $response для доступа к данным ответа."
+													"hint": "Используйте режим выражений и $response для доступа к данным ответа"
 												}
 											}
 										}
@@ -430,14 +430,14 @@
 									}
 								},
 								"paginationCompleteWhen": {
-									"displayName": "Пагинация завершена, когда",
-									"description": "Когда больше не следует делать запросы?",
+									"displayName": "Пагинация завершена при",
+									"description": "Когда больше не нужно делать запросы?",
 									"options": {
 										"responseIsEmpty": {
 											"displayName": "Ответ пуст"
 										},
 										"receiveSpecificStatusCodes": {
-											"displayName": "Получить конкретный код(ы) статуса"
+											"displayName": "Получить определённый код(ы) состояния"
 										},
 										"other": {
 											"displayName": "Другое"
@@ -445,30 +445,30 @@
 									}
 								},
 								"statusCodesWhenComplete": {
-									"displayName": "Код(ы) состояния после завершения",
-									"description": "Принимает значения, разделенные запятыми"
+									"displayName": "Код(ы) состояния при завершении",
+									"description": "Принимает значения, разделённые запятыми"
 								},
 								"completeExpression": {
 									"displayName": "Полное выражение",
-									"description": "Должно иметь значение true, когда нумерация страниц завершена. <a href=\"https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.httprequest/#pagination\" target=\"_blank\">Подробнее</a>."
+									"description": "Должно вычисляться как true при завершении пагинации. <a href=\"https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.httprequest/#pagination\" target=\"_blank\">Подробнее</a>."
 								},
 								"limitPagesFetched": {
-									"displayName": "Ограничить количество извлекаемых страниц",
-									"description": "Следует ли ограничивать количество запросов"
+									"displayName": "Ограничить количество загруженных страниц",
+									"description": "Ограничивать ли количество запросов"
 								},
 								"maxRequests": {
 									"displayName": "Макс. страниц",
-									"description": "Максимальная сумма запроса"
+									"description": "Максимальное количество запросов"
 								},
 								"requestInterval": {
 									"displayName": "Интервал между запросами (мс)",
 									"description": "Время ожидания между запросами в миллисекундах",
-									"hint": "При 0 задержка добавляться не будет."
+									"hint": "При 0 задержка не добавляется"
 								}
 							}
 						}
 					},
-					"placeholder": "Добавить нумерацию страниц",
+					"placeholder": "Добавить пагинацию",
 					"displayName": "Пагинация",
 					"options": {
 						"pagination": {
@@ -479,21 +479,21 @@
 				"proxy": {
 					"displayName": "Прокси",
 					"description": "HTTP-прокси для использования",
-					"placeholder": "например http://мойпрокси:3128"
+					"placeholder": "напр. http://myproxy:3128"
 				},
 				"timeout": {
 					"displayName": "Тайм-аут",
-					"description": "Время в мс для ожидания отправки сервером заголовков ответа (и запуска тела ответа) перед прерыванием запроса."
+					"description": "Время ожидания в мс для получения заголовков ответа от сервера перед прерыванием запроса"
 				},
 				"sendCredentialsOnCrossOriginRedirect": {
-					"displayName": "Отправка учетных данных при перенаправлении между источниками",
-					"description": "Отправлять ли учетные данные, например заголовок «Авторизация», при перенаправлении в другой источник."
+					"displayName": "Отправить учётные данные при перенаправлении на другой источник",
+					"description": "Отправлять ли учётные данные, такие как заголовок «Authorization», при перенаправлении на другой источник"
 				}
 			}
 		},
 		"optimizeResponse": {
-			"displayName": "Оптимизация ответа",
-			"description": "Следует ли оптимизировать реакцию инструмента для уменьшения объема данных, передаваемых в LLM, что может привести к лучшему результату и снижению затрат."
+			"displayName": "Оптимизировать ответ",
+			"description": "Оптимизировать ответ инструмента для снижения объёма данных, передаваемых LLM, что может улучшить результат и снизить затраты"
 		},
 		"responseType": {
 			"displayName": "Ожидаемый тип ответа",
@@ -511,9 +511,9 @@
 		},
 		"dataField": {
 			"displayName": "Поле, содержащее данные",
-			"description": "Укажите имя поля в ответе, содержащем данные",
-			"hint": "оставьте поле пустым, чтобы использовать весь ответ",
-			"placeholder": "например записи"
+			"description": "Укажите имя поля в ответе, содержащего данные",
+			"hint": "оставьте пустым для использования всего ответа",
+			"placeholder": "напр. records"
 		},
 		"fieldsToInclude": {
 			"displayName": "Включить поля",
@@ -524,44 +524,44 @@
 					"description": "Включить все поля"
 				},
 				"selected": {
-					"displayName": "Выбрано",
-					"description": "Включить только поля, указанные ниже"
+					"displayName": "Выбранное",
+					"description": "Включить только указанные ниже поля"
 				},
 				"except": {
-					"displayName": "Кроме",
-					"description": "Исключить поля, указанные ниже"
+					"displayName": "Исключая",
+					"description": "Исключить указанные ниже поля"
 				}
 			}
 		},
 		"fields": {
 			"displayName": "Поля",
-			"description": "Список имен полей, разделенных запятыми. Поддерживает точечную запись. Вы можете перетащить выбранные поля с панели ввода.",
-			"placeholder": "например поле1, поле2"
+			"description": "Список имён полей, разделённый запятыми. Поддерживает точечную нотацию. Вы можете перетаскивать выбранные поля с панели ввода",
+			"placeholder": "напр. field1,field2"
 		},
 		"cssSelector": {
 			"displayName": "Селектор (CSS)",
-			"description": "Выберите конкретный элемент (например, тело) или несколько элементов (например, div) выбранного типа в HTML-коде ответа.",
-			"placeholder": "например тело"
+			"description": "Выберите конкретный элемент (напр. body) или несколько элементов (напр. div) выбранного типа в HTML ответа",
+			"placeholder": "напр. body"
 		},
 		"onlyContent": {
-			"displayName": "Вернуть только содержимое",
-			"description": "Возвращать ли только содержимое HTML-элементов, удаляя HTML-теги и атрибуты",
-			"hint": "Использует меньше токенов и может быть проще для понимания модели."
+			"displayName": "Возвращать только содержимое",
+			"description": "Возвращать ли только содержимое HTML-элементов, удаляя теги и атрибуты",
+			"hint": "Использует меньше токенов и может быть проще для понимания моделью"
 		},
 		"elementsToOmit": {
-			"displayName": "Элементы, которые следует пропустить",
-			"description": "Список селекторов, разделенных запятыми, которые будут исключены при извлечении контента.",
-			"placeholder": "например img, .className, #ItemId"
+			"displayName": "Элементы для пропуска",
+			"description": "Список селекторов, разделённый запятыми, которые будут исключены при извлечении содержимого",
+			"placeholder": "напр. img, .className, #ItemId"
 		},
 		"truncateResponse": {
-			"displayName": "Усечь ответ",
+			"displayName": "Обрезать ответ",
 			"hint": "Помогает экономить токены"
 		},
 		"maxLength": {
-			"displayName": "Максимальное количество откликов персонажей"
+			"displayName": "Макс. символов в ответе"
 		},
 		"infoMessage": {
-			"displayName": "Вы можете просмотреть необработанные запросы, которые делает этот узел, в консоли разработчика вашего браузера."
+			"displayName": "Вы можете посмотреть необработанные запросы этого узла в консоли разработчика браузера"
 		}
 	}
 }

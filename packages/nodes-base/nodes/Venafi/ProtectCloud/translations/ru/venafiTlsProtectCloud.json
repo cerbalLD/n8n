@@ -1,6 +1,6 @@
 {
 	"header": {
-		"displayName": "Venafi TLS защищает облако",
+		"displayName": "Venafi TLS Protect Cloud",
 		"description": "Использование Venafi TLS Protect Cloud API"
 	},
 	"nodeView": {
@@ -11,7 +11,7 @@
 					"displayName": "Сертификат"
 				},
 				"certificateRequest": {
-					"displayName": "Запрос сертификата"
+					"displayName": "Запрос на сертификат"
 				}
 			}
 		},
@@ -24,14 +24,14 @@
 				},
 				"download": {
 					"displayName": "Скачать",
-					"description": "Скачать сертификат"
+					"description": "Загрузить сертификат"
 				},
 				"get": {
-					"displayName": "Получать",
-					"description": "Получить запрос сертификата"
+					"displayName": "Получить",
+					"description": "Получить запрос на сертификат"
 				},
 				"getMany": {
-					"displayName": "Получить много",
+					"displayName": "Получить множество",
 					"description": "Получить множество запросов на сертификаты"
 				},
 				"renew": {
@@ -40,7 +40,7 @@
 				},
 				"create": {
 					"displayName": "Создать",
-					"description": "Создать новый запрос сертификата"
+					"description": "Создать новый запрос на сертификат"
 				}
 			}
 		},
@@ -48,7 +48,7 @@
 			"displayName": "Идентификатор сертификата"
 		},
 		"downloadItem": {
-			"displayName": "Скачать элемент",
+			"displayName": "Загрузить элемент",
 			"options": {
 				"certificate": {
 					"displayName": "Сертификат"
@@ -73,7 +73,7 @@
 			}
 		},
 		"certificateLabel": {
-			"displayName": "Этикетка сертификата"
+			"displayName": "Метка сертификата"
 		},
 		"privateKeyPassphrase": {
 			"displayName": "Парольная фраза закрытого ключа"
@@ -83,26 +83,26 @@
 		},
 		"binaryProperty": {
 			"displayName": "Имя поля входных данных",
-			"description": "Имя поля ввода, содержащего данные двоичного файла, которые будут загружены."
+			"description": "Имя поля ввода, содержащего двоичные данные файла для загрузки"
 		},
 		"options": {
 			"displayName": "Параметры",
 			"placeholder": "Добавить поле",
 			"options": {
 				"chainOrder": {
-					"displayName": "Цепной заказ",
+					"displayName": "Порядок цепочки",
 					"options": {
 						"EE_FIRST": {
 							"displayName": "EE_FIRST",
-							"description": "Сначала загрузите сертификат с конечной частью цепочки."
+							"description": "Загрузить сертификат с конечной частью цепочки в первую очередь"
 						},
 						"EE_ONLY": {
 							"displayName": "EE_ONLY",
-							"description": "Загрузите только сертификат конечного объекта"
+							"description": "Загрузить только сертификат конечной сущности"
 						},
 						"ROOT_FIRST": {
 							"displayName": "ROOT_FIRST",
-							"description": "Сначала загрузите сертификат с корневой частью цепочки."
+							"description": "Загрузить сертификат с корневой частью цепочки в первую очередь"
 						}
 					}
 				},
@@ -118,7 +118,7 @@
 					}
 				},
 				"validityPeriod": {
-					"displayName": "Срок действия",
+					"displayName": "Период действия",
 					"options": {
 						"P1Y": {
 							"displayName": "1 год"
@@ -149,7 +149,7 @@
 			"placeholder": "Добавить поле",
 			"options": {
 				"subject": {
-					"displayName": "Предмет"
+					"displayName": "Тема"
 				}
 			}
 		},
@@ -158,10 +158,10 @@
 			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"existingCertificateId": {
-			"displayName": "Существующий идентификатор сертификата"
+			"displayName": "Идентификатор существующего сертификата"
 		},
 		"certificateIssuingTemplateId": {
-			"displayName": "Имя или идентификатор шаблона выдачи сертификата",
+			"displayName": "Имя или идентификатор шаблона выпуска сертификата",
 			"description": "Выберите из списка или укажите ID с помощью <a href=\"https://docs.n8n.io/code/expressions/\">выражения</a>"
 		},
 		"certificateSigningRequest": {
@@ -172,15 +172,15 @@
 		},
 		"commonName": {
 			"displayName": "Общее имя",
-			"description": "Поле общего имени для субъекта сертификата (CN)."
+			"description": "Поле «Общее имя» для субъекта сертификата (CN)"
 		},
 		"additionalFields": {
 			"displayName": "Дополнительные поля",
 			"placeholder": "Добавить поле",
 			"options": {
 				"keyType": {
-					"displayName": "Тип ключа",
-					"description": "Алгоритм шифрования открытым ключом",
+					"displayName": "РўРёРї РєР»СЋС‡Р°",
+					"description": "Алгоритм шифрования открытого ключа",
 					"options": {
 						"EC": {
 							"displayName": "EC",
@@ -188,28 +188,28 @@
 						},
 						"RSA": {
 							"displayName": "RSA",
-							"description": "Ривест, Шамир, Ключ Адлемана (ЮАР)"
+							"description": "Алгоритм Ривеста, Шамира и Адлемана (RSA)"
 						}
 					}
 				},
 				"keyCurve": {
-					"displayName": "Ключевая кривая",
+					"displayName": "Кривая ключа",
 					"options": {
 						"ED25519": {
 							"displayName": "ED25519",
-							"description": "Используйте алгоритм цифровой подписи на основе кривой Эдвардса (EdDSA)"
+							"description": "Использовать алгоритм цифровой подписи на кривой Эдвардса (EdDSA)"
 						},
 						"P256": {
 							"displayName": "P256",
-							"description": "Используйте 256-битное шифрование Elliptic Prime Curve."
+							"description": "Использовать 256-битное шифрование эллиптической кривой"
 						},
 						"P384": {
 							"displayName": "P384",
-							"description": "Используйте 384-битное шифрование Elliptic Prime Curve."
+							"description": "Использовать 384-битное шифрование эллиптической кривой"
 						},
 						"P521": {
 							"displayName": "P521",
-							"description": "Используйте 521-битное шифрование Elliptic Prime Curve."
+							"description": "Использовать 521-битное шифрование эллиптической кривой"
 						},
 						"UNKNOWN": {
 							"displayName": "UNKNOWN"
@@ -218,37 +218,37 @@
 				},
 				"keyLength": {
 					"displayName": "Длина ключа",
-					"description": "Количество битов, позволяющее генерировать ключи."
+					"description": "Количество битов для генерирования ключа"
 				},
 				"organization": {
-					"displayName": "(О) Организация",
+					"displayName": "(O) Организация",
 					"description": "Название компании или организации"
 				},
 				"organizationalUnits": {
 					"displayName": "(OU) Организационные подразделения",
-					"description": "Название отдела или отдела"
+					"description": "Название отдела или раздела"
 				},
 				"locality": {
-					"displayName": "(L) Город/Местоположение",
-					"description": "Название города или поселка"
+					"displayName": "(L) Город/Местность",
+					"description": "Название города или населённого пункта"
 				},
 				"state": {
-					"displayName": "(ST) Состояние",
-					"description": "Название штата или провинции"
+					"displayName": "(ST) Штат/Область",
+					"description": "Название штата или области"
 				},
 				"country": {
-					"displayName": "(С) Страна",
-					"description": "Двухбуквенный код страны"
+					"displayName": "(C) Страна",
+					"description": "2-буквенный код страны"
 				},
 				"SubjectAltNamesUi": {
 					"values": {
 						"SubjectAltNamesUi": {
-							"displayName": "Альтернативные имена субъектов"
+							"displayName": "Альтернативные имена субъекта"
 						},
 						"SubjectAltNamesValues": {
 							"options": {
 								"Typename": {
-									"displayName": "Типовое имя",
+									"displayName": "Имя типа",
 									"description": "Какой тип SAN используется",
 									"options": {
 										"dnsNames": {
@@ -263,8 +263,8 @@
 							}
 						}
 					},
-					"placeholder": "Добавить тему",
-					"displayName": "Альтернативные имена субъектов",
+					"placeholder": "Добавить субъект",
+					"displayName": "Альтернативные имена субъекта",
 					"options": {
 						"SubjectAltNamesValues": {
 							"displayName": "Альтернативное имя субъекта"

@@ -1,7 +1,7 @@
 {
 	"header": {
-		"displayName": "TheHive 5 Триггер",
-		"description": "Запускает рабочий процесс при возникновении событий TheHive."
+		"displayName": "Триггер TheHive 5",
+		"description": "Запускает рабочий процесс при возникновении событий TheHive"
 	},
 	"nodeView": {
 		"notice": {
@@ -29,15 +29,15 @@
 				},
 				"case_create": {
 					"displayName": "Дело создано",
-					"description": "Запускается при создании обращения"
+					"description": "Срабатывает при создании случая"
 				},
 				"case_delete": {
-					"displayName": "Дело удалено",
-					"description": "Срабатывает при удалении обращения"
+					"displayName": "Случай удалён",
+					"description": "Срабатывает при удалении случая"
 				},
 				"case_update": {
 					"displayName": "Дело обновлено",
-					"description": "Активируется при обновлении обращения"
+					"description": "Срабатывает при обновлении случая"
 				},
 				"comment_create": {
 					"displayName": "Комментарий создан",
@@ -52,20 +52,20 @@
 					"description": "Срабатывает при обновлении комментария"
 				},
 				"observable_create": {
-					"displayName": "Наблюдаемый создан",
-					"description": "Запускается при создании наблюдаемого"
+					"displayName": "Наблюдаемое создано",
+					"description": "Срабатывает при создании наблюдаемого"
 				},
 				"observable_delete": {
-					"displayName": "Наблюдаемый удален",
-					"description": "Срабатывает, когда наблюдаемый объект удаляется"
+					"displayName": "Наблюдаемое удалено",
+					"description": "Срабатывает при удалении наблюдаемого"
 				},
 				"observable_update": {
-					"displayName": "Наблюдаемое обновление",
+					"displayName": "Наблюдаемое обновлено",
 					"description": "Срабатывает при обновлении наблюдаемого"
 				},
 				"page_create": {
 					"displayName": "Страница создана",
-					"description": "Запускается при создании страницы"
+					"description": "Срабатывает при создании страницы"
 				},
 				"page_delete": {
 					"displayName": "Страница удалена",
@@ -88,11 +88,11 @@
 					"description": "Срабатывает при создании журнала задач"
 				},
 				"log_delete": {
-					"displayName": "Журнал задач удален",
+					"displayName": "Журнал задач удалён",
 					"description": "Срабатывает при удалении журнала задач"
 				},
 				"log_update": {
-					"displayName": "Журнал задач обновлен",
+					"displayName": "Журнал задач обновлён",
 					"description": "Срабатывает при обновлении журнала задач"
 				}
 			}
@@ -104,11 +104,11 @@
 					"description": "Фильтруйте любые входящие события по их полям"
 				},
 				"values": {
-					"displayName": "Ценности",
+					"displayName": "Значения",
 					"values": {
 						"field": {
 							"displayName": "Поле",
-							"hint": "Поле для фильтрации, поддерживает точечную запись.",
+							"hint": "Поле для фильтрации, поддерживает точечную нотацию",
 							"placeholder": "например context.severity"
 						},
 						"operator": {

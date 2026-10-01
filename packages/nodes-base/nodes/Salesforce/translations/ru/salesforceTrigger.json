@@ -37,7 +37,7 @@
 					"description": "При создании нового контакта"
 				},
 				"contactUpdated": {
-					"displayName": "Контакт обновлен",
+					"displayName": "Контакт обновлён",
 					"description": "При изменении существующего контакта"
 				},
 				"customObjectCreated": {

@@ -115,7 +115,7 @@
 					"displayName": "Обработка конфликтов",
 					"options": {
 						"values": {
-							"displayName": "Ценности"
+							"displayName": "Значения"
 						}
 					}
 				},
@@ -181,7 +181,7 @@
 					"description": "Укажите поля для сопоставления элементов входа"
 				},
 				"values": {
-					"displayName": "Ценности",
+					"displayName": "Значения",
 					"values": {
 						"field1": {
 							"displayName": "Поле входа 1",
