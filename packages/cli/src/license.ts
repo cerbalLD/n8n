@@ -155,6 +155,8 @@ export class License implements LicenseProvider {
 		switch (feature) {
 			case 'planName':
 				return LOCAL_LICENSE_PLAN_NAME as FeatureReturnType[T];
+			case LICENSE_FEATURES.SHOW_NON_PROD_BANNER:
+				return false as FeatureReturnType[T];
 			case LICENSE_QUOTAS.AI_CREDITS:
 			case LICENSE_QUOTAS.AI_GATEWAY_BUDGET:
 			case LICENSE_QUOTAS.INSIGHTS_MAX_HISTORY_DAYS:
@@ -347,7 +349,7 @@ export class License implements LicenseProvider {
 
 	isLicensed(feature: BooleanLicenseFeature) {
 		if (this.isLocalLicenseBypassEnabled()) {
-			return true;
+			return feature !== LICENSE_FEATURES.SHOW_NON_PROD_BANNER;
 		}
 
 		return this.manager?.hasFeatureEnabled(feature) ?? false;
@@ -363,7 +365,7 @@ export class License implements LicenseProvider {
 
 	hasFeatureInCert(feature: BooleanLicenseFeature): boolean {
 		if (this.isLocalLicenseBypassEnabled()) {
-			return true;
+			return feature !== LICENSE_FEATURES.SHOW_NON_PROD_BANNER;
 		}
 
 		return this.manager?.hasFeatureEnabled(feature, false) ?? false;

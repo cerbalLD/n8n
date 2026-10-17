@@ -46,18 +46,6 @@ Access the editor at http://localhost:5678
 Need help? Our community forum is the place to get support and connect with other users:
 [community.n8n.io](https://community.n8n.io)
 
-## License
-
-n8n is [fair-code](https://faircode.io) distributed under the [Sustainable Use License](https://github.com/n8n-io/n8n/blob/master/LICENSE.md) and [n8n Enterprise License](https://github.com/n8n-io/n8n/blob/master/LICENSE_EE.md).
-
-- **Source Available**: Always visible source code
-- **Self-Hostable**: Deploy anywhere
-- **Extensible**: Add your own nodes and functionality
-
-[Enterprise Licenses](mailto:license@n8n.io) available for additional features and support.
-
-Additional information about the license model can be found in the [docs](https://docs.n8n.io/sustainable-use-license/).
-
 ## Contributing
 
 Found a bug 🐛 or have a feature idea ✨? Check our [Contributing Guide](https://github.com/n8n-io/n8n/blob/master/CONTRIBUTING.md) for a setup guide & best practices.
